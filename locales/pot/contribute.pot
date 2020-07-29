@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-26 10:25-0500\n"
+"POT-Creation-Date: 2020-07-29 13:44-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,91 +40,95 @@ msgstr ""
 msgid "Open up the bug tracker for `ubuntu-touch <https://github.com/ubports/ubuntu-touch>`_."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:16
+#: ../../contribute/bugreporting.rst:17
+msgid "Pinephone users should check for and report bugs `here <https://gitlab.com/ubports/community-ports/pinephone>`_"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:19
 msgid "First, you'll need to make sure that the bug you're trying to report hasn't been reported before. Search through the bugs reported. When searching, use a few words that describe what you're seeing. For example, \"Lock screen transparent\" or \"Lock screen shows activities\"."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:18
+#: ../../contribute/bugreporting.rst:21
 msgid "If you find that a bug report already exists, select the \"Add your Reaction\" button (it looks like a smiley face) and select the +1 (thumbs up) reaction. This shows that you are also experiencing the bug."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:20
+#: ../../contribute/bugreporting.rst:23
 msgid "If the report is missing any of the information specified later in this document, please add it yourself to help the developers fix the bug."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:23
+#: ../../contribute/bugreporting.rst:26
 msgid "Reproduce the issue you've found"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:25
+#: ../../contribute/bugreporting.rst:28
 msgid "Next, find out exactly how to recreate the bug that you've found. Document the exact steps that you took to find the problem in detail. Then, reboot your phone and perform those steps again. If the problem still occurs, continue on to the next step. `If not... <https://youtu.be/nn2FB1P_Mn8?t=10s>`_"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:28
+#: ../../contribute/bugreporting.rst:31
 msgid "Making the bug report"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:30
+#: ../../contribute/bugreporting.rst:33
 msgid "Now it's time for what you've been waiting for, the bug report itself! Bug reports need to be filed in English."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:32
+#: ../../contribute/bugreporting.rst:35
 msgid "First, pull up the `bug tracker <https://github.com/ubports/ubuntu-touch>`_ and click \"New Issue\". Log in to GitHub if you haven't yet."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:34
+#: ../../contribute/bugreporting.rst:37
 msgid "Next, you'll need to name your bug. Pick a name that says what's happening, but don't be too wordy. Four to eight words should be enough."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:36
+#: ../../contribute/bugreporting.rst:39
 msgid "Now, write your bug report. A good bug report includes the following:"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:38
+#: ../../contribute/bugreporting.rst:41
 msgid "What happened: A synopsis of the erroneous behavior"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:39
+#: ../../contribute/bugreporting.rst:42
 msgid "What I expected to happen: A synopsis of what should have happened, if there wasn't an error"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:40
+#: ../../contribute/bugreporting.rst:43
 msgid "Steps to reproduce: You wrote these down earlier, right?"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:41
+#: ../../contribute/bugreporting.rst:44
 msgid "Software Version: Go to (Settings - About) and list what appears on the \"OS\" line of this screen. Also include the release channel that you used when you installed Ubuntu on this phone."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:43
+#: ../../contribute/bugreporting.rst:46
 msgid "Once you're finished with that, post the report. You can't add labels yourself, so please don't forget to state the device you're experiencing the issue on in the description so a moderator can easily add the correct tags later."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:45
+#: ../../contribute/bugreporting.rst:48
 msgid "A developer or QA-team member will confirm and triage your bug, then work can begin on it. If you are missing any information, you will be asked for it, so make sure to check in often!"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:48
+#: ../../contribute/bugreporting.rst:51
 msgid "Getting Logs"
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:50
+#: ../../contribute/bugreporting.rst:53
 msgid "Here we'll discuss the general steps to get logs, files that contain important debugging messages, on Ubuntu Touch. You may be asked for logs after submitting your issue. This section will help you to retrieve these logs from the device."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:54
+#: ../../contribute/bugreporting.rst:57
 msgid "Log files may contain information you prefer to keep private. Please be sure to skim through them to ensure this is not the case before posting them. We can coordinate to get them through e-mail or a similarly less public medium."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:56
+#: ../../contribute/bugreporting.rst:59
 msgid "To get ready, download the `Logviewer app <https://open-store.io/app/logviewer.neothethird>`_ from the OpenStore. This app will help us find, view, and send the logs we need."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:58
+#: ../../contribute/bugreporting.rst:61
 msgid "Now, open the Logviewer app. You'll see a list of all of the log files available in your user log folder, ``/home/phablet/.cache/upstart/``. This folder contains many, but not all, of the logs for software running on your device. You can tap on any log to view it, then tap the \"send\" icon in the top right corner to share it using an online service."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:60
+#: ../../contribute/bugreporting.rst:63
 msgid "If you don't see the log that you've been asked to send in Logviewer, it may be in a different folder or the application may not have created any logs yet. Tell this to the person who asked you for the logs. They should be able to get you the information you need to get back on track."
 msgstr ""
 
@@ -145,7 +149,7 @@ msgid "Documentation guidelines"
 msgstr ""
 
 #: ../../contribute/documentation.rst:12
-msgid "These rules govern how you should write your documentation to avoid problems with style, format, or linking. If you don't follow these guidelines, we will not accept your document."
+msgid "These rules govern how you should write your documentation to avoid problems with style, format, or linking."
 msgstr ""
 
 #: ../../contribute/documentation.rst:15
@@ -157,7 +161,7 @@ msgid "All pages must have a document title that will be shown in the table of c
 msgstr ""
 
 #: ../../contribute/documentation.rst:19
-msgid "Titles should be sentence cased rather than Title Cased. For example::"
+msgid "Titles should be \"sentence cased\" rather than \"Title Cased\". For example::"
 msgstr ""
 
 #: ../../contribute/documentation.rst:28
@@ -285,43 +289,87 @@ msgid "If you have trouble building the docs, the first thing to try is deleting
 msgstr ""
 
 #: ../../contribute/documentation.rst:145
+msgid "Final check of your contribution"
+msgstr ""
+
+#: ../../contribute/documentation.rst:147
+msgid "After you have created your PR on github, the CI (continuous integration) system will make a test build of your contribution. Please double check whether this builds successfully and whether the result looks as you intended it to:"
+msgstr ""
+
+#: ../../contribute/documentation.rst:149
+msgid "Scroll to the bottom of the \"Conversation\" tab of your PR on github, here you will see the checks (You may have to click on \"Show all checks\")"
+msgstr ""
+
+#: ../../contribute/documentation.rst:150
+msgid "It can have a yellow dot, i.e., \"pending\" then wait a few more seconds."
+msgstr ""
+
+#: ../../contribute/documentation.rst:151
+msgid "Or it may have a red X, i.e., it failed. In this case please check why it failed"
+msgstr ""
+
+#: ../../contribute/documentation.rst:152
+msgid "If it shows a green check mark, it means the PR could be built successfully"
+msgstr ""
+
+#: ../../contribute/documentation.rst:153
+msgid "Now please click on \"Details\","
+msgstr ""
+
+#: ../../contribute/documentation.rst:154
+msgid "then \"Artifacts\" on the top right,"
+msgstr ""
+
+#: ../../contribute/documentation.rst:155
+msgid "then \"_build/html/..index.html\","
+msgstr ""
+
+#: ../../contribute/documentation.rst:156
+msgid "and finally on \"Go to start page\"."
+msgstr ""
+
+#: ../../contribute/documentation.rst:158
+msgid "Now you can browse a complete build of the UBports docs site with your contribution included. Double check whether your changes look ok."
+msgstr ""
+
+#: ../../contribute/documentation.rst:162
 msgid "Alternative methods to contribute"
 msgstr ""
 
-#: ../../contribute/documentation.rst:148
+#: ../../contribute/documentation.rst:165
 #: ../../contribute/translations.rst:2
 msgid "Translations"
 msgstr ""
 
-#: ../../contribute/documentation.rst:150
+#: ../../contribute/documentation.rst:167
 msgid "You may find the components of this document to translate at `its project in UBports Weblate`_."
 msgstr ""
 
-#: ../../contribute/documentation.rst:153
+#: ../../contribute/documentation.rst:170
 msgid "Writing documents not in RST format"
 msgstr ""
 
-#: ../../contribute/documentation.rst:155
+#: ../../contribute/documentation.rst:172
 msgid "If you would like to write documents for UBports but are not comfortable writing ReStructuredText, please write it without formatting and post it on the `UBports Forum`_ in the relevant section (likely General). Someone will be able to help you revise your draft and write the required ReStructuredText."
 msgstr ""
 
-#: ../../contribute/documentation.rst:158
+#: ../../contribute/documentation.rst:175
 msgid "Uncomfortable with Git"
 msgstr ""
 
-#: ../../contribute/documentation.rst:160
+#: ../../contribute/documentation.rst:177
 msgid "If you've written a complete document in ReStructuredText but aren't comfortable using Git or GitHub, please post it on the `UBports Forum`_ in the relevant section (likely General). Someone will be able to help you revise your draft and submit it to this documentation."
 msgstr ""
 
-#: ../../contribute/documentation.rst:163
+#: ../../contribute/documentation.rst:180
 msgid "Current TODOs"
 msgstr ""
 
-#: ../../contribute/documentation.rst:165
+#: ../../contribute/documentation.rst:182
 msgid "This section lists the TODOs that have been included in this documentation. If you know how to fix one, please send us a Pull Request to make it better!"
 msgstr ""
 
-#: ../../contribute/documentation.rst:167
+#: ../../contribute/documentation.rst:184
 msgid "To create a todo, add this markup to your page::"
 msgstr ""
 

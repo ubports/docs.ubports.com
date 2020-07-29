@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-26 10:25-0500\n"
+"POT-Creation-Date: 2020-07-29 13:44-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -718,7 +718,7 @@ msgid "Get shell access to your device using :doc:`/userguide/advanceduse/adb` o
 msgstr ""
 
 #: ../../systemdev/uploading-changes.rst:136
-msgid "Run ``sudo ubports-qa install REPOSITORY PR``, replacing ``REPOSITORY`` with the name of the repository you have submitted a PR to (``morph-browser`` for example) and PR with the number of your pull request (without the ``#``)."
+msgid "Run ``sudo ubports-qa install REPOSITORY PR``, replacing ``REPOSITORY`` with the name of the repository you have submitted a PR to and ``PR`` with the number of your pull request without the ``#``. For example run ``sudo ubports-qa morph-browser 123`` to install the PR number 123 to morph-browser repo."
 msgstr ""
 
 #: ../../systemdev/uploading-changes.rst:138

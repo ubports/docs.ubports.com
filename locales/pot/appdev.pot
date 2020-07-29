@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-26 10:25-0500\n"
+"POT-Creation-Date: 2020-07-29 13:44-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -393,30 +393,38 @@ msgid "After the ``URLdispatcher`` sends the link to the correspondent app, we n
 msgstr ""
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:92
-msgid "In the main qml file, we need to add some code to know what to do with the dispatched URL. First add an `Arguments element <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L189>`_ that holds the URL, as is done, for example, in the `Linphone app <https://open-store.io/app/linphone.cibersheep>`_. Also, we add `connection to the URI Handler <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L200>`_ with a Connection element with ``UriHandler`` as a target."
+msgid "In the main qml file, we need to add some code to know what to do with the dispatched URL. Let's check how Linphone app manages this adding a `connection to the URI Handler <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L212>`_ with a Connections element setting ``UriHandler`` as a target."
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:120
-msgid "This code will manage a URI in the form ``linphone://sip:xxx@xxx.xx`` when the app is opened. But what do we need to do to handle this link when the app is closed?"
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:109
+msgid "This code will manage an URI in the form ``linphone://sip:xxx@xxx.xx`` when the app is opened. But what do we need to do to handle this link when the app is closed?"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:122
-msgid "We need to add a little bit `extra code <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L69>`_ that will cover two cases: 1) We receive one URL 2) We receive more than one URL"
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:111
+msgid "We need to add a little bit `extra code <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L76>`_ that will cover two cases: 1) We receive one URL 2) We receive more than one URL"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:149
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:115
+msgid "Let's check if ``Qt.application.arguments`` is not empty and if not, if any argument matches our URI format."
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:135
+msgid "Remember to check that %u (to receive 1 URL) or %U (to receive 1 or more URLs) is present under the ``Exec`` line in the `.desktop <https://gitlab.com/ubports-linphone/linphone-simple/-/blob/master/linphone.desktop.in#L7>`_ file of the app."
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:138
 msgid "What happens if more than one app has the same URL type defined?"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:151
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:140
 msgid "A very good question. What happens if we tap on a Twitter link? How is such a URL handled by the ``URLdispatcher`` as protocol ``http`` or the protocol ``http://twitter``?"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:153
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:142
 msgid "What happens if two apps have the same defined protocol?"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:155
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:144
 msgid "Now it’s time to do some tests and share the results in the next guide."
 msgstr ""
 
@@ -1132,11 +1140,15 @@ msgstr ""
 msgid "The Qt header ``QStandardPaths`` provides the app's writable locations in C++:"
 msgstr ""
 
-#: ../../appdev/guides/writeable-dirs.rst:43
+#: ../../appdev/guides/writeable-dirs.rst:42
+msgid "Since the value of the QStandardPaths strings are decided by the `Qt application name <https://doc.qt.io/qt-5/qcoreapplication.html#applicationName-prop>`_, this needs to be the same as the clickable application name."
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:45
 msgid "Using Standard Paths in QML"
 msgstr ""
 
-#: ../../appdev/guides/writeable-dirs.rst:44
+#: ../../appdev/guides/writeable-dirs.rst:46
 msgid "The Qt module `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-labs-platform-standardpaths.html>`_ provides the app's writable locations in QML:"
 msgstr ""
 
@@ -1172,80 +1184,88 @@ msgstr ""
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish ``click`` packages and provides various templates to get you started with app development. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. You can use any code editor or IDE that you choose and build your apps from the commandline with Clickable."
 msgstr ""
 
-#: ../../appdev/index.rst:28
+#: ../../appdev/index.rst:29
+msgid "Code Editor Integrations"
+msgstr ""
+
+#: ../../appdev/index.rst:31
+msgid "You can use clickable with the `Atom Editor <https://atom.io>`__ by installing the `atom-clickable-plugin <https://atom.io/packages/atom-clickable-plugin>`__. This provides some common clickable tools needed to build and run click packages for Ubuntu Touch from within Atom editor."
+msgstr ""
+
+#: ../../appdev/index.rst:33
 msgid "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower."
 msgstr ""
 
-#: ../../appdev/index.rst:30
+#: ../../appdev/index.rst:35
 msgid "You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed to work correctly. You can use the following commands to install::"
 msgstr ""
 
-#: ../../appdev/index.rst:40
+#: ../../appdev/index.rst:45
 msgid "Guides"
 msgstr ""
 
-#: ../../appdev/index.rst:42
+#: ../../appdev/index.rst:47
 msgid "Get started building your first app or learn about advanced concepts with our :ref:`Developer guides <devguides>`."
 msgstr ""
 
-#: ../../appdev/index.rst:58
+#: ../../appdev/index.rst:63
 msgid "Publishing"
 msgstr ""
 
-#: ../../appdev/index.rst:60
+#: ../../appdev/index.rst:65
 msgid "After you are done building your app, distribute it on the `OpenStore <https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`."
 msgstr ""
 
-#: ../../appdev/index.rst:69
+#: ../../appdev/index.rst:74
 msgid "Documentation"
 msgstr ""
 
-#: ../../appdev/index.rst:71
+#: ../../appdev/index.rst:76
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:72
+#: ../../appdev/index.rst:77
 msgid "`Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:73
+#: ../../appdev/index.rst:78
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:74
+#: ../../appdev/index.rst:79
 msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:76
+#: ../../appdev/index.rst:81
 msgid "It is possible to develop cross-platform apps that don't depend on Ubuntu specific APIs, although this is not the official way of developing apps for Ubuntu Touch. If running on other operating systems is an requirement for your app, you can refer to this  APIs instead:"
 msgstr ""
 
-#: ../../appdev/index.rst:78
+#: ../../appdev/index.rst:83
 msgid "`Kirigami API <https://api.kde.org/frameworks/kirigami/html/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:79
+#: ../../appdev/index.rst:84
 msgid "`Qt Quick Controls 2 API <https://doc.qt.io/qt-5/qtquickcontrols-index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:83
+#: ../../appdev/index.rst:88
 #: ../../appdev/platform/index.rst:4
 msgid "Platform"
 msgstr ""
 
-#: ../../appdev/index.rst:96
+#: ../../appdev/index.rst:101
 msgid "Sample apps"
 msgstr ""
 
-#: ../../appdev/index.rst:98
+#: ../../appdev/index.rst:103
 msgid "Learn more about app development by digging into our :ref:`Sample apps <sampleapps>`."
 msgstr ""
 
-#: ../../appdev/index.rst:108
+#: ../../appdev/index.rst:113
 msgid "Preinstalled apps"
 msgstr ""
 
-#: ../../appdev/index.rst:110
+#: ../../appdev/index.rst:115
 msgid "The :doc:`/contribute/preinstalled-apps` page has information on developing the apps which are included with Ubuntu Touch."
 msgstr ""
 
