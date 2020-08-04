@@ -27,7 +27,7 @@ When the device boots, you'll probably notice that everything is very small. The
 
 There are also some other options available that may be useful for you depending on your device's form factor. These are discussed below.
 
-All of these settings are guessed by Unity 8 if none are set. There are many cases, however, where the guess is wrong (for example, very high resolution phone displays will be identified as desktop computers). To manually set a value for these variables, simply create a file at ``/etc/ubuntu-session.d/[codename].conf`` specifying them. For example, this is the file for the Nexus 7 tablet::
+All of these settings are guessed by Unity 8 if none are set. There are many cases, however, where the guess is wrong (for example, very high resolution phone displays will be identified as desktop computers). To manually set a value for these variables, simply edit the file at ``etc/ubuntu-touch-session.d/android.conf`` specifying them. For example, this is the file for the Nexus 7 tablet::
 
     $ cat /etc/ubuntu-touch-session.d/flo.conf
     GRID_UNIT_PX=18
