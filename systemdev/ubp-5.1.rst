@@ -1,19 +1,12 @@
-Legacy porting
-==============
+hammerhead, bacon and FP2
+=========================
 
-This page documents the resources and process to build an Android compatibility image for the LG Nexus 5, OnePlus One, or Fairphone 2. This information should not be used to bring up any new devices, only to update these older images. All new ports should be created using Halium following the documentation starting at :doc:`introduction`.
 
-This document is useful if you would like to:
+This page documents how to build the Kernel and the Android image for the LG Nexus 5 (hammerhead), OnePlus One (bacon), or Fairphone 2 (FP2).
 
-* Fix an Android compatibility-related hardware issue (camera, sensors, radios)
-* Experiment with the Linux kernel
-* Experiment with the system-image upgrade process
+.. note::
 
-This document is not useful if you would like to modify :doc:`../contribute/preinstalled-apps` or :doc:`System software <../systemdev/index>`. See the respective documentation for each.
-
-.. This paragraph is copied in ./introduction.rst. Please update it in both places.
-
-This process does not build Ubuntu Touch! An Android compatibility image is installed along with a prebuilt Ubuntu Touch filesystem to create a running Ubuntu Touch system.
+    We highly suggest that you follow the :doc:`Halium porting guide <../porting/introduction>` if you want to bring up a new device. The steps in here are only relevant for hammerhead, bacon and FP2.
 
 This document assumes you already have knowledge of building Android or Halium. It also assumes that your device has Ubuntu Touch installed.
 
