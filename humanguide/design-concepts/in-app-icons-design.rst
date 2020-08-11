@@ -40,7 +40,7 @@ When they are not horizontal or vertical, objects are oriented along a +45º axi
 Corners
 ~~~~~~~
 
-Curved corners are prefered if possible. The following picture shows a zoom on the default outer and inner curvatures, with nodes and Bezier handle. The default curvature can be scaled down when the shape is smaller.
+Curved corners are preferred if possible. The following picture shows a zoom on the default outer and inner curvatures, with nodes and Bezier handle. The default curvature can be scaled down when the shape is smaller.
 
 .. figure:: /_static/images/humanguide/17.png
 

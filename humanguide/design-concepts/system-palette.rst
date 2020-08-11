@@ -7,7 +7,7 @@ Operating system and app palette
 
 -  #FFFFFF White
 
-Recomended for background on Ambiance theme (light theme) or regular text on Suru Dark theme.
+Recommended for background on Ambiance theme (light theme) or regular text on Suru Dark theme.
 
 .. figure:: /_static/images/humanguide/color-TextGrey.svg
 
