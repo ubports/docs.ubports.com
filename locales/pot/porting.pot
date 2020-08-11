@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 09:34-0500\n"
+"POT-Creation-Date: 2020-08-11 12:26-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -354,35 +354,35 @@ msgstr ""
 msgid "This section will introduce you to some of the specifics of porting Ubuntu Touch to an Android device by building a Halium image."
 msgstr ""
 
-#: ../../porting/introduction.rst:11
-msgid "This process does not build Ubuntu Touch! A Halium image is installed along with a prebuilt Ubuntu Touch filesystem to create a running Ubuntu Touch system. If you already have an Ubuntu Touch device and would like to modify the software on it, you will be better served by :doc:`../systemdev/index`. If you would like to modify the Android compatibility image for the Nexus 5, Oneplus One, or Fairphone 2, :doc:`ubp-5.1` is appropriate for you."
+#: ../../porting/introduction.rst:9
+msgid "This process does not build Ubuntu Touch! A Halium image is installed along with a prebuilt Ubuntu Touch filesystem to create a running Ubuntu Touch system. If you already have an Ubuntu Touch device and would like to modify the software on it, you will be better served by :doc:`../systemdev/index`."
 msgstr ""
 
-#: ../../porting/introduction.rst:13
+#: ../../porting/introduction.rst:11
 msgid "Before you begin, you'll want to head over to `the Halium porting guide <http://docs.halium.org/en/latest/porting/first-steps.html>`_ and get your ``systemimage`` built without errors. Once you're at the point of installing a rootfs, you can come back here."
 msgstr ""
 
-#: ../../porting/introduction.rst:15
+#: ../../porting/introduction.rst:13
 msgid "Start at :doc:`building-halium-boot` if you'd like to install the UBports Ubuntu Touch 16.04 rootfs."
 msgstr ""
 
-#: ../../porting/introduction.rst:29
+#: ../../porting/introduction.rst:27
 msgid "Getting community help"
 msgstr ""
 
-#: ../../porting/introduction.rst:31
+#: ../../porting/introduction.rst:29
 msgid "If you're having trouble with the porting steps after building your Halium systemimage, check out the \"Common Problems\" section of the page you're stuck on. If none of the suggestions are helpful, you can get help from the community via the following channels:"
 msgstr ""
 
-#: ../../porting/introduction.rst:33
+#: ../../porting/introduction.rst:31
 msgid "Telegram: @ubports_porting"
 msgstr ""
 
-#: ../../porting/introduction.rst:34
+#: ../../porting/introduction.rst:32
 msgid "IRC: #ubports-porting on freenode"
 msgstr ""
 
-#: ../../porting/introduction.rst:35
+#: ../../porting/introduction.rst:33
 msgid "Forum: `forums.ubports.com <https://forums.ubports.com>`__"
 msgstr ""
 
@@ -658,108 +658,4 @@ msgstr ""
 
 #: ../../porting/running-ut.rst:76
 msgid "If you have any errors while performing these steps, check see if any of the following suggestions match what you are seeing. If you have completed these steps successfully, congratulations! You've reached the end of the porting guide for now. Try to check the functionality of your device by following the Smoke Testing information in :doc:`/contribute/quality-assurance`."
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:2
-msgid "Legacy porting"
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:4
-msgid "This page documents the resources and process to build an Android compatibility image for the LG Nexus 5, OnePlus One, or Fairphone 2. This information should not be used to bring up any new devices, only to update these older images. All new ports should be created using Halium following the documentation starting at :doc:`introduction`."
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:6
-msgid "This document is useful if you would like to:"
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:8
-msgid "Fix an Android compatibility-related hardware issue (camera, sensors, radios)"
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:9
-msgid "Experiment with the Linux kernel"
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:10
-msgid "Experiment with the system-image upgrade process"
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:12
-msgid "This document is not useful if you would like to modify :doc:`../contribute/preinstalled-apps` or :doc:`System software <../systemdev/index>`. See the respective documentation for each."
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:16
-msgid "This process does not build Ubuntu Touch! An Android compatibility image is installed along with a prebuilt Ubuntu Touch filesystem to create a running Ubuntu Touch system."
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:18
-msgid "This document assumes you already have knowledge of building Android or Halium. It also assumes that your device has Ubuntu Touch installed."
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:21
-msgid "Getting set up"
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:23
-msgid "``ubp-5.1`` ports must be built using Ubuntu 16.04. A container or virtual machine based on 16.04 is recommended for this purpose."
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:25
-msgid "Let's get started by installing some build dependencies::"
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:31
-msgid "Create a directory for your ``ubp-5.1`` source::"
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:36
-msgid "Next, we'll initialize the repository::"
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:42
-msgid "The ``allthefixings`` branch is provided for convenience. It adds all of the current UT device ports to the tree at the expense of a bit more downloaded data. If you are download-sensitive, initialize using ``-b ubp-5.1`` and use the manifest in `build-scripts <https://github.com/ubports/build-scripts>`__ to pick the repos you like."
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:44
-msgid "Finally, we'll download the source::"
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:49
-msgid "Set up and build"
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:51
-msgid "With the sources downloaded, we need to set up our environment and build the images. Make sure you're in your ``ubp-5.1`` directory to continue through these steps."
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:53
-msgid "First, bring in the default Android build environment::"
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:57
-msgid "Run ``lunch`` and pick the appropriate combo for your device. The name of the combination should start with ``cm_``, followed by the device name and ending with ``-userdebug``::"
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:61
-msgid "With that done, the build can be started::"
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:66
-msgid "Install the new image"
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:68
-msgid "Now that the build is complete, we can flash it to the device. Note that all of these commands should be run from a terminal which has been set up with ``source build/envsetup.sh`` and ``lunch`` to ensure the needed tools are in your PATH."
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:70
-msgid "We'll begin with the boot and recovery images. Boot your device into fastboot mode and run the following commands::"
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:76
-msgid "Now boot your device to ensure your kernel build is sane. You may also want to boot into recovery to ensure it is working as well."
-msgstr ""
-
-#: ../../porting/ubp-5.1.rst:78
-msgid "To install your new build of the system image, use the `replace-android-system script <https://github.com/janimo/phablet-porting-scripts/blob/68734ca07998b8e784397df77d9aca4b968b3815/build/replace-android-system>`_. It can be run as follows with your device attached::"
 msgstr ""
