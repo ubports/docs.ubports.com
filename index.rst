@@ -55,6 +55,7 @@ You may view this documentation in the following languages:
    :name: sec-dev
 
    appdev/index
+   humanguide/index
    systemdev/index
 
 .. toctree::
