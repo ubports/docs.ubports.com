@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-13 01:29+0200\n"
+"POT-Creation-Date: 2020-08-11 11:47-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -501,7 +501,7 @@ msgid "Corners"
 msgstr ""
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:43
-msgid "Curved corners are prefered if possible. The following picture shows a zoom on the default outer and inner curvatures, with nodes and Bezier handle. The default curvature can be scaled down when the shape is smaller."
+msgid "Curved corners are preferred if possible. The following picture shows a zoom on the default outer and inner curvatures, with nodes and Bezier handle. The default curvature can be scaled down when the shape is smaller."
 msgstr ""
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:48
@@ -545,7 +545,7 @@ msgid "#FFFFFF White"
 msgstr ""
 
 #: ../../humanguide/design-concepts/system-palette.rst:10
-msgid "Recomended for background on Ambiance theme (light theme) or regular text on Suru Dark theme."
+msgid "Recommended for background on Ambiance theme (light theme) or regular text on Suru Dark theme."
 msgstr ""
 
 #: ../../humanguide/design-concepts/system-palette.rst:14
@@ -1038,14 +1038,10 @@ msgid "Different redered sizes of the same svg image"
 msgstr ""
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:18
-msgid "It is not advisable to define ``sourceSize`` as a relative size to avoid performance issues. A good practice is defining ``sourceSize`` based on a set list of thresholds."
+msgid "It is not advisable to define ``sourceSize`` as a relative size to avoid performance issues. A good practice is defining ``sourceSize`` based on a set list of thresholds. In the example below the image.svg will be rendered 60 per 60 grid units if the main view is bigger that 70 grid units but as an image of 40 per 40 grid units in the other cases. By defining these thresholds, we get scalable images without a huge performance cost."
 msgstr ""
 
-#: ../../humanguide/other-design-considerations/scaling-images.rst:20
-msgid "In the example below the image.svg will be rendered 60 per 60 grid units if the main view is bigger that 70 grid units but as an image of 40 per 40 grid units in the other cases. By defining these thresholds, we get scalable images without a huge performance cost."
-msgstr ""
-
-#: ../../humanguide/other-design-considerations/scaling-images.rst:30
+#: ../../humanguide/other-design-considerations/scaling-images.rst:28
 msgid "Read more about image performance in the `Qt wiki <https://wiki.qt.io/Performance_tip_Images>`__."
 msgstr ""
 
@@ -1064,4 +1060,3 @@ msgstr ""
 #: ../../humanguide/other-design-considerations/translations.rst:14
 msgid "More information and options can be found in this a bit outdated `tutorial on localization <http://web.archive.org/web/https://docs.ubuntu.com/phone/en/apps/qml/tutorials-internationalizing-your-app>`__ an app."
 msgstr ""
-
