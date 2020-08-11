@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-29 13:44-0500\n"
+"POT-Creation-Date: 2020-08-11 09:34-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1165,107 +1165,103 @@ msgid "If you have questions that aren't answered in the docs or want to chat wi
 msgstr ""
 
 #: ../../appdev/index.rst:9
-msgid "Get started"
+msgid "Getting Started"
 msgstr ""
 
 #: ../../appdev/index.rst:11
-msgid "Ubuntu Touch supports two kind of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, Rust or Go. :ref:`Web apps <webapp>` are special containers to run websites in."
-msgstr ""
-
-#: ../../appdev/index.rst:13
-msgid "Applications are shipped as a :ref:`Click <click>` package and can be publicly shared on the official app store `OpenStore <https://open-store.io>`__"
-msgstr ""
-
-#: ../../appdev/index.rst:24
-msgid "Tools"
-msgstr ""
-
-#: ../../appdev/index.rst:26
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish ``click`` packages and provides various templates to get you started with app development. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. You can use any code editor or IDE that you choose and build your apps from the commandline with Clickable."
 msgstr ""
 
-#: ../../appdev/index.rst:29
+#: ../../appdev/index.rst:13
+msgid "Ubuntu Touch supports two kind of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, Rust or Go. :ref:`Web apps <webapp>` are special containers to run websites in."
+msgstr ""
+
+#: ../../appdev/index.rst:15
+msgid "Applications are shipped as a :ref:`Click <click>` package and can be publicly shared on the official app store `OpenStore <https://open-store.io>`__"
+msgstr ""
+
+#: ../../appdev/index.rst:25
 msgid "Code Editor Integrations"
 msgstr ""
 
-#: ../../appdev/index.rst:31
+#: ../../appdev/index.rst:27
 msgid "You can use clickable with the `Atom Editor <https://atom.io>`__ by installing the `atom-clickable-plugin <https://atom.io/packages/atom-clickable-plugin>`__. This provides some common clickable tools needed to build and run click packages for Ubuntu Touch from within Atom editor."
 msgstr ""
 
-#: ../../appdev/index.rst:33
+#: ../../appdev/index.rst:29
 msgid "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower."
 msgstr ""
 
-#: ../../appdev/index.rst:35
+#: ../../appdev/index.rst:31
 msgid "You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed to work correctly. You can use the following commands to install::"
 msgstr ""
 
-#: ../../appdev/index.rst:45
+#: ../../appdev/index.rst:41
 msgid "Guides"
 msgstr ""
 
-#: ../../appdev/index.rst:47
+#: ../../appdev/index.rst:43
 msgid "Get started building your first app or learn about advanced concepts with our :ref:`Developer guides <devguides>`."
 msgstr ""
 
-#: ../../appdev/index.rst:63
+#: ../../appdev/index.rst:59
 msgid "Publishing"
 msgstr ""
 
-#: ../../appdev/index.rst:65
+#: ../../appdev/index.rst:61
 msgid "After you are done building your app, distribute it on the `OpenStore <https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`."
 msgstr ""
 
-#: ../../appdev/index.rst:74
+#: ../../appdev/index.rst:70
 msgid "Documentation"
 msgstr ""
 
-#: ../../appdev/index.rst:76
+#: ../../appdev/index.rst:72
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:77
+#: ../../appdev/index.rst:73
 msgid "`Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:78
+#: ../../appdev/index.rst:74
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:79
+#: ../../appdev/index.rst:75
 msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:81
+#: ../../appdev/index.rst:77
 msgid "It is possible to develop cross-platform apps that don't depend on Ubuntu specific APIs, although this is not the official way of developing apps for Ubuntu Touch. If running on other operating systems is an requirement for your app, you can refer to this  APIs instead:"
 msgstr ""
 
-#: ../../appdev/index.rst:83
+#: ../../appdev/index.rst:79
 msgid "`Kirigami API <https://api.kde.org/frameworks/kirigami/html/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:84
+#: ../../appdev/index.rst:80
 msgid "`Qt Quick Controls 2 API <https://doc.qt.io/qt-5/qtquickcontrols-index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:88
+#: ../../appdev/index.rst:84
 #: ../../appdev/platform/index.rst:4
 msgid "Platform"
 msgstr ""
 
-#: ../../appdev/index.rst:101
+#: ../../appdev/index.rst:97
 msgid "Sample apps"
 msgstr ""
 
-#: ../../appdev/index.rst:103
+#: ../../appdev/index.rst:99
 msgid "Learn more about app development by digging into our :ref:`Sample apps <sampleapps>`."
 msgstr ""
 
-#: ../../appdev/index.rst:113
+#: ../../appdev/index.rst:109
 msgid "Preinstalled apps"
 msgstr ""
 
-#: ../../appdev/index.rst:115
+#: ../../appdev/index.rst:111
 msgid "The :doc:`/contribute/preinstalled-apps` page has information on developing the apps which are included with Ubuntu Touch."
 msgstr ""
 
