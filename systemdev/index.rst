@@ -16,6 +16,7 @@ This section covers how to build and install the Linux kernel and hardware abstr
 
    kernel-hal
    ubp-5.1
+   kernel-pinephone
 
 
 System Software guides
