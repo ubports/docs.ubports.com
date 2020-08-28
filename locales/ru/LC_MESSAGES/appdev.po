@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-06-24 16:25+0000\n"
+"PO-Revision-Date: 2020-08-01 20:13+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -436,13 +436,12 @@ msgid "Usage"
 msgstr "Использование"
 
 #: ../../appdev/guides/dependencies.rst:99
-#, fuzzy
 msgid "First, you may need to specify the include directory where the compiler can find the headers. Second, you need to link the library itself against your app's binary, except it is a header library, where all the source code is located in header files."
 msgstr ""
-"Самое первое действие - нужно указать директорию, где компилятор будет "
-"искать файлы заголовков. Во-вторых, нужно связать библиотеку и  бинарный "
-"файл приложения, если это только не библиотека заголовков, где весь исходный "
-"код находится в файлах заголовков."
+"Сначала  нужно указать директорию, где компилятор будет искать файлы "
+"заголовков. Во-вторых, нужно связать библиотеку и  бинарный файл приложения, "
+"если это только не библиотека заголовков, где весь исходный код находится в "
+"файлах заголовков."
 
 #: ../../appdev/guides/dependencies.rst:101
 msgid "In case the library contains an appropriate CMake configuration file, you may use the `find_package <https://cmake.org/cmake/help/latest/command/find_package.html>`_ command. The additional lines on your CMakeLists.txt then may look like:"
@@ -506,9 +505,8 @@ msgstr ""
 "целевой архитектуры, которая можно увидеть в пути к файлу."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:2
-#, fuzzy
 msgid "Importing from Content Hub and URLdispatcher"
-msgstr "Перенос из Content Hub и URLdispatcher"
+msgstr "Импорт данных из Content Hub и URLdispatcher"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:7
 msgid "In the previous guide we have seen a little bit about how Content Hub works. In this guide we will see how ``URLdispatcher`` works and how to handle imported data from the Content Hub."
@@ -577,12 +575,11 @@ msgstr ""
 "head:/manifest.json#L9> `_:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:83
-#, fuzzy
 msgid "This means that a link that looks like http://map.unav.me/xxxxx,xxxxx will be opened in uNav. And that’s defined in lines 2 and 3, where it looks for protocol http followed by map.unav.me."
 msgstr ""
 "Это означает, что ссылка в формате http://map.unav.me/xxxxx ,xxxxx будет "
-"открыта в uNav. Это определено в строках 2 и 3, где указан протокол http и "
-"приложение map.unav.me."
+"открыта в приложении uNav. Это определено в строках 2 и 3, где указан "
+"протокол http и приложение map.unav.me."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:85
 msgid "Also, a URI formatted geo:xxx,xxx should open in uNav, as it’s defined in line 11."
@@ -740,7 +737,7 @@ msgstr ""
 "Когда мы запустим приложение, оно получит токен и запишет его в лог-файл. Из "
 "лог-файлов для clickable можно скопировать этот токен в терминале. Но "
 "приложение еще не готово для получения push-уведомления. Для этого нам "
-"понадобится pushhelper."
+"понадобится pushhelper!"
 
 #: ../../appdev/guides/pushnotifications.rst:56
 msgid "Implementing the pushhelper"
@@ -957,9 +954,8 @@ msgstr ""
 "PopAll."
 
 #: ../../appdev/guides/pushnotifications.rst:206
-#, fuzzy
 msgid "tag"
-msgstr "tag"
+msgstr "tag (тэг)"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "The tag of the push notification."
@@ -1049,9 +1045,8 @@ msgid "A JSON object with information about the notification card."
 msgstr "Объект JSON с информацией о карточке уведомления."
 
 #: ../../appdev/guides/pushnotifications.rst:230
-#, fuzzy
 msgid "summary"
-msgstr "резюме"
+msgstr "краткое резюме"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. A title. The card will not be presented if this is"
@@ -1083,12 +1078,10 @@ msgid "If empty (the default), a bubble notification is"
 msgstr "Если пустое (по умолчанию),  нажатие на bubble notification"
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "non-clickable. If you add a URL, then bubble notifications"
 msgstr "не даёт ничего. Если Вы добавите адрес URL, то bubble notifications"
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "are clickable and launch that URL. One use for this is using"
 msgstr ""
 "становятся активными и позволяют открыть этот URL. Один из способов это "
@@ -1103,7 +1096,6 @@ msgid "which will switch to the app or launch it."
 msgstr "это позволит переключиться на приложение или запустит его."
 
 #: ../../appdev/guides/pushnotifications.rst:241
-#, fuzzy
 msgid "icon"
 msgstr "иконка"
 
@@ -1113,7 +1105,6 @@ msgstr ""
 "Иконка относится к событию, к которому относится уведомление. По умолчанию,"
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "empty (no icon); a secondary icon relating to the application"
 msgstr ""
 "значение пустое (иконка отсутствует); дополнительная иконка относится к "
@@ -1524,37 +1515,36 @@ msgstr "Создание приложений"
 #: ../../appdev/index.rst:4
 msgid "Great!, you'd like to develop an app for Ubuntu Touch. Here are some resources that we hope help you get started."
 msgstr ""
-"Отлично! Если вы хотите разрабатывать приложения для Ubuntu Touch, то вот "
-"некоторые ресурсы, которые помогут в  работе."
+"Если Вы хотите разрабатывать приложения для Ubuntu Touch, то вот некоторые "
+"ресурсы, которые помогут в этом."
 
 #: ../../appdev/index.rst:6
 msgid "If you have questions that aren't answered in the docs or want to chat with other Ubuntu Touch developers? Join our `app dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://forums.ubports.com/category/35/app-development>`_."
 msgstr ""
-"Если у вас есть вопросы, на которые нет ответов в документации, или вы "
-"хотите пообщаться с другими разработчиками Ubuntu Touch, присоединяйтесь к "
-"группе разработчиков приложений <https://t.me/UbuntuAppDevEN> `_ или пишите "
-"на форум разработчиков приложений UBports <https://forums.ubports.com/"
-"category/35/app-development> `_."
+"Если у Вас есть вопросы, на которые нет ответов в документации, или Вы "
+"хотите пообщаться с другими разработчиками Ubuntu Touch, присоединяйтесь к `"
+"группе разработчиков приложений в Telegram <https://t.me/UbuntuAppDevEN> `_ "
+"или пишите на `форум разработчиков приложений UBports "
+"<https://forums.ubports.com/category/35/app-development> `_."
 
 #: ../../appdev/index.rst:9
 msgid "Get started"
 msgstr "Начало работы"
 
 #: ../../appdev/index.rst:11
-#, fuzzy
 msgid "Ubuntu Touch supports two kind of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, Rust or Go. :ref:`Web apps <webapp>` are special containers to run websites in."
 msgstr ""
-"Ubuntu Touch поддерживает два вида приложений. : ref: `Нативные приложения "
+"Ubuntu Touch поддерживает два вида приложений. :ref: `Нативные приложения "
 "<nativeapp>` - это приложения с интерфейсом, созданным с использованием QML "
-"или HTML и работающими по правилам JavaScript, C ++, Python, Rust или Go. : "
-"ref: `Веб-приложения <webapp>` - это специальные контейнеры для запуска "
+"или HTML и работающими по правилам JavaScript, C ++, Python, Rust или Go. "
+":ref: `Веб-приложения <webapp>` - это специальные контейнеры для запуска "
 "веб-сайтов."
 
 #: ../../appdev/index.rst:13
 msgid "Applications are shipped as a :ref:`Click <click>` package and can be publicly shared on the official app store `OpenStore <https://open-store.io>`__"
 msgstr ""
-"Приложения поставляются в виде: ref: `Click <click>` пакета и могут быть "
-"опубликованы в официальном магазине приложений OpenStore <https://open-"
+"Приложения поставляются в виде: ref: `Click <click>`-пакета и могут быть "
+"размещены в официальном магазине приложений `OpenStore <https://open-"
 "store.io> `__"
 
 #: ../../appdev/index.rst:24
@@ -1564,21 +1554,21 @@ msgstr "Инструменты разработчика"
 #: ../../appdev/index.rst:26
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish ``click`` packages and provides various templates to get you started with app development. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. You can use any code editor or IDE that you choose and build your apps from the commandline with Clickable."
 msgstr ""
-"Clickable <http://clickable.bhdouglass.com/en/latest/> `_ - это система "
-"сборки  приложений Ubuntu Touch, которая позволяет компилировать, создавать, "
-"тестировать и публиковать пакеты` `click`` и предоставляет различные шаблоны "
-"для начала разработки приложений. В настоящее время это самый простой и "
-"удобный способ создания пакетов click для Ubuntu Touch. Вы можете "
-"использовать любой редактор  или IDE, и создавать свои приложения из "
-"командной строки с помощью Clickable."
+"`Clickable <http://clickable.bhdouglass.com/en/latest/> `_ - это система "
+"сборки приложений Ubuntu Touch, которая позволяет компилировать, создавать, "
+"тестировать и публиковать пакеты ` `click`` и содержит различные шаблоны для "
+"начала разработки приложений. В настоящее время это самый простой и удобный "
+"способ создания пакетов click для Ubuntu Touch. Вы можете использовать любой "
+"редактор или среду разработки, и создавать свои приложения из командной "
+"строки с помощью Clickable."
 
 #: ../../appdev/index.rst:28
 msgid "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower."
 msgstr ""
 "Можно так же создавать приложения в старом пакете для разработки `IDE Ubuntu "
 "SDK <https://docs.ubuntu.com/phone/en/platform/sdk>` __. Но нужно иметь "
-"ввиду, что этот комплект программ  больше не поддерживается Canonical, и "
-"UBports  перестала поддерживать его из-за нехватки квалифицированных "
+"ввиду, что этот комплект программ больше не поддерживается Canonical, а "
+"UBports перестала поддерживать его из-за нехватки квалифицированных "
 "программистов."
 
 #: ../../appdev/index.rst:30
@@ -1595,8 +1585,8 @@ msgstr "Руководства"
 #: ../../appdev/index.rst:42
 msgid "Get started building your first app or learn about advanced concepts with our :ref:`Developer guides <devguides>`."
 msgstr ""
-"Начните создавать свое первое приложение или прочитайте подробные: ref: `"
-"Руководства разработчика <devguides>` для опытных программистов."
+"Начните создавать свое первое приложение или подробно изучите: ref: `"
+"Руководство разработчика <devguides>` для опытных программистов."
 
 #: ../../appdev/index.rst:58
 msgid "Publishing"
@@ -1605,9 +1595,9 @@ msgstr "Публикация приложения"
 #: ../../appdev/index.rst:60
 msgid "After you are done building your app, distribute it on the `OpenStore <https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`."
 msgstr ""
-"После того как приложение будет скомпилировано, опубликуйте его в OpenStore "
-"<https://open-store.io/> `__ согласно правилам из: ref:` Руководства по "
-"публикации <publishing> `."
+"После того как приложение будет скомпилировано, опубликуйте его в магазине "
+"приложений ` OpenStore <https://open-store.io/> `__ согласно рекомендациям "
+":ref:` Руководства по публикации <publishing> `."
 
 #: ../../appdev/index.rst:69
 msgid "Documentation"
@@ -1727,18 +1717,16 @@ msgstr "Каждая запись соответствует этому форм
 #: ../../appdev/platform/apparmor.rst:21
 msgid "Policy usage affects whether your app will be accepted by the OpenStore. Apps containing policies with common usage are generally accepted immediately, while reserved usage policies will need to be manually reviewed."
 msgstr ""
-"Использование политики влияет на то, будет ли  приложение опубликовано в "
+"Использование политики влияет на то, будет ли приложение опубликовано в "
 "OpenStore. Приложения, работающие с политиками общего пользования, обычно "
-"размещаются немедленно в то время, как приложения без политик необходимо "
-"будет проверять вручную."
+"размещаются немедленно. Приложения без политик необходимо будет проверять "
+"вручную."
 
 #: ../../appdev/platform/apparmor.rst:24
-#, fuzzy
 msgid "accounts"
-msgstr "учётные записи"
+msgstr "accounts (учётные записи)"
 
 #: ../../appdev/platform/apparmor.rst:26
-#, fuzzy
 msgid "Description: Can use Online Accounts."
 msgstr "Описание: Можно использовать онлайн-аккаунты."
 
@@ -1757,20 +1745,18 @@ msgstr "Описание: Можно использовать онлайн-ак�
 #: ../../appdev/platform/apparmor.rst:249
 #: ../../appdev/platform/apparmor.rst:259
 #: ../../appdev/platform/apparmor.rst:287
-#, fuzzy
 msgid "Usage: common"
-msgstr "Использование: общие"
+msgstr "Использование: на общих основаниях"
 
 #: ../../appdev/platform/apparmor.rst:30
-#, fuzzy
 msgid "The accounts policy gives your app the permissions it needs to access the `Online Accounts API`_."
 msgstr ""
 "Политика учетных записей дает приложению разрешения, необходимые для доступа "
-"к «API  онлайн-аккаунтов»_."
+"к `API онлайн-аккаунтов`_."
 
 #: ../../appdev/platform/apparmor.rst:34
 msgid "audio"
-msgstr "аудио"
+msgstr "audio (аудио)"
 
 #: ../../appdev/platform/apparmor.rst:36
 msgid "Description: Can play audio (allows playing remote content via media-hub)"
@@ -1791,7 +1777,6 @@ msgid "bluetooth"
 msgstr "bluetooth"
 
 #: ../../appdev/platform/apparmor.rst:46
-#, fuzzy
 msgid "Description: Use bluetooth (bluez5) as an administrator."
 msgstr ""
 "Описание: Использовать интерфейс bluetooth (bluez5) с правами администратора."
@@ -1826,7 +1811,7 @@ msgstr "calendar (календарь)"
 
 #: ../../appdev/platform/apparmor.rst:56
 msgid "Description: Can access the calendar."
-msgstr "Описание: предоставление доступа к календарю."
+msgstr "Описание: доступ к календарю."
 
 #: ../../appdev/platform/apparmor.rst:60
 msgid "Calendar grants access to the Evolution dataserver's calendar and alarms APIs. It also grants access to sync-monitor."
@@ -1837,9 +1822,9 @@ msgstr ""
 #: ../../appdev/platform/apparmor.rst:62
 msgid "This policy is reserved since it grants free access to all calendars on the device at any time. The legacy bug about this situation is `LP #1227824`_ ."
 msgstr ""
-"Эта политика зарезервирована, так как она  всегда предоставляет свободный "
-"доступ ко всем календарям на устройстве. Ошибка старая,  номер баг-репорта - "
-"`LP # 1227824`_."
+"Эта политика зарезервирована, так как она всегда предоставляет свободный "
+"доступ ко всем календарям на устройстве. Ошибка старая, номер баг-репорта -`"
+"LP # 1227824`_."
 
 #: ../../appdev/platform/apparmor.rst:66
 msgid "camera"
@@ -1861,13 +1846,13 @@ msgstr "connectivity"
 
 #: ../../appdev/platform/apparmor.rst:78
 msgid "Description: Can access coarse network connectivity information"
-msgstr "Описание:Может давать доступ к информации о связи устройств в сети"
+msgstr "Описание: Может давать доступ к информации о связи устройств в сети"
 
 #: ../../appdev/platform/apparmor.rst:82
 msgid "The connectivity policy allows apps to determine rough information about the device's connectivity. This includes whether the device is connected to the Internet and whether it is connected via a Wi-Fi or mobile data connection."
 msgstr ""
 "Политика по связи позволяет приложениям получать приблизительную информацию "
-"о подключенных устройствах  - есть ли у устройства доступ к Интернету и "
+"о подключенных устройствах - есть ли у устройства доступ к Интернету и "
 "подключено ли оно через Wi-Fi или мобильную сеть."
 
 #: ../../appdev/platform/apparmor.rst:86
@@ -1876,14 +1861,14 @@ msgstr "contacts (адресная книга)"
 
 #: ../../appdev/platform/apparmor.rst:88
 msgid "Description: Can access contacts."
-msgstr "Описание:доступ к адресной книге."
+msgstr "Описание: доступ к адресной книге."
 
 #: ../../appdev/platform/apparmor.rst:92
 msgid "The contacts policy allows apps to access the device user's contacts list. It is marked as reserved because it allows access to sync-monitor and unfettered access to the address book."
 msgstr ""
-"Политика работы со списком контактов позволяет приложениям получать доступ к "
-"адресной книге пользователя устройства. Отмечена как зарезервированная, "
-"имеет доступ к службе синхронизации sync-monitor  и адресной книге."
+"Политика работы с адресной книгой позволяет приложениям получать доступ к "
+"адресной книге пользователя устройства. Политика зарезервирована, так как "
+"имеет доступ к службе синхронизации sync-monitor и адресной книге."
 
 #: ../../appdev/platform/apparmor.rst:96
 msgid "content_exchange"
@@ -1933,7 +1918,7 @@ msgstr "document_files"
 #: ../../appdev/platform/apparmor.rst:126
 msgid "Description: Can read and write to document files. This policy group is reserved for certain applications, such as document viewers. Developers should typically use the content_exchange policy group and API to access document files instead."
 msgstr ""
-"Описание: Чтение и запись файлов с документацией. Эта группа политик "
+"Описание: чтение и запись файлов с документацией. Эта группа политик "
 "зарезервирована для определенных приложений, таких как средства просмотра "
 "документов. Разработчикам для доступа к файлам документации лучше "
 "использовать группу политик content_exchange и API."
@@ -1964,7 +1949,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:143
 msgid "history"
-msgstr "history"
+msgstr "history (история действий пользователя)"
 
 #: ../../appdev/platform/apparmor.rst:145
 msgid "Description: Can access the history-service. This policy group is reserved for vetted applications only in this version of the policy. A future version of the policy may move this out of reserved status."
@@ -2039,19 +2024,18 @@ msgstr ""
 "в домашней папке пользователя или на внешнем носителе."
 
 #: ../../appdev/platform/apparmor.rst:197
-#, fuzzy
 msgid "networking"
 msgstr "networking (доступ к сети)"
 
 #: ../../appdev/platform/apparmor.rst:199
 msgid "Description: Can access the network"
-msgstr "Описание:возможность получения доступа к сети"
+msgstr "Описание: возможность получения доступа к сети"
 
 #: ../../appdev/platform/apparmor.rst:203
 msgid "The networking policy group allows an app to contact network devices and use the `download manager`_."
 msgstr ""
 "Группа сетевых политик позволяет приложению связываться с сетевыми "
-"устройствами и использовать диспетчер загрузки - `download manager`_.."
+"устройствами и использовать диспетчер загрузки - `download manager`_."
 
 #: ../../appdev/platform/apparmor.rst:207
 msgid "picture_files"
@@ -2179,16 +2163,14 @@ msgid "Description: Can use the UbuntuWebview"
 msgstr "Описание: может использоваться UbuntuWebview"
 
 #: ../../appdev/platform/apparmor.rst:289
-#, fuzzy
 msgid "The webview policy group allows apps to embed a `web browser view`_."
 msgstr ""
-"Группа политик веб-просмотра позволяет приложениям работать как в  окне "
-"браузера (`web browser view`_)"
+"Группа политик веб-просмотра позволяет приложениям работать как в окне "
+"браузера (`web browser view`_)."
 
 #: ../../appdev/platform/click.rst:4
-#, fuzzy
 msgid "Click package"
-msgstr "Пакет для установки приложений - \"Click\"."
+msgstr "Click-пакет"
 
 #: ../../appdev/platform/click.rst:6
 msgid "Every ``click`` application package must embed at least 3 files:"
@@ -2218,7 +2200,7 @@ msgstr "Файл политики профиля AppArmor"
 msgid "Contains which policy the app needs to work properly. See `Security and app isolation`_ below for more information on this file."
 msgstr ""
 "Здесь указано, с какой политикой приложение должно работать правильно. См. "
-"ниже раздел`Безопасность и изоляция приложения`_  для получения "
+"ниже раздел`Безопасность и изоляция приложения`_ для получения "
 "дополнительной информации об этом файле."
 
 #: ../../appdev/platform/click.rst:53

@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2020-05-14 16:24+0000\n"
-"Last-Translator: Mike <miguel2000@livecom.it>\n"
+"PO-Revision-Date: 2020-08-19 20:33+0000\n"
+"Last-Translator: Irio Bartolomei <irio92@gmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/it/>\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -386,7 +386,6 @@ msgid "Screen Casting your UT device to your computer"
 msgstr "Effettua lo screen cast verso il PC del tuo dispositivo UT"
 
 #: ../../userguide/advanceduse/screencasting.rst:5
-#, fuzzy
 msgid ""
 "Ubuntu Touch comes with a command line utility called ``mirscreencast`` "
 "which dumps screen frames to a file. The idea here is to stream UT display "
@@ -394,10 +393,10 @@ msgid ""
 "can either watch it live or record it to a file."
 msgstr ""
 "Ubuntu Touch viene fornito con un'utilità a riga di comando chiamata "
-"\"mirscreencast`` che scarica i frame dello schermo in un file. L'idea è "
-"quella di far scorrere lo schermo UT su un computer in ascolto sulla rete o "
-"indirizzarlo ad adb in modo da poterlo guardare dal vivo o registrarlo su un "
-"file."
+"``mirscreencast`` che salva i frame dello schermo in un file. L'idea è "
+"quella di trasmettere lo schermo UT su un computer in ascolto sulla rete o "
+"indirizzarlo tramite adb in modo da poterlo guardare dal vivo o registrarlo "
+"su un file."
 
 #: ../../userguide/advanceduse/screencasting.rst:9
 msgid "Using adb"
@@ -628,14 +627,13 @@ msgid "Run Android applications"
 msgstr "Esegui applicazioni android"
 
 #: ../../userguide/dailyuse/anbox.rst:4
-#, fuzzy
 msgid ""
 "`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility "
 "layer that allows you to run Android applications on GNU/Linux operating "
 "systems."
 msgstr ""
-"`Anbox <https://anbox.io>`_ è un contenitore android e uno strato di "
-"compatibilita che permette di eseguire applicazioni android sul sistema "
+"`Anbox <https://anbox.io>`_ è un contenitore Android e uno strato di "
+"compatibilità che permette di eseguire applicazioni Android sul sistema "
 "operativo GNU/Linux."
 
 #: ../../userguide/dailyuse/anbox.rst:7
@@ -664,27 +662,39 @@ msgstr "Assicurati che il tuo dispositivo sia supportato:"
 msgid ""
 "Meizu Pro 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)"
 msgstr ""
+"Meizu Pro 5 (nome in codice: ``turbo``, nome della partizione di boot: "
+"``bootimg``)"
 
 #: ../../userguide/dailyuse/anbox.rst:16
 msgid "Fairphone 2 (codename: ``FP2``, name of the boot partition: ``boot``)"
 msgstr ""
+"Fairphone 2 (nome in codice: ``FP2``, nome della partizione di boot: "
+"``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:17
 msgid "Oneplus one (codename: ``bacon``, name of the boot partition: ``boot``)"
 msgstr ""
+"Oneplus one (nome in codice: ``bacon``, nome della partizione di boot: "
+"``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:18
 msgid ""
 "Nexus 5 (codename: ``hammerhead``, name of the boot partition: ``boot``)"
 msgstr ""
+"Nexus 5 (nome in codice: ``hammerhead``, nome della partizione di boot: "
+"``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:19
 msgid "BQ M10 HD (codename: ``cooler``, name of the boot partition: ``boot``)"
 msgstr ""
+"BQ M10 HD (nome in codice: ``cooler``, nome della partizione di boot: "
+"``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:20
 msgid "BQ M10 FHD (codename: ``frieza``, name of the boot partition: ``boot``)"
 msgstr ""
+"BQ M10 FHD (nome in codice: ``frieza``, nome della partizione di boot: "
+"``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:22
 msgid ""
@@ -710,6 +720,8 @@ msgstr ""
 msgid ""
 "Make sure your supported device runs on 16.04 (anbox doesn't work on 15.04)"
 msgstr ""
+"Assicurati che sul tuo dispositivo sia installata la versione 16.04 (anbox "
+"non funziona sulla versione 15.04)"
 
 #: ../../userguide/dailyuse/anbox.rst:31
 msgid ""
@@ -737,36 +749,34 @@ msgstr ""
 "host (stesso terminale dal quale hai eseguito il comando ``export``)::"
 
 #: ../../userguide/dailyuse/anbox.rst:43
-#, fuzzy
 msgid "Wait for the device to reboot, then run from your host::"
-msgstr "aspettare che il dispositivo si riavvii, quindi eseguire::"
+msgstr "Attendere che il dispositivo si riavvii, quindi eseguire::"
 
 #: ../../userguide/dailyuse/anbox.rst:52 ../../userguide/dailyuse/anbox.rst:66
 #: ../../userguide/dailyuse/anbox.rst:87
-#, fuzzy
 msgid ""
 "Done! You might have to refresh the apps scope (pull down from the center of "
 "the screen and release) for the new Android apps to show up."
 msgstr ""
-"Fatto! Selezionare \"Anbox\" nello scope delle app per usare le applicazioni "
-"android. Può darsi che per mostrare l'applicazione tu debba ricaricare lo "
-"scope delle app (premere al centro dello schermo e spostare t tutto verso il "
-"basso e poi rialsciare)."
+"Fatto! Può darsi che per mostrare l'applicazione tu debba ricaricare lo "
+"scope delle app (premere al centro dello schermo, trascinare verso il basso "
+"e poi rilasciare)."
 
 #: ../../userguide/dailyuse/anbox.rst:55
-#, fuzzy
 msgid "How to install new apks"
-msgstr "Come installare"
+msgstr "Come installare nuovi apks"
 
 #: ../../userguide/dailyuse/anbox.rst:57
 msgid ""
 "Copy the apk to ``/home/phablet/Downloads``, then run the following from "
 "your host::"
 msgstr ""
+"Copia il file apk in ``/home/phablet/Downloads``, ed eseguire il seguente "
+"comando dal tuo dispositivo::"
 
 #: ../../userguide/dailyuse/anbox.rst:69
 msgid "Keep your apps up to date"
-msgstr ""
+msgstr "Mantieni aggiornate le tue applicazioni"
 
 #: ../../userguide/dailyuse/anbox.rst:71
 msgid ""
@@ -774,49 +784,58 @@ msgid ""
 "ApkTrack. If you like to install one of the above apps you can find them "
 "here:"
 msgstr ""
+"Per mantenere aggiornate le tue applicazioni puoi utilizzare F-Droid o "
+"ApkTrack. Le puoi scaricare da qui:"
 
 #: ../../userguide/dailyuse/anbox.rst:73
 msgid "F-Droid: https://f-droid.org/"
-msgstr ""
+msgstr "F-Droid: https://f-droid.org/"
 
 #: ../../userguide/dailyuse/anbox.rst:74
 msgid "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
-msgstr ""
+msgstr "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
 
 #: ../../userguide/dailyuse/anbox.rst:77
-#, fuzzy
 msgid "How to uninstall applications"
-msgstr "Come installare"
+msgstr "Come disinstallare le applicazioni"
 
 #: ../../userguide/dailyuse/anbox.rst:79
 msgid "This is a example of the app-list installed apps on your device"
 msgstr ""
+"Questo è un esempio di come sono mostrate le applicazioni installate sul "
+"dispositivo"
 
 #: ../../userguide/dailyuse/anbox.rst:80
 msgid ""
 "To uninstall apps, run ``adb uninstall [APP_ID]`` from your Ubuntu Touch "
 "device::"
 msgstr ""
+"Per disinstallare le applicazioni, eseguire ``adb uninstall [APP_ID]`` dal "
+"dispositivo Ubuntu Touch::"
 
 #: ../../userguide/dailyuse/anbox.rst:90
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Risoluzione dei problemi"
 
 #: ../../userguide/dailyuse/anbox.rst:92
 msgid ""
 "If installing ``anbox-ubuntu-touch`` or ``android-tools-adb`` on the device "
 "fails with an error about unsufficient space, try this::"
 msgstr ""
+"Se l'installazione di ``anbox-ubuntu-touch`` o ``android-tools-adb`` "
+"fallisce con un errore di spazio insufficiente, provare così::"
 
 #: ../../userguide/dailyuse/anbox.rst:103
 msgid ""
 "When you want to install an apk but get the error ``Invalid APK file`` that "
 "error could also mean \"file not found\""
 msgstr ""
+"Se durante l'installazione di un apk si ottiene l'errore ``Invalid APK file``"
+", ciò può anche significare \"file non trovato\""
 
 #: ../../userguide/dailyuse/anbox.rst:105
 msgid "check that you typed the file name correctly"
-msgstr ""
+msgstr "controlla che il nome del file sia scritto correttamente"
 
 #: ../../userguide/dailyuse/anbox.rst:106
 msgid ""
@@ -824,13 +843,15 @@ msgid ""
 "have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` "
 "instead of just ``my-app.apk``"
 msgstr ""
+"se il file apk non si trova nella cartella dalla quale è in esecuzione adb, "
+"bisogna specificare il percorso completo, per esempio: ``/home/phablet/"
+"Downloads/my-app.apk`` invece di ``my-app.apk``"
 
 #: ../../userguide/dailyuse/anbox.rst:110
 msgid "Reporting bugs"
 msgstr "Report di bug (bachi)"
 
 #: ../../userguide/dailyuse/anbox.rst:112
-#, fuzzy
 msgid ""
 "Please :doc:`report any bugs </contribute/bugreporting>` you come across. "
 "Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch "
@@ -838,10 +859,10 @@ msgid ""
 "anbox are reported on `our downstream fork <https://github.com/ubports/anbox/"
 "issues>`_. Thank you!"
 msgstr ""
-"Per sapere come :doc:`fare report di bug (bachi) </contribute/"
-"bugreporting>`. Si possono fare i report dei bachi di Ubuntu Touch 16.04 nel "
-"`solito sistema di tracciamento di Ubuntu Touch<https://github.com/ubports/"
-"ubuntu-touch/issues>`_ mentre i problemi con anbox nel `nostro fork a valle "
+"Per favore :doc:`segnala eventuali bug </contribute/bugreporting>` in cui ti "
+"imbatti. I bug relativi a Ubuntu Touch 16.04 sono segnalati`nel normal "
+"Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ e i "
+"problemi relativi ad anbox sono segnalati nel `nostro downstream fork "
 "<https://github.com/ubports/anbox/issues>`_. Grazie!"
 
 #: ../../userguide/dailyuse/index.rst:2
@@ -888,12 +909,11 @@ msgid "Create a container"
 msgstr "Creare un contenitore"
 
 #: ../../userguide/dailyuse/libertine.rst:14
-#, fuzzy
 msgid ""
 "The first step is to create a container where applications can be installed::"
 msgstr ""
 "Il primo passo è quello di creare un contenitore in cui installare le "
-"applicazioni:"
+"applicazioni::"
 
 #: ../../userguide/dailyuse/libertine.rst:18
 msgid "You can add extra options such as:"
@@ -940,9 +960,8 @@ msgid "List containers"
 msgstr "Lista dei contenitori"
 
 #: ../../userguide/dailyuse/libertine.rst:31
-#, fuzzy
 msgid "To list all containers created run::"
-msgstr "Per elencare tutti i contenitori creati eseguire:"
+msgstr "Per elencare tutti i contenitori creati eseguire::"
 
 #: ../../userguide/dailyuse/libertine.rst:36
 msgid "Destroy a container"
@@ -953,21 +972,18 @@ msgid "Manage applications"
 msgstr "Gestione applicazioni"
 
 #: ../../userguide/dailyuse/libertine.rst:44
-#, fuzzy
 msgid "Once a container is set up, you can list the installed applications::"
 msgstr ""
 "Dopo aver configurato un contenitore, è possibile elencare le applicazioni "
-"installate:"
+"installate::"
 
 #: ../../userguide/dailyuse/libertine.rst:48
-#, fuzzy
 msgid "Install a package::"
-msgstr "Installare un pacchetto:"
+msgstr "Installare un pacchetto::"
 
 #: ../../userguide/dailyuse/libertine.rst:52
-#, fuzzy
 msgid "Remove a package::"
-msgstr "Rimuovere un pacchetto:"
+msgstr "Rimuovere un pacchetto::"
 
 #: ../../userguide/dailyuse/libertine.rst:57
 msgid ""
@@ -1009,7 +1025,7 @@ msgstr "Video"
 
 #: ../../userguide/dailyuse/libertine.rst:72
 msgid "Tips"
-msgstr ""
+msgstr "Suggerimenti"
 
 #: ../../userguide/dailyuse/libertine.rst:75
 msgid "Locations"
@@ -1040,10 +1056,9 @@ msgid "Shell access"
 msgstr "Accesso alla shell"
 
 #: ../../userguide/dailyuse/libertine.rst:85
-#, fuzzy
 msgid "There are 2 options for executing commands inside the container."
 msgstr ""
-"Per eseguire qualsiasi comando come root all'interno del contenitore esegui:"
+"Ci sono 2 possibili opzioni per eseguire comandi all'interno del contenitore."
 
 #: ../../userguide/dailyuse/libertine.rst:87
 msgid ""
@@ -1057,23 +1072,30 @@ msgid ""
 "may lead to problems with software that tries to create temporary files or "
 "directories. You may use this option e.g., for installing packages."
 msgstr ""
+"**La prima opzione** si basa su ``libertine-container-manager exec``. Tale "
+"soluzione permette di eseguire comandi con i privilegi di root. Lo "
+"svantaggio è che il contenitore non viene completamente impostato. Finora "
+"sappiamo che `le cartelle citate (Documenti, Musica, ...) non sono montate "
+"<https://askubuntu.com/questions/831830/libertine-terminal-applications-how-"
+"to-access-to-the-real-home-dir#comment1273744_833984/>`_ per esempio, la "
+"cartella ``/home/phablet/`` è vuota. Allo stesso modo la cartella a cui si "
+"fa riferimento in ``TMPDIR`` non è disponibile e ciò può causare problemi al "
+"software che cerca di creare file o cartelle temporanee. È possibile "
+"utilizzare questa opzione, ad esempio, per installare pacchetti."
 
 #: ../../userguide/dailyuse/libertine.rst:90
 #: ../../userguide/dailyuse/libertine.rst:104
-#, fuzzy
 msgid "To execute a command you can use the following pattern::"
-msgstr ""
-"Per eseguire qualsiasi comando come root all'interno del contenitore esegui:"
+msgstr "Per eseguire un comando è possibile utilizzare il seguente schema::"
 
 #: ../../userguide/dailyuse/libertine.rst:94
 #: ../../userguide/dailyuse/libertine.rst:108
 msgid "For example run::"
-msgstr ""
+msgstr "Per esempio esegui::"
 
 #: ../../userguide/dailyuse/libertine.rst:98
-#, fuzzy
 msgid "To get a shell into your container as ``root`` run::"
-msgstr "Ad esempio, per ottenere una shell nel tuo contenitore puoi eseguire:"
+msgstr "Per ottenere una shell nel contenitore come ``root`` eseguire::"
 
 #: ../../userguide/dailyuse/libertine.rst:102
 msgid ""
@@ -1081,11 +1103,14 @@ msgid ""
 "commands as user phablet in a completely set up container. So you may use "
 "this option to modify your files using installed packages."
 msgstr ""
+"**La seconda opzione** si basa su ``libertine-launch``. Tale soluzione "
+"permette di eseguire i comandi come l'utente phablet in un contenitore "
+"completamente configurato. È possibile utilizzare questa opzione per "
+"modificare i files utilizzando i pacchetti installati."
 
 #: ../../userguide/dailyuse/libertine.rst:112
-#, fuzzy
 msgid "To get a shell as user ``phablet`` run::"
-msgstr "Per ottenere una shell come utente ``phablet`` esegui:"
+msgstr "Per ottenere una shell come utente ``phablet`` esegui::"
 
 #: ../../userguide/dailyuse/libertine.rst:117
 msgid ""
@@ -1101,13 +1126,15 @@ msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:120
 msgid "Shortcuts"
-msgstr ""
+msgstr "Scorciatoie"
 
 #: ../../userguide/dailyuse/libertine.rst:122
 msgid ""
 "If you want, you can add aliases for command line tools. Add lines like the "
 "following ones to your ``~/.bash_aliases``::"
 msgstr ""
+"Se vuoi, puoi aggiungere degli alias per gli strumenti della riga di "
+"comando. Aggiungi delle righe come le seguenti al file ``~/.bash_aliases``::"
 
 #: ../../userguide/dailyuse/libertine.rst:128
 msgid "Background"
@@ -1194,7 +1221,6 @@ msgid "Ubuntu or Debian: ``ubports-installer-<version-number>.deb``"
 msgstr "Ubuntu o Debian: ``ubports-installer-<numero-versione>.deb``"
 
 #: ../../userguide/install.rst:14
-#, fuzzy
 msgid ""
 "Other Linux distributions: ``ubports-installer-<version-number>.snap`` or "
 "``ubports-installer-<version-number>.AppImage``"
@@ -1284,6 +1310,8 @@ msgid ""
 "`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ "
 "(*krillin*)"
 msgstr ""
+"`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ "
+"(*krillin*)"
 
 #: ../../userguide/install.rst:39
 msgid ""

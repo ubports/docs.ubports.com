@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-04-01 15:39+0000\n"
-"Last-Translator: Joan CiberSheep <cibersheep@gmail.com>\n"
+"PO-Revision-Date: 2020-07-27 12:31+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/ca/>\n"
 "Language: ca\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.11.3\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
@@ -648,10 +648,13 @@ msgid ""
 "you can connect your Ubuntu Touch device to. Your host device must have "
 "``adb`` and ``fastboot`` installed."
 msgstr ""
+"En aquest document, «amfitrió» fa referència a un altre dispositiu al qual "
+"podeu connectar el vostre dispositiu Ubuntu Touch. El dispositiu amfitrió ha "
+"de tenir instal·lats ``adb`` i ``fastboot``."
 
 #: ../../userguide/dailyuse/anbox.rst:11
 msgid "Supported devices"
-msgstr "Dispositius suportats"
+msgstr "Dispositius admesos"
 
 #: ../../userguide/dailyuse/anbox.rst:13
 msgid "Make sure your device is supported:"
@@ -661,27 +664,37 @@ msgstr "Assegureu-vos que el vostre dispositiu té suport:"
 msgid ""
 "Meizu Pro 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)"
 msgstr ""
+"Meizu Pro 5 (nom en codi: ``turbo``, nom de la partició d'arrencada: "
+"``bootimg``)"
 
 #: ../../userguide/dailyuse/anbox.rst:16
 msgid "Fairphone 2 (codename: ``FP2``, name of the boot partition: ``boot``)"
 msgstr ""
+"Fairphone 2 (nom en codi: ``FP2``, nom de la partició d'arrencada: ``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:17
 msgid "Oneplus one (codename: ``bacon``, name of the boot partition: ``boot``)"
 msgstr ""
+"Oneplus one (nom en codi: ``bacon``, nom de la partició d'arrencada: "
+"``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:18
 msgid ""
 "Nexus 5 (codename: ``hammerhead``, name of the boot partition: ``boot``)"
 msgstr ""
+"Nexus 5 (nom en codi: ``hammerhead``, nom de la partició d'arrencada: "
+"``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:19
 msgid "BQ M10 HD (codename: ``cooler``, name of the boot partition: ``boot``)"
 msgstr ""
+"BQ M10 HD (nom en codi: ``cooler``, nom de la partició d'arrencada: ``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:20
 msgid "BQ M10 FHD (codename: ``frieza``, name of the boot partition: ``boot``)"
 msgstr ""
+"BQ M10 FHD (nom en codi: ``frieza``, nom de la partició d'arrencada: "
+"``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:22
 msgid ""
@@ -707,19 +720,21 @@ msgstr ""
 msgid ""
 "Make sure your supported device runs on 16.04 (anbox doesn't work on 15.04)"
 msgstr ""
+"Assegureu-vos que el dispositiu admès executa 16.04 (l'anbox no funciona en "
+"15.04)"
 
 #: ../../userguide/dailyuse/anbox.rst:31
-#, fuzzy
 msgid ""
 "Open a terminal on your host and set some device specific variables by "
 "running ``export CODENAME=\"turbo\" && export PARTITIONNAME=\"bootimg\"``, "
 "but replace the part between the quotes respectively with the codename and "
 "name of the boot partition for your device. See the above list."
 msgstr ""
-"Obriu una terminal i executeu ``export CODENAME=\"turbo\" && export "
-"PARTITIONNAME=\"bootimg\"``, però reemplaceu la part entre cometes "
-"respectivament amb el nom de codi i el nom de la partició d'arrencada del "
-"vostre dispositiu. Vegeu la llista de dalt."
+"Obriu una terminal a l'amfitrió i establiu variables específiques del "
+"dispositiu: ``export CODENAME=\"turbo\" && export PARTITIONNAME=\"bootimg\""
+"``; heu de reemplaçar les parts entre cometes respectivament amb el nom en "
+"codi i el nom de la partició d'arrencada corresponent al vostre dispositiu. "
+"Vegeu la llista anterior."
 
 #: ../../userguide/dailyuse/anbox.rst:32
 msgid "Activate developer mode on your device."
@@ -730,37 +745,38 @@ msgid ""
 "Connect the device to your host and run the following commands from your "
 "host (same terminal that you ran the ``export`` command in)::"
 msgstr ""
+"Connecteu el dispositiu a l'amfitrió i executeu-hi les ordres següents (la "
+"mateixa terminal a la qual heu executat l'ordre ``export``)::"
 
 #: ../../userguide/dailyuse/anbox.rst:43
-#, fuzzy
 msgid "Wait for the device to reboot, then run from your host::"
-msgstr "espereu que el dispositiu es reiniciï, després executeu::"
+msgstr "Espereu que el dispositiu es reiniciï i després executeu a l'amfitrió::"
 
 #: ../../userguide/dailyuse/anbox.rst:52 ../../userguide/dailyuse/anbox.rst:66
 #: ../../userguide/dailyuse/anbox.rst:87
-#, fuzzy
 msgid ""
 "Done! You might have to refresh the apps scope (pull down from the center of "
 "the screen and release) for the new Android apps to show up."
 msgstr ""
-"Fet! Trieu «Anbox» a la lent d'aplicacions per usar aplicacions de "
-"l'android. Potser haureu d'actualitzar la lent d'aplicacions (arrossegueu "
-"des del centre de la pantalla i deixeu anar) perquè es mostri l'aplicació."
+"Fet! És possible que calgui actualitzar la lent d'aplicacions (llisqueu fins "
+"a la part inferior des del centre de la pantalla i deixeu anar) perquè les "
+"aplicacions Android noves s'hi mostren."
 
 #: ../../userguide/dailyuse/anbox.rst:55
-#, fuzzy
 msgid "How to install new apks"
-msgstr "Com instal·lar-ho"
+msgstr "Com instal·lar APK nous"
 
 #: ../../userguide/dailyuse/anbox.rst:57
 msgid ""
 "Copy the apk to ``/home/phablet/Downloads``, then run the following from "
 "your host::"
 msgstr ""
+"Copieu l'APK a ``/home/phablet/Baixades`` i, tot seguit, executeu aquesta "
+"ordre a l'amfitrió::"
 
 #: ../../userguide/dailyuse/anbox.rst:69
 msgid "Keep your apps up to date"
-msgstr ""
+msgstr "Actualització constant de les aplicacions"
 
 #: ../../userguide/dailyuse/anbox.rst:71
 msgid ""
@@ -768,49 +784,59 @@ msgid ""
 "ApkTrack. If you like to install one of the above apps you can find them "
 "here:"
 msgstr ""
+"Podeu fer servir l'F-Droid o l'ApkTrack per a utilitzar sempre les darreres "
+"versions de les vostres aplicacions. Si voleu instal·lar una d'aquestes "
+"aplicacions, les trobareu aquí:"
 
 #: ../../userguide/dailyuse/anbox.rst:73
 msgid "F-Droid: https://f-droid.org/"
-msgstr ""
+msgstr "F-Droid: https://f-droid.org/"
 
 #: ../../userguide/dailyuse/anbox.rst:74
 msgid "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
-msgstr ""
+msgstr "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
 
 #: ../../userguide/dailyuse/anbox.rst:77
-#, fuzzy
 msgid "How to uninstall applications"
-msgstr "Com instal·lar-ho"
+msgstr "Com desinstal·lar aplicacions"
 
 #: ../../userguide/dailyuse/anbox.rst:79
 msgid "This is a example of the app-list installed apps on your device"
 msgstr ""
+"Això és un exemple de les aplicacions provinents d'una llista que hi ha "
+"instal·lades al dispositiu"
 
 #: ../../userguide/dailyuse/anbox.rst:80
 msgid ""
 "To uninstall apps, run ``adb uninstall [APP_ID]`` from your Ubuntu Touch "
 "device::"
 msgstr ""
+"Per a desinstal·lar aplicacions, executeu ``adb uninstall [APP_ID]`` des del "
+"dispositiu Ubuntu Touch::"
 
 #: ../../userguide/dailyuse/anbox.rst:90
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Solució de problemes"
 
 #: ../../userguide/dailyuse/anbox.rst:92
 msgid ""
 "If installing ``anbox-ubuntu-touch`` or ``android-tools-adb`` on the device "
 "fails with an error about unsufficient space, try this::"
 msgstr ""
+"Si instal·lar ``anbox-ubuntu-touch`` o ``android-tools-adb`` al dispositiu "
+"falla amb un error d'espai insuficient, proveu de fer el següent::"
 
 #: ../../userguide/dailyuse/anbox.rst:103
 msgid ""
 "When you want to install an apk but get the error ``Invalid APK file`` that "
 "error could also mean \"file not found\""
 msgstr ""
+"Si voleu instal·lar un APK però rebeu l'error ``Fitxer APK no vàlid``, això "
+"pot significar també «fitxer no trobat»"
 
 #: ../../userguide/dailyuse/anbox.rst:105
 msgid "check that you typed the file name correctly"
-msgstr ""
+msgstr "cercioreu-vos que heu escrit el nom del fitxer correctament"
 
 #: ../../userguide/dailyuse/anbox.rst:106
 msgid ""
@@ -818,6 +844,9 @@ msgid ""
 "have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` "
 "instead of just ``my-app.apk``"
 msgstr ""
+"si l'APK no és a la mateixa carpeta que on executeu l'adb, heu d'especificar-"
+"ne el camí complet, p. ex., ``/home/phablet/Baixades/la-meva-apli.apk`` en "
+"lloc de ``la-meva-apli.apk``"
 
 #: ../../userguide/dailyuse/anbox.rst:110
 msgid "Reporting bugs"
@@ -868,9 +897,9 @@ msgid ""
 "ubuntu>`_. To install applications you need to use the commandline as "
 "described below."
 msgstr ""
-"Per mostrar i llençar aplicacions us cal la «Lent d'aplicacions "
+"Per a mostrar i iniciar aplicacions us cal la «Lent d'aplicacions "
 "d'escriptori» que està disponible a l'`Open Store <https://open-store.io/app/"
-"libertine-scope.ubuntu>`_. Per instal·lar aplicacions us cal usar la línia "
+"libertine-scope.ubuntu>`_. Per a instal·lar aplicacions us cal usar la línia "
 "d'ordres com s'explica a sota."
 
 #: ../../userguide/dailyuse/libertine.rst:9
@@ -882,11 +911,10 @@ msgid "Create a container"
 msgstr "Creació d'un contenidor"
 
 #: ../../userguide/dailyuse/libertine.rst:14
-#, fuzzy
 msgid ""
 "The first step is to create a container where applications can be installed::"
 msgstr ""
-"El primer pas per crear un contenidor on es poden instal·lar aplicacions:"
+"El primer pas és crear un contenidor on es puguin instal·lar aplicacions::"
 
 #: ../../userguide/dailyuse/libertine.rst:18
 msgid "You can add extra options such as:"
@@ -1003,7 +1031,7 @@ msgstr "Vídeos"
 
 #: ../../userguide/dailyuse/libertine.rst:72
 msgid "Tips"
-msgstr ""
+msgstr "Consells"
 
 #: ../../userguide/dailyuse/libertine.rst:75
 msgid "Locations"
@@ -1064,13 +1092,13 @@ msgstr ""
 #: ../../userguide/dailyuse/libertine.rst:94
 #: ../../userguide/dailyuse/libertine.rst:108
 msgid "For example run::"
-msgstr ""
+msgstr "Per exemple, executeu::"
 
 #: ../../userguide/dailyuse/libertine.rst:98
-#, fuzzy
 msgid "To get a shell into your container as ``root`` run::"
 msgstr ""
-"Per exemple, per obtenir una consola dins del contenidor podeu executar:"
+"Per a obtenir una consola dins del contenidor com a ``root``, podeu "
+"executar::"
 
 #: ../../userguide/dailyuse/libertine.rst:102
 msgid ""
@@ -1098,13 +1126,15 @@ msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:120
 msgid "Shortcuts"
-msgstr ""
+msgstr "Dreceres"
 
 #: ../../userguide/dailyuse/libertine.rst:122
 msgid ""
 "If you want, you can add aliases for command line tools. Add lines like the "
 "following ones to your ``~/.bash_aliases``::"
 msgstr ""
+"Si ho voleu, podeu afegir àlies per a les eines de consola. Afegiu línies "
+"com aquestes al vostre fitxer ``~/.bash_aliases``::"
 
 #: ../../userguide/dailyuse/libertine.rst:128
 msgid "Background"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 14:08-0500\n"
-"PO-Revision-Date: 2020-06-24 16:25+0000\n"
+"PO-Revision-Date: 2020-08-02 16:52+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/ru/>\n"
@@ -28,9 +28,8 @@ msgstr "Подготовка баг-репортов"
 msgid "This page contains information to help you help us by reporting an actionable bug for Ubuntu Touch. It does NOT contain information on reporting bugs in apps, most of the time their entry in the OpenStore will specify where and how to do that."
 msgstr ""
 "На этой странице содержится информация, которая поможет вам сообщить об "
-"ошибках в Ubuntu Touch. Тут НЕ содержится информации  как сообщить об "
-"ошибках в приложениях. Об том можно узнать на страничке приложения в "
-"OpenStore."
+"ошибках в Ubuntu Touch. Тут НЕ содержится информации как сообщить об ошибках "
+"в приложениях. Об том можно узнать на страничке приложения в OpenStore."
 
 #: ../../contribute/bugreporting.rst:7
 msgid "Get the latest Ubuntu Touch"
@@ -243,6 +242,8 @@ msgstr ""
 #: ../../contribute/documentation.rst:19
 msgid "Titles should be sentence cased rather than Title Cased. For example::"
 msgstr ""
+"Заголовки должны быть написаны в верхнем регистре, а не просто заглавными "
+"буквами. Например::"
 
 #: ../../contribute/documentation.rst:28
 msgid "There isn't a single definition of title casing that everyone follows, but sentence casing is easy. This helps keep capitalization in the table of contents consistent."
@@ -286,7 +287,6 @@ msgid "Underline too short"
 msgstr "Линия подчёркивания слишком короткая"
 
 #: ../../contribute/documentation.rst:59
-#, fuzzy
 msgid "Underline too long"
 msgstr "Линия подчёркивания слишком длинная"
 
@@ -340,16 +340,15 @@ msgid "Warnings"
 msgstr "Предупреждения и ошибки"
 
 #: ../../contribute/documentation.rst:110
-#, fuzzy
 msgid "Your edits must not introduce any warnings into the documentation build. If any warnings occur, the build will fail and your pull request will be marked with a red 'X'. Please ensure that your RST is valid and correct before you create a pull request. This is done automatically (via sphinx-build crashing with your error) if you follow :ref:`our build instructions <doc-contribution-workflow>` below."
 msgstr ""
 "Правки не должны вносить никаких ошибок в раздел с документацией. Если "
 "появятся какие-либо предупреждения или ошибки, сборка завершится неудачно, и "
-"запрос на компиляцию  будет помечен красным крестиком. Пожалуйста, "
-"убедитесь, что ваш RST-файл является правильным, прежде чем запускать "
-"процесс сборки.Это произойдет автоматически (через sphinx-build crashing), "
-"если Вы будете выполнять :ref:`инструкции по созданию документации <doc-"
-"contribution-workflow>`, приведённые ниже."
+"запрос на компиляцию будет помечен красным крестиком. Пожалуйста, убедитесь, "
+"что ваш RST-файл является правильным, прежде чем запускать процесс сборки. "
+"Это произойдет автоматически (через sphinx-build crashing), если Вы будете "
+"выполнять :ref:`инструкции по созданию документации <doc-contribution-"
+"workflow>`, приведённые ниже."
 
 #: ../../contribute/documentation.rst:114
 msgid "Line length"
@@ -397,7 +396,6 @@ msgid "Building the documentation"
 msgstr "Сборка комплекта документации"
 
 #: ../../contribute/documentation.rst:136
-#, fuzzy
 msgid "If you'd like to build this documentation *before* sending a PR (which you should), follow these instructions on your *local copy* of your fork of the repository."
 msgstr ""
 "Если Вы хотите скомпилировать пакет с комплектом документации *до* отправки "
@@ -424,13 +422,12 @@ msgstr ""
 "Если у Вас возникают проблемы при компиляции пакета документации, сначала "
 "попробуйте удалить рабочую среду для формирования сборки. Запустите команду "
 "``rm -r ~/ubportsdocsenv``и попробуйте снова запустить процесс сборки. В "
-"зависимости от рабочего окружения может потребоваться команда  ``sudo`` "
-"перед ``rm``."
+"зависимости от рабочего окружения может потребоваться команда ``sudo`` перед "
+"``rm``."
 
 #: ../../contribute/documentation.rst:145
-#, fuzzy
 msgid "Alternative methods to contribute"
-msgstr "Другие способы работы с документацией"
+msgstr "Другие варианты помощи"
 
 #: ../../contribute/documentation.rst:148
 #: ../../contribute/translations.rst:2
@@ -502,7 +499,7 @@ msgstr ""
 msgid "If you're just getting started, we always need help with :doc:`thorough bug reporting <bugreporting>`. If you are multilingual, :doc:`translations <translations>` are also a great place to start."
 msgstr ""
 "Если Вы только начинаете знакомство с Ubuntu Touch, мы будем благодарны за "
-":doc:`сообщения об ошибках <bugreporting>`. Если вы знаете иностранные "
+":doc:`сообщения об ошибках <bugreporting>`. Если Вы знаете иностранные "
 "языки, помогите нам с :doc:`переводами <translations>`."
 
 #: ../../contribute/index.rst:8
@@ -562,7 +559,7 @@ msgstr "Какие базовые программы уже существуют
 
 #: ../../contribute/preinstalled-apps.rst:14
 msgid "A full list of the Ubuntu Touch core apps follows."
-msgstr "Полный список базовых программ для Ubuntu Touch будет далее."
+msgstr "Полный список основных программ для Ubuntu Touch будет далее."
 
 #: ../../contribute/preinstalled-apps.rst:21
 msgid "Application Name"
