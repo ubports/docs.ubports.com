@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-08 17:32-0500\n"
-"PO-Revision-Date: 2020-06-27 15:19+0000\n"
+"PO-Revision-Date: 2020-08-03 22:59+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/ru/>\n"
@@ -247,9 +247,10 @@ msgstr ""
 "последствиях и не занимайтесь взломом устройства без особой нужды!"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:2
-#, fuzzy
 msgid "Reverse tethering"
-msgstr "Использование телефона в качестве точки доступа и раздача Интернета"
+msgstr ""
+"Использование телефона в качестве точки доступа к сети wifi и раздача "
+"Интернета"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:4
 msgid "Some users may not have an available wifi connection for their phone nor a data subscription from their mobile provider. This short tutorial will help you to connect your Ubuntu Touch to your computer to access internet."
@@ -324,7 +325,6 @@ msgstr ""
 "tethering-and-click-apps-updates"
 
 #: ../../userguide/advanceduse/screencasting.rst:2
-#, fuzzy
 msgid "Screen Casting your UT device to your computer"
 msgstr "Screen Casting с мобильного устройства на компьютер"
 
@@ -478,9 +478,8 @@ msgstr ""
 "копируется следующей командой::"
 
 #: ../../userguide/advanceduse/ssh.rst:27
-#, fuzzy
 msgid "Configure your device"
-msgstr "Сконфигурируйте устройство"
+msgstr "Настройте устройство"
 
 #: ../../userguide/advanceduse/ssh.rst:29
 msgid "Now you have the public key on the UBports device. Let's assume it's stored as ``/home/phablet/id_rsa.pub``. Use the terminal app or and adb connection to perform the following steps on your phone. ::"
@@ -511,8 +510,8 @@ msgstr ""
 #: ../../userguide/advanceduse/ssh.rst:55
 msgid "`askubuntu.com: How can I access my Ubuntu phone over ssh? <https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-over-ssh/599041#599041>`_"
 msgstr ""
-"`askubuntu.com: How can I access my Ubuntu phone over ssh? "
-"<https://askubuntu.com/questions/348714/"
+"`askubuntu.com: Как можно получить доступ к смартфону Ubuntu по протоколу "
+"ssh? <https://askubuntu.com/questions/348714/"
 "how-can-i-access-my-ubuntu-phone-over-ssh/599041#599041>`_"
 
 #: ../../userguide/advanceduse/ssh.rst:56
@@ -528,16 +527,15 @@ msgid "Switch release channels"
 msgstr "Переключить каналы с релизами"
 
 #: ../../userguide/dailyuse/anbox.rst:2
-#, fuzzy
 msgid "Android apps"
 msgstr "Приложения Android"
 
 #: ../../userguide/dailyuse/anbox.rst:4
 msgid "`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer that allows you to run Android apps on GNU/Linux operating systems such as UBports."
 msgstr ""
-"`Anbox <https://anbox.io>`_ минимальный Android-контейнер и слой "
+"`Anbox <https://anbox.io>`_ - минимальный Android-контейнер и слой "
 "совместимости, который позволяет мобильным приложениям и мобильным играм, "
-"разработанным для OS Android, работать в дистрибутивах GNU/Linux.."
+"разработанным для OS Android, работать в дистрибутивах GNU/Linux."
 
 #: ../../userguide/dailyuse/anbox.rst:7
 msgid "When \"host\" is used in this document, it refers to another device which you can connect your Ubuntu Touch device to. Your host device must have ``adb`` and ``fastboot`` installed."
@@ -593,7 +591,6 @@ msgstr ""
 "раздела."
 
 #: ../../userguide/dailyuse/anbox.rst:24
-#, fuzzy
 msgid "How to install"
 msgstr "Порядок установки"
 
@@ -648,18 +645,17 @@ msgstr "Установка новых приложений APK"
 #: ../../userguide/dailyuse/anbox.rst:56
 msgid "Copy the APK to ``/home/phablet/Downloads``, then run the following from your host::"
 msgstr ""
-"Скопируйте файл APK в директорию``/home/phablet/Downloads``,  затем из "
+"Скопируйте файл APK в директорию``/home/phablet/Downloads``, затем из "
 "терминала на ПК выполните следующее::"
 
 #: ../../userguide/dailyuse/anbox.rst:68
-#, fuzzy
 msgid "Keep your apps up to date"
-msgstr "Своевременно обновляйте установленные программы."
+msgstr "Приложения нужно вовремя обновлять до актуальных версий"
 
 #: ../../userguide/dailyuse/anbox.rst:70
 msgid "To keep your apps up to date you can use of F-Droid or ApkTrack. If you want to install any of the above apps you can find them here:"
 msgstr ""
-"Все приложения в актуальном состоянии можно найти в репозиториях F-Droid или "
+"Все самые последние версии программ можно найти в репозиториях F-Droid или "
 "ApkTrack. Все приложения, которые упоминаются в этой инструкции, можно найти "
 "здесь:"
 
@@ -682,8 +678,8 @@ msgstr "Пример списка приложений, установленны
 #: ../../userguide/dailyuse/anbox.rst:79
 msgid "To uninstall apps, run ``adb uninstall [APP_ID]`` from your Ubuntu Touch device::"
 msgstr ""
-"Удалить приложение можно командой `` adb uninstall [APP_ID] ``, запускаемой  "
-"с вашего устройства Ubuntu Touch::"
+"Удалить приложение можно командой ``adb uninstall [APP_ID] ``, запускаемой с "
+"вашего устройства Ubuntu Touch::"
 
 #: ../../userguide/dailyuse/anbox.rst:89
 msgid "Troubleshooting"
@@ -692,14 +688,14 @@ msgstr "Траблшутинг"
 #: ../../userguide/dailyuse/anbox.rst:91
 msgid "If installing ``anbox-ubuntu-touch`` or ``android-tools-adb`` on the device fails with an error about unsufficient space, try this::"
 msgstr ""
-"Если при установке `` anbox-ubuntu-touch`` или `` android-tools-adb`` на "
+"Если при установке ``anbox-ubuntu-touch`` или ``android-tools-adb`` на "
 "устройстве появляется сообщение о нехватке места, попробуйте следующее:"
 
 #: ../../userguide/dailyuse/anbox.rst:102
 msgid "When you want to install an apk but get the error ``Invalid APK file`` that error could also mean \"file not found\""
 msgstr ""
-"Если при попытке установить приложение apk выдается сообщение`` Invalid APK "
-"file``, это также может означать, что файл не найден"
+"Если при попытке установить приложение apk выдается сообщение``Invalid APK "
+"file``, это также может означать, что \"файл не найден\""
 
 #: ../../userguide/dailyuse/anbox.rst:104
 msgid "Check that you typed the file name correctly"
@@ -722,20 +718,18 @@ msgstr ""
 "Пожалуйста: doc: `сообщайте о любых ошибках </contribute/bugreporting>`, с "
 "которыми Вы сталкиваетесь. Для ошибок в Ubuntu Touch 16.04 существует `баг-"
 "трекер Ubuntu Touch <https://github.com/ubports/ubuntu-touch/issues>` _, а "
-"для ошибок в Anbox есть раздел на `нашей страничке проекта в "
-"Github<https://github.com/ubports/anbox/issues>`_. Спасибо!"
+"для ошибок в Anbox есть раздел на `нашей страничке проекта в Github "
+"<https://github.com/ubports/anbox/issues>`_. Спасибо!"
 
 #: ../../userguide/dailyuse/index.rst:2
-#, fuzzy
 msgid "Daily use"
-msgstr "Повседневное использование"
+msgstr "Постоянное использование"
 
 #: ../../userguide/dailyuse/index.rst:4
 msgid "This section of the documentation details common tasks that users may want to perform while using their Ubuntu Touch device."
 msgstr ""
 "В этом разделе документации подробно описываются общие задачи, которые "
-"пользователи могут выполнять при использовании своего устройства с Ubuntu "
-"Touch."
+"пользователи могут выполнять при работе с устройством Ubuntu Touch."
 
 #: ../../userguide/dailyuse/libertine.rst:2
 msgid "Run desktop applications"
@@ -750,13 +744,12 @@ msgstr ""
 #: ../../userguide/dailyuse/libertine.rst:6
 msgid "To display and launch applications you need the *Desktop Apps Scope* which is available in the `Open Store <https://open-store.io/app/libertine-scope.ubuntu>`_. To install applications you need to use the commandline as described below."
 msgstr ""
-"Для отображения и запуска приложений потребуется установить * Desktop Apps "
-"Scope *. Его можно скачать из`Open Store <https://open-store.io/app/"
-"libertine-scope.ubuntu>` _. Установка приложений осуществляется из командной "
-"строки, как описано ниже."
+"Для отображения и запуска приложений потребуется установить *Desktop Apps "
+"Scope*. Его можно скачать из`Open Store <https://open-store.io/app/libertine-"
+"scope.ubuntu>` _. Установка приложений осуществляется из командной строки, "
+"как описано ниже."
 
 #: ../../userguide/dailyuse/libertine.rst:9
-#, fuzzy
 msgid "Manage containers"
 msgstr "Управление контейнерами"
 
@@ -765,7 +758,6 @@ msgid "Create a container"
 msgstr "Создайте контейнер"
 
 #: ../../userguide/dailyuse/libertine.rst:14
-#, fuzzy
 msgid "The first step is to create a container where applications can be installed::"
 msgstr "Шаг 1. Создайте контейнер, куда можно установить программы::"
 
@@ -775,14 +767,14 @@ msgstr "Можно использовать и дополнительные оп
 
 #: ../../userguide/dailyuse/libertine.rst:20
 msgid "``-n name`` name is a more user friendly name of the container"
-msgstr "`` -n name``, где name - более удобное имя контейнера"
+msgstr "``-n name``, где name - более удобное имя контейнера"
 
 #: ../../userguide/dailyuse/libertine.rst:21
 msgid "``-t type`` type can be either ``chroot`` or ``lxc``. Default is ``chroot`` and is compatible with every device. If the kernel of your device supports it then ``lxc`` is suggested."
 msgstr ""
-"`` -t type`` может быть `` chroot`` или `` lxc``. По умолчанию используется  "
-"опция`` chroot`, она совместимо с любым устройством. Если ядро устройства "
-"поддерживает режим `` lxc`, то рекомендуется использовать его."
+"``-t type`` может быть ``chroot`` или ``lxc``. По умолчанию используется "
+"опция``chroot`, она совместимо с любым устройством. Если ядро устройства "
+"поддерживает режим ``lxc`, то рекомендуется использовать его."
 
 #: ../../userguide/dailyuse/libertine.rst:23
 msgid "The creating process can take some time, due to the size of the container (some hundred of megabytes)."
@@ -793,11 +785,11 @@ msgstr ""
 #: ../../userguide/dailyuse/libertine.rst:26
 msgid "The ``create`` command shown above cannot be run directly in the terminal app, due apparmor restrictions. You can run it from another device using either ``adb`` or ``ssh`` connection. Alternatively, you can run it from the terminal app using a loopback ssh connection running this command: ``ssh localhost``."
 msgstr ""
-"Команда `` create``, показанная выше, не может быть запущена непосредственно "
+"Команда ``create``, показанная выше, не может быть запущена непосредственно "
 "в приложении терминала из-за ограничений apparmor. Вы можете запустить её с "
-"другого устройства, используя соединение `` adb`` или `` ssh``. Кроме того, "
-"Вы можете запустить команду из приложения терминала, используя петлевое ssh-"
-"соединение с помощью команды: `` ssh localhost``."
+"другого устройства, используя соединение ``adb`` или ``ssh``. Кроме того, Вы "
+"можете запустить команду из приложения терминала, используя петлевое ssh-"
+"соединение с помощью команды: ``ssh localhost``."
 
 #: ../../userguide/dailyuse/libertine.rst:29
 msgid "List containers"

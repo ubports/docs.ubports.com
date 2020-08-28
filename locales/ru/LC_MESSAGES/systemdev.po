@@ -1,0 +1,969 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
+# This file is distributed under the same license as the UBports package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: UBports\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-29 13:44-0500\n"
+"PO-Revision-Date: 2020-08-28 07:54+0000\n"
+"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
+"Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
+"documentation-systemdev/ru/>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.11.3\n"
+
+#: ../../systemdev/calendars.rst:2
+msgid "Working on the Calendar feature"
+msgstr "Как работает \"Календарь\""
+
+#: ../../systemdev/calendars.rst:4
+msgid "The Calendar feature is provided by several components:"
+msgstr "Календарь работает благодаря нескольким компонентам:"
+
+#: ../../systemdev/calendars.rst:6
+msgid "The `Calendar App <https://gitlab.com/ubports/apps/calendar-app>`_, providing the user interface"
+msgstr ""
+"Приложение `Calendar <https://gitlab.com/ubports/apps/calendar-app>`_, где "
+"находится интерфейс пользователя"
+
+#: ../../systemdev/calendars.rst:7
+msgid "`Evolution Data Server <https://github.com/ubports/evolution-data-server-packaging>`_ (often shortened as \"EDS\"), which is the backend where your calendars are stored"
+msgstr ""
+"`Evolution Data Server <https://github.com/ubports/evolution-data-server-"
+"packaging>`_ (сокращенно \"EDS\"), где хранятся сами календари"
+
+#: ../../systemdev/calendars.rst:8
+msgid "`sync-monitor <https://github.com/ubports/sync-monitor>`_, the service responsible for managing the synchronisation with remote calendars"
+msgstr ""
+"`sync-monitor <https://github.com/ubports/sync-monitor>`_, служба отвечает "
+"за синхронизацию через сеть с другими календарями"
+
+#: ../../systemdev/calendars.rst:9
+msgid "`SyncEvolution <https://github.com/ubports/syncevolution-packaging>`_, the service responsible for performing the synchronisation to a WebDAV/CalDAV remote calendar"
+msgstr ""
+"`SyncEvolution <https://github.com/ubports/syncevolution-packaging>`_,служба "
+"отвечает за синхронизацию с удаленным календарем WebDAV/CalDAV"
+
+#: ../../systemdev/calendars.rst:13
+#: ../../systemdev/online-accounts.rst:30
+msgid "Debugging"
+msgstr "Отладка"
+
+#: ../../systemdev/calendars.rst:15
+msgid "The most convenient way to run commands on the device and collect logs is by opening a remote shell. This can be done by using :doc:`/userguide/advanceduse/adb` or :doc:`/userguide/advanceduse/ssh`. In the following sections, it's assumed that you've got access to a terminal console to the device."
+msgstr ""
+"Самый удобный способ запускать команды на устройстве и получать лог-файлы - "
+"через shell. Это можно сделать с помощью :doc:`/userguide/advanceduse/adb` "
+"или :doc:`/userguide/advanceduse/ssh`. Далее предполагается, что у Вас есть "
+"доступ к терминальной консоли устройства."
+
+#: ../../systemdev/calendars.rst:19
+msgid "Scheduling and account issues"
+msgstr "Ошибки с учетной записью и запланированными делами"
+
+#: ../../systemdev/calendars.rst:21
+msgid "If you are not sure whether the calendar is being synchronised, or whether the operation is successful, ``sync-monitor`` is the component that needs to be examined. This service should always be running in the background, and its logs can be found in ``~/.cache/upstart/sync-monitor.log``. In order to see them printed in real-time as you operate on the device, you can run this command:"
+msgstr ""
+"Если Вы не уверены, действительно синхронизация календаря прошла успешно, то "
+"следует проверить ``sync-monitor``. Эта служба должна быть всегда запущена в "
+"фоновом режиме, лог-файлы можно найти в папке ``~/.cache/upstart/sync-"
+"monitor.log``. Чтобы увидеть актуальные на текущий момент времени данные , "
+"выполните команду:"
+
+#: ../../systemdev/calendars.rst:27
+msgid "These logs should be enough to give you an idea on whether your calendar accounts are recognised, and whether a synchronisation is scheduled, happening, and completing successfully."
+msgstr ""
+"Данных в лог-файлах достаточно, чтобы можно было понять, есть ли проблемы с "
+"аккаунтами пользователя и как проходит синхронизация."
+
+#: ../../systemdev/calendars.rst:31
+msgid "Calendar data synchronisation issues"
+msgstr "Ошибки синхронизации данных календаря"
+
+#: ../../systemdev/calendars.rst:33
+msgid "Follow these steps one you are confident that a synchronisation of your account is at least attempted, and want to investigate a synchronisation failure or issues with missing or duplicate items. On the device, it's possible to run ``syncevolution`` in debug mode. To do so, kill any existing processes:"
+msgstr ""
+"Выполните следующие действия, чтобы убедиться, что предпринималась хотя бы "
+"попытка синхронизации учетной записи, и вы хотите исследовать сбой "
+"синхронизации или проблемы с отсутствующими или повторяющимися элементами. "
+"На устройстве можно запустить в режиме отладки команду ``syncevolution``. "
+"Для этого завершите все существующие процессы:"
+
+#: ../../systemdev/calendars.rst:39
+msgid "Then, start the ``syncevolution`` process with the proper environment variable:"
+msgstr "Затем запустите процесс ``syncevolution`` с правильной опцией:"
+
+#: ../../systemdev/calendars.rst:45
+msgid "At this point, open the Calendar App (if it was not open already) and manually trigger a synchronisation (note that the Synchronisation action is only available if your device is connected to the internet): all the logs will appear in the terminal."
+msgstr ""
+"Теперь запустите приложение «Календарь» (если это еще не было сделано) и "
+"вручную запустите синхронизацию (обратите внимание, что запустить её можно "
+"только в том случае, если устройство подключено к Интернету): все журналы "
+"появятся в терминале."
+
+#: ../../systemdev/calendars.rst:47
+msgid "In some cases, the output from ``syncevolution`` might not be enough: for example, the raw HTTP data is usually not printed. Should you need to see that as well, then you'll have to modify a configuration file as well. ``syncevolution``'s configuration files are located under ``~/.config/syncevolution/``,  in a subdirectory whose name takes the form ``<provider-name>-<account-id>``.  There might be stale directories as well, referring to old accounts which have been since deleted. To find out what accounts are still valid, you can invoke the ``account-console`` tool like this:"
+msgstr ""
+"В некоторых случаях вывода ``syncevolution`` может быть недостаточно: "
+"например, необработанные данные HTTP обычно не показываются. Если они нужны, "
+"то придется изменить файл конфигурации. Файлы конфигурации ``syncevolution`` "
+"находятся в папке ``~/.config/syncevolution/`` в подкаталоге с названием в "
+"формате ``<provider-name>-<account-id>``. Также могут быть устаревшие "
+"каталоги, относящиеся к старым учетным записям. Чтобы узнать, какие учетные "
+"записи еще действительны,  можно использовать утилиту ``account-console``:"
+
+#: ../../systemdev/calendars.rst:53
+msgid "This will print the list of the current valid accounts. Once you've figured out what is the account you are interested in, open the file ``~/.config/syncevolution/<account>/peers/target-config/config.ini`` and set the ``loglevel`` variable to a higher value (``11`` seems enough to print all the HTTP traffic):"
+msgstr ""
+"Будет напечатан список всех действующих учетных записей. Как только станет "
+"известно имя нужной учетной записи, откройте файл ``~/.config/syncevolution/"
+"<account>/peers/target-config/config.ini`` и поставьте большее значение в "
+"переменной ``loglevel`` (цифра ``11`` вполне подойдёт для вывода всего "
+"HTTP-трафика):"
+
+#: ../../systemdev/calendars.rst:65
+msgid "Note that in order for these changes to take effect, you'll need to restart the ``syncevolution`` process again, as explained above."
+msgstr ""
+"Чтобы настройки вступили в силу, нужно перезапустить ``syncevolution``, как "
+"описывалось выше."
+
+#: ../../systemdev/index.rst:2
+msgid "System software development"
+msgstr "Разработка системного ПО"
+
+#: ../../systemdev/index.rst:4
+msgid "This section has various documents which will teach you how to work with the packages included with Ubuntu Touch. This includes the Ubuntu UI Toolkit, Unity8, and all of the other software that makes Ubuntu Touch what it is."
+msgstr ""
+"В этом разделе находятся различные документы, в которых описывается работа с "
+"пакетами, включенными в Ubuntu Touch. Сюда входят Ubuntu UI Toolkit, Unity8 "
+"и все программное обеспечение, которое делает Ubuntu Touch тем, чем он "
+"является."
+
+#: ../../systemdev/index.rst:6
+msgid "This section does not cover most of the *applications* preinstalled on Ubuntu Touch. See :doc:`/contribute/preinstalled-apps` for more information on those."
+msgstr ""
+"В этом разделе не описываются уже предустановленные в системе приложения. "
+"Для них выделен раздел :doc:`/contribute/preinstalled-apps`."
+
+#: ../../systemdev/index.rst:9
+msgid "System Software guides"
+msgstr "Инструкции по системным программам"
+
+#: ../../systemdev/index.rst:11
+msgid "These guides will give you general instructions on building and testing your own changes to Ubuntu Touch system software. They are not not an exhaustive reference on everything you will come across during development, but they are a great starting point."
+msgstr ""
+"Здесь содержатся общие инструкции по созданию и тестированию ваших "
+"собственных изменений в системном программном обеспечении Ubuntu Touch. Они "
+"не содержат всего, с чем можно столкнуться во время разработки, но они "
+"являются хорошим подспорьем."
+
+#: ../../systemdev/index.rst:15
+msgid "If you get stuck at any point while going through this documentation, please contact us for help via `the UBports Forum <https://forums.ubports.com>`_ or your preferred communication medium."
+msgstr ""
+"Если в какой-то момент у Вас возникли вопросы или трудности, пожалуйста "
+"обратитесь на `форум сообщества UBports <https://forums.ubports.com>`_ или в "
+"группы Telegram."
+
+#: ../../systemdev/index.rst:25
+msgid "System Software reference"
+msgstr "Справочник по системному ПО"
+
+#: ../../systemdev/index.rst:27
+msgid "This section includes reference guides on how different parts of the Ubuntu Touch system interact to create the user experience."
+msgstr ""
+"В этот раздел включены справочные руководства о том, как различные "
+"компоненты системы Ubuntu Touch работают для создания пользовательского "
+"опыта."
+
+#: ../../systemdev/index.rst:29
+msgid "There's not much here yet, but maybe you'd like to add some reference material? Check out :doc:`our guide to contributing to documentation </contribute/documentation>` to learn more."
+msgstr ""
+"Материала тут пока мало. Может быть, Вы хотите дополнить эти инструкции? Как "
+"это сделать, написано в :doc:`главе о том, как можно помочь </contribute/"
+"documentation>`."
+
+#: ../../systemdev/mms-infrastructure.rst:2
+msgid "MMS infrastructure components"
+msgstr "Компоненты инфраструктуры MMS"
+
+#: ../../systemdev/mms-infrastructure.rst:4
+msgid "`oFono <https://github.com/ubports/ofono>`_ - responsible for providing the data context used to transfer MMS data (image/music). It also propagates wap push notifications to upper layers."
+msgstr ""
+"`oFono <https://github.com/ubports/ofono>`_ отвечает за предоставление "
+"контекста данных, используемого для передачи данных MMS (изображение/музыка)"
+". Также передает push-уведомления wap на верхние уровни."
+
+#: ../../systemdev/mms-infrastructure.rst:6
+msgid "`nuntium <https://github.com/ubports/nuntium>`_ - daemon that listens to wap push notifications and activates the MMS data context on ofono on demand to send/receive MMS's. It provides a local store."
+msgstr ""
+"`nuntium <https://github.com/ubports/nuntium>`_ - демон, который "
+"прослушивает push-уведомления wap и активирует контекст данных MMS в "
+"приложении ofono по запросу, чтобы отправлять/получать MMS. Обеспечивает "
+"локальное хранилище (?)."
+
+#: ../../systemdev/mms-infrastructure.rst:8
+msgid "`telepathy-ofono <https://github.com/ubports/telepathy-ofono>`_  - talks to nuntium through dbus and is used to both relay messages from phone-app to nuntium and inject into the telepathy infrastructure MMS's received by nuntium as `multi-part messages <http://telepathy.freedesktop.org/spec/Channel_Interface_Messages.html#Mapping:Message_Part>`_. This component also marks messages as read and delete successfully received messages from nuntium."
+msgstr ""
+"`telepathy-ofono <https://github.com/ubports/telepathy-ofono>` -  компонент "
+"связан с nuntium  через протокол Dbus. Используется как для ретрансляции "
+"сообщений из телефонного приложения в nuntium, так и для ввода в "
+"инфраструктуру  MMS, полученных nuntium как `сообщения, состоящие из "
+"нескольких частей <http://telepathy.freedesktop.org/spec/"
+"Channel_Interface_Messages.html#Mapping:Message_Part>`_. Этот компонент "
+"также отмечает сообщения как \"прочитанные\" и удаляет успешно полученные "
+"сообщения из nuntium."
+
+#: ../../systemdev/mms-infrastructure.rst:10
+msgid "`history-service <https://github.com/ubports/history-service>`_ - this component watches the telepathy communication and store the messages received by telepathy-ofono or sent by messaging-app."
+msgstr ""
+"`history-service <https://github.com/ubports/history-service>`_ - этот "
+"компонент следит за работой программы telepathy и хранит сообщения, "
+"получаемые telepathy-ofono и и отправляемые программой messaging-app."
+
+#: ../../systemdev/mms-infrastructure.rst:12
+msgid "`telephony-service-approver <https://github.com/ubports/telephony-service>`_  - this component is in charge of adding SMS's to the messaging menu and to display incoming text notifications."
+msgstr ""
+"`telephony-service-approver <https://github.com/ubports/telephony-service>`_ "
+"- этот компонент отвечает за добавление SMS к меню сообщений и отображение "
+"входящих текстовых уведомлений."
+
+#: ../../systemdev/mms-infrastructure.rst:14
+msgid "`messaging-app <https://github.com/ubports/messaging-app>`_ - It renders MMS's in the conversation view and also provides a way to attach media files to a message in order to send an MMS."
+msgstr ""
+"`messaging-app <https://github.com/ubports/messaging-app>`_ - Он отображает "
+"MMS в режиме разговора, а также позволяет прикреплять мультимедийные файлы к "
+"сообщению для отправки в MMS."
+
+#: ../../systemdev/mms-infrastructure.rst:17
+msgid "General Description"
+msgstr "Общее описание"
+
+#: ../../systemdev/mms-infrastructure.rst:20
+msgid "Incoming MMS"
+msgstr "Входящее сообщение MMS"
+
+#: ../../systemdev/mms-infrastructure.rst:22
+msgid "An MMS WAP push notification is received by ofono and propagated to nuntium"
+msgstr "Ofono получает MMS WAP push-уведомление и передает его nuntium"
+
+#: ../../systemdev/mms-infrastructure.rst:23
+msgid "nuntium enables the MMS context in ofono, retrieves the content from `MMSC <https://en.wikipedia.org/wiki/Multimedia_Messaging_Service>`_ and propagates the new MMS to upper layers."
+msgstr ""
+"nuntium включает MMS context в приложении ofono, извлекает контент из `MMSC "
+"<https://en.wikipedia.org/wiki/Multimedia_Messaging_Service>`_ и передаёт "
+"новое MMS-сообщение на верхние уровни."
+
+#: ../../systemdev/mms-infrastructure.rst:24
+msgid "A new MMS arrives at telepathy-ofono."
+msgstr "Новое MMS-сообщение поступает в приложение telepathy-ofono."
+
+#: ../../systemdev/mms-infrastructure.rst:25
+msgid "If automatic retrieval is not enabled or not available at the moment, a control message is sent to the app"
+msgstr ""
+"Если автоматическая переадресация не включена или недоступна в данный "
+"момент, в приложение отправляется системное сообщение"
+
+#: ../../systemdev/mms-infrastructure.rst:26
+msgid "messaging-app request the retrieval of the message to telepathy-ofono."
+msgstr ""
+"Компонент messaging-app запрашивает передачу сообщения в telepathy-ofono."
+
+#: ../../systemdev/mms-infrastructure.rst:27
+msgid "After the message is retrieved from MMSC, it is delivered to the apps via normal text channel in a multi-part message (one text/html part, one text/plain part and one part per attachment). If the control message was previously delivered, this real message have a flag telling it is a replacement for the previous message."
+msgstr ""
+"После поступления сообщения из MMSC, оно передается в приложения через "
+"обычный текстовый канал в сообщении, состоящем из нескольких частей (одна "
+"текстовая/HTML-часть, одна текстовая обычная часть и одна часть для каждого "
+"вложения). Если системное сообщение было доставлено ранее, у этого реального "
+"сообщения есть флаг, указывающий, что оно заменяет предыдущее сообщение."
+
+#: ../../systemdev/mms-infrastructure.rst:28
+msgid "The new message history service saves the attachment parts to disk, and replaces the paths on text/html to point to the new attachment locations. It also saves a flag and the content type."
+msgstr ""
+"History service сохраняет новое сообщение в виде вложений на диск и меняет "
+"пути файлов в text/html части, чтобы они указывали новые папки. Также "
+"сохраняется флаг сообщения и тип контента."
+
+#: ../../systemdev/mms-infrastructure.rst:31
+msgid "Outgoing MMS"
+msgstr "Исходящее MMS-сообщение"
+
+#: ../../systemdev/mms-infrastructure.rst:33
+msgid "messaging-app creates a new text channel in telepathy-ofono, or uses an existing channel."
+msgstr ""
+"Компонент messaging-app создаёт новый текстовый канал в telepathy-ofono, или "
+"использует уже существующий канал."
+
+#: ../../systemdev/mms-infrastructure.rst:34
+msgid "messaging-app sends the MMS as a multi-part message to telepathy-ofono"
+msgstr ""
+"messaging-app отправляет MMS-сообщение как сообщение, состоящее из "
+"нескольких частей в telepathy-ofono"
+
+#: ../../systemdev/mms-infrastructure.rst:35
+msgid "nuntium enables the MMS context in ofono, sends the MMS through MMSC and signals the upper layers about the current status (sent, draft)."
+msgstr ""
+"nuntium активирует MMS context в ofono, отправляет MMS через MMSC и "
+"сигнализирует на верхние уровни о текущем статусе (оправлено или сохранен "
+"черновик)."
+
+#: ../../systemdev/mms-infrastructure.rst:36
+msgid "telepathy-ofono sends signals to applications with delivery reports."
+msgstr "telepathy-ofono отправляет сигнал приложению отчеты об отправке."
+
+#: ../../systemdev/mms-infrastructure.rst:39
+msgid "Incoming MMS diagram"
+msgstr "Диаграмма \"Входящее MMS-сообщение\""
+
+#: ../../systemdev/mms-infrastructure.rst:44
+msgid "Outgoing MMS diagram"
+msgstr "Диаграмма \"Исходящее MMS-сообщение\""
+
+#: ../../systemdev/mms-infrastructure.rst:49
+msgid "References"
+msgstr "Справка и помощь"
+
+#: ../../systemdev/mms-infrastructure.rst:51
+msgid "initial source: https://wiki.ubuntu.com/Touch/Specs/MMSInfrastructure"
+msgstr ""
+"Исходный документ: https://wiki.ubuntu.com/Touch/Specs/MMSInfrastructure"
+
+#: ../../systemdev/online-accounts.rst:2
+msgid "Working on the Online Accounts subsystem"
+msgstr "Работа над подсистемой онлайн-аккаунтов (учётных записей)"
+
+#: ../../systemdev/online-accounts.rst:4
+msgid "The Online Accounts subsystem consists of the following components:"
+msgstr "Подсистема онлайн-аккаунтов состоит из следующих компонентов:"
+
+#: ../../systemdev/online-accounts.rst:6
+msgid "The `Accounts UI <https://github.com/ubports/ubuntu-system-settings-online-accounts>`_: this provides the user facing components and the base classes for the whole Online Accounts feature. More in detail, you will find these subdirectories:"
+msgstr ""
+"`Accounts UI <https://github.com/ubports/ubuntu-system-settings-online-"
+"accounts>`_: здесь предоставляются пользовательские компоненты и базовые "
+"классы для всей подсистемы онлайн-аккаунтов. Более подробно смотрите "
+"подкаталоги:"
+
+#: ../../systemdev/online-accounts.rst:8
+msgid "``click-hooks``: the programs run when a :ref:`Click application <click>` making use of the Online Accounts functionality is installed or removed"
+msgstr ""
+"``click-hooks``: программа запускается, когда устанавливается или удаляется "
+":ref:`приложение Click <click>`, позволяющее использовать функционал "
+"онлайн-аккаунтов"
+
+#: ../../systemdev/online-accounts.rst:9
+msgid "``client``: the library that client applications can use to request access to an account"
+msgstr ""
+"``client``: библиотека, которую клиентские приложения могут использовать для "
+"запроса доступа к учетной записи"
+
+#: ../../systemdev/online-accounts.rst:10
+msgid "``online-accounts-service``: the main service, implementing the logic to process client requests; it has no UI, but is able to attach the ``online-accounts-ui`` on top of an application's UI"
+msgstr ""
+"``online-accounts-service``:основной сервис, реализующий логику обработки "
+"клиентских запросов; у него нет пользовательского интерфейса, но он может "
+"прикрепить \"online-accounts-ui\" поверх пользовательского интерфейса "
+"приложения"
+
+#: ../../systemdev/online-accounts.rst:11
+msgid "``online-accounts-ui``: the user interface which pops up when applications interact with online accounts (for example, the dialog that appears when an application requests access to an account)"
+msgstr ""
+"``online-accounts-ui``: пользовательский интерфейс, который появляется, "
+"когда приложения взаимодействуют с онлайн-аккаунтами (например, диалоговое "
+"окно, которое появляется, когда приложение запрашивает доступ к аккаунту)"
+
+#: ../../systemdev/online-accounts.rst:12
+msgid "``plugins``: the base classes and QML elements that account plugins can use in their implementation"
+msgstr ""
+"``plugins``: базовые классы и элементы QML, которые могут использовать в "
+"своей реализации плагины аккаунтов"
+
+#: ../../systemdev/online-accounts.rst:13
+msgid "``system-settings-plugin``: the user interface for the Accounts panel in the System Settings application"
+msgstr ""
+"``system-settings-plugin``: пользовательский интерфейс для панели Аккаунтов "
+"в приложении \"Системные настройки\""
+
+#: ../../systemdev/online-accounts.rst:15
+msgid "The `Account plugins <https://github.com/ubports/account-plugins>`_ define the available account providers and implement the user interface and logic for creating the accounts"
+msgstr ""
+"`Плагины учётной записи (Account plugins) <https://github.com/ubports/"
+"account-plugins>`_ задают провайдеров учетных записей и реализуют "
+"пользовательский интерфейс и логику для создания учетных записей"
+
+#: ../../systemdev/online-accounts.rst:16
+msgid "A set of components from the `Accounts&SSO project <https://gitlab.com/accounts-sso>`_: while development happens in the upstream projects, the UBports forks add the Debian packaging. These projects are:"
+msgstr ""
+"Набор компонентов из `проекта Accounts&SSO <https://gitlab.com/accounts-"
+"sso>`_: пока разработка происходит в этих основных проектах, сообщество "
+"UBports делает форк соответствующих пакетов Debian. Эти проекты:"
+
+#: ../../systemdev/online-accounts.rst:18
+msgid "`libaccounts-glib <https://github.com/ubports/libaccounts-glib>`_: account management API for C/GLib applications"
+msgstr ""
+"`libaccounts-glib <https://github.com/ubports/libaccounts-glib>`_: API "
+"управления учетными записями для приложений на C/GLib"
+
+#: ../../systemdev/online-accounts.rst:19
+msgid "`libsignon-glib <https://github.com/ubports/libsignon-glib>`_: authentication API for C/GLib applications"
+msgstr ""
+"`libsignon-glib <https://github.com/ubports/libsignon-glib>`_: API "
+"аутентификации для приложений C/GLib"
+
+#: ../../systemdev/online-accounts.rst:20
+msgid "`libaccounts-qt <https://github.com/ubports/libaccounts-qt>`_: account management API for Qt applications"
+msgstr ""
+"`libaccounts-qt <https://github.com/ubports/libaccounts-qt>`_: API "
+"управления учётными записями для приложений на Qt"
+
+#: ../../systemdev/online-accounts.rst:21
+msgid "`signond <https://github.com/ubports/signon>`_: authentication daemon, exposing a D-Bus API. It includes the ``libsignon-qt`` library, which offers an authentication API for Qt applications"
+msgstr ""
+"`signond <https://github.com/ubports/signon>`_: демон аутентификации, "
+"открывающий API D-Bus. Содержит библиотеку ``libsignon-qt``, предлагающую "
+"API аутентификации для приложений на Qt"
+
+#: ../../systemdev/online-accounts.rst:22
+msgid "`signon-plugin-oauth2 <https://github.com/ubports/signon-plugin-oauth2>`_: OAuth (1.0 and 2.0) plugin for signond"
+msgstr ""
+"`signon-plugin-oauth2 <https://github.com/ubports/signon-plugin-oauth2>`_:"
+"плагин OAuth (версии 1.0 и 2.0) для signond"
+
+#: ../../systemdev/online-accounts.rst:23
+msgid "`accounts-qml-module <https://github.com/ubports/accounts-qml-module>`_ authentication and account management API, for QML applications (can be used when implementing account plugins, too)"
+msgstr ""
+"`accounts-qml-module <https://github.com/ubports/accounts-qml-module>`_ API "
+"аутентификации и управления учётными записями для приложений QML (может "
+"также использоваться при реализации плагинов учетной записи)"
+
+#: ../../systemdev/online-accounts.rst:25
+msgid "The `account-polld service <https://github.com/ubports/account-polld>`_, which runs in the background and checks every 5 minutes for new account activity (the interval is decided by the `Ubuntu Push service <https://github.com/ubports/ubuntu-push>`_)"
+msgstr ""
+"Сервис `account-polld service <https://github.com/ubports/account-polld>`_, "
+"который работает в фоновом режиме и каждые 5 минут проверяет активность "
+"новой учетной записи (интервал определяется сервисом `Ubuntu Push service "
+"<https://github.com/ubports/ubuntu-push>`_)"
+
+#: ../../systemdev/online-accounts.rst:26
+msgid "The `account-polld-plugins-go <https://github.com/ubports/account-polld-plugins-go>`_, a repository of plugins for the ``account-polld`` service. The plugins in this repository are written in Go, but plugins can be written in whatever language and can reside in different repositories"
+msgstr ""
+"Сервис `account-polld-plugins-go <https://github.com/ubports/account-polld-"
+"plugins-go>`_, репозиторий плагинов для сервиса ``account-polld``. Плагины в "
+"этом репозитории написаны на Go, но плагины могут быть написаны на любом "
+"языке и могут находиться в разных репозиториях"
+
+#: ../../systemdev/online-accounts.rst:33
+msgid "Account creation issues"
+msgstr "Ошибки, связанные с созданием учётной записи"
+
+#: ../../systemdev/online-accounts.rst:35
+msgid "It may happen that the account creation fails, either due to communication issues with the remote server, or to some bug in the account plugin itself (this can easily happen while developing a new plugin). In order to debug such situations, you can open a terminal (it's easier if done from a remote shell -- you can gain a shell on the device using :doc:`/userguide/advanceduse/adb` or :doc:`/userguide/advanceduse/ssh`) and start the ``online-accounts-service`` in debug mode:"
+msgstr ""
+"Может случиться так, что создание учетной записи не удастся, либо из-за "
+"проблем со связью с удаленным сервером, либо из-за какой-либо ошибки в самом "
+"плагине учетной записи (это легко может произойти при разработке нового "
+"плагина). Для отладки таких ситуаций можно открыть терминал (это проще, если "
+"сделать это из remote shell - на устройстве это можно сделать с помощью "
+":doc:`/userguide/advanceduse/adb` или :doc:`/userguide/advanceduse/ssh`) и "
+"запустить в режиме отладки ``online-accounts-service``:"
+
+#: ../../systemdev/online-accounts.rst:42
+msgid "If you believe that the issue might be caused by some errors in the authentication phase, you can also enabled extensive logging by ``signond`` like this:"
+msgstr ""
+"Если вы считаете, что проблема может быть вызвана некоторыми ошибками на "
+"этапе аутентификации, вы также можете включить расширенное ведение логов с "
+"помощью ``signond``:"
+
+#: ../../systemdev/online-accounts.rst:50
+msgid "At this point, repeat the operation that was failing, and you'll get all debugging output printed on the console."
+msgstr ""
+"На этом этапе повторите операцию, в которой произошел сбой, и Вы получите "
+"все выходные данные отладки, выведенные в консоль."
+
+#: ../../systemdev/qtmir-qtubuntu.rst:2
+msgid "QtMir and QtUbuntu"
+msgstr "QtMir и QtUbuntu"
+
+#: ../../systemdev/qtmir-qtubuntu.rst:4
+msgid "`QtMir`_ and `QtUbuntu`_ are `Qt Platform Abstractions`_ (QPAs) for the Ubuntu Touch platform. QtMir can be thought of as a server for Unity8 while QtUbuntu is used for client applications. Each of them allows their respective domains to use Qt's high-level abstractions of surfaces, windows, controls, and more, without worrying about the underlying operating system."
+msgstr ""
+"`QtMir`_ и `QtUbuntu`_ являются `Qt Platform Abstractions`_ (QPAs, "
+"абстракции Qt-платформы) для платформы Ubuntu Touch. QtMir можно "
+"рассматривать как сервер для Unity8, тогда как QtUbuntu используется для "
+"клиентских приложений. Каждый из них позволяет своим доменам использовать "
+"высокоуровневые абстракции Qt поверхностей, окон, элементов управления и так "
+"далее, не беспокоясь о базовой операционной системе."
+
+#: ../../systemdev/qtmir-qtubuntu.rst:7
+msgid "QtMir"
+msgstr "QtMir"
+
+#: ../../systemdev/qtmir-qtubuntu.rst:9
+msgid "The `QtMir`_ QPA allows Unity8, the shell of Ubuntu Touch, to be written in QML and Qt C++ while operating on Mir Surfaces and Windows. It also allows the desktop to be represented and reasoned about as a `Qt Scene Graph`_."
+msgstr ""
+"`QtMir`_ QPA позволяет писать Unity8, оболочку для Ubuntu Touch, на QML и Qt "
+"C ++ при работе на Mir Surfaces и Windows. Это также позволяет представить "
+"рабочий стол и рассматривать его как `Qt Scene Graph`_."
+
+#: ../../systemdev/qtmir-qtubuntu.rst:11
+msgid "You'll find most of QtMir's logging in Unity8's logs, normally stored at ``/home/phablet/.cache/upstart/unity8`` on Ubuntu Touch. Different logging categories, like ``qtmir.sessions`` and ``qtmir.surfaces``, relate directly to different modules within QtMir's codebase."
+msgstr ""
+"Вы найдете большую часть лог-файлов QtMir в лог-файлах Unity8, которые "
+"обычно хранятся в директории``/home/phablet/.cache/upstart/unity8`` на "
+"мобильном устройстве Ubuntu Touch. Другие лог-файлы, такие как "
+"qtmir.sessions и qtmir.surfaces, напрямую относятся к различным модулям в "
+"кодовой базе QtMir."
+
+#: ../../systemdev/qtmir-qtubuntu.rst:13
+msgid "While Unity8 shows almost all QtMir logging by default, you can enable even more verbose logging by placing the following content in the file ``/usr/share/upstart/sessions/unity8.override``:"
+msgstr ""
+"Хотя Unity8 по умолчанию показывает почти все лог-файлы QtMir, можно "
+"включить еще более подробное ведение лог-файлов, если внести изменения в "
+"файл ``/usr/share/upstart/sessions/unity8.override``:"
+
+#: ../../systemdev/qtmir-qtubuntu.rst:19
+msgid "Then restart Unity8:"
+msgstr "Затем перезапустите Unity8:"
+
+#: ../../systemdev/qtmir-qtubuntu.rst:26
+msgid "QtUbuntu"
+msgstr "QtUbuntu"
+
+#: ../../systemdev/qtmir-qtubuntu.rst:28
+msgid "The `QtUbuntu`_ QPA uses the `Mir client API`_ and `Ubuntu Platform API`_ to provide Ubuntu Touch apps with a stable hardware compatibility API."
+msgstr ""
+"`QtUbuntu`_ QPA использует клиентский API Mir и Ubuntu Platform API, чтобы "
+"предоставить приложениям Ubuntu Touch стабильный API для совместимости с "
+"оборудованием."
+
+#: ../../systemdev/qtmir-qtubuntu.rst:30
+msgid "Since QtUbuntu is used directly by apps, any logging output from it will be located in an app's log file. Most of the time, QtUbuntu gives no logging output. However, if you would like to receive more output, you can set the ``QT_LOGGING_RULES`` environment variable appropriately. Since apps on Ubuntu Touch are started using Upstart's user session, you can set this for all apps until you restart your device with the following command:"
+msgstr ""
+"Поскольку QtUbuntu используется приложениями напрямую, вся служебная "
+"информация будет находиться в лог-файле приложения. В большинстве случаев "
+"QtUbuntu не выводит лог-файлы. Но если хочется получить больше информации, "
+"можно настроить переменную среды QT_LOGGING_RULES. Поскольку приложения в "
+"Ubuntu Touch запускаются с использованием пользовательского сеанса Upstart, "
+"можно задать эту опцию для всех приложений с помощью следующей команды (она "
+"будет работать до перезагрузки устройства):"
+
+#: ../../systemdev/qtmir-qtubuntu.rst:36
+msgid "We plan to replace QtUbuntu with QtWayland in the future."
+msgstr "Мы планируем заменить QtUbuntu на QtWayland в будущем."
+
+#: ../../systemdev/qtmir-qtubuntu.rst:39
+msgid "Components"
+msgstr "Компоненты"
+
+#: ../../systemdev/qtmir-qtubuntu.rst:41
+msgid "QtUbuntu has a number of sub-components to provide other features in the Ubuntu Touch platform. In theory, these could be used on other platforms to provide similar features. In practice, this has never happened."
+msgstr ""
+"В QtUbuntu есть несколько вспомогательных компонентов для обеспечения других "
+"функций платформы Ubuntu Touch. Теоретически их можно использовать на других "
+"платформах для обеспечения аналогичных функций. На практике этого никогда не "
+"было."
+
+#: ../../systemdev/qtmir-qtubuntu.rst:43
+msgid "`QtUbuntu-Camera`_ provides the ``aalCamera`` (Android Abstraction Layer Camera) plugin to `QtMultimedia`_. This plugin allows apps to access Android device cameras through the QtMultimedia standard API. We are trying to replace this component with the `gst-droid`_ plugin for GStreamer for all new Android device ports."
+msgstr ""
+"QtUbuntu-Camera предоставляет модуль ``aalCamera`` (Android Abstraction "
+"Layer Camera) для `QtMultimedia`_. Этот плагин позволяет приложениям "
+"получать доступ к камерам устройств Android через стандартный API "
+"QtMultimedia. Мы пытаемся заменить этот компонент плагином `gst-droid`_ для "
+"GStreamer на всех портах системы для новых Android-устройств."
+
+#: ../../systemdev/qtmir-qtubuntu.rst:45
+msgid "`QtUbuntu-Sensors`_ provides Android haptic feedback, GPS, orientation, and accelerometer sensors to `QtSensors`_. We are trying to replace this component with `sensorfw`_, a single daemon capable of providing these functions using Android or standard Linux kernel drivers."
+msgstr ""
+"`QtUbuntu-Sensors`_ обеспечивает тактильную обратную связь с Android, "
+"датчиками GPS, ориентации и акселерометра для` QtSensors`_. Мы пытаемся "
+"заменить этот компонент отдельным демоном`sensorfw`_, который может "
+"предоставлять эти функции с помощью Android-драйверов или стандартных "
+"драйверов ядра Linux."
+
+#: ../../systemdev/qtmir-qtubuntu.rst:47
+msgid "`QtUbuntu-Media`_ provides hardware encoding and decoding of audio/video content on Android devices to `QtMultimedia`_. It is tightly integrated with `media-hub`_."
+msgstr ""
+"`QtUbuntu-Media`_ обеспечивает аппаратное кодирование и декодирование аудио/"
+"видео контента на устройствах Android в` QtMultimedia`_. Компонент тесно "
+"связан с `media-hub`_."
+
+#: ../../systemdev/testing-locally.rst:2
+msgid "Making changes and testing locally"
+msgstr "Внесение изменений и локальное тестирование"
+
+#: ../../systemdev/testing-locally.rst:4
+msgid "On this page you'll find information on how to build Ubuntu Touch system software for your device. Most of the software preinstalled on your Ubuntu Touch device is shipped in the device image in the form of a Debian package. This format is used by several Linux distributions, such as Debian, Ubuntu, and Linux Mint. Plenty of `documentation on deb packages <https://www.debian.org/doc/manuals/maint-guide/index.en.html>`__ is available, so we won't be covering it here. Besides, in most cases you'll find yourself in need of modifying existing software rather than developing new packages from scratch. For this reason, this guide is mostly about recompiling an existing Ubuntu Touch package."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:6
+msgid "There are essentially two ways of developing Ubuntu Touch system software locally:"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:8
+msgid "`Cross-building with crossbuilder`_"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:9
+msgid "`Building on the device itself`_"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:11
+msgid "We'll examine both methods, using `address-book-app <https://github.com/ubports/address-book-app>`__ (the Contacts application) as an example."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:13
+msgid "We only recommend developing packages using a device with Ubuntu Touch installed from the devel channel. This ensures that you are testing your changes against the most current state of the Ubuntu Touch code."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:17
+msgid "Installing packages has a risk of damaging the software on your device, rendering it unusable. If this happens, you can :doc:`reinstall Ubuntu Touch </userguide/install>`."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:20
+msgid "Cross-building with crossbuilder"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:22
+msgid "Crossbuilder is a script which automates the setup and use of a crossbuild environment for Debian packages. It is suitable for developers with any device since the code compilation occurs on your desktop PC rather than the target device. This makes Crossbuilder the recommended way to develop non-trivial changes to Ubuntu Touch."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:26
+msgid "Crossbuilder requires a Linux distribution with ``lxd`` installed and the unprivileged commandset available. In other words, you must be able to run the ``lxc`` command. If you are running Ubuntu on your host, Crossbuilder will set up ``lxd`` for you."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:28
+msgid "Start by installing Crossbuilder on your host::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:33
+msgid "Crossbuilder is a shell script, so you don't need to build it. Instead, you will need to add its directory to your ``PATH`` environment variable, so that you can execute it from any directory::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:39
+msgid "Now that Crossbuilder is installed, we can use it to set up LXD::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:43
+msgid "If this is the first time you have used LXD, you might need to reboot your host once everything has completed."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:45
+msgid "After LXD has been set up, move to the directory where the source code of your project is located (for example, ``cd ~/src/git/address-book-app``) and launch Crossbuilder::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:49
+msgid "Crossbuilder will create the LXD container, download the development image, install all your package build dependencies, and perform the package build. It will also copy the packages over to your target device and install them if it is connected (see :doc:`/userguide/advanceduse/adb` to learn more about connecting your device). The first two steps (creating the LXD image and getting the dependencies) can take a few minutes, but will be executed only the first time you launch crossbuilder for a new package."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:51
+msgid "Now, whenever you change the source code in your git repository, the same changes will be available inside the container. The next time you type the ``crossbuilder`` command, only the changed files will be rebuilt."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:54
+msgid "Unit tests"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:56
+msgid "By default crossbuilder does not run unit tests; that's both for speed reasons, and because the container created by crossbuilder is not meant to run native (target) executables: the development tools (qmake/cmake, make, gcc, etc.) are all run in the host architecture, with no emulation (again, for speed reasons). However, qemu emulation is available inside the container, so it should be possible to run unit tests. You can do that by getting a shell inside the container::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:60
+msgid "Then find the unit tests and execute them. Be aware that the emulation is not perfect, so there's a very good chance that the tests will fail even when they'd otherwise succeed when run in a proper environment. For that reason, it's probably wiser not to worry about unit tests when working with crossbuilder, and run them only when not cross-compiling."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:63
+msgid "Building on the device itself"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:65
+msgid "This is the fastest and simplest method to develop small changes and test them in nearly real-time. Depending on your device resources, however, it might not be possible to follow this path: if you don't have enough free space in your root filesystem you won't be able to install all the package build dependencies; you may also run out of RAM while compiling."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:69
+msgid "This method is limited. Many devices do not have enough free image space to install the packages required to build components of Ubuntu Touch."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:71
+msgid "In this example, we'll build and install the address-book-app. All commands shown here must be run on your Ubuntu Touch device over a remote shell."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:73
+msgid "You can gain a shell on the device using :doc:`/userguide/advanceduse/adb` or :doc:`/userguide/advanceduse/ssh`. Remount the root filesystem read-write to begin::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:77
+msgid "Next, install all the packages needed to rebuild the component you want to modify (the Contacts app, in this example)::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:83
+msgid "Additionally, you probably want to install ``git`` in order to get your app's source code on the device and later push your changes back into the repository::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:87
+msgid "Once you're finished, you can retrieve the source for an app (in our example, the address book) and move into its directory::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:92
+msgid "Now, you are ready to build the package::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:96
+msgid "The ``dpkg-buildpackage`` command will print out the names of generated packages. Install those packages with ``dpkg``::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:100
+msgid "Note, however, that you might not need to install all the packages: generally, you can skip all packages whose names end with ``-doc`` or ``dev``, since they don't contain code used by the device."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:103
+msgid "Next steps"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:105
+msgid "Now that you've successfully made changes and tested them locally, you're ready to upload them to GitHub. Move on to the next page to learn about using the UBports CI to build and provide development packages!"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:2
+msgid "Uploading and testing with ``ubports-qa``"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:4
+msgid "The `UBports build service <https://ci.ubports.com>`_ is capable of building Ubuntu Touch packages and deploying them to the `UBports repository <https://repo.ubports.com>`_. This capability is offered to any developer who wishes to take advantage of it."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:6
+msgid "This guide assumes that you have a cursory understanding of using Git and making Pull Requests on GitHub."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:8
+msgid "To use the `UBports build service`_, make sure you understand our :doc:`branch naming convention </about/process/branch-naming>`. It is required that you follow the convention for deb-packages for CI to build your package correctly."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:11
+msgid "Fork the repository"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:13
+msgid "The first step to make a change to any repository you don't have write access to is to fork it. Open your desired repository on GitHub and click the \"Fork\" button in the upper right corner. If offered, select an appropriate account to fork the repository to. Then, clone your fork to your computer."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:15
+msgid "Now you're ready to make changes!"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:18
+msgid "Make and commit changes"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:20
+msgid "Now that you have the package source downloaded, you can make your desired changes."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:22
+msgid "Before changing anything, make sure you have checked out the branch you want to work from (probably ``xenial``, assuming you are making changes for the phone images). Then, create a new branch abiding by the :doc:`branch naming convention </about/process/branch-naming>`."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:24
+msgid "After making your changes, commit them with a descriptive commit message stating what is wrong and why your changes fix that problem."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:26
+msgid "You have successfully created and committed your changes. Before pushing your changes, we'll want to make sure your device will install them."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:29
+msgid "Update the ``debian/changelog`` file"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:31
+msgid "Generally, ``apt`` will not install a new package from any repository if it has a lower (or the same) version number as the package it replaces. Users may also want to see the changes that are included in a new version of a package. For that reason, we will need to update the package changelog to add a new version."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:35
+msgid "This is not an exhaustive reference of the ``debian/changelog`` format. See `deb-changelog(5) <https://manpages.debian.org/testing/dpkg-dev/deb-changelog.5.en.html>`_ for more information."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:38
+msgid "Determine a new version number"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:40
+msgid "To start, figure out what the current version numbering for the package is::"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:44
+msgid "This will return a few lines, but the first is the most important to us::"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:48
+msgid "The part inside the parentheses ``(0.24+ubports2)`` is our version number. It consists of several parts:"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:50
+msgid "The ``0.24`` is the *upstream version number*, the version that the original project maintainers give to the release we are using. For most UBports projects, the repository you'll be working on is the original project code. This makes UBports the \"upstream\" of that project."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:52
+msgid "If you are making large changes to the repository and UBports is the upstream, you should increment the first part of the version number before the plus (+) and reset the distribution suffix. In our example above, you would make this new version number::"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:56
+msgid "If you are making changes only to the package build (files in the ``debian/`` folder), it is best to only increment the version suffix::"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:62
+msgid "If you find a package which does not seem to follow the above versioning format, please contact us to ask how to proceed."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:65
+msgid "Write the changelog entry"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:67
+msgid "Now it is time to write your changelog entry! Start with the following template::"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:75
+msgid "If you open the ``debian/changelog`` file, you'll find that every entry follows this format. This helps everyone (including computers) read and understand the contents. This is used, for example, to name the output package correctly for every package version."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:77
+msgid "Let's assume I, John Doe, am making a packaging change to the ``morph-browser`` package for Ubuntu Touch. I'll replace the different all-caps placeholders above in the following way:"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:79
+msgid "PACKAGE-NAME is replaced with ``morph-browser``"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:80
+msgid "VERSION is replaced with ``0.24+ubports3`` (which we determined above)"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:81
+msgid "DISTRIBUTION is replaced with ``xenial``"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:82
+msgid "CHANGES is replaced with the changes I made in this release. This will include summarized information from my commit messages along with the bugs fixed by those changes. If I've fixed multiple bugs, I'll create multiple bullet points."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:83
+msgid "NAME is replaced with my name, ``John Doe``"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:84
+msgid "EMAIL is replaced with my e-mail, ``john.doe@example.com``."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:88
+msgid "You should not use a \"noreply\" e-mail as your EMAIL for package changelog entries."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:90
+msgid "DATETIME is replaced with the date and time I made this changelog entry in RFC2822/RFC5322 format. The easiest way to retrieve this is by running the command ``date -R`` in a terminal."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:92
+msgid "Note that no line in your changelog entry should exceed 80 characters in length."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:94
+msgid "With that, my new changelog entry follows::"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:104
+msgid "Add your new changelog entry to the top of the ``debian/changelog`` file and commit it with the message \"Update changelog\". Push your changes. Now you're ready to make your Pull Request!"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:107
+msgid "Create your pull request"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:109
+msgid "A pull request asks UBports maintainers to review your code changes and add them to the official repository. We'll create one now."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:111
+msgid "Open your fork of the repository on GitHub. Navigate to the branch that you just pushed to using the \"Branch\" selector:"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:117
+msgid "Once you've opened your desired branch, click the \"New pull request\" button to start your pull request. You'll be taken to a page where you can review your changes and create a pull request."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:119
+msgid "Give your pull request a descriptive title and description (include links to reference bugs or other material). Ensure that the \"base\" branch is the one you want your changes to be applied to (likely ``xenial``), then click \"Create pull request\"."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:121
+msgid "With your pull request created, we can move on to testing your changes using the UBports build service!"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:124
+msgid "Test your changes"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:126
+msgid "Once your pull request is built (a green check mark appears next to your last commit), you are ready to test your changes on your device."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:130
+msgid "If a red \"X\" appears next to your last commit, your pull request has failed to build. Click the red \"X\" to view the build log. Until your build errors are resolved, your pull request cannot be installed or accepted."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:132
+msgid "We'll use ``ubports-qa`` to install your changes. Take note of your pull request's ID (noted as ``#number`` after the title of the pull request) and follow these steps to install your changes:"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:134
+msgid "Ensure your device is running the newest version of Ubuntu Touch from the ``devel`` channel."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:135
+msgid "Get shell access to your device using :doc:`/userguide/advanceduse/adb` or :doc:`/userguide/advanceduse/ssh`."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:136
+msgid "Run ``sudo ubports-qa install REPOSITORY PR``, replacing ``REPOSITORY`` with the name of the repository you have submitted a PR to and ``PR`` with the number of your pull request without the ``#``. For example run ``sudo ubports-qa morph-browser 123`` to install the PR number 123 to morph-browser repo."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:138
+msgid "``ubports-qa`` will automatically add the repository containing your changed software and start the installation for you. All you will need to do is check the packages it asks you to install and say \"yes\" if they are correct."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:140
+msgid "If ``ubports-qa`` fails to install your packages, run it again with the ``-v`` flag (for example, ``ubports-qa -v install ...``). If it still fails, submit the entire log (starting from the ``$`` before the ``ubports-qa`` command) to `Ubuntu Pastebin <https://paste.ubuntu.com/>`_ and contact us for help."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:142
+msgid "Once ``ubports-qa`` is finished, test your changes to ensure they have fixed the original bug. Add the ``ubports-qa`` command to your pull request, then send the link to the pull request to other developers and testers so they may also test your changes."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:144
+msgid "When getting feedback from your testers, be sure to add the information to the pull request (or ask them to do it for you) so that everyone is updated on the status of your code."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:146
+msgid "Every time you make a change and push it to GitHub, it will trigger a new build. You can run ``sudo ubports-qa update`` to get the freshest changes every time this happens."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:149
+msgid "Celebrate!"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:151
+msgid "If you and your testers are satisfied with the results of your pull request, it will be merged. Following the merge, the UBports build service will build your code and deploy it to Ubuntu Touch users worldwide."
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:153
+msgid "Thank you for your contribution to Ubuntu Touch!"
+msgstr ""
