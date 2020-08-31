@@ -1,7 +1,7 @@
 Building halium-boot
 =====================
 
-Halium-boot is a new proposed boot image in the Halium project, replacing hybris-boot. We will be building and using it for Ubuntu Touch.
+Halium-boot is a boot image in the Halium project, replacing hybris-boot and intended for booting Ubuntu Touch.
 
 Fix mounts
 ----------
@@ -10,7 +10,7 @@ Halium-boot's ``mount`` is not aware of SELinux contexts. If your device's ``fst
 
 The first step to this process is figuring out where your fstab actually is. For most, this is inside ``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/etc`` and it is named either ``fstab.qcom`` or ``fstab.devicename``. Open the file for editing.
 
-If the type of the 'data' or 'userdata' partition is ``f2fs``, it is required to change it to ``ext4``.
+If the type of the 'data' or 'userdata' partition is ``f2fs``, this needs to be changed to ``ext4``.
 
 With the file open, remove all ``context=`` options from all block devices in the file. The option will start at the text ``context=`` and end at the comma following it.
 

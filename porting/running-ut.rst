@@ -1,7 +1,11 @@
 Running Ubuntu Touch
 ====================
 
-Now that you're logged in, there are a few more steps before Ubuntu Touch will be fully functional on your device.
+Now that you're logged in, there are a few more steps before Ubuntu Touch will be fully functional on your device. Below we explain 
+    * how to create the necessary udev rules that will allow Ubuntu Touch software to access your hardware
+    * how to adjust the display settings to fit your device
+
+When you have successfully completed the steps on this page you are ready to incorporate these (and other necessary settings) into your build. This is explained in the section on Additional device configuration.
 
 Make / writable
 ----------------
@@ -13,7 +17,7 @@ Before we make any changes to the rootfs (which will be required for the next st
 Add udev rules
 --------------
 
-You must create some udev rules to allow Ubuntu Touch software to access your hardware. Run the following command, replacing [codename] with your device's codename::
+Run the following command, replacing [codename] with your device's codename::
 
     sudo -i # And enter your password
     cat /var/lib/lxc/android/rootfs/ueventd*.rc|grep ^/dev|sed -e 's/^\/dev\///'|awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | sed -e 's/\r//' >/usr/lib/lxc-android-config/70-[codename].rules
@@ -27,7 +31,7 @@ When the device boots, you'll probably notice that everything is very small. The
 
 There are also some other options available that may be useful for you depending on your device's form factor. These are discussed below.
 
-All of these settings are guessed by Unity 8 if none are set. There are many cases, however, where the guess is wrong (for example, very high resolution phone displays will be identified as desktop computers). To manually set a value for these variables, simply create a file at ``/etc/ubuntu-session.d/[codename].conf`` specifying them. For example, this is the file for the Nexus 7 tablet::
+All of these settings are guessed by Unity 8 if none are set. There are many cases, however, where the guess is wrong (for example, very high resolution phone displays will be identified as desktop computers). To manually set a value for these variables, simply create a file at ``/etc/ubuntu-session.d/android.conf`` specifying them. For example, this is the file for the Nexus 7 tablet::
 
     $ cat /etc/ubuntu-touch-session.d/flo.conf
     GRID_UNIT_PX=18
@@ -73,11 +77,21 @@ There are two other settings that may be of interest to you.
 Common Problems
 ---------------
 
-If you have any errors while performing these steps, check see if any of the following suggestions match what you are seeing. If you have completed these steps successfully, congratulations! You've reached the end of the porting guide for now. Try to check the functionality of your device by following the Smoke Testing information in :doc:`/contribute/quality-assurance`.
+If you have any errors while performing these steps, check to see if any of the following suggestions match what you are seeing. If you have completed these steps successfully, congratulations! You are ready to start testing and tweaking your build. Check the functionality of your device by following the Smoke Testing information in :doc:`/contribute/quality-assurance`.
 
 .. toctree::
    :maxdepth: 1
 
    common-problems-run
+
+Additional device configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+When you have successfully created udev rules and adjusted the display settings of your device you are ready to incorporate these and further configuration settings into your port. The next section describes the necessary steps.
+
+.. toctree::
+   :maxdepth: 1
+
+   device-configuration
 
 .. _the freedesktop.org hostnamed specification: https://www.freedesktop.org/wiki/Software/systemd/hostnamed/
