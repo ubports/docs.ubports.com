@@ -51,7 +51,7 @@ The password will be the one that you set while running halium-install.
 Common Problems
 ---------------
 
-If you have any errors while performing these steps, check see if any of the following suggestions match what you are seeing. If you have installed successfully, skip down to `The Next Steps`_.
+If you have any errors while performing these steps, check to see if any of the following suggestions match what you are seeing. If you have installed successfully, skip down to `The Next Steps`_.
 
 .. toctree::
    :maxdepth: 1
