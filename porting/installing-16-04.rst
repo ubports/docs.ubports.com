@@ -62,3 +62,9 @@ The Next Steps
 --------------
 
 Congratulations! Ubuntu Touch has now booted on your device. However, your port is still not complete. Move on to :doc:`running-ut` to learn about the remaining steps to make your port complete.
+
+.. toctree::
+   :maxdepth: 1
+
+   device-configuration
+   
