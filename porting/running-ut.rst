@@ -81,3 +81,12 @@ If you have any errors while performing these steps, check see if any of the fol
    common-problems-run
 
 .. _the freedesktop.org hostnamed specification: https://www.freedesktop.org/wiki/Software/systemd/hostnamed/
+
+Complete configuring your device
+--------------------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   device-configuration
+   
