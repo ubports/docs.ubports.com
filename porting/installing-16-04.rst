@@ -51,14 +51,15 @@ The password will be the one that you set while running halium-install.
 Common Problems
 ---------------
 
-If you have any errors while performing these steps, check see if any of the following suggestions match what you are seeing. If you have installed successfully, skip down to `Continue on`_.
+If you have any errors while performing these steps, check to see if any of the following suggestions match what you are seeing. If you have installed successfully, skip down to `The Next Steps`_.
 
 .. toctree::
    :maxdepth: 1
 
    common-problems-install
 
-Continue on
------------
+The Next Steps
+--------------
 
-Congratulations! Ubuntu Touch has now booted on your device. Move on to :doc:`running-ut` to learn about more specific steps you will need to take for a complete port.
+Congratulations! Ubuntu Touch has now booted on your device. However, your port is still not complete. Move on to :doc:`running-ut` to learn about the remaining steps to make your port complete.
+
