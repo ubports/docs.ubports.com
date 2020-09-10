@@ -1,5 +1,5 @@
 1   Introduction to the Ubuntu Touch porting process
-----------------------------------------------------
+====================================================
 
 This section will introduce you to the specifics of porting Ubuntu Touch to an Android device.
 
@@ -28,8 +28,8 @@ Android version  Halium version  Lineage OS (LOS)  CyanogenMod
 9.0              9.0             16.0              Not available
 ===============  ==============  ================  =============
 
-1.1 Overview of the entire porting process
-------------------------------------------
+1.1 Overview of the porting process
+-----------------------------------
 
     * Preparations
         In this first stage you will choose a target device, determine the device specifications and secure the relevant guides for your device. At this stage you should also start documenting your build process.
