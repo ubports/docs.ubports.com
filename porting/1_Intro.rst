@@ -28,8 +28,8 @@ Android version  Halium version  Lineage OS (LOS)  CyanogenMod
 9.0              9.0             16.0              Not available
 ===============  ==============  ================  =============
 
-Overview of the entire porting process
---------------------------------------
+1.1 Overview of the entire porting process
+------------------------------------------
 
     * Preparations
         In this first stage you will choose a target device, determine the device specifications and secure the relevant guides for your device. At this stage you should also start documenting your build process.
@@ -46,22 +46,33 @@ Overview of the entire porting process
     * Set up the UBports installer for your device
         When you have completed this stage you will have made it possible for anyone owning the device in question to install and run Ubuntu Touch on it, including the ability to receive OTA updates as they are made available.
 
-The challenges of the porting process
--------------------------------------
+1.2 The challenges of the porting process
+-----------------------------------------
 
 Getting the above components to work properly together always involves an amount of time-consuming configuring and testing. However, it usually also involves a certain amount of modification to parts of the source code, and sometimes quite a bit, depending on your target device.
 
 Luckily, there is a community of porters out there who are eager to see Ubuntu Touch ported to new devices. When you run into trouble, you should search the sources below (Getting help) to see if others have before you have solved the issue. There are also online Telegram chat groups you can join to ask for help, but please bear in mind that those participating are doing so of their own free will, and in their spare time.
 
-Prior knowledge and skills
---------------------------
+1.3 Prior knowledge and skills
+------------------------------
 
 Porters come in all sizes and shapes, so to speak. Therefore, this guide does not presuppose extensive knowledge or skills in any particular field. You should, however, as a bare minimum be familiar with some common shell commands and be comfortable working from the terminal on you host pc. Furthermore, the guide is based on a host PC running Linux. If you have some knowledge of programming, this will come in handy at some point, especially if you are familiar with C / C++. Also, you should familiarize yourself with git, setup a github account and start documenting your steps as described in this guide and the Halium porting guide from the very beginning.
 
 We have attempted to give a certain amount of explanations along the way, but this guide is in not an in-depth reference into architecture and inner workings of Ubuntu Touch, and gaining a deeper understanding will consequently require an amount of research on your part.
 
-General advice
---------------
+1.4 Getting community help
+--------------------------
+
+When you run into trouble, and you will, refer to one or more of the sources below:
+
+* IRC: #halium on Freenode 
+* Matrix: #halium:matrix.org 
+* Telegram: @halium
+
+Make sure to check the `UBports Forum <https://forums.ubports.com/category/33/porting>`_ as well.
+
+1.5 General advice
+------------------
 
 The more rigorous you are at making notes and documenting your steps, the less time you will spend backtracking your steps and guessing your way along. When dealing with issues that arise along the way, it is wise to work on them one at a time. If you try to correct several things at once, you risk ending up trying to guess which changes solved a given issue, which easily leads to breaking the issue in question once more.
 
