@@ -33,7 +33,7 @@ Android version  Halium version  Lineage OS (LOS)  CyanogenMod
 
     * Preparations
         In this first stage you will choose a target device, determine the device specifications and secure the relevant guides for your device. At this stage you should also start documenting your build process.
-    * Set up your Halium build environment complete a test build
+    * Set up your Halium build environment and complete a test build
         This stage involves downloading all the relevant source code and securing the vendor blobs. You will then build the Halium boot image and system image according to the Halium guide to ensure that all your sources are set up correctly and work in unison. You will *not* be installing this build! You can view it as a "trial run".
     * Build halium-boot.img and system.img for Ubuntu Touch
         Your source tree first needs to be modified, after which you will proceed to build the halium-boot.img and system.img for your port.
