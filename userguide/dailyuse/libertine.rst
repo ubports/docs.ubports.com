@@ -3,7 +3,7 @@ Run desktop applications
 
 Libertine allows you to use standard desktop applications in Ubuntu Touch.
 
-To display and launch applications you need the *Desktop Apps Scope* which is available by swiping from the bottom of your device, and then tapping on the star. To install applications you may use the phone's *Settings* interface or you may use the command line as described further below.
+To install applications you may use the phone's *Settings* interface or you may use the command line as described further below.
 
 Manage containers
 -----------------
@@ -51,7 +51,7 @@ Destroy a container
 Manage applications
 -------------------
 
-Once a container is set up, you can view the installed applications in *Desktop Apps Scope*, or in the *Manage Libertine Containers* menu you can tap the name of the container.
+Once a container is set up, the installed applications are available in the app drawer. You can also tap the name of the container in the *Manage Libertine Containers* menu.
 
 You can also list them via command line::
 
@@ -83,7 +83,7 @@ Or you can remove the package via the command line::
 Run desktop application
 -----------------------
 
-Simply select the app from the *Desktop Apps Scope* to run it like any other app. To start a graphical application from the command line, for example ``gedit``, run in a terminal::
+Run it from the app menu like any other app. To start a graphical application from the command line, for example ``gedit``, run in a terminal::
 
   # ubuntu-app-launch <CONTAINER_ID>_<desktop_file_name>_0.0
   ubuntu-app-launch xenial_gedit_0.0
