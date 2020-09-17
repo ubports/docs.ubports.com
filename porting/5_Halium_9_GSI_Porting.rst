@@ -1,4 +1,4 @@
-4   Halium 9 and GSI Porting
+5   Halium 9 and GSI Porting
 ============================
 
 - Subsection 1: Introduction
