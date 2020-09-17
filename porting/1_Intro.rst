@@ -16,17 +16,16 @@ Thus an Ubuntu Touch port is composed of the these components:
 
 You, the porter, need to build Halium (i.e. halium-boot.img and system.img) and install all the mentioned components together in order to create a functioning Ubuntu Touch port. 
 
-Halium is built using source code for a modified version of the Android operative system called LineageOS, which sprung out from its predecessor, CyanogenMod. The required source code is available online and needs to be downloaded and configured to build the correct Halium version for each individual device port. Table 1 shows which versions are required for the different Halium versions.
+Halium is built using source code for a modified version of the Android operative system called LineageOS. The required source code is available online and needs to be downloaded and configured to build the correct Halium version for each individual device port. Table 1 shows which versions are required for the different Halium versions.
 
 Table 1
 
-===============  ==============  ================  =============
-Android version  Halium version  Lineage OS (LOS)  CyanogenMod
-===============  ==============  ================  =============
-5.1              5.1             Not available     12.1
-7.1              7.1             14.1              Not available
-9.0              9.0             16.0              Not available
-===============  ==============  ================  =============
+===============  ==============  ================
+Android version  Halium version  Lineage OS (LOS)
+===============  ==============  ================
+7.1              7.1             14.1            
+9.0              9.0             16.0            
+===============  ==============  ================
 
 1.1 Overview of the porting process
 -----------------------------------
