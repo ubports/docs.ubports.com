@@ -1,9 +1,9 @@
 1   Introduction to the Ubuntu Touch porting process
 ====================================================
 
-This first section will introduce you to the specifics of porting Ubuntu Touch to an Android device. Note that it is written with the general public in mind, not primarily the experienced porting developer. In subsequent sections we have made an effort to differentiate by keeping the main text consise to meet the needs of the more experienced reader, while providing links to more in-depth explanations for the less experienced.
+This first section will introduce you to the specifics of porting Ubuntu Touch to an Android device. Note that it is written with the general public in mind, not primarily the experienced porting developer. In subsequent sections we have made an effort to differentiate by keeping the main text more consise in order to meet the needs of the more experienced reader, while providing links to supplementary reading for the less experienced.
 
-Ubuntu Touch is a complete standalone opertative system for mobile devices as demonstrated by the PinePhone, which hit the market in 2020. 
+Ubuntu Touch is a complete standalone opertative system for mobile devices as demonstrated by the `PinePhone and PineTab <https://store.pine64.org/>`_, which hit the market in 2020. 
 
 Alas, the majority of available mobile devices on the market are dependent to some degree on proprietary software. To be specific, device vendors tend to keep the code that speaks directly to the device hardware (the low level device drivers) proprietary. These components are commonly called the 'vendor blobs'. The vendor blobs need to be incorporated into an Ubuntu Touch port. Note that these components are specific not only to each device, but also to each Android version. It is therefore necessary to secure the correct version of these components when building a port.
 

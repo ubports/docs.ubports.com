@@ -34,18 +34,16 @@ Another rich source of information is the `XDA Developer Forum <https://www.xda-
 
 Vendors provide their devices in a locked bootloader state. This is a kind of software "seal" intended to prevent you from making modifications directly to the operative system and system software. If you unlock the bootloader, you will be able to make such modifications, but in this state your device's warranty will be void. The choice is yours, but this step is mandatory if you wish to install Ubuntu Touch on the device.
 
-Check the aforementioned guides for how to unlock the bootloader of your particular device. 
-
-Having completed these steps, you are now ready to set up your build environment and start the porting process per se (next section).
+Devices differ and there is no general method that covers all makes and models. Therefore, you need to check the aforementioned guides for instructions on how to unlock the bootloader of your particular device. 
 
 2.4 Install TWRP recovery
 -------------------------
 
-    * Why this is needed
-    * Why only TWRP built for the specific target device can be used
-    * Link to TWRP site
+You need to install a custom recovery image on your device in order to handle formatting and flashing image files onto it. Head over to the `TeamWin website <https://twrp.me/Devices/>`_  and locate the image file for your device. Follow the installation instructions provided on the website.
 
-2.4 Recommendations for the host/build PC: 
-------------------------------------------
+2.4 Recommendations for the host/build PC 
+-----------------------------------------
 
-    * Hardware and system requirements
+The remainder of this guide presumes you are using a build pc running Linux. Although high performance always is nice, stability and sufficient ROM and harddisk space are the main concerns here. You do not need the latest and the best hardware, nor do you need the latest distribution release. In fact, it is not uncommon to run into issues when choosing the very newest release, as some of the software needed may not yet have been built for it. For example, as of writing the latest release of Ubuntu Linux is 20.04, but many still recommend using the previous long term support release, 18.04.
+
+Having completed the steps above, you are now ready to set up your build environment and start the porting process per se (next section).
