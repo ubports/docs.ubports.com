@@ -98,7 +98,7 @@ Next you need to download the appropriate rootfs for your device. At the moment 
 
 Simply download ``ubports-touch.rootfs-xenial-armhf.tar.gz`` (32 bit) from `our CI server <https://ci.ubports.com/job/xenial-rootfs-armhf/>`__. 
 
-If you have a 64-bit ARM (aarch64) device, this same rootfs should work for you. You can also try the 64 bit version keeping in mind that you may possibly run into more issues with this owing to the current state of development of this rootfs. (If you have an x86 device, let us know. We do not have a rootfs available for these yet.)
+If you have a 64-bit ARM (aarch64) device, this same rootfs should work for you. You can also try the 64 bit version keeping in mind that you may possibly run into more issues with this owing to the current state of development of this rootfs. (If you have an x86 device, let us know. There is no rootfs available for these yet.)
 
 3.3.3   Install system.img and rootfs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -126,10 +126,151 @@ The password will be the one that you set while running halium-install.
 3.4 Bring up Unity 8 (the graphical UI)
 ---------------------------------------
 
+Now that you're logged in, there are a few more steps before Ubuntu Touch will be fully functional on your device.
 
+3.4.1   Make / writable
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Before you make any changes to the rootfs (which will be required for the next steps), you'll need to remount it with write permissions. To do that, run the following command::
+
+    sudo mount -o remount,rw /
+
+3.4.2   Add udev rules
+^^^^^^^^^^^^^^^^^^^^^^
+
+You must create some udev rules to allow Ubuntu Touch software to access your hardware. Run the following command, replacing [codename] with your device's codename::
+
+    sudo -i # And enter your password
+    cat /var/lib/lxc/android/rootfs/ueventd*.rc|grep ^/dev|sed -e 's/^\/dev\///'|awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | sed -e 's/\r//' >/usr/lib/lxc-android-config/70-[codename].rules
+
+Now, reboot the device. If all has gone well, you will eventually see the Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as you set for SSH.
+
+3.4.3   Adjust display settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+When the device boots, you'll probably notice that everything is very small. There are two variables that set the content scaling for Unity 8 and Ubuntu Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``.
+
+There are also some other options available that may be useful for you depending on your device's form factor. These are discussed below.
+
+All of these settings are guessed by Unity 8 if none are set. There are many cases, however, where the guess is wrong (for example, very high resolution phone displays will be identified as desktop computers). To manually set a value for these variables, simply edit the file at ``etc/ubuntu-touch-session.d/android.conf`` specifying them. For example, this is the file for the Nexus 7 tablet::
+
+    $ cat /etc/ubuntu-touch-session.d/flo.conf
+    GRID_UNIT_PX=18
+    QTWEBKIT_DPR=2.0
+    NATIVE_ORIENTATION=landscape
+    FORM_FACTOR=tablet
+
+Methods for deriving values for these variables are below.
+
+Once you have adjusted the ``android.conf`` file to the display settings needed for your device, this file should be incorporated into your build. This is explained in section 3.5.
+
+Display scaling
+""""""""""""""""
+
+``GRID_UNIT_PX`` (Pixels per Grid Unit or Px/GU) is specific to each device. Its goal is to make the user interface of the system and its applications the same *perceived* size regardless of the device they are displayed on. It is primarily dependent on the pixel density of the device’s screen and the distance to the screen the user is at. The latter value cannot be automatically detected and is based on heuristics. We assume that tablets and laptops are the same distance and that they are held at 1.235 times the distance phones tend to be held at.
+
+``QTWEBKIT_DPR`` sets the display scaling for the Oxide web engine, so changes to this value will affect the scale of the browser and webapps.
+
+A reference device has been chosen from which we derive the values for all other devices. The reference device is a laptop with a 120ppi screen. However, there is no exact formula since these options are set for *perceived* size rather than *physical* size. Here are some values for other devices so you may derive the correct one for yours:
+
+==============================  ==========  ============  =======  =====  ============
+Device                          Resolution  Display Size  PPI      Px/GU  QtWebKit DPR
+==============================  ==========  ============  =======  =====  ============
+'Normal' density laptop         N/A         N/A           96-150   8      1.0
+ASUS Nexus 7                    1280x800    7"            216      12     2.0
+'High' density laptop           N/A         N/A           150-250  16     1.5
+Samsung Galaxy Nexus            1280x720    4.65"         316      18     2.0
+LG Nexus 4                      1280x768    4.7"          320      18     2.0
+Samsung Nexus 10                2560x1600   10.1"         299      20     2.0
+Fairphone 2                     1080x1920   5"            440      23     2.5
+LG Nexus 5                      1080x1920   4.95"         445      23     2.5
+==============================  ==========  ============  =======  =====  ============
+
+Experiment with a few values to find one that feels good when compared to the Ubuntu Touch experience on other devices. If you are unsure of which is the best, share some pictures (including some object for scale) along with the device specs with us.
+
+Form factor
+"""""""""""
+
+There are two other settings that may be of interest to you.
+
+``FORM_FACTOR`` specifies the device's form factor. This value is set as the device's Chassis, which you can find by running ``hostnamectl``. The acceptable values are ``handset``, ``tablet``, ``laptop`` and ``desktop``. Apps such as the gallery use this information to change their functionality. For more information on the Chassis, see `the freedesktop.org hostnamed specification`_.
+
+``NATIVE_ORIENTATION`` sets the display orientation for the device's built-in screen. This value is used whenever autorotation isn't working correctly or when an app wishes to be locked to the device's native orientation. Acceptable values are ``landscape``, which is normally used for tablets, laptops, and desktops; and ``portrait``, which is usually used for phone handsets.
 
 3.5 Configure and enable remaining device functionality
 -------------------------------------------------------
+
+In section 3.4 you adjusted the display settings for your device by modifying one of the configuration files included in the UBports rootfs. Similarlyl, the rootfs contains a number of other configuration files with some standard settings that do not necessarily conform to your device. These must be modified to fit your device. The rootfs itself is read only and identical for all devices. You cannot modify the rootfs itself. Instead, the correct way to adjust the configuration is with overlay files, as described below.
+
+Note that as a rule of thumb, the method described below applies if the file you need to edit can be found in the /etc directory (or a subdirectory of this) on your device. You should not attempt to overwrite files located elsewhere with overlay files using this method.
+
+In your device directory, create a subdirectory named 'ubuntu'. Collect the files you wish to inject into your build in this directory. Relevant files are for example (but this list is incomplete):
+    * 70-android.rules (the udev rules for your device, see section 3.4)
+    * android.conf (for display scaling, see section 3.4)
+    * touch.pa (for pulseaudio sound configuration/initialization)
+
+These files are then injected by adding a code block to the file ``device.mk`` in your device directory. For the three files above add the following code::
+
+    ### Ubuntu Touch ###
+    PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
+        $(LOCAL_PATH)/ubuntu/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
+        $(LOCAL_PATH)/ubuntu/touch.pa:system/halium/etc/pulse/touch.pa 
+    ### End Ubuntu Touch ###
+
+Explanation:
+
+The string before the colon '$(LOCAL_PATH)/ubuntu/70-android.rules' specifies the path to the source file to be injected. The string after the colon 'system/halium/lib/udev/rules.d/70-android.rules' specifies where you want it placed on the device.
+
+The general steps to follow are thus:
+    1. Copy the file you wish to modify to the 'ubuntu' directory you have created in your device source tree.
+    2. Edit the file as needed.
+    3. Add a line to the PRODUCT_COPY_FILES section of your device.mk file as shown above.
+    4. Rebuild your system.img and reflash together with the ubports rootfs.
+
+.. note::
+
+    The target paths for the files mentioned above are *not* randomly chosen. You must use the specified paths. 
+
+.. note::
+
+    When you specify target path 'system/halium/etc/myfilename' your file 'myfilename' will end up in the '/etc' directory of your device (i.e. without the leading 'system/halium')
+
+When you have made the adjustments you need and prepared your source as described above, you have to rebuild your system.img: ``mka systemimage``. When rebuilding the system image after small changes like these, you need not ``mka clean`` first. However, changes to PRODUCT_PROPERTY_OVERRIDES might not get detected by the build system. Go to your output folder, enter the system folder and delete build.prop in order to get it regenerated.
+
+3.5.1   Udev rules
+^^^^^^^^^^^^^^^^^^
+
+Extract the file 70-android.rules which you created in the previous section using ``adb pull`` or ``scp`` and copy it to the 'ubuntu' directory of your device source tree. Complete steps 3 and 4 above.
+
+3.5.2   Display scaling
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Create the file android.conf in your 'ubuntu' directory and enter the settings you determined and tested in the previous section. Complete steps 3 and 4.
+
+3.5.3   Sound configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The supplied touch.pa file located in the /etc/pulse directory of your device needs adjustment. Extract the file and copy it to your 'ubuntu' directory. 
+
+Locate the line::
+
+    load-module module-droid-discover voice_virtual_stream=true
+
+and replace it with this::
+
+    load-module module-droid-discover rate=48000 quirks=+unload_call_exit
+
+At the end of the file, append this::
+
+    ### Automatically load the audioflinger glue
+    .ifexists module-droid-glue-24.so
+    load-module module-droid-glue-24
+    .endif
+
+Now complete steps 3 and 4.
+
+TODO: Add more from the `porting faq <https://pad.ubports.com/p/porting-faq>`_ and `porting check list <https://pad.ubports.com/p/PortChecklist>`_.
 
 
 
