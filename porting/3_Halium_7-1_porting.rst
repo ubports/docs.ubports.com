@@ -60,6 +60,23 @@ You are now ready to build the two image files to incorporate the changes you ha
 4. ``mka halium-boot``
 5. ``mka systemimage``
 
+3.2.4   Apply apparmor kernel patches
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+At this point you can also skip to section 3.2 and test installing your build. However, you will have to come back and complete the step in this section in order to complete a functional port.
+
+`What is apparmor? <https://wiki.ubuntu.com/AppArmor>`_
+
+Start by downloading the backported `apparmor patch <https://github.com/ubports/apparmor-backports-ut>`_ corresponding to your device's kernel version.
+
+You now need to delete your entire BUILDDIR/kernel/VENDOR/MODEL/security/apparmor directory and replace it with the one you downloaded. Now rebuild halium-boot. 
+
+If get errors when building, you will need to resolve them one by one, modifying your source code as needed. Note that you should only modify the code in the apparmor directory if at all possible. Modifying code elsewhere will more than likely just compound your problems.
+
+Seek help as needed from one of the sources mentioned in section 1.4.
+
+Once you complete an error-free build, proceed to the next section.
+
 3.3 Install and debug initial boot
 ----------------------------------
 
