@@ -41,7 +41,7 @@ Devices differ and there is no general method that covers all makes and models. 
 
 You need to install a custom recovery image on your device in order to handle formatting and flashing image files onto it. Head over to the `TeamWin website <https://twrp.me/Devices/>`_  and locate the image file for your device. Follow the installation instructions provided on the website.
 
-2.4 Recommendations for the host/build PC 
+2.5 Recommendations for the host/build PC 
 -----------------------------------------
 
 The remainder of this guide presumes you are using a build pc running Linux. Although high performance always is nice, stability and sufficient ROM and harddisk space are the main concerns here. You do not need the latest and the best hardware, nor do you need the latest distribution release. In fact, it is not uncommon to run into issues when choosing the very newest release, as some of the software needed may not yet have been built for it. For example, as of writing the latest release of Ubuntu Linux is 20.04, but many still recommend using the previous long term support release, 18.04.
