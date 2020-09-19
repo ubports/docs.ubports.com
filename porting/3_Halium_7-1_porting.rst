@@ -96,7 +96,9 @@ On your device, choose *Install* in the TWRP menu, navigate to the sdcard direct
 
 Next you need to download the appropriate rootfs for your device. At the moment there are two available versions, a 32 bit and a 64 bit one. 
 
-Simply download ``ubports-touch.rootfs-xenial-armhf.tar.gz`` (32 bit) from `our CI server <https://ci.ubports.com/job/xenial-rootfs-armhf/>`__. If you have a 64-bit ARM (aarch64) device, this same rootfs should work for you. You can also try the 64 bit version keeping in mind that you may possibly run into more issues with this owing to the current state of development of this rootfs. (If you have an x86 device, let us know. We do not have a rootfs available for these yet.)
+Simply download ``ubports-touch.rootfs-xenial-armhf.tar.gz`` (32 bit) from `our CI server <https://ci.ubports.com/job/xenial-rootfs-armhf/>`__. 
+
+If you have a 64-bit ARM (aarch64) device, this same rootfs should work for you. You can also try the 64 bit version keeping in mind that you may possibly run into more issues with this owing to the current state of development of this rootfs. (If you have an x86 device, let us know. We do not have a rootfs available for these yet.)
 
 3.3.3   Install system.img and rootfs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
