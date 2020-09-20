@@ -1,2 +1,4 @@
-6   Common errors when building Halium 9 - Ubuntu Touch
-=======================================================
+6   Common errors - Halium 9
+============================
+
+*Work in progress*

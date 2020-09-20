@@ -1,8 +1,6 @@
 5   Halium 9 and GSI Porting
 ============================
 
-- Subsection 1: Introduction
-    * What is a GSI?
-    * What needs to be built and why
+*Work in progress*
 
-Structure otherwise similar to section 3, but based on Erfan's wiki for Halium 9/GSI
+For the time being, refer to the UBports porting notes on `the generic system image (GSI) <https://github.com/ubports/porting-notes/wiki/Generic-system-image-(GSI)>`_ and `Halium 9 porting <https://github.com/ubports/porting-notes/wiki/Halium-9>`_.

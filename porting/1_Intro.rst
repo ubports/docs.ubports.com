@@ -11,7 +11,7 @@ This is why Ubuntu Touch cannot be built as a complete standalone OS for most co
 
 The next component of Ubuntu Touch is a pre-compiled root filesystem which needs to be installed on the device. This component is not capable of communicating directly with the device hardware through the above-mentioned device drivers. Instead, this communication is mediated by a Hardware Abstraction Layer (HAL) which needs to be built for each specific device, because each device has its specific hardware architecture. This component is called Halium and is available in different versions (5.1 which is largely obsolete, 7.1, and 9 as of writing) corresponding to different Android versions.
 
-Halium is an indispensible part of an Ubuntu Touch port and it is open source software. Developing a new version of Halium is a very considerable task which is the why only a few versions of Halium are available. Each port of Ubuntu Touch has to be based on one of the available Halium versions and vendor blobs from the corresponding Android version. See the first two columns of Table 1 (below) for details.
+Halium is an indispensible part of an Ubuntu Touch port and is available in the form of open source software. Developing a new version of Halium is a very considerable task which is the why only a few versions of Halium are available. Each port of Ubuntu Touch has to be based on one of the available Halium versions and vendor blobs from the corresponding Android version. See the first two columns of Table 1 (below) for details.
 
 Thus an Ubuntu Touch port is composed of the these components:
     * The Ubuntu Touch (UT) root filesystem (rootfs)
@@ -23,6 +23,7 @@ You, the porter, need to build Halium (i.e. halium-boot.img and system.img) and 
 Halium is built using source code for a modified version of the Android operative system called LineageOS. The required source code is available online and needs to be downloaded and configured to build the correct Halium version for each individual device port. Table 1 shows which versions are required for the different Halium versions.
 
 Table 1
+^^^^^^^
 
 ===============  ==============  ================
 Android version  Halium version  Lineage OS (LOS)
@@ -30,6 +31,8 @@ Android version  Halium version  Lineage OS (LOS)
 7.1              7.1             14.1            
 9.0              9.0             16.0            
 ===============  ==============  ================
+
+.. _1.1:
 
 1.1 Overview of the porting process
 -----------------------------------
@@ -51,6 +54,8 @@ Android version  Halium version  Lineage OS (LOS)
     * Set up the UBports installer for your device
         When you have completed this stage you will have made it possible for anyone owning the device in question to install and run Ubuntu Touch on it, including the ability to receive OTA updates as they are made available.
 
+.. _1.2:
+
 1.2 The challenges of the porting process
 -----------------------------------------
 
@@ -58,12 +63,16 @@ Getting the above components to work properly together always involves an amount
 
 Luckily, there is a community of porters out there who are eager to see Ubuntu Touch ported to new devices. When you run into trouble, you should search the sources below (Getting help) to see if others have before you have solved the issue. There are also online Telegram chat groups you can join to ask for help, but please bear in mind that those participating are doing so of their own free will, and in their spare time.
 
+.. _1.3:
+
 1.3 Prior knowledge and skills
 ------------------------------
 
 Porters come in all sizes and shapes, so to speak. Therefore, this guide does not presuppose extensive knowledge or skills in any particular field. You should, however, as a bare minimum be familiar with some common shell commands and be comfortable working from the terminal on you host pc. Furthermore, the guide is based on a host PC running Linux. If you have some knowledge of programming, this will come in handy at some point, especially if you are familiar with C / C++. Also, you should familiarize yourself with git, setup a github account and start documenting your steps as described in this guide and the Halium porting guide from the very beginning.
 
 We have attempted to give a certain amount of explanations along the way, but this guide is in not an in-depth reference into architecture and inner workings of Ubuntu Touch, and gaining a deeper understanding will consequently require an amount of research on your part.
+
+.. _1.4:
 
 1.4 Getting community help
 --------------------------
@@ -75,6 +84,8 @@ When you run into trouble, and you will, refer to one or more of the sources bel
 * Telegram: @halium
 
 Make sure to check the `UBports Forum <https://forums.ubports.com/category/33/porting>`_ as well.
+
+.. _1.5:
 
 1.5 General advice
 ------------------

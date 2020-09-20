@@ -20,6 +20,8 @@ To determine your device's specifications, search for it on `GSM Arena <https://
 
 Refer to the `Halium Porting Guide <http://docs.halium.org/en/latest/porting/first-steps.html#pick-an-android-target-device>`_ for further information on requirements and how to check if your device qualifies.
 
+.. _2.2:
+
 2.2 Locate relevant guides and other information
 ------------------------------------------------
 
@@ -29,6 +31,8 @@ Head over to the `LineageOS Wiki <https://wiki.lineageos.org/>`_. Look up your d
 
 Another rich source of information is the `XDA Developer Forum <https://www.xda-developers.com/>`_.
 
+.. _2.3:
+
 2.3 Unlock the bootloader
 -------------------------
 
@@ -36,10 +40,14 @@ Vendors provide their devices in a locked bootloader state. This is a kind of so
 
 Devices differ and there is no general method that covers all makes and models. Therefore, you need to check the aforementioned guides for instructions on how to unlock the bootloader of your particular device. 
 
+.. _2.4:
+
 2.4 Install TWRP recovery
 -------------------------
 
 You need to install a custom recovery image on your device in order to handle formatting and flashing image files onto it. Head over to the `TeamWin website <https://twrp.me/Devices/>`_  and locate the image file for your device. Follow the installation instructions provided on the website.
+
+.. _2.5:
 
 2.5 Recommendations for the host/build PC 
 -----------------------------------------

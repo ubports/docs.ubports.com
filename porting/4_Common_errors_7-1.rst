@@ -1,13 +1,17 @@
-4   Common errors when building Halium 7.1 - Ubuntu Touch
-=========================================================
+4   Common errors - Halium 7.1
+==============================
+
+.. _4.1:
 
 4.1 Known issues when building halium-boot.img and system.img for UT
 --------------------------------------------------------------------
 
 Some known issues you may encounter when performing the steps in section 3.2 are described in the `Halium porting guide <http://docs.halium.org/en/latest/porting/build-sources.html#documented-errors>`_.
 
-4.2 Known issues when installing and booting UT for the first time
-------------------------------------------------------------------
+.. _4.2:
+
+4.2 Known issues with initial boot
+----------------------------------
 
 These are some of the known issues you may encounter when performing the steps in section 3.3
 
@@ -52,6 +56,8 @@ To fix this problem, log in before the reboot occurs and run the following comma
     sudo stop lightdm
 
 .. _ubports/ubuntu-touch#560: https://github.com/ubports/ubuntu-touch/issues/560
+
+.. _4.3:
 
 4.3 Known issues when bringing up Unity 8
 -----------------------------------------
@@ -150,9 +156,18 @@ Now rsyslogd will write to the file and you can use it as usual. For example ``l
 .. _the halium docs for wi-fi: http://docs.halium.org/en/latest/porting/debug-build/wifi.html
 .. _paste.ubuntu.com: https://paste.ubuntu.com
 
+4.3.3 Apps crash on launch
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Check if keyboard vibration works. If it does not, this is a good indication that you have not properly applied the apparmor kernel patches. 
+
+Refer to section :ref:`3.3.4 <3.3.4>`.
+
+.. _4.4:
+
 4.4 Known issues when configuring the device
 --------------------------------------------
 
-These are some of the known issues you may encounter when performing the steps in section 3.5
+These are some of the known issues you may encounter when performing the steps in section 3.6
 
-*To be completed*
+*Work in progress*
