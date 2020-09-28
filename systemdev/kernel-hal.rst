@@ -64,7 +64,7 @@ However, Halium permits a more generic way of porting to Android devices. This a
 
 Some examples of Halium ports are those for Sony Xperia X and Oneplus 3. Basically all devices that are listed on `devices.ubuntu-touch.io <https://devices.ubuntu-touch.io>`_, expect those explicitly mentioned above as 5.1, or below as Linux based ports.
 
-All new ports of UT to Android devices should follow the Halium process. Further details can be found under :doc:`Halium porting <../porting/introduction>`
+All new ports of UT to Android devices should follow the Halium process. Further details can be found under :doc:`Halium porting <../porting/1_Intro>`
 
 Linux based ports
 -----------------
