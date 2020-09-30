@@ -13,3 +13,4 @@ The documentation can be built by running `./build.sh` in the root of this repos
 ### Update translations
 
 To update translation templates, run `./update-translations.sh` in the root of this repository.
+#Thank You
