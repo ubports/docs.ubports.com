@@ -1,5 +1,5 @@
-1   Introduction to the Ubuntu Touch porting process
-====================================================
+1   Introduction to porting
+===========================
 
 This first section will introduce you to the specifics of porting Ubuntu Touch to an Android device. Note that it is written with the general public in mind, not primarily the experienced porting developer. In subsequent sections we have made an effort to differentiate by keeping the main text more consise in order to meet the needs of the more experienced reader, while providing links to supplementary reading for the less experienced.
 
