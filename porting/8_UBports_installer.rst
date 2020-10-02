@@ -1,5 +1,5 @@
-8   Configuring the UBports installer
-=====================================
+Configuring the UBports installer
+=================================
 
 *Work in progress*
 

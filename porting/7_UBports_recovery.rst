@@ -1,5 +1,5 @@
-7   Building UBports recovery
-=============================
+Building UBports recovery
+=========================
 
 *Work in progress*
 

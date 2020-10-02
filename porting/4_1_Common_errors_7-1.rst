@@ -1,22 +1,22 @@
-4   Common errors - Halium 7.1
-==============================
+Common errors (7.1)
+===================
 
-.. _4.1:
+.. _Known-issues-when-building-the-images-for-UT:
 
-4.1 Known issues when building halium-boot.img and system.img for UT
---------------------------------------------------------------------
+Known issues when building the images for UT
+--------------------------------------------
 
-Some known issues you may encounter when performing the steps in section 3.2 are described in the `Halium porting guide <http://docs.halium.org/en/latest/porting/build-sources.html#documented-errors>`_.
+Some known issues you may encounter when building the boot and system images are described in the `Halium porting guide <http://docs.halium.org/en/latest/porting/build-sources.html#documented-errors>`_.
 
-.. _4.2:
+.. _Known-issues-with-initial-boot:
 
-4.2 Known issues with initial boot
-----------------------------------
+Known issues with initial boot
+------------------------------
 
-These are some of the known issues you may encounter when performing the steps in section 3.3
+The following are some of the known issues you may encounter in connection with the initial boot process.
 
-4.2.1   SSH hangs when trying to connect
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SSH hangs when trying to connect
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The SSH connection may hang indefinitely when trying to connect. Attempts to stop the connection with Control-C may or may not return you to a shell prompt. If you run ``ssh -vvvv phablet@10.15.19.82``, you only get the following output before the program stops::
 
@@ -39,8 +39,8 @@ This seems to be a common error on arm64 devices with kernel 3.10 when rsyslogd 
 
 You may now reboot the device. You should be able to connect to SSH once it comes back online.
 
-4.2.2   Device reboots after a minute
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Device reboots after a minute
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The device may reboot cleanly after about a minute of uptime. If you are logged in when the reboot occurs, you will see the following message::
 
@@ -57,15 +57,15 @@ To fix this problem, log in before the reboot occurs and run the following comma
 
 .. _ubports/ubuntu-touch#560: https://github.com/ubports/ubuntu-touch/issues/560
 
-.. _4.3:
+.. _Known-issues-when-bringing-up-Unity-8:
 
-4.3 Known issues when bringing up Unity 8
------------------------------------------
+Known issues when bringing up Unity 8
+-------------------------------------
 
-These are some of the known issues you may encounter when performing the steps in section 3.4
+Below is are a few things to check when you are having trouble bringing up Unity 8.
 
-4.3.1   Nothing shows on screen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Nothing shows on screen
+^^^^^^^^^^^^^^^^^^^^^^^
 
 If nothing shows on screen even after adding udev rules to your port, you likely have a problem with graphical applications crashing. This can be caused by Mir servers crashing.
 
@@ -131,8 +131,8 @@ Then, run the following commands to get all of the needed logs::
 
 Use ``scp`` or a similar program to copy the ``usc.log``, ``usc-gdb.log``, and ``usc-logcat.log`` files from phablet's home folder to your computer. Then, post the content of these files to `paste.ubuntu.com`_, Pastebin, GitHub Gists, or a similar service so the people helping you can view them easily.
 
-4.3.2   Programs hang before crashing
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Programs hang before crashing
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Sometimes processes will hang for a very long time and then abort or segfault. The reason for the hang is apport, which attempts to collect useful information about the crash before allowing the program to stop.
 
@@ -156,18 +156,16 @@ Now rsyslogd will write to the file and you can use it as usual. For example ``l
 .. _the halium docs for wi-fi: http://docs.halium.org/en/latest/porting/debug-build/wifi.html
 .. _paste.ubuntu.com: https://paste.ubuntu.com
 
-4.3.3 Apps crash on launch
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _Known-issues-when-configuring-the-device:
+
+Known issues when configuring the device
+----------------------------------------
+
+Apps crash on launch
+^^^^^^^^^^^^^^^^^^^^
 
 Check if keyboard vibration works. If it does not, this is a good indication that you have not properly applied the apparmor kernel patches. 
 
-Refer to section :ref:`3.3.4 <3.3.4>`.
+Refer to section :ref:`Apply-apparmor-kernel-patches`.
 
-.. _4.4:
-
-4.4 Known issues when configuring the device
---------------------------------------------
-
-These are some of the known issues you may encounter when performing the steps in section 3.6
-
-*Work in progress*
+This section is a *Work in progress*
