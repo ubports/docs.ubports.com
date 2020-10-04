@@ -1,5 +1,5 @@
-Reference material (7.1)
-========================
+Reference material
+==================
 
 .. _Display-settings:
 

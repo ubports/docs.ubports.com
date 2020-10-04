@@ -1,8 +1,5 @@
-Building the images (7.1)
-=========================
-
-Introduction
-------------
+Building the images
+===================
 
 A Halium 7.1 - Ubuntu Touch port consists of the following parts:
     

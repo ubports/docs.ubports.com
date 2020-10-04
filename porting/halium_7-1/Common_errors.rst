@@ -1,5 +1,5 @@
-Common errors (7.1)
-===================
+Common errors
+=============
 
 .. _Known-issues-when-building-the-images-for-UT:
 

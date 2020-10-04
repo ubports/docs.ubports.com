@@ -20,7 +20,7 @@ The next component of Ubuntu Touch is a pre-compiled root filesystem which needs
 
 The Halium project enables Linux systems to run on Android hardware. It is a joint effort by multiple mobile operating systems, notably Plasma mobile, Lune OS and UBports. UBports porting builds on top of Halium porting. Consequently, you will be using both the Halium porting guide and the UBports porting guide. At times it can also be helpful to test with one of the other operating systems to debug a problem from different angles.
 
-Halium is thus an indispensible part of an Ubuntu Touch port and is available in the form of open source software. Developing a new version of Halium is a very considerable task which is the why only a few versions of Halium are available. Each port of Ubuntu Touch has to be based on one of the available Halium versions and vendor blobs from the corresponding Android version. See the first two columns of Table 1 (below) for details.
+Halium is thus an indispensible part of an Ubuntu Touch port and is available in the form of open source software. Developing a new version of Halium is a very considerable task which is the why only a few versions of Halium are available. Each port of Ubuntu Touch has to be based on one of the available Halium versions and vendor blobs from the corresponding Android version. See the first two columns of the table below for details.
 
 Thus an Ubuntu Touch port is composed of the these components:
     * The Ubuntu Touch (UT) root filesystem (rootfs)
@@ -29,10 +29,7 @@ Thus an Ubuntu Touch port is composed of the these components:
 
 You, the porter, need to build Halium (i.e. halium-boot.img and system.img) and install these together with the UBports Ubuntu Touch rootfs in order to create a functioning Ubuntu Touch port. 
 
-Halium is built using source code for a modified version of the Android operating system called LineageOS. The required source code is available online and needs to be downloaded and configured to build the correct Halium version for each individual device port. Table 1 shows which versions are required for the different Halium versions.
-
-Table 1
-"""""""
+Halium is built using source code for a modified version of the Android operating system called LineageOS. The required source code is available online and needs to be downloaded and configured to build the correct Halium version for each individual device port. The table below shows which versions are required for the different Halium versions.
 
 ===============  ==============  ================
 Android version  Halium version  Lineage OS (LOS)

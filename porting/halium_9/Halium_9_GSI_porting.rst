@@ -1,5 +1,5 @@
-Halium 9 and GSI Porting
-========================
+GSI Porting
+===========
 
 *Work in progress*
 

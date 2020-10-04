@@ -16,7 +16,7 @@ You can `Download the UBports Installer from GitHub <https://github.com/ubports/
 
 Start the installer and follow the on-screen instructions that will walk you through the installation process. That's it! Have fun exploring Ubuntu Touch!
 
-If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/1_Intro>`.
+If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/Intro>`.
 
 Troubleshooting
 ---------------

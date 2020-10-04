@@ -1,12 +1,12 @@
-Configuring Ubuntu Touch (7.1)
-==============================
-
-.. _Configure-and-enable-remaining-device-functionality:
-
-Configure and enable remaining device functionality
----------------------------------------------------
+Configuring Ubuntu Touch
+========================
 
 In the previous section you adjusted the display settings for your device by modifying one of the configuration files included in the UBports rootfs. Similarly, the rootfs contains a number of other configuration files with some standard settings that do not necessarily conform to your device. These must be modified to fit your device. The rootfs itself is read only and identical for all devices. You cannot modify the rootfs itself. Instead, the correct way to adjust the configuration is with overlay files, as described below.
+
+.. _Overlay-files:
+
+Overlay files
+-------------
 
 Note that as a rule of thumb, the method described below applies if the file you need to edit can be found in the /etc directory (or a subdirectory of this) on your device. You should not attempt to overwrite files located elsewhere with overlay files using this method.
 
@@ -45,12 +45,12 @@ The general steps to follow are thus:
 When you have made the adjustments you need and prepared your source as described above, you have to rebuild your system.img: ``mka systemimage``. When rebuilding the system image after small changes like these, you need not ``mka clean`` first. However, changes to PRODUCT_PROPERTY_OVERRIDES might not get detected by the build system. Go to your output folder, enter the system folder and delete build.prop in order to get it regenerated.
 
 Udev rules
-^^^^^^^^^^
+----------
 
 Extract the file 70-android.rules which you created in the previous section using ``adb pull`` or ``scp`` and copy it to the 'ubuntu' directory of your device source tree. Complete steps 3 and 4 above.
 
 Display scaling
-^^^^^^^^^^^^^^^
+---------------
 
 When Unity 8 is first brought up on your device, you will probably notice that everything is very small. There are two variables that set the content scaling for Unity 8 and Ubuntu Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``.
 
@@ -73,7 +73,7 @@ Create the file android.conf in your 'ubuntu' directory and enter the settings y
 .. _Apply-apparmor-kernel-patches:
 
 Apply apparmor kernel patches
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------------
 
 `What is apparmor? <https://wiki.ubuntu.com/AppArmor>`_
 
@@ -86,7 +86,7 @@ If you get errors when building, you will need to resolve them one by one, modif
 Seek help as needed from one of the sources mentioned in section :ref:`Getting-community-help`.
 
 Sound configuration
-^^^^^^^^^^^^^^^^^^^
+-------------------
 
 The supplied touch.pa file located in the /etc/pulse directory of your device needs adjustment. Extract the file and copy it to your 'ubuntu' directory. 
 
@@ -107,8 +107,8 @@ At the end of the file, append this::
 
 Now complete steps 3 and 4.
 
-Further configuring
--------------------
+Further configuration
+---------------------
 
 *Work in progress*
 
