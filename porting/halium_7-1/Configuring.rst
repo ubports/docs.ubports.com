@@ -1,7 +1,7 @@
 Configuring Ubuntu Touch
 ========================
 
-In the previous section you adjusted the display settings for your device by modifying one of the configuration files included in the UBports rootfs. Similarly, the rootfs contains a number of other configuration files with some standard settings that do not necessarily conform to your device. These must be modified to fit your device. The rootfs itself is read only and identical for all devices. You cannot modify the rootfs itself. Instead, the correct way to adjust the configuration is with overlay files, as described below.
+In the previous section you adjusted a configuration file directly in the UBports rootfs. The rootfs contains a number of other configuration files with some standard settings that do not necessarily conform to your device. These must be modified to fit your device. The rootfs itself is read only and identical for all devices. You cannot modify the rootfs itself. Instead, the correct way to adjust the configuration is with overlay files, as described below.
 
 .. _Overlay-files:
 
@@ -11,9 +11,9 @@ Overlay files
 Note that as a rule of thumb, the method described below applies if the file you need to edit can be found in the /etc directory (or a subdirectory of this) on your device. You should not attempt to overwrite files located elsewhere with overlay files using this method.
 
 In your device directory, create a subdirectory named 'ubuntu'. Collect the files you wish to inject into your build in this directory. Relevant files are for example (but this list is incomplete):
-    * 70-android.rules (the udev rules for your device, see section 3.4)
-    * android.conf (for display scaling, see section 3.4)
-    * touch.pa (for pulseaudio sound configuration/initialization)
+    * 70-android.rules (the udev rules for your device, see previous section)
+    * android.conf (for display scaling, see below)
+    * touch.pa (for pulseaudio sound configuration/initialization, see below)
 
 These files are then injected by adding a code block to the file ``device.mk`` in your device directory. For the three files above add the following code::
 
@@ -49,10 +49,12 @@ Udev rules
 
 Extract the file 70-android.rules which you created in the previous section using ``adb pull`` or ``scp`` and copy it to the 'ubuntu' directory of your device source tree. Complete steps 3 and 4 above.
 
+.. _Display-scaling:
+
 Display scaling
 ---------------
 
-When Unity 8 is first brought up on your device, you will probably notice that everything is very small. There are two variables that set the content scaling for Unity 8 and Ubuntu Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``.
+There are two variables that set the content scaling for Unity 8 and Ubuntu Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``.
 
 There are also other options available that may be useful for you depending on your device's form factor. These are mentioned below and all of these settings are explained in depth in the reference section on :ref:`Display-settings`.
 
@@ -64,7 +66,7 @@ All of these settings are guessed by Unity 8 if none are set. There are many cas
     NATIVE_ORIENTATION=landscape
     FORM_FACTOR=tablet
 
-Methods for deriving values for these variables are below.
+The :ref:`Display-settings` section details methods for deriving values for these variables.
 
 Once you have adjusted the ``android.conf`` file to the display settings needed for your device, this file should be incorporated into your build.
 

@@ -25,6 +25,8 @@ You must create some udev rules to allow Ubuntu Touch software to access your ha
 
 Now, reboot the device. If all has gone well, you will eventually see the Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as you set for SSH.
 
+When Unity 8 is first brought up on your device, you will probably notice that everything is very small. The :ref:`Display-scaling` section describes how to deal with this.
+
 Problems when bringing up Unity 8
 ---------------------------------
 
