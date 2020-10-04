@@ -85,10 +85,11 @@ Getting community help
 
 When you run into trouble, and you will, refer to one or more of the sources below:
 
+* `Telegram: @halium <https://t.me/halium>`_
+* `Telegram: @ubports_porting <https://t.me/ubports_porting>`_
+* `The UBports Forum <https://forums.ubports.com/category/33/porting>`_
 * IRC: #halium on Freenode 
 * Matrix: #halium:matrix.org 
-* Telegram: @halium
-* `The UBports Forum <https://forums.ubports.com/category/33/porting>`_
 
 .. _General-advice:
 
