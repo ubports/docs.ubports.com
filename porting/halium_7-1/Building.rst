@@ -14,7 +14,7 @@ The boot image contains the Linux kernel, the heart of the operating system, whi
 Build the Halium system image
 -----------------------------
 
-First you need to build the Halium system image according to the the Halium porting guide. This is not a build you need to install. It is simply a preparation for the actual build for your port. In other words it a test to confirm that you have set up a viable source tree that can be used to do the final build.
+First you need to build the Halium system image according to the Halium porting guide. This is not a build you need to install. It is simply a preparation for the actual build for your port. In other words it a test to confirm that you have set up a viable source tree that can be used to do the final build.
 
 Head over to `the Halium porting guide <http://docs.halium.org/en/latest/porting/first-steps.html#set-up-your-build-device>`_ and follow the steps described there remembering that you are building Halium 7.1.
 
