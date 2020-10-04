@@ -16,14 +16,14 @@ If your desired target device complies to the above, the next thing to do is to 
 
 Head over to the `LineageOS Wiki <https://wiki.lineageos.org/>`_. Look up your device and read and bookmark the guides that are listed there. Try a web search for additional information, specifying both its retail name and the code name you found on the LineageOS site. Be careful to check that the information you gather applies to your specific device, keeping in mind that many devices are sold in a number of different variants with different hardware specifications.
 
-Another rich source of information is the `XDA Developer Forum <https://www.xda-developers.com/>`_.
+Another rich source of information is the `XDA Developers Forum <https://www.xda-developers.com/>`_.
 
 .. _Unlock-the-bootloader:
 
 Unlock the bootloader
 ---------------------
 
-Vendors provide their devices in a locked bootloader state. This is a kind of software "seal" intended to prevent you from making modifications directly to the operating system and system software. If you unlock the bootloader, you will be able to make such modifications, but in this state your device's warranty will be void. The choice is yours, but this step is mandatory if you wish to install Ubuntu Touch on the device.
+Vendors usually provide their devices in a locked bootloader state. This is a kind of software "seal" intended to prevent modifications directly to the operating system and system software. If you unlock the bootloader, you will be able to make such modifications, but in this state your device's warranty might be void. The choice is yours, but this step is mandatory if you wish to install Ubuntu Touch on the device.
 
 Devices differ and there is no general method that covers all makes and models. Therefore, you need to check the aforementioned guides for instructions on how to unlock the bootloader of your particular device. 
 
@@ -39,6 +39,6 @@ You need to install a custom recovery image on your device in order to handle fo
 Recommendations for the host/build PC 
 -------------------------------------
 
-The remainder of this guide presumes you are using a build PC running Linux. Although high performance always is nice, stability and sufficient ROM and harddisk space are the main concerns here. You do not need the latest and the best hardware, nor do you need the latest distribution release. In fact, it is not uncommon to run into issues when choosing the very newest release, as some of the software needed may not yet have been built for it. For example, as of writing the latest release of Ubuntu Linux is 20.04, but many still recommend using the previous long term support release, 18.04.
+The remainder of this guide presumes you are using a build PC running Linux. Although high performance always is nice, stability and sufficient RAM and harddisk space are the main concerns here. You do not need the latest and the best hardware, nor do you need the latest distribution release. In fact, it is not uncommon to run into issues when choosing the very newest release, as some of the software needed may not yet have been built for it. For example, as of writing the latest release of Ubuntu Linux is 20.04, but many still recommend using the previous long term support release, 18.04.
 
 Having completed the steps above, you are now ready to set up your build environment and start the porting process per se (next section).

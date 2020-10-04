@@ -16,7 +16,7 @@ To be specific, device vendors tend to keep the code that speaks directly to the
 
 This is why Ubuntu Touch cannot be built completely from source code for most commercial devices. Instead, porting the system to these devices involves integrating the previously mentioned vendor blobs into the rest of the system, which can be built from source.
 
-The next component of Ubuntu Touch is a pre-compiled root filesystem which needs to be installed on the device. This component is not capable of communicating directly with the device hardware through the above-mentioned device drivers. Instead, this communication is mediated by a Hardware Abstraction Layer (HAL) which needs to be built for each specific device, because each device has its specific hardware architecture. This component is called Halium and is available in different versions (5.1 which is largely obsolete, 7.1, and 9 as of writing) corresponding to different Android versions.
+The next component of Ubuntu Touch is a pre-compiled root filesystem which needs to be installed on the device. This component does not communicate directly with the device hardware through the above-mentioned device drivers. Instead, this communication is mediated by a Hardware Abstraction Layer (HAL) which needs to be built for each specific device, because each device has its specific hardware architecture. This component is called Halium and is available in different versions (5.1 which is largely obsolete, 7.1, and 9 as of writing) corresponding to different Android versions.
 
 The Halium project enables Linux systems to run on Android hardware. It is a joint effort by multiple mobile operating systems, notably Plasma mobile, Lune OS and UBports. UBports porting builds on top of Halium porting. Consequently, you will be using both the Halium porting guide and the UBports porting guide. At times it can also be helpful to test with one of the other operating systems to debug a problem from different angles.
 
@@ -27,7 +27,7 @@ Thus an Ubuntu Touch port is composed of the these components:
     * `Halium <https://halium.org/>`_ (contained in the boot and system images)
     * The vendor blobs
 
-You, the porter, need to build Halium (i.e. halium-boot.img and system.img) and install these together with the UBports Ubuntu Touch rootfs in order to create a functioning Ubuntu Touch port. 
+You, the porter, need to build Halium (i.e. halium-boot.img and system.img) and install these together with the Ubuntu Touch rootfs in order to create a functioning Ubuntu Touch port. 
 
 Halium is built using source code for a modified version of the Android operating system called LineageOS. The required source code is available online and needs to be downloaded and configured to build the correct Halium version for each individual device port. The table below shows which versions are required for the different Halium versions.
 

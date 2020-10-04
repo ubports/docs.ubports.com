@@ -7,7 +7,7 @@ A Halium 7.1 - Ubuntu Touch port consists of the following parts:
     * The system image, system.img
     * The UBports - Ubuntu Touch - root file system (hereafter referred to as the *rootfs*)
 
-The boot image contains the Linux kernel, the heart of the operating system, which needs to be built from source code for each specific device. The system image is also specific to the device and is similarly built from source code. The rootfs, on the other hand, is maintained by the UBports Foundation and is downloadable in the form of a prebuilt .tar.gz bundle which is then installed together with the system.img.
+The boot image contains the Linux kernel, the heart of the operating system, which needs to be built from source code for each specific device. The system image is also specific to the device and is similarly built from source code. The rootfs, on the other hand, is maintained by the UBports project and is downloadable in the form of a prebuilt .tar.gz bundle which is then installed together with the system.img.
 
 .. _Build-the-Halium-system-image:
 
@@ -18,7 +18,7 @@ First you need to build the Halium system image according to the the Halium port
 
 Head over to `the Halium porting guide <http://docs.halium.org/en/latest/porting/first-steps.html#set-up-your-build-device>`_ and follow the steps described there remembering that you are building Halium 7.1.
 
-Once the system image has been successfully built (without errors), you then know that your source tree is correctly set up to proceed. You then return here and proceed with subsection 3.3 below.
+Once the system image has been successfully built (without errors), you then know that your source tree is correctly set up to proceed. You then return here and proceed.
 
 .. _Build-the-images-for-Ubuntu-Touch:
 
