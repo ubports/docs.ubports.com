@@ -8,393 +8,523 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 11:47-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-10-06 06:57+0000\n"
+"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
+"Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
+"documentation-humanguide/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../../humanguide/app-layout/app-main-view.rst:2
 msgid "App main view"
-msgstr ""
+msgstr "Основные приложения"
 
 #: ../../humanguide/app-layout/app-main-view.rst:4
 msgid "When an app starts, shows a generic splash screen (as in the image) or a custom one, then the main view."
 msgstr ""
+"Когда приложение запускается, отображается общий экран-заставка (как на "
+"изображении) или пользовательский экран, а затем основной вид."
 
 #: ../../humanguide/app-layout/app-main-view.rst:8
 msgid "The standard parts of a main view or any other page may be:"
 msgstr ""
+"Стандартные элементы основного вида или любой другой страницы могут быть:"
 
 #: ../../humanguide/app-layout/app-main-view.rst:11
 msgid "Header"
-msgstr ""
+msgstr "Заголовок"
 
 #: ../../humanguide/app-layout/app-main-view.rst:13
 msgid "Display app name, leading area and trailing area icons."
-msgstr ""
+msgstr "Отображение названия приложения, значков начальной и конечной областей."
 
 #: ../../humanguide/app-layout/app-main-view.rst:17
 msgid "In this case, showing title and trailing actions."
-msgstr ""
+msgstr "В этом случае отображается заголовок и конечные действия."
 
 #: ../../humanguide/app-layout/app-main-view.rst:20
 msgid "Tabbed content"
-msgstr ""
+msgstr "Содержимое с вкладками"
 
 #: ../../humanguide/app-layout/app-main-view.rst:22
 msgid "To organize information under tabs."
-msgstr ""
+msgstr "Чтобы упорядочить информацию по вкладкам."
 
 #: ../../humanguide/app-layout/app-main-view.rst:27
 msgid "Bottom edge menu"
-msgstr ""
+msgstr "Меню нижнего края"
 
 #: ../../humanguide/app-layout/app-main-view.rst:29
 msgid "For quick actions. See `Quick actions`_."
-msgstr ""
+msgstr "Для быстрых действий. См. раздел \"Быстрые действия\"_."
 
 #: ../../humanguide/app-layout/dialogs.rst:2
 msgid "Dialogs"
-msgstr ""
+msgstr "Диалоги"
 
 #: ../../humanguide/app-layout/dialogs.rst:4
 msgid "A dialog is a way of informing the user about important notices or letting them complete a single action."
 msgstr ""
+"Диалог-это способ информирования пользователя о важных уведомлениях или "
+"предоставления ему возможности выполнить одно действие."
 
 #: ../../humanguide/app-layout/dialogs.rst:6
 msgid "Dialogs should be unambiguous and concise in their wording. Only the most common, or main, action should be highlighted with color. The main action should be placed topmost in vertical dialogs or rightmost in horizontal dialogs."
 msgstr ""
+"Диалоги должны быть недвусмысленными и лаконичными в своих формулировках. "
+"Только самое общее, или главное действие должно быть выделено цветом. "
+"Главное действие должно располагаться сверху в вертикальных диалогах или "
+"справа в горизонтальных диалогах."
 
 #: ../../humanguide/app-layout/dialogs.rst:8
 msgid "Main actions may be positive, negative, or neutral. Positive actions add something to their subjects. Negative actions remove, delete, or otherwise make changes that can't be easily undone. Neutral actions do not add or remove from the subject, but still make a change."
 msgstr ""
+"Основные действия могут быть положительными, отрицательными или "
+"нейтральными. Положительные действия добавляют что-то к их предметам. "
+"Негативные действия перемещают, удаляют или каким-то иным образом вносят "
+"изменения, которые нельзя легко отменить. Нейтральные действия не добавляют "
+"и не удаляют предмет, но все же вносят изменения."
 
 #: ../../humanguide/app-layout/dialogs.rst:10
 msgid "The main action should be highlighted using ``theme.palette.normal.negative`` if it is destructive, ``theme.palette.normal.positive`` if it is positive, or ``theme.palette.normal.focus`` if it is neutral. The remaining options should be gray, without defining a color theme property."
 msgstr ""
+"Основное действие должно быть выделено с помощью "
+"``theme.palette.normal.negative`` если оно негативно "
+"``theme.palette.normal.positive``, если оно позитивно, или "
+"``theme.palette.normal.focus``, если оно нейтрально. Остальные параметры "
+"должны быть серыми, без определения свойства цветовой темы."
 
 #: ../../humanguide/app-layout/dialogs.rst:14
 msgid "Dialogs should resume actions, not ask a yes or no question. For example, the user has selected an option to delete a contact. Your dialog should ask, \"Are you sure you would like to delete this contact?\" The options should then be \"Delete\", a negative action colored in red, and \"Cancel\", colored in gray."
 msgstr ""
+"Диалоги должны возобновлять действия, а не задавать вопрос \" да \" или \""
+"нет\". Например, пользователь хочет удалить какой-то контакт в адресной "
+"книге. Ваш диалог должен быть таким: \"Вы уверены, что хотите удалить этот "
+"контакт?\" Варианты ответа - \"удалить\" - отрицательное действие, "
+"окрашенное в красный цвет, и\" отмена\" - окрашенное в серый цвет."
 
 #: ../../humanguide/app-layout/dialogs.rst:17
 msgid "Examples of designs to avoid"
-msgstr ""
+msgstr "Примеры конструкций, которых следует избегать"
 
 #: ../../humanguide/app-layout/dialogs.rst:21
 msgid "Left: Download button uses old focus color, Cancel button (secondary action) uses old grey color."
 msgstr ""
+"Слева: кнопка загрузки использует старый цвет фокуса, кнопка отмены ("
+"вторичное действие) использует старую серую расцветку."
 
 #: ../../humanguide/app-layout/dialogs.rst:23
 msgid "Right: Dialog uses generic answers, both buttons colored as main actions with confusing color meaning: \"Will 'No' cause an irreversible action, and 'Yes' cause an additive action?\""
 msgstr ""
+"Справа: Диалог использует общие ответы, обе кнопки окрашены как основные "
+"действия с запутанным цветовым оформлением: \"будет ли клавиша \"нет \""
+"вызывать необратимое действие, а \"да\" - аддитивное действие?\""
 
 #: ../../humanguide/app-layout/header-uses.rst:2
 msgid "Header uses"
-msgstr ""
+msgstr "Использование заголовка"
 
 #: ../../humanguide/app-layout/header-uses.rst:4
 msgid "App headers can be used to show app name, app section or page, search box, or other globally accessible functions."
 msgstr ""
+"Заголовки приложений можно использовать для отображения имени приложения, "
+"раздела или страницы приложения, поля поиска или других глобально доступных "
+"функций."
 
 #: ../../humanguide/app-layout/header-uses.rst:12
 msgid "Some special apps doesn't show any header, like the Camera app or some games."
 msgstr ""
+"Некоторые специальные приложения не показывают никакого заголовка, например "
+"приложение камеры или некоторые игры."
 
 #: ../../humanguide/app-layout/header-uses.rst:14
 msgid "The header takes care of showing the back button when a `page stack <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Components/PageStack.html>`__ is used."
 msgstr ""
+"Заголовок нужен, чтобы показать кнопку \"назад\", когда используется \"стек "
+"страниц <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Components/"
+"PageStack.html>' __ ."
 
 #: ../../humanguide/app-layout/importing-data.rst:2
 msgid "Importing Data"
-msgstr ""
+msgstr "Импорт данных"
 
 #: ../../humanguide/app-layout/importing-data.rst:4
 msgid "Interchange of data between apps is done through Content Hub. This improves isolation between apps."
 msgstr ""
+"Обмен данными между приложениями осуществляется через Content Hub. Это "
+"улучшает изоляцию между приложениями."
 
 #: ../../humanguide/app-layout/importing-data.rst:8
 msgid "Apps with the appropriate apparmor permissions can import, export or share data between them."
 msgstr ""
+"Приложения с соответствующими разрешениями apparmor могут импортировать, "
+"экспортировать или обмениваться данными между собой."
 
 #: ../../humanguide/app-layout/importing-data.rst:10
 msgid "For more information see `Importing from Content Hub and URLdispatcher`_."
 msgstr ""
+"Для получения дополнительной информации см. раздел `Импорт из Content Hub и "
+"URLdispatcher`_."
 
 #: ../../humanguide/app-layout/index.rst:2
 msgid "App layout"
-msgstr ""
+msgstr "Макет приложения"
 
 #: ../../humanguide/app-layout/main-actions.rst:2
 msgid "Main actions"
-msgstr ""
+msgstr "Основное действие"
 
 #: ../../humanguide/app-layout/main-actions.rst:4
 msgid "Main actions are displayed in the corresponding header of the Page. The header should show only relevant actions to the current page."
 msgstr ""
+"Основные действия отображаются в соответствующем заголовке страницы. "
+"Заголовок должен показывать только соответствующие действия для текущей "
+"страницы."
 
 #: ../../humanguide/app-layout/main-actions.rst:6
 msgid "Main page of Contacts app shows:"
-msgstr ""
+msgstr "Главная страница приложения Контакты выглядит так:"
 
 #: ../../humanguide/app-layout/main-actions.rst:10
 msgid "When viewing a single contact, only relevant actions are shown:"
 msgstr ""
+"При просмотре одного контакта отображаются только соответствующие действия:"
 
 #: ../../humanguide/app-layout/main-actions.rst:15
 msgid "Slots"
-msgstr ""
+msgstr "Ячейки"
 
 #: ../../humanguide/app-layout/main-actions.rst:17
 msgid "The header contains a number of slots that can hold actions or navigational options. Depending on the surface or window size, additional slots can be added to show the actions otherwise hidden in drawers."
 msgstr ""
+"Заголовок содержит несколько ячеек, которые могут содержать действия или "
+"навигационные параметры. В зависимости от размера поля или окна можно "
+"добавить дополнительные ячейки, чтобы показать действия, которые иначе "
+"скрыты."
 
 #: ../../humanguide/app-layout/main-actions.rst:22
 msgid "Action Drawer"
-msgstr ""
+msgstr "Панель быстрого доступа"
 
 #: ../../humanguide/app-layout/main-actions.rst:24
 msgid "Actions will be placed into an action drawer when there are no available slots to house them. However, when your app is on a larger surface, like on a desktop, then actions will appear in the slots."
 msgstr ""
+"Действия будут помещены в панель быстрого доступа, когда нет доступных "
+"слотов для их размещения. Однако когда ваше приложение находится на большом "
+"экране, например на рабочем столе,действия будут отображаться в слотах."
 
 #: ../../humanguide/app-layout/main-actions.rst:29
 msgid "Responsive layout"
-msgstr ""
+msgstr "Адаптивный макет"
 
 #: ../../humanguide/app-layout/main-actions.rst:31
 msgid "As the header gains width across screen sizes, additional slots become visible and actions in the drawer will appear automatically."
 msgstr ""
+"По мере увеличения ширины заголовка в разных размерах экрана становятся "
+"видны дополнительные слоты, и действия на панели быстрого доступа появляются "
+"автоматически."
 
 #: ../../humanguide/app-layout/main-actions.rst:34
 msgid "3 slot layout"
-msgstr ""
+msgstr "Третий слой слотов"
 
 #: ../../humanguide/app-layout/main-actions.rst:41
 msgid "4 slot layout"
-msgstr ""
+msgstr "четвертый слой слотов"
 
 #: ../../humanguide/app-layout/main-actions.rst:48
 msgid "5 slot layout"
-msgstr ""
+msgstr "пятый слой слотов"
 
 #: ../../humanguide/app-layout/main-actions.rst:55
 msgid "6 slot layout"
-msgstr ""
+msgstr "шестой слой слотов"
 
 #: ../../humanguide/app-layout/main-actions.rst:62
 msgid "Medium to large screens"
-msgstr ""
+msgstr "Средний и большой экраны"
 
 #: ../../humanguide/app-layout/main-actions.rst:64
 msgid "The maximum number of visible action slots in a convergent environment is 6. If this is exceeded then additional actions will migrate to the action drawer."
 msgstr ""
+"Максимальное количество видимых слотов в конвергентной среде - 6. Если это "
+"число превышено, дополнительные действия будут перенесены в панель быстрого "
+"доступа."
 
 #: ../../humanguide/app-layout/main-actions.rst:67
 msgid "Simple"
-msgstr ""
+msgstr "Простота"
 
 #: ../../humanguide/app-layout/main-actions.rst:69
 msgid "Keep in mind to keep a clean design. The simpler, the better."
 msgstr ""
+"Помните о том, что дизайн должен быть простым и минималистичным. Чем проще, "
+"тем лучше."
 
 #: ../../humanguide/app-layout/presenting-data.rst:2
 msgid "Presenting data"
-msgstr ""
+msgstr "Презентация данных"
 
 #: ../../humanguide/app-layout/presenting-data.rst:5
 msgid "List Items"
-msgstr ""
+msgstr "Элементы списка"
 
 #: ../../humanguide/app-layout/presenting-data.rst:7
 msgid "List items can be used to make up a list of ordered scrollable items that are related to each other."
 msgstr ""
+"Элементы списка можно использовать для создания списка упорядоченных "
+"прокручиваемых элементов, связанных друг с другом."
 
 #: ../../humanguide/app-layout/presenting-data.rst:11
 msgid "When images or icons are presented without text or actions, it would make more sense to show them inside a grid rather than a list; like in a photo gallery."
 msgstr ""
+"Когда изображения или значки представлены без текста или действий, было бы "
+"разумнее отображать эти элементы как в фотогалерее, а не в списке."
 
 #: ../../humanguide/app-layout/presenting-data.rst:15
 msgid "Items in a list can have actions that can be placed in a context menu. The context menu can be accessed in two ways: by swiping or right-clicking the list item."
 msgstr ""
+"Элементы в списке могут иметь действия, которые можно разместить в "
+"контекстном меню. В контекстное меню можно попасть двумя способами: с "
+"помощью движения пальцами (\"свайп\") или щелкнув правой кнопкой мыши "
+"элемент списка."
 
 #: ../../humanguide/app-layout/presenting-data.rst:17
 msgid "The actions are placed within two categories: leading for negative actions and trailing for positive actions."
 msgstr ""
+"Действия делятся на две категории: для отрицательных действий и для "
+"положительных действий."
 
 #: ../../humanguide/app-layout/presenting-data.rst:20
 msgid "Touch swiping"
-msgstr ""
+msgstr "\"Свайпы\" (жесты пальцами)"
 
 #: ../../humanguide/app-layout/presenting-data.rst:27
 msgid "Mouse right click"
-msgstr ""
+msgstr "Щелчок правой клавишей мыши"
 
 #: ../../humanguide/app-layout/presenting-data.rst:32
 msgid "Keyboard navigation"
-msgstr ""
+msgstr "Навигация с помощью клавиатуры"
 
 #: ../../humanguide/app-layout/presenting-data.rst:37
 msgid "Lists in edit mode"
-msgstr ""
+msgstr "Списки в режиме редактирования"
 
 #: ../../humanguide/app-layout/presenting-data.rst:39
 msgid "Edit mode allows users to modify a particular item or multiple items at once."
 msgstr ""
+"Режим редактирования позволяет пользователям один или несколько элементов "
+"одновременно."
 
 #: ../../humanguide/app-layout/presenting-data.rst:41
 msgid "You can use edit mode to allow users to multi-select, rearrange or delete items inside a list. When edit mode is entered the whole screen becomes an edit state and the header will show associated editing actions for the content. Alternatively, if the user long presses an item a context menu will show the associated editing actions too."
 msgstr ""
+"Вы можете использовать режим редактирования, чтобы пользователи могли "
+"выбирать, переупорядочивать или удалять элементы в списке. При входе в режим "
+"редактирования весь экран переходит в состояние редактирования, а в "
+"заголовке отображаются соответствующие действия по редактированию "
+"содержимого. Или можно иначе - если пользователь долго нажимает на элемент, "
+"контекстное меню также покажет связанные действия редактирования."
 
 #: ../../humanguide/app-layout/presenting-data.rst:48
 msgid "Layout of detailed list items"
-msgstr ""
+msgstr "Макет подробного списка пунктов"
 
 #: ../../humanguide/app-layout/presenting-data.rst:52
 msgid "1 line – Title"
-msgstr ""
+msgstr "1 линия - Название"
 
 #: ../../humanguide/app-layout/presenting-data.rst:54
 msgid "1 line – Subtitle"
-msgstr ""
+msgstr "1 линия - Подзаголовок"
 
 #: ../../humanguide/app-layout/presenting-data.rst:56
 msgid "2 lines – Summary"
-msgstr ""
+msgstr "2 линия - Резюме"
 
 #: ../../humanguide/app-layout/quick-actions.rst:2
 msgid "Quick actions"
-msgstr ""
+msgstr "Быстрые действия"
 
 #: ../../humanguide/app-layout/quick-actions.rst:4
 msgid "The most common action for an app, the one that needs to be accessed quickly might be added as a `bottom edge <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Components/BottomEdge.html>`__ action, accessed with a swipe from outside of the screen upwards."
 msgstr ""
+"Наиболее распространенное действие для приложения, к которому нужно быстро "
+"получить доступ, можно добавить как действие`bottom edge <https://api-"
+"docs.ubports.com/sdk/apps/qml/Ubuntu.Components/BottomEdge.html > `__ , "
+"доступ к которому осуществляется с помощью свайпа по экрану вверх."
 
 #: ../../humanguide/app-layout/quick-actions.rst:6
 msgid "You can add a new contact in the Contacts app swiping up:"
 msgstr ""
+"Можно добавить новый контакт в приложение «Контакты», проведя пальцем вверх:"
 
 #: ../../humanguide/app-layout/quick-actions.rst:11
 msgid "Hint"
-msgstr ""
+msgstr "Подсказки"
 
 #: ../../humanguide/app-layout/quick-actions.rst:13
 msgid "The hint is used to let the user know that there is something worth trying at the bottom of the screen."
 msgstr ""
+"Подсказки используются, чтобы сообщить пользователю, что в нижней части "
+"экрана есть нужные данные или элементы."
 
 #: ../../humanguide/app-layout/quick-actions.rst:15
 msgid "After opening an app, a hint with a text and/or an icon is shown:"
 msgstr ""
+"После запуска приложения отображается подсказка с текстом и/или значком:"
 
 #: ../../humanguide/app-layout/quick-actions.rst:19
 msgid "After after a few seconds it hides and a floating icon is shown"
-msgstr ""
+msgstr "Через несколько секунд она скроется, и появится плавающая иконка"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:2
 msgid "App icon design"
-msgstr ""
+msgstr "Дизайн иконок приложений"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:4
 msgid "The whole system and apps follow the `Suru design principles <http://web.archive.org/web/20191223082720/https://docs.ubuntu.com/phone/en/apps/design/get-started/design-philosophy>`__ started by Canonical and `Samuel Hewitt <https://samuelhewitt.com>`__."
 msgstr ""
+"Вся система и приложения выполнены по правилам`Suru design principles "
+"<http://web.archive.org/web/20191223082720/https://docs.ubuntu.com/phone/en/"
+"apps/design/get-started/design-philosophy>`__, авторы которых - компания "
+"Canonical и`Samuel Hewitt <https://samuelhewitt.com> `__."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:7
 msgid "Design Philosophy and Suru Meaning"
-msgstr ""
+msgstr "Философия дизайна и стиль Suru"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:9
 msgid "Suru alludes to Japanese culture."
-msgstr ""
+msgstr "Suru ведет своё происхождение из японской культуры."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:10
 msgid "The design of Suru is inspired by origami."
-msgstr ""
+msgstr "В элементах оформления Suru угадываются идеи оригами."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:11
 msgid "Paper can be used in two and three dimensional forms, because it is transferable and diverse."
 msgstr ""
+"Бумага - материал универсальный. Она может принимать разнообразные формы, "
+"как объемные трехмерные, так и двухмерные."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:14
 msgid "Suru brings a precise yet organic structure to the Ubuntu Touch interface. The sharp lines and varying levels of transparency evoke the edges and texture of paper."
 msgstr ""
+"Suru дает точную и органичную структуру интерфейсу Ubuntu Touch. Четкие "
+"линии и различный уровень прозрачности напоминают острую кромку листов "
+"бумаги и их текстуру."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:17
 msgid "Design Tips for an App Icon"
-msgstr ""
+msgstr "Советы по оформлению пиктограмм и знаков приложений"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:20
 msgid "Descriptive design"
-msgstr ""
+msgstr "Понятный дизайн"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:22
 msgid "The icon you choose for your app should describe what your app is about, what it does, or what service it is there for in a recognizable way."
 msgstr ""
+"Иконка приложения должна давать представление о программе, для чего она "
+"предназначена или для какой службы выпущена."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:27
 msgid "Distinctive shapes"
-msgstr ""
+msgstr "Отличительные формы"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:29
 msgid "Depending on the object you choose to show in the icon, on the perspective, lighting and other factors, it might be hard to recognize what you are trying to depict. A TV might look like a box, or a computer screen, a remote control like a phone, etc."
 msgstr ""
+"В зависимости от изображения на иконке, от его перспективы и детализации, "
+"может быть трудно понять, что именно изображено. Телевизор может выглядеть "
+"как коробка, экран компьютера, пульт - как телефон и так далее."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:34
 msgid "Details"
-msgstr ""
+msgstr "Детали"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:36
 msgid "A detailed icon is very nice to look at as it shows quality and your eye for the small things. It might add confusion though, especially in smaller sizes or for people who have impaired eyesight. Show what's necessary, pay attention to detail, but don't overload the icon."
 msgstr ""
+"На хорошо прорисованный значок приятно смотреть, это говорит о внимании к "
+"мелочам и качестве приложения. Однако это может запутать пользователя или "
+"создавать трудности людям с ослабленным зрением. Покажите, что мелочи важны, "
+"но старайтесь не перегружать иконку."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:41
 msgid "Colours"
-msgstr ""
+msgstr "Цвета"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:43
 msgid "Use distinctive colours, make your icon stand out a bit and give the shapes enough contrast to be visible."
 msgstr ""
+"Лучше использовать разные цвета, чтобы выделить иконку программы. Чтобы "
+"значки и детали были заметны, нужно сделать их контрастными."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:48
 msgid "Gradients"
-msgstr ""
+msgstr "Цветовые оттенки (градиент)"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:50
 msgid "If you were to add a gradient to your icon, only use colours that are slightly different from each other so that the change is not too dramatic. For example:"
 msgstr ""
+"Если иконка использует градиентную расцветку, лучше использовать цвета, "
+"которые немного отличаются друг от друга, чтобы цветовая палитра изменялась "
+"плавно. Например:"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:55
 msgid "Composition"
-msgstr ""
+msgstr "Композиция"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:57
 msgid "Suru icons are composed of simple geometric shapes. The background is usually a coloured surface with the pictogram, also composed of flat shapes, “floating” above it."
 msgstr ""
+"Иконки Suru состоят из простых геометрических фигур. Фон обычно представляет "
+"собой цветную поверхность с пиктограммой, также состоящей из плоских фигур, "
+"«плавающей» над поверхностью."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:64
 msgid "The Fold Effect"
-msgstr ""
+msgstr "Эффект линии сгиба"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:66
 msgid "In keeping with the origami motif, some Suru icons have an implied fold. In many icons this is a single horizontal or vertical line but sometimes the fold line(s) correspond or align with elements of the pictogram."
 msgstr ""
+"Как и в фигурках оригами, у некоторых иконок Suru есть едва видимая складка. "
+"Во многих значках это одна горизонтальная или вертикальная линия, но иногда "
+"на пиктограмме можно видеть несколько линий сгиба."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:68
 msgid "The fold is drawn by creating an overlay of a white or black polygon of very low opacity (usually between 1%~10%)."
 msgstr ""
+"Линия сгиба создается путем наложения белого или черного многоугольника с "
+"очень низким значением параметра \"непрозрачность\" (обычно от 1% до 10%)."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:75
 msgid "Grids"
-msgstr ""
+msgstr "Сетка"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:77
 msgid "Using a grid layout ensures consistency across all icons and will force you to reserve area for the icon background for even padding around the pictogram."
 msgstr ""
+"Использование макетной сетки обеспечивает одинаковое оформление всех иконок "
+"и заставляет разработчиков резервировать область для фона значка для "
+"равномерного заполнения вокруг пиктограммы."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:81
 msgid "Note that the circular elements are slightly larger than rectangular elements of the grid, this overshoot is needed to compensate for the optical illusion where circular objects appear smaller than rectangular objects of the same dimensions."
 msgstr ""
+"Обратите внимание, что круглые элементы немного больше прямоугольных "
+"элементов сетки. Такое оформление необходимо, чтобы компенсировать "
+"оптическую иллюзию, когда круглые объекты кажутся меньше прямоугольных "
+"объектов тех же размеров."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:84
 msgid "Unit Grid"
@@ -731,7 +861,7 @@ msgstr ""
 
 #: ../../humanguide/design-concepts/typography.rst:23
 msgid "1.5"
-msgstr ""
+msgstr "1.5"
 
 #: ../../humanguide/design-concepts/typography.rst:23
 msgid "27 px"
@@ -767,7 +897,7 @@ msgstr ""
 
 #: ../../humanguide/design-concepts/typography.rst:27
 msgid "2.5"
-msgstr ""
+msgstr "2.5"
 
 #: ../../humanguide/design-concepts/typography.rst:27
 msgid "20 px"
@@ -827,7 +957,7 @@ msgstr ""
 
 #: ../../humanguide/design-concepts/units.rst:18
 msgid "Device"
-msgstr ""
+msgstr "Устройство"
 
 #: ../../humanguide/design-concepts/units.rst:18
 msgid "Conversion"

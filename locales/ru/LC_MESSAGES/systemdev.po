@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-29 13:44-0500\n"
-"PO-Revision-Date: 2020-08-28 07:54+0000\n"
+"PO-Revision-Date: 2020-09-09 19:24+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-systemdev/ru/>\n"
@@ -186,9 +186,8 @@ msgstr ""
 #: ../../systemdev/index.rst:29
 msgid "There's not much here yet, but maybe you'd like to add some reference material? Check out :doc:`our guide to contributing to documentation </contribute/documentation>` to learn more."
 msgstr ""
-"Материала тут пока мало. Может быть, Вы хотите дополнить эти инструкции? Как "
-"это сделать, написано в :doc:`главе о том, как можно помочь </contribute/"
-"documentation>`."
+"Тут пока мало информации. Может быть, Вы хотите дополнить эти инструкции? "
+"Прочитайте :doc:`главу о том, как можно помочь </contribute/documentation>`."
 
 #: ../../systemdev/mms-infrastructure.rst:2
 msgid "MMS infrastructure components"
@@ -499,8 +498,8 @@ msgstr ""
 "абстракции Qt-платформы) для платформы Ubuntu Touch. QtMir можно "
 "рассматривать как сервер для Unity8, тогда как QtUbuntu используется для "
 "клиентских приложений. Каждый из них позволяет своим доменам использовать "
-"высокоуровневые абстракции Qt поверхностей, окон, элементов управления и так "
-"далее, не беспокоясь о базовой операционной системе."
+"высокоуровневые абстракции Qt окон, элементов управления и так далее, не "
+"беспокоясь о базовой операционной системе."
 
 #: ../../systemdev/qtmir-qtubuntu.rst:7
 msgid "QtMir"
@@ -584,7 +583,7 @@ msgstr ""
 msgid "`QtUbuntu-Sensors`_ provides Android haptic feedback, GPS, orientation, and accelerometer sensors to `QtSensors`_. We are trying to replace this component with `sensorfw`_, a single daemon capable of providing these functions using Android or standard Linux kernel drivers."
 msgstr ""
 "`QtUbuntu-Sensors`_ обеспечивает тактильную обратную связь с Android, "
-"датчиками GPS, ориентации и акселерометра для` QtSensors`_. Мы пытаемся "
+"датчиками GPS, ориентации и акселерометра для`QtSensors`_. Мы пытаемся "
 "заменить этот компонент отдельным демоном`sensorfw`_, который может "
 "предоставлять эти функции с помощью Android-драйверов или стандартных "
 "драйверов ядра Linux."
@@ -593,7 +592,7 @@ msgstr ""
 msgid "`QtUbuntu-Media`_ provides hardware encoding and decoding of audio/video content on Android devices to `QtMultimedia`_. It is tightly integrated with `media-hub`_."
 msgstr ""
 "`QtUbuntu-Media`_ обеспечивает аппаратное кодирование и декодирование аудио/"
-"видео контента на устройствах Android в` QtMultimedia`_. Компонент тесно "
+"видео контента на устройствах Android в `QtMultimedia`_ Компонент тесно "
 "связан с `media-hub`_."
 
 #: ../../systemdev/testing-locally.rst:2
@@ -603,367 +602,585 @@ msgstr "Внесение изменений и локальное тестиро
 #: ../../systemdev/testing-locally.rst:4
 msgid "On this page you'll find information on how to build Ubuntu Touch system software for your device. Most of the software preinstalled on your Ubuntu Touch device is shipped in the device image in the form of a Debian package. This format is used by several Linux distributions, such as Debian, Ubuntu, and Linux Mint. Plenty of `documentation on deb packages <https://www.debian.org/doc/manuals/maint-guide/index.en.html>`__ is available, so we won't be covering it here. Besides, in most cases you'll find yourself in need of modifying existing software rather than developing new packages from scratch. For this reason, this guide is mostly about recompiling an existing Ubuntu Touch package."
 msgstr ""
+"На этой странице Вы найдете информацию о том, как скомпилировать системное "
+"приложение Ubuntu Touch для своего устройства. Большая часть программного "
+"обеспечения, предустановленного на устройстве Ubuntu Touch, поставляется в в "
+"виде пакета Debian. Этот формат используется несколькими дистрибутивами "
+"Linux, такими как Debian, Ubuntu и Linux Mint. В сети доступно множество `"
+"документов о стандарте deb <https://www.debian.org/doc/manuals/maint-guide/"
+"index.en.html>` __, поэтому мы не будем здесь подробно об этом рассказывать. "
+"Кроме того, в большинстве случаев потребуется изменить существующее "
+"программное обеспечение, а не разрабатывать новые пакеты с нуля. По этой "
+"причине это руководство в основном посвящено компиляции уже существующего "
+"пакета для Ubuntu Touch."
 
 #: ../../systemdev/testing-locally.rst:6
 msgid "There are essentially two ways of developing Ubuntu Touch system software locally:"
 msgstr ""
+"Есть два способа разработки системного программного обеспечения Ubuntu Touch "
+"на локальном устройстве:"
 
 #: ../../systemdev/testing-locally.rst:8
 msgid "`Cross-building with crossbuilder`_"
-msgstr ""
+msgstr "`Кросс-компиляция с помощью инструмента Crossbuilder`_"
 
 #: ../../systemdev/testing-locally.rst:9
 msgid "`Building on the device itself`_"
-msgstr ""
+msgstr "`Компиляция приложения на самом устройстве`_"
 
 #: ../../systemdev/testing-locally.rst:11
 msgid "We'll examine both methods, using `address-book-app <https://github.com/ubports/address-book-app>`__ (the Contacts application) as an example."
 msgstr ""
+"Мы рассмотрим оба метода на примере программы `address-book-app "
+"<https://github.com/ubports/address-book-app>`__ (Контакты)."
 
 #: ../../systemdev/testing-locally.rst:13
 msgid "We only recommend developing packages using a device with Ubuntu Touch installed from the devel channel. This ensures that you are testing your changes against the most current state of the Ubuntu Touch code."
 msgstr ""
+"Мы рекомендуем разрабатывать пакеты только с использованием устройства с "
+"Ubuntu Touch, установленным из канала разработки. Это гарантирует, что Вы "
+"тестируете программы в соответствии с самым последним состоянием кода Ubuntu "
+"Touch."
 
 #: ../../systemdev/testing-locally.rst:17
 msgid "Installing packages has a risk of damaging the software on your device, rendering it unusable. If this happens, you can :doc:`reinstall Ubuntu Touch </userguide/install>`."
 msgstr ""
+"При установке пакетов есть риск повредить программное обеспечение на "
+"устройстве так, что ничего работать не будет. В этом случае придется :doc:`"
+"переустановить Ubuntu Touch </userguide/install>`."
 
 #: ../../systemdev/testing-locally.rst:20
 msgid "Cross-building with crossbuilder"
-msgstr ""
+msgstr "Кросс-компиляция с помощью инструмента Crossbuilder"
 
 #: ../../systemdev/testing-locally.rst:22
 msgid "Crossbuilder is a script which automates the setup and use of a crossbuild environment for Debian packages. It is suitable for developers with any device since the code compilation occurs on your desktop PC rather than the target device. This makes Crossbuilder the recommended way to develop non-trivial changes to Ubuntu Touch."
 msgstr ""
+"Crossbuilder - это скрипт, который автоматизирует установку и работу среды "
+"кросс-компиляции для пакетов Debian. Он подходит для разработки на любом "
+"устройстве, поскольку компиляция кода происходит на настольном ПК, а не на "
+"целевом устройстве. поэтому Crossbuilder рекомендуется использовать как "
+"основной инструмент разработки для Ubuntu Touch."
 
 #: ../../systemdev/testing-locally.rst:26
 msgid "Crossbuilder requires a Linux distribution with ``lxd`` installed and the unprivileged commandset available. In other words, you must be able to run the ``lxc`` command. If you are running Ubuntu on your host, Crossbuilder will set up ``lxd`` for you."
 msgstr ""
+"Для работы Crossbuilder требуется дистрибутива Linux с установленной "
+"программой``lxd`` и доступным непривилегированным набором команд. Другими "
+"словами, нужно иметь возможность запускать команду lxc. Если на настольном "
+"ПК установлен дистрибутив Ubuntu, Crossbuilder настроит lxd самостоятельно."
 
 #: ../../systemdev/testing-locally.rst:28
 msgid "Start by installing Crossbuilder on your host::"
-msgstr ""
+msgstr "Сначала нужно установить Crossbuilder на десктоп::"
 
 #: ../../systemdev/testing-locally.rst:33
 msgid "Crossbuilder is a shell script, so you don't need to build it. Instead, you will need to add its directory to your ``PATH`` environment variable, so that you can execute it from any directory::"
 msgstr ""
+"Crossbuilder - это скрипт для оболочки shell, он не требует сборки. Нужно "
+"будет только добавить его каталог в переменную окружения PATH, чтобы его "
+"можно было запустить из любого каталога::"
 
 #: ../../systemdev/testing-locally.rst:39
 msgid "Now that Crossbuilder is installed, we can use it to set up LXD::"
 msgstr ""
+"Теперь установка Crossbuilder закончилась, и можно использовать его для "
+"настройки LXD::"
 
 #: ../../systemdev/testing-locally.rst:43
 msgid "If this is the first time you have used LXD, you might need to reboot your host once everything has completed."
 msgstr ""
+"Если установка LXD происходит впервые, то после её окончания нужно будет "
+"перезагрузить компьютер."
 
 #: ../../systemdev/testing-locally.rst:45
 msgid "After LXD has been set up, move to the directory where the source code of your project is located (for example, ``cd ~/src/git/address-book-app``) and launch Crossbuilder::"
 msgstr ""
+"После установки LXD зайдите в каталог, где находится исходный код программы ("
+"например, ``cd ~/src/git/address-book-app``) и запустите Crossbuilder::"
 
 #: ../../systemdev/testing-locally.rst:49
 msgid "Crossbuilder will create the LXD container, download the development image, install all your package build dependencies, and perform the package build. It will also copy the packages over to your target device and install them if it is connected (see :doc:`/userguide/advanceduse/adb` to learn more about connecting your device). The first two steps (creating the LXD image and getting the dependencies) can take a few minutes, but will be executed only the first time you launch crossbuilder for a new package."
 msgstr ""
+"Crossbuilder создаст контейнер LXD, загрузит образ операционной системы, "
+"установит все необходимые файлы зависимостей и выполнит сборку пакета. Он "
+"также скопирует пакеты на устройство и установит их, если оно подключено к "
+"компьютеру (подробнее о подключении устройства к ПК см. .:doc:`/userguide/"
+"advanceduse/adb`). Первые два шага (создание образа LXD и получение "
+"зависимостей) могут занять несколько минут, но будут выполнены только при "
+"первом запуске скрипта Crossbuilder для нового пакета."
 
 #: ../../systemdev/testing-locally.rst:51
 msgid "Now, whenever you change the source code in your git repository, the same changes will be available inside the container. The next time you type the ``crossbuilder`` command, only the changed files will be rebuilt."
 msgstr ""
+"Теперь, если изменится исходный код в репозитории git, те же изменения будут "
+"доступны внутри контейнера. В следующий раз, когда будет выполнена команда "
+"``crossbuilder``, будут скомпилированы только измененные файлы."
 
 #: ../../systemdev/testing-locally.rst:54
 msgid "Unit tests"
-msgstr ""
+msgstr "Модульные тесты"
 
 #: ../../systemdev/testing-locally.rst:56
 msgid "By default crossbuilder does not run unit tests; that's both for speed reasons, and because the container created by crossbuilder is not meant to run native (target) executables: the development tools (qmake/cmake, make, gcc, etc.) are all run in the host architecture, with no emulation (again, for speed reasons). However, qemu emulation is available inside the container, so it should be possible to run unit tests. You can do that by getting a shell inside the container::"
 msgstr ""
+"По умолчанию crossbuilder не запускает модульные тесты; это сделано и по "
+"соображениям скорости, и потому, что контейнер не предназначен для запуска "
+"собственных (целевых) исполняемых файлов: все инструменты разработки (qmake/"
+"cmake, make, gcc и т. д.) запускаются на ПК без эмуляции (опять же из "
+"соображений скорости работы). Однако эмуляция qemu доступна внутри "
+"контейнера, поэтому должна быть возможность запускать модульные тесты. Вы "
+"можете сделать это, запустив оболочку внутри контейнера::"
 
 #: ../../systemdev/testing-locally.rst:60
 msgid "Then find the unit tests and execute them. Be aware that the emulation is not perfect, so there's a very good chance that the tests will fail even when they'd otherwise succeed when run in a proper environment. For that reason, it's probably wiser not to worry about unit tests when working with crossbuilder, and run them only when not cross-compiling."
 msgstr ""
+"Затем найдите модульные тесты и выполните их. Имейте в виду, что эмуляция не "
+"идеальна. Скорее всего, тесты завершатся ошибкой, даже если они успешно "
+"завершились на настольном ПК. Поэтому, разумнее не беспокоиться о модульных "
+"тестах при работе с Crossbuilder и запускать их только тогда, когда кросс-"
+"компиляция не выполняется."
 
 #: ../../systemdev/testing-locally.rst:63
 msgid "Building on the device itself"
-msgstr ""
+msgstr "Компиляция приложения на мобильном устройстве"
 
 #: ../../systemdev/testing-locally.rst:65
 msgid "This is the fastest and simplest method to develop small changes and test them in nearly real-time. Depending on your device resources, however, it might not be possible to follow this path: if you don't have enough free space in your root filesystem you won't be able to install all the package build dependencies; you may also run out of RAM while compiling."
 msgstr ""
+"Это самый быстрый и простой метод разработки небольших программ и их "
+"тестирования практически в реальном времени. Однако, в зависимости от "
+"ресурсов вашего устройства, этот путь может оказаться технически непростым: "
+"если на устройстве недостаточно свободного места в корневой файловой "
+"системе, Вы не сможете установить все файлы зависимостей для сборки пакета; "
+"на устройстве также может не хватить оперативной памяти во время компиляции."
 
 #: ../../systemdev/testing-locally.rst:69
 msgid "This method is limited. Many devices do not have enough free image space to install the packages required to build components of Ubuntu Touch."
 msgstr ""
+"Этот способ подойдет не для всех пользователей. На многих устройствах не "
+"хватает свободного места для установки пакетов, необходимых для сборки "
+"компонентов Ubuntu Touch."
 
 #: ../../systemdev/testing-locally.rst:71
 msgid "In this example, we'll build and install the address-book-app. All commands shown here must be run on your Ubuntu Touch device over a remote shell."
 msgstr ""
+"В этом примере мы скомпилируем и установим приложение \"Адресная книга\" "
+"(address-book-app). Все приведенные здесь команды должны запускаться на "
+"устройстве с Ubuntu Touch через удаленную оболочку."
 
 #: ../../systemdev/testing-locally.rst:73
 msgid "You can gain a shell on the device using :doc:`/userguide/advanceduse/adb` or :doc:`/userguide/advanceduse/ssh`. Remount the root filesystem read-write to begin::"
 msgstr ""
+"На устройство оболочку можно установить по инструкции тут:doc:`/userguide/"
+"advanceduse/adb` или тут:doc:`/userguide/advanceduse/ssh`. Сначала "
+"перемонтируйте корневую файловую систему для чтения и записи:"
 
 #: ../../systemdev/testing-locally.rst:77
 msgid "Next, install all the packages needed to rebuild the component you want to modify (the Contacts app, in this example)::"
 msgstr ""
+"Затем установите все пакеты, необходимые для сборки программы, над которой "
+"Вы работаете (в данном случае, это приложение «Контакты»)::"
 
 #: ../../systemdev/testing-locally.rst:83
 msgid "Additionally, you probably want to install ``git`` in order to get your app's source code on the device and later push your changes back into the repository::"
 msgstr ""
+"Скорее всего, Вам захочется установить ``git`` чтобы работать с исходным "
+"кодом приложения на устройстве, а затем отправить изменения обратно в "
+"репозиторий::"
 
 #: ../../systemdev/testing-locally.rst:87
 msgid "Once you're finished, you can retrieve the source for an app (in our example, the address book) and move into its directory::"
 msgstr ""
+"Когда все закончится, можно получить исходный код приложения (в нашем "
+"примере - адресная книга) и перейти в его каталог::"
 
 #: ../../systemdev/testing-locally.rst:92
 msgid "Now, you are ready to build the package::"
-msgstr ""
+msgstr "Теперь можно приступать к сборке пакета::"
 
 #: ../../systemdev/testing-locally.rst:96
 msgid "The ``dpkg-buildpackage`` command will print out the names of generated packages. Install those packages with ``dpkg``::"
 msgstr ""
+"Команда ``dpkg-buildpackage`` напечатает имена сгенерированных пакетов. "
+"Установите эти пакеты с помощью команды ``dpkg``::"
 
 #: ../../systemdev/testing-locally.rst:100
 msgid "Note, however, that you might not need to install all the packages: generally, you can skip all packages whose names end with ``-doc`` or ``dev``, since they don't contain code used by the device."
 msgstr ""
+"Однако обратите внимание, что установка всех пакетов может и не "
+"потребоваться: как правило, вы можно пропустить пакеты, имена которых "
+"заканчиваются на `` -doc`` или `` dev``, поскольку они не содержат кода, "
+"используемого устройством."
 
 #: ../../systemdev/testing-locally.rst:103
 msgid "Next steps"
-msgstr ""
+msgstr "Дальнейшие шаги"
 
 #: ../../systemdev/testing-locally.rst:105
 msgid "Now that you've successfully made changes and tested them locally, you're ready to upload them to GitHub. Move on to the next page to learn about using the UBports CI to build and provide development packages!"
 msgstr ""
+"Теперь изменения успешно внесены и протестированы локально, можно загрузить "
+"их на GitHub. Перейдите на следующую страницу, чтобы узнать как формировать "
+"пакеты с помощью UBports CI!"
 
 #: ../../systemdev/uploading-changes.rst:2
 msgid "Uploading and testing with ``ubports-qa``"
-msgstr ""
+msgstr "Загрузка и тестирование с помощью ``ubports-qa``"
 
 #: ../../systemdev/uploading-changes.rst:4
 msgid "The `UBports build service <https://ci.ubports.com>`_ is capable of building Ubuntu Touch packages and deploying them to the `UBports repository <https://repo.ubports.com>`_. This capability is offered to any developer who wishes to take advantage of it."
 msgstr ""
+"`Сервис сборки UBports <https://ci.ubports.com> `_ может создавать пакеты "
+"Ubuntu Touch и размещать их в `репозитории UBports <https://repo.ubports.com>"
+" `_. Эта опция доступна любому разработчику, который желает ею "
+"воспользоваться."
 
 #: ../../systemdev/uploading-changes.rst:6
 msgid "This guide assumes that you have a cursory understanding of using Git and making Pull Requests on GitHub."
 msgstr ""
+"В этом руководстве предполагается, что вы понимаете, как использовать Git и "
+"формировать запросы Pull Requests на GitHub."
 
 #: ../../systemdev/uploading-changes.rst:8
 msgid "To use the `UBports build service`_, make sure you understand our :doc:`branch naming convention </about/process/branch-naming>`. It is required that you follow the convention for deb-packages for CI to build your package correctly."
 msgstr ""
+"Чтобы использовать `UBports build service`_, изучите наше: doc:` соглашение "
+"об именах веток</about/process/branch-naming>`. Для правильной сборки пакета "
+"необходимо следовать соглашению для deb-пакетов для CI."
 
 #: ../../systemdev/uploading-changes.rst:11
 msgid "Fork the repository"
-msgstr ""
+msgstr "Создания форка репозитория"
 
 #: ../../systemdev/uploading-changes.rst:13
 msgid "The first step to make a change to any repository you don't have write access to is to fork it. Open your desired repository on GitHub and click the \"Fork\" button in the upper right corner. If offered, select an appropriate account to fork the repository to. Then, clone your fork to your computer."
 msgstr ""
+"Первый шаг к внесению изменений в любой репозиторий, если нет прав на "
+"запись, - это сделать его копию. Откройте нужный репозиторий на GitHub и "
+"нажмите кнопку «Fork» в правом верхнем углу. Выберите нужную учетную запись "
+"и создайте копию (форк) репозитория на своем компьютере."
 
 #: ../../systemdev/uploading-changes.rst:15
 msgid "Now you're ready to make changes!"
-msgstr ""
+msgstr "Теперь можно вносить любые правки!"
 
 #: ../../systemdev/uploading-changes.rst:18
 msgid "Make and commit changes"
-msgstr ""
+msgstr "Сделайте нужные правки и сохраните их"
 
 #: ../../systemdev/uploading-changes.rst:20
 msgid "Now that you have the package source downloaded, you can make your desired changes."
-msgstr ""
+msgstr "Теперь, когда доступен исходный код пакета, можно внести в него правки."
 
 #: ../../systemdev/uploading-changes.rst:22
 msgid "Before changing anything, make sure you have checked out the branch you want to work from (probably ``xenial``, assuming you are making changes for the phone images). Then, create a new branch abiding by the :doc:`branch naming convention </about/process/branch-naming>`."
 msgstr ""
+"Прежде чем вносить какие-либо правки, нужно проверить, что выбрана "
+"правильная ветка, с которой хотите работать (возможно, xenial, если вы "
+"вносите изменения в образы для телефона). Затем создайте новую ветку в "
+"соответствии с :doc:`соглашением о именах веток разработки </about/process/"
+"branch-naming>`."
 
 #: ../../systemdev/uploading-changes.rst:24
 msgid "After making your changes, commit them with a descriptive commit message stating what is wrong and why your changes fix that problem."
 msgstr ""
+"После внесения изменений обязательно заполните комментарий к правке с "
+"детальным описанием, что это за изменение и какую проблему оно закрывает."
 
 #: ../../systemdev/uploading-changes.rst:26
 msgid "You have successfully created and committed your changes. Before pushing your changes, we'll want to make sure your device will install them."
 msgstr ""
+"Вы успешно создали и сохранили свои правки. Прежде чем отправлять их в "
+"репозиторий, мы хотим убедиться, они установлены на вашем мобильном "
+"устройстве."
 
 #: ../../systemdev/uploading-changes.rst:29
 msgid "Update the ``debian/changelog`` file"
-msgstr ""
+msgstr "Обновите файл ``debian/changelog``"
 
 #: ../../systemdev/uploading-changes.rst:31
 msgid "Generally, ``apt`` will not install a new package from any repository if it has a lower (or the same) version number as the package it replaces. Users may also want to see the changes that are included in a new version of a package. For that reason, we will need to update the package changelog to add a new version."
 msgstr ""
+"Как правило, ``apt`` не устанавливает новый пакет из любого репозитория, "
+"если он имеет более низкий (или такой же) номер версии, что и заменяемый им "
+"пакет. Пользователи также могут захотеть увидеть изменения, которые включены "
+"в новую версию пакета. По этой причине нам нужно будет обновить файл "
+"изменений пакета, чтобы добавить новую версию."
 
 #: ../../systemdev/uploading-changes.rst:35
 msgid "This is not an exhaustive reference of the ``debian/changelog`` format. See `deb-changelog(5) <https://manpages.debian.org/testing/dpkg-dev/deb-changelog.5.en.html>`_ for more information."
 msgstr ""
+"Это краткое описание формата ``debian/changelog``. См. `deb-changelog(5) "
+"<https://manpages.debian.org/testing/dpkg-dev/deb-changelog.5.en.html>`_ для "
+"получения дополнительной информации."
 
 #: ../../systemdev/uploading-changes.rst:38
 msgid "Determine a new version number"
-msgstr ""
+msgstr "Укажите номер новой версии"
 
 #: ../../systemdev/uploading-changes.rst:40
 msgid "To start, figure out what the current version numbering for the package is::"
-msgstr ""
+msgstr "Для начала выясните номер текущей версии пакета::"
 
 #: ../../systemdev/uploading-changes.rst:44
 msgid "This will return a few lines, but the first is the most important to us::"
-msgstr ""
+msgstr "Это покажет несколько строк, но первая для нас самая важная::"
 
 #: ../../systemdev/uploading-changes.rst:48
 msgid "The part inside the parentheses ``(0.24+ubports2)`` is our version number. It consists of several parts:"
 msgstr ""
+"Словосочетание в круглых скобках ``(0.24+ubports2)` - это номер версии "
+"нашего пакета. Он состоит из нескольких частей:"
 
 #: ../../systemdev/uploading-changes.rst:50
 msgid "The ``0.24`` is the *upstream version number*, the version that the original project maintainers give to the release we are using. For most UBports projects, the repository you'll be working on is the original project code. This makes UBports the \"upstream\" of that project."
 msgstr ""
+"``0.24`` - это *номер исходной версии*, которую разработчики исходного "
+"пакета присваивают пакету. Для большинства компонентов в UTouch, каждый "
+"репозиторий содержит актуальный исходный код проекта."
 
 #: ../../systemdev/uploading-changes.rst:52
 msgid "If you are making large changes to the repository and UBports is the upstream, you should increment the first part of the version number before the plus (+) and reset the distribution suffix. In our example above, you would make this new version number::"
 msgstr ""
+"Если Вы вносите большие изменения в репозиторий, а Ubuntu Touch находится в "
+"состоянии \"upstream\", то нужно увеличить первую часть номера версии до "
+"плюса (+) и сбросить дистрибуционный суффикс. В примере выше показано как "
+"будет выглядеть номер новой версии::"
 
 #: ../../systemdev/uploading-changes.rst:56
 msgid "If you are making changes only to the package build (files in the ``debian/`` folder), it is best to only increment the version suffix::"
 msgstr ""
+"Если вы вносите изменения только в сборку пакета (файлы в папке ``debian/``')"
+", лучше увеличивать только суффикс версии::"
 
 #: ../../systemdev/uploading-changes.rst:62
 msgid "If you find a package which does not seem to follow the above versioning format, please contact us to ask how to proceed."
 msgstr ""
+"Если вы найдете пакет, который не соответствует указанному выше формату "
+"управления версиями, свяжитесь с нами, чтобы узнать, как действовать дальше."
 
 #: ../../systemdev/uploading-changes.rst:65
 msgid "Write the changelog entry"
-msgstr ""
+msgstr "В журнале изменений - файле changelog - напишите о сделанных правках"
 
 #: ../../systemdev/uploading-changes.rst:67
 msgid "Now it is time to write your changelog entry! Start with the following template::"
 msgstr ""
+"Пришло время сделать запись в журнале изменений! Это можно сделать с помощью "
+"шаблона::"
 
 #: ../../systemdev/uploading-changes.rst:75
 msgid "If you open the ``debian/changelog`` file, you'll find that every entry follows this format. This helps everyone (including computers) read and understand the contents. This is used, for example, to name the output package correctly for every package version."
 msgstr ""
+"Если открыть файл ``debian/changelog``, то можно увидеть, что каждая запись "
+"выполнена по этому формату. Такой формат помогает всем (включая компьютеры) "
+"читать и понимать содержимое файла. Это используется, например, для "
+"формирования правильного имени пакета при сборке новых версий."
 
 #: ../../systemdev/uploading-changes.rst:77
 msgid "Let's assume I, John Doe, am making a packaging change to the ``morph-browser`` package for Ubuntu Touch. I'll replace the different all-caps placeholders above in the following way:"
 msgstr ""
+"Предположим, разработчик Джон Доу вносит изменения в пакет ``morph-browser`` "
+"для Ubuntu Touch. Он изменит поля, набранные заглавным шрифтом, следующим "
+"образом:"
 
 #: ../../systemdev/uploading-changes.rst:79
 msgid "PACKAGE-NAME is replaced with ``morph-browser``"
-msgstr ""
+msgstr "PACKAGE-NAME меняется на ``morph-browser``"
 
 #: ../../systemdev/uploading-changes.rst:80
 msgid "VERSION is replaced with ``0.24+ubports3`` (which we determined above)"
 msgstr ""
+"VERSION меняется на ``0.24+ubports3`` (как мы договорились выше по тексту)"
 
 #: ../../systemdev/uploading-changes.rst:81
 msgid "DISTRIBUTION is replaced with ``xenial``"
-msgstr ""
+msgstr "DISTRIBUTION меняется на ``xenial``"
 
 #: ../../systemdev/uploading-changes.rst:82
 msgid "CHANGES is replaced with the changes I made in this release. This will include summarized information from my commit messages along with the bugs fixed by those changes. If I've fixed multiple bugs, I'll create multiple bullet points."
 msgstr ""
+"В поле CHANGES описываются изменения, сделанные разработчиком в этом релизе. "
+"Это будет включать обобщенную информацию из его сообщений о баг-фиксах. Если "
+"было исправлено несколько несколько ошибок, будет создано несколько пунктов."
 
 #: ../../systemdev/uploading-changes.rst:83
 msgid "NAME is replaced with my name, ``John Doe``"
 msgstr ""
+"В поле NAME указывается имя разработчика. В данном случае - ``John Doe``"
 
 #: ../../systemdev/uploading-changes.rst:84
 msgid "EMAIL is replaced with my e-mail, ``john.doe@example.com``."
 msgstr ""
+"В поле EMAIL указывается почтовый адрес разработчика, "
+"``john.doe@example.com``."
 
 #: ../../systemdev/uploading-changes.rst:88
 msgid "You should not use a \"noreply\" e-mail as your EMAIL for package changelog entries."
 msgstr ""
+"Не следует использовать какой-то старый, или неактивный адрес электронной "
+"почты в качестве EMAIL для записей журнала изменений пакета."
 
 #: ../../systemdev/uploading-changes.rst:90
 msgid "DATETIME is replaced with the date and time I made this changelog entry in RFC2822/RFC5322 format. The easiest way to retrieve this is by running the command ``date -R`` in a terminal."
 msgstr ""
+"В поле DATETIME указывается дата и время внесения записи в журнал изменений "
+"в формате RFC2822/RFC5322. Самый простой способ это сделать - запустить в "
+"терминале команду ``date -R``."
 
 #: ../../systemdev/uploading-changes.rst:92
 msgid "Note that no line in your changelog entry should exceed 80 characters in length."
 msgstr ""
+"Помните, что ни одна строка в одной записи журнала изменений не должна "
+"превышать 80 символов."
 
 #: ../../systemdev/uploading-changes.rst:94
 msgid "With that, my new changelog entry follows::"
-msgstr ""
+msgstr "Далее можно посмотреть пример новой записи в журнале изменений::"
 
 #: ../../systemdev/uploading-changes.rst:104
 msgid "Add your new changelog entry to the top of the ``debian/changelog`` file and commit it with the message \"Update changelog\". Push your changes. Now you're ready to make your Pull Request!"
 msgstr ""
+"Добавьте новую запись в журнал изменений в верхнюю часть файла ``debian/"
+"changelog`` и нажмите на клавишу «Обновить журнал изменений». Это сохранит "
+"изменения. Теперь можно сделать Pull Request!"
 
 #: ../../systemdev/uploading-changes.rst:107
 msgid "Create your pull request"
-msgstr ""
+msgstr "Создайте pull request"
 
 #: ../../systemdev/uploading-changes.rst:109
 msgid "A pull request asks UBports maintainers to review your code changes and add them to the official repository. We'll create one now."
 msgstr ""
+"Pull request сигнализирует разработчикам UBports о правках кода, они "
+"проверят их и добавят в официальный репозиторий. Сейчас мы создадим такой "
+"запрос."
 
 #: ../../systemdev/uploading-changes.rst:111
 msgid "Open your fork of the repository on GitHub. Navigate to the branch that you just pushed to using the \"Branch\" selector:"
 msgstr ""
+"Откройте свой форк репозитория на GitHub. Перейдите к ветке, которую вы "
+"только выбрали клавишей «Branch»:"
 
 #: ../../systemdev/uploading-changes.rst:117
 msgid "Once you've opened your desired branch, click the \"New pull request\" button to start your pull request. You'll be taken to a page where you can review your changes and create a pull request."
 msgstr ""
+"Откройте нужную ветку, нажмите кнопку «New pull request», чтобы создать его. "
+"Вы попадете на страницу, где сможете просмотреть свои изменения и создать "
+"запрос pull request."
 
 #: ../../systemdev/uploading-changes.rst:119
 msgid "Give your pull request a descriptive title and description (include links to reference bugs or other material). Ensure that the \"base\" branch is the one you want your changes to be applied to (likely ``xenial``), then click \"Create pull request\"."
 msgstr ""
+"Дайте вашему запросу название и описание (включите ссылки на баг-репорты или "
+"другой материал). Убедитесь, что «базовая» ветвь - это та, к которой "
+"необходимо применить эти правки (скорее всего, это «xenial»), затем нажмите «"
+"Create pull request»."
 
 #: ../../systemdev/uploading-changes.rst:121
 msgid "With your pull request created, we can move on to testing your changes using the UBports build service!"
 msgstr ""
+"После создания pull request можно перейти к тестированию изменений с помощью "
+"службы сборки UBports!"
 
 #: ../../systemdev/uploading-changes.rst:124
 msgid "Test your changes"
-msgstr ""
+msgstr "Тестирование внесённых правок"
 
 #: ../../systemdev/uploading-changes.rst:126
 msgid "Once your pull request is built (a green check mark appears next to your last commit), you are ready to test your changes on your device."
 msgstr ""
+"Как только pull request создан (рядом с вашим последним коммитом появится "
+"зеленая галочка), можно протестировать свои изменения на мобильном "
+"устройстве."
 
 #: ../../systemdev/uploading-changes.rst:130
 msgid "If a red \"X\" appears next to your last commit, your pull request has failed to build. Click the red \"X\" to view the build log. Until your build errors are resolved, your pull request cannot be installed or accepted."
 msgstr ""
+"Если последний коммит помечен красным крестом, pull request не удалось "
+"выполнить. Щелкните на этот крестик, чтобы просмотреть журнал событий. Пока "
+"указанные там ошибки не будут устранены, ваш pull request не будет принят в "
+"работу."
 
 #: ../../systemdev/uploading-changes.rst:132
 msgid "We'll use ``ubports-qa`` to install your changes. Take note of your pull request's ID (noted as ``#number`` after the title of the pull request) and follow these steps to install your changes:"
 msgstr ""
+"Для установки сделанных правок мы будем использовать ``ubports-qa``. "
+"Запишите идентификатор своего запроса (обозначен как ``#число`` после "
+"заголовка запроса) и выполните следующие действия:"
 
 #: ../../systemdev/uploading-changes.rst:134
 msgid "Ensure your device is running the newest version of Ubuntu Touch from the ``devel`` channel."
 msgstr ""
+"Убедитесь, что на мобильном устройстве установлена самая последняя версия "
+"Ubuntu Touch из канала ``devel``."
 
 #: ../../systemdev/uploading-changes.rst:135
 msgid "Get shell access to your device using :doc:`/userguide/advanceduse/adb` or :doc:`/userguide/advanceduse/ssh`."
 msgstr ""
+"Получите доступ к оболочке вашего устройства. Инструкция :doc:`/userguide/"
+"advanceduse/adb` or :doc:`/userguide/advanceduse/ssh`."
 
 #: ../../systemdev/uploading-changes.rst:136
 msgid "Run ``sudo ubports-qa install REPOSITORY PR``, replacing ``REPOSITORY`` with the name of the repository you have submitted a PR to and ``PR`` with the number of your pull request without the ``#``. For example run ``sudo ubports-qa morph-browser 123`` to install the PR number 123 to morph-browser repo."
 msgstr ""
+"Выполните команду``sudo ubports-qa install REPOSITORY PR``, вместо "
+"REPOSITORY нужно указать имя репозитория, для которого сформирован запрос "
+"PR, а PR - номером вашего запроса без символа #. `. Например, выполните "
+"команду ``sudo ubports-qa morph-browser 123``, чтобы установить запрос PR "
+"123 в репозиторий morph-browser."
 
 #: ../../systemdev/uploading-changes.rst:138
 msgid "``ubports-qa`` will automatically add the repository containing your changed software and start the installation for you. All you will need to do is check the packages it asks you to install and say \"yes\" if they are correct."
 msgstr ""
+"``ubports-qa`` автоматически добавит репозиторий, содержащий обновленный "
+"компонент, и начнет установку на устройство. Все, что нужно сделать, это "
+"проверить пакеты, которые предлагается установить, и нажать «да», если все "
+"корректно."
 
 #: ../../systemdev/uploading-changes.rst:140
 msgid "If ``ubports-qa`` fails to install your packages, run it again with the ``-v`` flag (for example, ``ubports-qa -v install ...``). If it still fails, submit the entire log (starting from the ``$`` before the ``ubports-qa`` command) to `Ubuntu Pastebin <https://paste.ubuntu.com/>`_ and contact us for help."
 msgstr ""
+"Если ``ubports-qa`` не может установить пакеты, запустите команду с "
+"флагом``-v`` (например, ``ubports-qa -v install ...``). Если и это не "
+"помогло, отправьте весь лог-файл (начиная с символа $ перед командой ubports-"
+"qa) в Ubuntu Pastebin <https://paste.ubuntu.com/> `_ и свяжитесь с нами."
 
 #: ../../systemdev/uploading-changes.rst:142
 msgid "Once ``ubports-qa`` is finished, test your changes to ensure they have fixed the original bug. Add the ``ubports-qa`` command to your pull request, then send the link to the pull request to other developers and testers so they may also test your changes."
 msgstr ""
+"После того, как ``ubports-qa`` закончит работу, проверьте, действительно ли "
+"правки перенеслись в исходный текст проекта. Добавьте команду ``ubports-qa`` "
+"в свой pull request, а затем отправьте ссылку на pull request другим "
+"разработчикам и тестировщикам, чтобы они также могли протестировать "
+"изменения."
 
 #: ../../systemdev/uploading-changes.rst:144
 msgid "When getting feedback from your testers, be sure to add the information to the pull request (or ask them to do it for you) so that everyone is updated on the status of your code."
 msgstr ""
+"Получив обратную связь от тестировщиков, обязательно добавьте информацию в "
+"public request (или попросите их сделать это), чтобы все были в курсе "
+"состояния кода."
 
 #: ../../systemdev/uploading-changes.rst:146
 msgid "Every time you make a change and push it to GitHub, it will trigger a new build. You can run ``sudo ubports-qa update`` to get the freshest changes every time this happens."
 msgstr ""
+"Каждый раз, когда вы вносите изменение и отправляете его на GitHub, "
+"запускается новая сборка. С помощью команды ``sudo ubports-qa update``можно "
+"получать самые свежие обновления системы."
 
 #: ../../systemdev/uploading-changes.rst:149
 msgid "Celebrate!"
-msgstr ""
+msgstr "Вот и всё!"
 
 #: ../../systemdev/uploading-changes.rst:151
 msgid "If you and your testers are satisfied with the results of your pull request, it will be merged. Following the merge, the UBports build service will build your code and deploy it to Ubuntu Touch users worldwide."
 msgstr ""
+"Если вы и ваши тестировщики удовлетворены результатами работ по pull "
+"request, он будет переведён в статус \"merged\". После этого сборки системы "
+"станут доступны для всех пользователей Ubuntu Touch."
 
 #: ../../systemdev/uploading-changes.rst:153
 msgid "Thank you for your contribution to Ubuntu Touch!"
-msgstr ""
+msgstr "Спасибо за вклад в развитие операционной системы Ubuntu Touch!"

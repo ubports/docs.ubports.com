@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-08 17:32-0500\n"
-"PO-Revision-Date: 2020-06-27 14:23+0000\n"
+"PO-Revision-Date: 2020-08-29 17:36+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/ru/>\n"
@@ -27,12 +27,11 @@ msgstr "Создание образа halium-boot"
 #: ../../porting/building-halium-boot.rst:4
 msgid "Halium-boot is a new proposed boot image in the Halium project, replacing hybris-boot. We will be building and using it for Ubuntu Touch."
 msgstr ""
-"Образ halium-boot - новый  загрузочный образ, предлагаемый нам проектом "
-"Halium, замена образам hybris-boot. Мы будем создавать и использовать его "
-"для Ubuntu Touch."
+"Образ halium-boot - новый загрузочный образ, предлагаемый проектом Halium "
+"для замены образов hybris-boot. Мы будем собирать и использовать его для "
+"загрузки системы Ubuntu Touch."
 
 #: ../../porting/building-halium-boot.rst:7
-#, fuzzy
 msgid "Fix mounts"
 msgstr "Настройка точек монтирования"
 
@@ -40,15 +39,15 @@ msgstr "Настройка точек монтирования"
 msgid "Halium-boot's ``mount`` is not aware of SELinux contexts. If your device's ``fstab`` file includes any contexts, the partition that they are on will fail to mount and your port will not work correctly."
 msgstr ""
 "`` Mount`` в Halium-boot не знает контекстов SELinux. Если файл `` fstab`` "
-"вашего устройства содержит какие-либо контексты,  то раздел, на котором они "
-"находятся, не будет смонтирован, и сборка будет работать неправильно."
+"для вашего устройства содержит какие-либо контексты, то раздел, на котором "
+"они находятся, не будет смонтирован, и сборка будет работать неправильно."
 
 #: ../../porting/building-halium-boot.rst:11
 msgid "The first step to this process is figuring out where your fstab actually is. For most, this is inside ``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/etc`` and it is named either ``fstab.qcom`` or ``fstab.devicename``. Open the file for editing."
 msgstr ""
-"Первый шаг к этому процессу - выяснить, где на самом деле находится ваш "
+"Первый шаг к этому процессу - выяснить, где на самом деле находится ваш файл "
 "fstab. В большинстве случаев, его можно найти в директории ``BUILDDIR/device/"
-"MANUFACTURER/CODENAME/rootdir/etc`` и называется либо ``fstab.qcom``, либо "
+"MANUFACTURER/CODENAME/rootdir/etc``, он называется либо ``fstab.qcom``, либо "
 "``fstab.devicename``. Откройте файл для редактирования."
 
 #: ../../porting/building-halium-boot.rst:13
@@ -128,7 +127,6 @@ msgstr "``mka systemimage``"
 
 #: ../../porting/building-halium-boot.rst:42
 #: ../../porting/installing-16-04.rst:58
-#, fuzzy
 msgid "Continue on"
 msgstr "Продолжить"
 
@@ -189,11 +187,10 @@ msgid "Device reboots after a minute"
 msgstr "Через минуту устройство перезагрузится"
 
 #: ../../porting/common-problems-install.rst:38
-#, fuzzy
 msgid "The device may reboot cleanly after about a minute of uptime. If you are logged in when the reboot occurs, you will see the following message::"
 msgstr ""
-"Устройство может постоянно перезагружаться. После перезагрузки в системе "
-"возникает следующее сообщение:"
+"Устройство может уйти в перезагрузку после нескольких минут работы. После "
+"перезагрузки в системе возникает следующее сообщение:"
 
 #: ../../porting/common-problems-install.rst:45
 msgid "This happens because ``lightdm``, the Ubuntu Touch display manager, is crashing repeatedly. The system watchdog process sees this and reboots the device."
@@ -251,11 +248,10 @@ msgstr ""
 "не будут. Проверьте статус контейнера этой командой::"
 
 #: ../../porting/common-problems-run.rst:23
-#, fuzzy
 msgid "If you get output similar to the following, the Android container is running and you can move on to the next troubleshooting step::"
 msgstr ""
-"Если выводятся примерно такие же сообщения, то контейнер Android работает, "
-"можно перейти к следующему этапу по устранению неполадок:"
+"Если выводятся примерно такие же сообщения, то контейнер Android работает, и "
+"можно перейти к следующему этапу работ по устранению неполадок:"
 
 #: ../../porting/common-problems-run.rst:30
 msgid "If you do not get ``State: RUNNING``, the container is stopped. You can run ``sudo start lxc-android-config`` to attempt to start it. If the container does not start after that, you can run ``sudo lxc-start -n android -F`` to get a more detailed log of why it has failed."
@@ -313,9 +309,8 @@ msgstr ""
 "сообществу."
 
 #: ../../porting/common-problems-run.rst:61
-#, fuzzy
 msgid "First, stop the display manager if it is not already::"
-msgstr "Во-первых, остановите диспетчер экрана, если это еще не сделано::"
+msgstr "Сначала остановите диспетчер экрана, если это еще не сделано::"
 
 #: ../../porting/common-problems-run.rst:65
 msgid "If you have Wi-Fi working (See `the Halium docs for Wi-Fi`_), install the ``libc6-dbg`` package first::"
@@ -461,16 +456,14 @@ msgstr ""
 "почему так произошло."
 
 #: ../../porting/installing-16-04.rst:41
-#, fuzzy
 msgid "Similar to the Halium reference rootfs, you should `set your computer's IP on the newly connected RNDIS interface <http://docs.halium.org/en/latest/porting/debug-build/logging-in.html>`__ to ``10.15.19.100`` if you don't get one automatically. Then, run the following to access your device::"
 msgstr ""
 "Так же как и при установке Halium rootfs, нужно `настроить IP-адрес своего "
 "компьютера в интерфейсе RNDIS <http://docs.halium.org/en/latest/porting/"
-"debug-build/logging-in.html>` __,  -`` 10.15.19.100``, если вы не получите "
+"debug-build/logging-in.html>` __, -`` 10.15.19.100``, если вы не получите "
 "его автоматически. Затем откройте доступ к вашему устройству::"
 
 #: ../../porting/installing-16-04.rst:45
-#, fuzzy
 msgid "The password will be the one that you set while running halium-install."
 msgstr "Пароль должен совпадать с паролем, заданным при запуске halium-install."
 
@@ -480,12 +473,10 @@ msgid "Common Problems"
 msgstr "Известные проблемы"
 
 #: ../../porting/installing-16-04.rst:50
-#, fuzzy
 msgid "If you have any errors while performing these steps, check see if any of the following suggestions match what you are seeing. If you have installed successfully, skip down to `Continue on`_."
 msgstr ""
-"Если при установке возникли ошибки, проверьте, есть ли они в этом списке. "
-"Если установка успешно завершена, перейдите к концу раздела и ссылке  "
-"`Продолжить`_."
+"Если при установке возникли ошибки или неисправности, проверьте, есть ли они "
+"в этом списке. Если установка успешно завершена, нажмите`Продолжить`_."
 
 #: ../../porting/installing-16-04.rst:60
 msgid "Congratulations! Ubuntu Touch has now booted on your device. Move on to :doc:`running-ut` to learn about more specific steps you will need to take for a complete port."
@@ -514,19 +505,19 @@ msgstr ""
 #: ../../porting/introduction.rst:11
 msgid "This process does not build Ubuntu Touch! A Halium image is installed along with a prebuilt Ubuntu Touch filesystem to create a running Ubuntu Touch system. If you already have an Ubuntu Touch device and would like to modify the software on it, you will be better served by :doc:`../systemdev/index`. If you would like to modify the Android compatibility image for the Nexus 5, Oneplus One, or Fairphone 2, :doc:`ubp-5.1` is appropriate for you."
 msgstr ""
-"Этот процесс не  создаст сборки Ubuntu Touch! Образ Halium устанавливается "
-"вместе со встроенной файловой системой Ubuntu Touch для создания полноценной "
-"рабочей ОС. Если у вас уже есть устройство Ubuntu Touch, и Вы хотите "
-"изменить программное обеспечение на нем,  изучите этот раздел: doc: `../"
-"systemdev/index`. Если Вы хотите изменить  совместимый образ  Android для "
-"Nexus 5, Oneplus One или Fairphone 2,  ознакомьтесь с разделом: doc: "
-"`ubp-5.1`."
+"Этот процесс не запустит сборку образа системы Ubuntu Touch! Образ Halium "
+"устанавливается вместе со встроенной файловой системой Ubuntu Touch для "
+"создания полноценной рабочей ОС. Если у Вас уже есть устройство Ubuntu "
+"Touch, и Вы хотите изменить программное обеспечение на нем, изучите этот "
+"раздел :doc: `../systemdev/index`. Если Вы хотите изменить совместимый образ "
+"Android для Nexus 5, Oneplus One или Fairphone 2, ознакомьтесь с разделом "
+":doc:`ubp-5.1`."
 
 #: ../../porting/introduction.rst:13
 msgid "Before you begin, you'll want to head over to `the Halium porting guide <http://docs.halium.org/en/latest/porting/first-steps.html>`_ and get your ``systemimage`` built without errors. Once you're at the point of installing a rootfs, you can come back here."
 msgstr ""
-"Прежде чем начать, прочитайте `Руководству по созданию образов Halium "
-"<http://docs.halium.org/en/latest/porting/first-steps.html>` _ и сформируйте "
+"Прежде чем начать, прочитайте `Руководство по созданию образов Halium "
+"<http://docs.halium.org/en/latest/porting/first-steps.html>`_ и сформируйте "
 "без ошибок образ `` systemimage`` для своего устройства. Как только будет "
 "установлена rootfs, можно вернуться к этому разделу."
 
@@ -553,7 +544,6 @@ msgid "Telegram: @ubports_porting"
 msgstr "Канал Telegram: @ubports_porting"
 
 #: ../../porting/introduction.rst:34
-#, fuzzy
 msgid "IRC: #ubports-porting on freenode"
 msgstr "IRC: #ubports-porting на freenode"
 
@@ -572,9 +562,8 @@ msgstr ""
 "прежде чем Ubuntu Touch станет полностью функциональной на устройстве."
 
 #: ../../porting/running-ut.rst:7
-#, fuzzy
 msgid "Make / writable"
-msgstr "Разрешение записи в корневой каталог"
+msgstr "Разрешите запись файлов в корневой каталог"
 
 #: ../../porting/running-ut.rst:9
 msgid "Before we make any changes to the rootfs (which will be required for the next steps), you'll need to remount it with write permissions. To do that, run the following command::"
@@ -692,7 +681,6 @@ msgid "QtWebKit DPR"
 msgstr "QtWebKit DPR"
 
 #: ../../porting/running-ut.rst:52
-#, fuzzy
 msgid "'Normal' density laptop"
 msgstr "Стандартный ноутбук"
 
@@ -743,9 +731,8 @@ msgid "2.0"
 msgstr "2.0"
 
 #: ../../porting/running-ut.rst:54
-#, fuzzy
 msgid "'High' density laptop"
-msgstr "Монитор с большим разрешением"
+msgstr "Ноутбук с большим разрешением экрана"
 
 #: ../../porting/running-ut.rst:54
 msgid "150-250"
@@ -902,20 +889,18 @@ msgstr ""
 "assurance`."
 
 #: ../../porting/ubp-5.1.rst:2
-#, fuzzy
 msgid "Legacy porting"
-msgstr "Прошивки для старых поддерживаемых устройств"
+msgstr "Прошивки для устаревших (legacy) устройств"
 
 #: ../../porting/ubp-5.1.rst:4
-#, fuzzy
 msgid "This page documents the resources and process to build an Android compatibility image for the LG Nexus 5, OnePlus One, or Fairphone 2. This information should not be used to bring up any new devices, only to update these older images. All new ports should be created using Halium following the documentation starting at :doc:`introduction`."
 msgstr ""
-"На этой странице описаны способы и процесс создания Android-совместимого "
-"образа для смартфонов LG Nexus 5, OnePlus One или Fairphone 2. Эта "
-"информация не должна использоваться для каких-либо новых устройств, а только "
-"для обновления  и поддержки  этих устаревших устройств. Все новые сборки "
-"должны создаваться с использованием Halium, по инструкциям и документации, "
-"начинающейся с раздела: doc: `introduction`."
+"Здесь описаны способы и процесс создания Android-совместимого образа для "
+"смартфонов LG Nexus 5, OnePlus One или Fairphone 2. Эта информация не должна "
+"использоваться для каких-либо новых устройств, а только для обновления и "
+"поддержки этих устаревших устройств. Все новые сборки должны создаваться с "
+"использованием Halium, по инструкциям и документации из раздела "
+":doc:`introduction`."
 
 #: ../../porting/ubp-5.1.rst:6
 msgid "This document is useful if you would like to:"
@@ -939,15 +924,15 @@ msgstr "Тесты и эксперименты с обновлением обр�
 msgid "This document is not useful if you would like to modify :doc:`../contribute/preinstalled-apps` or :doc:`System software <../systemdev/index>`. See the respective documentation for each."
 msgstr ""
 "Этот раздел не поможет ничем, если Вы хотите модифицировать :doc:`../"
-"contribute/preinstalled-apps` или :doc:`System software <../systemdev/index>`"
-".Для этого изучайте соответствующие разделы."
+"contribute/preinstalled-apps` или :doc:`системные программы <../systemdev/"
+"index>`.Для этого изучайте соответствующие разделы."
 
 #: ../../porting/ubp-5.1.rst:16
 msgid "This process does not build Ubuntu Touch! An Android compatibility image is installed along with a prebuilt Ubuntu Touch filesystem to create a running Ubuntu Touch system."
 msgstr ""
-"Этот не процесс установки Ubuntu Touch! Android-совместимый образ "
-"устанавливается вместе со встроенной файловой системой Ubuntu Touch для "
-"подготовки рабочего окружения Ubuntu Touch."
+"Этот процесс не запустит сбору образа системы Ubuntu Touch! Android-"
+"совместимый образ устанавливается вместе со встроенной файловой системой "
+"Ubuntu Touch для подготовки рабочего окружения Ubuntu Touch."
 
 #: ../../porting/ubp-5.1.rst:18
 msgid "This document assumes you already have knowledge of building Android or Halium. It also assumes that your device has Ubuntu Touch installed."
@@ -1025,12 +1010,11 @@ msgid "Install the new image"
 msgstr "Установка нового образа"
 
 #: ../../porting/ubp-5.1.rst:68
-#, fuzzy
 msgid "Now that the build is complete, we can flash it to the device. Note that all of these commands should be run from a terminal which has been set up with ``source build/envsetup.sh`` and ``lunch`` to ensure the needed tools are in your PATH."
 msgstr ""
 "Теперь образ системы создан, и можно установить его на устройство. Обратите "
 "внимание, что все эти команды должны запускаться из терминала, перед этим "
-"нужно запустить скрипт `` source build / envsetup.sh`` и `` lunch``, чтобы "
+"нужно запустить скрипты ``source build/envsetup.sh` и `` lunch``, чтобы "
 "обеспечить наличие необходимых инструментов в системном окружении PATH."
 
 #: ../../porting/ubp-5.1.rst:70

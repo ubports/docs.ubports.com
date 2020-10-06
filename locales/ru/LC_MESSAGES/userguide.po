@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-08 17:32-0500\n"
-"PO-Revision-Date: 2020-08-03 22:59+0000\n"
-"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
+"PO-Revision-Date: 2020-09-09 19:24+0000\n"
+"Last-Translator: Moshe Lazar <wersewikkov@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/ru/>\n"
 "Language: ru\n"
@@ -60,7 +60,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:27
 msgid "Enable developer mode"
-msgstr "Включить режим разработчика"
+msgstr "Включение режима разработчика"
 
 #: ../../userguide/advanceduse/adb.rst:29
 msgid "Next, you'll need to turn on Developer Mode."
@@ -73,8 +73,8 @@ msgstr "Перезагрузите ваше устройство"
 #: ../../userguide/advanceduse/adb.rst:32
 msgid "Place your device into developer mode (Settings - About - Developer Mode - check the box to turn it on)"
 msgstr ""
-"Переведите ваше устройство в режим разработчика (Настройки системы - "
-"Сведения - Режим разработчика - установите флажок, чтобы включить его)"
+"Переведите устройство в режим разработчика (Настройки системы - Сведения - "
+"Режим разработчика - установите флажок, чтобы включить его)"
 
 #: ../../userguide/advanceduse/adb.rst:33
 msgid "Plug the device into a computer with adb installed"
@@ -362,7 +362,6 @@ msgid "Via network"
 msgstr "По сети"
 
 #: ../../userguide/advanceduse/screencasting.rst:22
-#, fuzzy
 msgid "On receiver"
 msgstr "На приёмной стороне"
 
@@ -375,10 +374,9 @@ msgid "Prepare your computer to listen to a tcp port(here 1234) and forward raw 
 msgstr ""
 "Настройте на компьютер режим прослушивания tcp-порта (здесь, в примере, 1234)"
 " и перенаправьте видеосигнал на видеоплеер (здесь, в примере, mplayer) с "
-"разрешением кадра 384x640 ::"
+"разрешением кадра 384x640::"
 
 #: ../../userguide/advanceduse/screencasting.rst:31
-#, fuzzy
 msgid "For stream recording:"
 msgstr "Для потоковой записи:"
 
@@ -387,7 +385,7 @@ msgid "Prepare your computer to listen to a tcp port(here 1234), ungzip and forw
 msgstr ""
 "Настройте на компьютер режим прослушивания tcp-порта (здесь, в примере, 1234)"
 ", разархивируйте и перенаправьте необработанный видеосигнал в программу-"
-"видеокодер (здесь, примере, mencoder):"
+"видеокодер (здесь, примере, mencoder)::"
 
 #: ../../userguide/advanceduse/screencasting.rst:38
 msgid "On device"
@@ -397,7 +395,7 @@ msgstr "На устройстве"
 msgid "Forward and gzip stream with 60fps (--cap-interval 1) and frame size of 384x640 to computer 10.42.0.209 on port 1234 ::"
 msgstr ""
 "Перенаправьте сжатый видеопоток со скоростью 60fps (--cap-interval 1) и "
-"размером кадра 384x640 на компьютер с ip-адресом 10.42.0.209,  порт 1234 :"
+"размером кадра 384x640 на компьютер с ip-адресом 10.42.0.209, порт 1234 ::"
 
 #: ../../userguide/advanceduse/screencasting.rst:46
 msgid "Example script"
@@ -406,12 +404,11 @@ msgstr "Пример скрипта"
 #: ../../userguide/advanceduse/screencasting.rst:48
 msgid "This script allows you to screen cast remote UT device to your local PC (must have ssh access to UT and mplayer installed on PC), run it on your computer::"
 msgstr ""
-"Этот скрипт позволяет вам выводить экран устройства  на локальный компьютер ("
+"Этот скрипт позволяет Вам выводить экран устройства на локальный компьютер ("
 "должен быть установлен ssh-доступ к UT и mplayer на ПК), и полноценно "
-"работать в Ubuntu Touch:"
+"работать в Ubuntu Touch::"
 
 #: ../../userguide/advanceduse/screencasting.rst:69
-#, fuzzy
 msgid "You can download it here: :download:`files/mircast.sh`"
 msgstr "Вы можете скачать его здесь: :download:`files/mircast.sh`"
 
@@ -468,7 +465,7 @@ msgstr ""
 #: ../../userguide/advanceduse/ssh.rst:21
 msgid "Or transfer the key via the internet by mailing it to yourself, or uploading it to your own cloud storage, or webserver, etc."
 msgstr ""
-"Или скопируйте ключ через интернет,  предварительно отправив его на свой "
+"Или скопируйте ключ через интернет, предварительно отправив его на свой "
 "почтовый ящик, облачное хранилище, сетевой диск и т.д."
 
 #: ../../userguide/advanceduse/ssh.rst:22
@@ -522,7 +519,6 @@ msgstr ""
 "bq-aquaris-e-4-5-ubuntu-phone/content/en/chapter1.html>`_"
 
 #: ../../userguide/advanceduse/switchchannel.rst:2
-#, fuzzy
 msgid "Switch release channels"
 msgstr "Переключить каналы с релизами"
 
@@ -632,7 +628,6 @@ msgstr ""
 #: ../../userguide/dailyuse/anbox.rst:51
 #: ../../userguide/dailyuse/anbox.rst:65
 #: ../../userguide/dailyuse/anbox.rst:86
-#, fuzzy
 msgid "Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up."
 msgstr ""
 "Выполнено! Возможно, Вам придется обновить область приложений (потяните вниз "
@@ -812,7 +807,6 @@ msgid "Once a container is set up, you can list the installed applications::"
 msgstr "Как только контейнер установлен, можно посмотреть список приложений::"
 
 #: ../../userguide/dailyuse/libertine.rst:48
-#, fuzzy
 msgid "Install a package::"
 msgstr "Установить пакет::"
 
@@ -961,7 +955,6 @@ msgstr ""
 "каталогу, который задан через bind mount ::"
 
 #: ../../userguide/dailyuse/libertine.rst:132
-#, fuzzy
 msgid "This will not allow the container access to any of the directories earlier in the path for anything other than accessing your mounted directory."
 msgstr ""
 "Это не позволит контейнеру получить доступ к любому из созданных ранее "
@@ -1086,7 +1079,6 @@ msgstr ""
 "</porting/introduction>`."
 
 #: ../../userguide/install.rst:32
-#, fuzzy
 msgid "Install on legacy Android devices"
 msgstr "Установка на устройства со старыми версиями Android"
 
@@ -1232,7 +1224,6 @@ msgstr ""
 "устройством."
 
 #: ../../userguide/install.rst:81
-#, fuzzy
 msgid "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Your device will boot into a super old version of Ubuntu Touch."
 msgstr ""
 "`Установка <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ началась. "
