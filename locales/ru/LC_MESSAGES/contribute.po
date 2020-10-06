@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 14:08-0500\n"
-"PO-Revision-Date: 2020-08-02 16:52+0000\n"
+"PO-Revision-Date: 2020-09-30 07:26+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/ru/>\n"
@@ -503,26 +503,23 @@ msgstr ""
 "языки, помогите нам с :doc:`переводами <translations>`."
 
 #: ../../contribute/index.rst:8
-#, fuzzy
 msgid "If those aren't enough for you, see `our contribute page <https://ubports.com/page/vo-get-involved>`_ for an introduction of our focus groups."
 msgstr ""
-"Также можно посмотреть  страничку `Как можно помочь <https://ubports.com/"
-"page/vo-get-involved>`, где есть ссылки на тематические группы."
+"Также можно посмотреть страничку `Как можно помочь <https://ubports.com/page/"
+"vo-get-involved>`, где есть ссылки на тематические группы."
 
 #: ../../contribute/monetary.rst:2
 msgid "Monetary support"
 msgstr "Финансовая помощь"
 
 #: ../../contribute/monetary.rst:4
-#, fuzzy
 msgid "You can help us keep the lights on at UBports by becoming a patron on `Liberapay <https://liberapay.com/UBports/>`_ or `Patreon <https://www.patreon.com/ubports>`_!"
 msgstr ""
-"На развитие проектов  UBports можно сделать пожертвования через сервисы `"
+"На развитие проектов UBports можно сделать пожертвования через сервисы `"
 "Liberapay <https://liberapay.com/UBports/>`_ или `Patreon "
 "<https://www.patreon.com/ubports>`_."
 
 #: ../../contribute/monetary.rst:6
-#, fuzzy
 msgid "Your contribution finances our server infrastructure and debug services, and helps covering additional costs."
 msgstr ""
 "Ваши пожертвования пойдут на аренду серверов и оплату лицензионного ПО, а "
@@ -826,10 +823,9 @@ msgid "Testing patches"
 msgstr "Тестирование патчей"
 
 #: ../../contribute/quality-assurance.rst:23
-#, fuzzy
 msgid "Pull-requests can be tested using the `QA scripts <https://github.com/ubports/ubports-qa-scripts>`_. Run ``ubports-qa -h`` for usage information."
 msgstr ""
-"Pull-requests можно протестировать с помощью `скриптов QA  <https://github."
+"Pull-requests можно протестировать с помощью `скриптов QA <https://github."
 "com/ubports/ubports-qa-scripts>`_. Запустите команду ``ubports-qa -h`` для "
 "более подробной информации."
 
@@ -898,14 +894,13 @@ msgstr ""
 "помощью `QtLinguist <https://doc.qt.io/qt-5/qtlinguist-index.html>`."
 
 #: ../../contribute/translations.rst:14
-#, fuzzy
 msgid "Within a app strings are marked either this way ``i18n.tr(\"string\")`` when using gettext or like this ``tr(\"string\")`` when using QtLinguist. When the app is build those translatable strings are extracted and written into the *.pot* or *.ts* template files. The *.po* and *.ts* language files then need to be updated from their template."
 msgstr ""
-"Внутри приложения строки помечаются следующим образом:  `` i18n.tr (\""
-"string\") `` при использовании gettext, или  `` tr (\"string\") `` при "
-"использовании QtLinguist. При компиляции приложения эти строки извлекаются и "
-"записываются в файлы * .pot * или * .ts *. После перевода языковые файлы  *"
-".po * и * .ts * нужно обновить."
+"Внутри приложения строки помечаются следующим образом: `` i18n.tr (\"string\""
+") `` при использовании gettext, или  `` tr (\"string\") `` при использовании "
+"QtLinguist. При компиляции приложения эти строки извлекаются и записываются "
+"в файлы * .pot * или * .ts *. После перевода языковые файлы  *.po * и * .ts *"
+" нужно обновить."
 
 #: ../../contribute/translations.rst:16
 msgid "Once strings have been translated, they are made available for users with a new release of an app."
@@ -1053,11 +1048,10 @@ msgstr ""
 "то список."
 
 #: ../../contribute/translations.rst:61
-#, fuzzy
 msgid "For high quality translations it is recommended to go through all of the steps given below. Although if you are not familiar with building apps using clickable, skip the steps 4. to 6. You may not be able to translate the latest strings though. And you will not know if the strings fit into the apps layout."
 msgstr ""
 "Чтобы подготовить качественный перевод, рекомендуется пройти все шаги, "
-"указанные ниже. Хотя, если вы не знакомы с созданием приложений формата "
+"указанные ниже. Хотя, если Вы не знакомы с созданием приложений формата "
 "clickable, пропустите шаги с 4 по 6. Но после этого Вы не сможете перевести "
 "последние строчки в приложении. И не будет понятно, вписываются ли строки в "
 "макет приложения."
@@ -1083,7 +1077,6 @@ msgid "(optional) create a new branch for the translation"
 msgstr "(необязательно) создайте новую ветвь для перевода"
 
 #: ../../contribute/translations.rst:68
-#, fuzzy
 msgid "build the app using clickable to get up-to-date *.pot*/*.ts* template files"
 msgstr ""
 "скомпилируйте приложение с помощью clickable, чтобы получить самые последние "
@@ -1110,12 +1103,10 @@ msgstr ""
 "удовлетворительного результата"
 
 #: ../../contribute/translations.rst:73
-#, fuzzy
 msgid "push the translated *.po*/*.ts* file(s) to your forked repo [do NOT commit *.pot*/*.ts* template files]"
 msgstr ""
 "переместите переведенные версии файлов *.po*/*.ts* в скопированный "
-"репозиторий [не копируйте файлы  *.pot*/*.ts*  напрямую в исходный "
-"репозиторий]"
+"репозиторий [не копируйте файлы *.pot*/*.ts* напрямую в исходный репозиторий]"
 
 #: ../../contribute/translations.rst:74
 msgid "open an merge/pull request from your fork to the apps repo"

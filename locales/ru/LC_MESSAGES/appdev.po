@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-08-01 20:13+0000\n"
+"PO-Revision-Date: 2020-09-25 00:28+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -438,8 +438,8 @@ msgstr "Использование"
 #: ../../appdev/guides/dependencies.rst:99
 msgid "First, you may need to specify the include directory where the compiler can find the headers. Second, you need to link the library itself against your app's binary, except it is a header library, where all the source code is located in header files."
 msgstr ""
-"Сначала  нужно указать директорию, где компилятор будет искать файлы "
-"заголовков. Во-вторых, нужно связать библиотеку и  бинарный файл приложения, "
+"Сначала нужно указать директорию, где компилятор будет искать файлы "
+"заголовков. Во-вторых, нужно связать библиотеку и бинарный файл приложения, "
 "если это только не библиотека заголовков, где весь исходный код находится в "
 "файлах заголовков."
 
@@ -1125,7 +1125,6 @@ msgid "integer"
 msgstr "integer - целое число"
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "Seconds since the unix epoch, only used for persist for now."
 msgstr ""
 "Секунды, прошедшие с начала эпохи Unix, пока используются только для "
@@ -1205,7 +1204,6 @@ msgid "count"
 msgstr "число"
 
 #: ../../appdev/guides/pushnotifications.rst:275
-#, fuzzy
 msgid "A number to be displayed over the application's icon in the launcher."
 msgstr "Число, отображаемое над значком приложения в панели запуска (launcher)."
 
@@ -1236,7 +1234,6 @@ msgstr ""
 "увидите больше «метрик» о пользователе."
 
 #: ../../appdev/guides/user-metrics.rst:11
-#, fuzzy
 msgid "This shows \"7 text messages sent today.\" How did it know?"
 msgstr ""
 "Там есть уведомление: \"Сегодня было отправлено 7 текстовых сообщений.\" "
@@ -1373,7 +1370,6 @@ msgid "Limitations and wonders"
 msgstr "Ограничения и особенности"
 
 #: ../../appdev/guides/user-metrics.rst:89
-#, fuzzy
 msgid "Based on how the \"formats\" are set up, it seems that it is difficult to maintain a running tally beyond one day. It also doesn’t seem to truly reset a counted variable. Instead it reverts to a default setting. This would not normally allow for long-term data interpretation without some kind of database logging."
 msgstr ""
 "В зависимости от того, как заданы «форматы», все может выглядеть так, будто "
@@ -1383,7 +1379,6 @@ msgstr ""
 "какой-либо регистрации в базе данных."
 
 #: ../../appdev/guides/user-metrics.rst:91
-#, fuzzy
 msgid "In the case of the `nCounter`_ app. I wanted to count the number of days, but since the metric \"resets\" each day, that presents a problem. I create a workaround that updates the metric every time the application is opened. Thus, the ``emptyFormat`` (default) tells the user to open the application. This, however, nearly defeats the purpose of the user metric entirely, other than having a neat stat reminder for the day."
 msgstr ""
 "Особенность приложения `nCounter`_. Хочется посчитать количество дней, но "
@@ -1395,7 +1390,6 @@ msgstr ""
 "напоминания о статистике за день."
 
 #: ../../appdev/guides/user-metrics.rst:93
-#, fuzzy
 msgid "There must be a way for a process to run independently in the background (e.g. cron) to retrieve data from a specific app code. One lead is the Indicator Weather app. This runs a process every X minutes to update the weather indicator automatically without having to open the app."
 msgstr ""
 "Процесс должен запускаться независимо в фоновом режиме (например, cron) для "
@@ -1492,7 +1486,6 @@ msgid "Using Standard Paths in QML"
 msgstr "Использование стандартных каталогов в QML"
 
 #: ../../appdev/guides/writeable-dirs.rst:44
-#, fuzzy
 msgid "The Qt module `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-labs-platform-standardpaths.html>`_ provides the QStandardPaths in QML. Unfortunately it is not available on Ubuntu Touch, yet. Probably you don't want to ship that module with your app. Instead, you could simply let your C++ plugin provide the paths to your QML part. Therefore, add these methods to your plugin class:"
 msgstr ""
 "Через Qt-модуль  `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-"
@@ -1649,11 +1642,10 @@ msgid "Sample apps"
 msgstr "Примеры приложений"
 
 #: ../../appdev/index.rst:98
-#, fuzzy
 msgid "Learn more about app development by digging into our :ref:`Sample apps <sampleapps>`."
 msgstr ""
-"Подробнее узнать о создании приложений можно в главе :ref:`Примеры "
-"<sampleapps>`."
+"Подробнее узнать о создании приложений можно в главе :ref:`Демонстрационные "
+"программы <sampleapps>`."
 
 #: ../../appdev/index.rst:108
 msgid "Preinstalled apps"
@@ -1960,7 +1952,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:151
 msgid "keep-display-on"
-msgstr "keep-display-on"
+msgstr "keеp-display-on"
 
 #: ../../appdev/platform/apparmor.rst:153
 msgid "Description: Can request keeping the screen on"
@@ -2057,7 +2049,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:217
 msgid "picture_files_read"
-msgstr "picture_files_read"
+msgstr "picture_filеs_read"
 
 #: ../../appdev/platform/apparmor.rst:219
 msgid "Description: Can read all picture files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access picture files instead."
@@ -2090,9 +2082,8 @@ msgid "Description: Can access the sensors"
 msgstr "Описание: доступ к сенсорам"
 
 #: ../../appdev/platform/apparmor.rst:241
-#, fuzzy
 msgid "Allows apps to access `device sensors`_"
-msgstr "дает приложениям доступ к  `сенсорам устройства`_"
+msgstr "Дает приложениям доступ к `сенсорам устройства`_"
 
 #: ../../appdev/platform/apparmor.rst:245
 msgid "usermetrics"
@@ -2289,11 +2280,11 @@ msgid "For a full list of available policy groups, see :doc:`apparmor`."
 msgstr "Полный список доступных групп политик см. в разделе :doc: `apparmor`."
 
 #: ../../appdev/platform/index.rst:6
-#, fuzzy
 msgid "Here are Ubuntu Touch platforms key topics when you want to extend your app with Ubuntu Touch ecosystem:"
 msgstr ""
-"Список ключевых тем о платформе Ubuntu Touch, которые необходимо изучить, "
-"если планируется расширить приложение с помощью экосистемы Ubuntu Touch:"
+"Список ключевых вопросов о платформе Ubuntu Touch, которые необходимо "
+"изучить, если планируется расширить работу приложения с помощью экосистемы "
+"Ubuntu Touch:"
 
 #: ../../appdev/platform/index.rst:9
 msgid "Content Hub"
@@ -2314,21 +2305,18 @@ msgstr ""
 "приложений."
 
 #: ../../appdev/platform/index.rst:15
-#, fuzzy
 msgid "URL dispatcher"
 msgstr "URL-диспетчер"
 
 #: ../../appdev/platform/index.rst:15
-#, fuzzy
 msgid "Help users navigate between your apps and drive their journey with the URL dispatcher."
 msgstr ""
-"Помогает пользователям перемещаться между  приложениями и сетью  с помощью "
+"Помогает пользователям перемещаться между приложениями и сетью  с помощью "
 "диспетчера URL."
 
 #: ../../appdev/platform/index.rst:19
-#, fuzzy
 msgid "Online accounts"
-msgstr "online-аккаунты (учётные записи)"
+msgstr "Online-аккаунты (учётные записи)"
 
 #: ../../appdev/platform/index.rst:18
 msgid "Simplify user access to online services by integrating with the online accounts API. Accounts added by the user on the device are registered in a centralized hub, allowing other apps to re-use them."
@@ -2354,9 +2342,8 @@ msgstr ""
 "Здесь можно найти информацию о модели ограничений и системе сборки пакетов:"
 
 #: ../../appdev/publishing/index.rst:4
-#, fuzzy
 msgid "App publishing guides"
-msgstr "Руководства по публикации приложения."
+msgstr "Инструкции по публикации приложения"
 
 #: ../../appdev/publishing/index.rst:6
 msgid "We are currently working on expanding our list of publishing guides. In the mean time you can get started over at the `OpenStore's submission page <https://open-store.io/submit>`__."
@@ -2518,7 +2505,6 @@ msgstr ""
 "``--enable-addressbar``."
 
 #: ../../appdev/webapp/guide.rst:59
-#, fuzzy
 msgid "Simple containment to the site"
 msgstr "Простые методики ограничения пользовательской активности на сайте"
 
@@ -2532,7 +2518,6 @@ msgstr ""
 "ниже :::"
 
 #: ../../appdev/webapp/guide.rst:67
-#, fuzzy
 msgid "``--webappUrlPatterns=`` indicates a pattern is next"
 msgstr "``--webappUrlPatterns=`` указывает на то, что шаблон следующий"
 
@@ -2701,7 +2686,6 @@ msgid "To change the string from the command line, use the following option:::"
 msgstr "Из командной строки это можно сделать с помощью следующей команды:::"
 
 #: ../../appdev/webapp/guide.rst:165
-#, fuzzy
 msgid "Browser data containment"
 msgstr "Хранение данных браузера"
 
@@ -2831,7 +2815,6 @@ msgstr ""
 "режиме, можно получить доступ к обычному отладчику Chrome."
 
 #: ../../appdev/webapp/webdebug.rst:22
-#, fuzzy
 msgid "On your phone, start the browser in inspector mode:::"
 msgstr "Запустите браузер на телефоне в режиме \"web-inspector\":::"
 
