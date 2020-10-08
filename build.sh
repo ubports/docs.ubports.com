@@ -22,9 +22,11 @@ else
   pip install -r requirements.txt
 fi
 echo -e "${GREEN}Building...${PLAIN}"
+rm -r _build/
 if [ "$(uname)" == "Linux" ]; then
-  sphinx-build -Wa . _build/html -j `nproc --all`
+  sphinx-build -Wa . _build/html -j `nproc --all` || exit $?
 else
-  sphinx-build -Wa . _build/html -j `sysctl -n hw.ncpu`
+  sphinx-build -Wa . _build/html -j `sysctl -n hw.ncpu` || exit $?
 fi
+sphinx-build -Wab rediraffecheckdiff . _build/html
 exit $?

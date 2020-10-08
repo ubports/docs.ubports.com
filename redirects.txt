@@ -1,0 +1,7 @@
+"porting/introduction.rst" "porting/Intro.rst"
+"porting/building-halium-boot.rst" "porting/halium_7-1/Building.rst"
+"porting/common-problems-install.rst" "porting/halium_7-1/Common_errors.rst"
+"porting/common-problems-run.rst" "porting/halium_7-1/Common_errors.rst"
+"porting/running-ut.rst" "porting/halium_7-1/Unity8.rst"
+"porting/installing-16-04.rst" "porting/halium_7-1/Installing.rst"
+"porting/device-configuration.rst" "porting/halium_7-1/Configuring.rst"
