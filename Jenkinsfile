@@ -3,6 +3,7 @@ def install_dependencies = {
 }
 def build_docs = {
     sh 'python3 -m sphinx -Wab html . _build/html/'
+    sh 'python3 -m sphinx -Wab rediraffecheckdiff . _build/html'
 }
 def link_index = {
     sh 'cp redir.html _build/html/..index.html'
@@ -17,6 +18,10 @@ pipeline {
                 }
             }
             steps {
+                // Workaround to create the master branch since Jenkins
+                // refuses to do it on PR builds
+                sh 'git branch master `git show-ref -s origin/master`'
+
                 withEnv(["HOME=${env.WORKSPACE}"]) {
                     script {install_dependencies()}
                     script {build_docs()}
