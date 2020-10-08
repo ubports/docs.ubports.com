@@ -104,6 +104,27 @@ You can do this by adding the page to the ``index.rst`` file in the same directo
 
 The order matters. If you would like your page to appear in a certain place in the table of contents, place it there. In the previous example, newpage would be added to the end of this table of contents.
 
+Moving pages
+^^^^^^^^^^^^
+
+Sometimes it becomes necessary to move a page from one place in the documentation to another. Generally this is to improve document flow: For example, it makes more sense for the page to come after a page you've just added in a different section.
+
+However, people link to our documentation from many sources that we do not control. Blogs, websites, and other documentation sites can direct people here using links that they may never update. It is a terrible experience to follow a link from a different site and land on a 404 page, left to your own devices to find your way in restructured documentation.
+
+We use a tool called Rediraffe to avoid this bad experience. Rediraffe creates redirect pages which can send a user from an old, invalid link to a new, useful link. Please create a redirect link when changing a page's name or moving a page within the documentation's directory structure. Redirect links are created by placing the filename of the old document and the filename of the new document, relative to the documentation's root, in the `redirects.txt file <https://github.com/ubports/docs.ubports.com/blob/master/redirects.txt>`_.
+
+We use Rediraffe's ``checkdiff`` builder to ensure that pages are not deleted from the documentation without a redirect in place. This builder is run as part of the ``build.sh`` script in the repository and as part of our automated build once you submit a Pull Request.
+
+What follows are some examples of situations where you should create redirects.
+
+You are moving ``systemdev/calendars.rst`` to ``appdev/calendars.rst``. Add the following to the ``redirects.txt`` file::
+
+    "systemdev/calendars.txt" "appdev/calendars.txt"
+
+You are moving ``appdev/clickable.rst`` into several pages in ``appdev/clickable/`` to give significantly more information about the tool than there was previously. You have created an introduction page, ``appdev/clickable/introduction.rst``. In this case, it would be a good idea to redirect the old page to the new introduction page. This can be done by adding the following to ``redirects.txt``::
+
+    "appdev/clickable.rst" "appdev/clickable/introduction.rst"
+
 Warnings
 ^^^^^^^^
 
