@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 14:08-0500\n"
-"PO-Revision-Date: 2020-09-30 07:26+0000\n"
+"PO-Revision-Date: 2020-10-07 10:39+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/ru/>\n"
@@ -52,7 +52,7 @@ msgstr "Проверьте, сообщалось ли об этой ошибке
 #: ../../contribute/bugreporting.rst:14
 msgid "Open up the bug tracker for `ubuntu-touch <https://github.com/ubports/ubuntu-touch>`_."
 msgstr ""
-"Зайдите на официальный баг-трекер  `ubuntu-touch <https://github.com/ubports/"
+"Зайдите на официальный баг-трекер `ubuntu-touch <https://github.com/ubports/"
 "ubuntu-touch>`_."
 
 #: ../../contribute/bugreporting.rst:16
@@ -255,8 +255,8 @@ msgstr ""
 #: ../../contribute/documentation.rst:30
 msgid "Page titles are underlined with equals signs. For example, the markup for :doc:`./bugreporting` includes the following title:"
 msgstr ""
-"Заголовки страниц выделены знаком равенства. Например, в разделе: "
-"doc:`./bugreporting` заголовок выглядит так:"
+"Заголовки страниц выделены знаком равенства. Например, в разделе "
+":doc:`./bugreporting` заголовок выглядит так:"
 
 #: ../../contribute/documentation.rst:37
 msgid "Note that:"
@@ -387,7 +387,7 @@ msgid "You can make more advanced edits to our documentation by forking `ubports
 msgstr ""
 "Можно существенно переработать документацию, но для этого лучше сделать форк "
 "проекта `ubports/docs.ubports.com <https://github.com/ubports/"
-"docs.ubports.com>` на сайте  GitHub. Если у Вас есть вопросы по этому "
+"docs.ubports.com>`на сайте GitHub. Если у Вас есть вопросы по этому "
 "процессу, прочитайте подробное руководство на сайте `GitHub "
 "<https://guides.github.com/activities/forking/>`_."
 
@@ -407,27 +407,27 @@ msgid "The documentation can be built by running ``./build.sh`` in the root of t
 msgstr ""
 "Комплект документации можно скомпилировать, запустив скрипт ``./build.sh`` в "
 "корневой директории этого репозитория. Скрипт также создаст виртуальное "
-"рабочее окружение для компиляции в  директории`` ~ /ubportsdocsenv``, если "
+"рабочее окружение для компиляции в директории ``~ /ubportsdocsenv``, если "
 "его еще нет."
 
 #: ../../contribute/documentation.rst:140
 msgid "If all went well, you can enter the ``_build/html`` directory and open ``index.html`` to view the UBports documentation."
 msgstr ""
-"Если скрипт успешно отработал, появятся директории ``_build/html`, где будет "
-"находится файл  с документацией``index.html``."
+"Если скрипт успешно отработал, появятся директории ``_build/html``, где "
+"будет находится файл  с документацией``index.html``."
 
 #: ../../contribute/documentation.rst:142
 msgid "If you have trouble building the docs, the first thing to try is deleting the build environment. Run ``rm -r ~/ubportsdocsenv`` and try the build again. Depending on when you first used the build script, you may need to run the ``rm`` command with ``sudo``."
 msgstr ""
 "Если у Вас возникают проблемы при компиляции пакета документации, сначала "
 "попробуйте удалить рабочую среду для формирования сборки. Запустите команду "
-"``rm -r ~/ubportsdocsenv``и попробуйте снова запустить процесс сборки. В "
+"``rm -r ~/ubportsdocsenv`` и попробуйте снова запустить процесс сборки. В "
 "зависимости от рабочего окружения может потребоваться команда ``sudo`` перед "
 "``rm``."
 
 #: ../../contribute/documentation.rst:145
 msgid "Alternative methods to contribute"
-msgstr "Другие варианты помощи"
+msgstr "Другие способы помощи"
 
 #: ../../contribute/documentation.rst:148
 #: ../../contribute/translations.rst:2
@@ -448,10 +448,10 @@ msgstr "Подготовка документации в форматах, от�
 msgid "If you would like to write documents for UBports but are not comfortable writing ReStructuredText, please write it without formatting and post it on the `UBports Forum`_ in the relevant section (likely General). Someone will be able to help you revise your draft and write the required ReStructuredText."
 msgstr ""
 "Если Вы хотите написать инструкции по продуктам UBports, но по каким-то "
-"причинам не можете оформлять текст в формате ReStructuredText, пожалуйста,  "
+"причинам не можете оформлять текст в формате ReStructuredText, пожалуйста, "
 "разместите текст без форматирования в форуме сообщества `UBports Forum`_ в "
-"соответствующем разделе (скорее всего,  в разделе \"General\"). Кто-нибудь "
-"из пользователей отредактирует черновик и переведёт его в формат "
+"соответствующем разделе (скорее всего, в разделе \"General\"). Кто-нибудь из "
+"пользователей отредактирует черновик и переведёт его в формат "
 "ReStructuredText."
 
 #: ../../contribute/documentation.rst:158
@@ -480,7 +480,6 @@ msgstr ""
 "соответствующий pull request на трекере."
 
 #: ../../contribute/documentation.rst:167
-#, fuzzy
 msgid "To create a todo, add this markup to your page::"
 msgstr "Чтобы создать такой список, добавьте на свою страничку этот шаблон::"
 
@@ -491,7 +490,7 @@ msgstr "Как можно помочь Сообществу UBports"
 #: ../../contribute/index.rst:4
 msgid "Welcome! You're probably here because you want to contribute to UBports. The pages you'll find below here will help you do this in a way that's helpful to both the project and yourself."
 msgstr ""
-"Добро пожаловать! Скорее всего, Вы находитесь здесь потому, что  хотите "
+"Добро пожаловать! Скорее всего, Вы находитесь здесь потому, что хотите "
 "внести свой вклад в UBports. Ниже находится материал, который поможет "
 "сделать это с пользой как для проекта, так и для самого участника."
 
@@ -766,11 +765,11 @@ msgstr "Обеспечение качества (Quality Assurance)"
 #: ../../contribute/quality-assurance.rst:4
 msgid "This page explains how to help the UBports QA team, both as an official member or a new contributor. Please also read the :doc:`issue tracking </about/process/issue-tracking>` and :doc:`bugreporting <bugreporting>` guides to better understand the workflow. For real-time communication, you can join our `telegram group <http://t.me/ubports_qa_team>`_."
 msgstr ""
-"На этой странице рассказывается, как могут помочь  опытные разработчики или "
+"На этой странице рассказывается, как могут помочь опытные разработчики или "
 "новые участники отделу QA. Пожалуйста, также ознакомьтесь с документами "
 ":doc:`issue tracking </about/process/issue-tracking>` и :doc:`bugreporting "
 "<bugreporting>`, чтобы лучше понимать как организован рабочий процесс.  "
-"Задать вопросы или пообщаться можно в нашем ` чате в Telegram <http://t.me/"
+"Задать вопросы или пообщаться можно в нашем `чате в Telegram <http://t.me/"
 "ubports_qa_team>`_."
 
 #: ../../contribute/quality-assurance.rst:7
@@ -795,10 +794,10 @@ msgstr "Подтверждение сообщений об ошибках (ба�
 msgid "Unconfirmed bugreports are labeld **needs confirmation** to enable `global filtering <https://github.com/ubports/ubuntu-touch/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__. Browse through the list, read the bugreports and try to reproduce the issues that are described. If necessary, add :doc:`missing information or logs, or improve the quality of the report by other means <bugreporting>`. Leave a comment stating your device, channel, build number and whether or not you were able to reproduce the issue."
 msgstr ""
 "Неподтверждённые баг-репорты получают метку **needs confirmation**, чтобы их "
-"можно было найти через  `фильтр <https://github.com/ubports/ubuntu-touch/"
+"можно было найти через `фильтр <https://github.com/ubports/ubuntu-touch/"
 "issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__. "
 "Посмотрите этот список и попробуйте воспроизвести ошибки, которые в нём "
-"перечислены. Если нужно, то дополните  багрепорт:doc:`новой информацией, "
+"перечислены. Если нужно, то дополните баг-репорт :doc:`новой информацией, "
 "прикрепите лог-файлы или чем-то иным, что может помочь разработчикам "
 "<bugreporting>`. Можно указать в комментариях модель Вашего устройства, "
 "версию сборки, канал разработки и удалось ли воспроизвести ошибку."
@@ -807,8 +806,8 @@ msgstr ""
 msgid "If you have write-access to the repository, you can replace the **needs confirmation** label with **bug** (to mark it confirmed) or **invalid** (if the issue is definitely not reproducible). In that case it should be closed."
 msgstr ""
 "Если у Вас есть права на запись в репозиторий, можно поменять ярлык **needs "
-"confirmation** на  **bug** (если  ошибка подтверждается) или **invalid** ("
-"если баг не воспроизводится). В последнем случае запрос нужно закрыть."
+"confirmation** на **bug** (если ошибка подтверждается) или **invalid** (если "
+"баг не воспроизводится). В последнем случае запрос нужно закрыть."
 
 #: ../../contribute/quality-assurance.rst:18
 msgid "If you find two issues describing the same problem, leave a comment and try to find their differences. If they are in fact identical, close the newer one and label it **duplicate**."
@@ -833,15 +832,15 @@ msgstr ""
 msgid "Once the pull-request has been merged, the issue it fixes is moved to the quality assurance column of the `GitHub project <https://github.com/ubports/ubuntu-touch/projects/3>`__. Please check if the issues in this column are still present in the latest update on the devel channel, then see if anything else has broken in the update. Check if the developer mentioned specific things to look out for when testing and leave a comment detailing your experience. If you have write-access to the repository, you can move the issue back to **In Development** (and reopen it) or forward to **Release Candidate** as specified by the :doc:`issue tracking guidelines </about/process/issue-tracking>`."
 msgstr ""
 "После объединения pull-request и исправления ошибки, он перемещается в "
-"столбец группы обеспечения качества на`страничке проекта в GitHub "
+"столбец группы обеспечения качества на `страничке проекта в GitHub "
 "<https://github.com/ubports/ubuntu-touch/projects/3>`__.Пожалуйста, "
 "проверьте, есть ли эта заявка в последнем обновлении на канале devel, а "
 "затем посмотрите, не сломалось ли что-нибудь еще в этом обновлении. "
 "Проверьте, упомянул ли разработчик конкретные вещи, на которые нужно "
 "обратить внимание при тестировании, и оставьте комментарий с подробным "
 "описанием ваших действий по воспроизведению бага. Если у вас есть права на "
-"запись в репозиторий, вы можете перенести  баг обратно в статус **In "
-"Development** (и открыть его заново)или перенести в  **Release Candidate** "
+"запись в репозиторий, Вы можете перенести баг обратно в статус **In "
+"Development** (и открыть его заново) или перенести в **Release Candidate** "
 "как это описывается в документе :doc:`issue tracking guidelines </about/"
 "process/issue-tracking>`."
 
@@ -854,20 +853,20 @@ msgid "Initial triaging of new issues is done by QA-team members with write-acce
 msgstr ""
 "Первичное рассмотрение новых заявок проводится участником группы обеспечения "
 "качества (QA) с правами записи в папки репозитория. Если новая запись уже "
-"создана,  внимательно изучите её и установите корректные маркеры, как это "
+"создана, внимательно изучите её и установите корректные маркеры, как это "
 "указано в руководстве :doc:`issue tracking guidelines </about/process/issue-"
 "tracking>`. Сразу же можно заняться подтверждением баг-репорта."
 
 #: ../../contribute/quality-assurance.rst:32
 msgid "If the new issue has already been reported elsewhere, label it **duplicate** and close it."
 msgstr ""
-"Если новый баг-репорт уже когда-то поступал,  отметьте его маркером "
+"Если новый баг-репорт уже когда-то поступал, отметьте его маркером "
 "**duplicate** и закройте."
 
 #: ../../contribute/translations.rst:4
 msgid "Although English is the official base language for all UBports projects we believe you have the right to use it in any language you want."
 msgstr ""
-"Хотя английский  является официальным языком для всех проектов UBports, "
+"Хотя английский является официальным языком для всех проектов UBports, "
 "пользователь может свободно использовать любой язык."
 
 #: ../../contribute/translations.rst:6
@@ -969,7 +968,7 @@ msgstr "How-To (Краткие инструкции)"
 
 #: ../../contribute/translations.rst:35
 msgid "UBports Weblate"
-msgstr "UBports Weblate"
+msgstr "Сервис UBports Weblate"
 
 #: ../../contribute/translations.rst:37
 msgid "You can go to `UBports Weblate <https://translate.ubports.com/projects/>`_, click on \"Dashboard\" button, go to a project, and start making anonymous suggestions without being registered. If you want to save your translations, you must be logged in."
@@ -1116,7 +1115,7 @@ msgstr ""
 
 #: ../../contribute/translations.rst:78
 msgid "Translation Team Communication"
-msgstr "Общение с группой  по переводам (Translation Team)"
+msgstr "Общение с группой по переводам (Translation Team)"
 
 #: ../../contribute/translations.rst:80
 msgid "You may talk to others regarding translations by using `the forum category <https://forums.ubports.com/category/39/translations>`_ that UBports provides for this task. To use it you need to register, or login if you're registered already."
