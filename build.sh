@@ -31,3 +31,5 @@ else
   sphinx-build -Wa . _build/html -j `sysctl -n hw.ncpu` || exit $?
 fi
 sphinx-build -Wab rediraffecheckdiff . _build/html
+
+echo "Open _build/html/index.html in your browser to navigate through the docs"
