@@ -62,7 +62,7 @@ It should be done in the makefile named ``BoardConfig.mk`` (or ``BoardConfigComm
 
 Add the following line::
 
-BOARD_KERNEL_CMDLINE += console=tty0
+    BOARD_KERNEL_CMDLINE += console=tty0
 
 If your makefile already includes a line beginning with ``BOARD_KERNEL_CMDLINE``, you may add it just below that to keep things tidy.
 
