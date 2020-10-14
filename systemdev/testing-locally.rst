@@ -32,9 +32,9 @@ Start by installing Crossbuilder on your host::
 
 Crossbuilder is a shell script, so you don't need to build it. Instead, you will need to add its directory to your ``PATH`` environment variable, so that you can execute it from any directory::
 
-    echo "export PATH=$HOME/crossbuilder:$PATH" >> ~/.bashrc
-    # and add it to your own session:
-    export PATH="$HOME/crossbuilder:$PATH"
+    echo 'export PATH="$HOME/crossbuilder:$PATH"' >> ~/.bashrc
+    # and add it to your current session:
+    source ~/.bashrc
 
 Now that Crossbuilder is installed, we can use it to set up LXD::
 
