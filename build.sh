@@ -13,13 +13,13 @@ if [ -d "$HOME/ubportsdocsenv" ]; then
 else
   echo -e "${RED}No build environment found.${PLAIN}"
   echo -e "${YELLOW}Installing pip and virtualenv.${PLAIN}"
-  sudo apt install python-pip
-  sudo -H pip install virtualenv
+  sudo apt install python3-pip
+  sudo -H pip3 install virtualenv
   echo -e "${YELLOW}Creating a virtual environment in ${HOME}/ubportsdocsenv.${PLAIN}"
   virtualenv ~/ubportsdocsenv
   . ~/ubportsdocsenv/bin/activate
   echo -e "${YELLOW}Installing build tools and prerequisites.${PLAIN}"
-  pip install -r requirements.txt
+  pip3 install -r requirements.txt
 fi
 echo -e "${GREEN}Building...${PLAIN}"
 rm -r _build/
