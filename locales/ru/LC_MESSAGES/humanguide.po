@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 11:47-0500\n"
-"PO-Revision-Date: 2020-10-06 06:57+0000\n"
+"PO-Revision-Date: 2020-10-14 17:19+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-humanguide/ru/>\n"
@@ -391,10 +391,10 @@ msgstr "Дизайн иконок приложений"
 #: ../../humanguide/design-concepts/app-icon-design.rst:4
 msgid "The whole system and apps follow the `Suru design principles <http://web.archive.org/web/20191223082720/https://docs.ubuntu.com/phone/en/apps/design/get-started/design-philosophy>`__ started by Canonical and `Samuel Hewitt <https://samuelhewitt.com>`__."
 msgstr ""
-"Вся система и приложения выполнены по правилам`Suru design principles "
+"Вся система и приложения выполнены по правилам `Suru design principles "
 "<http://web.archive.org/web/20191223082720/https://docs.ubuntu.com/phone/en/"
 "apps/design/get-started/design-philosophy>`__, авторы которых - компания "
-"Canonical и`Samuel Hewitt <https://samuelhewitt.com> `__."
+"Canonical и`Samuel Hewitt <https://samuelhewitt.com>`__."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:7
 msgid "Design Philosophy and Suru Meaning"
@@ -528,336 +528,415 @@ msgstr ""
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:84
 msgid "Unit Grid"
-msgstr ""
+msgstr "Сетка на устройстве"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:86
 msgid "Designing with an overall pixel grid in mind is crucial to having crisp, clean icons. Since most desktop icons have dimensions that are a factor of four (16x16, 24x24, 32x32, 48x48, 256x256) using a pixel grid with lines every 4 pixels and drawing to that grid is the best practice."
 msgstr ""
+"При разработке дизайна с учетом общей пиксельной сетки очень важно иметь "
+"четкие и чистые значки. Поскольку большинство значков на рабочем стол могут "
+"быть 4-х типов (16x16, 24x24, 32x32, 48x48, 256x256), лучше всего "
+"использовать пиксельную сетку с линиями каждые 4 пикселя и рисовать в этой "
+"сетке."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:89
 msgid "Shadows"
-msgstr ""
+msgstr "Тени"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:91
 msgid "Often a Suru icon is drawn with two distinct sets of shadows, one for the pictogram to create a drop shadow effect, and a second below the overall icon shape."
 msgstr ""
+"Часто значок Suru рисуется с двумя отдельными наборами теней: один для "
+"пиктограммы, чтобы создать эффект тени, а второй - под общей формой значка."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:93
 msgid "The drop shadow effect on the central pictogram is a combination of two shadow that are identical in shape to the pictogram:"
 msgstr ""
+"Эффект падающей тени на центральной пиктограмме представляет собой "
+"комбинацию двух теней, идентичных по форме пиктограмме:"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:95
 msgid "a shape that is rgba(0,0,0,0.1) with vertical offset of 2 pixels and a blur of 1%"
 msgstr ""
+"форма rgba (0,0,0,0.1) с вертикальным смещением 2 пикселей и размытием 1%"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:96
 msgid "a shape that is rgba(0,0,0,0.4) with vertical offset of 4 pixels and a blur of 10%"
 msgstr ""
+"форма тени rgba (0,0,0,0.4) с вертикальным смещением 4 пикселей и размытием "
+"10%"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:100
 msgid "If the fold effect is present, the second shadow is drawn using a linear gradient with three stops whose positions correspond to the location of the background fold."
 msgstr ""
+"Если присутствует эффект линии сгиба, вторая тень рисуется с использованием "
+"линейного градиента. Во время прорисовки делаются три точки, позиции которых "
+"соответствуют местоположению линии сгиба."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:103
 msgid "Highlights"
-msgstr ""
+msgstr "Световые эффекты"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:105
 msgid "Pictograms have an ever~so~slight (1 pixel) white highlight along the top edge of them. To do this, make 2 solid white copies of the main pictogram shape and move one copy 1 pixel down and 'difference' the two so what's left is an 'edge' that you can align to the top of the pictogram. Repeat as needed."
 msgstr ""
+"Пиктограммы имеют очень слабую (1 пиксель) белую подсветку по верхнему краю. "
+"Чтобы добиться этого эффекта, включите две абсолютно белых копии основной "
+"формы пиктограммы и переместите одну копию формы на 1 пиксель вниз и "
+"совместите две формы так, чтобы остался «край», который вы можете выровнять "
+"по верхнему краю пиктограммы. При необходимости процесс можно повторить."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:109
 msgid "Depending on the colour of your pictogram element, you can vary the opacity of your highlight. For instance, if it is using bright, primary colours, there isn't any need for a highlight."
 msgstr ""
+"В зависимости от цвета элемента пиктограммы можно изменять прозрачность "
+"световых эффектов. Например, при использовании ярких основных цветов нет "
+"необходимости использовать световые эффекты."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:111
 msgid "Grids and other resources can be found in this `gitlab repository <https://gitlab.com/cibersheep/ubuntu-icon-resource-kit>`__."
 msgstr ""
+"Сетки и другие ресурсы можно найти в этом `gitlab-репозитории "
+"<https://gitlab.com/cibersheep/ubuntu-icon-resource-kit>`__."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:2
 msgid "In-app icons design"
-msgstr ""
+msgstr "Дизайн иконок в приложении"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:5
 msgid "Interface Icons"
-msgstr ""
+msgstr "Иконки интерфейса"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:7
 msgid "Interface icons communicate either status or action displays, such as battery level or an alarm, whilst also enabling the user to perform actions like opening a menu, sharing content or print a document. The interface icons are located in the top bar or in-app icons, such as in the Header or the menus."
 msgstr ""
+"Интерфейсные значки сообщают нужны для индикации статуса устройства или "
+"действий пользователя. Например, они показывают уровень заряда батареи, а "
+"также позволяют пользователю открывать меню, просматривать контент или "
+"работать с документами. Значки интерфейса расположены на верхней панели или "
+"в приложении, например, в заголовке или меню."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:9
 msgid "|stock_message.svg| |share.svg| |stock_alarm-clock.svg| |security-alert.svg| |settings.svg|"
 msgstr ""
+"|stock_message.svg| |share.svg| |stock_alarm-clock.svg| |security-alert.svg| "
+"|settings.svg|"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:12
 msgid "See a `list of the icons <http://docs.ubports.com/projects/icons/>`__. available in the system."
 msgstr ""
+"Полный `список значков <http://docs.ubports.com/projects/icons/>` __, "
+"которые есть в системе UTouch."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:15
 msgid "Color"
-msgstr ""
+msgstr "Цвет"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:17
 msgid "Interface icons can be colourized in qml therefore are designed in #808080 color."
 msgstr ""
+"Иконки интерфейсов можно раскрасить в qml, они раскрашены в цвет #808080."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:20
 msgid "Font"
-msgstr ""
+msgstr "Шрифт"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:22
 msgid "To provide a consistent look to the UI and to make the Suru icons distinctive, the design is based on the same patterns as the Ubuntu font. The font patterns can applied to the symbol to define its contours."
 msgstr ""
+"Чтобы обеспечить единообразный вид пользовательского интерфейса и сделать "
+"значки Suru отличительными, дизайн основан на тех же шаблонах, что и шрифты "
+"Ubuntu. Шаблоны шрифтов можно применить к символу, чтобы определить его "
+"контуры."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:27
 msgid "Strokes"
-msgstr ""
+msgstr "Линии"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:29
 msgid "Stroke ends are squared but the upper end of vertical strokes is slightly oblique with a +10º angle."
 msgstr ""
+"Концы линий имеют прямоугольную форму, но верхний конец вертикальных линий "
+"слегка скошен под углом + 10º."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:34
 msgid "Rotation"
-msgstr ""
+msgstr "Вращение"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:36
 msgid "When they are not horizontal or vertical, objects are oriented along a +45º axis."
 msgstr ""
+"Когда объекты не расположены горизонтально или вертикально, они "
+"ориентированы по оси + 45º."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:41
 msgid "Corners"
-msgstr ""
+msgstr "Углы"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:43
 msgid "Curved corners are preferred if possible. The following picture shows a zoom on the default outer and inner curvatures, with nodes and Bezier handle. The default curvature can be scaled down when the shape is smaller."
 msgstr ""
+"По возможности лучше использовать скругленные углы. На следующем рисунке "
+"показано увеличенное изображение внешних и внутренних закругленных углов с "
+"узлами и маркером Безье. Кривизну по умолчанию можно уменьшить, если "
+"используется форма поменьше."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:48
 msgid "Arrows"
-msgstr ""
+msgstr "Стрелки"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:50
 msgid "A chevron symbol is used for navigation arrows. The arrowhead is an isosceles triangle where the two equal sides are slightly curved (following the pattern of the Y character)."
 msgstr ""
+"Навигационные стрелки обозначены символом шеврона. Стрелка представляет "
+"собой равнобедренный треугольник, две равные стороны которого слегка "
+"изогнуты (по образцу буквы \"Y\")."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:55
 msgid "Opacity"
-msgstr ""
+msgstr "Тени и непрозрачность"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:57
 msgid "50% opacity is used to reflect the status of an indicator. In case of a double space (enabled and disabled, for example), the opacity of the whole icon changes. When the status allows a range of values, the opacity of a single portion of icon can be altered."
 msgstr ""
+"Прозрачность в 50% используется для отражения статуса индикатора. В случае "
+"двойного нажатия (например, включенного и выключенного) прозрачность всего "
+"значка изменится. Когда статус допускает диапазон значений, можно изменить "
+"прозрачность отдельной части значка."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:62
 msgid "Grid"
-msgstr ""
+msgstr "Сетка"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:64
 msgid "Interface icons are designed for 96x96 pixels, with at least 4 pixels of margin on every side."
 msgstr ""
+"Интерфейсные иконки имеют размер 96x96 пикселей, с полями не менее 4 "
+"пикселей с каждой стороны."
 
 #: ../../humanguide/design-concepts/index.rst:2
 msgid "Design concepts"
-msgstr ""
+msgstr "Концепции дизайна"
 
 #: ../../humanguide/design-concepts/system-palette.rst:1
 msgid "As designed by `Canonical <https://www.canonical.com/>`__, we use the following system palette (from `Michał Prędotka <http://colors.mivoligo.com/>`__ and `Ubuntu documentation <https://docs.ubuntu.com/phone/en/apps/api-qml-development/Ubuntu.Components.UbuntuColors>`__):"
 msgstr ""
+"Как и во всех продуктах компании `Canonical <https://www.canonical.com/>`__, "
+"у нас используется следующее цветовое оформление (автор - `Michał Prędotka "
+"<http://colors.mivoligo.com/>`__, подробнее можно посмотреть в `комплекте "
+"документации Ubuntu <https://docs.ubuntu.com/phone/en/apps/"
+"api-qml-development/Ubuntu.Components.UbuntuColors>`__):"
 
 #: ../../humanguide/design-concepts/system-palette.rst:4
 msgid "Operating system and app palette"
-msgstr ""
+msgstr "Операционная система и цветовая палитра приложений"
 
 #: ../../humanguide/design-concepts/system-palette.rst:8
 msgid "#FFFFFF White"
-msgstr ""
+msgstr "#FFFFFF Белый"
 
 #: ../../humanguide/design-concepts/system-palette.rst:10
 msgid "Recommended for background on Ambiance theme (light theme) or regular text on Suru Dark theme."
 msgstr ""
+"Рекомендуется для фона в теме Ambiance (светлая тема) или стандартного "
+"текста в теме Suru Dark."
 
 #: ../../humanguide/design-concepts/system-palette.rst:14
 msgid "#111111 Jet"
-msgstr ""
+msgstr "#111111 Гагат"
 
 #: ../../humanguide/design-concepts/system-palette.rst:16
 msgid "Recommended for regular text on Ambiance theme or background in Suru Dark."
 msgstr ""
+"Рекомендуется для обычного текста в теме Ambiance или фона в теме Suru Dark."
 
 #: ../../humanguide/design-concepts/system-palette.rst:20
 msgid "#3B3B3B Inkstone"
-msgstr ""
+msgstr "#3B3B3B Чернильный камень"
 
 #: ../../humanguide/design-concepts/system-palette.rst:22
 msgid "Recommended for foreground colours in dark themes."
-msgstr ""
+msgstr "Рекомендуется для цветов переднего плана в темных темах."
 
 #: ../../humanguide/design-concepts/system-palette.rst:26
 msgid "#5D5D5D Slate"
-msgstr ""
+msgstr "#5D5D5D Сланец"
 
 #: ../../humanguide/design-concepts/system-palette.rst:28
 msgid "Recommended for text and action icons."
-msgstr ""
+msgstr "Рекомендуется для текста и значков действий."
 
 #: ../../humanguide/design-concepts/system-palette.rst:32
 msgid "#666666 Graphite"
-msgstr ""
+msgstr "#666666 Графит"
 
 #: ../../humanguide/design-concepts/system-palette.rst:34
 msgid "Recommended for coloring dark themes' background."
-msgstr ""
+msgstr "Рекомендуется для фона темных тем оформления."
 
 #: ../../humanguide/design-concepts/system-palette.rst:38
 msgid "#888888 Ash"
-msgstr ""
+msgstr "#888888 Пепел"
 
 #: ../../humanguide/design-concepts/system-palette.rst:40
 msgid "Recommended for subtitles and other tertiary content."
-msgstr ""
+msgstr "Рекомендуется для субтитров и второстепенного контента."
 
 #: ../../humanguide/design-concepts/system-palette.rst:44
 msgid "#CDCDCD Silk"
-msgstr ""
+msgstr "#CDCDCD Шёлк"
 
 #: ../../humanguide/design-concepts/system-palette.rst:46
 msgid "Recommended for neutral action buttons and secondary text."
-msgstr ""
+msgstr "Рекомендуется для нейтральных клавиш и дополнительного текста."
 
 #: ../../humanguide/design-concepts/system-palette.rst:50
 msgid "#F7F7F7 Porcelain"
-msgstr ""
+msgstr "#F7F7F7 Фарфор"
 
 #: ../../humanguide/design-concepts/system-palette.rst:52
 msgid "Recommended for foregrounds."
-msgstr ""
+msgstr "Рекомендуется для переднего плана."
 
 #: ../../humanguide/design-concepts/system-palette.rst:56
 msgid "#335280 Blue"
-msgstr ""
+msgstr "#335280 Синий"
 
 #: ../../humanguide/design-concepts/system-palette.rst:58
 msgid "Recommended for progress bars, selected areas, text selection and text cursor. Also neutral actions (Ambiance)."
 msgstr ""
+"Рекомендуется для строк состояния, выделенного текста и областей, текстового "
+"курсора. Также используется для нейтральных действий (в теме Ambiance)."
 
 #: ../../humanguide/design-concepts/system-palette.rst:62
 msgid "#19B6EE Light Blue"
-msgstr ""
+msgstr "#19B6EE Светло-синий"
 
 #: ../../humanguide/design-concepts/system-palette.rst:64
 msgid "Recommended for progress bars, selected areas, text selection and text cursor. Also neutral actions (SuruDark)."
 msgstr ""
+"Рекомендуется для строк состояния, выделенного текста и областей, текстового "
+"курсора. Также используется для нейтральных действий (в теме SuruDark)."
 
 #: ../../humanguide/design-concepts/system-palette.rst:68
 msgid "#0E8420 Green"
-msgstr ""
+msgstr "#0E8420 Зелёный"
 
 #: ../../humanguide/design-concepts/system-palette.rst:70
 msgid "Recommended for positive action buttons (SuruDark)."
-msgstr ""
+msgstr "Рекомендуется для кнопок положительного действия (SuruDark)."
 
 #: ../../humanguide/design-concepts/system-palette.rst:74
 msgid "#3EB34F Light Green"
-msgstr ""
+msgstr "#3EB34F Светло-зелёный"
 
 #: ../../humanguide/design-concepts/system-palette.rst:76
 msgid "Recommended for positive action buttons (Ambiance)."
-msgstr ""
+msgstr "Рекомендуется для кнопок положительного действия (Ambiance)."
 
 #: ../../humanguide/design-concepts/system-palette.rst:80
 msgid "#C7162B Red"
-msgstr ""
+msgstr "#C7162B Красный"
 
 #: ../../humanguide/design-concepts/system-palette.rst:82
 msgid "Recommended for negative and irreversible action buttons, errors and alerts (Ambiance)."
 msgstr ""
+"Рекомендуется для кнопок негативных действий, ошибок и предупреждений "
+"(Ambiance)."
 
 #: ../../humanguide/design-concepts/system-palette.rst:86
 msgid "#ED3146 Light Red"
-msgstr ""
+msgstr "#ED3146 Светло-красный"
 
 #: ../../humanguide/design-concepts/system-palette.rst:88
 msgid "Recommended for negative and irreversible action buttons, errors and alerts (SuruDark)."
 msgstr ""
+"Рекомендуется для кнопок отрицательных действий, ошибок и предупреждений "
+"(SuruDark)."
 
 #: ../../humanguide/design-concepts/system-palette.rst:92
 msgid "#E95420 Orange"
-msgstr ""
+msgstr "#E95420 Оранжевый"
 
 #: ../../humanguide/design-concepts/system-palette.rst:94
 msgid "Orange is recommended for branded elements, focus and intensity."
 msgstr ""
+"Оранжевый цвет используется для \"фирменных\" элементов Ubuntu Touch, а "
+"также для привлечения внимания."
 
 #: ../../humanguide/design-concepts/typography.rst:2
 msgid "Typography"
-msgstr ""
+msgstr "Оформление"
 
 #: ../../humanguide/design-concepts/typography.rst:5
 msgid "Fonts"
-msgstr ""
+msgstr "Шрифты"
 
 #: ../../humanguide/design-concepts/typography.rst:7
 msgid "Our default font is `Ubuntu <https://design.ubuntu.com/font/>`__ `[2] <https://en.wikipedia.org/wiki/Ubuntu_(typeface)>`__ installed in the system."
 msgstr ""
+"По умолчанию в системе используется шрифт `Ubuntu <https://design.ubuntu.com/"
+"font/>`__ `[2] <https://en.wikipedia.org/wiki/Ubuntu_(typeface)>`__."
 
 #: ../../humanguide/design-concepts/typography.rst:11
 msgid "For the font sizes to be consistent across devices, instead of setting the font size as a number of pixels or points, it is imperative to define the font size in terms of size names:"
 msgstr ""
+"Чтобы размеры шрифта были одинаковыми на всех устройствах,нужно "
+"устанавливать размер шрифта не в виде количества пикселей или точек, а "
+"названиях размеров:"
 
 #: ../../humanguide/design-concepts/typography.rst:14
 msgid "Font Size Name"
-msgstr ""
+msgstr "Название размера шрифта"
 
 #: ../../humanguide/design-concepts/typography.rst:14
 msgid "gu"
-msgstr ""
+msgstr "gu"
 
 #: ../../humanguide/design-concepts/typography.rst:14
 msgid "Desktop"
-msgstr ""
+msgstr "Десктоп"
 
 #: ../../humanguide/design-concepts/typography.rst:14
 msgid "Phone"
-msgstr ""
+msgstr "Смартфон"
 
 #: ../../humanguide/design-concepts/typography.rst:14
 msgid "Tablet"
-msgstr ""
+msgstr "Планшет"
 
 #: ../../humanguide/design-concepts/typography.rst:18
 msgid "4\" HD Screen"
-msgstr ""
+msgstr "Экран 4\" HD"
 
 #: ../../humanguide/design-concepts/typography.rst:18
 msgid "10\" HD screen"
-msgstr ""
+msgstr "Экран 10\" HD"
 
 #: ../../humanguide/design-concepts/typography.rst:21
 msgid "x-small"
-msgstr ""
+msgstr "x-small"
 
 #: ../../humanguide/design-concepts/typography.rst:21
 msgid "1.25"
-msgstr ""
+msgstr "1.25"
 
 #: ../../humanguide/design-concepts/typography.rst:21
 msgid "10 px"
-msgstr ""
+msgstr "10 px"
 
 #: ../../humanguide/design-concepts/typography.rst:21
 msgid "22 px"
-msgstr ""
+msgstr "22 px"
 
 #: ../../humanguide/design-concepts/typography.rst:21
 #: ../../humanguide/design-concepts/typography.rst:23
 msgid "12 px"
-msgstr ""
+msgstr "12 px"
 
 #: ../../humanguide/design-concepts/typography.rst:23
 msgid "small"
-msgstr ""
+msgstr "small"
 
 #: ../../humanguide/design-concepts/typography.rst:23
 msgid "1.5"
@@ -865,35 +944,35 @@ msgstr "1.5"
 
 #: ../../humanguide/design-concepts/typography.rst:23
 msgid "27 px"
-msgstr ""
+msgstr "27 px"
 
 #: ../../humanguide/design-concepts/typography.rst:23
 msgid "15 px"
-msgstr ""
+msgstr "15 px"
 
 #: ../../humanguide/design-concepts/typography.rst:25
 msgid "medium"
-msgstr ""
+msgstr "medium"
 
 #: ../../humanguide/design-concepts/typography.rst:25
 msgid "1.75"
-msgstr ""
+msgstr "1.75"
 
 #: ../../humanguide/design-concepts/typography.rst:25
 msgid "14 px"
-msgstr ""
+msgstr "14 px"
 
 #: ../../humanguide/design-concepts/typography.rst:25
 msgid "31 px"
-msgstr ""
+msgstr "31 px"
 
 #: ../../humanguide/design-concepts/typography.rst:25
 msgid "18 px"
-msgstr ""
+msgstr "18 px"
 
 #: ../../humanguide/design-concepts/typography.rst:27
 msgid "large"
-msgstr ""
+msgstr "large"
 
 #: ../../humanguide/design-concepts/typography.rst:27
 msgid "2.5"
@@ -901,59 +980,72 @@ msgstr "2.5"
 
 #: ../../humanguide/design-concepts/typography.rst:27
 msgid "20 px"
-msgstr ""
+msgstr "20 px"
 
 #: ../../humanguide/design-concepts/typography.rst:27
 msgid "45 px"
-msgstr ""
+msgstr "45 px"
 
 #: ../../humanguide/design-concepts/typography.rst:27
 msgid "25 px"
-msgstr ""
+msgstr "25 px"
 
 #: ../../humanguide/design-concepts/typography.rst:29
 msgid "x-large"
-msgstr ""
+msgstr "x-large"
 
 #: ../../humanguide/design-concepts/typography.rst:29
 msgid "3.5"
-msgstr ""
+msgstr "3.5"
 
 #: ../../humanguide/design-concepts/typography.rst:29
 msgid "34 px"
-msgstr ""
+msgstr "34 px"
 
 #: ../../humanguide/design-concepts/typography.rst:29
 msgid "76 px"
-msgstr ""
+msgstr "76 px"
 
 #: ../../humanguide/design-concepts/typography.rst:29
 msgid "42 px"
-msgstr ""
+msgstr "42 px"
 
 #: ../../humanguide/design-concepts/units.rst:2
 msgid "Units"
-msgstr ""
+msgstr "Единицы"
 
 #: ../../humanguide/design-concepts/units.rst:5
 msgid "Resolution Independence Approach"
-msgstr ""
+msgstr "Независимое разрешение"
 
 #: ../../humanguide/design-concepts/units.rst:7
 msgid "The objective of resolution independence is to make it easy for graphical user interfaces in Ubuntu Touch to scale to all the form factors that Ubuntu Touch targets: phones, tablets, laptops and desktops. The approach taken combines simplicity for the designers and developers with visual fidelity, quality and usability."
 msgstr ""
+"Независимость от экранного разрешения должна упростить масштабирование "
+"графических пользовательских интерфейсов в Ubuntu Touch для всех "
+"форм-факторов: телефонов, планшетов, ноутбуков и настольных компьютеров. "
+"Такой подход сочетает в себе простоту для дизайнеров и разработчиков с "
+"визуальной точностью, качеством и удобством использования."
 
 #: ../../humanguide/design-concepts/units.rst:10
 msgid "Measurement Units"
-msgstr ""
+msgstr "Единицы измерения"
 
 #: ../../humanguide/design-concepts/units.rst:13
 msgid "Grid Unit"
-msgstr ""
+msgstr "Grid Unit"
 
 #: ../../humanguide/design-concepts/units.rst:15
 msgid "A measurement unit called the *grid unit* is defined, abbreviated *gu.* 1 grid unit translates to a given number of pixels depending on the type of screen that the user interface is displayed on. For example, on a laptop computer 1 grid unit will typically translate to 8 pixels. The number of pixels per grid unit is chosen in order to preserve the perceived visual size of UI elements and therefore depends on the density of the display and the distance the user is to the screen. We also ensure that 1 grid unit is always an integer number of pixel."
 msgstr ""
+"Единица измерения *grid unit* сокращенно называется *gu*. 1 единица сетки "
+"переводится в заданное количество пикселей в зависимости от типа экрана, на "
+"котором отображается пользовательский интерфейс. Например, на ноутбуке 1 "
+"единица сетки обычно соответствует 8 пикселям. Количество пикселей на "
+"единицу сетки выбирается для сохранения воспринимаемого визуального размера "
+"элементов пользовательского интерфейса и зависит от плотности отображения и "
+"расстояния, на котором находится пользователь от экрана. Одна единица сетки "
+"всегда является целым числом пикселей."
 
 #: ../../humanguide/design-concepts/units.rst:18
 msgid "Device"
@@ -961,211 +1053,250 @@ msgstr "Устройство"
 
 #: ../../humanguide/design-concepts/units.rst:18
 msgid "Conversion"
-msgstr ""
+msgstr "Конвертация"
 
 #: ../../humanguide/design-concepts/units.rst:20
 msgid "Most laptops"
-msgstr ""
+msgstr "Стандартный ноутбук"
 
 #: ../../humanguide/design-concepts/units.rst:20
 msgid "1 gu = 8 px"
-msgstr ""
+msgstr "1 gu = 8 px"
 
 #: ../../humanguide/design-concepts/units.rst:23
 msgid "High DPI laptops"
-msgstr ""
+msgstr "Ноутбуки с высоким DPI"
 
 #: ../../humanguide/design-concepts/units.rst:23
 msgid "1 gu = 16 px"
-msgstr ""
+msgstr "1 gu = 16 px"
 
 #: ../../humanguide/design-concepts/units.rst:26
 msgid "Phone with 4 inch screen at HD resolution (around 720x1,280 pixels)"
-msgstr ""
+msgstr "Смартфон с экраном 4\" с HD-разрешением (720x1280)"
 
 #: ../../humanguide/design-concepts/units.rst:26
 msgid "1 gu = 18 px"
-msgstr ""
+msgstr "1 gu = 18 px"
 
 #: ../../humanguide/design-concepts/units.rst:29
 msgid "Tablet with 10 inch screen at HD resolution (around 720x1,280 pixels)"
-msgstr ""
+msgstr "Планшет с экраном 10\" и HD-разрешением (720x1280)"
 
 #: ../../humanguide/design-concepts/units.rst:29
 msgid "1 gu = 10 px"
-msgstr ""
+msgstr "1 gu = 10 px"
 
 #: ../../humanguide/design-concepts/units.rst:34
 msgid "Density Unit"
-msgstr ""
+msgstr "Плотность устройства"
 
 #: ../../humanguide/design-concepts/units.rst:36
 msgid "Exceptionally, in order to accommodate for the rare cases where measurements of less than 1 gu are needed another unit is available: the *density independent pixel,* abbreviated dp. 1 dp typically translates to 1 pixel on laptops and low density mobile phones and tablets."
 msgstr ""
+"В редких случаях, когда требуются измерения менее 1 gu, можно использовать "
+"другую единицу измерения: *density independent pixel, * сокращенно dp. 1 dp "
+"обычно соответствует 1 пикселю на ноутбуках, планшетах и смартфонах с низким "
+"разрешением экрана."
 
 #: ../../humanguide/design-concepts/units.rst:39
 msgid "Use"
-msgstr ""
+msgstr "Использование"
 
 #: ../../humanguide/design-concepts/units.rst:49
 msgid "Device Sizes"
-msgstr ""
+msgstr "Размер устройства"
 
 #: ../../humanguide/design-concepts/units.rst:52
 msgid "Device Grid Units"
-msgstr ""
+msgstr "Grid Units для устройств"
 
 #: ../../humanguide/design-concepts/units.rst:52
 msgid "width"
-msgstr ""
+msgstr "ширина"
 
 #: ../../humanguide/design-concepts/units.rst:52
 msgid "height"
-msgstr ""
+msgstr "высота"
 
 #: ../../humanguide/design-concepts/units.rst:54
 msgid "E5 (portrait)"
-msgstr ""
+msgstr "E5 (портретный режим)"
 
 #: ../../humanguide/design-concepts/units.rst:54
 msgid "42"
-msgstr ""
+msgstr "42"
 
 #: ../../humanguide/design-concepts/units.rst:54
 msgid "72"
-msgstr ""
+msgstr "72"
 
 #: ../../humanguide/design-concepts/units.rst:56
 msgid "M10 HD (landscape)"
-msgstr ""
+msgstr "M10 HD (пейзажный режим)"
 
 #: ../../humanguide/design-concepts/units.rst:56
 msgid "160"
-msgstr ""
+msgstr "160"
 
 #: ../../humanguide/design-concepts/units.rst:56
 msgid "97"
-msgstr ""
+msgstr "97"
 
 #: ../../humanguide/design-concepts/units.rst:58
 msgid "M10 FHD (landscape)"
-msgstr ""
+msgstr "M10 FHD (пейзажный режим)"
 
 #: ../../humanguide/design-concepts/units.rst:58
 msgid "148"
-msgstr ""
+msgstr "148"
 
 #: ../../humanguide/design-concepts/units.rst:58
 msgid "89"
-msgstr ""
+msgstr "89"
 
 #: ../../humanguide/design-concepts/units.rst:60
 msgid "N5 (portrait)"
-msgstr ""
+msgstr "N5 (портретный режим)"
 
 #: ../../humanguide/design-concepts/units.rst:60
 msgid "47"
-msgstr ""
+msgstr "47"
 
 #: ../../humanguide/design-concepts/units.rst:60
 msgid "80"
-msgstr ""
+msgstr "80"
 
 #: ../../humanguide/index.rst:2
 msgid "Human interface guidelines"
-msgstr ""
+msgstr "Рекомендации по интерфейсу пользователя"
 
 #: ../../humanguide/index.rst:4
 msgid "Ubuntu Touch follows a clean, beautiful, modern and (above all) convergent design. We aim to keep developing the design started by Canonical."
 msgstr ""
+"Ubuntu Touch обладает современным, красивым и (прежде всего) конвергентным "
+"дизайном. Мы продолжаем работать над идеями и концепциями, предложенными "
+"фирмой Canonical."
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:2
 msgid "Accessibility"
-msgstr ""
+msgstr "Доступность"
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:4
 msgid "Accessibility is important to make all users to be able to use the operating system."
 msgstr ""
+"В идеале каждый пользователь должен иметь возможность установить и работать "
+"с Ubuntu Touch."
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:7
 msgid "Inclusive palette and theme"
-msgstr ""
+msgstr "Комфортная палитра цветов и тема оформления"
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:9
 msgid "We would like to create and implement color palettes helpful to people who have sight impairment:"
 msgstr ""
+"Мы хотим создать оформление, которое будет удобным для людей с нарушениями "
+"зрения:"
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:11
 msgid "Additional `palette proposal <http://colors.mivoligo.com/#color-blind>`__."
-msgstr ""
+msgstr "Дополнительная `палитра <http://colors.mivoligo.com/#color-blind>`__."
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:12
 msgid "A high contrast theme."
-msgstr ""
+msgstr "Высококонтрастная тема."
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:13
 msgid "Adaptable font size theme."
-msgstr ""
+msgstr "Тема с адаптируемым размером шрифта."
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:16
 msgid "Input methods"
-msgstr ""
+msgstr "Методы ввода"
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:18
 msgid "Apps should be accessible using any combination of mouse, touch, and keyboard."
 msgstr ""
+"Приложения должны запускаться с помощью любой клавиши мыши, нажатия на "
+"сенсорном экране и клавишам клавиатуры."
 
 #: ../../humanguide/other-design-considerations/convergence.rst:2
 msgid "Convergence"
-msgstr ""
+msgstr "Конвергенция"
 
 #: ../../humanguide/other-design-considerations/convergence.rst:6
 msgid "Convergence is one of the milestones Ubuntu Touch wants to achieve. One app available across all screen sizes and input methods, such as mobile handsets, tablets, and laptops."
 msgstr ""
+"Конвергенция - одна из фундаментальных идей Ubuntu Touch. Любое приложение "
+"может работать на любых устройствах и не зависеть от размера экранов. "
+"Например на мобильных телефонах, планшетах и ноутбуках изображение будет "
+"одинаковым."
 
 #: ../../humanguide/other-design-considerations/convergence.rst:9
 msgid "Screen size"
-msgstr ""
+msgstr "Размер экрана"
 
 #: ../../humanguide/other-design-considerations/convergence.rst:13
 msgid "Ubuntu Touch Tweak Tool app"
-msgstr ""
+msgstr "Приложение Ubuntu Touch Tweak Tool"
 
 #: ../../humanguide/other-design-considerations/convergence.rst:15
 msgid "Main page stays as the main page on phones or on the left on bigger screen devices. Additional pages on the phone, can be displayed at variable sizes on the right on bigger screens."
 msgstr ""
+"Главная страница будет располагаться на основном экране смартфона или слева "
+"на устройствах с большим экраном. Дополнительные экраны смартфона в "
+"уменьшенном размере будут расположены справа на устройствах с большим "
+"экраном."
 
 #: ../../humanguide/other-design-considerations/convergence.rst:18
 msgid "Input method"
-msgstr ""
+msgstr "Способы ввода информации"
 
 #: ../../humanguide/other-design-considerations/convergence.rst:20
 msgid "Using touch, a user can swipe or long-press on a list item to reveal a contextual menu. Using a pointer (mouse or trackpad) a user can right-click the item to reveal the contextual menu. Using a keyboard a user can focus the desired item and press the MENU key to open the context menu."
 msgstr ""
+"На тач-скрине открытие и навигация по контекстному меню осуществляется с "
+"помощь \"свайпов\" или долгих нажатий. Используя курсор (мышь или трекпад), "
+"пользователь может открыть контекстное меню правой клавишей мыши. На "
+"клавиатуре пользователь может выделить нужный элемент и нажать клавишу МЕНЮ, "
+"чтобы открыть контекстное меню."
 
 #: ../../humanguide/other-design-considerations/index.rst:2
 msgid "Other design considerations"
-msgstr ""
+msgstr "Другие замечания по дизайну"
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:2
 msgid "Scaling images"
-msgstr ""
+msgstr "Масштабирование изображений"
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:4
 msgid "Scaling images is important in a convergent app. App icons and images can be created in scalable formats to improve their ability to scale."
 msgstr ""
+"Масштабирование изображений нужно для нормального функционирования режима "
+"конвергенции. Значки и изображения приложений лучше создавать в "
+"масштабируемом формате, чтобы улучшить их вид на разных устройствах."
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:9
 msgid "One of the most popular scalable formats is `SVG <https://en.wikipedia.org/wiki/Scalable_Vector_Graphics>`__. SVG files can be created using software like `Inkscape <https://inkscape.org/>`__."
 msgstr ""
+"Одним из самых популярных масштабируемых форматов является `SVG "
+"<https://en.wikipedia.org/wiki/Scalable_Vector_Graphics>`__. Файлы SVG можно "
+"создавать с помощью программы ʻInkscape <https://inkscape.org/> `__."
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:11
 msgid "One particularity of qml, though, is that SVGs are rendered to use less memory, losing the advantages of scalability. When using a SVG file in an ``Image`` element we can use the property called ``sourceSize``. This will define the rendered size of the SVG image. A SVG image with a ``sourceSize`` width and height of 252 pixels, will be rendered as if the scalable image would be a png of 252 per 252 pixels."
 msgstr ""
+"В qml есть особенность - SVG-файлы подвергаются рендерингу, чтобы занимать "
+"меньше памяти. Это теряет преимущества масштабируемости. При использовании "
+"SVG-файла в элементе «Изображение» можно использовать свойство с именем "
+"``sourceSize``. Это определит визуализированный размер изображения SVG. "
+"Изображение SVG с шириной ``sourceSize`` и высотой 252 пикселя будет "
+"отображаться так, как если бы масштабируемое изображение было бы png-файлом "
+"размером 252 на 252 пикселя."
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:16
 msgid "Different redered sizes of the same svg image"
-msgstr ""
+msgstr "Разные размеры одного и того же SVG-изображения после рендеринга"
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:18
 msgid "It is not advisable to define ``sourceSize`` as a relative size to avoid performance issues. A good practice is defining ``sourceSize`` based on a set list of thresholds. In the example below the image.svg will be rendered 60 per 60 grid units if the main view is bigger that 70 grid units but as an image of 40 per 40 grid units in the other cases. By defining these thresholds, we get scalable images without a huge performance cost."
@@ -1177,7 +1308,7 @@ msgstr ""
 
 #: ../../humanguide/other-design-considerations/translations.rst:2
 msgid "Translations"
-msgstr ""
+msgstr "Перевод на другие языки"
 
 #: ../../humanguide/other-design-considerations/translations.rst:4
 msgid "Adding translations to your app makes it more accessible to international users. `Clickable <http://clickable.bhdouglass.com/>`__ will handle this process automatically, extracting new translatable strings into a pot file (the source strings of your app, to be translated)."

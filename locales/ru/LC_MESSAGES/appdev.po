@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-09-25 00:28+0000\n"
+"PO-Revision-Date: 2020-10-08 17:24+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -78,7 +78,7 @@ msgstr ""
 "Мы изучим исходный текст Webapp Creator и найдём участок кода, отвечающий за "
 "импорт изображения, которое используется в качестве иконки. Движение с "
 "нажатой клавишей мышки откроет Content Hub, где мы сможем выбрать откуда "
-"импортировать изображение  (`смотрите исходный код Webapp Creator "
+"импортировать изображение (`смотрите исходный код Webapp Creator "
 "<https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/"
 "ImportPage.qml#L38>`_)"
 
@@ -107,7 +107,7 @@ msgstr "Gelek в OpenStore"
 #: ../../appdev/guides/contenthub.rst:57
 msgid "In Gelek, we are going to end with some saved games that we want to save in our device or share with ourselves (in Telegram and then save them to our computer)."
 msgstr ""
-"В Gelek мы будем  работать с некоторыми сохраненными играми, которые нужно "
+"В Gelek мы будем работать с некоторыми сохраненными играми, которые нужно "
 "хранить в нашем устройстве или поделиться с пользователями (через Telegram, "
 "а затем перенести их на десктоп)."
 
@@ -1488,17 +1488,17 @@ msgstr "Использование стандартных каталогов в 
 #: ../../appdev/guides/writeable-dirs.rst:44
 msgid "The Qt module `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-labs-platform-standardpaths.html>`_ provides the QStandardPaths in QML. Unfortunately it is not available on Ubuntu Touch, yet. Probably you don't want to ship that module with your app. Instead, you could simply let your C++ plugin provide the paths to your QML part. Therefore, add these methods to your plugin class:"
 msgstr ""
-"Через Qt-модуль  `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-"
-"qt-labs-platform-standardpaths.html>` _ реализован доступ к QStandardPaths в "
+"Через Qt-модуль `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-"
+"labs-platform-standardpaths.html>` _ реализован доступ к QStandardPaths в "
 "QML. К сожалению, этот модуль пока недоступен в Ubuntu Touch. Возможно, Вам "
-"не хочется поставлять этот модуль с  приложением. Вместо этого можно "
+"не хочется поставлять этот модуль с приложением. Вместо этого можно "
 "разрешить своему плагину на C ++ предоставлять пути к вашей части QML. "
 "Поэтому добавьте эти методы в свой класс плагинов:"
 
 #: ../../appdev/guides/writeable-dirs.rst:64
 msgid "Assuming the name of your plugin is MyPlugin, you can access these paths in QML:"
 msgstr ""
-"Например,  название вашего плагина - MyPlugin. Можно получить доступ к этим "
+"Например, название вашего плагина - MyPlugin. Можно получить доступ к этим "
 "путям в QML:"
 
 #: ../../appdev/index.rst:2
@@ -1516,9 +1516,9 @@ msgid "If you have questions that aren't answered in the docs or want to chat wi
 msgstr ""
 "Если у Вас есть вопросы, на которые нет ответов в документации, или Вы "
 "хотите пообщаться с другими разработчиками Ubuntu Touch, присоединяйтесь к `"
-"группе разработчиков приложений в Telegram <https://t.me/UbuntuAppDevEN> `_ "
+"группе разработчиков приложений в Telegram <https://t.me/UbuntuAppDevEN>`_ "
 "или пишите на `форум разработчиков приложений UBports "
-"<https://forums.ubports.com/category/35/app-development> `_."
+"<https://forums.ubports.com/category/35/app-development>`_."
 
 #: ../../appdev/index.rst:9
 msgid "Get started"
@@ -1527,18 +1527,18 @@ msgstr "Начало работы"
 #: ../../appdev/index.rst:11
 msgid "Ubuntu Touch supports two kind of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, Rust or Go. :ref:`Web apps <webapp>` are special containers to run websites in."
 msgstr ""
-"Ubuntu Touch поддерживает два вида приложений. :ref: `Нативные приложения "
+"Ubuntu Touch поддерживает два вида приложений. :ref:`Нативные приложения "
 "<nativeapp>` - это приложения с интерфейсом, созданным с использованием QML "
 "или HTML и работающими по правилам JavaScript, C ++, Python, Rust или Go. "
-":ref: `Веб-приложения <webapp>` - это специальные контейнеры для запуска "
+":ref:`Веб-приложения <webapp>` - это специальные контейнеры для запуска "
 "веб-сайтов."
 
 #: ../../appdev/index.rst:13
 msgid "Applications are shipped as a :ref:`Click <click>` package and can be publicly shared on the official app store `OpenStore <https://open-store.io>`__"
 msgstr ""
-"Приложения поставляются в виде: ref: `Click <click>`-пакета и могут быть "
+"Приложения поставляются в виде :ref:`Click <click>`-пакета и могут быть "
 "размещены в официальном магазине приложений `OpenStore <https://open-"
-"store.io> `__"
+"store.io>`__"
 
 #: ../../appdev/index.rst:24
 msgid "Tools"
@@ -1549,11 +1549,11 @@ msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build
 msgstr ""
 "`Clickable <http://clickable.bhdouglass.com/en/latest/> `_ - это система "
 "сборки приложений Ubuntu Touch, которая позволяет компилировать, создавать, "
-"тестировать и публиковать пакеты ` `click`` и содержит различные шаблоны для "
-"начала разработки приложений. В настоящее время это самый простой и удобный "
-"способ создания пакетов click для Ubuntu Touch. Вы можете использовать любой "
-"редактор или среду разработки, и создавать свои приложения из командной "
-"строки с помощью Clickable."
+"тестировать и публиковать пакеты ``click``. Этот комплекс утилит содержит "
+"различные шаблоны для начала разработки приложений. В настоящее время это "
+"самый простой и удобный способ создания пакетов click для Ubuntu Touch. Вы "
+"можете использовать любой редактор или среду разработки, и создавать свои "
+"приложения из командной строки с помощью Clickable."
 
 #: ../../appdev/index.rst:28
 msgid "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower."
@@ -1578,7 +1578,7 @@ msgstr "Руководства"
 #: ../../appdev/index.rst:42
 msgid "Get started building your first app or learn about advanced concepts with our :ref:`Developer guides <devguides>`."
 msgstr ""
-"Начните создавать свое первое приложение или подробно изучите: ref: `"
+"Начните создавать свое первое приложение или подробно изучите :ref: `"
 "Руководство разработчика <devguides>` для опытных программистов."
 
 #: ../../appdev/index.rst:58
