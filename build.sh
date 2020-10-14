@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -Eeou pipefail
+
 # color codes
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
@@ -22,11 +24,10 @@ else
   pip3 install -r requirements.txt
 fi
 echo -e "${GREEN}Building...${PLAIN}"
-rm -r _build/
+rm -rf _build/
 if [ "$(uname)" == "Linux" ]; then
   sphinx-build -Wa . _build/html -j `nproc --all` || exit $?
 else
   sphinx-build -Wa . _build/html -j `sysctl -n hw.ncpu` || exit $?
 fi
 sphinx-build -Wab rediraffecheckdiff . _build/html
-exit $?
