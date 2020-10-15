@@ -70,7 +70,7 @@ The :ref:`Display-settings` section details methods for deriving values for thes
 
 Once you have adjusted the ``android.conf`` file to the display settings needed for your device, this file should be incorporated into your build.
 
-Create the file android.conf in your 'ubuntu' directory and enter the settings you determined and tested in the previous section. Complete steps 3 and 4.
+Create the file android.conf in your 'ubuntu' directory and enter the settings you determined and tested in the previous section. Complete steps 3 and 4 above.
 
 .. _Apply-apparmor-kernel-patches:
 
