@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 12:26-0500\n"
+"POT-Creation-Date: 2020-10-15 09:19-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,24 +41,24 @@ msgstr ""
 msgid "Porting"
 msgstr ""
 
-#: ../../index.rst:68
+#: ../../index.rst:73
 msgid "Click Packages"
 msgstr ""
 
-#: ../../index.rst:68
+#: ../../index.rst:73
 msgid "Ubuntu UI-Toolkit"
 msgstr ""
 
-#: ../../index.rst:68
+#: ../../index.rst:73
 msgid "Clickable"
 msgstr ""
 
-#: ../../index.rst:68
+#: ../../index.rst:73
 msgid "Halium"
 msgstr ""
 
-#: ../../index.rst:68
-#: ../../index.rst:68
+#: ../../index.rst:73
+#: ../../index.rst:73
 msgid "Platform"
 msgstr ""
 
@@ -75,7 +75,7 @@ msgid "UBports develops the mobile phone operating system Ubuntu Touch. Ubuntu T
 msgstr ""
 
 #: ../../index.rst:8
-msgid "On this website you find guides to :doc:`install Ubuntu Touch on your mobile phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/dailyuse/index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:`port Ubuntu Touch to an Android handset <porting/introduction>` and :doc:`learn more about system components <systemdev/index>`. If this is your first time here, please consider reading our :doc:`introduction <about/introduction>`."
+msgid "On this website you find guides to :doc:`install Ubuntu Touch on your mobile phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/dailyuse/index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:`port Ubuntu Touch to an Android handset <porting/Intro>` and :doc:`learn more about system components <systemdev/index>`. If this is your first time here, please consider reading our :doc:`introduction <about/introduction>`."
 msgstr ""
 
 #: ../../index.rst:10

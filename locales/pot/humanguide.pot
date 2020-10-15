@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 11:47-0500\n"
+"POT-Creation-Date: 2020-10-15 09:19-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -625,7 +625,7 @@ msgid "#0E8420 Green"
 msgstr ""
 
 #: ../../humanguide/design-concepts/system-palette.rst:70
-msgid "Recommended for positive action buttons (SuruDark)."
+msgid "Recommended for positive action buttons (Ambiance)."
 msgstr ""
 
 #: ../../humanguide/design-concepts/system-palette.rst:74
@@ -633,7 +633,7 @@ msgid "#3EB34F Light Green"
 msgstr ""
 
 #: ../../humanguide/design-concepts/system-palette.rst:76
-msgid "Recommended for positive action buttons (Ambiance)."
+msgid "Recommended for positive action buttons (SuruDark)."
 msgstr ""
 
 #: ../../humanguide/design-concepts/system-palette.rst:80
