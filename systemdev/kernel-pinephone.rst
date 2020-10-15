@@ -69,4 +69,3 @@ References
  * `Crust firmware <https://github.com/crust-firmware/crust>`_ implements a deep sleep state and runs on a dedicated System Control Processor outside the main CPU and DRAM.
 
 .. TODO: How to update Crust? the github page has quite some instructions about building and installing it with uboot. On the UBports side it seems possible to deliver it via deb packages: https://forum.pine64.org/showthread.php?tid=9957
-
