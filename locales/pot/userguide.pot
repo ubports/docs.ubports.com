@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-26 10:25-0500\n"
+"POT-Creation-Date: 2020-10-15 09:19-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -242,7 +242,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:32
 #: ../../userguide/advanceduse/screencasting.rst:72
-#: ../../userguide/advanceduse/ssh.rst:53
+#: ../../userguide/advanceduse/ssh.rst:57
 msgid "References"
 msgstr ""
 
@@ -371,26 +371,30 @@ msgid "Now you have the public key on the UBports device. Let's assume it's stor
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:38
-msgid "Now start the ssh server::"
+msgid "Now start the ssh server. If you are using an Android-based phone::"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:44
+#: ../../userguide/advanceduse/ssh.rst:42
+msgid "If you are using a Linux-based phone (like the Pinephone)::"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:48
 msgid "Connect"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:46
+#: ../../userguide/advanceduse/ssh.rst:50
 msgid "Now everything is set up and you can use ``ssh`` ::"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:50
+#: ../../userguide/advanceduse/ssh.rst:54
 msgid "Of course you can now also use ``scp`` or ``sshfs`` to transfer files."
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:55
+#: ../../userguide/advanceduse/ssh.rst:59
 msgid "`askubuntu.com: How can I access my Ubuntu phone over ssh? <https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-over-ssh/599041#599041>`_"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:56
+#: ../../userguide/advanceduse/ssh.rst:60
 msgid "`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5-ubuntu-phone/content/en/chapter1.html>`_"
 msgstr ""
 
@@ -594,7 +598,7 @@ msgid "Libertine allows you to use standard desktop applications in Ubuntu Touch
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:6
-msgid "To display and launch applications you need the *Desktop Apps Scope* which is available by swiping from the bottom of your device, and then tapping on the star. To install applications you may use the phone's *Settings* interface or you may use the command line as described further below."
+msgid "To install applications you may use the phone's *Settings* interface or you may use the command line as described further below."
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:9
@@ -666,7 +670,7 @@ msgid "Manage applications"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:54
-msgid "Once a container is set up, you can view the installed applications in *Desktop Apps Scope*, or in the *Manage Libertine Containers* menu you can tap the name of the container."
+msgid "Once a container is set up, the installed applications are available in the app drawer. You can also tap the name of the container in the *Manage Libertine Containers* menu."
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:56
@@ -710,7 +714,7 @@ msgid "Run desktop application"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:86
-msgid "Simply select the app from the *Desktop Apps Scope* to run it like any other app. To start a graphical application from the command line, for example ``gedit``, run in a terminal::"
+msgid "Run it from the app menu like any other app. To start a graphical application from the command line, for example ``gedit``, run in a terminal::"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:92
@@ -1094,7 +1098,7 @@ msgid "Start the installer and follow the on-screen instructions that will walk 
 msgstr ""
 
 #: ../../userguide/install.rst:19
-msgid "If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/introduction>`."
+msgid "If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/Intro>`."
 msgstr ""
 
 #: ../../userguide/install.rst:24
