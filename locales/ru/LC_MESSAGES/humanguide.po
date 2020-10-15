@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 11:47-0500\n"
-"PO-Revision-Date: 2020-10-14 17:19+0000\n"
+"PO-Revision-Date: 2020-10-15 12:09+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-humanguide/ru/>\n"
@@ -1301,10 +1301,20 @@ msgstr "Разные размеры одного и того же SVG-изобр
 #: ../../humanguide/other-design-considerations/scaling-images.rst:18
 msgid "It is not advisable to define ``sourceSize`` as a relative size to avoid performance issues. A good practice is defining ``sourceSize`` based on a set list of thresholds. In the example below the image.svg will be rendered 60 per 60 grid units if the main view is bigger that 70 grid units but as an image of 40 per 40 grid units in the other cases. By defining these thresholds, we get scalable images without a huge performance cost."
 msgstr ""
+"Не рекомендуется определять ``sourceSize`` как относительный размер, чтобы "
+"избежать проблем с производительностью. Лучше всего определять ``sourceSize``"
+" на основе заданного списка пороговых значений. В приведенном ниже примере "
+"изображение image.svg будет показываться в размерах 60 на 60 gu, если "
+"основной масштаб больше 70 gu. В других случаях будет формироваться "
+"изображение размерами 40 на 40 gu. Настройка порогов значений помогает "
+"получить масштабируемые изображения без затрат мощности устройства на "
+"рендеринг."
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:28
 msgid "Read more about image performance in the `Qt wiki <https://wiki.qt.io/Performance_tip_Images>`__."
 msgstr ""
+"Подробнее о работе с изображениями можно узнать в `Qt wiki <https://wiki.qt."
+"io/Performance_tip_Images>`__."
 
 #: ../../humanguide/other-design-considerations/translations.rst:2
 msgid "Translations"
@@ -1313,11 +1323,18 @@ msgstr "Перевод на другие языки"
 #: ../../humanguide/other-design-considerations/translations.rst:4
 msgid "Adding translations to your app makes it more accessible to international users. `Clickable <http://clickable.bhdouglass.com/>`__ will handle this process automatically, extracting new translatable strings into a pot file (the source strings of your app, to be translated)."
 msgstr ""
+"Перевод на другие языки сделает приложение доступным множеству пользователей "
+"из других стран. `Clickable <http://clickable.bhdouglass.com/>` __ может "
+"автоматически переносить непереведённые строки в файл .pot (в нём содержатся "
+"строки для перевода)."
 
 #: ../../humanguide/other-design-considerations/translations.rst:6
 msgid "Marking a string to be translatable can be achieved like this i18n.tr(string). For example:"
-msgstr ""
+msgstr "Отметить строку для перевода можно так: i18n.tr (string). Например:"
 
 #: ../../humanguide/other-design-considerations/translations.rst:14
 msgid "More information and options can be found in this a bit outdated `tutorial on localization <http://web.archive.org/web/https://docs.ubuntu.com/phone/en/apps/qml/tutorials-internationalizing-your-app>`__ an app."
 msgstr ""
+"Более подробную информацию и варианты можно найти в немного устаревшем `"
+"руководстве по локализации <http://web.archive.org/web/https://docs.ubuntu."
+"com/phone/en/apps/qml/tutorials-internationalizing-your-app>`__ приложений."
