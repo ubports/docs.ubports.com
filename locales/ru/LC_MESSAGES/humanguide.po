@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 11:47-0500\n"
-"PO-Revision-Date: 2020-10-09 11:43+0000\n"
+"PO-Revision-Date: 2020-10-15 12:09+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-humanguide/ru/>\n"
@@ -1012,27 +1012,40 @@ msgstr "42 px"
 
 #: ../../humanguide/design-concepts/units.rst:2
 msgid "Units"
-msgstr ""
+msgstr "Единицы"
 
 #: ../../humanguide/design-concepts/units.rst:5
 msgid "Resolution Independence Approach"
-msgstr ""
+msgstr "Независимое разрешение"
 
 #: ../../humanguide/design-concepts/units.rst:7
 msgid "The objective of resolution independence is to make it easy for graphical user interfaces in Ubuntu Touch to scale to all the form factors that Ubuntu Touch targets: phones, tablets, laptops and desktops. The approach taken combines simplicity for the designers and developers with visual fidelity, quality and usability."
 msgstr ""
+"Независимость от экранного разрешения должна упростить масштабирование "
+"графических пользовательских интерфейсов в Ubuntu Touch для всех "
+"форм-факторов: телефонов, планшетов, ноутбуков и настольных компьютеров. "
+"Такой подход сочетает в себе простоту для дизайнеров и разработчиков с "
+"визуальной точностью, качеством и удобством использования."
 
 #: ../../humanguide/design-concepts/units.rst:10
 msgid "Measurement Units"
-msgstr ""
+msgstr "Единицы измерения"
 
 #: ../../humanguide/design-concepts/units.rst:13
 msgid "Grid Unit"
-msgstr ""
+msgstr "Grid Unit"
 
 #: ../../humanguide/design-concepts/units.rst:15
 msgid "A measurement unit called the *grid unit* is defined, abbreviated *gu.* 1 grid unit translates to a given number of pixels depending on the type of screen that the user interface is displayed on. For example, on a laptop computer 1 grid unit will typically translate to 8 pixels. The number of pixels per grid unit is chosen in order to preserve the perceived visual size of UI elements and therefore depends on the density of the display and the distance the user is to the screen. We also ensure that 1 grid unit is always an integer number of pixel."
 msgstr ""
+"Единица измерения *grid unit* сокращенно называется *gu*. 1 единица сетки "
+"переводится в заданное количество пикселей в зависимости от типа экрана, на "
+"котором отображается пользовательский интерфейс. Например, на ноутбуке 1 "
+"единица сетки обычно соответствует 8 пикселям. Количество пикселей на "
+"единицу сетки выбирается для сохранения воспринимаемого визуального размера "
+"элементов пользовательского интерфейса и зависит от плотности отображения и "
+"расстояния, на котором находится пользователь от экрана. Одна единица сетки "
+"всегда является целым числом пикселей."
 
 #: ../../humanguide/design-concepts/units.rst:18
 msgid "Device"
@@ -1040,219 +1053,268 @@ msgstr "Устройство"
 
 #: ../../humanguide/design-concepts/units.rst:18
 msgid "Conversion"
-msgstr ""
+msgstr "Конвертация"
 
 #: ../../humanguide/design-concepts/units.rst:20
 msgid "Most laptops"
-msgstr ""
+msgstr "Стандартный ноутбук"
 
 #: ../../humanguide/design-concepts/units.rst:20
 msgid "1 gu = 8 px"
-msgstr ""
+msgstr "1 gu = 8 px"
 
 #: ../../humanguide/design-concepts/units.rst:23
 msgid "High DPI laptops"
-msgstr ""
+msgstr "Ноутбуки с высоким DPI"
 
 #: ../../humanguide/design-concepts/units.rst:23
 msgid "1 gu = 16 px"
-msgstr ""
+msgstr "1 gu = 16 px"
 
 #: ../../humanguide/design-concepts/units.rst:26
 msgid "Phone with 4 inch screen at HD resolution (around 720x1,280 pixels)"
-msgstr ""
+msgstr "Смартфон с экраном 4\" с HD-разрешением (720x1280)"
 
 #: ../../humanguide/design-concepts/units.rst:26
 msgid "1 gu = 18 px"
-msgstr ""
+msgstr "1 gu = 18 px"
 
 #: ../../humanguide/design-concepts/units.rst:29
 msgid "Tablet with 10 inch screen at HD resolution (around 720x1,280 pixels)"
-msgstr ""
+msgstr "Планшет с экраном 10\" и HD-разрешением (720x1280)"
 
 #: ../../humanguide/design-concepts/units.rst:29
 msgid "1 gu = 10 px"
-msgstr ""
+msgstr "1 gu = 10 px"
 
 #: ../../humanguide/design-concepts/units.rst:34
 msgid "Density Unit"
-msgstr ""
+msgstr "Плотность устройства"
 
 #: ../../humanguide/design-concepts/units.rst:36
 msgid "Exceptionally, in order to accommodate for the rare cases where measurements of less than 1 gu are needed another unit is available: the *density independent pixel,* abbreviated dp. 1 dp typically translates to 1 pixel on laptops and low density mobile phones and tablets."
 msgstr ""
+"В редких случаях, когда требуются измерения менее 1 gu, можно использовать "
+"другую единицу измерения: *density independent pixel, * сокращенно dp. 1 dp "
+"обычно соответствует 1 пикселю на ноутбуках, планшетах и смартфонах с низким "
+"разрешением экрана."
 
 #: ../../humanguide/design-concepts/units.rst:39
 msgid "Use"
-msgstr ""
+msgstr "Использование"
 
 #: ../../humanguide/design-concepts/units.rst:49
 msgid "Device Sizes"
-msgstr ""
+msgstr "Размер устройства"
 
 #: ../../humanguide/design-concepts/units.rst:52
 msgid "Device Grid Units"
-msgstr ""
+msgstr "Grid Units для устройств"
 
 #: ../../humanguide/design-concepts/units.rst:52
 msgid "width"
-msgstr ""
+msgstr "ширина"
 
 #: ../../humanguide/design-concepts/units.rst:52
 msgid "height"
-msgstr ""
+msgstr "высота"
 
 #: ../../humanguide/design-concepts/units.rst:54
 msgid "E5 (portrait)"
-msgstr ""
+msgstr "E5 (портретный режим)"
 
 #: ../../humanguide/design-concepts/units.rst:54
 msgid "42"
-msgstr ""
+msgstr "42"
 
 #: ../../humanguide/design-concepts/units.rst:54
 msgid "72"
-msgstr ""
+msgstr "72"
 
 #: ../../humanguide/design-concepts/units.rst:56
 msgid "M10 HD (landscape)"
-msgstr ""
+msgstr "M10 HD (пейзажный режим)"
 
 #: ../../humanguide/design-concepts/units.rst:56
 msgid "160"
-msgstr ""
+msgstr "160"
 
 #: ../../humanguide/design-concepts/units.rst:56
 msgid "97"
-msgstr ""
+msgstr "97"
 
 #: ../../humanguide/design-concepts/units.rst:58
 msgid "M10 FHD (landscape)"
-msgstr ""
+msgstr "M10 FHD (пейзажный режим)"
 
 #: ../../humanguide/design-concepts/units.rst:58
 msgid "148"
-msgstr ""
+msgstr "148"
 
 #: ../../humanguide/design-concepts/units.rst:58
 msgid "89"
-msgstr ""
+msgstr "89"
 
 #: ../../humanguide/design-concepts/units.rst:60
 msgid "N5 (portrait)"
-msgstr ""
+msgstr "N5 (портретный режим)"
 
 #: ../../humanguide/design-concepts/units.rst:60
 msgid "47"
-msgstr ""
+msgstr "47"
 
 #: ../../humanguide/design-concepts/units.rst:60
 msgid "80"
-msgstr ""
+msgstr "80"
 
 #: ../../humanguide/index.rst:2
 msgid "Human interface guidelines"
-msgstr ""
+msgstr "Рекомендации по интерфейсу пользователя"
 
 #: ../../humanguide/index.rst:4
 msgid "Ubuntu Touch follows a clean, beautiful, modern and (above all) convergent design. We aim to keep developing the design started by Canonical."
 msgstr ""
+"Ubuntu Touch обладает современным, красивым и (прежде всего) конвергентным "
+"дизайном. Мы продолжаем работать над идеями и концепциями, предложенными "
+"фирмой Canonical."
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:2
 msgid "Accessibility"
-msgstr ""
+msgstr "Доступность"
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:4
 msgid "Accessibility is important to make all users to be able to use the operating system."
 msgstr ""
+"В идеале каждый пользователь должен иметь возможность установить и работать "
+"с Ubuntu Touch."
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:7
 msgid "Inclusive palette and theme"
-msgstr ""
+msgstr "Комфортная палитра цветов и тема оформления"
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:9
 msgid "We would like to create and implement color palettes helpful to people who have sight impairment:"
 msgstr ""
+"Мы хотим создать оформление, которое будет удобным для людей с нарушениями "
+"зрения:"
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:11
 msgid "Additional `palette proposal <http://colors.mivoligo.com/#color-blind>`__."
-msgstr ""
+msgstr "Дополнительная `палитра <http://colors.mivoligo.com/#color-blind>`__."
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:12
 msgid "A high contrast theme."
-msgstr ""
+msgstr "Высококонтрастная тема."
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:13
 msgid "Adaptable font size theme."
-msgstr ""
+msgstr "Тема с адаптируемым размером шрифта."
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:16
 msgid "Input methods"
-msgstr ""
+msgstr "Методы ввода"
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:18
 msgid "Apps should be accessible using any combination of mouse, touch, and keyboard."
 msgstr ""
+"Приложения должны запускаться с помощью любой клавиши мыши, нажатия на "
+"сенсорном экране и клавишам клавиатуры."
 
 #: ../../humanguide/other-design-considerations/convergence.rst:2
 msgid "Convergence"
-msgstr ""
+msgstr "Конвергенция"
 
 #: ../../humanguide/other-design-considerations/convergence.rst:6
 msgid "Convergence is one of the milestones Ubuntu Touch wants to achieve. One app available across all screen sizes and input methods, such as mobile handsets, tablets, and laptops."
 msgstr ""
+"Конвергенция - одна из фундаментальных идей Ubuntu Touch. Любое приложение "
+"может работать на любых устройствах и не зависеть от размера экранов. "
+"Например на мобильных телефонах, планшетах и ноутбуках изображение будет "
+"одинаковым."
 
 #: ../../humanguide/other-design-considerations/convergence.rst:9
 msgid "Screen size"
-msgstr ""
+msgstr "Размер экрана"
 
 #: ../../humanguide/other-design-considerations/convergence.rst:13
 msgid "Ubuntu Touch Tweak Tool app"
-msgstr ""
+msgstr "Приложение Ubuntu Touch Tweak Tool"
 
 #: ../../humanguide/other-design-considerations/convergence.rst:15
 msgid "Main page stays as the main page on phones or on the left on bigger screen devices. Additional pages on the phone, can be displayed at variable sizes on the right on bigger screens."
 msgstr ""
+"Главная страница будет располагаться на основном экране смартфона или слева "
+"на устройствах с большим экраном. Дополнительные экраны смартфона в "
+"уменьшенном размере будут расположены справа на устройствах с большим "
+"экраном."
 
 #: ../../humanguide/other-design-considerations/convergence.rst:18
 msgid "Input method"
-msgstr ""
+msgstr "Способы ввода информации"
 
 #: ../../humanguide/other-design-considerations/convergence.rst:20
 msgid "Using touch, a user can swipe or long-press on a list item to reveal a contextual menu. Using a pointer (mouse or trackpad) a user can right-click the item to reveal the contextual menu. Using a keyboard a user can focus the desired item and press the MENU key to open the context menu."
 msgstr ""
+"На тач-скрине открытие и навигация по контекстному меню осуществляется с "
+"помощь \"свайпов\" или долгих нажатий. Используя курсор (мышь или трекпад), "
+"пользователь может открыть контекстное меню правой клавишей мыши. На "
+"клавиатуре пользователь может выделить нужный элемент и нажать клавишу МЕНЮ, "
+"чтобы открыть контекстное меню."
 
 #: ../../humanguide/other-design-considerations/index.rst:2
 msgid "Other design considerations"
-msgstr ""
+msgstr "Другие замечания по дизайну"
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:2
 msgid "Scaling images"
-msgstr ""
+msgstr "Масштабирование изображений"
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:4
 msgid "Scaling images is important in a convergent app. App icons and images can be created in scalable formats to improve their ability to scale."
 msgstr ""
+"Масштабирование изображений нужно для нормального функционирования режима "
+"конвергенции. Значки и изображения приложений лучше создавать в "
+"масштабируемом формате, чтобы улучшить их вид на разных устройствах."
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:9
 msgid "One of the most popular scalable formats is `SVG <https://en.wikipedia.org/wiki/Scalable_Vector_Graphics>`__. SVG files can be created using software like `Inkscape <https://inkscape.org/>`__."
 msgstr ""
+"Одним из самых популярных масштабируемых форматов является `SVG "
+"<https://en.wikipedia.org/wiki/Scalable_Vector_Graphics>`__. Файлы SVG можно "
+"создавать с помощью программы ʻInkscape <https://inkscape.org/> `__."
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:11
 msgid "One particularity of qml, though, is that SVGs are rendered to use less memory, losing the advantages of scalability. When using a SVG file in an ``Image`` element we can use the property called ``sourceSize``. This will define the rendered size of the SVG image. A SVG image with a ``sourceSize`` width and height of 252 pixels, will be rendered as if the scalable image would be a png of 252 per 252 pixels."
 msgstr ""
+"В qml есть особенность - SVG-файлы подвергаются рендерингу, чтобы занимать "
+"меньше памяти. Это теряет преимущества масштабируемости. При использовании "
+"SVG-файла в элементе «Изображение» можно использовать свойство с именем "
+"``sourceSize``. Это определит визуализированный размер изображения SVG. "
+"Изображение SVG с шириной ``sourceSize`` и высотой 252 пикселя будет "
+"отображаться так, как если бы масштабируемое изображение было бы png-файлом "
+"размером 252 на 252 пикселя."
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:16
 msgid "Different redered sizes of the same svg image"
-msgstr ""
+msgstr "Разные размеры одного и того же SVG-изображения после рендеринга"
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:18
 msgid "It is not advisable to define ``sourceSize`` as a relative size to avoid performance issues. A good practice is defining ``sourceSize`` based on a set list of thresholds. In the example below the image.svg will be rendered 60 per 60 grid units if the main view is bigger that 70 grid units but as an image of 40 per 40 grid units in the other cases. By defining these thresholds, we get scalable images without a huge performance cost."
 msgstr ""
+"Не рекомендуется определять ``sourceSize`` как относительный размер, чтобы "
+"избежать проблем с производительностью. Лучше всего определять ``sourceSize``"
+" на основе заданного списка пороговых значений. В приведенном ниже примере "
+"изображение image.svg будет показываться в размерах 60 на 60 gu, если "
+"основной масштаб больше 70 gu. В других случаях будет формироваться "
+"изображение размерами 40 на 40 gu. Настройка порогов значений помогает "
+"получить масштабируемые изображения без затрат мощности устройства на "
+"рендеринг."
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:28
 msgid "Read more about image performance in the `Qt wiki <https://wiki.qt.io/Performance_tip_Images>`__."
 msgstr ""
+"Подробнее о работе с изображениями можно узнать в `Qt wiki <https://wiki.qt."
+"io/Performance_tip_Images>`__."
 
 #: ../../humanguide/other-design-considerations/translations.rst:2
 msgid "Translations"
@@ -1261,11 +1323,18 @@ msgstr "Перевод на другие языки"
 #: ../../humanguide/other-design-considerations/translations.rst:4
 msgid "Adding translations to your app makes it more accessible to international users. `Clickable <http://clickable.bhdouglass.com/>`__ will handle this process automatically, extracting new translatable strings into a pot file (the source strings of your app, to be translated)."
 msgstr ""
+"Перевод на другие языки сделает приложение доступным множеству пользователей "
+"из других стран. `Clickable <http://clickable.bhdouglass.com/>` __ может "
+"автоматически переносить непереведённые строки в файл .pot (в нём содержатся "
+"строки для перевода)."
 
 #: ../../humanguide/other-design-considerations/translations.rst:6
 msgid "Marking a string to be translatable can be achieved like this i18n.tr(string). For example:"
-msgstr ""
+msgstr "Отметить строку для перевода можно так: i18n.tr (string). Например:"
 
 #: ../../humanguide/other-design-considerations/translations.rst:14
 msgid "More information and options can be found in this a bit outdated `tutorial on localization <http://web.archive.org/web/https://docs.ubuntu.com/phone/en/apps/qml/tutorials-internationalizing-your-app>`__ an app."
 msgstr ""
+"Более подробную информацию и варианты можно найти в немного устаревшем `"
+"руководстве по локализации <http://web.archive.org/web/https://docs.ubuntu."
+"com/phone/en/apps/qml/tutorials-internationalizing-your-app>`__ приложений."
