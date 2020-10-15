@@ -10,7 +10,9 @@ Overlay files
 
 Note that as a rule of thumb, the method described below applies if the file you need to edit can be found in the /etc directory (or a subdirectory of this) on your device. You should not attempt to overwrite files located elsewhere with overlay files using this method.
 
-In your device directory, create a subdirectory named 'ubuntu'. Collect the files you wish to inject into your build in this directory. Relevant files are for example (but this list is incomplete):
+In your device directory, create a subdirectory named 'ubuntu'. Collect the files you wish to inject into your build in this directory. 
+
+Relevant files are for example (but this list is incomplete):
     * 70-android.rules (the udev rules for your device, see previous section)
     * android.conf (for display scaling, see below)
     * touch.pa (for pulseaudio sound configuration/initialization, see below)
