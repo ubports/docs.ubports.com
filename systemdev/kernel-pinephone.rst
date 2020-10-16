@@ -1,15 +1,15 @@
-PinePhone Kernel
-================
+PinePhone and PineTab kernel
+============================
 
-This document describes how to build and install the PinePhone kernel. Before getting to the actual compilation, we describe the PinePhone recovery. At the bottom there are some references relevant for kernel development.
+This document describes how to build and install the PinePhone or PineTab kernel. First the recovery system is explained. Then the actual building and installation. At the bottom there are some references.
 
 Recovery
 --------
 
-The UBports image contains a recovery boot mode based on `jumpdrive <https://github.com/dreemurrs-embedded/Jumpdrive>`_. To get into the recovery press and hold the power and the volume up buttons until the led turns on.
+The UBports image contains a `recovery <https://github.com/ubports/jumpdrive>`_ boot mode based on "jumpdrive". To get into the recovery press and hold the power and volume-up buttons until the led turns on.
 
-The recovery presents the PinePhone as a network device and runs a telnet server.
-When you connect the PinePhone to your desktop via USB, you will see the rndis device show up in your desktops ``dmesg``::
+The recovery presents the PinePhone as a network device over USB and runs a telnet server.
+When you connect the PinePhone to your desktop via USB, you will see the rndis device show up in your desktop's ``dmesg``::
 
   usb 1-7.2: Product: PinePhone
   usb 1-7.2: Manufacturer: Pine64
@@ -18,7 +18,7 @@ When you connect the PinePhone to your desktop via USB, you will see the rndis d
 
 You can log in to the recovery system with ``telnet 172.16.42.1``.
 
-The recovery also exposes the eMMC and the microSD card over USB. In your desktops ``dmesg`` you will see::
+The recovery also exposes the eMMC and the microSD card over USB. Assuming you have already installed Ubuntu Touch on your microSD card you will see something like this in your desktop's ``dmesg``::
 
   usb-storage 1-7.2:1.2: USB Mass Storage device detected
   scsi host3: usb-storage 1-7.2:1.2
@@ -32,14 +32,16 @@ The recovery also exposes the eMMC and the microSD card over USB. In your deskto
   sd 2:0:0:0: [sdb] Attached SCSI removable disk
     sdc: sdc1 sdc2 sdc3 sdc4 sdc5 sdc6 sdc7 sdc8 sdc9 sdc10
 
-The eMMC has two partitions: pmOS_boot and pmOS_root. The microSD card has 10 partitions: loader, scr, persist, boot_a, boot_b, recovery_a, recovery_b, cache, system and userdata. To update the kernel you want to mount boot_a. Check which device is the SDcard in your OS. In the example above it is ``sdc``, so you can mount it like this: ``mkdir mnt_boot_a ; sudo mount /dev/sdc4 mnt_boot_a``. Inside you'll see the kernel vmlinuz and related files: ``config-5.6.0-pine64`` ``dtb`` ``initrd.img`` ``modules/`` ``System.map-5.6.0-pine64`` ``vmlinuz``.
+The eMMC with jumpdrive contains two partitions: pmOS_boot and pmOS_root.
+
+The microSD card with Ubuntu Touch contains 10 partitions: loader, scr, persist, boot_a, boot_b, recovery_a, recovery_b, cache, system and userdata. To update the kernel you want to mount boot_a. Check which device is the SDcard in your OS and mount boot_a. In the example above this is sdc4. Inside that partition you'll see the kernel vmlinuz and related files: ``config-5.6.0-pine64`` ``dtb`` ``initrd.img`` ``modules/`` ``System.map-5.6.0-pine64`` ``vmlinuz``.
 
 Building the kernel
 -------------------
 
-To install dependencies, get the `source code <https://gitlab.com/pine64-org/linux/-/tree/pine64-kernel-ubports>`_, configure and build it run the following::
+To install dependencies, get the `source code <https://gitlab.com/pine64-org/linux/-/tree/pine64-kernel-ubports>`_, configure and build the kernel, run the following::
 
-  sudo apt install flex bison gcc-aarch64-linux-gnu libssl-dev
+  sudo apt install build-essential flex bison gcc-aarch64-linux-gnu libssl-dev
   git clone -b pine64-kernel-ubports git@gitlab.com:pine64-org/linux.git
   cd linux
   ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- KBUILD_VERSION=arm64 LOCALVERSION=-pine64 make pine64_defconfig
@@ -48,15 +50,15 @@ To install dependencies, get the `source code <https://gitlab.com/pine64-org/lin
 Install the kernel
 ------------------
 
-Boot into recovery and mount ``boot_a`` as shown above. Make a backup if needed. Then copy over your newly built kernel and if needed modules, etc::
+Boot into recovery and mount boot_a. Make a backup if needed. Then copy over your newly built kernel and if needed modules::
 
-  cp -v linux/debian/linux-image/boot/vmlinuz-5.6.0-pine64 mnt_boot_a/vmlinuz
-  cp -v linux/debian/linux-image/boot/config-5.6.0-pine64 mnt_boot_a/
-  cp -v linux/debian/linux-image/boot/System.map-5.6.0-pine64  mnt_boot_a/
-  sudo rm -rf mnt_boot_a/modules
-  sudo cp -rv linux/debian/linux-image/lib/modules  mnt_boot_a/
+  cp -v linux/debian/linux-image/boot/vmlinuz-5.6.0-pine64 [MOUNT POINT BOOT_A]/vmlinuz
+  cp -v linux/debian/linux-image/boot/config-5.6.0-pine64 [MOUNT POINT BOOT_A]
+  cp -v linux/debian/linux-image/boot/System.map-5.6.0-pine64  [MOUNT POINT BOOT_A]
+  sudo rm -rf [MOUNT POINT BOOT_A]/modules
+  sudo cp -rv linux/debian/linux-image/lib/modules [MOUNT POINT BOOT_A]
 
-Afterwards be sure to unmount the partition so it is cleanly written `sudo umount mnt_boot_a`. Now you can reboot the PinePhone. Once booted, verify with `uname -a` that the kernel has successfully been updated by checking the build date.
+Afterwards be sure to unmount the partition so it is cleanly written. Now you can reboot the PinePhone. Once booted, you can verify that the kernel has been successfully updated by checking the build date with ``uname -a`` on the device.
 
 References
 ----------
