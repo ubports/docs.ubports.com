@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 14:08-0500\n"
-"PO-Revision-Date: 2020-10-07 10:39+0000\n"
+"PO-Revision-Date: 2020-10-17 02:16+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/ru/>\n"
@@ -103,8 +103,8 @@ msgstr ""
 #: ../../contribute/bugreporting.rst:32
 msgid "First, pull up the `bug tracker <https://github.com/ubports/ubuntu-touch>`_ and click \"New Issue\". Log in to GitHub if you haven't yet."
 msgstr ""
-"Первый шаг - зайдите на ` баг-трекер <https://github.com/ubports/ubuntu-"
-"touch>`_  и нажмите на клавишу \"New Issue\" (\"Новая заявка\"). Перед этим "
+"Первый шаг - зайдите на `баг-трекер <https://github.com/ubports/ubuntu-"
+"touch>`_ и нажмите на клавишу \"New Issue\" (\"Новая заявка\"). Перед этим "
 "нужно войти в свою учётную запись на GitHub."
 
 #: ../../contribute/bugreporting.rst:34
@@ -210,7 +210,7 @@ msgid "Documentation on this site is written in ReStructuredText, or RST for sho
 msgstr ""
 "Документация на сайте выполнена в стандарте ReStructuredText (RST). "
 "Пожалуйста, пример файла `RST <http://www.sphinx-doc.org/en/stable/"
-"rest.html>`_ , если Вам этот стандарт не знаком."
+"rest.html>`_, если Вам этот стандарт не знаком."
 
 #: ../../contribute/documentation.rst:7
 msgid "This page will guide you through writing great documentation for the UBports project that can be featured on this site."
@@ -324,7 +324,7 @@ msgstr ""
 #: ../../contribute/documentation.rst:93
 msgid "You can do this by adding the page to the ``index.rst`` file in the same directory that you created it. For example, if you create a file called \"newpage.rst\", you would add the line marked with a chevron (>) in the nearest index:"
 msgstr ""
-"Это можно сделать, добавив страницу в файл `` index.rst``, который находится "
+"Это можно сделать, добавив страницу в файл ``index.rst``, который находится "
 "в этой же папке. Например, если вы создадите файл с именем «newpage.rst», "
 "добавьте строку строку в индексный файл и обозначьте ее символом (>):"
 
@@ -358,7 +358,7 @@ msgstr "Длина строки"
 msgid "There is no restriction on line length in this repository. Please do not break lines at an arbitrary line length. Instead, turn on word wrap in your text editor."
 msgstr ""
 "Ограничений на длину строки нет (для этого репозитория). Пожалуйста, не "
-"создавайте строк разной длины. Настройте  в текстовом редакторе "
+"создавайте строк разной длины. Настройте в текстовом редакторе "
 "автоматический перенос."
 
 #: ../../contribute/documentation.rst:121
@@ -414,7 +414,7 @@ msgstr ""
 msgid "If all went well, you can enter the ``_build/html`` directory and open ``index.html`` to view the UBports documentation."
 msgstr ""
 "Если скрипт успешно отработал, появятся директории ``_build/html``, где "
-"будет находится файл  с документацией``index.html``."
+"будет находится файл с документацией``index.html``."
 
 #: ../../contribute/documentation.rst:142
 msgid "If you have trouble building the docs, the first thing to try is deleting the build environment. Run ``rm -r ~/ubportsdocsenv`` and try the build again. Depending on when you first used the build script, you may need to run the ``rm`` command with ``sudo``."
