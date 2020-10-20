@@ -6,7 +6,7 @@ This document describes how to build and install the PinePhone or PineTab kernel
 Recovery
 --------
 
-The UBports image contains a `recovery <https://github.com/ubports/jumpdrive>`_ boot mode based on "jumpdrive". To get into the recovery press and hold the power and volume-up buttons until the led turns on.
+The Ubuntu Touch image contains a `recovery <https://github.com/ubports/jumpdrive>`_ boot mode based on "jumpdrive". To get into the recovery press and hold the power and volume-up buttons until the led turns on.
 
 The recovery presents the PinePhone as a network device over USB and runs a telnet server.
 When you connect the PinePhone to your desktop via USB, you will see the rndis device show up in your desktop's ``dmesg``::
