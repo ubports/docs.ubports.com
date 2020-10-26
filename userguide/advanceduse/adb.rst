@@ -21,7 +21,7 @@ And on MacOS with `Homebrew <https://brew.sh>`_::
 
     brew install android-platform-tools
 
-For Windows, grab the command-line tools only package from `here <https://developer.android.com/studio/index.html#downloads>`_.
+For Windows, grab the command-line tools only package from `developer.android.com <https://developer.android.com/studio/index.html#downloads>`_.
 
 Enable developer mode
 ---------------------
@@ -40,8 +40,15 @@ If there's a device in the list here (The command doesn't print "List of devices
 
 Adb shell commands::
 
-	adb shell getprop - Lists all system properties and their values.
-	adb shell setprop [property] [value] - Sets the value to a specific property.
+    adb shell – Gives you access to the Linux command-line shell on your device.
+    adb shell [command] – Runs the specified shell command on your device.
+
+Additional Adb commands::
+
+    adb push [source] [destination] – Pushes a file from your computer to your device.
+    adb pull [destination] [source] – Pulls a file from your device to your computer.
+
+For more ADB commands refer to the `official documentation <https://developer.android.com/studio/command-line/adb>`_.
 
 Add hardware IDs
 ----------------
