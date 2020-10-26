@@ -21,7 +21,7 @@ And on MacOS with `Homebrew <https://brew.sh>`_::
 
     brew install android-platform-tools
 
-For Windows, grab the command-line tools only package from `here <https://developer.android.com/studio/index.html#downloads>`_.
+For Windows, grab the command-line tools only package from `developer.android.com <https://developer.android.com/studio/index.html#downloads>`_.
 
 Enable developer mode
 ---------------------
@@ -48,7 +48,7 @@ Additional Adb commands::
     adb push [source] [destination] – Pushes a file from your computer to your device.
     adb pull [destination] [source] – Pulls a file from your device to your computer.
 
-For more ADB commands refer to the official documentation `here <https://developer.android.com/studio/command-line/adb>`_.
+For more ADB commands refer to the `official documentation <https://developer.android.com/studio/command-line/adb>`_.
 
 Add hardware IDs
 ----------------
