@@ -40,8 +40,15 @@ If there's a device in the list here (The command doesn't print "List of devices
 
 Adb shell commands::
 
-	adb shell getprop - Lists all system properties and their values.
-	adb shell setprop [property] [value] - Sets the value to a specific property.
+    adb shell – Gives you access to the Linux command-line shell on your device.
+    adb shell [command] – Runs the specified shell command on your device.
+
+Additional Adb commands::
+
+    adb push [source] [destination] – Pushes a file from your computer to your device.
+    adb pull [destination] [source] – Pulls a file from your device to your computer.
+
+For more ADB commands refer to the official documentation `here <https://developer.android.com/studio/command-line/adb>`_.
 
 Add hardware IDs
 ----------------
