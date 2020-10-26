@@ -44,7 +44,12 @@ The general steps to follow are thus:
 
     When you specify target path 'system/halium/etc/myfilename' your file 'myfilename' will end up in the '/etc' directory of your device (i.e. without the leading 'system/halium')
 
-When you have made the adjustments you need and prepared your source as described above, you have to rebuild your system.img: ``mka systemimage``. When rebuilding the system image after small changes like these, you need not ``mka clean`` first. However, changes to PRODUCT_PROPERTY_OVERRIDES might not get detected by the build system. Go to your output folder, enter the system folder and delete build.prop in order to get it regenerated.
+.. _Rebuild-system.img:
+
+Rebuild system.img
+^^^^^^^^^^^^^^^^^^
+
+When you have made the adjustments you need and prepared your source as described above, you have to rebuild your system.img: ``mka systemimage``. When rebuilding the system image after small changes like these, you need not ``mka clean`` first. However, changes to PRODUCT_PROPERTY_OVERRIDES might not get detected by the build system. Go to your output folder, enter the system folder and delete ``build.prop`` in order to get it regenerated.
 
 Udev rules
 ----------
@@ -72,7 +77,7 @@ The :ref:`Display-settings` section details methods for deriving values for thes
 
 Once you have adjusted the ``android.conf`` file to the display settings needed for your device, this file should be incorporated into your build.
 
-Create the file android.conf in your 'ubuntu' directory and enter the settings you determined and tested in the previous section. Complete steps 3 and 4 above.
+Create the file android.conf in your 'ubuntu' directory and enter the settings you determined and tested in the previous section. Complete steps 3 and 4 above, taking care to remember the note on how to :ref:`Rebuild-system.img`.
 
 .. _Apply-apparmor-kernel-patches:
 
@@ -109,7 +114,7 @@ At the end of the file, append this::
     load-module module-droid-glue-24
     .endif
 
-Now complete steps 3 and 4.
+Now complete steps 3 and 4, taking care to remember the note on how to :ref:`Rebuild-system.img`.
 
 Further configuration
 ---------------------
