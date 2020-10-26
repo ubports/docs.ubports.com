@@ -66,7 +66,14 @@ Add the following line::
 
 If your makefile already includes a line beginning with ``BOARD_KERNEL_CMDLINE``, you may add it just below that to keep things tidy.
 
-In rare cases the bootloader overwrites the kernel command line argument, rendering the setting above useless. This is the case for the Google Pixel 3a (sargo). To deal with this issue, replicate `this commit <https://github.com/fredldotme/android_kernel_google_bonito/commit/d0741dded3907f2cf4ecdc02bfcb74fc252763ff>`_. 
+.. Note::
+    The above method, although the preferred one, may not work for some Samsung devices. The result will be that you cannot get access to the device through ssh after boot, and Unity 8 will not be able to start. If you run into this problem, you can specify the setting in your device's kernel config file instead. Add the following lines::
+
+        CONFIG_CMDLINE="console=tty0"
+        CONFIG_CMDLINE_EXTEND=y
+
+.. Note::
+    In rare cases the bootloader overwrites the kernel command line argument, rendering the setting above useless. This is the case for the Google Pixel 3a (sargo). To deal with this issue, replicate `this commit <https://github.com/fredldotme/android_kernel_google_bonito/commit/d0741dded3907f2cf4ecdc02bfcb74fc252763ff>`_. 
 
 Build halium-boot.img and system.img
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
