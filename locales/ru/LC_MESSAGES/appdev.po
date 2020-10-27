@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 15:16-0500\n"
-"PO-Revision-Date: 2020-10-08 17:24+0000\n"
+"PO-Revision-Date: 2020-10-27 14:25+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -1538,7 +1538,7 @@ msgid "Applications are shipped as a :ref:`Click <click>` package and can be pub
 msgstr ""
 "Приложения поставляются в виде :ref:`Click <click>`-пакета и могут быть "
 "размещены в официальном магазине приложений `OpenStore <https://open-"
-"store.io>`__"
+"store.io>`__."
 
 #: ../../appdev/index.rst:24
 msgid "Tools"
@@ -1547,7 +1547,7 @@ msgstr "Инструменты разработчика"
 #: ../../appdev/index.rst:26
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish ``click`` packages and provides various templates to get you started with app development. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. You can use any code editor or IDE that you choose and build your apps from the commandline with Clickable."
 msgstr ""
-"`Clickable <http://clickable.bhdouglass.com/en/latest/> `_ - это система "
+"`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ - это система "
 "сборки приложений Ubuntu Touch, которая позволяет компилировать, создавать, "
 "тестировать и публиковать пакеты ``click``. Этот комплекс утилит содержит "
 "различные шаблоны для начала разработки приложений. В настоящее время это "
@@ -1558,10 +1558,10 @@ msgstr ""
 #: ../../appdev/index.rst:28
 msgid "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower."
 msgstr ""
-"Можно так же создавать приложения в старом пакете для разработки `IDE Ubuntu "
-"SDK <https://docs.ubuntu.com/phone/en/platform/sdk>` __. Но нужно иметь "
-"ввиду, что этот комплект программ больше не поддерживается Canonical, а "
-"UBports перестала поддерживать его из-за нехватки квалифицированных "
+"Можно так же создавать приложения в старом пакете для разработки `Ubuntu SDK "
+"IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Но нужно иметь "
+"ввиду, что этот комплект программ больше не поддерживается фирмой Canonical, "
+"а UBports перестала поддерживать его из-за нехватки квалифицированных "
 "программистов."
 
 #: ../../appdev/index.rst:30
@@ -1578,7 +1578,7 @@ msgstr "Руководства"
 #: ../../appdev/index.rst:42
 msgid "Get started building your first app or learn about advanced concepts with our :ref:`Developer guides <devguides>`."
 msgstr ""
-"Начните создавать свое первое приложение или подробно изучите :ref: `"
+"Начните создавать свое первое приложение или подробно изучите :ref:`"
 "Руководство разработчика <devguides>` для опытных программистов."
 
 #: ../../appdev/index.rst:58

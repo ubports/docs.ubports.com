@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-09-02 14:08-0500\n"
-"PO-Revision-Date: 2020-10-17 02:16+0000\n"
+"PO-Revision-Date: 2020-10-19 14:28+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/ru/>\n"
@@ -455,9 +455,8 @@ msgstr ""
 "ReStructuredText."
 
 #: ../../contribute/documentation.rst:158
-#, fuzzy
 msgid "Uncomfortable with Git"
-msgstr "Неудобства с Git"
+msgstr "Если нет возможности работать с Git"
 
 #: ../../contribute/documentation.rst:160
 msgid "If you've written a complete document in ReStructuredText but aren't comfortable using Git or GitHub, please post it on the `UBports Forum`_ in the relevant section (likely General). Someone will be able to help you revise your draft and submit it to this documentation."
