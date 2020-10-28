@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-15 09:19-0500\n"
+"POT-Creation-Date: 2020-10-28 12:29-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,27 +110,27 @@ msgstr ""
 msgid "This section covers how to build and install the Linux kernel and hardware abstraction layer for supported devices."
 msgstr ""
 
-#: ../../systemdev/index.rst:22
+#: ../../systemdev/index.rst:23
 msgid "System Software guides"
 msgstr ""
 
-#: ../../systemdev/index.rst:24
+#: ../../systemdev/index.rst:25
 msgid "These guides will give you general instructions on building and testing your own changes to Ubuntu Touch system software. They are not not an exhaustive reference on everything you will come across during development, but they are a great starting point."
 msgstr ""
 
-#: ../../systemdev/index.rst:28
+#: ../../systemdev/index.rst:29
 msgid "If you get stuck at any point while going through this documentation, please contact us for help via `the UBports Forum <https://forums.ubports.com>`_ or your preferred communication medium."
 msgstr ""
 
-#: ../../systemdev/index.rst:38
+#: ../../systemdev/index.rst:39
 msgid "System Software reference"
 msgstr ""
 
-#: ../../systemdev/index.rst:40
+#: ../../systemdev/index.rst:41
 msgid "This section includes reference guides on how different parts of the Ubuntu Touch system interact to create the user experience."
 msgstr ""
 
-#: ../../systemdev/index.rst:42
+#: ../../systemdev/index.rst:43
 msgid "There's not much here yet, but maybe you'd like to add some reference material? Check out :doc:`our guide to contributing to documentation </contribute/documentation>` to learn more."
 msgstr ""
 
@@ -305,15 +305,100 @@ msgid "Pinebook (pinebook)"
 msgstr ""
 
 #: ../../systemdev/kernel-hal.rst:77
-msgid "`Pinephone (pinephone) <https://gitlab.com/ubports/community-ports/pinephone>`_"
+msgid ":doc:`Pinephone (pinephone) <kernel-pinephone>`"
 msgstr ""
 
 #: ../../systemdev/kernel-hal.rst:78
-msgid "`Pinetab (pinetab) <https://gitlab.com/ubports/community-ports/pinephone>`_"
+msgid ":doc:`Pinetab (pinetab) <kernel-pinephone>`"
 msgstr ""
 
 #: ../../systemdev/kernel-hal.rst:79
 msgid "`Raspberry Pi (rpi) <https://gitlab.com/ubports/community-ports/raspberrypi>`_ (see also this `blog post <https://ubports.com/blog/ubports-blog-1/post/raspberry-pi-266>`_)"
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:2
+msgid "PinePhone and PineTab kernel"
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:4
+msgid "This document describes how to build and install the PinePhone or PineTab kernel. First the recovery system is explained. Then the actual building and installation. At the bottom there are some references."
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:7
+msgid "Recovery"
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:9
+msgid "The Ubuntu Touch image contains a `recovery <https://github.com/ubports/jumpdrive>`_ boot mode based on \"jumpdrive\". To get into the recovery press and hold the power and volume-up buttons until the led turns on."
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:11
+msgid "The recovery presents the PinePhone as a network device over USB and runs a telnet server. When you connect the PinePhone to your desktop via USB, you will see the rndis device show up in your desktop's ``dmesg``::"
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:19
+msgid "You can log in to the recovery system with ``telnet 172.16.42.1``."
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:21
+msgid "The recovery also exposes the eMMC and the microSD card over USB. Assuming you have already installed Ubuntu Touch on your microSD card you will see something like this in your desktop's ``dmesg``::"
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:35
+msgid "The eMMC with jumpdrive contains two partitions: pmOS_boot and pmOS_root."
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:37
+msgid "The microSD card with Ubuntu Touch contains 10 partitions: loader, scr, persist, boot_a, boot_b, recovery_a, recovery_b, cache, system and userdata. To update the kernel you want to mount boot_a. Check which device is the SDcard in your OS and mount boot_a. In the example above this is sdc4. Inside that partition you'll see the kernel vmlinuz and related files: ``config-5.6.0-pine64`` ``dtb`` ``initrd.img`` ``modules/`` ``System.map-5.6.0-pine64`` ``vmlinuz``."
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:40
+msgid "Building the kernel"
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:42
+msgid "To install dependencies, get the `source code <https://gitlab.com/pine64-org/linux/-/tree/pine64-kernel-ubports>`_, configure and build the kernel, run the following::"
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:51
+msgid "Install the kernel"
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:53
+msgid "Boot into recovery and mount boot_a. Make a backup if needed. Then copy over your newly built kernel and if needed modules::"
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:61
+msgid "Afterwards be sure to unmount the partition so it is cleanly written. Now you can reboot the PinePhone. Once booted, you can verify that the kernel has been successfully updated by checking the build date with ``uname -a`` on the device."
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:64
+#: ../../systemdev/mms-infrastructure.rst:49
+msgid "References"
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:66
+msgid "`Pine64 wiki <https://wiki.pine64.org/index.php/PinePhone>`_ has general HW info, pointers to other PinePhone OS projects, HW revisions, serial UART over headphone jack (also in their store), spec sheets, known HW issues, etc"
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:67
+msgid "`Main UBports repository <https://gitlab.com/ubports/community-ports/pinephone>`_ has instructions for how to install UT images on the PinePhone"
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:68
+msgid "`UBPorts issue tracker <https://gitlab.com/ubports/community-ports/pinephone/-/issues>`_"
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:69
+msgid "`PinePhone forum from Pine64 <https://forum.pine64.org/forumdisplay.php?fid=120>`_ is where many other communities gather that work with the PinePhone"
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:70
+msgid "`sunxi <https://linux-sunxi.org>`_ community is where much of the `mainlining effort <https://linux-sunxi.org/Linux_mainlining_effort>`_ for Allwinner devices including the PinePhone takes place. Note their `build instructions <https://linux-sunxi.org/Mainline_Kernel_Howto>`_."
+msgstr ""
+
+#: ../../systemdev/kernel-pinephone.rst:71
+msgid "`Crust firmware <https://github.com/crust-firmware/crust>`_ implements a deep sleep state and runs on a dedicated System Control Processor outside the main CPU and DRAM."
 msgstr ""
 
 #: ../../systemdev/mms-infrastructure.rst:2
@@ -406,10 +491,6 @@ msgstr ""
 
 #: ../../systemdev/mms-infrastructure.rst:44
 msgid "Outgoing MMS diagram"
-msgstr ""
-
-#: ../../systemdev/mms-infrastructure.rst:49
-msgid "References"
 msgstr ""
 
 #: ../../systemdev/mms-infrastructure.rst:51

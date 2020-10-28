@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-15 09:19-0500\n"
+"POT-Creation-Date: 2020-10-28 12:29-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
 msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:24
-msgid "For Windows, grab the command-line tools only package from `here <https://developer.android.com/studio/index.html#downloads>`_."
+msgid "For Windows, grab the command-line tools only package from `developer.android.com <https://developer.android.com/studio/index.html#downloads>`_."
 msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:27
@@ -84,23 +84,31 @@ msgstr ""
 msgid "Adb shell commands::"
 msgstr ""
 
-#: ../../userguide/advanceduse/adb.rst:47
-msgid "Add hardware IDs"
-msgstr ""
-
-#: ../../userguide/advanceduse/adb.rst:49
-msgid "ADB doesn't always know what devices on your computer it should or should not talk to. You can manually add the devices that it does not know how to talk to."
+#: ../../userguide/advanceduse/adb.rst:46
+msgid "Additional Adb commands::"
 msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:51
+msgid "For more ADB commands refer to the `official documentation <https://developer.android.com/studio/command-line/adb>`_."
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:54
+msgid "Add hardware IDs"
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:56
+msgid "ADB doesn't always know what devices on your computer it should or should not talk to. You can manually add the devices that it does not know how to talk to."
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:58
 msgid "Just run the command for your selected device if it's below. Then, run ``adb kill-server`` followed by the command you were initially trying to run."
 msgstr ""
 
-#: ../../userguide/advanceduse/adb.rst:53
+#: ../../userguide/advanceduse/adb.rst:60
 msgid "Fairphone 2::"
 msgstr ""
 
-#: ../../userguide/advanceduse/adb.rst:57
+#: ../../userguide/advanceduse/adb.rst:64
 msgid "Oneplus One::"
 msgstr ""
 
