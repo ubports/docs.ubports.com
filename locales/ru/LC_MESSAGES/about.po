@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-08 17:32-0500\n"
-"PO-Revision-Date: 2020-10-06 06:57+0000\n"
+"PO-Revision-Date: 2020-10-31 13:21+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-about/ru/>\n"
@@ -84,10 +84,9 @@ msgstr "Первоисточники"
 #: ../../about/introduction.rst:23
 msgid "This documentation was heavily modeled after the `Godot Engine's Documentation <http://docs.godotengine.org/en/stable/>`_, attribution to Juan Linietsky, Ariel Manzur and the Godot community."
 msgstr ""
-"Эта документация в значительной степени написана по мотивам `Документации "
-"Godot\n"
-"Engine <http://docs.godotengine.org/en/stable/>`_, созданной благодаря Хуану "
-"Линецкому, Ариэлю Манзуру и сообществу Godot."
+"Эта документация в значительной степени написана на основе `Документации "
+"Godot Engine <http://docs.godotengine.org/en/stable/>`_, созданной благодаря "
+"Хуану Линецкому, Ариэлю Манзуру и сообществу Godot."
 
 #: ../../about/process/branch-naming.rst:2
 msgid "Branch-naming convention"
@@ -96,7 +95,7 @@ msgstr "Соглашение о названиях веток разработк
 #: ../../about/process/branch-naming.rst:4
 msgid "Our branch-naming conventions ensure that software can be built by our CI and tested easily by other developers."
 msgstr ""
-"Наши соглашения о названиях веток разработки  гарантируют, что программное "
+"Наши соглашения о названиях веток разработки гарантируют, что программное "
 "обеспечение создается по технологии непрерывной интеграции (CI) и может быть "
 "легко протестировано другими разработчиками."
 
@@ -114,7 +113,7 @@ msgstr "Click-Пакеты"
 msgid "Software that is exclusively distributed as a click-package (and not also as a deb) only uses one ``master`` branch that is protected. Separate temporary development branches with arbitrary descriptive names can be created and merged into master when the time comes. For marking and archiving milestones in development history, ideally Git tags or GitHub releases should be used."
 msgstr ""
 "Программное обеспечение, которое распространяется исключительно в виде click-"
-"пакета (а не как deb), использует только одну защищенную ветку `` master``. "
+"пакета (а не как deb), использует только одну защищенную ветку ``master``. "
 "Отдельные временные ветки разработки с произвольными описательными именами "
 "могут быть созданы и объединены в master, когда придет время. Для маркировки "
 "и архивирования вех в истории разработки в идеале следует использовать теги "
@@ -160,7 +159,7 @@ msgstr ""
 "Чтобы собирать и публиковать пакеты, основанные на другом репозитории, можно "
 "использовать расширение в форме ``xenial_-_some-descriptive_extension``. "
 "Система CI потом определит все необходимые файлы зависимостей, используя "
-"ветку `xenial_-_some-descriptive_extension` или обратится к  стандартным "
+"ветку ``xenial_-_some-descriptive_extension`` или обратится к  стандартным "
 "файлам зависимостей ``xenial`, если такой не существует. Эти специальные "
 "файлы зависимостей не включаются в пакет с программой, но находятся в  :doc:`"
 "repo.ubports.com <ppa>`."
@@ -338,7 +337,7 @@ msgstr ""
 "как \"улучшение\" в проектах @ubports <https://github.com/search?utf8=%E2%9C%"
 "93&q=is%3Aopen+org%3Aubports+label%3A%22feature+request%22&type=>`_. "
 "Обратитесь к `справочным страницам GitHub <https://help.github.com/articles/"
-"about-searching-on-github/> `_ для получения дополнительной информации о "
+"about-searching-on-github/>`_ для получения дополнительной информации о "
 "поиске и фильтрации."
 
 #: ../../about/process/issue-tracking.rst:51
@@ -356,16 +355,16 @@ msgstr ""
 #: ../../about/process/issue-tracking.rst:55
 msgid "**bug**: This issue is a confirmed bug. If it's reproducible, reproduction steps are described."
 msgstr ""
-"**bug** - ** ошибка **: этот баг подтверждён. Если его можно воспроизвести, "
+"**bug** - **ошибка **: этот баг подтверждён. Если его можно воспроизвести, "
 "приводится информация о том, как это сделать."
 
 #: ../../about/process/issue-tracking.rst:57
 msgid "**opinion**: This issue needs further discussion."
-msgstr "**opinion** - ** мнение **: вопрос требует дальнейшего обсуждения."
+msgstr "**opinion** - **мнение**: вопрос требует дальнейшего обсуждения."
 
 #: ../../about/process/issue-tracking.rst:58
 msgid "**enhancement**: This issue is a feature request."
-msgstr "**enhancement** -**улучшение **: это запрос функции."
+msgstr "**enhancement** -**улучшение**: это запрос функции."
 
 #: ../../about/process/issue-tracking.rst:59
 msgid "**question**: This issue is a support request or general question."
@@ -424,7 +423,7 @@ msgstr ""
 #: ../../about/process/issue-tracking.rst:81
 msgid "**device: [DEVICE CODENAME]**: This issue affects only the specified device(s)."
 msgstr ""
-"**device: [DEVICE CODENAME]**:  Ошибка проявляется только на этом устройстве."
+"**device: [DEVICE CODENAME]**: Ошибка проявляется только на этом устройстве."
 
 #: ../../about/process/issue-tracking.rst:83
 msgid "**team: [TEAM NAME]**: This issue is falls under the responsibility of a specific team (hal, middleware, UI)."
@@ -483,7 +482,7 @@ msgstr "Жизненный цикл багов"
 msgid "The same principle applies to feature requests. The only difference is, that instead of the label **bug**, the label **enhancement** is used. The **needs confirmation** label is not applicable for feature requests."
 msgstr ""
 "Тот же принцип применяется к запросам новых функций. Единственное отличие "
-"состоит в том, что вместо метки ** bug ** используется метка **extension**. "
+"состоит в том, что вместо метки **bug** используется метка **extension**. "
 "Метка **needs confirmation** (**требуется подтверждение**) не применяется "
 "для запросов функций."
 
