@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-08 17:32-0500\n"
-"PO-Revision-Date: 2020-08-29 17:36+0000\n"
+"PO-Revision-Date: 2020-10-31 13:21+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/ru/>\n"
@@ -38,7 +38,7 @@ msgstr "Настройка точек монтирования"
 #: ../../porting/building-halium-boot.rst:9
 msgid "Halium-boot's ``mount`` is not aware of SELinux contexts. If your device's ``fstab`` file includes any contexts, the partition that they are on will fail to mount and your port will not work correctly."
 msgstr ""
-"`` Mount`` в Halium-boot не знает контекстов SELinux. Если файл `` fstab`` "
+"`` Mount`` в Halium-boot не знает контекстов SELinux. Если файл ``fstab`` "
 "для вашего устройства содержит какие-либо контексты, то раздел, на котором "
 "они находятся, не будет смонтирован, и сборка будет работать неправильно."
 
@@ -68,7 +68,7 @@ msgid "For example, the line ``ro,nosuid,nodev,context=u:object_r:firmware_file:
 msgstr ""
 "Например, строчка "
 "``ro,nosuid,nodev,context=u:object_r:firmware_file:s0,barrier=0`` должна "
-"измениться на  ``ro,nosuid,nodev,barrier=0``"
+"измениться на ``ro,nosuid,nodev,barrier=0``"
 
 #: ../../porting/building-halium-boot.rst:19
 msgid "Save and exit."
@@ -133,8 +133,8 @@ msgstr "Продолжить"
 #: ../../porting/building-halium-boot.rst:44
 msgid "Now that you have halium-boot built, you can move on to :doc:`installing-16-04`."
 msgstr ""
-"Теперь сборка Halium-Boot закончена, далее прочитайте главу: doc: "
-"`installation-16-04`."
+"Теперь сборка Halium-Boot закончена, далее прочитайте главу "
+":doc:`installing-16-04`."
 
 #: ../../porting/common-problems-install.rst:7
 msgid "Common installation problems"
@@ -169,7 +169,7 @@ msgstr ""
 #: ../../porting/common-problems-install.rst:24
 msgid "Reboot the device to recovery and connect with ``adb shell``"
 msgstr ""
-"Перезагрузите устройство в режиме  recovery и подсоединитесь к нему через  ``"
+"Перезагрузите устройство в режиме recovery и подсоединитесь к нему через ``"
 "adb shell``"
 
 #: ../../porting/common-problems-install.rst:25
@@ -195,14 +195,14 @@ msgstr ""
 #: ../../porting/common-problems-install.rst:45
 msgid "This happens because ``lightdm``, the Ubuntu Touch display manager, is crashing repeatedly. The system watchdog process sees this and reboots the device."
 msgstr ""
-"Это происходит из-за того, что `` lightdm``, оконный менеджер Ubuntu Touch,  "
+"Это происходит из-за того, что ``lightdm``, оконный менеджер Ubuntu Touch, "
 "из-за ошибок периодически прекращает работать. Система видит это и "
 "перезагружает устройство."
 
 #: ../../porting/common-problems-install.rst:47
 msgid "To fix this problem, log in before the reboot occurs and run the following command::"
 msgstr ""
-"Чтобы решить эту проблему, войдите в систему  и выполните следующую команду "
+"Чтобы решить эту проблему, войдите в систему и выполните следующую команду "
 "до перезагрузки::"
 
 #: ../../porting/common-problems-run.rst:2
@@ -213,7 +213,7 @@ msgstr "Известные проблемы, возникающие при ра�
 msgid "This page details problems commonly faced while following the :doc:`running-ut` page."
 msgstr ""
 "На этой странице подробно описаны проблемы, с которыми обычно сталкиваются "
-"при изучении раздела: doc: `running-ut`."
+"при изучении раздела :doc:`running-ut`."
 
 #: ../../porting/common-problems-run.rst:7
 msgid "Nothing shows on screen"
@@ -256,14 +256,14 @@ msgstr ""
 #: ../../porting/common-problems-run.rst:30
 msgid "If you do not get ``State: RUNNING``, the container is stopped. You can run ``sudo start lxc-android-config`` to attempt to start it. If the container does not start after that, you can run ``sudo lxc-start -n android -F`` to get a more detailed log of why it has failed."
 msgstr ""
-"Если не выводится сообщение `` State: RUNNING``, то контейнер остановлен. "
-"Можно попытаться запустить его командой `` sudo start lxc-android-config`. "
-"Если после этого контейнер не запустится, можно набрать команду `` sudo lxc-"
+"Если не выводится сообщение ``State: RUNNING``, то контейнер остановлен. "
+"Можно попытаться запустить его командой ``sudo start lxc-android-config`. "
+"Если после этого контейнер не запустится, можно набрать команду ``sudo lxc-"
 "start -n android -F``, она выведет журнал ошибок."
 
 #: ../../porting/common-problems-run.rst:34
 msgid "Are all of the Android partitions mounted?"
-msgstr "Все ли разделы  Android смонтировались?"
+msgstr "Все ли разделы Android смонтировались?"
 
 #: ../../porting/common-problems-run.rst:36
 msgid "If some partitions used for Android drivers are not mounted, the container may start but not work correctly."
@@ -274,13 +274,13 @@ msgstr ""
 #: ../../porting/common-problems-run.rst:38
 msgid "To check the mounted Android partitions, run ``ls /android``. At least the following folders should be contained within::"
 msgstr ""
-"Чтобы проверить смонтированные разделы Android, наберите команду `` ls / "
+"Чтобы проверить смонтированные разделы Android, наберите команду ``ls / "
 "android``. По крайней мере, следующие папки должны быть::"
 
 #: ../../porting/common-problems-run.rst:45
 msgid "If any of these are missing, run ``dmesg`` to get the kernel log. Mounting Android partitions will start after the following line::"
 msgstr ""
-"Если что-то из этого отсутствует, наберите `` dmesg``, это выведет на экран "
+"Если что-то из этого отсутствует, наберите ``dmesg``, это выведет на экран "
 "журнал ядра. Монтирование разделов Android начнется после следующей строки::"
 
 #: ../../porting/common-problems-run.rst:49
@@ -315,7 +315,7 @@ msgstr "Сначала остановите диспетчер экрана, е�
 #: ../../porting/common-problems-run.rst:65
 msgid "If you have Wi-Fi working (See `the Halium docs for Wi-Fi`_), install the ``libc6-dbg`` package first::"
 msgstr ""
-"Если на устройстве работает Wi-Fi (смотрите раздел `the Halium docs for Wi-"
+"Если на устройстве работает Wi-Fi (смотрите раздел `Halium и работа с Wi-"
 "Fi`_), сначала установите пакет ``libc6-dbg``::"
 
 #: ../../porting/common-problems-run.rst:70
@@ -363,7 +363,7 @@ msgstr ""
 msgid "Now rsyslogd will write to the file and you can use it as usual. For example ``less /var/log/syslog`` or ``tail -f /var/log/syslog``."
 msgstr ""
 "Теперь rsyslogd запишет данные в файл, его можно прочитать любыми штатными "
-"утилитами. Например, `` less /var/log/syslog`` или `` tail -f /var/log/"
+"утилитами. Например, ``less /var/log/syslog`` или ``tail -f /var/log/"
 "syslog``."
 
 #: ../../porting/installing-16-04.rst:2
@@ -380,7 +380,7 @@ msgstr ""
 #: ../../porting/installing-16-04.rst:8
 msgid "Now that you've :doc:`built halium-boot <building-halium-boot>`, we're ready to install Ubuntu Touch on your device."
 msgstr ""
-"Теперь: doc: `образ halium-boot <building-halium-boot>` создан, и все готово "
+"Теперь :doc:`образ halium-boot <building-halium-boot>` создан, и все готово "
 "для установки Ubuntu Touch на устройство."
 
 #: ../../porting/installing-16-04.rst:10
@@ -409,7 +409,7 @@ msgstr "Скачайте rootfs"
 msgid "Next we'll need to download the rootfs (root filesystem) that's appropriate for your device. Right now, we only have one available. Simply download ``ubports-touch.rootfs-xenial-armhf.tar.gz`` from `our CI server <https://ci.ubports.com/job/xenial-rootfs-armhf/>`__. If you have a 64-bit ARM (aarch64) device, this same rootfs should work for you. If you have an x86 device, let us know. We do not have a rootfs available for these yet."
 msgstr ""
 "Далее нужно скачать образ rootfs (корневая файловая система), подходящий для "
-"данного устройства. Пока у нас есть только один образ. Скачайте `` ubports-"
+"данного устройства. Пока у нас есть только один образ. Скачайте ``ubports-"
 "touch.rootfs-xenial-armhf.tar.gz`` с нашего CI-сервера <https://ci.ubports."
 "com/job/xenial-rootfs-armhf/> `` __. Если у ваше устройство построено на 64-"
 "битной платформе ARM (aarch64), этот же файл rootfs должен должен подойти и "
@@ -423,10 +423,10 @@ msgstr "Установка образов system.img и rootfs"
 #: ../../porting/installing-16-04.rst:28
 msgid "Clone or download the `halium-install repository <https://gitlab.com/JBBgameich/halium-install>`_. This repository contains tools that can be used to install a Halium system image and distribution rootfs. We'll use the ``halium-install`` script to install Ubuntu Touch on your device::"
 msgstr ""
-"Скопируйте или скачайте репозиторий \"halium-install\" <https://gitlab.com/"
+"Скопируйте или скачайте репозиторий `halium-install <https://gitlab.com/"
 "JBBgameich/halium-install> `_. Этот репозиторий содержит инструменты, "
-"которые можно использовать для установки образа системы Halium и rootfs.  "
-"Для установки Ubuntu Touch мы будем использовать скрипт ``halium-install``:"
+"которые можно использовать для установки образа системы Halium и rootfs. Для "
+"установки Ubuntu Touch мы будем использовать скрипт ``halium-install``:"
 
 #: ../../porting/installing-16-04.rst:32
 msgid "The script will copy and extract the files to their proper places, then allow you to set the phablet user's password."
@@ -460,8 +460,8 @@ msgid "Similar to the Halium reference rootfs, you should `set your computer's I
 msgstr ""
 "Так же как и при установке Halium rootfs, нужно `настроить IP-адрес своего "
 "компьютера в интерфейсе RNDIS <http://docs.halium.org/en/latest/porting/"
-"debug-build/logging-in.html>` __, -`` 10.15.19.100``, если вы не получите "
-"его автоматически. Затем откройте доступ к вашему устройству::"
+"debug-build/logging-in.html>` __, -``10.15.19.100``, если Вы не получите его "
+"автоматически. Затем откройте доступ к вашему устройству::"
 
 #: ../../porting/installing-16-04.rst:45
 msgid "The password will be the one that you set while running halium-install."
@@ -476,7 +476,7 @@ msgstr "Известные проблемы"
 msgid "If you have any errors while performing these steps, check see if any of the following suggestions match what you are seeing. If you have installed successfully, skip down to `Continue on`_."
 msgstr ""
 "Если при установке возникли ошибки или неисправности, проверьте, есть ли они "
-"в этом списке. Если установка успешно завершена, нажмите`Продолжить`_."
+"в этом списке. Если установка успешно завершена, нажмите `Продолжить`_."
 
 #: ../../porting/installing-16-04.rst:60
 msgid "Congratulations! Ubuntu Touch has now booted on your device. Move on to :doc:`running-ut` to learn about more specific steps you will need to take for a complete port."
@@ -518,7 +518,7 @@ msgid "Before you begin, you'll want to head over to `the Halium porting guide <
 msgstr ""
 "Прежде чем начать, прочитайте `Руководство по созданию образов Halium "
 "<http://docs.halium.org/en/latest/porting/first-steps.html>`_ и сформируйте "
-"без ошибок образ `` systemimage`` для своего устройства. Как только будет "
+"без ошибок образ ``systemimage`` для своего устройства. Как только будет "
 "установлена rootfs, можно вернуться к этому разделу."
 
 #: ../../porting/introduction.rst:15
@@ -599,8 +599,8 @@ msgid "When the device boots, you'll probably notice that everything is very sma
 msgstr ""
 "Когда устройство загрузится, вы скорее всего заметите, что окна и значки "
 "очень маленькие. Существует две переменные, которые отвечают за "
-"масштабирование интерфейса приложений Unity 8 и Ubuntu Touch: `` "
-"GRID_UNIT_PX`` и ``QTWEBKIT_DPR``."
+"масштабирование интерфейса приложений Unity 8 и Ubuntu Touch: "
+"``GRID_UNIT_PX`` и ``QTWEBKIT_DPR``."
 
 #: ../../porting/running-ut.rst:28
 msgid "There are also some other options available that may be useful for you depending on your device's form factor. These are discussed below."
@@ -630,9 +630,9 @@ msgstr "Масштабирование экрана"
 #: ../../porting/running-ut.rst:43
 msgid "``GRID_UNIT_PX`` (Pixels per Grid Unit or Px/GU) is specific to each device. Its goal is to make the user interface of the system and its applications the same *perceived* size regardless of the device they are displayed on. It is primarily dependent on the pixel density of the device’s screen and the distance to the screen the user is at. The latter value cannot be automatically detected and is based on heuristics. We assume that tablets and laptops are the same distance and that they are held at 1.235 times the distance phones tend to be held at."
 msgstr ""
-"`` GRID_UNIT_PX`` (число пикселей для сетки устройства или сокращенно Px/GU)"
-"  задается индивидуально для каждого устройства. Опция нужна, чтобы сделать "
-"пользовательский интерфейс системы и ее приложений одинаковым  и * "
+"``GRID_UNIT_PX`` (число пикселей для сетки устройства или сокращенно Px/GU) "
+"задается индивидуально для каждого устройства. Опция нужна, чтобы сделать "
+"пользовательский интерфейс системы и ее приложений одинаковым и * "
 "воспринимаемым * по размеру независимо от модели устройства. Это в первую "
 "очередь зависит от плотности пикселей экрана устройства и расстояния до лица "
 "пользователя. Последнее значение нельзя подобрать автоматически или как-то "
@@ -642,8 +642,8 @@ msgstr ""
 #: ../../porting/running-ut.rst:45
 msgid "``QTWEBKIT_DPR`` sets the display scaling for the Oxide web engine, so changes to this value will affect the scale of the browser and webapps."
 msgstr ""
-"`` QTWEBKIT_DPR`` - этот параметр задает масштаб экрана для веб-движка "
-"Oxide. Изменение этого значения будет влиять на масштаб вкладок браузера и "
+"``QTWEBKIT_DPR`` - этот параметр задает масштаб экрана для веб-движка Oxide. "
+"Изменение этого значения будет влиять на масштаб вкладок браузера и "
 "веб-приложений."
 
 #: ../../porting/running-ut.rst:47
