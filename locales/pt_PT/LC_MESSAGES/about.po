@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"POT-Creation-Date: 2020-07-29 13:44-0500\n"
 "PO-Revision-Date: 2019-04-21 00:00+0000\n"
 "Last-Translator: nfilipes <nfms@protonmail.com>\n"
 "Language-Team: Portuguese (Portugal) <https://translate.ubports.com/projects/"
@@ -24,10 +24,11 @@ msgid "Introduction"
 msgstr "Introdução"
 
 #: ../../about/introduction.rst:4
+#, fuzzy
 msgid ""
-"This is the documentation for the UBports project. Our goal is to create an "
-"open-source (GPL if possible) mobile operating system that converges and "
-"respects your freedom."
+"This is the documentation for the UBports project. Our goal is to create a "
+"Free and open-source (GPL if possible) mobile operating system that "
+"converges and respects your freedom."
 msgstr ""
 "Esta é a documentação para o projecto UBports. O nosso objectivo é criar um "
 "sistema operativo móvil open source (se possível GPL) que seja convergente y "
@@ -38,11 +39,11 @@ msgid "About UBports"
 msgstr "Sobre UBports"
 
 #: ../../about/introduction.rst:9
+#, fuzzy
 msgid ""
 "The UBports project was founded by Marius Gripsgard in 2015 and in its "
 "infancy was a place where developers could share ideas and educate each "
-"other in hopes of bringing the Ubuntu Touch platform to more and more "
-"devices."
+"other in hopes of bringing the Ubuntu Touch platform to more mobile devices."
 msgstr ""
 "O projecto UBports foi fundado por Marius Grispard em  2015 e durante o seu "
 "infância foi um lugar onde os developers podiam partilhar ideias e formação "
@@ -50,39 +51,41 @@ msgstr ""
 "dispositivos."
 
 #: ../../about/introduction.rst:11
+#, fuzzy
 msgid ""
 "After Canonical suddenly announced `their plans to terminate support of "
 "Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-"
-"cloud-and-iot-rather-than-phone-and-convergence/>`_ in April of 2017, "
-"UBports and its sister projects began work on the open-source code, "
-"maintaining and expanding its possibilities for the future."
+"cloud-and-iot-rather-than-phone-and-convergence/>`_ in April 2017, UBports "
+"and its sister projects began work on the open-source code, maintaining and "
+"expanding its possibilities for the future."
 msgstr ""
 "Depois de Canonical anunciar repentinamente os seus 'planos para terminar "
-"suporte do Ubuntu touch <https://insights.ubuntu.com/2017/04/05/"
-"growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ em "
-"Abril de 2017, UBports e os seus projectos irmâos começaram a trabalhar no "
-"codigo open-source, mantendo e expandindo as suas possibilidades para o "
-"futuro."
+"suporte do Ubuntu touch <https://insights.ubuntu.com/2017/04/05/growing-"
+"ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ em Abril de "
+"2017, UBports e os seus projectos irmâos começaram a trabalhar no codigo "
+"open-source, mantendo e expandindo as suas possibilidades para o futuro."
 
 #: ../../about/introduction.rst:14
 msgid "About the Documentation"
 msgstr "Sobre a Documentação"
 
 #: ../../about/introduction.rst:16
+#, fuzzy
 msgid ""
 "This documentation is always improving thanks to the members of the UBports "
 "community. It is written in ReStructuredText and converted into this "
 "readable form by `Sphinx <http://www.sphinx-doc.org/en/stable/>`_, "
 "`ReCommonMark <http://recommonmark.readthedocs.io/en/latest/>`_, and `Read "
 "the Docs <https://readthedocs.io>`_. You can start contributing by checking "
-"out the :doc:`Documentation intro </contribute/documentation>`."
+"out the :doc:`Documentation contribution document </contribute/"
+"documentation>`."
 msgstr ""
 "Esta documentação está sempre a melhorar graças aos membros da comunidade "
 "UBports. Estºa escrita em ReStructuredText e convertido nesta forma de "
 "leitura por `Sphinx <http://www.sphinx-doc.org/en/stable/>`_, `ReCommonMark "
 "<http://recommonmark.readthedocs.io/en/latest/>`_, and `Read the Docs "
-"<https://readthedocs.io>`_. Pode começar a contribuir lendo o :doc:`"
-"Documentation intro </contribute/documentation>`."
+"<https://readthedocs.io>`_. Pode começar a contribuir lendo o :doc:"
+"`Documentation intro </contribute/documentation>`."
 
 #: ../../about/introduction.rst:18
 msgid ""
@@ -91,8 +94,8 @@ msgid ""
 "license. Please give attribution to \"The UBports Community\"."
 msgstr ""
 "Todos os documentos estão sobre a licença de Creative Commons Attribution "
-"ShareAlike 4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4."
-"0/>`_). Por favor atribuia crédito a \"The UBports Community\"."
+"ShareAlike 4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-"
+"sa/4.0/>`_). Por favor atribuia crédito a \"The UBports Community\"."
 
 #: ../../about/introduction.rst:21
 msgid "Attribution"
@@ -186,8 +189,8 @@ msgstr ""
 "Cada repositório que usa esta convenção terá ramificações para as versões "
 "ativamente suportadas do Ubuntu referenciadas pelos seus nomes de código (`` "
 "bionic``, `` xenial``, `` vivid``, etc.). Estas são as ramificações que são "
-"construídas diretamente nas imagens correspondentes e publicadas em: doc: `"
-"repo.ubports.com <ppa>`. Se não forem necessárias versões separadas para as "
+"construídas diretamente nas imagens correspondentes e publicadas em: doc: "
+"`repo.ubports.com <ppa>`. Se não forem necessárias versões separadas para as "
 "diferentes bases do Ubuntu, o repositório terá apenas uma ramificação `` "
 "master`` e o sistema de CI construirá ainda versões para todas as "
 "distribuições ativamente suportadas e resolverá dependências de acordo."
@@ -357,7 +360,7 @@ msgstr ""
 msgid ""
 "**Quality Assurance**: The patch is completed and has passed initial "
 "testing. The QA team will now review it and provide feedback. If problems "
-"are found, the issue is moved back to “Accepted”."
+"are found, the issue is moved back to \"Accepted\"."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:42
@@ -374,7 +377,7 @@ msgid ""
 "wanted\", community contributions are required to resolve the issue. If it's "
 "closed, that means that either a patch has been released on the stable "
 "channel (a comment on the issue should link to the patch) or the issue has "
-"been rejected (labeled “wontfix”)."
+"been rejected (labeled \"wontfix\")."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:46
@@ -439,30 +442,31 @@ msgstr ""
 
 #: ../../about/process/issue-tracking.rst:66
 msgid ""
-"**good first issue**: This issue is not critical and trivial to fix. It is "
-"reserved for new contributors as a place to start."
+"**good first issue**: The report contains instructions or hints required to "
+"fix it. It is an excellent place for someone new to learn about the project "
+"by fixing a real issue."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:68
+#: ../../about/process/issue-tracking.rst:67
 msgid ""
 "**wontfix**: It does not make sense to fix this bug, since it will probably "
 "resolve itself, it will be too much work to fix it, it's not fixable, or an "
 "underlying component will soon change."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:72
+#: ../../about/process/issue-tracking.rst:71
 msgid ""
 "Additional special labels can be defined. As an example, here's the labels "
 "used in the Ubuntu Touch tracker:"
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:75
+#: ../../about/process/issue-tracking.rst:74
 msgid ""
 "**critical (devel)**: This critical issue that only occurs on the devel "
 "channel is blocking the release of the next rc image."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:77
+#: ../../about/process/issue-tracking.rst:76
 msgid ""
 "**critical (rc)**: This critical issue that only occurs on the devel and rc "
 "channel is blocking the release of the next stable release. Usually, issues "
@@ -470,29 +474,29 @@ msgid ""
 "postpone the release are labeled this."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:81
+#: ../../about/process/issue-tracking.rst:80
 msgid ""
 "**device: [DEVICE CODENAME]**: This issue affects only the specified "
 "device(s)."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:83
+#: ../../about/process/issue-tracking.rst:82
 msgid ""
 "**team: [TEAM NAME]**: This issue is falls under the responsibility of a "
 "specific team (hal, middleware, UI)."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:86
+#: ../../about/process/issue-tracking.rst:85
 msgid ""
 "If a repository that tracks issues locally defines it's own labels, they "
 "should be documented in the README.md."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:90
+#: ../../about/process/issue-tracking.rst:89
 msgid "Milestones"
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:92
+#: ../../about/process/issue-tracking.rst:91
 msgid ""
 "Milestones are used for stable OTA releases only. In general, milestones for "
 "the work-in-progress OTA and the next OTA are created. The ETA is set, once "
@@ -501,11 +505,11 @@ msgid ""
 "more info."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:99
+#: ../../about/process/issue-tracking.rst:98
 msgid "Assignees"
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:101
+#: ../../about/process/issue-tracking.rst:100
 msgid ""
 "To make it transparent who's working on an issue, the developer should be "
 "assigned. This also allows the use of GitHub's global filtering as a type of "
@@ -514,32 +518,32 @@ msgid ""
 "+assignee%3Amariogrip&type=>`_."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:105
+#: ../../about/process/issue-tracking.rst:104
 msgid ""
 "Developers are encouraged to keep their list short and update the status of "
 "their issues."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:108
+#: ../../about/process/issue-tracking.rst:107
 msgid "Examples"
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:111
+#: ../../about/process/issue-tracking.rst:110
 msgid "Bug Lifecycle"
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:114
+#: ../../about/process/issue-tracking.rst:113
 msgid ""
 "The same principle applies to feature requests. The only difference is, that "
 "instead of the label **bug**, the label **enhancement** is used. The **needs "
 "confirmation** label is not applicable for feature requests."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:118
+#: ../../about/process/issue-tracking.rst:117
 msgid "A *User* files a new bug using the issue-template."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:119
+#: ../../about/process/issue-tracking.rst:118
 msgid ""
 "The *QA-Team* adds the label **needs confirmation** and tries to work with "
 "the user to confirm the bug and add potentially missing information to the "
@@ -548,7 +552,7 @@ msgid ""
 "and the label needs confirmation will be replaced with **bug**."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:120
+#: ../../about/process/issue-tracking.rst:119
 msgid ""
 "The affected *Team* will triage the issue and either reject (label "
 "**wontfix**, close and remove from the project) or accept the issue. The "
@@ -560,24 +564,24 @@ msgid ""
 "the label **good first issue** can be added as well."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:121
+#: ../../about/process/issue-tracking.rst:120
 msgid ""
 "Once a *developer* is assigned and starts working on the issue, it is moved "
-"to “In Development”. As soon as they have something to show for, the issue "
-"is closed and automatically moved to “Quality Assurance” for feedback from "
+"to \"In Development\". As soon as they have something to show for, the issue "
+"is closed and automatically moved to \"Quality Assurance\" for feedback from "
 "the QA team. If necessary, the developer will provide hints on how to test "
 "his patch in a comment on the issue."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:122
+#: ../../about/process/issue-tracking.rst:121
 msgid ""
 "The *QA-Team* tests the fix on all devices and provides feedback to the "
 "developer. If problems are found, the issue is re-opened and goes back to "
-"“Accepted”, else it’s moved to “Release Candidate” to be included in the "
+"\"Accepted\", else it’s moved to \"Release Candidate\" to be included in the "
 "next release."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:123
+#: ../../about/process/issue-tracking.rst:122
 msgid ""
 "If not done already, the issue is added to the next milestone. Once the "
 "milestone is released, the issue is removed from the project board."

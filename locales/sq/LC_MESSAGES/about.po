@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"POT-Creation-Date: 2020-07-29 13:44-0500\n"
 "PO-Revision-Date: 2018-06-03 16:55+0000\n"
 "Last-Translator: Rrahim Gashi <jimmygashi@gmail.com>\n"
 "Language-Team: Albanian <https://translate.ubports.com/projects/ubports-docs/"
@@ -24,10 +24,11 @@ msgid "Introduction"
 msgstr "Paraqitje"
 
 #: ../../about/introduction.rst:4
+#, fuzzy
 msgid ""
-"This is the documentation for the UBports project. Our goal is to create an "
-"open-source (GPL if possible) mobile operating system that converges and "
-"respects your freedom."
+"This is the documentation for the UBports project. Our goal is to create a "
+"Free and open-source (GPL if possible) mobile operating system that "
+"converges and respects your freedom."
 msgstr ""
 "Ky është dokumentacioni për projektin UBports. Qëllimi ynë është të krijojmë "
 "një sistem operativ celular të hapur (nëse është e mundur GPL) që konvergon "
@@ -38,11 +39,11 @@ msgid "About UBports"
 msgstr "Rreth UBports"
 
 #: ../../about/introduction.rst:9
+#, fuzzy
 msgid ""
 "The UBports project was founded by Marius Gripsgard in 2015 and in its "
 "infancy was a place where developers could share ideas and educate each "
-"other in hopes of bringing the Ubuntu Touch platform to more and more "
-"devices."
+"other in hopes of bringing the Ubuntu Touch platform to more mobile devices."
 msgstr ""
 "Projekti UBports u themelua nga Marius Gripsgard në vitin 2015 dhe në fillim "
 "të tij ishte një vend ku zhvilluesit mund të ndajnë idetë dhe të ndihmojnë "
@@ -54,9 +55,9 @@ msgstr ""
 msgid ""
 "After Canonical suddenly announced `their plans to terminate support of "
 "Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-"
-"cloud-and-iot-rather-than-phone-and-convergence/>`_ in April of 2017, "
-"UBports and its sister projects began work on the open-source code, "
-"maintaining and expanding its possibilities for the future."
+"cloud-and-iot-rather-than-phone-and-convergence/>`_ in April 2017, UBports "
+"and its sister projects began work on the open-source code, maintaining and "
+"expanding its possibilities for the future."
 msgstr ""
 "Pasi Canonical papritur 'ka mbaruar mbështetjen e saj për Ubuntu Touch "
 "<https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-"
@@ -69,13 +70,15 @@ msgid "About the Documentation"
 msgstr "Rreth dokumentacionit"
 
 #: ../../about/introduction.rst:16
+#, fuzzy
 msgid ""
 "This documentation is always improving thanks to the members of the UBports "
 "community. It is written in ReStructuredText and converted into this "
 "readable form by `Sphinx <http://www.sphinx-doc.org/en/stable/>`_, "
 "`ReCommonMark <http://recommonmark.readthedocs.io/en/latest/>`_, and `Read "
 "the Docs <https://readthedocs.io>`_. You can start contributing by checking "
-"out the :doc:`Documentation intro </contribute/documentation>`."
+"out the :doc:`Documentation contribution document </contribute/"
+"documentation>`."
 msgstr ""
 "Ky dokumentacion po përmirësohet vazhdimisht, falë shumë anëtarëve të "
 "komunitetit. Është shkruar në ReStructuredText dhe sphinx <http://www.sphinx-"
@@ -399,10 +402,11 @@ msgstr ""
 "thotë se një zhvillues i ka caktuar problemit."
 
 #: ../../about/process/issue-tracking.rst:41
+#, fuzzy
 msgid ""
 "**Quality Assurance**: The patch is completed and has passed initial "
 "testing. The QA team will now review it and provide feedback. If problems "
-"are found, the issue is moved back to “Accepted”."
+"are found, the issue is moved back to \"Accepted\"."
 msgstr ""
 "** Sigurimi i Cilësisë **: Korrigjimi është i plotë dhe ka kaluar testimin "
 "fillestar. Ekipi i QA do t'i shqyrtojë ato në të gjitha pajisjet dhe do të "
@@ -421,12 +425,13 @@ msgstr ""
 "shkon mirë, në lirimin e ardhshëm të kanalit të qëndrueshëm."
 
 #: ../../about/process/issue-tracking.rst:43
+#, fuzzy
 msgid ""
 "**None (removed from the project)**: If the issue is open and labeled \"help "
 "wanted\", community contributions are required to resolve the issue. If it's "
 "closed, that means that either a patch has been released on the stable "
 "channel (a comment on the issue should link to the patch) or the issue has "
-"been rejected (labeled “wontfix”)."
+"been rejected (labeled \"wontfix\")."
 msgstr ""
 "** Asnjë (i hequr nga projekti) **: Nëse çështja është e hapur dhe etiketuar "
 "\"ndihmë e kërkuar\", kontributet e komunitetit janë të nevojshme për të "
@@ -517,14 +522,12 @@ msgstr ""
 
 #: ../../about/process/issue-tracking.rst:66
 msgid ""
-"**good first issue**: This issue is not critical and trivial to fix. It is "
-"reserved for new contributors as a place to start."
+"**good first issue**: The report contains instructions or hints required to "
+"fix it. It is an excellent place for someone new to learn about the project "
+"by fixing a real issue."
 msgstr ""
-"**good first issue**: Kjo çështje nuk është kritike dhe e parëndësishme për "
-"të rregulluar. Është e rezervuar për kontribuesit e rinj si vend për të "
-"filluar."
 
-#: ../../about/process/issue-tracking.rst:68
+#: ../../about/process/issue-tracking.rst:67
 msgid ""
 "**wontfix**: It does not make sense to fix this bug, since it will probably "
 "resolve itself, it will be too much work to fix it, it's not fixable, or an "
@@ -534,7 +537,7 @@ msgstr ""
 "sepse do të bënte shumë punë sepse nuk mund të përmirësohej ose një "
 "komponent themelor do të ndryshonte së shpejti."
 
-#: ../../about/process/issue-tracking.rst:72
+#: ../../about/process/issue-tracking.rst:71
 msgid ""
 "Additional special labels can be defined. As an example, here's the labels "
 "used in the Ubuntu Touch tracker:"
@@ -542,7 +545,7 @@ msgstr ""
 "Përveç kësaj, mund të përcaktohen edhe shënime të mëtejshme. Për shembull, "
 "këtu janë shënuesit që përdoren në Ubuntu Touch Tracker:"
 
-#: ../../about/process/issue-tracking.rst:75
+#: ../../about/process/issue-tracking.rst:74
 msgid ""
 "**critical (devel)**: This critical issue that only occurs on the devel "
 "channel is blocking the release of the next rc image."
@@ -550,7 +553,7 @@ msgstr ""
 "**critical (devel)**:Kjo çështje kritike që ndodh vetëm në kanalin e "
 "zhvillimit, po bllokon lirimin e imazhit të ardhshëm -rc."
 
-#: ../../about/process/issue-tracking.rst:77
+#: ../../about/process/issue-tracking.rst:76
 msgid ""
 "**critical (rc)**: This critical issue that only occurs on the devel and rc "
 "channel is blocking the release of the next stable release. Usually, issues "
@@ -562,7 +565,7 @@ msgstr ""
 "qëndrueshëm. Si rregull, probleme të tilla shënohen me to, të cilat thjesht "
 "nuk mund të zhvendosen në një tjetër publikim dhe prandaj vonojnë botimin."
 
-#: ../../about/process/issue-tracking.rst:81
+#: ../../about/process/issue-tracking.rst:80
 msgid ""
 "**device: [DEVICE CODENAME]**: This issue affects only the specified "
 "device(s)."
@@ -570,7 +573,7 @@ msgstr ""
 "**device: [DEVICE CODENAME]**: Ky problem ndikon vetëm në pajisjet e "
 "specifikuara."
 
-#: ../../about/process/issue-tracking.rst:83
+#: ../../about/process/issue-tracking.rst:82
 msgid ""
 "**team: [TEAM NAME]**: This issue is falls under the responsibility of a "
 "specific team (hal, middleware, UI)."
@@ -578,7 +581,7 @@ msgstr ""
 "**team: [TEAM NAME]**: Kjo çështje bie nën përgjegjësinë e ekipit të "
 "specifikuar (hal, middleware, UI)."
 
-#: ../../about/process/issue-tracking.rst:86
+#: ../../about/process/issue-tracking.rst:85
 msgid ""
 "If a repository that tracks issues locally defines it's own labels, they "
 "should be documented in the README.md."
@@ -586,11 +589,11 @@ msgstr ""
 "Nëse një depo që gjurmon çështjet në nivel lokal përcakton etiketat e veta, "
 "ato duhet të dokumentohen në README.md."
 
-#: ../../about/process/issue-tracking.rst:90
+#: ../../about/process/issue-tracking.rst:89
 msgid "Milestones"
 msgstr "Historiku"
 
-#: ../../about/process/issue-tracking.rst:92
+#: ../../about/process/issue-tracking.rst:91
 msgid ""
 "Milestones are used for stable OTA releases only. In general, milestones for "
 "the work-in-progress OTA and the next OTA are created. The ETA is set, once "
@@ -604,11 +607,11 @@ msgstr ""
 "javë nga data e fillimit), por mund të përshtatet më pas. Shihni: doc: "
 "`release-schedule <release-schedule>` për më shumë informacion."
 
-#: ../../about/process/issue-tracking.rst:99
+#: ../../about/process/issue-tracking.rst:98
 msgid "Assignees"
 msgstr "Pranuesit"
 
-#: ../../about/process/issue-tracking.rst:101
+#: ../../about/process/issue-tracking.rst:100
 msgid ""
 "To make it transparent who's working on an issue, the developer should be "
 "assigned. This also allows the use of GitHub's global filtering as a type of "
@@ -622,7 +625,7 @@ msgstr ""
 "mariogrip në @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen"
 "+org%3Aubports+assignee%3Amariogrip&type=>` _."
 
-#: ../../about/process/issue-tracking.rst:105
+#: ../../about/process/issue-tracking.rst:104
 msgid ""
 "Developers are encouraged to keep their list short and update the status of "
 "their issues."
@@ -630,15 +633,15 @@ msgstr ""
 "Zhvilluesit inkurajohen të mbajnë listën e tyre të shkurtër dhe të "
 "përditësojnë statusin e çështjeve të tyre."
 
-#: ../../about/process/issue-tracking.rst:108
+#: ../../about/process/issue-tracking.rst:107
 msgid "Examples"
 msgstr "Shembuj"
 
-#: ../../about/process/issue-tracking.rst:111
+#: ../../about/process/issue-tracking.rst:110
 msgid "Bug Lifecycle"
 msgstr "Ciklit të jetës së Bug"
 
-#: ../../about/process/issue-tracking.rst:114
+#: ../../about/process/issue-tracking.rst:113
 msgid ""
 "The same principle applies to feature requests. The only difference is, that "
 "instead of the label **bug**, the label **enhancement** is used. The **needs "
@@ -648,13 +651,13 @@ msgstr ""
 "që në vend të etiketës ** bug **, përdoret etiketa ** **. Etiketa ** e "
 "konfirmimit ** nuk është e aplikueshme për kërkesat e funksioneve."
 
-#: ../../about/process/issue-tracking.rst:118
+#: ../../about/process/issue-tracking.rst:117
 msgid "A *User* files a new bug using the issue-template."
 msgstr ""
 "Një  *përdorues * raporton një bug të ri duke përdorur shabllonin e "
 "problemit."
 
-#: ../../about/process/issue-tracking.rst:119
+#: ../../about/process/issue-tracking.rst:118
 msgid ""
 "The *QA-Team* adds the label **needs confirmation** and tries to work with "
 "the user to confirm the bug and add potentially missing information to the "
@@ -669,7 +672,7 @@ msgstr ""
 "në pritje të listës ** të projektit dhe etiketa duhet konfirmimi të "
 "zëvendësohet me ** insekt**."
 
-#: ../../about/process/issue-tracking.rst:120
+#: ../../about/process/issue-tracking.rst:119
 msgid ""
 "The affected *Team* will triage the issue and either reject (label "
 "**wontfix**, close and remove from the project) or accept the issue. The "
@@ -691,12 +694,12 @@ msgstr ""
 "parëndësishme për të rregulluar, etiketa ** ** broshurë e mirë ** mund të "
 "shtohet gjithashtu."
 
-#: ../../about/process/issue-tracking.rst:121
+#: ../../about/process/issue-tracking.rst:120
 #, fuzzy
 msgid ""
 "Once a *developer* is assigned and starts working on the issue, it is moved "
-"to “In Development”. As soon as they have something to show for, the issue "
-"is closed and automatically moved to “Quality Assurance” for feedback from "
+"to \"In Development\". As soon as they have something to show for, the issue "
+"is closed and automatically moved to \"Quality Assurance\" for feedback from "
 "the QA team. If necessary, the developer will provide hints on how to test "
 "his patch in a comment on the issue."
 msgstr ""
@@ -706,11 +709,12 @@ msgstr ""
 "reagime nga ekipi i QA. Nëse është e nevojshme, zhvilluesi do të japë lë të "
 "kuptohet se si të testojë patch-in e tij në një koment mbi çështjen."
 
-#: ../../about/process/issue-tracking.rst:122
+#: ../../about/process/issue-tracking.rst:121
+#, fuzzy
 msgid ""
 "The *QA-Team* tests the fix on all devices and provides feedback to the "
 "developer. If problems are found, the issue is re-opened and goes back to "
-"“Accepted”, else it’s moved to “Release Candidate” to be included in the "
+"\"Accepted\", else it’s moved to \"Release Candidate\" to be included in the "
 "next release."
 msgstr ""
 "* QA-Team * teston rregullimin në të gjitha pajisjet dhe jep reagime për "
@@ -718,7 +722,7 @@ msgstr ""
 "\"Pranohet\", përndryshe është zhvendosur në \"Çlirimin e kandidatit\" për "
 "t'u përfshirë në lirimin e ardhshëm."
 
-#: ../../about/process/issue-tracking.rst:123
+#: ../../about/process/issue-tracking.rst:122
 msgid ""
 "If not done already, the issue is added to the next milestone. Once the "
 "milestone is released, the issue is removed from the project board."
@@ -853,3 +857,11 @@ msgstr ""
 "kritike janë të mbyllura, ETA mund të duhet të lëvizin duke bërë një hamend "
 "të arsimuar kur të gjitha çështjet mund të trajtohen. Nëse ka shumë çështje "
 "të shtuara në një moment historik, ato hiqen ose shtohen në momentin tjetër."
+
+#~ msgid ""
+#~ "**good first issue**: This issue is not critical and trivial to fix. It "
+#~ "is reserved for new contributors as a place to start."
+#~ msgstr ""
+#~ "**good first issue**: Kjo çështje nuk është kritike dhe e parëndësishme "
+#~ "për të rregulluar. Është e rezervuar për kontribuesit e rinj si vend për "
+#~ "të filluar."
