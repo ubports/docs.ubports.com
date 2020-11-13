@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"POT-Creation-Date: 2020-10-28 12:29-0500\n"
 "PO-Revision-Date: 2020-07-27 12:31+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs/"
@@ -53,9 +53,10 @@ msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
 msgstr "I al  MacOS amb `Homebrew <https://brew.sh>`_::"
 
 #: ../../userguide/advanceduse/adb.rst:24
+#, fuzzy
 msgid ""
-"For Windows, grab the command-line tools only package from `here <https://"
-"developer.android.com/studio/index.html#downloads>`_."
+"For Windows, grab the command-line tools only package from `developer."
+"android.com <https://developer.android.com/studio/index.html#downloads>`_."
 msgstr ""
 "Per a Windows, agafeu el paquet sols amb eines de línia d'ordres  d' `aquí "
 "<https://developer.android.com/studio/index.html#downloads>`_."
@@ -107,11 +108,28 @@ msgstr ""
 "dispositiu adjunts» i una línia en blanc), podeu usar l'ADB correctament. Si "
 "no n'hi ha, continueu a la secció següent."
 
-#: ../../userguide/advanceduse/adb.rst:42
+#: ../../userguide/advanceduse/adb.rst:41
+msgid "Adb shell commands::"
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:46
+msgid "Additional Adb commands::"
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:51
+#, fuzzy
+msgid ""
+"For more ADB commands refer to the `official documentation <https://"
+"developer.android.com/studio/command-line/adb>`_."
+msgstr ""
+"Per a Windows, agafeu el paquet sols amb eines de línia d'ordres  d' `aquí "
+"<https://developer.android.com/studio/index.html#downloads>`_."
+
+#: ../../userguide/advanceduse/adb.rst:54
 msgid "Add hardware IDs"
 msgstr "Addició d'identificadors de maquinari"
 
-#: ../../userguide/advanceduse/adb.rst:44
+#: ../../userguide/advanceduse/adb.rst:56
 msgid ""
 "ADB doesn't always know what devices on your computer it should or should "
 "not talk to. You can manually add the devices that it does not know how to "
@@ -121,7 +139,7 @@ msgstr ""
 "els hauria de parlar. Podeu afegir manualment els dispositiu amb els quals "
 "no sap com parlar."
 
-#: ../../userguide/advanceduse/adb.rst:46
+#: ../../userguide/advanceduse/adb.rst:58
 msgid ""
 "Just run the command for your selected device if it's below. Then, run ``adb "
 "kill-server`` followed by the command you were initially trying to run."
@@ -130,11 +148,11 @@ msgstr ""
 "sota. A continuació, executeu ``adb kill-server`` seguit de l'ordre que "
 "intentàveu executar inicialment."
 
-#: ../../userguide/advanceduse/adb.rst:48
+#: ../../userguide/advanceduse/adb.rst:60
 msgid "Fairphone 2::"
 msgstr "Fairphone 2::"
 
-#: ../../userguide/advanceduse/adb.rst:52
+#: ../../userguide/advanceduse/adb.rst:64
 msgid "Oneplus One::"
 msgstr "Oneplus One::"
 
@@ -372,7 +390,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:32
 #: ../../userguide/advanceduse/screencasting.rst:72
-#: ../../userguide/advanceduse/ssh.rst:53
+#: ../../userguide/advanceduse/ssh.rst:57
 msgid "References"
 msgstr "Referències"
 
@@ -584,23 +602,27 @@ msgstr ""
 "connexió adb per realitzar els passos següents al vostre telefon.::"
 
 #: ../../userguide/advanceduse/ssh.rst:38
-msgid "Now start the ssh server::"
-msgstr "Inicieu ara el servidor ssh::"
+msgid "Now start the ssh server. If you are using an Android-based phone::"
+msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:44
+#: ../../userguide/advanceduse/ssh.rst:42
+msgid "If you are using a Linux-based phone (like the Pinephone)::"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:48
 msgid "Connect"
 msgstr "Connecteu"
 
-#: ../../userguide/advanceduse/ssh.rst:46
+#: ../../userguide/advanceduse/ssh.rst:50
 msgid "Now everything is set up and you can use ``ssh`` ::"
 msgstr "Ara tot està configurat i podeu usar ``ssh`` ::"
 
-#: ../../userguide/advanceduse/ssh.rst:50
+#: ../../userguide/advanceduse/ssh.rst:54
 msgid "Of course you can now also use ``scp`` or ``sshfs`` to transfer files."
 msgstr ""
 "Per suposat que podeu usar també ``scp`` o ``sshfs``per transferir fitxers."
 
-#: ../../userguide/advanceduse/ssh.rst:55
+#: ../../userguide/advanceduse/ssh.rst:59
 msgid ""
 "`askubuntu.com: How can I access my Ubuntu phone over ssh? <https://"
 "askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-over-"
@@ -610,7 +632,7 @@ msgstr ""
 "anglès) <https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-"
 "phone-over-ssh/599041#599041>`_"
 
-#: ../../userguide/advanceduse/ssh.rst:56
+#: ../../userguide/advanceduse/ssh.rst:60
 msgid ""
 "`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the "
 "ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5-"
@@ -624,25 +646,30 @@ msgstr ""
 msgid "Switch release channels"
 msgstr "Commutació dels canals d'alliberament"
 
+#: ../../userguide/advanceduse/switchchannel.rst:3
+msgid ""
+"You can change the release channel using the system settings. The 3 existing "
+"channels are stable, rc (release candidate) and devel (nightly builds). For "
+"more info, see :doc:`the release schedule </about/process/release-schedule>`."
+msgstr ""
+
 #: ../../userguide/dailyuse/anbox.rst:2
-msgid "Run Android applications"
+#, fuzzy
+msgid "Android apps"
 msgstr "Execució d'aplicacions de l'Android"
 
 #: ../../userguide/dailyuse/anbox.rst:4
+#, fuzzy
 msgid ""
 "`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility "
-"layer that allows you to run Android applications on GNU/Linux operating "
-"systems."
+"layer that allows you to run Android apps on GNU/Linux operating systems "
+"such as UBports."
 msgstr ""
 "L'`Anbox <https://anbox.io>`_ és un contenidor mínim de l'Android i una capa "
 "de compatibilitat que us permet executar-ne aplicacions de l'Android a "
 "sistemes operatius GNU/Linux."
 
 #: ../../userguide/dailyuse/anbox.rst:7
-msgid "Anbox is in early development"
-msgstr "L'Anbox està en una etapa inicial de desenvoupament"
-
-#: ../../userguide/dailyuse/anbox.rst:8
 msgid ""
 "When \"host\" is used in this document, it refers to another device which "
 "you can connect your Ubuntu Touch device to. Your host device must have "
@@ -652,51 +679,60 @@ msgstr ""
 "podeu connectar el vostre dispositiu Ubuntu Touch. El dispositiu amfitrió ha "
 "de tenir instal·lats ``adb`` i ``fastboot``."
 
-#: ../../userguide/dailyuse/anbox.rst:11
+#: ../../userguide/dailyuse/anbox.rst:10
+msgid ""
+"You will need to execute commands on your Ubuntu Touch device to install "
+"Anbox and APKs. You can do that by using the terminal application, but it is "
+"easier to use ``adb shell`` or :doc:`set up ssh </userguide/advanceduse/"
+"ssh>` to access your phone from your host."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:13
 msgid "Supported devices"
 msgstr "Dispositius admesos"
 
-#: ../../userguide/dailyuse/anbox.rst:13
+#: ../../userguide/dailyuse/anbox.rst:15
 msgid "Make sure your device is supported:"
 msgstr "Assegureu-vos que el vostre dispositiu té suport:"
 
-#: ../../userguide/dailyuse/anbox.rst:15
+#: ../../userguide/dailyuse/anbox.rst:17
 msgid ""
 "Meizu Pro 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)"
 msgstr ""
 "Meizu Pro 5 (nom en codi: ``turbo``, nom de la partició d'arrencada: "
 "``bootimg``)"
 
-#: ../../userguide/dailyuse/anbox.rst:16
+#: ../../userguide/dailyuse/anbox.rst:18
 msgid "Fairphone 2 (codename: ``FP2``, name of the boot partition: ``boot``)"
 msgstr ""
 "Fairphone 2 (nom en codi: ``FP2``, nom de la partició d'arrencada: ``boot``)"
 
-#: ../../userguide/dailyuse/anbox.rst:17
-msgid "Oneplus one (codename: ``bacon``, name of the boot partition: ``boot``)"
+#: ../../userguide/dailyuse/anbox.rst:19
+#, fuzzy
+msgid "OnePlus One (codename: ``bacon``, name of the boot partition: ``boot``)"
 msgstr ""
 "Oneplus one (nom en codi: ``bacon``, nom de la partició d'arrencada: "
 "``boot``)"
 
-#: ../../userguide/dailyuse/anbox.rst:18
+#: ../../userguide/dailyuse/anbox.rst:20
 msgid ""
 "Nexus 5 (codename: ``hammerhead``, name of the boot partition: ``boot``)"
 msgstr ""
 "Nexus 5 (nom en codi: ``hammerhead``, nom de la partició d'arrencada: "
 "``boot``)"
 
-#: ../../userguide/dailyuse/anbox.rst:19
+#: ../../userguide/dailyuse/anbox.rst:21
 msgid "BQ M10 HD (codename: ``cooler``, name of the boot partition: ``boot``)"
 msgstr ""
 "BQ M10 HD (nom en codi: ``cooler``, nom de la partició d'arrencada: ``boot``)"
 
-#: ../../userguide/dailyuse/anbox.rst:20
+#: ../../userguide/dailyuse/anbox.rst:22
 msgid "BQ M10 FHD (codename: ``frieza``, name of the boot partition: ``boot``)"
 msgstr ""
 "BQ M10 FHD (nom en codi: ``frieza``, nom de la partició d'arrencada: "
 "``boot``)"
 
-#: ../../userguide/dailyuse/anbox.rst:22
+#: ../../userguide/dailyuse/anbox.rst:24
 msgid ""
 "You will need the device codename and the name of your boot partition for "
 "the installation."
@@ -704,26 +740,39 @@ msgstr ""
 "Us caldrà el nom de codi del dispositiu i el nom de la vostra partició "
 "d'arrencada per a la instal·lació."
 
-#: ../../userguide/dailyuse/anbox.rst:25
+#: ../../userguide/dailyuse/anbox.rst:27
 msgid "How to install"
 msgstr "Com instal·lar-ho"
 
-#: ../../userguide/dailyuse/anbox.rst:28
-msgid ""
-"Because this feature is in such an early stage of development, the "
-"installation is only recommended for experienced users."
-msgstr ""
-"Atès que aquesta funcionalitat està en un punt tan inicial de "
-"desenvolupament, sols es recomana la instal·lació als usuaris experimentats."
-
 #: ../../userguide/dailyuse/anbox.rst:30
+msgid "Installing Anbox is only recommended for experienced users."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:33
 msgid ""
-"Make sure your supported device runs on 16.04 (anbox doesn't work on 15.04)"
+"If you own a Meizu Pro 5, a BQ M10 HD or a BQ M10 FHD you need to flash a "
+"specific boot image. **You will need to re-flash that image after each "
+"Ubuntu Touch update** so when you update from OTA-10 to OTA-11 for example. "
+"Not doing so can put your phone into an unstable state. Only update your "
+"Ubuntu Touch device when you have a computer with you to re-flash that boot "
+"image."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:35
+#, fuzzy
+msgid ""
+"Make sure your supported device runs on 16.04 (Anbox doesn't work on 15.04)."
 msgstr ""
 "Assegureu-vos que el dispositiu admès executa 16.04 (l'anbox no funciona en "
 "15.04)"
 
-#: ../../userguide/dailyuse/anbox.rst:31
+#: ../../userguide/dailyuse/anbox.rst:36
+msgid ""
+"Be sure to have a `backup <https://askubuntu.com/questions/602850/how-do-i-"
+"backup-my-ubuntu-phone>`_ of the device."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:37
 msgid ""
 "Open a terminal on your host and set some device specific variables by "
 "running ``export CODENAME=\"turbo\" && export PARTITIONNAME=\"bootimg\"``, "
@@ -731,29 +780,32 @@ msgid ""
 "name of the boot partition for your device. See the above list."
 msgstr ""
 "Obriu una terminal a l'amfitrió i establiu variables específiques del "
-"dispositiu: ``export CODENAME=\"turbo\" && export PARTITIONNAME=\"bootimg\""
-"``; heu de reemplaçar les parts entre cometes respectivament amb el nom en "
+"dispositiu: ``export CODENAME=\"turbo\" && export PARTITIONNAME=\"bootimg"
+"\"``; heu de reemplaçar les parts entre cometes respectivament amb el nom en "
 "codi i el nom de la partició d'arrencada corresponent al vostre dispositiu. "
 "Vegeu la llista anterior."
 
-#: ../../userguide/dailyuse/anbox.rst:32
+#: ../../userguide/dailyuse/anbox.rst:38
 msgid "Activate developer mode on your device."
 msgstr "Activeu el mode de desenvolupament al vostre dispositiu."
 
-#: ../../userguide/dailyuse/anbox.rst:33
+#: ../../userguide/dailyuse/anbox.rst:39
+#, fuzzy
 msgid ""
 "Connect the device to your host and run the following commands from your "
-"host (same terminal that you ran the ``export`` command in)::"
+"host (same terminal you ran the ``export`` command in)::"
 msgstr ""
 "Connecteu el dispositiu a l'amfitrió i executeu-hi les ordres següents (la "
 "mateixa terminal a la qual heu executat l'ordre ``export``)::"
 
-#: ../../userguide/dailyuse/anbox.rst:43
-msgid "Wait for the device to reboot, then run from your host::"
-msgstr "Espereu que el dispositiu es reiniciï i després executeu a l'amfitrió::"
+#: ../../userguide/dailyuse/anbox.rst:49
+#, fuzzy
+msgid "Wait for the device to reboot, then run this from your host::"
+msgstr ""
+"Espereu que el dispositiu es reiniciï i després executeu a l'amfitrió::"
 
-#: ../../userguide/dailyuse/anbox.rst:52 ../../userguide/dailyuse/anbox.rst:66
-#: ../../userguide/dailyuse/anbox.rst:87
+#: ../../userguide/dailyuse/anbox.rst:58 ../../userguide/dailyuse/anbox.rst:78
+#: ../../userguide/dailyuse/anbox.rst:98
 msgid ""
 "Done! You might have to refresh the apps scope (pull down from the center of "
 "the screen and release) for the new Android apps to show up."
@@ -762,51 +814,62 @@ msgstr ""
 "a la part inferior des del centre de la pantalla i deixeu anar) perquè les "
 "aplicacions Android noves s'hi mostren."
 
-#: ../../userguide/dailyuse/anbox.rst:55
-msgid "How to install new apks"
+#: ../../userguide/dailyuse/anbox.rst:61
+msgid ""
+"You now have an adb server running inside your phone. This guide asks you to "
+"run some ``adb`` commands, sometime on your computer, sometime on your "
+"phone. Carefully check on which device you are!"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:63
+msgid ""
+"You can check that adb server is correctly running locally on your phone by "
+"opening the terminal app and enter ``adb devices``. You should see something "
+"like::"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:70
+#, fuzzy
+msgid "How to install new APKs"
 msgstr "Com instal·lar APK nous"
 
-#: ../../userguide/dailyuse/anbox.rst:57
+#: ../../userguide/dailyuse/anbox.rst:72
+#, fuzzy
 msgid ""
-"Copy the apk to ``/home/phablet/Downloads``, then run the following from "
+"Copy the APK to ``/home/phablet/Downloads``, then run the following from "
 "your host::"
 msgstr ""
 "Copieu l'APK a ``/home/phablet/Baixades`` i, tot seguit, executeu aquesta "
 "ordre a l'amfitrió::"
 
-#: ../../userguide/dailyuse/anbox.rst:69
+#: ../../userguide/dailyuse/anbox.rst:81
 msgid "Keep your apps up to date"
 msgstr "Actualització constant de les aplicacions"
 
-#: ../../userguide/dailyuse/anbox.rst:71
+#: ../../userguide/dailyuse/anbox.rst:83
+#, fuzzy
 msgid ""
-"To keep your apps running the lasted version you can make use of F-Droid or "
-"ApkTrack. If you like to install one of the above apps you can find them "
-"here:"
+"To keep your apps up to date you can use of F-Droid or ApkTrack. If you want "
+"to install any of the above apps you can find them here:"
 msgstr ""
 "Podeu fer servir l'F-Droid o l'ApkTrack per a utilitzar sempre les darreres "
 "versions de les vostres aplicacions. Si voleu instal·lar una d'aquestes "
 "aplicacions, les trobareu aquí:"
 
-#: ../../userguide/dailyuse/anbox.rst:73
+#: ../../userguide/dailyuse/anbox.rst:85
 msgid "F-Droid: https://f-droid.org/"
 msgstr "F-Droid: https://f-droid.org/"
 
-#: ../../userguide/dailyuse/anbox.rst:74
+#: ../../userguide/dailyuse/anbox.rst:86
 msgid "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
 msgstr "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
 
-#: ../../userguide/dailyuse/anbox.rst:77
-msgid "How to uninstall applications"
+#: ../../userguide/dailyuse/anbox.rst:89
+#, fuzzy
+msgid "How to uninstall apps"
 msgstr "Com desinstal·lar aplicacions"
 
-#: ../../userguide/dailyuse/anbox.rst:79
-msgid "This is a example of the app-list installed apps on your device"
-msgstr ""
-"Això és un exemple de les aplicacions provinents d'una llista que hi ha "
-"instal·lades al dispositiu"
-
-#: ../../userguide/dailyuse/anbox.rst:80
+#: ../../userguide/dailyuse/anbox.rst:91
 msgid ""
 "To uninstall apps, run ``adb uninstall [APP_ID]`` from your Ubuntu Touch "
 "device::"
@@ -814,11 +877,25 @@ msgstr ""
 "Per a desinstal·lar aplicacions, executeu ``adb uninstall [APP_ID]`` des del "
 "dispositiu Ubuntu Touch::"
 
-#: ../../userguide/dailyuse/anbox.rst:90
+#: ../../userguide/dailyuse/anbox.rst:101
+msgid "Access Android storage"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:103
+msgid ""
+"Android storage is located at ``/home/phablet/anbox-data/data/media/0``."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:105
+msgid ""
+"Links to android libraries can be made in their respective XDG counterparts::"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:114 ../../userguide/install.rst:22
 msgid "Troubleshooting"
 msgstr "Solució de problemes"
 
-#: ../../userguide/dailyuse/anbox.rst:92
+#: ../../userguide/dailyuse/anbox.rst:116
 msgid ""
 "If installing ``anbox-ubuntu-touch`` or ``android-tools-adb`` on the device "
 "fails with an error about unsufficient space, try this::"
@@ -826,7 +903,7 @@ msgstr ""
 "Si instal·lar ``anbox-ubuntu-touch`` o ``android-tools-adb`` al dispositiu "
 "falla amb un error d'espai insuficient, proveu de fer el següent::"
 
-#: ../../userguide/dailyuse/anbox.rst:103
+#: ../../userguide/dailyuse/anbox.rst:127
 msgid ""
 "When you want to install an apk but get the error ``Invalid APK file`` that "
 "error could also mean \"file not found\""
@@ -834,13 +911,15 @@ msgstr ""
 "Si voleu instal·lar un APK però rebeu l'error ``Fitxer APK no vàlid``, això "
 "pot significar també «fitxer no trobat»"
 
-#: ../../userguide/dailyuse/anbox.rst:105
-msgid "check that you typed the file name correctly"
+#: ../../userguide/dailyuse/anbox.rst:129
+#, fuzzy
+msgid "Check that you typed the file name correctly"
 msgstr "cercioreu-vos que heu escrit el nom del fitxer correctament"
 
-#: ../../userguide/dailyuse/anbox.rst:106
+#: ../../userguide/dailyuse/anbox.rst:130
+#, fuzzy
 msgid ""
-"if the apk does not reside in the current folder where you execute adb, you "
+"If the APK does not reside in the current folder where you execute adb, you "
 "have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` "
 "instead of just ``my-app.apk``"
 msgstr ""
@@ -848,17 +927,17 @@ msgstr ""
 "ne el camí complet, p. ex., ``/home/phablet/Baixades/la-meva-apli.apk`` en "
 "lloc de ``la-meva-apli.apk``"
 
-#: ../../userguide/dailyuse/anbox.rst:110
+#: ../../userguide/dailyuse/anbox.rst:134
 msgid "Reporting bugs"
 msgstr "Informació d'errors"
 
-#: ../../userguide/dailyuse/anbox.rst:112
+#: ../../userguide/dailyuse/anbox.rst:136
 #, fuzzy
 msgid ""
 "Please :doc:`report any bugs </contribute/bugreporting>` you come across. "
 "Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch "
 "tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with "
-"anbox are reported on `our downstream fork <https://github.com/ubports/anbox/"
+"Anbox are reported on `our downstream fork <https://github.com/ubports/anbox/"
 "issues>`_. Thank you!"
 msgstr ""
 "Si us plau :doc:`informeu qualsevol error </contribute/bugreporting>` que "
@@ -892,15 +971,9 @@ msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:6
 msgid ""
-"To display and launch applications you need the *Desktop Apps Scope* which "
-"is available in the `Open Store <https://open-store.io/app/libertine-scope."
-"ubuntu>`_. To install applications you need to use the commandline as "
-"described below."
+"To install applications you may use the phone's *Settings* interface or you "
+"may use the command line as described further below."
 msgstr ""
-"Per a mostrar i iniciar aplicacions us cal la «Lent d'aplicacions "
-"d'escriptori» que està disponible a l'`Open Store <https://open-store.io/app/"
-"libertine-scope.ubuntu>`_. Per a instal·lar aplicacions us cal usar la línia "
-"d'ordres com s'explica a sota."
 
 #: ../../userguide/dailyuse/libertine.rst:9
 msgid "Manage containers"
@@ -911,21 +984,45 @@ msgid "Create a container"
 msgstr "Creació d'un contenidor"
 
 #: ../../userguide/dailyuse/libertine.rst:14
+#, fuzzy
 msgid ""
-"The first step is to create a container where applications can be installed::"
+"The first step is to create a container where applications can be installed:"
 msgstr ""
 "El primer pas és crear un contenidor on es puguin instal·lar aplicacions::"
 
+#: ../../userguide/dailyuse/libertine.rst:16
+msgid ""
+"Open Settings and scroll down to *Libertine* under the *System* sub-heading."
+msgstr ""
+
 #: ../../userguide/dailyuse/libertine.rst:18
+msgid ""
+"Tap *Libertine* to get to the *Manage Libertine Containers* sub-menu. If you "
+"have other containers already installed, they will be visible here. Tap the "
+"+ sign at the upper right to add a container."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:20
+msgid ""
+"The *Container Options* dialog box will open asking you to enter a container "
+"name and password if desired. Confirm your entries by tapping OK, and the "
+"container will be created."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:22
+msgid "To do this via command line follow these steps::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:26
 msgid "You can add extra options such as:"
 msgstr "Podeu afegir opcions addicionals com ara:"
 
-#: ../../userguide/dailyuse/libertine.rst:20
+#: ../../userguide/dailyuse/libertine.rst:28
 msgid "``-n name`` name is a more user friendly name of the container"
 msgstr ""
 "``-n name`` name (nom) és un nom del contenidor més amigable per l'usuari"
 
-#: ../../userguide/dailyuse/libertine.rst:21
+#: ../../userguide/dailyuse/libertine.rst:29
 msgid ""
 "``-t type`` type can be either ``chroot`` or ``lxc``. Default is ``chroot`` "
 "and is compatible with every device. If the kernel of your device supports "
@@ -935,7 +1032,7 @@ msgstr ""
 "és ``chroot`` i és compatiible amb tots els dispositius. Si el nucli del "
 "vostre dispositiu li dóna suport aleshores se suggereix ``lxc``."
 
-#: ../../userguide/dailyuse/libertine.rst:23
+#: ../../userguide/dailyuse/libertine.rst:31
 msgid ""
 "The creating process can take some time, due to the size of the container "
 "(some hundred of megabytes)."
@@ -943,10 +1040,11 @@ msgstr ""
 "El procés de creació pot portar un cert temps, a causa de la mida del "
 "contenidor (algunes centenars de megabytes)."
 
-#: ../../userguide/dailyuse/libertine.rst:26
+#: ../../userguide/dailyuse/libertine.rst:34
+#, fuzzy
 msgid ""
 "The ``create`` command shown above cannot be run directly in the terminal "
-"app, due apparmor restrictions. You can run it from another device using "
+"app, due to apparmor restrictions. You can run it from another device using "
 "either ``adb`` or ``ssh`` connection. Alternatively, you can run it from the "
 "terminal app using a loopback ssh connection running this command: ``ssh "
 "localhost``."
@@ -957,41 +1055,80 @@ msgstr ""
 "``ssh``. Alternativament, podeu executar-la des de l'aplicació de terminal "
 "usant una connexió ssh loopback executant l'ordre: ``ssh localhost``."
 
-#: ../../userguide/dailyuse/libertine.rst:29
+#: ../../userguide/dailyuse/libertine.rst:37
 msgid "List containers"
 msgstr "Fer una llista de contenidors"
 
-#: ../../userguide/dailyuse/libertine.rst:31
-#, fuzzy
-msgid "To list all containers created run::"
-msgstr "Per fer una llista de tots els contenidors executeu:"
+#: ../../userguide/dailyuse/libertine.rst:39
+msgid ""
+"Use the *Settings Manage Libertine Containers* sub-menu to list all the "
+"containers you have created on the device."
+msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:36
+#: ../../userguide/dailyuse/libertine.rst:41
+msgid "You can also use the command line. Run::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:46
 msgid "Destroy a container"
 msgstr "Destrucció d'un contenidor"
 
-#: ../../userguide/dailyuse/libertine.rst:42
+#: ../../userguide/dailyuse/libertine.rst:52
 msgid "Manage applications"
 msgstr "Gestió d'aplicacions"
 
-#: ../../userguide/dailyuse/libertine.rst:44
-#, fuzzy
-msgid "Once a container is set up, you can list the installed applications::"
+#: ../../userguide/dailyuse/libertine.rst:54
+msgid ""
+"Once a container is set up, the installed applications are available in the "
+"app drawer. You can also tap the name of the container in the *Manage "
+"Libertine Containers* menu."
 msgstr ""
-"Un cop heu configurat un contenidor, podeu fer una llista de les aplicacions "
-"instal·lades:"
 
-#: ../../userguide/dailyuse/libertine.rst:48
+#: ../../userguide/dailyuse/libertine.rst:56
+msgid "You can also list them via command line::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:61
 #, fuzzy
-msgid "Install a package::"
+msgid "Install a package"
 msgstr "Instal·lació d'un paquet:"
 
-#: ../../userguide/dailyuse/libertine.rst:52
+#: ../../userguide/dailyuse/libertine.rst:63
+msgid ""
+"From the apps list in the *Manage Libertine Containers* menu tap the + sign "
+"to get a dialog box to add a package."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:65
+msgid ""
+"Enter the package name if you know it. Otherwise you can search the archives "
+"for a package. You can make this process easier by making the *Lubuntu "
+"Software Center* your first package install. Being a desktop app, you will "
+"need to use the *Libertine Tweak Tool* in the *Open Store* to make the text "
+"large enough to read on a mobile device."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:67
+msgid "Packages may also be installed via command line::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:72
 #, fuzzy
-msgid "Remove a package::"
+msgid "Remove a package"
 msgstr "Eliminació d'un paquet:"
 
-#: ../../userguide/dailyuse/libertine.rst:57
+#: ../../userguide/dailyuse/libertine.rst:74
+msgid ""
+"On the package list, within the container (*System Settings* > *Libertine* > "
+"*Manage Libertine Containers* > *CONTAINER NAME*), swipe right on the "
+"package you want to remove to reveal the option to remove the package."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:76
+msgid "Or you can remove the package via the command line::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:81
 msgid ""
 "If you have more than one container, then you can use the option ``-i "
 "CONTAINER-IDENTIFIER`` to specify for which container you want to perform an "
@@ -1001,47 +1138,58 @@ msgstr ""
 "IDENTIFIER`` per especificar per a quin contenidor voleu realitzar una "
 "operació."
 
-#: ../../userguide/dailyuse/libertine.rst:61
+#: ../../userguide/dailyuse/libertine.rst:84
+#, fuzzy
+msgid "Run desktop application"
+msgstr "Execució d'aplicacions d'escriptori"
+
+#: ../../userguide/dailyuse/libertine.rst:86
+msgid ""
+"Run it from the app menu like any other app. To start a graphical "
+"application from the command line, for example ``gedit``, run in a terminal::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:92
 msgid "Files"
 msgstr "Fitxers"
 
-#: ../../userguide/dailyuse/libertine.rst:63
+#: ../../userguide/dailyuse/libertine.rst:94
 msgid "Libertine applications do have access to these folders:"
 msgstr "Les aplicacions del Libertine tenen accés a les carpetes següents:"
 
-#: ../../userguide/dailyuse/libertine.rst:65
+#: ../../userguide/dailyuse/libertine.rst:96
 msgid "Documents"
 msgstr "Documents"
 
-#: ../../userguide/dailyuse/libertine.rst:66
+#: ../../userguide/dailyuse/libertine.rst:97
 msgid "Music"
 msgstr "Música"
 
-#: ../../userguide/dailyuse/libertine.rst:67
+#: ../../userguide/dailyuse/libertine.rst:98
 msgid "Pictures"
 msgstr "Imatges"
 
-#: ../../userguide/dailyuse/libertine.rst:68
+#: ../../userguide/dailyuse/libertine.rst:99
 msgid "Downloads"
 msgstr "Descàrregues"
 
-#: ../../userguide/dailyuse/libertine.rst:69
+#: ../../userguide/dailyuse/libertine.rst:100
 msgid "Videos"
 msgstr "Vídeos"
 
-#: ../../userguide/dailyuse/libertine.rst:72
+#: ../../userguide/dailyuse/libertine.rst:103
 msgid "Tips"
 msgstr "Consells"
 
-#: ../../userguide/dailyuse/libertine.rst:75
+#: ../../userguide/dailyuse/libertine.rst:106
 msgid "Locations"
 msgstr "Ubicacions"
 
-#: ../../userguide/dailyuse/libertine.rst:77
+#: ../../userguide/dailyuse/libertine.rst:108
 msgid "For every container you create there will be two directories created:"
 msgstr "Per cada contenidor que creeu es crearan dos directoris:"
 
-#: ../../userguide/dailyuse/libertine.rst:79
+#: ../../userguide/dailyuse/libertine.rst:110
 msgid ""
 "A root directory ``~/.cache/libertine-container/CONTAINER-IDENTIFIER/rootfs/"
 "`` and"
@@ -1049,7 +1197,7 @@ msgstr ""
 "Un directori arrel  ``~/.cache/libertine-container/CONTAINER-IDENTIFIER/"
 "rootfs/`` i"
 
-#: ../../userguide/dailyuse/libertine.rst:80
+#: ../../userguide/dailyuse/libertine.rst:111
 msgid ""
 "a user directory ``~/.local/share/libertine-container/user-data/CONTAINER-"
 "IDENTIFIER/``"
@@ -1057,18 +1205,18 @@ msgstr ""
 "un directori d'usuari ``~/.local/share/libertine-container/user-data/"
 "CONTAINER-IDENTIFIER/``"
 
-#: ../../userguide/dailyuse/libertine.rst:83
+#: ../../userguide/dailyuse/libertine.rst:114
 msgid "Shell access"
 msgstr "Accés a la consola"
 
-#: ../../userguide/dailyuse/libertine.rst:85
+#: ../../userguide/dailyuse/libertine.rst:116
 #, fuzzy
 msgid "There are 2 options for executing commands inside the container."
 msgstr ""
 "Per executar qualsevol ordre arbitrària com a root a dins del contenidor "
 "executeu:"
 
-#: ../../userguide/dailyuse/libertine.rst:87
+#: ../../userguide/dailyuse/libertine.rst:118
 msgid ""
 "**The first option** is based on ``libertine-container-manager exec``. It "
 "lets you run your commands as root. The drawback is that the container is "
@@ -1076,43 +1224,43 @@ msgid ""
 "(Documents, Music, ...) are not mounted <https://askubuntu.com/"
 "questions/831830/libertine-terminal-applications-how-to-access-to-the-real-"
 "home-dir#comment1273744_833984/>`_ i.e., the ``/home/phablet/`` directory is "
-"empty. Likewise the directory referenced in ``TMPDIR`` is not available what "
-"may lead to problems with software that tries to create temporary files or "
-"directories. You may use this option e.g., for installing packages."
+"empty. Likewise the directory referenced in ``TMPDIR`` is not available "
+"which may lead to problems with software that tries to create temporary "
+"files or directories. You may use this option e.g., for installing packages."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:90
-#: ../../userguide/dailyuse/libertine.rst:104
+#: ../../userguide/dailyuse/libertine.rst:121
+#: ../../userguide/dailyuse/libertine.rst:135
 #, fuzzy
 msgid "To execute a command you can use the following pattern::"
 msgstr ""
 "Per executar qualsevol ordre arbitrària com a root a dins del contenidor "
 "executeu:"
 
-#: ../../userguide/dailyuse/libertine.rst:94
-#: ../../userguide/dailyuse/libertine.rst:108
+#: ../../userguide/dailyuse/libertine.rst:125
+#: ../../userguide/dailyuse/libertine.rst:139
 msgid "For example run::"
 msgstr "Per exemple, executeu::"
 
-#: ../../userguide/dailyuse/libertine.rst:98
+#: ../../userguide/dailyuse/libertine.rst:129
 msgid "To get a shell into your container as ``root`` run::"
 msgstr ""
 "Per a obtenir una consola dins del contenidor com a ``root``, podeu "
 "executar::"
 
-#: ../../userguide/dailyuse/libertine.rst:102
+#: ../../userguide/dailyuse/libertine.rst:133
 msgid ""
 "**The second option** is based on ``libertine-launch``. It will execute your "
 "commands as user phablet in a completely set up container. So you may use "
 "this option to modify your files using installed packages."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:112
+#: ../../userguide/dailyuse/libertine.rst:143
 #, fuzzy
 msgid "To get a shell as user ``phablet`` run::"
 msgstr "Per obtenir una consola com a l'usuari ``phablet`` executeu:"
 
-#: ../../userguide/dailyuse/libertine.rst:117
+#: ../../userguide/dailyuse/libertine.rst:148
 msgid ""
 "When you launch bash in this way you will not get any specific feedback to "
 "confirm that you are now *inside* the container. You can check ``ls /`` to "
@@ -1124,11 +1272,50 @@ msgstr ""
 "per confirmar que esteu a dins del contenidor. La llista de ``ls /`` serà "
 "diferent a dins i a fora del contenidor."
 
-#: ../../userguide/dailyuse/libertine.rst:120
+#: ../../userguide/dailyuse/libertine.rst:151
+msgid "Accessing SD card"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:153
+msgid ""
+"In order to access your SD-card or any other part of the regular filesystem "
+"from inside your libertine container you must create a bind mount."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:155
+msgid "In order to add a bind mount use::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:159
+msgid ""
+"You can also make deep links in case you only want parts of your SD-card "
+"available in the container. In this case just the entire path to the "
+"directory you want to bind mount::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:163
+msgid ""
+"This will not allow the container access to any of the directories earlier "
+"in the path for anything other than accessing your mounted directory."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:165
+msgid ""
+"In order to use the SD-card as extra space for your container, make sure "
+"first to format it using ext4 or similar. There is a mis-feature in udisk2 "
+"that mounts SD-cards (showexec) that ensures only files ending in .bat, .exe "
+"or .com can be executed from the drive if it is (v)fat formatted. This has "
+"been changed in other distributions allowing any file to have execute "
+"priviliges, but not ubuntu. The reccomended workaround is to add a udev rule "
+"to control how to mount a card with a given id, but since the udev rules are "
+"on the read only port on touch, this is not possible."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:169
 msgid "Shortcuts"
 msgstr "Dreceres"
 
-#: ../../userguide/dailyuse/libertine.rst:122
+#: ../../userguide/dailyuse/libertine.rst:171
 msgid ""
 "If you want, you can add aliases for command line tools. Add lines like the "
 "following ones to your ``~/.bash_aliases``::"
@@ -1136,11 +1323,11 @@ msgstr ""
 "Si ho voleu, podeu afegir àlies per a les eines de consola. Afegiu línies "
 "com aquestes al vostre fitxer ``~/.bash_aliases``::"
 
-#: ../../userguide/dailyuse/libertine.rst:128
+#: ../../userguide/dailyuse/libertine.rst:177
 msgid "Background"
 msgstr "Explicació"
 
-#: ../../userguide/dailyuse/libertine.rst:130
+#: ../../userguide/dailyuse/libertine.rst:179
 msgid ""
 "A display server coordinates input and output of an operating system. Most "
 "Linux distributions today use the X server. Ubuntu Touch does not use X, "
@@ -1157,7 +1344,7 @@ msgstr ""
 "anomenada XMir resol això. El Libertine depèn del XMir per mostrar les "
 "aplicacions d'escriptori."
 
-#: ../../userguide/dailyuse/libertine.rst:132
+#: ../../userguide/dailyuse/libertine.rst:181
 msgid ""
 "Another challenge is that Ubuntu Touch system updates are released as OTA "
 "images. A consequence of this is that the root filesystem is read only. "
@@ -1170,17 +1357,317 @@ msgstr ""
 "sistema de fitxers de lectura i escriptura per permetre la instal·lació "
 "d'aplicacions d'escriptori regulars del Linux."
 
+#: ../../userguide/dailyuse/location.rst:2
+msgid "Using location services"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:4
+msgid ""
+"Location services in Ubuntu Touch allow apps to access your current "
+"location. Using this data, apps can `offer turn-by-turn navigation <https://"
+"open-store.io/app/navigator.costales>`__, `track your exercise paths "
+"<https://open-store.io/app/activitytracker.cwayne18>`__, `locate public "
+"transport near you <https://open-store.io/app/transport.zubozrout>`__, and "
+"more."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:6
+msgid ""
+"The location services built in to Ubuntu Touch are designed to protect your "
+"privacy -- you choose to permit or deny apps access to this data. Apps may "
+"only access your location data when the device screen is on and the app is "
+"in use."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:9
+msgid "Checking if location services are enabled"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:11
+msgid ""
+"The Location Indicator is displayed whenever location services are enabled. "
+"Normally, this indicator will appear to be dark."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:15
+msgid "The Location Indicator, showing location enabled but not in use"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:17
+msgid "If an app is accessing location data, the Location Indicator brightens."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:21
+msgid "The Location Indicator, showing location enabled and in use"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:26
+msgid "Accessing location services settings"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:28
+msgid ""
+"There are several ways to access settings related to location services in "
+"Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:31
+msgid "Open location quick settings"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:33
+msgid ""
+"The Location Indicator contains quick settings related to location services, "
+"including a switch to turn services on or off."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:37
+msgid ""
+"To access these settings, press on the Location Indicator and pull down "
+"toward the bottom of the screen."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:39
+msgid ""
+"If location services are disabled, you can access the location quick "
+"settings by pressing on any other indicator and pulling down. Then, scroll "
+"through the icons at the top of the screen to find Location. Select Location "
+"to open the quick settings."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:42
+msgid "Open location settings in the settings app"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:44
+msgid ""
+"The system settings app can be used to control location services. There are "
+"more controls in the system settings app than in the Location Indicator."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:48
+msgid ""
+"There are two ways to access location services controls in the system "
+"settings app."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:51
+#: ../../userguide/dailyuse/location.rst:71
+msgid "Quick settings"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:53
+msgid "`Open location quick settings`_, then select ``Location settings...``."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:56
+#: ../../userguide/dailyuse/location.rst:76
+msgid "System settings app"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:58
+msgid ""
+"Launch the ``System Settings`` app. Select ``Security & Privacy``, then "
+"select ``Location``."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:62
+msgid "Enabling or disabling location services"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:64
+msgid ""
+"If location services are on, apps which you have allowed access to your "
+"location data may request your current location. Location services are "
+"enabled by default on Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:66
+msgid ""
+"If location services are off, apps will not be able to access your current "
+"location."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:68
+msgid ""
+"There are several ways to enable or disable location services in Ubuntu "
+"Touch."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:73
+msgid ""
+"`Open location quick settings`_. Select the ``Location detection`` switch to "
+"enable or disable location services."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:78
+msgid ""
+"`Open location settings in the settings app`_. Under ``Let the device detect "
+"your location:``, select the appropriate option:"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:80
+msgid "``Using GPS`` turns on location services."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:81
+msgid "``Not at all`` turns off location services."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:84
+msgid "Allowing apps access to location data"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:86
+msgid ""
+"Ubuntu Touch allows you to allow or deny apps access to your location data. "
+"This decision is presented the first time the app tries to access your "
+"current location. You can change your decision later."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:88
+msgid ""
+"An app will show the location permission request the first time it tries to "
+"access your current location."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:93
+msgid ""
+"Select ``Allow`` to give the app access to your current location. Select "
+"``Don't Allow`` to deny the app access to your current location. Some app "
+"features may not work correctly if you select ``Don't Allow``."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:96
+msgid "Changing your permissions"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:98
+msgid ""
+"You can change your decision to allow an app access to your location data. "
+"This is useful when you gave an app access to your location but you'd like "
+"to deny access, or if you denied access but would like to give access."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:100
+msgid "There are several ways to find these controls."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:103
+#, fuzzy
+msgid "Location settings"
+msgstr "Ubicacions"
+
+#: ../../userguide/dailyuse/location.rst:105
+msgid ""
+"`Open location settings in the settings app`_. All of the apps which have "
+"requested access to your location are listed under ``Let apps access this "
+"location:``. Toggle the switch next to an app \"on\" to allow it to access "
+"your location data. Toggle the switch \"off\" to deny access."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:108
+msgid "App permission settings"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:110
+msgid ""
+"Launch the ``System Settings`` app. Select ``Security & Privacy``, then "
+"select ``App permissions``, followed by ``Location``. All of the apps which "
+"have requested access to your location are listed. Toggle the switch next to "
+"an app \"on\" to allow it to access your location data. Toggle the switch "
+"\"off\" to deny access."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:113
+msgid "Using apps with location services"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:115
+msgid ""
+"Apps will be able to access your current location after they are granted "
+"access to location data. However, there are some things to note while using "
+"apps with location services."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:118
+msgid "Time to first fix"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:120
+msgid ""
+"A \"fix\" is a data point generated by GPS hardware that contains its "
+"current location and the expected accuracy of that location. GPS hardware is "
+"rated by how long it takes to return one of these data points after the "
+"device is activated. This rating is called \"`Time To First Fix <https://en."
+"wikipedia.org/wiki/Time_to_first_fix>`_,\" or TTFF."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:122
+msgid ""
+"A device with a mobile data connection should take one to four minutes to "
+"receive its first fix. If location services have not been used for a long "
+"time *and* the device does not have a mobile data connection, the first fix "
+"can take up to an hour. To prevent this from causing problems for you, "
+"follow these instructions:"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:126
+msgid ""
+"Do not leave your device in direct sunlight. The heat can damage the device."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:128
+msgid "Disable ``Lock when idle`` in the Battery settings"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:129
+msgid ""
+"Download an app which uses location services and cause it to start accessing "
+"your location data."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:130
+msgid ""
+"Leave your device near a window but out of direct sunlight. To reduce energy "
+"consumption, turn the screen brightness down."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:132
+msgid ""
+"After 20 minutes to an hour, your device should display your current "
+"location. You can now close the app and enable ``Lock when idle``. Future "
+"attempts to aquire your location should now take one to four minutes."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:135
+msgid "App suspension"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:137
+msgid ""
+"Apps are suspended whenever they are not in the foreground or the device is "
+"locked. When an app is suspended, it cannot receive location data. For this "
+"reason, apps will not be able to track your location whenever they are not "
+"in use or the device is locked."
+msgstr ""
+
 #: ../../userguide/install.rst:2
 msgid "Install Ubuntu Touch"
 msgstr "Instal·lació de l'Ubuntu Touch"
 
 #: ../../userguide/install.rst:4
+#, fuzzy
 msgid ""
 "Installing Ubuntu Touch is easy, and a lot of work has gone in to making the "
-"installation process less intimidating to less technical users. The UBports "
+"installation process less intimidating to the average user. The UBports "
 "Installer is a nice graphical tool that you can use to install Ubuntu Touch "
-"on a `supported device <https://ubuntu-touch.io/devices>`_ from your Linux, "
-"Mac or Windows computer."
+"on a `supported device <https://devices.ubuntu-touch.io/>`_ from your `Linux "
+"<https://snapcraft.io/ubports-installer>`_, `Mac <https://devices.ubuntu-"
+"touch.io/installer/?package=dmg>`_ or `Windows <https://devices.ubuntu-touch."
+"io/installer/?package=exe>`_ computer. For more experienced users, we also "
+"have manual installation instructions for every device `on the devices page "
+"<https://devices.ubuntu-touch.io/>`_."
 msgstr ""
 "La instal·lació de l'Ubuntu Touch és fàcil, i s'ha fet molta feina perquè el "
 "procés d'instal·lació sigui menys intimidant per als usuaris menys tècnics. "
@@ -1199,38 +1686,59 @@ msgstr ""
 "externa si les voleu mantenir."
 
 #: ../../userguide/install.rst:9
+#, fuzzy
 msgid ""
-"Go to `the download page <https://github.com/ubports/ubports-installer/"
-"releases/latest>`_ and download the version of the installer for your "
-"operating system:"
+"You can `Download the UBports Installer from GitHub <https://github.com/"
+"ubports/ubports-installer/releases/latest>`_. The following packages are "
+"available:"
 msgstr ""
 "Aneu a `la pàgina de descàrrega <https://github.com/ubports/ubports-"
 "installer/releases/latest>`_ i descarregueu la versió de l'instal·lador per "
 "al vostre sistema operatiu:"
 
 #: ../../userguide/install.rst:11
-msgid "Windows: ``ubports-installer-<version-number>.exe``"
+#, fuzzy
+msgid ""
+"`Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_: "
+"``ubports-installer-<version-number>.exe``"
 msgstr "Windows:  ``ubports-installer-<número-de-versió>.exe``"
 
 #: ../../userguide/install.rst:12
-msgid "macOS: ``ubports-installer-<version-number>.dmg``"
+#, fuzzy
+msgid ""
+"`macOS <https://devices.ubuntu-touch.io/installer/?package=dmg>`_: ``ubports-"
+"installer-<version-number>.dmg``"
 msgstr "macOS: ``ubports-installer-<número-de-versió>.dmg``"
 
 #: ../../userguide/install.rst:13
-msgid "Ubuntu or Debian: ``ubports-installer-<version-number>.deb``"
+#, fuzzy
+msgid ""
+"`Ubuntu or Debian <https://devices.ubuntu-touch.io/installer/?"
+"package=deb>`_: ``ubports-installer-<version-number>.deb``"
 msgstr "Ubuntu o Debian: ``ubports-installer-<número-de-versió>.deb``"
 
 #: ../../userguide/install.rst:14
 #, fuzzy
 msgid ""
-"Other Linux distributions: ``ubports-installer-<version-number>.snap`` or "
-"``ubports-installer-<version-number>.AppImage``"
+"`Other Linux distributions (snap) <https://snapcraft.io/ubports-"
+"installer>`_: ``ubports-installer-<version-number>.snap``"
 msgstr ""
 "Altres distribucions de Linux: ubports-installer-<número-de-versió>.deb, "
 "ubports-installer-<número-de-versió>.snap or ubports-installer-<número-de-"
 "versió>.AppImage"
 
-#: ../../userguide/install.rst:16
+#: ../../userguide/install.rst:15
+#, fuzzy
+msgid ""
+"`Other Linux distributions (AppImage) <https://devices.ubuntu-touch.io/"
+"installer/?package=appimage>`_: ``ubports-installer-<version-number>."
+"AppImage``"
+msgstr ""
+"Altres distribucions de Linux: ubports-installer-<número-de-versió>.deb, "
+"ubports-installer-<número-de-versió>.snap or ubports-installer-<número-de-"
+"versió>.AppImage"
+
+#: ../../userguide/install.rst:17
 msgid ""
 "Start the installer and follow the on-screen instructions that will walk you "
 "through the installation process. That's it! Have fun exploring Ubuntu Touch!"
@@ -1239,21 +1747,118 @@ msgstr ""
 "conduiran a través del procés d'instal·lació. Això és tot! Que gaudiu "
 "explorant l'Ubuntu Touch!"
 
-#: ../../userguide/install.rst:18
+#: ../../userguide/install.rst:19
+#, fuzzy
 msgid ""
 "If you're an experienced android developer and want to help us bring Ubuntu "
-"Touch to more devices, visit the :doc:`porting section </porting/"
-"introduction>`."
+"Touch to more devices, visit the :doc:`porting section </porting/Intro>`."
 msgstr ""
 "Si teniu experiència en el desenvolupament de l'Android i voleu ajudar-nos a "
 "adaptar l'Ubuntu Touch a més dispositius, visiteu la :doc:`secció "
 "d'adaptació </porting/introduction>`."
 
-#: ../../userguide/install.rst:21
+#: ../../userguide/install.rst:24
+msgid ""
+"If you need help, you can join UBports' support channels on `telegram "
+"<https://t.me/WelcomePlus>`_ or `matrix <https://matrix.to/#/!"
+"KwdniMNeTmClpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot."
+"org>`_ or ask a question `in the forum <https://forums.ubports.com/>`_ or on "
+"`askubuntu <https://askubuntu.com>`_. If you believe that the UBports "
+"Installer is not working correctly, you can also `file a new issue <https://"
+"github.com/ubports/ubports-installer/issues/new>`_ to help us solve the "
+"problem."
+msgstr ""
+
+#: ../../userguide/install.rst:27
+msgid "Connection lost during installation"
+msgstr ""
+
+#: ../../userguide/install.rst:29
+msgid ""
+"Try a different USB cable and a different USB port on your computer. Cheap "
+"and old cables tend to lose connection during the installation."
+msgstr ""
+
+#: ../../userguide/install.rst:32
+msgid "Windows Defender prevents Installer from starting"
+msgstr ""
+
+#: ../../userguide/install.rst:34
+msgid ""
+"We have contacted Microsoft about this problem, but they seem to think it's "
+"`enjoyable <https://twitter.com/Windows/status/1014984163433295875>`__. To "
+"dismiss the warning, click on \"More Information\", then select \"Run anyway"
+"\"."
+msgstr ""
+
+#: ../../userguide/install.rst:37
+msgid "Device not detected"
+msgstr ""
+
+#: ../../userguide/install.rst:40
+msgid "Virtual Machine"
+msgstr ""
+
+#: ../../userguide/install.rst:42
+msgid ""
+"If you're running the installer in a virtual machine, make sure the virtual "
+"machine is allowed to access the USB port."
+msgstr ""
+
+#: ../../userguide/install.rst:45
+msgid "Windows ADB drivers"
+msgstr ""
+
+#: ../../userguide/install.rst:47
+msgid ""
+"Install the `universal adb driver <http://adb.clockworkmod.com/>`_ and "
+"reboot your computer."
+msgstr ""
+
+#: ../../userguide/install.rst:50
+#, fuzzy
+msgid "Fairphone 2 Vendor-ID"
+msgstr "Fairphone 2::"
+
+#: ../../userguide/install.rst:52
+msgid ""
+"Run ``echo 0x2ae5 >> ~/.android/adb_usb.ini`` in the terminal and restart "
+"the installer. This does not affect the snap package."
+msgstr ""
+
+#: ../../userguide/install.rst:55
+msgid "Missing udev-rules"
+msgstr ""
+
+#: ../../userguide/install.rst:57
+msgid ""
+"If the device not detected on Linux and packages other than snap, you might "
+"be missing **udev-rules**."
+msgstr ""
+
+#: ../../userguide/install.rst:59
+msgid ""
+"See if ``/etc/udev/rules.d/51-android.rules`` exists and contains the rules "
+"below. If not, add them to the file and run ``sudo service udev restart`` or "
+"``sudo udevadm control --reload-rules && udevadm trigger``."
+msgstr ""
+
+#: ../../userguide/install.rst:99
+msgid "Other issues"
+msgstr ""
+
+#: ../../userguide/install.rst:101
+msgid ""
+"If the troubleshooting tips do not work, you might also try following the "
+"manual installation instructions for your device `on the devices page "
+"<https://devices.ubuntu-touch.io/>`_."
+msgstr ""
+
+#: ../../userguide/install.rst:104
 msgid "Install on legacy Android devices"
 msgstr "Instal·lació a dispositius Android clàssics"
 
-#: ../../userguide/install.rst:23
+#: ../../userguide/install.rst:106
 msgid ""
 "While the installation process is fairly simple on most devices, some legacy "
 "Bq and Meizu devices require special steps. This part of the guide does not "
@@ -1263,7 +1868,7 @@ msgstr ""
 "de dispositius, alguns dispositius Bq i Meizu clàssics requereixen de passos "
 "especials. Aquesta part de la guia no s'aplica a d'altres dispositius."
 
-#: ../../userguide/install.rst:27
+#: ../../userguide/install.rst:110
 msgid ""
 "This is more or less uncharted territory. If your device's manufacturer does "
 "not want you to install an alternative operating system, there's not a lot "
@@ -1279,7 +1884,7 @@ msgstr ""
 "vulgui usar el nostre sistema operatiu, instal·lar a un dispositiu amb eines "
 "OEM no s'hauria de fer sense una mica de coneixement i molta recerca."
 
-#: ../../userguide/install.rst:29
+#: ../../userguide/install.rst:112
 msgid ""
 "Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed "
 "successfully in some cases, the Pro5 is Exynos-based and has its own "
@@ -1289,30 +1894,33 @@ msgstr ""
 "el MX4 es pot instal·lar amb èxit en alguns casos, el Pro5 està basat en "
 "Exynos i presenta els seus propis maldecaps."
 
-#: ../../userguide/install.rst:33
+#: ../../userguide/install.rst:116
 msgid "BE VERY CAREFUL! You are responsible for your own actions!"
 msgstr "ANEU AMB MOLTA CURA! Sou responsable de les vostres pròpies accions!"
 
-#: ../../userguide/install.rst:35
+#: ../../userguide/install.rst:118
+#, fuzzy
 msgid ""
 "Disconnect all devices and non-essential peripherals from your PC. Charge "
-"your device on a wall-charger (not your PC) to at least 40 percent"
+"your device on a wall-charger (not your PC) to at least 40 percent."
 msgstr ""
 "Desconnecteu tots els dispositius i perifèrics no essencials del vostre PC. "
 "Carregueu el vostre dispositiu a un endoll de pared (no al vostre PC) fins "
 "almenys el 40 per cent"
 
-#: ../../userguide/install.rst:36
-msgid "Download the Ubuntu Touch ROM for your device:"
+#: ../../userguide/install.rst:119
+#, fuzzy
+msgid ""
+"Download the Ubuntu Touch ROM for your device and extract the zip files:"
 msgstr "Descarregueu el ROM de l'Ubuntu Touch per al vostre dispositiu:"
 
-#: ../../userguide/install.rst:38
+#: ../../userguide/install.rst:121
 msgid ""
 "`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ "
 "(*krillin*)"
 msgstr ""
 
-#: ../../userguide/install.rst:39
+#: ../../userguide/install.rst:122
 msgid ""
 "`Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/"
 "Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
@@ -1320,7 +1928,7 @@ msgstr ""
 "`Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/"
 "Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 
-#: ../../userguide/install.rst:40
+#: ../../userguide/install.rst:123
 msgid ""
 "`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/"
 "OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
@@ -1328,7 +1936,7 @@ msgstr ""
 "`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/"
 "OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
 
-#: ../../userguide/install.rst:41
+#: ../../userguide/install.rst:124
 msgid ""
 "`Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/"
 "Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)"
@@ -1336,22 +1944,32 @@ msgstr ""
 "`Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/"
 "Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)"
 
-#: ../../userguide/install.rst:42
+#: ../../userguide/install.rst:125
 msgid ""
 "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
 msgstr ""
 "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
 
-#: ../../userguide/install.rst:44
+#: ../../userguide/install.rst:127
+#, fuzzy
 msgid ""
-"Download `SP flash tool <https://storage.googleapis.com/otas/2015/Tablets/"
-"Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ for Linux."
+"Download the latest version of `SP flash tool <https://spflashtool.com/"
+"download/>`_ (*aka MTK flash tool*)."
 msgstr ""
-"Descarregueu `SP flash tool <https://storage.googleapis.com/otas/2015/"
-"Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ "
-"per a Linux."
+"També haureu de fer servir `l'última versió de l'eina <https://spflashtool."
+"com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
 
-#: ../../userguide/install.rst:46
+#: ../../userguide/install.rst:128
+msgid "Extract the zip files"
+msgstr "Extraieu els fitxers zip"
+
+#: ../../userguide/install.rst:129
+msgid ""
+"Open a Terminal, enter the SP flash tool directory and run it with ``sudo ./"
+"flash_tool.sh``."
+msgstr ""
+
+#: ../../userguide/install.rst:133
 msgid ""
 "On Ubuntu 17.10, there are issues with flash_tool loading the shared library "
 "'libpng12', so this can be used as a workaround:"
@@ -1359,70 +1977,60 @@ msgstr ""
 "A l'Ubuntu 17.10. hi ha problemes amb el flash_tool carregant la biblioteca "
 "compartida 'libpng12', així que això podria usar-se com a alternativa:"
 
-#: ../../userguide/install.rst:54
+#: ../../userguide/install.rst:141
+#, fuzzy
 msgid ""
-"You will also need to use `the latest version of the tool <https://"
-"spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
-msgstr ""
-"També haureu de fer servir `l'última versió de l'eina <https://spflashtool."
-"com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
-
-#: ../../userguide/install.rst:56
-msgid "Extract the zip files"
-msgstr "Extraieu els fitxers zip"
-
-#: ../../userguide/install.rst:57
-msgid "Start the tool with ``sudo``"
-msgstr "Inicieu l'eina amb ``sudo``"
-
-#: ../../userguide/install.rst:58
-msgid ""
-"Select the ``*Android_scatter.txt`` file from the archive you downloaded in "
-"the first step as the scatter-loading file"
+"In the \"Scatter-loading File\" section, press the \"choose\" button and "
+"select the ``*Android_scatter.txt`` file from the archive you downloaded in "
+"the second step."
 msgstr ""
 "Seleccioneu el fitxer ``*Android_scatter.txt`` de l'arxiu que heu "
 "descarregat al primer pas com a fitxer de càrrega de dispersió"
 
-#: ../../userguide/install.rst:59
-msgid "Choose \"Firmware Upgrade\""
+#: ../../userguide/install.rst:142
+#, fuzzy
+msgid "Choose \"Firmware Upgrade\" from the drop-down menu."
 msgstr "Escolliu «Firmware Upgrade»"
 
-#: ../../userguide/install.rst:60
+#: ../../userguide/install.rst:146
+#, fuzzy
 msgid ""
-"Double-check you chose \"Firmware Upgrade\" and not \"Download\" or \"Format "
-"All\""
-msgstr ""
-"Feu una comprovació extra que heu escollit «Firmware Upgrade» i no "
-"«Download» o «Format All»"
-
-#: ../../userguide/install.rst:64
-msgid ""
-"If you select DOWNLOAD rather than FIRMWARE UPGRADE, you will end up with a "
-"useless brick rather than a fancy Ubuntu Touch device. Be sure to select "
-"FIRMWARE UPGRADE."
+"If you select DOWNLOAD ONLY rather than FIRMWARE UPGRADE, you will end up "
+"with a useless brick rather than a fancy Ubuntu Touch device. Be sure to "
+"select FIRMWARE UPGRADE."
 msgstr ""
 "Si trieu DOWNLOAD en comptes de FIRMWARE UPGRADE, acabareu amb un totxo "
 "inútil en compte d'un dispositiu Ubuntu Touch sofisticat. Assegureu-vos de "
 "triar FIRMWARE UPGRADE."
 
-#: ../../userguide/install.rst:66
-msgid "Turn your device completely off, but do not connect it yet"
+#: ../../userguide/install.rst:148
+msgid ""
+"Also, after selecting the ``*Android_scatter.txt``, the drop-down menu "
+"choice is reset to DOWNLOAD ONLY. Be sure to select it after selecting the "
+"file."
+msgstr ""
+
+#: ../../userguide/install.rst:150
+#, fuzzy
+msgid "Turn your device completely off, but do not connect it yet."
 msgstr ""
 "Apagueu completament els vostre dispositiu, però encar no el desconnecteu"
 
-#: ../../userguide/install.rst:67
-msgid "Press the button labeled \"Download\""
+#: ../../userguide/install.rst:151
+#, fuzzy
+msgid "Press the button labeled \"Download\"."
 msgstr "Premeu el botó etiquetat com «Download»"
 
-#: ../../userguide/install.rst:68
+#: ../../userguide/install.rst:152
+#, fuzzy
 msgid ""
 "Perform a final sanity-check that you selected the \"Firmware Upgrade\" "
-"option, not \"Download\""
+"option, not \"Download Only\"."
 msgstr ""
 "Feu una última prova de seguretat que heu triat l'opció  «Firmware Upgrade», "
 "i no «Download»"
 
-#: ../../userguide/install.rst:69
+#: ../../userguide/install.rst:153
 msgid ""
 "Make sure your device is off and connect it to your PC. Don't use a USB 3.0 "
 "port, since that's known to cause communication issues with your device."
@@ -1431,21 +2039,94 @@ msgstr ""
 "PC. No useu un port USB 3.0, atès que això se sap que causa problemes de "
 "comunicació amb el vostre dispositiu."
 
-#: ../../userguide/install.rst:70
+#: ../../userguide/install.rst:154
+#, fuzzy
 msgid ""
-"`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Your "
-"device will boot into a super old version of Ubuntu Touch."
+"`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Wait "
+"till all the progress bars ended."
 msgstr ""
 "Passarà `màgia https://ca.wikipedia.org/wiki/Lleis_de_Clarke`_ . El vostre "
 "dispositiu s'iniciarà a una versió molt antiga de l'Ubuntu Touch."
 
-#: ../../userguide/install.rst:71
+#: ../../userguide/install.rst:158
 msgid ""
-"Congratulations! Your device will now boot into a very old version of Ubuntu "
-"Touch. You can now use the UBports Installer to proceed."
+"If the installation fails with a 100% red bar and hangs there (and logs says "
+"something like ``COM port is open. Trying to sync with the target...``), "
+"remove the ``modemmanager`` package as the one installed `is not compatible "
+"<https://web.archive.org/web/20180118130643/http://www.mibqyyo.com/en-"
+"articles/2015/09/16/ubuntu-android-installation-process-for-bq-aquaris-e4-5-"
+"and-e5/>`_ with SP flash tool, close it and try again from step 4."
+msgstr ""
+
+#: ../../userguide/install.rst:160
+#, fuzzy
+msgid ""
+"Congratulations! Your device will now boot into a super old version of "
+"Ubuntu Touch. You can now use the UBports Installer to install an updated "
+"version."
 msgstr ""
 "Enhorabona! El vostre dispositiu s'iniciarà ara a una versió molt antiga de "
 "l'Ubuntu Touch. Ara podeu procedir a usar l'instal·lador de l'UBports."
+
+#~ msgid "Now start the ssh server::"
+#~ msgstr "Inicieu ara el servidor ssh::"
+
+#~ msgid "Anbox is in early development"
+#~ msgstr "L'Anbox està en una etapa inicial de desenvoupament"
+
+#~ msgid ""
+#~ "Because this feature is in such an early stage of development, the "
+#~ "installation is only recommended for experienced users."
+#~ msgstr ""
+#~ "Atès que aquesta funcionalitat està en un punt tan inicial de "
+#~ "desenvolupament, sols es recomana la instal·lació als usuaris "
+#~ "experimentats."
+
+#~ msgid "This is a example of the app-list installed apps on your device"
+#~ msgstr ""
+#~ "Això és un exemple de les aplicacions provinents d'una llista que hi ha "
+#~ "instal·lades al dispositiu"
+
+#~ msgid ""
+#~ "To display and launch applications you need the *Desktop Apps Scope* "
+#~ "which is available in the `Open Store <https://open-store.io/app/"
+#~ "libertine-scope.ubuntu>`_. To install applications you need to use the "
+#~ "commandline as described below."
+#~ msgstr ""
+#~ "Per a mostrar i iniciar aplicacions us cal la «Lent d'aplicacions "
+#~ "d'escriptori» que està disponible a l'`Open Store <https://open-store.io/"
+#~ "app/libertine-scope.ubuntu>`_. Per a instal·lar aplicacions us cal usar "
+#~ "la línia d'ordres com s'explica a sota."
+
+#, fuzzy
+#~ msgid "To list all containers created run::"
+#~ msgstr "Per fer una llista de tots els contenidors executeu:"
+
+#, fuzzy
+#~ msgid ""
+#~ "Once a container is set up, you can list the installed applications::"
+#~ msgstr ""
+#~ "Un cop heu configurat un contenidor, podeu fer una llista de les "
+#~ "aplicacions instal·lades:"
+
+#~ msgid ""
+#~ "Download `SP flash tool <https://storage.googleapis.com/otas/2015/Tablets/"
+#~ "Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100.zip>`_ for "
+#~ "Linux."
+#~ msgstr ""
+#~ "Descarregueu `SP flash tool <https://storage.googleapis.com/otas/2015/"
+#~ "Tablets/Freezer%20FHD/Ubuntu/SP_Flash_Tool_exe_Linux_v5.1612.00.100."
+#~ "zip>`_ per a Linux."
+
+#~ msgid "Start the tool with ``sudo``"
+#~ msgstr "Inicieu l'eina amb ``sudo``"
+
+#~ msgid ""
+#~ "Double-check you chose \"Firmware Upgrade\" and not \"Download\" or "
+#~ "\"Format All\""
+#~ msgstr ""
+#~ "Feu una comprovació extra que heu escollit «Firmware Upgrade» i no "
+#~ "«Download» o «Format All»"
 
 #~ msgid "Anbox for Ubuntu Touch is in even more early development"
 #~ msgstr ""

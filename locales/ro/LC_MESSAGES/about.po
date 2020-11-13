@@ -8,16 +8,17 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-03 14:44-0600\n"
-"PO-Revision-Date: 2018-02-19 12:50+0000\n"
-"Last-Translator: Brînzariu Cristian <info@ebeton.ro>\n"
+"PO-Revision-Date: 2020-11-03 19:18+0000\n"
+"Last-Translator: Mihai <michael.mozart@protonmail.com>\n"
+"Language-Team: Romanian <https://translate.ubports.com/projects/ubports-docs/"
+"documentation-about/ro/>\n"
 "Language: ro\n"
-"Language-Team: Romanian <https://translate.ubports.com/projects/ubports-"
-"docs/documentation-about/ro/>\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 "
-"< 20)) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Weblate 3.11.3\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../about/introduction.rst:2
@@ -30,10 +31,13 @@ msgid ""
 "an open-source (GPL if possible) mobile operating system that converges "
 "and respects your freedom."
 msgstr ""
+"Aceasta este documentația pentru proiectul UBports. Scopul nostru este de a "
+"creea un sistem de operare mobil, open-source (sub licență GPL dacă este "
+"posibil) care iți respecta intimitatea."
 
 #: ../../about/introduction.rst:7
 msgid "About UBports"
-msgstr ""
+msgstr "Despre UBports"
 
 #: ../../about/introduction.rst:9
 msgid ""
@@ -42,6 +46,10 @@ msgid ""
 "other in hopes of bringing the Ubuntu Touch platform to more and more "
 "devices."
 msgstr ""
+"Proiectul UBports a fost fondat de catre Marius Gripsgard in 2015. La "
+"început proiectul era un loc unde dezvoltatorii puteau sa faca schimb de "
+"idei în speranța că Ubuntu Touch poate sa ajungă la cât mai multe "
+"dispozitive."
 
 #: ../../about/introduction.rst:11
 msgid ""
@@ -54,7 +62,7 @@ msgstr ""
 
 #: ../../about/introduction.rst:14
 msgid "About the Documentation"
-msgstr ""
+msgstr "Despre documentație"
 
 #: ../../about/introduction.rst:16
 msgid ""
@@ -76,7 +84,7 @@ msgstr ""
 
 #: ../../about/introduction.rst:21
 msgid "Attribution"
-msgstr ""
+msgstr "Atribuire"
 
 #: ../../about/introduction.rst:23
 msgid ""
@@ -87,23 +95,25 @@ msgstr ""
 
 #: ../../about/process/index.rst:2
 msgid "Processes"
-msgstr ""
+msgstr "Procese"
 
 #: ../../about/process/index.rst:4
 msgid ""
 "This section of the documentation details standardized processes for "
 "different teams."
-msgstr ""
+msgstr "Această secțiune detaliază procesele standard pentru fiecare echipă."
 
 #: ../../about/process/index.rst:7
 msgid ""
 "The process definitions are still a work in progress and need to be "
 "completed by the respective teams."
 msgstr ""
+"Definițiile proceselor încă sunt o muncă în progres iar acestea trebuie "
+"completate de fiecare echipă în parte."
 
 #: ../../about/process/issue-tracking.rst:2
 msgid "Issue-Tracking Guidelines"
-msgstr ""
+msgstr "Instrucțiuni pentru urmărirea de probleme"
 
 #: ../../about/process/issue-tracking.rst:4
 msgid ""
@@ -113,8 +123,9 @@ msgid ""
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:7
+#, fuzzy
 msgid "Where are bugs tracked?"
-msgstr ""
+msgstr "Unde sunt urmărite erorile ?"
 
 #: ../../about/process/issue-tracking.rst:9
 msgid ""
@@ -552,4 +563,3 @@ msgstr ""
 #~ " released, the issue is removed from"
 #~ " the project."
 #~ msgstr ""
-

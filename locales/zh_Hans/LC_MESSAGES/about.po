@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"POT-Creation-Date: 2020-07-29 13:44-0500\n"
 "PO-Revision-Date: 2019-12-03 17:13+0000\n"
 "Last-Translator: Sam Zhang <sammyok@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
@@ -23,10 +23,11 @@ msgid "Introduction"
 msgstr "介绍"
 
 #: ../../about/introduction.rst:4
+#, fuzzy
 msgid ""
-"This is the documentation for the UBports project. Our goal is to create an "
-"open-source (GPL if possible) mobile operating system that converges and "
-"respects your freedom."
+"This is the documentation for the UBports project. Our goal is to create a "
+"Free and open-source (GPL if possible) mobile operating system that "
+"converges and respects your freedom."
 msgstr ""
 "这是 UBports 项目的文档。我们的目标是创建一个开源（若可能则为 GPL 许可证）的"
 "移动操作系统，它将拥有融合性并尊重您的自由。"
@@ -36,40 +37,43 @@ msgid "About UBports"
 msgstr "关于 UBports"
 
 #: ../../about/introduction.rst:9
+#, fuzzy
 msgid ""
 "The UBports project was founded by Marius Gripsgard in 2015 and in its "
 "infancy was a place where developers could share ideas and educate each "
-"other in hopes of bringing the Ubuntu Touch platform to more and more "
-"devices."
+"other in hopes of bringing the Ubuntu Touch platform to more mobile devices."
 msgstr ""
 "UBports 项目由 Marius Gripsgard 于 2015 年创立，在其初期阶段，开发人员可以分"
 "享想法并互相教育，希望将 Ubuntu Touch 平台带入越来越多的设备。"
 
 #: ../../about/introduction.rst:11
+#, fuzzy
 msgid ""
 "After Canonical suddenly announced `their plans to terminate support of "
 "Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-"
-"cloud-and-iot-rather-than-phone-and-convergence/>`_ in April of 2017, "
-"UBports and its sister projects began work on the open-source code, "
-"maintaining and expanding its possibilities for the future."
+"cloud-and-iot-rather-than-phone-and-convergence/>`_ in April 2017, UBports "
+"and its sister projects began work on the open-source code, maintaining and "
+"expanding its possibilities for the future."
 msgstr ""
 "在 2017 年四月 Canonical 突然宣布：“他们计划终止对 Ubuntu Touch 的支持后 "
-"<https://insights.ubuntu.com/2017/04/05/"
-"growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>”，"
-"UBports 及其姐妹项目开始研究开源代码，保持并扩展其未来的可能性。"
+"<https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-"
+"rather-than-phone-and-convergence/>”，UBports 及其姐妹项目开始研究开源代码，"
+"保持并扩展其未来的可能性。"
 
 #: ../../about/introduction.rst:14
 msgid "About the Documentation"
 msgstr "关于本文档"
 
 #: ../../about/introduction.rst:16
+#, fuzzy
 msgid ""
 "This documentation is always improving thanks to the members of the UBports "
 "community. It is written in ReStructuredText and converted into this "
 "readable form by `Sphinx <http://www.sphinx-doc.org/en/stable/>`_, "
 "`ReCommonMark <http://recommonmark.readthedocs.io/en/latest/>`_, and `Read "
 "the Docs <https://readthedocs.io>`_. You can start contributing by checking "
-"out the :doc:`Documentation intro </contribute/documentation>`."
+"out the :doc:`Documentation contribution document </contribute/"
+"documentation>`."
 msgstr ""
 "感谢 UBports 社区的成员，本文档得以不断改进。它由 ReStructuredText 写成并由 "
 "`Sphinx <http://www.sphinx-doc.org/en/stable/>`_ 、 `ReCommonMark <http://"
@@ -277,9 +281,10 @@ msgid ""
 "tracker <https://github.com/ubports/ubuntu-touch>`__. An exception of this "
 "are click-apps that can be updated independently through the OpenStore."
 msgstr ""
-"由于我们的质量保证在很大程度上取决于社区，因此我们尝试跟踪用户期望的问题，而不是由存储库分离。 这意味着，几乎所有与系统镜像一起分发的组件的问题都会在 `"
-"Ubuntu Touch  跟踪器 <https://github.com/ubports/ubuntu-touch>`__。click-apps "
-"是一个例外，因为它们可以通过 OpenStore 来进行更新。"
+"由于我们的质量保证在很大程度上取决于社区，因此我们尝试跟踪用户期望的问题，而"
+"不是由存储库分离。 这意味着，几乎所有与系统镜像一起分发的组件的问题都会在 "
+"`Ubuntu Touch  跟踪器 <https://github.com/ubports/ubuntu-touch>`__。click-"
+"apps 是一个例外，因为它们可以通过 OpenStore 来进行更新。"
 
 #: ../../about/process/issue-tracking.rst:17
 msgid ""
@@ -317,8 +322,9 @@ msgid ""
 "so that only issues that belong to a specific team or affect a specific "
 "device can be viewed."
 msgstr ""
-"为了增加透明度和交流，GitHub 项目（Kanban-Boards）可以在任何实际情况下使用。在 github.com/ubports/ubuntu-"
-"touch 上，所有问题都用于单个项目。项目支持按标签过滤，因此只能查看属于特定团队或影响特定设备的问题。"
+"为了增加透明度和交流，GitHub 项目（Kanban-Boards）可以在任何实际情况下使用。"
+"在 github.com/ubports/ubuntu-touch 上，所有问题都用于单个项目。项目支持按标签"
+"过滤，因此只能查看属于特定团队或影响特定设备的问题。"
 
 #: ../../about/process/issue-tracking.rst:36
 msgid "These are the standard columns:"
@@ -333,9 +339,9 @@ msgid ""
 "sanity check by the qa-team but has not yet been accepted by the responsible "
 "development-team."
 msgstr ""
-"**None (awaiting triage)**：问题已得到 QA "
-"团队的一名成员批准，正在等待负责的开发团队审查。如果问题是错误，则在问题描述中包含重现说明。如果问题是功能请求，那么它已经通过了 QA "
-"团队的主要检查，但尚未被负责的开发团队所接受。"
+"**None (awaiting triage)**：问题已得到 QA 团队的一名成员批准，正在等待负责的"
+"开发团队审查。如果问题是错误，则在问题描述中包含重现说明。如果问题是功能请"
+"求，那么它已经通过了 QA 团队的主要检查，但尚未被负责的开发团队所接受。"
 
 #: ../../about/process/issue-tracking.rst:39
 msgid ""
@@ -344,8 +350,9 @@ msgid ""
 "fixable and accepts the responsibility. If the issue is a feature request, "
 "the team thinks it should be implemented as described."
 msgstr ""
-"**Accepted** ：该问题已被其所负责的开发团队接受。 如果问题是错误报告，团队已决定它应该是可修复的并对其负责。 "
-"如果这个问题是一个特殊要求，那么团队认为应该按照描述来实施。"
+"**Accepted** ：该问题已被其所负责的开发团队接受。 如果问题是错误报告，团队已"
+"决定它应该是可修复的并对其负责。 如果这个问题是一个特殊要求，那么团队认为应该"
+"按照描述来实施。"
 
 #: ../../about/process/issue-tracking.rst:40
 msgid ""
@@ -355,10 +362,11 @@ msgstr ""
 "**In Development** ：补丁正在开发中。 通常意味着开发人员已被分配到该问题。"
 
 #: ../../about/process/issue-tracking.rst:41
+#, fuzzy
 msgid ""
 "**Quality Assurance**: The patch is completed and has passed initial "
 "testing. The QA team will now review it and provide feedback. If problems "
-"are found, the issue is moved back to “Accepted”."
+"are found, the issue is moved back to \"Accepted\"."
 msgstr ""
 "**Quality Assurance** ：补丁已完成并已通过初始测试。 质量检查小组现在将对其进"
 "行检查并提供反馈。 如果发现问题，问题将转回“已接受”。"
@@ -375,12 +383,13 @@ msgstr ""
 "在稳定版频道的下一个版本中发布。"
 
 #: ../../about/process/issue-tracking.rst:43
+#, fuzzy
 msgid ""
 "**None (removed from the project)**: If the issue is open and labeled \"help "
 "wanted\", community contributions are required to resolve the issue. If it's "
 "closed, that means that either a patch has been released on the stable "
 "channel (a comment on the issue should link to the patch) or the issue has "
-"been rejected (labeled “wontfix”)."
+"been rejected (labeled \"wontfix\")."
 msgstr ""
 "**None (removed from the project)** ：如果问题是开放的且标记为“需要帮助”，则"
 "需要社群贡献才能解决问题。 如果它关闭，这意味着或者在稳定频道上发布了一个补丁"
@@ -453,13 +462,12 @@ msgstr "**help wanted**：这个问题已经准备好由社区开发者提供帮
 
 #: ../../about/process/issue-tracking.rst:66
 msgid ""
-"**good first issue**: This issue is not critical and trivial to fix. It is "
-"reserved for new contributors as a place to start."
+"**good first issue**: The report contains instructions or hints required to "
+"fix it. It is an excellent place for someone new to learn about the project "
+"by fixing a real issue."
 msgstr ""
-"**good first issue**：这个问题并不严重，可以被修复。它被保留给新的贡献者作为"
-"开始的地方。"
 
-#: ../../about/process/issue-tracking.rst:68
+#: ../../about/process/issue-tracking.rst:67
 msgid ""
 "**wontfix**: It does not make sense to fix this bug, since it will probably "
 "resolve itself, it will be too much work to fix it, it's not fixable, or an "
@@ -468,13 +476,13 @@ msgstr ""
 "**wontfix**： 这个问题没有修复的意义，因为它要么可能会被自行解决、要么需要太"
 "多精力、要么不可修复，或者因底层组件即将改变而不需要修复。"
 
-#: ../../about/process/issue-tracking.rst:72
+#: ../../about/process/issue-tracking.rst:71
 msgid ""
 "Additional special labels can be defined. As an example, here's the labels "
 "used in the Ubuntu Touch tracker:"
 msgstr "流程定义仍在进行中，它需要由各个团队来完成："
 
-#: ../../about/process/issue-tracking.rst:75
+#: ../../about/process/issue-tracking.rst:74
 msgid ""
 "**critical (devel)**: This critical issue that only occurs on the devel "
 "channel is blocking the release of the next rc image."
@@ -482,7 +490,7 @@ msgstr ""
 "** critical（devel）**：这个严重的问题只在``devel通道上阻塞了下一个rc图像的发"
 "布``这一情况中发生。"
 
-#: ../../about/process/issue-tracking.rst:77
+#: ../../about/process/issue-tracking.rst:76
 msgid ""
 "**critical (rc)**: This critical issue that only occurs on the devel and rc "
 "channel is blocking the release of the next stable release. Usually, issues "
@@ -493,13 +501,13 @@ msgstr ""
 "本的发布。 通常情况下，不能简单地移动到不同版本并且有权推迟发布的问题都标记为"
 "此。"
 
-#: ../../about/process/issue-tracking.rst:81
+#: ../../about/process/issue-tracking.rst:80
 msgid ""
 "**device: [DEVICE CODENAME]**: This issue affects only the specified "
 "device(s)."
 msgstr "**device: [DEVICE CODENAME] **：此问题仅影响指定的设备。"
 
-#: ../../about/process/issue-tracking.rst:83
+#: ../../about/process/issue-tracking.rst:82
 msgid ""
 "**team: [TEAM NAME]**: This issue is falls under the responsibility of a "
 "specific team (hal, middleware, UI)."
@@ -507,18 +515,18 @@ msgstr ""
 "**team: [TEAM NAME] **：这个问题属于特定团队（hal，middleware，UI）的责任范"
 "围。"
 
-#: ../../about/process/issue-tracking.rst:86
+#: ../../about/process/issue-tracking.rst:85
 msgid ""
 "If a repository that tracks issues locally defines it's own labels, they "
 "should be documented in the README.md."
 msgstr ""
 "如果在本地跟踪问题的存储库定义了它自己的标签，则应将其记录在README.md中。"
 
-#: ../../about/process/issue-tracking.rst:90
+#: ../../about/process/issue-tracking.rst:89
 msgid "Milestones"
 msgstr "里程碑"
 
-#: ../../about/process/issue-tracking.rst:92
+#: ../../about/process/issue-tracking.rst:91
 msgid ""
 "Milestones are used for stable OTA releases only. In general, milestones for "
 "the work-in-progress OTA and the next OTA are created. The ETA is set, once "
@@ -530,11 +538,11 @@ msgstr ""
 "旦发布的工作开始（从开始日期起6周），ETA就会设置，但之后可以进行调整。 有关详"
 "细信息，请参阅：doc：`release-schedule <release-schedule>`。"
 
-#: ../../about/process/issue-tracking.rst:99
+#: ../../about/process/issue-tracking.rst:98
 msgid "Assignees"
 msgstr "申请人"
 
-#: ../../about/process/issue-tracking.rst:101
+#: ../../about/process/issue-tracking.rst:100
 msgid ""
 "To make it transparent who's working on an issue, the developer should be "
 "assigned. This also allows the use of GitHub's global filtering as a type of "
@@ -547,21 +555,21 @@ msgstr ""
 "%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_中分配给"
 "mariogrip的所有内容。"
 
-#: ../../about/process/issue-tracking.rst:105
+#: ../../about/process/issue-tracking.rst:104
 msgid ""
 "Developers are encouraged to keep their list short and update the status of "
 "their issues."
 msgstr "鼓励开发人员保持他们的清单简短并更新他们的问题状态。"
 
-#: ../../about/process/issue-tracking.rst:108
+#: ../../about/process/issue-tracking.rst:107
 msgid "Examples"
 msgstr "事例"
 
-#: ../../about/process/issue-tracking.rst:111
+#: ../../about/process/issue-tracking.rst:110
 msgid "Bug Lifecycle"
 msgstr "Bug 生命周期"
 
-#: ../../about/process/issue-tracking.rst:114
+#: ../../about/process/issue-tracking.rst:113
 msgid ""
 "The same principle applies to feature requests. The only difference is, that "
 "instead of the label **bug**, the label **enhancement** is used. The **needs "
@@ -570,11 +578,11 @@ msgstr ""
 "同样的原则适用于功能请求。 唯一的区别是，使用标签**增强**而不是标签** bug "
 "**。 **需要确认**标签不适用于功能请求。"
 
-#: ../../about/process/issue-tracking.rst:118
+#: ../../about/process/issue-tracking.rst:117
 msgid "A *User* files a new bug using the issue-template."
 msgstr "一个 * 用户 *使用问题模板提交新错误。"
 
-#: ../../about/process/issue-tracking.rst:119
+#: ../../about/process/issue-tracking.rst:118
 msgid ""
 "The *QA-Team* adds the label **needs confirmation** and tries to work with "
 "the user to confirm the bug and add potentially missing information to the "
@@ -586,7 +594,7 @@ msgstr ""
 "的信息。 一旦报告完成，将在问题中添加**团队标签**，该问题将被放在项目的**等待"
 "分类列表**中，标签需求确认将被替换为**错误**。"
 
-#: ../../about/process/issue-tracking.rst:120
+#: ../../about/process/issue-tracking.rst:119
 msgid ""
 "The affected *Team* will triage the issue and either reject (label "
 "**wontfix**, close and remove from the project) or accept the issue. The "
@@ -603,12 +611,12 @@ msgstr ""
 "何解决问题的提示以及有关如何在必要时实施修复的更多详细信息。 对于非常难以解决"
 "的非关键问题，也可以添加标签**良好的第一期**。"
 
-#: ../../about/process/issue-tracking.rst:121
+#: ../../about/process/issue-tracking.rst:120
 #, fuzzy
 msgid ""
 "Once a *developer* is assigned and starts working on the issue, it is moved "
-"to “In Development”. As soon as they have something to show for, the issue "
-"is closed and automatically moved to “Quality Assurance” for feedback from "
+"to \"In Development\". As soon as they have something to show for, the issue "
+"is closed and automatically moved to \"Quality Assurance\" for feedback from "
 "the QA team. If necessary, the developer will provide hints on how to test "
 "his patch in a comment on the issue."
 msgstr ""
@@ -616,18 +624,19 @@ msgstr ""
 "东西，问题就会被关闭，并自动转移到“质量保证”，以获得QA团队的反馈。 如果需要，"
 "开发人员将提供关于如何在对该问题的评论中测试其补丁的提示。"
 
-#: ../../about/process/issue-tracking.rst:122
+#: ../../about/process/issue-tracking.rst:121
+#, fuzzy
 msgid ""
 "The *QA-Team* tests the fix on all devices and provides feedback to the "
 "developer. If problems are found, the issue is re-opened and goes back to "
-"“Accepted”, else it’s moved to “Release Candidate” to be included in the "
+"\"Accepted\", else it’s moved to \"Release Candidate\" to be included in the "
 "next release."
 msgstr ""
 "* QA-Team *测试所有设备上的修复程序并向开发人员提供反馈。 如果发现问题，则重"
 "新打开该问题并返回“已接受”，否则将其移至“Release Candidate”以包含在下一版本"
 "中。"
 
-#: ../../about/process/issue-tracking.rst:123
+#: ../../about/process/issue-tracking.rst:122
 msgid ""
 "If not done already, the issue is added to the next milestone. Once the "
 "milestone is released, the issue is removed from the project board."
@@ -662,7 +671,9 @@ msgstr "原生包"
 msgid ""
 "Native packages are repositories which contain a ``debian/`` directory "
 "**with** the source used to create the Debian source package (``.dsc``)."
-msgstr "原生包是一个包含 ``debian/`` 目录的存储库，其中 **包含** 用于创建 Debian 源码包的源代码 (``.dsc``)。"
+msgstr ""
+"原生包是一个包含 ``debian/`` 目录的存储库，其中 **包含** 用于创建 Debian 源码"
+"包的源代码 (``.dsc``)。"
 
 #: ../../about/process/ppa.rst:14
 msgid ""
@@ -681,8 +692,9 @@ msgid ""
 "contain instructions to tell ``debhelper`` how to get the source used to "
 "create the source package."
 msgstr ""
-"打包存储库包含一个 ``debian/`` 目录，其中 **不包含** 用于创建 Debian 源码包的源代码 (``.dsc``)。它们还包含说明 "
-"``debhelper`` 如何获取用于创建源码包的源代码。"
+"打包存储库包含一个 ``debian/`` 目录，其中 **不包含** 用于创建 Debian 源码包的"
+"源代码 (``.dsc``)。它们还包含说明 ``debhelper`` 如何获取用于创建源码包的源代"
+"码。"
 
 #: ../../about/process/ppa.rst:21
 msgid ""
@@ -691,8 +703,8 @@ msgid ""
 "generates a source package called ``sandwich`` would be called ``sandwich-"
 "packaging``."
 msgstr ""
-"存储库应该具有它生成的源码包的名称，并在末尾附加 ``-packaging``。 例如：生成命名为 ``sandwich`` "
-"的源码包的打包存储库将会被称为 ``sandwich-packaging``。"
+"存储库应该具有它生成的源码包的名称，并在末尾附加 ``-packaging``。 例如：生成"
+"命名为 ``sandwich`` 的源码包的打包存储库将会被称为 ``sandwich-packaging``。"
 
 #: ../../about/process/ppa.rst:24
 msgid "Creating new PPAs"
@@ -759,3 +771,10 @@ msgstr ""
 "或发布非常不完整的功能。 由于OTA更新无法在所有关键问题结束前发布，因此可能需"
 "要通过对所有问题何时可以处理进行有根据的猜测来调动ETA。 如果添加到这次重要阶"
 "段的问题太多，则应将其删除或添加到下一个重要阶段。"
+
+#~ msgid ""
+#~ "**good first issue**: This issue is not critical and trivial to fix. It "
+#~ "is reserved for new contributors as a place to start."
+#~ msgstr ""
+#~ "**good first issue**：这个问题并不严重，可以被修复。它被保留给新的贡献者作"
+#~ "为开始的地方。"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-28 14:00+0200\n"
-"PO-Revision-Date: 2019-04-26 12:36+0000\n"
+"POT-Creation-Date: 2020-10-28 12:29-0500\n"
+"PO-Revision-Date: 2020-11-07 19:45+0000\n"
 "Last-Translator: Anne Onyme <anneonyme017@netcourrier.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/fr/>\n"
@@ -17,58 +17,755 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.2.2\n"
+"X-Generator: Weblate 3.11.3\n"
 "Generated-By: Babel 2.5.1\n"
 
-#: ../../porting/building-halium-boot.rst:2
-msgid "Building halium-boot"
-msgstr "Construction de l'image de démarrage de Halium (halium-boot)"
+#: ../../porting/Intro.rst:2
+msgid "Introduction to porting"
+msgstr "Introduction au portage"
 
-#: ../../porting/building-halium-boot.rst:4
+#: ../../porting/Intro.rst:4
 msgid ""
-"Halium-boot is a new proposed boot image in the Halium project, replacing "
-"hybris-boot. We will be building and using it for Ubuntu Touch."
+"This first section will introduce you to the specifics of porting Ubuntu "
+"Touch to an Android device. Note that it is written with the general public "
+"in mind, not primarily the experienced porting developer. In subsequent "
+"sections we have made an effort to differentiate by keeping the main text "
+"more concise in order to meet the needs of the more experienced reader, "
+"while providing links to supplementary reading for the less experienced."
 msgstr ""
-"Halium-boot est une nouvelle proposition d'image de démarrage du projet "
-"Halium, remplaçant hybris-boot. Nous allons la construire et l'utiliser pour "
-"Ubuntu Touch."
+"Cette première section vous présentera les spécificités du portage d'Ubuntu "
+"Touch sur un appareil Android. Veuillez noter qu'elle a été rédigée à "
+"l'intention du grand public et non du développeur de portage expérimenté. "
+"Dans les sections suivantes, nous avons fait un effort de différenciation en "
+"gardant le texte principal plus concis afin de répondre aux besoins du "
+"lecteur plus expérimenté, tout en fournissant des liens vers des lectures "
+"complémentaires pour les moins expérimentés."
 
-#: ../../porting/building-halium-boot.rst:7
-msgid "Fix mounts"
+#: ../../porting/Intro.rst:6
+msgid ""
+"The guide as a whole is written as a sequence of steps describing how an "
+"ideal port might proceed. However, porting is unpredictable and messy. Every "
+"device is different and in reality you will likely iterate and revisit some "
+"steps, skip over other steps and uncover new and undocumented challenges."
+msgstr ""
+"L'ensemble du guide est rédigé sous forme d'une séquence d'étapes décrivant "
+"comment pourrait se passer un portage idéal. Cependant, le portage est "
+"imprévisible et compliqué. Chaque appareil est différent et, en réalité, "
+"vous allez probablement itérer sur certaines étapes, en sauter d'autres et "
+"découvrir des défis nouveaux et non documentés."
+
+#: ../../porting/Intro.rst:11
+msgid "What is Ubuntu Touch?"
+msgstr "Qu'est-ce qu'Ubuntu Touch ?"
+
+#: ../../porting/Intro.rst:13
+msgid ""
+"Ubuntu Touch is an open source operating system for mobile devices. It can "
+"be ported to devices that originally shipped with Android OS. Alas, the "
+"majority of these devices are dependent to some degree on proprietary "
+"software."
+msgstr ""
+"Ubuntu Touch est un système d'exploitation libre pour les appareils mobiles. "
+"Il peut être porté sur des appareils qui, à l'origine, étaient équipés d'un "
+"système d'exploitation Android. Hélas, la majorité de ces appareils "
+"dépendent dans une certaine mesure de logiciels propriétaires."
+
+#: ../../porting/Intro.rst:15
+msgid ""
+"To be specific, device vendors tend to keep the code that speaks directly to "
+"the device hardware (the low level device drivers) proprietary. These "
+"components are commonly called the 'vendor blobs'. The vendor blobs need to "
+"be incorporated into an Ubuntu Touch port. Note that these components are "
+"specific not only to each device, but also to each Android version. It is "
+"therefore necessary to secure the correct version of these components when "
+"building a port."
+msgstr ""
+"Pour être spécifique, les vendeurs d'appareils ont tendance à garder le code "
+"qui parle directement au matériel de l'appareil, les pilotes de bas niveau "
+"propriétaires des fabricants. Ces composants sont communément appelés les « "
+"vendor blobs ». Ils doivent être incorporés dans un portage d'Ubuntu Touch. "
+"Notez que ces composants sont spécifiques non seulement à chaque appareil, "
+"mais aussi à chaque version d'Android. Il est donc nécessaire d'utiliser la "
+"version correcte de ces composants lors de la création d'un portage."
+
+#: ../../porting/Intro.rst:17
+msgid ""
+"This is why Ubuntu Touch cannot be built completely from source code for "
+"most commercial devices. Instead, porting the system to these devices "
+"involves integrating the previously mentioned vendor blobs into the rest of "
+"the system, which can be built from source."
+msgstr ""
+"C'est pourquoi Ubuntu Touch ne peut pas être entièrement créé à partir du "
+"code source de la plupart des appareils commerciaux. Au lieu de cela, le "
+"portage du système sur ces appareils implique l'intégration des blobs "
+"mentionnés précédemment dans le reste du système, qui peut être construit à "
+"partir du code source."
+
+#: ../../porting/Intro.rst:19
+msgid ""
+"The next component of Ubuntu Touch is a pre-compiled root filesystem which "
+"needs to be installed on the device. This component does not communicate "
+"directly with the device hardware. Instead, this communication is mediated "
+"by a Hardware Abstraction Layer (HAL) which needs to be built for each "
+"specific device, because each device has its specific hardware architecture. "
+"This component is called Halium and is available in different versions (5.1 "
+"which is largely obsolete, 7.1, and 9 as of writing) corresponding to "
+"different Android versions."
+msgstr ""
+"Le composant suivant d'Ubuntu Touch est un système de fichiers racine pré-"
+"compilé qui doit être installé sur l'appareil. Ce composant ne communique "
+"pas directement avec le matériel de l'appareil. Cette communication est "
+"plutôt assurée par une couche d'abstraction matérielle (« Hardware "
+"Abstraction Layer », ou HAL) qui doit être créée pour chaque appareil "
+"spécifique, car chaque appareil a son architecture matérielle spécifique. Ce "
+"composant est appelé Halium et est disponible en différentes versions (5.1 "
+"qui est largement obsolète, 7.1 et 9 à l'heure actuelle) correspondant à "
+"différentes versions d'Android."
+
+#: ../../porting/Intro.rst:21
+msgid ""
+"The Halium project enables Linux systems to run on Android hardware. It is a "
+"joint effort by multiple mobile operating systems, notably Plasma mobile, "
+"Lune OS and UBports. UBports porting builds on top of Halium porting. "
+"Consequently, you will be using both the Halium porting guide and the "
+"UBports porting guide. At times it can also be helpful to test with one of "
+"the other operating systems to debug a problem from different angles."
+msgstr ""
+"Le projet Halium permet aux systèmes Linux de fonctionner sur du matériel "
+"Android. Il s'agit d'un effort conjoint de plusieurs systèmes d'exploitation "
+"mobiles, notamment Plasma mobile, Lune OS et UBports. Le portage UBports "
+"s'appuie sur le portage d'Halium. Par conséquent, vous utiliserez à la fois "
+"le guide de portage d'Halium et le guide de portage d'UBports. Parfois, il "
+"peut également être utile de tester avec l'un des autres systèmes "
+"d'exploitation pour déboguer un problème sous différents angles."
+
+#: ../../porting/Intro.rst:23
+msgid ""
+"Halium is thus an indispensible part of an Ubuntu Touch port and is "
+"available in the form of open source software. Developing a new version of "
+"Halium is a very considerable task which is the why only a few versions of "
+"Halium are available. Each port of Ubuntu Touch has to be based on one of "
+"the available Halium versions and vendor blobs from the corresponding "
+"Android version. See the first two columns of the table below for details."
+msgstr ""
+"Halium est donc une partie indispensable d'un portage d'Ubuntu Touch et est "
+"disponible sous forme de logiciel libre. Le développement d'une nouvelle "
+"version d'Halium est une tâche considérable, c'est pourquoi seules quelques "
+"versions d'Halium sont disponibles. Chaque portage d'Ubuntu Touch doit être "
+"basé sur une des versions d'Halium disponibles et sur les blobs de la "
+"version d'Android correspondante. Voir les deux premières colonnes du "
+"tableau ci-dessous pour plus de détails."
+
+#: ../../porting/Intro.rst:28
+msgid "Thus an Ubuntu Touch port is composed of the these components:"
+msgstr "Ainsi, un portage d'Ubuntu Touch est composé de ces composants :"
+
+#: ../../porting/Intro.rst:26
+msgid "The Ubuntu Touch (UT) root filesystem (rootfs)"
+msgstr "Le système de fichiers racine (rootfs) d'Ubuntu Touch (UT)"
+
+#: ../../porting/Intro.rst:27
+msgid ""
+"`Halium <https://halium.org/>`_ (contained in the boot and system images)"
+msgstr ""
+"`Halium <https://halium.org/>`_ (contenu dans les images de démarrage et du "
+"système)"
+
+#: ../../porting/Intro.rst:28
+msgid "The vendor blobs"
+msgstr "Les blobs des fabricants"
+
+#: ../../porting/Intro.rst:30
+msgid ""
+"You, the porter, need to build Halium (i.e. halium-boot.img and system.img) "
+"and install these together with the Ubuntu Touch rootfs in order to create a "
+"functioning Ubuntu Touch port."
+msgstr ""
+"En tant que porteur/euse, vous devez compiler Halium (c'est-à-dire halium-"
+"boot.img et system.img) et les installer avec le rootfs d'Ubuntu Touch afin "
+"de créer un portage d'Ubuntu Touch fonctionnel."
+
+#: ../../porting/Intro.rst:32
+msgid ""
+"Halium is built using source code for a modified version of the Android "
+"operating system called LineageOS. The required source code is available "
+"online and needs to be downloaded and configured to build the correct Halium "
+"version for each individual device port. The table below shows which "
+"versions are required for the different Halium versions."
+msgstr ""
+"Halium est créé à partir du code source d'une version modifiée du système "
+"d'exploitation Android appelée LineageOS. Le code source requis est "
+"disponible en ligne et doit être téléchargé et configuré pour construire la "
+"version correcte d'Halium pour chaque portage d'appareil individuel. Le "
+"tableau ci-dessous indique les versions requises pour les différentes "
+"versions d'Halium."
+
+#: ../../porting/Intro.rst:35
+msgid "Android version"
+msgstr "Version d'Android"
+
+#: ../../porting/Intro.rst:35
+msgid "Halium version"
+msgstr "Version d'Halium"
+
+#: ../../porting/Intro.rst:35
+msgid "Lineage OS (LOS)"
+msgstr "Lineage OS (LOS)"
+
+#: ../../porting/Intro.rst:37
+msgid "7.1"
+msgstr "7.1"
+
+#: ../../porting/Intro.rst:37
+msgid "14.1"
+msgstr "14.1"
+
+#: ../../porting/Intro.rst:38
+msgid "9.0"
+msgstr "9.0"
+
+#: ../../porting/Intro.rst:38
+msgid "16.0"
+msgstr "16.0"
+
+#: ../../porting/Intro.rst:44
+msgid "Overview of the porting process"
+msgstr "Aperçu du processus de portage"
+
+#: ../../porting/Intro.rst:46 ../../porting/Preparations.rst:2
+msgid "Preparations"
+msgstr "Préparatifs"
+
+#: ../../porting/Intro.rst:47
+msgid ""
+"In this first stage you will choose a target device, gather information "
+"about it and choose a suitable workstation (PC or laptop) on which to do "
+"your work."
+msgstr ""
+"Au cours de cette première étape, vous choisirez un appareil cible, "
+"recueillerez des informations à son sujet et choisirez un poste de travail "
+"approprié (fixe ou portable) sur lequel vous pourrez travailler."
+
+#: ../../porting/Intro.rst:48
+msgid "Set up your Halium build environment and complete a test build"
+msgstr ""
+"Configurer votre environnement de construction d'Halium et effectuer un test "
+"de construction"
+
+#: ../../porting/Intro.rst:49
+msgid ""
+"This stage involves downloading all the relevant source code and securing "
+"the vendor blobs. You will then build the Halium boot image and system image "
+"according to the Halium guide to ensure that all your sources are set up "
+"correctly and work in unison."
+msgstr ""
+"Cette étape consiste à télécharger tous les codes sources pertinents et à "
+"obtenir les blobs des fabricants. Vous construirez ensuite l'image de "
+"démarrage d'Halium et l'image système selon le guide d'Halium pour vous "
+"assurer que toutes vos sources sont correctement configurées et fonctionnent "
+"à l'unisson."
+
+#: ../../porting/Intro.rst:50
+msgid "Build halium-boot.img and system.img for Ubuntu Touch"
+msgstr "Créer halium-boot.img et system.img pour Ubuntu Touch"
+
+#: ../../porting/Intro.rst:51
+msgid ""
+"Now you need to modify your source tree, after which you will proceed to "
+"build the halium-boot.img and system.img to be used in your port."
+msgstr ""
+"Vous devez maintenant modifier votre arborescence de sources, après quoi "
+"vous procéderez à la construction des fichiers halium-boot.img et system.img "
+"qui seront utilisés dans votre portage."
+
+#: ../../porting/Intro.rst:52
+msgid "Install and debug the boot process"
+msgstr "Installer et déboguer le processus de démarrage"
+
+#: ../../porting/Intro.rst:53
+msgid ""
+"The goal of this stage is to successfully boot into Ubuntu Touch. You will "
+"be working from the command line."
+msgstr ""
+"L'objectif de cette étape est de réussir à démarrer Ubuntu Touch. Vous "
+"travaillerez à partir de la ligne de commande."
+
+#: ../../porting/Intro.rst:54
+msgid "Bring up the Ubuntu Touch graphical user interface 'Unity 8'"
+msgstr "Ouvrir, Unity 8, l'interface utilisateur graphique d'Ubuntu Touch"
+
+#: ../../porting/Intro.rst:55
+msgid ""
+"This stage involves adjusting some configuration and further debugging of "
+"your build."
+msgstr ""
+"Cette étape implique l'ajustement de certaines configurations et un débogage "
+"supplémentaire de votre compilation."
+
+#: ../../porting/Intro.rst:56
+msgid "Complete device configuration"
+msgstr "Configuration complète de l'appareil"
+
+#: ../../porting/Intro.rst:57
+msgid ""
+"Now you need to further debug the build and adjust configuration until all "
+"broken functionality is fixed. When you complete this stage you will have a "
+"fully functional port, but it will not yet be capable of accepting Over The "
+"Air (OTA) updates."
+msgstr ""
+"Vous devez maintenant continuer à déboguer la compilation et ajuster la "
+"configuration jusqu'à ce que toutes les fonctionnalités défectueuses soient "
+"corrigées. À l'issue de cette étape, vous disposerez d'un portage pleinement "
+"fonctionnel, mais il ne sera pas encore capable d'accepter les mises à jour "
+"OTA (Over The Air)."
+
+#: ../../porting/Intro.rst:58
+msgid "Build Ubuntu Touch recovery.img"
+msgstr "Construire l'image recovery.img d'Ubuntu Touch"
+
+#: ../../porting/Intro.rst:59
+msgid ""
+"The Ubuntu Touch recovery image is a slightly modified recovery image that "
+"is tailored to working with the UBports installer"
+msgstr ""
+"L'image de récupération d'Ubuntu Touch est une image de récupération "
+"légèrement modifiée qui est adaptée pour fonctionner avec l'installateur "
+"d'UBports"
+
+#: ../../porting/Intro.rst:61
+msgid "Set up the UBports installer for your device"
+msgstr "Configurer l'installateur d'UBports pour votre appareil"
+
+#: ../../porting/Intro.rst:61
+msgid ""
+"When you have completed this stage you will have made it possible for anyone "
+"owning the device in question to install and run Ubuntu Touch on it, "
+"including the ability to receive OTA updates as they are made available."
+msgstr ""
+"Lorsque vous aurez terminé cette étape, vous aurez permis à toute personne "
+"possédant l'appareil en question d'installer et d'exécuter Ubuntu Touch sur "
+"celui-ci, y compris la possibilité de recevoir les mises à jour OTA dès "
+"qu'elles sont disponibles."
+
+#: ../../porting/Intro.rst:66
+msgid "The challenges of the porting process"
+msgstr "Les défis du processus de portage"
+
+#: ../../porting/Intro.rst:68
+msgid ""
+"Getting the above components to work properly together always involves an "
+"amount of time-consuming configuring and testing. However, it usually also "
+"involves a certain amount of modification to parts of the source code, and "
+"sometimes quite a bit, depending on your target device."
+msgstr ""
+"Pour que les composants ci-dessus fonctionnent correctement ensemble, il "
+"faut toujours passer beaucoup de temps à les configurer et à les tester. "
+"Cependant, cela implique généralement aussi un certain nombre de "
+"modifications de certaines parties du code source, parfois même beaucoup en "
+"fonction de votre appareil cible."
+
+#: ../../porting/Intro.rst:70
+msgid ""
+"Luckily, there is a community of porters out there who are eager to see "
+"Ubuntu Touch ported to new devices. When you run into trouble, you should "
+"search the sources below (Getting help) to see if others before you have "
+"solved the issue. There are online Telegram chat groups you can join to ask "
+"for help, but please bear in mind that those participating are doing so in "
+"their spare time."
+msgstr ""
+"Heureusement, il existe une communauté de porteurs qui sont impatients de "
+"voir Ubuntu Touch porté sur de nouveaux appareils. En cas de problème, vous "
+"devriez consulter les sources ci-dessous (Obtenir de l'aide) pour voir si "
+"d'autres avant vous ont résolu le problème. Il existe des groupes de "
+"discussion en ligne sur Telegram que vous pouvez rejoindre pour demander de "
+"l'aide, mais n'oubliez pas que les participants le font pendant leur temps "
+"libre."
+
+#: ../../porting/Intro.rst:75
+msgid "Prior knowledge and skills"
+msgstr "Connaissances et compétences préalables"
+
+#: ../../porting/Intro.rst:77
+msgid ""
+"Porters come in all sizes and shapes, so to speak. Therefore, this guide "
+"does not presuppose extensive knowledge or skills in any particular field. "
+"You should, however, as a bare minimum be familiar with some common shell "
+"commands and be comfortable working from the terminal on you host PC. "
+"Furthermore, the guide is based on a host PC running Linux. If you have some "
+"knowledge of programming, this will come in handy at some point, especially "
+"if you are familiar with C / C++. Also, you should familiarize yourself with "
+"git, setup a github account and start documenting your steps as described in "
+"this guide and `the Halium porting guide <http://docs.halium.org/en/latest/"
+"porting/first-steps.html>`_ from the very beginning."
+msgstr ""
+"Les porteurs/euses sont de toutes tailles et de toutes formes, pour ainsi "
+"dire. Par conséquent, ce guide ne présuppose pas de connaissances ou de "
+"compétences approfondies dans un domaine particulier. Vous devez cependant, "
+"au minimum, être familiarisé avec certaines commandes courantes et être à "
+"l'aise pour travailler depuis le terminal sur votre ordinateur hôte. En "
+"outre, le guide est basé sur un ordinateur hôte fonctionnant sous Linux. Si "
+"vous avez quelques connaissances en programmation, cela vous sera utile à un "
+"moment donné, surtout si vous êtes familier avec le C / C++. De plus, vous "
+"devriez vous familiariser avec git, créer un compte Github et commencer à "
+"documenter vos étapes comme décrit dans ce guide et `le guide de portage "
+"d'Halium <http://docs.halium.org/en/latest/porting/first-steps.html>`_ dès "
+"le début."
+
+#: ../../porting/Intro.rst:79
+msgid ""
+"We have attempted to give a certain amount of explanations along the way, "
+"but this guide is in not an in-depth reference into architecture and inner "
+"workings of Ubuntu Touch, and gaining a deeper understanding will "
+"consequently require an amount of research on your part."
+msgstr ""
+"Nous avons tenté de donner un certain nombre d'explications en cours de "
+"route, mais ce guide n'est pas une référence approfondie sur l'architecture "
+"et le fonctionnement interne d'Ubuntu Touch. L'acquisition d'une "
+"compréhension plus approfondie nécessitera par conséquent un certain nombre "
+"de recherches de votre part."
+
+#: ../../porting/Intro.rst:84
+msgid "Getting community help"
+msgstr "Obtenir de l'aide de la communauté"
+
+#: ../../porting/Intro.rst:86
+msgid ""
+"When you run into trouble, and you will, refer to one or more of the sources "
+"below:"
+msgstr ""
+"Si vous avez des problèmes, et vous en aurez, consultez une ou plusieurs des "
+"sources ci-dessous :"
+
+#: ../../porting/Intro.rst:88
+msgid "`Telegram: @halium <https://t.me/halium>`_"
+msgstr "`Telegram : @halium <https://t.me/halium>`_"
+
+#: ../../porting/Intro.rst:89
+msgid "`Telegram: @ubports_porting <https://t.me/ubports_porting>`_"
+msgstr "`Telegram : @ubports_porting <https://t.me/ubports_porting>`_"
+
+#: ../../porting/Intro.rst:90
+msgid "`The UBports Forum <https://forums.ubports.com/category/33/porting>`_"
+msgstr "`Le forum d'UBports <https://forums.ubports.com/category/33/porting>`_"
+
+#: ../../porting/Intro.rst:91
+msgid "IRC: #halium on Freenode"
+msgstr "IRC : #halium sur Freenode"
+
+#: ../../porting/Intro.rst:92
+msgid "Matrix: #halium:matrix.org"
+msgstr "Matrix : #halium:matrix.org"
+
+#: ../../porting/Intro.rst:97
+msgid "General advice"
+msgstr "Conseils généraux"
+
+#: ../../porting/Intro.rst:99
+msgid ""
+"The more rigorous you are at making notes and documenting your steps, the "
+"less time you will spend backtracking your steps and guessing your way "
+"along. When dealing with issues that arise along the way, it is wise to work "
+"on them one at a time. If you try to correct several things at once, you "
+"risk ending up trying to guess which changes solved a given issue, which "
+"easily leads to breaking the issue in question once more."
+msgstr ""
+"Plus vous serez rigoureux dans la prise de notes et la documentation de vos "
+"démarches, moins vous passerez de temps à revenir sur vos pas et à chercher "
+"votre chemin. Lorsque vous traitez des questions qui se posent en cours de "
+"route, il est préférable de les traiter une à une. Si vous essayez de "
+"corriger plusieurs choses à la fois, vous risquez de vous retrouver à "
+"essayer de deviner quels changements ont résolu un problème donné, ce qui "
+"conduit facilement à casser à nouveau le correctif en question."
+
+#: ../../porting/Intro.rst:101
+msgid ""
+"If you are not discouraged after reading this, we wish you the best of luck!"
+msgstr ""
+"Si vous n'êtes pas découragé après avoir lu ceci, nous vous souhaitons bonne "
+"chance !"
+
+#: ../../porting/Preparations.rst:4
+msgid ""
+"Not all devices can be made to run Ubuntu Touch. Research your target device "
+"before you start."
+msgstr ""
+"Tous les appareils ne sont pas conçus pour fonctionner avec Ubuntu Touch. "
+"Faites des recherches sur l'appareil cible avant de commencer."
+
+#: ../../porting/Preparations.rst:6
+msgid ""
+"To determine your device's specifications, search for it on `GSM Arena "
+"<https://www.gsmarena.com>`_ and/or `Device Specification <https://www."
+"devicespecifications.com/en>`_."
+msgstr ""
+"Pour déterminer les spécifications de votre appareil, recherchez-le sur `GSM "
+"Arena <https://www.gsmarena.com>`_ et/ou `Device Specifications "
+"<https://www.devicespecifications.com/fr>`_."
+
+#: ../../porting/Preparations.rst:8
+msgid ""
+"Refer to the `Halium Porting Guide <http://docs.halium.org/en/latest/porting/"
+"first-steps.html#pick-an-android-target-device>`_ for further information on "
+"requirements and how to check if your device qualifies."
+msgstr ""
+"Reportez-vous au « Guide de portage d'Halium » <http://docs.halium.org/en/"
+"latest/porting/first-steps.html#pick-an-android-target-device>`_ pour plus "
+"d'informations sur les exigences et la façon de vérifier si votre appareil "
+"remplit les conditions requises."
+
+#: ../../porting/Preparations.rst:13
+msgid "Locate relevant guides and other information"
+msgstr "Trouver les guides et autres informations pertinentes"
+
+#: ../../porting/Preparations.rst:15
+msgid ""
+"If your desired target device complies to the above, the next thing to do is "
+"to locate the available guides and other documentation. This step will help "
+"you later on when you run into issues developing your port. For now, the "
+"main thing to look for is how to unlock your bootloader. (See below)."
+msgstr ""
+"Si l'appareil cible que vous souhaitez utiliser est conforme à ce qui "
+"précède, la prochaine chose à faire est de trouver les guides et autres "
+"documents disponibles. Cette étape vous aidera plus tard lorsque vous "
+"rencontrerez des problèmes pour développer votre portage. Pour l'instant, la "
+"principale chose à rechercher est la manière de déverrouiller votre "
+"programme de démarrage (voir ci-dessous)."
+
+#: ../../porting/Preparations.rst:17
+msgid ""
+"Head over to the `LineageOS Wiki <https://wiki.lineageos.org/>`_. Look up "
+"your device and read and bookmark the guides that are listed there. Try a "
+"web search for additional information, specifying both its retail name and "
+"the code name you found on the LineageOS site. Be careful to check that the "
+"information you gather applies to your specific device, keeping in mind that "
+"many devices are sold in a number of different variants with different "
+"hardware specifications."
+msgstr ""
+"Rendez-vous sur le wiki `LineageOS <https://wiki.lineageos.org/>`_. Cherchez "
+"votre appareil, lisez et mettez dans vos favoris les guides qui y sont "
+"répertoriés. Essayez une recherche sur internet pour obtenir des "
+"informations supplémentaires, en précisant à la fois son nom de vente et le "
+"nom de code que vous avez trouvé sur le site de LineageOS. Veillez à "
+"vérifier que les informations que vous avez recueillies s'appliquent à votre "
+"appareil spécifique, en gardant à l'esprit que de nombreux appareils sont "
+"vendus dans un certain nombre de variantes différentes avec des "
+"spécifications matérielles différentes."
+
+#: ../../porting/Preparations.rst:19
+msgid ""
+"Another rich source of information is the `XDA Developers Forum <https://www."
+"xda-developers.com/>`_."
+msgstr ""
+"Une autre source d'information intéressante est le `Forum des développeurs "
+"de XDA<https://www.xda-developers.com/>`_."
+
+#: ../../porting/Preparations.rst:24
+msgid "Unlock the bootloader"
+msgstr "Déverrouiller le programme de démarrage"
+
+#: ../../porting/Preparations.rst:26
+msgid ""
+"Vendors usually provide their devices in a locked bootloader state. This is "
+"a kind of software \"seal\" intended to prevent modifications directly to "
+"the operating system and system software. If you unlock the bootloader, you "
+"will be able to make such modifications, but in this state your device's "
+"warranty might be void. The choice is yours, but this step is mandatory if "
+"you wish to install Ubuntu Touch on the device."
+msgstr ""
+"Les fabricants fournissent généralement leurs appareils avec un programme de "
+"chargement verrouillé. Il s'agit d'une sorte de «sceau » logiciel destiné à "
+"empêcher toute modification directe du système d'exploitation et des "
+"logiciels système. Si vous déverrouillez le programme de démarrage, vous "
+"pourrez effectuer des modifications, mais dans cet état, la garantie de "
+"votre appareil pourrait être annulée. Le choix vous appartient, mais cette "
+"étape est obligatoire si vous souhaitez installer Ubuntu Touch sur "
+"l'appareil."
+
+#: ../../porting/Preparations.rst:28
+msgid ""
+"Devices differ and there is no general method that covers all makes and "
+"models. Therefore, you need to check the aforementioned guides for "
+"instructions on how to unlock the bootloader of your particular device."
+msgstr ""
+"Les appareils sont tous différents et il n'existe pas de méthode générale "
+"qui couvre toutes les marques et tous les modèles. Par conséquent, vous "
+"devez consulter les guides mentionnés ci-dessus pour savoir comment "
+"déverrouiller le programme de démarrage de votre appareil en particulier."
+
+#: ../../porting/Preparations.rst:33
+msgid "Install TWRP recovery"
+msgstr "Installer l'image de récupération TWRP"
+
+#: ../../porting/Preparations.rst:35
+msgid ""
+"You need to install a custom recovery image on your device in order to "
+"handle formatting and flashing image files onto it. Head over to the `Team "
+"Win Recovery Project <https://twrp.me/Devices/>`_  and locate the image file "
+"for your device. Follow the installation instructions provided on the "
+"website."
+msgstr ""
+"Vous devez installer une image de récupération personnalisée sur votre "
+"appareil afin de gérer le formatage et l'écriture des fichiers d'image sur "
+"celui-ci. Rendez-vous sur le site de `Team Win Recovery Project "
+"<https://twrp.me/Devices/>`_ et localisez le fichier image pour votre "
+"appareil. Suivez les instructions d'installation fournies sur le site."
+
+#: ../../porting/Preparations.rst:40
+msgid "Recommendations for the host/build PC"
+msgstr ""
+
+#: ../../porting/Preparations.rst:42
+msgid ""
+"The remainder of this guide presumes you are using a build PC running Linux. "
+"Although high performance always is nice, stability and sufficient RAM and "
+"harddisk space are the main concerns here. You do not need the latest and "
+"the best hardware, nor do you need the latest distribution release. In fact, "
+"it is not uncommon to run into issues when choosing the very newest release, "
+"as some of the software needed may not yet have been built for it. For "
+"example, as of writing the latest release of Ubuntu Linux is 20.04, but many "
+"still recommend using the previous long term support release, 18.04."
+msgstr ""
+
+#: ../../porting/Preparations.rst:44
+msgid ""
+"Having completed the steps above, you are now ready to set up your build "
+"environment and start the porting process per se (next section)."
+msgstr ""
+
+#: ../../porting/UBports_installer.rst:2
+msgid "Configuring the UBports installer"
+msgstr ""
+
+#: ../../porting/UBports_installer.rst:4 ../../porting/UBports_recovery.rst:4
+#: ../../porting/halium_7-1/Configuring.rst:122
+#: ../../porting/halium_9/Halium_9_GSI_porting.rst:4
+#: ../../porting/halium_9/Halium_9_common_errors.rst:4
+msgid "*Work in progress*"
+msgstr ""
+
+#: ../../porting/UBports_installer.rst:6 ../../porting/UBports_recovery.rst:6
+msgid ""
+"For the time being, Halium 7.1 porters should refer to the UBports porting "
+"notes on `the UBPorts installer and System image <https://github.com/ubports/"
+"porting-notes/wiki/HowTo:-UBports-Installer-&-System-Image-(Halium-7.1)>`_."
+msgstr ""
+
+#: ../../porting/UBports_recovery.rst:2
+msgid "Building UBports recovery"
+msgstr ""
+
+#: ../../porting/halium_7-1/Building.rst:2
+#, fuzzy
+msgid "Building the images"
+msgstr "Construction de l'image"
+
+#: ../../porting/halium_7-1/Building.rst:4
+msgid "A Halium 7.1 - Ubuntu Touch port consists of the following parts:"
+msgstr ""
+
+#: ../../porting/halium_7-1/Building.rst:6
+msgid "The boot image, halium-boot.img"
+msgstr ""
+
+#: ../../porting/halium_7-1/Building.rst:7
+msgid "The system image, system.img"
+msgstr ""
+
+#: ../../porting/halium_7-1/Building.rst:8
+msgid ""
+"The UBports - Ubuntu Touch - root file system (hereafter referred to as the "
+"*rootfs*)"
+msgstr ""
+
+#: ../../porting/halium_7-1/Building.rst:10
+msgid ""
+"The boot image contains the Linux kernel, the heart of the operating system, "
+"which needs to be built from source code for each specific device. The "
+"system image is also specific to the device and is similarly built from "
+"source code. The rootfs, on the other hand, is maintained by the UBports "
+"project and is downloadable in the form of a prebuilt .tar.gz bundle which "
+"is then installed together with the system.img."
+msgstr ""
+
+#: ../../porting/halium_7-1/Building.rst:15
+#, fuzzy
+msgid "Build the Halium system image"
+msgstr "Construction de l'image"
+
+#: ../../porting/halium_7-1/Building.rst:17
+msgid ""
+"First you need to build the Halium system image according to the Halium "
+"porting guide. This is not a build you need to install. It is simply a "
+"preparation for the actual build for your port. In other words it a test to "
+"confirm that you have set up a viable source tree that can be used to do the "
+"final build."
+msgstr ""
+
+#: ../../porting/halium_7-1/Building.rst:19
+#, fuzzy
+msgid ""
+"Head over to `the Halium porting guide <http://docs.halium.org/en/latest/"
+"porting/first-steps.html#set-up-your-build-device>`_ and follow the steps "
+"described there remembering that you are building Halium 7.1."
+msgstr ""
+"Avant de commencer, dirigez-vous vers `le guide du portage d'Halium <http://"
+"docs.halium.org/en/latest/porting/first-steps.html>`_ et construisez votre "
+"``systemimage`` sans erreurs. Une fois que vous en serez au point "
+"d'installer un rootfs, vous pourrez revenir ici."
+
+#: ../../porting/halium_7-1/Building.rst:21
+msgid ""
+"Once the system image has been successfully built (without errors), you then "
+"know that your source tree is correctly set up to proceed. You then return "
+"here and proceed."
+msgstr ""
+
+#: ../../porting/halium_7-1/Building.rst:26
+#, fuzzy
+msgid "Build the images for Ubuntu Touch"
+msgstr "Construction de l'image"
+
+#: ../../porting/halium_7-1/Building.rst:29
+#, fuzzy
+msgid "Fix mount points"
 msgstr "Correction des montages"
 
-#: ../../porting/building-halium-boot.rst:9
+#: ../../porting/halium_7-1/Building.rst:31
+#, fuzzy
 msgid ""
 "Halium-boot's ``mount`` is not aware of SELinux contexts. If your device's "
-"``fstab`` file includes any contexts, the partition that they are on will "
-"fail to mount and your port will not work correctly."
+"file system table (``fstab`` file) includes any contexts, the partition that "
+"they are on will fail to mount and your port will not work correctly."
 msgstr ""
 "Le ``mount`` d'halium-boot n'est pas informé des contextes SELinux. Si le "
 "fichier ``fstab`` de vos appareils inclut des contextes, la partition sur "
 "laquelle ils sont n'arrivera pas à monter et votre portage ne fonctionnera "
 "pas correctement."
 
-#: ../../porting/building-halium-boot.rst:11
+#: ../../porting/halium_7-1/Building.rst:33
+#, fuzzy
 msgid ""
-"The first step to this process is figuring out where your fstab actually is. "
-"For most, this is inside ``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/"
-"etc`` and it is named either ``fstab.qcom`` or ``fstab.devicename``. Open "
-"the file for editing."
+"Start by locating your fstab file. This will commonly be inside ``BUILDDIR/"
+"device/MANUFACTUER/CODENAME/rootdir/etc`` (e.g. for the Samsung S7 - "
+"codename *herolte*: ``halium/device/samsung/herolte/rootdir/etc``) and it is "
+"named either ``fstab.qcom`` or ``fstab.devicename``. Open the file for "
+"editing."
 msgstr ""
 "La première étape de ce processus consiste à déterminer où se trouve votre "
 "fichier fstab. La plupart du temps, il est à l'intérieur de ``BUILDDIR/"
 "device/MANUFACTUER/CODENAME/rootdir/etc`` et il est appelé soit ``fstab. "
 "qcom`` soit ``fstab. devicename``. Ouvrez le fichier pour le modifier."
 
-#: ../../porting/building-halium-boot.rst:13
+#: ../../porting/halium_7-1/Building.rst:35
+#, fuzzy
 msgid ""
-"If the type of the 'data' or 'userdata' partition is ``f2fs``, it is "
-"required to change it to ``ext4``."
+"If the type of the 'data' or 'userdata' partition is ``f2fs``, you need to "
+"change it to ``ext4``."
 msgstr ""
 "Si le type de la partition 'data' ou 'userdata' est ``f2fs``, il est "
 "nécessaire de la changer en ``ext4``."
 
-#: ../../porting/building-halium-boot.rst:15
+#: ../../porting/halium_7-1/Building.rst:37
 msgid ""
 "With the file open, remove all ``context=`` options from all block devices "
 "in the file. The option will start at the text ``context=`` and end at the "
@@ -78,29 +775,29 @@ msgstr ""
 "tous les dispositifs de blocs dans le fichier. L'option démarrera au niveau "
 "du texte ``context=`` et se terminera à la virgule suivante."
 
-#: ../../porting/building-halium-boot.rst:17
+#: ../../porting/halium_7-1/Building.rst:39
 msgid ""
 "For example, the line ``ro,nosuid,nodev,context=u:object_r:firmware_file:s0,"
 "barrier=0`` should become ``ro,nosuid,nodev,barrier=0``"
 msgstr ""
-"Par exemple, la ligne "
-"``ro,nosuid,nodev,context=u:object_r:firmware_file:s0,barrier=0`` doit "
-"devenir ``ro,nosuid,nodev,barrier=0``"
+"Par exemple, la ligne ``ro,nosuid,nodev,context=u:object_r:firmware_file:s0,"
+"barrier=0`` doit devenir ``ro,nosuid,nodev,barrier=0``"
 
-#: ../../porting/building-halium-boot.rst:19
+#: ../../porting/halium_7-1/Building.rst:41
 msgid "Save and exit."
 msgstr "Enregistrer et quitter."
 
-#: ../../porting/building-halium-boot.rst:22
+#: ../../porting/halium_7-1/Building.rst:46
 msgid "Edit kernel config"
 msgstr "Modification de la configuration du noyau"
 
-#: ../../porting/building-halium-boot.rst:24
+#: ../../porting/halium_7-1/Building.rst:48
+#, fuzzy
 msgid ""
 "Ubuntu Touch requires a slightly different kernel config than Halium, "
-"including enabling Apparmor. Luckily, we have a nice script for this "
-"purpose, ``check-kernel-config``. It's included in the halium-boot "
-"repository. Simply run it on your config as follows::"
+"including enabling Apparmor. This is done using a script, ``check-kernel-"
+"config``, which is included in the halium-boot repository. Simply run it on "
+"your config as follows::"
 msgstr ""
 "Ubuntu Touch a besoin d'une configuration de noyau légèrement différente de "
 "celle d'Halium, intégrant l'activation d'Apparmor. Fort heureusement, nous "
@@ -108,7 +805,7 @@ msgstr ""
 "disponible dans le répertoire halium-boot. Exécutez-le simplement sur votre "
 "configuration comme ci-dessous::"
 
-#: ../../porting/building-halium-boot.rst:28
+#: ../../porting/halium_7-1/Building.rst:52
 msgid ""
 "You may have to do this twice. It will likely fix things both times. Then, "
 "run the script without the ``-w`` flag to see if there are any more errors. "
@@ -121,71 +818,131 @@ msgstr ""
 "fois terminé, lancez le script sans le l'indicateur ``-w``` une fois de plus "
 "pour vous assurer que tout est correct."
 
-#: ../../porting/building-halium-boot.rst:31
-msgid "Build the image"
-msgstr "Construction de l'image"
-
-#: ../../porting/building-halium-boot.rst:33
-msgid ""
-"Once halium-boot is in place, you can build it quite simply. You will also "
-"need to rebuild system.img due to our changes."
+#: ../../porting/halium_7-1/Building.rst:57
+msgid "Ubuntu Touch requires setting console=tty0"
 msgstr ""
-"Une fois qu'halium-boot est en place, vous pouvez le construire assez "
-"simplement. Vous devrez également reconstruire system.img en raison de nos "
-"changements."
 
-#: ../../porting/building-halium-boot.rst:35
-msgid "``cd`` to your Halium BUILDDIR"
-msgstr "Allez dans votre répertoire BUILDDIR d'Halium via ``cd``"
+#: ../../porting/halium_7-1/Building.rst:59
+msgid ""
+"The halium-boot initramfs expects ``/dev/console`` to be a console device "
+"and will not start init if it is not available. This is commonly the case on "
+"recent devices, because they either have UART disabled or ``console=`` is "
+"not specified (null) by default. This can be fixed by supplying "
+"``console=tty0`` as the last argument in the kernel cmdline. To achieve "
+"this, proceed as follows:"
+msgstr ""
 
-#: ../../porting/building-halium-boot.rst:36
+#: ../../porting/halium_7-1/Building.rst:61
+msgid ""
+"It should be done in the makefile named ``BoardConfig.mk`` (or "
+"``BoardConfigCommon.mk``) located in the root directory of your device tree, "
+"e.g. ``~/halium/device/<vendor>/<model_codename>/BoardConfig.mk``"
+msgstr ""
+
+#: ../../porting/halium_7-1/Building.rst:63
+msgid "Add the following line::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Building.rst:67
+msgid ""
+"If your makefile already includes a line beginning with "
+"``BOARD_KERNEL_CMDLINE``, you may add it just below that to keep things tidy."
+msgstr ""
+
+#: ../../porting/halium_7-1/Building.rst:70
+msgid ""
+"The above method, although the preferred one, may not work for some Samsung "
+"devices. The result will be that you cannot get access to the device through "
+"ssh after boot, and Unity 8 will not be able to start. If you run into this "
+"problem, you can specify the setting in your device's kernel config file "
+"instead. Add the following lines::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Building.rst:76
+msgid ""
+"In rare cases the bootloader overwrites the kernel command line argument, "
+"rendering the setting above useless. This is the case for the Google Pixel "
+"3a (sargo). To deal with this issue, replicate `this commit <https://github."
+"com/fredldotme/android_kernel_google_bonito/commit/"
+"d0741dded3907f2cf4ecdc02bfcb74fc252763ff>`_."
+msgstr ""
+
+#: ../../porting/halium_7-1/Building.rst:79
+#, fuzzy
+msgid "Build halium-boot.img and system.img"
+msgstr "Construction de l'image de démarrage de Halium (halium-boot)"
+
+#: ../../porting/halium_7-1/Building.rst:81
+msgid ""
+"You are now ready to build the two image files to incorporate the changes "
+"you have made. These changes have an impact on both the boot image and the "
+"system image, so you will need to rebuild both. The procedure is a simple "
+"and straight forward one. Run the sequence of commands below, where BUILDDIR "
+"is the root of your halium source tree (e.g. ``~/halium``):"
+msgstr ""
+
+#: ../../porting/halium_7-1/Building.rst:83
+msgid "``cd BUILDDIR``"
+msgstr ""
+
+#: ../../porting/halium_7-1/Building.rst:84
 msgid "``source build/envsetup.sh``"
 msgstr "``source build/envsetup.sh``"
 
-#: ../../porting/building-halium-boot.rst:37
-msgid "Run ``breakfast`` or ``lunch``, whichever you use for your device"
+#: ../../porting/halium_7-1/Building.rst:85
+msgid "``breakfast devicename``"
 msgstr ""
-"Exécutez ``breakfast`` ou ``lunch``, en fonction de celui que vous utilisez "
-"pour votre appareil"
 
-#: ../../porting/building-halium-boot.rst:38
+#: ../../porting/halium_7-1/Building.rst:86
 msgid "``mka halium-boot``"
 msgstr "``mka halium-boot``"
 
-#: ../../porting/building-halium-boot.rst:39
+#: ../../porting/halium_7-1/Building.rst:87
 msgid "``mka systemimage``"
 msgstr "``mka systemimage``"
 
-#: ../../porting/building-halium-boot.rst:42
-#: ../../porting/installing-16-04.rst:62
-msgid "Continue on"
-msgstr "Continuez"
-
-#: ../../porting/building-halium-boot.rst:44
-msgid ""
-"Now that you have halium-boot built, you can move on to :doc:"
-"`installing-16-04`."
+#: ../../porting/halium_7-1/Building.rst:90
+msgid "Troubleshooting the build process"
 msgstr ""
-"Maintenant qu'halium-boot est construit, vous pouvez passer à l': "
-"doc:`installing-16-04`."
 
-#: ../../porting/common-problems-install.rst:7
-msgid "Common installation problems"
-msgstr "Problèmes d'installation fréquents"
-
-#: ../../porting/common-problems-install.rst:9
+#: ../../porting/halium_7-1/Building.rst:92
 msgid ""
-"This page details problems commonly faced while following the :doc:"
-"`installing-16-04` page."
+"Refer to the `Halium porting guide <http://docs.halium.org/en/latest/porting/"
+"build-sources.html#documented-errors>`_"
 msgstr ""
-"Cette page détaille les problème communément rencontrés en suivant la page "
-":doc:`installing-16-04`."
 
-#: ../../porting/common-problems-install.rst:12
+#: ../../porting/halium_7-1/Common_errors.rst:2
+#: ../../porting/halium_9/Halium_9_common_errors.rst:2
+#, fuzzy
+msgid "Common errors"
+msgstr "Problèmes fréquents"
+
+#: ../../porting/halium_7-1/Common_errors.rst:7
+msgid "Known issues when building the images for UT"
+msgstr ""
+
+#: ../../porting/halium_7-1/Common_errors.rst:9
+msgid ""
+"Some known issues you may encounter when building the boot and system images "
+"are described in the `Halium porting guide <http://docs.halium.org/en/latest/"
+"porting/build-sources.html#documented-errors>`_."
+msgstr ""
+
+#: ../../porting/halium_7-1/Common_errors.rst:14
+msgid "Known issues with initial boot"
+msgstr ""
+
+#: ../../porting/halium_7-1/Common_errors.rst:16
+msgid ""
+"The following are some of the known issues you may encounter in connection "
+"with the initial boot process."
+msgstr ""
+
+#: ../../porting/halium_7-1/Common_errors.rst:19
 msgid "SSH hangs when trying to connect"
 msgstr "SSH se suspend lors de la tentative de connexion"
 
-#: ../../porting/common-problems-install.rst:14
+#: ../../porting/halium_7-1/Common_errors.rst:21
 msgid ""
 "The SSH connection may hang indefinitely when trying to connect. Attempts to "
 "stop the connection with Control-C may or may not return you to a shell "
@@ -198,7 +955,7 @@ msgstr ""
 "phablet@10.15.19.82``, vous obtenez seulement la sortie suivante avant que "
 "le programme ne s'arrête::"
 
-#: ../../porting/common-problems-install.rst:22
+#: ../../porting/halium_7-1/Common_errors.rst:29
 msgid ""
 "This seems to be a common error on arm64 devices with kernel 3.10 when "
 "rsyslogd is enabled. If you have this error, please add your voice to "
@@ -208,17 +965,17 @@ msgstr ""
 "3.10 lorsque rsyslogd est activé. Si vous avez cette erreur, ajoutez votre "
 "voix à `ubports/ubuntu-touch#560`_ puis tentez le palliatif suivant :"
 
-#: ../../porting/common-problems-install.rst:24
+#: ../../porting/halium_7-1/Common_errors.rst:31
 msgid "Reboot the device to recovery and connect with ``adb shell``"
 msgstr ""
 "Redémarrez votre appareil en mode récupération (recovery) et connectez-vous-"
 "y avec ``adb shell``"
 
-#: ../../porting/common-problems-install.rst:25
+#: ../../porting/halium_7-1/Common_errors.rst:32
 msgid "Run the following commands to disable rsyslogd::"
 msgstr "Lancez la commande suivante pour désactiver rsyslogd::"
 
-#: ../../porting/common-problems-install.rst:33
+#: ../../porting/halium_7-1/Common_errors.rst:40
 msgid ""
 "You may now reboot the device. You should be able to connect to SSH once it "
 "comes back online."
@@ -226,11 +983,11 @@ msgstr ""
 "Vous pouvez maintenant redémarrer l'appareil. Vous devriez être capable de "
 "le connecter en SSH dès son retour en ligne."
 
-#: ../../porting/common-problems-install.rst:36
+#: ../../porting/halium_7-1/Common_errors.rst:43
 msgid "Device reboots after a minute"
 msgstr "L'appareil redémarre après une minute"
 
-#: ../../porting/common-problems-install.rst:38
+#: ../../porting/halium_7-1/Common_errors.rst:45
 msgid ""
 "The device may reboot cleanly after about a minute of uptime. If you are "
 "logged in when the reboot occurs, you will see the following message::"
@@ -239,7 +996,7 @@ msgstr ""
 "disponibilité. Si vous êtes connecté(e) lorsque le redémarrage se produit, "
 "vous verrez le message suivant::"
 
-#: ../../porting/common-problems-install.rst:45
+#: ../../porting/halium_7-1/Common_errors.rst:52
 msgid ""
 "This happens because ``lightdm``, the Ubuntu Touch display manager, is "
 "crashing repeatedly. The system watchdog process sees this and reboots the "
@@ -249,7 +1006,7 @@ msgstr ""
 "plante à plusieurs reprises. Le processus  de surveillance du système voit "
 "cela et redémarre l'appareil."
 
-#: ../../porting/common-problems-install.rst:47
+#: ../../porting/halium_7-1/Common_errors.rst:54
 msgid ""
 "To fix this problem, log in before the reboot occurs and run the following "
 "command::"
@@ -257,38 +1014,33 @@ msgstr ""
 "Pour régler le problème, connectez-vous avant que le redémarrage ne "
 "survienne et lancez la commande suivante::"
 
-#: ../../porting/common-problems-run.rst:2
-msgid "Common problems when running Ubuntu Touch"
-msgstr "Problèmes fréquents lors de l'exécution d'Ubuntu Touch"
-
-#: ../../porting/common-problems-run.rst:4
-msgid ""
-"This page details problems commonly faced while following the :doc:`running-"
-"ut` page."
+#: ../../porting/halium_7-1/Common_errors.rst:63
+msgid "Known issues when bringing up Unity 8"
 msgstr ""
-"Cette page détaille les problèmes fréquemment rencontrés en suivant la page "
-":doc:`running-ut`."
 
-#: ../../porting/common-problems-run.rst:7
+#: ../../porting/halium_7-1/Common_errors.rst:65
+msgid ""
+"Below is are a few things to check when you are having trouble bringing up "
+"Unity 8."
+msgstr ""
+
+#: ../../porting/halium_7-1/Common_errors.rst:68
 msgid "Nothing shows on screen"
 msgstr "Rien n'apparait à l'écran"
 
-#: ../../porting/common-problems-run.rst:9
+#: ../../porting/halium_7-1/Common_errors.rst:70
+#, fuzzy
 msgid ""
-"If nothing is showing on screen even after adding udev rules to your port, "
-"it is likely that you have a problem with graphical applications crashing. "
-"See `Mir servers crash`_ for more information."
+"If nothing shows on screen even after adding udev rules to your port, you "
+"likely have a problem with graphical applications crashing. This can be "
+"caused by Mir servers crashing."
 msgstr ""
 "Si rien ne s'affiche à l'écran même après l'ajout de règles udev à votre "
 "portage, il est probable que vous ayez un problème avec le plantage "
 "d'applications graphiques. Consultez le chapitre `Plantage des serveurs de "
 "Mir`_ pour plus d'informations."
 
-#: ../../porting/common-problems-run.rst:12
-msgid "Mir servers crash"
-msgstr "Les serveurs de Mir ont planté"
-
-#: ../../porting/common-problems-run.rst:14
+#: ../../porting/halium_7-1/Common_errors.rst:72
 msgid ""
 "Mir servers crashing can be caused by many different problems with the port. "
 "To troubleshoot more, you can try the following:"
@@ -297,11 +1049,11 @@ msgstr ""
 "différents lors du portage. Pour trouver une solution, vous pouvez essayer "
 "la chose suivante :"
 
-#: ../../porting/common-problems-run.rst:17
+#: ../../porting/halium_7-1/Common_errors.rst:75
 msgid "Is the Android container running?"
 msgstr "Est-ce que le conteneur d'Android est en cours de fonctionnement ?"
 
-#: ../../porting/common-problems-run.rst:19
+#: ../../porting/halium_7-1/Common_errors.rst:77
 msgid ""
 "If the Android container is not running, many parts of Ubuntu Touch will not "
 "work. Run this command to check on the container's status::"
@@ -310,7 +1062,7 @@ msgstr ""
 "nombreuses parties d'Ubuntu Touch ne fonctionneront pas. Exécutez cette "
 "commande pour vérifier le statut des conteneurs::"
 
-#: ../../porting/common-problems-run.rst:23
+#: ../../porting/halium_7-1/Common_errors.rst:81
 msgid ""
 "If you get output similar to the following, the Android container is running "
 "and you can move on to the next troubleshooting step::"
@@ -319,12 +1071,13 @@ msgstr ""
 "est en cours de fonctionnement et vous pouvez passer à l'étape suivante des "
 "investigations::"
 
-#: ../../porting/common-problems-run.rst:30
+#: ../../porting/halium_7-1/Common_errors.rst:88
+#, fuzzy
 msgid ""
 "If you do not get ``State: RUNNING``, the container is stopped. You can run "
 "``sudo start lxc-android-config`` to attempt to start it. If the container "
 "does not start after that, you can run ``sudo lxc-start -n android -F`` to "
-"get a more detailed log of why it has failed."
+"get a more detailed log to determine why it failed."
 msgstr ""
 "Si vous n'obtenez pas ``State: RUNNING``, c'est que le conteneur est arrêté. "
 "Vous pouvez exécuter la commande ``sudo start lxc-android-config`` pour "
@@ -332,11 +1085,11 @@ msgstr ""
 "pouvez exécuter la commande ``sudo lxc-start -n android -F`` pour obtenir un "
 "rapport plus détaillé sur le pourquoi de cet échec."
 
-#: ../../porting/common-problems-run.rst:34
+#: ../../porting/halium_7-1/Common_errors.rst:91
 msgid "Are all of the Android partitions mounted?"
 msgstr "Est-ce que toutes les partitions d'Android sont montées ?"
 
-#: ../../porting/common-problems-run.rst:36
+#: ../../porting/halium_7-1/Common_errors.rst:93
 msgid ""
 "If some partitions used for Android drivers are not mounted, the container "
 "may start but not work correctly."
@@ -344,7 +1097,7 @@ msgstr ""
 "Si des partitions utilisées pour les lecteurs Android ne sont pas montées, "
 "le conteneur peut démarrer mais ne pas fonctionner correctement."
 
-#: ../../porting/common-problems-run.rst:38
+#: ../../porting/halium_7-1/Common_errors.rst:95
 msgid ""
 "To check the mounted Android partitions, run ``ls /android``. At least the "
 "following folders should be contained within::"
@@ -352,7 +1105,7 @@ msgstr ""
 "Pour vérifier les partitions montées d'Android, exécutez ``ls /android``. "
 "Les dossiers suivants devraient au moins se trouver à l'intérieur::"
 
-#: ../../porting/common-problems-run.rst:45
+#: ../../porting/halium_7-1/Common_errors.rst:102
 msgid ""
 "If any of these are missing, run ``dmesg`` to get the kernel log. Mounting "
 "Android partitions will start after the following line::"
@@ -361,7 +1114,7 @@ msgstr ""
 "obtenir le journal du noyau. Le montage de partitions d'Android démarrera "
 "après la ligne suivante::"
 
-#: ../../porting/common-problems-run.rst:49
+#: ../../porting/halium_7-1/Common_errors.rst:106
 msgid ""
 "Try to diagnose and fix any mounting errors that you find in the log for the "
 "partitions listed above."
@@ -369,7 +1122,7 @@ msgstr ""
 "Essayez de diagnostiquer et de réparer toutes les erreurs de montage que "
 "vous trouverez dans le journal pour les partitions listées ci-dessus."
 
-#: ../../porting/common-problems-run.rst:53
+#: ../../porting/halium_7-1/Common_errors.rst:110
 msgid ""
 "Some devices have a ``vendor`` partition that contains proprietary libraries "
 "and executables required to run Android. If your device has this partition, "
@@ -380,11 +1133,11 @@ msgstr ""
 "d'Android. Si votre appareil contient cette partition, assurez-vous qu'elle "
 "soit montée en plus de toutes les autres listées ci-dessus."
 
-#: ../../porting/common-problems-run.rst:57
+#: ../../porting/halium_7-1/Common_errors.rst:113
 msgid "Getting more Mir logs"
 msgstr "Obtenir plus de journaux de Mir"
 
-#: ../../porting/common-problems-run.rst:59
+#: ../../porting/halium_7-1/Common_errors.rst:115
 msgid ""
 "If the Android container is running and all of its partitions seem to be "
 "mounted, you will need to get a few more logs before enlisting community "
@@ -394,13 +1147,13 @@ msgstr ""
 "montées, vous devrez obtenir quelques journaux supplémentaires avant de "
 "solliciter l'aide de la communauté."
 
-#: ../../porting/common-problems-run.rst:61
+#: ../../porting/halium_7-1/Common_errors.rst:117
 msgid "First, stop the display manager if it is not already::"
 msgstr ""
 "Tout d'abord, arrêtez le gestionnaire d’affichage si cela n'est pas déjà "
 "fait::"
 
-#: ../../porting/common-problems-run.rst:65
+#: ../../porting/halium_7-1/Common_errors.rst:121
 msgid ""
 "If you have Wi-Fi working (See `the Halium docs for Wi-Fi`_), install the "
 "``libc6-dbg`` package first::"
@@ -408,13 +1161,13 @@ msgstr ""
 "Si le Wi-Fi fonctionne (Voir `la documentation d'Halium sur le Wi-Fi`_), "
 "installez d'abord le paquet ``libc6-dbg``::"
 
-#: ../../porting/common-problems-run.rst:70
+#: ../../porting/halium_7-1/Common_errors.rst:126
 msgid "Then, run the following commands to get all of the needed logs::"
 msgstr ""
 "Exécutez ensuite les commandes suivantes pour obtenir tous les journaux "
 "nécessaires::"
 
-#: ../../porting/common-problems-run.rst:76
+#: ../../porting/halium_7-1/Common_errors.rst:132
 msgid ""
 "Use ``scp`` or a similar program to copy the ``usc.log``, ``usc-gdb.log``, "
 "and ``usc-logcat.log`` files from phablet's home folder to your computer. "
@@ -422,18 +1175,17 @@ msgid ""
 "GitHub Gists, or a similar service so the people helping you can view them "
 "easily."
 msgstr ""
-"Utilisez ``scp`` ou un programme similaire pour copier les fichiers "
-"``usc.log``, ``usc-gdb.log`` et ``usc-logcat.log`` à partir du dossier "
-"personnel « phablet » vers votre ordinateur. Postez ensuite le contenu de "
-"ces fichiers dans `paste.ubuntu.com`_, Pastebin, GitHub Gists ou un service "
-"similaire de manière à ce que les personnes qui vous aident puissent les "
-"voir facilement."
+"Utilisez ``scp`` ou un programme similaire pour copier les fichiers ``usc."
+"log``, ``usc-gdb.log`` et ``usc-logcat.log`` à partir du dossier personnel « "
+"phablet » vers votre ordinateur. Postez ensuite le contenu de ces fichiers "
+"dans `paste.ubuntu.com`_, Pastebin, GitHub Gists ou un service similaire de "
+"manière à ce que les personnes qui vous aident puissent les voir facilement."
 
-#: ../../porting/common-problems-run.rst:79
+#: ../../porting/halium_7-1/Common_errors.rst:135
 msgid "Programs hang before crashing"
 msgstr "Les programmes se suspendent avant de planter"
 
-#: ../../porting/common-problems-run.rst:81
+#: ../../porting/halium_7-1/Common_errors.rst:137
 msgid ""
 "Sometimes processes will hang for a very long time and then abort or "
 "segfault. The reason for the hang is apport, which attempts to collect "
@@ -444,7 +1196,7 @@ msgstr ""
 "suspension vient d'Apport, qui tente de collecter des informations à propos "
 "du plantage avant d'autoriser le programme à s'arrêter."
 
-#: ../../porting/common-problems-run.rst:83
+#: ../../porting/halium_7-1/Common_errors.rst:139
 msgid ""
 "If you don't need apport's information and would rather have the programs "
 "crash faster while troubleshooting, issue the following commands::"
@@ -453,312 +1205,185 @@ msgstr ""
 "programme plante plus rapidement lors des investigations, exécutez la "
 "commande suivante::"
 
-#: ../../porting/installing-16-04.rst:2
-msgid "Installing Ubuntu Touch 16.04 images on Halium"
-msgstr "Installation des images d'Ubuntu Touch 16.04 sur Halium"
+#: ../../porting/halium_7-1/Common_errors.rst:145
+msgid "Enable /var/log/syslog"
+msgstr ""
 
-#: ../../porting/installing-16-04.rst:6
+#: ../../porting/halium_7-1/Common_errors.rst:147
 msgid ""
-"These steps  will wipe **all** of the data on your device. If there is "
-"anything that you would like to keep, ensure it is backed up and copied off "
-"of the device before continuing."
+"Normally the writing to the syslog is disabled. During porting it can be "
+"useful to enable this::"
 msgstr ""
-"Ces étapes écraseront **toutes** les données sur votre appareil. Si vous "
-"souhaitez conserver quelque chose, assurez-vous qu'elles sont sauvegardées "
-"via une copie externe à l'appareil avant de continuer."
 
-#: ../../porting/installing-16-04.rst:8
+#: ../../porting/halium_7-1/Common_errors.rst:154
 msgid ""
-"Now that you've :doc:`built halium-boot <building-halium-boot>`, we're ready "
-"to install Ubuntu Touch on your device."
+"Now rsyslogd will write to the file and you can use it as usual. For example "
+"``less /var/log/syslog`` or ``tail -f /var/log/syslog``."
 msgstr ""
-"Maintenant que vous avez :doc:`construit halium-boot <building-halium-boot>`"
-", nous sommes prêts pour installer Ubuntu Touch sur votre appareil."
 
-#: ../../porting/installing-16-04.rst:10
+#: ../../porting/halium_7-1/Common_errors.rst:162
+msgid "Known issues when configuring the device"
+msgstr ""
+
+#: ../../porting/halium_7-1/Common_errors.rst:165
+msgid "Apps crash on launch"
+msgstr ""
+
+#: ../../porting/halium_7-1/Common_errors.rst:167
 msgid ""
-"In order to install Ubuntu Touch, you will need a recovery with Busybox, "
-"such as TWRP, installed on your phone. You will also need to ensure the /"
-"data partition is formatted with ext4 and does not have any encryption on it."
+"Check if keyboard vibration works. If it does not, this is a good indication "
+"that you have not properly applied the apparmor kernel patches."
 msgstr ""
-"Afin d'installer Ubuntu Touch, vous aurez besoin de créer une récupération "
-"avec Busybox, telle que TWRP, installée sur votre appareil. Vous devrez "
-"également vous assurer que la partition  « /data » est formatée avec ext4 et "
-"n'est pas chiffrée."
 
-#: ../../porting/installing-16-04.rst:13
-msgid "Install halium-boot"
-msgstr "Installation d'halium-boot"
-
-#: ../../porting/installing-16-04.rst:15
-msgid ""
-"We'll need to install the halium-boot image before installing an image. "
-"Reboot your phone into fastboot mode, then do the following from your Halium "
-"tree::"
+#: ../../porting/halium_7-1/Common_errors.rst:169
+msgid "Refer to section :ref:`Apply-apparmor-kernel-patches`."
 msgstr ""
-"Vous devrez installer l'image halium-boot avant l'installation d'une autre "
-"image. Redémarrez votre appareil en mode « fastboot », puis faites la chose "
-"suivante à partir de votre arborescence d'Halium::"
 
-#: ../../porting/installing-16-04.rst:21
-msgid "Download the rootfs"
-msgstr "Téléchargement du fichier rootfs"
-
-#: ../../porting/installing-16-04.rst:23
-msgid ""
-"Next we'll need to download the rootfs (root filesystem) that's appropriate "
-"for your device. Right now, we only have one available. Simply download "
-"``ubports-touch.rootfs-xenial-armhf.tar.gz`` from `our CI server <https://ci."
-"ubports.com/job/xenial-rootfs-armhf/>`__. If you have a 64-bit ARM (aarch64) "
-"device, this same rootfs should work for you. If you have an x86 device, let "
-"us know. We do not have a rootfs available for these yet."
+#: ../../porting/halium_7-1/Common_errors.rst:171
+msgid "This section is a *Work in progress*"
 msgstr ""
-"Vous devez ensuite télécharger le rootfs (système de fichiers racine) adapté "
-"à votre appareil. Un seul est disponible pour le moment. Téléchargez "
-"simplement  ``ubports-touch.rootfs-xenial-armhf.tar.gz`` à partir de `notre "
-"serveur d'intégration continue <https://ci.ubports.com/job/xenial-rootfs-"
-"armhf/>`__. Si vous disposez d'un appareil ARM 64 bits (aarch64), ce même "
-"rootfs devrait fonctionner pour vous. Si vous avez un appareil x86, faites "
-"le nous savoir. Nous n'avons pas encore de rootfs disponible pour cela."
 
-#: ../../porting/installing-16-04.rst:26
-msgid "Install system.img and rootfs"
-msgstr "Installation de system.img et de rootfs"
-
-#: ../../porting/installing-16-04.rst:28
-msgid "Todo"
-msgstr "À faire"
-
-#: ../../porting/installing-16-04.rst:30
-msgid ""
-"Change the rootstock link to point to UBports once the actuallyfixit PR is "
-"merged."
-msgstr ""
-"Changez le lien rootstock pour pointer vers UBports une fois que le PR "
-"actuallyfixit est fusionné."
-
-#: ../../porting/installing-16-04.rst:32
-msgid ""
-"Download the halium-install-standalone script from `jbbgameich/halium-"
-"install's releases <https://github.com/JBBgameich/halium-install/releases/"
-">`_ (`direct link to download <https://github.com/JBBgameich/halium-install/"
-"releases/download/continuous/halium-install-standalone.sh>`__). Boot your "
-"device into recovery and run the script as follows::"
-msgstr ""
-"Téléchargez le script halium-install-standalone disponible dans les `"
-"publications de jbbgameich/halium-install <https://github.com/JBBgameich/"
-"halium-install/releases/>`_ (`lien direct pour le téléchargement "
-"<https://github.com/JBBgameich/halium-install/releases/download/continuous/"
-"halium-install-standalone.sh>`__). Démarrez votre appareil en mode "
-"récupération (recovery) et exécutez le script comme indiqué ci-dessous::"
-
-#: ../../porting/installing-16-04.rst:36
-msgid ""
-"The script will copy and extract the files to their proper places, then "
-"allow you to set the phablet user's password."
-msgstr ""
-"Le script copiera et extraira les fichiers dans leurs emplacements "
-"respectifs, puis vous autorisera à définir le mot de passe de la phablette."
-
-#: ../../porting/installing-16-04.rst:39
-msgid "Get SSH access"
-msgstr "Obtenir un accès SSH"
-
-#: ../../porting/installing-16-04.rst:41
-msgid ""
-"When your device boots, it will likely stay at the bootloader screen. "
-"However, you should also get a new network connection on the computer you "
-"have it plugged in to. We will use this to debug the system."
-msgstr ""
-"Lorsque votre appareil démarre, il reste en règle générale sur l'écran de "
-"chargeur d'amorçage. Cependant, vous devez aussi obtenir une nouvelle "
-"connexion au réseau sur l'ordinateur auquel vous l'avez branché. Nous allons "
-"utiliser cela pour dépanner le système."
-
-#: ../../porting/installing-16-04.rst:43
-msgid ""
-"To confirm that your device has booted correctly, run ``dmesg -w`` and watch "
-"for \"GNU/Linux device\" in the output. If you instead get something similar "
-"to \"Halium initrd Failed to boot\", please get in contact with us so we can "
-"find out why."
-msgstr ""
-"Pour confirmer que votre appareil a correctement démarré, exécutez la "
-"commande ``dmesg -w`` et guettez  « GNU/Linux device » en sortie. Si vous "
-"obtenez en revanche quelque chose du style « Halium initrd Failed to boot », "
-"veuillez prendre contact avec nous pour que nous comprenions pourquoi."
-
-#: ../../porting/installing-16-04.rst:45
-msgid ""
-"Similar to the `Halium reference rootfs <http://docs.halium.org/en/latest/"
-"porting/debug-build/logging-in.html>`__, you should set your computer's IP "
-"on the newly connected RNDIS interface to ``10.15.19.100`` if you don't get "
-"one automatically. Then, run the following to access your device::"
-msgstr ""
-"De la même manière que le `rootfs de référence d'Halium <http://docs.halium."
-"org/en/latest/porting/debug-build/logging-in.html>`__, \n"
-"vous devez configurer l'adresse IP de votre ordinateur sur la nouvelle "
-"interface RNDIS connectée à ``10.15.19.100`` si vous n'en obtenez pas une "
-"automatiquement. Exécutez ensuite la commande suivante pour accéder à votre "
-"appareil::"
-
-#: ../../porting/installing-16-04.rst:49
-msgid "The password will be the one that you set while running halium-install."
-msgstr ""
-"Le mot de passe sera celui que vous avez défini lors de l'exécution d'halium-"
-"install."
-
-#: ../../porting/installing-16-04.rst:52 ../../porting/running-ut.rst:74
-msgid "Common Problems"
-msgstr "Problèmes fréquents"
-
-#: ../../porting/installing-16-04.rst:54
-msgid ""
-"If you have any errors while performing these steps, check see if any of the "
-"following suggestions match what you are seeing. If you have installed "
-"successfully, skip down to `Continue on`_."
-msgstr ""
-"Si vous rencontrez une erreur en déroulant ces étapes, vérifiez si l'une des "
-"suggestions suivantes correspond à ce que vous voyez. Si votre installation "
-"est couronnée de succès, passez au chapitre `Poursuivre`_."
-
-#: ../../porting/installing-16-04.rst:64
-msgid ""
-"Congratulations! Ubuntu Touch has now booted on your device. Move on to :doc:"
-"`running-ut` to learn about more specific steps you will need to take for a "
-"complete port."
-msgstr ""
-"Félicitations ! Ubuntu Touch vient de démarrer sur votre appareil. Allez "
-"ensuite sur :doc:`running-ut` pour découvrir en détail les étapes que vous "
-"devrez mettre en œuvre pour effectuer un portage complet."
-
-#: ../../porting/introduction.rst:2
-msgid "Porting information"
-msgstr "Informations sur le portage"
-
-#: ../../porting/introduction.rst:5
-msgid ""
-"If you are looking for information on installing Ubuntu Touch on a supported "
-"device, or if you would like to check if your device is supported, please "
-"see `this page <https://devices.ubuntu-touch.io/>`_."
-msgstr ""
-"Si vous cherchez des informations sur l'installation d'Ubuntu Touch sur un "
-"appareil pris en charge ou si vous souhaitez vérifier si votre appareil est "
-"pris en charge, consultez `cette page <https://devices.ubuntu-touch.io/>`_."
-
-#: ../../porting/introduction.rst:7
-msgid ""
-"This section will introduce you to some of the specifics of porting Ubuntu "
-"Touch to an Android device."
-msgstr ""
-"Cette section vous présentera certaines spécificité du portage d'Ubuntu "
-"Touch sur un appareil Android."
-
-#: ../../porting/introduction.rst:9
-msgid ""
-"Before you begin, you'll want to head over to `the Halium porting guide "
-"<http://docs.halium.org/en/latest/porting/first-steps.html>`_ and get your "
-"``systemimage`` built without errors. Once you're at the point of installing "
-"a rootfs, you can come back here."
-msgstr ""
-"Avant de commencer, dirigez-vous vers `le guide du portage d'Halium <http://"
-"docs.halium.org/en/latest/porting/first-steps.html>`_ et construisez votre "
-"``systemimage`` sans erreurs. Une fois que vous en serez au point "
-"d'installer un rootfs, vous pourrez revenir ici."
-
-#: ../../porting/introduction.rst:11
-msgid ""
-"Start at :doc:`building-halium-boot` if you'd like to install the UBports "
-"Ubuntu Touch 16.04 rootfs."
-msgstr ""
-"Commencez par :doc:`building-halium-boot` si vous souhaitez installer le "
-"rootfs d'Ubuntu Touch 16.04."
-
-#: ../../porting/introduction.rst:25
-msgid "Getting community help"
-msgstr "Obtenir de l'aide de la communauté"
-
-#: ../../porting/introduction.rst:27
-msgid ""
-"If you're having trouble with the porting steps after building your Halium "
-"systemimage, check out the \"Common Problems\" section of the page you're "
-"stuck on. If none of the suggestions are helpful, you can get help from the "
-"community via the following channels:"
-msgstr ""
-"Si vous rencontrez des problèmes dans les étapes de portage après la "
-"construction de votre image système d'Halium, consultez la section « "
-"Problèmes fréquents » de la page sur laquelle vous êtes coincé(e). Si aucune "
-"des suggestions n'est utile, vous pouvez obtenir de l'aide de la part de la "
-"communauté via les canaux suivants :"
-
-#: ../../porting/introduction.rst:29
-msgid "Telegram: @ubports_porting"
-msgstr "Telegram : @ubports_porting"
-
-#: ../../porting/introduction.rst:30
-msgid "IRC: #ubports-porting on freenode"
-msgstr "IRC : #ubports-porting sur freenode"
-
-#: ../../porting/introduction.rst:31
-msgid "Forum: `forums.ubports.com <https://forums.ubports.com>`__"
-msgstr "Forum : `forums.ubports.com <https://forums.ubports.com>`__"
-
-#: ../../porting/running-ut.rst:2
-msgid "Running Ubuntu Touch"
+#: ../../porting/halium_7-1/Configuring.rst:2
+#, fuzzy
+msgid "Configuring Ubuntu Touch"
 msgstr "Lancement d'Ubuntu Touch"
 
-#: ../../porting/running-ut.rst:4
+#: ../../porting/halium_7-1/Configuring.rst:4
 msgid ""
-"Now that you're logged in, there are a few more steps before Ubuntu Touch "
-"will be fully functional on your device."
+"In the previous section you adjusted a configuration file directly in the "
+"UBports rootfs. The rootfs contains a number of other configuration files "
+"with some standard settings that do not necessarily conform to your device. "
+"These must be modified to fit your device. The rootfs itself is read only "
+"and identical for all devices. You cannot modify the rootfs itself. Instead, "
+"the correct way to adjust the configuration is with overlay files, as "
+"described below."
 msgstr ""
-"Maintenant que vous êtes connecté(e), il reste quelques étapes "
-"supplémentaires avant qu'Ubuntu Touch ne soit fonctionnel sur votre appareil."
 
-#: ../../porting/running-ut.rst:7
-msgid "Make / writable"
-msgstr "Rendre modifiable"
+#: ../../porting/halium_7-1/Configuring.rst:9
+msgid "Overlay files"
+msgstr ""
 
-#: ../../porting/running-ut.rst:9
+#: ../../porting/halium_7-1/Configuring.rst:11
 msgid ""
-"Before we make any changes to the rootfs (which will be required for the "
-"next steps), you'll need to remount it with write permissions. To do that, "
-"run the following command::"
+"Note that as a rule of thumb, the method described below applies if the file "
+"you need to edit can be found in the /etc directory (or a subdirectory of "
+"this) on your device. You should not attempt to overwrite files located "
+"elsewhere with overlay files using this method."
 msgstr ""
-"Avant de modifier le rootfs (ce qui sera nécessaire pour les étapes "
-"suivantes), vous devrez le remonter avec les permissions en écriture. Pour "
-"cela, lancez la commande suivante::"
 
-#: ../../porting/running-ut.rst:14
-msgid "Add udev rules"
+#: ../../porting/halium_7-1/Configuring.rst:13
+msgid ""
+"In your device directory, create a subdirectory named 'ubuntu'. Collect the "
+"files you wish to inject into your build in this directory."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:18
+msgid "Relevant files are for example (but this list is incomplete):"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:16
+msgid "70-android.rules (the udev rules for your device, see previous section)"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:17
+msgid "android.conf (for display scaling, see below)"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:18
+msgid "touch.pa (for pulseaudio sound configuration/initialization, see below)"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:20
+msgid ""
+"These files are then injected by adding a code block to the file ``device."
+"mk`` in your device directory. For the three files above add the following "
+"code::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:29
+msgid "Explanation:"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:31
+msgid ""
+"The string before the colon '$(LOCAL_PATH)/ubuntu/70-android.rules' "
+"specifies the path to the source file to be injected. The string after the "
+"colon 'system/halium/lib/udev/rules.d/70-android.rules' specifies where you "
+"want it placed on the device."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:37
+msgid "The general steps to follow are thus:"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:34
+msgid ""
+"Copy the file you wish to modify to the 'ubuntu' directory you have created "
+"in your device source tree."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:35
+msgid "Edit the file as needed."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:36
+msgid ""
+"Add a line to the PRODUCT_COPY_FILES section of your device.mk file as shown "
+"above."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:37
+msgid "Rebuild your system.img and reflash together with the ubports rootfs."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:41
+msgid ""
+"The target paths for the files mentioned above are *not* randomly chosen. "
+"You must use the specified paths."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:45
+msgid ""
+"When you specify target path 'system/halium/etc/myfilename' your file "
+"'myfilename' will end up in the '/etc' directory of your device (i.e. "
+"without the leading 'system/halium')"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:50
+#, fuzzy
+msgid "Rebuild system.img"
+msgstr "Inclusion dans le système de construction"
+
+#: ../../porting/halium_7-1/Configuring.rst:52
+msgid ""
+"When you have made the adjustments you need and prepared your source as "
+"described above, you have to rebuild your system.img: ``mka systemimage``. "
+"When rebuilding the system image after small changes like these, you need "
+"not ``mka clean`` first. However, changes to PRODUCT_PROPERTY_OVERRIDES "
+"might not get detected by the build system. Go to your output folder, enter "
+"the system folder and delete ``build.prop`` in order to get it regenerated."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:55
+#, fuzzy
+msgid "Udev rules"
 msgstr "Ajouter des règles udev"
 
-#: ../../porting/running-ut.rst:16
+#: ../../porting/halium_7-1/Configuring.rst:57
 msgid ""
-"You must create some udev rules to allow Ubuntu Touch software to access "
-"your hardware. Run the following command, replacing [codename] with your "
-"device's codename::"
+"Extract the file 70-android.rules which you created in the previous section "
+"using ``adb pull`` or ``scp`` and copy it to the 'ubuntu' directory of your "
+"device source tree. Complete steps 3 and 4 above."
 msgstr ""
-"Vous devez créer des règles udev pour permettre aux logiciels d'Ubuntu Touch "
-"d'accéder à votre matériel. Exécutez la commande suivante en remplaçant "
-"[codename] par le nom de code de votre appareil::"
 
-#: ../../porting/running-ut.rst:21
+#: ../../porting/halium_7-1/Configuring.rst:62
+#: ../../porting/halium_7-1/Reference_material.rst:10
+msgid "Display scaling"
+msgstr "Mise à l'échelle de l'affichage"
+
+#: ../../porting/halium_7-1/Configuring.rst:64
+#, fuzzy
 msgid ""
-"Now, reboot the device. If all has gone well, you will eventually see the "
-"Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as "
-"you set for SSH."
-msgstr ""
-"Maintenant, redémarrez votre appareil. Si tout s'est bien passé, vous "
-"devriez voir le logo animé d'Ubuntu Touch suivi par Unity 8. Votre mot de "
-"passe de verrouillage est le même que celui que vous aviez défini pour SSH."
-
-#: ../../porting/running-ut.rst:24
-msgid "Display settings"
-msgstr "Paramètres d'affichage"
-
-#: ../../porting/running-ut.rst:26
-msgid ""
-"When the device boots, you'll probably notice that everything is very small. "
 "There are two variables that set the content scaling for Unity 8 and Ubuntu "
 "Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``."
 msgstr ""
@@ -767,23 +1392,27 @@ msgstr ""
 "les applications sur Unity 8 et Ubuntu Touch : ``GRID_UNIT_PX`` et "
 "``QTWEBKIT_DPR``."
 
-#: ../../porting/running-ut.rst:28
+#: ../../porting/halium_7-1/Configuring.rst:66
+#, fuzzy
 msgid ""
-"There are also some other options available that may be useful for you "
-"depending on your device's form factor. These are discussed below."
+"There are also other options available that may be useful for you depending "
+"on your device's form factor. These are mentioned below and all of these "
+"settings are explained in depth in the reference section on :ref:`Display-"
+"settings`."
 msgstr ""
 "Il existe également d'autres options disponibles qui pourraient vous être "
 "utiles en fonction du facteur de forme de votre appareil. Celles-ci sont "
 "traitées ci-dessous."
 
-#: ../../porting/running-ut.rst:30
+#: ../../porting/halium_7-1/Configuring.rst:68
+#, fuzzy
 msgid ""
 "All of these settings are guessed by Unity 8 if none are set. There are many "
 "cases, however, where the guess is wrong (for example, very high resolution "
 "phone displays will be identified as desktop computers). To manually set a "
-"value for these variables, simply create a file at ``/etc/ubuntu-session.d/"
-"[codename].conf`` specifying them. For example, this is the file for the "
-"Nexus 7 tablet::"
+"value for these variables, simply edit the file at ``etc/ubuntu-touch-"
+"session.d/android.conf`` specifying them. For example, this is the file for "
+"the Nexus 7 tablet::"
 msgstr ""
 "Tous ces paramètres sont devinés par Unity 8 si aucun d'entre eux n'est "
 "défini. Il existe de nombreux cas cependant pour lesquels la déduction est "
@@ -793,17 +1422,306 @@ msgstr ""
 "session.d/[codename].conf`` en les spécifiant. Par exemple, voici le fichier "
 "pour la tablette Nexus 7 ::"
 
-#: ../../porting/running-ut.rst:38
-msgid "Methods for deriving values for these variables are below."
+#: ../../porting/halium_7-1/Configuring.rst:76
+#, fuzzy
+msgid ""
+"The :ref:`Display-settings` section details methods for deriving values for "
+"these variables."
 msgstr ""
 "Les méthodes de dérivation des valeurs pour ces variables sont décrites ci-"
 "dessous."
 
-#: ../../porting/running-ut.rst:41
-msgid "Display scaling"
-msgstr "Mise à l'échelle de l'affichage"
+#: ../../porting/halium_7-1/Configuring.rst:78
+msgid ""
+"Once you have adjusted the ``android.conf`` file to the display settings "
+"needed for your device, this file should be incorporated into your build."
+msgstr ""
 
-#: ../../porting/running-ut.rst:43
+#: ../../porting/halium_7-1/Configuring.rst:80
+msgid ""
+"Create the file android.conf in your 'ubuntu' directory and enter the "
+"settings you determined and tested in the previous section. Complete steps 3 "
+"and 4 above, taking care to remember the note on how to :ref:`Rebuild-system."
+"img`."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:85
+msgid "Apply apparmor kernel patches"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:87
+msgid "`What is apparmor? <https://wiki.ubuntu.com/AppArmor>`_"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:89
+msgid ""
+"Start by downloading the backported `apparmor patch <https://github.com/"
+"ubports/apparmor-backports-ut>`_ corresponding to your device's kernel "
+"version. Your kernel version is specified at the beginning of your kernel "
+"defconfig file, i.e. the one you edited in section :ref:`Edit-kernel-config` "
+"above."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:91
+msgid ""
+"You now need to delete your entire BUILDDIR/kernel/VENDOR/MODEL/security/"
+"apparmor subdirectory and replace it with the one you downloaded. Then "
+"rebuild halium-boot."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:93
+msgid ""
+"If you get errors when building, you will need to resolve them one by one, "
+"modifying your source code as needed. Note that you should only modify the "
+"code in the apparmor subdirectory if at all possible. Modifying code "
+"elsewhere will more than likely just compound your problems."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:95
+msgid ""
+"Seek help as needed from one of the sources mentioned in section :ref:"
+"`Getting-community-help`."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:98
+msgid "Sound configuration"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:100
+msgid ""
+"The supplied touch.pa file located in the /etc/pulse directory of your "
+"device needs adjustment. Extract the file and copy it to your 'ubuntu' "
+"directory."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:102
+msgid "Locate the line::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:106
+msgid "and replace it with this::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:110
+msgid "At the end of the file, append this::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:117
+msgid ""
+"Now complete steps 3 and 4, taking care to remember the note on how to :ref:"
+"`Rebuild-system.img`."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:120
+msgid "Further configuration"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:124
+msgid ""
+"For the time being, refer to the `porting faq <https://pad.ubports.com/p/"
+"porting-faq>`_ and `porting check list <https://pad.ubports.com/p/"
+"PortChecklist>`_."
+msgstr ""
+
+#: ../../porting/halium_7-1/Installing.rst:2
+msgid "Installing"
+msgstr ""
+
+#: ../../porting/halium_7-1/Installing.rst:7
+msgid "Install and debug initial boot"
+msgstr ""
+
+#: ../../porting/halium_7-1/Installing.rst:11
+#, fuzzy
+msgid ""
+"These steps  will wipe **all** of the data on your device. If there is "
+"anything that you would like to keep, ensure it is backed up and copied to a "
+"safe location before continuing."
+msgstr ""
+"Ces étapes écraseront **toutes** les données sur votre appareil. Si vous "
+"souhaitez conserver quelque chose, assurez-vous qu'elles sont sauvegardées "
+"via une copie externe à l'appareil avant de continuer."
+
+#: ../../porting/halium_7-1/Installing.rst:13
+#, fuzzy
+msgid ""
+"Now that you have built halium-boot, you are ready to install Ubuntu Touch "
+"on your device."
+msgstr ""
+"Maintenant que vous avez :doc:`construit halium-boot <building-halium-"
+"boot>`, nous sommes prêts pour installer Ubuntu Touch sur votre appareil."
+
+#: ../../porting/halium_7-1/Installing.rst:15
+#, fuzzy
+msgid ""
+"In order to install Ubuntu Touch, you will need a recovery with Busybox, "
+"such as TWRP, installed on your phone. If you have not done so yet, refer to "
+"section :ref:`Install-TWRP-recovery` and install it now."
+msgstr ""
+"Afin d'installer Ubuntu Touch, vous aurez besoin de créer une récupération "
+"avec Busybox, telle que TWRP, installée sur votre appareil. Vous devrez "
+"également vous assurer que la partition  « /data » est formatée avec ext4 et "
+"n'est pas chiffrée."
+
+#: ../../porting/halium_7-1/Installing.rst:17
+msgid ""
+"You will also need to ensure the ``/data`` partition is formatted with "
+"``ext4`` and does not have any encryption on it. Boot into the recovery "
+"image you just installed, check and adjust as necessary."
+msgstr ""
+
+#: ../../porting/halium_7-1/Installing.rst:20
+#, fuzzy
+msgid "Flash halium-boot"
+msgstr "``mka halium-boot``"
+
+#: ../../porting/halium_7-1/Installing.rst:22
+#, fuzzy
+msgid ""
+"To install halium-boot, reboot your phone into fastboot mode. Then do the "
+"following from your Halium tree::"
+msgstr ""
+"Vous devrez installer l'image halium-boot avant l'installation d'une autre "
+"image. Redémarrez votre appareil en mode « fastboot », puis faites la chose "
+"suivante à partir de votre arborescence d'Halium::"
+
+#: ../../porting/halium_7-1/Installing.rst:27
+msgid ""
+"If you have trouble accessing your device in fastboot mode, but are able to "
+"access it in TWRP recovery mode using adb, then boot into recovery mode and "
+"try the following alternative method::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Installing.rst:32
+msgid ""
+"On your device, choose *Install* in the TWRP menu, navigate to the sdcard "
+"directory, choose *Image*, select your image file, select *Boot* and swipe "
+"to flash."
+msgstr ""
+
+#: ../../porting/halium_7-1/Installing.rst:35
+msgid ""
+"Samsung devices: Flashing halium-boot.img on Samsung devices is done using "
+"the Heimdall flashing utility (on Linux) or the Odin utility (on Windows) "
+"after first bringing the device into 'download mode'. See more information "
+"on these utilities `here <http://docs.halium.org/en/latest/porting/install-"
+"build/reference-rootfs.html#install-hybris-boot-img-on-samsung-devices>`_. "
+"Follow the instructions for the utility you choose, including the specific "
+"flashing command for flashing the boot partition. Install system.img and "
+"rootfs (below) with the device in recovery mode."
+msgstr ""
+
+#: ../../porting/halium_7-1/Installing.rst:38
+msgid "Install system.img and rootfs"
+msgstr "Installation de system.img et de rootfs"
+
+#: ../../porting/halium_7-1/Installing.rst:40
+msgid ""
+"Next you need to download the appropriate rootfs for your device. At the "
+"moment there are two available versions, a 32 bit and a 64 bit one."
+msgstr ""
+
+#: ../../porting/halium_7-1/Installing.rst:42
+msgid ""
+"Simply download ``ubports-touch.rootfs-xenial-armhf.tar.gz`` (32 bit) from "
+"`our CI server <https://ci.ubports.com/job/xenial-rootfs-armhf/>`__."
+msgstr ""
+
+#: ../../porting/halium_7-1/Installing.rst:44
+msgid ""
+"If you have a 64-bit ARM (aarch64) device, this same rootfs should work for "
+"you. You can also try the 64 bit version keeping in mind that you may "
+"possibly run into more issues with this owing to the current state of "
+"development of this rootfs. (If you have an x86 device, let us know. There "
+"is no rootfs available for these yet.)"
+msgstr ""
+
+#: ../../porting/halium_7-1/Installing.rst:46
+msgid ""
+"Clone or download the `halium-install repository <https://gitlab.com/"
+"JBBgameich/halium-install>`_. This repository contains tools that can be "
+"used to install a Halium system image and distribution rootfs. Reboot your "
+"device to recovery (e.g. TWRP), to get adb access again. Now use the "
+"``halium-install`` script to install Ubuntu Touch on your device::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Installing.rst:51
+#, fuzzy
+msgid ""
+"The script will copy and extract the files to their proper places, then "
+"allow you to set the user password for your device (the *phablet* user's "
+"password)."
+msgstr ""
+"Le script copiera et extraira les fichiers dans leurs emplacements "
+"respectifs, puis vous autorisera à définir le mot de passe de la phablette."
+
+#: ../../porting/halium_7-1/Installing.rst:54
+msgid "Get SSH access"
+msgstr "Obtenir un accès SSH"
+
+#: ../../porting/halium_7-1/Installing.rst:56
+#, fuzzy
+msgid ""
+"When your device boots, it will likely stay at the bootloader screen. "
+"However, you should also get a new network connection on the computer you "
+"have it plugged in to. You will need to use this to debug the system."
+msgstr ""
+"Lorsque votre appareil démarre, il reste en règle générale sur l'écran de "
+"chargeur d'amorçage. Cependant, vous devez aussi obtenir une nouvelle "
+"connexion au réseau sur l'ordinateur auquel vous l'avez branché. Nous allons "
+"utiliser cela pour dépanner le système."
+
+#: ../../porting/halium_7-1/Installing.rst:58
+#, fuzzy
+msgid ""
+"To confirm that your device has booted correctly, on your host computer, run "
+"``dmesg -w`` and watch for \"GNU/Linux device\" in the output. If you "
+"instead get something similar to \"Halium initrd Failed to boot\", please "
+"get in contact with us so we can find out why."
+msgstr ""
+"Pour confirmer que votre appareil a correctement démarré, exécutez la "
+"commande ``dmesg -w`` et guettez  « GNU/Linux device » en sortie. Si vous "
+"obtenez en revanche quelque chose du style « Halium initrd Failed to boot », "
+"veuillez prendre contact avec nous pour que nous comprenions pourquoi."
+
+#: ../../porting/halium_7-1/Installing.rst:60
+#, fuzzy
+msgid ""
+"Similar to the Halium reference rootfs, you should `set your computer's IP "
+"on the newly connected RNDIS interface <http://docs.halium.org/en/latest/"
+"porting/debug-build/logging-in.html>`__ to ``10.15.19.100`` if you don't get "
+"one automatically. Then, run the following to access your device::"
+msgstr ""
+"De la même manière que le `rootfs de référence d'Halium <http://docs.halium."
+"org/en/latest/porting/debug-build/logging-in.html>`__, \n"
+"vous devez configurer l'adresse IP de votre ordinateur sur la nouvelle "
+"interface RNDIS connectée à ``10.15.19.100`` si vous n'en obtenez pas une "
+"automatiquement. Exécutez ensuite la commande suivante pour accéder à votre "
+"appareil::"
+
+#: ../../porting/halium_7-1/Installing.rst:64
+msgid "The password will be the one that you set while running halium-install."
+msgstr ""
+"Le mot de passe sera celui que vous avez défini lors de l'exécution d'halium-"
+"install."
+
+#: ../../porting/halium_7-1/Installing.rst:67
+msgid "Troubleshooting initial boot"
+msgstr ""
+
+#: ../../porting/halium_7-1/Installing.rst:69
+msgid "Refer to :ref:`Known-issues-with-initial-boot`."
+msgstr ""
+
+#: ../../porting/halium_7-1/Reference_material.rst:2
+msgid "Reference material"
+msgstr ""
+
+#: ../../porting/halium_7-1/Reference_material.rst:7
+msgid "Display settings"
+msgstr "Paramètres d'affichage"
+
+#: ../../porting/halium_7-1/Reference_material.rst:12
 msgid ""
 "``GRID_UNIT_PX`` (Pixels per Grid Unit or Px/GU) is specific to each device. "
 "Its goal is to make the user interface of the system and its applications "
@@ -825,7 +1743,7 @@ msgstr ""
 "qu'ils sont tenus à 1,235 fois la distance à laquelle les téléphones ont "
 "tendance à être tenus."
 
-#: ../../porting/running-ut.rst:45
+#: ../../porting/halium_7-1/Reference_material.rst:14
 msgid ""
 "``QTWEBKIT_DPR`` sets the display scaling for the Oxide web engine, so "
 "changes to this value will affect the scale of the browser and webapps."
@@ -834,7 +1752,7 @@ msgstr ""
 "Web Oxide, ainsi des modifications de cette valeur affecteront l'échelle du "
 "navigateur et des Webapps."
 
-#: ../../porting/running-ut.rst:47
+#: ../../porting/halium_7-1/Reference_material.rst:16
 msgid ""
 "A reference device has been chosen from which we derive the values for all "
 "other devices. The reference device is a laptop with a 120ppi screen. "
@@ -850,184 +1768,191 @@ msgstr ""
 "d'autres appareils afin que vous puissiez dériver les valeurs correctes pour "
 "le vôtre :"
 
-#: ../../porting/running-ut.rst:50
+#: ../../porting/halium_7-1/Reference_material.rst:19
 msgid "Device"
 msgstr "Appareil"
 
-#: ../../porting/running-ut.rst:50
+#: ../../porting/halium_7-1/Reference_material.rst:19
 msgid "Resolution"
 msgstr "Résolution"
 
-#: ../../porting/running-ut.rst:50
+#: ../../porting/halium_7-1/Reference_material.rst:19
 msgid "Display Size"
 msgstr "Taille d'affichage"
 
-#: ../../porting/running-ut.rst:50
+#: ../../porting/halium_7-1/Reference_material.rst:19
 msgid "PPI"
 msgstr "Pixels par pouce"
 
-#: ../../porting/running-ut.rst:50
+#: ../../porting/halium_7-1/Reference_material.rst:19
 msgid "Px/GU"
 msgstr "Pixels par Unité de Grille"
 
-#: ../../porting/running-ut.rst:50
+#: ../../porting/halium_7-1/Reference_material.rst:19
 msgid "QtWebKit DPR"
 msgstr "QtWebKit DPR"
 
-#: ../../porting/running-ut.rst:52
+#: ../../porting/halium_7-1/Reference_material.rst:21
 msgid "'Normal' density laptop"
 msgstr "Ordinateur à densité « normale »"
 
-#: ../../porting/running-ut.rst:52 ../../porting/running-ut.rst:54
+#: ../../porting/halium_7-1/Reference_material.rst:21
+#: ../../porting/halium_7-1/Reference_material.rst:23
 msgid "N/A"
 msgstr "N/A"
 
-#: ../../porting/running-ut.rst:52
+#: ../../porting/halium_7-1/Reference_material.rst:21
 msgid "96-150"
 msgstr "96-150"
 
-#: ../../porting/running-ut.rst:52
+#: ../../porting/halium_7-1/Reference_material.rst:21
 msgid "8"
 msgstr "8"
 
-#: ../../porting/running-ut.rst:52
+#: ../../porting/halium_7-1/Reference_material.rst:21
 msgid "1.0"
 msgstr "1.0"
 
-#: ../../porting/running-ut.rst:53
+#: ../../porting/halium_7-1/Reference_material.rst:22
 msgid "ASUS Nexus 7"
 msgstr "Nexus 7 d'ASUS"
 
-#: ../../porting/running-ut.rst:53
+#: ../../porting/halium_7-1/Reference_material.rst:22
 msgid "1280x800"
 msgstr "1280x800"
 
-#: ../../porting/running-ut.rst:53
+#: ../../porting/halium_7-1/Reference_material.rst:22
 msgid "7\""
 msgstr "7\""
 
-#: ../../porting/running-ut.rst:53
+#: ../../porting/halium_7-1/Reference_material.rst:22
 msgid "216"
 msgstr "216"
 
-#: ../../porting/running-ut.rst:53
+#: ../../porting/halium_7-1/Reference_material.rst:22
 msgid "12"
 msgstr "12"
 
-#: ../../porting/running-ut.rst:53 ../../porting/running-ut.rst:55
-#: ../../porting/running-ut.rst:56 ../../porting/running-ut.rst:57
+#: ../../porting/halium_7-1/Reference_material.rst:22
+#: ../../porting/halium_7-1/Reference_material.rst:24
+#: ../../porting/halium_7-1/Reference_material.rst:25
+#: ../../porting/halium_7-1/Reference_material.rst:26
 msgid "2.0"
 msgstr "2.0"
 
-#: ../../porting/running-ut.rst:54
+#: ../../porting/halium_7-1/Reference_material.rst:23
 msgid "'High' density laptop"
 msgstr "Ordinateur à densité « forte »"
 
-#: ../../porting/running-ut.rst:54
+#: ../../porting/halium_7-1/Reference_material.rst:23
 msgid "150-250"
 msgstr "150-250"
 
-#: ../../porting/running-ut.rst:54
+#: ../../porting/halium_7-1/Reference_material.rst:23
 msgid "16"
 msgstr "16"
 
-#: ../../porting/running-ut.rst:54
+#: ../../porting/halium_7-1/Reference_material.rst:23
 msgid "1.5"
 msgstr "1.5"
 
-#: ../../porting/running-ut.rst:55
+#: ../../porting/halium_7-1/Reference_material.rst:24
 msgid "Samsung Galaxy Nexus"
 msgstr "Galaxy Nexus de Samsung"
 
-#: ../../porting/running-ut.rst:55
+#: ../../porting/halium_7-1/Reference_material.rst:24
 msgid "1280x720"
 msgstr "1280x720"
 
-#: ../../porting/running-ut.rst:55
+#: ../../porting/halium_7-1/Reference_material.rst:24
 msgid "4.65\""
 msgstr "4.65\""
 
-#: ../../porting/running-ut.rst:55
+#: ../../porting/halium_7-1/Reference_material.rst:24
 msgid "316"
 msgstr "316"
 
-#: ../../porting/running-ut.rst:55 ../../porting/running-ut.rst:56
+#: ../../porting/halium_7-1/Reference_material.rst:24
+#: ../../porting/halium_7-1/Reference_material.rst:25
 msgid "18"
 msgstr "18"
 
-#: ../../porting/running-ut.rst:56
+#: ../../porting/halium_7-1/Reference_material.rst:25
 msgid "LG Nexus 4"
 msgstr "Nexus 4 de LG"
 
-#: ../../porting/running-ut.rst:56
+#: ../../porting/halium_7-1/Reference_material.rst:25
 msgid "1280x768"
 msgstr "1280x768"
 
-#: ../../porting/running-ut.rst:56
+#: ../../porting/halium_7-1/Reference_material.rst:25
 msgid "4.7\""
 msgstr "4.7\""
 
-#: ../../porting/running-ut.rst:56
+#: ../../porting/halium_7-1/Reference_material.rst:25
 msgid "320"
 msgstr "320"
 
-#: ../../porting/running-ut.rst:57
+#: ../../porting/halium_7-1/Reference_material.rst:26
 msgid "Samsung Nexus 10"
 msgstr "Nexus 10 de Samsung"
 
-#: ../../porting/running-ut.rst:57
+#: ../../porting/halium_7-1/Reference_material.rst:26
 msgid "2560x1600"
 msgstr "2560x1600"
 
-#: ../../porting/running-ut.rst:57
+#: ../../porting/halium_7-1/Reference_material.rst:26
 msgid "10.1\""
 msgstr "10.1\""
 
-#: ../../porting/running-ut.rst:57
+#: ../../porting/halium_7-1/Reference_material.rst:26
 msgid "299"
 msgstr "299"
 
-#: ../../porting/running-ut.rst:57
+#: ../../porting/halium_7-1/Reference_material.rst:26
 msgid "20"
 msgstr "20"
 
-#: ../../porting/running-ut.rst:58
+#: ../../porting/halium_7-1/Reference_material.rst:27
 msgid "Fairphone 2"
 msgstr "Fairphone 2"
 
-#: ../../porting/running-ut.rst:58 ../../porting/running-ut.rst:59
+#: ../../porting/halium_7-1/Reference_material.rst:27
+#: ../../porting/halium_7-1/Reference_material.rst:28
 msgid "1080x1920"
 msgstr "1080x1920"
 
-#: ../../porting/running-ut.rst:58
+#: ../../porting/halium_7-1/Reference_material.rst:27
 msgid "5\""
 msgstr "5\""
 
-#: ../../porting/running-ut.rst:58
+#: ../../porting/halium_7-1/Reference_material.rst:27
 msgid "440"
 msgstr "440"
 
-#: ../../porting/running-ut.rst:58 ../../porting/running-ut.rst:59
+#: ../../porting/halium_7-1/Reference_material.rst:27
+#: ../../porting/halium_7-1/Reference_material.rst:28
 msgid "23"
 msgstr "23"
 
-#: ../../porting/running-ut.rst:58 ../../porting/running-ut.rst:59
+#: ../../porting/halium_7-1/Reference_material.rst:27
+#: ../../porting/halium_7-1/Reference_material.rst:28
 msgid "2.5"
 msgstr "2.5"
 
-#: ../../porting/running-ut.rst:59
+#: ../../porting/halium_7-1/Reference_material.rst:28
 msgid "LG Nexus 5"
 msgstr "Nexus 5 de LG"
 
-#: ../../porting/running-ut.rst:59
+#: ../../porting/halium_7-1/Reference_material.rst:28
 msgid "4.95\""
 msgstr "4.95\""
 
-#: ../../porting/running-ut.rst:59
+#: ../../porting/halium_7-1/Reference_material.rst:28
 msgid "445"
 msgstr "445"
 
-#: ../../porting/running-ut.rst:62
+#: ../../porting/halium_7-1/Reference_material.rst:31
 msgid ""
 "Experiment with a few values to find one that feels good when compared to "
 "the Ubuntu Touch experience on other devices. If you are unsure of which is "
@@ -1040,22 +1965,24 @@ msgstr ""
 "objets pour l'échelle) accompagnées des spécifications de l'appareil avec "
 "nous."
 
-#: ../../porting/running-ut.rst:65
+#: ../../porting/halium_7-1/Reference_material.rst:33
+#, fuzzy
+msgid "There are two other settings that may be of interest to you:"
+msgstr "Il existe deux autres paramètres qui peuvent vous intéresser."
+
+#: ../../porting/halium_7-1/Reference_material.rst:36
 msgid "Form factor"
 msgstr "Facteur de forme"
 
-#: ../../porting/running-ut.rst:67
-msgid "There are two other settings that may be of interest to you."
-msgstr "Il existe deux autres paramètres qui peuvent vous intéresser."
-
-#: ../../porting/running-ut.rst:69
+#: ../../porting/halium_7-1/Reference_material.rst:38
+#, fuzzy
 msgid ""
 "``FORM_FACTOR`` specifies the device's form factor. This value is set as the "
 "device's Chassis, which you can find by running ``hostnamectl``. The "
 "acceptable values are ``handset``, ``tablet``, ``laptop`` and ``desktop``. "
 "Apps such as the gallery use this information to change their functionality. "
-"For more information on the Chassis, see `the freedesktop.org hostnamed "
-"specification`_."
+"For more information on the Chassis, see the freedesktop.org hostnamed "
+"specification."
 msgstr ""
 "``FORM_FACTOR`` spécifie le facteur de forme de l'appareil. Cette valeur est "
 "définie en tant que châssis de l'appareil, que vous pouvez trouver en "
@@ -1065,7 +1992,11 @@ msgstr ""
 "Pour plus d'informations sur le châssis, consultez `la spécification "
 "hébergée sur freedesktop.org`_."
 
-#: ../../porting/running-ut.rst:71
+#: ../../porting/halium_7-1/Reference_material.rst:41
+msgid "Native orientation"
+msgstr ""
+
+#: ../../porting/halium_7-1/Reference_material.rst:43
 msgid ""
 "``NATIVE_ORIENTATION`` sets the display orientation for the device's built-"
 "in screen. This value is used whenever autorotation isn't working correctly "
@@ -1083,20 +2014,302 @@ msgstr ""
 "``portrait`` (portait, qui est habituellement utilisée pour les terminaux "
 "téléphoniques)."
 
-#: ../../porting/running-ut.rst:76
-msgid ""
-"If you have any errors while performing these steps, check see if any of the "
-"following suggestions match what you are seeing. If you have completed these "
-"steps successfully, congratulations! You've reached the end of the porting "
-"guide for now. Try to check the functionality of your device by following "
-"the Smoke Testing information in :doc:`/contribute/quality-assurance`."
+#: ../../porting/halium_7-1/Unity8.rst:2
+msgid "The graphical UI"
 msgstr ""
-"Si vous rencontrez des erreurs lors du déroulement de ces étapes, vérifiez "
-"si l'une des suggestions suivantes correspond à ce que vous voyez. Si vous "
-"avez terminé ces étapes avec succès, félicitations ! Vous avez atteint la "
-"fin du guide de portage pour le moment. Essayez de vérifier que votre "
-"appareil est fonctionnel en suivant la batterie de tests disponible dans "
-":doc:`/contribute/quality-assurance`."
+
+#: ../../porting/halium_7-1/Unity8.rst:7
+msgid "Bring up Unity 8 (the graphical UI)"
+msgstr ""
+
+#: ../../porting/halium_7-1/Unity8.rst:9
+msgid ""
+"Now that you're logged in, there remain a number of things to be configured "
+"before Ubuntu Touch will be fully functional on your device. The correct way "
+"to do this is by storing these settings in overlay files (:ref:`Overlay-"
+"files`), and not by making the root directory writeable, as described below. "
+"However, in order to quickly set up udev rules which are necessary to "
+"complete subsequent steps, you can use this method for first time setup."
+msgstr ""
+
+#: ../../porting/halium_7-1/Unity8.rst:12
+msgid "Make / writable"
+msgstr "Rendre modifiable"
+
+#: ../../porting/halium_7-1/Unity8.rst:14
+#, fuzzy
+msgid ""
+"Before you make any changes to the rootfs (which will be required for the "
+"next steps), you'll need to remount it with write permissions. To do that, "
+"run the following command::"
+msgstr ""
+"Avant de modifier le rootfs (ce qui sera nécessaire pour les étapes "
+"suivantes), vous devrez le remonter avec les permissions en écriture. Pour "
+"cela, lancez la commande suivante::"
+
+#: ../../porting/halium_7-1/Unity8.rst:19
+msgid "Add udev rules"
+msgstr "Ajouter des règles udev"
+
+#: ../../porting/halium_7-1/Unity8.rst:21
+msgid ""
+"You must create some udev rules to allow Ubuntu Touch software to access "
+"your hardware. Run the following command, replacing [codename] with your "
+"device's codename::"
+msgstr ""
+"Vous devez créer des règles udev pour permettre aux logiciels d'Ubuntu Touch "
+"d'accéder à votre matériel. Exécutez la commande suivante en remplaçant "
+"[codename] par le nom de code de votre appareil::"
+
+#: ../../porting/halium_7-1/Unity8.rst:26
+msgid ""
+"Now, reboot the device. If all has gone well, you will eventually see the "
+"Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as "
+"you set for SSH."
+msgstr ""
+"Maintenant, redémarrez votre appareil. Si tout s'est bien passé, vous "
+"devriez voir le logo animé d'Ubuntu Touch suivi par Unity 8. Votre mot de "
+"passe de verrouillage est le même que celui que vous aviez défini pour SSH."
+
+#: ../../porting/halium_7-1/Unity8.rst:28
+msgid ""
+"When Unity 8 is first brought up on your device, you will probably notice "
+"that everything is very small. The :ref:`Display-scaling` section describes "
+"how to deal with this."
+msgstr ""
+
+#: ../../porting/halium_7-1/Unity8.rst:31
+#, fuzzy
+msgid "Problems when bringing up Unity 8"
+msgstr "Problèmes fréquents lors de l'exécution d'Ubuntu Touch"
+
+#: ../../porting/halium_7-1/Unity8.rst:33
+msgid "Refer to :ref:`Known-issues-when-bringing-up-Unity-8`."
+msgstr ""
+
+#: ../../porting/halium_7-1/index.rst:2
+msgid "Halium 7.1"
+msgstr ""
+
+#: ../../porting/halium_7-1/index.rst:4
+msgid ""
+"The four first sections below will take you through the porting steps "
+"described in the introduction."
+msgstr ""
+
+#: ../../porting/halium_7-1/index.rst:6
+msgid ""
+"The next section is a collection of documented errors and how to deal with "
+"them. These have been kept separate from the porting instructions themselves "
+"for the sake of keeping these brief. However, each section of the porting "
+"instructions concludes with a direct link to the relevant information on "
+"issues and errors."
+msgstr ""
+
+#: ../../porting/halium_7-1/index.rst:8
+msgid "The final section contains reference material that may be useful."
+msgstr ""
+
+#: ../../porting/halium_9/Halium_9_GSI_porting.rst:2
+msgid "GSI Porting"
+msgstr ""
+
+#: ../../porting/halium_9/Halium_9_GSI_porting.rst:6
+msgid ""
+"For the time being, refer to the UBports porting notes on `the generic "
+"system image (GSI) <https://github.com/ubports/porting-notes/wiki/Generic-"
+"system-image-(GSI)>`_ and `Halium 9 porting <https://github.com/ubports/"
+"porting-notes/wiki/Halium-9>`_."
+msgstr ""
+
+#: ../../porting/halium_9/index.rst:2
+msgid "Halium 9"
+msgstr ""
+
+#~ msgid ""
+#~ "Halium-boot is a new proposed boot image in the Halium project, replacing "
+#~ "hybris-boot. We will be building and using it for Ubuntu Touch."
+#~ msgstr ""
+#~ "Halium-boot est une nouvelle proposition d'image de démarrage du projet "
+#~ "Halium, remplaçant hybris-boot. Nous allons la construire et l'utiliser "
+#~ "pour Ubuntu Touch."
+
+#~ msgid ""
+#~ "Once halium-boot is in place, you can build it quite simply. You will "
+#~ "also need to rebuild system.img due to our changes."
+#~ msgstr ""
+#~ "Une fois qu'halium-boot est en place, vous pouvez le construire assez "
+#~ "simplement. Vous devrez également reconstruire system.img en raison de "
+#~ "nos changements."
+
+#~ msgid "``cd`` to your Halium BUILDDIR"
+#~ msgstr "Allez dans votre répertoire BUILDDIR d'Halium via ``cd``"
+
+#~ msgid "Run ``breakfast`` or ``lunch``, whichever you use for your device"
+#~ msgstr ""
+#~ "Exécutez ``breakfast`` ou ``lunch``, en fonction de celui que vous "
+#~ "utilisez pour votre appareil"
+
+#~ msgid "Continue on"
+#~ msgstr "Continuez"
+
+#~ msgid ""
+#~ "Now that you have halium-boot built, you can move on to :doc:"
+#~ "`installing-16-04`."
+#~ msgstr ""
+#~ "Maintenant qu'halium-boot est construit, vous pouvez passer à l': doc:"
+#~ "`installing-16-04`."
+
+#~ msgid "Common installation problems"
+#~ msgstr "Problèmes d'installation fréquents"
+
+#~ msgid ""
+#~ "This page details problems commonly faced while following the :doc:"
+#~ "`installing-16-04` page."
+#~ msgstr ""
+#~ "Cette page détaille les problème communément rencontrés en suivant la "
+#~ "page :doc:`installing-16-04`."
+
+#~ msgid ""
+#~ "This page details problems commonly faced while following the :doc:"
+#~ "`running-ut` page."
+#~ msgstr ""
+#~ "Cette page détaille les problèmes fréquemment rencontrés en suivant la "
+#~ "page :doc:`running-ut`."
+
+#~ msgid "Mir servers crash"
+#~ msgstr "Les serveurs de Mir ont planté"
+
+#~ msgid "Installing Ubuntu Touch 16.04 images on Halium"
+#~ msgstr "Installation des images d'Ubuntu Touch 16.04 sur Halium"
+
+#~ msgid "Install halium-boot"
+#~ msgstr "Installation d'halium-boot"
+
+#~ msgid "Download the rootfs"
+#~ msgstr "Téléchargement du fichier rootfs"
+
+#~ msgid ""
+#~ "Next we'll need to download the rootfs (root filesystem) that's "
+#~ "appropriate for your device. Right now, we only have one available. "
+#~ "Simply download ``ubports-touch.rootfs-xenial-armhf.tar.gz`` from `our CI "
+#~ "server <https://ci.ubports.com/job/xenial-rootfs-armhf/>`__. If you have "
+#~ "a 64-bit ARM (aarch64) device, this same rootfs should work for you. If "
+#~ "you have an x86 device, let us know. We do not have a rootfs available "
+#~ "for these yet."
+#~ msgstr ""
+#~ "Vous devez ensuite télécharger le rootfs (système de fichiers racine) "
+#~ "adapté à votre appareil. Un seul est disponible pour le moment. "
+#~ "Téléchargez simplement  ``ubports-touch.rootfs-xenial-armhf.tar.gz`` à "
+#~ "partir de `notre serveur d'intégration continue <https://ci.ubports.com/"
+#~ "job/xenial-rootfs-armhf/>`__. Si vous disposez d'un appareil ARM 64 bits "
+#~ "(aarch64), ce même rootfs devrait fonctionner pour vous. Si vous avez un "
+#~ "appareil x86, faites le nous savoir. Nous n'avons pas encore de rootfs "
+#~ "disponible pour cela."
+
+#~ msgid "Todo"
+#~ msgstr "À faire"
+
+#~ msgid ""
+#~ "Change the rootstock link to point to UBports once the actuallyfixit PR "
+#~ "is merged."
+#~ msgstr ""
+#~ "Changez le lien rootstock pour pointer vers UBports une fois que le PR "
+#~ "actuallyfixit est fusionné."
+
+#~ msgid ""
+#~ "Download the halium-install-standalone script from `jbbgameich/halium-"
+#~ "install's releases <https://github.com/JBBgameich/halium-install/releases/"
+#~ ">`_ (`direct link to download <https://github.com/JBBgameich/halium-"
+#~ "install/releases/download/continuous/halium-install-standalone.sh>`__). "
+#~ "Boot your device into recovery and run the script as follows::"
+#~ msgstr ""
+#~ "Téléchargez le script halium-install-standalone disponible dans les "
+#~ "`publications de jbbgameich/halium-install <https://github.com/JBBgameich/"
+#~ "halium-install/releases/>`_ (`lien direct pour le téléchargement <https://"
+#~ "github.com/JBBgameich/halium-install/releases/download/continuous/halium-"
+#~ "install-standalone.sh>`__). Démarrez votre appareil en mode récupération "
+#~ "(recovery) et exécutez le script comme indiqué ci-dessous::"
+
+#~ msgid ""
+#~ "If you have any errors while performing these steps, check see if any of "
+#~ "the following suggestions match what you are seeing. If you have "
+#~ "installed successfully, skip down to `Continue on`_."
+#~ msgstr ""
+#~ "Si vous rencontrez une erreur en déroulant ces étapes, vérifiez si l'une "
+#~ "des suggestions suivantes correspond à ce que vous voyez. Si votre "
+#~ "installation est couronnée de succès, passez au chapitre `Poursuivre`_."
+
+#~ msgid ""
+#~ "Congratulations! Ubuntu Touch has now booted on your device. Move on to :"
+#~ "doc:`running-ut` to learn about more specific steps you will need to take "
+#~ "for a complete port."
+#~ msgstr ""
+#~ "Félicitations ! Ubuntu Touch vient de démarrer sur votre appareil. Allez "
+#~ "ensuite sur :doc:`running-ut` pour découvrir en détail les étapes que "
+#~ "vous devrez mettre en œuvre pour effectuer un portage complet."
+
+#~ msgid "Porting information"
+#~ msgstr "Informations sur le portage"
+
+#~ msgid ""
+#~ "If you are looking for information on installing Ubuntu Touch on a "
+#~ "supported device, or if you would like to check if your device is "
+#~ "supported, please see `this page <https://devices.ubuntu-touch.io/>`_."
+#~ msgstr ""
+#~ "Si vous cherchez des informations sur l'installation d'Ubuntu Touch sur "
+#~ "un appareil pris en charge ou si vous souhaitez vérifier si votre "
+#~ "appareil est pris en charge, consultez `cette page <https://devices."
+#~ "ubuntu-touch.io/>`_."
+
+#~ msgid ""
+#~ "This section will introduce you to some of the specifics of porting "
+#~ "Ubuntu Touch to an Android device."
+#~ msgstr ""
+#~ "Cette section vous présentera certaines spécificité du portage d'Ubuntu "
+#~ "Touch sur un appareil Android."
+
+#~ msgid ""
+#~ "Start at :doc:`building-halium-boot` if you'd like to install the UBports "
+#~ "Ubuntu Touch 16.04 rootfs."
+#~ msgstr ""
+#~ "Commencez par :doc:`building-halium-boot` si vous souhaitez installer le "
+#~ "rootfs d'Ubuntu Touch 16.04."
+
+#~ msgid ""
+#~ "If you're having trouble with the porting steps after building your "
+#~ "Halium systemimage, check out the \"Common Problems\" section of the page "
+#~ "you're stuck on. If none of the suggestions are helpful, you can get help "
+#~ "from the community via the following channels:"
+#~ msgstr ""
+#~ "Si vous rencontrez des problèmes dans les étapes de portage après la "
+#~ "construction de votre image système d'Halium, consultez la section « "
+#~ "Problèmes fréquents » de la page sur laquelle vous êtes coincé(e). Si "
+#~ "aucune des suggestions n'est utile, vous pouvez obtenir de l'aide de la "
+#~ "part de la communauté via les canaux suivants :"
+
+#~ msgid ""
+#~ "Now that you're logged in, there are a few more steps before Ubuntu Touch "
+#~ "will be fully functional on your device."
+#~ msgstr ""
+#~ "Maintenant que vous êtes connecté(e), il reste quelques étapes "
+#~ "supplémentaires avant qu'Ubuntu Touch ne soit fonctionnel sur votre "
+#~ "appareil."
+
+#~ msgid ""
+#~ "If you have any errors while performing these steps, check see if any of "
+#~ "the following suggestions match what you are seeing. If you have "
+#~ "completed these steps successfully, congratulations! You've reached the "
+#~ "end of the porting guide for now. Try to check the functionality of your "
+#~ "device by following the Smoke Testing information in :doc:`/contribute/"
+#~ "quality-assurance`."
+#~ msgstr ""
+#~ "Si vous rencontrez des erreurs lors du déroulement de ces étapes, "
+#~ "vérifiez si l'une des suggestions suivantes correspond à ce que vous "
+#~ "voyez. Si vous avez terminé ces étapes avec succès, félicitations ! Vous "
+#~ "avez atteint la fin du guide de portage pour le moment. Essayez de "
+#~ "vérifier que votre appareil est fonctionnel en suivant la batterie de "
+#~ "tests disponible dans :doc:`/contribute/quality-assurance`."
 
 #~ msgid ""
 #~ "Ubuntu Touch uses Upstart rather than Systemd for its init daemon. "
@@ -1156,9 +2369,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Si vous partagez votre code et les instructions de construction, veuillez "
 #~ "indiquer que vous avez fait cela."
-
-#~ msgid "Include in build system"
-#~ msgstr "Inclusion dans le système de construction"
 
 #~ msgid ""
 #~ "The android build system won't know where to find ubports-boot normally. "

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"POT-Creation-Date: 2020-07-29 13:44-0500\n"
 "PO-Revision-Date: 2019-06-08 16:03+0000\n"
 "Last-Translator: Walter Garcia-Fontes <walter.garcia@upf.edu>\n"
 "Language-Team: Catalan <https://translate.ubports.com/projects/ubports-docs/"
@@ -25,10 +25,11 @@ msgid "Introduction"
 msgstr "Introducció"
 
 #: ../../about/introduction.rst:4
+#, fuzzy
 msgid ""
-"This is the documentation for the UBports project. Our goal is to create an "
-"open-source (GPL if possible) mobile operating system that converges and "
-"respects your freedom."
+"This is the documentation for the UBports project. Our goal is to create a "
+"Free and open-source (GPL if possible) mobile operating system that "
+"converges and respects your freedom."
 msgstr ""
 "Aquesta és la documentació del projecte UBports. El nostre objectiu és crear "
 "un sistema operatiu mòbil de codi obert que sigui convergent i respecti la "
@@ -39,11 +40,11 @@ msgid "About UBports"
 msgstr "Quant al UBports"
 
 #: ../../about/introduction.rst:9
+#, fuzzy
 msgid ""
 "The UBports project was founded by Marius Gripsgard in 2015 and in its "
 "infancy was a place where developers could share ideas and educate each "
-"other in hopes of bringing the Ubuntu Touch platform to more and more "
-"devices."
+"other in hopes of bringing the Ubuntu Touch platform to more mobile devices."
 msgstr ""
 "El projecte UBports va ser creat pel Marius Gripsgard en 2015 i, durant la "
 "seva primera fase, era un lloc on els desenvolupadors podien compartir idees "
@@ -51,32 +52,34 @@ msgstr ""
 "més dispositius."
 
 #: ../../about/introduction.rst:11
+#, fuzzy
 msgid ""
 "After Canonical suddenly announced `their plans to terminate support of "
 "Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-"
-"cloud-and-iot-rather-than-phone-and-convergence/>`_ in April of 2017, "
-"UBports and its sister projects began work on the open-source code, "
-"maintaining and expanding its possibilities for the future."
+"cloud-and-iot-rather-than-phone-and-convergence/>`_ in April 2017, UBports "
+"and its sister projects began work on the open-source code, maintaining and "
+"expanding its possibilities for the future."
 msgstr ""
 "Després que Canonical va anunciar de sobte `el seu plan d'acabar el suport a "
-"l'Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/"
-"growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ a "
-"l'abril de 2017, l'UBports i els seus projectes germans van començar a "
-"treballar sobre el codi obert, a mantenir-lo i a ampliar les seves "
-"possibilitats per al futur."
+"l'Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-"
+"cloud-and-iot-rather-than-phone-and-convergence/>`_ a l'abril de 2017, "
+"l'UBports i els seus projectes germans van començar a treballar sobre el "
+"codi obert, a mantenir-lo i a ampliar les seves possibilitats per al futur."
 
 #: ../../about/introduction.rst:14
 msgid "About the Documentation"
 msgstr "Quant a la documentació"
 
 #: ../../about/introduction.rst:16
+#, fuzzy
 msgid ""
 "This documentation is always improving thanks to the members of the UBports "
 "community. It is written in ReStructuredText and converted into this "
 "readable form by `Sphinx <http://www.sphinx-doc.org/en/stable/>`_, "
 "`ReCommonMark <http://recommonmark.readthedocs.io/en/latest/>`_, and `Read "
 "the Docs <https://readthedocs.io>`_. You can start contributing by checking "
-"out the :doc:`Documentation intro </contribute/documentation>`."
+"out the :doc:`Documentation contribution document </contribute/"
+"documentation>`."
 msgstr ""
 "Aquesta documentació està sempre millorant gràcies als membres de la "
 "comunitat de l'UBports. Està escrita en ReStructuredText i convertida a "
@@ -379,10 +382,11 @@ msgstr ""
 "Usualment vol dir que s'ha assignat un desenvolupador al problema."
 
 #: ../../about/process/issue-tracking.rst:41
+#, fuzzy
 msgid ""
 "**Quality Assurance**: The patch is completed and has passed initial "
 "testing. The QA team will now review it and provide feedback. If problems "
-"are found, the issue is moved back to “Accepted”."
+"are found, the issue is moved back to \"Accepted\"."
 msgstr ""
 "**Quality Assurance**: Control de qualitat - S'ha completat el pegat i ha "
 "passat les comprovacions inicials. A continuació l'equip de control de "
@@ -403,12 +407,13 @@ msgstr ""
 "canal estable."
 
 #: ../../about/process/issue-tracking.rst:43
+#, fuzzy
 msgid ""
 "**None (removed from the project)**: If the issue is open and labeled \"help "
 "wanted\", community contributions are required to resolve the issue. If it's "
 "closed, that means that either a patch has been released on the stable "
 "channel (a comment on the issue should link to the patch) or the issue has "
-"been rejected (labeled “wontfix”)."
+"been rejected (labeled \"wontfix\")."
 msgstr ""
 "**None (removed from the project)**:  Cap, eliminat del projecte. Si el "
 "projecte està obert i etiquetat amb «help wanted» (cal ajuda), es "
@@ -501,14 +506,12 @@ msgstr ""
 
 #: ../../about/process/issue-tracking.rst:66
 msgid ""
-"**good first issue**: This issue is not critical and trivial to fix. It is "
-"reserved for new contributors as a place to start."
+"**good first issue**: The report contains instructions or hints required to "
+"fix it. It is an excellent place for someone new to learn about the project "
+"by fixing a real issue."
 msgstr ""
-"**good first issue**: Apropiat com a primer problema - Aquest problema no és "
-"crític i és trivial arreglar-lo. Està reservat per a contribuïdors novells "
-"com un lloc on començar."
 
-#: ../../about/process/issue-tracking.rst:68
+#: ../../about/process/issue-tracking.rst:67
 msgid ""
 "**wontfix**: It does not make sense to fix this bug, since it will probably "
 "resolve itself, it will be too much work to fix it, it's not fixable, or an "
@@ -518,7 +521,7 @@ msgstr ""
 "probablement s'arreglarà per sí mateix, implicaria molta feina arreglar-lo, "
 "no es pot arreglar, o algun component subjacent canviarà aviat."
 
-#: ../../about/process/issue-tracking.rst:72
+#: ../../about/process/issue-tracking.rst:71
 msgid ""
 "Additional special labels can be defined. As an example, here's the labels "
 "used in the Ubuntu Touch tracker:"
@@ -526,7 +529,7 @@ msgstr ""
 "Es poden definir etiquetes addicionals especials. Com a exemple, aquí hi ha "
 "les etiquetes usades al seguidor de l'Ubuntu Touch:"
 
-#: ../../about/process/issue-tracking.rst:75
+#: ../../about/process/issue-tracking.rst:74
 msgid ""
 "**critical (devel)**: This critical issue that only occurs on the devel "
 "channel is blocking the release of the next rc image."
@@ -535,7 +538,7 @@ msgstr ""
 "sols apareix al canal de desenvolupament està blocant l'alliberament de la "
 "pròxima imatge de versió candidata."
 
-#: ../../about/process/issue-tracking.rst:77
+#: ../../about/process/issue-tracking.rst:76
 msgid ""
 "**critical (rc)**: This critical issue that only occurs on the devel and rc "
 "channel is blocking the release of the next stable release. Usually, issues "
@@ -548,7 +551,7 @@ msgstr ""
 "problemes que no es poden simplement moure a una altra versió i tenen el "
 "poder de postposar la versió són els que reben aquesta etiqueta."
 
-#: ../../about/process/issue-tracking.rst:81
+#: ../../about/process/issue-tracking.rst:80
 msgid ""
 "**device: [DEVICE CODENAME]**: This issue affects only the specified "
 "device(s)."
@@ -556,7 +559,7 @@ msgstr ""
 "**device:[NOM CLAU DEL DISPOSITIU]**: Aquest problema afecta sols el(s) "
 "dispositiu(s) afectat(s)."
 
-#: ../../about/process/issue-tracking.rst:83
+#: ../../about/process/issue-tracking.rst:82
 msgid ""
 "**team: [TEAM NAME]**: This issue is falls under the responsibility of a "
 "specific team (hal, middleware, UI)."
@@ -564,7 +567,7 @@ msgstr ""
 "**team:[NOM DE L'EQUIP]**: Aquest problema està sota la responsabilitat d'un "
 "equip especificat (hall, middleware, UI)."
 
-#: ../../about/process/issue-tracking.rst:86
+#: ../../about/process/issue-tracking.rst:85
 msgid ""
 "If a repository that tracks issues locally defines it's own labels, they "
 "should be documented in the README.md."
@@ -572,11 +575,11 @@ msgstr ""
 "Si un repositori que segueix els problemes localment defineix les seves "
 "pròpies etiquetes, s'haurien de documentar al README.md."
 
-#: ../../about/process/issue-tracking.rst:90
+#: ../../about/process/issue-tracking.rst:89
 msgid "Milestones"
 msgstr "Fites"
 
-#: ../../about/process/issue-tracking.rst:92
+#: ../../about/process/issue-tracking.rst:91
 msgid ""
 "Milestones are used for stable OTA releases only. In general, milestones for "
 "the work-in-progress OTA and the next OTA are created. The ETA is set, once "
@@ -591,11 +594,11 @@ msgstr ""
 "Vegeu el :doc:`calendari-de-publicació <release-schedule>'_ per a més "
 "informació."
 
-#: ../../about/process/issue-tracking.rst:99
+#: ../../about/process/issue-tracking.rst:98
 msgid "Assignees"
 msgstr "Assignats"
 
-#: ../../about/process/issue-tracking.rst:101
+#: ../../about/process/issue-tracking.rst:100
 msgid ""
 "To make it transparent who's working on an issue, the developer should be "
 "assigned. This also allows the use of GitHub's global filtering as a type of "
@@ -609,7 +612,7 @@ msgstr ""
 "està assignat a mariogrip a @ubports <https://github.com/search?utf8=%E2%9C"
 "%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_."
 
-#: ../../about/process/issue-tracking.rst:105
+#: ../../about/process/issue-tracking.rst:104
 msgid ""
 "Developers are encouraged to keep their list short and update the status of "
 "their issues."
@@ -617,15 +620,15 @@ msgstr ""
 "Es demana als desenvolupadors de mantenir la seva llista curta i mantenir "
 "actualitzat l'estat del seus problemes."
 
-#: ../../about/process/issue-tracking.rst:108
+#: ../../about/process/issue-tracking.rst:107
 msgid "Examples"
 msgstr "Exemples"
 
-#: ../../about/process/issue-tracking.rst:111
+#: ../../about/process/issue-tracking.rst:110
 msgid "Bug Lifecycle"
 msgstr "Cicle de vida de l'error"
 
-#: ../../about/process/issue-tracking.rst:114
+#: ../../about/process/issue-tracking.rst:113
 msgid ""
 "The same principle applies to feature requests. The only difference is, that "
 "instead of the label **bug**, the label **enhancement** is used. The **needs "
@@ -636,12 +639,12 @@ msgstr ""
 "l'etiqueta **enhancement** (millora). L'etiqueta **needs confirmation** (cal "
 "confirmació) no s'aplica a les demandes de funcionalitat."
 
-#: ../../about/process/issue-tracking.rst:118
+#: ../../about/process/issue-tracking.rst:117
 msgid "A *User* files a new bug using the issue-template."
 msgstr ""
 "Un *Usuari* registra un nou informe d'error usant la plantilla de problemes."
 
-#: ../../about/process/issue-tracking.rst:119
+#: ../../about/process/issue-tracking.rst:118
 msgid ""
 "The *QA-Team* adds the label **needs confirmation** and tries to work with "
 "the user to confirm the bug and add potentially missing information to the "
@@ -656,7 +659,7 @@ msgstr ""
 "posarà a la **awaiting-triage-list** (llista en espera de triatge) del "
 "projecte i l'etiqueta cal confirmació es reemplaçarà per **bug** (error)."
 
-#: ../../about/process/issue-tracking.rst:120
+#: ../../about/process/issue-tracking.rst:119
 msgid ""
 "The affected *Team* will triage the issue and either reject (label "
 "**wontfix**, close and remove from the project) or accept the issue. The "
@@ -677,11 +680,12 @@ msgstr ""
 "a problemes no crítics que són fàcils d'arreglar, es pot afegir també "
 "l'etiqueta **good first issue** (problema inicial adequat)."
 
-#: ../../about/process/issue-tracking.rst:121
+#: ../../about/process/issue-tracking.rst:120
+#, fuzzy
 msgid ""
 "Once a *developer* is assigned and starts working on the issue, it is moved "
-"to “In Development”. As soon as they have something to show for, the issue "
-"is closed and automatically moved to “Quality Assurance” for feedback from "
+"to \"In Development\". As soon as they have something to show for, the issue "
+"is closed and automatically moved to \"Quality Assurance\" for feedback from "
 "the QA team. If necessary, the developer will provide hints on how to test "
 "his patch in a comment on the issue."
 msgstr ""
@@ -692,11 +696,12 @@ msgstr ""
 "desenvolupador proveirà instruccions sobre com verificar el pegat en un "
 "comentari al problema."
 
-#: ../../about/process/issue-tracking.rst:122
+#: ../../about/process/issue-tracking.rst:121
+#, fuzzy
 msgid ""
 "The *QA-Team* tests the fix on all devices and provides feedback to the "
 "developer. If problems are found, the issue is re-opened and goes back to "
-"“Accepted”, else it’s moved to “Release Candidate” to be included in the "
+"\"Accepted\", else it’s moved to \"Release Candidate\" to be included in the "
 "next release."
 msgstr ""
 "L'*Equip de control de qualitat* verifica la correcció del problema a tos "
@@ -705,7 +710,7 @@ msgstr ""
 "contrari es mou a «Versió candidata» perquè s'inclogui al proper "
 "alliberament."
 
-#: ../../about/process/issue-tracking.rst:123
+#: ../../about/process/issue-tracking.rst:122
 msgid ""
 "If not done already, the issue is added to the next milestone. Once the "
 "milestone is released, the issue is removed from the project board."
@@ -827,6 +832,14 @@ msgstr ""
 "s'hauria de moure fent una estimació aproximada sobre quan es podran "
 "gestionar tots els problemes. Si hi ha massa problemes afegits a una fita, o "
 "bé s'eliminen o bé s'afegeixen al següent alliberament."
+
+#~ msgid ""
+#~ "**good first issue**: This issue is not critical and trivial to fix. It "
+#~ "is reserved for new contributors as a place to start."
+#~ msgstr ""
+#~ "**good first issue**: Apropiat com a primer problema - Aquest problema no "
+#~ "és crític i és trivial arreglar-lo. Està reservat per a contribuïdors "
+#~ "novells com un lloc on començar."
 
 #~ msgid ""
 #~ "**None (removed from the project)**: A patch has been released (issue "
