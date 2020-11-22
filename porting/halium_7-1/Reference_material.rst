@@ -41,3 +41,26 @@ Native orientation
 ^^^^^^^^^^^^^^^^^^
 
 ``NATIVE_ORIENTATION`` sets the display orientation for the device's built-in screen. This value is used whenever autorotation isn't working correctly or when an app wishes to be locked to the device's native orientation. Acceptable values are ``landscape``, which is normally used for tablets, laptops, and desktops; and ``portrait``, which is usually used for phone handsets.
+
+.. _AppArmor:
+
+AppArmor
+--------
+
+To understand Apparmor, what it is and how it works, refer to `AppArmor on the Ubuntu Wiki <https://wiki.ubuntu.com/AppArmor>`_
+
+.. _Backporting-kernel-drivers:
+
+Backporting kernel drivers
+--------------------------
+
+Depending on your device port, what kernel and Halium versions it is based on, you may need to backport one or more kernel drivers. The procedure for backporting bluetooth to Halium 7.1-based ports is described in `the porting-FAQ <https://pad.ubports.com/p/porting-faq>`_ . The process is challenging and has potential pitfalls. 
+
+If you wish to gain a better understanding of backporting, please refer to `the Backports Project wiki page <https://backports.wiki.kernel.org/index.php/Main_Page>`_
+
+.. _Understanding-init-scripts:
+
+Android init scripts
+--------------------
+
+The init scripts play a key role in bringing up the different services inside your Android container that need to run on your device in order for it to function properly. Refer to `the Android init language <https://android.googlesource.com/platform/system/core/+/master/init/README.md>`_ for an explanation of the syntax of these scripts.
