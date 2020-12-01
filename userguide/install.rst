@@ -18,6 +18,9 @@ Start the installer and follow the on-screen instructions that will walk you thr
 
 If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/Intro>`.
 
+.. note::
+    Please do **not** start the installer with ``sudo``. It is meant to be run as a normal user, not as root. Using the installer with sudo will mess up permissions in the installer's cached files and lead to problems down the road. If the installer does not recognize your device, check the troubleshooting information below.
+
 Troubleshooting
 ---------------
 
