@@ -8,7 +8,9 @@ In the previous section you adjusted a configuration file directly in the UBport
 Overlay files
 -------------
 
-Note that as a rule of thumb, the method described below applies if the file you need to edit can be found in the /etc directory (or a subdirectory of this) on your device. You should not attempt to overwrite files located elsewhere with overlay files using this method.
+Note that as a rule of thumb, the method described below applies if the file you need to edit can be found in the /etc directory (or a subdirectory of this) on your device. You should not attempt to overwrite files located elsewhere using this method. Note also that it is not possible to transfer executable files using this method, and that you cannot insert new files either. The only thing this method does is to overwrite a file that is already present in the build. Thus, by following the steps described here you can replace existing configuration files with ones that are tailored specifically to your device.
+
+It is also worth noting that, as of writing, there are a number of legacy files in the mentioned directories that serve no purpose but exist there simply pending removal. Therefore, make sure you are overwriting files that are actually used by the system as your changes otherwise will have no effect.
 
 In your device directory, create a subdirectory named 'ubuntu'. Collect the files you wish to inject into your build in this directory. 
 
