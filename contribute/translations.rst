@@ -5,24 +5,24 @@ Although English is the official base language for all UBports projects we belie
 
 We are working hard to meet that goal, and you can help as well. You decide how much time you can put into translation. From minutes to hours, everything counts.
 
-How does a text gets translated (technical background)
+How does a text get translated (technical background)
 ------------------------------------------------------
 Most apps running on Ubuntu Touch use `GNU gettext <https://www.gnu.org/software/gettext/>`_ for translations. A *.pot* template file holds an apps strings. From this template for every language an individual *.po* file is derived. Those *.po* files do contain the actual translations.
 To add a new language a new *.po* file needs to be created. To translate a string the *.po* file needs to be edited. Next to the original string (english in most cases) the appropriate translation needs to be entered following the *.po* gettext file syntax.
 Some apps do use `QtLinguist <https://doc.qt.io/qt-5/qtlinguist-index.html>`_ for translation. It does follow the same priciples only using *.ts* files for translations with another syntax. As template one *.ts* file is used.
 
-Within a app strings are marked either this way ``i18n.tr("string")`` when using gettext or like this ``tr("string")`` when using QtLinguist. When the app is build those translatable strings are extracted and written into the *.pot* or *.ts* template files. The *.po* and *.ts* language files then need to be updated from their template.
+Within an app strings are marked either this way ``i18n.tr("string")`` when using gettext or like this ``tr("string")`` when using QtLinguist. When the app is built those translatable strings are extracted and written into the *.pot* or *.ts* template files. The *.po* and *.ts* language files then need to be updated from their template.
 
 Once strings have been translated, they are made available for users with a new release of an app.
 
 Methods of Translation
 ----------------------
 
-There are three common ways used to translate an app:
+There are three commonly used ways to translate an app:
 
 * Weblate: A web based translation tool. UBports apps using Weblate can be translated `here <https://translate.ubports.com/projects/>`_. There is an automatic transfer of new strings from an apps repo to weblate. Translated strings get back as commits to the repo from weblate.
 * Editor: Translation is done by changing *.po* files with the editor of your choice, and a GitHub/GitLab account. The *.po*/*.ts* files for each project are in their repository on `our GitLab organization <https://gitlab.com/ubports/apps>`_ or on `our GitHub organization <https://github.com/ubports>`_. After translating the translator commits new translations to an apps repo generally by opening a merge request/pull request.
-* Team translation: We also have  a `Translation Forum <https://forums.ubports.com/category/39/translations>`_ to discuss translating Ubuntu Touch and its core apps. Some projects are using Telegram or matrix groups too, and some teams are still using the Ubuntu Launchpad framework.
+* Team translation: We also have  a `Translation Forum <https://forums.ubports.com/category/39/translations>`_ to discuss translating Ubuntu Touch and its core apps. Some projects are using Telegram or Matrix groups too, and some teams are still using the Ubuntu Launchpad framework.
 
 Core apps and some community apps like dekko or TELEports are generally using weblate for translation. This is the preferred way to translate and it does not need any programming skills. Please have a look at the `UBports translation projects <https://translate.ubports.com/projects/>`_. When using weblate do not edit *.po* files manually. Commiting edited *.po* files can break the automated process of translation.
 
@@ -41,7 +41,7 @@ For that, go to UBports Weblate and click on the "Register" button. Once in the 
 * Register using a valid email address, a username, and your full name. You'll need to resolve an easy control question too.
 * Register using a third party registration. Currently the system supports accounts from openSUSE, GitHub, Fedora, and Ubuntu.
 
-Once you're logged in, the site is self-explanatory and you'll find there all the options and customization you can do.
+Once you're logged in, the site is self-explanatory and there you'll find all the options and customization you can do.
 
 Now, get on with it. The first step is to search if your language already exists in the project of your choice. If your language is not available for a specific project, you can add it yourself.
 
@@ -55,23 +55,23 @@ If you want to work with *.po*/*.ts* files directly you need to know what you're
 
 As was said up above, you need a file editor of your choice and a GitHub/GitLab account to translate *.po*/*.ts* files directly. Idealy you do have `clickable <http://clickable.bhdouglass.com/en/latest/>`_ set up and know how to build an app.
 
-There are online gettext .po editors and those you can install in your computer. You can choose whatever editor you want, but we prefer to work with free software only. There are too many plain text editors and tools to help you translate *.po*/*.ts* files to put down a list here.
+There are online gettext .po editors and those you can install on your computer. You can choose whatever editor you want, but we prefer to work with free software only. There are too many plain text editors and tools to help you translate *.po*/*.ts* files to list here.
 
 .. note::
-    For high quality translations it is recommended to go through all of the steps given below. Although if you are not familiar with building apps using clickable, skip the steps 4. to 6. You may not be able to translate the latest strings though. And you will not know if the strings fit into the apps layout.
+    For high quality translations it is recommended to go through all of the steps given below. Although if you are not familiar with building apps using clickable, skip the steps 4. to 6. Although, you may not be able to translate the latest strings and you will not know if the strings fit into the apps layout.
 
 How to proceed:
 
-1. fork the apps repo into your GitHub or GitLab account
-2. clone the repo locally or use GitLab's online editor
-3. (optional) create a new branch for the translation
-4. build the app using clickable to get up-to-date *.pot*/*.ts* template files
-5. update the desired *.po*/*.ts* language file(s) from the template
-6. translate all strings
-7. build and install the app on your device and test the translations
-8. (optional) repeat steps 6. and 7. until you are satisfied with your work
-9. push the translated *.po*/*.ts* file(s) to your forked repo [do NOT commit *.pot*/*.ts* template files]
-10. open an merge/pull request from your fork to the apps repo
+1. Fork the apps repo into your GitHub or GitLab account
+2. Clone the repo locally or use GitLab's online editor
+3. (optional) Create a new branch for the translation
+4. Build the app using clickable to get up-to-date *.pot*/*.ts* template files
+5. Update the desired *.po*/*.ts* language file(s) from the template
+6. Translate all strings
+7. Build and install the app on your device and test the translations
+8. (optional) Repeat steps 6. and 7. until you are satisfied with your work
+9. Push the translated *.po*/*.ts* file(s) to your forked repo [do NOT commit *.pot*/*.ts* template files]
+10. Open a merge/pull request from your fork to the apps repo
 
 
 Translation Team Communication
