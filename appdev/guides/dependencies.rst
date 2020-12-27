@@ -17,15 +17,15 @@ Add a `libraries section <http://clickable.bhdouglass.com/en/latest/clickable-js
    :emphasize-lines: 3-7
 
     {
-      "template": "cmake",
+      "builder": "cmake",
       "libraries": {
         "LIBNAME": {
-          "template": "cmake"
+          "builder": "cmake"
         }
       }
     }
 
-If the library does not contain a CMake configuration, you need to use the `qmake` or `custom` template instead.
+If the library does not contain a CMake configuration, you need to use the `qmake` or `custom` builder instead.
 
 Optionally, configure the compilation by adding ``build_args``, which may look like this:
 
@@ -33,10 +33,10 @@ Optionally, configure the compilation by adding ``build_args``, which may look l
    :emphasize-lines: 6-11
 
     {
-      "template": "cmake",
+      "builder": "cmake",
       "libraries": {
         "LIBNAME": {
-          "template": "cmake",
+          "builder": "cmake",
           "build_args": [
             "-DBUILD_EXAMPLES=OFF",
             "-DBUILD_DOCS=OFF",
@@ -65,7 +65,7 @@ If the library is available in the Ubuntu Repositories, you can add it to the de
    :emphasize-lines: 3-5
 
     {
-      "template": "cmake",
+      "builder": "cmake",
       "dependencies_target": [
         "libsomething-dev"
       ]
@@ -79,7 +79,7 @@ If the library can be found in a PPA, you can add the PPA to the clickable.json,
    :emphasize-lines: 3-5
 
     {
-      "template": "cmake",
+      "builder": "cmake",
       "dependencies_ppa": [
         "ppa:someone/libsomething"
       ],
@@ -121,10 +121,10 @@ To get the files into the click package, add the `install_lib <http://clickable.
    :emphasize-lines: 6-9
 
     {
-      "template": "cmake",
+      "builder": "cmake",
       "libraries": {
         "LIBNAME": {
-          "template": "cmake",
+          "builder": "cmake",
           "install_lib": [
             "$LIBNAME_LIB_INSTALL_DIR/usr/lib/$ARCHITECTURE_TRIPLET/libqmapboxgl.so*",
             "/usr/lib/$ARCHITECTURE_TRIPLET/libSoundTouch.so.*"
