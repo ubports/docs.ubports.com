@@ -22,6 +22,9 @@ You need then to transfer your public key to your device. There are multiple way
 * You can also connect via :doc:`adb <adb>` and use the following command to copy it::
 
     adb push ~/.ssh/id_rsa.pub /home/phablet/
+    
+Please note:Some of the UT devices might not deteched on connecting through USB or adb devices might not list your device,In such situations transfering the key via the internet to your phone is a better approcah.
+
 
 Configure your device
 ---------------------
@@ -50,6 +53,13 @@ Connect
 Now everything is set up and you can use ``ssh`` ::
 
     ssh phablet@<ip-address>
+    
+To identify the ip-address of your UT devce,open Termux application in your phone and run the following command::
+    
+    hostname -I
+    
+The output is list on IP address seperated by spaces.Use the first IP address from the list.
+    
 
 Of course you can now also use ``scp`` or ``sshfs`` to transfer files.
 
