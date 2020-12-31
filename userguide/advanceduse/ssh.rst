@@ -15,16 +15,13 @@ If not already created, create your public key, default choices should be fine f
 Copy the public key to your device
 ----------------------------------
 
-You need then to transfer your public key to your device. There are multiple ways to do this. For example:
+You need then to transfer your public key to your device. There are multiple ways to do this. These are the few options:
 
 * Connect the ubports device and the PC with a USB cable. Then copy the file using your filemanager.
 * Or transfer the key via the internet by mailing it to yourself, or uploading it to your own cloud storage, or webserver, etc. 
 * You can also connect via :doc:`adb <adb>` and use the following command to copy it::
 
     adb push ~/.ssh/id_rsa.pub /home/phablet/
-    
-Please note:Some of the UT devices might not deteched on connecting through USB or adb devices might not list your device,In such situations transfering the key via the internet to your phone is a better approcah.
-
 
 Configure your device
 ---------------------
