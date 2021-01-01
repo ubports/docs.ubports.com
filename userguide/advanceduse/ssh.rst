@@ -51,7 +51,7 @@ Now everything is set up and you can use ``ssh`` ::
 
     ssh phablet@<ip-address>
     
-To identify the ip-address of your UT devce,open Termux application in your phone and run the following command::
+To identify the ip-address of your UT devce,open terminal application in your phone and run the following command::
     
     hostname -I
     
