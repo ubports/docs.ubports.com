@@ -51,11 +51,11 @@ Now everything is set up and you can use ``ssh`` ::
 
     ssh phablet@<ip-address>
     
-To identify the ip-address of your UT devce,open terminal application in your phone and run the following command::
+To identify the ip-address of your UT device , open Terminal application in your phone and run the following command::
     
     hostname -I
     
-The output is a list on IP addresses seperated by spaces.Use the first IP address from the list.
+The output is a list of IP addresses seperated by spaces.Use the first IP address from the list.
     
 
 Of course you can now also use ``scp`` or ``sshfs`` to transfer files.
