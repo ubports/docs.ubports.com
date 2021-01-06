@@ -1,5 +1,6 @@
-"porting/introduction.rst" "porting/Index.rst"
-"porting/Intro.rst" "porting/Index.rst"
+"porting/introduction.rst" "porting/index.rst"
+"porting/Intro.rst" "porting/index.rst"
+"porting/Index.rst" "porting/index.rst"
 "porting/building-halium-boot.rst" "porting/halium_7-1/Building.rst"
 "porting/common-problems-install.rst" "porting/halium_7-1/Common_errors.rst"
 "porting/common-problems-run.rst" "porting/halium_7-1/Common_errors.rst"
