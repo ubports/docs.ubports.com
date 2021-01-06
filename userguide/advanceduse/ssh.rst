@@ -15,7 +15,7 @@ If not already created, create your public key, default choices should be fine f
 Copy the public key to your device
 ----------------------------------
 
-You need then to transfer your public key to your device. There are multiple ways to do this. For example:
+You need then to transfer your public key to your device. There are multiple ways to do this. These are a few options:
 
 * Connect the ubports device and the PC with a USB cable. Then copy the file using your filemanager.
 * Or transfer the key via the internet by mailing it to yourself, or uploading it to your own cloud storage, or webserver, etc. 
@@ -50,6 +50,13 @@ Connect
 Now everything is set up and you can use ``ssh`` ::
 
     ssh phablet@<ip-address>
+    
+To identify the ip-address of your UT device , open Terminal application in your phone and run the following command::
+    
+    hostname -I
+    
+The output is a list of IP addresses separated by spaces . Use the first IP address from the list.
+    
 
 Of course you can now also use ``scp`` or ``sshfs`` to transfer files.
 
