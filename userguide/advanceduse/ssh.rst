@@ -55,7 +55,7 @@ To identify the ip-address of your UT device , open Terminal application in your
     
     hostname -I
     
-The output is a list of IP addresses seperated by spaces.Use the first IP address from the list.
+The output is a list of IP addresses separated by spaces . Use the first IP address from the list.
     
 
 Of course you can now also use ``scp`` or ``sshfs`` to transfer files.
