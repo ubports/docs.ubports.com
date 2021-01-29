@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2020-11-07 19:45+0000\n"
+"PO-Revision-Date: 2020-12-25 16:26+0000\n"
 "Last-Translator: Anne Onyme <anneonyme017@netcourrier.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/fr/>\n"
@@ -111,21 +111,19 @@ msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:41
 msgid "Adb shell commands::"
-msgstr ""
+msgstr "Commandes adb shell ::"
 
 #: ../../userguide/advanceduse/adb.rst:46
 msgid "Additional Adb commands::"
-msgstr ""
+msgstr "Commandes supplémentaires adb ::"
 
 #: ../../userguide/advanceduse/adb.rst:51
-#, fuzzy
 msgid ""
 "For more ADB commands refer to the `official documentation <https://"
 "developer.android.com/studio/command-line/adb>`_."
 msgstr ""
-"Pour Windows, récupérez seulement le package correspondant aux outils de "
-"commande en ligne depuis `cet endroit <https://developer.android.com/studio/"
-"index.html#downloads>`_."
+"Pour plus de commandes adb, consultez la `documentation officielle "
+"<https://developer.android.com/studio/command-line/adb>`_."
 
 #: ../../userguide/advanceduse/adb.rst:54
 msgid "Add hardware IDs"
@@ -612,10 +610,12 @@ msgstr ""
 #: ../../userguide/advanceduse/ssh.rst:38
 msgid "Now start the ssh server. If you are using an Android-based phone::"
 msgstr ""
+"Démarrez maintenant le serveur SSH. Si vous utilisez un téléphone basé sur "
+"Android ::"
 
 #: ../../userguide/advanceduse/ssh.rst:42
 msgid "If you are using a Linux-based phone (like the Pinephone)::"
-msgstr ""
+msgstr "Si vous utilisez un téléphone basé sur Linux (comme le Pinephone) ::"
 
 #: ../../userguide/advanceduse/ssh.rst:48
 msgid "Connect"
@@ -661,22 +661,25 @@ msgid ""
 "channels are stable, rc (release candidate) and devel (nightly builds). For "
 "more info, see :doc:`the release schedule </about/process/release-schedule>`."
 msgstr ""
+"Vous pouvez changer le canal de diffusion en utilisant les paramètres du "
+"système. Les 3 canaux existants sont stable, candidate (rc pour release "
+"candidate) et développement (versions quotidiennes instables). Pour plus "
+"d'informations, consultez :doc:`le planning de diffusion</about/process/"
+"release-schedule>`."
 
 #: ../../userguide/dailyuse/anbox.rst:2
-#, fuzzy
 msgid "Android apps"
-msgstr "Exécuter des applications Android"
+msgstr "Applications Android"
 
 #: ../../userguide/dailyuse/anbox.rst:4
-#, fuzzy
 msgid ""
 "`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility "
 "layer that allows you to run Android apps on GNU/Linux operating systems "
 "such as UBports."
 msgstr ""
-"`Anbox <https://anbox.io>`_ est un conteneur et une couche de compatibilité "
-"de base pour Android. Il permet de faire tourner des applications Android "
-"sur des systèmes d'exploitation GNU/Linux."
+"`Anbox <https://anbox.io>`_ est un conteneur Android minimal et une couche "
+"de compatibilité qui permet de faire tourner des applications Android sur "
+"des systèmes d'exploitation GNU/Linux tels que UBports."
 
 #: ../../userguide/dailyuse/anbox.rst:7
 msgid ""
@@ -696,6 +699,11 @@ msgid ""
 "easier to use ``adb shell`` or :doc:`set up ssh </userguide/advanceduse/"
 "ssh>` to access your phone from your host."
 msgstr ""
+"Vous devrez exécuter des commandes sur votre appareil Ubuntu Touch pour "
+"installer Anbox et les APK. Vous pouvez le faire en utilisant l'application "
+"Terminal, mais il est plus facile d'utiliser « adb shell » ou la :doc:`"
+"configuration de SSH </userguide/advanceduse/ssh>` pour accéder à votre "
+"téléphone depuis votre hôte."
 
 #: ../../userguide/dailyuse/anbox.rst:13
 msgid "Supported devices"
@@ -709,39 +717,38 @@ msgstr "Assurez-vous que votre appareil est pris en charge :"
 msgid ""
 "Meizu Pro 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)"
 msgstr ""
-"Le Meizu Pro 5 (nom de code : ``turbo``, nom de la partition de démarrage : "
+"Meizu Pro 5 (nom de code : ``turbo``, nom de la partition de démarrage : "
 "``bootimg``)"
 
 #: ../../userguide/dailyuse/anbox.rst:18
 msgid "Fairphone 2 (codename: ``FP2``, name of the boot partition: ``boot``)"
 msgstr ""
-"Le Fairphone 2 (nom de code : ``FP2``, nom de la partition de démarrage : "
+"Fairphone 2 (nom de code : ``FP2``, nom de la partition de démarrage : "
 "``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:19
-#, fuzzy
 msgid "OnePlus One (codename: ``bacon``, name of the boot partition: ``boot``)"
 msgstr ""
-"Le OnePlus One (nom de code : ``bacon``, nom de la partition de démarrage : "
+"OnePlus One (nom de code : ``bacon``, nom de la partition de démarrage : "
 "``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:20
 msgid ""
 "Nexus 5 (codename: ``hammerhead``, name of the boot partition: ``boot``)"
 msgstr ""
-"Le Nexus 5 (nom de code : ``hammerhead``, nom de la partition de démarrage : "
+"Nexus 5 (nom de code : ``hammerhead``, nom de la partition de démarrage : "
 "``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:21
 msgid "BQ M10 HD (codename: ``cooler``, name of the boot partition: ``boot``)"
 msgstr ""
-"Le BQ M10 HD (nom de code : ``cooler``, nom de la partition de démarrage : "
+"BQ M10 HD (nom de code : ``cooler``, nom de la partition de démarrage : "
 "``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:22
 msgid "BQ M10 FHD (codename: ``frieza``, name of the boot partition: ``boot``)"
 msgstr ""
-"Le BQ M10 FHD (nom de code : ``frieza``, nom de la partition de démarrage : "
+"BQ M10 FHD (nom de code : ``frieza``, nom de la partition de démarrage : "
 "``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:24
@@ -759,6 +766,8 @@ msgstr "Comment l'installer"
 #: ../../userguide/dailyuse/anbox.rst:30
 msgid "Installing Anbox is only recommended for experienced users."
 msgstr ""
+"L'installation d'Anbox est uniquement recommandé aux utilisateurs et "
+"utilisatrices expérimenté(e)s."
 
 #: ../../userguide/dailyuse/anbox.rst:33
 msgid ""
@@ -769,20 +778,28 @@ msgid ""
 "Ubuntu Touch device when you have a computer with you to re-flash that boot "
 "image."
 msgstr ""
+"Si vous possédez un Meizu Pro 5, un BQ M10 HD ou un BQ M10 FHD, vous devez "
+"installer une image de démarrage spécifique. **Vous devrez refaire une "
+"installation de cette image après chaque mise à jour d'Ubuntu Touch**, par "
+"exemple lorsque vous passerez de l'OTA-10 à l'OTA-11. Ne pas le faire peut "
+"mettre votre téléphone dans un état instable. Ne mettez à jour votre "
+"appareil sous Ubuntu Touch que lorsque vous avez un ordinateur avec vous "
+"pour refaire une installation de cette image de démarrage."
 
 #: ../../userguide/dailyuse/anbox.rst:35
-#, fuzzy
 msgid ""
 "Make sure your supported device runs on 16.04 (Anbox doesn't work on 15.04)."
 msgstr ""
 "Assurez-vous que votre appareil soit pris en charge et tourne sous la "
-"version 16.04 (Anbox ne fonctionne pas sous la 15.04)"
+"version 16.04 (Anbox ne fonctionne pas sous la 15.04)."
 
 #: ../../userguide/dailyuse/anbox.rst:36
 msgid ""
 "Be sure to have a `backup <https://askubuntu.com/questions/602850/how-do-i-"
 "backup-my-ubuntu-phone>`_ of the device."
 msgstr ""
+"Assurez-vous d'avoir fait une `sauvegarde <https://askubuntu.com/questions/"
+"602850/how-do-i-backup-my-ubuntu-phone>`_ de l'appareil."
 
 #: ../../userguide/dailyuse/anbox.rst:37
 msgid ""
@@ -802,21 +819,19 @@ msgid "Activate developer mode on your device."
 msgstr "Activer le mode développeur sur votre périphérique."
 
 #: ../../userguide/dailyuse/anbox.rst:39
-#, fuzzy
 msgid ""
 "Connect the device to your host and run the following commands from your "
 "host (same terminal you ran the ``export`` command in)::"
 msgstr ""
-"Connectez l'appareil à votre appareil hôte et exécutez les commandes "
-"suivantes à partir de votre appareil hôte (dans le même terminal que celui "
-"dans lequel vous avez exécuté la commande ``export``)::"
+"Connectez l'appareil à votre hôte et exécutez les commandes suivantes à "
+"partir de ce dernier (dans le même terminal que celui dans lequel vous avez "
+"exécuté la commande ``export``) ::"
 
 #: ../../userguide/dailyuse/anbox.rst:49
-#, fuzzy
 msgid "Wait for the device to reboot, then run this from your host::"
 msgstr ""
 "Attendez que l'appareil redémarre, exécutez ensuite à partir de votre "
-"appareil hôte :"
+"appareil hôte ::"
 
 #: ../../userguide/dailyuse/anbox.rst:58 ../../userguide/dailyuse/anbox.rst:78
 #: ../../userguide/dailyuse/anbox.rst:98
@@ -834,6 +849,10 @@ msgid ""
 "run some ``adb`` commands, sometime on your computer, sometime on your "
 "phone. Carefully check on which device you are!"
 msgstr ""
+"Vous avez maintenant un serveur ADB qui tourne à l'intérieur de votre "
+"téléphone. Ce guide vous demande d'exécuter des commandes « adb », parfois "
+"sur votre ordinateur, parfois sur votre téléphone. Vérifiez soigneusement "
+"sur quel appareil vous êtes !"
 
 #: ../../userguide/dailyuse/anbox.rst:63
 msgid ""
@@ -841,34 +860,34 @@ msgid ""
 "opening the terminal app and enter ``adb devices``. You should see something "
 "like::"
 msgstr ""
+"Vous pouvez vérifier que le serveur ABD fonctionne correctement en local sur "
+"votre téléphone en ouvrant l'application Terminal et en saisissant « adb "
+"devices ». Vous devriez voir quelque chose comme ::"
 
 #: ../../userguide/dailyuse/anbox.rst:70
-#, fuzzy
 msgid "How to install new APKs"
 msgstr "Comment installer de nouveaux APK"
 
 #: ../../userguide/dailyuse/anbox.rst:72
-#, fuzzy
 msgid ""
 "Copy the APK to ``/home/phablet/Downloads``, then run the following from "
 "your host::"
 msgstr ""
 "Copiez l'APK dans ``/home/phablet/Downloads``, puis exécutez la commande "
-"suivante à partir de votre appareil hôte::"
+"suivante à partir de votre appareil hôte ::"
 
 #: ../../userguide/dailyuse/anbox.rst:81
 msgid "Keep your apps up to date"
 msgstr "Gardez vos applications à jour"
 
 #: ../../userguide/dailyuse/anbox.rst:83
-#, fuzzy
 msgid ""
 "To keep your apps up to date you can use of F-Droid or ApkTrack. If you want "
 "to install any of the above apps you can find them here:"
 msgstr ""
-"Afin que vos applications continuent à tourner sous la dernière version, "
-"vous pouvez utiliser F-Droid ou ApkTrack. Si vous souhaitez installer une "
-"des applications précédentes, vous pouvez les trouver ici :"
+"Pour maintenir vos applications à jour, vous pouvez utiliser F-Droid ou "
+"ApkTrack. Si vous souhaitez installer l'une des applications ci-dessus, vous "
+"pouvez les trouver ici :"
 
 #: ../../userguide/dailyuse/anbox.rst:85
 msgid "F-Droid: https://f-droid.org/"
@@ -879,7 +898,6 @@ msgid "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
 msgstr "ApkTrack : https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
 
 #: ../../userguide/dailyuse/anbox.rst:89
-#, fuzzy
 msgid "How to uninstall apps"
 msgstr "Comment désinstaller des applications"
 
@@ -893,17 +911,21 @@ msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:101
 msgid "Access Android storage"
-msgstr ""
+msgstr "Accéder à l'espace de stockage d'Android"
 
 #: ../../userguide/dailyuse/anbox.rst:103
 msgid ""
 "Android storage is located at ``/home/phablet/anbox-data/data/media/0``."
 msgstr ""
+"L'espace de stockage d'Android est situé à l'adresse ``/home/phablet/"
+"anbox-data/data/media/0``."
 
 #: ../../userguide/dailyuse/anbox.rst:105
 msgid ""
 "Links to android libraries can be made in their respective XDG counterparts::"
 msgstr ""
+"Les liens vers les bibliothèques d'Android peuvent être faits dans leurs "
+"équivalents XDG respectifs ::"
 
 #: ../../userguide/dailyuse/anbox.rst:114 ../../userguide/install.rst:22
 msgid "Troubleshooting"
@@ -928,28 +950,25 @@ msgstr ""
 "trouvé »"
 
 #: ../../userguide/dailyuse/anbox.rst:129
-#, fuzzy
 msgid "Check that you typed the file name correctly"
-msgstr "Vérifiez que vous avez saisi correctement le nom du fichier"
+msgstr "Vérifiez que vous avez correctement saisi le nom du fichier"
 
 #: ../../userguide/dailyuse/anbox.rst:130
-#, fuzzy
 msgid ""
 "If the APK does not reside in the current folder where you execute adb, you "
 "have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` "
 "instead of just ``my-app.apk``"
 msgstr ""
-"Si l'APK ne se trouve pas dans le dossier existant et dans le quel vous "
-"exécutez la commande adb, vous devez spécifier le chemin complet, par "
-"exemple ``/home/phablet/Downloads/my-app.apk`` au lieu de juste ``my-app."
-"apk``"
+"Si l'APK ne se trouve pas dans le dossier actuel et dans le quel vous "
+"exécutez la commande ADB, vous devez spécifier le chemin complet, par "
+"exemple ``/home/phablet/Downloads/my-app.apk`` au lieu de juste ``my-"
+"app.apk``"
 
 #: ../../userguide/dailyuse/anbox.rst:134
 msgid "Reporting bugs"
 msgstr "Signaler des bugs"
 
 #: ../../userguide/dailyuse/anbox.rst:136
-#, fuzzy
 msgid ""
 "Please :doc:`report any bugs </contribute/bugreporting>` you come across. "
 "Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch "
@@ -958,10 +977,11 @@ msgid ""
 "issues>`_. Thank you!"
 msgstr ""
 "Veuillez :doc:`signaler tout problème </contribute/bugreporting>` que vous "
-"rencontrez. Les problèmes concernant Ubuntu Touch 16.04 sont signalés dans "
-"`le suivi normal d'Ubuntu Touch <https://github.com/ubports/ubuntu-touch/"
-"issues>`_ et les problèmes concernant Anbox sont signalés dans `notre "
-"version modifiée en aval <https://github.com/ubports/anbox/issues>`_. Merci !"
+"rencontrez. Les problèmes concernant Ubuntu Touch 16.04 sont signalés dans `"
+"la liste de suivi normal d'Ubuntu Touch <https://github.com/ubports/"
+"ubuntu-touch/issues>`_ et les problèmes concernant Anbox sont signalés dans `"
+"notre version modifiée en aval <https://github.com/ubports/anbox/issues>`_. "
+"Merci !"
 
 #: ../../userguide/dailyuse/index.rst:2
 msgid "Daily use"
@@ -991,6 +1011,9 @@ msgid ""
 "To install applications you may use the phone's *Settings* interface or you "
 "may use the command line as described further below."
 msgstr ""
+"Pour installer des applications, vous pouvez utiliser l'interface "
+"*Paramètres* du téléphone ou utiliser la ligne de commande comme décrit plus "
+"loin."
 
 #: ../../userguide/dailyuse/libertine.rst:9
 msgid "Manage containers"
@@ -1001,17 +1024,18 @@ msgid "Create a container"
 msgstr "Créer un conteneur"
 
 #: ../../userguide/dailyuse/libertine.rst:14
-#, fuzzy
 msgid ""
 "The first step is to create a container where applications can be installed:"
 msgstr ""
 "La première étape est de créer un conteneur dans lequel les applications "
-"peuvent être installées::"
+"peuvent être installées ::"
 
 #: ../../userguide/dailyuse/libertine.rst:16
 msgid ""
 "Open Settings and scroll down to *Libertine* under the *System* sub-heading."
 msgstr ""
+"Ouvrez l'application Paramètres du système et faites défiler vers le bas "
+"jusqu'à *Libertine* sous la section *Système*."
 
 #: ../../userguide/dailyuse/libertine.rst:18
 msgid ""
@@ -1019,6 +1043,10 @@ msgid ""
 "have other containers already installed, they will be visible here. Tap the "
 "+ sign at the upper right to add a container."
 msgstr ""
+"Appuyez sur *Libertine* pour accéder au sous-menu *Gestion des conteneurs de "
+"Libertine*. Si vous avez d'autres conteneurs déjà installés, ils seront "
+"visibles ici. Appuyez sur le signe + en haut à droite pour ajouter un "
+"conteneur."
 
 #: ../../userguide/dailyuse/libertine.rst:20
 msgid ""
@@ -1026,10 +1054,13 @@ msgid ""
 "name and password if desired. Confirm your entries by tapping OK, and the "
 "container will be created."
 msgstr ""
+"La boîte de dialogue *Options du conteneur* s'ouvre et vous demande de "
+"saisir un nom de conteneur et un mot de passe si vous le souhaitez. "
+"Confirmez vos saisies en appuyant sur « Valider » et le conteneur sera créé."
 
 #: ../../userguide/dailyuse/libertine.rst:22
 msgid "To do this via command line follow these steps::"
-msgstr ""
+msgstr "Pour ce faire, suivez les étapes suivantes en ligne de commande ::"
 
 #: ../../userguide/dailyuse/libertine.rst:26
 msgid "You can add extra options such as:"
@@ -1059,7 +1090,6 @@ msgstr ""
 "du container (quelques centaines de mégaoctets)."
 
 #: ../../userguide/dailyuse/libertine.rst:34
-#, fuzzy
 msgid ""
 "The ``create`` command shown above cannot be run directly in the terminal "
 "app, due to apparmor restrictions. You can run it from another device using "
@@ -1068,11 +1098,11 @@ msgid ""
 "localhost``."
 msgstr ""
 "La commande  ``create``  montrée ci-dessus ne peut pas être lancée "
-"directement dans l'application terminal du fait de restrictions apparmor. "
-"Vous pouvez la lancer depuis un autre périphérique en utilisant soit une "
-"connexion  ``adb`` soit une connexion ``ssh``.  Alternativement, vous pouvez "
-"la lancer depuis l'application terminal en utilisant une connexion ssh "
-"\"loopback\"  en lançant la commande : ``ssh localhost``."
+"directement dans l'application Terminal du fait de restrictions Apparmor. "
+"Vous pouvez la lancer depuis un autre appareil en utilisant soit une "
+"connexion  ``adb`` soit une connexion ``ssh``.  Autrement, vous pouvez la "
+"lancer depuis l'application Terminal en utilisant une connexion SSH « "
+"loopback » en lançant la commande : ``ssh localhost``."
 
 #: ../../userguide/dailyuse/libertine.rst:37
 msgid "List containers"
@@ -1083,10 +1113,12 @@ msgid ""
 "Use the *Settings Manage Libertine Containers* sub-menu to list all the "
 "containers you have created on the device."
 msgstr ""
+"Utilisez le sous-menu *Paramètres / Gérer les conteneurs de Libertine* pour "
+"lister tous les conteneurs que vous avez créés sur l'appareil."
 
 #: ../../userguide/dailyuse/libertine.rst:41
 msgid "You can also use the command line. Run::"
-msgstr ""
+msgstr "Vous pouvez également utiliser la ligne de commande. Exécutez ::"
 
 #: ../../userguide/dailyuse/libertine.rst:46
 msgid "Destroy a container"
@@ -1102,21 +1134,26 @@ msgid ""
 "app drawer. You can also tap the name of the container in the *Manage "
 "Libertine Containers* menu."
 msgstr ""
+"Une fois qu'un conteneur est configuré, les applications installées sont "
+"disponibles dans le lanceur des applications. Vous pouvez également appuyer "
+"sur le nom du conteneur dans le menu *Gestion des conteneurs de Libertine*."
 
 #: ../../userguide/dailyuse/libertine.rst:56
 msgid "You can also list them via command line::"
-msgstr ""
+msgstr "Vous pouvez également les lister via la ligne de commande ::"
 
 #: ../../userguide/dailyuse/libertine.rst:61
-#, fuzzy
 msgid "Install a package"
-msgstr "Installer un paquet::"
+msgstr "Installer un paquet"
 
 #: ../../userguide/dailyuse/libertine.rst:63
 msgid ""
 "From the apps list in the *Manage Libertine Containers* menu tap the + sign "
 "to get a dialog box to add a package."
 msgstr ""
+"Dans la liste des applications du menu *Gérer les conteneurs de Libertine*, "
+"appuyez sur le signe + pour ouvrir une boîte de dialogue permettant "
+"d'ajouter un paquet."
 
 #: ../../userguide/dailyuse/libertine.rst:65
 msgid ""
@@ -1126,15 +1163,21 @@ msgid ""
 "need to use the *Libertine Tweak Tool* in the *Open Store* to make the text "
 "large enough to read on a mobile device."
 msgstr ""
+"Saisissez le nom du paquet si vous le connaissez. Sinon, vous pouvez "
+"rechercher un paquet dans les archives. Vous pouvez faciliter ce processus "
+"en installant en premier le paquet de la *Logithèque de Lubuntu*. Comme il "
+"s'agit d'une application de bureau, vous devrez utiliser l'outil de *"
+"Personnalisation de Libertine* dans l'*Open Store* pour rendre le texte "
+"suffisamment grand pour qu'il puisse être lu sur un appareil mobile."
 
 #: ../../userguide/dailyuse/libertine.rst:67
 msgid "Packages may also be installed via command line::"
 msgstr ""
+"Les paquets peuvent également être installés via la ligne de commande ::"
 
 #: ../../userguide/dailyuse/libertine.rst:72
-#, fuzzy
 msgid "Remove a package"
-msgstr "Supprimer un paquet::"
+msgstr "Supprimer un paquet"
 
 #: ../../userguide/dailyuse/libertine.rst:74
 msgid ""
@@ -1142,10 +1185,14 @@ msgid ""
 "*Manage Libertine Containers* > *CONTAINER NAME*), swipe right on the "
 "package you want to remove to reveal the option to remove the package."
 msgstr ""
+"Sur la liste des paquets, dans le conteneur (*Paramètres du système* > "
+"*Libertine* > *Gérer les conteneurs de Libertine* > *NOM DU CONTENEUR*), "
+"faites glisser à droite sur le paquet que vous voulez supprimer pour révéler "
+"l'option de suppression du paquet."
 
 #: ../../userguide/dailyuse/libertine.rst:76
 msgid "Or you can remove the package via the command line::"
-msgstr ""
+msgstr "Vous pouvez aussi retirer le paquet via la ligne de commande ::"
 
 #: ../../userguide/dailyuse/libertine.rst:81
 msgid ""
@@ -1158,15 +1205,17 @@ msgstr ""
 "effectuer cette opération."
 
 #: ../../userguide/dailyuse/libertine.rst:84
-#, fuzzy
 msgid "Run desktop application"
-msgstr "Lancer des applications desktop"
+msgstr "Lancer des applications de bureau"
 
 #: ../../userguide/dailyuse/libertine.rst:86
 msgid ""
 "Run it from the app menu like any other app. To start a graphical "
 "application from the command line, for example ``gedit``, run in a terminal::"
 msgstr ""
+"Lancez-la à partir de la liste des applications comme n'importe quelle autre "
+"application. Pour lancer une application graphique à partir de la ligne de "
+"commande, par exemple ``gedit``, exécutez dans un terminal ::"
 
 #: ../../userguide/dailyuse/libertine.rst:92
 msgid "Files"
@@ -1235,7 +1284,6 @@ msgstr ""
 "conteneur."
 
 #: ../../userguide/dailyuse/libertine.rst:118
-#, fuzzy
 msgid ""
 "**The first option** is based on ``libertine-container-manager exec``. It "
 "lets you run your commands as root. The drawback is that the container is "
@@ -1249,12 +1297,12 @@ msgid ""
 msgstr ""
 "**La première option** est basée sur ``libertine-container-manager exec``. "
 "Elle vous laisse exécuter votre commande en tant qu'administrateur. "
-"L'inconvénient est que le conteneur n'est pas complètement mis en place. "
-"Jusque-là, nous savons que les `dossiers mentionnés ci-dessus (Documents, "
-"Music, ...) ne sont pas montés <https://askubuntu.com/questions/831830/"
-"libertine-terminal-applications-how-to-access-to-the-real-home-"
-"dir#comment1273744_833984/>`_ c'est-à-dire que le répertoire ``/home/phablet/"
-"`` est vide. De même, le répertoire référencé dans ``TMPDIR`` n'est pas "
+"L'inconvénient est que le conteneur n'est pas complètement configuré. Jusque-"
+"là, nous savons que les `dossiers mentionnés ci-dessus (Documents, Musique, "
+"...) ne sont pas montés <https://askubuntu.com/questions/831830/libertine-"
+"terminal-applications-how-to-access-to-the-real-home-dir#"
+"comment1273744_833984/>`_ c'est-à-dire que le répertoire ``/home/phablet/`` "
+"est vide. De même, le répertoire référencé dans ``TMPDIR`` n'est pas "
 "disponible, ce qui peut poser des problèmes avec un logiciel qui essaye de "
 "créer des fichiers ou des répertoires temporaires. Vous pouvez utiliser "
 "cette option par exemple pour l'installation de paquets."
@@ -1305,17 +1353,20 @@ msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:151
 msgid "Accessing SD card"
-msgstr ""
+msgstr "Accéder à la carte mémoire"
 
 #: ../../userguide/dailyuse/libertine.rst:153
 msgid ""
 "In order to access your SD-card or any other part of the regular filesystem "
 "from inside your libertine container you must create a bind mount."
 msgstr ""
+"Afin d'accéder à votre carte mémoire ou à toute autre partie du système de "
+"fichiers classique à partir de votre conteneur Libertine, vous devez créer "
+"un montage de la liaison."
 
 #: ../../userguide/dailyuse/libertine.rst:155
 msgid "In order to add a bind mount use::"
-msgstr ""
+msgstr "Afin d'ajouter un montage de la liaison, utilisez ::"
 
 #: ../../userguide/dailyuse/libertine.rst:159
 msgid ""
@@ -1323,12 +1374,17 @@ msgid ""
 "available in the container. In this case just the entire path to the "
 "directory you want to bind mount::"
 msgstr ""
+"Téléchargez la dernière version de `SP flash tool <https://spflashtool.com/"
+"download/>`_ (*aussi appelé MTK flash tool*) ::"
 
 #: ../../userguide/dailyuse/libertine.rst:163
 msgid ""
 "This will not allow the container access to any of the directories earlier "
 "in the path for anything other than accessing your mounted directory."
 msgstr ""
+"Cela ne permettra pas au conteneur d'accéder à l'un des répertoires situés "
+"plus haut dans le chemin d'accès pour autre chose que d'accéder à votre "
+"répertoire monté."
 
 #: ../../userguide/dailyuse/libertine.rst:165
 msgid ""
@@ -1391,7 +1447,7 @@ msgstr ""
 
 #: ../../userguide/dailyuse/location.rst:2
 msgid "Using location services"
-msgstr ""
+msgstr "Utilisation des services de localisation"
 
 #: ../../userguide/dailyuse/location.rst:4
 msgid ""
@@ -1402,6 +1458,13 @@ msgid ""
 "transport near you <https://open-store.io/app/transport.zubozrout>`__, and "
 "more."
 msgstr ""
+"Les services de localisation dans Ubuntu Touch permettent aux applications "
+"d'accéder à votre position actuelle. Grâce à ces données, les applications "
+"peuvent `vous offrir une navigation en temps réel <https://open-store.io/app/"
+"navigator.costales>`__, `suivre vos parcours d'entraînements <https://open-"
+"store.io/app/activitytracker.cwayne18>`__, `localiser des transports publics "
+"proches de vous <https://open-store.io/app/transport.zubozrout>`__, et bien "
+"plus encore."
 
 #: ../../userguide/dailyuse/location.rst:6
 msgid ""
@@ -1913,9 +1976,9 @@ msgstr ""
 "alternatif, il n'y a pas grand-chose que nous puissions faire. Les "
 "instructions ci-dessous ne doivent être suivies que par des utilisateurs "
 "expérimentés. Bien que nous apprécions le fait que beaucoup de gens veulent "
-"utiliser notre système d'exploitation,  flasher un appareil avec des outils "
-"OEM ne devrait pas être fait sans un peu de savoir-faire et beaucoup de "
-"recherche."
+"utiliser notre système d'exploitation, installer un appareil avec des outils "
+"du constructeur ne devrait pas être fait sans un peu de savoir-faire et "
+"beaucoup de recherches."
 
 #: ../../userguide/install.rst:112
 msgid ""
@@ -1923,9 +1986,9 @@ msgid ""
 "successfully in some cases, the Pro5 is Exynos-based and has its own "
 "headaches."
 msgstr ""
-"Les appareils Meizu sont en grande partie bloqués  sur Flyme. Alors que le "
-"MX4 peut être flashé avec succès dans certains cas, le Pro5 est basé sur "
-"Exynos et a ses propres problèmes."
+"Les appareils Meizu sont en grande partie bloqués sur Flyme. Alors que des "
+"installations sont possibles sur le MX4 avec succès dans certains cas, le "
+"Pro5 est basé sur Exynos et a ses propres problèmes."
 
 #: ../../userguide/install.rst:116
 msgid "BE VERY CAREFUL! You are responsible for your own actions!"

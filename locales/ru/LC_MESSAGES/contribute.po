@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-15 09:19-0500\n"
-"PO-Revision-Date: 2020-10-19 14:28+0000\n"
+"PO-Revision-Date: 2021-01-29 20:35+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/ru/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.3\n"
 
 #: ../../contribute/bugreporting.rst:2
@@ -72,6 +72,8 @@ msgid ""
 "Pinephone users should check for and report bugs `here <https://gitlab.com/"
 "ubports/community-ports/pinephone>`_"
 msgstr ""
+"Владельцы смартфонов Pinephone могут сообщать об ошибках `здесь "
+"<https://gitlab.com/ubports/community-ports/pinephone>` _"
 
 #: ../../contribute/bugreporting.rst:19
 msgid ""
@@ -297,13 +299,12 @@ msgid "Documentation guidelines"
 msgstr "Инструкция по подготовке документации"
 
 #: ../../contribute/documentation.rst:12
-#, fuzzy
 msgid ""
 "These rules govern how you should write your documentation to avoid problems "
 "with style, format, or linking."
 msgstr ""
-"Эти правила определяют порядок оформления документации, чтобы избежать "
-"проблем со стилем, форматом или ссылками. Если Вы не будете следовать этим "
+"Эти правила задают порядок оформления документации, чтобы избежать проблем "
+"со стилем, форматом текста или ссылками. Если Вы не будете следовать этим "
 "рекомендациям, мы будем вынуждены отказать в публикации Вашего документа."
 
 #: ../../contribute/documentation.rst:15
@@ -436,13 +437,13 @@ msgid ""
 "in the table of contents, place it there. In the previous example, newpage "
 "would be added to the end of this table of contents."
 msgstr ""
-"Важен порядок страниц. Если Вы хотите, чтобы  страница появлялась в "
+"Важен порядок страниц. Если Вы хотите, чтобы страница появлялась в "
 "определенном месте в оглавлении, разместите ее в этом месте в документации. "
 "В предыдущем примере новая страница добавлена в конец документа и оглавления."
 
 #: ../../contribute/documentation.rst:108
 msgid "Moving pages"
-msgstr ""
+msgstr "Перенос страниц"
 
 #: ../../contribute/documentation.rst:110
 msgid ""
@@ -451,6 +452,9 @@ msgid ""
 "example, it makes more sense for the page to come after a page you've just "
 "added in a different section."
 msgstr ""
+"Иногда нужно переместить страницу из одного раздела документации в другой. "
+"Как правило, это делается для улучшения структуры документов. Например, если "
+"какая-то глава должна находиться в другом разделе."
 
 #: ../../contribute/documentation.rst:112
 msgid ""
@@ -460,6 +464,11 @@ msgid ""
 "follow a link from a different site and land on a 404 page, left to your own "
 "devices to find your way in restructured documentation."
 msgstr ""
+"Однако ссылки на документацию есть во многих источниках, и все их не "
+"проконтролировать. Блоги, веб-сайты и всякие справочные ресурсы могут "
+"направлять сюда пользователей по устаревшим ссылкам. Для пользователя это не "
+"несёт ничего хорошего - большинство таких переходов заканчиваются \"ошибкой "
+"404\", так как документация уже сильно переработана к этому моменту."
 
 #: ../../contribute/documentation.rst:114
 msgid ""
@@ -472,6 +481,12 @@ msgid ""
 "`redirects.txt file <https://github.com/ubports/docs.ubports.com/blob/master/"
 "redirects.txt>`_."
 msgstr ""
+"Чтобы избежать подобных ошибок, есть утилита Rediraffe. Rediraffe создает "
+"страницы-редиректы, которые могут перенаправить пользователя со старой "
+"недействительной ссылки на новую страницу. Создайте ссылку-редирект при "
+"изменении имени страницы или перемещении страницы в структуре каталогов "
+"документации. Такие ссылки создаются в `файле redirects.txt <https://github."
+"com/ubports/docs.ubports.com/blob/master/redirects.txt>`_."
 
 #: ../../contribute/documentation.rst:116
 msgid ""
@@ -480,18 +495,26 @@ msgid ""
 "run as part of the ``build.sh`` script in the repository and as part of our "
 "automated build once you submit a Pull Request."
 msgstr ""
+"Для проверки страниц используется инструмент ``checkdiff``, входящий в "
+"утилиту Rediraffe. Он позволяет не удалять страницы без редиректов из "
+"документации. Этот инструмент запускается скриптом build.sh в репозитории "
+"при процедуре автоматической сборки после отправки запроса Pull Request."
 
 #: ../../contribute/documentation.rst:118
 msgid ""
 "What follows are some examples of situations where you should create "
 "redirects."
 msgstr ""
+"Ниже разобраны несколько примеров ситуаций, в которых следует создавать "
+"редиректы."
 
 #: ../../contribute/documentation.rst:120
 msgid ""
 "You are moving ``systemdev/calendars.rst`` to ``appdev/calendars.rst``. Add "
 "the following to the ``redirects.txt`` file::"
 msgstr ""
+"Нужно переместить файл из папки``systemdev/calendars.rst` в папку``appdev/"
+"calendars.rst``. В файле redirects.txt нужно указать следующее:"
 
 #: ../../contribute/documentation.rst:124
 msgid ""
@@ -502,6 +525,12 @@ msgid ""
 "redirect the old page to the new introduction page. This can be done by "
 "adding the following to ``redirects.txt``::"
 msgstr ""
+"Нужно переместить главу``appdev/clickable.rst`` в раздел ``appdev/clickable/"
+"``, так как она стала занимать больше, чем несколько страниц, и появилась "
+"новая информация об этом приложении. В разделе есть страничка с введением ``"
+"appdev/clickable/introduction.rst``. В этом случае можно перенаправить "
+"старую страницу на новую часть с введением. Это можно сделать, добавив в  "
+"``redirects.txt`` следующее::"
 
 #: ../../contribute/documentation.rst:129
 msgid "Warnings"
@@ -625,7 +654,7 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:166
 msgid "Final check of your contribution"
-msgstr ""
+msgstr "Финальные проверки"
 
 #: ../../contribute/documentation.rst:168
 msgid ""
@@ -634,50 +663,64 @@ msgid ""
 "whether this builds successfully and whether the result looks as you "
 "intended it to:"
 msgstr ""
+"После того, как на github создан запрос PR, система непрерывной интеграции "
+"CI сформирует тестовую сборку. Пожалуйста, проверьте несколько раз, успешно "
+"ли выполняется сборка есть ли нужный результат:"
 
 #: ../../contribute/documentation.rst:170
 msgid ""
 "Scroll to the bottom of the \"Conversation\" tab of your PR on github, here "
 "you will see the checks (You may have to click on \"Show all checks\")"
 msgstr ""
+"Откройте вкладку «Conversation» в запросе PR на github. Здесь можно "
+"посмотреть состояние проверок (возможно, придется нажать «Показать все "
+"проверки»)"
 
 #: ../../contribute/documentation.rst:171
 msgid ""
 "It can have a yellow dot, i.e., \"pending\" then wait a few more seconds."
 msgstr ""
+"На вкладке может быть желтая точка, то есть статус «ожидание». Нужно "
+"подождать несколько секунд."
 
 #: ../../contribute/documentation.rst:172
 msgid ""
 "Or it may have a red X, i.e., it failed. In this case please check why it "
 "failed"
 msgstr ""
+"Или на вкладке может быть пиктограмма с красным крестиком, т.е. проверка "
+"завершилась неуспешно. В этом случае проверьте, какие указаны причины"
 
 #: ../../contribute/documentation.rst:173
 msgid ""
 "If it shows a green check mark, it means the PR could be built successfully"
 msgstr ""
+"Если отображается зеленая галочка, это значит, что запрос PR может быть "
+"успешно обработан"
 
 #: ../../contribute/documentation.rst:174
 msgid "Now please click on \"Details\","
-msgstr ""
+msgstr "Теперь нажмите вкладку «Подробнее»,"
 
 #: ../../contribute/documentation.rst:175
 msgid "then \"Artifacts\" on the top right,"
-msgstr ""
+msgstr "затем \"Артефакты\" вверху справа,"
 
 #: ../../contribute/documentation.rst:176
 msgid "then \"_build/html/..index.html\","
-msgstr ""
+msgstr "затем \"_build/html/..index.html\","
 
 #: ../../contribute/documentation.rst:177
 msgid "and finally on \"Go to start page\"."
-msgstr ""
+msgstr "и, наконец, «Перейти на стартовую страницу»."
 
 #: ../../contribute/documentation.rst:179
 msgid ""
 "Now you can browse a complete build of the UBports docs site with your "
 "contribution included. Double check whether your changes look ok."
 msgstr ""
+"Теперь можно просмотреть сформированный комплект документации UBports с "
+"внесёнными правками. Несколько раз проверьте, как выглядят внесённые правки."
 
 #: ../../contribute/documentation.rst:183
 msgid "Alternative methods to contribute"
@@ -1051,9 +1094,8 @@ msgstr ""
 "репозиториях."
 
 #: ../../contribute/quality-assurance.rst:2
-#, fuzzy
 msgid "Quality Assurance"
-msgstr "Обеспечение качества (Quality Assurance)"
+msgstr "Контроль качества (Quality Assurance)"
 
 #: ../../contribute/quality-assurance.rst:4
 msgid ""
@@ -1064,9 +1106,9 @@ msgid ""
 "our `telegram group <http://t.me/ubports_qa_team>`_."
 msgstr ""
 "На этой странице рассказывается, как могут помочь опытные разработчики или "
-"новые участники отделу QA. Пожалуйста, также ознакомьтесь с документами :doc:"
-"`issue tracking </about/process/issue-tracking>` и :doc:`bugreporting "
-"<bugreporting>`, чтобы лучше понимать как организован рабочий процесс.  "
+"новые участники отделу QA. Пожалуйста, также ознакомьтесь с документами "
+":doc:`issue tracking </about/process/issue-tracking>` и :doc:`bugreporting "
+"<bugreporting>`, чтобы лучше понимать как организован рабочий процесс. "
 "Задать вопросы или пообщаться можно в нашем `чате в Telegram <http://t.me/"
 "ubports_qa_team>`_."
 
@@ -1252,11 +1294,11 @@ msgid ""
 "the *.pot* or *.ts* template files. The *.po* and *.ts* language files then "
 "need to be updated from their template."
 msgstr ""
-"Внутри приложения строки помечаются следующим образом: `` i18n.tr (\"string"
-"\") `` при использовании gettext, или  `` tr (\"string\") `` при "
-"использовании QtLinguist. При компиляции приложения эти строки извлекаются и "
-"записываются в файлы * .pot * или * .ts *. После перевода языковые файлы  *."
-"po * и * .ts * нужно обновить."
+"Внутри приложения строки помечаются следующим образом: `` i18n.tr (\"string\""
+") `` при использовании gettext, или `` tr (\"string\") `` при использовании "
+"QtLinguist. При компиляции приложения эти строки извлекаются и записываются "
+"в файлы * .pot * или * .ts *. После перевода языковые файлы  *.po * и * .ts *"
+" нужно обновить."
 
 #: ../../contribute/translations.rst:16
 msgid ""

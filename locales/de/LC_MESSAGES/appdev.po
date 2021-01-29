@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 09:34-0500\n"
-"PO-Revision-Date: 2020-03-16 12:22+0000\n"
-"Last-Translator: Otto Hakstetter <otto@hakstetter.de>\n"
+"PO-Revision-Date: 2020-12-24 06:26+0000\n"
+"Last-Translator: Kai Goldbeck <kaiuwe.goldbeck@mailbox.org>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/de/>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../appdev/guides/contenthub.rst:4
@@ -54,21 +54,19 @@ msgstr ""
 "kann:"
 
 #: ../../appdev/guides/contenthub.rst:18
-#, fuzzy
 msgid ""
 "``ContentHandler.Source`` (The selected app will provide a file to be "
 "imported)"
 msgstr ""
-"``ContentHandler.Source`` (Die ausgewählte App ist die Quelle der "
-"importierten Datei)"
+"``ContentHandler.Source`` (Die ausgewählte App stellt eine zu importierende "
+"Datei bereit)"
 
 #: ../../appdev/guides/contenthub.rst:19
-#, fuzzy
 msgid ""
 "``ContentHandler.Destination`` (The selected app will be the destination for "
 "the exported file)"
 msgstr ""
-"``ContentHandler.Destination`` (Die ausgewählte App wird zum Ziel der "
+"``ContentHandler.Destination`` (Die ausgewählte App ist das Ziel der "
 "exportierten Datei)"
 
 #: ../../appdev/guides/contenthub.rst:20
@@ -183,7 +181,6 @@ msgid "Sharing"
 msgstr "Teilen"
 
 #: ../../appdev/guides/contenthub.rst:86
-#, fuzzy
 msgid ""
 "Similarly, tapping on the share icon will allow us to send the saved game "
 "through Telegram to ourselves (`see the Webapp Creator Import Page source "
@@ -192,19 +189,20 @@ msgid ""
 "the destination app may share the content externally (for example, over "
 "Telegram or text message)."
 msgstr ""
-"Ebenso können wir das gespeicherte Spiel per Telegram an uns selbst senden "
-"(siehe Quellcode der Webapp Creator Import Page <https://gitlab.com/"
-"cibersheep/webapp-creator/blob/master/webapp-creator/app/ImportPage."
-"qml#L38>``_)."
+"Ebenso können Sie das gespeicherte Spiel per Telegram an uns senden (siehe "
+"Quellcode der Webapp Creator Import Page <https://gitlab.com/cibersheep/"
+"webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>``_).\n"
+"Das Teilen ist gleichbedeutend dem Exportieren, außer dass die Ziel-App den "
+"Inhalt möglicherweise extern freigibt (über Telegram oder Textnachricht, zum "
+"Beispiel)."
 
 #: ../../appdev/guides/contenthub.rst:99
-#, fuzzy
 msgid ""
 "The only difference between this and the previous code is that ``handler`` "
 "is ``ContentHandler.Share``."
 msgstr ""
 "Der einzige Unterschied zwischen diesem und dem vorherigen Code besteht "
-"darin, dass ``handler`` ``ContentHandler.Share`` ist"
+"darin, dass ``handler`` jetzt ``ContentHandler.Share`` ist"
 
 #: ../../appdev/guides/contenthub.rst:102
 msgid "Wait a minute. Why the different apps?"
@@ -286,6 +284,8 @@ msgid ""
 "`Application Templates by fulvio <https://github.com/fulvio999/"
 "ubports_app_templates>`__"
 msgstr ""
+"`Applikationsvorlage von fulvio <https://github.com/fulvio999/"
+"ubports_app_templates>`__"
 
 #: ../../appdev/guides/cookbook.rst:13
 msgid "Playground"
@@ -347,31 +347,38 @@ msgid ""
 "`Publish your existing Qt QML app to Ubuntu Touch using QMake (Video) "
 "<https://youtu.be/ehqlwRNrfO0>`__"
 msgstr ""
+"`Benutzen Sie QMake (Video) um Ihre existierende Qt QML App an Ubuntu Touch "
+"zu übermitteln <https://youtu.be/ehqlwRNrfO0>`__"
 
 #: ../../appdev/guides/cookbook.rst:24
 msgid ""
 "`Publish your existing Qt QML app to Ubuntu Touch using CMake (Video) "
 "<https://youtu.be/c2sq6aLeGec>`__"
 msgstr ""
+"`So benutzen Sie CMake um Ihre existierende Qt QML App an Ubuntu zu "
+"übermitteln (Video) <https://youtu.be/c2sq6aLeGec>`__"
 
 #: ../../appdev/guides/cookbook.rst:25
 msgid ""
 "`Getting started with Clickable (Video) <https://youtu.be/TE-s5522v0Y>`__"
 msgstr ""
+"`Beginne mit deiner ersten App (Video) <https://youtu.be/TE-s5522v0Y>`__"
 
 #: ../../appdev/guides/cookbook.rst:26
 msgid "`Content Hub overview (Video) <https://youtu.be/AihwC2sPIk0>`__"
-msgstr ""
+msgstr "`Übersicht von Content Hub (Video) <https://youtu.be/AihwC2sPIk0>`__"
 
 #: ../../appdev/guides/cookbook.rst:27
 msgid ""
 "`Import files to your app with Content Hub (Video) <https://youtu.be/"
 "q6zzM16jw1U>`__"
 msgstr ""
+"`Importieren Sie Dateien in Ihre App mit Content Hub (Video) <https://youtu."
+"be/q6zzM16jw1U>`__"
 
 #: ../../appdev/guides/dependencies.rst:2
 msgid "Handle C++ dependencies with Clickable"
-msgstr ""
+msgstr "Behandeln Sie C ++ - Abhängigkeiten mit Clickable"
 
 #: ../../appdev/guides/dependencies.rst:4
 msgid ""
@@ -379,6 +386,9 @@ msgid ""
 "the app needs to ship it inside the click package. This guide shows how this "
 "can be done with Clickable."
 msgstr ""
+"Wenn eine App von einer Bibliothek abhängt, die in Ubuntu Touch nicht "
+"vorinstalliert ist, muss die App diese im Click-Paket mitliefern. Diese "
+"Anleitung zeigt, wie dies mit Clickable geschehen kann."
 
 #: ../../appdev/guides/dependencies.rst:7
 msgid "Building"
@@ -391,11 +401,15 @@ msgid ""
 "control over the whole process and may lead to better results (e.g. better "
 "performance or smaller package sizes)."
 msgstr ""
+"Manchmal sind Bibliotheken vorkompiliert verfügbar, so dass Sie den "
+"Kompilierschritt überspringen können. Das Kompilieren Ihrer Abhängigkeit "
+"wird jedoch empfohlen, da Sie dadurch mehr Kontrolle über den gesamten "
+"Prozess haben und möglicherweise bessere Ergebnisse erzielen (z. B. eine "
+"bessere Leistung oder kleinere Paketgrößen)."
 
 #: ../../appdev/guides/dependencies.rst:11
-#, fuzzy
 msgid "Compilation"
-msgstr "location"
+msgstr "Kompilierung"
 
 #: ../../appdev/guides/dependencies.rst:12
 msgid ""
@@ -405,24 +419,37 @@ msgid ""
 "is a good idea to add it as a `git submodule <https://git-scm.com/book/de/v1/"
 "Git-Tools-Submodule>`_. Otherwise add a script to download the sources."
 msgstr ""
+"Legen Sie den Quellcode der Bibliothek unter ``libs/LIBNAME`` ab (ersetzen "
+"Sie dabei ``LIBNAME`` durch den Namen der Bibliothek), da Clickable "
+"standardmäßig dort nach ihm sucht. Wenn der Quellcode der Abhängigkeit als "
+"Git-Repository verfügbar ist, ist es eine gute Idee, ihn als `git submodule "
+"<https://git-scm.com/book/de/v1/Git-Tools-Submodule>`_ hinzuzufügen. "
+"Andernfalls fügen Sie ein Skript zum Herunterladen der Quellen hinzu."
 
 #: ../../appdev/guides/dependencies.rst:14
 msgid ""
 "Add a `libraries section <http://clickable.bhdouglass.com/en/latest/"
 "clickable-json.html#libraries>`_ to your clickable.json, like this:"
 msgstr ""
+"Fügen Sie einen \"Bibliotheken\"-Abschnitt <http://clickable.bhdouglass.com/"
+"en/latest/clickable-json.html#libraries>`_ zu Ihrer clickable.json hinzu, "
+"etwa so:"
 
 #: ../../appdev/guides/dependencies.rst:28
 msgid ""
 "If the library does not contain a CMake configuration, you need to use the "
 "`qmake` or `custom` template instead."
 msgstr ""
+"Wenn die Bibliothek keine CMake-Konfiguration enthält, müssen Sie "
+"stattdessen die Vorlage `qmake` oder `custom` verwenden."
 
 #: ../../appdev/guides/dependencies.rst:30
 msgid ""
 "Optionally, configure the compilation by adding ``build_args``, which may "
 "look like this:"
 msgstr ""
+"Optional können Sie die Kompilierung konfigurieren, indem Sie ``build_args`` "
+"hinzufügen, die wie folgt aussehen können:"
 
 #: ../../appdev/guides/dependencies.rst:50
 msgid ""
@@ -430,6 +457,9 @@ msgid ""
 "build instructions and also look for ``option`` settings in its ``CMakeLists."
 "txt`` ."
 msgstr ""
+"Die meisten Build-Argumente sind projektspezifisch. Studieren Sie daher die "
+"Build-Anweisungen der Bibliothek und suchen Sie auch nach "
+"``Optionseinstellungen`` in deren ``CMakeLists.txt``."
 
 #: ../../appdev/guides/dependencies.rst:52
 msgid ""
@@ -438,6 +468,11 @@ msgid ""
 "build-libs --arch amd64``. Don't forget to mention this step in your README, "
 "so that others can reproduce the build process."
 msgstr ""
+"Um die Bibliothek tatsächlich für alle Architekturen zu bauen, führen Sie ``"
+"clickable build-libs --arch armhf``, ``clickable build-libs --arch arm64`` "
+"und ``clickable build-libs --arch amd64`` aus. Vergessen Sie nicht, diesen "
+"Schritt in Ihrer README zu erwähnen, damit andere den Build-Prozess "
+"nachvollziehen können."
 
 #: ../../appdev/guides/dependencies.rst:54
 msgid ""
