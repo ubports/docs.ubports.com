@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2020-08-19 20:33+0000\n"
-"Last-Translator: Irio Bartolomei <irio92@gmail.com>\n"
+"PO-Revision-Date: 2021-01-05 00:26+0000\n"
+"Last-Translator: FlavioMala <flavio.malatino@post.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/it/>\n"
 "Language: it\n"
@@ -54,13 +54,13 @@ msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
 msgstr "E su MacOs con `Homebrew <https://brew.sh>`_::"
 
 #: ../../userguide/advanceduse/adb.rst:24
-#, fuzzy
 msgid ""
 "For Windows, grab the command-line tools only package from `developer."
 "android.com <https://developer.android.com/studio/index.html#downloads>`_."
 msgstr ""
-"Per Windows, scaricare da `qui <https://developer.android.com/studio/index."
-"html#downloads>`_ il pacchetto a sola riga di comando."
+"Per Windows, procurati il pacchetto strumenti a sola riga di comando da `"
+"developer.android.com <https://developer.android.com/studio/"
+"index.html#downloads>`_."
 
 #: ../../userguide/advanceduse/adb.rst:27
 msgid "Enable developer mode"
@@ -110,20 +110,19 @@ msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:41
 msgid "Adb shell commands::"
-msgstr ""
+msgstr "Comandi Adb da shell::"
 
 #: ../../userguide/advanceduse/adb.rst:46
 msgid "Additional Adb commands::"
-msgstr ""
+msgstr "Comandi Adb addizionali::"
 
 #: ../../userguide/advanceduse/adb.rst:51
-#, fuzzy
 msgid ""
 "For more ADB commands refer to the `official documentation <https://"
 "developer.android.com/studio/command-line/adb>`_."
 msgstr ""
-"Per Windows, scaricare da `qui <https://developer.android.com/studio/index."
-"html#downloads>`_ il pacchetto a sola riga di comando."
+"Per ulteriori comandi ADB fare riferimento alla `documentazione ufficiale "
+"<https://developer.android.com/studio/command-line/adb>`_."
 
 #: ../../userguide/advanceduse/adb.rst:54
 msgid "Add hardware IDs"
@@ -602,10 +601,11 @@ msgstr ""
 #: ../../userguide/advanceduse/ssh.rst:38
 msgid "Now start the ssh server. If you are using an Android-based phone::"
 msgstr ""
+"Ora avvia il servente ssh. Se stai usando un telefono basato su Android::"
 
 #: ../../userguide/advanceduse/ssh.rst:42
 msgid "If you are using a Linux-based phone (like the Pinephone)::"
-msgstr ""
+msgstr "se stai usando un telefono basato su Linux (come il Pinephone)::"
 
 #: ../../userguide/advanceduse/ssh.rst:48
 msgid "Connect"
@@ -650,22 +650,24 @@ msgid ""
 "channels are stable, rc (release candidate) and devel (nightly builds). For "
 "more info, see :doc:`the release schedule </about/process/release-schedule>`."
 msgstr ""
+"È possibile modificare il canale di rilascio utilizzando le impostazioni di "
+"sistema. I tre canali esistenti sono stable, rc (release candidate) e devel ("
+"nightly build). Per maggiori informazioni, vedere:doc: `pianificazione "
+"rilasci </about/process/release-schedule>`."
 
 #: ../../userguide/dailyuse/anbox.rst:2
-#, fuzzy
 msgid "Android apps"
-msgstr "Esegui applicazioni android"
+msgstr "App Android"
 
 #: ../../userguide/dailyuse/anbox.rst:4
-#, fuzzy
 msgid ""
 "`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility "
 "layer that allows you to run Android apps on GNU/Linux operating systems "
 "such as UBports."
 msgstr ""
-"`Anbox <https://anbox.io>`_ è un contenitore Android e uno strato di "
-"compatibilità che permette di eseguire applicazioni Android sul sistema "
-"operativo GNU/Linux."
+"`Anbox <https://anbox.io>`_ è un minimalistico contenitore Android e livello "
+"di compatibilità che consente di eseguire app Android su sistemi operativi "
+"GNU/Linux come UBports."
 
 #: ../../userguide/dailyuse/anbox.rst:7
 msgid ""
@@ -684,6 +686,10 @@ msgid ""
 "easier to use ``adb shell`` or :doc:`set up ssh </userguide/advanceduse/"
 "ssh>` to access your phone from your host."
 msgstr ""
+"Per installare Andbox e le APK dovrai eseguire dei comandi sul tuo "
+"dispositivo Ubuntu Touch. Puoi farlo usando l'applicazione terminale, ma è "
+"più facile usare ``adb shell`` o :doc:`set up ssh </userguide/advanceduse/"
+"ssh>` per accedere al tuo telefono dal tuo host."
 
 #: ../../userguide/dailyuse/anbox.rst:13
 msgid "Supported devices"
@@ -707,10 +713,9 @@ msgstr ""
 "``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:19
-#, fuzzy
 msgid "OnePlus One (codename: ``bacon``, name of the boot partition: ``boot``)"
 msgstr ""
-"Oneplus one (nome in codice: ``bacon``, nome della partizione di boot: "
+"OnePlus One (nome in codice: ``bacon``, nome della partizione di boot: "
 "``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:20
@@ -746,7 +751,7 @@ msgstr "Come installare"
 
 #: ../../userguide/dailyuse/anbox.rst:30
 msgid "Installing Anbox is only recommended for experienced users."
-msgstr ""
+msgstr "L'installazione di Anbox è consigliata solo agli utenti esperti."
 
 #: ../../userguide/dailyuse/anbox.rst:33
 msgid ""
@@ -757,20 +762,27 @@ msgid ""
 "Ubuntu Touch device when you have a computer with you to re-flash that boot "
 "image."
 msgstr ""
+"Se possiedi un Meizu Pro 5, un BQ M10 HD o un BQ M10 FHD devi flashare "
+"un'immagine di boot specifica. **Dovrai riflashare quell'immagine dopo ogni "
+"aggiornamento di Ubuntu Touch** per esempio quindi quando esegui "
+"l'aggiornamento da OTA-10 a OTA-11. Il non farlo può porre il tuo telefono "
+"in uno stato instabile. Aggiorna il tuo dispositivo Ubuntu Touch solo quando "
+"hai un computer con te per riflashare quell'immagine di boot."
 
 #: ../../userguide/dailyuse/anbox.rst:35
-#, fuzzy
 msgid ""
 "Make sure your supported device runs on 16.04 (Anbox doesn't work on 15.04)."
 msgstr ""
-"Assicurati che sul tuo dispositivo sia installata la versione 16.04 (anbox "
-"non funziona sulla versione 15.04)"
+"Assicurati che il tuo dispositivo supportato operi sulla 16.04 (Anbox non "
+"funziona sulla 15.04)."
 
 #: ../../userguide/dailyuse/anbox.rst:36
 msgid ""
 "Be sure to have a `backup <https://askubuntu.com/questions/602850/how-do-i-"
 "backup-my-ubuntu-phone>`_ of the device."
 msgstr ""
+"Assicurati di avere un `backup <https://askubuntu.com/questions/602850/how-"
+"do-i-backup-my-ubuntu-phone>`_ del dispositivo."
 
 #: ../../userguide/dailyuse/anbox.rst:37
 msgid ""
@@ -779,9 +791,9 @@ msgid ""
 "but replace the part between the quotes respectively with the codename and "
 "name of the boot partition for your device. See the above list."
 msgstr ""
-"Aprre un terminale (su host) e impostare alcune variabile specifiche per il "
-"dispositivo eseguendo ``export CODENAME=\"turbo\" && export PARTITIONNAME="
-"\"bootimg\"``, sostituendo le parti tra virgolette, rispettivamente, con il "
+"Aprire un terminale (su host) e impostare alcune variabile specifiche per il "
+"dispositivo eseguendo ``export CODENAME=\"turbo\" && export PARTITIONNAME=\""
+"bootimg\"``, sostituendo le parti tra virgolette, rispettivamente, con il "
 "“codename“ e il nome della partizione di boot del tuo dispositivo. Vedere la "
 "lista precedente."
 
@@ -790,18 +802,16 @@ msgid "Activate developer mode on your device."
 msgstr "Attivare la modalità sviluppatore sul tuo dispositivo."
 
 #: ../../userguide/dailyuse/anbox.rst:39
-#, fuzzy
 msgid ""
 "Connect the device to your host and run the following commands from your "
 "host (same terminal you ran the ``export`` command in)::"
 msgstr ""
-"Collega il dispositivo al tuo host ed esegui il seguente comando dal tuo "
-"host (stesso terminale dal quale hai eseguito il comando ``export``)::"
+"Collega il dispositivo al tuo host e da questo host esegui il seguente "
+"comando (lo stesso terminale dal quale hai eseguito il comando ``export``)::"
 
 #: ../../userguide/dailyuse/anbox.rst:49
-#, fuzzy
 msgid "Wait for the device to reboot, then run this from your host::"
-msgstr "Attendere che il dispositivo si riavvii, quindi eseguire::"
+msgstr "Attendi il riavvio del dispositivo, quindi dal tuo host esegui questo::"
 
 #: ../../userguide/dailyuse/anbox.rst:58 ../../userguide/dailyuse/anbox.rst:78
 #: ../../userguide/dailyuse/anbox.rst:98
@@ -809,9 +819,9 @@ msgid ""
 "Done! You might have to refresh the apps scope (pull down from the center of "
 "the screen and release) for the new Android apps to show up."
 msgstr ""
-"Fatto! Può darsi che per mostrare l'applicazione tu debba ricaricare lo "
-"scope delle app (premere al centro dello schermo, trascinare verso il basso "
-"e poi rilasciare)."
+"Fatto! Può darsi che sia da ricaricare lo scope delle app (premere al centro "
+"dello schermo, trascinare verso il basso e poi rilasciare) affinché siano "
+"visualizzate le nuove app Android."
 
 #: ../../userguide/dailyuse/anbox.rst:61
 msgid ""
@@ -819,6 +829,9 @@ msgid ""
 "run some ``adb`` commands, sometime on your computer, sometime on your "
 "phone. Carefully check on which device you are!"
 msgstr ""
+"Hai ora un servente adb in esecuzione nel tuo telefono. Questa guida ti "
+"chiede di eseguire alcuni comandi `` adb '', a volte sul tuo computer, a "
+"volte sul tuo telefono. Controlla attentamente su quale dispositivo ti trovi!"
 
 #: ../../userguide/dailyuse/anbox.rst:63
 msgid ""
@@ -826,33 +839,33 @@ msgid ""
 "opening the terminal app and enter ``adb devices``. You should see something "
 "like::"
 msgstr ""
+"Puoi verificare che il servente adb sia correttamente in esecuzione "
+"localmente sul tuo telefono, aprendo l'app terminale e inviandoo ``adb "
+"devices``. Dovresti vedere qualcosa come::"
 
 #: ../../userguide/dailyuse/anbox.rst:70
-#, fuzzy
 msgid "How to install new APKs"
-msgstr "Come installare nuovi apks"
+msgstr "Come installare nuove APK"
 
 #: ../../userguide/dailyuse/anbox.rst:72
-#, fuzzy
 msgid ""
 "Copy the APK to ``/home/phablet/Downloads``, then run the following from "
 "your host::"
 msgstr ""
-"Copia il file apk in ``/home/phablet/Downloads``, ed eseguire il seguente "
-"comando dal tuo dispositivo::"
+"Copiare la APK in ``/home/phablet/Downloads``, quindi eseguire il seguente "
+"comando dal tuo host::"
 
 #: ../../userguide/dailyuse/anbox.rst:81
 msgid "Keep your apps up to date"
-msgstr "Mantieni aggiornate le tue applicazioni"
+msgstr "Mantenere le tue app aggiornate"
 
 #: ../../userguide/dailyuse/anbox.rst:83
-#, fuzzy
 msgid ""
 "To keep your apps up to date you can use of F-Droid or ApkTrack. If you want "
 "to install any of the above apps you can find them here:"
 msgstr ""
-"Per mantenere aggiornate le tue applicazioni puoi utilizzare F-Droid o "
-"ApkTrack. Le puoi scaricare da qui:"
+"Per mantenere aggiornate le tue app puoi utilizzare F-Droid o ApkTrack. Se "
+"vuoi installare una di queste app, le puoi trovare qui:"
 
 #: ../../userguide/dailyuse/anbox.rst:85
 msgid "F-Droid: https://f-droid.org/"
@@ -863,9 +876,8 @@ msgid "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
 msgstr "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
 
 #: ../../userguide/dailyuse/anbox.rst:89
-#, fuzzy
 msgid "How to uninstall apps"
-msgstr "Come disinstallare le applicazioni"
+msgstr "Come disinstallare le app"
 
 #: ../../userguide/dailyuse/anbox.rst:91
 msgid ""
@@ -873,21 +885,25 @@ msgid ""
 "device::"
 msgstr ""
 "Per disinstallare le applicazioni, eseguire ``adb uninstall [APP_ID]`` dal "
-"dispositivo Ubuntu Touch::"
+"tuo dispositivo Ubuntu Touch::"
 
 #: ../../userguide/dailyuse/anbox.rst:101
 msgid "Access Android storage"
-msgstr ""
+msgstr "Spazio di archiviazione Android"
 
 #: ../../userguide/dailyuse/anbox.rst:103
 msgid ""
 "Android storage is located at ``/home/phablet/anbox-data/data/media/0``."
 msgstr ""
+"Lo spazio di archiviazione Android si trova in ``/home/phablet/anbox-data/"
+"data/media/0``."
 
 #: ../../userguide/dailyuse/anbox.rst:105
 msgid ""
 "Links to android libraries can be made in their respective XDG counterparts::"
 msgstr ""
+"È possibile creare collegamenti alle librerie Android nelle rispettive "
+"controparti XDG::"
 
 #: ../../userguide/dailyuse/anbox.rst:114 ../../userguide/install.rst:22
 msgid "Troubleshooting"
@@ -898,8 +914,8 @@ msgid ""
 "If installing ``anbox-ubuntu-touch`` or ``android-tools-adb`` on the device "
 "fails with an error about unsufficient space, try this::"
 msgstr ""
-"Se l'installazione di ``anbox-ubuntu-touch`` o ``android-tools-adb`` "
-"fallisce con un errore di spazio insufficiente, provare così::"
+"Se l'installazione sul dispositivo di ``anbox-ubuntu-touch`` o ``android-"
+"tools-adb`` fallisce con un errore di spazio insufficiente, provare così::"
 
 #: ../../userguide/dailyuse/anbox.rst:127
 msgid ""
@@ -910,27 +926,24 @@ msgstr ""
 "file``, ciò può anche significare \"file non trovato\""
 
 #: ../../userguide/dailyuse/anbox.rst:129
-#, fuzzy
 msgid "Check that you typed the file name correctly"
-msgstr "controlla che il nome del file sia scritto correttamente"
+msgstr "Controlla di aver scritto correttamente il nome del file"
 
 #: ../../userguide/dailyuse/anbox.rst:130
-#, fuzzy
 msgid ""
 "If the APK does not reside in the current folder where you execute adb, you "
 "have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` "
 "instead of just ``my-app.apk``"
 msgstr ""
-"se il file apk non si trova nella cartella dalla quale è in esecuzione adb, "
-"bisogna specificare il percorso completo, per esempio: ``/home/phablet/"
-"Downloads/my-app.apk`` invece di ``my-app.apk``"
+"Se l'APK non risiede nella cartella corrente dove esegui adb, devi "
+"specificarne il percorso completo, per esempio: ``/home/phablet/Downloads/my-"
+"app.apk`` invece di ``my-app.apk``"
 
 #: ../../userguide/dailyuse/anbox.rst:134
 msgid "Reporting bugs"
 msgstr "Report di bug (bachi)"
 
 #: ../../userguide/dailyuse/anbox.rst:136
-#, fuzzy
 msgid ""
 "Please :doc:`report any bugs </contribute/bugreporting>` you come across. "
 "Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch "
@@ -941,7 +954,7 @@ msgstr ""
 "Per favore :doc:`segnala eventuali bug </contribute/bugreporting>` in cui ti "
 "imbatti. I bug relativi a Ubuntu Touch 16.04 sono segnalati`nel normal "
 "Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ e i "
-"problemi relativi ad anbox sono segnalati nel `nostro downstream fork "
+"problemi relativi ad Anbox sono segnalati nel `nostro downstream fork "
 "<https://github.com/ubports/anbox/issues>`_. Grazie!"
 
 #: ../../userguide/dailyuse/index.rst:2
@@ -954,7 +967,8 @@ msgid ""
 "to perform while using their Ubuntu Touch device."
 msgstr ""
 "Questa sezione della documentazione descrive le attività comuni che gli "
-"utenti possono eseguire durante l'utilizzo del loro dispositivo Ubuntu Touch."
+"utenti potrebbero voler eseguire durante l'utilizzo del loro dispositivo "
+"Ubuntu Touch."
 
 #: ../../userguide/dailyuse/libertine.rst:2
 msgid "Run desktop applications"
@@ -972,27 +986,31 @@ msgid ""
 "To install applications you may use the phone's *Settings* interface or you "
 "may use the command line as described further below."
 msgstr ""
+"Per installare applicazioni è possibile utilizzare l'interfaccia * "
+"Impostazioni * del telefono oppure è possibile utilizzare la riga di comando "
+"come descritto di seguito."
 
 #: ../../userguide/dailyuse/libertine.rst:9
 msgid "Manage containers"
-msgstr "Gestire contenitori (conteiners)"
+msgstr "Gestire i contenitori"
 
 #: ../../userguide/dailyuse/libertine.rst:12
 msgid "Create a container"
 msgstr "Creare un contenitore"
 
 #: ../../userguide/dailyuse/libertine.rst:14
-#, fuzzy
 msgid ""
 "The first step is to create a container where applications can be installed:"
 msgstr ""
-"Il primo passo è quello di creare un contenitore in cui installare le "
+"Il primo passo è quello di creare un contenitore in cui poter installare le "
 "applicazioni::"
 
 #: ../../userguide/dailyuse/libertine.rst:16
 msgid ""
 "Open Settings and scroll down to *Libertine* under the *System* sub-heading."
 msgstr ""
+"Apri Impostazioni e scorri verso il basso fino a * Libertine * nel "
+"sottoelenco * Sistema *."
 
 #: ../../userguide/dailyuse/libertine.rst:18
 msgid ""
@@ -1000,6 +1018,9 @@ msgid ""
 "have other containers already installed, they will be visible here. Tap the "
 "+ sign at the upper right to add a container."
 msgstr ""
+"Tocca * Libertine * per accedere al sottomenu * Gestisci Contenitori "
+"Libertine *. Se hai altri contenitori già installati, saranno visibili qui. "
+"Tocca il segno + in alto a destra per aggiungere un contenitore."
 
 #: ../../userguide/dailyuse/libertine.rst:20
 msgid ""
@@ -1007,10 +1028,13 @@ msgid ""
 "name and password if desired. Confirm your entries by tapping OK, and the "
 "container will be created."
 msgstr ""
+"La finestra di dialogo * Opzioni Contenitore * si aprirà chiedendoti di "
+"inserire un nome per il contenitore e, se lo desideri, una password. "
+"Conferma quanto inserito toccando OK e il contenitore verrà creato."
 
 #: ../../userguide/dailyuse/libertine.rst:22
 msgid "To do this via command line follow these steps::"
-msgstr ""
+msgstr "Per far questo via linea di comando segui questi passi::"
 
 #: ../../userguide/dailyuse/libertine.rst:26
 msgid "You can add extra options such as:"
@@ -1039,7 +1063,6 @@ msgstr ""
 "del contenitore (alcune centinaia di megabyte)."
 
 #: ../../userguide/dailyuse/libertine.rst:34
-#, fuzzy
 msgid ""
 "The ``create`` command shown above cannot be run directly in the terminal "
 "app, due to apparmor restrictions. You can run it from another device using "
@@ -1049,7 +1072,7 @@ msgid ""
 msgstr ""
 "Il comando `` create`` mostrato sopra non può essere eseguito direttamente "
 "nell'app terminale a causa delle restrizioni dell'apparmor. Puoi eseguirlo "
-"da un altro dispositivo usando la connessione `` adb`` o `` ssh``. In "
+"da un altro dispositivo sia usando la connessione `` adb`` che `` ssh``. In "
 "alternativa, è possibile eseguirlo dall'app terminale utilizzando una "
 "connessione ssh loopback eseguendo questo comando: `` ssh localhost``."
 
@@ -1062,10 +1085,12 @@ msgid ""
 "Use the *Settings Manage Libertine Containers* sub-menu to list all the "
 "containers you have created on the device."
 msgstr ""
+"Usa il sottomenu *Impostazioni Gestisci Contenitori Libertine* per elencare "
+"tutti i contenitori che hai creato sul dispositivo."
 
 #: ../../userguide/dailyuse/libertine.rst:41
 msgid "You can also use the command line. Run::"
-msgstr ""
+msgstr "Puoi anche usare la riga di comando. Esegui::"
 
 #: ../../userguide/dailyuse/libertine.rst:46
 msgid "Destroy a container"
@@ -1081,21 +1106,25 @@ msgid ""
 "app drawer. You can also tap the name of the container in the *Manage "
 "Libertine Containers* menu."
 msgstr ""
+"Una volta impostato un contenitore, le applicazioni installate sono "
+"disponibili nel cassetto delle app. Puoi anche toccare il nome del "
+"contenitore nel menu *Gestisci Contenitori Libertine*."
 
 #: ../../userguide/dailyuse/libertine.rst:56
 msgid "You can also list them via command line::"
-msgstr ""
+msgstr "Puoi anche elencarli tramite la riga di comando::"
 
 #: ../../userguide/dailyuse/libertine.rst:61
-#, fuzzy
 msgid "Install a package"
-msgstr "Installare un pacchetto::"
+msgstr "Installare un pacchetto"
 
 #: ../../userguide/dailyuse/libertine.rst:63
 msgid ""
 "From the apps list in the *Manage Libertine Containers* menu tap the + sign "
 "to get a dialog box to add a package."
 msgstr ""
+"Dall'elenco delle app nel menu * Gestisci Contenitori Libertine * tocca il "
+"segno + per visualizzare una finestra di dialogo per aggiungere un pacchetto."
 
 #: ../../userguide/dailyuse/libertine.rst:65
 msgid ""
@@ -1105,15 +1134,20 @@ msgid ""
 "need to use the *Libertine Tweak Tool* in the *Open Store* to make the text "
 "large enough to read on a mobile device."
 msgstr ""
+"Se lo conosci inserisci il nome del pacchetto. Altrimenti puoi cercare un "
+"pacchetto negli archivi. È possibile semplificare questo processo "
+"installando per primo il pacchetto * Lubuntu Software Center *. Essendo "
+"un'app desktop, dovrai utilizzare * Libertine Tweak Tool * in * Open Store * "
+"per rendere il testo abbastanza grande da poter essere letto su un "
+"dispositivo mobile."
 
 #: ../../userguide/dailyuse/libertine.rst:67
 msgid "Packages may also be installed via command line::"
-msgstr ""
+msgstr "I pacchetti possono anche essere installati tramite riga di comando::"
 
 #: ../../userguide/dailyuse/libertine.rst:72
-#, fuzzy
 msgid "Remove a package"
-msgstr "Rimuovere un pacchetto::"
+msgstr "Rimuovere un pacchetto"
 
 #: ../../userguide/dailyuse/libertine.rst:74
 msgid ""
@@ -1121,10 +1155,14 @@ msgid ""
 "*Manage Libertine Containers* > *CONTAINER NAME*), swipe right on the "
 "package you want to remove to reveal the option to remove the package."
 msgstr ""
+"Nell'elenco dei pacchetti, all'interno del contenitore (* Impostazioni di "
+"sistema *> * Libertine *> * Gestisci Contenitori Libertine *> * NOME "
+"CONTENITORE *), scorri verso destra il pacchetto che desideri rimuovere per "
+"far apparire l'opzione per rimuovere il pacchetto."
 
 #: ../../userguide/dailyuse/libertine.rst:76
 msgid "Or you can remove the package via the command line::"
-msgstr ""
+msgstr "Oppure puoi rimuovere il pacchetto via riga di comando::"
 
 #: ../../userguide/dailyuse/libertine.rst:81
 msgid ""
@@ -1137,19 +1175,21 @@ msgstr ""
 "eseguire un'operazione."
 
 #: ../../userguide/dailyuse/libertine.rst:84
-#, fuzzy
 msgid "Run desktop application"
-msgstr "Esegui applicazioni desktop"
+msgstr "Eseguire un'applicazione desktop"
 
 #: ../../userguide/dailyuse/libertine.rst:86
 msgid ""
 "Run it from the app menu like any other app. To start a graphical "
 "application from the command line, for example ``gedit``, run in a terminal::"
 msgstr ""
+"Eseguila dal menu delle app come qualsiasi altra app. Per avviare "
+"un'applicazione grafica dalla riga di comando, per esempio `` gedit '', in "
+"un terminale eseguire::"
 
 #: ../../userguide/dailyuse/libertine.rst:92
 msgid "Files"
-msgstr "Files"
+msgstr "File"
 
 #: ../../userguide/dailyuse/libertine.rst:94
 msgid "Libertine applications do have access to these folders:"
@@ -1213,7 +1253,6 @@ msgstr ""
 "Ci sono 2 possibili opzioni per eseguire comandi all'interno del contenitore."
 
 #: ../../userguide/dailyuse/libertine.rst:118
-#, fuzzy
 msgid ""
 "**The first option** is based on ``libertine-container-manager exec``. It "
 "lets you run your commands as root. The drawback is that the container is "
@@ -1225,10 +1264,10 @@ msgid ""
 "which may lead to problems with software that tries to create temporary "
 "files or directories. You may use this option e.g., for installing packages."
 msgstr ""
-"**La prima opzione** si basa su ``libertine-container-manager exec``. Tale "
-"soluzione permette di eseguire comandi con i privilegi di root. Lo "
-"svantaggio è che il contenitore non viene completamente impostato. Finora "
-"sappiamo che `le cartelle citate (Documenti, Musica, ...) non sono montate "
+"**La prima opzione** si basa su ``libertine-container-manager exec``. Ti "
+"permette di eseguire comandi con privilegi di root. Lo svantaggio è che il "
+"contenitore non viene completamente impostato. Finora sappiamo che `le "
+"cartelle spra citate (Documenti, Musica, ...) non sono montate "
 "<https://askubuntu.com/questions/831830/libertine-terminal-applications-how-"
 "to-access-to-the-real-home-dir#comment1273744_833984/>`_ per esempio, la "
 "cartella ``/home/phablet/`` è vuota. Allo stesso modo la cartella a cui si "
@@ -1279,17 +1318,20 @@ msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:151
 msgid "Accessing SD card"
-msgstr ""
+msgstr "Accesso alla scheda SD"
 
 #: ../../userguide/dailyuse/libertine.rst:153
 msgid ""
 "In order to access your SD-card or any other part of the regular filesystem "
 "from inside your libertine container you must create a bind mount."
 msgstr ""
+"Per accedere alla tua scheda SD o a qualsiasi altra parte del filesystem "
+"canonico dall'interno del tuo contenitore libertine, devi creare un bind "
+"mount."
 
 #: ../../userguide/dailyuse/libertine.rst:155
 msgid "In order to add a bind mount use::"
-msgstr ""
+msgstr "Per aggiungere un bind mount usa::"
 
 #: ../../userguide/dailyuse/libertine.rst:159
 msgid ""
@@ -1297,12 +1339,19 @@ msgid ""
 "available in the container. In this case just the entire path to the "
 "directory you want to bind mount::"
 msgstr ""
+"Puoi anche creare collegamenti diretti nel caso desideri che solo parti "
+"della tua scheda SD siano disponibili nel contenitore. In questo caso "
+"fornire l'intero percorso alla directory a cui si desidera associare il "
+"mount ::"
 
 #: ../../userguide/dailyuse/libertine.rst:163
 msgid ""
 "This will not allow the container access to any of the directories earlier "
 "in the path for anything other than accessing your mounted directory."
 msgstr ""
+"Ciò non consentirà l'accesso al contenitore a nessuna delle precedenti "
+"directory nel percorso e per nessuna ragione, eccetto l'accesso alla "
+"directory montata."
 
 #: ../../userguide/dailyuse/libertine.rst:165
 msgid ""
@@ -1315,6 +1364,15 @@ msgid ""
 "to control how to mount a card with a given id, but since the udev rules are "
 "on the read only port on touch, this is not possible."
 msgstr ""
+"Per utilizzare la scheda SD come spazio aggiuntivo per il tuo contenitore, "
+"assicurati prima di formattarla utilizzando ext4 o simile. C'è una "
+"funzionalità errata in udisk2 che monta schede SD (showexec) che garantisce "
+"che solo i file che terminano con .bat, .exe o .com possano essere eseguiti "
+"dall'unità se formattata (v)fat. Ciò è stato modificato in altre "
+"distribuzioni consentendo a qualsiasi file di avere privilegi di esecuzione, "
+"ma non in Ubuntu. La soluzione consigliata è aggiungere una regola udev per "
+"controllare come montare una scheda con un dato id, ma poiché le regole udev "
+"sono sulla porta in sola lettura in touch, questo non è possibile."
 
 #: ../../userguide/dailyuse/libertine.rst:169
 msgid "Shortcuts"
@@ -1364,7 +1422,7 @@ msgstr ""
 
 #: ../../userguide/dailyuse/location.rst:2
 msgid "Using location services"
-msgstr ""
+msgstr "Utilizzo dei servizi di localizzazione"
 
 #: ../../userguide/dailyuse/location.rst:4
 msgid ""
@@ -1383,54 +1441,68 @@ msgid ""
 "only access your location data when the device screen is on and the app is "
 "in use."
 msgstr ""
+"I servizi di localizzazione integrati in Ubuntu Touch sono progettati per "
+"proteggere la tua privacy: tu scegli se consentire o negare alle app "
+"l'accesso a questi dati. Le app possono accedere ai dati sulla tua posizione "
+"solo quando lo schermo del dispositivo è acceso e l'app è in uso."
 
 #: ../../userguide/dailyuse/location.rst:9
 msgid "Checking if location services are enabled"
-msgstr ""
+msgstr "Verifica se sono abilitati i servizi di localizzazione"
 
 #: ../../userguide/dailyuse/location.rst:11
 msgid ""
 "The Location Indicator is displayed whenever location services are enabled. "
 "Normally, this indicator will appear to be dark."
 msgstr ""
+"L'Indicatore Posizione viene visualizzato ogni volta che i servizi di "
+"localizzazione sono abilitati. Normalmente, questo indicatore apparirà scuro."
 
 #: ../../userguide/dailyuse/location.rst:15
 msgid "The Location Indicator, showing location enabled but not in use"
-msgstr ""
+msgstr "L'Indicatore Posizione mostra la posizione abilitata ma non in uso"
 
 #: ../../userguide/dailyuse/location.rst:17
 msgid "If an app is accessing location data, the Location Indicator brightens."
 msgstr ""
+"Se un'app sta accedendo ai dati sulla posizione, l'Indicatore Posizione si "
+"illumina."
 
 #: ../../userguide/dailyuse/location.rst:21
 msgid "The Location Indicator, showing location enabled and in use"
-msgstr ""
+msgstr "L'Indicatore Posizione, mostra la localizzazione abilitata e in uso"
 
 #: ../../userguide/dailyuse/location.rst:26
 msgid "Accessing location services settings"
-msgstr ""
+msgstr "Accesso alle impostazioni dei servizi di localizzazione"
 
 #: ../../userguide/dailyuse/location.rst:28
 msgid ""
 "There are several ways to access settings related to location services in "
 "Ubuntu Touch."
 msgstr ""
+"In Ubuntu Touch esistono diversi modi per accedere alle impostazioni "
+"relative ai servizi di localizzazione."
 
 #: ../../userguide/dailyuse/location.rst:31
 msgid "Open location quick settings"
-msgstr ""
+msgstr "Apri le impostazioni rapide della localizzazione"
 
 #: ../../userguide/dailyuse/location.rst:33
 msgid ""
 "The Location Indicator contains quick settings related to location services, "
 "including a switch to turn services on or off."
 msgstr ""
+"L'Indicatore Posizione contiene impostazioni rapide relative ai servizi di "
+"localizzazione, incluso un interruttore per attivare o disattivare i servizi."
 
 #: ../../userguide/dailyuse/location.rst:37
 msgid ""
 "To access these settings, press on the Location Indicator and pull down "
 "toward the bottom of the screen."
 msgstr ""
+"Per accedere a queste impostazioni, premere sull'Indicatore Posizione e "
+"tirare verso il basso verso la parte inferiore dello schermo."
 
 #: ../../userguide/dailyuse/location.rst:39
 msgid ""
@@ -1439,27 +1511,37 @@ msgid ""
 "through the icons at the top of the screen to find Location. Select Location "
 "to open the quick settings."
 msgstr ""
+"Se i servizi di localizzazione sono disabilitati, puoi accedere alle "
+"impostazioni rapide della localizzazione premendo su qualsiasi altro "
+"indicatore e tirando verso il basso. Poi fai scorrere le icone nella parte "
+"superiore dello schermo per trovare Posizione. Seleziona Posizione per "
+"aprire le impostazioni rapide."
 
 #: ../../userguide/dailyuse/location.rst:42
 msgid "Open location settings in the settings app"
-msgstr ""
+msgstr "Aprire le impostazioni di localizzazione nell'app delle impostazioni"
 
 #: ../../userguide/dailyuse/location.rst:44
 msgid ""
 "The system settings app can be used to control location services. There are "
 "more controls in the system settings app than in the Location Indicator."
 msgstr ""
+"L'app delle impostazioni di sistema può essere utilizzata per controllare i "
+"servizi di localizzazione. Nell'app delle impostazioni di sistema ci sono "
+"più controlli rispetto l'Indicatore Posizione."
 
 #: ../../userguide/dailyuse/location.rst:48
 msgid ""
 "There are two ways to access location services controls in the system "
 "settings app."
 msgstr ""
+"Esistono due modi per accedere ai controlli dei servizi di localizzazione "
+"nell'app delle impostazioni di sistema."
 
 #: ../../userguide/dailyuse/location.rst:51
 #: ../../userguide/dailyuse/location.rst:71
 msgid "Quick settings"
-msgstr ""
+msgstr "Impostazioni rapide"
 
 #: ../../userguide/dailyuse/location.rst:53
 msgid "`Open location quick settings`_, then select ``Location settings...``."
@@ -1468,17 +1550,19 @@ msgstr ""
 #: ../../userguide/dailyuse/location.rst:56
 #: ../../userguide/dailyuse/location.rst:76
 msgid "System settings app"
-msgstr ""
+msgstr "App impostazioni di sistema"
 
 #: ../../userguide/dailyuse/location.rst:58
 msgid ""
 "Launch the ``System Settings`` app. Select ``Security & Privacy``, then "
 "select ``Location``."
 msgstr ""
+"Avvia l'app ``Impostazioni di sistema`` . Seleziona ``Sicurezza e privacy``, "
+"quindi seleziona ``Posizione``."
 
 #: ../../userguide/dailyuse/location.rst:62
 msgid "Enabling or disabling location services"
-msgstr ""
+msgstr "Abilitazione o disabilitazione dei servizi di localizzazione"
 
 #: ../../userguide/dailyuse/location.rst:64
 msgid ""
@@ -1486,18 +1570,26 @@ msgid ""
 "location data may request your current location. Location services are "
 "enabled by default on Ubuntu Touch."
 msgstr ""
+"Se i servizi di localizzazione sono attivi, le app a cui hai consentito "
+"l'accesso ai dati sulla tua posizione potrebbero richiedere la tua posizione "
+"corrente. Nelle impostazioni predefinite di Ubuntu Touch i servizi di "
+"localizzazione sono abilitati."
 
 #: ../../userguide/dailyuse/location.rst:66
 msgid ""
 "If location services are off, apps will not be able to access your current "
 "location."
 msgstr ""
+"Se i servizi di localizzazione sono disabilitati, le app non saranno in "
+"grado di accedere alla tua posizione corrente."
 
 #: ../../userguide/dailyuse/location.rst:68
 msgid ""
 "There are several ways to enable or disable location services in Ubuntu "
 "Touch."
 msgstr ""
+"In Ubuntu Touch esistono diversi modi per abilitare o disabilitare i servizi "
+"di localizzazione."
 
 #: ../../userguide/dailyuse/location.rst:73
 msgid ""
@@ -1513,15 +1605,15 @@ msgstr ""
 
 #: ../../userguide/dailyuse/location.rst:80
 msgid "``Using GPS`` turns on location services."
-msgstr ""
+msgstr "``Usando il GPS`` abilita i servizi di localizzazione."
 
 #: ../../userguide/dailyuse/location.rst:81
 msgid "``Not at all`` turns off location services."
-msgstr ""
+msgstr "``No a tutto`` disabilita i servizi di localizzazione."
 
 #: ../../userguide/dailyuse/location.rst:84
 msgid "Allowing apps access to location data"
-msgstr ""
+msgstr "Consentire alle app di accedere ai dati sulla posizione"
 
 #: ../../userguide/dailyuse/location.rst:86
 msgid ""
@@ -1529,12 +1621,18 @@ msgid ""
 "This decision is presented the first time the app tries to access your "
 "current location. You can change your decision later."
 msgstr ""
+"Ubuntu Touch ti consente di consentire o negare alle app l'accesso ai dati "
+"sulla tua posizione. Questa decisione viene presentata la prima volta che "
+"l'app tenta di accedere alla tua posizione corrente. In seguito puoi "
+"modificare la tua decisione."
 
 #: ../../userguide/dailyuse/location.rst:88
 msgid ""
 "An app will show the location permission request the first time it tries to "
 "access your current location."
 msgstr ""
+"Un'app mostrerà la richiesta di autorizzazione alla posizione la prima volta "
+"che tenta di accedere alla tua posizione corrente."
 
 #: ../../userguide/dailyuse/location.rst:93
 msgid ""
@@ -1545,7 +1643,7 @@ msgstr ""
 
 #: ../../userguide/dailyuse/location.rst:96
 msgid "Changing your permissions"
-msgstr ""
+msgstr "Modifica delle tue autorizzazioni"
 
 #: ../../userguide/dailyuse/location.rst:98
 msgid ""
@@ -1553,15 +1651,18 @@ msgid ""
 "This is useful when you gave an app access to your location but you'd like "
 "to deny access, or if you denied access but would like to give access."
 msgstr ""
+"Puoi modificare la tua decisione di consentire a un'app di accedere ai dati "
+"sulla tua posizione. Ciò è utile quando hai concesso a un'app l'accesso alla "
+"tua posizione, ma desideri negarlo o se hai negato l'accesso, ma desideri "
+"concederlo."
 
 #: ../../userguide/dailyuse/location.rst:100
 msgid "There are several ways to find these controls."
-msgstr ""
+msgstr "Esistono diversi modi per trovare questi controlli."
 
 #: ../../userguide/dailyuse/location.rst:103
-#, fuzzy
 msgid "Location settings"
-msgstr "Posizioni"
+msgstr "Impostazioni di localizzazione"
 
 #: ../../userguide/dailyuse/location.rst:105
 msgid ""
@@ -1570,10 +1671,15 @@ msgid ""
 "location:``. Toggle the switch next to an app \"on\" to allow it to access "
 "your location data. Toggle the switch \"off\" to deny access."
 msgstr ""
+"`Aprire le impostazioni di localizzazione nell'app delle impostazioni`_. "
+"Tutte le app che hanno richiesto l'accesso alla tua posizione sono elencate "
+"in ``Consentire accesso delle app all'ubicazione:``. Sposta l'interruttore "
+"accanto a un'app su \"on\" per consentirle di accederle ai dati sulla tua "
+"posizione. Sposta l'interruttore su \"off\" per negare l'accesso."
 
 #: ../../userguide/dailyuse/location.rst:108
 msgid "App permission settings"
-msgstr ""
+msgstr "Impostazioni di autorizzazione dell'app"
 
 #: ../../userguide/dailyuse/location.rst:110
 msgid ""
@@ -1583,10 +1689,16 @@ msgid ""
 "an app \"on\" to allow it to access your location data. Toggle the switch "
 "\"off\" to deny access."
 msgstr ""
+"Avvia l'app ``Impostazioni di sistema``. Seleziona ``Sicurezza e privacy``, "
+"quindi seleziona ``Permessi delle app``e poi ``Posizione ``. Vengono "
+"elencate tutte le app che hanno richiesto l'accesso alla tua posizione. "
+"Sposta l'interruttore accanto a un'app su \"on\" per consentirle di accedere "
+"ai dati sulla tua posizione. Sposta l'interruttore su \"off\" per negare "
+"l'accesso."
 
 #: ../../userguide/dailyuse/location.rst:113
 msgid "Using apps with location services"
-msgstr ""
+msgstr "Utilizzo di app con servizi di localizzazione"
 
 #: ../../userguide/dailyuse/location.rst:115
 msgid ""
@@ -1594,6 +1706,9 @@ msgid ""
 "access to location data. However, there are some things to note while using "
 "apps with location services."
 msgstr ""
+"Le app potranno accedere alla tua posizione corrente dopo aver ottenuto "
+"l'accesso ai dati sulla posizione. Tuttavia, ci sono alcune cose da "
+"considerare durante l'utilizzo di app con servizi di localizzazione."
 
 #: ../../userguide/dailyuse/location.rst:118
 msgid "Time to first fix"
@@ -1621,10 +1736,12 @@ msgstr ""
 msgid ""
 "Do not leave your device in direct sunlight. The heat can damage the device."
 msgstr ""
+"Non esporre il tuo dispositivo alla luce solare diretta. Il calore può "
+"danneggiare il dispositivo."
 
 #: ../../userguide/dailyuse/location.rst:128
 msgid "Disable ``Lock when idle`` in the Battery settings"
-msgstr ""
+msgstr "Disabilita ``Sospendi quando inattivo`` nelle impostanzioni Batteria"
 
 #: ../../userguide/dailyuse/location.rst:129
 msgid ""
@@ -1662,7 +1779,6 @@ msgid "Install Ubuntu Touch"
 msgstr "Installare Ubuntu Touch"
 
 #: ../../userguide/install.rst:4
-#, fuzzy
 msgid ""
 "Installing Ubuntu Touch is easy, and a lot of work has gone in to making the "
 "installation process less intimidating to the average user. The UBports "
@@ -1674,11 +1790,16 @@ msgid ""
 "have manual installation instructions for every device `on the devices page "
 "<https://devices.ubuntu-touch.io/>`_."
 msgstr ""
-"L'installazione di Ubuntu Touch è facile ed è stato fatto un sacco di lavoro "
-"per rendere il processo di installazione più amichevole per gli utenti meno "
-"esperti. UBports Installer è un utile strumento grafico che puoi usare per "
-"installare Ubuntu Touch su un `dispositivo supportato <devices.ubports.com>` "
-"_ dal tuo computer Linux, Mac o Windows."
+"Installare Ubuntu Touch è facile e molto lavoro è stato fatto per rendere il "
+"processo d'installazione meno intimidatorio per l'utente medio. UBports "
+"Installer è un gradevole strumento grafico che puoi usare con il tuo "
+"computer `Linux <https://snapcraft.io/ubports-installer>`_, `Mac "
+"<https://devices.ubuntu-touch.io/installer/?package=dmg>`_ o `Windows "
+"<https://devices.ubuntu-touch.io/installer/?package=exe>`_ per installare "
+"Ubuntu Touch su un `dispositivo supportato <devices.ubports.com>` _. Per gli "
+"utenti più esperti, abbiamo anche istruzioni d'installazione manuale per "
+"ogni dispositivo `nella pagina dei dispositivi <https://devices.ubuntu-touch."
+"io/>`_."
 
 #: ../../userguide/install.rst:7
 msgid ""
@@ -1691,55 +1812,56 @@ msgstr ""
 "desideri mantenerli."
 
 #: ../../userguide/install.rst:9
-#, fuzzy
 msgid ""
 "You can `Download the UBports Installer from GitHub <https://github.com/"
 "ubports/ubports-installer/releases/latest>`_. The following packages are "
 "available:"
 msgstr ""
-"Vai a `la pagina di download <https://github.com/ubports/ubports-installer/"
-"releases/latest>` _ e scarica la versione del programma di installazione per "
-"il tuo sistema operativo:"
+"È possibile `Scaricare UBports Installer da GitHub <https://github.com/"
+"ubports/ubports-installer/releases/latest>`_. Sono disponibili i suguenti "
+"pacchetti:"
 
 #: ../../userguide/install.rst:11
-#, fuzzy
 msgid ""
 "`Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_: "
 "``ubports-installer-<version-number>.exe``"
-msgstr "Windows: ``ubports-installer-<numero-versione>.exe``"
+msgstr ""
+"`Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_: "
+"``ubports-installer-<numero-versione>.exe``"
 
 #: ../../userguide/install.rst:12
-#, fuzzy
 msgid ""
 "`macOS <https://devices.ubuntu-touch.io/installer/?package=dmg>`_: ``ubports-"
 "installer-<version-number>.dmg``"
-msgstr "macOS: ``ubports-installer-<numero-versione>.dmg``"
+msgstr ""
+"`macOS <https://devices.ubuntu-touch.io/installer/?package=dmg>`_: ``ubports-"
+"installer-<numero-versione>.dmg``"
 
 #: ../../userguide/install.rst:13
-#, fuzzy
 msgid ""
 "`Ubuntu or Debian <https://devices.ubuntu-touch.io/installer/?"
 "package=deb>`_: ``ubports-installer-<version-number>.deb``"
-msgstr "Ubuntu o Debian: ``ubports-installer-<numero-versione>.deb``"
+msgstr ""
+"`Ubuntu o Debian <https://devices.ubuntu-touch.io/installer/?package=deb>`_: "
+"``ubports-installer-<numero-versione>.deb``"
 
 #: ../../userguide/install.rst:14
-#, fuzzy
 msgid ""
 "`Other Linux distributions (snap) <https://snapcraft.io/ubports-"
 "installer>`_: ``ubports-installer-<version-number>.snap``"
 msgstr ""
-"Altre distribuzioni Linux: ``ubports-installer-<numero-versione>.snap`` o "
-"``ubports-installer-<numero-versione>.AppImage``"
+"`Altre distribuzioni Linux (snap) <https://snapcraft.io/ubports-installer>`_:"
+" ``ubports-installer-<numero-versione>.snap``"
 
 #: ../../userguide/install.rst:15
-#, fuzzy
 msgid ""
 "`Other Linux distributions (AppImage) <https://devices.ubuntu-touch.io/"
 "installer/?package=appimage>`_: ``ubports-installer-<version-number>."
 "AppImage``"
 msgstr ""
-"Altre distribuzioni Linux: ``ubports-installer-<numero-versione>.snap`` o "
-"``ubports-installer-<numero-versione>.AppImage``"
+"`Altre distribuzioni Linux (AppImage) <https://devices.ubuntu-touch.io/"
+"installer/?package=appimage>`_: ``ubports-installer-<numero-"
+"versione>.AppImage``"
 
 #: ../../userguide/install.rst:17
 msgid ""
@@ -1751,13 +1873,12 @@ msgstr ""
 "Divertiti ad esplorare Ubuntu Touch!"
 
 #: ../../userguide/install.rst:19
-#, fuzzy
 msgid ""
 "If you're an experienced android developer and want to help us bring Ubuntu "
 "Touch to more devices, visit the :doc:`porting section </porting/Intro>`."
 msgstr ""
 "Se sei uno sviluppatore Android esperto e vuoi aiutarci a portare Ubuntu "
-"Touch su più dispositivi, visita la: doc: `porting section </porting/"
+"Touch su ulteriori dispositivi, visita la :doc: `sezione porting </porting/"
 "introduction>`."
 
 #: ../../userguide/install.rst:24
@@ -1821,7 +1942,7 @@ msgstr ""
 #: ../../userguide/install.rst:50
 #, fuzzy
 msgid "Fairphone 2 Vendor-ID"
-msgstr "Fairphone 2::"
+msgstr "Fairphone 2 ID-venditore"
 
 #: ../../userguide/install.rst:52
 msgid ""
@@ -1903,20 +2024,20 @@ msgid "BE VERY CAREFUL! You are responsible for your own actions!"
 msgstr "SII MOLTO CAUTO! Sei responsabile delle tue azioni!"
 
 #: ../../userguide/install.rst:118
-#, fuzzy
 msgid ""
 "Disconnect all devices and non-essential peripherals from your PC. Charge "
 "your device on a wall-charger (not your PC) to at least 40 percent."
 msgstr ""
 "Disconnetti dal tuo PC tutti i dispositivi e le periferiche non essenziali. "
-"Carica il tuo dispositivo con una presa (non con il tuo PC) fino ad almeno "
-"il 40 percento"
+"Carica il tuo dispositivo con il caricabatteria (non con il tuo PC) fino ad "
+"almeno il 40 percento."
 
 #: ../../userguide/install.rst:119
-#, fuzzy
 msgid ""
 "Download the Ubuntu Touch ROM for your device and extract the zip files:"
-msgstr "Scarica la ROM di Ubuntu Touch per il tupe dispositivo:"
+msgstr ""
+"Scarica la ROM di Ubuntu Touch per il tuo dispositivo ed estrai i file "
+"zippati:"
 
 #: ../../userguide/install.rst:121
 msgid ""
@@ -1957,13 +2078,12 @@ msgstr ""
 "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
 
 #: ../../userguide/install.rst:127
-#, fuzzy
 msgid ""
 "Download the latest version of `SP flash tool <https://spflashtool.com/"
 "download/>`_ (*aka MTK flash tool*)."
 msgstr ""
-"Dovrai anche usare `l'ultima versione di <https://spflashtool.com/download/"
-"SP_Flash_Tool_v5.1744_Linux.zip>`_."
+"Scarica l'ultima versione di `SP flash tool <https://spflashtool.com/"
+"download/>`_ (*aka MTK flash tool*)."
 
 #: ../../userguide/install.rst:128
 msgid "Extract the zip files"
@@ -1974,6 +2094,8 @@ msgid ""
 "Open a Terminal, enter the SP flash tool directory and run it with ``sudo ./"
 "flash_tool.sh``."
 msgstr ""
+"Apri un terminale, entra nella directory di SP flash tool ed eseguilo con ``"
+"sudo ./flash_tool.sh``."
 
 #: ../../userguide/install.rst:133
 msgid ""
@@ -1985,30 +2107,28 @@ msgstr ""
 "alternativo:"
 
 #: ../../userguide/install.rst:141
-#, fuzzy
 msgid ""
 "In the \"Scatter-loading File\" section, press the \"choose\" button and "
 "select the ``*Android_scatter.txt`` file from the archive you downloaded in "
 "the second step."
 msgstr ""
-"Seleziona il file ``*Android_scatter.txt`` dall'archivio che hai scaricato "
-"nel primo passaggio come scatter-loading file"
+"Nella sezione \"Scatter-loading File\", premi il pulsante \"choose\" quindi "
+"seleziona il file ``*Android_scatter.txt`` dall'archivio che hai scaricato "
+"al punto due."
 
 #: ../../userguide/install.rst:142
-#, fuzzy
 msgid "Choose \"Firmware Upgrade\" from the drop-down menu."
-msgstr "Scegli \"Aggiornamento Firmware\""
+msgstr "Scegli \"Firmware Upgrade\" dal menu a tendina."
 
 #: ../../userguide/install.rst:146
-#, fuzzy
 msgid ""
 "If you select DOWNLOAD ONLY rather than FIRMWARE UPGRADE, you will end up "
 "with a useless brick rather than a fancy Ubuntu Touch device. Be sure to "
 "select FIRMWARE UPGRADE."
 msgstr ""
-"Se selezioni DOWNLOAD anziché AGGIORNAMENTO FIRMWARE, ti ritroverai con un "
-"mattoncino inutile anziché un fighissimo dispositivo Ubuntu Touch. "
-"Assicurati di selezionare AGGIORNAMENTO FIRMWARE."
+"Se selezioni DOWNLOAD ONLY anziché FIRMWARE UPGRADE, ti ritroverai alla fine "
+"con un mattoncino inutile anziché un fighissimo dispositivo Ubuntu Touch. "
+"Assicurati di selezionare FIRMWARE UPGRADE."
 
 #: ../../userguide/install.rst:148
 msgid ""
@@ -2016,25 +2136,25 @@ msgid ""
 "choice is reset to DOWNLOAD ONLY. Be sure to select it after selecting the "
 "file."
 msgstr ""
+"Inoltre, dopo aver selezionato ``*Android_scatter.txt``, la scelta nel menu "
+"a tendina si resetta a DOWNLOAD ONLY. Assicurati di selezionare/"
+"riselezionare FIRMWARE UPGRADE dopo aver selezionato il file."
 
 #: ../../userguide/install.rst:150
-#, fuzzy
 msgid "Turn your device completely off, but do not connect it yet."
-msgstr "Spegni completamente il tuo dispositivo, ma non connetterlo ancora"
+msgstr "Spegni completamente il tuo dispositivo, ma non connetterlo ancora."
 
 #: ../../userguide/install.rst:151
-#, fuzzy
 msgid "Press the button labeled \"Download\"."
-msgstr "Premi il tasto \"Download\""
+msgstr "Premi il tasto contrassegnato \"Download\"."
 
 #: ../../userguide/install.rst:152
-#, fuzzy
 msgid ""
 "Perform a final sanity-check that you selected the \"Firmware Upgrade\" "
 "option, not \"Download Only\"."
 msgstr ""
-"Controlla un'ultima volta di aver selezionato l'opzione \"Aggiornamento "
-"Firmware\" e non \"Download\""
+"Controlla ancora un'ultima volta di aver selezionato l'opzione \"Firmware "
+"Upgrade\" e NON \"Download Only\"."
 
 #: ../../userguide/install.rst:153
 msgid ""
@@ -2046,14 +2166,12 @@ msgstr ""
 "dispositivo."
 
 #: ../../userguide/install.rst:154
-#, fuzzy
 msgid ""
 "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Wait "
 "till all the progress bars ended."
 msgstr ""
-"`Magia <https://it.wikipedia.org/wiki/Tre_leggi_di_Clarke>`_ accade. Il tuo "
-"dispositivo effettuerà il boot con una versione molto vecchia di Ubuntu "
-"Touch."
+"`Avviene una magia <https://it.wikipedia.org/wiki/Tre_leggi_di_Clarke>`_ . "
+"Attendi la fine nella barra di avanzamento."
 
 #: ../../userguide/install.rst:158
 msgid ""
@@ -2064,17 +2182,23 @@ msgid ""
 "articles/2015/09/16/ubuntu-android-installation-process-for-bq-aquaris-e4-5-"
 "and-e5/>`_ with SP flash tool, close it and try again from step 4."
 msgstr ""
+"Se l'installazione fallisce con una barra 100% rossa e lì si blocca (e il "
+"logs dice qualcosa tipo ``COM port is open. Trying to sync with the "
+"target...``), rimuovere il pacchetto``modemmanager`` perché quello "
+"installato`non è compatibile <https://web.archive.org/web/20180118130643/"
+"http://www.mibqyyo.com/en-articles/2015/09/16/"
+"ubuntu-android-installation-process-for-bq-aquaris-e4-5-and-e5/>`_ con SP "
+"flash tool, chiudetelo e riprovate di nuovo dal punto 4."
 
 #: ../../userguide/install.rst:160
-#, fuzzy
 msgid ""
 "Congratulations! Your device will now boot into a super old version of "
 "Ubuntu Touch. You can now use the UBports Installer to install an updated "
 "version."
 msgstr ""
-"Congratulazioni! Il tuo dispositivo ora si avvierà con una versione di "
-"Ubuntu Touch molto vecchia. Ora puoi usare l'UBports Installer per "
-"continuare."
+"Congratulazioni! Il tuo dispositivo si avvierà ora con una versione "
+"stravecchia di Ubuntu Touch. Ora puoi usare l'UBports Installer per "
+"l'installazione di una versione aggiornata."
 
 #~ msgid "Now start the ssh server::"
 #~ msgstr "Eseguire ora il server ssh::"

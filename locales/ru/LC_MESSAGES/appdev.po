@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 09:34-0500\n"
-"PO-Revision-Date: 2020-10-27 14:25+0000\n"
+"PO-Revision-Date: 2021-01-29 20:35+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.3\n"
 
 #: ../../appdev/guides/contenthub.rst:4
@@ -71,13 +71,12 @@ msgstr ""
 "экспортируемого файла)"
 
 #: ../../appdev/guides/contenthub.rst:20
-#, fuzzy
 msgid ""
 "``ContentHandler.Share`` (The selected app will be the destination for the "
 "exported file, which will then be shared externally)"
 msgstr ""
-"``ContentHandler.Share``(Выбранное приложение - это приложение, файл  из "
-"которого будет в общем доступе)"
+"``ContentHandler.Share``(Выбранное приложение будет местом назначения для "
+"экспортированного файла, который будет в общем доступе)"
 
 #: ../../appdev/guides/contenthub.rst:26
 msgid "Importing"
@@ -182,7 +181,6 @@ msgid "Sharing"
 msgstr "Sharing (Общий доступ)"
 
 #: ../../appdev/guides/contenthub.rst:86
-#, fuzzy
 msgid ""
 "Similarly, tapping on the share icon will allow us to send the saved game "
 "through Telegram to ourselves (`see the Webapp Creator Import Page source "
@@ -193,17 +191,19 @@ msgid ""
 msgstr ""
 "Точно так же, нажатие на иконку \"share\" отправит сохранённую игру другим "
 "пользователям через мессенджер Telegram (`подробнее смотрите страничку с "
-"исходным кодом Webapp Creator Import Page  <https://gitlab.com/cibersheep/"
-"webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>`_)."
+"исходным кодом Webapp Creator Import Page <https://gitlab.com/cibersheep/"
+"webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>`_). Шаринг "
+"- то же самое, что и экспорт, за исключением того, что приложение может "
+"обмениваться контентом извне (например, через Telegram или текстовое "
+"сообщение)."
 
 #: ../../appdev/guides/contenthub.rst:99
-#, fuzzy
 msgid ""
 "The only difference between this and the previous code is that ``handler`` "
 "is ``ContentHandler.Share``."
 msgstr ""
-"Разница между этим и предыдущим участком кода только в том, что ``handler`` "
-"- это ``ContentHandler.Share``"
+"Разница между этим и предыдущим участком кода только в том, что ``handler`` -"
+" это ``ContentHandler.Share``."
 
 #: ../../appdev/guides/contenthub.rst:102
 msgid "Wait a minute. Why the different apps?"
@@ -381,7 +381,7 @@ msgstr ""
 
 #: ../../appdev/guides/dependencies.rst:2
 msgid "Handle C++ dependencies with Clickable"
-msgstr "Работа с библиотеками и зависимыми файлами C++  с помощью Clickable"
+msgstr "Работа с библиотеками и зависимыми файлами C++ с помощью Clickable"
 
 #: ../../appdev/guides/dependencies.rst:4
 msgid ""
@@ -389,7 +389,7 @@ msgid ""
 "the app needs to ship it inside the click package. This guide shows how this "
 "can be done with Clickable."
 msgstr ""
-"Если работа приложения зависит от библиотеки,  по умолчанию не установленной "
+"Если работа приложения зависит от библиотеки, по умолчанию не установленной "
 "в Ubuntu Touch, то приложение должно взять его из click-пакета. В этой "
 "статье рассказывается, как с помощью Clickable создать такой пакет."
 
@@ -404,6 +404,11 @@ msgid ""
 "control over the whole process and may lead to better results (e.g. better "
 "performance or smaller package sizes)."
 msgstr ""
+"Иногда в наличии есть уже готовые библиотеки, что позволяет пропустить этап "
+"сборки. Однако рекомендуется компилировать файлы зависимостей, так как это "
+"дает больше контроля над всем процессом и может привести к лучшим "
+"результатам (например, лучшая производительность или меньшие размеры "
+"пакетов)."
 
 #: ../../appdev/guides/dependencies.rst:11
 msgid "Compilation"
@@ -418,11 +423,11 @@ msgid ""
 "is a good idea to add it as a `git submodule <https://git-scm.com/book/de/v1/"
 "Git-Tools-Submodule>`_. Otherwise add a script to download the sources."
 msgstr ""
-"Скопируйте исходный код библиотеки в папку ``libs/LIBNAME``. Эта  папка по "
+"Скопируйте исходный код библиотеки в папку ``libs/LIBNAME``. Эта папка по "
 "умолчанию установлена в clickable. Если исходный код нужных библиотек есть в "
-"репозиториях git, можно добавить эту библиотечку как `модуль git  <https://"
-"git-scm.com/book/de/v1/Git-Tools-Submodule>`_.  или придётся добавить скрипт "
-"для скачивания исходных кодов."
+"репозиториях git, можно добавить эту библиотечку как `модуль git <https"
+"://git-scm.com/book/de/v1/Git-Tools-Submodule>`_. или придётся добавить "
+"скрипт для скачивания исходных кодов."
 
 #: ../../appdev/guides/dependencies.rst:14
 msgid ""
@@ -434,14 +439,13 @@ msgstr ""
 "примере:"
 
 #: ../../appdev/guides/dependencies.rst:28
-#, fuzzy
 msgid ""
 "If the library does not contain a CMake configuration, you need to use the "
 "`qmake` or `custom` template instead."
 msgstr ""
-"Если библиотека не содержит конфигурации  CMake , вместо этого можно "
-"использовать шаблоны  `qmake` или  `custom`. Если Вы выбираете `custom`, "
-"нужно добавить команду `build`."
+"Если библиотека не содержит конфигурации CMake , вместо этого можно "
+"использовать шаблоны `qmake` или `custom`. Если Вы выбираете `custom`, нужно "
+"добавить команду `build`."
 
 #: ../../appdev/guides/dependencies.rst:30
 msgid ""
@@ -465,16 +469,15 @@ msgstr ""
 "архитектур могут существовать параллельно."
 
 #: ../../appdev/guides/dependencies.rst:52
-#, fuzzy
 msgid ""
 "To actually build the library for all architectures run ``clickable build-"
 "libs --arch armhf``, ``clickable build-libs --arch arm64`` and ``clickable "
 "build-libs --arch amd64``. Don't forget to mention this step in your README, "
 "so that others can reproduce the build process."
 msgstr ""
-"Чтобы действительно собрать библиотеку, запустите  процесс командой`` "
+"Чтобы действительно собрать библиотеку, запустите процесс командой`` "
 "clickable build-libs``. Можно собрать и версию для настольного компьютера с "
-"помощью  команды`` clickable build-libs --arch amd64``. Не забудьте отметить "
+"помощью  команды ``clickable build-libs --arch amd64``. Не забудьте отметить "
 "эти шаги в файле README!"
 
 #: ../../appdev/guides/dependencies.rst:54
@@ -495,9 +498,9 @@ msgstr "Предустановленные библиотеки"
 #: ../../appdev/guides/dependencies.rst:58
 msgid "If you compiled your library as described above, skip this step."
 msgstr ""
+"Если Вы скомпилировали библиотеку, как описано выше, пропустите этот шаг."
 
 #: ../../appdev/guides/dependencies.rst:60
-#, fuzzy
 msgid ""
 "A pre-built library is usually only available as a shared object that needs "
 "to be linked dynamically. Furthermore, it may contain components that you "
@@ -512,7 +515,7 @@ msgstr ""
 "лишние компоненты, что приводит к увеличению размера программы. Также в "
 "системе могу быть старые версии библиотек, где отсутствую необходимые "
 "функции. Иногда библиотека доступна в репозиториях Ubuntu, но ее нельзя "
-"установить для требуемой архитектуры (например, для архитектуры `` armhf``). "
+"установить для требуемой архитектуры (например, для архитектуры ``armhf``). "
 "В этом случае нужно скомпилировать библиотеку, как описано выше."
 
 #: ../../appdev/guides/dependencies.rst:62
@@ -531,8 +534,8 @@ msgid ""
 "clickable.json#L4>`_."
 msgstr ""
 "Clickable автоматически установит указанный пакет внутри контейнера сборки "
-"для нужной архитектуры. Пример можно посмотреть в приложении `Guitar Tools'  "
-"- вот его json-файл-<https://github.com/t-mon/guitar-tools/blob/master/"
+"для нужной архитектуры. Пример можно посмотреть в приложении `Guitar Tools' -"
+" вот его json-файл-<https://github.com/t-mon/guitar-tools/blob/master/"
 "clickable.json#L4>`_."
 
 #: ../../appdev/guides/dependencies.rst:76
@@ -577,7 +580,7 @@ msgid ""
 "additional lines on your CMakeLists.txt then may look like:"
 msgstr ""
 "Если в библиотеке есть подходящий конфигурационный файл CMake, можно "
-"использовать команду  `find_package <https://cmake.org/cmake/help/latest/"
+"использовать команду `find_package <https://cmake.org/cmake/help/latest/"
 "command/find_package.html>`_. Дополнительные параметры в файле могут "
 "выглядеть так:"
 
@@ -593,13 +596,13 @@ msgid ""
 "camera-scanner/blob/master/plugins/ImageProcessing/CMakeLists.txt#L23>`_ for "
 "a real world example."
 msgstr ""
-"Команда `` find_package`` определяет путь к каталогу include  как `` "
+"Команда `` find_package`` определяет путь к каталогу include как `` "
 "SOMELIBRARY_INCLUDE_DIRS``, а  готовые бинарный файлы библиотеки как `` "
 "SOMELIBRARY_LIBS``. Мы используем эти переменные  с командами `` "
 "include_directories`` и `` target_link_libraries``. Пример того, как это "
-"работает можно посмотреть в файле `Camera Scanner ImageProcessing CMakeLists."
-"txt <https://github.com/jonnius/camera-scanner/blob/master/plugins/"
-"ImageProcessing/CMakeLists.txt#L23>` _ ."
+"работает можно посмотреть в файле `Camera Scanner ImageProcessing "
+"CMakeLists.txt <https://github.com/jonnius/camera-scanner/blob/master/"
+"plugins/ImageProcessing/CMakeLists.txt#L23>` _ ."
 
 #: ../../appdev/guides/dependencies.rst:108
 msgid ""

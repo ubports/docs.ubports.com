@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-15 09:19-0500\n"
-"PO-Revision-Date: 2020-11-06 09:05+0000\n"
-"Last-Translator: Max Libre <libremax@protonmail.com>\n"
+"PO-Revision-Date: 2020-11-28 00:43+0000\n"
+"Last-Translator: Anne Onyme <anneonyme017@netcourrier.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/fr/>\n"
 "Language: fr\n"
@@ -74,6 +74,8 @@ msgid ""
 "Pinephone users should check for and report bugs `here <https://gitlab.com/"
 "ubports/community-ports/pinephone>`_"
 msgstr ""
+"Les utilisateurs/trices de Pinephone doivent rechercher et signaler les "
+"problèmes `ici <https://gitlab.com/ubports/community-ports/pinephone>`_"
 
 #: ../../contribute/bugreporting.rst:19
 msgid ""
@@ -114,7 +116,6 @@ msgid "Reproduce the issue you've found"
 msgstr "Reproduire le problème que vous avez trouvé"
 
 #: ../../contribute/bugreporting.rst:28
-#, fuzzy
 msgid ""
 "Next, find out exactly how to recreate the bug that you've found. Document "
 "the exact steps that you took to find the problem in detail. Then, reboot "
@@ -125,8 +126,8 @@ msgstr ""
 "Ensuite, déterminez comment reproduire le problème que vous avez trouvé. "
 "Documentez en détail les étapes exactes que vous avez suivies pour trouver "
 "le problème. Puis redémarrez votre appareil et réitérez ces étapes. Si le "
-"problème persiste, passez à l'étape suivante. `Sinon <https://youtu.be/"
-"nn2FB1P_Mn8?t=10s>`_..."
+"problème persiste, passez à l'étape suivante. `Sinon... <https://youtu.be/"
+"nn2FB1P_Mn8?t=10s>`_"
 
 #: ../../contribute/bugreporting.rst:31
 msgid "Making the bug report"
@@ -194,7 +195,6 @@ msgstr ""
 "installé Ubuntu sur cet appareil."
 
 #: ../../contribute/bugreporting.rst:46
-#, fuzzy
 msgid ""
 "Once you're finished with that, post the report. You can't add labels "
 "yourself, so please don't forget to state the device you're experiencing the "
@@ -204,8 +204,8 @@ msgstr ""
 "Une fois que vous avez terminé cela, postez le problème. Vous ne pouvez pas "
 "ajouter vous-même de mots-clés, veillez donc à mentionner le nom de "
 "l'appareil sur lequel vous rencontrez le problème dans la description de "
-"manière à ce qu'un modérateur puisse facilement ajouter le bon mot-clé plus "
-"tard."
+"manière à ce qu'un/e modérateur/trice puisse facilement ajouter le bon mot-"
+"clé plus tard."
 
 #: ../../contribute/bugreporting.rst:48
 msgid ""
@@ -228,6 +228,11 @@ msgid ""
 "after submitting your issue. This section will help you to retrieve these "
 "logs from the device."
 msgstr ""
+"Ici, nous allons discuter des étapes générales pour obtenir des journaux ("
+"des fichiers qui contiennent des messages de débogage importants) sur Ubuntu "
+"Touch. Il se peut que l'on vous demande des journaux après avoir soumis "
+"votre problème. Cette section vous aidera à récupérer ces journaux sur "
+"l'appareil."
 
 #: ../../contribute/bugreporting.rst:57
 msgid ""
@@ -235,6 +240,10 @@ msgid ""
 "to skim through them to ensure this is not the case before posting them. We "
 "can coordinate to get them through e-mail or a similarly less public medium."
 msgstr ""
+"Les fichiers journaux peuvent contenir des informations que vous préférez "
+"garder privées. Parcourez-les pour vous assurer que ce n'est pas le cas "
+"avant de les afficher. Nous pouvons nous coordonner pour les obtenir par "
+"courrier électronique ou par un autre moyen moins public."
 
 #: ../../contribute/bugreporting.rst:59
 msgid ""
@@ -242,6 +251,10 @@ msgid ""
 "logviewer.neothethird>`_ from the OpenStore. This app will help us find, "
 "view, and send the logs we need."
 msgstr ""
+"Pour vous préparer, téléchargez l'application « Visionneuse de journaux » "
+"(Logviewer) <https://open-store.io/app/logviewer.neothethird>`_ sur "
+"l'OpenStore. Cette application nous aidera à trouver, visualiser et envoyer "
+"les journaux dont nous avons besoin."
 
 #: ../../contribute/bugreporting.rst:61
 msgid ""
@@ -251,6 +264,13 @@ msgid ""
 "device. You can tap on any log to view it, then tap the \"send\" icon in the "
 "top right corner to share it using an online service."
 msgstr ""
+"Maintenant, ouvrez l'application Visionneuse de journaux. Vous verrez une "
+"liste de tous les fichiers disponibles dans votre dossier de journaux, /home/"
+"phablet/.cache/upstart/``. Ce dossier contient un grand nombre, mais pas la "
+"totalité, des journaux des logiciels exécutés sur votre appareil. Vous "
+"pouvez cliquer sur n'importe quel journal pour le consulter, puis sur "
+"l'icône « Envoyer » en haut à droite pour le partager à l'aide d'un service "
+"en ligne."
 
 #: ../../contribute/bugreporting.rst:63
 msgid ""
@@ -259,6 +279,11 @@ msgid ""
 "yet. Tell this to the person who asked you for the logs. They should be able "
 "to get you the information you need to get back on track."
 msgstr ""
+"Si vous ne voyez pas le journal qu'on vous a demandé d'envoyer dans "
+"Visionneuse de journaux, il se peut qu'il se trouve dans un autre dossier ou "
+"que l'application n'ait pas encore créé de journal. Dites-le à la personne "
+"qui vous a demandé les journaux. Elle devrait être en mesure de vous fournir "
+"les informations dont vous avez besoin pour vous remettre sur la bonne voie."
 
 #: ../../contribute/documentation.rst:2
 msgid "Documentation"
@@ -287,14 +312,12 @@ msgid "Documentation guidelines"
 msgstr "Recommandations pour l'écriture de la documentation"
 
 #: ../../contribute/documentation.rst:12
-#, fuzzy
 msgid ""
 "These rules govern how you should write your documentation to avoid problems "
 "with style, format, or linking."
 msgstr ""
 "Ces règles précisent comment vous devez écrire votre documentation pour "
-"éviter des problèmes de style, de format ou de liens. Si vous ne suivez pas "
-"ces recommandations, nous n'accepterons pas votre document."
+"éviter des problèmes de style, de format ou de liens."
 
 #: ../../contribute/documentation.rst:15
 msgid "Title"
@@ -309,7 +332,6 @@ msgstr ""
 "sommaire (volet de gauche) et en haut de la page."
 
 #: ../../contribute/documentation.rst:19
-#, fuzzy
 msgid ""
 "Titles should be \"sentence cased\" rather than \"Title Cased\". For "
 "example::"
@@ -436,7 +458,7 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:108
 msgid "Moving pages"
-msgstr ""
+msgstr "Déplacement des pages"
 
 #: ../../contribute/documentation.rst:110
 msgid ""
@@ -445,6 +467,10 @@ msgid ""
 "example, it makes more sense for the page to come after a page you've just "
 "added in a different section."
 msgstr ""
+"Il est parfois nécessaire de déplacer une page d'un endroit à l'autre de la "
+"documentation. En général, cela permet d'améliorer la fluidité de la "
+"documentation. Par exemple, il est plus logique que la page vienne après une "
+"page que vous venez d'ajouter dans une autre section."
 
 #: ../../contribute/documentation.rst:112
 msgid ""
@@ -454,6 +480,13 @@ msgid ""
 "follow a link from a different site and land on a 404 page, left to your own "
 "devices to find your way in restructured documentation."
 msgstr ""
+"Cependant, les gens se relient à notre documentation à partir de nombreuses "
+"sources que nous ne contrôlons pas. Les blogs, sites internet et autres "
+"sites de documentation peuvent orienter les gens vers notre site en "
+"utilisant des liens qu'ils ne mettront jamais à jour. C'est une expérience "
+"terrible que de suivre un lien depuis un autre site, d'atterrir sur une page "
+"404 et d'être laissé à soi-même pour trouver son chemin dans une "
+"documentation restructurée."
 
 #: ../../contribute/documentation.rst:114
 msgid ""
@@ -466,6 +499,15 @@ msgid ""
 "`redirects.txt file <https://github.com/ubports/docs.ubports.com/blob/master/"
 "redirects.txt>`_."
 msgstr ""
+"Nous utilisons un outil appelé Rediraffe pour éviter cette mauvaise "
+"expérience. Rediraffe crée des pages de redirection qui peuvent envoyer un/e "
+"utilisateur/trice d'un ancien lien non valide vers un nouveau lien utile. "
+"Veuillez créer un lien de redirection lorsque vous changez le nom d'une page "
+"ou lorsque vous déplacez une page dans la structure du répertoire de la "
+"documentation. Les liens de redirection sont créés en plaçant le nom de "
+"fichier de l'ancien document et le nom de fichier du nouveau document, par "
+"rapport à la racine de la documentation, dans le fichier `redirects.txt "
+"<https://github.com/ubports/docs.ubports.com/blob/master/redirects.txt>`_."
 
 #: ../../contribute/documentation.rst:116
 msgid ""
@@ -474,18 +516,27 @@ msgid ""
 "run as part of the ``build.sh`` script in the repository and as part of our "
 "automated build once you submit a Pull Request."
 msgstr ""
+"Nous utilisons le générateur « checkdiff » de Rediraffe pour nous assurer "
+"que les pages ne sont pas supprimées de la documentation sans qu'une "
+"redirection ne soit mise en place. Ce générateur est exécuté dans le cadre "
+"du script ``build.sh`` du dépôt et dans le cadre de notre génération "
+"automatique lorsque vous soumettez une demande d'extraction."
 
 #: ../../contribute/documentation.rst:118
 msgid ""
 "What follows are some examples of situations where you should create "
 "redirects."
 msgstr ""
+"Voici quelques exemples de situations dans lesquelles vous devez créer des "
+"redirections."
 
 #: ../../contribute/documentation.rst:120
 msgid ""
 "You are moving ``systemdev/calendars.rst`` to ``appdev/calendars.rst``. Add "
 "the following to the ``redirects.txt`` file::"
 msgstr ""
+"Vous déplacez « systemdev/calendars.rst » vers « appdev/calendars.rst ». "
+"Ajoutez ce qui suit au fichier ``redirects.txt``: :"
 
 #: ../../contribute/documentation.rst:124
 msgid ""
@@ -496,6 +547,12 @@ msgid ""
 "redirect the old page to the new introduction page. This can be done by "
 "adding the following to ``redirects.txt``::"
 msgstr ""
+"Vous déplacez « appdev/clickable.rst » sur plusieurs pages dans « appdev/"
+"clickable/ » pour donner beaucoup plus d'informations sur l'outil qu'il n'y "
+"en avait auparavant. Vous avez créé une page d'introduction, ``appdev/"
+"clickable/introduction.rst``. Dans ce cas, ce serait une bonne idée de "
+"rediriger l'ancienne page vers la nouvelle page d'introduction. Cela peut "
+"être fait en ajoutant ce qui suit au fichier « redirects.txt »: :"
 
 #: ../../contribute/documentation.rst:129
 msgid "Warnings"
@@ -620,7 +677,7 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:166
 msgid "Final check of your contribution"
-msgstr ""
+msgstr "Contrôle final de votre contribution"
 
 #: ../../contribute/documentation.rst:168
 msgid ""
@@ -629,50 +686,66 @@ msgid ""
 "whether this builds successfully and whether the result looks as you "
 "intended it to:"
 msgstr ""
+"Après avoir créé votre demande de fusion sur Github, le système "
+"d'intégration continue fera un test de votre contribution. Veuillez vérifier "
+"si cette génération est réussie et si le résultat est conforme à vos "
+"attentes :"
 
 #: ../../contribute/documentation.rst:170
 msgid ""
 "Scroll to the bottom of the \"Conversation\" tab of your PR on github, here "
 "you will see the checks (You may have to click on \"Show all checks\")"
 msgstr ""
+"Faites défiler jusqu'au bas de l'onglet « Conversation » de votre demande de "
+"fusion sur Github. Vous verrez ici les vérifications (vous devrez peut-être "
+"cliquer sur « Afficher toutes les vérifications »)"
 
 #: ../../contribute/documentation.rst:171
 msgid ""
 "It can have a yellow dot, i.e., \"pending\" then wait a few more seconds."
 msgstr ""
+"Il se peut qu'un point jaune apparaisse, c'est-à-dire « en attente ». Dans "
+"ce cas, attendez quelques secondes de plus."
 
 #: ../../contribute/documentation.rst:172
 msgid ""
 "Or it may have a red X, i.e., it failed. In this case please check why it "
 "failed"
 msgstr ""
+"Ou bien il peut avoir une croix rouge, c'est-à-dire qu'elle a échoué. Dans "
+"ce cas, veuillez vérifier pourquoi elle a échoué"
 
 #: ../../contribute/documentation.rst:173
 msgid ""
 "If it shows a green check mark, it means the PR could be built successfully"
 msgstr ""
+"Si une case verte est cochée, cela signifie que la demande de fusion a pu "
+"être générée avec succès"
 
 #: ../../contribute/documentation.rst:174
 msgid "Now please click on \"Details\","
-msgstr ""
+msgstr "Veuillez maintenant cliquer sur « Détails »,"
 
 #: ../../contribute/documentation.rst:175
 msgid "then \"Artifacts\" on the top right,"
-msgstr ""
+msgstr "puis « Artefacts » en haut à droite,"
 
 #: ../../contribute/documentation.rst:176
 msgid "then \"_build/html/..index.html\","
-msgstr ""
+msgstr "puis « _build/html/..index.html »,"
 
 #: ../../contribute/documentation.rst:177
 msgid "and finally on \"Go to start page\"."
-msgstr ""
+msgstr "et enfin sur « Aller à la page de démarrage »."
 
 #: ../../contribute/documentation.rst:179
 msgid ""
 "Now you can browse a complete build of the UBports docs site with your "
 "contribution included. Double check whether your changes look ok."
 msgstr ""
+"Vous pouvez maintenant parcourir une version complète du site de la "
+"documentation d'UBports avec votre contribution incluse. Vérifiez que vos "
+"modifications sont correctes."
 
 #: ../../contribute/documentation.rst:183
 msgid "Alternative methods to contribute"
@@ -861,9 +934,8 @@ msgid "`Calculator on OpenStore`_"
 msgstr "`Calculatrice sur l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:23
-#, fuzzy
 msgid "`calculator-app on GitLab`_"
-msgstr "`calculator-app sur GitHub`_"
+msgstr "`calculator-app sur GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:24
 msgid "Calendar"
@@ -874,9 +946,8 @@ msgid "`Calendar on OpenStore`_"
 msgstr "`Agenda sur l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:24
-#, fuzzy
 msgid "`calendar-app on GitLab`_"
-msgstr "`calendar-app sur GitHub`_"
+msgstr "`calendar-app sur GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:25
 msgid "Clock"
@@ -887,9 +958,8 @@ msgid "`Clock on OpenStore`_"
 msgstr "`Horloge sur l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:25
-#, fuzzy
 msgid "`clock-app on GitLab`_"
-msgstr "`clock-app sur GitHub`_"
+msgstr "`clock-app sur GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:26
 msgid "File Manager"
@@ -900,9 +970,8 @@ msgid "`File Manager on OpenStore`_"
 msgstr "`Fichiers sur l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:26
-#, fuzzy
 msgid "`filemanager-app on GitLab`_"
-msgstr "`filemanager-app sur GitHub`_"
+msgstr "`filemanager-app sur GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:27
 msgid "Gallery"
@@ -913,23 +982,20 @@ msgid "`Gallery on OpenStore`_"
 msgstr "`Galerie sur l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:27
-#, fuzzy
 msgid "`gallery-app on GitLab`_"
-msgstr "`gallery-app sur GitHub`_"
+msgstr "`gallery-app sur GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:28
 msgid "Music"
 msgstr "Musique"
 
 #: ../../contribute/preinstalled-apps.rst:28
-#, fuzzy
 msgid "`Music on OpenStore`_"
-msgstr "`Horloge sur l'OpenStore`_"
+msgstr "`Musique sur l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:28
-#, fuzzy
 msgid "`music-app on GitLab`_"
-msgstr "`music-app sur GitHub`_"
+msgstr "`music-app sur GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:29
 msgid "Notes"
@@ -940,9 +1006,8 @@ msgid "`Notes on OpenStore`_"
 msgstr "`Notes dans l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:29
-#, fuzzy
 msgid "`notes-app on GitLab`_"
-msgstr "`notes-app sur GitHub`_"
+msgstr "`notes-app sur GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:30
 msgid "OpenStore"
@@ -953,9 +1018,8 @@ msgid "`OpenStore... on OpenStore`_"
 msgstr "`OpenStore... sur l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:30
-#, fuzzy
 msgid "`openstore-app on GitLab`_"
-msgstr "`openstore-app sur GitHub`_"
+msgstr "`openstore-app sur GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:31
 msgid "Terminal"
@@ -966,9 +1030,8 @@ msgid "`Terminal on OpenStore`_"
 msgstr "`Terminal sur l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:31
-#, fuzzy
 msgid "`terminal-app on GitLab`_"
-msgstr "`terminal-app sur GitHub`_"
+msgstr "`terminal-app sur GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:32
 msgid "UBports Welcome"
@@ -979,30 +1042,26 @@ msgid "`UBports Welcome on OpenStore`_"
 msgstr "`Accueil d'UBports sur l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:32
-#, fuzzy
 msgid "`ubports-app on GitLab`_"
-msgstr "`ubports-app sur GitHub`_"
+msgstr "`ubports-app sur GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:33
 msgid "Weather"
 msgstr "Météo"
 
 #: ../../contribute/preinstalled-apps.rst:33
-#, fuzzy
 msgid "`Weather on OpenStore`_"
-msgstr "`Galerie sur l'OpenStore`_"
+msgstr "`Météo sur l'OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:33
-#, fuzzy
 msgid "`weather-app on GitLab`_"
-msgstr "`weather-app sur GitHub`_"
+msgstr "`weather-app sur GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:37
 msgid "Other preinstalled apps"
 msgstr "Autres applications préinstallées"
 
 #: ../../contribute/preinstalled-apps.rst:39
-#, fuzzy
 msgid ""
 "The following applications are preinstalled in Ubuntu Touch but are not "
 "considered core apps. Most of the time these projects must be updated with "
@@ -1033,9 +1092,8 @@ msgid "Contacts (`address-book-app on GitHub`_)"
 msgstr "Contacts (`address-book-app sur GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:47
-#, fuzzy
 msgid "Camera (`camera-app on GitLab`_)"
-msgstr "Caméra (`camera-app sur GitHub`_)"
+msgstr "Caméra (`camera-app sur GitLab`_)"
 
 #: ../../contribute/preinstalled-apps.rst:48
 msgid "External Drives (`ciborium on GitHub`_)"
@@ -1090,7 +1148,6 @@ msgid "Smoke testing"
 msgstr "Bêta test"
 
 #: ../../contribute/quality-assurance.rst:9
-#, fuzzy
 msgid ""
 "To test the core functionality of the operating system, we have compiled `a "
 "set of standardized tests <https://gitlab.com/ubports/teams/qa/project-"
@@ -1100,11 +1157,12 @@ msgid ""
 "were introduced."
 msgstr ""
 "Pour tester les fonctionnalités de base du système d'exploitation, nous "
-"avons sélectionné `un ensemble de tests standards <https://nc.ubports.com/"
-"s/3RnAI7tYzB2PMXs>`_. Lancez ces tests sur votre appareil pour :doc:`trouver "
-"et signaler des problèmes ou des régressions <bugreporting>`. Ceci est fait "
-"sur tous les modèles d'appareil avant de publier une nouvelle version pour "
-"détecter l'apparition d'éventuels problèmes."
+"avons sélectionné `un ensemble de tests standards <https://gitlab.com/"
+"ubports/teams/qa/project-management/raw/master/QA-Plan-Template.ots>`_. "
+"Lancez ces tests sur votre appareil pour :doc:`trouver et signaler des "
+"problèmes ou des régressions <bugreporting>`. Ceci est fait d'habitude sur "
+"tous les modèles d'appareil avant de publier une nouvelle version pour "
+"détecter l'apparition d'éventuels nouveaux problèmes."
 
 #: ../../contribute/quality-assurance.rst:12
 msgid "Confirming bug reports"
@@ -1228,18 +1286,18 @@ msgstr ""
 "toutes les langues que vous souhaitez."
 
 #: ../../contribute/translations.rst:6
-#, fuzzy
 msgid ""
 "We are working hard to meet that goal, and you can help as well. You decide "
 "how much time you can put into translation. From minutes to hours, "
 "everything counts."
 msgstr ""
-"Vous décidez du temps à investir dans la traduction. De quelques minutes à "
-"plusieurs heures, toutes les contributions comptent."
+"Nous travaillons dur pour atteindre cet objectif et vous pouvez également "
+"nous aider. Vous décidez du temps à investir dans la traduction. De quelques "
+"minutes à plusieurs heures, toutes les contributions comptent."
 
 #: ../../contribute/translations.rst:9
 msgid "How does a text gets translated (technical background)"
-msgstr ""
+msgstr "Comment un texte est-il traduit (informations techniques) ?"
 
 #: ../../contribute/translations.rst:10
 msgid ""
@@ -1255,6 +1313,19 @@ msgid ""
 "only using *.ts* files for translations with another syntax. As template one "
 "*.ts* file is used."
 msgstr ""
+"La plupart des applications fonctionnant sur Ubuntu Touch utilisent `GNU "
+"gettext <https://www.gnu.org/software/gettext/>`_ pour les traductions. Un "
+"fichier modèle *.pot* contient les chaînes de caractères d'une application. "
+"Un fichier *.po* individuel est dérivé de ce modèle pour chaque langue. Ces "
+"fichiers *.po* contiennent les traductions réelles. Pour ajouter une "
+"nouvelle langue, un nouveau fichier *.po* doit être créé. Pour traduire une "
+"chaîne, le fichier *.po* doit être édité. À côté de la chaîne originale (en "
+"anglais dans la plupart des cas), la traduction appropriée doit être saisie "
+"en suivant la syntaxe du fichier gettext *.po*. Certaines applications "
+"utilisent `QtLinguist <https://doc.qt.io/qt-5/qtlinguist-index.html>`_ pour "
+"la traduction. Elles suivent les mêmes principes en utilisant uniquement les "
+"fichiers *.ts* pour les traductions avec une autre syntaxe. Un fichier *.ts* "
+"est utilisé comme modèle."
 
 #: ../../contribute/translations.rst:14
 msgid ""
@@ -1264,21 +1335,29 @@ msgid ""
 "the *.pot* or *.ts* template files. The *.po* and *.ts* language files then "
 "need to be updated from their template."
 msgstr ""
+"Dans une application, les chaînes sont marquées soit de cette façon "
+"``i18n.tr(\"string\")`` lorsqu'on utilise gettext, soit comme ceci ``tr(\""
+"string\")`` lorsqu'on utilise QtLinguist. Lorsque l'application est créée, "
+"ces chaînes traduisibles sont extraites et écrites dans les fichiers modèles "
+"*.pot* ou *.ts*. Les fichiers de langue *.po* et *.ts* doivent ensuite être "
+"mis à jour à partir de leur modèle."
 
 #: ../../contribute/translations.rst:16
 msgid ""
 "Once strings have been translated, they are made available for users with a "
 "new release of an app."
 msgstr ""
+"Une fois que les chaînes ont été traduites, elles sont mises à la "
+"disposition des utilisateurs/trices avec une nouvelle version d'une "
+"application."
 
 #: ../../contribute/translations.rst:19
-#, fuzzy
 msgid "Methods of Translation"
-msgstr "Les outils de traduction"
+msgstr "Les méthodes de traduction"
 
 #: ../../contribute/translations.rst:21
 msgid "There are three common ways used to translate an app:"
-msgstr ""
+msgstr "Il existe trois façons habituelles de traduire une application :"
 
 #: ../../contribute/translations.rst:23
 msgid ""
@@ -1287,9 +1366,13 @@ msgid ""
 "automatic transfer of new strings from an apps repo to weblate. Translated "
 "strings get back as commits to the repo from weblate."
 msgstr ""
+"Weblate : un outil de traduction sur internet. Les applications d'UBports "
+"utilisant Weblate peuvent être traduites `ici <https://translate.ubports.com/"
+"projects/>`_. Il y a un transfert automatique des nouvelles chaînes de "
+"caractères du dépôt d'une application vers Weblate. Les chaînes traduites "
+"sont renvoyées dans le dépôt par Weblate en tant que modification."
 
 #: ../../contribute/translations.rst:24
-#, fuzzy
 msgid ""
 "Editor: Translation is done by changing *.po* files with the editor of your "
 "choice, and a GitHub/GitLab account. The *.po*/*.ts* files for each project "
@@ -1298,22 +1381,26 @@ msgid ""
 "ubports>`_. After translating the translator commits new translations to an "
 "apps repo generally by opening a merge request/pull request."
 msgstr ""
-"Pour les utilisateurs avancés : Travailler directement sur les fichiers .po "
-"avec l'éditeur de votre choix et un compte GitHub. Les fichiers .po de "
-"chaque projet sont dans leurs répertoires de `notre organisation sous GitHub "
-"<https://github.com/ubports>`_."
+"Éditeur : la traduction se fait en changeant les fichiers *.po* avec "
+"l'éditeur de votre choix et un compte GitHub/GitLab. Les fichiers *.po*/*.ts*"
+" de chaque projet se trouvent dans leur dépôt sur `notre projet GitLab "
+"<https://gitlab.com/ubports/apps>`_ ou sur `notre projet GitHub "
+"<https://github.com/ubports>`_. Après la traduction, les nouvelles "
+"traductions sont envoyées à un dépôt d'applications, généralement en ouvrant "
+"une demande de fusion."
 
 #: ../../contribute/translations.rst:25
-#, fuzzy
 msgid ""
 "Team translation: We also have  a `Translation Forum <https://forums.ubports."
 "com/category/39/translations>`_ to discuss translating Ubuntu Touch and its "
 "core apps. Some projects are using Telegram or matrix groups too, and some "
 "teams are still using the Ubuntu Launchpad framework."
 msgstr ""
-"Un `forum de traduction <https://forums.ubports.com/category/39/"
-"translations>`_ pour discuter de la traduction d'Ubuntu Touch et de ses "
-"applications principales."
+"Traduction en équipe : nous avons également un `Forum de traduction "
+"<https://forums.ubports.com/category/39/translations>`_ pour discuter de la "
+"traduction d'Ubuntu Touch et de ses applications principales. Certains "
+"projets utilisent également Telegram ou des groupes Matrix et certaines "
+"équipes utilisent passent par Ubuntu Launchpad."
 
 #: ../../contribute/translations.rst:27
 msgid ""
@@ -1324,6 +1411,13 @@ msgid ""
 "weblate do not edit *.po* files manually. Commiting edited *.po* files can "
 "break the automated process of translation."
 msgstr ""
+"Les applications de base et certaines applications communautaires comme "
+"Dekko ou TELEports utilisent généralement Weblate pour la traduction. C'est "
+"la méthode de traduction préférée et elle ne nécessite aucune compétence en "
+"programmation. Veuillez consulter les projets de traduction de `UBports "
+"<https://translate.ubports.com/projects/>`_. Lorsque vous utilisez Weblate, "
+"ne modifiez pas les fichiers *.po* manuellement. La publication de fichiers "
+"*.po* modifiés peut interrompre le processus de traduction automatique."
 
 #: ../../contribute/translations.rst:29
 msgid ""
@@ -1331,6 +1425,9 @@ msgid ""
 "files for translation. Those generally need to be edited manually and "
 "commited to the apps repo."
 msgstr ""
+"La plupart des applications maintenues par les développeurs/euses utilisent "
+"principalement des fichiers *.pot*/*.po* pour la traduction. Ceux-ci doivent "
+"généralement être modifiés manuellement et envoyés au dépôt de l'application."
 
 #: ../../contribute/translations.rst:32
 msgid "How-To"
@@ -1341,7 +1438,6 @@ msgid "UBports Weblate"
 msgstr "Le Weblate d'UBports"
 
 #: ../../contribute/translations.rst:37
-#, fuzzy
 msgid ""
 "You can go to `UBports Weblate <https://translate.ubports.com/projects/>`_, "
 "click on \"Dashboard\" button, go to a project, and start making anonymous "
@@ -1349,10 +1445,10 @@ msgid ""
 "you must be logged in."
 msgstr ""
 "Vous pouvez accéder au `Weblate d'UBports <https://translate.ubports.com/"
-">`_, cliquer sur le bouton « Tableau de bord », vous rendre dans un projet "
-"et commencer à faire des suggestions de manière anonyme sans avoir à vous "
-"enregistrer. Si vous souhaitez enregistrer vos traductions, vous devez être "
-"connecté."
+"projects/>`_, cliquer sur le bouton « Tableau de bord », vous rendre dans un "
+"projet et commencer à faire des suggestions de manière anonyme sans avoir à "
+"vous enregistrer. Si vous souhaitez enregistrer vos traductions, vous devez "
+"être connecté."
 
 #: ../../contribute/translations.rst:39
 msgid ""
@@ -1389,28 +1485,27 @@ msgstr ""
 "toutes les options et personnalisations à votre disposition."
 
 #: ../../contribute/translations.rst:46
-#, fuzzy
 msgid ""
 "Now, get on with it. The first step is to search if your language already "
 "exists in the project of your choice. If your language is not available for "
 "a specific project, you can add it yourself."
 msgstr ""
-"Au travail maintenant ! La première étape est de chercher si votre langue "
-"existe déjà dans le projet de votre choix."
+"Maintenant, continuez. La première étape consiste à rechercher si votre "
+"langue existe déjà dans le projet de votre choix. Si votre langue n'est pas "
+"disponible pour un projet spécifique, vous pouvez l'ajouter vous-même."
 
 #: ../../contribute/translations.rst:49
-#, fuzzy
 msgid ".po/.ts File Editor"
-msgstr "Éditeurs de fichier .po"
+msgstr "Éditeurs de fichier .po/.ts"
 
 #: ../../contribute/translations.rst:51
-#, fuzzy
 msgid ""
 "If you want to work with *.po*/*.ts* files directly you need to know what "
 "you're doing for sure. The first thing you should always remember is:"
 msgstr ""
-"Si vous souhaitez travailler directement sur les fichiers .po, vous devez "
-"être sûr(e) de ce que vous faites."
+"Si vous voulez travailler directement avec des fichiers *.po*/*.ts*, vous "
+"devez être sûr de ce que vous faites. La première chose que vous devez "
+"toujours vous rappeler est la suivante :"
 
 #: ../../contribute/translations.rst:54
 msgid ""
@@ -1418,9 +1513,10 @@ msgid ""
 "weblate. This could break the whole translation exchange process with "
 "weblate."
 msgstr ""
+"Ne jamais modifier des fichiers *.po* sur des projets traduits par Weblate. "
+"Cela pourrait rompre tout le processus d'échange de traduction avec Weblate."
 
 #: ../../contribute/translations.rst:56
-#, fuzzy
 msgid ""
 "As was said up above, you need a file editor of your choice and a GitHub/"
 "GitLab account to translate *.po*/*.ts* files directly. Idealy you do have "
@@ -1428,20 +1524,23 @@ msgid ""
 "how to build an app."
 msgstr ""
 "Comme expliqué précédemment, vous aurez besoin d'un éditeur de votre choix "
-"et d'un compte sur GitHub pour traduire directement les fichiers .po."
+"et d'un compte sur GitHub/GitLab pour traduire directement les fichiers "
+"*.po*/*.ts*. L'idéal serait que vous disposiez de `clickable "
+"<http://clickable.bhdouglass.com/en/latest/>`_ et que vous sachiez comment "
+"générer une application."
 
 #: ../../contribute/translations.rst:58
-#, fuzzy
 msgid ""
 "There are online gettext .po editors and those you can install in your "
 "computer. You can choose whatever editor you want, but we prefer to work "
 "with free software only. There are too many plain text editors and tools to "
 "help you translate *.po*/*.ts* files to put down a list here."
 msgstr ""
-"Vous pouvez sélectionner l'éditeur de votre choix, mais nous préférons "
-"travailler uniquement avec des logiciels libres. Il existe trop d'éditeurs "
-"de texte plein et d'outils pour traduire les fichiers .po pour établir ici "
-"la liste exhaustive."
+"Il existe des éditeurs gettext de fichiers .po en ligne et des que vous "
+"pouvez installer sur votre ordinateur. Vous pouvez choisir l'éditeur que "
+"vous voulez, mais nous préférons travailler uniquement avec des logiciels "
+"libres. Il existe trop d'éditeurs de texte simple et d'outils pour vous "
+"aider à traduire les fichiers *.po*/*.ts* pour en dresser la liste ici."
 
 #: ../../contribute/translations.rst:61
 msgid ""
@@ -1451,71 +1550,86 @@ msgid ""
 "latest strings though. And you will not know if the strings fit into the "
 "apps layout."
 msgstr ""
+"Pour des traductions de qualité, il est recommandé de suivre toutes les "
+"étapes indiquées ci-dessous. Toutefois, si vous n'êtes pas familier/ère avec "
+"la création d'applications à l'aide de « clickable », passez les étapes 4. à "
+"6. Il se peut toutefois que vous ne puissiez pas traduire les dernières "
+"chaînes de caractères. Et vous ne saurez pas si les chaînes s'intègrent dans "
+"la mise en page de l'application."
 
 #: ../../contribute/translations.rst:63
 msgid "How to proceed:"
-msgstr ""
+msgstr "Comment procéder :"
 
 #: ../../contribute/translations.rst:65
 msgid "fork the apps repo into your GitHub or GitLab account"
-msgstr ""
+msgstr "Copiez le dépôt de l'application sur votre compte GitHub ou GitLab"
 
 #: ../../contribute/translations.rst:66
 msgid "clone the repo locally or use GitLab's online editor"
-msgstr ""
+msgstr "Clonez le dépôt localement ou utilisez l'éditeur en ligne de GitLab"
 
 #: ../../contribute/translations.rst:67
 msgid "(optional) create a new branch for the translation"
-msgstr ""
+msgstr "Facultatif : créez une nouvelle branche pour la traduction"
 
 #: ../../contribute/translations.rst:68
 msgid ""
 "build the app using clickable to get up-to-date *.pot*/*.ts* template files"
 msgstr ""
+"Générez l'application en utilisant clickable pour obtenir des fichiers "
+"modèles *.pot*/*.ts* à jour"
 
 #: ../../contribute/translations.rst:69
 msgid "update the desired *.po*/*.ts* language file(s) from the template"
 msgstr ""
+"Mettez à jour le(s) fichier(s) de langue *.po*/*.ts* souhaité(s) à partir du "
+"modèle"
 
 #: ../../contribute/translations.rst:70
-#, fuzzy
 msgid "translate all strings"
-msgstr "Traductions"
+msgstr "Traduisez toutes les chaînes"
 
 #: ../../contribute/translations.rst:71
 msgid "build and install the app on your device and test the translations"
 msgstr ""
+"Générez et installez l'application sur votre appareil puis testez les "
+"traductions"
 
 #: ../../contribute/translations.rst:72
 msgid ""
 "(optional) repeat steps 6. and 7. until you are satisfied with your work"
 msgstr ""
+"Facultatif : répétez les étapes 6. et 7. jusqu'à ce que vous soyez satisfait/"
+"e de votre travail"
 
 #: ../../contribute/translations.rst:73
 msgid ""
 "push the translated *.po*/*.ts* file(s) to your forked repo [do NOT commit *."
 "pot*/*.ts* template files]"
 msgstr ""
+"Publiez le(s) fichier(s) *.po*/*.ts* traduit(s) vers votre dépôt cloné [ne "
+"pas envoyer les fichiers modèles *.pot*/*.ts*]"
 
 #: ../../contribute/translations.rst:74
 msgid "open an merge/pull request from your fork to the apps repo"
-msgstr ""
+msgstr "Ouvrez une demande de fusion de votre version au dépôt de l'application"
 
 #: ../../contribute/translations.rst:78
 msgid "Translation Team Communication"
 msgstr "Communication de l'équipe de traduction"
 
 #: ../../contribute/translations.rst:80
-#, fuzzy
 msgid ""
 "You may talk to others regarding translations by using `the forum category "
 "<https://forums.ubports.com/category/39/translations>`_ that UBports "
 "provides for this task. To use it you need to register, or login if you're "
 "registered already."
 msgstr ""
-"La méthode la plus directe et la plus recommandée est d'utiliser `la "
-"catégorie du forum <https://forums.ubports.com/category/39/translations>`_ "
-"qu'UBports fournit à ce titre."
+"Vous pouvez parler à d'autres personnes du sujet des traductions en "
+"utilisant `la catégorie de forum <https://forums.ubports.com/category/39/"
+"translations>`_ qu'UBports fournit pour cette tâche. Pour l'utiliser, vous "
+"devez vous inscrire, ou vous connecter si vous êtes déjà inscrit/e."
 
 #: ../../contribute/translations.rst:82
 msgid ""

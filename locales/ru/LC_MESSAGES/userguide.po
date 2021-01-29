@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2020-11-07 10:38+0000\n"
+"PO-Revision-Date: 2021-01-29 20:34+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/ru/>\n"
@@ -842,6 +842,8 @@ msgid ""
 "opening the terminal app and enter ``adb devices``. You should see something "
 "like::"
 msgstr ""
+"Проверить, что сервер adb правильно работает локально на телефоне можно "
+"командой ``adb devices`` в терминале. Должен появиться примерно такой текст::"
 
 #: ../../userguide/dailyuse/anbox.rst:70
 msgid "How to install new APKs"
@@ -890,17 +892,21 @@ msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:101
 msgid "Access Android storage"
-msgstr ""
+msgstr "Доступ к хранилищу Android"
 
 #: ../../userguide/dailyuse/anbox.rst:103
 msgid ""
 "Android storage is located at ``/home/phablet/anbox-data/data/media/0``."
 msgstr ""
+"Хранилище Android находится в папке ``/home/phablet/anbox-data/data/media/"
+"0``."
 
 #: ../../userguide/dailyuse/anbox.rst:105
 msgid ""
 "Links to android libraries can be made in their respective XDG counterparts::"
 msgstr ""
+"Ссылки на библиотеки Android можно сделать в виде соответствующих "
+"аналогичных библиотек XDG::"
 
 #: ../../userguide/dailyuse/anbox.rst:114 ../../userguide/install.rst:22
 msgid "Troubleshooting"
@@ -982,6 +988,8 @@ msgid ""
 "To install applications you may use the phone's *Settings* interface or you "
 "may use the command line as described further below."
 msgstr ""
+"Установить приложения можно на вкладке *Настройки* или через командную "
+"строку, как описано ниже."
 
 #: ../../userguide/dailyuse/libertine.rst:9
 msgid "Manage containers"
@@ -992,10 +1000,16 @@ msgid "Create a container"
 msgstr "Создайте контейнер"
 
 #: ../../userguide/dailyuse/libertine.rst:14
-#, fuzzy
 msgid ""
 "The first step is to create a container where applications can be installed:"
-msgstr "Шаг 1. Создайте контейнер, куда можно установить программы::"
+msgstr "Вначале создайте контейнер, куда можно установить программы:"
+
+#: ../../userguide/dailyuse/libertine.rst:16
+msgid ""
+"Open Settings and scroll down to *Libertine* under the *System* sub-heading."
+msgstr ""
+"Откройте \"Настройки\" и выберите пункт *Libertine*, который находится под "
+"пунктом *Система*."
 
 #: ../../userguide/dailyuse/libertine.rst:16
 msgid ""
@@ -1008,6 +1022,10 @@ msgid ""
 "have other containers already installed, they will be visible here. Tap the "
 "+ sign at the upper right to add a container."
 msgstr ""
+"Нажмите *Libertine*, чтобы перейти в подменю *Управление контейнерами "
+"Libertine*. Если в системе уже установлены другие контейнеры, они будут "
+"отображены здесь. Коснитесь значка \"+\" в правом верхнем углу, чтобы "
+"добавить контейнер."
 
 #: ../../userguide/dailyuse/libertine.rst:20
 msgid ""
@@ -1015,10 +1033,13 @@ msgid ""
 "name and password if desired. Confirm your entries by tapping OK, and the "
 "container will be created."
 msgstr ""
+"Откроется диалоговое окно *Параметры контейнера*, здесь нужно ввести имя "
+"контейнера и пароль. Нажмите \"ОК\", если все правильно, и контейнер будет "
+"создан."
 
 #: ../../userguide/dailyuse/libertine.rst:22
 msgid "To do this via command line follow these steps::"
-msgstr ""
+msgstr "Чтобы сделать это в командной строке выполните следующие действия::"
 
 #: ../../userguide/dailyuse/libertine.rst:26
 msgid "You can add extra options such as:"
@@ -1035,7 +1056,7 @@ msgid ""
 "it then ``lxc`` is suggested."
 msgstr ""
 "``-t type`` может быть ``chroot`` или ``lxc``. По умолчанию используется "
-"опция``chroot`, она совместимо с любым устройством. Если ядро устройства "
+"опция ``chroot`, она совместима с любым устройством. Если ядро устройства "
 "поддерживает режим ``lxc`, то рекомендуется использовать его."
 
 #: ../../userguide/dailyuse/libertine.rst:31
@@ -1047,7 +1068,6 @@ msgstr ""
 "(несколько сотен мегабайт)."
 
 #: ../../userguide/dailyuse/libertine.rst:34
-#, fuzzy
 msgid ""
 "The ``create`` command shown above cannot be run directly in the terminal "
 "app, due to apparmor restrictions. You can run it from another device using "
@@ -1070,10 +1090,14 @@ msgid ""
 "Use the *Settings Manage Libertine Containers* sub-menu to list all the "
 "containers you have created on the device."
 msgstr ""
+"Используйте подменю *Settings Manage Libertine Containers*, чтобы "
+"перечислить все контейнеры, которые были созданы на устройстве."
 
 #: ../../userguide/dailyuse/libertine.rst:41
 msgid "You can also use the command line. Run::"
 msgstr ""
+"Можно так же проделать эти операции через командную строку. Запустите "
+"команды::"
 
 #: ../../userguide/dailyuse/libertine.rst:46
 msgid "Destroy a container"
@@ -1089,21 +1113,25 @@ msgid ""
 "app drawer. You can also tap the name of the container in the *Manage "
 "Libertine Containers* menu."
 msgstr ""
+"После того, как контейнер настроен, установленные приложения появятся в "
+"панели приложений. Также можно нажать имя контейнера в меню *Управление "
+"контейнерами Libertine*."
 
 #: ../../userguide/dailyuse/libertine.rst:56
 msgid "You can also list them via command line::"
-msgstr ""
+msgstr "Можно также увидеть их, запустив в консоли команду::"
 
 #: ../../userguide/dailyuse/libertine.rst:61
-#, fuzzy
 msgid "Install a package"
-msgstr "Установить пакет::"
+msgstr "Установить пакет"
 
 #: ../../userguide/dailyuse/libertine.rst:63
 msgid ""
 "From the apps list in the *Manage Libertine Containers* menu tap the + sign "
 "to get a dialog box to add a package."
 msgstr ""
+"В списке приложений в меню *Manage Libertine Containers* коснитесь знака \"+"
+"\", чтобы открыть диалоговое окно и добавить пакет."
 
 #: ../../userguide/dailyuse/libertine.rst:65
 msgid ""
@@ -1113,15 +1141,19 @@ msgid ""
 "need to use the *Libertine Tweak Tool* in the *Open Store* to make the text "
 "large enough to read on a mobile device."
 msgstr ""
+"Введите имя пакета, если вы его знаете. Если нет, то можно найти пакет в "
+"архивах. Можно упростить этот процесс, если сначала установить пакет *"
+"Lubuntu Software Center*. Это приложение для настольных ПК, поэтому с "
+"помощью приложения *Libertine Tweak Tool* из *Open Store*, нужно настроить "
+"шрифт для комфортной работы на мобильном устройстве."
 
 #: ../../userguide/dailyuse/libertine.rst:67
 msgid "Packages may also be installed via command line::"
-msgstr ""
+msgstr "Пакеты можно установить и через консоль::"
 
 #: ../../userguide/dailyuse/libertine.rst:72
-#, fuzzy
 msgid "Remove a package"
-msgstr "Удалить пакет::"
+msgstr "Удалить пакет"
 
 #: ../../userguide/dailyuse/libertine.rst:74
 msgid ""
@@ -1129,10 +1161,14 @@ msgid ""
 "*Manage Libertine Containers* > *CONTAINER NAME*), swipe right on the "
 "package you want to remove to reveal the option to remove the package."
 msgstr ""
+"В списке пакетов внутри контейнера (*Системные настройки*> *Libertine*> *"
+"Управление контейнерами Libertine*> *ИМЯ КОНТЕЙНЕРА*) проведите пальцем "
+"вправо по пакету, который требуется удалить, чтобы открыть соответствующее "
+"меню."
 
 #: ../../userguide/dailyuse/libertine.rst:76
 msgid "Or you can remove the package via the command line::"
-msgstr ""
+msgstr "Или можно удалить пакет в командной строке::"
 
 #: ../../userguide/dailyuse/libertine.rst:81
 msgid ""
@@ -1144,7 +1180,6 @@ msgstr ""
 "IDENTIFIER``, чтобы указать, для какого контейнера нужное выполнить операцию."
 
 #: ../../userguide/dailyuse/libertine.rst:84
-#, fuzzy
 msgid "Run desktop application"
 msgstr "Запуск desktop-версий программ"
 
@@ -1153,6 +1188,8 @@ msgid ""
 "Run it from the app menu like any other app. To start a graphical "
 "application from the command line, for example ``gedit``, run in a terminal::"
 msgstr ""
+"Программы запускаются из меню приложений. Чтобы запустить графическое "
+"приложение из командной строки, например gedit, наберите в терминале::"
 
 #: ../../userguide/dailyuse/libertine.rst:92
 msgid "Files"
@@ -1183,14 +1220,12 @@ msgid "Videos"
 msgstr "Видео"
 
 #: ../../userguide/dailyuse/libertine.rst:103
-#, fuzzy
 msgid "Tips"
 msgstr "Подсказки"
 
 #: ../../userguide/dailyuse/libertine.rst:106
-#, fuzzy
 msgid "Locations"
-msgstr "Места"
+msgstr "Локации"
 
 #: ../../userguide/dailyuse/libertine.rst:108
 msgid "For every container you create there will be two directories created:"
@@ -1213,16 +1248,14 @@ msgstr ""
 "data/CONTAINER-IDENTIFIER/``"
 
 #: ../../userguide/dailyuse/libertine.rst:114
-#, fuzzy
 msgid "Shell access"
-msgstr "Доступ к shell"
+msgstr "Доступ к оболочке"
 
 #: ../../userguide/dailyuse/libertine.rst:116
 msgid "There are 2 options for executing commands inside the container."
 msgstr "Есть 2 способа выполнить команды внутри контейнера."
 
 #: ../../userguide/dailyuse/libertine.rst:118
-#, fuzzy
 msgid ""
 "**The first option** is based on ``libertine-container-manager exec``. It "
 "lets you run your commands as root. The drawback is that the container is "
@@ -1234,14 +1267,14 @@ msgid ""
 "which may lead to problems with software that tries to create temporary "
 "files or directories. You may use this option e.g., for installing packages."
 msgstr ""
-"** Первый способ ** основан на `` libertine-container-manager exec``. Это "
-"позволяет запускать  команды от имени пользователя root. Недостатком "
-"является то, что контейнер не полностью настроен. На текущий момент "
-"упомянутые выше папки (Documents, Music, ...) не смонтированы <https://"
-"askubuntu.com/questions/831830/libertine-terminal-applications-how-to-access-"
-"to-the -real-home-dir # comment1273744_833984 /> `_ т.е. каталог` `/home/"
-"phablet/` `пустой, в нём нет ничего. Аналогично, каталог, на который "
-"ссылается `TMPDIR`, недоступен, что может привести к проблемам с программным "
+"** Первый способ ** основан на ``libertine-container-manager exec``. Это "
+"позволяет запускать команды от имени пользователя root. Недостатком является "
+"то, что контейнер не полностью настроен. На текущий момент упомянутые выше "
+"папки (Documents, Music, ...) не смонтированы <https://askubuntu.com/"
+"questions/831830/libertine-terminal-applications-how-to-access-to-the -real-"
+"home-dir # comment1273744_833984 /> `_ т.е. каталог ``/home/phablet/`` "
+"пустой, в нём нет ничего. Аналогично, каталог, на который ссылается "
+"``TMPDIR``, недоступен, что может привести к проблемам с программным "
 "обеспечением, которое пытается создать временные файлы или каталоги. Можно "
 "использовать эту опцию, например, для установки пакетов."
 
@@ -1282,10 +1315,10 @@ msgid ""
 "confirm for yourself that you are inside the container. The listing of ``ls /"
 "`` will be different inside and outside of the container."
 msgstr ""
-"Когда  bash запускается таким способом, подтверждения, что вы сейчас "
-"«внутри» контейнера, не будет. Можно проверить командой `` ls / ``, чтобы "
-"убедиться, что вы находитесь внутри контейнера. Список `` ls / `` будет "
-"отличаться внутри и снаружи контейнера."
+"Когда bash запускается таким способом, подтверждения, что вы сейчас «внутри» "
+"контейнера, не будет. Можно проверить командой ``ls /``, чтобы убедиться, "
+"что вы находитесь внутри контейнера. Список ``ls /`` будет отличаться внутри "
+"и снаружи контейнера."
 
 #: ../../userguide/dailyuse/libertine.rst:151
 msgid "Accessing SD card"
@@ -1296,7 +1329,7 @@ msgid ""
 "In order to access your SD-card or any other part of the regular filesystem "
 "from inside your libertine container you must create a bind mount."
 msgstr ""
-"Чтобы получить доступ к  SD-карте или любой другой части обычной файловой "
+"Чтобы получить доступ к SD-карте или любой другой части обычной файловой "
 "системы из контейнера libertine, нужно создать bind mount."
 
 #: ../../userguide/dailyuse/libertine.rst:155
@@ -1311,7 +1344,7 @@ msgid ""
 "directory you want to bind mount::"
 msgstr ""
 "Можно сделать deep links, если нужно, чтобы в контейнере была доступна "
-"только часть SD-карты. В этом случае можно просто  указать полный путь к "
+"только часть SD-карты. В этом случае можно просто указать полный путь к "
 "каталогу, который задан через bind mount ::"
 
 #: ../../userguide/dailyuse/libertine.rst:163
@@ -1333,16 +1366,15 @@ msgid ""
 "to control how to mount a card with a given id, but since the udev rules are "
 "on the read only port on touch, this is not possible."
 msgstr ""
-"Чтобы использовать SD-карту в качестве дополнительного места для  "
-"контейнера, сначала отформатируйте её в файловой системе ext4 или "
-"аналогичной. В udisk2 есть неправильная функция, которая монтирует только SD-"
-"карты (showexec), отформатированные в системе (v)fat  с исполнительными "
-"файлами  .bat, .exe или .com. Эта особенность была исправлена в других "
-"дистрибутивах, где любой файл можно сделать исполняемым. Но в  Ubuntu этого "
-"не было сделано.  Был придуман \"обходной путь\" -  добавить правило udev, "
-"чтобы контролировать, как монтировать карту с заданным идентификатором, но "
-"поскольку правила udev находятся в Ubuntu Touch на порте   «только для "
-"чтения», это невозможно."
+"Чтобы использовать SD-карту в качестве дополнительного места для контейнера, "
+"сначала отформатируйте её в файловой системе ext4 или аналогичной. В udisk2 "
+"есть неправильная функция, которая монтирует только SD-карты (showexec), "
+"отформатированные в системе (v)fat с исполнительными файлами .bat, .exe или "
+".com. Эта особенность была исправлена в других дистрибутивах, где любой файл "
+"можно сделать исполняемым. Но в Ubuntu этого не было сделано. Разработчики "
+"придумали \"обходной путь\" - добавили правило udev, чтобы контролировать, "
+"как монтировать карту с заданным идентификатором, но поскольку правила udev "
+"находятся в Ubuntu Touch на порте «только для чтения», это невозможно."
 
 #: ../../userguide/dailyuse/libertine.rst:169
 msgid "Shortcuts"
@@ -1354,8 +1386,8 @@ msgid ""
 "following ones to your ``~/.bash_aliases``::"
 msgstr ""
 "Если хотите, можете настроить ссылки на ярлыки для инструментов командной "
-"строки. Пути прописываются в соответствующих строках в файле `` ~ / ."
-"bash_aliases`` ::"
+"строки. Пути прописываются в соответствующих строках в файле "
+"``~/.bash_aliases``::"
 
 #: ../../userguide/dailyuse/libertine.rst:177
 msgid "Background"
@@ -1373,8 +1405,8 @@ msgstr ""
 "Графический сервер отвечает за графический интерфейс операционной системы. "
 "Сегодня в большинстве дистрибутивов Linux используется X-сервер. Ubuntu "
 "Touch работает под управлением графического сервера Mir. Это значит, что "
-"стандартные приложения  для X-сервера  напрямую запустить в Ubuntu Touch "
-"нельзя.  Для решения этой проблемы был придуман уровень совместимости XMir. "
+"стандартные приложения  для X-сервера напрямую запустить в Ubuntu Touch "
+"нельзя. Для решения этой проблемы был придуман уровень совместимости XMir. "
 "Libertine использует XMir для отображения desktop-версий  приложений."
 
 #: ../../userguide/dailyuse/libertine.rst:181
@@ -1385,14 +1417,14 @@ msgid ""
 "installation of regular Linux desktop applications."
 msgstr ""
 "Еще одна проблема заключается в том, что обновления системы Ubuntu Touch "
-"выпускаются как образы OTA. Как следствие,  корневая файловая система "
+"выпускаются как образы OTA. Как следствие, корневая файловая система "
 "доступна только для чтения. Libertine предоставляет контейнер с файловой "
 "системой для чтения и записи, что позволяет устанавливать обычные настольные "
 "приложения Linux."
 
 #: ../../userguide/dailyuse/location.rst:2
 msgid "Using location services"
-msgstr ""
+msgstr "Использование сервисов геолокации"
 
 #: ../../userguide/dailyuse/location.rst:4
 msgid ""
@@ -1403,6 +1435,12 @@ msgid ""
 "transport near you <https://open-store.io/app/transport.zubozrout>`__, and "
 "more."
 msgstr ""
+"Службы геолокации в Ubuntu Touch позволяют приложениям отслеживать, где "
+"пользователь находится. Используя эти данные, приложения могут `предлагать "
+"пошаговую навигацию <https://open-store.io/app/navigator.costales>` __, `"
+"отслеживать маршруты передвижения <https://open-store.io/app/"
+"activitytracker.cwayne18> `__,`помогать с поиском общественного транспорта "
+"<https://open-store.io/app/transport.zubozrout> `__ и так далее."
 
 #: ../../userguide/dailyuse/location.rst:6
 msgid ""
@@ -1411,54 +1449,69 @@ msgid ""
 "only access your location data when the device screen is on and the app is "
 "in use."
 msgstr ""
+"Встроенные в Ubuntu Touch службы геолокации предназначены для защиты "
+"конфиденциальности -- только пользователь решает разрешить или запретить "
+"приложениям доступ к этим данным. Приложения могут получить доступ к данным "
+"о местоположении, только когда экран устройства включен и приложение "
+"используется."
 
 #: ../../userguide/dailyuse/location.rst:9
 msgid "Checking if location services are enabled"
-msgstr ""
+msgstr "Проверяем, включены ли сервисы геолокации"
 
 #: ../../userguide/dailyuse/location.rst:11
 msgid ""
 "The Location Indicator is displayed whenever location services are enabled. "
 "Normally, this indicator will appear to be dark."
 msgstr ""
+"Индикатор местоположения отображается всякий раз, когда включены службы "
+"геолокации. Обычно этот индикатор темного цвета."
 
 #: ../../userguide/dailyuse/location.rst:15
 msgid "The Location Indicator, showing location enabled but not in use"
-msgstr ""
+msgstr "Индикатор геолокации включен, но не используется"
 
 #: ../../userguide/dailyuse/location.rst:17
 msgid "If an app is accessing location data, the Location Indicator brightens."
 msgstr ""
+"Если приложения получают доступ к данным с геолокацией, то индикатор "
+"геолокации загорается."
 
 #: ../../userguide/dailyuse/location.rst:21
 msgid "The Location Indicator, showing location enabled and in use"
-msgstr ""
+msgstr "Индикатор местоположения включён, определение местоположения работает"
 
 #: ../../userguide/dailyuse/location.rst:26
 msgid "Accessing location services settings"
-msgstr ""
+msgstr "Доступ к настройкам служб определения местоположения"
 
 #: ../../userguide/dailyuse/location.rst:28
 msgid ""
 "There are several ways to access settings related to location services in "
 "Ubuntu Touch."
 msgstr ""
+"В Ubuntu Touch есть несколько способов получить доступ к настройкам сервисов "
+"геолокации."
 
 #: ../../userguide/dailyuse/location.rst:31
 msgid "Open location quick settings"
-msgstr ""
+msgstr "Откройте быстрые настройки геолокации"
 
 #: ../../userguide/dailyuse/location.rst:33
 msgid ""
 "The Location Indicator contains quick settings related to location services, "
 "including a switch to turn services on or off."
 msgstr ""
+"Индикатор геолокации содержит быстрые настройки сервиса геолокации. Здесь "
+"можно быстро включить или отключить этот сервис."
 
 #: ../../userguide/dailyuse/location.rst:37
 msgid ""
 "To access these settings, press on the Location Indicator and pull down "
 "toward the bottom of the screen."
 msgstr ""
+"Чтобы получить доступ к этим настройкам, нажмите на индикатор местоположения "
+"(Location Indicator) и потяните вниз к нижней части экрана."
 
 #: ../../userguide/dailyuse/location.rst:39
 msgid ""
@@ -1467,46 +1520,60 @@ msgid ""
 "through the icons at the top of the screen to find Location. Select Location "
 "to open the quick settings."
 msgstr ""
+"Если службы определения местоположения отключены, можно получить доступ к "
+"быстрым настройкам местоположения, нажав любой другой индикатор и потянув "
+"вниз. Затем прокрутите значки в верхней части экрана, чтобы найти меню \""
+"Location\". Выберите \"Location\", чтобы открыть быстрые настройки."
 
 #: ../../userguide/dailyuse/location.rst:42
 msgid "Open location settings in the settings app"
-msgstr ""
+msgstr "Откройте настройки местоположения в настройках приложения"
 
 #: ../../userguide/dailyuse/location.rst:44
 msgid ""
 "The system settings app can be used to control location services. There are "
 "more controls in the system settings app than in the Location Indicator."
 msgstr ""
+"Меню системных настроек можно использовать для управления службами "
+"определения местоположения. В этом меню доступно больше опций и настроек, "
+"чем в индикаторе местоположения (\"Location Indicator\")."
 
 #: ../../userguide/dailyuse/location.rst:48
 msgid ""
 "There are two ways to access location services controls in the system "
 "settings app."
 msgstr ""
+"Есть два способа получить доступ к настройкам службами определения "
+"местоположения в меню системных настроек."
 
 #: ../../userguide/dailyuse/location.rst:51
 #: ../../userguide/dailyuse/location.rst:71
 msgid "Quick settings"
-msgstr ""
+msgstr "Быстрые настройки"
 
 #: ../../userguide/dailyuse/location.rst:53
 msgid "`Open location quick settings`_, then select ``Location settings...``."
 msgstr ""
+"Откройте меню `Open location quick settings`_, затем выберите вкладку``"
+"Location settings...``."
 
 #: ../../userguide/dailyuse/location.rst:56
 #: ../../userguide/dailyuse/location.rst:76
 msgid "System settings app"
-msgstr ""
+msgstr "Приложение \"Системные настройки\""
 
 #: ../../userguide/dailyuse/location.rst:58
 msgid ""
 "Launch the ``System Settings`` app. Select ``Security & Privacy``, then "
 "select ``Location``."
 msgstr ""
+"Откройте приложение ``System Settings`` (\"Системные настройки\"). Выберите "
+"``Security & Privacy`` (\"Безопасность и конфиденциальность\"), и далее "
+"-``Location`` (\"Местоположение\")."
 
 #: ../../userguide/dailyuse/location.rst:62
 msgid "Enabling or disabling location services"
-msgstr ""
+msgstr "Как включить или выключить службы определения местоположения"
 
 #: ../../userguide/dailyuse/location.rst:64
 msgid ""
@@ -1514,42 +1581,55 @@ msgid ""
 "location data may request your current location. Location services are "
 "enabled by default on Ubuntu Touch."
 msgstr ""
+"Если службы определения местоположения включены, приложения, которым "
+"разрешен доступ к этим службам, могут запрашивать ваше текущее "
+"местоположение. Службы определения местоположения по умолчанию включены в "
+"Ubuntu Touch."
 
 #: ../../userguide/dailyuse/location.rst:66
 msgid ""
 "If location services are off, apps will not be able to access your current "
 "location."
 msgstr ""
+"Если сервисы геолокации отключены, приложения не смогут получить доступ к "
+"данным о текущем местоположении."
 
 #: ../../userguide/dailyuse/location.rst:68
 msgid ""
 "There are several ways to enable or disable location services in Ubuntu "
 "Touch."
 msgstr ""
+"В Ubuntu Touch есть несколько способов включить или отключить сервисы "
+"геолокации."
 
 #: ../../userguide/dailyuse/location.rst:73
 msgid ""
 "`Open location quick settings`_. Select the ``Location detection`` switch to "
 "enable or disable location services."
 msgstr ""
+"`Откройте быстрые настройки местоположения`_. Переключателем ``Определение "
+"местоположения`` включите или отключите службу геолокации."
 
 #: ../../userguide/dailyuse/location.rst:78
 msgid ""
 "`Open location settings in the settings app`_. Under ``Let the device detect "
 "your location:``, select the appropriate option:"
 msgstr ""
+"`Откройте настройки местоположения во вкладке с системными настройками`_. Во "
+"вкладке ``Разрешить устройству определять ваше местоположение: '' выберите "
+"соответствующую опцию:"
 
 #: ../../userguide/dailyuse/location.rst:80
 msgid "``Using GPS`` turns on location services."
-msgstr ""
+msgstr "``Использование GPS`` включает сервисы геолокации."
 
 #: ../../userguide/dailyuse/location.rst:81
 msgid "``Not at all`` turns off location services."
-msgstr ""
+msgstr "Опция ``Не разрешать ничего`` отключает службы геолокации."
 
 #: ../../userguide/dailyuse/location.rst:84
 msgid "Allowing apps access to location data"
-msgstr ""
+msgstr "Разрешаем приложениям доступ к данным по геолокации"
 
 #: ../../userguide/dailyuse/location.rst:86
 msgid ""
@@ -1557,12 +1637,18 @@ msgid ""
 "This decision is presented the first time the app tries to access your "
 "current location. You can change your decision later."
 msgstr ""
+"Ubuntu Touch позволяет разрешить или запретить приложениям доступ к данным о "
+"местоположении. Окно с этими опциями отображается, когда приложение впервые "
+"пытается получить доступ к текущему местоположению пользователя. Эти "
+"настройки можно менять позже в любое время."
 
 #: ../../userguide/dailyuse/location.rst:88
 msgid ""
 "An app will show the location permission request the first time it tries to "
 "access your current location."
 msgstr ""
+"Приложение попросит разрешить доступ к данным геолокации при первой попытке "
+"узнать текущую локацию пользователя."
 
 #: ../../userguide/dailyuse/location.rst:93
 msgid ""
@@ -1570,10 +1656,14 @@ msgid ""
 "``Don't Allow`` to deny the app access to your current location. Some app "
 "features may not work correctly if you select ``Don't Allow``."
 msgstr ""
+"Выберите ``Разрешить`` , чтобы предоставить приложению доступ к текущему "
+"местоположению. Выберите ``Не разрешать``, чтобы запретить приложению доступ "
+"к местоположению. Некоторые функции приложения могут работать некорректно, "
+"если выбрать ``Не разрешать`` ."
 
 #: ../../userguide/dailyuse/location.rst:96
 msgid "Changing your permissions"
-msgstr ""
+msgstr "Изменение прав доступа"
 
 #: ../../userguide/dailyuse/location.rst:98
 msgid ""
@@ -1581,15 +1671,17 @@ msgid ""
 "This is useful when you gave an app access to your location but you'd like "
 "to deny access, or if you denied access but would like to give access."
 msgstr ""
+"Можно разрешить приложению доступ к данным о местоположении. Это полезно, "
+"если у приложения есть доступ к местоположению пользователя, но его нужно "
+"закрыть. Или, наоборот, если доступа нет, но его нужно временно предоставить."
 
 #: ../../userguide/dailyuse/location.rst:100
 msgid "There are several ways to find these controls."
-msgstr ""
+msgstr "Это можно сделать несколькими способами."
 
 #: ../../userguide/dailyuse/location.rst:103
-#, fuzzy
 msgid "Location settings"
-msgstr "Места"
+msgstr "Настройки геолокации"
 
 #: ../../userguide/dailyuse/location.rst:105
 msgid ""
@@ -1598,10 +1690,16 @@ msgid ""
 "location:``. Toggle the switch next to an app \"on\" to allow it to access "
 "your location data. Toggle the switch \"off\" to deny access."
 msgstr ""
+"`Откройте настройки геолокации`_. Все приложения, которые запросили доступ к "
+"вашему местоположению, перечислены в разделе ``Let apps access this "
+"location:`` (\"Разрешить приложениям доступ к местоположению\"). Установите "
+"переключатель рядом с приложением в положение «включено», чтобы разрешить "
+"ему доступ к данным о вашем местоположении. Переведите переключатель в "
+"положение «выключено», чтобы запретить это."
 
 #: ../../userguide/dailyuse/location.rst:108
 msgid "App permission settings"
-msgstr ""
+msgstr "Настройка прав доступа для приложения"
 
 #: ../../userguide/dailyuse/location.rst:110
 msgid ""
@@ -1611,10 +1709,16 @@ msgid ""
 "an app \"on\" to allow it to access your location data. Toggle the switch "
 "\"off\" to deny access."
 msgstr ""
+"Запустите приложение ``System Settings``. Выберите раздел ``Security & "
+"Privacy``, и далее ``App permissions``, в котором есть вкладка ``Location``. "
+"В списке перечислены все приложения, которые запросили доступ к вашему "
+"местоположению. Установите переключатель рядом с приложением в положение "
+"«включено», чтобы разрешить ему доступ к данным о местоположении. Переведите "
+"переключатель в положение «выключено», чтобы запретить доступ."
 
 #: ../../userguide/dailyuse/location.rst:113
 msgid "Using apps with location services"
-msgstr ""
+msgstr "Использование приложений с сервисами геолокации"
 
 #: ../../userguide/dailyuse/location.rst:115
 msgid ""
@@ -1622,10 +1726,13 @@ msgid ""
 "access to location data. However, there are some things to note while using "
 "apps with location services."
 msgstr ""
+"Приложения смогут получить доступ к данным о текущей локации после того, как "
+"им будет предоставлен доступ. Однако при использовании приложений со "
+"службами определения местоположения следует учитывать некоторые моменты."
 
 #: ../../userguide/dailyuse/location.rst:118
 msgid "Time to first fix"
-msgstr ""
+msgstr "Время на первый запуск системы GPS"
 
 #: ../../userguide/dailyuse/location.rst:120
 msgid ""
@@ -1635,6 +1742,12 @@ msgid ""
 "device is activated. This rating is called \"`Time To First Fix <https://en."
 "wikipedia.org/wiki/Time_to_first_fix>`_,\" or TTFF."
 msgstr ""
+"Во время так называемого \"холодного старта\" устройства, который происходит "
+"при первом включении устройства или после долгого перерыва, происходит так "
+"называемая процедура \"Time to Firts Fix\" (TTFF). Аппаратное обеспечение "
+"GPS оценивается по временной задержке, требующейся для активации устройства. "
+"Подробнее об этой процедуре можно прочитать `здесь <https://en.wikipedia.org/"
+"wiki/Time_to_first_fix>`_ ."
 
 #: ../../userguide/dailyuse/location.rst:122
 msgid ""
@@ -1644,27 +1757,38 @@ msgid ""
 "can take up to an hour. To prevent this from causing problems for you, "
 "follow these instructions:"
 msgstr ""
+"Координаты устройства определятся за 1 -4 минуты, если есть подключение к "
+"сети мобильной связи. Если сервис геолокации не включался в течение "
+"длительного времени *и* устройство не может подключиться к сети мобильной "
+"связи, то первый старт может занять очень много времени (около часа). Чтобы "
+"неудобств было меньше, следуйте этим инструкциям:"
 
 #: ../../userguide/dailyuse/location.rst:126
 msgid ""
 "Do not leave your device in direct sunlight. The heat can damage the device."
 msgstr ""
+"Держите телефон вдали от источников тепла и прямых солнечных лучей. Тепло "
+"может повредить устройство."
 
 #: ../../userguide/dailyuse/location.rst:128
 msgid "Disable ``Lock when idle`` in the Battery settings"
-msgstr ""
+msgstr "Отключите опцию``Lock when idle`` в настройках батареи"
 
 #: ../../userguide/dailyuse/location.rst:129
 msgid ""
 "Download an app which uses location services and cause it to start accessing "
 "your location data."
 msgstr ""
+"Скачайте приложение, которое работает со службами геолокации, и настройте "
+"его для работы с данными о местоположении."
 
 #: ../../userguide/dailyuse/location.rst:130
 msgid ""
 "Leave your device near a window but out of direct sunlight. To reduce energy "
 "consumption, turn the screen brightness down."
 msgstr ""
+"Держите смартфон или планшет вдали от прямых солнечных лучей. Чтобы снизить "
+"потребление энергии, уменьшите яркость экрана."
 
 #: ../../userguide/dailyuse/location.rst:132
 msgid ""
@@ -1672,10 +1796,14 @@ msgid ""
 "location. You can now close the app and enable ``Lock when idle``. Future "
 "attempts to aquire your location should now take one to four minutes."
 msgstr ""
+"На определение текущего местоположения потребуется от 20 минут до 1 часа. "
+"После этого можно закрыть приложение и включить блокировку в режиме "
+"ожидания. Дальнейшие попытки определить местоположение теперь займут от "
+"одной до четырех минут."
 
 #: ../../userguide/dailyuse/location.rst:135
 msgid "App suspension"
-msgstr ""
+msgstr "Приостановка работы приложения"
 
 #: ../../userguide/dailyuse/location.rst:137
 msgid ""
@@ -1684,13 +1812,15 @@ msgid ""
 "reason, apps will not be able to track your location whenever they are not "
 "in use or the device is locked."
 msgstr ""
+"Приложения приостанавливаются, если они находятся в фоновом режиме или "
+"устройство заблокировано. Когда приложение приостановлено, оно не может "
+"получать данные о местоположении и следить за пользователем."
 
 #: ../../userguide/install.rst:2
 msgid "Install Ubuntu Touch"
 msgstr "Установка Ubuntu Touch"
 
 #: ../../userguide/install.rst:4
-#, fuzzy
 msgid ""
 "Installing Ubuntu Touch is easy, and a lot of work has gone in to making the "
 "installation process less intimidating to the average user. The UBports "
@@ -1703,7 +1833,7 @@ msgid ""
 "<https://devices.ubuntu-touch.io/>`_."
 msgstr ""
 "Установить Ubuntu Touch очень просто, у нас ушло много работы на то, чтобы "
-"сделать процесс установки  удобным для всех пользователей. Программа UBports "
+"сделать процесс установки удобным для всех пользователей. Программа UBports "
 "Installer - это прекрасный графический инструмент для установки Ubuntu Touch "
 "на `поддерживаемое устройство <https://ubuntu-touch.io/devices>` _. Есть "
 "версии для ОС Linux, Mac или Windows."
@@ -1744,11 +1874,12 @@ msgid ""
 msgstr "macOS: ``ubports-installer-<version-number>.dmg``"
 
 #: ../../userguide/install.rst:13
-#, fuzzy
 msgid ""
 "`Ubuntu or Debian <https://devices.ubuntu-touch.io/installer/?"
 "package=deb>`_: ``ubports-installer-<version-number>.deb``"
-msgstr "Ubuntu или Debian: ``ubports-installer-<version-number>.deb``"
+msgstr ""
+"`Ubuntu или Debian <https://devices.ubuntu-touch.io/installer/"
+"?package=deb>`_: ``ubports-installer-<version-number>.deb``"
 
 #: ../../userguide/install.rst:14
 #, fuzzy
@@ -1778,14 +1909,13 @@ msgstr ""
 "будут сопровождать процесс установки."
 
 #: ../../userguide/install.rst:19
-#, fuzzy
 msgid ""
 "If you're an experienced android developer and want to help us bring Ubuntu "
 "Touch to more devices, visit the :doc:`porting section </porting/Intro>`."
 msgstr ""
-"Если Dы - опытный Android-разработчик  и хотите помочь нам портировать "
-"Ubuntu Touch на большее количество устройств, посетите раздел: doc: `porting "
-"</porting/introduction>`."
+"Если Dы - опытный Android-разработчик и хотите помочь нам портировать Ubuntu "
+"Touch на большее количество устройств, посетите раздел: doc: `porting </"
+"porting/introduction>`."
 
 #: ../../userguide/install.rst:24
 msgid ""
@@ -1798,20 +1928,32 @@ msgid ""
 "github.com/ubports/ubports-installer/issues/new>`_ to help us solve the "
 "problem."
 msgstr ""
+"Если Вам нужна помощь, можно обратиться к официальным каналам UBports в `"
+"Telegram <https://t.me/WelcomePlus>`_ или в `matrix <https://matrix.to/#/!Kwd"
+"niMNeTmClpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot.org>`"
+"_, а также задать вопрос `на форуме <https://forums.ubports.com/> `_ или на "
+"сайте` askubuntu <https://askubuntu.com> `_. Если Вы считаете, что программа-"
+"установщик UBports работает некорректно, то можете ` создать тикет на баг-"
+"трекере <https://github.com/ubports/ubports-installer/issues/new>` _, чтобы "
+"мы узнали о проблеме."
 
 #: ../../userguide/install.rst:27
 msgid "Connection lost during installation"
-msgstr ""
+msgstr "Соединение потеряно во время установки"
 
 #: ../../userguide/install.rst:29
 msgid ""
 "Try a different USB cable and a different USB port on your computer. Cheap "
 "and old cables tend to lose connection during the installation."
 msgstr ""
+"Попробуйте использовать другой кабель USB и другой порт USB на компьютере. "
+"Дешевые и старые кабели могут допускать обрывы связи во время процесса "
+"установки."
 
 #: ../../userguide/install.rst:32
 msgid "Windows Defender prevents Installer from starting"
 msgstr ""
+"Программа-файервол Windows Defender блокирует работу программы-установщика"
 
 #: ../../userguide/install.rst:34
 msgid ""
@@ -1820,51 +1962,63 @@ msgid ""
 "dismiss the warning, click on \"More Information\", then select \"Run anyway"
 "\"."
 msgstr ""
+"Мы сообщили Microsoft об этой ошибке, но они, похоже, думают, что`проблем "
+"нет<https://twitter.com/Windows/status/1014984163433295875>`__. Чтобы "
+"запустить программу-установщик, нажмите клавишу «Подробнее», затем выберите «"
+"Все равно запустить»."
 
 #: ../../userguide/install.rst:37
 msgid "Device not detected"
-msgstr ""
+msgstr "Устройство не распознано"
 
 #: ../../userguide/install.rst:40
 msgid "Virtual Machine"
-msgstr ""
+msgstr "Виртуальная машина"
 
 #: ../../userguide/install.rst:42
 msgid ""
 "If you're running the installer in a virtual machine, make sure the virtual "
 "machine is allowed to access the USB port."
 msgstr ""
+"Если программа-установщик запускается на виртуальной машине, убедитесь, что "
+"виртуальной машине разрешен доступ к USB-порту."
 
 #: ../../userguide/install.rst:45
 msgid "Windows ADB drivers"
-msgstr ""
+msgstr "Драйвера ADB для Windows"
 
 #: ../../userguide/install.rst:47
 msgid ""
 "Install the `universal adb driver <http://adb.clockworkmod.com/>`_ and "
 "reboot your computer."
 msgstr ""
+"Установите `универсальный adb-драйвер <http://adb.clockworkmod.com/>`_ и "
+"перезагрузите компьютер."
 
 #: ../../userguide/install.rst:50
-#, fuzzy
 msgid "Fairphone 2 Vendor-ID"
-msgstr "Fairphonе 2::"
+msgstr ""
+"Fairphone 2 Vendor-ID (идентификатор телефона, определяемый производителем)"
 
 #: ../../userguide/install.rst:52
 msgid ""
 "Run ``echo 0x2ae5 >> ~/.android/adb_usb.ini`` in the terminal and restart "
 "the installer. This does not affect the snap package."
 msgstr ""
+"В терминале выполните ``echo 0x2ae5 >> ~/.android/adb_usb.ini` и "
+"перезапустите программу-установщик. Это никак не повлияет на snap-пакет."
 
 #: ../../userguide/install.rst:55
 msgid "Missing udev-rules"
-msgstr ""
+msgstr "Отсутствуют udev-rules"
 
 #: ../../userguide/install.rst:57
 msgid ""
 "If the device not detected on Linux and packages other than snap, you might "
 "be missing **udev-rules**."
 msgstr ""
+"Если устройство не обнаружено в Linux и пакетах, отличных от snap, скорее "
+"всего не прописаны правила **udev-rules**."
 
 #: ../../userguide/install.rst:59
 msgid ""
@@ -1872,10 +2026,14 @@ msgid ""
 "below. If not, add them to the file and run ``sudo service udev restart`` or "
 "``sudo udevadm control --reload-rules && udevadm trigger``."
 msgstr ""
+"Посмотрите, существует ли файл ``/etc/udev/rules.d/51-android.rules`` и "
+"содержит ли он приведенные ниже правила. Если нет, добавьте их в файл и "
+"запустите команду ``sudo service udev restart`` или ``sudo udevadm control "
+"--reload-rules && udevadm trigger``."
 
 #: ../../userguide/install.rst:99
 msgid "Other issues"
-msgstr ""
+msgstr "Прочие вопросы"
 
 #: ../../userguide/install.rst:101
 msgid ""
@@ -1883,6 +2041,9 @@ msgid ""
 "manual installation instructions for your device `on the devices page "
 "<https://devices.ubuntu-touch.io/>`_."
 msgstr ""
+"Если советы по устранению неполадок не помогают, можно попробовать запустить "
+"установку вручную. Инструкции есть `на странице с описанием устройств "
+"<https://devices.ubuntu-touch.io/>` _."
 
 #: ../../userguide/install.rst:104
 msgid "Install on legacy Android devices"
@@ -1921,8 +2082,8 @@ msgid ""
 "successfully in some cases, the Pro5 is Exynos-based and has its own "
 "headaches."
 msgstr ""
-"Мобильные устройства Meizu в основном проектировались для  ОС Flyme "
-"(операционная система с открытым исходным кодом, основанная на Android Open "
+"Мобильные устройства Meizu в основном проектировались для ОС Flyme ("
+"операционная система с открытым исходным кодом, основанная на Android Open "
 "Source Project от Google). Если смартфон MX4 иногда успешно перепрошивается, "
 "то смартфон Pro5 построен на семействе микропроцессоров Exynos и имеет свои "
 "проблемы."
@@ -1932,14 +2093,13 @@ msgid "BE VERY CAREFUL! You are responsible for your own actions!"
 msgstr "ВНИМАНИЕ! Все действия осуществляются Вами на свой страх и риск!"
 
 #: ../../userguide/install.rst:118
-#, fuzzy
 msgid ""
 "Disconnect all devices and non-essential peripherals from your PC. Charge "
 "your device on a wall-charger (not your PC) to at least 40 percent."
 msgstr ""
 "Отключите все ненужные и неиспользуемые устройства от персонального "
 "компьютера. Зарядите свое мобильное устройство от сети (не от ПК) как "
-"минимум до 40 процентов"
+"минимум до 40 процентов."
 
 #: ../../userguide/install.rst:119
 #, fuzzy
@@ -2003,6 +2163,8 @@ msgid ""
 "Open a Terminal, enter the SP flash tool directory and run it with ``sudo ./"
 "flash_tool.sh``."
 msgstr ""
+"Откройте Терминал, зайдите в папку с программой SP flash tool и запустите её "
+"командой ``sudo ./flash_tool.sh``."
 
 #: ../../userguide/install.rst:133
 msgid ""
@@ -2010,32 +2172,29 @@ msgid ""
 "'libpng12', so this can be used as a workaround:"
 msgstr ""
 "В Ubuntu 17.10 возникают проблемы с flash_tool и загрузкой совместно "
-"используемой библиотеки 'libpng12' , поэтому   в качестве обходного пути "
-"можно сделать так:"
+"используемой библиотеки 'libpng12' , поэтому существует и альтернативный "
+"способ:"
 
 #: ../../userguide/install.rst:141
-#, fuzzy
 msgid ""
 "In the \"Scatter-loading File\" section, press the \"choose\" button and "
 "select the ``*Android_scatter.txt`` file from the archive you downloaded in "
 "the second step."
-msgstr "Выберите текстовый файл ``*Android_scatter.txt``из скачанного архива"
+msgstr "Выберите текстовый файл ``*Android_scatter.txt``из скачанного архива."
 
 #: ../../userguide/install.rst:142
-#, fuzzy
 msgid "Choose \"Firmware Upgrade\" from the drop-down menu."
-msgstr "Выберите опцию \"Firmware Upgrade\""
+msgstr "Выберите в выпадающем меню пункт \"Firmware Upgrade\"."
 
 #: ../../userguide/install.rst:146
-#, fuzzy
 msgid ""
 "If you select DOWNLOAD ONLY rather than FIRMWARE UPGRADE, you will end up "
 "with a useless brick rather than a fancy Ubuntu Touch device. Be sure to "
 "select FIRMWARE UPGRADE."
 msgstr ""
-"Если вы выберете \"Скачать\", а не \"Firmware Update\",  устройство будет "
-"испорчено (\"кирпич\"). Убедитесь, что выбрана именно опция \"Firmware Update"
-"\"."
+"Если вы выберете \"Скачать\", а не \"Firmware Update\", устройство будет "
+"испорчено (\"кирпич\"). Убедитесь, что выбрана именно опция \"Firmware "
+"Update\"."
 
 #: ../../userguide/install.rst:148
 msgid ""
@@ -2043,24 +2202,25 @@ msgid ""
 "choice is reset to DOWNLOAD ONLY. Be sure to select it after selecting the "
 "file."
 msgstr ""
+"Обратите внимание, что после выбора файла ``*Android_scatter.txt``, в меню "
+"нужно указать опцию ТОЛЬКО СКАЧАТЬ (DOWNLOAD ONLY). Обязательно проверьте, "
+"что выбрана именно эта опция."
 
 #: ../../userguide/install.rst:150
-#, fuzzy
 msgid "Turn your device completely off, but do not connect it yet."
-msgstr "Выключите устройство, отсоедините его"
+msgstr "Полностью обесточьте устройство, но пока его не подключайте."
 
 #: ../../userguide/install.rst:151
-#, fuzzy
 msgid "Press the button labeled \"Download\"."
-msgstr "Нажмите клавишу \"Download\" (\"Скачать\")"
+msgstr "Нажмите клавишу \"Download\" (\"Скачать\")."
 
 #: ../../userguide/install.rst:152
-#, fuzzy
 msgid ""
 "Perform a final sanity-check that you selected the \"Firmware Upgrade\" "
 "option, not \"Download Only\"."
 msgstr ""
-"Еще раз проверьте, что выбрана опция \"Firmware Upgrade\", а не \"Download\""
+"Еще раз проверьте, что выбрана опция \"Firmware Upgrade\", а не \"Download "
+"Only\"."
 
 #: ../../userguide/install.rst:153
 msgid ""
@@ -2089,6 +2249,14 @@ msgid ""
 "articles/2015/09/16/ubuntu-android-installation-process-for-bq-aquaris-e4-5-"
 "and-e5/>`_ with SP flash tool, close it and try again from step 4."
 msgstr ""
+"Если установка завершилась неудачно или зависает (а в журналах есть запись "
+"``COM-порт открыт. Попытка синхронизации с ... ``), удалите пакет "
+"``modemmanager`` ( установленный пакет может быть `несовместимым "
+"<https://web.archive.org/web/20180118130643/http://www.mibqyyo.com/"
+"en-articles/2015/09/16/"
+"ubuntu-android-installation-process-for-bq-aquaris-e4-5-and-e5/>`_  с "
+"системой) с помощью программы SP flash tool, потом закройте её  и повторите "
+"попытку, начиная с шага 4."
 
 #: ../../userguide/install.rst:160
 #, fuzzy
