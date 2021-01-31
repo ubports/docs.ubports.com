@@ -1,7 +1,7 @@
 Shell access via ssh
 ====================
 
-You can use ssh to access a shell from your PC. This is useful for debugging or more advanced shell usage. 
+You can use ssh to access a shell from your PC. This is useful for debugging or more advanced shell usage.
 
 You need a ssh key pair for this. Logging in via password is disabled by default.
 
@@ -18,7 +18,7 @@ Copy the public key to your device
 You need then to transfer your public key to your device. There are multiple ways to do this. These are a few options:
 
 * Connect the ubports device and the PC with a USB cable. Then copy the file using your filemanager.
-* Or transfer the key via the internet by mailing it to yourself, or uploading it to your own cloud storage, or webserver, etc. 
+* Or transfer the key via the internet by mailing it to yourself, or uploading it to your own cloud storage, or webserver, etc.
 * You can also connect via :doc:`adb <adb>` and use the following command to copy it::
 
     adb push ~/.ssh/id_rsa.pub /home/phablet/
@@ -26,13 +26,13 @@ You need then to transfer your public key to your device. There are multiple way
 Configure your device
 ---------------------
 
-Now you have the public key on the UBports device. 
+Now you have the public key on the UBports device.
 Let's assume it's stored as ``/home/phablet/id_rsa.pub``. Use the terminal app or and adb connection to perform the following steps on your phone. ::
 
     mkdir /home/phablet/.ssh
     chmod 700 /home/phablet/.ssh
     cat /home/phablet/id_rsa.pub >> /home/phablet/.ssh/authorized_keys
-    chmod 600 /home/phablet/.ssh/authorized_keys 
+    chmod 600 /home/phablet/.ssh/authorized_keys
     chown -R phablet:phablet /home/phablet/.ssh
 
 Now start the ssh server. If you are using an Android-based phone::
@@ -50,13 +50,13 @@ Connect
 Now everything is set up and you can use ``ssh`` ::
 
     ssh phablet@<ip-address>
-    
+
 To identify the ip-address of your UT device , open Terminal application in your phone and run the following command::
-    
+
     hostname -I
-    
+
 The output is a list of IP addresses separated by spaces . Use the first IP address from the list.
-    
+
 
 Of course you can now also use ``scp`` or ``sshfs`` to transfer files.
 
