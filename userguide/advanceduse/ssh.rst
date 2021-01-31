@@ -43,6 +43,11 @@ If you are using a Linux-based phone (like the Pinephone)::
 
     sudo service ssh start
 
+To have the ssh server start after every boot on a Linux-based phone::
+
+    sudo mount -o rw,remount /
+    sudo umount /etc/init/ssh.override
+    sudo rm /etc/init/ssh.override
 
 Connect
 -------
