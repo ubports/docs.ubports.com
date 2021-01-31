@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-01-29 20:34+0000\n"
+"PO-Revision-Date: 2021-01-31 00:03+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/ru/>\n"
@@ -414,10 +414,10 @@ msgid ""
 "can either watch it live or record it to a file."
 msgstr ""
 "В комплекте с Ubuntu Touch поставляется утилита (работает в режиме командной "
-"строки) ``mirscreencast`, предназначенная для записи снимков экрана в файл. "
-"Идея здесь заключается в том, чтобы транслировать UT-дисплей на удалённый "
-"компьютер по сети или напрямую через adb, чтобы мы могли видеть его в "
-"реальном времени или записать скриншоты в файл."
+"строки) ``mirscreencast`` , предназначенная для записи снимков экрана в "
+"файл. Идея здесь заключается в том, чтобы транслировать UT-дисплей на "
+"удалённый компьютер по сети или напрямую через adb, чтобы мы могли видеть "
+"его в реальном времени или записать скриншоты в файл."
 
 #: ../../userguide/advanceduse/screencasting.rst:9
 msgid "Using adb"
@@ -516,7 +516,7 @@ msgstr "Первоначальный источник: https://wiki.ubuntu.com/T
 
 #: ../../userguide/advanceduse/screencasting.rst:75
 msgid "demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
-msgstr "демо: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
+msgstr "Демо: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
 
 #: ../../userguide/advanceduse/ssh.rst:2
 msgid "Shell access via ssh"

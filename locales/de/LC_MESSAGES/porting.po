@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2020-12-18 15:59+0000\n"
-"Last-Translator: Kai Goldbeck <kaiuwe.goldbeck@mailbox.org>\n"
+"PO-Revision-Date: 2021-01-31 13:13+0000\n"
+"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/de/>\n"
 "Language: de\n"
@@ -197,40 +197,40 @@ msgstr ""
 
 #: ../../porting/Intro.rst:35
 msgid "Android version"
-msgstr ""
+msgstr "Android-Version"
 
 #: ../../porting/Intro.rst:35
 msgid "Halium version"
-msgstr ""
+msgstr "Halium-Version"
 
 #: ../../porting/Intro.rst:35
 msgid "Lineage OS (LOS)"
-msgstr ""
+msgstr "Lineage OS (LOS)"
 
 #: ../../porting/Intro.rst:37
 msgid "7.1"
-msgstr ""
+msgstr "7.1"
 
 #: ../../porting/Intro.rst:37
+#, fuzzy
 msgid "14.1"
-msgstr ""
+msgstr "14.1"
 
 #: ../../porting/Intro.rst:38
-#, fuzzy
 msgid "9.0"
-msgstr "1.0"
+msgstr "9.0"
 
 #: ../../porting/Intro.rst:38
 msgid "16.0"
-msgstr ""
+msgstr "16.0"
 
 #: ../../porting/Intro.rst:44
 msgid "Overview of the porting process"
-msgstr ""
+msgstr "Überblick über den Portierungsprozess"
 
 #: ../../porting/Intro.rst:46 ../../porting/Preparations.rst:2
 msgid "Preparations"
-msgstr ""
+msgstr "Vorbereitungen"
 
 #: ../../porting/Intro.rst:47
 msgid ""
