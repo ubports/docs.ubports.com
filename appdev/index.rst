@@ -29,7 +29,7 @@ Code Editor Integrations
 
     - QtCreator
 
-        Available on top of clickable docker image, `clickable ide qtcreator` command within your project directory will launch a QtCreator instance and auto setup the project for you, you will have code completion and navigation for Ubuntu Touch components as well as run/debug facilities.
+        Available on top of clickable docker image, ``clickable ide qtcreator`` command within your project directory will launch a QtCreator instance and auto setup the project for you, you will have code completion and navigation for Ubuntu Touch components as well as run/debug facilities.
 
 
     - Ubuntu SDK ( Unmaintained )
@@ -41,7 +41,7 @@ Code Editor Integrations
             sudo add-apt-repository ppa:ubuntu-sdk-team/ppa
             sudo apt update && sudo apt dist-upgrade
             sudo apt install ubuntu-sdk
-    sudo reboot # or logout/login
+            sudo reboot # or logout/login
 
 
 
