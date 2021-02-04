@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2020-08-03 22:59+0000\n"
-"Last-Translator: Florian Leeber <flori@bin.org.in>\n"
+"PO-Revision-Date: 2021-02-02 00:03+0000\n"
+"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-systemdev/de/>\n"
 "Language: de\n"
@@ -522,7 +522,7 @@ msgstr ""
 #: ../../systemdev/kernel-pinephone.rst:64
 #: ../../systemdev/mms-infrastructure.rst:49
 msgid "References"
-msgstr ""
+msgstr "Referenzen"
 
 #: ../../systemdev/kernel-pinephone.rst:66
 msgid ""
