@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-01-31 00:03+0000\n"
+"PO-Revision-Date: 2021-02-04 19:27+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/ru/>\n"
@@ -54,14 +54,13 @@ msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
 msgstr "И на MacOS с `Homebrew <https://brew.sh>`_::"
 
 #: ../../userguide/advanceduse/adb.rst:24
-#, fuzzy
 msgid ""
 "For Windows, grab the command-line tools only package from `developer."
 "android.com <https://developer.android.com/studio/index.html#downloads>`_."
 msgstr ""
 "Для работы в операционной системе Windows скачайте пакет программ для работы "
-"в командной строке `здесь <https://developer.android.com/studio/index."
-"html#downloads>`_."
+"в командной строке `здесь <https://developer.android.com/studio/"
+"index.html#downloads>`_."
 
 #: ../../userguide/advanceduse/adb.rst:27
 msgid "Enable developer mode"

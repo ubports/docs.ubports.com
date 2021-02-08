@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-15 09:19-0500\n"
-"PO-Revision-Date: 2020-11-12 16:26+0000\n"
-"Last-Translator: Simon Fritsche <simfrit@gmail.com>\n"
+"PO-Revision-Date: 2021-02-02 00:03+0000\n"
+"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-humanguide/de/>\n"
 "Language: de\n"
@@ -960,7 +960,7 @@ msgstr ""
 
 #: ../../humanguide/design-concepts/typography.rst:23
 msgid "1.5"
-msgstr ""
+msgstr "1.5"
 
 #: ../../humanguide/design-concepts/typography.rst:23
 msgid "27 px"
@@ -996,7 +996,7 @@ msgstr ""
 
 #: ../../humanguide/design-concepts/typography.rst:27
 msgid "2.5"
-msgstr ""
+msgstr "2.5"
 
 #: ../../humanguide/design-concepts/typography.rst:27
 msgid "20 px"
@@ -1069,7 +1069,7 @@ msgstr ""
 
 #: ../../humanguide/design-concepts/units.rst:18
 msgid "Device"
-msgstr ""
+msgstr "Gerät"
 
 #: ../../humanguide/design-concepts/units.rst:18
 msgid "Conversion"
@@ -1331,7 +1331,7 @@ msgstr ""
 
 #: ../../humanguide/other-design-considerations/translations.rst:2
 msgid "Translations"
-msgstr ""
+msgstr "Übersetzungen"
 
 #: ../../humanguide/other-design-considerations/translations.rst:4
 msgid ""

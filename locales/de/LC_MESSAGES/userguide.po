@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2020-12-27 01:03+0000\n"
-"Last-Translator: Oliver <oli-ver@tutanota.de>\n"
+"PO-Revision-Date: 2021-02-02 00:03+0000\n"
+"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/de/>\n"
 "Language: de\n"
@@ -766,7 +766,7 @@ msgid ""
 "Make sure your supported device runs on 16.04 (Anbox doesn't work on 15.04)."
 msgstr ""
 "Stellen Sie sicher, dass Ihr Gerät mit 16.04 läuft (Anbox funktioniert nicht "
-"mit 15.04)"
+"mit 15.04)."
 
 #: ../../userguide/dailyuse/anbox.rst:36
 msgid ""
@@ -856,14 +856,13 @@ msgid "Keep your apps up to date"
 msgstr "Halten Sie Ihre Apps auf dem neuesten Stand"
 
 #: ../../userguide/dailyuse/anbox.rst:83
-#, fuzzy
 msgid ""
 "To keep your apps up to date you can use of F-Droid or ApkTrack. If you want "
 "to install any of the above apps you can find them here:"
 msgstr ""
-"Um Ihre Apps in der letzten Version laufen zu lassen, können Sie F-Droid "
-"oder ApkTrack verwenden. Wenn Sie eine der oben genannten Apps installieren "
-"möchten, finden Sie sie hier:"
+"Um Ihre Apps aktuell zu halten, können Sie F-Droid oder ApkTrack verwenden. "
+"Wenn Sie eine der zuvor genannten Apps installieren möchten, finden Sie sie "
+"hier:"
 
 #: ../../userguide/dailyuse/anbox.rst:85
 msgid "F-Droid: https://f-droid.org/"
@@ -1564,7 +1563,6 @@ msgid "Quick settings"
 msgstr "Schnelleinstellungen"
 
 #: ../../userguide/dailyuse/location.rst:53
-#, fuzzy
 msgid "`Open location quick settings`_, then select ``Location settings...``."
 msgstr ""
 "`Öffnen Sie die Standort Schnelleinstellungen`_, dann wählen Sie "
@@ -2203,7 +2201,7 @@ msgstr ""
 
 #: ../../userguide/install.rst:142
 msgid "Choose \"Firmware Upgrade\" from the drop-down menu."
-msgstr "\"Firmware Upgrade\" aus dem Drop-Down-Menü wählen"
+msgstr "\"Firmware Upgrade\" aus dem Drop-Down-Menü wählen."
 
 #: ../../userguide/install.rst:146
 msgid ""
