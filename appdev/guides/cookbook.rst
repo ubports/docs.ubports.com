@@ -6,8 +6,10 @@ Unofficial resources
 
 In this section you will find links to external resources about creating applications for Ubuntu Touch.
 
-* `Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar/ubuntu-touch-programming-course/details>`__
+* `Ubuntu Touch programming book <https://mimecar.gitbooks.io/ubuntu-touch-programming-course/content/>`__
 * `Application Templates by fulvio <https://github.com/fulvio999/ubports_app_templates>`__
+* `Python examples by pavelprosto <https://forums.ubports.com/topic/5525/python-examples>`__
+* `Python + UT apps quickstart guide by AaronTheIssueGuy <https://aaron.place/blogs/UbPortsPython.html>`__
 
 Playground
 ----------
