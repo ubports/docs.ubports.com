@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-15 09:19-0500\n"
-"PO-Revision-Date: 2021-02-02 00:03+0000\n"
+"PO-Revision-Date: 2021-02-12 13:27+0000\n"
 "Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/de/>\n"
@@ -292,14 +292,12 @@ msgid "Documentation guidelines"
 msgstr "Dokumentationsrichtlinien"
 
 #: ../../contribute/documentation.rst:12
-#, fuzzy
 msgid ""
 "These rules govern how you should write your documentation to avoid problems "
 "with style, format, or linking."
 msgstr ""
-"Diese Regeln beschreiben *wie* die Dokumentation geschrieben werden soll, um "
-"Probleme mit Stil, Formatierung oder Verlinkung zu vermeiden. Dokumente, die "
-"diesen Richtlinien nicht folgen, werden nicht akzeptiert."
+"Diese Regeln beschreiben wie die Dokumentation geschrieben werden soll, um "
+"Probleme mit Stil, Formatierung oder Verlinkung zu vermeiden."
 
 #: ../../contribute/documentation.rst:15
 msgid "Title"
@@ -314,7 +312,6 @@ msgstr ""
 "Inhaltsverzeichnis (linke Randleiste) und im Kopf der Seite angezeigt."
 
 #: ../../contribute/documentation.rst:19
-#, fuzzy
 msgid ""
 "Titles should be \"sentence cased\" rather than \"Title Cased\". For "
 "example::"
@@ -857,7 +854,6 @@ msgid "`Calculator on OpenStore`_"
 msgstr "`Taschenrechner im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:23
-#, fuzzy
 msgid "`calculator-app on GitLab`_"
 msgstr "`Taschenrechner-App auf GitHub`_"
 
@@ -870,9 +866,8 @@ msgid "`Calendar on OpenStore`_"
 msgstr "`Kalender im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:24
-#, fuzzy
 msgid "`calendar-app on GitLab`_"
-msgstr "`Kalender-App auf GitHub`_"
+msgstr "`Kalender-App auf GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:25
 msgid "Clock"
@@ -883,9 +878,8 @@ msgid "`Clock on OpenStore`_"
 msgstr "`Uhr im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:25
-#, fuzzy
 msgid "`clock-app on GitLab`_"
-msgstr "`Uhr-App auf GitHub`_"
+msgstr "`Uhr-App auf GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:26
 msgid "File Manager"
@@ -896,9 +890,8 @@ msgid "`File Manager on OpenStore`_"
 msgstr "`Dateimanager im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:26
-#, fuzzy
 msgid "`filemanager-app on GitLab`_"
-msgstr "`Dateimanager-App auf GitHub`_"
+msgstr "`Dateimanager-App auf GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:27
 msgid "Gallery"
@@ -909,23 +902,20 @@ msgid "`Gallery on OpenStore`_"
 msgstr "`Galerie im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:27
-#, fuzzy
 msgid "`gallery-app on GitLab`_"
-msgstr "`Galerie-App auf GitHub`_"
+msgstr "`Galerie-App auf GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:28
 msgid "Music"
 msgstr "Musik"
 
 #: ../../contribute/preinstalled-apps.rst:28
-#, fuzzy
 msgid "`Music on OpenStore`_"
-msgstr "`Uhr im OpenStore`_"
+msgstr "`Musik im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:28
-#, fuzzy
 msgid "`music-app on GitLab`_"
-msgstr "`Musik-App auf GitHub`_"
+msgstr "`Musik-App auf GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:29
 msgid "Notes"
@@ -936,9 +926,8 @@ msgid "`Notes on OpenStore`_"
 msgstr "`Notizen im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:29
-#, fuzzy
 msgid "`notes-app on GitLab`_"
-msgstr "`Notizen-App auf GitHub`_"
+msgstr "`Notizen-App auf GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:30
 msgid "OpenStore"
@@ -949,9 +938,8 @@ msgid "`OpenStore... on OpenStore`_"
 msgstr "`OpenStore... im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:30
-#, fuzzy
 msgid "`openstore-app on GitLab`_"
-msgstr "`OpenStore-App auf GitHub`_"
+msgstr "`OpenStore-App auf GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:31
 msgid "Terminal"
@@ -962,9 +950,8 @@ msgid "`Terminal on OpenStore`_"
 msgstr "`Terminal im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:31
-#, fuzzy
 msgid "`terminal-app on GitLab`_"
-msgstr "`Terminal-App auf GitHub`_"
+msgstr "`Terminal-App auf GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:32
 msgid "UBports Welcome"
@@ -975,37 +962,33 @@ msgid "`UBports Welcome on OpenStore`_"
 msgstr "`UBports Welcome im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:32
-#, fuzzy
 msgid "`ubports-app on GitLab`_"
-msgstr "`UBports-App auf GitHub`_"
+msgstr "`UBports-App auf GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:33
 msgid "Weather"
 msgstr "Wetter"
 
 #: ../../contribute/preinstalled-apps.rst:33
-#, fuzzy
 msgid "`Weather on OpenStore`_"
-msgstr "`Galerie im OpenStore`_"
+msgstr "`Wetter-App im OpenStore`_"
 
 #: ../../contribute/preinstalled-apps.rst:33
-#, fuzzy
 msgid "`weather-app on GitLab`_"
-msgstr "`Wetter-App auf GitHub`_"
+msgstr "`Wetter-App auf GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:37
 msgid "Other preinstalled apps"
 msgstr "Andere vorinstallierte Apps"
 
 #: ../../contribute/preinstalled-apps.rst:39
-#, fuzzy
 msgid ""
 "The following applications are preinstalled in Ubuntu Touch but are not "
 "considered core apps. Most of the time these projects must be updated with "
 "the system because they use many system services which do not necessarily "
 "have a stable API."
 msgstr ""
-"Die folgenden Anwendungen sind in Ubuntu Touch vorinstalliert, gelten aber "
+"Die folgenden Anwendungen sind bei Ubuntu Touch vorinstalliert, gelten aber "
 "nicht als Core-Apps. Meistens müssen diese Projekte mit dem System "
 "aktualisiert werden, da sie viele Systemdienste nutzen, die nicht unbedingt "
 "eine stabile API haben."
@@ -1028,9 +1011,8 @@ msgid "Contacts (`address-book-app on GitHub`_)"
 msgstr "Kontakte (`Adressbuch-App auf GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:47
-#, fuzzy
 msgid "Camera (`camera-app on GitLab`_)"
-msgstr "Kamera (`Kamera-App auf GitHub`_)"
+msgstr "Kamera (`Kamera-App auf GitLab`_)"
 
 #: ../../contribute/preinstalled-apps.rst:48
 msgid "External Drives (`ciborium on GitHub`_)"
@@ -1082,7 +1064,6 @@ msgid "Smoke testing"
 msgstr "Rauchtest"
 
 #: ../../contribute/quality-assurance.rst:9
-#, fuzzy
 msgid ""
 "To test the core functionality of the operating system, we have compiled `a "
 "set of standardized tests <https://gitlab.com/ubports/teams/qa/project-"
@@ -1092,11 +1073,12 @@ msgid ""
 "were introduced."
 msgstr ""
 "Um die Kernfunktionalität des Betriebssystems zu testen, haben wir `eine "
-"Liste standardisierter Tests <https://nc.ubports.com/s/3RnAI7tYzB2PMXs>`_. "
-"Führe diese Tests auf Deinem Gerät aus, um :doc:`Bugs und Rückfälle zu "
-"finden und zu melden <bugreporting>`. Normalerweise werden sie vor einem "
-"neuen Release auf allen Geräten durchgeführt, um sicherzustellen, dass keine "
-"neuen Probleme dazugekommen sind."
+"Liste standardisierter Tests <https://gitlab.com/ubports/teams/qa/"
+"project-management/raw/master/QA-Plan-Template.ots>`_. Führe diese Tests auf "
+"Deinem Gerät aus, um :doc:`Bugs und Rückfälle zu finden und zu melden "
+"<bugreporting>`. Normalerweise werden sie vor einem neuen Release auf allen "
+"Geräten durchgeführt, um sicherzustellen, dass keine neuen Probleme "
+"dazugekommen sind."
 
 #: ../../contribute/quality-assurance.rst:12
 msgid "Confirming bug reports"
@@ -1219,7 +1201,6 @@ msgstr ""
 "partizipieren, wie sie wollen."
 
 #: ../../contribute/translations.rst:6
-#, fuzzy
 msgid ""
 "We are working hard to meet that goal, and you can help as well. You decide "
 "how much time you can put into translation. From minutes to hours, "
@@ -1263,7 +1244,6 @@ msgid ""
 msgstr ""
 
 #: ../../contribute/translations.rst:19
-#, fuzzy
 msgid "Methods of Translation"
 msgstr "Übersetzerwerkzeuge"
 
@@ -1280,7 +1260,6 @@ msgid ""
 msgstr ""
 
 #: ../../contribute/translations.rst:24
-#, fuzzy
 msgid ""
 "Editor: Translation is done by changing *.po* files with the editor of your "
 "choice, and a GitHub/GitLab account. The *.po*/*.ts* files for each project "
@@ -1290,21 +1269,25 @@ msgid ""
 "apps repo generally by opening a merge request/pull request."
 msgstr ""
 "Für fortgeschrittene Nutzer: Mit dem Editor der Wahl, um direkt an .po-"
-"Dateien zu arbeiten, und ein GitHub-Konto. Die .po-Dateien für jedes Projekt "
-"sind im jeweiligen Repository in `unserer GitHub-Organisation <https://"
-"github.com/ubports>`_."
+"Dateien zu arbeiten, und ein GitHub/GitLab-Konto. Die *.po*/*.ts*-Dateien "
+"für jedes Projekt sind im jeweiligen Repository in `unserer GitLab "
+"organization <https://gitlab.com/ubports/apps>_ oder auf unserer `GitHub-"
+"Organisation <https://github.com/ubports>`_. Nach der Übersetzung sendet der "
+"Übersetzer neue Übersetzungen üblicherweise an das Repository der App indem "
+"er einen merge oder pull-request öffnet."
 
 #: ../../contribute/translations.rst:25
-#, fuzzy
 msgid ""
 "Team translation: We also have  a `Translation Forum <https://forums.ubports."
 "com/category/39/translations>`_ to discuss translating Ubuntu Touch and its "
 "core apps. Some projects are using Telegram or matrix groups too, and some "
 "teams are still using the Ubuntu Launchpad framework."
 msgstr ""
-"Ein `Übersetzer-Forum <https://forums.ubports.com/category/39/"
-"translations>`_ zum Diskutieren von Übersetzungen von Ubuntu Touch und "
-"seinen Core-Apps."
+"Übersetzungs-Team: Wir haben auch ein `Übersetzer-Forum "
+"<https://forums.ubports.com/category/39/translations>`_ zum Diskutieren von "
+"Übersetzungen von Ubuntu Touch und seinen Core-Apps. Einige Projekte nutzen "
+"auch Telegram oder Matrix-Gruppen und einige Teams nutzen noch das Ubuntu "
+"Launchpad Framework."
 
 #: ../../contribute/translations.rst:27
 msgid ""
@@ -1332,15 +1315,14 @@ msgid "UBports Weblate"
 msgstr "UBports Weblate"
 
 #: ../../contribute/translations.rst:37
-#, fuzzy
 msgid ""
 "You can go to `UBports Weblate <https://translate.ubports.com/projects/>`_, "
 "click on \"Dashboard\" button, go to a project, and start making anonymous "
 "suggestions without being registered. If you want to save your translations, "
 "you must be logged in."
 msgstr ""
-"Auf `UBports Weblate <https://translate.ubports.com/>`_ per Klick auf "
-"\"Dashboard\", zum Projekt gehen und ohne Registrierung anonym Vorschläge "
+"Auf `UBports Weblate <https://translate.ubports.com/>`_ per Klick auf \""
+"Dashboard\", zum Projekt gehen und ohne Registrierung anonym Vorschläge "
 "machen. Sollen die Übersetzungen direkt gespeichert werden, muss man "
 "eingeloggt sein."
 
@@ -1373,23 +1355,23 @@ msgid ""
 "Once you're logged in, the site is self-explanatory and you'll find there "
 "all the options and customization you can do."
 msgstr ""
-"Sobald eingeloggt, ist die Seite recht selbsterklärend und man findet leicht "
-"alle Optionen und mögliche Anpassungen."
+"Sobald eingeloggt, ist die Seite selbsterklärend und man findet leicht alle "
+"Optionen und mögliche Anpassungen."
 
 #: ../../contribute/translations.rst:46
-#, fuzzy
 msgid ""
 "Now, get on with it. The first step is to search if your language already "
 "exists in the project of your choice. If your language is not available for "
 "a specific project, you can add it yourself."
 msgstr ""
 "Jetzt kann es los gehen. Der erste Schritt ist zu schauen, ob die Sprache im "
-"jeweiligen Projekt bereits existiert."
+"jeweiligen Projekt bereits existiert. Falls eine Sprache für das "
+"ensprechende Projekt noch nicht verfügbar ist, kann man diese selbst "
+"hinzufügen."
 
 #: ../../contribute/translations.rst:49
-#, fuzzy
 msgid ".po/.ts File Editor"
-msgstr "Editor für .po-Dateien"
+msgstr "Editor für .po/.ts-Dateien"
 
 #: ../../contribute/translations.rst:51
 msgid ""
@@ -1405,17 +1387,21 @@ msgid ""
 "weblate. This could break the whole translation exchange process with "
 "weblate."
 msgstr ""
+"Man darf **niemals** *.po* Dateien in einem Commit zu Projekten hinzufügen "
+"die weblate nutzen. Das kann den kompletten Übersetzungsprozess mit Weblate "
+"unbrauchbar machen."
 
 #: ../../contribute/translations.rst:56
-#, fuzzy
 msgid ""
 "As was said up above, you need a file editor of your choice and a GitHub/"
 "GitLab account to translate *.po*/*.ts* files directly. Idealy you do have "
 "`clickable <http://clickable.bhdouglass.com/en/latest/>`_ set up and know "
 "how to build an app."
 msgstr ""
-"Wie oben erwähnt, wird ein Editor der freien Wahl benötigt und ein GitHub-"
-"Konto, um .po-Dateien direkt zu übersetzen."
+"Wie oben erwähnt, wird ein Editor der freien Wahl benötigt und ein GitHub/"
+"GitLab-Konto, um *.po*/*.ts*-Dateien direkt zu übersetzen. Idealerweise hat "
+"man `Clickable <http://clickable.bhdouglass.com/en/latest/>`_ eingerichtet "
+"und weiss wie man ein App baut."
 
 #: ../../contribute/translations.rst:58
 #, fuzzy
@@ -1440,42 +1426,46 @@ msgstr ""
 
 #: ../../contribute/translations.rst:63
 msgid "How to proceed:"
-msgstr ""
+msgstr "Die nächsten Schritte:"
 
 #: ../../contribute/translations.rst:65
 msgid "fork the apps repo into your GitHub or GitLab account"
-msgstr ""
+msgstr "erstelle einen Fork des Apps Repo in deinen GitHub oder GitLab Account"
 
 #: ../../contribute/translations.rst:66
 msgid "clone the repo locally or use GitLab's online editor"
-msgstr ""
+msgstr "klone das Repo lokal oder benutzt den GitLab OnlineEditor"
 
 #: ../../contribute/translations.rst:67
 msgid "(optional) create a new branch for the translation"
-msgstr ""
+msgstr "(Optional) Man erstellt einen neuen Branch für die Übersetzung"
 
 #: ../../contribute/translations.rst:68
 msgid ""
 "build the app using clickable to get up-to-date *.pot*/*.ts* template files"
 msgstr ""
+"baue die App mit Hilfe von Clickable um die aktuellen *.pot*/*.ts* Templates "
+"zu erhalten"
 
 #: ../../contribute/translations.rst:69
 msgid "update the desired *.po*/*.ts* language file(s) from the template"
 msgstr ""
 
 #: ../../contribute/translations.rst:70
-#, fuzzy
 msgid "translate all strings"
-msgstr "Übersetzungen"
+msgstr "übersetze alle Zeichenketten"
 
 #: ../../contribute/translations.rst:71
 msgid "build and install the app on your device and test the translations"
 msgstr ""
+"baue und installiere die App auf deinem Gerät und überprüfe die Übersetzungen"
 
 #: ../../contribute/translations.rst:72
 msgid ""
 "(optional) repeat steps 6. and 7. until you are satisfied with your work"
 msgstr ""
+"(Optional) Wiederhole die Schtitte 6. und 7. bis du mit deiner Arbeit "
+"zufrieden bist"
 
 #: ../../contribute/translations.rst:73
 msgid ""

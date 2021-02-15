@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-02-04 19:27+0000\n"
+"PO-Revision-Date: 2021-02-08 08:27+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/ru/>\n"
@@ -1849,28 +1849,30 @@ msgstr ""
 "источнике (карта памяти, настольный компьютер, ноутбук и т.д.)."
 
 #: ../../userguide/install.rst:9
-#, fuzzy
 msgid ""
 "You can `Download the UBports Installer from GitHub <https://github.com/"
 "ubports/ubports-installer/releases/latest>`_. The following packages are "
 "available:"
 msgstr ""
-"Перейдите на страницу загрузки <https://github.com/ubports/ubports-installer/"
-"releases/latest> `_ и скачайте подходящую версию программы-установщика:"
+"Перейдите на страницу `загрузки <https://github.com/ubports/"
+"ubports-installer/releases/latest> `_ и скачайте подходящую версию "
+"инсталятора. Доступны следующие пакеты:"
 
 #: ../../userguide/install.rst:11
-#, fuzzy
 msgid ""
 "`Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_: "
 "``ubports-installer-<version-number>.exe``"
-msgstr "Windows: ``ubports-installer-<version-number>.exe``"
+msgstr ""
+"ОС ` Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_: "
+"``ubports-installer-<version-number>.exe``"
 
 #: ../../userguide/install.rst:12
-#, fuzzy
 msgid ""
 "`macOS <https://devices.ubuntu-touch.io/installer/?package=dmg>`_: ``ubports-"
 "installer-<version-number>.dmg``"
-msgstr "macOS: ``ubports-installer-<version-number>.dmg``"
+msgstr ""
+"ОС `macOS <https://devices.ubuntu-touch.io/installer/?package=dmg>`_: "
+"``ubports-installer-<version-number>.dmg``"
 
 #: ../../userguide/install.rst:13
 msgid ""
@@ -1881,22 +1883,20 @@ msgstr ""
 "?package=deb>`_: ``ubports-installer-<version-number>.deb``"
 
 #: ../../userguide/install.rst:14
-#, fuzzy
 msgid ""
 "`Other Linux distributions (snap) <https://snapcraft.io/ubports-"
 "installer>`_: ``ubports-installer-<version-number>.snap``"
 msgstr ""
-"Другие дистрибутивы Linux: ``ubports-installer-<version-number>.snap`` или "
-"``ubports-installer-<version-number>.AppImage``"
+"`Другие дистрибутивы Linux: (snap) <https://snapcraft.io/ubports-"
+"installer>`_: ``ubports-installer-<version-number>.snap``"
 
 #: ../../userguide/install.rst:15
-#, fuzzy
 msgid ""
 "`Other Linux distributions (AppImage) <https://devices.ubuntu-touch.io/"
 "installer/?package=appimage>`_: ``ubports-installer-<version-number>."
 "AppImage``"
 msgstr ""
-"Другие дистрибутивы Linux: ``ubports-installer-<version-number>.snap`` или "
+"`Другие дистрибутивы Linux: ``ubports-installer-<version-number>.snap`` или "
 "``ubports-installer-<version-number>.AppImage``"
 
 #: ../../userguide/install.rst:17
@@ -2101,10 +2101,11 @@ msgstr ""
 "минимум до 40 процентов."
 
 #: ../../userguide/install.rst:119
-#, fuzzy
 msgid ""
 "Download the Ubuntu Touch ROM for your device and extract the zip files:"
-msgstr "Скачайте Ubuntu Touch ROM для вашего мобильного устройства:"
+msgstr ""
+"Скачайте Ubuntu Touch ROM для вашего мобильного устройства и распакуйте "
+"zip-архив:"
 
 #: ../../userguide/install.rst:121
 msgid ""
@@ -2145,13 +2146,12 @@ msgstr ""
 "`Meizu MX4  <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
 
 #: ../../userguide/install.rst:127
-#, fuzzy
 msgid ""
 "Download the latest version of `SP flash tool <https://spflashtool.com/"
 "download/>`_ (*aka MTK flash tool*)."
 msgstr ""
-"Вам так же понадобится `последняя версия утилитыl <https://spflashtool.com/"
-"download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
+"Скачайте последнюю версию программы `SP flash tool <https://spflashtool.com/"
+"download/>`_ (*также известна под названием MTK flash tool*)."
 
 #: ../../userguide/install.rst:128
 msgid "Extract the zip files"
@@ -2231,7 +2231,6 @@ msgstr ""
 "устройством."
 
 #: ../../userguide/install.rst:154
-#, fuzzy
 msgid ""
 "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Wait "
 "till all the progress bars ended."
@@ -2258,15 +2257,14 @@ msgstr ""
 "попытку, начиная с шага 4."
 
 #: ../../userguide/install.rst:160
-#, fuzzy
 msgid ""
 "Congratulations! Your device will now boot into a super old version of "
 "Ubuntu Touch. You can now use the UBports Installer to install an updated "
 "version."
 msgstr ""
 "Поздравляем! Теперь на Вашем мобильном устройстве установлена операционная "
-"система Ubuntu Touch. Используйте программу UBports Installer для завершения "
-"установки."
+"система Ubuntu Touch. Запустите программу UBports Installer для установки "
+"обновлений."
 
 #~ msgid "Now start the ssh server::"
 #~ msgstr "Теперь запустите сервер ssh::"

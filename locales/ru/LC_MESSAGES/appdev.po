@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 09:34-0500\n"
-"PO-Revision-Date: 2021-01-31 00:03+0000\n"
+"PO-Revision-Date: 2021-02-15 19:45+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -35,7 +35,7 @@ msgid ""
 "import, export and sharing."
 msgstr ""
 "В Ubuntu Touch возможности приложении сильно ограничены. Обмен файлами между "
-"ними осуществляется через Content Hub,  это часть операционной системы, "
+"ними осуществляется через Content Hub, это часть операционной системы, "
 "которая занимается импортом, экспортом и совместным использованием файлов."
 
 #: ../../appdev/guides/contenthub.rst:14
@@ -53,16 +53,14 @@ msgstr ""
 "есть несколько способов совместного доступа к файлам:"
 
 #: ../../appdev/guides/contenthub.rst:18
-#, fuzzy
 msgid ""
 "``ContentHandler.Source`` (The selected app will provide a file to be "
 "imported)"
 msgstr ""
 "``ContentHandler.Source``(Выбранное приложение будет источником "
-"импортированного файла)"
+"импортируемого файла)"
 
 #: ../../appdev/guides/contenthub.rst:19
-#, fuzzy
 msgid ""
 "``ContentHandler.Destination`` (The selected app will be the destination for "
 "the exported file)"
@@ -596,8 +594,8 @@ msgid ""
 "a real world example."
 msgstr ""
 "Команда ``find_package`` определяет путь к каталогу include как "
-"``SOMELIBRARY_INCLUDE_DIRS``, а  готовые бинарный файлы библиотеки как `` "
-"SOMELIBRARY_LIBS``. Мы используем эти переменные  с командами "
+"``SOMELIBRARY_INCLUDE_DIRS``, а готовые бинарные файлы библиотеки как "
+"``SOMELIBRARY_LIBS``. Мы используем эти переменные с командами "
 "``include_directories`` и ``target_link_libraries``. Пример того, как это "
 "работает можно посмотреть в файле `Camera Scanner ImageProcessing "
 "CMakeLists.txt <https://github.com/jonnius/camera-scanner/blob/master/"
@@ -608,6 +606,8 @@ msgid ""
 "At this point you should already be able to test with Clickable's desktop "
 "mode running ``clickable desktop``."
 msgstr ""
+"На этом этапе вы уже должны иметь возможность протестировать рабочий стол в "
+"режиме ``clickable desktop``."
 
 #: ../../appdev/guides/dependencies.rst:111
 msgid "Deployment"
@@ -618,6 +618,8 @@ msgid ""
 "If you linked the library statically, you can skip this step, as the "
 "library's binary is already inside your app's binary."
 msgstr ""
+"Если Вы связали библиотеку статически, то этот шаг можно пропустить, так как "
+"бинарный файл библиотеки уже находится внутри бинарного файла приложения."
 
 #: ../../appdev/guides/dependencies.rst:114
 msgid ""
@@ -626,6 +628,10 @@ msgid ""
 "You should see an error message telling you which shared object file was "
 "missing."
 msgstr ""
+"Узнайте, какие общие файлы объектов (``* .so``) нужно отправить. Это можно "
+"сделать, запустив приложение на своем устройстве через ``clickable && "
+"clickable logs``. Должно появиться сообщение об ошибке, сообщающее, какой "
+"общий файл объекта отсутствует."
 
 #: ../../appdev/guides/dependencies.rst:116
 msgid ""
@@ -638,6 +644,15 @@ msgid ""
 "error messages you can ignore). In general, ``/usr/lib``  is a good bet when "
 "looking for the shared object files."
 msgstr ""
+"Найдите путь к файлам общих объектов. Если библиотека создана с помощью  "
+"clickable, то эти файлы находятся в каталоге установки библиотеки. По "
+"умолчанию, папка находится внутри каталога сборки библиотеки (например, ``"
+"build/arm-linux-gnueabihf/opencv/install``). Для готовых библиотек запустите "
+"команду ``clickable run \"find / -name 'libSomething.so'\"`` (заменив "
+"libSomething.so на файл, который ищете). Это выведет на экранпуть к файлу ("
+"вместе с некоторыми сообщениями об ошибках, которые можно игнорировать). В "
+"общем, при поиске файлов общих объектов лучше всего использовать ``/usr/"
+"lib``."
 
 #: ../../appdev/guides/dependencies.rst:118
 #, fuzzy
@@ -656,12 +671,19 @@ msgid ""
 "built with Clickable. The asterisk in ``.so*`` helps to catch symbolic links "
 "along with the actual library which are used to point to the current version."
 msgstr ""
+"Строки выше содержат два примера. В первом примере устанавливается "
+"библиотека созданная с помощью Clickable. Звездочка в названии ``.so*`` "
+"помогает перехватывать символические ссылки вместе с самой библиотекой, "
+"которая нужна для указания на текущую версию."
 
 #: ../../appdev/guides/dependencies.rst:138
 msgid ""
 "Depending on the library, you might need to ship some additional data. In "
 "that case consult the library's readme or install instructions."
 msgstr ""
+"В зависимости от библиотеки, может быть потребуется отправить некоторые "
+"дополнительные данные. В этом случае обратитесь к файлу readme для "
+"библиотеки или инструкциям по установке."
 
 #: ../../appdev/guides/dependencies.rst:140
 msgid ""
@@ -680,7 +702,7 @@ msgid ""
 "imported data from the Content Hub."
 msgstr ""
 "В предыдущем руководстве мы немного узнали о том, как работает Content Hub. "
-"В этом руководстве мы увидим, как работает `` URLdispatcher`` и как "
+"В этом руководстве мы увидим, как работает ``URLdispatcher`` и как "
 "обрабатывать импортированные данные из Content Hub."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:10
@@ -840,6 +862,8 @@ msgid ""
 "Let's check if ``Qt.application.arguments`` is not empty and if not, if any "
 "argument matches our URI format."
 msgstr ""
+"Давайте проверим, не пустой ли параметр ``Qt.application.arguments``, и если "
+"нет, то соответствует ли какой-либо аргумент нашему формату URI."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:135
 msgid ""
@@ -848,6 +872,10 @@ msgid ""
 "com/ubports-linphone/linphone-simple/-/blob/master/linphone.desktop.in#L7>`_ "
 "file of the app."
 msgstr ""
+"Не забудьте проверить, что% u (для получения 1 URL-адреса) или% U (для "
+"получения 1 или более URL-адресов) присутствует в строке ``Exec`` в файла "
+"приложения `.desktop <https://gitlab.com/ubports-linphone/linphone-simple/-/"
+"blob/master/linphone.desktop.in#L7>`_ ."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:138
 msgid "What happens if more than one app has the same URL type defined?"
@@ -1554,6 +1582,8 @@ msgstr ""
 #: ../../appdev/guides/user-metrics.rst:24
 msgid "Your app's apparmor file must include ``usermetrics`` in the policy:"
 msgstr ""
+"Файл apparmor приложения должен включать в политику параметр ``usermetrics`` "
+":"
 
 #: ../../appdev/guides/user-metrics.rst:35
 #, fuzzy
@@ -1604,16 +1634,16 @@ msgid "``metric.circleMetric = \"New Metric Message\"``"
 msgstr "``metric.circleMetric = \"Новое сообщение метрики\"``"
 
 #: ../../appdev/guides/user-metrics.rst:74
-#, fuzzy
 msgid "We then tell the lock screen to update the metric."
 msgstr ""
-"Затем мы сообщаем экрану блокировки о необходимости обновления метрики в "
-"ноль миллисекунд, т.е. немедленно"
+"Затем мы сообщаем экрану блокировки о том, что необходимо обновить метрику."
 
 #: ../../appdev/guides/user-metrics.rst:76
 msgid ""
 "Metric ID [dot] update (specific amount to set if included in the format)"
 msgstr ""
+"Обновление Metric ID [dot] (определённое количество, которое необходимо "
+"установить, если оно включено в формат)"
 
 #: ../../appdev/guides/user-metrics.rst:78
 msgid "``metric.update(0)``"
@@ -1624,6 +1654,8 @@ msgid ""
 "(Note: In this example, ``0`` is arbitrary since the metric value doesn't "
 "include a counter)"
 msgstr ""
+"(Примечание: в этом примере ``0``является произвольным значением, поскольку "
+"значение метрики не включает в себя счетчик)"
 
 #: ../../appdev/guides/user-metrics.rst:82
 msgid ""
@@ -1641,12 +1673,10 @@ msgstr ""
 "умолчанию - 0."
 
 #: ../../appdev/guides/user-metrics.rst:87
-#, fuzzy
 msgid "How do User Metrics work?"
 msgstr "Как работает пользовательская метрика?"
 
 #: ../../appdev/guides/user-metrics.rst:89
-#, fuzzy
 msgid "User Metrics are made up of two \"formats\":"
 msgstr "Метрика пользователя состоит из двух \"форматов\""
 
@@ -1659,26 +1689,24 @@ msgid "metrics/messages for tomorrow (``emptyFormat``)"
 msgstr "метрики сообщения для следующих суток (``emptyFormat``)"
 
 #: ../../appdev/guides/user-metrics.rst:94
-#, fuzzy
 msgid ""
 "The value of ``emptyFormat`` is what displays on the lock screen when no "
 "value has been stored in ``format``. In order to display a new value of "
 "``format`` the metric must be updated."
 msgstr ""
-"Значение `` emptyFormat`` - это то, что отображается на экране блокировки, "
+"Значение ``emptyFormat`` - это то, что отображается на экране блокировки, "
 "если в `` format`` не было сохранено никакого значения. Чтобы отобразить "
-"новое значение `` format``, метрику нужно обновить с помощью `` metric."
-"update (x) `` (где x - это количество миллисекунд до обновления). Метрика "
-"будет сбрасываться каждый день обратно к значению, хранящемуся в `` "
-"emptyFormat``."
+"новое значение `` format``, метрику нужно обновить с помощью ``metric.update "
+"(x) `` (где x - это количество миллисекунд до обновления). Метрика будет "
+"сбрасываться каждый день обратно к значению, хранящемуся в ``emptyFormat``."
 
 #: ../../appdev/guides/user-metrics.rst:96
 msgid "There are two options for updating the metric:"
-msgstr ""
+msgstr "Есть два способа обновления метрики:"
 
 #: ../../appdev/guides/user-metrics.rst:98
 msgid "Set the metric to a specific amount:"
-msgstr ""
+msgstr "Задайте в метрике определённое значение:"
 
 #: ../../appdev/guides/user-metrics.rst:100
 msgid ""
@@ -1687,24 +1715,32 @@ msgid ""
 "The counter value can be included in the ``format`` setting by using ``%1``. "
 "e.g. ``format: \"%1 buttons pressed today\"``"
 msgstr ""
+"metricID.update (x) (где x - это число типа double, устанавливаемое для "
+"значения счетчика). metricID - это идентификатор, указанный в элементе "
+"Metric. Значение счетчика можно включить с помощью опции``format``с помощью "
+"переменной ``%1``. Например ``format: \"% 1 кнопки, которые были нажаты "
+"сегодня\" ``"
 
 #: ../../appdev/guides/user-metrics.rst:102
 msgid "Increment the metric:"
-msgstr ""
+msgstr "Увеличьте метрику:"
 
 #: ../../appdev/guides/user-metrics.rst:104
 msgid ""
 "``metricID.increment(x)`` (where x is the amount to add to the current "
 "counter)"
 msgstr ""
+"``metricID.increment(x)`` (где x - количество, которое нужно добавить к "
+"текущему счетчику)"
 
 #: ../../appdev/guides/user-metrics.rst:106
 msgid ""
 "The metric will reset back to the value stored in ``emptyFormat`` each day."
 msgstr ""
+"Показатель будет сбрасываться до значения, сохраняемого в ``emptyFormat`` "
+"каждый день."
 
 #: ../../appdev/guides/user-metrics.rst:108
-#, fuzzy
 msgid ""
 "Applications make use of User Metrics by setting and updating the \"formats"
 "\" whenever a certain event takes place. e.g. When you press send in "
@@ -1717,15 +1753,16 @@ msgstr ""
 "метрик пользователя, выполняя определенный код всякий раз, когда происходит "
 "определенное событие. Например, когда вы отправляете сообщение в Telegram, "
 "или когда вы получаете телефонный звонок. Приложение может хранить данные "
-"для манипуляции, но обычно данные хранятся в системе (`/ var / lib / "
-"usermetrics <https://github.com/ubports/libusermetrics/tree/xenial/doc/"
-"pages>` _) ."
+"для манипуляции, но обычно данные хранятся в системе (`/var/lib/usermetrics "
+"<https://github.com/ubports/libusermetrics/tree/xenial/doc/pages>` _) ."
 
 #: ../../appdev/guides/user-metrics.rst:111
 msgid ""
 "(See this `blog post <https://daker.me/2013/11/adding-usermetrics-to-your-"
 "app-on-ubuntu-touch.html>`_ for a simple example)"
 msgstr ""
+"(Простой пример можно посмотреть `в этой статье <https://daker.me/2013/11/"
+"adding-usermetrics-to-your-app-on-ubuntu-touch.html>`_)"
 
 #: ../../appdev/guides/user-metrics.rst:114
 msgid "Limitations and wonders"
@@ -1748,7 +1785,6 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/guides/user-metrics.rst:119
-#, fuzzy
 msgid ""
 "In the case of the `nCounter`_ app. I wanted to count the number of days, "
 "but since the metric \"resets\" each day, that presents a problem. I created "
@@ -1760,7 +1796,7 @@ msgstr ""
 "Особенность приложения `nCounter`_. Хочется посчитать количество дней, но "
 "поскольку метрика «сбрасывается» каждый день, это представляет проблему. "
 "Можно создать workaround, который обновляет метрику каждый раз, когда "
-"приложение открывается. Таким образом, `` emptyFormat`` (по умолчанию) "
+"приложение открывается. Таким образом, ``emptyFormat`` (по умолчанию) "
 "говорит пользователю открыть приложение. Это, однако, почти полностью "
 "противоречит цели метрики пользователя, за исключением аккуратного "
 "напоминания о статистике за день."
@@ -1792,14 +1828,14 @@ msgid ""
 msgstr ""
 "Ограничение доступа к приложениям является частью концепции безопасности "
 "Ubuntu Touch. Обмен данными между приложениями возможен только в "
-"соответствии с политиками AppArmor, в основном с использованием: ref: "
-"`ContentHub <contenthub>`. При этом приложения могут только читать и "
+"соответствии с политиками AppArmor, в основном с использованием :ref:`"
+"ContentHub <contenthub>`. При этом приложения могут только читать и "
 "записывать файлы, расположенные в одном из трех каталогов, определенных для "
 "приложения, которые описаны в этом руководстве."
 
 #: ../../appdev/guides/writeable-dirs.rst:7
 msgid "Standard Paths"
-msgstr "Стандартные директории"
+msgstr "Стандартные каталоги"
 
 #: ../../appdev/guides/writeable-dirs.rst:8
 msgid ""
@@ -1810,8 +1846,8 @@ msgid ""
 "html>`_ functions."
 msgstr ""
 "Кроме записи файлов в каталоги, приложение так же может записывать сообщения "
-"отладки в файл журнала приложения, расположенный по адресу `` /home/phablet/."
-"cache/upstart/application-click-<fullappname>_<appname>_<version > .log``. "
+"отладки в файл журнала приложения, расположенный по адресу ``/home/phablet/."
+"cache/upstart/application-click-<fullappname>_<appname>_<version>.log``. "
 "Чтобы добавить сообщения в файл журнала, используйте функции `Qt debug "
 "<https://doc.qt.io/qt-5/qdebug.html>` _."
 
@@ -1968,9 +2004,9 @@ msgid ""
 "publicly shared on the official app store `OpenStore <https://open-store."
 "io>`__"
 msgstr ""
-"Приложения поставляются в виде :ref:`Click <click>`-пакета и могут быть "
-"размещены в официальном магазине приложений `OpenStore <https://open-store."
-"io>`__."
+"Приложения поставляются в виде :ref:`Click <click>`-пакетов и могут "
+"размещаться в официальном магазине приложений `OpenStore <https://open-"
+"store.io>`__"
 
 #: ../../appdev/index.rst:25
 msgid "Code Editor Integrations"
@@ -2028,8 +2064,8 @@ msgid ""
 "<https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`."
 msgstr ""
 "После того как приложение будет скомпилировано, опубликуйте его в магазине "
-"приложений ` OpenStore <https://open-store.io/> `__ согласно рекомендациям :"
-"ref:` Руководства по публикации <publishing> `."
+"приложений `OpenStore <https://open-store.io/> `_ согласно рекомендациям "
+":ref:`Руководства по публикации <publishing> `."
 
 #: ../../appdev/index.rst:70
 msgid "Documentation"
@@ -2892,7 +2928,7 @@ msgid ""
 "Help users navigate between your apps and drive their journey with the URL "
 "dispatcher."
 msgstr ""
-"Помогает пользователям перемещаться между приложениями и сетью  с помощью "
+"Помогает пользователям перемещаться между приложениями и сетью с помощью "
 "диспетчера URL."
 
 #: ../../appdev/platform/index.rst:19

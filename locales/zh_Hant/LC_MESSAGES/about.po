@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-29 13:44-0500\n"
-"PO-Revision-Date: 2019-01-15 06:05+0000\n"
+"PO-Revision-Date: 2021-02-15 19:45+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-about/zh_Hant/>\n"
@@ -17,38 +17,33 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../../about/introduction.rst:2
 msgid "Introduction"
 msgstr "介紹"
 
 #: ../../about/introduction.rst:4
-#, fuzzy
 msgid ""
 "This is the documentation for the UBports project. Our goal is to create a "
 "Free and open-source (GPL if possible) mobile operating system that "
 "converges and respects your freedom."
-msgstr ""
-"這是 UBports 專案的文檔。我們的目標是建立一個開源 (GPL 如果可能的話) 移動作業"
-"系統，融合並尊重您的自由。"
+msgstr "這是 UBports 專案的文檔。我們的目標是建立一個開源 (如果可能的話會是 GPL ) 移動作業系統，融合並尊重您的自由。"
 
 #: ../../about/introduction.rst:7
 msgid "About UBports"
 msgstr "關於 UBports"
 
 #: ../../about/introduction.rst:9
-#, fuzzy
 msgid ""
 "The UBports project was founded by Marius Gripsgard in 2015 and in its "
 "infancy was a place where developers could share ideas and educate each "
 "other in hopes of bringing the Ubuntu Touch platform to more mobile devices."
 msgstr ""
-"UBports 專案是由 Marius Gripsgard 在2015年所建立的，在其起步階段，開發者可以"
-"在這裡交流想法和互相教學，希望將 Ubuntu Touch 平臺帶到越來越多的設備。"
+"UBports 專案是由 Marius Gripsgard 在2015年所建立的，在其起步階段，開發者可以在這裡交流想法和互相教學，希望將 Ubuntu "
+"Touch 平臺帶到越來越多的設備。"
 
 #: ../../about/introduction.rst:11
-#, fuzzy
 msgid ""
 "After Canonical suddenly announced `their plans to terminate support of "
 "Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-"
@@ -56,17 +51,16 @@ msgid ""
 "and its sister projects began work on the open-source code, maintaining and "
 "expanding its possibilities for the future."
 msgstr ""
-"在Canonical 於2017年4月突然宣佈 \"他們終止對 Ubuntu Touch 的支<https://"
-"insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-rather-than-"
-"phone-and-convergence/>\"_ 2017年4月，UBports 及其姊妹專案開始開發開放原始"
-"碼，維護和擴大其未來的可能性。"
+"在Canonical 於2017年4月突然宣佈 \"他們終止對 Ubuntu Touch 的支<https://insights.ubuntu.com/"
+"2017/04/05/"
+"growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>\"_ "
+"2017年4月，UBports 及其姊妹專案開始開發開放原始碼，維護和擴大其未來的可能性。"
 
 #: ../../about/introduction.rst:14
 msgid "About the Documentation"
-msgstr "關於文檔"
+msgstr "關於文件"
 
 #: ../../about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This documentation is always improving thanks to the members of the UBports "
 "community. It is written in ReStructuredText and converted into this "
@@ -76,10 +70,9 @@ msgid ""
 "out the :doc:`Documentation contribution document </contribute/"
 "documentation>`."
 msgstr ""
-"由於 UBports 社區的成員，此文檔始終在改進。它是用 Re 結構文本編寫的，並透過 "
-"\"Sphinx <http://www.sphinx-doc.org/en/stable/>\"_，\"重新共同標記<http://"
-"recommonmark.readthedocs.io/en/latest/>\"_，和 \"閱讀文檔<https://"
-"readthedocs.io>\"_。您可以通過查看:doc: \"開始提供說明 </contribute/"
+"由於 UBports 社區的成員，此文檔始終在改進。它是用 Re 結構文本編寫的，並透過 \"Sphinx <http://www.sphinx-doc."
+"org/en/stable/>\"_，\"重新共同標記<http://recommonmark.readthedocs.io/en/latest/>\""
+"_，和 \"閱讀文檔<https://readthedocs.io>\"_。您可以通過查看:doc: \"開始提供說明 </contribute/"
 "documentation>\"。"
 
 #: ../../about/introduction.rst:18
@@ -88,9 +81,8 @@ msgid ""
 "4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_) "
 "license. Please give attribution to \"The UBports Community\"."
 msgstr ""
-"所有文件均根據 Creative Commons Attribution ShareAlike 4.0 獲得許可執照 "
-"(\"CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>\"_) 。 請將"
-"歸屬於 “UBports 社區”。"
+"所有文件均根據 Creative Commons Attribution ShareAlike 4.0 獲得許可執照 (\"CC-BY-SA 4.0 "
+"<https://creativecommons.org/licenses/by-sa/4.0/>\"_) 。 請將歸屬於 “UBports 社群”。"
 
 #: ../../about/introduction.rst:21
 msgid "Attribution"
@@ -102,20 +94,18 @@ msgid ""
 "Documentation <http://docs.godotengine.org/en/stable/>`_, attribution to "
 "Juan Linietsky, Ariel Manzur and the Godot community."
 msgstr ""
-"這些文檔在很大程度上是參照 \"Godot 引擎\" 的文檔 <http://docs.godotengine."
-"org/en/stable/>\"_，歸屬於 Juan Linietsky，Ariel Manzur 和 Godot 社區。"
+"這些文檔在很大程度上是參照 \"Godot 引擎\" 的文檔 <http://docs.godotengine.org/en/stable/>\"_，"
+"歸屬於 Juan Linietsky，Ariel Manzur 和 Godot 社群。"
 
 #: ../../about/process/branch-naming.rst:2
 msgid "Branch-naming convention"
-msgstr "分支命名規定"
+msgstr "分支命名規範"
 
 #: ../../about/process/branch-naming.rst:4
 msgid ""
 "Our branch-naming conventions ensure that software can be built by our CI "
 "and tested easily by other developers."
-msgstr ""
-"我們的分支命名規定是確保軟體可以由我們的 CI 構建，並可由其他開發人員輕鬆進行"
-"測試。"
+msgstr "我們的分支命名規範是確保軟體可以由我們的 CI 構建，並可由其他開發人員輕鬆進行測試。"
 
 #: ../../about/process/branch-naming.rst:6
 msgid ""
@@ -358,14 +348,12 @@ msgid ""
 msgstr "**開發中** ：一個補丁正在開發中，通常意味著開發人員被分配到該問題。"
 
 #: ../../about/process/issue-tracking.rst:41
-#, fuzzy
 msgid ""
 "**Quality Assurance**: The patch is completed and has passed initial "
 "testing. The QA team will now review it and provide feedback. If problems "
 "are found, the issue is moved back to \"Accepted\"."
 msgstr ""
-"**品質保證 (QA) ** ：修補程式已完成並已通過初步測試。QA 團隊現在將對其進行審"
-"查並提供回報。如果發現問題，問題將移回 \"已接受\"。"
+"**品質保證 (QA) ** ：修補程式已完成並已通過初步測試。QA 團隊現在將對其進行審查並提供回報。如果發現問題，問題將移回 \"已接受\"。"
 
 #: ../../about/process/issue-tracking.rst:42
 msgid ""
@@ -379,7 +367,6 @@ msgstr ""
 "順利，則套件含在穩定通道的下一個版本中。"
 
 #: ../../about/process/issue-tracking.rst:43
-#, fuzzy
 msgid ""
 "**None (removed from the project)**: If the issue is open and labeled \"help "
 "wanted\", community contributions are required to resolve the issue. If it's "
@@ -387,9 +374,8 @@ msgid ""
 "channel (a comment on the issue should link to the patch) or the issue has "
 "been rejected (labeled \"wontfix\")."
 msgstr ""
-"**無 (從專案中刪除) ** ：如果問題是打開的, 並標記為 \"需要幫助\"，則需要社區"
-"捐款來解決問題。如果它已關閉，這意味著在穩定通道上已發佈修補程式 (有關該問題"
-"的注釋應連結到該修補程式)，或者問題已被拒絕 (標記為 \"不修復\")。"
+"**無 (從專案中刪除) ** ：如果問題是打開的, 並標記為 \"需要幫助\"，則需要社區捐款來解決問題。如果它已關閉，"
+"這意味著在穩定通道上已發佈修補程式 (有關該問題的注釋應連結到該修補程式)，或者問題已被拒絕 (標記為 \"不修復\")。"
 
 #: ../../about/process/issue-tracking.rst:46
 msgid "Labels"
@@ -461,7 +447,7 @@ msgid ""
 "**good first issue**: The report contains instructions or hints required to "
 "fix it. It is an excellent place for someone new to learn about the project "
 "by fixing a real issue."
-msgstr ""
+msgstr "**很好的第一個問題**：該報告包含修復該問題所需的說明以及提示。 對於新手來說，透過解決實際問題來學習該項目是一個絕佳的地方。"
 
 #: ../../about/process/issue-tracking.rst:67
 msgid ""
@@ -606,7 +592,6 @@ msgstr ""
 "的非關鍵問題，也可以標示為 **好問題**。"
 
 #: ../../about/process/issue-tracking.rst:120
-#, fuzzy
 msgid ""
 "Once a *developer* is assigned and starts working on the issue, it is moved "
 "to \"In Development\". As soon as they have something to show for, the issue "
@@ -614,21 +599,18 @@ msgid ""
 "the QA team. If necessary, the developer will provide hints on how to test "
 "his patch in a comment on the issue."
 msgstr ""
-"一旦 *開發人員* 被分配並開始處理該問題，它將被移至 “開發中”。 一旦他們有了展"
-"示的東西，問題就會被關閉，並自動轉移到 “品質保證 (QA)”，以獲得 QA 團隊的回"
-"應。 如有必要，開發人員將在有關問題的評論中提供有關如何測試其補丁的提示。"
+"一旦 *開發人員* 被分配並開始處理該問題，它將被移至 “開發中”。 一旦他們有了展示的東西，問題就會被關閉，並自動轉移到 “品質保證 (QA)”，"
+"以獲得 QA 團隊的回應。 如有必要，開發人員將在有關問題的評論中提供有關如何測試其補丁的提示。"
 
 #: ../../about/process/issue-tracking.rst:121
-#, fuzzy
 msgid ""
 "The *QA-Team* tests the fix on all devices and provides feedback to the "
 "developer. If problems are found, the issue is re-opened and goes back to "
 "\"Accepted\", else it’s moved to \"Release Candidate\" to be included in the "
 "next release."
 msgstr ""
-"*QA 團隊* 在所有設備上測試修復程式，並向開發人員提供回應。如果發現問題，問題"
-"將重新打開並返回到 \"已接受\"，否則它將移動到 \"最終測試 (RC)\"，包含在下一個"
-"版本中。"
+"*QA 團隊* 在所有設備上測試修復程式，並向開發人員提供回應。如果發現問題，問題將重新打開並返回到 \"已接受\"，否則它將移動到 \"最終測試 "
+"(RC)\"，包含在下一個版本中。"
 
 #: ../../about/process/issue-tracking.rst:122
 msgid ""
