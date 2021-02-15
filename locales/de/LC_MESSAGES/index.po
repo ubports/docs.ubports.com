@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"POT-Creation-Date: 2020-10-15 09:19-0500\n"
 "PO-Revision-Date: 2019-11-10 16:36+0000\n"
 "Last-Translator: Kai Goldbeck <kaiuwe.goldbeck@mailbox.org>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
@@ -19,6 +19,46 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.8\n"
 "Generated-By: Babel 2.5.3\n"
+
+#: ../../index.rst:25
+msgid "About"
+msgstr "Über"
+
+#: ../../index.rst:34
+msgid "User Guide"
+msgstr "Benutzerhandbuch"
+
+#: ../../index.rst:44
+msgid "Contribute"
+msgstr "Mitwirken"
+
+#: ../../index.rst:52
+msgid "Development"
+msgstr "Entwicklung"
+
+#: ../../index.rst:61
+msgid "Porting"
+msgstr "Portierung"
+
+#: ../../index.rst:73
+msgid "Click Packages"
+msgstr ""
+
+#: ../../index.rst:73
+msgid "Ubuntu UI-Toolkit"
+msgstr ""
+
+#: ../../index.rst:73
+msgid "Clickable"
+msgstr ""
+
+#: ../../index.rst:73
+msgid "Halium"
+msgstr ""
+
+#: ../../index.rst:73
+msgid "Platform"
+msgstr "Plattform"
 
 #: ../../index.rst:2
 msgid "Welcome to the UBports documentation!"
@@ -40,15 +80,13 @@ msgstr ""
 
 #: ../../index.rst:8
 msgid ""
-"On this website you find instructions how to install Ubuntu Touch on your "
-"mobile phone, user guides and detailed documentation on all system "
-"components. If this is your first time here, please consider reading our :"
-"doc:`introduction <about/introduction>`."
+"On this website you find guides to :doc:`install Ubuntu Touch on your mobile "
+"phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/dailyuse/"
+"index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:`port Ubuntu "
+"Touch to an Android handset <porting/Intro>` and :doc:`learn more about "
+"system components <systemdev/index>`. If this is your first time here, "
+"please consider reading our :doc:`introduction <about/introduction>`."
 msgstr ""
-"Auf dieser Website finden Sie eine Anleitung zur Installation von Ubuntu "
-"Touch auf Ihrem Mobiltelefon, Benutzerhandbücher und eine detaillierte "
-"Dokumentation aller Systemkomponenten. Wenn Sie das erste Mal hier sind, "
-"lesen Sie bitte unsere :doc:`Einführung <about/introduction>`."
 
 #: ../../index.rst:10
 msgid ""
@@ -89,33 +127,28 @@ msgid "`Română <https://docs.ubports.com/ro/latest/>`_"
 msgstr "`Rumänsich <https://docs.ubports.com/ro/latest/>`_"
 
 #: ../../index.rst:20
+msgid "`Русский <https://docs.ubports.com/ru/latest>`_"
+msgstr ""
+
+#: ../../index.rst:21
 msgid "`Türkçe <https://docs.ubports.com/tr/latest/>`_"
 msgstr "`Türkisch <https://docs.ubports.com/tr/latest/>`_"
 
-#: ../../index.rst:21
+#: ../../index.rst:22
 msgid "`Español <https://docs.ubports.com/es/latest/>`_"
 msgstr "`Spanisch <https://docs.ubports.com/es/latest/>`_"
 
 #: ../../index.rst:23
-msgid "About"
-msgstr "Über"
+msgid "`Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_"
+msgstr ""
 
-#: ../../index.rst:32
-msgid "User Guide"
-msgstr "Benutzerhandbuch"
-
-#: ../../index.rst:42
-msgid "Contribute"
-msgstr "Mitwirken"
-
-#: ../../index.rst:50
-msgid "Development"
-msgstr "Entwicklung"
-
-#: ../../index.rst:58
-msgid "Porting"
-msgstr "Portierung"
-
-#: ../../index.rst:65
-msgid "Platform"
-msgstr "Plattform"
+#~ msgid ""
+#~ "On this website you find instructions how to install Ubuntu Touch on your "
+#~ "mobile phone, user guides and detailed documentation on all system "
+#~ "components. If this is your first time here, please consider reading our :"
+#~ "doc:`introduction <about/introduction>`."
+#~ msgstr ""
+#~ "Auf dieser Website finden Sie eine Anleitung zur Installation von Ubuntu "
+#~ "Touch auf Ihrem Mobiltelefon, Benutzerhandbücher und eine detaillierte "
+#~ "Dokumentation aller Systemkomponenten. Wenn Sie das erste Mal hier sind, "
+#~ "lesen Sie bitte unsere :doc:`Einführung <about/introduction>`."

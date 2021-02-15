@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-30 10:25-0600\n"
+"POT-Creation-Date: 2020-10-15 09:19-0500\n"
 "PO-Revision-Date: 2019-01-15 01:04+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
@@ -19,6 +19,46 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 3.1.1\n"
 
+#: ../../index.rst:25
+msgid "About"
+msgstr "關於"
+
+#: ../../index.rst:34
+msgid "User Guide"
+msgstr "用戶指南"
+
+#: ../../index.rst:44
+msgid "Contribute"
+msgstr "貢獻"
+
+#: ../../index.rst:52
+msgid "Development"
+msgstr "發展"
+
+#: ../../index.rst:61
+msgid "Porting"
+msgstr "移植"
+
+#: ../../index.rst:73
+msgid "Click Packages"
+msgstr ""
+
+#: ../../index.rst:73
+msgid "Ubuntu UI-Toolkit"
+msgstr ""
+
+#: ../../index.rst:73
+msgid "Clickable"
+msgstr ""
+
+#: ../../index.rst:73
+msgid "Halium"
+msgstr ""
+
+#: ../../index.rst:73
+msgid "Platform"
+msgstr "平臺"
+
 #: ../../index.rst:2
 msgid "Welcome to the UBports documentation!"
 msgstr "歡迎來到 UBports 文檔!"
@@ -28,20 +68,31 @@ msgid "Welcome to the official documentation of the UBports project!"
 msgstr "歡迎來到 UBports 專案的正式文檔!"
 
 #: ../../index.rst:6
-msgid "UBports develops the mobile phone operating system Ubuntu Touch. Ubuntu Touch is a mobile operating system focused on ease of use, privacy, and convergence."
-msgstr "UBports 開發的手機作業系統 Ubuntu Touch。Ubuntu Touch 是一個專注於易用性、隱私性和融合性的移動作業系統。"
+msgid ""
+"UBports develops the mobile phone operating system Ubuntu Touch. Ubuntu "
+"Touch is a mobile operating system focused on ease of use, privacy, and "
+"convergence."
+msgstr ""
+"UBports 開發的手機作業系統 Ubuntu Touch。Ubuntu Touch 是一個專注於易用性、隱"
+"私性和融合性的移動作業系統。"
 
 #: ../../index.rst:8
-msgid "On this website you find instructions how to install Ubuntu Touch on your mobile phone, user guides and detailed documentation on all system components. If this is your first time here, please consider reading our :doc:`introduction <about/introduction>`."
+msgid ""
+"On this website you find guides to :doc:`install Ubuntu Touch on your mobile "
+"phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/dailyuse/"
+"index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:`port Ubuntu "
+"Touch to an Android handset <porting/Intro>` and :doc:`learn more about "
+"system components <systemdev/index>`. If this is your first time here, "
+"please consider reading our :doc:`introduction <about/introduction>`."
 msgstr ""
-"在這個網站上，您可以找到有關如何在手機上安裝 Ubuntu Touch 的說明，用戶指南以及所有系統組件的詳細文檔。 "
-"如果這是你第一次來這裡，請考慮閱讀我們的：doc:`introduction <about/introduction>`。"
 
 #: ../../index.rst:10
-msgid "If you want to help improving this documentation, :doc:`the Documentation contribute page <contribute/documentation>` will get you started."
+msgid ""
+"If you want to help improving this documentation, :doc:`the Documentation "
+"contribute page <contribute/documentation>` will get you started."
 msgstr ""
-"如果您想幫助改進本文檔，請閱讀 :doc:`the Documentation contribute page <contribute/"
-"documentation>` 將幫助您開始。"
+"如果您想幫助改進本文檔，請閱讀 :doc:`the Documentation contribute page "
+"<contribute/documentation>` 將幫助您開始。"
 
 #: ../../index.rst:12
 msgid "You may view this documentation in the following languages:"
@@ -72,33 +123,27 @@ msgid "`Română <https://docs.ubports.com/ro/latest/>`_"
 msgstr "\"Română (羅馬尼亞語) <https://docs.ubports.com/ro/latest/>\"_"
 
 #: ../../index.rst:20
+msgid "`Русский <https://docs.ubports.com/ru/latest>`_"
+msgstr ""
+
+#: ../../index.rst:21
 msgid "`Türkçe <https://docs.ubports.com/tr/latest/>`_"
 msgstr "\"Türkçe (土耳其語) <https://docs.ubports.com/tr/latest/>\"_"
 
-#: ../../index.rst:21
+#: ../../index.rst:22
 msgid "`Español <https://docs.ubports.com/es/latest/>`_"
 msgstr "\"Español (西班牙語) <https://docs.ubports.com/es/latest/>\"_"
 
 #: ../../index.rst:23
-msgid "About"
-msgstr "關於"
+msgid "`Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_"
+msgstr ""
 
-#: ../../index.rst:32
-msgid "User Guide"
-msgstr "用戶指南"
-
-#: ../../index.rst:42
-msgid "Contribute"
-msgstr "貢獻"
-
-#: ../../index.rst:50
-msgid "Development"
-msgstr "發展"
-
-#: ../../index.rst:58
-msgid "Porting"
-msgstr "移植"
-
-#: ../../index.rst:65
-msgid "Platform"
-msgstr "平臺"
+#~ msgid ""
+#~ "On this website you find instructions how to install Ubuntu Touch on your "
+#~ "mobile phone, user guides and detailed documentation on all system "
+#~ "components. If this is your first time here, please consider reading our :"
+#~ "doc:`introduction <about/introduction>`."
+#~ msgstr ""
+#~ "在這個網站上，您可以找到有關如何在手機上安裝 Ubuntu Touch 的說明，用戶指南"
+#~ "以及所有系統組件的詳細文檔。 如果這是你第一次來這裡，請考慮閱讀我們的："
+#~ "doc:`introduction <about/introduction>`。"

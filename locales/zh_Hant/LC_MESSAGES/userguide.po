@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2019-01-21 14:32+0000\n"
+"PO-Revision-Date: 2021-02-15 19:45+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-userguide/zh_Hant/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
 msgid "Shell access via adb"
@@ -52,13 +52,12 @@ msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
 msgstr "在 MacOS 上使用 \"Homebrew <https://brew.sh>\"_::"
 
 #: ../../userguide/advanceduse/adb.rst:24
-#, fuzzy
 msgid ""
 "For Windows, grab the command-line tools only package from `developer."
 "android.com <https://developer.android.com/studio/index.html#downloads>`_."
 msgstr ""
-"對於 Windows，只需從這裡獲取 \"命令行工具包 <https://developer.android.com/"
-"studio/index.html#downloads>\"_。"
+"對於 Windows，只需從這裡獲取 \"命令行工具包 <https://developer.android.com/studio/"
+"index.html#downloads>\"_。"
 
 #: ../../userguide/advanceduse/adb.rst:27
 msgid "Enable developer mode"
@@ -110,13 +109,12 @@ msgid "Additional Adb commands::"
 msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:51
-#, fuzzy
 msgid ""
 "For more ADB commands refer to the `official documentation <https://"
 "developer.android.com/studio/command-line/adb>`_."
 msgstr ""
-"對於 Windows，只需從這裡獲取 \"命令行工具包 <https://developer.android.com/"
-"studio/index.html#downloads>\"_。"
+"有關更多 ADB 命令，請參考官方文檔 \"官方文件 <https://developer.android.com/studio/"
+"index.html#downloads>\"_。"
 
 #: ../../userguide/advanceduse/adb.rst:54
 msgid "Add hardware IDs"

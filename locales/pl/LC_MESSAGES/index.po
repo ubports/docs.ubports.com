@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-30 10:25-0600\n"
-"PO-Revision-Date: 2019-01-09 21:00+0000\n"
-"Last-Translator: Daniel Frańczak <danielfranczak5@wp.pl>\n"
+"POT-Creation-Date: 2020-10-15 09:19-0500\n"
+"PO-Revision-Date: 2021-02-10 10:15+0000\n"
+"Last-Translator: Carlod <carlod@disroot.org>\n"
 "Language-Team: Polish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-index/pl/>\n"
 "Language: pl\n"
@@ -18,7 +18,47 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.11.3\n"
+
+#: ../../index.rst:25
+msgid "About"
+msgstr "Informacje"
+
+#: ../../index.rst:34
+msgid "User Guide"
+msgstr "Podręcznik użytkownika"
+
+#: ../../index.rst:44
+msgid "Contribute"
+msgstr "Wnieś wkład"
+
+#: ../../index.rst:52
+msgid "Development"
+msgstr "Rozwój"
+
+#: ../../index.rst:61
+msgid "Porting"
+msgstr "Portowanie"
+
+#: ../../index.rst:73
+msgid "Click Packages"
+msgstr ""
+
+#: ../../index.rst:73
+msgid "Ubuntu UI-Toolkit"
+msgstr ""
+
+#: ../../index.rst:73
+msgid "Clickable"
+msgstr ""
+
+#: ../../index.rst:73
+msgid "Halium"
+msgstr ""
+
+#: ../../index.rst:73
+msgid "Platform"
+msgstr "Platforma"
 
 #: ../../index.rst:2
 msgid "Welcome to the UBports documentation!"
@@ -35,20 +75,18 @@ msgid ""
 "convergence."
 msgstr ""
 "UBports rozwija system operacyjny telefonu komórkowego Ubuntu Touch. Ubuntu "
-"Touch to mobilny system operacyjny, który skupia się na łatwości "
+"Touch to mobilny system operacyjny, który skupia się na prostocie "
 "użytkowania, prywatności i konwergencji."
 
 #: ../../index.rst:8
 msgid ""
-"On this website you find instructions how to install Ubuntu Touch on your "
-"mobile phone, user guides and detailed documentation on all system "
-"components. If this is your first time here, please consider reading our :"
-"doc:`introduction <about/introduction>`."
+"On this website you find guides to :doc:`install Ubuntu Touch on your mobile "
+"phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/dailyuse/"
+"index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:`port Ubuntu "
+"Touch to an Android handset <porting/Intro>` and :doc:`learn more about "
+"system components <systemdev/index>`. If this is your first time here, "
+"please consider reading our :doc:`introduction <about/introduction>`."
 msgstr ""
-"Na tej stronie znajdziesz instrukcje instalowania Ubuntu Touch na telefonie "
-"komórkowym, instrukcje obsługi i szczegółową dokumentację wszystkich "
-"składników systemu. Jeśli jest to Twój pierwszy raz, rozważ przeczytanie "
-"naszego: doc: `introduction <about / introduction>`."
 
 #: ../../index.rst:10
 msgid ""
@@ -87,33 +125,28 @@ msgid "`Română <https://docs.ubports.com/ro/latest/>`_"
 msgstr "`Rumuński <https://docs.ubports.com/ro/latest/>`_"
 
 #: ../../index.rst:20
+msgid "`Русский <https://docs.ubports.com/ru/latest>`_"
+msgstr ""
+
+#: ../../index.rst:21
 msgid "`Türkçe <https://docs.ubports.com/tr/latest/>`_"
 msgstr "`Turecki <https://docs.ubports.com/tr/latest/>`_"
 
-#: ../../index.rst:21
+#: ../../index.rst:22
 msgid "`Español <https://docs.ubports.com/es/latest/>`_"
 msgstr "`Hiszpański <https://docs.ubports.com/es/latest/>`_"
 
 #: ../../index.rst:23
-msgid "About"
-msgstr "Informacje"
+msgid "`Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_"
+msgstr ""
 
-#: ../../index.rst:32
-msgid "User Guide"
-msgstr "Podręcznik użytkownika"
-
-#: ../../index.rst:42
-msgid "Contribute"
-msgstr "Wnieś wkład"
-
-#: ../../index.rst:50
-msgid "Development"
-msgstr "Rozwój"
-
-#: ../../index.rst:58
-msgid "Porting"
-msgstr "Przenoszenie"
-
-#: ../../index.rst:65
-msgid "Platform"
-msgstr "Platforma"
+#~ msgid ""
+#~ "On this website you find instructions how to install Ubuntu Touch on your "
+#~ "mobile phone, user guides and detailed documentation on all system "
+#~ "components. If this is your first time here, please consider reading our :"
+#~ "doc:`introduction <about/introduction>`."
+#~ msgstr ""
+#~ "Na tej stronie znajdziesz instrukcje instalowania Ubuntu Touch na "
+#~ "telefonie komórkowym, instrukcje obsługi i szczegółową dokumentację "
+#~ "wszystkich składników systemu. Jeśli jest to Twój pierwszy raz, rozważ "
+#~ "przeczytanie naszego: doc: `introduction <about / introduction>`."
