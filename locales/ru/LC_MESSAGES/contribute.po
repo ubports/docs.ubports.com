@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-15 09:19-0500\n"
-"PO-Revision-Date: 2021-02-10 20:44+0000\n"
+"PO-Revision-Date: 2021-02-21 20:38+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/ru/>\n"
@@ -320,7 +320,6 @@ msgstr ""
 "(левая боковая панель) и в верхней части страницы."
 
 #: ../../contribute/documentation.rst:19
-#, fuzzy
 msgid ""
 "Titles should be \"sentence cased\" rather than \"Title Cased\". For "
 "example::"
@@ -628,8 +627,7 @@ msgid ""
 msgstr ""
 "Комплект документации можно скомпилировать, запустив скрипт ``./build.sh`` в "
 "корневой директории этого репозитория. Скрипт также создаст виртуальное "
-"рабочее окружение для компиляции в директории ``~ /ubportsdocsenv``, если "
-"его еще нет."
+"рабочее окружение в директории ``~/ubportsdocsenv``, если его еще нет."
 
 #: ../../contribute/documentation.rst:161
 msgid ""

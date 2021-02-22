@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 09:34-0500\n"
-"PO-Revision-Date: 2020-11-30 11:26+0000\n"
-"Last-Translator: Anne Onyme <anneonyme017@netcourrier.com>\n"
+"PO-Revision-Date: 2021-02-15 23:56+0000\n"
+"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/fr/>\n"
 "Language: fr\n"
@@ -729,7 +729,6 @@ msgstr ""
 "cela :"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:92
-#, fuzzy
 msgid ""
 "In the main qml file, we need to add some code to know what to do with the "
 "dispatched URL. Let's check how Linphone app manages this adding a "
@@ -739,15 +738,15 @@ msgid ""
 msgstr ""
 "Dans le fichier QML principal, nous devons ajouter du code pour savoir quoi "
 "faire avec le lien expédié. Commencez par ajouter un `élément d'argument "
-"<https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main."
-"qml#L189>`_ qui gère le lien , tel que cela est fait par exemple dans "
-"`l'application Linphone <https://open-store.io/app/linphone.cibersheep>`_. "
-"Nous ajoutons également une `connexion au gestionnaire de liens <https://"
-"gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L200>`_ "
-"avec un élément de connexion ayant comme cible ``UriHandler``."
+"<https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/"
+"Main.qml#L189>`_ qui gère le lien , tel que cela est fait par exemple dans `"
+"l'application Linphone <https://open-store.io/app/linphone.cibersheep>`_. "
+"Nous ajoutons également une `connexion au gestionnaire de liens "
+"<https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/"
+"Main.qml#L212>`_ avec un élément de connexion ayant comme cible "
+"``UriHandler``."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:109
-#, fuzzy
 msgid ""
 "This code will manage an URI in the form ``linphone://sip:xxx@xxx.xx`` when "
 "the app is opened. But what do we need to do to handle this link when the "
@@ -758,7 +757,6 @@ msgstr ""
 "lorsque l'application est fermée ?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:111
-#, fuzzy
 msgid ""
 "We need to add a little bit `extra code <https://gitlab.com/ubports-linphone/"
 "linphone-simple/blob/master/qml/Main.qml#L76>`_ that will cover two cases: "
@@ -825,7 +823,6 @@ msgstr ""
 "d'Ubuntu Touch <https://mimecar.gitbook.io/qt-course/>`__."
 
 #: ../../appdev/guides/index.rst:9
-#, fuzzy
 msgid ""
 "If you are interested in helping create developer guides check out our "
 "`GitLab Project <https://gitlab.com/ubports/apps/development-resources>`__."
@@ -962,7 +959,6 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:165
-#, fuzzy
 msgid "Push Notification Object"
 msgstr "Notifications poussées"
 
@@ -1005,7 +1001,6 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:230
 #: ../../appdev/guides/pushnotifications.rst:233
 #: ../../appdev/guides/pushnotifications.rst:241
-#, fuzzy
 msgid "string"
 msgstr "Partage"
 
@@ -1073,7 +1068,6 @@ msgid "queuing this new one."
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:185
-#, fuzzy
 msgid "data"
 msgstr "Données de l'application"
 
@@ -1091,13 +1085,11 @@ msgid "it to send any data to the app."
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:195
-#, fuzzy
 msgid "notification"
 msgstr "Notifications poussées"
 
 #: ../../appdev/guides/pushnotifications.rst:195
 #: ../../appdev/guides/pushnotifications.rst:201
-#, fuzzy
 msgid "Notification"
 msgstr "Notifications poussées"
 
@@ -1122,9 +1114,8 @@ msgid "tag"
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "The tag of the push notification."
-msgstr "Notifications poussées"
+msgstr "Notifications poussées."
 
 #: ../../appdev/guides/pushnotifications.rst:208
 msgid "sound"
@@ -1187,9 +1178,8 @@ msgid "A JSON object, which defines how to display the emblem"
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "counter."
-msgstr "Comptes en ligne"
+msgstr "Comptes en ligne."
 
 #: ../../appdev/guides/pushnotifications.rst:221
 msgid "card"
@@ -1225,7 +1215,6 @@ msgid "Longer text, defaults to empty."
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:235
-#, fuzzy
 msgid "actions"
 msgstr "location"
 
@@ -1317,7 +1306,6 @@ msgid "Vibrate"
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:261
-#, fuzzy
 msgid "pattern"
 msgstr "Les modèles d'URL"
 
@@ -1347,7 +1335,6 @@ msgid "Emblem-Counter"
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:275
-#, fuzzy
 msgid "count"
 msgstr "Comptes en ligne"
 
@@ -1364,7 +1351,6 @@ msgid "Set to true to show the counter, or false to hide it."
 msgstr ""
 
 #: ../../appdev/guides/user-metrics.rst:2
-#, fuzzy
 msgid "User Metrics"
 msgstr "usermetrics"
 
@@ -1683,7 +1669,6 @@ msgid "Using Standard Paths in C++"
 msgstr "Utilisation des chemins standards en C++"
 
 #: ../../appdev/guides/writeable-dirs.rst:31
-#, fuzzy
 msgid ""
 "The Qt header ``QStandardPaths`` provides the app's writable locations in C+"
 "+:"
@@ -1721,7 +1706,6 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/index.rst:6
-#, fuzzy
 msgid ""
 "If you have questions that aren't answered in the docs or want to chat with "
 "other Ubuntu Touch developers? Join our `app dev Telegram group <https://t."
@@ -1736,7 +1720,6 @@ msgstr ""
 "development>`_."
 
 #: ../../appdev/index.rst:9
-#, fuzzy
 msgid "Getting Started"
 msgstr "Pour commencer"
 
@@ -1760,7 +1743,6 @@ msgstr ""
 "applications à partir de la ligne de commande avec Clickable."
 
 #: ../../appdev/index.rst:13
-#, fuzzy
 msgid ""
 "Ubuntu Touch supports two kind of apps. :ref:`Native apps <nativeapp>` are "
 "apps with interfaces made using QML or HTML with their behavior defined in "
@@ -1859,10 +1841,8 @@ msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
 msgstr "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
 
 #: ../../appdev/index.rst:75
-#, fuzzy
 msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
-msgstr ""
-"`Lisez la documentation <https://docs.ubuntu.com/phone/en/platform/>`__"
+msgstr "`Lisez la documentation <https://docs.ubuntu.com/phone/en/platform/>`__"
 
 #: ../../appdev/index.rst:77
 msgid ""
@@ -1933,13 +1913,12 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/nativeapp/index.rst:12
-#, fuzzy
 msgid ""
 "You can use `Clickable <http://clickable.bhdouglass.com/en/latest/>`_ to "
 "facilitate Packaging, deploying, publishing and tests ."
 msgstr ""
 "L'interface en ligne de commande `Clickable <http://clickable.bhdouglass.com/"
-"en/latest/>`_"
+"en/latest/>`_."
 
 #: ../../appdev/nativeapp/index.rst:14
 msgid ""
@@ -2630,7 +2609,6 @@ msgid "Security and app isolation"
 msgstr "Sécurité et confinement d'application"
 
 #: ../../appdev/platform/click.rst:62
-#, fuzzy
 msgid ""
 "All Ubuntu apps are confined respecting AppArmor access control mechanism "
 "(see `Application Confinement <https://wiki.ubuntu.com/SecurityTeam/"
@@ -2722,7 +2700,6 @@ msgstr ""
 "`Lisez la documentation <https://docs.ubuntu.com/phone/en/platform/>`__"
 
 #: ../../appdev/platform/index.rst:24
-#, fuzzy
 msgid "Packaging your app"
 msgstr "Déboguer votre application Web"
 
@@ -2987,17 +2964,16 @@ msgstr ""
 "navigateur."
 
 #: ../../appdev/webapp/guide.rst:71
-#, fuzzy
 msgid ""
 "Tip: Make sure to fully specify the subdomain in your starting URL, that is, "
 "use http://www.ubuntu.com instead of www.ubuntu.com. Not specifying the "
 "subdomain would create an ambiguous URL and thus introduces security "
 "concerns."
 msgstr ""
-"Astuce: veillez à bien spécifier le sous-domaine dans votre URL de départ, "
-"c'est-à-dire, utilisez http://www.ubuntu.com au lieu de www.ubuntu.com. Ne "
+"Astuce : veillez à bien spécifier le sous-domaine dans votre URL de départ, "
+"c'est-à-dire, utilisez http ://www.ubuntu.com au lieu de www.ubuntu.com. Ne "
 "pas spécifier le sous-domaine créerait une URL ambiguë et introduirait donc "
-"des soucis de sécurité. Des modèles avec joker plus complexes"
+"des soucis de sécurité. Des modèles avec joker plus complexes."
 
 #: ../../appdev/webapp/guide.rst:75
 msgid "More complex wildcard patterns"
@@ -3045,7 +3021,6 @@ msgid "Adding a specific subdomain"
 msgstr "Ajouter un sous-domaine spécifique"
 
 #: ../../appdev/webapp/guide.rst:95
-#, fuzzy
 msgid ""
 "Many URLs have one or more subdomains. (For example, in the following, "
 "\"developer\" is the subdomain: developer.ubuntu.com.) You can allow access "
@@ -3191,7 +3166,6 @@ msgid "Browser data containment"
 msgstr "Confinement des données du navigateur"
 
 #: ../../appdev/webapp/guide.rst:167
-#, fuzzy
 msgid ""
 "The webapp experience is contained and isolated from the browser data point "
 "of view. That is webapps do not access data from any other installed "
@@ -3202,7 +3176,7 @@ msgstr ""
 "données du navigateur. C'est-à-dire que les applications web n'accèdent pas "
 "aux données de tout autre navigateur installé, comme l'historique, les "
 "cookies et ainsi de suite. Les autres navigateurs du système n'accèdent pas "
-"aux données de l'application web. Stockage"
+"aux données de l'application web."
 
 #: ../../appdev/webapp/guide.rst:170
 msgid "Storage"

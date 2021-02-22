@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-02-08 08:27+0000\n"
+"PO-Revision-Date: 2021-02-22 08:32+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/ru/>\n"
@@ -72,7 +72,7 @@ msgstr "Далее Вам нужно включить режим разрабо�
 
 #: ../../userguide/advanceduse/adb.rst:31
 msgid "Reboot your device"
-msgstr "Перезагрузите ваше устройство"
+msgstr "Перезагрузите устройство"
 
 #: ../../userguide/advanceduse/adb.rst:32
 msgid ""
@@ -1834,8 +1834,12 @@ msgstr ""
 "Установить Ubuntu Touch очень просто, у нас ушло много работы на то, чтобы "
 "сделать процесс установки удобным для всех пользователей. Программа UBports "
 "Installer - это прекрасный графический инструмент для установки Ubuntu Touch "
-"на `поддерживаемое устройство <https://ubuntu-touch.io/devices>` _. Есть "
-"версии для ОС Linux, Mac или Windows."
+"на `поддерживаемое устройство <https://devices.ubuntu-touch.io/>`_ напрямую "
+"из операционных систем `Linux <https://snapcraft.io/ubports-installer>`_, `"
+"Mac <https://devices.ubuntu-touch.io/installer/?package=dmg>`_ или `Windows "
+"<https://devices.ubuntu-touch.io/installer/?package=exe>`_. Опытные "
+"пользователи могут установить систему вручную, подробные инструкции есть `на "
+"странице устройств <https://devices.ubuntu-touch.io/>`_."
 
 #: ../../userguide/install.rst:7
 msgid ""
@@ -1863,7 +1867,7 @@ msgid ""
 "`Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_: "
 "``ubports-installer-<version-number>.exe``"
 msgstr ""
-"ОС ` Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_: "
+"ОС `Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_: "
 "``ubports-installer-<version-number>.exe``"
 
 #: ../../userguide/install.rst:12
@@ -1912,8 +1916,8 @@ msgid ""
 "If you're an experienced android developer and want to help us bring Ubuntu "
 "Touch to more devices, visit the :doc:`porting section </porting/Intro>`."
 msgstr ""
-"Если Dы - опытный Android-разработчик и хотите помочь нам портировать Ubuntu "
-"Touch на большее количество устройств, посетите раздел: doc: `porting </"
+"Если Вы - опытный Android-разработчик и хотите помочь нам портировать Ubuntu "
+"Touch на большее количество устройств, посетите раздел :doc: `porting </"
 "porting/introduction>`."
 
 #: ../../userguide/install.rst:24
@@ -2004,7 +2008,7 @@ msgid ""
 "Run ``echo 0x2ae5 >> ~/.android/adb_usb.ini`` in the terminal and restart "
 "the installer. This does not affect the snap package."
 msgstr ""
-"В терминале выполните ``echo 0x2ae5 >> ~/.android/adb_usb.ini` и "
+"В терминале выполните команду ``echo 0x2ae5 >> ~/.android/adb_usb.ini`` и "
 "перезапустите программу-установщик. Это никак не повлияет на snap-пакет."
 
 #: ../../userguide/install.rst:55
@@ -2128,7 +2132,7 @@ msgid ""
 "`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/"
 "OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
 msgstr ""
-"` Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/"
+"`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/"
 "OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
 
 #: ../../userguide/install.rst:124
@@ -2252,7 +2256,7 @@ msgstr ""
 "``modemmanager`` ( установленный пакет может быть `несовместимым "
 "<https://web.archive.org/web/20180118130643/http://www.mibqyyo.com/"
 "en-articles/2015/09/16/"
-"ubuntu-android-installation-process-for-bq-aquaris-e4-5-and-e5/>`_  с "
+"ubuntu-android-installation-process-for-bq-aquaris-e4-5-and-e5/>`_ с "
 "системой) с помощью программы SP flash tool, потом закройте её  и повторите "
 "попытку, начиная с шага 4."
 

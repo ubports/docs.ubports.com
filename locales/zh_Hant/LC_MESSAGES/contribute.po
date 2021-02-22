@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-15 09:19-0500\n"
-"PO-Revision-Date: 2019-01-21 14:32+0000\n"
+"PO-Revision-Date: 2021-02-21 20:38+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-contribute/zh_Hant/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../../contribute/bugreporting.rst:2
 msgid "Bug reporting"
@@ -69,6 +69,8 @@ msgid ""
 "Pinephone users should check for and report bugs `here <https://gitlab.com/"
 "ubports/community-ports/pinephone>`_"
 msgstr ""
+"Pinephone 用戶應該檢查並報告錯誤 \"在此<https://gitlab.com/ubports/community-ports/"
+"pinephone>\"_"
 
 #: ../../contribute/bugreporting.rst:19
 msgid ""
@@ -77,9 +79,8 @@ msgid ""
 "a few words that describe what you're seeing. For example, \"Lock screen "
 "transparent\" or \"Lock screen shows activities\"."
 msgstr ""
-"首先，您需要確保之前未報告過您嘗試報告的錯誤。先搜尋目前有出現報告的錯誤。 搜"
-"尋時，請描述一些您所看到內容的詞語。 例如: “鎖定屏幕透明” 或 “鎖定屏幕顯示活"
-"動”。"
+"首先，您需要確保之前未報告過您嘗試報告的錯誤。先搜尋目前有出現報告的錯誤。 搜尋時，請描述一些您所看到內容的詞語。 例如: “鎖定螢幕透明” 或 "
+"“鎖定螢幕顯示活動”。"
 
 #: ../../contribute/bugreporting.rst:21
 msgid ""
@@ -102,7 +103,6 @@ msgid "Reproduce the issue you've found"
 msgstr "重現您發現的問題"
 
 #: ../../contribute/bugreporting.rst:28
-#, fuzzy
 msgid ""
 "Next, find out exactly how to recreate the bug that you've found. Document "
 "the exact steps that you took to find the problem in detail. Then, reboot "
@@ -110,9 +110,8 @@ msgid ""
 "continue on to the next step. `If not... <https://youtu.be/nn2FB1P_Mn8?"
 "t=10s>`_"
 msgstr ""
-"接下來，找出如何重新建立您找到的錯誤。 記錄您為詳細尋找問題所採取的確切步"
-"驟。 然後重新啟動手機並再次執行這些步驟。 如果問題仍然存在，請繼續執行下一"
-"步。\"如果沒有 <https://youtu.be/nn2FB1P_Mn8?t=10s>\"_..."
+"接下來，找出如何重新建立您找到的錯誤。 記錄您為詳細尋找問題所採取的確切步驟。 然後重新啟動手機並再次執行這些步驟。 如果問題仍然存在，請繼續執行下一步。"
+"\"如果沒有請觀看 ...<https://youtu.be/nn2FB1P_Mn8?t=10s>\"_"
 
 #: ../../contribute/bugreporting.rst:31
 msgid "Making the bug report"
@@ -1281,11 +1280,10 @@ msgid ".po/.ts File Editor"
 msgstr ".po 文件編輯器"
 
 #: ../../contribute/translations.rst:51
-#, fuzzy
 msgid ""
 "If you want to work with *.po*/*.ts* files directly you need to know what "
 "you're doing for sure. The first thing you should always remember is:"
-msgstr "如果您想直接使用 .po 文件，您需要非常肯定知道自己在做什麼。"
+msgstr "如果您想直接使用 .po 文件，您得需要非常肯定知道自己在做什麼："
 
 #: ../../contribute/translations.rst:54
 msgid ""

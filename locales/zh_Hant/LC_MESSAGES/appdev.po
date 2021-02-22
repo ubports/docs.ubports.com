@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 09:34-0500\n"
-"PO-Revision-Date: 2019-04-24 20:42+0000\n"
-"Last-Translator: 不朽正义 <tanyongle0633@gmail.com>\n"
+"PO-Revision-Date: 2021-02-21 20:38+0000\n"
+"Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-appdev/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.2.2\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../../appdev/guides/contenthub.rst:4
 msgid "The content hub - tips and tricks"
@@ -51,26 +51,22 @@ msgstr ""
 "以處理要共用的檔案:"
 
 #: ../../appdev/guides/contenthub.rst:18
-#, fuzzy
 msgid ""
 "``ContentHandler.Source`` (The selected app will provide a file to be "
 "imported)"
-msgstr "\"ContentHandler.Source\"（選擇的應用程式將成為導入文件的來源）"
+msgstr "\"ContentHandler.來源\"（選擇的應用程式將成為導入文件的來源）"
 
 #: ../../appdev/guides/contenthub.rst:19
-#, fuzzy
 msgid ""
 "``ContentHandler.Destination`` (The selected app will be the destination for "
 "the exported file)"
-msgstr "\"ContentHandler.Destination\"（選擇的應用程式將成為導出文件的目標）"
+msgstr "\"ContentHandler.目標\"（選擇的應用程式將成為導出文件的目標）"
 
 #: ../../appdev/guides/contenthub.rst:20
-#, fuzzy
 msgid ""
 "``ContentHandler.Share`` (The selected app will be the destination for the "
 "exported file, which will then be shared externally)"
-msgstr ""
-"\"ContentHandler.Share\"（選擇的應用程式將成為文件將成為所要分享的應用程序）"
+msgstr "\"ContentHandler.分享\"（選擇的應用程式將成為文件將成為所要分享的應用程序）"
 
 #: ../../appdev/guides/contenthub.rst:26
 msgid "Importing"
