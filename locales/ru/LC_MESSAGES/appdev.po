@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 09:34-0500\n"
-"PO-Revision-Date: 2021-02-15 19:45+0000\n"
+"PO-Revision-Date: 2021-02-21 20:38+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -413,7 +413,6 @@ msgid "Compilation"
 msgstr "Компиляция"
 
 #: ../../appdev/guides/dependencies.rst:12
-#, fuzzy
 msgid ""
 "Put the library's source code at ``libs/LIBNAME`` (replacing ``LIBNAME`` by "
 "the library's name), because this is where clickable will look for it by "
@@ -424,8 +423,8 @@ msgstr ""
 "Скопируйте исходный код библиотеки в папку ``libs/LIBNAME``. Эта папка по "
 "умолчанию установлена в clickable. Если исходный код нужных библиотек есть в "
 "репозиториях git, можно добавить эту библиотечку как `модуль git <https"
-"://git-scm.com/book/de/v1/Git-Tools-Submodule>`_. или придётся добавить "
-"скрипт для скачивания исходных кодов."
+"://git-scm.com/book/de/v1/Git-Tools-Submodule>`_. В противном случае "
+"придётся добавить скрипт для скачивания исходных кодов."
 
 #: ../../appdev/guides/dependencies.rst:14
 msgid ""
@@ -454,17 +453,16 @@ msgstr ""
 "Это будет выглядеть так:"
 
 #: ../../appdev/guides/dependencies.rst:50
-#, fuzzy
 msgid ""
 "Most build arguments are project specific. Therefore, study the library's "
 "build instructions and also look for ``option`` settings in its ``CMakeLists."
 "txt`` ."
 msgstr ""
 "Подбор аргументов обычно зависит от настроек проекта. Поэтому изучите "
-"инструкции по сборке библиотеки, а также посмотрите параметры `` option`` в "
-"файле `` CMakeLists.txt`` (если используется CMake). По умолчанию директория "
-"для сборки `` build / LIBNAME / ARCHITECTURE``. Поэтому сборки для разных "
-"архитектур могут существовать параллельно."
+"инструкции по сборке библиотеки, а также посмотрите настройки параметра `` "
+"option`` в файле `` CMakeLists.txt`` (если используется CMake). По "
+"умолчанию, директория для сборки ``build/LIBNAME/ARCHITECTURE``. Поэтому "
+"сборки для разных архитектур могут существовать параллельно."
 
 #: ../../appdev/guides/dependencies.rst:52
 msgid ""
@@ -479,7 +477,6 @@ msgstr ""
 "эти шаги в файле README!"
 
 #: ../../appdev/guides/dependencies.rst:54
-#, fuzzy
 msgid ""
 "See how `Teleports clickable.json <https://gitlab.com/ubports/apps/teleports/"
 "blob/master/clickable.json#L21>`_ uses the libraries feature to build its "
@@ -537,7 +534,6 @@ msgstr ""
 "clickable.json#L4>`_."
 
 #: ../../appdev/guides/dependencies.rst:76
-#, fuzzy
 msgid ""
 "If the library can be found in a PPA, you can add the PPA to the clickable."
 "json, too. For example:"
@@ -546,7 +542,6 @@ msgstr ""
 "PPA, можно добавить PPA в файл clickable.json. Например:"
 
 #: ../../appdev/guides/dependencies.rst:91
-#, fuzzy
 msgid "Otherwise add a script to download the pre-built library."
 msgstr ""
 "В противном случае нужно будет добавить скрипт для скачивания "
@@ -557,16 +552,15 @@ msgid "Usage"
 msgstr "Использование"
 
 #: ../../appdev/guides/dependencies.rst:95
-#, fuzzy
 msgid ""
 "First, you need to specify the include directory where the headers can be "
 "found that you include into the app's source code. Second, you need to link "
 "the library's binary against your app's binary."
 msgstr ""
 "Сначала нужно указать директорию, где компилятор будет искать файлы "
-"заголовков. Во-вторых, нужно связать библиотеку и бинарный файл приложения, "
-"если это только не библиотека заголовков, где весь исходный код находится в "
-"файлах заголовков."
+"заголовков. Далее нужно связать библиотеку и бинарный файл приложения (если "
+"это только не библиотека заголовков, где весь исходный код находится в "
+"файлах заголовков)."
 
 #: ../../appdev/guides/dependencies.rst:97
 msgid ""
@@ -655,15 +649,14 @@ msgstr ""
 "lib``."
 
 #: ../../appdev/guides/dependencies.rst:118
-#, fuzzy
 msgid ""
 "To get the files into the click package, add the `install_lib <http://"
 "clickable.bhdouglass.com/en/latest/clickable-json.html#install-lib>`_ key to "
 "your clickable.json:"
 msgstr ""
-"Добавьте `раздел с библиотечками <http://clickable.bhdouglass.com/en/latest/"
-"clickable-json.html#libraries>`_ в файл clickable.json, как это показано в "
-"примере:"
+"Чтобы поместить файлы в click-пакет, добавьте ключ `install_lib "
+"<http://clickable.bhdouglass.com/en/latest/clickable-json.html#install-lib>` "
+"_ в файл clickable.json:"
 
 #: ../../appdev/guides/dependencies.rst:136
 msgid ""
@@ -690,6 +683,8 @@ msgid ""
 "You should be set up to build and install your click package on a device "
 "connected to your computer now by running ``clickable``."
 msgstr ""
+"Нужно настроить всё для сборки и установки click-пакета на устройстве, "
+"подключенном к компьютеру, запустив ``clickable``."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:2
 msgid "Importing from Content Hub and URLdispatcher"
@@ -835,27 +830,25 @@ msgstr ""
 "Main.qml#L200>` _ и элемента Connection с `` UriHandler` `."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:109
-#, fuzzy
 msgid ""
 "This code will manage an URI in the form ``linphone://sip:xxx@xxx.xx`` when "
 "the app is opened. But what do we need to do to handle this link when the "
 "app is closed?"
 msgstr ""
-"Этот код при открытии приложения будет передаваться URI в формате `` "
-"linphone: // sip: xxx @ xxx.xx``. Но что нам нужно сделать, чтобы обработать "
-"эту ссылку, когда приложение закрыто?"
+"Этот код при открытии приложения будет передаваться URI в формате "
+"``linphone://sip:xxx@xxx.xx``. Но что нужно сделать, чтобы обработать эту "
+"ссылку, когда приложение закрыто?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:111
-#, fuzzy
 msgid ""
 "We need to add a little bit `extra code <https://gitlab.com/ubports-linphone/"
 "linphone-simple/blob/master/qml/Main.qml#L76>`_ that will cover two cases: "
 "1) We receive one URL 2) We receive more than one URL"
 msgstr ""
-"Нам нужно добавить в исходный файл участок `дополнительного кода <https://"
-"gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L69>` "
-"_, который будет описывать два случая: 1) получен один URL 2) Получено более "
-"одного URL"
+"Нам нужно добавить в исходный файл участок `дополнительного кода "
+"<https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/"
+"Main.qml#L69>`_, который будет описывать два случая: 1) получен один URL 2) "
+"Получено более одного URL"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:115
 msgid ""
@@ -1586,12 +1579,11 @@ msgstr ""
 ":"
 
 #: ../../appdev/guides/user-metrics.rst:35
-#, fuzzy
 msgid ""
 "Next, you will need to import the module in the QML file that will handle "
 "the User Metrics:"
 msgstr ""
-"Сначала нужно будет импортировать в файл QML модуль для обработки метрики "
+"Далее нужно будет импортировать в файл QML модуль для обработки метрики "
 "пользователя:"
 
 #: ../../appdev/guides/user-metrics.rst:41
@@ -1776,6 +1768,11 @@ msgid ""
 "this file and rebooting will remove all stored metrics. Presumably, the db "
 "file could be edited instead of deleted."
 msgstr ""
+"После регистрации метрика остается на экране блокировки даже после удаления "
+"приложения. Файл базы данных (db) хранится в папке `/var/lib/usermetrics`, "
+"который можно удалить только с правами root (команда sudo не поможет). "
+"Удаление этого файла и перезагрузка удалит все сохраненные метрики. "
+"Предположительно, файл db можно редактировать, а не удалять."
 
 #: ../../appdev/guides/user-metrics.rst:117
 msgid ""
@@ -1783,6 +1780,9 @@ msgid ""
 "maintain a running tally beyond one day (though not impossible. See "
 "`FluffyChat <https://gitlab.com/ChristianPauly/fluffychat>`_)."
 msgstr ""
+"Исходя из того, как настроены \"форматы\", кажется, что трудно поддерживать "
+"текущее состояние более одного дня (хотя и невозможно. Подробнее см. главу `"
+"FluffyChat <https://gitlab.com/ChristianPauly/fluffychat>`_)."
 
 #: ../../appdev/guides/user-metrics.rst:119
 msgid ""
@@ -1910,12 +1910,11 @@ msgid "Using Standard Paths in C++"
 msgstr "Используются стандартные каталоги для C++"
 
 #: ../../appdev/guides/writeable-dirs.rst:31
-#, fuzzy
 msgid ""
 "The Qt header ``QStandardPaths`` provides the app's writable locations in C+"
 "+:"
 msgstr ""
-"В Qt-хедере ``QStandardPaths` описываются каталоги приложения для записи "
+"В Qt-заголовке ``QStandardPaths` описываются каталоги приложения для записи "
 "данных:"
 
 #: ../../appdev/guides/writeable-dirs.rst:42
@@ -1925,6 +1924,9 @@ msgid ""
 "html#applicationName-prop>`_, this needs to be the same as the clickable "
 "application name."
 msgstr ""
+"Так как значение строк QStandardPaths определяется `названием приложения Qt "
+"<https://doc.qt.io/qt-5/qcoreapplication.html#applicationName-prop>`_ оно "
+"должно быть таким же, как и название приложения для clickable."
 
 #: ../../appdev/guides/writeable-dirs.rst:45
 msgid "Using Standard Paths in QML"
@@ -1936,6 +1938,9 @@ msgid ""
 "labs-platform-standardpaths.html>`_ provides the app's writable locations in "
 "QML:"
 msgstr ""
+"Модуль`Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-labs-"
+"platform-standardpaths.html>`_ предоставляет записываемые локации приложения "
+"в QML:"
 
 #: ../../appdev/index.rst:2
 msgid "App development"
@@ -1963,7 +1968,6 @@ msgstr ""
 "ubports.com/category/35/app-development>`_."
 
 #: ../../appdev/index.rst:9
-#, fuzzy
 msgid "Getting Started"
 msgstr "Начало работы"
 
@@ -2010,7 +2014,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:25
 msgid "Code Editor Integrations"
-msgstr ""
+msgstr "Интеграция редактора кода"
 
 #: ../../appdev/index.rst:27
 msgid ""
@@ -2019,6 +2023,10 @@ msgid ""
 "clickable-plugin>`__. This provides some common clickable tools needed to "
 "build and run click packages for Ubuntu Touch from within Atom editor."
 msgstr ""
+"Вы можете работать с clickable при помощи утилиты`Atom Editor "
+"<https://atom.io>` __, установив пакет `atom-clickable-plugin <https://atom."
+"io/packages/atom-clickable-plugin>` __. В нем есть интерактивные инструменты "
+"для создания и запуска click-пакетов системы Ubuntu Touch."
 
 #: ../../appdev/index.rst:29
 msgid ""
@@ -2162,7 +2170,6 @@ msgstr ""
 "Python, Go, Rust или даже Javascript."
 
 #: ../../appdev/nativeapp/index.rst:9
-#, fuzzy
 msgid ""
 "Ubuntu Touch provides a subset of Qt QML components to ease the development "
 "of your app : `QML API <https://api-docs.ubports.com/sdk/apps/qml/index."
@@ -2172,8 +2179,8 @@ msgid ""
 msgstr ""
 "Для упрощения разработки в Ubuntu Touch уже есть множество компонентов Qt "
 "QML: `QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>` __ и "
-"набор иконок: `Suru Icons <http://docs.ubports.com/projects/icons/en/latest/"
-"> `__. Но можно так же создавать кроссплатформенное приложение, используя "
+"набор иконок: `Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>"
+" `__. Но можно так же создавать кроссплатформенное приложение, используя "
 "стандартные компоненты Qt QML QtQuick2."
 
 #: ../../appdev/nativeapp/index.rst:12
@@ -2225,6 +2232,8 @@ msgid ""
 "Coding tip: Everytime you change your apparmor policy file you need to "
 "update your app's version for this to be taken into account."
 msgstr ""
+"Совет: каждый раз, когда выиз меняете файл политики apparmor, необходимо "
+"обновлять версию приложения, чтобы политика заработала корректно."
 
 #: ../../appdev/platform/apparmor.rst:26
 msgid "accounts"

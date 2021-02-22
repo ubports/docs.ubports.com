@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-02-15 19:50+0000\n"
+"PO-Revision-Date: 2021-02-19 17:55+0000\n"
 "Last-Translator: Carlod <carlod@disroot.org>\n"
 "Language-Team: Polish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/pl/>\n"
@@ -252,11 +252,15 @@ msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:2
 msgid "Reverse tethering"
-msgstr ""
+msgstr "Wsteczny tethering"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:4
 msgid "Some users may not have an available wifi connection for their phone nor a data subscription from their mobile provider. This short tutorial will help you to connect your Ubuntu Touch to your computer to access internet."
 msgstr ""
+"Niektórzy użytkownicy mogą nie mieć dostępnego połączenia wifi na ich "
+"telefonach, ani dostępnych danych komórkowych. Ten krótki poradnik pomoże ci "
+"połączyć twój telefon z Ubuntu Touch do komputera, tak aby uzyskać dostęp do "
+"internetu."
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:7
 msgid "Prerequisite: Phone is connected to the computer with usb and developer mode enabled."
@@ -275,6 +279,7 @@ msgstr "Na telefonie: ``android-gadget-service enable rndis``"
 #: ../../userguide/advanceduse/reverse-tethering.rst:14
 msgid "On computer: get your rndis ip address e.g:``hostname -I``"
 msgstr ""
+"Na komputerze: zdobądź adres ip rndisu twojego urządzenia np: ``hostname -I``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:16
 msgid "On phone:"
@@ -331,6 +336,8 @@ msgstr "Używanie adb"
 #: ../../userguide/advanceduse/screencasting.rst:11
 msgid "You can catch output directly from ``adb exec-out`` command and forward it to mplayer::"
 msgstr ""
+"Możesz odebrać sygnał bezpośrednio komendą``adb exec-out`` i przekazać go do "
+"mplayera::"
 
 #: ../../userguide/advanceduse/screencasting.rst:15
 msgid "NB: ``timeout`` here is used in order to kill process properly on device ( here 120 seconds ). Otherwise process still continuing even if killed on computer. You can reduce or increase frame per second with``--cap-interval`` (1 = 60fps, 2=30fps, ...)  and size of frames ``384 640`` means width=384 height=640"
@@ -637,6 +644,9 @@ msgstr ""
 #: ../../userguide/dailyuse/anbox.rst:63
 msgid "You can check that adb server is correctly running locally on your phone by opening the terminal app and enter ``adb devices``. You should see something like::"
 msgstr ""
+"Możesz sprawdzić czy serwer adb działa poprawnie wewnątrz twojego telefonu, "
+"po przez otworzenie aplikacji terminala i wpisanie ``adb devices``. "
+"Powinieneś/nnaś zobaczyć coś takiego::"
 
 #: ../../userguide/dailyuse/anbox.rst:70
 msgid "How to install new APKs"
@@ -872,6 +882,8 @@ msgstr "Uruchamianie aplikacji desktopowych"
 #: ../../userguide/dailyuse/libertine.rst:86
 msgid "Run it from the app menu like any other app. To start a graphical application from the command line, for example ``gedit``, run in a terminal::"
 msgstr ""
+"Uruchamiaj je jak pozostałe aplikacje. Aby zacząć aplikacje graficzną z "
+"wiersza poleceń, na przykład ``gedit``, wpisz w terminalu::"
 
 #: ../../userguide/dailyuse/libertine.rst:92
 msgid "Files"
@@ -1060,6 +1072,8 @@ msgstr "Otwórz szybkie ustwienia lokalizacji"
 #: ../../userguide/dailyuse/location.rst:33
 msgid "The Location Indicator contains quick settings related to location services, including a switch to turn services on or off."
 msgstr ""
+"Wskaźnik lokalizacji zawiera szybkie ustawienia dotyczące usług "
+"lokalizacyjnych, między innymi przełącznik włączający i wyłączający je."
 
 #: ../../userguide/dailyuse/location.rst:37
 msgid "To access these settings, press on the Location Indicator and pull down toward the bottom of the screen."
@@ -1112,6 +1126,9 @@ msgstr "Włączanie i wyłączanie usług lokalizacyjnych"
 #: ../../userguide/dailyuse/location.rst:64
 msgid "If location services are on, apps which you have allowed access to your location data may request your current location. Location services are enabled by default on Ubuntu Touch."
 msgstr ""
+"Jeśli usługi lokalizacyjne są włączone, aplikacje którym pozwoliłeś/aś na "
+"dostęp to twoich danych lokalizacyjnych, mogą prosić o twoją obecną "
+"lokalizacje. Usługi lokalizacyjne są włączone domyślnie na Ubuntu Touch."
 
 #: ../../userguide/dailyuse/location.rst:66
 msgid "If location services are off, apps will not be able to access your current location."
@@ -1122,10 +1139,14 @@ msgstr ""
 #: ../../userguide/dailyuse/location.rst:68
 msgid "There are several ways to enable or disable location services in Ubuntu Touch."
 msgstr ""
+"Jest dużo sposobów, aby włączyć lub wyłączyć usługi lokalizacyjne w Ubuntu "
+"Touch."
 
 #: ../../userguide/dailyuse/location.rst:73
 msgid "`Open location quick settings`_. Select the ``Location detection`` switch to enable or disable location services."
 msgstr ""
+"`Otwórz szybkie ustawienia lokalizacji`_. Zanzacz ``Wykrywanie lokalizacji`` "
+"przłęcz, aby włączyć lub wyłączyć usługi lokalizacyjne."
 
 #: ../../userguide/dailyuse/location.rst:78
 msgid "`Open location settings in the settings app`_. Under ``Let the device detect your location:``, select the appropriate option:"
@@ -1177,6 +1198,11 @@ msgstr "Ustawienia lokalizacji"
 #: ../../userguide/dailyuse/location.rst:105
 msgid "`Open location settings in the settings app`_. All of the apps which have requested access to your location are listed under ``Let apps access this location:``. Toggle the switch next to an app \"on\" to allow it to access your location data. Toggle the switch \"off\" to deny access."
 msgstr ""
+"`Otwórz ustawienia lokalizacji w aplikacji ustawień`_. Wszystkie aplikacje, "
+"które ubiegały się o dostęp do twojej lokalizacji są wypisane pod ``Zezwól "
+"aplikacjom na dostęp do lokalizacji:``. Włącz przełącznik obok aplikacji, "
+"aby pozwolić jej na dostęp do danych lokalizacyjnych. Wyłącz, aby odmówić "
+"dostępu."
 
 #: ../../userguide/dailyuse/location.rst:108
 msgid "App permission settings"
@@ -1198,6 +1224,9 @@ msgstr "Używanie aplikacji używających usług lokalizacyjnych"
 #: ../../userguide/dailyuse/location.rst:115
 msgid "Apps will be able to access your current location after they are granted access to location data. However, there are some things to note while using apps with location services."
 msgstr ""
+"Aplikacje będą miały dostęp do twojej lokalizacji po tym jak uzyskają dostęp "
+"do danych lokalizacyjnych. Jednakże, są kwestie które warto zaznaczyć "
+"odnośnie używania aplikacji z usługami lokalizacyjnymi."
 
 #: ../../userguide/dailyuse/location.rst:118
 msgid "Time to first fix"
@@ -1243,11 +1272,15 @@ msgstr ""
 
 #: ../../userguide/dailyuse/location.rst:135
 msgid "App suspension"
-msgstr ""
+msgstr "Wstrzymywanie aplikacji"
 
 #: ../../userguide/dailyuse/location.rst:137
 msgid "Apps are suspended whenever they are not in the foreground or the device is locked. When an app is suspended, it cannot receive location data. For this reason, apps will not be able to track your location whenever they are not in use or the device is locked."
 msgstr ""
+"Aplikacje są wstrzymywane za każdym razem, gdy nie są na pierwszym planie "
+"albo gdy urządzenie jest zablokowane. Wstrzymana aplikacja nie otrzymuje "
+"danych lokalizacyjnych. Z tego powodu aplikacje nie mogą śledzić twojej "
+"lokalizacji, kiedy nie są w użyciu albo urządzenie jest zablokowane."
 
 #: ../../userguide/install.rst:2
 msgid "Install Ubuntu Touch"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-02-15 19:45+0000\n"
+"PO-Revision-Date: 2021-02-19 17:55+0000\n"
 "Last-Translator: Carlod <carlod@disroot.org>\n"
 "Language-Team: Polish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/pl/>\n"
@@ -916,7 +916,7 @@ msgstr ""
 
 #: ../../porting/halium_7-1/Common_errors.rst:135
 msgid "Programs hang before crashing"
-msgstr ""
+msgstr "Programy zawieszają się przed crashem"
 
 #: ../../porting/halium_7-1/Common_errors.rst:137
 msgid "Sometimes processes will hang for a very long time and then abort or segfault. The reason for the hang is apport, which attempts to collect useful information about the crash before allowing the program to stop."
@@ -1014,7 +1014,7 @@ msgstr ""
 
 #: ../../porting/halium_7-1/Configuring.rst:37
 msgid "The general steps to follow are thus:"
-msgstr ""
+msgstr "Oto ogólne kroki, które należy wykonać:"
 
 #: ../../porting/halium_7-1/Configuring.rst:34
 msgid "Copy the file you wish to modify to the 'ubuntu' directory you have created in your device source tree."
@@ -1029,6 +1029,8 @@ msgstr "Zedytuj ten plik jeśli zajdzie taka potrzeba."
 #: ../../porting/halium_7-1/Configuring.rst:36
 msgid "Add a line to the PRODUCT_COPY_FILES section of your device.mk file as shown above."
 msgstr ""
+"Dodaj linie do sekcji PRODUCT_COPY_FILES w pliku device.mk twojego "
+"urządzenia jak pokazano powyżej."
 
 #: ../../porting/halium_7-1/Configuring.rst:37
 msgid "Rebuild your system.img and reflash together with the ubports rootfs."
@@ -1037,6 +1039,8 @@ msgstr "Ponownie zbuduj system.img i zflashuj go razem z rootfs'em ubports."
 #: ../../porting/halium_7-1/Configuring.rst:41
 msgid "The target paths for the files mentioned above are *not* randomly chosen. You must use the specified paths."
 msgstr ""
+"Ścieżki do plików wymieniowych powyżej *nie są* wybrane przypadkowo. Musisz "
+"używać określonych ścieżek."
 
 #: ../../porting/halium_7-1/Configuring.rst:45
 msgid "When you specify target path 'system/halium/etc/myfilename' your file 'myfilename' will end up in the '/etc' directory of your device (i.e. without the leading 'system/halium')"
@@ -1044,7 +1048,7 @@ msgstr ""
 
 #: ../../porting/halium_7-1/Configuring.rst:50
 msgid "Rebuild system.img"
-msgstr "Ponownie zbuduj system.img"
+msgstr "Zbuduj ponownie system.img"
 
 #: ../../porting/halium_7-1/Configuring.rst:52
 msgid "When you have made the adjustments you need and prepared your source as described above, you have to rebuild your system.img: ``mka systemimage``. When rebuilding the system image after small changes like these, you need not ``mka clean`` first. However, changes to PRODUCT_PROPERTY_OVERRIDES might not get detected by the build system. Go to your output folder, enter the system folder and delete ``build.prop`` in order to get it regenerated."
@@ -1107,14 +1111,24 @@ msgstr ""
 #: ../../porting/halium_7-1/Configuring.rst:91
 msgid "You now need to delete your entire BUILDDIR/kernel/VENDOR/MODEL/security/apparmor subdirectory and replace it with the one you downloaded. Then rebuild halium-boot."
 msgstr ""
+"Teraz musisz usunąć cały subfolder BUILDDIR/kernel/VENDOR/MODEL/security/"
+"apparmor i zastąpić go tym, który pobrałeś/aś. Potem zbuduj jeszcze raz "
+"halium-boot."
 
 #: ../../porting/halium_7-1/Configuring.rst:93
 msgid "If you get errors when building, you will need to resolve them one by one, modifying your source code as needed. Note that you should only modify the code in the apparmor subdirectory if at all possible. Modifying code elsewhere will more than likely just compound your problems."
 msgstr ""
+"Jeśli masz problemy podczas budowania, będziesz musiał/a rozwiązać je jeden "
+"po drugim, modyfikując kod jeśli będzie to potrzebne. Weź pod uwage, że "
+"powinneneś/nnaś modyfikować tylko kod w podfolderze apparmor, jeśli jest to "
+"możliwe. Modyfikowanie kodu gdziekolwiek indziej bardziej niż prawdopodobnie "
+"skomplikuje twoje problemy."
 
 #: ../../porting/halium_7-1/Configuring.rst:95
 msgid "Seek help as needed from one of the sources mentioned in section :ref:`Getting-community-help`."
 msgstr ""
+"Pomocy szukaj jeśli będziesz jej potrzebował/a w jednych ze źródeł "
+"wymienionych w sekcji :ref:`Uzyskiwanie-pomocy-od-społeczności`."
 
 #: ../../porting/halium_7-1/Configuring.rst:98
 msgid "Sound configuration"
@@ -1123,6 +1137,9 @@ msgstr "Konfiguracja dźwięku"
 #: ../../porting/halium_7-1/Configuring.rst:100
 msgid "The supplied touch.pa file located in the /etc/pulse directory of your device needs adjustment. Extract the file and copy it to your 'ubuntu' directory."
 msgstr ""
+"Plik touch.pa zlokalizowany w lokalizacji /etc/pulse twojego urządzenia "
+"potrzebuje zostać dostosowany. Rozpakuj ten plik i skopiuj do twojego "
+"folderu 'ubuntu'."
 
 #: ../../porting/halium_7-1/Configuring.rst:102
 msgid "Locate the line::"
@@ -1139,6 +1156,8 @@ msgstr "Na końcu pliku dodaj to::"
 #: ../../porting/halium_7-1/Configuring.rst:117
 msgid "Now complete steps 3 and 4, taking care to remember the note on how to :ref:`Rebuild-system.img`."
 msgstr ""
+"Teraz wykonaj kroki 3 i 4, pamiętając o tym jak :ref:`Zbuduj-ponownie-"
+"system.img`."
 
 #: ../../porting/halium_7-1/Configuring.rst:120
 msgid "Further configuration"
@@ -1213,26 +1232,49 @@ msgstr ""
 #: ../../porting/halium_7-1/Installing.rst:35
 msgid "Samsung devices: Flashing halium-boot.img on Samsung devices is done using the Heimdall flashing utility (on Linux) or the Odin utility (on Windows) after first bringing the device into 'download mode'. See more information on these utilities `here <http://docs.halium.org/en/latest/porting/install-build/reference-rootfs.html#install-hybris-boot-img-on-samsung-devices>`_. Follow the instructions for the utility you choose, including the specific flashing command for flashing the boot partition. Install system.img and rootfs (below) with the device in recovery mode."
 msgstr ""
+"Urządzenia Samsunga: Flashowanie halium-boot.img na urządzeniach Samsunga "
+"jest możliwe dzięki narzędziu do flashowania Heimdal (na Linuxie) lub Odin ("
+"na Windowsie) poprzednio wprowadziwszy urządzenie do 'trybu download'. "
+"Zobacz więcej informacji o tych narzędziach`tutaj <http://docs.halium.org/en/"
+"latest/porting/install-build/reference-rootfs.html#install-hybris-boot-img-"
+"on-samsung-devices>`_. Podążaj za instrukcjami dla narzędzia, które wybrałeś/"
+"aś, wliczając specyficzną komende na flashowanie partycji boot. Zainstaluj "
+"system.img i rootfs (poniżej) na urządzeniu w trybie recovery."
 
 #: ../../porting/halium_7-1/Installing.rst:38
 msgid "Install system.img and rootfs"
-msgstr ""
+msgstr "Instalacja system.img i rootfs"
 
 #: ../../porting/halium_7-1/Installing.rst:40
 msgid "Next you need to download the appropriate rootfs for your device. At the moment there are two available versions, a 32 bit and a 64 bit one."
 msgstr ""
+"Następnie będziesz musiał pobrać odpowiedni rootfs dla twojego urządzenia. "
+"Na tę chwile są dostępne dwie wersje, 32 i 64 bitowa."
 
 #: ../../porting/halium_7-1/Installing.rst:42
 msgid "Simply download ``ubports-touch.rootfs-xenial-armhf.tar.gz`` (32 bit) from `our CI server <https://ci.ubports.com/job/xenial-rootfs-armhf/>`__."
 msgstr ""
+"Po prostu pobierz ``ubports-touch.rootfs-xenial-armhf.tar.gz`` (32 bitowe) z "
+"`naszego serwera CI <https://ci.ubports.com/job/xenial-rootfs-armhf/>`__."
 
 #: ../../porting/halium_7-1/Installing.rst:44
 msgid "If you have a 64-bit ARM (aarch64) device, this same rootfs should work for you. You can also try the 64 bit version keeping in mind that you may possibly run into more issues with this owing to the current state of development of this rootfs. (If you have an x86 device, let us know. There is no rootfs available for these yet.)"
 msgstr ""
+"Jeśli masz urządzenie 64bitowe (aarch64), ten sam rootfs powinien działać "
+"działać dla ciebie. Możesz też spróbować wersje 64-bitową, miejąc na uwadze, "
+"że możesz natknąć się na problemy w związku z aktualnym stanem rozwoju tego "
+"rootfs'u. (Jeśli masz urządzenie x86 powiedz nam o tym. Nie ma jeszcze "
+"takiej wersji rootfs.)"
 
 #: ../../porting/halium_7-1/Installing.rst:46
 msgid "Clone or download the `halium-install repository <https://gitlab.com/JBBgameich/halium-install>`_. This repository contains tools that can be used to install a Halium system image and distribution rootfs. Reboot your device to recovery (e.g. TWRP), to get adb access again. Now use the ``halium-install`` script to install Ubuntu Touch on your device::"
 msgstr ""
+"Sklonuj lub pobierz `repozytorium halium-install <https://gitlab.com/"
+"JBBgameich/halium-install>`_. Te repozytorium zawiera narzędzia, które służą "
+"do instalacji obrazu systemu Halium i rootfs'u dystrybucji. Uruchom ponownie "
+"swoje urządzenie do trybu recovery (np. TWRP), aby znów uzyskać dostęp do "
+"adb. Teraz użyj skryptu ``halium-install`, aby zainstalować Ubuntu Touch na "
+"twoim urządzeniu::"
 
 #: ../../porting/halium_7-1/Installing.rst:51
 msgid "The script will copy and extract the files to their proper places, then allow you to set the user password for your device (the *phablet* user's password)."
@@ -1263,6 +1305,11 @@ msgstr ""
 #: ../../porting/halium_7-1/Installing.rst:60
 msgid "Similar to the Halium reference rootfs, you should `set your computer's IP on the newly connected RNDIS interface <http://docs.halium.org/en/latest/porting/debug-build/logging-in.html>`__ to ``10.15.19.100`` if you don't get one automatically. Then, run the following to access your device::"
 msgstr ""
+"Podobnie jak w referencyjnym rootfs'ie Halium powinieneś/nnaś `ustawić IP`"
+"twojego komputera na ``10.15.19.100`, jeśli nie stanie się to automatycznie "
+"na nowo połączonym interfejsie RNDIS <http://docs.halium.org/en/latest/"
+"porting/debug-build/logging-in.html>`__ . Potem, wpisz następującą komende, "
+"aby uzyskać dostęp do twojego urządzenia::"
 
 #: ../../porting/halium_7-1/Installing.rst:64
 msgid "The password will be the one that you set while running halium-install."

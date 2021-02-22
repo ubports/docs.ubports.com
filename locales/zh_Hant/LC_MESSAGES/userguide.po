@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-02-15 19:45+0000\n"
+"PO-Revision-Date: 2021-02-21 20:38+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-userguide/zh_Hant/>\n"
@@ -102,11 +102,11 @@ msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:41
 msgid "Adb shell commands::"
-msgstr ""
+msgstr "Adb shell 指令::"
 
 #: ../../userguide/advanceduse/adb.rst:46
 msgid "Additional Adb commands::"
-msgstr ""
+msgstr "額外 Adb 指令::"
 
 #: ../../userguide/advanceduse/adb.rst:51
 msgid ""
@@ -599,19 +599,17 @@ msgid ""
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:2
-#, fuzzy
 msgid "Android apps"
-msgstr "執行 Android 應用程序式"
+msgstr "Android 應用程式"
 
 #: ../../userguide/dailyuse/anbox.rst:4
-#, fuzzy
 msgid ""
 "`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility "
 "layer that allows you to run Android apps on GNU/Linux operating systems "
 "such as UBports."
 msgstr ""
-"\"Anbox <https://anbox.io>\"_ 是一個最小的 Android 容器和兼容層，允許您在 "
-"GNU / Linux 操作系統上運行 Android 應用程式。"
+"\"Anbox <https://anbox.io>\"_ 是一個最小的 Android 容器和兼容層，允許您在 GNU / Linux 操作系統上運行 "
+"Android 應用程式。例如 UBports。"
 
 #: ../../userguide/dailyuse/anbox.rst:7
 msgid ""
@@ -641,41 +639,28 @@ msgstr "確保您的裝置受到支援："
 #: ../../userguide/dailyuse/anbox.rst:17
 msgid ""
 "Meizu Pro 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)"
-msgstr ""
-"Meizu Pro 5 Nexus 5 (codename (代碼名稱): \"turbo\"，name of the boot "
-"partition (啟動分區名稱): \"bootimg\")"
+msgstr "Meizu Pro 5 Nexus 5 (代碼名稱 : \"turbo\"，啟動分區名稱 : \"bootimg\")"
 
 #: ../../userguide/dailyuse/anbox.rst:18
 msgid "Fairphone 2 (codename: ``FP2``, name of the boot partition: ``boot``)"
-msgstr ""
-"Fairphone 2 Nexus 5 (codename (代碼名稱): \"FP2\"，name of the boot "
-"partition (啟動分區名稱): \"boot\")"
+msgstr "Fairphone 2 Nexus 5 (代碼名稱 : \"FP2\"，啟動分區名稱 : \"boot\")"
 
 #: ../../userguide/dailyuse/anbox.rst:19
-#, fuzzy
 msgid "OnePlus One (codename: ``bacon``, name of the boot partition: ``boot``)"
-msgstr ""
-"Oneplus one Nexus 5 (codename (代碼名稱): \"bacon\"，name of the boot "
-"partition (啟動分區名稱): \"boot\")"
+msgstr "Oneplus one Nexus 5 (代碼名稱 : \"bacon\"，啟動分區名稱) : \"boot\")"
 
 #: ../../userguide/dailyuse/anbox.rst:20
 msgid ""
 "Nexus 5 (codename: ``hammerhead``, name of the boot partition: ``boot``)"
-msgstr ""
-"Nexus 5 (codename (代碼名稱): \"hammerhead\"，name of the boot partition (啟"
-"動分區名稱): \"boot\")"
+msgstr "Nexus 5 (代碼名稱 : \"hammerhead\"，啟動分區名稱 : \"boot\")"
 
 #: ../../userguide/dailyuse/anbox.rst:21
 msgid "BQ M10 HD (codename: ``cooler``, name of the boot partition: ``boot``)"
-msgstr ""
-"BQ M10 HD (codename (代碼名稱): \"cooler\"，name of the boot partition (啟動"
-"分區名稱): \"boot\")"
+msgstr "BQ M10 HD (代碼名稱 : \"cooler\"，啟動分區名稱 : \"boot\")"
 
 #: ../../userguide/dailyuse/anbox.rst:22
 msgid "BQ M10 FHD (codename: ``frieza``, name of the boot partition: ``boot``)"
-msgstr ""
-"BQ M10 FHD (codename (代碼名稱): \"frieza\"，name of the boot partition (啟動"
-"分區名稱): \"boot\")"
+msgstr "BQ M10 FHD (代碼名稱 : \"frieza\"，啟動分區名稱 : \"boot\")"
 
 #: ../../userguide/dailyuse/anbox.rst:24
 msgid ""
@@ -689,7 +674,7 @@ msgstr "如何安裝"
 
 #: ../../userguide/dailyuse/anbox.rst:30
 msgid "Installing Anbox is only recommended for experienced users."
-msgstr ""
+msgstr "僅建議有經驗的用戶安裝 Anbox。"
 
 #: ../../userguide/dailyuse/anbox.rst:33
 msgid ""
@@ -702,16 +687,17 @@ msgid ""
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:35
-#, fuzzy
 msgid ""
 "Make sure your supported device runs on 16.04 (Anbox doesn't work on 15.04)."
-msgstr "確保您支援的裝置在 16.04 上執行（anbox 在 15.04 上無法使用）"
+msgstr "確保您支援的裝置在 16.04 上執行（Anbox 在 15.04 上無法使用）。"
 
 #: ../../userguide/dailyuse/anbox.rst:36
 msgid ""
 "Be sure to have a `backup <https://askubuntu.com/questions/602850/how-do-i-"
 "backup-my-ubuntu-phone>`_ of the device."
 msgstr ""
+"一定要有一個\"備用 <https://askubuntu.com/questions/602850/how-do-i-backup-my-ubuntu-"
+"phone> \"裝置。"
 
 #: ../../userguide/dailyuse/anbox.rst:37
 msgid ""
@@ -729,13 +715,10 @@ msgid "Activate developer mode on your device."
 msgstr "在您的裝置上啟動開發者模式。"
 
 #: ../../userguide/dailyuse/anbox.rst:39
-#, fuzzy
 msgid ""
 "Connect the device to your host and run the following commands from your "
 "host (same terminal you ran the ``export`` command in)::"
-msgstr ""
-"將裝置連接到主機並從主機執行以下命令（與您在中執行 \"export\"  命令的終端相"
-"同）::"
+msgstr "將裝置連接到主機並從主機執行以下命令（與您在中執行 \"export\" 命令的終端相同）::"
 
 #: ../../userguide/dailyuse/anbox.rst:49
 #, fuzzy
@@ -1012,9 +995,8 @@ msgid "You can also list them via command line::"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:61
-#, fuzzy
 msgid "Install a package"
-msgstr "安裝套件::"
+msgstr "安裝套件"
 
 #: ../../userguide/dailyuse/libertine.rst:63
 msgid ""
@@ -1036,9 +1018,8 @@ msgid "Packages may also be installed via command line::"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:72
-#, fuzzy
 msgid "Remove a package"
-msgstr "移除套件::"
+msgstr "移除套件"
 
 #: ../../userguide/dailyuse/libertine.rst:74
 msgid ""
@@ -1723,9 +1704,8 @@ msgid ""
 msgstr ""
 
 #: ../../userguide/install.rst:50
-#, fuzzy
 msgid "Fairphone 2 Vendor-ID"
-msgstr "Fairphone 2::"
+msgstr "Fairphone 2 供應商 ID"
 
 #: ../../userguide/install.rst:52
 msgid ""
@@ -1802,13 +1782,10 @@ msgid "BE VERY CAREFUL! You are responsible for your own actions!"
 msgstr "要非常小心！您需要對自己的行為做負責！"
 
 #: ../../userguide/install.rst:118
-#, fuzzy
 msgid ""
 "Disconnect all devices and non-essential peripherals from your PC. Charge "
 "your device on a wall-charger (not your PC) to at least 40 percent."
-msgstr ""
-"從電腦上斷開所有裝置和非必要外圍裝置的連接。 在充電器（而不是從電腦）上為裝置"
-"充電至少40％"
+msgstr "從電腦上斷開所有裝置和非必要外接裝置的連接。 在充電器（而不是從電腦）上為裝置充電至少40％。"
 
 #: ../../userguide/install.rst:119
 #, fuzzy
@@ -1883,17 +1860,15 @@ msgstr ""
 "將作為解決方法："
 
 #: ../../userguide/install.rst:141
-#, fuzzy
 msgid ""
 "In the \"Scatter-loading File\" section, press the \"choose\" button and "
 "select the ``*Android_scatter.txt`` file from the archive you downloaded in "
 "the second step."
-msgstr "從第一步下載的存檔中選擇 \"*Android_scatter.txt\" 文件作為分散載入文件"
+msgstr "在「分散載入文件」部分，按下「選擇」按鈕，從第二步下載的存檔中選擇 \"*Android_scatter.txt\" 檔。"
 
 #: ../../userguide/install.rst:142
-#, fuzzy
 msgid "Choose \"Firmware Upgrade\" from the drop-down menu."
-msgstr "選擇 \"固件升級\""
+msgstr "從下拉式選單中選擇 \"固件升級\"。"
 
 #: ../../userguide/install.rst:146
 #, fuzzy
@@ -1914,21 +1889,18 @@ msgid ""
 msgstr ""
 
 #: ../../userguide/install.rst:150
-#, fuzzy
 msgid "Turn your device completely off, but do not connect it yet."
-msgstr "完全關閉裝置，但尚未連接"
+msgstr "完全關閉裝置，但不要直接連接它。"
 
 #: ../../userguide/install.rst:151
-#, fuzzy
 msgid "Press the button labeled \"Download\"."
-msgstr "按下標有 \"下載\" 的按鈕"
+msgstr "按下 \"下載\" 的按鈕。"
 
 #: ../../userguide/install.rst:152
-#, fuzzy
 msgid ""
 "Perform a final sanity-check that you selected the \"Firmware Upgrade\" "
 "option, not \"Download Only\"."
-msgstr "執行最終的完整性檢查，選擇 \"固件升級\" 選項，而不是 \"下載\""
+msgstr "執行最終的完整性檢查，選擇 \"固件升級\" 選項，而不是 \"下載\"。"
 
 #: ../../userguide/install.rst:153
 msgid ""

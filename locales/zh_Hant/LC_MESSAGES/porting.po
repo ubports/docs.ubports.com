@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2019-01-21 14:32+0000\n"
+"PO-Revision-Date: 2021-02-21 20:38+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-porting/zh_Hant/>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../../porting/Intro.rst:2
 msgid "Introduction to porting"
-msgstr ""
+msgstr "移植簡介"
 
 #: ../../porting/Intro.rst:4
 msgid ""
@@ -42,9 +42,8 @@ msgid ""
 msgstr ""
 
 #: ../../porting/Intro.rst:11
-#, fuzzy
 msgid "What is Ubuntu Touch?"
-msgstr "執行 Ubuntu Touch"
+msgstr "什麼是 Ubuntu Touch ?"
 
 #: ../../porting/Intro.rst:13
 msgid ""
@@ -107,20 +106,20 @@ msgstr ""
 
 #: ../../porting/Intro.rst:28
 msgid "Thus an Ubuntu Touch port is composed of the these components:"
-msgstr ""
+msgstr "因此， Ubuntu Touch 端口由以下元件組成："
 
 #: ../../porting/Intro.rst:26
 msgid "The Ubuntu Touch (UT) root filesystem (rootfs)"
-msgstr ""
+msgstr "Ubuntu Touch (UT) root 檔案系統 (rootfs)"
 
 #: ../../porting/Intro.rst:27
 msgid ""
 "`Halium <https://halium.org/>`_ (contained in the boot and system images)"
-msgstr ""
+msgstr "\"Halium <https://halium.org/>\"_ (包含在引導和系統映像中)"
 
 #: ../../porting/Intro.rst:28
 msgid "The vendor blobs"
-msgstr ""
+msgstr "供應商端點"
 
 #: ../../porting/Intro.rst:30
 msgid ""
@@ -140,40 +139,39 @@ msgstr ""
 
 #: ../../porting/Intro.rst:35
 msgid "Android version"
-msgstr ""
+msgstr "Android 版本"
 
 #: ../../porting/Intro.rst:35
 msgid "Halium version"
-msgstr ""
+msgstr "Halium 版本"
 
 #: ../../porting/Intro.rst:35
 msgid "Lineage OS (LOS)"
-msgstr ""
+msgstr "Lineage OS (LOS)"
 
 #: ../../porting/Intro.rst:37
 msgid "7.1"
-msgstr ""
+msgstr "7.1"
 
 #: ../../porting/Intro.rst:37
 msgid "14.1"
-msgstr ""
+msgstr "14.1"
 
 #: ../../porting/Intro.rst:38
-#, fuzzy
 msgid "9.0"
-msgstr "1.0"
+msgstr "9.0"
 
 #: ../../porting/Intro.rst:38
 msgid "16.0"
-msgstr ""
+msgstr "16.0"
 
 #: ../../porting/Intro.rst:44
 msgid "Overview of the porting process"
-msgstr ""
+msgstr "移植過程概括"
 
 #: ../../porting/Intro.rst:46 ../../porting/Preparations.rst:2
 msgid "Preparations"
-msgstr ""
+msgstr "準備"
 
 #: ../../porting/Intro.rst:47
 msgid ""
@@ -184,7 +182,7 @@ msgstr ""
 
 #: ../../porting/Intro.rst:48
 msgid "Set up your Halium build environment and complete a test build"
-msgstr ""
+msgstr "設置您的 Halium 構建環境並完成測試"
 
 #: ../../porting/Intro.rst:49
 msgid ""
@@ -196,7 +194,7 @@ msgstr ""
 
 #: ../../porting/Intro.rst:50
 msgid "Build halium-boot.img and system.img for Ubuntu Touch"
-msgstr ""
+msgstr "為 Ubuntu Touch 構建 halium-boot.img 和 system.img"
 
 #: ../../porting/Intro.rst:51
 msgid ""
@@ -206,7 +204,7 @@ msgstr ""
 
 #: ../../porting/Intro.rst:52
 msgid "Install and debug the boot process"
-msgstr ""
+msgstr "安裝和偵錯啟動過程"
 
 #: ../../porting/Intro.rst:53
 msgid ""
@@ -226,7 +224,7 @@ msgstr ""
 
 #: ../../porting/Intro.rst:56
 msgid "Complete device configuration"
-msgstr ""
+msgstr "完整的裝置配置"
 
 #: ../../porting/Intro.rst:57
 msgid ""
@@ -238,7 +236,7 @@ msgstr ""
 
 #: ../../porting/Intro.rst:58
 msgid "Build Ubuntu Touch recovery.img"
-msgstr ""
+msgstr "構建 Ubuntu Touch recovery.img"
 
 #: ../../porting/Intro.rst:59
 msgid ""
@@ -248,7 +246,7 @@ msgstr ""
 
 #: ../../porting/Intro.rst:61
 msgid "Set up the UBports installer for your device"
-msgstr ""
+msgstr "為您的裝置設置 UBports 安裝程式"
 
 #: ../../porting/Intro.rst:61
 msgid ""
@@ -259,7 +257,7 @@ msgstr ""
 
 #: ../../porting/Intro.rst:66
 msgid "The challenges of the porting process"
-msgstr ""
+msgstr "移植過程的挑戰"
 
 #: ../../porting/Intro.rst:68
 msgid ""
@@ -281,7 +279,7 @@ msgstr ""
 
 #: ../../porting/Intro.rst:75
 msgid "Prior knowledge and skills"
-msgstr ""
+msgstr "先前的知識和技能"
 
 #: ../../porting/Intro.rst:77
 msgid ""
@@ -317,30 +315,27 @@ msgstr ""
 
 #: ../../porting/Intro.rst:88
 msgid "`Telegram: @halium <https://t.me/halium>`_"
-msgstr ""
+msgstr "\"Telegram: @halium <https://t.me/halium>\"_"
 
 #: ../../porting/Intro.rst:89
-#, fuzzy
 msgid "`Telegram: @ubports_porting <https://t.me/ubports_porting>`_"
-msgstr "Telegram: @ubports_porting"
+msgstr "\"Telegram: @ubports_porting <https://t.me/ubports_porting>\"_"
 
 #: ../../porting/Intro.rst:90
-#, fuzzy
 msgid "`The UBports Forum <https://forums.ubports.com/category/33/porting>`_"
-msgstr "論壇: \"forums.ubports.com <https://forums.ubports.com>\"__"
+msgstr "\"UBports 論壇 : <https://forums.ubports.com/category/33/porting>\"_"
 
 #: ../../porting/Intro.rst:91
-#, fuzzy
 msgid "IRC: #halium on Freenode"
-msgstr "IRC: #ubports-porting 在 freenode"
+msgstr "IRC: #halium 在 freenode"
 
 #: ../../porting/Intro.rst:92
 msgid "Matrix: #halium:matrix.org"
-msgstr ""
+msgstr "Matrix: #halium:matrix.org"
 
 #: ../../porting/Intro.rst:97
 msgid "General advice"
-msgstr ""
+msgstr "一般建議"
 
 #: ../../porting/Intro.rst:99
 msgid ""
@@ -355,13 +350,13 @@ msgstr ""
 #: ../../porting/Intro.rst:101
 msgid ""
 "If you are not discouraged after reading this, we wish you the best of luck!"
-msgstr ""
+msgstr "如果您在閱讀本文後並沒有氣餒，我們一定會祝你好運的！"
 
 #: ../../porting/Preparations.rst:4
 msgid ""
 "Not all devices can be made to run Ubuntu Touch. Research your target device "
 "before you start."
-msgstr ""
+msgstr "並非所有設備都可用於執行 Ubuntu Touch，在開始之前對目標設備進行研究。"
 
 #: ../../porting/Preparations.rst:6
 msgid ""
@@ -379,7 +374,7 @@ msgstr ""
 
 #: ../../porting/Preparations.rst:13
 msgid "Locate relevant guides and other information"
-msgstr ""
+msgstr "找到相關指南以及其他訊息"
 
 #: ../../porting/Preparations.rst:15
 msgid ""
@@ -404,11 +399,11 @@ msgstr ""
 msgid ""
 "Another rich source of information is the `XDA Developers Forum <https://www."
 "xda-developers.com/>`_."
-msgstr ""
+msgstr "另一個豐富的資訊來源是來自\"XDA 開發者社群 <https://www.xda-developers.com/>\"_."
 
 #: ../../porting/Preparations.rst:24
 msgid "Unlock the bootloader"
-msgstr ""
+msgstr "解鎖 bootloader"
 
 #: ../../porting/Preparations.rst:26
 msgid ""
@@ -429,7 +424,7 @@ msgstr ""
 
 #: ../../porting/Preparations.rst:33
 msgid "Install TWRP recovery"
-msgstr ""
+msgstr "安裝 TWRP recovery"
 
 #: ../../porting/Preparations.rst:35
 msgid ""
@@ -471,7 +466,7 @@ msgstr ""
 #: ../../porting/halium_9/Halium_9_GSI_porting.rst:4
 #: ../../porting/halium_9/Halium_9_common_errors.rst:4
 msgid "*Work in progress*"
-msgstr ""
+msgstr "*正在進行的工作*"
 
 #: ../../porting/UBports_installer.rst:6 ../../porting/UBports_recovery.rst:6
 msgid ""
@@ -482,10 +477,9 @@ msgstr ""
 
 #: ../../porting/UBports_recovery.rst:2
 msgid "Building UBports recovery"
-msgstr ""
+msgstr "構建 UBports recovery"
 
 #: ../../porting/halium_7-1/Building.rst:2
-#, fuzzy
 msgid "Building the images"
 msgstr "構建映像"
 
@@ -518,9 +512,8 @@ msgid ""
 msgstr ""
 
 #: ../../porting/halium_7-1/Building.rst:15
-#, fuzzy
 msgid "Build the Halium system image"
-msgstr "構建映像"
+msgstr "構建 Halium 系統映像"
 
 #: ../../porting/halium_7-1/Building.rst:17
 msgid ""
@@ -550,9 +543,8 @@ msgid ""
 msgstr ""
 
 #: ../../porting/halium_7-1/Building.rst:26
-#, fuzzy
 msgid "Build the images for Ubuntu Touch"
-msgstr "構建映像"
+msgstr "構建 Ubuntu Touch 映像"
 
 #: ../../porting/halium_7-1/Building.rst:29
 #, fuzzy
@@ -703,7 +695,7 @@ msgstr ""
 
 #: ../../porting/halium_7-1/Building.rst:83
 msgid "``cd BUILDDIR``"
-msgstr ""
+msgstr "\"cd 構建\""
 
 #: ../../porting/halium_7-1/Building.rst:84
 msgid "``source build/envsetup.sh``"
@@ -733,13 +725,12 @@ msgstr ""
 
 #: ../../porting/halium_7-1/Common_errors.rst:2
 #: ../../porting/halium_9/Halium_9_common_errors.rst:2
-#, fuzzy
 msgid "Common errors"
-msgstr "常見問題"
+msgstr "常見錯誤"
 
 #: ../../porting/halium_7-1/Common_errors.rst:7
 msgid "Known issues when building the images for UT"
-msgstr ""
+msgstr "為 UT 構建映像時已知的問題"
 
 #: ../../porting/halium_7-1/Common_errors.rst:9
 msgid ""
@@ -750,13 +741,13 @@ msgstr ""
 
 #: ../../porting/halium_7-1/Common_errors.rst:14
 msgid "Known issues with initial boot"
-msgstr ""
+msgstr "初始啟動時的已知問題"
 
 #: ../../porting/halium_7-1/Common_errors.rst:16
 msgid ""
 "The following are some of the known issues you may encounter in connection "
 "with the initial boot process."
-msgstr ""
+msgstr "以下是您在初始啟動過程中可能遇到的一些已知問題。"
 
 #: ../../porting/halium_7-1/Common_errors.rst:19
 msgid "SSH hangs when trying to connect"
@@ -826,13 +817,13 @@ msgstr "要解決此問題，請在重新開機之前登入並執行以下命令
 
 #: ../../porting/halium_7-1/Common_errors.rst:63
 msgid "Known issues when bringing up Unity 8"
-msgstr ""
+msgstr "啟動 Unity 8 時的已知問題"
 
 #: ../../porting/halium_7-1/Common_errors.rst:65
 msgid ""
 "Below is are a few things to check when you are having trouble bringing up "
 "Unity 8."
-msgstr ""
+msgstr "以下是在啟動 Unity 8 時遇到的問題。"
 
 #: ../../porting/halium_7-1/Common_errors.rst:68
 msgid "Nothing shows on screen"
