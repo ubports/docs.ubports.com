@@ -6,5 +6,6 @@ Halium 9
     :name: halium_9
 
     Halium_9_overview
+    Building_9
     Halium_9_GSI_porting
     Halium_9_common_errors
