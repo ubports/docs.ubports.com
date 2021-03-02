@@ -11,6 +11,7 @@ The final section contains reference material that may be useful.
     :maxdepth: 1
     :name: halium_7-1
 
+    Halium_7.1_overview
     Building
     Installing
     Unity8
