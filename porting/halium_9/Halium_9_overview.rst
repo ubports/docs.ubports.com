@@ -26,7 +26,7 @@ There are three main courses of action when porting Ubuntu Touch based on Halium
 * Building only the kernel and installing this together with the halium ramdisk, the apparmor enabler and the UBports GSI.
 * Building both the halium-boot.img and the full system.img from source and installing these.
 
-The rest of this guide will describe the first of these alternatives.
+When writing this section of the guide, a choice was made to provide a guide as quickly as possible that would be useful to the greatest possible number of porters. This precluded describing all three alternatives above. We have therefore selected the first one, which we judge to be the one with the greatest potential for success for the average porter. In time, we hope to expand the guide to encompass the other two as well. In the meantime, the more experienced (or more adventurous) porters can find information on the other two in the UBports Wiki - `porting notes page <https://github.com/ubports/porting-notes/wiki/Halium-9>`_ and `Generic System Image page <https://github.com/ubports/porting-notes/wiki/Generic-system-image-(GSI)>`_.
 
 Overview of the porting process:
 --------------------------------
