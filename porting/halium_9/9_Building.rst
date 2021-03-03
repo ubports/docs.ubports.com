@@ -13,11 +13,6 @@ The GSI is device-independent and can therefore be downloaded in a precompiled s
 
 The first step is to set up the build environment and build halium-boot.img.
 
-.. _Build-Halium9-bootimage:
-
-Building the Halium 9 boot image
---------------------------------
-
 `The Halium porting guide <http://docs.halium.org/en/latest/porting/first-steps.html#set-up-your-build-device>`_ details the necessary steps to set up a Halium build environment and build halium-boot. Follow the steps described there remembering that you are building Halium 9.0.
 
 Once the boot image has been successfully built (without errors), you can return here and proceed to the next section.
