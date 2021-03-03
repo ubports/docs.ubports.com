@@ -20,13 +20,16 @@ How does this change the porting process?
 
 Since the GSI is a prebuilt, device-independent component, it effectively simplifies the task of building a viable port by removing much of the meticulous and time consuming task of getting the hardware-specific vendor blobs compiled into the system image and configured to function properly.
 
-There are three main courses of action when porting Ubuntu Touch based on Halium 9. These are:
+There are three main methods that can be used when porting Ubuntu Touch based on Halium 9. These are:
 
 * Building halium-boot.img and installing this together with the Ubports GSI.
 * Building only the kernel and installing this together with the halium ramdisk, the apparmor enabler and the UBports GSI.
 * Building both the halium-boot.img and the full system.img from source and installing these.
 
 When writing this section of the guide, a choice was made to provide a guide as quickly as possible that would be useful to the greatest possible number of porters. This precluded describing all three alternatives above. We have therefore selected the first one, which we judge to be the one with the greatest potential for success for the average porter. In time, we hope to expand the guide to encompass the other two as well. In the meantime, the more experienced (or more adventurous) porters can find information on the other two in the UBports Wiki - `porting notes page <https://github.com/ubports/porting-notes/wiki/Halium-9>`_ and `Generic System Image page <https://github.com/ubports/porting-notes/wiki/Generic-system-image-(GSI)>`_.
+
+.. Note::
+    Currently the UBports GSI is only built for arm64 devices. Consequently, owners of armhf devices must resort to the third method above, and cannot rely on significant portions of the remainder of this guide.
 
 Overview of the porting process:
 --------------------------------
