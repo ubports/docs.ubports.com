@@ -3,8 +3,8 @@ Install and debug the boot process
 
 This step involves flashing the halium-boot.img you built in the previous section, and subsequently downloading and installing the GSI and rootfs on your device. You will then boot your device and establish remote access to confirm that it boots correctly.
 
-Flash halium-boots
-------------------
+Flash halium-boot
+-----------------
 
 To install halium-boot, reboot your phone into fastboot mode. Then do the following from your Halium tree::
 
@@ -41,7 +41,7 @@ This repository contains tools that are used to install a Halium system image an
 
 Reboot your device to recovery (e.g. TWRP), to get adb access again. Now use the ``halium-install`` script to install Ubuntu Touch on your device by issuing the following command::
 
-    path/to/halium-install -p ut -s path/to/	ubuntu-touch-android9-arm64.tar.gz path/to/android_rootfs.img
+    path/to/halium-install -p ut -s path/to/ubuntu-touch-android9-arm64.tar.gz path/to/android_rootfs.img
 
 The script will copy and extract the files to their proper places, then allow you to set the user password for your device (the *phablet* user's password).
 
