@@ -15,7 +15,7 @@ Halium 7.1 porting - an overview
     * Bring up the Ubuntu Touch graphical user interface 'Unity 8'
         This stage involves adjusting some configuration and further debugging of your build.
     * Complete device configuration
-        Now you need to further debug the build and adjust configuration until all broken functionality is fixed. When you complete this stage you will have a fully functional port, but it will not yet be capable of accepting Over The Air (OTA) updates.
+        Now you need to further debug the build and adjust configuration until all broken functionality is fixed. When you complete this stage you will have a fully functional port, but it will not yet be capable of accepting OTA (Over The Air) updates.
     * Build Ubuntu Touch recovery.img
         The Ubuntu Touch recovery image is a slightly modified recovery image that is tailored to work with the UBports installer
     * Set up the UBports installer for your device
