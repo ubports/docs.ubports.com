@@ -45,5 +45,5 @@ Reboot your device to recovery (e.g. TWRP), to get adb access again. Now use the
 
 The script will copy and extract the files to their proper places, then allow you to set the user password for your device (the *phablet* user's password).
 
-Booting and gaining remote access
----------------------------------
+Boot and gain remote access
+---------------------------
