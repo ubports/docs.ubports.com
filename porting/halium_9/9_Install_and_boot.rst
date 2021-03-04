@@ -28,7 +28,7 @@ Download the latest version of `the UBports GSI <https://ci.ubports.com/job/UBpo
 
 Extract the downloaded file and locate the file ``android_rootfs.img`` in the directory ``system/var/lib/lxc/android``. This is the GSI file you will be transferring to the device.
 
-Next, download `the rootfs <https://ci.ubports.com/job/xenial-hybris-android9-rootfs-arm64/>`_ Do not extract this file.
+Next, download `the rootfs <https://ci.ubports.com/job/xenial-hybris-android9-rootfs-arm64/>`_. Do not extract this file.
 
 Installation
 ------------
