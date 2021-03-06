@@ -4,7 +4,10 @@ Halium 9 Porting - Overview
 Which devices are compatible with Halium 9?
 -------------------------------------------
 
-As mentioned in the section :ref:`Android-and-Halium-versions`, Halium 9.0 corresponds to Android 9.0. Thus, only devices currently running Android 9.0 can be made to work with Halium 9.0.
+As mentioned in the section :ref:`Android-and-Halium-versions`, Halium 9.0 corresponds to Android 9.0. Thus, devices currently running at least Android 9.0 can be made to work with Halium 9.0. This may also include some devices that run Android 10.0 or Android 11.0, provided they can also run Android 9.0.
+
+.. Note::
+    If your device has an Android version newer than Android 9.0 installed, you will first need to downgrade to Android 9.0 before beginning the porting process. This is to ensure that you have the correct version of :ref:`the vendor blobs <Vendor_blobs>` installed, as these must correspond to the Halium version you are building.
 
 What is a GSI?
 --------------
