@@ -24,7 +24,7 @@ On your device, choose *Install* in the TWRP menu, navigate to the sdcard direct
 Download and prepare the GSI and rootfs
 ---------------------------------------
 
-Download the latest version of `the UBports GSI <https://ci.ubports.com/job/UBportsCommunityPortsJenkinsCI/job/ubports%252Fcommunity-ports%252Fjenkins-ci%252Fgeneric_arm64/job/main/>`_ 
+Download the latest version of `the UBports GSI <https://ci.ubports.com/job/UBportsCommunityPortsJenkinsCI/job/ubports%252Fcommunity-ports%252Fjenkins-ci%252Fgeneric_arm64/job/main/>`_.
 
 Extract the downloaded file and locate the file ``android_rootfs.img`` in the directory ``system/var/lib/lxc/android``. This is the GSI file you will be transferring to the device.
 
