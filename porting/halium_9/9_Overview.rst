@@ -52,7 +52,7 @@ Overview of the porting process:
         After completion of this stage you will be able to successfully login to the graphical user interface.
     * Check and enable remaining device features
         This stage involves applying apparmor kernel patches (and rebuilding halium-boot.img) as well as checking and debugging a wide variety of features such as WiFi, sensors, camera, video, voice calls, etc. When you complete this stage you will have a fully functional port, but it will not yet be capable of accepting OTA (Over The Air) updates.
-    * Build Ubuntu Touch recovery.img
+    * Build the Ubuntu Touch recovery.img
         The Ubuntu Touch recovery image is a slightly modified recovery image that is tailored to working with the UBports installer
     * Set up the UBports installer for your device
         When you have completed this stage you will have made it possible for anyone owning the device in question to install and run Ubuntu Touch on it, including the ability to receive OTA updates as they are made available.
