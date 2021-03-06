@@ -16,7 +16,10 @@ With Android 9.0 there came a significant change of architecture. The device-spe
 
 A GSI (Generic System Image) is a system image that is built to be able to function with a wide range of devices. Android devices, as of version 9.0, use a GSI. For more information, see the `Android Developer pages <https://developer.android.com/topic/generic-system-image/>`_
 
-The development of the Android GSI architecture also cleared the way for the now available Halium 9.0 Ubuntu Touch GSI.
+The development of the Android GSI architecture also cleared the way for the now available Halium 9.0 GSI used for Ubuntu Touch.
+
+.. Note::
+    Technically, the Halium GSI is in reality a generic LXC container image.
 
 How does this change the porting process?
 -----------------------------------------
