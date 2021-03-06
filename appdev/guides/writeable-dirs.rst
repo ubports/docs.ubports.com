@@ -63,4 +63,4 @@ The Qt module `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-labs-
     }
     ...
 
-Notice that ``QStandardPaths`` returns paths ('/phablet/home/...'), and QML ``StandardPaths`` returns urls ('file:///phablet/home/...'). This must be considered specially if the app is sharing location strings between QML and C++.
+Notice that ``QStandardPaths`` returns paths (``'/phablet/home/...'``), and QML ``StandardPaths`` returns urls (``'file:///phablet/home/...'``). This must be considered specially if the app is sharing location strings between QML and C++.
