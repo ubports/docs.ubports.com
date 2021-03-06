@@ -1,9 +1,11 @@
 Halium 7.1
 ==========
 
-The four first sections below will take you through the porting steps described in the introduction. 
+The first section below gives an overview of the porting process.
 
-The next section is a collection of documented errors and how to deal with them. These have been kept separate from the porting instructions themselves for the sake of keeping these brief. However, each section of the porting instructions concludes with a direct link to the relevant information on issues and errors.
+The four next sections will take you through the porting steps described in the overview. 
+
+This is followed by a section with a collection of documented errors and how to deal with them. These have been separated from the porting instructions themselves so as to keep them brief. However, each section of the porting instructions concludes with a direct link to the relevant information on issues and errors.
 
 The final section contains reference material that may be useful.
 
