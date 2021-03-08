@@ -4,7 +4,7 @@ Building the halium-boot image
 A Halium 9.0 - GSI port consists of the following parts:
     
     * The boot image: halium-boot.img
-    * The GSI
+    * The GSI (see :ref:`What_is_a_GSI`)
     * The UBports - Ubuntu Touch - root file system (hereafter referred to as the *rootfs*)
 
 The boot image contains the Linux kernel, the heart of the operating system, which needs to be built from source code for each specific device. 
