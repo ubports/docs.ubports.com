@@ -28,6 +28,8 @@ How does this change the porting process?
 
 Since the GSI is a prebuilt, device-independent component, it effectively simplifies the task of building a viable port by removing much of the meticulous and time consuming task of getting the hardware-specific vendor blobs compiled into the system image and configured to function properly.
 
+.. _Hal_9_porting_methods:
+
 There are three main methods that can be used when porting Ubuntu Touch based on Halium 9. These are:
 
 * Building only the kernel and installing this together with the Halium ramdisk, the apparmor enabler and the Halium GSI.
