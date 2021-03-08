@@ -48,6 +48,6 @@ The script will copy and extract the files to their proper places, then allow yo
 Boot and gain remote access
 ---------------------------
 
-Reboot your device and connect it to your computer via USB cable following the steps in ?`the Halium guide <https://docs.halium.org/en/latest/porting/debug-build/early-init.html#early-init>`_ to gain access to it and confirm that it has booted successfully.
+Reboot your device and connect it to your computer via USB cable following the steps in `the Halium guide <https://docs.halium.org/en/latest/porting/debug-build/early-init.html#early-init>`_ to gain access to it and confirm that it has booted successfully.
 
 The next step is to bring up Lomiri, the graphical user interface.
