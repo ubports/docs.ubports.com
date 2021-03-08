@@ -3,8 +3,8 @@ The graphical UI
 
 .. _Bring-up-Unity-8:
 
-Bring up Unity 8 (the graphical UI)
------------------------------------
+Bring up Lomiri/Unity 8 (the graphical UI)
+------------------------------------------
 
 Now that you're logged in, there remain a number of things to be configured before Ubuntu Touch will be fully functional on your device. The correct way to do this is by storing these settings in overlay files (:ref:`Overlay-files`), and not by making the root directory writeable, as described below. However, in order to quickly set up udev rules which are necessary to complete subsequent steps, you can use this method for first time setup.
 
