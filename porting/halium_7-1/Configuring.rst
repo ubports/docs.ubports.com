@@ -1,3 +1,5 @@
+.. _Configuring_UT:
+
 Configuring Ubuntu Touch
 ========================
 
@@ -79,18 +81,18 @@ Once you have adjusted the ``android.conf`` file to the display settings needed 
 
 Create the file android.conf in your 'ubuntu' directory and enter the settings you determined and tested in the previous section. Complete steps 3 and 4 above, taking care to remember the note on how to :ref:`Rebuild-system.img`.
 
-.. _Apply-apparmor-kernel-patches:
+.. _Apply-AppArmor-kernel-patches:
 
-Apply apparmor kernel patches
+Apply AppArmor kernel patches
 -----------------------------
 
-`What is apparmor? <https://wiki.ubuntu.com/AppArmor>`_
+`What is AppArmor? <https://wiki.ubuntu.com/AppArmor>`_
 
-Start by downloading the backported `apparmor patch <https://github.com/ubports/apparmor-backports-ut>`_ corresponding to your device's kernel version. Your kernel version is specified at the beginning of your kernel defconfig file, i.e. the one you edited in section :ref:`Edit-kernel-config` above.
+Start by downloading the backported `AppArmor patch <https://github.com/ubports/AppArmor-backports-ut>`_ corresponding to your device's kernel version. Your kernel version is specified at the beginning of your kernel defconfig file, i.e. the one you edited in section :ref:`Edit-kernel-config` above.
 
-You now need to delete your entire BUILDDIR/kernel/VENDOR/MODEL/security/apparmor subdirectory and replace it with the one you downloaded. Then rebuild halium-boot. 
+You now need to delete your entire BUILDDIR/kernel/VENDOR/MODEL/security/AppArmor subdirectory and replace it with the one you downloaded. Then rebuild halium-boot. 
 
-If you get errors when building, you will need to resolve them one by one, modifying your source code as needed. Note that you should only modify the code in the apparmor subdirectory if at all possible. Modifying code elsewhere will more than likely just compound your problems.
+If you get errors when building, you will need to resolve them one by one, modifying your source code as needed. Note that you should only modify the code in the AppArmor subdirectory if at all possible. Modifying code elsewhere will more than likely just compound your problems.
 
 Seek help as needed from one of the sources mentioned in section :ref:`Getting-community-help`.
 
