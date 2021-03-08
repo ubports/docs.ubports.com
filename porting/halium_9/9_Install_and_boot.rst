@@ -1,7 +1,7 @@
 Install and debug the boot process
 ==================================
 
-This step involves flashing the halium-boot.img you built in the previous section, and subsequently downloading and installing the GSI and rootfs on your device. You will then boot your device and establish remote access to confirm that it boots correctly.
+This step involves flashing the halium-boot.img you built in the previous section, and subsequently downloading and installing the GSI (see :ref:`What_is_a_GSI`) and rootfs on your device. You will then boot your device and establish remote access to confirm that it boots correctly.
 
 Flash halium-boot
 -----------------
