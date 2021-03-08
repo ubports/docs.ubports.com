@@ -1,10 +1,8 @@
 Bring up Lomiri - the graphical user interface
 ==============================================
 
-Once you succeed in getting your device to boot correctly, you may actually experience that it boots straight into Lomiri. If so, you may skip the rest of this section and proceed to the next.
+Once your device boots correctly, you should only need to create a udev rules file to enable Lomiri. Refer to :ref:`Bring-up-Unity-8`
 
-This section deals with problems you may encounter when attempting to bring up Lomiri.
+If you do not succeed in bringing up Lomiri, please seek help through one of the channels mentioned in the section :ref:`Getting-community-help`.
 
-*Treat issues here in order from the most to the least common, if possible*
-
-If you have tried everything that is described in this section and Lomiri still does not boot on your device, please seek help through one of the channels mentioned in the section :ref:`Getting-community-help`.
+After bringing up the graphical user interface, the next step is to check and enable device functionality.
