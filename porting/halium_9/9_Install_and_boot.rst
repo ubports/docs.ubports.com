@@ -39,7 +39,7 @@ Clone or download the `halium-install repository <https://gitlab.com/JBBgameich/
 
 This repository contains tools that are used to install a Halium system image and a distribution rootfs.
 
-Reboot your device to recovery (e.g. TWRP), to get adb access again. Now use the ``halium-install`` script to install Ubuntu Touch on your device by issuing the following command::
+Reboot your device to recovery (*e.g.* TWRP), to get adb access again. Now use the ``halium-install`` script to install Ubuntu Touch on your device by issuing the following command::
 
     path/to/halium-install -p ut -s path/to/ubuntu-touch-android9-arm64.tar.gz path/to/android-rootfs.img
 
@@ -47,3 +47,7 @@ The script will copy and extract the files to their proper places, then allow yo
 
 Boot and gain remote access
 ---------------------------
+
+Reboot your device and connect it to your computer via USB cable following the steps in ?`the Halium guide <https://docs.halium.org/en/latest/porting/debug-build/early-init.html#early-init>`_ to gain access to it and confirm that it has booted successfully.
+
+The next step is to bring up Lomiri, the graphical user interface.
