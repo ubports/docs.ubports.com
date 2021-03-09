@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-28 12:29-0500\n"
+"POT-Creation-Date: 2021-03-09 17:42-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -281,7 +281,7 @@ msgid "Some examples of Halium ports are those for Sony Xperia X and Oneplus 3. 
 msgstr ""
 
 #: ../../systemdev/kernel-hal.rst:67
-msgid "All new ports of UT to Android devices should follow the Halium process. Further details can be found under :doc:`Halium porting <../porting/Intro>`"
+msgid "All new ports of UT to Android devices should follow the Halium process. Further details can be found under :doc:`Halium porting <../porting/index>`"
 msgstr ""
 
 #: ../../systemdev/kernel-hal.rst:70
@@ -798,7 +798,7 @@ msgid "This page documents how to build the Kernel and the Android image for the
 msgstr ""
 
 #: ../../systemdev/ubp-5.1.rst:9
-msgid "We highly suggest that you follow the :doc:`Halium porting guide <../porting/Intro>` if you want to bring up a new device. The steps in here are only relevant for hammerhead, bacon and FP2."
+msgid "We highly suggest that you follow the :doc:`Halium porting guide <../porting/index>` if you want to bring up a new device. The steps in here are only relevant for hammerhead, bacon and FP2."
 msgstr ""
 
 #: ../../systemdev/ubp-5.1.rst:11

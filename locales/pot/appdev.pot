@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-11 09:34-0500\n"
+"POT-Creation-Date: 2021-03-09 17:42-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -153,54 +153,62 @@ msgid "In this section you will find links to external resources about creating 
 msgstr ""
 
 #: ../../appdev/guides/cookbook.rst:9
-msgid "`Ubuntu Touch programming book <https://www.gitbook.com/book/mimecar/ubuntu-touch-programming-course/details>`__"
+msgid "`Ubuntu Touch programming book <https://mimecar.gitbooks.io/ubuntu-touch-programming-course/content/>`__"
 msgstr ""
 
 #: ../../appdev/guides/cookbook.rst:10
 msgid "`Application Templates by fulvio <https://github.com/fulvio999/ubports_app_templates>`__"
 msgstr ""
 
-#: ../../appdev/guides/cookbook.rst:13
-msgid "Playground"
+#: ../../appdev/guides/cookbook.rst:11
+msgid "`Python examples by pavelprosto <https://forums.ubports.com/topic/5525/python-examples>`__"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:12
+msgid "`Python + UT apps quickstart guide by AaronTheIssueGuy <https://aaron.place/blogs/UbPortsPython.html>`__"
 msgstr ""
 
 #: ../../appdev/guides/cookbook.rst:15
+msgid "Playground"
+msgstr ""
+
+#: ../../appdev/guides/cookbook.rst:17
 msgid "In a completely free and open source community, it is natural to have community members exploring the limits of the platform in many many directions. In this section you will find links to external resources that do exactly that: Explore. The purpose of this list is to show the unlimited possibilities of an open platform like Ubuntu Touch."
 msgstr ""
 
-#: ../../appdev/guides/cookbook.rst:18
+#: ../../appdev/guides/cookbook.rst:20
 msgid "The resources listed here do not necessarily represent the officially endorsed way of developing applications for Ubuntu Touch, but are interesting experiments."
 msgstr ""
 
-#: ../../appdev/guides/cookbook.rst:20
+#: ../../appdev/guides/cookbook.rst:22
 msgid "`Free Pascal development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__"
 msgstr ""
 
-#: ../../appdev/guides/cookbook.rst:21
+#: ../../appdev/guides/cookbook.rst:23
 msgid "`Lazarus development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/10/lazarus-development-for-ubuntu-phone.html>`__"
 msgstr ""
 
-#: ../../appdev/guides/cookbook.rst:22
+#: ../../appdev/guides/cookbook.rst:24
 msgid "`Geany on Ubuntu Touch device as text editor, source code editor, debugger and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-text.html>`__"
 msgstr ""
 
-#: ../../appdev/guides/cookbook.rst:23
+#: ../../appdev/guides/cookbook.rst:25
 msgid "`Publish your existing Qt QML app to Ubuntu Touch using QMake (Video) <https://youtu.be/ehqlwRNrfO0>`__"
 msgstr ""
 
-#: ../../appdev/guides/cookbook.rst:24
+#: ../../appdev/guides/cookbook.rst:26
 msgid "`Publish your existing Qt QML app to Ubuntu Touch using CMake (Video) <https://youtu.be/c2sq6aLeGec>`__"
 msgstr ""
 
-#: ../../appdev/guides/cookbook.rst:25
+#: ../../appdev/guides/cookbook.rst:27
 msgid "`Getting started with Clickable (Video) <https://youtu.be/TE-s5522v0Y>`__"
 msgstr ""
 
-#: ../../appdev/guides/cookbook.rst:26
+#: ../../appdev/guides/cookbook.rst:28
 msgid "`Content Hub overview (Video) <https://youtu.be/AihwC2sPIk0>`__"
 msgstr ""
 
-#: ../../appdev/guides/cookbook.rst:27
+#: ../../appdev/guides/cookbook.rst:29
 msgid "`Import files to your app with Content Hub (Video) <https://youtu.be/q6zzM16jw1U>`__"
 msgstr ""
 
@@ -233,7 +241,7 @@ msgid "Add a `libraries section <http://clickable.bhdouglass.com/en/latest/click
 msgstr ""
 
 #: ../../appdev/guides/dependencies.rst:28
-msgid "If the library does not contain a CMake configuration, you need to use the `qmake` or `custom` template instead."
+msgid "If the library does not contain a CMake configuration, you need to use the `qmake` or `custom` builder instead."
 msgstr ""
 
 #: ../../appdev/guides/dependencies.rst:30
@@ -1152,6 +1160,10 @@ msgstr ""
 msgid "The Qt module `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-labs-platform-standardpaths.html>`_ provides the app's writable locations in QML:"
 msgstr ""
 
+#: ../../appdev/guides/writeable-dirs.rst:66
+msgid "Notice that ``QStandardPaths`` returns paths (``'/phablet/home/...'``), and QML ``StandardPaths`` returns urls (``'file:///phablet/home/...'``). This must be considered specially if the app is sharing location strings between QML and C++."
+msgstr ""
+
 #: ../../appdev/index.rst:2
 msgid "App development"
 msgstr ""
@@ -1184,84 +1196,100 @@ msgstr ""
 msgid "Code Editor Integrations"
 msgstr ""
 
-#: ../../appdev/index.rst:27
+#: ../../appdev/index.rst:26
+msgid "Atom"
+msgstr ""
+
+#: ../../appdev/index.rst:28
 msgid "You can use clickable with the `Atom Editor <https://atom.io>`__ by installing the `atom-clickable-plugin <https://atom.io/packages/atom-clickable-plugin>`__. This provides some common clickable tools needed to build and run click packages for Ubuntu Touch from within Atom editor."
 msgstr ""
 
-#: ../../appdev/index.rst:29
+#: ../../appdev/index.rst:30
+msgid "QtCreator"
+msgstr ""
+
+#: ../../appdev/index.rst:32
+msgid "Available on top of clickable docker image, ``clickable ide qtcreator`` command within your project directory will launch a QtCreator instance and auto setup the project for you, you will have code completion and navigation for Ubuntu Touch components as well as run/debug facilities."
+msgstr ""
+
+#: ../../appdev/index.rst:35
+msgid "Ubuntu SDK ( Unmaintained )"
+msgstr ""
+
+#: ../../appdev/index.rst:37
 msgid "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower."
 msgstr ""
 
-#: ../../appdev/index.rst:31
+#: ../../appdev/index.rst:39
 msgid "You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed to work correctly. You can use the following commands to install::"
 msgstr ""
 
-#: ../../appdev/index.rst:41
+#: ../../appdev/index.rst:49
 msgid "Guides"
 msgstr ""
 
-#: ../../appdev/index.rst:43
+#: ../../appdev/index.rst:51
 msgid "Get started building your first app or learn about advanced concepts with our :ref:`Developer guides <devguides>`."
 msgstr ""
 
-#: ../../appdev/index.rst:59
+#: ../../appdev/index.rst:67
 msgid "Publishing"
 msgstr ""
 
-#: ../../appdev/index.rst:61
+#: ../../appdev/index.rst:69
 msgid "After you are done building your app, distribute it on the `OpenStore <https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`."
 msgstr ""
 
-#: ../../appdev/index.rst:70
+#: ../../appdev/index.rst:78
 msgid "Documentation"
 msgstr ""
 
-#: ../../appdev/index.rst:72
+#: ../../appdev/index.rst:80
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:73
+#: ../../appdev/index.rst:81
 msgid "`Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:74
+#: ../../appdev/index.rst:82
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:75
+#: ../../appdev/index.rst:83
 msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:77
+#: ../../appdev/index.rst:85
 msgid "It is possible to develop cross-platform apps that don't depend on Ubuntu specific APIs, although this is not the official way of developing apps for Ubuntu Touch. If running on other operating systems is an requirement for your app, you can refer to this  APIs instead:"
 msgstr ""
 
-#: ../../appdev/index.rst:79
+#: ../../appdev/index.rst:87
 msgid "`Kirigami API <https://api.kde.org/frameworks/kirigami/html/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:80
+#: ../../appdev/index.rst:88
 msgid "`Qt Quick Controls 2 API <https://doc.qt.io/qt-5/qtquickcontrols-index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:84
+#: ../../appdev/index.rst:92
 #: ../../appdev/platform/index.rst:4
 msgid "Platform"
 msgstr ""
 
-#: ../../appdev/index.rst:97
+#: ../../appdev/index.rst:105
 msgid "Sample apps"
 msgstr ""
 
-#: ../../appdev/index.rst:99
+#: ../../appdev/index.rst:107
 msgid "Learn more about app development by digging into our :ref:`Sample apps <sampleapps>`."
 msgstr ""
 
-#: ../../appdev/index.rst:109
+#: ../../appdev/index.rst:117
 msgid "Preinstalled apps"
 msgstr ""
 
-#: ../../appdev/index.rst:111
+#: ../../appdev/index.rst:119
 msgid "The :doc:`/contribute/preinstalled-apps` page has information on developing the apps which are included with Ubuntu Touch."
 msgstr ""
 

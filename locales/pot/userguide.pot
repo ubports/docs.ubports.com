@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-28 12:29-0500\n"
+"POT-Creation-Date: 2021-03-09 17:42-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -250,7 +250,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:32
 #: ../../userguide/advanceduse/screencasting.rst:72
-#: ../../userguide/advanceduse/ssh.rst:57
+#: ../../userguide/advanceduse/ssh.rst:64
 msgid "References"
 msgstr ""
 
@@ -355,7 +355,7 @@ msgid "Copy the public key to your device"
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:18
-msgid "You need then to transfer your public key to your device. There are multiple ways to do this. For example:"
+msgid "You need then to transfer your public key to your device. There are multiple ways to do this. These are a few options:"
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:20
@@ -395,14 +395,22 @@ msgid "Now everything is set up and you can use ``ssh`` ::"
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:54
+msgid "To identify the ip-address of your UT device , open Terminal application in your phone and run the following command::"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:58
+msgid "The output is a list of IP addresses separated by spaces . Use the first IP address from the list."
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:61
 msgid "Of course you can now also use ``scp`` or ``sshfs`` to transfer files."
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:59
+#: ../../userguide/advanceduse/ssh.rst:66
 msgid "`askubuntu.com: How can I access my Ubuntu phone over ssh? <https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-over-ssh/599041#599041>`_"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:60
+#: ../../userguide/advanceduse/ssh.rst:67
 msgid "`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5-ubuntu-phone/content/en/chapter1.html>`_"
 msgstr ""
 
@@ -561,7 +569,7 @@ msgid "Links to android libraries can be made in their respective XDG counterpar
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:114
-#: ../../userguide/install.rst:22
+#: ../../userguide/install.rst:25
 msgid "Troubleshooting"
 msgstr ""
 
@@ -1106,181 +1114,185 @@ msgid "Start the installer and follow the on-screen instructions that will walk 
 msgstr ""
 
 #: ../../userguide/install.rst:19
-msgid "If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/Intro>`."
+msgid "If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/index>`."
 msgstr ""
 
-#: ../../userguide/install.rst:24
-msgid "If you need help, you can join UBports' support channels on `telegram <https://t.me/WelcomePlus>`_ or `matrix <https://matrix.to/#/!KwdniMNeTmClpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot.org>`_ or ask a question `in the forum <https://forums.ubports.com/>`_ or on `askubuntu <https://askubuntu.com>`_. If you believe that the UBports Installer is not working correctly, you can also `file a new issue <https://github.com/ubports/ubports-installer/issues/new>`_ to help us solve the problem."
+#: ../../userguide/install.rst:22
+msgid "Please do **not** start the installer with ``sudo``. It is meant to be run as a normal user, not as root. Using the installer with sudo will mess up permissions in the installer's cached files and lead to problems down the road. If the installer does not recognize your device, check the troubleshooting information below."
 msgstr ""
 
 #: ../../userguide/install.rst:27
+msgid "If you need help, you can join UBports' support channels on `telegram <https://t.me/WelcomePlus>`_ or `matrix <https://matrix.to/#/!KwdniMNeTmClpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot.org>`_ or ask a question `in the forum <https://forums.ubports.com/>`_ or on `askubuntu <https://askubuntu.com>`_. If you believe that the UBports Installer is not working correctly, you can also `file a new issue <https://github.com/ubports/ubports-installer/issues/new>`_ to help us solve the problem."
+msgstr ""
+
+#: ../../userguide/install.rst:30
 msgid "Connection lost during installation"
 msgstr ""
 
-#: ../../userguide/install.rst:29
+#: ../../userguide/install.rst:32
 msgid "Try a different USB cable and a different USB port on your computer. Cheap and old cables tend to lose connection during the installation."
 msgstr ""
 
-#: ../../userguide/install.rst:32
+#: ../../userguide/install.rst:35
 msgid "Windows Defender prevents Installer from starting"
 msgstr ""
 
-#: ../../userguide/install.rst:34
+#: ../../userguide/install.rst:37
 msgid "We have contacted Microsoft about this problem, but they seem to think it's `enjoyable <https://twitter.com/Windows/status/1014984163433295875>`__. To dismiss the warning, click on \"More Information\", then select \"Run anyway\"."
 msgstr ""
 
-#: ../../userguide/install.rst:37
+#: ../../userguide/install.rst:40
 msgid "Device not detected"
 msgstr ""
 
-#: ../../userguide/install.rst:40
+#: ../../userguide/install.rst:43
 msgid "Virtual Machine"
 msgstr ""
 
-#: ../../userguide/install.rst:42
+#: ../../userguide/install.rst:45
 msgid "If you're running the installer in a virtual machine, make sure the virtual machine is allowed to access the USB port."
 msgstr ""
 
-#: ../../userguide/install.rst:45
+#: ../../userguide/install.rst:48
 msgid "Windows ADB drivers"
 msgstr ""
 
-#: ../../userguide/install.rst:47
+#: ../../userguide/install.rst:50
 msgid "Install the `universal adb driver <http://adb.clockworkmod.com/>`_ and reboot your computer."
 msgstr ""
 
-#: ../../userguide/install.rst:50
+#: ../../userguide/install.rst:53
 msgid "Fairphone 2 Vendor-ID"
 msgstr ""
 
-#: ../../userguide/install.rst:52
+#: ../../userguide/install.rst:55
 msgid "Run ``echo 0x2ae5 >> ~/.android/adb_usb.ini`` in the terminal and restart the installer. This does not affect the snap package."
 msgstr ""
 
-#: ../../userguide/install.rst:55
+#: ../../userguide/install.rst:58
 msgid "Missing udev-rules"
 msgstr ""
 
-#: ../../userguide/install.rst:57
+#: ../../userguide/install.rst:60
 msgid "If the device not detected on Linux and packages other than snap, you might be missing **udev-rules**."
 msgstr ""
 
-#: ../../userguide/install.rst:59
+#: ../../userguide/install.rst:62
 msgid "See if ``/etc/udev/rules.d/51-android.rules`` exists and contains the rules below. If not, add them to the file and run ``sudo service udev restart`` or ``sudo udevadm control --reload-rules && udevadm trigger``."
 msgstr ""
 
-#: ../../userguide/install.rst:99
+#: ../../userguide/install.rst:102
 msgid "Other issues"
 msgstr ""
 
-#: ../../userguide/install.rst:101
+#: ../../userguide/install.rst:104
 msgid "If the troubleshooting tips do not work, you might also try following the manual installation instructions for your device `on the devices page <https://devices.ubuntu-touch.io/>`_."
 msgstr ""
 
-#: ../../userguide/install.rst:104
+#: ../../userguide/install.rst:107
 msgid "Install on legacy Android devices"
 msgstr ""
 
-#: ../../userguide/install.rst:106
+#: ../../userguide/install.rst:109
 msgid "While the installation process is fairly simple on most devices, some legacy Bq and Meizu devices require special steps. This part of the guide does not apply to other devices."
 msgstr ""
 
-#: ../../userguide/install.rst:110
+#: ../../userguide/install.rst:113
 msgid "This is more or less uncharted territory. If your device's manufacturer does not want you to install an alternative operating system, there's not a lot we can do about it. The instructions below should only be followed by experienced users. While we appreciate that lots of people want to use our OS, flashing a device with OEM tools shouldn't be done without a bit of know-how and plenty of research."
 msgstr ""
 
-#: ../../userguide/install.rst:112
+#: ../../userguide/install.rst:115
 msgid "Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed successfully in some cases, the Pro5 is Exynos-based and has its own headaches."
 msgstr ""
 
-#: ../../userguide/install.rst:116
+#: ../../userguide/install.rst:119
 msgid "BE VERY CAREFUL! You are responsible for your own actions!"
 msgstr ""
 
-#: ../../userguide/install.rst:118
+#: ../../userguide/install.rst:121
 msgid "Disconnect all devices and non-essential peripherals from your PC. Charge your device on a wall-charger (not your PC) to at least 40 percent."
 msgstr ""
 
-#: ../../userguide/install.rst:119
+#: ../../userguide/install.rst:122
 msgid "Download the Ubuntu Touch ROM for your device and extract the zip files:"
 msgstr ""
 
-#: ../../userguide/install.rst:121
+#: ../../userguide/install.rst:124
 msgid "`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ (*krillin*)"
 msgstr ""
 
-#: ../../userguide/install.rst:122
+#: ../../userguide/install.rst:125
 msgid "`Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 msgstr ""
 
-#: ../../userguide/install.rst:123
+#: ../../userguide/install.rst:126
 msgid "`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
 msgstr ""
 
-#: ../../userguide/install.rst:124
+#: ../../userguide/install.rst:127
 msgid "`Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)"
 msgstr ""
 
-#: ../../userguide/install.rst:125
+#: ../../userguide/install.rst:128
 msgid "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
 msgstr ""
 
-#: ../../userguide/install.rst:127
+#: ../../userguide/install.rst:130
 msgid "Download the latest version of `SP flash tool <https://spflashtool.com/download/>`_ (*aka MTK flash tool*)."
 msgstr ""
 
-#: ../../userguide/install.rst:128
+#: ../../userguide/install.rst:131
 msgid "Extract the zip files"
 msgstr ""
 
-#: ../../userguide/install.rst:129
+#: ../../userguide/install.rst:132
 msgid "Open a Terminal, enter the SP flash tool directory and run it with ``sudo ./flash_tool.sh``."
 msgstr ""
 
-#: ../../userguide/install.rst:133
+#: ../../userguide/install.rst:136
 msgid "On Ubuntu 17.10, there are issues with flash_tool loading the shared library 'libpng12', so this can be used as a workaround:"
 msgstr ""
 
-#: ../../userguide/install.rst:141
+#: ../../userguide/install.rst:144
 msgid "In the \"Scatter-loading File\" section, press the \"choose\" button and select the ``*Android_scatter.txt`` file from the archive you downloaded in the second step."
 msgstr ""
 
-#: ../../userguide/install.rst:142
+#: ../../userguide/install.rst:145
 msgid "Choose \"Firmware Upgrade\" from the drop-down menu."
 msgstr ""
 
-#: ../../userguide/install.rst:146
+#: ../../userguide/install.rst:149
 msgid "If you select DOWNLOAD ONLY rather than FIRMWARE UPGRADE, you will end up with a useless brick rather than a fancy Ubuntu Touch device. Be sure to select FIRMWARE UPGRADE."
 msgstr ""
 
-#: ../../userguide/install.rst:148
+#: ../../userguide/install.rst:151
 msgid "Also, after selecting the ``*Android_scatter.txt``, the drop-down menu choice is reset to DOWNLOAD ONLY. Be sure to select it after selecting the file."
 msgstr ""
 
-#: ../../userguide/install.rst:150
+#: ../../userguide/install.rst:153
 msgid "Turn your device completely off, but do not connect it yet."
 msgstr ""
 
-#: ../../userguide/install.rst:151
+#: ../../userguide/install.rst:154
 msgid "Press the button labeled \"Download\"."
 msgstr ""
 
-#: ../../userguide/install.rst:152
+#: ../../userguide/install.rst:155
 msgid "Perform a final sanity-check that you selected the \"Firmware Upgrade\" option, not \"Download Only\"."
 msgstr ""
 
-#: ../../userguide/install.rst:153
+#: ../../userguide/install.rst:156
 msgid "Make sure your device is off and connect it to your PC. Don't use a USB 3.0 port, since that's known to cause communication issues with your device."
 msgstr ""
 
-#: ../../userguide/install.rst:154
+#: ../../userguide/install.rst:157
 msgid "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Wait till all the progress bars ended."
 msgstr ""
 
-#: ../../userguide/install.rst:158
+#: ../../userguide/install.rst:161
 msgid "If the installation fails with a 100% red bar and hangs there (and logs says something like ``COM port is open. Trying to sync with the target...``), remove the ``modemmanager`` package as the one installed `is not compatible <https://web.archive.org/web/20180118130643/http://www.mibqyyo.com/en-articles/2015/09/16/ubuntu-android-installation-process-for-bq-aquaris-e4-5-and-e5/>`_ with SP flash tool, close it and try again from step 4."
 msgstr ""
 
-#: ../../userguide/install.rst:160
+#: ../../userguide/install.rst:163
 msgid "Congratulations! Your device will now boot into a super old version of Ubuntu Touch. You can now use the UBports Installer to install an updated version."
 msgstr ""

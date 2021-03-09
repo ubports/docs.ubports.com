@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-28 12:29-0500\n"
+"POT-Creation-Date: 2021-03-09 17:42-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,231 +16,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../porting/Intro.rst:2
-msgid "Introduction to porting"
-msgstr ""
-
-#: ../../porting/Intro.rst:4
-msgid "This first section will introduce you to the specifics of porting Ubuntu Touch to an Android device. Note that it is written with the general public in mind, not primarily the experienced porting developer. In subsequent sections we have made an effort to differentiate by keeping the main text more concise in order to meet the needs of the more experienced reader, while providing links to supplementary reading for the less experienced."
-msgstr ""
-
-#: ../../porting/Intro.rst:6
-msgid "The guide as a whole is written as a sequence of steps describing how an ideal port might proceed. However, porting is unpredictable and messy. Every device is different and in reality you will likely iterate and revisit some steps, skip over other steps and uncover new and undocumented challenges."
-msgstr ""
-
-#: ../../porting/Intro.rst:11
-msgid "What is Ubuntu Touch?"
-msgstr ""
-
-#: ../../porting/Intro.rst:13
-msgid "Ubuntu Touch is an open source operating system for mobile devices. It can be ported to devices that originally shipped with Android OS. Alas, the majority of these devices are dependent to some degree on proprietary software."
-msgstr ""
-
-#: ../../porting/Intro.rst:15
-msgid "To be specific, device vendors tend to keep the code that speaks directly to the device hardware (the low level device drivers) proprietary. These components are commonly called the 'vendor blobs'. The vendor blobs need to be incorporated into an Ubuntu Touch port. Note that these components are specific not only to each device, but also to each Android version. It is therefore necessary to secure the correct version of these components when building a port."
-msgstr ""
-
-#: ../../porting/Intro.rst:17
-msgid "This is why Ubuntu Touch cannot be built completely from source code for most commercial devices. Instead, porting the system to these devices involves integrating the previously mentioned vendor blobs into the rest of the system, which can be built from source."
-msgstr ""
-
-#: ../../porting/Intro.rst:19
-msgid "The next component of Ubuntu Touch is a pre-compiled root filesystem which needs to be installed on the device. This component does not communicate directly with the device hardware. Instead, this communication is mediated by a Hardware Abstraction Layer (HAL) which needs to be built for each specific device, because each device has its specific hardware architecture. This component is called Halium and is available in different versions (5.1 which is largely obsolete, 7.1, and 9 as of writing) corresponding to different Android versions."
-msgstr ""
-
-#: ../../porting/Intro.rst:21
-msgid "The Halium project enables Linux systems to run on Android hardware. It is a joint effort by multiple mobile operating systems, notably Plasma mobile, Lune OS and UBports. UBports porting builds on top of Halium porting. Consequently, you will be using both the Halium porting guide and the UBports porting guide. At times it can also be helpful to test with one of the other operating systems to debug a problem from different angles."
-msgstr ""
-
-#: ../../porting/Intro.rst:23
-msgid "Halium is thus an indispensible part of an Ubuntu Touch port and is available in the form of open source software. Developing a new version of Halium is a very considerable task which is the why only a few versions of Halium are available. Each port of Ubuntu Touch has to be based on one of the available Halium versions and vendor blobs from the corresponding Android version. See the first two columns of the table below for details."
-msgstr ""
-
-#: ../../porting/Intro.rst:28
-msgid "Thus an Ubuntu Touch port is composed of the these components:"
-msgstr ""
-
-#: ../../porting/Intro.rst:26
-msgid "The Ubuntu Touch (UT) root filesystem (rootfs)"
-msgstr ""
-
-#: ../../porting/Intro.rst:27
-msgid "`Halium <https://halium.org/>`_ (contained in the boot and system images)"
-msgstr ""
-
-#: ../../porting/Intro.rst:28
-msgid "The vendor blobs"
-msgstr ""
-
-#: ../../porting/Intro.rst:30
-msgid "You, the porter, need to build Halium (i.e. halium-boot.img and system.img) and install these together with the Ubuntu Touch rootfs in order to create a functioning Ubuntu Touch port."
-msgstr ""
-
-#: ../../porting/Intro.rst:32
-msgid "Halium is built using source code for a modified version of the Android operating system called LineageOS. The required source code is available online and needs to be downloaded and configured to build the correct Halium version for each individual device port. The table below shows which versions are required for the different Halium versions."
-msgstr ""
-
-#: ../../porting/Intro.rst:35
-msgid "Android version"
-msgstr ""
-
-#: ../../porting/Intro.rst:35
-msgid "Halium version"
-msgstr ""
-
-#: ../../porting/Intro.rst:35
-msgid "Lineage OS (LOS)"
-msgstr ""
-
-#: ../../porting/Intro.rst:37
-#: ../../porting/Intro.rst:37
-msgid "7.1"
-msgstr ""
-
-#: ../../porting/Intro.rst:37
-msgid "14.1"
-msgstr ""
-
-#: ../../porting/Intro.rst:38
-#: ../../porting/Intro.rst:38
-msgid "9.0"
-msgstr ""
-
-#: ../../porting/Intro.rst:38
-msgid "16.0"
-msgstr ""
-
-#: ../../porting/Intro.rst:44
-msgid "Overview of the porting process"
-msgstr ""
-
-#: ../../porting/Intro.rst:46
 #: ../../porting/Preparations.rst:2
+#: ../../porting/index.rst:46
 msgid "Preparations"
-msgstr ""
-
-#: ../../porting/Intro.rst:47
-msgid "In this first stage you will choose a target device, gather information about it and choose a suitable workstation (PC or laptop) on which to do your work."
-msgstr ""
-
-#: ../../porting/Intro.rst:48
-msgid "Set up your Halium build environment and complete a test build"
-msgstr ""
-
-#: ../../porting/Intro.rst:49
-msgid "This stage involves downloading all the relevant source code and securing the vendor blobs. You will then build the Halium boot image and system image according to the Halium guide to ensure that all your sources are set up correctly and work in unison."
-msgstr ""
-
-#: ../../porting/Intro.rst:50
-msgid "Build halium-boot.img and system.img for Ubuntu Touch"
-msgstr ""
-
-#: ../../porting/Intro.rst:51
-msgid "Now you need to modify your source tree, after which you will proceed to build the halium-boot.img and system.img to be used in your port."
-msgstr ""
-
-#: ../../porting/Intro.rst:52
-msgid "Install and debug the boot process"
-msgstr ""
-
-#: ../../porting/Intro.rst:53
-msgid "The goal of this stage is to successfully boot into Ubuntu Touch. You will be working from the command line."
-msgstr ""
-
-#: ../../porting/Intro.rst:54
-msgid "Bring up the Ubuntu Touch graphical user interface 'Unity 8'"
-msgstr ""
-
-#: ../../porting/Intro.rst:55
-msgid "This stage involves adjusting some configuration and further debugging of your build."
-msgstr ""
-
-#: ../../porting/Intro.rst:56
-msgid "Complete device configuration"
-msgstr ""
-
-#: ../../porting/Intro.rst:57
-msgid "Now you need to further debug the build and adjust configuration until all broken functionality is fixed. When you complete this stage you will have a fully functional port, but it will not yet be capable of accepting Over The Air (OTA) updates."
-msgstr ""
-
-#: ../../porting/Intro.rst:58
-msgid "Build Ubuntu Touch recovery.img"
-msgstr ""
-
-#: ../../porting/Intro.rst:59
-msgid "The Ubuntu Touch recovery image is a slightly modified recovery image that is tailored to working with the UBports installer"
-msgstr ""
-
-#: ../../porting/Intro.rst:61
-msgid "Set up the UBports installer for your device"
-msgstr ""
-
-#: ../../porting/Intro.rst:61
-msgid "When you have completed this stage you will have made it possible for anyone owning the device in question to install and run Ubuntu Touch on it, including the ability to receive OTA updates as they are made available."
-msgstr ""
-
-#: ../../porting/Intro.rst:66
-msgid "The challenges of the porting process"
-msgstr ""
-
-#: ../../porting/Intro.rst:68
-msgid "Getting the above components to work properly together always involves an amount of time-consuming configuring and testing. However, it usually also involves a certain amount of modification to parts of the source code, and sometimes quite a bit, depending on your target device."
-msgstr ""
-
-#: ../../porting/Intro.rst:70
-msgid "Luckily, there is a community of porters out there who are eager to see Ubuntu Touch ported to new devices. When you run into trouble, you should search the sources below (Getting help) to see if others before you have solved the issue. There are online Telegram chat groups you can join to ask for help, but please bear in mind that those participating are doing so in their spare time."
-msgstr ""
-
-#: ../../porting/Intro.rst:75
-msgid "Prior knowledge and skills"
-msgstr ""
-
-#: ../../porting/Intro.rst:77
-msgid "Porters come in all sizes and shapes, so to speak. Therefore, this guide does not presuppose extensive knowledge or skills in any particular field. You should, however, as a bare minimum be familiar with some common shell commands and be comfortable working from the terminal on you host PC. Furthermore, the guide is based on a host PC running Linux. If you have some knowledge of programming, this will come in handy at some point, especially if you are familiar with C / C++. Also, you should familiarize yourself with git, setup a github account and start documenting your steps as described in this guide and `the Halium porting guide <http://docs.halium.org/en/latest/porting/first-steps.html>`_ from the very beginning."
-msgstr ""
-
-#: ../../porting/Intro.rst:79
-msgid "We have attempted to give a certain amount of explanations along the way, but this guide is in not an in-depth reference into architecture and inner workings of Ubuntu Touch, and gaining a deeper understanding will consequently require an amount of research on your part."
-msgstr ""
-
-#: ../../porting/Intro.rst:84
-msgid "Getting community help"
-msgstr ""
-
-#: ../../porting/Intro.rst:86
-msgid "When you run into trouble, and you will, refer to one or more of the sources below:"
-msgstr ""
-
-#: ../../porting/Intro.rst:88
-msgid "`Telegram: @halium <https://t.me/halium>`_"
-msgstr ""
-
-#: ../../porting/Intro.rst:89
-msgid "`Telegram: @ubports_porting <https://t.me/ubports_porting>`_"
-msgstr ""
-
-#: ../../porting/Intro.rst:90
-msgid "`The UBports Forum <https://forums.ubports.com/category/33/porting>`_"
-msgstr ""
-
-#: ../../porting/Intro.rst:91
-msgid "IRC: #halium on Freenode"
-msgstr ""
-
-#: ../../porting/Intro.rst:92
-msgid "Matrix: #halium:matrix.org"
-msgstr ""
-
-#: ../../porting/Intro.rst:97
-msgid "General advice"
-msgstr ""
-
-#: ../../porting/Intro.rst:99
-msgid "The more rigorous you are at making notes and documenting your steps, the less time you will spend backtracking your steps and guessing your way along. When dealing with issues that arise along the way, it is wise to work on them one at a time. If you try to correct several things at once, you risk ending up trying to guess which changes solved a given issue, which easily leads to breaking the issue in question once more."
-msgstr ""
-
-#: ../../porting/Intro.rst:101
-msgid "If you are not discouraged after reading this, we wish you the best of luck!"
 msgstr ""
 
 #: ../../porting/Preparations.rst:4
@@ -309,7 +87,7 @@ msgstr ""
 
 #: ../../porting/UBports_installer.rst:4
 #: ../../porting/UBports_recovery.rst:4
-#: ../../porting/halium_7-1/Configuring.rst:122
+#: ../../porting/halium_7-1/Configuring.rst:124
 #: ../../porting/halium_9/Halium_9_GSI_porting.rst:4
 #: ../../porting/halium_9/Halium_9_common_errors.rst:4
 msgid "*Work in progress*"
@@ -674,167 +452,171 @@ msgid "Overlay files"
 msgstr ""
 
 #: ../../porting/halium_7-1/Configuring.rst:11
-msgid "Note that as a rule of thumb, the method described below applies if the file you need to edit can be found in the /etc directory (or a subdirectory of this) on your device. You should not attempt to overwrite files located elsewhere with overlay files using this method."
+msgid "Note that as a rule of thumb, the method described below applies if the file you need to edit can be found in the /etc directory (or a subdirectory of this) on your device. You should not attempt to overwrite files located elsewhere using this method. Note also that it is not possible to transfer executable files using this method, and that you cannot insert new files either. The only thing this method does is to overwrite a file that is already present in the build. Thus, by following the steps described here you can replace existing configuration files with ones that are tailored specifically to your device."
 msgstr ""
 
 #: ../../porting/halium_7-1/Configuring.rst:13
+msgid "It is also worth noting that, as of writing, there are a number of legacy files in the mentioned directories that serve no purpose but exist there simply pending removal. Therefore, make sure you are overwriting files that are actually used by the system as your changes otherwise will have no effect."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:15
 msgid "In your device directory, create a subdirectory named 'ubuntu'. Collect the files you wish to inject into your build in this directory."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:18
+#: ../../porting/halium_7-1/Configuring.rst:20
 msgid "Relevant files are for example (but this list is incomplete):"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:16
+#: ../../porting/halium_7-1/Configuring.rst:18
 msgid "70-android.rules (the udev rules for your device, see previous section)"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:17
+#: ../../porting/halium_7-1/Configuring.rst:19
 msgid "android.conf (for display scaling, see below)"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:18
+#: ../../porting/halium_7-1/Configuring.rst:20
 msgid "touch.pa (for pulseaudio sound configuration/initialization, see below)"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:20
+#: ../../porting/halium_7-1/Configuring.rst:22
 msgid "These files are then injected by adding a code block to the file ``device.mk`` in your device directory. For the three files above add the following code::"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:29
+#: ../../porting/halium_7-1/Configuring.rst:31
 msgid "Explanation:"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:31
+#: ../../porting/halium_7-1/Configuring.rst:33
 msgid "The string before the colon '$(LOCAL_PATH)/ubuntu/70-android.rules' specifies the path to the source file to be injected. The string after the colon 'system/halium/lib/udev/rules.d/70-android.rules' specifies where you want it placed on the device."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:37
+#: ../../porting/halium_7-1/Configuring.rst:39
 msgid "The general steps to follow are thus:"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:34
+#: ../../porting/halium_7-1/Configuring.rst:36
 msgid "Copy the file you wish to modify to the 'ubuntu' directory you have created in your device source tree."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:35
+#: ../../porting/halium_7-1/Configuring.rst:37
 msgid "Edit the file as needed."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:36
+#: ../../porting/halium_7-1/Configuring.rst:38
 msgid "Add a line to the PRODUCT_COPY_FILES section of your device.mk file as shown above."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:37
+#: ../../porting/halium_7-1/Configuring.rst:39
 msgid "Rebuild your system.img and reflash together with the ubports rootfs."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:41
+#: ../../porting/halium_7-1/Configuring.rst:43
 msgid "The target paths for the files mentioned above are *not* randomly chosen. You must use the specified paths."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:45
+#: ../../porting/halium_7-1/Configuring.rst:47
 msgid "When you specify target path 'system/halium/etc/myfilename' your file 'myfilename' will end up in the '/etc' directory of your device (i.e. without the leading 'system/halium')"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:50
+#: ../../porting/halium_7-1/Configuring.rst:52
 msgid "Rebuild system.img"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:52
+#: ../../porting/halium_7-1/Configuring.rst:54
 msgid "When you have made the adjustments you need and prepared your source as described above, you have to rebuild your system.img: ``mka systemimage``. When rebuilding the system image after small changes like these, you need not ``mka clean`` first. However, changes to PRODUCT_PROPERTY_OVERRIDES might not get detected by the build system. Go to your output folder, enter the system folder and delete ``build.prop`` in order to get it regenerated."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:55
+#: ../../porting/halium_7-1/Configuring.rst:57
 msgid "Udev rules"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:57
+#: ../../porting/halium_7-1/Configuring.rst:59
 msgid "Extract the file 70-android.rules which you created in the previous section using ``adb pull`` or ``scp`` and copy it to the 'ubuntu' directory of your device source tree. Complete steps 3 and 4 above."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:62
+#: ../../porting/halium_7-1/Configuring.rst:64
 #: ../../porting/halium_7-1/Reference_material.rst:10
 msgid "Display scaling"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:64
+#: ../../porting/halium_7-1/Configuring.rst:66
 msgid "There are two variables that set the content scaling for Unity 8 and Ubuntu Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:66
+#: ../../porting/halium_7-1/Configuring.rst:68
 msgid "There are also other options available that may be useful for you depending on your device's form factor. These are mentioned below and all of these settings are explained in depth in the reference section on :ref:`Display-settings`."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:68
+#: ../../porting/halium_7-1/Configuring.rst:70
 msgid "All of these settings are guessed by Unity 8 if none are set. There are many cases, however, where the guess is wrong (for example, very high resolution phone displays will be identified as desktop computers). To manually set a value for these variables, simply edit the file at ``etc/ubuntu-touch-session.d/android.conf`` specifying them. For example, this is the file for the Nexus 7 tablet::"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:76
+#: ../../porting/halium_7-1/Configuring.rst:78
 msgid "The :ref:`Display-settings` section details methods for deriving values for these variables."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:78
+#: ../../porting/halium_7-1/Configuring.rst:80
 msgid "Once you have adjusted the ``android.conf`` file to the display settings needed for your device, this file should be incorporated into your build."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:80
+#: ../../porting/halium_7-1/Configuring.rst:82
 msgid "Create the file android.conf in your 'ubuntu' directory and enter the settings you determined and tested in the previous section. Complete steps 3 and 4 above, taking care to remember the note on how to :ref:`Rebuild-system.img`."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:85
+#: ../../porting/halium_7-1/Configuring.rst:87
 msgid "Apply apparmor kernel patches"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:87
+#: ../../porting/halium_7-1/Configuring.rst:89
 msgid "`What is apparmor? <https://wiki.ubuntu.com/AppArmor>`_"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:89
+#: ../../porting/halium_7-1/Configuring.rst:91
 msgid "Start by downloading the backported `apparmor patch <https://github.com/ubports/apparmor-backports-ut>`_ corresponding to your device's kernel version. Your kernel version is specified at the beginning of your kernel defconfig file, i.e. the one you edited in section :ref:`Edit-kernel-config` above."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:91
+#: ../../porting/halium_7-1/Configuring.rst:93
 msgid "You now need to delete your entire BUILDDIR/kernel/VENDOR/MODEL/security/apparmor subdirectory and replace it with the one you downloaded. Then rebuild halium-boot."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:93
+#: ../../porting/halium_7-1/Configuring.rst:95
 msgid "If you get errors when building, you will need to resolve them one by one, modifying your source code as needed. Note that you should only modify the code in the apparmor subdirectory if at all possible. Modifying code elsewhere will more than likely just compound your problems."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:95
+#: ../../porting/halium_7-1/Configuring.rst:97
 msgid "Seek help as needed from one of the sources mentioned in section :ref:`Getting-community-help`."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:98
+#: ../../porting/halium_7-1/Configuring.rst:100
 msgid "Sound configuration"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:100
+#: ../../porting/halium_7-1/Configuring.rst:102
 msgid "The supplied touch.pa file located in the /etc/pulse directory of your device needs adjustment. Extract the file and copy it to your 'ubuntu' directory."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:102
+#: ../../porting/halium_7-1/Configuring.rst:104
 msgid "Locate the line::"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:106
+#: ../../porting/halium_7-1/Configuring.rst:108
 msgid "and replace it with this::"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:110
+#: ../../porting/halium_7-1/Configuring.rst:112
 msgid "At the end of the file, append this::"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:117
+#: ../../porting/halium_7-1/Configuring.rst:119
 msgid "Now complete steps 3 and 4, taking care to remember the note on how to :ref:`Rebuild-system.img`."
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:120
+#: ../../porting/halium_7-1/Configuring.rst:122
 msgid "Further configuration"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:124
+#: ../../porting/halium_7-1/Configuring.rst:126
 msgid "For the time being, refer to the `porting faq <https://pad.ubports.com/p/porting-faq>`_ and `porting check list <https://pad.ubports.com/p/PortChecklist>`_."
 msgstr ""
 
@@ -1164,6 +946,34 @@ msgstr ""
 msgid "``NATIVE_ORIENTATION`` sets the display orientation for the device's built-in screen. This value is used whenever autorotation isn't working correctly or when an app wishes to be locked to the device's native orientation. Acceptable values are ``landscape``, which is normally used for tablets, laptops, and desktops; and ``portrait``, which is usually used for phone handsets."
 msgstr ""
 
+#: ../../porting/halium_7-1/Reference_material.rst:48
+msgid "AppArmor"
+msgstr ""
+
+#: ../../porting/halium_7-1/Reference_material.rst:50
+msgid "To understand Apparmor, what it is and how it works, refer to `AppArmor on the Ubuntu Wiki <https://wiki.ubuntu.com/AppArmor>`_"
+msgstr ""
+
+#: ../../porting/halium_7-1/Reference_material.rst:55
+msgid "Backporting kernel drivers"
+msgstr ""
+
+#: ../../porting/halium_7-1/Reference_material.rst:57
+msgid "Depending on your device port, what kernel and Halium versions it is based on, you may need to backport one or more kernel drivers. The procedure for backporting bluetooth to Halium 7.1-based ports is described in `the porting-FAQ <https://pad.ubports.com/p/porting-faq>`_ . The process is challenging and has potential pitfalls."
+msgstr ""
+
+#: ../../porting/halium_7-1/Reference_material.rst:59
+msgid "If you wish to gain a better understanding of backporting, please refer to `the Backports Project wiki page <https://backports.wiki.kernel.org/index.php/Main_Page>`_"
+msgstr ""
+
+#: ../../porting/halium_7-1/Reference_material.rst:64
+msgid "Android init scripts"
+msgstr ""
+
+#: ../../porting/halium_7-1/Reference_material.rst:66
+msgid "The init scripts play a key role in bringing up the different services inside your Android container that need to run on your device in order for it to function properly. Refer to `the Android init language <https://android.googlesource.com/platform/system/core/+/master/init/README.md>`_ for an explanation of the syntax of these scripts."
+msgstr ""
+
 #: ../../porting/halium_7-1/Unity8.rst:2
 msgid "The graphical UI"
 msgstr ""
@@ -1234,4 +1044,226 @@ msgstr ""
 
 #: ../../porting/halium_9/index.rst:2
 msgid "Halium 9"
+msgstr ""
+
+#: ../../porting/index.rst:2
+msgid "Introduction to porting"
+msgstr ""
+
+#: ../../porting/index.rst:4
+msgid "This first section will introduce you to the specifics of porting Ubuntu Touch to an Android device. Note that it is written with the general public in mind, not primarily the experienced porting developer. In subsequent sections we have made an effort to differentiate by keeping the main text more concise in order to meet the needs of the more experienced reader, while providing links to supplementary reading for the less experienced."
+msgstr ""
+
+#: ../../porting/index.rst:6
+msgid "The guide as a whole is written as a sequence of steps describing how an ideal port might proceed. However, porting is unpredictable and messy. Every device is different and in reality you will likely iterate and revisit some steps, skip over other steps and uncover new and undocumented challenges."
+msgstr ""
+
+#: ../../porting/index.rst:11
+msgid "What is Ubuntu Touch?"
+msgstr ""
+
+#: ../../porting/index.rst:13
+msgid "Ubuntu Touch is an open source operating system for mobile devices. It can be ported to devices that originally shipped with Android OS. Alas, the majority of these devices are dependent to some degree on proprietary software."
+msgstr ""
+
+#: ../../porting/index.rst:15
+msgid "To be specific, device vendors tend to keep the code that speaks directly to the device hardware (the low level device drivers) proprietary. These components are commonly called the 'vendor blobs'. The vendor blobs need to be incorporated into an Ubuntu Touch port. Note that these components are specific not only to each device, but also to each Android version. It is therefore necessary to secure the correct version of these components when building a port."
+msgstr ""
+
+#: ../../porting/index.rst:17
+msgid "This is why Ubuntu Touch cannot be built completely from source code for most commercial devices. Instead, porting the system to these devices involves integrating the previously mentioned vendor blobs into the rest of the system, which can be built from source."
+msgstr ""
+
+#: ../../porting/index.rst:19
+msgid "The next component of Ubuntu Touch is a pre-compiled root filesystem which needs to be installed on the device. This component does not communicate directly with the device hardware. Instead, this communication is mediated by a Hardware Abstraction Layer (HAL) which needs to be built for each specific device, because each device has its specific hardware architecture. This component is called Halium and is available in different versions (5.1 which is largely obsolete, 7.1, and 9 as of writing) corresponding to different Android versions."
+msgstr ""
+
+#: ../../porting/index.rst:21
+msgid "The Halium project enables Linux systems to run on Android hardware. It is a joint effort by multiple mobile operating systems, notably Plasma mobile, Lune OS and UBports. UBports porting builds on top of Halium porting. Consequently, you will be using both the Halium porting guide and the UBports porting guide. At times it can also be helpful to test with one of the other operating systems to debug a problem from different angles."
+msgstr ""
+
+#: ../../porting/index.rst:23
+msgid "Halium is thus an indispensible part of an Ubuntu Touch port and is available in the form of open source software. Developing a new version of Halium is a very considerable task which is the why only a few versions of Halium are available. Each port of Ubuntu Touch has to be based on one of the available Halium versions and vendor blobs from the corresponding Android version. See the first two columns of the table below for details."
+msgstr ""
+
+#: ../../porting/index.rst:28
+msgid "Thus an Ubuntu Touch port is composed of the these components:"
+msgstr ""
+
+#: ../../porting/index.rst:26
+msgid "The Ubuntu Touch (UT) root filesystem (rootfs)"
+msgstr ""
+
+#: ../../porting/index.rst:27
+msgid "`Halium <https://halium.org/>`_ (contained in the boot and system images)"
+msgstr ""
+
+#: ../../porting/index.rst:28
+msgid "The vendor blobs"
+msgstr ""
+
+#: ../../porting/index.rst:30
+msgid "You, the porter, need to build Halium (i.e. halium-boot.img and system.img) and install these together with the Ubuntu Touch rootfs in order to create a functioning Ubuntu Touch port."
+msgstr ""
+
+#: ../../porting/index.rst:32
+msgid "Halium is built using source code for a modified version of the Android operating system called LineageOS. The required source code is available online and needs to be downloaded and configured to build the correct Halium version for each individual device port. The table below shows which versions are required for the different Halium versions."
+msgstr ""
+
+#: ../../porting/index.rst:35
+msgid "Android version"
+msgstr ""
+
+#: ../../porting/index.rst:35
+msgid "Halium version"
+msgstr ""
+
+#: ../../porting/index.rst:35
+msgid "Lineage OS (LOS)"
+msgstr ""
+
+#: ../../porting/index.rst:37
+#: ../../porting/index.rst:37
+msgid "7.1"
+msgstr ""
+
+#: ../../porting/index.rst:37
+msgid "14.1"
+msgstr ""
+
+#: ../../porting/index.rst:38
+#: ../../porting/index.rst:38
+msgid "9.0"
+msgstr ""
+
+#: ../../porting/index.rst:38
+msgid "16.0"
+msgstr ""
+
+#: ../../porting/index.rst:44
+msgid "Overview of the porting process"
+msgstr ""
+
+#: ../../porting/index.rst:47
+msgid "In this first stage you will choose a target device, gather information about it and choose a suitable workstation (PC or laptop) on which to do your work."
+msgstr ""
+
+#: ../../porting/index.rst:48
+msgid "Set up your Halium build environment and complete a test build"
+msgstr ""
+
+#: ../../porting/index.rst:49
+msgid "This stage involves downloading all the relevant source code and securing the vendor blobs. You will then build the Halium boot image and system image according to the Halium guide to ensure that all your sources are set up correctly and work in unison."
+msgstr ""
+
+#: ../../porting/index.rst:50
+msgid "Build halium-boot.img and system.img for Ubuntu Touch"
+msgstr ""
+
+#: ../../porting/index.rst:51
+msgid "Now you need to modify your source tree, after which you will proceed to build the halium-boot.img and system.img to be used in your port."
+msgstr ""
+
+#: ../../porting/index.rst:52
+msgid "Install and debug the boot process"
+msgstr ""
+
+#: ../../porting/index.rst:53
+msgid "The goal of this stage is to successfully boot into Ubuntu Touch. You will be working from the command line."
+msgstr ""
+
+#: ../../porting/index.rst:54
+msgid "Bring up the Ubuntu Touch graphical user interface 'Unity 8'"
+msgstr ""
+
+#: ../../porting/index.rst:55
+msgid "This stage involves adjusting some configuration and further debugging of your build."
+msgstr ""
+
+#: ../../porting/index.rst:56
+msgid "Complete device configuration"
+msgstr ""
+
+#: ../../porting/index.rst:57
+msgid "Now you need to further debug the build and adjust configuration until all broken functionality is fixed. When you complete this stage you will have a fully functional port, but it will not yet be capable of accepting Over The Air (OTA) updates."
+msgstr ""
+
+#: ../../porting/index.rst:58
+msgid "Build Ubuntu Touch recovery.img"
+msgstr ""
+
+#: ../../porting/index.rst:59
+msgid "The Ubuntu Touch recovery image is a slightly modified recovery image that is tailored to working with the UBports installer"
+msgstr ""
+
+#: ../../porting/index.rst:61
+msgid "Set up the UBports installer for your device"
+msgstr ""
+
+#: ../../porting/index.rst:61
+msgid "When you have completed this stage you will have made it possible for anyone owning the device in question to install and run Ubuntu Touch on it, including the ability to receive OTA updates as they are made available."
+msgstr ""
+
+#: ../../porting/index.rst:66
+msgid "The challenges of the porting process"
+msgstr ""
+
+#: ../../porting/index.rst:68
+msgid "Getting the above components to work properly together always involves an amount of time-consuming configuring and testing. However, it usually also involves a certain amount of modification to parts of the source code, and sometimes quite a bit, depending on your target device."
+msgstr ""
+
+#: ../../porting/index.rst:70
+msgid "Luckily, there is a community of porters out there who are eager to see Ubuntu Touch ported to new devices. When you run into trouble, you should search the sources below (Getting help) to see if others before you have solved the issue. There are online Telegram chat groups you can join to ask for help, but please bear in mind that those participating are doing so in their spare time."
+msgstr ""
+
+#: ../../porting/index.rst:75
+msgid "Prior knowledge and skills"
+msgstr ""
+
+#: ../../porting/index.rst:77
+msgid "Porters come in all sizes and shapes, so to speak. Therefore, this guide does not presuppose extensive knowledge or skills in any particular field. You should, however, as a bare minimum be familiar with some common shell commands and be comfortable working from the terminal on you host PC. Furthermore, the guide is based on a host PC running Linux. If you have some knowledge of programming, this will come in handy at some point, especially if you are familiar with C / C++. Also, you should familiarize yourself with git, setup a github account and start documenting your steps as described in this guide and `the Halium porting guide <http://docs.halium.org/en/latest/porting/first-steps.html>`_ from the very beginning."
+msgstr ""
+
+#: ../../porting/index.rst:79
+msgid "We have attempted to give a certain amount of explanations along the way, but this guide is in not an in-depth reference into architecture and inner workings of Ubuntu Touch, and gaining a deeper understanding will consequently require an amount of research on your part."
+msgstr ""
+
+#: ../../porting/index.rst:84
+msgid "Getting community help"
+msgstr ""
+
+#: ../../porting/index.rst:86
+msgid "When you run into trouble, and you will, refer to one or more of the sources below:"
+msgstr ""
+
+#: ../../porting/index.rst:88
+msgid "`Telegram: @halium <https://t.me/halium>`_"
+msgstr ""
+
+#: ../../porting/index.rst:89
+msgid "`Telegram: @ubports_porting <https://t.me/ubports_porting>`_"
+msgstr ""
+
+#: ../../porting/index.rst:90
+msgid "`The UBports Forum <https://forums.ubports.com/category/33/porting>`_"
+msgstr ""
+
+#: ../../porting/index.rst:91
+msgid "IRC: #halium on Freenode"
+msgstr ""
+
+#: ../../porting/index.rst:92
+msgid "Matrix: #halium:matrix.org"
+msgstr ""
+
+#: ../../porting/index.rst:97
+msgid "General advice"
+msgstr ""
+
+#: ../../porting/index.rst:99
+msgid "The more rigorous you are at making notes and documenting your steps, the less time you will spend backtracking your steps and guessing your way along. When dealing with issues that arise along the way, it is wise to work on them one at a time. If you try to correct several things at once, you risk ending up trying to guess which changes solved a given issue, which easily leads to breaking the issue in question once more."
+msgstr ""
+
+#: ../../porting/index.rst:101
+msgid "If you are not discouraged after reading this, we wish you the best of luck!"
 msgstr ""
