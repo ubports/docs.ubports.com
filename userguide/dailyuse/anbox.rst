@@ -14,29 +14,36 @@ Supported devices
 
 Make sure your device is supported:
 
-- Meizu Pro 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)
-- Fairphone 2 (codename: ``FP2``, name of the boot partition: ``boot``)
-- OnePlus One (codename: ``bacon``, name of the boot partition: ``boot``)
-- Nexus 5 (codename: ``hammerhead``, name of the boot partition: ``boot``)
-- BQ M10 HD (codename: ``cooler``, name of the boot partition: ``boot``)
-- BQ M10 FHD (codename: ``frieza``, name of the boot partition: ``boot``)
-
-You will need the device codename and the name of your boot partition for the installation.
+- Meizu PRO 5
+- Fairphone 2
+- OnePlus One
+- Nexus 5
+- BQ Aquaris M10 HD
+- BQ Aquaris M10 FHD
 
 How to install
 --------------
 
 .. warning::
     Installing Anbox is only recommended for experienced users.
-    
-.. warning::
-    If you own a Meizu Pro 5, a BQ M10 HD or a BQ M10 FHD you need to flash a specific boot image. **You will need to re-flash that image after each Ubuntu Touch update** so when you update from OTA-10 to OTA-11 for example. Not doing so can put your phone into an unstable state. Only update your Ubuntu Touch device when you have a computer with you to re-flash that boot image.
 
-- Make sure your supported device runs on 16.04 (Anbox doesn't work on 15.04).
-- Be sure to have a `backup <https://askubuntu.com/questions/602850/how-do-i-backup-my-ubuntu-phone>`_ of the device.
-- Open a terminal on your host and set some device specific variables by running ``export CODENAME="turbo" && export PARTITIONNAME="bootimg"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list.
-- Activate developer mode on your device.
-- Connect the device to your host and run the following commands from your host (same terminal you ran the ``export`` command in)::
+Install Anbox kernel
+^^^^^^^^^^^^^^^^^^^^
+
+Some devices require you to install a custom Linux kernel to use Anbox. These devices are:
+
+- Meizu Pro 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)
+- BQ M10 HD (codename: ``cooler``, name of the boot partition: ``boot``)
+- BQ M10 FHD (codename: ``frieza``, name of the boot partition: ``boot``)
+
+If your device is not in this list, the Anbox kernel was automatically installed when you installed Ubuntu Touch. Please skip to :ref:`run-anbox-installer`.
+
+**You will need to repeat these steps after each Ubuntu Touch update**. Not doing so can put your phone into an unstable state. Only update your Ubuntu Touch device when you have a computer with you to re-flash the modified kernel image.
+
+#. Be sure to have a `backup <https://askubuntu.com/questions/602850/how-do-i-backup-my-ubuntu-phone>`_ of your device.
+#. Open a terminal on your host and set some device specific variables by running ``export CODENAME="turbo" && export PARTITIONNAME="bootimg"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list.
+#. Activate developer mode on your device.
+#. Connect the device to your host and run the following commands from your host (same terminal you ran the ``export`` command in)::
 
     wget http://cdimage.ubports.com/anbox-images/anbox-boot-$CODENAME.img
     adb shell # connect from your host computer to your UT device
@@ -46,25 +53,27 @@ How to install
     rm anbox-boot-$CODENAME.img
     exit
 
-- Wait for the device to reboot, then run this from your host::
+.. _run-anbox-installer:
 
-    adb shell # connect from your host computer to your UT device
-    sudo mount -o rw,remount /
-    sudo apt update
-    sudo apt install anbox-ubuntu-touch android-tools-adb
-    anbox-tool install
-    exit
+Run the Anbox installer
+^^^^^^^^^^^^^^^^^^^^^^^
 
-- Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
+Once your device has the Anbox kernel installed, you can use the Anbox Tool to install the Anbox container.
+
+#. Run ``adb shell`` from your host computer to get a shell on your Ubuntu Touch device.
+#. Run the following command on your Ubuntu Touch device: ``anbox-tool install``.
+#. Follow the on-screen instructions.
+
+Now you're done! You might have to refresh the app drawer (pull down from the center of the screen and release) for the new Android apps to show up.
 
 .. note::
-    You now have an adb server running inside your phone. This guide asks you to run some ``adb`` commands, sometime on your computer, sometime on your phone. Carefully check on which device you are!
+    You now have an ADB server running on your Ubuntu Touch device. This guide asks you to run some ``adb`` commands, sometimes on your computer, other times on the device itself. Carefully check which device you are on!
 
-You can check that adb server is correctly running locally on your phone by opening the terminal app and enter ``adb devices``. You should see something like::
+You can check that ADB server is correctly running locally on your phone by opening the terminal app and enter ``adb devices``. You should see something like::
 
-    phablet@ubuntu-phablet:~$ adb devices  
-    List of devices attached  
-    emulator-5558	device  
+    phablet@ubuntu-phablet:~$ adb devices
+    List of devices attached
+    emulator-5558	device
 
 How to install new APKs
 -----------------------
@@ -113,20 +122,9 @@ Android storage is located at ``/home/phablet/anbox-data/data/media/0``.
 Troubleshooting
 ---------------
 
-- If installing ``anbox-ubuntu-touch`` or ``android-tools-adb`` on the device fails with an error about unsufficient space, try this::
+- When you want to install an APK, but get the error ``Invalid APK file`` that error could also mean "file not found"
 
-    adb shell # connect from your host computer to your UT device
-    sudo mount -o rw,remount /
-    sudo rm -r /var/cache/apt     # delete the apt cache; frees space on system image
-    sudo tune2fs -m 0 /dev/loop0  # space reserved exclusively for root user on system image set to zero
-    sudo apt update               # recreate apt cache to install Anbox and adb
-    sudo apt install anbox-ubuntu-touch android-tools-adb
-    sudo mount -o ro,remount /
-    exit
-
-- When you want to install an apk but get the error ``Invalid APK file`` that error could also mean "file not found"
-
-  - Check that you typed the file name correctly
+  - Check that you typed the filename correctly
   - If the APK does not reside in the current folder where you execute adb, you have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` instead of just ``my-app.apk``
 
 
