@@ -10,7 +10,7 @@ Apply AppArmor kernel patches
 
 `What is AppArmor? <https://wiki.ubuntu.com/AppArmor>`_
 
-Certain (but not all) device features require AppArmor patches to the kernel, and they are mandatory in order for the vast majority of user apps and system apps to work. Apps will crash on launch without the patches installed.
+Certain (but not all) device features require AppArmor patches to the kernel, and they are mandatory in order for the vast majority of user apps and system apps to work. Without the patches installed many apps will crash on launch, while others will display some form of function anomaly.
 
 Follow the method detailed in the Halium 7.1 chapter (:ref:`Apply-AppArmor-kernel-patches`).
 
