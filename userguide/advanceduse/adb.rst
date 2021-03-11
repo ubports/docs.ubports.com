@@ -1,4 +1,4 @@
-Shell access via adb
+Shell access via ADB
 ====================
 
 You can put your UBports device into developer mode and access a Bash shell from your PC. This is useful for debugging or more advanced shell usage.
@@ -17,7 +17,7 @@ On Fedora::
 
     sudo dnf install android-tools
     
-And on MacOS with `Homebrew <https://brew.sh>`_::
+And on macOS with `Homebrew <https://brew.sh>`_::
 
     brew install android-platform-tools
 
@@ -30,25 +30,26 @@ Next, you'll need to turn on Developer Mode.
 
 #. Reboot your device
 #. Place your device into developer mode (Settings - About - Developer Mode - check the box to turn it on)
-#. Plug the device into a computer with adb installed
+#. Plug the device into a computer with ADB installed
 #. Open a terminal and run ``adb devices``.
 
 .. note::
     When you're done using the shell, it's a good idea to turn Developer Mode off again.
 
-If there's a device in the list here (The command doesn't print "List of devices attached" and a blank line), you are able to use ADB successfully. If not, continue to the next section.
+If there's a device in the list here (The command doesn't print "List of devices attached" and a blank line), you are able to use ADB.
+If not, continue to the next section.
 
-Adb shell commands::
+ADB shell commands::
 
-    adb shell – Gives you access to the Linux command-line shell on your device.
-    adb shell [command] – Runs the specified shell command on your device.
+    adb shell — Gives you access to the Linux command-line shell on your device.
+    adb shell [command] — Runs the specified shell command on your device.
 
 Additional Adb commands::
 
-    adb push [source] [destination] – Pushes a file from your computer to your device.
-    adb pull [destination] [source] – Pulls a file from your device to your computer.
+    adb push [source] [destination] — Pushes a file from your computer to your device.
+    adb pull [destination] [source] — Pulls a file from your device to your computer.
 
-For more ADB commands refer to the `official documentation <https://developer.android.com/studio/command-line/adb>`_.
+For more ADB commands, refer to the `official documentation <https://developer.android.com/studio/command-line/adb>`_.
 
 Add hardware IDs
 ----------------
@@ -61,6 +62,6 @@ Fairphone 2::
 
     printf "0x2ae5 \n" >> ~/.android/adb_usb.ini
 
-Oneplus One::
+OnePlus One::
 
     printf "0x9d17 \n" >> ~/.android/adb_usb.ini
