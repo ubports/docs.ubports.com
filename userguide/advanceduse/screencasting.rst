@@ -1,8 +1,8 @@
-Screencasting your UBports device to your computer
-==================================================
+Screencasting your Ubuntu touch device to your computer
+=======================================================
 
 The bundled ``mirscreencast`` command-line utility dumps screen-frames to a file.
-Use it to stream your UBports display to a computer over the network (or directly through ADB) to watch it live or record it to a file.
+Use it to stream your Ubuntu Touch display to a computer over the network (or directly through ADB) to watch it live or record it to a file.
 
 Using ADB
 ---------
@@ -11,7 +11,7 @@ You can catch output directly from the ``adb exec-out`` command and forward it t
 
   adb exec-out timeout 120 mirscreencast -m /run/mir_socket --stdout --cap-interval 2 -s 384 640 | mplayer -demuxer rawvideo -rawvideo w=384:h=640:format=rgba -
   
-``timeout`` above is used to kill the process in a proper manner on the UBports device (120 seconds here).
+``timeout`` above is used to kill the process in a proper manner on the Ubuntu Touch device (120 seconds here).
 (Otherwise the process continues even if killed on the computer.)
 Reduce or increase the number of frames per second with``--cap-interval`` (1 = 60fps, 2=30fps, …)
 and the size of frames ``384 640`` means a width of 384 px and a height of 640 px.
@@ -35,8 +35,8 @@ For stream recording:
 
     nc -l -p 1234 | gzip -dc | mencoder -demuxer rawvideo -rawvideo fps=60:w=384:h=640:format=rgba -ovc x264 -o out.avi -
 
-On the UBports device
-^^^^^^^^^^^^^^^^^^^^^
+On the Ubuntu Touch device
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Forward and gzip the stream with 60 FPS (--cap-interval 1) and a framesize of 384x640 to the computer at 10.42.0.209 on port 1234::
 
@@ -46,7 +46,7 @@ Forward and gzip the stream with 60 FPS (--cap-interval 1) and a framesize of 38
 Example script
 ^^^^^^^^^^^^^^
 
-Run this on a computer (with SSH access to UBports and MPlayer installed) to screencast a remote UBports device to it.::
+Run this on a computer (with MPlayer installed and SSH access to the Ubuntu Touch device) to screencast a remote Ubuntu Touch device to it.::
 
       #!/bin/bash
       SCREEN_WIDTH=384
