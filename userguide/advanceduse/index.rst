@@ -1,11 +1,11 @@
 Advanced use
 ============
 
-In this section you will find advanced tasks power users can perform on their UBports devices.
+In this section you will find advanced tasks power users can perform on their Ubuntu Touch devices.
 
 .. note::
     Some of these guides involve making your system image writable, which may break OTA updates.
-    The guides may also reduce the overall security of your UBports device.
+    The guides may also reduce the overall security of your Ubuntu Touch device.
     Please consider ramifications beforehand.
 
 .. toctree::
