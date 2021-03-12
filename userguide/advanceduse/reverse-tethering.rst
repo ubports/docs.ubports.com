@@ -1,19 +1,19 @@
 Reverse tethering
 =================
 
-This tutorial helps you to connect your UBports device to your computer to access the Internet on it.
-This is useful if there is no available Wi-Fi connection or you don't have a data subscription on your UBports device.
+This tutorial helps you to connect your Ubuntu Touch device to your computer to access the Internet on it.
+This is useful if there is no available Wi-Fi connection or you don't have a data subscription on your Ubuntu Touch device.
 
-Prerequisite: A UBports device with "USB debugging" and "Developer mode" on, attached via USB to the computer connected to the Internet.
+Prerequisite: A Ubuntu Touch device with "USB debugging" and "Developer mode" on, attached via USB to the computer connected to the Internet.
 
 Steps
 -----
 
-1. On the UBports device: ``android-gadget-service enable rndis``
+1. On the Ubuntu Touch device: ``android-gadget-service enable rndis``
 
 2. On your computer: get your RNDIS IP address e.g:``hostname -I``
 
-3. On the UBports device: 
+3. On the Ubuntu Touch device: 
 
       add a gateway: ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``
 
