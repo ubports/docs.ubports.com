@@ -1,43 +1,44 @@
-Screen Casting your UT device to your computer
-==============================================
+Screencasting your UBports device to your computer
+==================================================
 
+The bundled ``mirscreencast`` command-line utility dumps screen-frames to a file.
+Use it to stream your UBports display to a computer over the network (or directly through ADB) to watch it live or record it to a file.
 
-Ubuntu Touch comes with a command line utility called ``mirscreencast`` which dumps screen frames to a file.
-The idea here is to stream UT display to a listening computer over the network or directly trough adb so that we can either watch it live or record it to a file.
-
-Using adb
+Using ADB
 ---------
 
-You can catch output directly from ``adb exec-out`` command and forward it to mplayer::
+You can catch output directly from the ``adb exec-out`` command and forward it to MPlayer::
 
   adb exec-out timeout 120 mirscreencast -m /run/mir_socket --stdout --cap-interval 2 -s 384 640 | mplayer -demuxer rawvideo -rawvideo w=384:h=640:format=rgba -
   
-NB: ``timeout`` here is used in order to kill process properly on device ( here 120 seconds ). Otherwise process still continuing even if killed on computer.
-You can reduce or increase frame per second with``--cap-interval`` (1 = 60fps, 2=30fps, ...)  and size of frames ``384 640`` means width=384 height=640
+``timeout`` above is used to kill the process in a proper manner on the UBports device (120 seconds here).
+(Otherwise the process continues even if killed on the computer.)
+Reduce or increase the number of frames per second with``--cap-interval`` (1 = 60fps, 2=30fps, …)
+and the size of frames ``384 640`` means a width of 384 px and a height of 640 px.
 
-Via network
------------
+Via the network
+---------------
   
-On receiver
-^^^^^^^^^^^
+On the receiver
+^^^^^^^^^^^^^^
 
-For real time casting:
+For real-time casting:
 
 
-  Prepare your computer to listen to a tcp port(here 1234) and forward raw stream to a video player (here mplayer) with a frame size of 384x640::
+  Prepare your computer to listen to a TCP port (1234 here) and forward the raw stream to a video player (MPlayer here) with a framesize of 384x640::
 
     nc -l -p 1234 | gzip -dc | mplayer -demuxer rawvideo -rawvideo w=384:h=640:format=rgba -
 
 For stream recording:
 
-  Prepare your computer to listen to a tcp port(here 1234), ungzip and forward raw stream to a video encoder (here mencoder)::
+  Prepare your computer to listen to a TCP port (1234 here), unpack and forward the raw stream to a video encoder (MEncoder here)::
 
     nc -l -p 1234 | gzip -dc | mencoder -demuxer rawvideo -rawvideo fps=60:w=384:h=640:format=rgba -ovc x264 -o out.avi -
 
-On device
-^^^^^^^^^
+On the UBports device
+^^^^^^^^^^^^^^^^^^^^^
 
-Forward and gzip stream with 60fps (--cap-interval 1) and frame size of 384x640 to computer 10.42.0.209 on port 1234 ::
+Forward and gzip the stream with 60 FPS (--cap-interval 1) and a framesize of 384x640 to the computer at 10.42.0.209 on port 1234::
 
   mirscreencast -m /run/mir_socket --stdout --cap-interval 1 -s 384 640 | gzip -c | nc 10.42.0.209 1234
 
@@ -45,7 +46,7 @@ Forward and gzip stream with 60fps (--cap-interval 1) and frame size of 384x640 
 Example script
 ^^^^^^^^^^^^^^
 
-This script allows you to screen cast remote UT device to your local PC (must have ssh access to UT and mplayer installed on PC), run it on your computer::
+Run this on a computer (with SSH access to UBports and MPlayer installed) to screencast a remote UBports device to it.::
 
       #!/bin/bash
       SCREEN_WIDTH=384
@@ -71,5 +72,5 @@ You can download it here: :download:`files/mircast.sh`
 References
 ----------
 
-* initial source: https://wiki.ubuntu.com/Touch/ScreenRecording
-* demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q
+* Initial source: https://wiki.ubuntu.com/Touch/ScreenRecording
+* Demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q
