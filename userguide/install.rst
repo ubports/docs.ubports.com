@@ -1,13 +1,13 @@
 Install Ubuntu Touch
 ====================
 
-The UBports Installer is a nice graphical tool everyone can use to install Ubuntu Touch on a `supported device <https://devices.ubuntu-touch.io/>`_ from your `Linux <https://snapcraft.io/ubports-installer>`_, `macOS <https://devices.ubuntu-touch.io/installer/?package=dmg>`_ or `Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_ computer.
+The installer is a nice graphical tool everyone can use to install Ubuntu Touch on a `supported device <https://devices.ubuntu-touch.io/>`_ from your `Linux <https://snapcraft.io/ubports-installer>`_, `macOS <https://devices.ubuntu-touch.io/installer/?package=dmg>`_ or `Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_ computer.
 Manual installation instructions for more experienced users are available for every device `on the devices page <https://devices.ubuntu-touch.io/>`_.
 
 .. warning::
     If switching your device over from Android, you must create an external backup if you want to keep any of the data on it.
 
-`Download the UBports Installer from GitHub <https://github.com/ubports/ubports-installer/releases/latest>`_.
+`Download the installer from GitHub <https://github.com/ubports/ubports-installer/releases/latest>`_.
 The following packages are available:
 
  - `Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_: ``ubports-installer-<version-number>.exe``
@@ -28,7 +28,7 @@ If you're an experienced Android developer and want to help bring Ubuntu Touch t
 Troubleshooting
 ---------------
 
-Join the UBports' support channels on `Telegram <https://t.me/WelcomePlus>`_ or `Matrix <https://matrix.to/#/!KwdniMNeTmClpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot.org>`_ or ask a question `in the forum <https://forums.ubports.com/>`_ or on `Ask Ubuntu <https://askubuntu.com>`_. If you believe the UBports Installer is not working correctly, also `file a new issue <https://github.com/ubports/ubports-installer/issues/new>`_ to help solve the problem.
+Join the UBports' support channels on `Telegram <https://t.me/WelcomePlus>`_ or `Matrix <https://matrix.to/#/!KwdniMNeTmClpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot.org>`_ or ask a question `in the forum <https://forums.ubports.com/>`_ or on `Ask Ubuntu <https://askubuntu.com>`_. If you believe the installer is not working correctly, also `file a new issue <https://github.com/ubports/ubports-installer/issues/new>`_ to help solve the problem.
 
 Connection lost during installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -171,4 +171,4 @@ Charge your device forom a wall-charger (not your PC) to a battery charge level 
 
     If the installation fails with a 100% red bar and hangs there (and logs says something like ``COM port is open. Trying to sync with the target…``), remove the ``modemmanager`` package as the one installed `is not compatible <https://web.archive.org/web/20180118130643/http://www.mibqyyo.com/en-articles/2015/09/16/ubuntu-android-installation-process-for-bq-aquaris-e4-5-and-e5/>`_ with SP Flash Tool, close it and try again from step 4.
 
-13. Your device will now boot into a super old version of Ubuntu Touch. Use the UBports Installer to install an updated version.
+13. Your device will now boot into a super old version of Ubuntu Touch. Use the installer to install an updated version.
