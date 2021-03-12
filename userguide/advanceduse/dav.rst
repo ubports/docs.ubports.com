@@ -25,7 +25,7 @@ These instructions work for CalDAV as well.
 
     adb push dav.sh /home/phablet
 
-4) Connect with the phablet shell (using ``adb shell``) or type the following directly in the UBtouch device Terminal app::
+4) Connect with the phablet shell (using ``adb shell``) or type the following directly into the Ubuntu Touch device terminal app::
 
     chmod +x dav.sh
     ./dav.sh
