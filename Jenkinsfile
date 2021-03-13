@@ -3,6 +3,8 @@ def install_dependencies = {
 }
 def build_docs = {
     sh 'python3 -m sphinx -Wab html . _build/html/'
+}
+def check_redirects = {
     sh 'python3 -m sphinx -Wab rediraffecheckdiff . _build/html'
 }
 def link_index = {
@@ -14,17 +16,13 @@ pipeline {
         buildDiscarder(logRotator(artifactDaysToKeepStr: '180'))
     }
     stages {
-        stage("build"){
+        stage("Build docs"){
             agent {
                 docker {
                     image "python:3.7"
                 }
             }
             steps {
-                // Workaround to create the master branch since Jenkins
-                // refuses to do it on PR builds
-                sh 'git show-ref --verify --quiet master || git branch master `git show-ref -s origin/master`'
-
                 withEnv(["HOME=${env.WORKSPACE}"]) {
                     script {install_dependencies()}
                     script {build_docs()}
@@ -32,11 +30,26 @@ pipeline {
                     archiveArtifacts artifacts: '_build/html/', onlyIfSuccessful: true
                 }
             }
-            post {
-                cleanup {
-                    cleanWs()
+        }
+        stage('Fix git ref for non-master builds') {
+            when { not { branch 'master' }  }
+            steps {
+                // Workaround to create the master branch since Jenkins
+                // refuses to do it on PR builds
+                sh 'git show-ref --verify --quiet master || git branch master `git show-ref -s origin/master`'
+            }
+        }
+        stage('Check redirects') {
+            steps {
+                withEnv(["HOME=${env.WORKSPACE}"]) {
+                    script {check_redirects()}
                 }
             }
+        }
+    }
+    post {
+        cleanup {
+            cleanWs()
         }
     }
 }
