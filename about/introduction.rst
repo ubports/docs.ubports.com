@@ -1,4 +1,4 @@
-Intro
+Introduction
 =====
 
 Our goal is to create a copylefted libre mobile operating system. One you can use, study, change and share; with all.
