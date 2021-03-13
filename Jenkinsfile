@@ -21,6 +21,11 @@ pipeline {
                 }
             }
             steps {
+                // Workaround to create the master branch since Jenkins
+                // refuses to do it correctly on PR builds
+                sh 'git branch -D master || true'
+                sh 'git branch master `git show-ref -s origin/master`'
+
                 withEnv(["HOME=${env.WORKSPACE}"]) {
                     script {install_dependencies()}
                     script {build_docs()}
