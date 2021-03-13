@@ -1,0 +1,404 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
+# This file is distributed under the same license as the UBports package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: UBports\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-29 13:44-0500\n"
+"PO-Revision-Date: 2021-03-12 19:18+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
+"ubports-docs/documentation-about/nb_NO/>\n"
+"Language: nb_NO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
+
+#: ../../about/introduction.rst:2
+msgid "Introduction"
+msgstr "Intro"
+
+#: ../../about/introduction.rst:4
+msgid "This is the documentation for the UBports project. Our goal is to create a Free and open-source (GPL if possible) mobile operating system that converges and respects your freedom."
+msgstr ""
+
+#: ../../about/introduction.rst:7
+msgid "About UBports"
+msgstr "Om UBports"
+
+#: ../../about/introduction.rst:9
+msgid "The UBports project was founded by Marius Gripsgard in 2015 and in its infancy was a place where developers could share ideas and educate each other in hopes of bringing the Ubuntu Touch platform to more mobile devices."
+msgstr ""
+
+#: ../../about/introduction.rst:11
+msgid "After Canonical suddenly announced `their plans to terminate support of Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ in April 2017, UBports and its sister projects began work on the open-source code, maintaining and expanding its possibilities for the future."
+msgstr ""
+
+#: ../../about/introduction.rst:14
+msgid "About the Documentation"
+msgstr "Om dokumentasjonen"
+
+#: ../../about/introduction.rst:16
+msgid "This documentation is always improving thanks to the members of the UBports community. It is written in ReStructuredText and converted into this readable form by `Sphinx <http://www.sphinx-doc.org/en/stable/>`_, `ReCommonMark <http://recommonmark.readthedocs.io/en/latest/>`_, and `Read the Docs <https://readthedocs.io>`_. You can start contributing by checking out the :doc:`Documentation contribution document </contribute/documentation>`."
+msgstr ""
+
+#: ../../about/introduction.rst:18
+msgid "All documents are licensed under the Creative Commons Attribution ShareAlike 4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_) license. Please give attribution to \"The UBports Community\"."
+msgstr ""
+
+#: ../../about/introduction.rst:21
+msgid "Attribution"
+msgstr ""
+
+#: ../../about/introduction.rst:23
+msgid "This documentation was heavily modeled after the `Godot Engine's Documentation <http://docs.godotengine.org/en/stable/>`_, attribution to Juan Linietsky, Ariel Manzur and the Godot community."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:2
+msgid "Branch-naming convention"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:4
+msgid "Our branch-naming conventions ensure that software can be built by our CI and tested easily by other developers."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:6
+msgid "Every Git repository's README file should state which branch-naming convention is used and possible deviations from the norm."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:9
+msgid "Click-Packages"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:11
+msgid "Software that is exclusively distributed as a click-package (and not also as a deb) only uses one ``master`` branch that is protected. Separate temporary development branches with arbitrary descriptive names can be created and merged into master when the time comes. For marking and archiving milestones in development history, ideally Git tags or GitHub releases should be used."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:14
+msgid "Deb-Packages"
+msgstr "DEB-pakker"
+
+#: ../../about/process/branch-naming.rst:16
+msgid "To make most efficient use of our CI system, a special naming convention for git-branches is used."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:18
+msgid "For pre-installed Ubuntu Touch components, deb-packages are used wherever possible. This includes Core Apps, since they can still be independently updated using click-package downloads from the OpenStore. This policy allows us to make use of the powerful Debian build system to resolve dependencies."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:20
+msgid "Every repository that uses this convention will have branches for the actively supported Ubuntu releases referenced by their codenames (``bionic``, ``xenial``, ``vivid``, etc.). These are the branches that are built directly into the corresponding images and published on :doc:`repo.ubports.com <ppa>`. If no separate versions for the different Ubuntu bases are needed, the repository will just have one ``master`` branch and the CI system will still build versions for all actively supported releases and resolve dependencies accordingly."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:23
+msgid "Branch-extensions"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:25
+msgid "To build and publish packages based on another repository, an extension in the form of  ``xenial_-_some-descriptive_extension`` can be used. The CI system will then resolve all dependencies using the ``xenial_-_some-descriptive_extension`` branch of other repositories or fall back on the normal ``xenial`` dependencies, if that doesn't exist. These special dependencies are not built into the image but still pushed to  on :doc:`repo.ubports.com <ppa>`."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:27
+msgid "Multiple branch extensions can be chained together in the form of ``xenial_-_dependency-1_-_dependency-2_-_dependency-3``. This means that the CI system will look for dependencies in the following repositories:"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:38
+msgid "There is no prioritization, so the build system will always use the package with the highest version number or the newest build if the version is equal."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:41
+msgid "Dependency-file"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:43
+msgid "For complex or non-linear dependencies, a ``ubports.depends`` file can be created in the root of the repository to specify additional dependencies. The branch name will be ignored if this file exists."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:53
+msgid "The ``ubports.depends`` file is an **exclusive list**, so the build system will not resolve dependencies linearly like it does in a branch name! Every dependency has to be listed. You will almost always want to include your base release (i.e. ``xenial``)."
+msgstr ""
+
+#: ../../about/process/index.rst:2
+msgid "Processes"
+msgstr "Prosesser"
+
+#: ../../about/process/index.rst:4
+msgid "This section of the documentation details standardized processes for different teams."
+msgstr ""
+
+#: ../../about/process/index.rst:7
+msgid "The process definitions are still a work in progress and need to be completed by the respective teams."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:2
+msgid "Issue-Tracking Guidelines"
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:4
+msgid "This document describes the standard process of dealing with new issues in UBports projects. Not to be confused with the :doc:`guide on writing a good bugreport </contribute/bugreporting>`."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:7
+msgid "Where are bugs tracked?"
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:9
+msgid "Since our quality assurance depends heavily on the community, we try to track issues where the user would expect them, instead of separated by repository. This means, that issues of almost all components that are distributed as with the system-image are tracked in the `Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch>`__. An exception of this are click-apps that can be updated independently through the OpenStore."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:17
+msgid "Most other repositories track issues locally. If you're unsure whether a repository uses its own tracker or not, consult the README.md file. Repositories that don't track issues locally have their bugtracker disabled."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:21
+msgid "This page is mainly about the Ubuntu Touch tracker, but most principles apply to other projects as well."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:25
+msgid "Practicality beats purity! Exceptions might apply and should be described in the projects README.md file."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:28
+msgid "GitHub projects"
+msgstr "GitHub-prosjekter"
+
+#: ../../about/process/issue-tracking.rst:30
+msgid "To increase transparency and communication, GitHub projects (Kanban-Boards) are used wherever practical. In case of github.com/ubports/ubuntu-touch, a single project is used for all issues. Projects support filtering by labels, so that only issues that belong to a specific team or affect a specific device can be viewed."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:36
+msgid "These are the standard columns:"
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:38
+msgid "**None (awaiting triage)**: The issue has been approved by a member of the QA team and is awaiting review from the responsible development team. if the issue is a bug, instructions to reproduce are included in the issue description. if the issue is a feature request, it has passed a primary sanity check by the qa-team but has not yet been accepted by the responsible development-team."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:39
+msgid "**Accepted**: The issue has been accepted by the responsible development-team. If the issue is a bugreport, the team has decided that it should be fixable and accepts the responsibility. If the issue is a feature request, the team thinks it should be implemented as described."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:40
+msgid "**In Development**: A patch is in development. Usually means that a developer is assigned to the issue."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:41
+msgid "**Quality Assurance**: The patch is completed and has passed initial testing. The QA team will now review it and provide feedback. If problems are found, the issue is moved back to \"Accepted\"."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:42
+msgid "**Release Candidate**: The patch has passed QA and is ready for release. In case of deb-packages that are included in the system-image, the patch will be included in the next over-the-air update on the rc channel, and, if everything goes well, in the next release of the stable channel."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:43
+msgid "**None (removed from the project)**: If the issue is open and labeled \"help wanted\", community contributions are required to resolve the issue. If it's closed, that means that either a patch has been released on the stable channel (a comment on the issue should link to the patch) or the issue has been rejected (labeled \"wontfix\")."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:46
+msgid "Labels"
+msgstr "Etiketter"
+
+#: ../../about/process/issue-tracking.rst:48
+msgid "All issues - even closed ones - should be labeled to allow the use of GitHub's global filtering. For example, `these are all of the issues labeled 'enhancement' inside @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A%22feature+request%22&type=>`_. Consult the `GitHub help pages <https://help.github.com/articles/about-searching-on-github/>`__ for more information on search and filtering."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:51
+msgid "Here's a list of labels that are normally used by all repositories."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:53
+msgid "**needs confirmation**: The bug needs confirmation and / or further information from affected users"
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:55
+msgid "**bug**: This issue is a confirmed bug. If it's reproducible, reproduction steps are described."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:57
+msgid "**opinion**: This issue needs further discussion."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:58
+msgid "**enhancement**: This issue is a feature request."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:59
+msgid "**question**: This issue is a support request or general question."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:60
+msgid "**invalid**: This issue can not be confirmed or was reported in the wrong tracker."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:62
+msgid "**duplicate**: This has already been reported somewhere else. Please provide a link and close."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:64
+msgid "**help wanted**: This issue is ready to be picked up by a community developer."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:66
+msgid "**good first issue**: The report contains instructions or hints required to fix it. It is an excellent place for someone new to learn about the project by fixing a real issue."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:67
+msgid "**wontfix**: It does not make sense to fix this bug, since it will probably resolve itself, it will be too much work to fix it, it's not fixable, or an underlying component will soon change."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:71
+msgid "Additional special labels can be defined. As an example, here's the labels used in the Ubuntu Touch tracker:"
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:74
+msgid "**critical (devel)**: This critical issue that only occurs on the devel channel is blocking the release of the next rc image."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:76
+msgid "**critical (rc)**: This critical issue that only occurs on the devel and rc channel is blocking the release of the next stable release. Usually, issues that can not simply be moved to a different release and have the power to postpone the release are labeled this."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:80
+msgid "**device: [DEVICE CODENAME]**: This issue affects only the specified device(s)."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:82
+msgid "**team: [TEAM NAME]**: This issue is falls under the responsibility of a specific team (hal, middleware, UI)."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:85
+msgid "If a repository that tracks issues locally defines it's own labels, they should be documented in the README.md."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:89
+msgid "Milestones"
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:91
+msgid "Milestones are used for stable OTA releases only. In general, milestones for the work-in-progress OTA and the next OTA are created. The ETA is set, once the work on the release starts (that is 6 weeks from start date), but can be adjusted afterwards. See the :doc:`release-schedule <release-schedule>` for more info."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:98
+msgid "Assignees"
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:100
+msgid "To make it transparent who's working on an issue, the developer should be assigned. This also allows the use of GitHub's global filtering as a type of TODO list. For example, `this is everything assigned to mariogrip in @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:104
+msgid "Developers are encouraged to keep their list short and update the status of their issues."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:107
+msgid "Examples"
+msgstr "Eksempler"
+
+#: ../../about/process/issue-tracking.rst:110
+msgid "Bug Lifecycle"
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:113
+msgid "The same principle applies to feature requests. The only difference is, that instead of the label **bug**, the label **enhancement** is used. The **needs confirmation** label is not applicable for feature requests."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:117
+msgid "A *User* files a new bug using the issue-template."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:118
+msgid "The *QA-Team* adds the label **needs confirmation** and tries to work with the user to confirm the bug and add potentially missing information to the report. Once the report is complete a **team-label** will be added to the issue, the issue will be put on the **awaiting-triage-list** of the project and the label needs confirmation will be replaced with **bug**."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:119
+msgid "The affected *Team* will triage the issue and either reject (label **wontfix**, close and remove from the project) or accept the issue. The team decides if it they will fix the issue in-house (move to \"Accepted\" and assign a team member) or wait for a community developer to pick it up (Label **help wanted**, remove from the project board and provide hints on how to resolve the issue and further details on the how the fix should be implemented if necessary). For non-critical issues that are trivial to fix, the label **good first issue** can be added as well."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:120
+msgid "Once a *developer* is assigned and starts working on the issue, it is moved to \"In Development\". As soon as they have something to show for, the issue is closed and automatically moved to \"Quality Assurance\" for feedback from the QA team. If necessary, the developer will provide hints on how to test his patch in a comment on the issue."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:121
+msgid "The *QA-Team* tests the fix on all devices and provides feedback to the developer. If problems are found, the issue is re-opened and goes back to \"Accepted\", else it’s moved to \"Release Candidate\" to be included in the next release."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:122
+msgid "If not done already, the issue is added to the next milestone. Once the milestone is released, the issue is removed from the project board."
+msgstr ""
+
+#: ../../about/process/ppa.rst:2
+msgid "repo.ubports.com"
+msgstr ""
+
+#: ../../about/process/ppa.rst:4
+msgid "This is the package archive system for UBports projects. It hosts various PPAs containing all deb-components of Ubuntu Touch."
+msgstr ""
+
+#: ../../about/process/ppa.rst:7
+msgid "Repository naming convention"
+msgstr ""
+
+#: ../../about/process/ppa.rst:10
+msgid "Native packages"
+msgstr ""
+
+#: ../../about/process/ppa.rst:12
+msgid "Native packages are repositories which contain a ``debian/`` directory **with** the source used to create the Debian source package (``.dsc``)."
+msgstr ""
+
+#: ../../about/process/ppa.rst:14
+msgid "The name of the Debian source package generated from the repository and the name of the git-repository should be the same."
+msgstr ""
+
+#: ../../about/process/ppa.rst:17
+msgid "Packaging repositories"
+msgstr ""
+
+#: ../../about/process/ppa.rst:19
+msgid "Packaging repositories contain a ``debian/`` directory **without** the source used to create the Debian source package (``.dsc``). They also contain instructions to tell ``debhelper`` how to get the source used to create the source package."
+msgstr ""
+
+#: ../../about/process/ppa.rst:21
+msgid "The repository should have the name of the source package it generates with ``-packaging`` appended to the end. For example, a packaging repository that generates a source package called ``sandwich`` would be called ``sandwich-packaging``."
+msgstr ""
+
+#: ../../about/process/ppa.rst:24
+msgid "Creating new PPAs"
+msgstr ""
+
+#: ../../about/process/ppa.rst:26
+msgid "New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`. The name of the branch translates literally to the name of the PPA: ``http://repo.ubports.com/dists/[branch name]``"
+msgstr ""
+
+#: ../../about/process/ppa.rst:28
+msgid "Non-standard PPAs (i.e. not ``xenial``, ``vivid`` or ``bionic``) are kept for three months. In case they need to be kept for a longer time, a file with the name ``ubports.keep`` can be created in the root of the repository, containing the date until which the PPA shall be kept open in the form of ``YYYY-MM-dd``. If this file is empty, the PPA will be kept for two years after the last build."
+msgstr ""
+
+#: ../../about/process/release-schedule.rst:2
+msgid "Release Schedule"
+msgstr ""
+
+#: ../../about/process/release-schedule.rst:4
+msgid "OTA updates usually follow this rhythm:"
+msgstr ""
+
+#: ../../about/process/release-schedule.rst:6
+msgid "devel: daily builds"
+msgstr ""
+
+#: ../../about/process/release-schedule.rst:7
+msgid "rc: weekly if no critical issue exists in the devel channel"
+msgstr ""
+
+#: ../../about/process/release-schedule.rst:8
+msgid "stable: every six through eight weeks, if no critical issue exists in the rc channel"
+msgstr ""
+
+#: ../../about/process/release-schedule.rst:11
+msgid "This is not a definitive cycle. Stable releases are ready when they're ready and should not introduce new bugs or ship very incomplete features. Since the OTA update can not be released before all critical issues are closed, the ETA might have to be moved by making an educated guess for when all the issues can be handled. If there are too many issues added to a milestone, they are either removed or added to the next milestone."
+msgstr ""

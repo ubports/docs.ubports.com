@@ -1,0 +1,1417 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
+# This file is distributed under the same license as the UBports package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: UBports\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-09 17:42-0600\n"
+"PO-Revision-Date: 2021-03-13 08:24+0000\n"
+"Last-Translator: Jan Christian Sherdahl <jan@sherdahl.no>\n"
+"Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
+"ubports-docs/documentation-humanguide/nb/>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
+
+#: ../../humanguide/app-layout/app-main-view.rst:2
+msgid "App main view"
+msgstr ""
+
+#: ../../humanguide/app-layout/app-main-view.rst:4
+msgid "When an app starts, shows a generic splash screen (as in the image) or a custom one, then the main view."
+msgstr ""
+"Når en app starter, viser en generell velkomstskjerm (som på bildet) eller "
+"en tilpasset, deretter hovedvisningen."
+
+#: ../../humanguide/app-layout/app-main-view.rst:8
+msgid "The standard parts of a main view or any other page may be:"
+msgstr ""
+"Standarddelene i en hovedvisning eller en hvilken som helst annen side kan "
+"være:"
+
+#: ../../humanguide/app-layout/app-main-view.rst:11
+msgid "Header"
+msgstr "Topptekst"
+
+#: ../../humanguide/app-layout/app-main-view.rst:13
+msgid "Display app name, leading area and trailing area icons."
+msgstr ""
+
+#: ../../humanguide/app-layout/app-main-view.rst:17
+msgid "In this case, showing title and trailing actions."
+msgstr "I dette tilfellet, viser tittel og etterfølgende handlinger."
+
+#: ../../humanguide/app-layout/app-main-view.rst:20
+msgid "Tabbed content"
+msgstr "Fanebasert innhold"
+
+#: ../../humanguide/app-layout/app-main-view.rst:22
+msgid "To organize information under tabs."
+msgstr "Å organisere informasjon under faner."
+
+#: ../../humanguide/app-layout/app-main-view.rst:27
+msgid "Bottom edge menu"
+msgstr "Menyen nederst på kanten"
+
+#: ../../humanguide/app-layout/app-main-view.rst:29
+msgid "For quick actions. See `Quick actions`_."
+msgstr ""
+
+#: ../../humanguide/app-layout/dialogs.rst:2
+msgid "Dialogs"
+msgstr "Dialoger"
+
+#: ../../humanguide/app-layout/dialogs.rst:4
+msgid "A dialog is a way of informing the user about important notices or letting them complete a single action."
+msgstr ""
+"En dialog er en måte å informere brukeren om viktige merknader eller la de "
+"fullføre en enkelt handling."
+
+#: ../../humanguide/app-layout/dialogs.rst:6
+msgid "Dialogs should be unambiguous and concise in their wording. Only the most common, or main, action should be highlighted with color. The main action should be placed topmost in vertical dialogs or rightmost in horizontal dialogs."
+msgstr ""
+"Dialoger bør være entydige og konsise i ordlyden. Bare den vanligste eller "
+"viktigste handlingen skal fremheves med farge. Hovedhandlingen skal "
+"plasseres øverst i vertikale dialoger eller lengst til høyre i horisontale "
+"dialoger."
+
+#: ../../humanguide/app-layout/dialogs.rst:8
+msgid "Main actions may be positive, negative, or neutral. Positive actions add something to their subjects. Negative actions remove, delete, or otherwise make changes that can't be easily undone. Neutral actions do not add or remove from the subject, but still make a change."
+msgstr ""
+"Hovedhandlinger kan være positive, negative eller nøytrale. Positive "
+"handlinger tilfører gjenstandene noe. Negative handlinger fjerner, sletter "
+"eller på annen måte gjør endringer som ikke lett kan angres. Nøytrale "
+"handlinger legger ikke til eller fjernes fra emnet, men gjør fortsatt en "
+"endring."
+
+#: ../../humanguide/app-layout/dialogs.rst:10
+msgid "The main action should be highlighted using ``theme.palette.normal.negative`` if it is destructive, ``theme.palette.normal.positive`` if it is positive, or ``theme.palette.normal.focus`` if it is neutral. The remaining options should be gray, without defining a color theme property."
+msgstr ""
+"Hovedhandlingen skal fremheves ved å bruke ``theme.palette.normal.negative`` "
+"hvis den er ødeleggende, ``theme.palette.normal.positive`` hvis den er "
+"positiv, eller ``theme.palette.normal.focus`` hvis den er nøytral. De "
+"gjenværende alternativene skal være grå uten å definere en fargetemaegenskap."
+
+#: ../../humanguide/app-layout/dialogs.rst:14
+msgid "Dialogs should resume actions, not ask a yes or no question. For example, the user has selected an option to delete a contact. Your dialog should ask, \"Are you sure you would like to delete this contact?\" The options should then be \"Delete\", a negative action colored in red, and \"Cancel\", colored in gray."
+msgstr ""
+"Dialoger bør gjenoppta handlinger, ikke stille et ja eller nei-spørsmål. For "
+"eksempel har brukeren valgt et alternativ for å slette en kontakt. Dialogen "
+"skal spørre: \"Er du sikker på at du vil slette denne kontakten?\" "
+"Alternativene skal da være \"Slett\", en negativ handling farget i rødt, og "
+"\"Avbryt\", farget i grått."
+
+#: ../../humanguide/app-layout/dialogs.rst:17
+msgid "Examples of designs to avoid"
+msgstr "Eksempler på design å unngå"
+
+#: ../../humanguide/app-layout/dialogs.rst:21
+msgid "Left: Download button uses old focus color, Cancel button (secondary action) uses old grey color."
+msgstr ""
+"Venstre: Last ned-knappen bruker gammel fokusfarge, Avbryt-knappen (sekundær "
+"handling) bruker gammel grå farge."
+
+#: ../../humanguide/app-layout/dialogs.rst:23
+msgid "Right: Dialog uses generic answers, both buttons colored as main actions with confusing color meaning: \"Will 'No' cause an irreversible action, and 'Yes' cause an additive action?\""
+msgstr ""
+"Til høyre: Dialog bruker generiske svar, begge knappene er farget som "
+"hovedhandlinger med forvirrende fargebetydning: \"Vil 'Nei' \"forårsake en "
+"irreversibel handling, og 'Ja' forårsake en additiv handling?\""
+
+#: ../../humanguide/app-layout/header-uses.rst:2
+msgid "Header uses"
+msgstr "Bruk av topptekst"
+
+#: ../../humanguide/app-layout/header-uses.rst:4
+msgid "App headers can be used to show app name, app section or page, search box, or other globally accessible functions."
+msgstr ""
+"App topptekst kan brukes til å vise appnavn, app seksjon eller side, "
+"søkefelt eller andre globalt tilgjengelige funksjoner."
+
+#: ../../humanguide/app-layout/header-uses.rst:12
+msgid "Some special apps doesn't show any header, like the Camera app or some games."
+msgstr ""
+"Noen spesielle apper viser ingen overskrifter, for eksempel Kamera-appen "
+"eller noen spill."
+
+#: ../../humanguide/app-layout/header-uses.rst:14
+msgid "The header takes care of showing the back button when a `page stack <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Components/PageStack.html>`__ is used."
+msgstr ""
+"Overskriften tar seg av å vise tilbake-knappen når en `sidestabel <https"
+"://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Components/PageStack.html>`__ "
+"brukes."
+
+#: ../../humanguide/app-layout/importing-data.rst:2
+msgid "Importing Data"
+msgstr "Importerer data"
+
+#: ../../humanguide/app-layout/importing-data.rst:4
+msgid "Interchange of data between apps is done through Content Hub. This improves isolation between apps."
+msgstr ""
+"Utveksling av data mellom apper skjer gjennom Content Hub. Dette forbedrer "
+"isolasjonen mellom apper."
+
+#: ../../humanguide/app-layout/importing-data.rst:8
+msgid "Apps with the appropriate apparmor permissions can import, export or share data between them."
+msgstr ""
+"Apper med passende apparmor-tillatelser kan importere, eksportere eller dele "
+"data mellom seg."
+
+#: ../../humanguide/app-layout/importing-data.rst:10
+msgid "For more information see `Importing from Content Hub and URLdispatcher`_."
+msgstr ""
+"For mer informasjon, se `Importing from Content Hub and URLdispatcher`_."
+
+#: ../../humanguide/app-layout/index.rst:2
+msgid "App layout"
+msgstr ""
+
+#: ../../humanguide/app-layout/main-actions.rst:2
+msgid "Main actions"
+msgstr "Hovedhandlinger"
+
+#: ../../humanguide/app-layout/main-actions.rst:4
+msgid "Main actions are displayed in the corresponding header of the Page. The header should show only relevant actions to the current page."
+msgstr ""
+"Hovedhandlinger vises i den tilsvarende overskriften på siden. Overskriften "
+"skal bare vise relevante handlinger til den aktuelle siden."
+
+#: ../../humanguide/app-layout/main-actions.rst:6
+msgid "Main page of Contacts app shows:"
+msgstr "Hovedsiden for Kontakter-appen viser:"
+
+#: ../../humanguide/app-layout/main-actions.rst:10
+msgid "When viewing a single contact, only relevant actions are shown:"
+msgstr "Når du ser på en enkelt kontakt, vises bare relevante handlinger:"
+
+#: ../../humanguide/app-layout/main-actions.rst:15
+#, fuzzy
+msgid "Slots"
+msgstr "Spor"
+
+#: ../../humanguide/app-layout/main-actions.rst:17
+#, fuzzy
+msgid "The header contains a number of slots that can hold actions or navigational options. Depending on the surface or window size, additional slots can be added to show the actions otherwise hidden in drawers."
+msgstr ""
+"Overskriften inneholder et antall spor som kan inneholde handlinger eller "
+"navigasjonsalternativer. Avhengig av overflaten eller vindusstørrelsen, kan "
+"flere spor legges til for å vise handlingene som ellers er skjult i skuffene."
+
+#: ../../humanguide/app-layout/main-actions.rst:22
+#, fuzzy
+msgid "Action Drawer"
+msgstr "Handlingsskuff"
+
+#: ../../humanguide/app-layout/main-actions.rst:24
+#, fuzzy
+msgid "Actions will be placed into an action drawer when there are no available slots to house them. However, when your app is on a larger surface, like on a desktop, then actions will appear in the slots."
+msgstr ""
+"Handlinger vil bli plassert i en handlingsskuff når det ikke er ledige spor "
+"for å huse dem. Men når appen din er på en større overflate, som på et "
+"skrivebord, vises handlinger i sporene."
+
+#: ../../humanguide/app-layout/main-actions.rst:29
+msgid "Responsive layout"
+msgstr "Responsiv layout"
+
+#: ../../humanguide/app-layout/main-actions.rst:31
+#, fuzzy
+msgid "As the header gains width across screen sizes, additional slots become visible and actions in the drawer will appear automatically."
+msgstr ""
+"Når toppteksten får bredde over skjermstørrelser, blir flere spor synlige, "
+"og handlinger i skuffen vises automatisk."
+
+#: ../../humanguide/app-layout/main-actions.rst:34
+#, fuzzy
+msgid "3 slot layout"
+msgstr "3 spor layout"
+
+#: ../../humanguide/app-layout/main-actions.rst:41
+#, fuzzy
+msgid "4 slot layout"
+msgstr "4 spor layout"
+
+#: ../../humanguide/app-layout/main-actions.rst:48
+#, fuzzy
+msgid "5 slot layout"
+msgstr "5 spor layout"
+
+#: ../../humanguide/app-layout/main-actions.rst:55
+#, fuzzy
+msgid "6 slot layout"
+msgstr "6 spor layout"
+
+#: ../../humanguide/app-layout/main-actions.rst:62
+msgid "Medium to large screens"
+msgstr "Middels til store skjermer"
+
+#: ../../humanguide/app-layout/main-actions.rst:64
+#, fuzzy
+msgid "The maximum number of visible action slots in a convergent environment is 6. If this is exceeded then additional actions will migrate to the action drawer."
+msgstr ""
+"Maksimalt antall synlige handlingsspor i et konvergerende miljø er 6. Hvis "
+"dette overskrides, vil flere handlinger migrere til handlingsskuffen."
+
+#: ../../humanguide/app-layout/main-actions.rst:67
+#, fuzzy
+msgid "Simple"
+msgstr "Enkel"
+
+#: ../../humanguide/app-layout/main-actions.rst:69
+msgid "Keep in mind to keep a clean design. The simpler, the better."
+msgstr "Husk å holde et ryddig design. Jo enklere, jo bedre."
+
+#: ../../humanguide/app-layout/presenting-data.rst:2
+msgid "Presenting data"
+msgstr "Presenterer data"
+
+#: ../../humanguide/app-layout/presenting-data.rst:5
+msgid "List Items"
+msgstr "Listeelementer"
+
+#: ../../humanguide/app-layout/presenting-data.rst:7
+#, fuzzy
+msgid "List items can be used to make up a list of ordered scrollable items that are related to each other."
+msgstr ""
+"Listeelementer kan brukes til å lage en liste over ordnede rullebare "
+"gjenstander som er relatert til hverandre."
+
+#: ../../humanguide/app-layout/presenting-data.rst:11
+msgid "When images or icons are presented without text or actions, it would make more sense to show them inside a grid rather than a list; like in a photo gallery."
+msgstr ""
+"Når bilder eller ikoner presenteres uten tekst eller handlinger, vil det "
+"være mer fornuftig å vise dem i et rutenett i stedet for en liste; som i et "
+"fotogalleri."
+
+#: ../../humanguide/app-layout/presenting-data.rst:15
+msgid "Items in a list can have actions that can be placed in a context menu. The context menu can be accessed in two ways: by swiping or right-clicking the list item."
+msgstr ""
+"Elementer i en liste kan ha handlinger som kan plasseres i en hurtigmeny. Du "
+"får tilgang til hurtigmenyen på to måter: ved å sveipe eller høyreklikke på "
+"listeelementet."
+
+#: ../../humanguide/app-layout/presenting-data.rst:17
+#, fuzzy
+msgid "The actions are placed within two categories: leading for negative actions and trailing for positive actions."
+msgstr ""
+"Handlingene er plassert i to kategorier: ledende for negative handlinger og "
+"etterfølgende for positive handlinger."
+
+#: ../../humanguide/app-layout/presenting-data.rst:20
+msgid "Touch swiping"
+msgstr ""
+
+#: ../../humanguide/app-layout/presenting-data.rst:27
+msgid "Mouse right click"
+msgstr "Mus høyreklikk"
+
+#: ../../humanguide/app-layout/presenting-data.rst:32
+msgid "Keyboard navigation"
+msgstr "Tastaturnavigasjon"
+
+#: ../../humanguide/app-layout/presenting-data.rst:37
+msgid "Lists in edit mode"
+msgstr "Lister i redigeringsmodus"
+
+#: ../../humanguide/app-layout/presenting-data.rst:39
+msgid "Edit mode allows users to modify a particular item or multiple items at once."
+msgstr ""
+"I redigeringsmodus kan brukere endre et bestemt element eller flere "
+"elementer samtidig."
+
+#: ../../humanguide/app-layout/presenting-data.rst:41
+#, fuzzy
+msgid "You can use edit mode to allow users to multi-select, rearrange or delete items inside a list. When edit mode is entered the whole screen becomes an edit state and the header will show associated editing actions for the content. Alternatively, if the user long presses an item a context menu will show the associated editing actions too."
+msgstr ""
+"Du kan bruke redigeringsmodus for å tillate brukere å velge, omorganisere "
+"eller slette elementer i en liste. Når redigeringsmodus er aktivert, blir "
+"hele skjermen til en redigeringstilstand, og overskriften viser tilknyttede "
+"redigeringshandlinger for innholdet. Alternativt, hvis brukeren lenge "
+"trykker på et element, vil en hurtigmeny også vise de tilknyttede "
+"redigeringshandlingene."
+
+#: ../../humanguide/app-layout/presenting-data.rst:48
+#, fuzzy
+msgid "Layout of detailed list items"
+msgstr "Oppsett av detaljerte listeelementer"
+
+#: ../../humanguide/app-layout/presenting-data.rst:52
+#, fuzzy
+msgid "1 line – Title"
+msgstr "1 linje - Tittel"
+
+#: ../../humanguide/app-layout/presenting-data.rst:54
+#, fuzzy
+msgid "1 line – Subtitle"
+msgstr "1 linje - Undertittel"
+
+#: ../../humanguide/app-layout/presenting-data.rst:56
+msgid "2 lines – Summary"
+msgstr "2 linjer - Sammendrag"
+
+#: ../../humanguide/app-layout/quick-actions.rst:2
+msgid "Quick actions"
+msgstr ""
+
+#: ../../humanguide/app-layout/quick-actions.rst:4
+msgid "The most common action for an app, the one that needs to be accessed quickly might be added as a `bottom edge <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Components/BottomEdge.html>`__ action, accessed with a swipe from outside of the screen upwards."
+msgstr ""
+
+#: ../../humanguide/app-layout/quick-actions.rst:6
+msgid "You can add a new contact in the Contacts app swiping up:"
+msgstr "Du kan legge til en ny kontakt i Kontakter-appen ved å sveipe opp:"
+
+#: ../../humanguide/app-layout/quick-actions.rst:11
+msgid "Hint"
+msgstr "Hint"
+
+#: ../../humanguide/app-layout/quick-actions.rst:13
+msgid "The hint is used to let the user know that there is something worth trying at the bottom of the screen."
+msgstr ""
+"Hintet brukes til å fortelle brukeren at det er noe som er verdt å prøve "
+"nederst på skjermen."
+
+#: ../../humanguide/app-layout/quick-actions.rst:15
+msgid "After opening an app, a hint with a text and/or an icon is shown:"
+msgstr ""
+"Etter at du har åpnet en app, vises et hint med en tekst og / eller et ikon:"
+
+#: ../../humanguide/app-layout/quick-actions.rst:19
+#, fuzzy
+msgid "After after a few seconds it hides and a floating icon is shown"
+msgstr "Etter noen sekunder skjuler det seg, og et flytende ikon vises"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:2
+msgid "App icon design"
+msgstr "App ikon design"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:4
+#, fuzzy
+msgid "The whole system and apps follow the `Suru design principles <http://web.archive.org/web/20191223082720/https://docs.ubuntu.com/phone/en/apps/design/get-started/design-philosophy>`__ started by Canonical and `Samuel Hewitt <https://samuelhewitt.com>`__."
+msgstr ""
+"Hele systemet og appene følger designprinsippene `Suru design prinsipper "
+"<http://web.archive.org/web/20191223082720/https://docs.ubuntu.com/phone/en/"
+"apps/design/get-started/design-philosophy>`__ startet av Canonical og `"
+"Samuel Hewitt <https://samuelhewitt.com>`__."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:7
+#, fuzzy
+msgid "Design Philosophy and Suru Meaning"
+msgstr "Designfilosofi og Suru Betydning"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:9
+#, fuzzy
+msgid "Suru alludes to Japanese culture."
+msgstr "Suru viser til japansk kultur."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:10
+#, fuzzy
+msgid "The design of Suru is inspired by origami."
+msgstr "Designet til Suru er inspirert av origami."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:11
+#, fuzzy
+msgid "Paper can be used in two and three dimensional forms, because it is transferable and diverse."
+msgstr ""
+"Papir kan brukes i to- og tredimensjonale former, fordi det er overførbart "
+"og mangfoldig."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:14
+msgid "Suru brings a precise yet organic structure to the Ubuntu Touch interface. The sharp lines and varying levels of transparency evoke the edges and texture of paper."
+msgstr ""
+"Suru gir en presis, men likevel organisk struktur, til Ubuntu Touch-"
+"grensesnittet. De skarpe linjene og de forskjellige nivåene av "
+"gjennomsiktighet fremkaller kantene og teksturen på papiret."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:17
+msgid "Design Tips for an App Icon"
+msgstr "Designtips for et appikon"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:20
+#, fuzzy
+msgid "Descriptive design"
+msgstr "Beskrivende design"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:22
+msgid "The icon you choose for your app should describe what your app is about, what it does, or what service it is there for in a recognizable way."
+msgstr ""
+"Ikonet du velger for appen din skal beskrive hva appen din handler om, hva "
+"den gjør, eller hvilken tjeneste den er der for på en gjenkjennelig måte."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:27
+msgid "Distinctive shapes"
+msgstr "Karakteristiske former"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:29
+msgid "Depending on the object you choose to show in the icon, on the perspective, lighting and other factors, it might be hard to recognize what you are trying to depict. A TV might look like a box, or a computer screen, a remote control like a phone, etc."
+msgstr ""
+"Avhengig av objektet du velger å vise i ikonet, på perspektiv, belysning og "
+"andre faktorer, kan det være vanskelig å gjenkjenne hva du prøver å skildre. "
+"En TV kan se ut som en boks, eller en dataskjerm, en fjernkontroll som en "
+"telefon, etc."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:34
+msgid "Details"
+msgstr "Detaljer"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:36
+msgid "A detailed icon is very nice to look at as it shows quality and your eye for the small things. It might add confusion though, especially in smaller sizes or for people who have impaired eyesight. Show what's necessary, pay attention to detail, but don't overload the icon."
+msgstr ""
+"Et detaljert ikon er veldig hyggelig å se på da det viser kvalitet og øye "
+"for de små tingene. Det kan gi forvirring, spesielt i mindre størrelser "
+"eller for personer med nedsatt syn. Vis hva som er nødvendig, vær oppmerksom "
+"på detaljer, men ikke overbelast ikonet."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:41
+msgid "Colours"
+msgstr "Farger"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:43
+msgid "Use distinctive colours, make your icon stand out a bit and give the shapes enough contrast to be visible."
+msgstr ""
+"Bruk særegne farger, få ikonet til å skille seg litt ut, og gi formene nok "
+"kontrast til å være synlige."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:48
+#, fuzzy
+msgid "Gradients"
+msgstr "Graderinger"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:50
+#, fuzzy
+msgid "If you were to add a gradient to your icon, only use colours that are slightly different from each other so that the change is not too dramatic. For example:"
+msgstr ""
+"Hvis du skulle legge til en gradering til ikonet ditt, bruk bare farger som "
+"er litt forskjellige fra hverandre, slik at endringen ikke blir for "
+"dramatisk. For eksempel:"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:55
+msgid "Composition"
+msgstr "Komposisjon"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:57
+msgid "Suru icons are composed of simple geometric shapes. The background is usually a coloured surface with the pictogram, also composed of flat shapes, “floating” above it."
+msgstr ""
+"Suru-ikoner er sammensatt av enkle geometriske former. Bakgrunnen er "
+"vanligvis en farget overflate med piktogrammet, også sammensatt av flate "
+"former, \"flytende\" over det."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:64
+#, fuzzy
+msgid "The Fold Effect"
+msgstr "Fold-effekten"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:66
+#, fuzzy
+msgid "In keeping with the origami motif, some Suru icons have an implied fold. In many icons this is a single horizontal or vertical line but sometimes the fold line(s) correspond or align with elements of the pictogram."
+msgstr ""
+"I tråd med origamimotivet har noen Suru-ikoner en underforstått fold. I "
+"mange ikoner er dette en enkelt horisontal eller vertikal linje, men noen "
+"ganger samsvarer linjene eller linjene med elementene i piktogrammet."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:68
+msgid "The fold is drawn by creating an overlay of a white or black polygon of very low opacity (usually between 1%~10%)."
+msgstr ""
+"Brettet tegnes ved å lage et overlegg av en hvit eller svart polygon med "
+"svært lav opasitet (vanligvis mellom 1% ~ 10%)."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:75
+#, fuzzy
+msgid "Grids"
+msgstr "Rutenett"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:77
+#, fuzzy
+msgid "Using a grid layout ensures consistency across all icons and will force you to reserve area for the icon background for even padding around the pictogram."
+msgstr ""
+"Ved å bruke et rutenettoppsett, sikrer du konsistens på tvers av alle "
+"ikoner, og vil tvinge deg til å reservere område for ikonbakgrunnen for jevn "
+"polstring rundt piktogrammet."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:81
+#, fuzzy
+msgid "Note that the circular elements are slightly larger than rectangular elements of the grid, this overshoot is needed to compensate for the optical illusion where circular objects appear smaller than rectangular objects of the same dimensions."
+msgstr ""
+"Merk at de sirkulære elementene er litt større enn rektangulære elementer i "
+"rutenettet, dette overskuddet er nødvendig for å kompensere for den optiske "
+"illusjonen der sirkulære objekter virker mindre enn rektangulære objekter "
+"med samme dimensjoner."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:84
+#, fuzzy
+msgid "Unit Grid"
+msgstr "Enhetsrutenett"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:86
+#, fuzzy
+msgid "Designing with an overall pixel grid in mind is crucial to having crisp, clean icons. Since most desktop icons have dimensions that are a factor of four (16x16, 24x24, 32x32, 48x48, 256x256) using a pixel grid with lines every 4 pixels and drawing to that grid is the best practice."
+msgstr ""
+"Å designe med et samlet pikselrutenett i tankene er avgjørende for å ha "
+"skarpe, rene ikoner. Siden de fleste skrivebordsikoner har dimensjoner som "
+"er en faktor på fire (16x16, 24x24, 32x32, 48x48, 256x256) ved hjelp av et "
+"pikselrutenett med linjer hver 4. piksel, og tegning til det rutenettet er "
+"den beste fremgangsmåten."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:89
+#, fuzzy
+msgid "Shadows"
+msgstr "Skygger"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:91
+msgid "Often a Suru icon is drawn with two distinct sets of shadows, one for the pictogram to create a drop shadow effect, and a second below the overall icon shape."
+msgstr ""
+"Ofte tegnes et Suru-ikon med to forskjellige sett med skygger, ett for "
+"piktogrammet for å skape en skyggeeffekt og et sekundært under den generelle "
+"ikonformen."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:93
+#, fuzzy
+msgid "The drop shadow effect on the central pictogram is a combination of two shadow that are identical in shape to the pictogram:"
+msgstr ""
+"Fallskyggeeffekten på det sentrale piktogrammet er en kombinasjon av to "
+"skygger som er identiske i form til piktogrammet:"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:95
+msgid "a shape that is rgba(0,0,0,0.1) with vertical offset of 2 pixels and a blur of 1%"
+msgstr ""
+"en form som er rgba (0,0,0,0.1) med vertikal forskyvning på 2 piksler og en "
+"uskarphet på 1%"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:96
+msgid "a shape that is rgba(0,0,0,0.4) with vertical offset of 4 pixels and a blur of 10%"
+msgstr ""
+"en form som er rgba (0,0,0,0.4) med vertikal forskyvning på 4 piksler og en "
+"uskarphet på 10%"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:100
+#, fuzzy
+msgid "If the fold effect is present, the second shadow is drawn using a linear gradient with three stops whose positions correspond to the location of the background fold."
+msgstr ""
+"Hvis bretteeffekten er til stede, tegnes den andre skyggen ved hjelp av en "
+"lineær gradient med tre stopp hvis posisjoner tilsvarer plasseringen av "
+"bakgrunnen."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:103
+#, fuzzy
+msgid "Highlights"
+msgstr "Høydepunkter"
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:105
+#, fuzzy
+msgid "Pictograms have an ever~so~slight (1 pixel) white highlight along the top edge of them. To do this, make 2 solid white copies of the main pictogram shape and move one copy 1 pixel down and 'difference' the two so what's left is an 'edge' that you can align to the top of the pictogram. Repeat as needed."
+msgstr ""
+"Piktogrammer har et aldri så lite (1 piksel) hvitt høydepunkt langs den øvre "
+"kanten av dem. For å gjøre dette, lag 2 hvite kopier av hovedpiktogramformen "
+"og flytt en kopi 1 piksel nedover og \"forskjell\" på de to, så det som er "
+"igjen er en \"kant\" som du kan justere til toppen av piktogrammet. Gjenta "
+"etter behov."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:109
+#, fuzzy
+msgid "Depending on the colour of your pictogram element, you can vary the opacity of your highlight. For instance, if it is using bright, primary colours, there isn't any need for a highlight."
+msgstr ""
+"Avhengig av fargen på piktogramelementet ditt, kan du variere opasiteten til "
+"høydepunktet ditt. For eksempel, hvis det bruker lyse, primære farger, er "
+"det ikke behov for et høydepunkt."
+
+#: ../../humanguide/design-concepts/app-icon-design.rst:111
+#, fuzzy
+msgid "Grids and other resources can be found in this `gitlab repository <https://gitlab.com/cibersheep/ubuntu-icon-resource-kit>`__."
+msgstr ""
+"Rutenett og andre ressurser finner du i dette `gitlab repository "
+"<https://gitlab.com/cibersheep/ubuntu-icon-resource-kit>`__."
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:2
+#, fuzzy
+msgid "In-app icons design"
+msgstr "Ikoner i app-design"
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:5
+msgid "Interface Icons"
+msgstr "Grensesnittikoner"
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:7
+#, fuzzy
+msgid "Interface icons communicate either status or action displays, such as battery level or an alarm, whilst also enabling the user to perform actions like opening a menu, sharing content or print a document. The interface icons are located in the top bar or in-app icons, such as in the Header or the menus."
+msgstr ""
+"Grensesnittikoner kommuniserer enten status- eller handlingsvisninger, for "
+"eksempel batterinivå eller en alarm, samtidig som brukeren kan utføre "
+"handlinger som å åpne en meny, dele innhold eller skrive ut et dokument. "
+"Grensesnittikonene er plassert i topplinjen eller ikonene i appen, for "
+"eksempel i toppteksten eller i menyene."
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:9
+#, fuzzy
+msgid "|stock_message.svg| |share.svg| |stock_alarm-clock.svg| |security-alert.svg| |settings.svg|"
+msgstr ""
+"|stock_message.svg| |share.svg| |stock_alarm-clock.svg| |security-alert.svg| "
+"|settings.svg|"
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:12
+msgid "See a `list of the icons <http://docs.ubports.com/projects/icons/>`__. available in the system."
+msgstr ""
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:15
+msgid "Color"
+msgstr "Farge"
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:17
+#, fuzzy
+msgid "Interface icons can be colourized in qml therefore are designed in #808080 color."
+msgstr ""
+"Grensesnittikoner kan farges i qml og er derfor designet i # 808080 farge."
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:20
+#, fuzzy
+msgid "Font"
+msgstr "Font"
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:22
+#, fuzzy
+msgid "To provide a consistent look to the UI and to make the Suru icons distinctive, the design is based on the same patterns as the Ubuntu font. The font patterns can applied to the symbol to define its contours."
+msgstr ""
+"For å gi brukergrensesnittet et konsistent utseende og for å gjøre Suru-"
+"ikonene særegne, er designet basert på de samme mønstrene som Ubuntu-fonten. "
+"Fontmønstrene kan brukes på symbolet for å definere konturene."
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:27
+msgid "Strokes"
+msgstr ""
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:29
+msgid "Stroke ends are squared but the upper end of vertical strokes is slightly oblique with a +10º angle."
+msgstr ""
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:34
+#, fuzzy
+msgid "Rotation"
+msgstr "Rotering"
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:36
+msgid "When they are not horizontal or vertical, objects are oriented along a +45º axis."
+msgstr ""
+"Når de ikke er horisontale eller vertikale, er objektene orientert langs en +"
+"45º akse."
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:41
+msgid "Corners"
+msgstr "Hjørner"
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:43
+#, fuzzy
+msgid "Curved corners are preferred if possible. The following picture shows a zoom on the default outer and inner curvatures, with nodes and Bezier handle. The default curvature can be scaled down when the shape is smaller."
+msgstr ""
+"Buede hjørner foretrekkes hvis mulig. Det følgende bildet viser en zoom på "
+"standard ytre og indre krumning, med noder og Bezier-håndtak. Standard "
+"krumning kan reduseres når formen er mindre."
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:48
+#, fuzzy
+msgid "Arrows"
+msgstr "Piler"
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:50
+#, fuzzy
+msgid "A chevron symbol is used for navigation arrows. The arrowhead is an isosceles triangle where the two equal sides are slightly curved (following the pattern of the Y character)."
+msgstr ""
+"Et chevron-symbol brukes til navigasjonspiler. Pilespissen er en likestilt "
+"trekant der de to like sidene er svakt buede (etter mønsteret til Y-tegnet)."
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:55
+msgid "Opacity"
+msgstr "Opasitet"
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:57
+msgid "50% opacity is used to reflect the status of an indicator. In case of a double space (enabled and disabled, for example), the opacity of the whole icon changes. When the status allows a range of values, the opacity of a single portion of icon can be altered."
+msgstr ""
+"50% opasitet brukes til å gjenspeile statusen til en indikator. I tilfelle "
+"dobbeltrom (for eksempel aktivert og deaktivert) endres opasiteten til hele "
+"ikonet. Når statusen tillater en rekke verdier, kan opasiteten til en enkelt "
+"del av ikonet endres."
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:62
+#, fuzzy
+msgid "Grid"
+msgstr "Rutenett"
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:64
+msgid "Interface icons are designed for 96x96 pixels, with at least 4 pixels of margin on every side."
+msgstr ""
+"Grensesnittikoner er designet for 96x96 piksler, med minst 4 piksler på hver "
+"side."
+
+#: ../../humanguide/design-concepts/index.rst:2
+msgid "Design concepts"
+msgstr "Designkonsepter"
+
+#: ../../humanguide/design-concepts/system-palette.rst:1
+msgid "As designed by `Canonical <https://www.canonical.com/>`__, we use the following system palette (from `Michał Prędotka <http://colors.mivoligo.com/>`__ and `Ubuntu documentation <https://docs.ubuntu.com/phone/en/apps/api-qml-development/Ubuntu.Components.UbuntuColors>`__):"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:4
+#, fuzzy
+msgid "Operating system and app palette"
+msgstr "Operativsystem og app-palett"
+
+#: ../../humanguide/design-concepts/system-palette.rst:8
+msgid "#FFFFFF White"
+msgstr "#FFFFFF Hvit"
+
+#: ../../humanguide/design-concepts/system-palette.rst:10
+#, fuzzy
+msgid "Recommended for background on Ambiance theme (light theme) or regular text on Suru Dark theme."
+msgstr ""
+"Anbefales for bakgrunn om Ambiance-tema (lyst tema) eller vanlig tekst om "
+"Suru Dark-tema."
+
+#: ../../humanguide/design-concepts/system-palette.rst:14
+msgid "#111111 Jet"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:16
+#, fuzzy
+msgid "Recommended for regular text on Ambiance theme or background in Suru Dark."
+msgstr "Anbefalt for vanlig tekst om Ambiance-tema eller bakgrunn i Suru Dark."
+
+#: ../../humanguide/design-concepts/system-palette.rst:20
+msgid "#3B3B3B Inkstone"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:22
+#, fuzzy
+msgid "Recommended for foreground colours in dark themes."
+msgstr "Anbefales for forgrunnsfarger i mørke temaer."
+
+#: ../../humanguide/design-concepts/system-palette.rst:26
+msgid "#5D5D5D Slate"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:28
+#, fuzzy
+msgid "Recommended for text and action icons."
+msgstr "Anbefales for tekst- og handlingsikoner."
+
+#: ../../humanguide/design-concepts/system-palette.rst:32
+#, fuzzy
+msgid "#666666 Graphite"
+msgstr "#666666 Grafitt"
+
+#: ../../humanguide/design-concepts/system-palette.rst:34
+#, fuzzy
+msgid "Recommended for coloring dark themes' background."
+msgstr "Anbefales for farging av mørke temaers bakgrunn."
+
+#: ../../humanguide/design-concepts/system-palette.rst:38
+#, fuzzy
+msgid "#888888 Ash"
+msgstr "#888888 Aske"
+
+#: ../../humanguide/design-concepts/system-palette.rst:40
+#, fuzzy
+msgid "Recommended for subtitles and other tertiary content."
+msgstr "Anbefalt for undertekster og annet tertiært innhold."
+
+#: ../../humanguide/design-concepts/system-palette.rst:44
+#, fuzzy
+msgid "#CDCDCD Silk"
+msgstr "#CDCDCD Silke"
+
+#: ../../humanguide/design-concepts/system-palette.rst:46
+#, fuzzy
+msgid "Recommended for neutral action buttons and secondary text."
+msgstr "Anbefales for nøytrale handlingsknapper og sekundær tekst."
+
+#: ../../humanguide/design-concepts/system-palette.rst:50
+#, fuzzy
+msgid "#F7F7F7 Porcelain"
+msgstr "#F7F7F7 Porselen"
+
+#: ../../humanguide/design-concepts/system-palette.rst:52
+#, fuzzy
+msgid "Recommended for foregrounds."
+msgstr "Anbefales for forgrunnen."
+
+#: ../../humanguide/design-concepts/system-palette.rst:56
+msgid "#335280 Blue"
+msgstr "#335280 Blå"
+
+#: ../../humanguide/design-concepts/system-palette.rst:58
+#, fuzzy
+msgid "Recommended for progress bars, selected areas, text selection and text cursor. Also neutral actions (Ambiance)."
+msgstr ""
+"Anbefalt for fremdriftslinjer, utvalgte områder, tekstvalg og tekstmarkør. "
+"Også nøytrale handlinger (Ambiance)."
+
+#: ../../humanguide/design-concepts/system-palette.rst:62
+#, fuzzy
+msgid "#19B6EE Light Blue"
+msgstr "#19B6EE Lyseblå"
+
+#: ../../humanguide/design-concepts/system-palette.rst:64
+#, fuzzy
+msgid "Recommended for progress bars, selected areas, text selection and text cursor. Also neutral actions (SuruDark)."
+msgstr ""
+"Anbefalt for fremdriftslinjer, utvalgte områder, tekstvalg og tekstmarkør. "
+"Også nøytrale handlinger (SuruDark)."
+
+#: ../../humanguide/design-concepts/system-palette.rst:68
+msgid "#0E8420 Green"
+msgstr "#0E8420 Grønn"
+
+#: ../../humanguide/design-concepts/system-palette.rst:70
+#, fuzzy
+msgid "Recommended for positive action buttons (Ambiance)."
+msgstr "Anbefales for positive handlingsknapper (Ambiance)."
+
+#: ../../humanguide/design-concepts/system-palette.rst:74
+#, fuzzy
+msgid "#3EB34F Light Green"
+msgstr "#3EB34F Lysegrønn"
+
+#: ../../humanguide/design-concepts/system-palette.rst:76
+#, fuzzy
+msgid "Recommended for positive action buttons (SuruDark)."
+msgstr "Anbefales for positive handlingsknapper (SuruDark)."
+
+#: ../../humanguide/design-concepts/system-palette.rst:80
+msgid "#C7162B Red"
+msgstr "#C7162B Rød"
+
+#: ../../humanguide/design-concepts/system-palette.rst:82
+#, fuzzy
+msgid "Recommended for negative and irreversible action buttons, errors and alerts (Ambiance)."
+msgstr ""
+"Anbefales for negative og irreversible handlingsknapper, feil og varsler "
+"(Ambiance)."
+
+#: ../../humanguide/design-concepts/system-palette.rst:86
+#, fuzzy
+msgid "#ED3146 Light Red"
+msgstr "#ED3146 Lyserød"
+
+#: ../../humanguide/design-concepts/system-palette.rst:88
+#, fuzzy
+msgid "Recommended for negative and irreversible action buttons, errors and alerts (SuruDark)."
+msgstr ""
+"Anbefales for negative og irreversible handlingsknapper, feil og varsler "
+"(SuruDark)."
+
+#: ../../humanguide/design-concepts/system-palette.rst:92
+msgid "#E95420 Orange"
+msgstr ""
+
+#: ../../humanguide/design-concepts/system-palette.rst:94
+#, fuzzy
+msgid "Orange is recommended for branded elements, focus and intensity."
+msgstr "Oransje anbefales for merkeelementer, fokus og intensitet."
+
+#: ../../humanguide/design-concepts/typography.rst:2
+msgid "Typography"
+msgstr "Typografi"
+
+#: ../../humanguide/design-concepts/typography.rst:5
+msgid "Fonts"
+msgstr "Fonter"
+
+#: ../../humanguide/design-concepts/typography.rst:7
+msgid "Our default font is `Ubuntu <https://design.ubuntu.com/font/>`__ `[2] <https://en.wikipedia.org/wiki/Ubuntu_(typeface)>`__ installed in the system."
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:11
+#, fuzzy
+msgid "For the font sizes to be consistent across devices, instead of setting the font size as a number of pixels or points, it is imperative to define the font size in terms of size names:"
+msgstr ""
+"For at skriftstørrelsene skal være konsistente på tvers av enheter, er det "
+"viktig å definere skriftstørrelsen i form av størrelsesnavn i stedet for å "
+"angi skriftstørrelsen som et antall piksler eller punkter:"
+
+#: ../../humanguide/design-concepts/typography.rst:14
+#, fuzzy
+msgid "Font Size Name"
+msgstr "Navn på skriftstørrelse"
+
+#: ../../humanguide/design-concepts/typography.rst:14
+msgid "gu"
+msgstr ""
+
+#: ../../humanguide/design-concepts/typography.rst:14
+#, fuzzy
+msgid "Desktop"
+msgstr "Skrivebord"
+
+#: ../../humanguide/design-concepts/typography.rst:14
+#, fuzzy
+msgid "Phone"
+msgstr "Telefon"
+
+#: ../../humanguide/design-concepts/typography.rst:14
+#, fuzzy
+msgid "Tablet"
+msgstr "Nettbrett"
+
+#: ../../humanguide/design-concepts/typography.rst:18
+#, fuzzy
+msgid "4\" HD Screen"
+msgstr "4\" HD skjerm"
+
+#: ../../humanguide/design-concepts/typography.rst:18
+#, fuzzy
+msgid "10\" HD screen"
+msgstr "10\" HD skjerm"
+
+#: ../../humanguide/design-concepts/typography.rst:21
+#, fuzzy
+msgid "x-small"
+msgstr "x-liten"
+
+#: ../../humanguide/design-concepts/typography.rst:21
+#, fuzzy
+msgid "1.25"
+msgstr "1,25"
+
+#: ../../humanguide/design-concepts/typography.rst:21
+#, fuzzy
+msgid "10 px"
+msgstr "10 px"
+
+#: ../../humanguide/design-concepts/typography.rst:21
+#, fuzzy
+msgid "22 px"
+msgstr "22 px"
+
+#: ../../humanguide/design-concepts/typography.rst:21
+#: ../../humanguide/design-concepts/typography.rst:23
+#, fuzzy
+msgid "12 px"
+msgstr "12 px"
+
+#: ../../humanguide/design-concepts/typography.rst:23
+msgid "small"
+msgstr "liten"
+
+#: ../../humanguide/design-concepts/typography.rst:23
+#, fuzzy
+msgid "1.5"
+msgstr "1,5"
+
+#: ../../humanguide/design-concepts/typography.rst:23
+#, fuzzy
+msgid "27 px"
+msgstr "27 px"
+
+#: ../../humanguide/design-concepts/typography.rst:23
+#, fuzzy
+msgid "15 px"
+msgstr "15 px"
+
+#: ../../humanguide/design-concepts/typography.rst:25
+msgid "medium"
+msgstr "medium"
+
+#: ../../humanguide/design-concepts/typography.rst:25
+#, fuzzy
+msgid "1.75"
+msgstr "1,75"
+
+#: ../../humanguide/design-concepts/typography.rst:25
+#, fuzzy
+msgid "14 px"
+msgstr "14 px"
+
+#: ../../humanguide/design-concepts/typography.rst:25
+#, fuzzy
+msgid "31 px"
+msgstr "31 px"
+
+#: ../../humanguide/design-concepts/typography.rst:25
+#, fuzzy
+msgid "18 px"
+msgstr "18 px"
+
+#: ../../humanguide/design-concepts/typography.rst:27
+msgid "large"
+msgstr "stor"
+
+#: ../../humanguide/design-concepts/typography.rst:27
+#, fuzzy
+msgid "2.5"
+msgstr "2,5"
+
+#: ../../humanguide/design-concepts/typography.rst:27
+#, fuzzy
+msgid "20 px"
+msgstr "20 px"
+
+#: ../../humanguide/design-concepts/typography.rst:27
+#, fuzzy
+msgid "45 px"
+msgstr "45 px"
+
+#: ../../humanguide/design-concepts/typography.rst:27
+#, fuzzy
+msgid "25 px"
+msgstr "25 px"
+
+#: ../../humanguide/design-concepts/typography.rst:29
+#, fuzzy
+msgid "x-large"
+msgstr "x-stor"
+
+#: ../../humanguide/design-concepts/typography.rst:29
+#, fuzzy
+msgid "3.5"
+msgstr "3,5"
+
+#: ../../humanguide/design-concepts/typography.rst:29
+#, fuzzy
+msgid "34 px"
+msgstr "34 px"
+
+#: ../../humanguide/design-concepts/typography.rst:29
+#, fuzzy
+msgid "76 px"
+msgstr "76 px"
+
+#: ../../humanguide/design-concepts/typography.rst:29
+#, fuzzy
+msgid "42 px"
+msgstr "42 px"
+
+#: ../../humanguide/design-concepts/units.rst:2
+#, fuzzy
+msgid "Units"
+msgstr "Enheter"
+
+#: ../../humanguide/design-concepts/units.rst:5
+msgid "Resolution Independence Approach"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:7
+#, fuzzy
+msgid "The objective of resolution independence is to make it easy for graphical user interfaces in Ubuntu Touch to scale to all the form factors that Ubuntu Touch targets: phones, tablets, laptops and desktops. The approach taken combines simplicity for the designers and developers with visual fidelity, quality and usability."
+msgstr ""
+"Målet med oppløsningsuavhengighet er å gjøre det enkelt for grafiske "
+"brukergrensesnitt i Ubuntu Touch å skalere til alle formfaktorene som Ubuntu "
+"Touch målretter mot: telefoner, nettbrett, bærbare datamaskiner og "
+"stasjonære datamaskiner. Denne tilnærmingen kombinerer enkelhet for "
+"designere og utviklere med visuell troskap, kvalitet og brukervennlighet."
+
+#: ../../humanguide/design-concepts/units.rst:10
+#, fuzzy
+msgid "Measurement Units"
+msgstr "Måleenheter"
+
+#: ../../humanguide/design-concepts/units.rst:13
+#, fuzzy
+msgid "Grid Unit"
+msgstr "Rutenettenhet"
+
+#: ../../humanguide/design-concepts/units.rst:15
+#, fuzzy
+msgid "A measurement unit called the *grid unit* is defined, abbreviated *gu.* 1 grid unit translates to a given number of pixels depending on the type of screen that the user interface is displayed on. For example, on a laptop computer 1 grid unit will typically translate to 8 pixels. The number of pixels per grid unit is chosen in order to preserve the perceived visual size of UI elements and therefore depends on the density of the display and the distance the user is to the screen. We also ensure that 1 grid unit is always an integer number of pixel."
+msgstr ""
+"En måleenhet kalt * rutenett * er definert, forkortet * gu. * 1 rutenhet "
+"oversettes til et gitt antall piksler, avhengig av hvilken skjermtype "
+"brukergrensesnittet vises på. For eksempel vil en rutenhet på en bærbar "
+"datamaskin vanligvis oversettes til 8 piksler. Antall piksler per rutenett "
+"velges for å bevare den oppfattede visuelle størrelsen på UI-elementer, og "
+"avhenger derfor av tettheten til skjermen og avstanden brukeren er til "
+"skjermen. Vi sørger også for at 1 rutenhet alltid er et helt antall piksler."
+
+#: ../../humanguide/design-concepts/units.rst:18
+msgid "Device"
+msgstr "Enhet"
+
+#: ../../humanguide/design-concepts/units.rst:18
+#, fuzzy
+msgid "Conversion"
+msgstr "Konvertering"
+
+#: ../../humanguide/design-concepts/units.rst:20
+#, fuzzy
+msgid "Most laptops"
+msgstr "De fleste bærbare datamaskiner"
+
+#: ../../humanguide/design-concepts/units.rst:20
+msgid "1 gu = 8 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:23
+msgid "High DPI laptops"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:23
+msgid "1 gu = 16 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:26
+#, fuzzy
+msgid "Phone with 4 inch screen at HD resolution (around 720x1,280 pixels)"
+msgstr "Telefon med 4-tommers skjerm i HD-oppløsning (rundt 720x1 280 piksler)"
+
+#: ../../humanguide/design-concepts/units.rst:26
+msgid "1 gu = 18 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:29
+#, fuzzy
+msgid "Tablet with 10 inch screen at HD resolution (around 720x1,280 pixels)"
+msgstr ""
+"Nettbrett med 10-tommers skjerm i HD-oppløsning (rundt 720x1,280 piksler)"
+
+#: ../../humanguide/design-concepts/units.rst:29
+msgid "1 gu = 10 px"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:34
+msgid "Density Unit"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:36
+#, fuzzy
+msgid "Exceptionally, in order to accommodate for the rare cases where measurements of less than 1 gu are needed another unit is available: the *density independent pixel,* abbreviated dp. 1 dp typically translates to 1 pixel on laptops and low density mobile phones and tablets."
+msgstr ""
+"For å imøtekomme de sjeldne tilfellene der målinger på mindre enn 1 gu er "
+"nødvendig, er det unntaksvis en annen enhet tilgjengelig: * "
+"tetthetsuavhengig piksel, * forkortet dp. 1 dp blir vanligvis 1 piksel på "
+"bærbare datamaskiner og mobiltelefoner og nettbrett med lav tetthet."
+
+#: ../../humanguide/design-concepts/units.rst:39
+msgid "Use"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:49
+msgid "Device Sizes"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:52
+msgid "Device Grid Units"
+msgstr ""
+
+#: ../../humanguide/design-concepts/units.rst:52
+#, fuzzy
+msgid "width"
+msgstr "bredde"
+
+#: ../../humanguide/design-concepts/units.rst:52
+#, fuzzy
+msgid "height"
+msgstr "høyde"
+
+#: ../../humanguide/design-concepts/units.rst:54
+#, fuzzy
+msgid "E5 (portrait)"
+msgstr "E5 (portrett)"
+
+#: ../../humanguide/design-concepts/units.rst:54
+msgid "42"
+msgstr "42"
+
+#: ../../humanguide/design-concepts/units.rst:54
+msgid "72"
+msgstr "72"
+
+#: ../../humanguide/design-concepts/units.rst:56
+#, fuzzy
+msgid "M10 HD (landscape)"
+msgstr "M10 HD (liggende)"
+
+#: ../../humanguide/design-concepts/units.rst:56
+msgid "160"
+msgstr "160"
+
+#: ../../humanguide/design-concepts/units.rst:56
+msgid "97"
+msgstr "97"
+
+#: ../../humanguide/design-concepts/units.rst:58
+#, fuzzy
+msgid "M10 FHD (landscape)"
+msgstr "M10 FHD (liggende)"
+
+#: ../../humanguide/design-concepts/units.rst:58
+msgid "148"
+msgstr "148"
+
+#: ../../humanguide/design-concepts/units.rst:58
+msgid "89"
+msgstr "89"
+
+#: ../../humanguide/design-concepts/units.rst:60
+#, fuzzy
+msgid "N5 (portrait)"
+msgstr "N5 (portrett)"
+
+#: ../../humanguide/design-concepts/units.rst:60
+msgid "47"
+msgstr "47"
+
+#: ../../humanguide/design-concepts/units.rst:60
+msgid "80"
+msgstr "80"
+
+#: ../../humanguide/index.rst:2
+msgid "Human interface guidelines"
+msgstr ""
+
+#: ../../humanguide/index.rst:4
+#, fuzzy
+msgid "Ubuntu Touch follows a clean, beautiful, modern and (above all) convergent design. We aim to keep developing the design started by Canonical."
+msgstr ""
+"Ubuntu Touch følger et rent, vakkert, moderne og (fremfor alt) konvergerende "
+"design. Vi har som mål å fortsette å utvikle designet startet av Canonical."
+
+#: ../../humanguide/other-design-considerations/accessibility.rst:2
+#, fuzzy
+msgid "Accessibility"
+msgstr "Tilgjengelighet"
+
+#: ../../humanguide/other-design-considerations/accessibility.rst:4
+#, fuzzy
+msgid "Accessibility is important to make all users to be able to use the operating system."
+msgstr ""
+"Tilgjengelighet er viktig for at alle brukere skal kunne bruke "
+"operativsystemet."
+
+#: ../../humanguide/other-design-considerations/accessibility.rst:7
+#, fuzzy
+msgid "Inclusive palette and theme"
+msgstr "Inkluderende palett og tema"
+
+#: ../../humanguide/other-design-considerations/accessibility.rst:9
+msgid "We would like to create and implement color palettes helpful to people who have sight impairment:"
+msgstr ""
+"Vi vil lage og implementere fargepaletter som er nyttige for personer med "
+"nedsatt synsevne:"
+
+#: ../../humanguide/other-design-considerations/accessibility.rst:11
+msgid "Additional `palette proposal <http://colors.mivoligo.com/#color-blind>`__."
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/accessibility.rst:12
+#, fuzzy
+msgid "A high contrast theme."
+msgstr "Et tema med høy kontrast."
+
+#: ../../humanguide/other-design-considerations/accessibility.rst:13
+#, fuzzy
+msgid "Adaptable font size theme."
+msgstr "Fleksibelt tema for skriftstørrelse."
+
+#: ../../humanguide/other-design-considerations/accessibility.rst:16
+#, fuzzy
+msgid "Input methods"
+msgstr "Inndatametoder"
+
+#: ../../humanguide/other-design-considerations/accessibility.rst:18
+#, fuzzy
+msgid "Apps should be accessible using any combination of mouse, touch, and keyboard."
+msgstr ""
+"Apper skal være tilgjengelige med en hvilken som helst kombinasjon av mus, "
+"berøring og tastatur."
+
+#: ../../humanguide/other-design-considerations/convergence.rst:2
+#, fuzzy
+msgid "Convergence"
+msgstr "Konvergens"
+
+#: ../../humanguide/other-design-considerations/convergence.rst:6
+#, fuzzy
+msgid "Convergence is one of the milestones Ubuntu Touch wants to achieve. One app available across all screen sizes and input methods, such as mobile handsets, tablets, and laptops."
+msgstr ""
+"Konvergens er en av milepælene Ubuntu Touch ønsker å oppnå. Én app "
+"tilgjengelig over alle skjermstørrelser og inndatametoder, for eksempel "
+"mobile håndsett, nettbrett og bærbare datamaskiner."
+
+#: ../../humanguide/other-design-considerations/convergence.rst:9
+#, fuzzy
+msgid "Screen size"
+msgstr "Skjerm størrelse"
+
+#: ../../humanguide/other-design-considerations/convergence.rst:13
+msgid "Ubuntu Touch Tweak Tool app"
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/convergence.rst:15
+#, fuzzy
+msgid "Main page stays as the main page on phones or on the left on bigger screen devices. Additional pages on the phone, can be displayed at variable sizes on the right on bigger screens."
+msgstr ""
+"Hovedsiden forblir som hovedsiden på telefoner eller til venstre på enheter "
+"med større skjerm. Flere sider på telefonen kan vises i variable størrelser "
+"til høyre på større skjermer."
+
+#: ../../humanguide/other-design-considerations/convergence.rst:18
+msgid "Input method"
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/convergence.rst:20
+#, fuzzy
+msgid "Using touch, a user can swipe or long-press on a list item to reveal a contextual menu. Using a pointer (mouse or trackpad) a user can right-click the item to reveal the contextual menu. Using a keyboard a user can focus the desired item and press the MENU key to open the context menu."
+msgstr ""
+"Ved å bruke berøring kan en bruker sveipe eller trykke lenge på et "
+"listeelement for å avsløre en kontekstuell meny. Ved å bruke en peker (mus "
+"eller styreflate) kan en bruker høyreklikke på elementet for å avsløre "
+"kontekstmenyen. Ved hjelp av et tastatur kan en bruker fokusere ønsket "
+"element og trykke på MENU-tasten for å åpne hurtigmenyen."
+
+#: ../../humanguide/other-design-considerations/index.rst:2
+#, fuzzy
+msgid "Other design considerations"
+msgstr "Andre designhensyn"
+
+#: ../../humanguide/other-design-considerations/scaling-images.rst:2
+msgid "Scaling images"
+msgstr "Skalerer bilder"
+
+#: ../../humanguide/other-design-considerations/scaling-images.rst:4
+#, fuzzy
+msgid "Scaling images is important in a convergent app. App icons and images can be created in scalable formats to improve their ability to scale."
+msgstr ""
+"Å skalere bilder er viktig i en konvergent app. Appikoner og bilder kan "
+"opprettes i skalerbare formater for å forbedre deres evne til å skalere."
+
+#: ../../humanguide/other-design-considerations/scaling-images.rst:9
+msgid "One of the most popular scalable formats is `SVG <https://en.wikipedia.org/wiki/Scalable_Vector_Graphics>`__. SVG files can be created using software like `Inkscape <https://inkscape.org/>`__."
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/scaling-images.rst:11
+msgid "One particularity of qml, though, is that SVGs are rendered to use less memory, losing the advantages of scalability. When using a SVG file in an ``Image`` element we can use the property called ``sourceSize``. This will define the rendered size of the SVG image. A SVG image with a ``sourceSize`` width and height of 252 pixels, will be rendered as if the scalable image would be a png of 252 per 252 pixels."
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/scaling-images.rst:16
+#, fuzzy
+msgid "Different rendered sizes of the same svg image"
+msgstr "Ulike gjengitte størrelser av det samme svg-bildet"
+
+#: ../../humanguide/other-design-considerations/scaling-images.rst:18
+msgid "It is not advisable to define ``sourceSize`` as a relative size to avoid performance issues. A good practice is defining ``sourceSize`` based on a set list of thresholds. In the example below the image.svg will be rendered 60 per 60 grid units if the main view is bigger that 70 grid units but as an image of 40 per 40 grid units in the other cases. By defining these thresholds, we get scalable images without a huge performance cost."
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/scaling-images.rst:28
+msgid "Read more about image performance in the `Qt wiki <https://wiki.qt.io/Performance_tip_Images>`__."
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/translations.rst:2
+msgid "Translations"
+msgstr "Oversettelser"
+
+#: ../../humanguide/other-design-considerations/translations.rst:4
+msgid "Adding translations to your app makes it more accessible to international users. `Clickable <http://clickable.bhdouglass.com/>`__ will handle this process automatically, extracting new translatable strings into a pot file (the source strings of your app, to be translated)."
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/translations.rst:6
+#, fuzzy
+msgid "Marking a string to be translatable can be achieved like this i18n.tr(string). For example:"
+msgstr ""
+"Merking av en streng som skal oversettes kan oppnås som denne i18n.tr "
+"(streng). For eksempel:"
+
+#: ../../humanguide/other-design-considerations/translations.rst:14
+msgid "More information and options can be found in this a bit outdated `tutorial on localization <http://web.archive.org/web/https://docs.ubuntu.com/phone/en/apps/qml/tutorials-internationalizing-your-app>`__ an app."
+msgstr ""
