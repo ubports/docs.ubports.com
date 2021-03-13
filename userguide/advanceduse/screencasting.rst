@@ -20,7 +20,7 @@ Via the network
 ---------------
   
 On the receiver
-^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^
 
 For real-time casting:
 
