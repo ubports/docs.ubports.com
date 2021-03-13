@@ -28,7 +28,8 @@ If you're an experienced Android developer and want to help bring Ubuntu Touch t
 Troubleshooting
 ---------------
 
-Join the UBports' support channels on `Telegram <https://t.me/WelcomePlus>`_ or `Matrix <https://matrix.to/#/!KwdniMNeTmClpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot.org>`_ or ask a question `in the forum <https://forums.ubports.com/>`_ or on `Ask Ubuntu <https://askubuntu.com>`_. If you believe the installer is not working correctly, also `file a new issue <https://github.com/ubports/ubports-installer/issues/new>`_ to help solve the problem.
+Join the UBports' support channels on `Telegram <https://t.me/WelcomePlus>`_ or `Matrix <https://matrix.to/#/!KwdniMNeTmClpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot.org>`_ or ask a question `in the forum <https://forums.ubports.com/>`_ or on `Ask Ubuntu <https://askubuntu.com>`_.
+If you believe the installer is not working correctly, also `file a new issue <https://github.com/ubports/ubports-installer/issues/new>`_ to help solve the problem.
 
 Connection lost during installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -39,7 +40,8 @@ Cheap and old cables tend to lose connection during the installation.
 Windows Defender prevents installer from starting
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Microsoft has been contacted about this problem, but they seem to think it's `enjoyable <https://twitter.com/Windows/status/1014984163433295875>`__. To dismiss the warning, click on "More Info", then select "Run anyway".
+Microsoft has been contacted about this problem, but they seem to think it's `enjoyable <https://twitter.com/Windows/status/1014984163433295875>`__.
+To dismiss the warning, click on "More Info", then select "Run anyway".
 
 Device not detected
 ^^^^^^^^^^^^^^^^^^^
@@ -66,7 +68,7 @@ Missing udev-rules
 If the device not detected on Linux and packages other than Snap, you might be missing **udev-rules**.
 
 1. Check if ``/etc/udev/rules.d/51-android.rules`` exists and contains the rules below.
-If not, add them to the file and run
+   If not, add them to the file and run
    ``sudo service udev restart`` or
    ``sudo udevadm control --reload-rules && udevadm trigger``.
 
@@ -119,7 +121,10 @@ While the installation process is fairly simple on most devices, some legacy BQ 
 
 .. note::
 
-    This is more or less uncharted territory. If your device's manufacturer does not want you to install an alternative operating system, there's not a lot we can do about it. The instructions below should only be followed by experienced users. Wanting to use the OS is appreciated, but flashing a device with OEM tools shouldn't be done without a bit of know-how and plenty of research.
+    This is more or less uncharted territory.
+    If your device's manufacturer does not want you to install an alternative operating system, there's not a lot we can do about it.
+    The instructions below should only be followed by experienced users.
+    Wanting to use the OS is appreciated, but flashing a device with OEM tools shouldn't be done without a bit of know-how and plenty of research.
 
 Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed in some cases, the PRO 5 is Exynos-based and has its own headaches.
 
