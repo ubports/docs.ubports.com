@@ -4,7 +4,7 @@ Reverse tethering
 This tutorial helps you to connect your Ubuntu Touch device to your computer to access the Internet on it.
 This is useful if there is no available Wi-Fi connection or you don't have a data subscription on your Ubuntu Touch device.
 
-Prerequisite: A Ubuntu Touch device with "USB debugging" and "Developer mode" on, attached via USB to the computer connected to the Internet.
+Prerequisite: A Ubuntu Touch device with "Developer mode" on, attached via USB to the computer connected to the Internet.
 
 Steps
 -----
