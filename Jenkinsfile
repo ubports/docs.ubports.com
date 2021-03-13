@@ -10,6 +10,9 @@ def link_index = {
 }
 pipeline {
     agent none
+    options {
+        buildDiscarder(logRotator(artifactDaysToKeepStr: '180'))
+    }
     stages {
         stage("build"){
             agent {
