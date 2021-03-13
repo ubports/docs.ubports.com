@@ -7,7 +7,7 @@ This document describes the standard process of dealing with new issues in UBpor
 Where are bugs tracked?
 -----------------------
 
-Since quality assurance depends heavily community, issues are
+Since quality assurance depends heavily on community effort, issues are
 tracked where users expects them, instead of separated by repository.
 This means issues of almost all distributed components (as with the system-image)
 are tracked in the `Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch>`__.
@@ -19,7 +19,7 @@ repository uses its own tracker or not in its README.md file.
 Repositories that don't track issues locally have their bugtracker turned off.
 
 This page is mainly about the Ubuntu Touch tracker, but most principles apply
-to other projects.
+to other projects as well.
 
 .. note::
      Practical exceptions to purity might apply and must (no exceptions) be described in the project's README.md file.
@@ -36,12 +36,15 @@ device can be viewed.
 These are the standard columns:
 
 * **None (awaiting triage)**: Issue approved by a member of the QA team awaiting review from the responsible development team.
-If a bug, instructions to reproduce are included in the issue description. If a feature request, it has passed a primary sanity check by the QA team, but not yet been accepted by the responsible development-team.
-* **Accepted**: Issue accepted by the responsible development-team. If a bugreport, the team has decided it should be fixable and accept responsibility. If a feature request, the team thinks it should be implemented as described.
+* If a bug, instructions to reproduce are included in the issue description.
+* If a feature request, it has passed a primary sanity check by the QA team, but not yet been accepted by the responsible development-team.
+* **Accepted**: Issue accepted by the responsible development-team. If a bugreport, the team has decided it should be fixable and accept responsibility.
+* If a feature request, the team thinks it should be implemented as described.
 * **In Development**: A patch in development. Usually means a developer is assigned to the issue.
 * **Quality Assurance**: A completed patch passing initial testing. The QA team will review it and provide feedback.
-If problems are found, the issue is moved back to "Accepted".
-* **Release Candidate**: A patch passing QA, ready for release. In case of DEB packages included in the system-image, the patch will be included in the next over-the-air update on the `rc` channel, and (provided  everything goes well) in the next release of the `stable` channel.
+* If problems are found, the issue is moved back to "Accepted".
+* **Release Candidate**: A patch passing QA, ready for release.
+* In case of DEB packages included in the system-image, the patch will be included in the next over-the-air update on the `rc` channel, and (provided  everything goes well) in the next release of the `stable` channel.
 * **None (removed from the project)**: Open issue labeled "help wanted". Community contributions are required to resolve it. If it's closed, either a patch has been released on the stable channel (a comment on the issue should link to the patch) or the issue is rejected (labeled "wontfix").
 
 Labels
@@ -53,7 +56,7 @@ global filtering. For example, `these are all of the issues labeled 'enhancement
 List of labels normally used by all repositories:
 
 - **needs confirmation**: The bug needs confirmation and / or further
-  info from affected users.
+  detailing by affected users.
 - **bug**: This issue is a confirmed bug. If it's reproducible,
   reproduction steps are described.
 - **opinion**: This issue needs further discussion.
@@ -72,7 +75,7 @@ List of labels normally used by all repositories:
   component will soon change.
 
 Additional special labels can be defined.
-AS an example, these are the labels used in the Ubuntu Touch tracker:
+As an example, these are the labels used in the Ubuntu Touch tracker:
 
 - **critical (devel)**: Critical issue only occuring on the
   `devel` channel is blocking the release of the next `rc` image.
@@ -118,9 +121,13 @@ Bug Lifecycle
     applicable for feature requests.
 
 - A *User* files a new bug using the issue-template.
-- The *QA-Team* labels it **needs confirmation** and tries to work with the user to confirm the bug and add potentially missing info to the report. Once the report is complete a **team-label** is added to the issue, the issue will be put on the **awaiting-triage-list** of the project and the label needs confirmation will be replaced with **bug**.
-- The affected *Team* triages the issue and either rejects (label **wontfix**, closes and removes from the project) or accepts the issue. The team decides whether to fix the issue in-house (move to "Accepted" and assign a team member) or wait for a community developer to pick it up (by labeling it **help wanted**, removing it from the project board and providing hints on how to resolve the issue and further details on how the fix should be implemented if necessary). For non-critical issues trivial to fix, the label **good first issue** can be added as well.
-- Once a *developer* is assigned and starts working on the issue, it is moved to "In Development". As soon as there is something to show for, the issue is closed and automatically moved to "Quality Assurance" for feedback from the QA team.
+- The *QA-Team* labels it **needs confirmation** and tries to work with the user to confirm the bug and add potentially missing info to the report.
+Once the report is complete a **team-label** is added to the issue, the issue will be put on the **awaiting-triage-list** of the project and the label needs confirmation will be replaced with **bug**.
+- The affected *Team* triages the issue and either rejects (label **wontfix**, closes and removes from the project) or accepts the issue.
+The team decides whether to fix the issue in-house (move to "Accepted" and assign a team member) or wait for a community developer to pick it up (by labeling it **help wanted**, removing it from the project board and providing hints on how to resolve the issue and further details on how the fix should be implemented if necessary). For non-critical issues trivial to fix, the label **good first issue** can be added as well.
+- Once a *developer* is assigned and starts working on the issue, it is moved to "In Development".
+As soon as there is something to show for, the issue is closed and automatically moved to "Quality Assurance" for feedback from the QA team.
 If necessary, the developer provides hints on how to test the patch in a comment on the issue.
-- The *QA-Team* tests the fix on all devices and provides feedback to the developer. If problems are found, the issue is re-opened and goes back to "Accepted", elsewise it’s moved to "Release Candidate" to be included in the next release.
+- The *QA-Team* tests the fix on all devices and provides feedback to the developer.
+If problems are found, the issue is re-opened and goes back to "Accepted", otherwise it is moved to "Release Candidate" for inclusion in the next release.
 - If not done already, the issue is added to the next milestone, which once released removes the issue from the project board.
