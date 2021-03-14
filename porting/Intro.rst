@@ -29,14 +29,14 @@ Thus an Ubuntu Touch port is composed of the these components:
     * `Halium <https://halium.org/>`_ (contained in the boot and system images)
     * The vendor blobs
 
-You, the porter, need to build Halium (i.e. halium-boot.img and system.img) and install these together with the Ubuntu Touch rootfs in order to create a functioning Ubuntu Touch port. 
+You, the porter, need to build Halium (in part or in whole, depending on :ref:`porting method <Porting-methods>`) and install this together with the Ubuntu Touch rootfs in order to create a functioning Ubuntu Touch port. 
 
 .. _Android-and-Halium-versions:
 
 Android and Halium versions
 ---------------------------
 
-Halium is built using source code for a modified version of the Android operating system called LineageOS. The required source code is available online and needs to be downloaded and configured to build the correct Halium version for each individual device port. The table below shows which versions are required for the different Halium versions.
+Halium is built using source code for a modified version of the Android operating system called LineageOS (see `the LineagesOS website <https://lineageos.org/>`_ and `wiki <https://wiki.lineageos.org/>`_). The required source code is available online and needs to be downloaded and configured to build the correct Halium version for each individual device port. The table below shows which versions are required for the different Halium versions.
 
 ===============  ==============  ================
 Android version  Halium version  Lineage OS (LOS)
@@ -45,23 +45,55 @@ Android version  Halium version  Lineage OS (LOS)
 9.0              9.0             16.0            
 ===============  ==============  ================
 
+With Android 9.0 there came a significant change of architecture. The device-specific vendor blobs now reside on a separate partition instead of sharing a partition with the rest of the system image. This separation of device-specific code from generic code made possible what is known as the Generic System Image (GSI).
+
+A GSI  is a system image that is built to be able to function with a wide range of devices. Android devices, as of version 9.0, use a GSI. For more information, see the `Android Developer pages <https://developer.android.com/topic/generic-system-image/>`_
+
+The development of the Android GSI architecture also cleared the way for the now available generic Halium 9.0 arm64 system image (hereafter referred to as *the Halium GSI*, or simply *the GSI*) which is used for Ubuntu Touch. This, however, is somewhat different from the Android GSI.
+
+.. Note::
+    Technically, the Halium GSI is a generic LXC container image. For a more detailed description, please refer to `the wiki page on Gitlab CI builds of the generic Halium system image <https://github.com/ubports/porting-notes/wiki/GitLab-CI-builds-for-devices-based-on-halium_arm64-(Halium-9)>`_.
+
+How does this change the porting process?
+-----------------------------------------
+
+Since the GSI is a prebuilt, device-independent component, it effectively simplifies the task of building a viable port by removing much of the meticulous and time consuming task of getting the hardware-specific vendor blobs compiled into the system image and configured to function properly.
+
+Three porting methods
+---------------------
+
+.. _Porting_methods:
+
+There are three main methods that can be used when porting Ubuntu Touch. These are:
+
+* Method 1: Build both the halium-boot.img and the full device specific system.img (*i.e.* not GSI) from source and install these together with the UBports rootfs. (This is the only possible method for Halium 7.1 porting.)
+* Method 2: Build halium-boot.img and install this together with the Halium GSI and the UBports rootfs. (Halium 9.0 and newer.)
+* Method 3: Build only the kernel and install this together with the Halium ramdisk, the Halium GSI and the UBports rootfs. (Halium 9.0 and newer.)
+
+Although there are significant differences between these methods they also share certain steps of the porting process. This guide at present describes methods 1 and 2 in full, and will in the near future also cover method 3. Pending the completion of the guide, the more experienced (or more adventurous) porters can find information about method 3 (albeit not under this name) in the UBports Wiki - `porting notes page <https://github.com/ubports/porting-notes/wiki/Halium-9>`_ and `Generic System Image page <https://github.com/ubports/porting-notes/wiki/Generic-system-image-(GSI)>`_.
+
+.. Note::
+    Currently the Halium GSI is only built for arm64 devices. Consequently, owners of armhf devices must resort to method 1.
+
+The next section explains the structure of the remainder of this guide, pointing out which parts are relevant to each of the three methods above. The remainder of this section gives some words of advice to new porters.
+
 .. _The-challenges-of-the-porting-process:
 
 The challenges of the porting process
 -------------------------------------
 
-Getting the above components to work properly together always involves an amount of time-consuming configuring and testing. However, it usually also involves a certain amount of modification to parts of the source code, and sometimes quite a bit, depending on your target device.
+Building the necessary components and getting them to work together properly always involves an amount of code modifications, configuring and testing, but normally considerably moreso when using method 1 compared to methods 2 and 3 above (see :ref:`porting methods <Porting-methods>`).
 
-Luckily, there is a community of porters out there who are eager to see Ubuntu Touch ported to new devices. When you run into trouble, you should search the sources below (Getting help) to see if others before you have solved the issue. There are online Telegram chat groups you can join to ask for help, but please bear in mind that those participating are doing so in their spare time.
+Luckily, there is a community of porters out there who are eager to see Ubuntu Touch ported to new devices. When you run into trouble, you should search the sources below (:ref:`Getting-community-help`) to see if others before you have solved the issue. There are online Telegram chat groups you can join to ask for help, but please bear in mind that those participating are doing so in their spare time.
 
 .. _Prior-knowledge-and-skills:
 
 Prior knowledge and skills
 --------------------------
 
-Porters come in all sizes and shapes, so to speak. Therefore, this guide does not presuppose extensive knowledge or skills in any particular field. You should, however, as a bare minimum be familiar with some common shell commands and be comfortable working from the terminal on you host PC. Furthermore, the guide is based on a host PC running Linux. If you have some knowledge of programming, this will come in handy at some point, especially if you are familiar with C / C++. Also, you should familiarize yourself with git, setup a github account and start documenting your steps as described in this guide and `the Halium porting guide <http://docs.halium.org/en/latest/porting/first-steps.html>`_ from the very beginning.
+Porters come in all sizes and shapes, so to speak. Therefore, this guide does not presuppose extensive knowledge or skills in any particular field. You should, however, as a bare minimum be familiar with some common shell commands and be comfortable working from the terminal on you host PC. Furthermore, the guide is based on a host PC running Linux. If you have some knowledge of programming, this will come in handy at some point, especially if you are familiar with C / C++. Also, you should familiarize yourself with git, setup a Github (or Gitlab) to keep track of your code changes. It is also wise to start documenting your steps from the very beginning.
 
-We have attempted to give a certain amount of explanations along the way, but this guide is in not an in-depth reference into architecture and inner workings of Ubuntu Touch, and gaining a deeper understanding will consequently require an amount of research on your part.
+We have attempted to give a certain amount of explanation along the way, but this guide is in not an in-depth reference into architecture and inner workings of Ubuntu Touch, and gaining a deeper understanding will consequently require an amount of research on your part.
 
 .. _Getting-community-help:
 
@@ -81,6 +113,6 @@ When you run into trouble, and you will, refer to one or more of the sources bel
 General advice
 --------------
 
-The more rigorous you are at making notes and documenting your steps, the less time you will spend backtracking your steps and guessing your way along. When dealing with issues that arise along the way, it is wise to work on them one at a time. If you try to correct several things at once, you risk ending up trying to guess which changes solved a given issue, which easily leads to breaking the issue in question once more.
+The more rigorous you are at making notes and documenting your steps, the less time you will spend backtracking your steps and guessing your way along. When dealing with issues that arise along the way, it is wise to work on them one at a time. If you try to correct several things at once, you risk ending up trying to guess which changes solved a given issue, which easily leads to breaking the issue in question once more at some later stage.
 
-If you are not discouraged after reading this, we wish you the best of luck!
+If you are not discouraged after reading this, we welcome your efforts and wish you the best of luck!
