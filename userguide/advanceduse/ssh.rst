@@ -49,14 +49,27 @@ Connect
 
 Now everything is set up and you can use ``ssh`` ::
 
+    ssh phablet@ubuntu-phablet
+    
+or, if that does not work ::    
+
     ssh phablet@<ip-address>
     
 To identify the IP-address of your UBports device, open the Terminal app on your device and run the following command::
     
     hostname -I
     
-The output is a list of IP addresses separated by spaces. Use the first IP address from the list.
+The output is a list of IP addresses separated by spaces. Use the IP address that matches your subnet.
+On your PC or laptop: ::
+
+    debian2:~/$ hostname -I
+    192.168.42.41 2001:982:89e9:1:bc6b:758:7ba2:c190
     
+On the phone: ::
+    phablet@ubuntu-phablet:~$ hostname -I
+    10.55.74.177 192.168.42.52 2001:982:89e9:1:ef68:5f7c:3db4:c0d3
+
+In this case you use the second IP address    
 
 Of course you can now also use ``scp`` or ``sshfs`` to transfer files.
 
