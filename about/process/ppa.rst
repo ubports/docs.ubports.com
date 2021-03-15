@@ -16,7 +16,7 @@ The name of the Debian source package generated from the repository and the name
 Packaging repositories
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Packaging repositories contain a ``debian/`` directory **without** the source used to create the Debian source package (``.dsc``).
+Packaging repositories contain a ``DEBIAN`` folder **without** the source used to create the Debian source package (``.dsc``).
 They also contain instructions to tell ``debhelper`` how to get the sources used to create the source package.
 
 The repository should have the name of the source package it generates with ``-packaging`` appended to the end.
