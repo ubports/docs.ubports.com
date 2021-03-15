@@ -7,125 +7,125 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-03-11 01:15+0000\n"
-"Last-Translator: Carlod <carlod@disroot.org>\n"
-"Language-Team: Polish <https://translate.ubports.com/projects/ubports-docs/"
-"documentation-userguide/pl/>\n"
-"Language: pl\n"
+"POT-Creation-Date: 2021-03-09 17:42-0600\n"
+"PO-Revision-Date: 2021-03-13 17:03+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
+"ubports-docs/documentation-userguide/nb/>\n"
+"Language: nb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 3.11.3\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
 msgid "Shell access via adb"
-msgstr "Dostęp do powłoki poprzez adb"
+msgstr "Skall-tilgang via ADB"
 
 #: ../../userguide/advanceduse/adb.rst:4
 msgid "You can put your UBports device into developer mode and access a Bash shell from your PC. This is useful for debugging or more advanced shell usage."
 msgstr ""
-"Możesz postawić swoje urządzenie w trybie programisty i uzyskać dostęp do "
-"powłoki Bash na twoim komputerze. To jest przydatne podczas debuggowania i "
-"bardziej zaawansowanych zastosowań."
+"Du kan sette UBports-enheten din i utviklermodus og få tilgang til et Bash-"
+"terminalvindu fra PC-en. Dette er nyttig for feilsøking eller mer avansert "
+"terminalbruk."
 
 #: ../../userguide/advanceduse/adb.rst:8
 msgid "Install ADB"
-msgstr "Instalacja ADB"
+msgstr "Installer ADB"
 
 #: ../../userguide/advanceduse/adb.rst:10
 msgid "First, you'll need ADB installed on your computer."
-msgstr "Pierwsze co musisz zrobić to zainstalować ADB na twoim komputerze."
+msgstr "Først trenger du ADB installert på datamaskinen din."
 
 #: ../../userguide/advanceduse/adb.rst:12
 msgid "On Ubuntu::"
-msgstr "Na Ubuntu::"
+msgstr "I Ubuntu::"
 
 #: ../../userguide/advanceduse/adb.rst:16
 msgid "On Fedora::"
-msgstr "Na Fedorze::"
+msgstr "I Fedora::"
 
 #: ../../userguide/advanceduse/adb.rst:20
 msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
-msgstr "I na MacOS poprzez `Homebrew <https://brew.sh>`_::"
+msgstr "Og på MacOS med `Homebrew <https://brew.sh>`_::"
 
 #: ../../userguide/advanceduse/adb.rst:24
 msgid "For Windows, grab the command-line tools only package from `developer.android.com <https://developer.android.com/studio/index.html#downloads>`_."
 msgstr ""
-"Dla Windowsa, pobierz konsolowe narzędzia z `developer.android.com "
+"For Windows henter du kun kommandolinjeverktøyene fra `developer.android.com "
 "<https://developer.android.com/studio/index.html#downloads>`_."
 
 #: ../../userguide/advanceduse/adb.rst:27
 msgid "Enable developer mode"
-msgstr "Włącz tryb programisty"
+msgstr "Aktiver utviklermodus"
 
 #: ../../userguide/advanceduse/adb.rst:29
 msgid "Next, you'll need to turn on Developer Mode."
-msgstr "Następnie włącz Tryb Programisty."
+msgstr "Deretter må du slå på utviklermodus."
 
 #: ../../userguide/advanceduse/adb.rst:31
 msgid "Reboot your device"
-msgstr "Uruchom ponownie urządzenie"
+msgstr "Utfør omstart av din enhet"
 
 #: ../../userguide/advanceduse/adb.rst:32
 msgid "Place your device into developer mode (Settings - About - Developer Mode - check the box to turn it on)"
 msgstr ""
-"Umieść swoje urządzenie w trybie programisty (Ustawienia - Informacje - Tryb "
-"programisty - kliknij przycisk, aby go włączyć)"
+"Sett din enhet i utviklermodus (Innstillinger - Om - Utviklermodus - merk av "
+"i boksen for å slå den på)"
 
 #: ../../userguide/advanceduse/adb.rst:33
 msgid "Plug the device into a computer with adb installed"
-msgstr "Podłącz urządzenie do komputera z zainstalowanym adb"
+msgstr "Koble enheten til en datamaskin med ADB installert"
 
 #: ../../userguide/advanceduse/adb.rst:34
 msgid "Open a terminal and run ``adb devices``."
-msgstr "Otwórz terminal i wykonaj komende ``adb devices``."
+msgstr "Åpne et terminalvindu og kjør ``adb devices``."
 
 #: ../../userguide/advanceduse/adb.rst:37
 msgid "When you're done using the shell, it's a good idea to turn Developer Mode off again."
 msgstr ""
-"Kiedy skończysz korzystać z powłoki dobrym pomysłem jest ponowne wyłączenie "
-"Trybu Programisty."
+"Når du er ferdig med å bruke terminalvinduet, er det en god idé å slå av "
+"utviklermodus igjen."
 
 #: ../../userguide/advanceduse/adb.rst:39
 msgid "If there's a device in the list here (The command doesn't print \"List of devices attached\" and a blank line), you are able to use ADB successfully. If not, continue to the next section."
 msgstr ""
-"Jeśli urządzenie jest na liście (Komenda nie wypisuje \"List of devices "
-"attached\" i pustą linie) to znaczy, że zainstalowałeś ADB pomyślnie. Jeśli "
-"nie to przejdź do następnej sekcji."
+"Hvis det er en enhet i listen her (Kommandoen skriver ikke ut \"Liste over "
+"tilkoblede enheter\" og en tom linje), kan du bruke ADB med hell. Hvis ikke, "
+"fortsett til neste avsnitt."
 
 #: ../../userguide/advanceduse/adb.rst:41
 msgid "Adb shell commands::"
-msgstr "Komendy powłoki adb::"
+msgstr "ADB-terminalvindukommandoer:"
 
 #: ../../userguide/advanceduse/adb.rst:46
 msgid "Additional Adb commands::"
-msgstr "Dodatkowe komendy adb::"
+msgstr "Flere ADB kommandoer:"
 
 #: ../../userguide/advanceduse/adb.rst:51
 msgid "For more ADB commands refer to the `official documentation <https://developer.android.com/studio/command-line/adb>`_."
 msgstr ""
-"Po więcej komend ADB zobacz`oficjalną dokumentacje "
+"For flere ADB kommandoer, henvis til `official documentation "
 "<https://developer.android.com/studio/command-line/adb>`_."
 
 #: ../../userguide/advanceduse/adb.rst:54
 msgid "Add hardware IDs"
-msgstr "Dodaj ID sprzętu"
+msgstr "Legg til maskinvare ID'er"
 
 #: ../../userguide/advanceduse/adb.rst:56
 msgid "ADB doesn't always know what devices on your computer it should or should not talk to. You can manually add the devices that it does not know how to talk to."
 msgstr ""
-"ADB nie zawsze wie, z którymi urządzeniami powinno rozmawiać, z którymi nie. "
-"Możesz ręcznie dodać urządzenia, z którymi nie wie jak rozmawiać."
+"ADB vet ikke alltid hvilke enheter på datamaskinen din det skal eller ikke "
+"bør snakke med. Du kan legge til enhetene manuelt som den ikke vet hvordan "
+"den skal kommunisere med."
 
 #: ../../userguide/advanceduse/adb.rst:58
 msgid "Just run the command for your selected device if it's below. Then, run ``adb kill-server`` followed by the command you were initially trying to run."
 msgstr ""
-"Wykonaj tą komende dla twojego urządzenia, jeśli wyświetla się poniżej. "
-"Potem wykonaj ``adb kill-server``, po czym komende, którą początkowo "
-"chciałeś wykonać."
+"Bare kjør kommandoen for den valgte enheten din hvis den er nedenfor. "
+"Deretter, kjør ``adb kill-server`` etterfulgt av kommandoen du opprinnelig "
+"forsøkte å kjøre."
 
 #: ../../userguide/advanceduse/adb.rst:60
 msgid "Fairphone 2::"
@@ -137,85 +137,74 @@ msgstr "Oneplus One::"
 
 #: ../../userguide/advanceduse/dav.rst:2
 msgid "CalDAV and CardDAV synchronization"
-msgstr "synchronizacja CalDAV i CardDAV"
+msgstr "CalDAV og CardDAV synkronisering"
 
 #: ../../userguide/advanceduse/dav.rst:4
 msgid "CalDAV and CardDAV are protocols to synchronize calendars and contacts with a remote server. Many email-hosters provide a CalDAV and CardDAV interface."
 msgstr ""
-"CalDAV and CardDAV to protokoły synchronizujące kalendarze i kontakty z "
-"serwerem zdalnym. Spora część hostów emaili udostępnia interfejs CalDAV i "
-"CardDAV."
+"CalDAV og CardDAV er protokoller for å synkronisere kalendere og kontakter "
+"med en ekstern server. Mange e-post tilbydere tilbyr et CalDAV- og CardDAV-"
+"grensesnitt."
 
 #: ../../userguide/advanceduse/dav.rst:6
 msgid "**Note:** CalDAV Sync can also be set up in using the calendar app. Open the app, click on the little calendar icon in the top right corner and select \"Add internet calendar > Generic CalDAV\". Enter your calendar URL as well as your username and password to complete the process."
 msgstr ""
-"**Uwaga** Synchronizacja CalDAV może być także ustawiona za pomocą aplikacji "
-"kalendarza. Otwórz aplikacje, kliknij na małą ikone kalendarza w prawym "
-"górnym rogu i zaznacz \"Dodaj kalendarze Online >Generic CalDAV\". Wprowadź "
-"URL twojego kalendarza, jak i twoją nazwę użytkownika i hasło, aby zakończyć "
-"proces."
+"** Merk: ** CalDAV Sync kan også settes opp ved bruk av kalender-appen. Åpne "
+"appen, klikk på det lille kalenderikonet øverst til høyre og velg \"Legg til "
+"internettkalender> Generisk CalDAV\". Skriv inn URL-adressen til kalenderen, "
+"samt brukernavnet og passordet ditt for å fullføre prosessen."
 
 #: ../../userguide/advanceduse/dav.rst:8
 msgid "At the moment, there is no carddav implementation directly accessible from the Ubuntu Touch graphical user-interface, so the only way to sync carddav is by using syncevolution + cron. However, there is a simple way to do that with a script that you can run in the terminal or via phablet SSH connection. These instructions work for caldav as well."
 msgstr ""
-"Na ten moment nie ma żadnej bezpośredniej graficznej implementacji carddav "
-"dla Ubuntu Touch, więc jednym sposobem aby synchronizować carddav jest "
-"używanie syncevolution + cron. Jednakże, dobrym pomysłem jest zrobić skrypt, "
-"który będzie uruchamiany w terminalu albo przez SSH. Podane instrukcje "
-"działają również dla caldav."
+"For øyeblikket er det ingen carddav-implementering direkte tilgjengelig fra "
+"det grafiske brukergrensesnittet i Ubuntu Touch, så den eneste måten å "
+"synkronisere carddav er ved å bruke syncevolution + cron. Det er imidlertid "
+"en enkel måte å gjøre det med et skript som du kan kjøre i terminalen eller "
+"via phablet SSH-tilkobling. Disse instruksjonene fungerer også for caldav."
 
 #: ../../userguide/advanceduse/dav.rst:10
 msgid "Follow this `guide <https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to activate Developer Mode and ADB (or SSH) connection."
 msgstr ""
-"Postępuj zgodnie z tym `poradnikiem <https://docs.ubports.com/pl/latest/"
-"userguide/advanceduse/adb.html>`_, aby aktytować Tryb Programisty oraz "
-"połączenie ADB (lub SSH)."
 
 #: ../../userguide/advanceduse/dav.rst:13
 msgid "Download this `script <https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ (let's call it dav.sh) and edit the following variables:"
 msgstr ""
-"Pobierz ten `skrypt <https://gist.github.com/bastos77/"
-"0c47a94dd0bf3e394f879c0ff42b7839>`_ (nazwij go dav.sh) i zedytuj następujące "
-"zmienne:"
+"Last ned dette `skriptet <https://gist.github.com/bastos77/"
+"0c47a94dd0bf3e394f879c0ff42b7839>`_ (la oss kalle det dav.sh) og redigere "
+"følgende variabler:"
 
 #: ../../userguide/advanceduse/dav.rst:15
 msgid "server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your ownCloud/nextCloud/baikal/SOGO/... server)"
 msgstr ""
-"po stronie serwera: CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (twojego "
-"serwera ownCloud/nextCloud/baikal/SOGO/...)"
 
 #: ../../userguide/advanceduse/dav.rst:16
 msgid "CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmetic)"
 msgstr ""
-"CONTACT i CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (to bardziej "
-"kosmetyczne)"
 
 #: ../../userguide/advanceduse/dav.rst:17
 msgid "CRON_FREQUENCY (for the frequency of synchronization)"
-msgstr "CRON_FREQUENCY (częstotliwość synchronizacji)"
+msgstr "CRON_FREQUENCY (for synkroniseringsfrekvensen)"
 
 #: ../../userguide/advanceduse/dav.rst:18
 msgid "Line 61: write ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid permission denied error"
 msgstr ""
-"Linia 61: zapisz ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , "
-"zamiast ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, aby uniknąć błędu "
-"o braku uprawnień"
+"Linje 61: skriv ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , "
+"istedet for ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``,"
 
 #: ../../userguide/advanceduse/dav.rst:20
 msgid "Move the file to your Ubuntu Touch device, either by file manager or with adb::"
 msgstr ""
-"Przenieś plik na twoje urządzenie z Ubuntu Touch, używając albo menedżera "
-"plików albo adb::"
+"Flytt filen til din Ubuntu Touch-enhet, enten via filbehandleren eller med "
+"adb ::"
 
 #: ../../userguide/advanceduse/dav.rst:24
 msgid "Connect with the phablet shell (``adb shell``) or directly on the phone Terminal app and type the following::"
 msgstr ""
-"Połącz sie z powłoką phbaleta (``adb shell``) albo wpisz następującą komende "
-"w aplikacji terminala na twoim telefonie::"
 
 #: ../../userguide/advanceduse/dav.rst:31
 msgid "Sources:"
-msgstr "Źródła:"
+msgstr "Kilder:"
 
 #: ../../userguide/advanceduse/dav.rst:33
 msgid "https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-calendars/664834#664834"
@@ -241,92 +230,90 @@ msgstr "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
 
 #: ../../userguide/advanceduse/index.rst:2
 msgid "Advanced use"
-msgstr "Zaawansowane użytkowanie"
+msgstr "Avansert bruk"
 
 #: ../../userguide/advanceduse/index.rst:4
 msgid "This section of the documentation details advanced tasks that power users may want to perform on their Ubuntu Touch device."
 msgstr ""
-"Ta sekcja dokumentacji przybliża zaawansowane zadania, które power userzy "
-"mogą chcieć robić na swoich urządzeniach z Ubuntu Touch."
+"Denne delen av dokumentasjonen beskriver avanserte oppgaver som kraftbrukere "
+"kanskje vil utføre på deres Ubuntu Touch-enhet."
 
 #: ../../userguide/advanceduse/index.rst:7
 msgid "Some of these guides involve making your system image writable, which may break OTA updates. The guides may also reduce the overall security of your Ubuntu Touch device. Please consider these ramifications before hacking on your device too much!"
 msgstr ""
-"Niektóre z tym poradników wymagając obrazu systemu zdolnego do zapisu, co "
-"może uszkodzić aktualizacje OTA. Poradniki mogą także zmniejszać "
-"bezpieczeństwo twojego urządzenia z Ubuntu Touch. Weź pod uwage te "
-"konsekwencej przed zbytnim hackowaniem na twoim urządzeniu!"
+"Noen av disse guidene innebærer å gjøre systemavbildning din overskrivbar, "
+"noe som kan ødelegge OTA-oppdateringer. Guidene kan også redusere den "
+"generelle sikkerheten til Ubuntu Touch-enheten. Vennligst vurder disse "
+"konsekvensene før du hacker på enheten din for mye!"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:2
 msgid "Reverse tethering"
-msgstr "Wsteczny tethering"
+msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:4
 msgid "Some users may not have an available wifi connection for their phone nor a data subscription from their mobile provider. This short tutorial will help you to connect your Ubuntu Touch to your computer to access internet."
 msgstr ""
-"Niektórzy użytkownicy mogą nie mieć dostępnego połączenia wifi na ich "
-"telefonach, ani dostępnych danych komórkowych. Ten krótki poradnik pomoże ci "
-"połączyć twój telefon z Ubuntu Touch do komputera, tak aby uzyskać dostęp do "
-"internetu."
+"Enkelte brukere har kanskje ikke en tilgjengelig wifi-tilkobling for "
+"telefonen eller et dataabonnement fra mobilleverandøren. Denne korte "
+"opplæringen vil hjelpe deg med å koble Ubuntu Touch til datamaskinen din for "
+"å få tilgang til internett."
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:7
 msgid "Prerequisite: Phone is connected to the computer with usb and developer mode enabled."
 msgstr ""
-"Wstępny warunek: Telefon jest połączony do komputera kablem usb i try "
-"programisty jest włączony."
+"Forutsetning: Telefonen er koblet til datamaskinen med usb og utviklermodus "
+"aktivert."
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:10
 msgid "Steps"
-msgstr "Etapy"
+msgstr "Steg"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:12
 msgid "On phone: ``android-gadget-service enable rndis``"
-msgstr "Na telefonie: ``android-gadget-service enable rndis``"
+msgstr "På telefonen: ``android-gadget-service enable rndis``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:14
 msgid "On computer: get your rndis ip address e.g:``hostname -I``"
-msgstr ""
-"Na komputerze: zdobądź adres ip rndisu twojego urządzenia np: ``hostname -I``"
+msgstr "På datamaskinen: skaff din rndis ip address f.eks:``hostname -I``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:16
 msgid "On phone:"
-msgstr "Na telefonie:"
+msgstr "På telefonen:"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:18
 msgid "add gateway: ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``"
-msgstr "dodaj brame: ``sudo route add default gw RNDIS_IP_TWOJEGO_KOMPUTERA``"
+msgstr "legg til portner:``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:20
 msgid "add nameservers: ``echo \"nameserver 8.8.8.8\" | sudo tee /etc/resolv.conf``"
 msgstr ""
-"dodaj serwery nazw: ``echo \"nameserver 8.8.8.8\" | sudo tee /etc/"
+"legg til navnetjenere: ``echo \"nameserver 8.8.8.8\" | sudo tee /etc/"
 "resolv.conf``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:22
 msgid "refresh dns table: ``resolvconf -u``"
-msgstr "odśwież tabele dns ``resolvconf -u``"
+msgstr "oppfrisk dns tabellen: ``resolvconf -u``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:24
 msgid "On computer:"
-msgstr "Na komputerze:"
+msgstr "På datamaskinen:"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:26
 msgid "enable ip forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``"
 msgstr ""
-"włącz przesyłanie dalej ip: ``echo 1 | sudo tee /proc/sys/net/ipv4/"
-"ip_forward``"
+"aktiver ip videresending: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:28
 msgid "apply NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j MASQUERADE``"
 msgstr ""
-"zastotuj NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j "
+"aktiver NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j "
 "MASQUERADE``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:32
 #: ../../userguide/advanceduse/screencasting.rst:72
-#: ../../userguide/advanceduse/ssh.rst:57
+#: ../../userguide/advanceduse/ssh.rst:64
 msgid "References"
-msgstr "Źródła"
+msgstr "Referanser"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:34
 msgid "askubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-tethering-and-click-apps-updates"
@@ -336,92 +323,94 @@ msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:2
 msgid "Screen Casting your UT device to your computer"
-msgstr "Nagrywanie ekranu twojego urządzenia UT na twoim komputerze"
+msgstr "Skjermvideo fra din UT enhet til din datamaskin"
 
 #: ../../userguide/advanceduse/screencasting.rst:5
 msgid "Ubuntu Touch comes with a command line utility called ``mirscreencast`` which dumps screen frames to a file. The idea here is to stream UT display to a listening computer over the network or directly trough adb so that we can either watch it live or record it to a file."
 msgstr ""
-"Ubuntu Touch przychodzi z narzędziem wiersza poleceń nazywanym "
-"``mirscreencast``, które zapisuje klatki obrazu do pliku. Zamysł jest taki, "
-"by streamować obraz UT na słuchający komputer poprzez sieć albo bezpośrednio "
-"przez adb tak, aby można było oglądać go na żywo albo nagrać do pliku."
+"Ubuntu Touch kommer med et kommandolinjeverktøy kalt ``mirscreencast`` som "
+"dumper skjermbilder til en fil. Ideen her er å strømme UT-skjerm til en "
+"datamaskin over nettverket eller direkte gjennom adb slik at vi enten kan se "
+"den live eller lagre den inn til en fil."
 
 #: ../../userguide/advanceduse/screencasting.rst:9
+#, fuzzy
 msgid "Using adb"
-msgstr "Używanie adb"
+msgstr "Bruke adb"
 
 #: ../../userguide/advanceduse/screencasting.rst:11
 msgid "You can catch output directly from ``adb exec-out`` command and forward it to mplayer::"
 msgstr ""
-"Możesz odebrać sygnał bezpośrednio komendą``adb exec-out`` i przekazać go do "
-"mplayera::"
+"Du kan hente utdata direkte fra kommandoen ``adb exec-out`` og videresende "
+"den til mplayer ::"
 
 #: ../../userguide/advanceduse/screencasting.rst:15
 msgid "NB: ``timeout`` here is used in order to kill process properly on device ( here 120 seconds ). Otherwise process still continuing even if killed on computer. You can reduce or increase frame per second with``--cap-interval`` (1 = 60fps, 2=30fps, ...)  and size of frames ``384 640`` means width=384 height=640"
 msgstr ""
-"Uwaga: ``timeout`` jest używany aby prawidłowo zabić procesy na urządzeniu ("
-"tutaj 120 sekund). Inaczej procesy będą wciąż kontynuowane nawet jeśli "
-"zostaną zabite na komputerze. Możesz zredukować albo zwiększyć liczbe klatek "
-"na sekunde przez ``--cap-interval`` (1=60fps, 2=30fps, ...) i romiar klatek "
-"``384 640`` to 384 szerokości i 640 wysokości"
+"NB: ``timeout`` brukes her for å avslutte prosessen riktig på enheten (her "
+"120 sekunder). Ellers fortsetter prosessen selv om den avsluttes på "
+"datamaskinen. Du kan redusere eller øke bilder per sekund med``-- cap-"
+"interval``  (1 = 60 bps, 2 = 30 bps, ...) og størrelsen på bildene ``384 "
+"640`` betyr bredde=384 høyde=640"
 
 #: ../../userguide/advanceduse/screencasting.rst:19
 msgid "Via network"
-msgstr "Przez internet"
+msgstr "Via nettverk"
 
 #: ../../userguide/advanceduse/screencasting.rst:22
 msgid "On receiver"
-msgstr "Na odbiorniku"
+msgstr "På mottakerenhet"
 
 #: ../../userguide/advanceduse/screencasting.rst:24
 msgid "For real time casting:"
-msgstr "Dla przesyłania w czasie rzeczywistym:"
+msgstr "For sanntids skjermvideo:"
 
 #: ../../userguide/advanceduse/screencasting.rst:27
 msgid "Prepare your computer to listen to a tcp port(here 1234) and forward raw stream to a video player (here mplayer) with a frame size of 384x640::"
 msgstr ""
-"Przygotuj twój komputer aby nasłuchiwał port tcp(tutaj 1234), rozpakowywał "
-"przekazywał surowy strumień do odtwarzacza video (tutaj mplayer) o wielkości "
-"obrazu 384x640 ::"
+"Klargjør datamaskinen din til å lytte til en tcp-port (her 1234) og "
+"videresend rå overføring til en videospiller (her mplayer) med en "
+"rammestørrelse på 384x640 ::"
 
 #: ../../userguide/advanceduse/screencasting.rst:31
 msgid "For stream recording:"
-msgstr "Dla nagrywania obrazu:"
+msgstr "For strømmeopptak:"
 
 #: ../../userguide/advanceduse/screencasting.rst:33
 msgid "Prepare your computer to listen to a tcp port(here 1234), ungzip and forward raw stream to a video encoder (here mencoder)::"
 msgstr ""
-"Przygotuj twój komputer aby nasłuchiwał port tcp(tutaj 1234), rozpakowywał "
-"gzip i przekazywał surowy strumień do enkodera video (tutaj mencoder)::"
+"Klargjør datamaskinen din til å lytte til en tcp-port (her 1234), unzip og "
+"videresend rådatastrømmen til en videokoder (her mencoder) ::"
 
 #: ../../userguide/advanceduse/screencasting.rst:38
 msgid "On device"
-msgstr "Na urządzeniu"
+msgstr "På enhet"
 
 #: ../../userguide/advanceduse/screencasting.rst:40
+#, fuzzy
 msgid "Forward and gzip stream with 60fps (--cap-interval 1) and frame size of 384x640 to computer 10.42.0.209 on port 1234 ::"
 msgstr ""
-"Przekaż i gzipuj strumień z 60fps'ami (--cap-interval 1) i klatke o "
-"rozmiarze 384x640 na komputer 10.42.0.209 na port 1234 ::"
+"Fremover og gzip-strøm med 60 bilder per sekund (--cap-intervall 1) og "
+"rammestørrelse på 384x640 til datamaskin 10.42.0.209 på port 1234 ::"
 
 #: ../../userguide/advanceduse/screencasting.rst:46
 msgid "Example script"
-msgstr "Przykładowy skrypt"
+msgstr "Eksempelskript"
 
 #: ../../userguide/advanceduse/screencasting.rst:48
+#, fuzzy
 msgid "This script allows you to screen cast remote UT device to your local PC (must have ssh access to UT and mplayer installed on PC), run it on your computer::"
 msgstr ""
-"Ten skrypt pozwala ci zdalnie przesyłać ekran urządzenia UT na twój komputer "
-"(musisz mieć dostęp ssh do UT i mplayer zainstalowany na PC), wykonaj to na "
-"swoim komputerze::"
+"Dette skriptet lar deg caste ekstern UT-enhet til din lokale PC (må ha ssh-"
+"tilgang til UT og mplayer installert på PC), kjør den på datamaskinen din ::"
 
 #: ../../userguide/advanceduse/screencasting.rst:69
 msgid "You can download it here: :download:`files/mircast.sh`"
-msgstr "Możesz pobrać to stąd: :download: `files/mircast.sh`"
+msgstr "Du kan laste det ned her: download:`files/mircast.sh`"
 
 #: ../../userguide/advanceduse/screencasting.rst:74
 msgid "initial source: https://wiki.ubuntu.com/Touch/ScreenRecording"
-msgstr "pierwotne źródło: https://wiki.ubuntu.com/Touch/ScreenRecording"
+msgstr "innledende kilde: https://wiki.ubuntu.com/Touch/ScreenRecording"
 
 #: ../../userguide/advanceduse/screencasting.rst:75
 msgid "demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
@@ -429,280 +418,288 @@ msgstr "demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
 
 #: ../../userguide/advanceduse/ssh.rst:2
 msgid "Shell access via ssh"
-msgstr "Dostęp do powłoki poprzez ssh"
+msgstr "Terminalvindu tilgang via ssh"
 
 #: ../../userguide/advanceduse/ssh.rst:4
+#, fuzzy
 msgid "You can use ssh to access a shell from your PC. This is useful for debugging or more advanced shell usage."
 msgstr ""
-"Możesz używać ssh, aby uzystać dostęp do powłoki z poziomu twojego "
-"komputera. To jest bardzo przydatne podczas debuggowania albo bardziej "
-"zaawansowanych zastosowań powłoki."
+"Du kan bruke ssh for å få tilgang til et terminalvindu fra PCen. Dette er "
+"nyttig for feilsøking eller mer avansert terminalbruk."
 
 #: ../../userguide/advanceduse/ssh.rst:6
 msgid "You need a ssh key pair for this. Logging in via password is disabled by default."
 msgstr ""
-"Potrzebujesz do tego klucza ssh. Logowanie przez hasło jest domyślnie "
-"wyłączone."
+"Du trenger et ssh-nøkkelpar for dette. Innlogging via passord er deaktivert "
+"som standard."
 
 #: ../../userguide/advanceduse/ssh.rst:9
 msgid "Create your public key"
-msgstr "Stwórz swój klucz publiczny"
+msgstr "Opprett din offentlige nøkkel"
 
 #: ../../userguide/advanceduse/ssh.rst:11
 msgid "If not already created, create your public key, default choices should be fine for LAN, you can leave empty password if you don't want to deal with it each time::"
 msgstr ""
-"Jeśli tego jeszcze nie zrobiłeś stwórz swój klucz publiczny, domyślny wybór "
-"powinien być dla LAN'u, możesz też zostawić puste hasło, jeśli nie chcesz "
-"się z tym męczyć za każdym razem::"
+"Hvis ikke allerede opprettet, oppretter du den offentlige nøkkelen, "
+"standardvalg skal være bra nok for LAN, du kan benytte tomt passord hvis du "
+"ikke vil håndtere det hver gang:"
 
 #: ../../userguide/advanceduse/ssh.rst:16
 msgid "Copy the public key to your device"
-msgstr "Skopiuj klucz publiczny na swoje urządzenie"
+msgstr "Kopier den offentlige nøkkelen til din enhet"
 
 #: ../../userguide/advanceduse/ssh.rst:18
-msgid "You need then to transfer your public key to your device. There are multiple ways to do this. For example:"
+msgid "You need then to transfer your public key to your device. There are multiple ways to do this. These are a few options:"
 msgstr ""
-"Potem będziesz musiał wyeksportować swój klucz na twoje urządzenie. Są dwa "
-"sposoby, aby to zrobić. Na przykład:"
+"Du må da overføre den offentlige nøkkelen til enheten. Det er flere måter å "
+"gjøre dette på. Dette er noen få alternativer:"
 
 #: ../../userguide/advanceduse/ssh.rst:20
 msgid "Connect the ubports device and the PC with a USB cable. Then copy the file using your filemanager."
 msgstr ""
-"Połącz swoje urządzenie z PC kablem usb. Potem skopiuj plik używając twojego "
-"menedżera plików."
+"Koble ubports-enheten og PC-en med en USB-kabel. Kopier deretter filen ved "
+"hjelp av filbehandleren."
 
 #: ../../userguide/advanceduse/ssh.rst:21
 msgid "Or transfer the key via the internet by mailing it to yourself, or uploading it to your own cloud storage, or webserver, etc."
 msgstr ""
-"Albo przetransportuj klucz przez internet, mailując do siebie, albo "
-"wrzucając go do chmury, serwera, itp."
+"Eller overfør nøkkelen via internett ved å sende den til deg selv, eller "
+"laste den opp til din egen skylagring, eller webserver e.l."
 
 #: ../../userguide/advanceduse/ssh.rst:22
 msgid "You can also connect via :doc:`adb <adb>` and use the following command to copy it::"
 msgstr ""
-"Możesz również połączyć sie przez :doc: `adb <adb` i użyć komendy poniżej "
-"aby go skopiować::"
+"Du kan også koble til via: doc: `adb <adb>` og bruke følgende kommando for å "
+"kopiere den ::"
 
 #: ../../userguide/advanceduse/ssh.rst:27
 msgid "Configure your device"
-msgstr "Skonfiguruj twoje urządzenie"
+msgstr "Konfigurer din enhet"
 
 #: ../../userguide/advanceduse/ssh.rst:29
 msgid "Now you have the public key on the UBports device. Let's assume it's stored as ``/home/phablet/id_rsa.pub``. Use the terminal app or and adb connection to perform the following steps on your phone. ::"
 msgstr ""
-"Teraz masz już klucz na urządzeniu z Ubuntu Touch. Załóżmy, że jest "
-"przechowywany jako ``/home/phablet/id_rsa.pub``. Użyj aplikacji terminala "
-"albo połączenia adb, aby wykonać następujące kroki na swoim telefonie. ::"
+"Nå har du den offentlige nøkkelen på UBports-enheten. La oss anta at den er "
+"lagret som `` / home / phablet / id_rsa.pub ''. Bruk terminalappen og eller "
+"ADB-tilkoblingen for å utføre følgende trinn på telefonen. ::"
 
 #: ../../userguide/advanceduse/ssh.rst:38
 msgid "Now start the ssh server. If you are using an Android-based phone::"
-msgstr ""
-"Teraz rozpocznij serwer ssh. Jeśli używasz telefonu bazującego na "
-"Androidzie::"
+msgstr "Start nå ssh-serveren. Hvis du bruker en Android-basert telefon:"
 
 #: ../../userguide/advanceduse/ssh.rst:42
 msgid "If you are using a Linux-based phone (like the Pinephone)::"
-msgstr "Jeśli używasz telefonu bazującego na Linuxie (jak Pinephone)::"
+msgstr "Hvis du bruker en Linux-basert telefon (som Pinephone):"
 
 #: ../../userguide/advanceduse/ssh.rst:48
 msgid "Connect"
-msgstr "Połączenie się"
+msgstr "Koble til"
 
 #: ../../userguide/advanceduse/ssh.rst:50
 msgid "Now everything is set up and you can use ``ssh`` ::"
-msgstr "Teraz wszystko jest już ustawione i możesz korzystać z ``ssh``::"
+msgstr "Nå er alt satt opp, og du kan bruke `` ssh '' ::"
 
 #: ../../userguide/advanceduse/ssh.rst:54
+msgid "To identify the ip-address of your UT device , open Terminal application in your phone and run the following command::"
+msgstr ""
+"For å identifisere ip-adressen til UT-enheten din, åpne Terminal-"
+"applikasjonen på telefonen og kjør følgende kommando:"
+
+#: ../../userguide/advanceduse/ssh.rst:58
+msgid "The output is a list of IP addresses separated by spaces . Use the first IP address from the list."
+msgstr ""
+"Utgangen er en liste over IP-adresser atskilt med mellomrom. Bruk den første "
+"IP-adressen fra listen."
+
+#: ../../userguide/advanceduse/ssh.rst:61
 msgid "Of course you can now also use ``scp`` or ``sshfs`` to transfer files."
 msgstr ""
-"Teraz możesz również używać ``scp`` lub ``sshfs`` do przesyłania plików."
+"Selvfølgelig kan du nå også bruke `` scp '' eller `` sshfs '' for å overføre "
+"filer."
 
-#: ../../userguide/advanceduse/ssh.rst:59
+#: ../../userguide/advanceduse/ssh.rst:66
 msgid "`askubuntu.com: How can I access my Ubuntu phone over ssh? <https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-over-ssh/599041#599041>`_"
 msgstr ""
-"`askubuntu.com: How can I access my Ubuntu phone over ssh? "
+"`askubuntu.com: Hvordan får jeg tilgang til Ubuntu-telefonen min via ssh? "
 "<https://askubuntu.com/questions/348714/"
-"how-can-i-access-my-ubuntu-phone-over-ssh/599041#599041>`_"
+"how-can-i-access-my-ubuntu-phone-over-ssh/599041#599041> `_"
 
-#: ../../userguide/advanceduse/ssh.rst:60
+#: ../../userguide/advanceduse/ssh.rst:67
+#, fuzzy
 msgid "`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5-ubuntu-phone/content/en/chapter1.html>`_"
 msgstr ""
-"`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the "
-"ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/"
+"`gurucubano: BQ Aquaris E 4.5 Ubuntu-telefon: Hvordan få SSH-tilgang til "
+"ubuntu-telefonen via Wifi <https://gurucubano.gitbooks.io/"
 "bq-aquaris-e-4-5-ubuntu-phone/content/en/chapter1.html>`_"
 
 #: ../../userguide/advanceduse/switchchannel.rst:2
 msgid "Switch release channels"
-msgstr "Przełącz kanał aktualizacji"
+msgstr ""
 
 #: ../../userguide/advanceduse/switchchannel.rst:3
 msgid "You can change the release channel using the system settings. The 3 existing channels are stable, rc (release candidate) and devel (nightly builds). For more info, see :doc:`the release schedule </about/process/release-schedule>`."
 msgstr ""
-"Możesz zmienić kanał aktualizacji używając ustawień systemowych. 3 "
-"istniejące kanały to stabilny, rc (release candidate) i devel (codzienne "
-"kompilacje). Po więcej informacji zobacz :doc: `harmonogram aktualizacji </"
-"about/process/release-schedule>`."
 
 #: ../../userguide/dailyuse/anbox.rst:2
 msgid "Android apps"
-msgstr "Aplikacje androidowe"
+msgstr "Android apps"
 
 #: ../../userguide/dailyuse/anbox.rst:4
 msgid "`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer that allows you to run Android apps on GNU/Linux operating systems such as UBports."
 msgstr ""
-"`Anbox <https://anbox.io>`_ to minimalny kontener z Androidem i warstwa "
-"kompatybilności, która umożliwia ci uruchamianie aplikacji Androidowych na "
-"systemach GNU/Linuxowych jak UBports."
+"`Anbox <https://anbox.io>` _ er et minimalt Android-container- og "
+"kompatibilitetslag som lar deg kjøre Android-apper på GNU / Linux-"
+"operativsystemer som UBports."
 
 #: ../../userguide/dailyuse/anbox.rst:7
 msgid "When \"host\" is used in this document, it refers to another device which you can connect your Ubuntu Touch device to. Your host device must have ``adb`` and ``fastboot`` installed."
 msgstr ""
-"Kiedy wymienony jest \"host\" odnosi się to do innego urządzenia (PC), do "
-"którego możesz podpiąć urządzenie z Ubuntu Touch. Twój host musi mieć "
-"zainstalowane ``adb`` i ``fastboot``."
+"Når \"vert\" brukes i dette dokumentet, refererer det til en annen enhet som "
+"du kan koble Ubuntu Touch-enheten din til. Vertsenheten din må ha ``adb`` og "
+"``fastboot`` installert."
 
 #: ../../userguide/dailyuse/anbox.rst:10
 msgid "You will need to execute commands on your Ubuntu Touch device to install Anbox and APKs. You can do that by using the terminal application, but it is easier to use ``adb shell`` or :doc:`set up ssh </userguide/advanceduse/ssh>` to access your phone from your host."
 msgstr ""
-"Będziesz musiał wykonać komendy na twoim urządzeniu Ubuntu Touch aby "
-"zainstalować APK'i. Możesz to zrobić używając aplikacji terminala, ale "
-"łatwiejsze w użyciu jest ``adb shell` albo :doc: `ustawienie ssh </userguide/"
-"advanceduse/ssh>`, aby uzyskać dostęp do telefonu na swoim host'cie."
+"Du må utføre kommandoer på Ubuntu Touch-enheten din for å installere Anbox "
+"og APK-er. Du kan gjøre det ved å bruke terminalapplikasjonen, men det er "
+"lettere å bruke `` adb shell '' eller: doc: `set up ssh </ userguide / "
+"advanceduse / ssh>` for å få tilgang til telefonen din fra verten."
 
 #: ../../userguide/dailyuse/anbox.rst:13
 msgid "Supported devices"
-msgstr "Wspierane urządzenia"
+msgstr "Støttede enheter"
 
 #: ../../userguide/dailyuse/anbox.rst:15
 msgid "Make sure your device is supported:"
-msgstr "Upewnij się, że twoje urządzenie jest wspierane:"
+msgstr "Forsikre deg om at enheten din støttes:"
 
 #: ../../userguide/dailyuse/anbox.rst:17
 msgid "Meizu Pro 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)"
-msgstr "Meizu Pro 5 (nazwa kodowa: ``turbo``, nazwa partycji boot: ``bootimg``)"
+msgstr ""
+"Meizu Pro 5 (kodenavn: ``turbo``, navn på oppstartspartisjonen: ``bootimg``)"
 
 #: ../../userguide/dailyuse/anbox.rst:18
 msgid "Fairphone 2 (codename: ``FP2``, name of the boot partition: ``boot``)"
-msgstr "Fairphone 2 (nazwa kodowa: ``FP2``, nazwa partycji boot: ``boot``)"
+msgstr "Fairphone 2 (kodenavn: ``FP2``, navn på oppstartspartisjon: ``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:19
 msgid "OnePlus One (codename: ``bacon``, name of the boot partition: ``boot``)"
-msgstr "OnePlus One (nazwa kodowa: ``bacon``, nazwa partycji boot: ``boot``)"
+msgstr "OnePlus One (kodenavn: ``bacon``, navn på oppstartspartisjon: ``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:20
 msgid "Nexus 5 (codename: ``hammerhead``, name of the boot partition: ``boot``)"
-msgstr "Nexus 5 (nazwa kodowa: ``hammerhead``, nazwa partycji boot: ``boot``)"
+msgstr ""
+"Nexus 5 (kodenavn: ``hammerhead``, navn på oppstartspartisjon: ``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:21
 msgid "BQ M10 HD (codename: ``cooler``, name of the boot partition: ``boot``)"
-msgstr "BQ M10 HD (nazwa kodowa: ``cooler``, nazwa partycji boot: ``boot``)"
+msgstr "BQ M10 HD (kodenavn: ``cooler``, navn på oppstartspartisjon: ``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:22
 msgid "BQ M10 FHD (codename: ``frieza``, name of the boot partition: ``boot``)"
-msgstr "BQ M10 FHD (nazwa kodowa: ``frieza``, nazwa partycji boot: ``boot``)"
+msgstr "BQ M10 FHD (kodenavn: ``frieza``, navn på oppstartspartisjon: ``boot``)"
 
 #: ../../userguide/dailyuse/anbox.rst:24
 msgid "You will need the device codename and the name of your boot partition for the installation."
 msgstr ""
-"Będziesz potrzebował nazwy kodowej urządzenia oraz nazwe partycji boot do "
-"instalacji."
+"Du trenger enhetens kodenavn og navnet på oppstartspartisjonen din for "
+"installasjonen."
 
 #: ../../userguide/dailyuse/anbox.rst:27
 msgid "How to install"
-msgstr "Jak zainstalować"
+msgstr "Hvordan installere"
 
 #: ../../userguide/dailyuse/anbox.rst:30
 msgid "Installing Anbox is only recommended for experienced users."
-msgstr ""
-"Instalacja Anboxa jest rekomendowana tylko dla doświadczonych użytkowników."
+msgstr "Installering av Anbox anbefales bare for erfarne brukere."
 
 #: ../../userguide/dailyuse/anbox.rst:33
+#, fuzzy
 msgid "If you own a Meizu Pro 5, a BQ M10 HD or a BQ M10 FHD you need to flash a specific boot image. **You will need to re-flash that image after each Ubuntu Touch update** so when you update from OTA-10 to OTA-11 for example. Not doing so can put your phone into an unstable state. Only update your Ubuntu Touch device when you have a computer with you to re-flash that boot image."
 msgstr ""
-"Jeśli posiadasz Meizu Pro 5, BQ M10 HD lub BQ M10 FHD będziesz potrzebował "
-"specjalny obraz boot. **Będziesz musiał zflashować ten obraz po każdej "
-"aktualizacji Ubuntu Touch**,np kiedy zakualizowałeś system z OTA-10 do OTA-"
-"11. Nie zrobienie tego może doprowadzić twojrz urządzenie do niestabilnego "
-"stanu. Wykonuj akualizacje Ubuntu Touch, tylko gdy masz komputer, na którym "
-"jesteś w stanie zflashować obraz boot."
+"Hvis du eier en Meizu Pro 5, en BQ M10 HD eller en BQ M10 FHD, må du flashe "
+"et bestemt oppstartsavbildning. ** Du må flashe avbildningen etter hver "
+"oppdatering av Ubuntu Touch **, så når du for eksempel oppdaterer fra OTA-10 "
+"til OTA-11. Hvis du ikke gjør det, kan du sette telefonen i en ustabil "
+"tilstand. Oppdater bare Ubuntu Touch-enheten når du har en datamaskin med "
+"deg for å flashe oppstartsavbildningen på nytt."
 
 #: ../../userguide/dailyuse/anbox.rst:35
 msgid "Make sure your supported device runs on 16.04 (Anbox doesn't work on 15.04)."
 msgstr ""
-"Upewnij się, że twoje wspierane urządzenie działa na 16.04 (Anbox nie działa "
-"na 15.04)."
+"Forsikre deg om at den støttede enheten kjører 16.04 (Anbox fungerer ikke "
+"15.04)."
 
 #: ../../userguide/dailyuse/anbox.rst:36
 msgid "Be sure to have a `backup <https://askubuntu.com/questions/602850/how-do-i-backup-my-ubuntu-phone>`_ of the device."
 msgstr ""
-"Upewnij się, że posiadasz `kopie zapasową <https://askubuntu.com/questions/"
-"602850/how-do-i-backup-my-ubuntu-phone>`_ urządzenia."
+"Sørg for å ha en `sikkerhetskopi <https://askubuntu.com/questions/602850/how-"
+"do-i-backup-my-ubuntu-phone>`_ av enheten."
 
 #: ../../userguide/dailyuse/anbox.rst:37
 msgid "Open a terminal on your host and set some device specific variables by running ``export CODENAME=\"turbo\" && export PARTITIONNAME=\"bootimg\"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list."
 msgstr ""
-"Otwórz terminal na twoim komputerze i ustaw specyficzne zmienne urządzenia "
-"wpisując ``export CODENAME=\"turbo\" && export PARTITIONNAME=\"bootimg\"``, "
-"zamień część w cudzysłowie zgodnie z nawą kodową i nazwą partycji boot "
-"twojego urządzenia. Zobacz liste powyżej."
+"Åpne en terminal på verten din og sett noen enhetsspesifikke variabler ved å "
+"kjøre `` export CODENAME = \"turbo\" && export PARTITIONNAME = \"bootimg\" ``"
+", men erstatt delen mellom anførselstegnene henholdsvis med kodenavnet og "
+"navnet på oppstartspartisjonen for din enhet. Se listen over."
 
 #: ../../userguide/dailyuse/anbox.rst:38
 msgid "Activate developer mode on your device."
-msgstr "Aktywuj tryb programisty na twoim urządzeniu."
+msgstr "Aktiver utviklermodus på enheten din."
 
 #: ../../userguide/dailyuse/anbox.rst:39
 msgid "Connect the device to your host and run the following commands from your host (same terminal you ran the ``export`` command in)::"
 msgstr ""
-"Podłącz urządzenie do twojego hosta i wpisz podane komendy na twoim host'cie "
-"( w tym samym terminalu, w którym wykonałeś komende ``export``)::"
+"Koble enheten til verten din og kjør følgende kommandoer fra verten din ("
+"samme terminal du kjørte kommandoen `` eksport '' i) ::"
 
 #: ../../userguide/dailyuse/anbox.rst:49
 msgid "Wait for the device to reboot, then run this from your host::"
-msgstr ""
-"Poczekaj, aż urządzenie uruchomi się ponownie, wtedy wykonaj to z poziomu "
-"komputera::"
+msgstr "Vent til enheten starter på nytt, og kjør dette fra verten din ::"
 
 #: ../../userguide/dailyuse/anbox.rst:58
 #: ../../userguide/dailyuse/anbox.rst:78
 #: ../../userguide/dailyuse/anbox.rst:98
 msgid "Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up."
 msgstr ""
-"Gotowe! Teraz możesz odświerzyć stos aplikacji (pociągnij ze srodka ekranu i "
-"puść) aby pojawiły się nowe aplikacje Androidowe."
+"Ferdig! Du må kanskje oppdatere appens omfang (trekk ned fra midten av "
+"skjermen og slipp) for at de nye Android-appene skal vises."
 
 #: ../../userguide/dailyuse/anbox.rst:61
 msgid "You now have an adb server running inside your phone. This guide asks you to run some ``adb`` commands, sometime on your computer, sometime on your phone. Carefully check on which device you are!"
 msgstr ""
-"Teraz masz serwer adb działający wewnątrz twojego telefonu. Ten poradnik "
-"poprosi się, abyś wpisał/a kilka komend ``adb``, czasem na komputerze, "
-"czasem na telefonie. Ostrożnie sprawdź, w którym urządzeniu teraz jesteś!"
+"Du har nå en ADB-server som kjører på telefonen. Denne guiden ber deg om å "
+"kjøre noen `` adb '' - kommandoer, en gang på datamaskinen din, en gang på "
+"telefonen. Sjekk nøye hvilken enhet du er!"
 
 #: ../../userguide/dailyuse/anbox.rst:63
 msgid "You can check that adb server is correctly running locally on your phone by opening the terminal app and enter ``adb devices``. You should see something like::"
 msgstr ""
-"Możesz sprawdzić czy serwer adb działa poprawnie wewnątrz twojego telefonu, "
-"po przez otworzenie aplikacji terminala i wpisanie ``adb devices``. "
-"Powinieneś/nnaś zobaczyć coś takiego::"
+"Du kan kontrollere at adb-serveren kjører riktig lokalt på telefonen din ved "
+"å åpne terminalappen og skrive inn `` adb-enheter ''. Du bør se noe sånt som "
+"::"
 
 #: ../../userguide/dailyuse/anbox.rst:70
 msgid "How to install new APKs"
-msgstr "Jak zainstalować nowe APKi"
+msgstr "Hvordan installere nye APK'er"
 
 #: ../../userguide/dailyuse/anbox.rst:72
 msgid "Copy the APK to ``/home/phablet/Downloads``, then run the following from your host::"
 msgstr ""
-"Skopiuj APK do ``/home/phablet/Downloads``, potem wykonaj następującą "
-"komende z twojego hosta::"
+"Kopier APK til `` / home / phablet / Downloads '', og kjør følgende fra "
+"verten din:"
 
 #: ../../userguide/dailyuse/anbox.rst:81
 msgid "Keep your apps up to date"
-msgstr "Aktualizuj twoje aplikacje"
+msgstr "Hold appene dine oppdatert"
 
 #: ../../userguide/dailyuse/anbox.rst:83
 msgid "To keep your apps up to date you can use of F-Droid or ApkTrack. If you want to install any of the above apps you can find them here:"
 msgstr ""
-"Aby zaktualizować twoje aplikacje moższ używać F-Droida lub ApkTrack. Jeśli "
-"chcesz zainstalować jedną z powyższych aplikacji możesz znaleźć ją tutaj:"
+"For å holde appene dine oppdatert kan du bruke F-Droid eller ApkTrack. Hvis "
+"du vil installere noen av appene ovenfor, kan du finne dem her:"
 
 #: ../../userguide/dailyuse/anbox.rst:85
 msgid "F-Droid: https://f-droid.org/"
@@ -714,761 +711,794 @@ msgstr "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
 
 #: ../../userguide/dailyuse/anbox.rst:89
 msgid "How to uninstall apps"
-msgstr "Jak odinstalować aplikacje"
+msgstr "Hvordan avinstallere app'er"
 
 #: ../../userguide/dailyuse/anbox.rst:91
 msgid "To uninstall apps, run ``adb uninstall [APP_ID]`` from your Ubuntu Touch device::"
 msgstr ""
-"Aby odinstalować aplikacje, wpisz ``adb uninstall [APP_ID]`` na urządzeniu z "
-"Ubuntu Touch::"
+"For å avinstallere app'er, kjør `` adb avinstaller [APP_ID] '' fra Ubuntu "
+"Touch-enheten din ::"
 
 #: ../../userguide/dailyuse/anbox.rst:101
 msgid "Access Android storage"
-msgstr "Dostęp do pamięci Androida"
+msgstr "Få tilgang til Android-lagring"
 
 #: ../../userguide/dailyuse/anbox.rst:103
 msgid "Android storage is located at ``/home/phablet/anbox-data/data/media/0``."
 msgstr ""
-"Pamięć Androida jest zlokalizowana w ``/home/phablet/anbox-data/data/media/"
-"0``."
+"Android-lagring er plassert i `` / home / phablet / anbox-data / data / "
+"media / 0 ''."
 
 #: ../../userguide/dailyuse/anbox.rst:105
 msgid "Links to android libraries can be made in their respective XDG counterparts::"
 msgstr ""
-"Linki do androidowych bibliotek mogą być stworzone w swoich odpowiednikach "
-"XDG::"
+"Koblinger til android-biblioteker kan gjøres i deres respektive XDG-kolleger:"
 
 #: ../../userguide/dailyuse/anbox.rst:114
-#: ../../userguide/install.rst:22
+#: ../../userguide/install.rst:25
 msgid "Troubleshooting"
-msgstr "Rozwiązywanie problemów"
+msgstr "Feilsøking"
 
 #: ../../userguide/dailyuse/anbox.rst:116
 msgid "If installing ``anbox-ubuntu-touch`` or ``android-tools-adb`` on the device fails with an error about unsufficient space, try this::"
 msgstr ""
-"Jeśli instalacja ``anbox-ubuntu-touch` lub ``android-tools-adb`` na "
-"urządzeniu zatrzymała się z błędem o niewystarczającej ilości miejsca, "
-"spróbuj tego::"
+"Hvis installering av `` anbox-ubuntu-touch '' eller `` android-tools-adb '' "
+"på enheten mislykkes med en feil om utilstrekkelig plass, kan du prøve dette:"
 
 #: ../../userguide/dailyuse/anbox.rst:127
 msgid "When you want to install an apk but get the error ``Invalid APK file`` that error could also mean \"file not found\""
 msgstr ""
-"Kiedy chcesz zainstalować aplikacje, ale wyskakuje ci błąd ``Invalid APK "
-"file``, który może oznaczać że \"plik nie został odnaleziony\""
+"Når du vil installere en APK, men får feilen `` Ugyldig APK-fil '', kan "
+"feilen også bety \"filen ble ikke funnet\""
 
 #: ../../userguide/dailyuse/anbox.rst:129
 msgid "Check that you typed the file name correctly"
-msgstr "Sprawdź czy poprawnie napisałeś/aś nazwę pliku"
+msgstr "Kontroller at du har tastet inn filnavnet riktig"
 
 #: ../../userguide/dailyuse/anbox.rst:130
 msgid "If the APK does not reside in the current folder where you execute adb, you have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` instead of just ``my-app.apk``"
 msgstr ""
-"Jeśli APK nie znajduje się w obecnym folderze, gdzie wykonałeś/aś adb, "
-"musisz podać pełną ścieżkę, np. ``/home/phablet/Downloads/my-app.apk`` "
-"zamiast tylko ``my-app.apk``"
+"Hvis APK ikke ligger i den gjeldende mappen der du kjører adb, må du "
+"spesifisere hele banen, f.eks. `` / home / phablet / Downloads / my-app.apk "
+"'' i stedet for bare `` my-app.apk ''"
 
 #: ../../userguide/dailyuse/anbox.rst:134
 msgid "Reporting bugs"
-msgstr "Zgłaszanie błędów"
+msgstr "Rapportering av feil"
 
 #: ../../userguide/dailyuse/anbox.rst:136
 msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with Anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
-"Prosimy o :doc: `zgłaszanie błędów </contribute/bugreporting`, na które się "
-"natrafisz. Błędy związane z Ubuntu 16.04 są zgłaszane w `ogólnym trackerze "
-"Ubuntu Touch <https://github.com/ubports/ubuntu-touch/issues>`_ i problemy "
-"związane z Anboxem są zgłaszane w `naszym oddolnym forku <https://github.com/"
-"ubports/anbox/issues>`_. Dziękujemy!"
+"Vennligst: doc: `rapportere eventuelle feil </contribute/bugreporting>` du "
+"kommer over. Feil med Ubuntu Touch 16.04 er rapportert i `den normale Ubuntu "
+"Touch tracker <https://github.com/ubports/ubuntu-touch/issues>` _ og "
+"problemer med Anbox rapporteres på `vår nedstrøms fork <https://github.com/"
+"ubports/anbox/issues> `_. Takk skal du ha!"
 
 #: ../../userguide/dailyuse/index.rst:2
 msgid "Daily use"
-msgstr "Codzienne użytkowanie"
+msgstr "Daglig bruk"
 
 #: ../../userguide/dailyuse/index.rst:4
 msgid "This section of the documentation details common tasks that users may want to perform while using their Ubuntu Touch device."
 msgstr ""
-"Ta sekcja dokumentacji przybliża częste czynności, jakie użytkownicy mogą "
-"chcieć robić na swoim urządzeniu z Ubuntu Touch."
+"Denne delen av dokumentasjonen beskriver vanlige oppgaver som brukere "
+"kanskje vil utføre mens de bruker Ubuntu Touch-enheten."
 
 #: ../../userguide/dailyuse/libertine.rst:2
 msgid "Run desktop applications"
-msgstr "Uruchamiaj aplikacje desktopowe"
+msgstr "Kjør skrivebordsprogrammer"
 
 #: ../../userguide/dailyuse/libertine.rst:4
 msgid "Libertine allows you to use standard desktop applications in Ubuntu Touch."
 msgstr ""
-"Libertine pozwala ci używać normalnych aplikacji desktopowych na Ubuntu "
-"Touch."
+"Libertine lar deg bruke standard skrivebords-applikasjoner i Ubuntu Touch."
 
 #: ../../userguide/dailyuse/libertine.rst:6
 msgid "To install applications you may use the phone's *Settings* interface or you may use the command line as described further below."
 msgstr ""
-"Aby zainstalować aplikacje możesz używać interfejsu *Ustawień* albo możesz "
-"używać wiersza poleceń jak opisano poniżej."
+"For å installere applikasjoner kan du bruke telefonens * Innstillinger * -"
+"grensesnitt, eller du kan bruke kommandolinjen som beskrevet lenger nedenfor."
 
 #: ../../userguide/dailyuse/libertine.rst:9
+#, fuzzy
 msgid "Manage containers"
-msgstr "Zarządzaj kontenerami"
+msgstr "Administrer containere"
 
 #: ../../userguide/dailyuse/libertine.rst:12
+#, fuzzy
 msgid "Create a container"
-msgstr "Stwórz kontener"
+msgstr "Opprett en container"
 
 #: ../../userguide/dailyuse/libertine.rst:14
+#, fuzzy
 msgid "The first step is to create a container where applications can be installed:"
 msgstr ""
-"Pierwszymi krokiem jest stworzenie kontenera, gdzie aplikacje mogą być "
-"zainstalowane:"
+"Det første trinnet er å lage en container der applikasjoner kan installeres:"
 
 #: ../../userguide/dailyuse/libertine.rst:16
+#, fuzzy
 msgid "Open Settings and scroll down to *Libertine* under the *System* sub-heading."
 msgstr ""
-"Otwórz Ustawienia i scroll'uj na doł do *Libertine* w podgrupie *System*."
+"Åpne Innstillinger og bla ned til *Libertine* under *System* underoverskrift."
 
 #: ../../userguide/dailyuse/libertine.rst:18
+#, fuzzy
 msgid "Tap *Libertine* to get to the *Manage Libertine Containers* sub-menu. If you have other containers already installed, they will be visible here. Tap the + sign at the upper right to add a container."
 msgstr ""
-"Kliknij *Libertine*, aby dostać się do sub-menu *Manage Libertine Containers*"
-". Jeśli masz zainstalowany już jakiś kontener będzie on tu widoczny. Kliknij "
-"znak + w prawym górnym rogu, aby dodać kontener."
+"Trykk på *Libertine* for å komme til undermenyen *Administrer Libertine "
+"Containere*. Hvis du allerede har andre containere installert, vil de være "
+"synlige her. Trykk på + -tegnet øverst til høyre for å legge til en "
+"container."
 
 #: ../../userguide/dailyuse/libertine.rst:20
+#, fuzzy
 msgid "The *Container Options* dialog box will open asking you to enter a container name and password if desired. Confirm your entries by tapping OK, and the container will be created."
 msgstr ""
-"Pojawi się okno *Container Options*, aby zapytać cie o nazwe i hasło "
-"kontenera. Potwierdź swoje wybory klikając OK, utworzy to kontener."
+"Dialogboksen *Container alternativer* åpnes og ber deg om å oppgi et "
+"containernavn og passord hvis ønskelig. Bekreft oppføringene dine ved å "
+"trykke på OK, så blir containeren opprettet."
 
 #: ../../userguide/dailyuse/libertine.rst:22
 msgid "To do this via command line follow these steps::"
-msgstr "Aby to zrobić poprzez wiersz poleceń postępuj wg tych kroków::"
+msgstr "Følg disse trinnene for å gjøre dette via kommandolinjen:"
 
 #: ../../userguide/dailyuse/libertine.rst:26
 msgid "You can add extra options such as:"
-msgstr "Możesz dodać dodatkowe opcje jak::"
+msgstr "Du kan legge til ekstra alternativer som:"
 
 #: ../../userguide/dailyuse/libertine.rst:28
+#, fuzzy
 msgid "``-n name`` name is a more user friendly name of the container"
-msgstr "``-n nazwa`` nazwa to bardziej wygodna dla użytkownika nazwa kontenera"
+msgstr "``-n name`` navn er et mer brukervennlig navn på containeren"
 
 #: ../../userguide/dailyuse/libertine.rst:29
 msgid "``-t type`` type can be either ``chroot`` or ``lxc``. Default is ``chroot`` and is compatible with every device. If the kernel of your device supports it then ``lxc`` is suggested."
 msgstr ""
-"``-t rodzaj`` może być `chroot`` lub ``lxc``. Domyślnie jest ``chroot``, ale "
-"jeśli kernel twojego urządzenia wspiera ``lxc`` to jest ono rekomendowane."
 
 #: ../../userguide/dailyuse/libertine.rst:31
 msgid "The creating process can take some time, due to the size of the container (some hundred of megabytes)."
 msgstr ""
-"Proces tworzenia może potrwać troche czasu, spowodowany romiarem kontenera ("
-"kilkaset megabajtów)."
+"Opprettingsprosessen kan ta litt tid på grunn av størrelsen på beholderen ("
+"noen hundre megabyte)."
 
 #: ../../userguide/dailyuse/libertine.rst:34
+#, fuzzy
 msgid "The ``create`` command shown above cannot be run directly in the terminal app, due to apparmor restrictions. You can run it from another device using either ``adb`` or ``ssh`` connection. Alternatively, you can run it from the terminal app using a loopback ssh connection running this command: ``ssh localhost``."
 msgstr ""
-"Komenda ``create pokazana wyżej nie może być uruchomiona bezpośrednio w "
-"aplikacji terminala przez restrykcje apparmor. Możesz uruchomić ją z innego "
-"urządzenia używając połączenia``adb`` albo ``ssh``. Alternatywnie możesz "
-"uruchomić ją z aplikacji terminala używając wstecznie zapętlonego połączenia "
-"ssh, uruchamiając tą komende: ``ssh localhost``."
+"Kommandoen ``opprett`` vist ovenfor kan ikke kjøres direkte i terminalappen "
+"på grunn av apparmor-begrensninger. Du kan kjøre den fra en annen enhet ved "
+"hjelp av enten ``adb`` eller ``ssh`` -forbindelse. Alternativt kan du kjøre "
+"den fra terminalappen ved hjelp av en loopback ssh-tilkobling som kjører "
+"denne kommandoen: ``ssh localhost``."
 
 #: ../../userguide/dailyuse/libertine.rst:37
+#, fuzzy
 msgid "List containers"
-msgstr "Wyświetl kontenery"
+msgstr "Liste containere"
 
 #: ../../userguide/dailyuse/libertine.rst:39
+#, fuzzy
 msgid "Use the *Settings Manage Libertine Containers* sub-menu to list all the containers you have created on the device."
 msgstr ""
-"Używaj sub-menu *Settings Manage Libertine Containers*, aby wyświetlić "
-"wszystkie kontenery, które stworzyłeś na tym urządzeniu."
+"Bruk undermenyen *Innstillinger Administrer Libertine Containere* for å "
+"liste opp alle containerne du har opprettet på enheten."
 
 #: ../../userguide/dailyuse/libertine.rst:41
 msgid "You can also use the command line. Run::"
-msgstr "Możesz też użyć wiersza poleceń. Wpisz::"
+msgstr "Du kan også bruke kommandolinjen. Kjør::"
 
 #: ../../userguide/dailyuse/libertine.rst:46
+#, fuzzy
 msgid "Destroy a container"
-msgstr "Zniszcz kontener"
+msgstr "Slett en container"
 
 #: ../../userguide/dailyuse/libertine.rst:52
 msgid "Manage applications"
-msgstr "Zarządzaj aplikacjami"
+msgstr "Administrer applikasjoner"
 
 #: ../../userguide/dailyuse/libertine.rst:54
+#, fuzzy
 msgid "Once a container is set up, the installed applications are available in the app drawer. You can also tap the name of the container in the *Manage Libertine Containers* menu."
 msgstr ""
-"Kiedy kontener jest skonfigurowany, zainstalowane aplikacje będą dostępne na "
-"liście aplikacji. Będziesz też mógł/a kliknąć na nazwe kontenera w menu *"
-"Manage Libertine Containers* ."
+"Når en container er satt opp, er de installerte applikasjonene tilgjengelige "
+"i app-skuffen. Du kan også trykke på navnet på containeren i *Administrer "
+"Libertine Containere* -menyen."
 
 #: ../../userguide/dailyuse/libertine.rst:56
 msgid "You can also list them via command line::"
-msgstr "Możesz też je wypisać z wiersza poleceń::"
+msgstr "Du kan også liste dem via kommandolinjen ::"
 
 #: ../../userguide/dailyuse/libertine.rst:61
 msgid "Install a package"
-msgstr "Zainstaluj pakiet"
+msgstr "Installer en pakke"
 
 #: ../../userguide/dailyuse/libertine.rst:63
+#, fuzzy
 msgid "From the apps list in the *Manage Libertine Containers* menu tap the + sign to get a dialog box to add a package."
 msgstr ""
-"Z poziomu aplikacji wypisanych w menu *Manage Libertine Containers* kliknij "
-"znak +, aby dodać pakiet."
+"Fra applisten i *Administrer Libertine Containere* -menyen, trykk på + -"
+"tegnet for å få en dialogboks for å legge til en pakke."
 
 #: ../../userguide/dailyuse/libertine.rst:65
 msgid "Enter the package name if you know it. Otherwise you can search the archives for a package. You can make this process easier by making the *Lubuntu Software Center* your first package install. Being a desktop app, you will need to use the *Libertine Tweak Tool* in the *Open Store* to make the text large enough to read on a mobile device."
 msgstr ""
-"Wprowadź nazwe pakietu, jeśli ją znasz. W przeciwnym wypadku możesz poszukać "
-"pakietu w archiwach. Możesz uczynić to jeszcze prostrzym instalując najpierw "
-"*Lubuntu Software Center*. Mówiąc o aplikacjach desktopowych, będziesz "
-"musiał/a użyć *Libertine Tweak Tool* z *Open Store*, aby ustawić tekst "
-"wystarczająco dużym, by móc go odczytać na urządzeniu mobilnym."
+"Skriv inn pakkenavnet hvis du vet det. Ellers kan du søke i arkivene etter "
+"en pakke. Du kan gjøre denne prosessen enklere ved å gjøre * Lubuntu "
+"Software Center * til din første pakkeinstallasjon. For å være en stasjonær "
+"app, må du bruke * Libertine Tweak Tool * i * Open Store * for å gjøre "
+"teksten stor nok til å lese på en mobil enhet."
 
 #: ../../userguide/dailyuse/libertine.rst:67
 msgid "Packages may also be installed via command line::"
-msgstr "Pakiety mogą być również zainstalowane poprzez wiersz poleceń::"
+msgstr "Pakker kan også installeres via kommandolinjen ::"
 
 #: ../../userguide/dailyuse/libertine.rst:72
 msgid "Remove a package"
-msgstr "Usuń pakiet"
+msgstr "Fjern en pakke"
 
 #: ../../userguide/dailyuse/libertine.rst:74
+#, fuzzy
 msgid "On the package list, within the container (*System Settings* > *Libertine* > *Manage Libertine Containers* > *CONTAINER NAME*), swipe right on the package you want to remove to reveal the option to remove the package."
 msgstr ""
-"Na liście pakietów w danym kontenerze (*Ustawienia Systemowe*>*Libertine*>*"
-"Manage Libertine Containers* > *CONTAINER NAME*), przenieś się do pakietu, "
-"który chcesz usunąć, aby odsłonić opcje do usunięcia pakietu."
+"På pakkelisten, i containeren (*Systeminnstillinger*> *Libertine*> *"
+"Administrer Libertine Containere*> *CONTAINER NAME*), sveip til høyre på "
+"pakken du vil fjerne for å vise valg om å fjerne pakken."
 
 #: ../../userguide/dailyuse/libertine.rst:76
 msgid "Or you can remove the package via the command line::"
-msgstr "Albo możesz usunąć patkiet poprzez wiersz poleceń::"
+msgstr "Eller du kan fjerne pakken via kommandolinjen ::"
 
 #: ../../userguide/dailyuse/libertine.rst:81
+#, fuzzy
 msgid "If you have more than one container, then you can use the option ``-i CONTAINER-IDENTIFIER`` to specify for which container you want to perform an operation."
 msgstr ""
-"Jeśli masz więcej niż jeden kontener, możesz użyć opcji ``-i CONTAINER-"
-"IDENTIFIER``, aby sprecyzować, na którym kontenerze chcesz wykonać operacje."
+"Hvis du har mer enn en container, kan du bruke alternativet ``-i CONTAINER-"
+"IDENTIFIER`` for å spesifisere for hvilken container du vil utføre en "
+"operasjon."
 
 #: ../../userguide/dailyuse/libertine.rst:84
 msgid "Run desktop application"
-msgstr "Uruchamianie aplikacji desktopowych"
+msgstr "Kjør skrivebordsapplikasjon"
 
 #: ../../userguide/dailyuse/libertine.rst:86
 msgid "Run it from the app menu like any other app. To start a graphical application from the command line, for example ``gedit``, run in a terminal::"
 msgstr ""
-"Uruchamiaj je jak pozostałe aplikacje. Aby zacząć aplikacje graficzną z "
-"wiersza poleceń, na przykład ``gedit``, wpisz w terminalu::"
+"Kjør det fra appmenyen som alle andre apper. For å starte et grafisk program "
+"fra kommandolinjen, for eksempel `` gedit '', kjør i en terminal ::"
 
 #: ../../userguide/dailyuse/libertine.rst:92
 msgid "Files"
-msgstr "Pliki"
+msgstr "Filer"
 
 #: ../../userguide/dailyuse/libertine.rst:94
 msgid "Libertine applications do have access to these folders:"
-msgstr "Aplikacje libertine mają dostęp do tych folderów:"
+msgstr "Libertine-applikasjoner har tilgang til disse mappene:"
 
 #: ../../userguide/dailyuse/libertine.rst:96
 msgid "Documents"
-msgstr "Dokumenty"
+msgstr "Dokumenter"
 
 #: ../../userguide/dailyuse/libertine.rst:97
 msgid "Music"
-msgstr "Muzyka"
+msgstr "Musikk"
 
 #: ../../userguide/dailyuse/libertine.rst:98
 msgid "Pictures"
-msgstr "Zdjęcia"
+msgstr "Bilder"
 
 #: ../../userguide/dailyuse/libertine.rst:99
 msgid "Downloads"
-msgstr "Pobrane"
+msgstr "Nedlastinger"
 
 #: ../../userguide/dailyuse/libertine.rst:100
 msgid "Videos"
-msgstr "Filmy"
+msgstr "Videoer"
 
 #: ../../userguide/dailyuse/libertine.rst:103
 msgid "Tips"
-msgstr "Porady"
+msgstr "Tips"
 
 #: ../../userguide/dailyuse/libertine.rst:106
 msgid "Locations"
-msgstr "Lokalizacje"
+msgstr "Lokasjoner"
 
 #: ../../userguide/dailyuse/libertine.rst:108
+#, fuzzy
 msgid "For every container you create there will be two directories created:"
-msgstr "Dla każdego nowego kontenera, zostaną sworzone dwa foldery:"
+msgstr "For hver container du oppretter, blir det opprettet to kataloger:"
 
 #: ../../userguide/dailyuse/libertine.rst:110
 msgid "A root directory ``~/.cache/libertine-container/CONTAINER-IDENTIFIER/rootfs/`` and"
 msgstr ""
-"folder roota ``~/.local/share/libertine-container/user-data/"
-"CONTAINER-IDENTIFIER/``"
 
 #: ../../userguide/dailyuse/libertine.rst:111
+#, fuzzy
 msgid "a user directory ``~/.local/share/libertine-container/user-data/CONTAINER-IDENTIFIER/``"
 msgstr ""
-"folder urzytkownika ``~/.local/share/libertine-container/user-data/"
+"en brukerkatalog ``~/.local/share/libertine-container/user-data/"
 "CONTAINER-IDENTIFIER/``"
 
 #: ../../userguide/dailyuse/libertine.rst:114
 msgid "Shell access"
-msgstr "Dostęp do powłoki"
+msgstr "Terminalvindutilgang"
 
 #: ../../userguide/dailyuse/libertine.rst:116
+#, fuzzy
 msgid "There are 2 options for executing commands inside the container."
-msgstr "Są dwa sposoby na wykonywanie komend w kontenerze."
+msgstr "Det er to alternativer for å utføre kommandoer inne i containeren."
 
 #: ../../userguide/dailyuse/libertine.rst:118
+#, fuzzy
 msgid "**The first option** is based on ``libertine-container-manager exec``. It lets you run your commands as root. The drawback is that the container is not completely set up. So far we know that the `folders mentioned above (Documents, Music, ...) are not mounted <https://askubuntu.com/questions/831830/libertine-terminal-applications-how-to-access-to-the-real-home-dir#comment1273744_833984/>`_ i.e., the ``/home/phablet/`` directory is empty. Likewise the directory referenced in ``TMPDIR`` is not available which may lead to problems with software that tries to create temporary files or directories. You may use this option e.g., for installing packages."
 msgstr ""
-"**Pierwsza opcja** jest bazowana na ``libertine-container-manager exec``. "
-"Pozwala uruchamiać twoje komendy jako root. Wadą jest to, że kontener nie "
-"jest w pełni skonfigurowany. Na tę chwile wiemy, że`foldery wymienione "
-"powyżej (Documents, Music, ...) nie są zamontowane <https://askubuntu.com/"
-"questions/831830/libertine-terminal-applications-how-to-access-to-the-real-"
-"home-dir#comment1273744_833984/>`_ t.j., lokalizacja ``/home/phablet/`` jest "
-"pusta. Także folder wymieniony w ``TMPDIR`` nie jest dostępny, co może "
-"prowadzić do problemów z oprogramowaniem, które próbuje stworzyć chwilowe "
-"pliki lub foldery. Możesz użyć tej opcji np, do instalowania pakietów."
+"**Det første alternativet** er basert på ``libertine-container-manager exec``"
+". Den lar deg kjøre kommandoene som root. Ulempen er at beholderen ikke er "
+"helt satt opp. Så langt vet vi at `mappene nevnt ovenfor (Dokumenter, "
+"Musikk, ...) ikke er montert <https://askubuntu.com/questions/831830/"
+"libertine-terminal-applications-how-to-access-to-the -real-home-dir # "
+"comment1273744_833984 />`_ dvs. katalogen``/ home/phablet/`` er tom. På "
+"samme måte er katalogen det refereres til i ``TMPDIR`` ikke tilgjengelig, "
+"noe som kan føre til problemer med programvare som prøver å lage "
+"midlertidige filer eller kataloger. Du kan bruke dette alternativet for "
+"eksempel for å installere pakker."
 
 #: ../../userguide/dailyuse/libertine.rst:121
 #: ../../userguide/dailyuse/libertine.rst:135
 msgid "To execute a command you can use the following pattern::"
-msgstr "Aby wykonać komende, możesz użyć podanego schematu::"
+msgstr "For å utføre en kommando kan du bruke følgende mønster:"
 
 #: ../../userguide/dailyuse/libertine.rst:125
 #: ../../userguide/dailyuse/libertine.rst:139
 msgid "For example run::"
-msgstr "Na przyład wykonaj::"
+msgstr "For eksempel kjør::"
 
 #: ../../userguide/dailyuse/libertine.rst:129
+#, fuzzy
 msgid "To get a shell into your container as ``root`` run::"
-msgstr "Aby uzystać dostęp do powłoki kontenera jako ``root`` wpisz::"
+msgstr "For å få et terminalvindu inn i beholderen din som ``root``, kjør ::"
 
 #: ../../userguide/dailyuse/libertine.rst:133
+#, fuzzy
 msgid "**The second option** is based on ``libertine-launch``. It will execute your commands as user phablet in a completely set up container. So you may use this option to modify your files using installed packages."
 msgstr ""
-"**Druga opcja** jest bazowana na ``libertine-launch``. Wykona twoje komendy "
-"jako użytkonik phablet w pełni skonfigurowanym kontenerze. Więc możesz użyć "
-"tej opcji, aby modyfikować twoje pliki używając zainstalowanych pakietów."
+"**Det andre alternativet** er basert på ``libertine-launch``. Det vil utføre "
+"kommandoene dine som brukerfablet i en fullstendig konfigurert container. Så "
+"du kan bruke dette alternativet til å endre filene dine ved hjelp av "
+"installerte pakker."
 
 #: ../../userguide/dailyuse/libertine.rst:143
+#, fuzzy
 msgid "To get a shell as user ``phablet`` run::"
-msgstr "Aby uzyskać powłoke jako użytkownik ``phablet`` wpisz::"
+msgstr "For å få et terminalvindu som bruker ``phablet``, kjør ::"
 
 #: ../../userguide/dailyuse/libertine.rst:148
+#, fuzzy
 msgid "When you launch bash in this way you will not get any specific feedback to confirm that you are now *inside* the container. You can check ``ls /`` to confirm for yourself that you are inside the container. The listing of ``ls /`` will be different inside and outside of the container."
 msgstr ""
-"Kiedy odpalisz basha w ten sposób nie otrzymasz, żadnego konkretnego oznaku, "
-"że jesteś *wewnątrz* kontenera. Możesz sprawdzić ``ls /``, aby potwierdzić, "
-"że jesteś wewnątrz kontenera. Wynik``ls /`` będzie różny wewnątrz i na "
-"zewnątrz kontenera."
+"Når du starter bash på denne måten, vil du ikke få noen spesifikk "
+"tilbakemelding for å bekrefte at du nå er *inne i* containeren. Du kan "
+"sjekke ``ls /`` for å bekrefte at du er inne i containeren. Oppføringen av ``"
+"ls /`` vil være annerledes i og utenfor containeren."
 
 #: ../../userguide/dailyuse/libertine.rst:151
 msgid "Accessing SD card"
-msgstr "Uzyskiwanie karty SD"
+msgstr "Aksesserer SD kort"
 
 #: ../../userguide/dailyuse/libertine.rst:153
+#, fuzzy
 msgid "In order to access your SD-card or any other part of the regular filesystem from inside your libertine container you must create a bind mount."
 msgstr ""
-"Aby uzyskać dostęp do karty SD lub innej części normalnego systemu plików "
-"wewnątrz twojego kontenera libertine musisz stworzyć wiązanie montowania."
+"For å få tilgang til SD-kortet eller en hvilken som helst annen del av det "
+"vanlige filsystemet fra inne i din libertine container, må du opprette en "
+"bind mount."
 
 #: ../../userguide/dailyuse/libertine.rst:155
+#, fuzzy
 msgid "In order to add a bind mount use::"
-msgstr "Aby dodać wiązanie montowania użyj::"
+msgstr "For å legge til en bind mount, bruk::"
 
 #: ../../userguide/dailyuse/libertine.rst:159
+#, fuzzy
 msgid "You can also make deep links in case you only want parts of your SD-card available in the container. In this case just the entire path to the directory you want to bind mount::"
 msgstr ""
-"Możesz też stworzyć głęboki link w wypadku gdy chcesz, żeby tylko część "
-"twojej karty SD była dostępna w kontenerze. W tym wypadku po prostu cała "
-"ścieżka do położenia, do której chcesz dodać wiązanie montowania::"
+"Du kan også lage dype lenker i tilfelle du bare vil ha deler av SD-kortet "
+"ditt tilgjengelig i containeren. I dette tilfellet monteres bare hele banen "
+"til katalogen du vil bind mount ::"
 
 #: ../../userguide/dailyuse/libertine.rst:163
+#, fuzzy
 msgid "This will not allow the container access to any of the directories earlier in the path for anything other than accessing your mounted directory."
 msgstr ""
-"To nie pozwoli kontenerowi na dostęp do żadnej z poprzenich lokalizacji "
-"ścieżki innej niż twojej zamontowanej ścieżki."
+"Dette gir ikke container tilgang til noen av katalogene tidligere i banen "
+"for annet enn å få tilgang til den monterte katalogen."
 
 #: ../../userguide/dailyuse/libertine.rst:165
+#, fuzzy
 msgid "In order to use the SD-card as extra space for your container, make sure first to format it using ext4 or similar. There is a mis-feature in udisk2 that mounts SD-cards (showexec) that ensures only files ending in .bat, .exe or .com can be executed from the drive if it is (v)fat formatted. This has been changed in other distributions allowing any file to have execute priviliges, but not ubuntu. The reccomended workaround is to add a udev rule to control how to mount a card with a given id, but since the udev rules are on the read only port on touch, this is not possible."
 msgstr ""
-"Aby używać karty SD jako dodatkowe miejsce dla twojego kontenera, najpierw "
-"upewnij się, że . W udisk2 istnieje brak funkcjonalności, który montuje "
-"karty SD (showexec) i sprawia, że tylko pliki kończące się na .bat, .exe lub "
-".com mogą zostać wykonane z dysku jeśli jest zformatowany formatowaniem (v)"
-"fat. Zostało to naprawione na innych dystrybucjach przez pozwolenie każdemu "
-"plikowi na uprawanienia wykonywania, ale nie na ubuntu. Rekomendowanym "
-"obejściem jest dodanie zasady udev, aby kontrolować jak zamontować karte z "
-"danym id, ale od kiedy zasady udev są tylko do odczytu, nie jest to możliwe."
+"For å bruke SD-kortet som ekstra plass til beholderen din, må du først "
+"formatere den med ext4 eller lignende. Det er en feilfunksjon i udisk2 som "
+"monterer SD-kort (showexec) som sikrer at bare filer som ender på .bat, .exe "
+"eller .com kan kjøres fra stasjonen hvis den er (v) fettformatert. Dette er "
+"endret i andre distribusjoner, slik at alle filer kan utføre priviliges, men "
+"ikke ubuntu. Den anbefalte løsningen er å legge til en udev-regel for å "
+"kontrollere hvordan du monterer et kort med en gitt id, men siden udev-"
+"reglene er på den skrivebeskyttede porten ved berøring, er dette ikke mulig."
 
 #: ../../userguide/dailyuse/libertine.rst:169
 msgid "Shortcuts"
-msgstr "Skróty"
+msgstr "Snarveier"
 
 #: ../../userguide/dailyuse/libertine.rst:171
+#, fuzzy
 msgid "If you want, you can add aliases for command line tools. Add lines like the following ones to your ``~/.bash_aliases``::"
 msgstr ""
-"Jeśli chcesz, możesz dodać aliasty do narzędzi w wierszu poleceń. Dodaj do "
-"``~/.bash_aliases`` linie podobne do następujących::"
+"Hvis du vil, kan du legge til aliaser for kommandolinjeverktøy. Legg til "
+"linjer som følgende i din ``~/.bash_aliases``::"
 
 #: ../../userguide/dailyuse/libertine.rst:177
 msgid "Background"
-msgstr "Tło"
+msgstr "Bakgrunn"
 
 #: ../../userguide/dailyuse/libertine.rst:179
+#, fuzzy
 msgid "A display server coordinates input and output of an operating system. Most Linux distributions today use the X server. Ubuntu Touch does not use X, but  a new display server called Mir. This means that standard X applications are not directly compatible with Ubuntu Touch. A compatibility layer called XMir resolves this. Libertine relies on XMir to display desktop applications."
 msgstr ""
-"Serwer wyświetlania koordynuje wejścia i wyjścia systemu operacyjnego. "
-"Większość Dystrybucji Linuxa używa dzisiaj serweru X. Ubuntu Touch nie używa "
-"X, a nowy serwer wyświetlania nazywany Mir. To znaczy, że standardowe "
-"aplikacje X nie są kompatybilne z Ubuntu Touch. Warstwa kompatybilności "
-"nazywana XMir rozwiązuje ten problem. Libertine polega na XMir, aby "
-"wyświetlać aplikacje desktopowe."
+"En skjermserver koordinerer inngang og utgang fra et operativsystem. De "
+"fleste Linux-distribusjoner bruker i dag X-serveren. Ubuntu Touch bruker "
+"ikke X, men en ny skjermserver kalt Mir. Dette betyr at standard X-"
+"applikasjoner ikke er direkte kompatible med Ubuntu Touch. Et "
+"kompatibilitetslag kalt XMir løser dette. Libertine er avhengig av XMir for "
+"å vise skrivebordsprogrammer."
 
 #: ../../userguide/dailyuse/libertine.rst:181
+#, fuzzy
 msgid "Another challenge is that Ubuntu Touch system updates are released as OTA images. A consequence of this is that the root filesystem is read only. Libertine provides a container with a read-write filesystem to allow the installation of regular Linux desktop applications."
 msgstr ""
-"Kolejnym wyzwaniem w Ubuntu Touch są aktualizacje systemowe wydawane jako "
-"OTA. Konsekwencją tego system plików jest tylko do odczytu (readonly). "
-"Libertine to kontener z systemem plików read-write, który pozwala na "
-"instalacje normalnych, Linuxowych, desktopowych aplikacji."
+"En annen utfordring er at Ubuntu Touch-systemoppdateringer blir utgitt som "
+"OTA-bilder. En konsekvens av dette er at rotfilsystemet bare er "
+"skrivebeskyttet. Libertine tilbyr en container med et lese-skrive filsystem "
+"for å tillate installasjon av vanlige Linux desktop applikasjoner."
 
 #: ../../userguide/dailyuse/location.rst:2
 msgid "Using location services"
-msgstr "Używanie usług lokalizacyjnych"
+msgstr "Bruke lokasjonstjenester"
 
 #: ../../userguide/dailyuse/location.rst:4
+#, fuzzy
 msgid "Location services in Ubuntu Touch allow apps to access your current location. Using this data, apps can `offer turn-by-turn navigation <https://open-store.io/app/navigator.costales>`__, `track your exercise paths <https://open-store.io/app/activitytracker.cwayne18>`__, `locate public transport near you <https://open-store.io/app/transport.zubozrout>`__, and more."
 msgstr ""
-"Usługi lokalizacyjne w Ubuntu Touch pozwalają aplikacją na dostęp do twojej "
-"aktualnej lokalizacji. Używając tych danych aplikacje mogą `oferować "
-"nawigacje turn-by-turn <https://open-store.io/app/navigator.costales>`__, `"
-"śledzenie twoich ścieżek ruchu <https://open-store.io/app/"
-"activitytracker.cwayne18>`__, `lokalizowanie środków publicznego transportu "
-"niedaleko ciebie <https://open-store.io/app/transport.zubozrout>`__, i wiele "
-"więcej."
+"Posisjonstjenester i Ubuntu Touch tillater apper å få tilgang til din "
+"nåværende posisjon. Ved hjelp av disse dataene kan appene `tilby sving-for-"
+"sving-navigering <https://open-store.io/app/navigator.costales> __,`spore "
+"treningsløypene dine <https://open-store.io/ app / "
+"activitytracker.cwayne18>`__,`finne offentlig transport nær deg <https"
+"://open-store.io/app/transport.zubozrout>`__, og mer."
 
 #: ../../userguide/dailyuse/location.rst:6
 msgid "The location services built in to Ubuntu Touch are designed to protect your privacy -- you choose to permit or deny apps access to this data. Apps may only access your location data when the device screen is on and the app is in use."
 msgstr ""
-"Usługi lokalizacyjne zbudowane w Ubuntu Touch są zaprojektowane z myślą o "
-"twojej prywatności -- ty wybierasz czy zezwolić czy odmówić dostępu "
-"aplikacji do tych danych. Aplikacje mają dostęp do twojej lokalizacji tylko "
-"gdy ekran jest włączony i aplikacja jest w użyciu."
+"Posisjonstjenestene innebygd i Ubuntu Touch er designet for å beskytte "
+"personvernet ditt -- du velger å tillate eller nekte apper tilgang til disse "
+"dataene. Apper får bare tilgang til posisjonsdataene dine når enhetsskjermen "
+"er på og appen er i bruk."
 
 #: ../../userguide/dailyuse/location.rst:9
 msgid "Checking if location services are enabled"
-msgstr "Sprawdzanie czy usługi lokalizacji są włączone"
+msgstr "Kontrollerer om posisjonstjenester er aktivert"
 
 #: ../../userguide/dailyuse/location.rst:11
 msgid "The Location Indicator is displayed whenever location services are enabled. Normally, this indicator will appear to be dark."
 msgstr ""
-"Wskaźnik lokalizacji wyświetla się, zawsze gdy usługi lokalizacji są "
-"włączone. Domyślnie ten wskaźnik będzie ciemny."
+"Posisjonsindikatoren vises når posisjonstjenester er aktivert. Normalt ser "
+"denne indikatoren ut til å være mørk."
 
 #: ../../userguide/dailyuse/location.rst:15
 msgid "The Location Indicator, showing location enabled but not in use"
-msgstr "Wskaźnik lokalizacji pokazuje lokalizacje włączoną ale nie w użyciu"
+msgstr "Posisjonsindikatoren, viser posisjonen aktivert men ikke i bruk"
 
 #: ../../userguide/dailyuse/location.rst:17
 msgid "If an app is accessing location data, the Location Indicator brightens."
-msgstr ""
-"Jeśli aplikacja ma dostęp do danych lokalizacyjnych, wskaźnik lokalizacji "
-"się rozjaśnia."
+msgstr "Hvis en app får tilgang til posisjonsdata, lyser posisjonsindikatoren."
 
 #: ../../userguide/dailyuse/location.rst:21
 msgid "The Location Indicator, showing location enabled and in use"
-msgstr "Wskaźnik lokalizacji pokazuje lokalizacje włączoną i w użyciu"
+msgstr "Posisjonsindikatoren, viser posisjonen aktivert og i bruk"
 
 #: ../../userguide/dailyuse/location.rst:26
+#, fuzzy
 msgid "Accessing location services settings"
-msgstr "Uzyskiwanie ustawień usług lokalizacyjnych"
+msgstr "Aksesserer innstillinger for posisjonstjenester"
 
 #: ../../userguide/dailyuse/location.rst:28
 msgid "There are several ways to access settings related to location services in Ubuntu Touch."
 msgstr ""
-"Jest wiele sposobów by dostać się do ustawień usług lokalizacyjnych w Ubuntu "
-"Touch."
+"Det er flere måter å få tilgang til innstillinger relatert til "
+"posisjonstjenester i Ubuntu Touch."
 
 #: ../../userguide/dailyuse/location.rst:31
 msgid "Open location quick settings"
-msgstr "Otwórz szybkie ustwienia lokalizacji"
+msgstr "Åpne hurtiginnstillinger for plassering"
 
 #: ../../userguide/dailyuse/location.rst:33
 msgid "The Location Indicator contains quick settings related to location services, including a switch to turn services on or off."
 msgstr ""
-"Wskaźnik lokalizacji zawiera szybkie ustawienia dotyczące usług "
-"lokalizacyjnych, między innymi przełącznik włączający i wyłączający je."
+"Posisjonsindikatoren inneholder raske innstillinger relatert til "
+"posisjonstjenester, inkludert en bryter for å slå tjenester av eller på."
 
 #: ../../userguide/dailyuse/location.rst:37
 msgid "To access these settings, press on the Location Indicator and pull down toward the bottom of the screen."
 msgstr ""
-"By dostać się do tych ustawień, naciśnij na Wskaźnik Lokalizacji i pociągnij "
-"do w dół, aż do końca ekranu."
+"For å få tilgang til disse innstillingene, trykk på Posisjonsindikatoren og "
+"trekk ned mot bunnen av skjermen."
 
 #: ../../userguide/dailyuse/location.rst:39
 msgid "If location services are disabled, you can access the location quick settings by pressing on any other indicator and pulling down. Then, scroll through the icons at the top of the screen to find Location. Select Location to open the quick settings."
 msgstr ""
-"Jeśli ustawienia lokalizacyjne są wyłączone, możesz się do nich dostać "
-"poprzez szybkie ustawienia lokalizacji przeciągając pasek powiadomień na "
-"dół. Potem scroll'uj ikony na górze, aż zobaczysz Lokalizację. Zaznacz "
-"Lokalizacje aby otworzyć szybkie ustawienia."
+"Hvis posisjonstjenester er deaktivert, kan du få tilgang til "
+"hurtiginnstillingene for posisjon ved å trykke på en hvilken som helst annen "
+"indikator og dra ned. Bla deretter gjennom ikonene øverst på skjermen for å "
+"finne plassering. Velg Plassering for å åpne hurtiginnstillingene."
 
 #: ../../userguide/dailyuse/location.rst:42
 msgid "Open location settings in the settings app"
-msgstr "Otwórz ustawienia lokalizacji w aplikacji ustawień"
+msgstr "Åpne plasseringsinnstillinger i innstillingsappen"
 
 #: ../../userguide/dailyuse/location.rst:44
 msgid "The system settings app can be used to control location services. There are more controls in the system settings app than in the Location Indicator."
 msgstr ""
-"Aplikacja ustawień systemowych może być użyta do kontrolowania usług "
-"lokalizacyjnych. W aplikacji ustawień jest więcej opcji niż we wskaźniku "
-"lokalizacji."
+"Systeminnstillinger-appen kan brukes til å kontrollere posisjonstjenester. "
+"Det er flere kontroller i appen Systeminnstillinger enn i "
+"Posisjonsindikatoren."
 
 #: ../../userguide/dailyuse/location.rst:48
 msgid "There are two ways to access location services controls in the system settings app."
 msgstr ""
-"Są dwie metody kontroli dostępu do usług lokalizacyjnych w aplikacji "
-"ustawień systemowych."
+"Det er to måter å få tilgang til posisjonstjenestekontroller i "
+"systeminnstillingsappen."
 
 #: ../../userguide/dailyuse/location.rst:51
 #: ../../userguide/dailyuse/location.rst:71
 msgid "Quick settings"
-msgstr "Szybkie ustawienia"
+msgstr "Hurtiginnstillinger"
 
 #: ../../userguide/dailyuse/location.rst:53
 msgid "`Open location quick settings`_, then select ``Location settings...``."
 msgstr ""
-"`Otwórz szybkie ustawienia lokalizacji`_, potem wybierz `` Ustawienia "
-"lokalizacji...``."
 
 #: ../../userguide/dailyuse/location.rst:56
 #: ../../userguide/dailyuse/location.rst:76
 msgid "System settings app"
-msgstr "Aplikacja ustawień systemowych"
+msgstr "Systeminnstillinger-app"
 
 #: ../../userguide/dailyuse/location.rst:58
+#, fuzzy
 msgid "Launch the ``System Settings`` app. Select ``Security & Privacy``, then select ``Location``."
 msgstr ""
-"Odpal aplikacje ``Ustawień Systemu``. Wybierz ``Bezpieczeństwo i Prywatność``"
-", potem wybierz ``Lokalizacja``."
+"Start appen ``Systeminnstillinger``. Velg ``Sikkerhet og personvern``, og "
+"velg deretter ``Plassering``."
 
 #: ../../userguide/dailyuse/location.rst:62
 msgid "Enabling or disabling location services"
-msgstr "Włączanie i wyłączanie usług lokalizacyjnych"
+msgstr "Aktiver eller deaktiver posisjonstjenester"
 
 #: ../../userguide/dailyuse/location.rst:64
 msgid "If location services are on, apps which you have allowed access to your location data may request your current location. Location services are enabled by default on Ubuntu Touch."
 msgstr ""
-"Jeśli usługi lokalizacyjne są włączone, aplikacje którym pozwoliłeś/aś na "
-"dostęp to twoich danych lokalizacyjnych, mogą prosić o twoją obecną "
-"lokalizacje. Usługi lokalizacyjne są włączone domyślnie na Ubuntu Touch."
+"Hvis posisjonstjenester er på, kan apper som du har gitt tilgang til "
+"posisjonsdataene dine be om din nåværende posisjon. Posisjonstjenester er "
+"aktivert som standard på Ubuntu Touch."
 
 #: ../../userguide/dailyuse/location.rst:66
 msgid "If location services are off, apps will not be able to access your current location."
 msgstr ""
-"Jeśli usługi lokalizacyjne są wyłączone, aplikacje nie będą wstanie uzyskać "
-"twojego obecnego położenia."
+"Hvis posisjonstjenester er av, vil ikke apper få tilgang til din nåværende "
+"posisjon."
 
 #: ../../userguide/dailyuse/location.rst:68
 msgid "There are several ways to enable or disable location services in Ubuntu Touch."
 msgstr ""
-"Jest dużo sposobów, aby włączyć lub wyłączyć usługi lokalizacyjne w Ubuntu "
+"Det er flere måter å aktivere eller deaktivere plasseringstjenester i Ubuntu "
 "Touch."
 
 #: ../../userguide/dailyuse/location.rst:73
+#, fuzzy
 msgid "`Open location quick settings`_. Select the ``Location detection`` switch to enable or disable location services."
 msgstr ""
-"`Otwórz szybkie ustawienia lokalizacji`_. Zanzacz ``Wykrywanie lokalizacji`` "
-"przłęcz, aby włączyć lub wyłączyć usługi lokalizacyjne."
+"`Åpne hurtiginnstillinger for plassering`_. Velg bryteren "
+"``Posisjonslokalisering`` for å aktivere eller deaktivere posisjonstjenester."
 
 #: ../../userguide/dailyuse/location.rst:78
+#, fuzzy
 msgid "`Open location settings in the settings app`_. Under ``Let the device detect your location:``, select the appropriate option:"
 msgstr ""
-"`Otwórz ustawiania lokalizacji w aplikacji ustawień`_. Pod ``Niech "
-"urządzenie wykryje twoją lokalizację:``, wybierz odpowiednią opcje:"
+"`Åpne plasseringsinnstillinger i innstillingsappen`_. Velg riktig alternativ "
+"under ``La enheten oppdage posisjonen din:``:"
 
 #: ../../userguide/dailyuse/location.rst:80
 msgid "``Using GPS`` turns on location services."
-msgstr "``Używaj GPS`` włącza usługi lokalizacyjne."
+msgstr "`` Using GPS '' slår på lokasjonstjenester."
 
 #: ../../userguide/dailyuse/location.rst:81
 msgid "``Not at all`` turns off location services."
-msgstr "``Ani trochę`` wyłącza usługi lokalizacyjne."
+msgstr "``Ikke i det hele tatt`` slår av posisjonstjenester."
 
 #: ../../userguide/dailyuse/location.rst:84
 msgid "Allowing apps access to location data"
-msgstr "Pozwalanie aplikacją na dostęp do danych lokalizacyjnych"
+msgstr "Tillater apper tilgang til posisjonsdata"
 
 #: ../../userguide/dailyuse/location.rst:86
 msgid "Ubuntu Touch allows you to allow or deny apps access to your location data. This decision is presented the first time the app tries to access your current location. You can change your decision later."
 msgstr ""
-"Ubuntu Touch pozwala ci zdecydować czy chcesz pozwolić aplikacji na dostęp "
-"do danych lokalizacyjnych. Decyzja jest podejmowana przy pierwszej próbie "
-"uzyskania dostępu przez aplikacje. Możesz zmienić swoją decyzje później."
+"Ubuntu Touch lar deg tillate eller nekte apper tilgang til posisjonsdataene "
+"dine. Denne avgjørelsen presenteres første gang appen prøver å få tilgang "
+"til din nåværende posisjon. Du kan endre avgjørelsen din senere."
 
 #: ../../userguide/dailyuse/location.rst:88
 msgid "An app will show the location permission request the first time it tries to access your current location."
 msgstr ""
-"Aplikacja pokaże ci prośbe o dostęp do lokalizacji podczas pierwszego "
-"uruchomienia."
+"En app viser forespørselen om posisjonstillatelse første gang den prøver å "
+"få tilgang til din nåværende posisjon."
 
 #: ../../userguide/dailyuse/location.rst:93
 msgid "Select ``Allow`` to give the app access to your current location. Select ``Don't Allow`` to deny the app access to your current location. Some app features may not work correctly if you select ``Don't Allow``."
 msgstr ""
-"Wybierz ``Zezwalaj` aby dać aplikacji dostęp do twojej aktualnej "
-"lokalizacji. Wybierze ``Nie zezwalaj`` aby odmówić aplikacji dostępu do "
-"twojej lokalizacji. Niektóre funkcje aplikacji mogą przestać działać jeśli "
-"zaznaczysz ``Nie zezwalaj``."
+"Velg ``Tillat`` for å gi appen tilgang til din nåværende posisjon. Velg ``"
+"Ikke tillat`` for å nekte appen tilgang til din nåværende posisjon. Noen "
+"appfunksjoner fungerer kanskje ikke riktig hvis du velger ``Ikke tillat``."
 
 #: ../../userguide/dailyuse/location.rst:96
 msgid "Changing your permissions"
-msgstr "Zmienianie twoich uprawnień"
+msgstr "Endre dine tillatelser"
 
 #: ../../userguide/dailyuse/location.rst:98
 msgid "You can change your decision to allow an app access to your location data. This is useful when you gave an app access to your location but you'd like to deny access, or if you denied access but would like to give access."
 msgstr ""
-"Możesz zmienić swoją decyzje aby pozwolić aplikacji na dostęp do twoich "
-"danych lokalizacyjnych. Jest to przydatne gdy dałeś/aś aplikacji dostęp do "
-"twojej lokalizacji, ale chciałbyś/ałabyś odmówić jej dostępu, albo jeśli "
-"odmówiłeś/aś dostępu i chciałbyś/ałabyś nadać dostęp."
+"Du kan endre avgjørelsen din om å gi en app tilgang til posisjonsdataene "
+"dine. Dette er nyttig når du ga en app tilgang til posisjonen din, men du "
+"vil nekte tilgang, eller hvis du nektet tilgang, men ønsker å gi tilgang."
 
 #: ../../userguide/dailyuse/location.rst:100
 msgid "There are several ways to find these controls."
-msgstr "Jest wiele sposobów, aby znaleźć te ustawienia."
+msgstr "Det er flere måter å finne disse kontrollene på."
 
 #: ../../userguide/dailyuse/location.rst:103
+#, fuzzy
 msgid "Location settings"
-msgstr "Ustawienia lokalizacji"
+msgstr "Posisjonsinnstillinger"
 
 #: ../../userguide/dailyuse/location.rst:105
+#, fuzzy
 msgid "`Open location settings in the settings app`_. All of the apps which have requested access to your location are listed under ``Let apps access this location:``. Toggle the switch next to an app \"on\" to allow it to access your location data. Toggle the switch \"off\" to deny access."
 msgstr ""
-"`Otwórz ustawienia lokalizacji w aplikacji ustawień`_. Wszystkie aplikacje, "
-"które ubiegały się o dostęp do twojej lokalizacji są wypisane pod ``Zezwól "
-"aplikacjom na dostęp do lokalizacji:``. Włącz przełącznik obok aplikacji, "
-"aby pozwolić jej na dostęp do danych lokalizacyjnych. Wyłącz, aby odmówić "
-"dostępu."
+"f`Åpne plasseringsinnstillinger i innstillingsappen`_. Alle appene som har "
+"bedt om tilgang til posisjonen din, er oppført under ``La apper få tilgang "
+"til denne plasseringen:``. Veksle bryteren ved siden av en app \"på\" for å "
+"la den få tilgang til posisjonsdataene dine. Slå bryteren \"av\" for å nekte "
+"tilgang."
 
 #: ../../userguide/dailyuse/location.rst:108
+#, fuzzy
 msgid "App permission settings"
-msgstr "Ustawienia uprawnień aplikacji"
+msgstr "Innstillinger for apptillatelse"
 
 #: ../../userguide/dailyuse/location.rst:110
 msgid "Launch the ``System Settings`` app. Select ``Security & Privacy``, then select ``App permissions``, followed by ``Location``. All of the apps which have requested access to your location are listed. Toggle the switch next to an app \"on\" to allow it to access your location data. Toggle the switch \"off\" to deny access."
 msgstr ""
-"Uruchom aplikacje ``Ustawienia systemowe``. Zaznacz ``Prywatność i "
-"zabezpieczenia``, potem zaznacz ``Zezwolenia aplikacji``, a "
-"potem``Lokalizacja``. Wszystkie aplikacje, które prosiły o dostęp to "
-"lokalizacji są tutaj. Przełącz przełącznik obok aplikacji, by zazwolić lub "
-"odmówić jej dostępu do lokalizacji."
+"Start appen ``Systeminnstillinger``. Velg ``Sikkerhet og personvern``, velg "
+"deretter ``App-tillatelser``, etterfulgt av ``Plassering``. Alle appene som "
+"har bedt om tilgang til posisjonen din, er oppført. Veksle bryteren ved "
+"siden av en app \"på\" for å la den få tilgang til posisjonsdataene dine. "
+"Slå bryteren \"av\" for å nekte tilgang."
 
 #: ../../userguide/dailyuse/location.rst:113
+#, fuzzy
 msgid "Using apps with location services"
-msgstr "Używanie aplikacji używających usług lokalizacyjnych"
+msgstr "Bruke apper med posisjonstjenester"
 
 #: ../../userguide/dailyuse/location.rst:115
 msgid "Apps will be able to access your current location after they are granted access to location data. However, there are some things to note while using apps with location services."
 msgstr ""
-"Aplikacje będą miały dostęp do twojej lokalizacji po tym jak uzyskają dostęp "
-"do danych lokalizacyjnych. Jednakże, są kwestie które warto zaznaczyć "
-"odnośnie używania aplikacji z usługami lokalizacyjnymi."
+"Apper vil kunne få tilgang til din nåværende posisjon etter at de får "
+"tilgang til posisjonsdata. Imidlertid er det noen ting å merke seg når du "
+"bruker apper med posisjonstjenester."
 
 #: ../../userguide/dailyuse/location.rst:118
 msgid "Time to first fix"
-msgstr "Time to first fix"
+msgstr "På tide å først fikse"
 
 #: ../../userguide/dailyuse/location.rst:120
+#, fuzzy
 msgid "A \"fix\" is a data point generated by GPS hardware that contains its current location and the expected accuracy of that location. GPS hardware is rated by how long it takes to return one of these data points after the device is activated. This rating is called \"`Time To First Fix <https://en.wikipedia.org/wiki/Time_to_first_fix>`_,\" or TTFF."
 msgstr ""
-"\"Fix\" to punkt danych wygenerowany przez sprzęt GPS, który zawiera swoją "
-"obecną lokalizacje i spodziewaną dokładność twojej lokalizacji. Sprzęt GPS "
-"jest oceniany jak długi zajmie na powrót tych danych po tym jak urządzenie "
-"zostało aktywowane. Ten rating jest nazywany `Time To First Fix "
-"<https://en.wikipedia.org/wiki/Time_to_first_fix>`_,\" or TTFF."
+"Et \"fix\" er et datapunkt generert av GPS-maskinvare som inneholder den "
+"nåværende plasseringen og den forventede nøyaktigheten til den plasseringen. "
+"GPS-maskinvare er vurdert etter hvor lang tid det tar å returnere et av "
+"disse datapunktene etter at enheten er aktivert. Denne vurderingen kalles \""
+"Time To First Fix <https://en.wikipedia.org/wiki/Time_to_first_fix>` _, \""
+"eller TTFF."
 
 #: ../../userguide/dailyuse/location.rst:122
+#, fuzzy
 msgid "A device with a mobile data connection should take one to four minutes to receive its first fix. If location services have not been used for a long time *and* the device does not have a mobile data connection, the first fix can take up to an hour. To prevent this from causing problems for you, follow these instructions:"
 msgstr ""
-"Urządzeniu z połączeniem danych mobilnych powinno zająć od jednej do "
-"czterech minut, aby otrzymać pierwszy fix. Jeśli usługi lokalizacji nie były "
-"używane przez długi czas *i* urządzenie nie ma połączenia danych mobilnych, "
-"pierwszy fix może trwać nawet do godziny. Aby zapobiec się od występujących "
-"problemów zobacz te instrukcje:"
+"En enhet med mobildataforbindelse skal ta ett til fire minutter å motta den "
+"første løsningen. Hvis lokasjonstjenester ikke har blitt brukt på lenge *og* "
+"enheten ikke har mobildataforbindelse, kan den første løsningen ta opptil en "
+"time. Følg disse instruksjonene for å forhindre at dette forårsaker "
+"problemer for deg:"
 
 #: ../../userguide/dailyuse/location.rst:126
 msgid "Do not leave your device in direct sunlight. The heat can damage the device."
-msgstr ""
-"Nie zostawiaj swojego urządzenia na bezpośrednim słońcu. Ciepło może "
-"uszkodzić urządzenie."
+msgstr "Forlat ikke enheten din i direkte sollys. Varmen kan skade enheten."
 
 #: ../../userguide/dailyuse/location.rst:128
 msgid "Disable ``Lock when idle`` in the Battery settings"
-msgstr "Wyłącz ``Zablokuj gdy bezczynny`` w ustawieniach baterii"
+msgstr "Deaktiver `` Lås når inaktiv '' i batteriinnstillingene"
 
 #: ../../userguide/dailyuse/location.rst:129
+#, fuzzy
 msgid "Download an app which uses location services and cause it to start accessing your location data."
 msgstr ""
-"Pobierz aplikacje która używa usług lokalizacyjnych i udziel jej na dostępu "
-"do twojej lokalizacji."
+"Last ned en app som bruker lokasjonstjenester og får den til å begynne å få "
+"tilgang til posisjonsdataene dine."
 
 #: ../../userguide/dailyuse/location.rst:130
 msgid "Leave your device near a window but out of direct sunlight. To reduce energy consumption, turn the screen brightness down."
 msgstr ""
-"Postaw swoje urządzenie blisko okna, ale nie w bezpośrednim słońcu. Aby "
-"zmniejszyć zużycie energii możesz obniżyć jasność ekranu."
+"Legg enheten din nær et vindu, men ikke i direkte sollys. For å redusere "
+"energiforbruket, skru ned lysstyrken på skjermen."
 
 #: ../../userguide/dailyuse/location.rst:132
 msgid "After 20 minutes to an hour, your device should display your current location. You can now close the app and enable ``Lock when idle``. Future attempts to aquire your location should now take one to four minutes."
 msgstr ""
-"Po 20 minutach do godziny, twoje urządzenie powinno wyświetlić twoją "
-"aktualną lokalizacje. Teraz możesz zakmnąć apliakcje i włączyć ``Zablokuj "
-"gdy bezczynny`` Przyszłe próby zdobycia twojej lokalizacji powinny zająć "
-"teraz od jednej do czterech minut."
+"Etter 20 minutter til en time skal enheten vise din nåværende posisjon. Du "
+"kan nå lukke appen og aktivere `` Lås når inaktiv ''. Fremtidige forsøk på å "
+"hente posisjonen din bør nå ta ett til fire minutter."
 
 #: ../../userguide/dailyuse/location.rst:135
 msgid "App suspension"
-msgstr "Wstrzymywanie aplikacji"
+msgstr "App suspensjon"
 
 #: ../../userguide/dailyuse/location.rst:137
 msgid "Apps are suspended whenever they are not in the foreground or the device is locked. When an app is suspended, it cannot receive location data. For this reason, apps will not be able to track your location whenever they are not in use or the device is locked."
 msgstr ""
-"Aplikacje są wstrzymywane za każdym razem, gdy nie są na pierwszym planie "
-"albo gdy urządzenie jest zablokowane. Wstrzymana aplikacja nie otrzymuje "
-"danych lokalizacyjnych. Z tego powodu aplikacje nie mogą śledzić twojej "
-"lokalizacji, kiedy nie są w użyciu albo urządzenie jest zablokowane."
+"Apper blir suspendert når de ikke er i forgrunnen eller enheten er låst. Når "
+"en app er suspendert, kan den ikke motta posisjonsdata. Av denne grunn vil "
+"ikke apper kunne spore posisjonen din når de ikke er i bruk eller enheten er "
+"låst."
 
 #: ../../userguide/install.rst:2
 msgid "Install Ubuntu Touch"
-msgstr "Instalacja Ubuntu Touch"
+msgstr "Installer Ubuntu Touch"
 
 #: ../../userguide/install.rst:4
+#, fuzzy
 msgid "Installing Ubuntu Touch is easy, and a lot of work has gone in to making the installation process less intimidating to the average user. The UBports Installer is a nice graphical tool that you can use to install Ubuntu Touch on a `supported device <https://devices.ubuntu-touch.io/>`_ from your `Linux <https://snapcraft.io/ubports-installer>`_, `Mac <https://devices.ubuntu-touch.io/installer/?package=dmg>`_ or `Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_ computer. For more experienced users, we also have manual installation instructions for every device `on the devices page <https://devices.ubuntu-touch.io/>`_."
 msgstr ""
-"Instalacja Ubuntu Touch jest prosta, zostało włożone wiele pracy by uczynić "
-"proces mniej strasznym dla przeciętnego użytkownika. Instalator UBports to "
-"fajne narzędzie, którego możesz użyć do instalacji Ubuntu Touch na `"
-"wspieranym urządzeniu <https://devices.ubuntu-touch.io/>`, z twojego "
-"komputera z `Linux <https://snapcraft.io/ubports-installer>`_, `Mac "
-"<https://devices.ubuntu-touch.io/installer/?package=dmg>`_ lub `Windows "
-"<https://devices.ubuntu-touch.io/installer/?package=exe>`_. Mamy też "
-"manualne instrukcje dla każdego urządzenia, dla bardziej doświadczonych "
-"użytkowników, na `stronie z urządzeniami <https://devices.ubuntu-touch.io/"
-">`_."
+"Installering av Ubuntu Touch er enkelt, og det er lagt ned mye arbeid for å "
+"gjøre installasjonsprosessen mindre skremmende for den gjennomsnittlige "
+"brukeren. UBports Installer er et fint grafisk verktøy som du kan bruke til "
+"å installere Ubuntu Touch på en `støttet enhet <https://devices.ubuntu-touch."
+"io/>` _ fra din `Linux <https://snapcraft.io/ ubports-installer>`_,`Mac "
+"<https://devices.ubuntu-touch.io/installer/?package=dmg>`_ eller`Windows "
+"<https://devices.ubuntu-touch.io/installer/? pakke = exe>`_ datamaskin. For "
+"mer erfarne brukere har vi også manuelle installasjonsinstruksjoner for hver "
+"enhet `på enhetssiden <https://devices.ubuntu-touch.io/>` _."
 
 #: ../../userguide/install.rst:7
 msgid "If you're switching your device over from Android, you will not be able to keep any data that is currently on the device. Create an external backup if you want to keep it."
 msgstr ""
-"Jeśli zmieniasz urządzenie z androida, nie będziesz w stanie zachować swoich "
-"danych. Stwórz zewnętrzną kopie zapasową, jeśli chcesz je zachować."
+"Hvis du bytter enheten fra Android, vil du ikke kunne lagre data som for "
+"øyeblikket er på enheten. Opprett en ekstern sikkerhetskopi hvis du vil "
+"beholde den."
 
 #: ../../userguide/install.rst:9
 msgid "You can `Download the UBports Installer from GitHub <https://github.com/ubports/ubports-installer/releases/latest>`_. The following packages are available:"
 msgstr ""
-"Możesz też `Pobrać Instalator UBports z GitHuba <https://github.com/ubports/"
-"ubports-installer/releases/latest>`_. Dostępne są następujące pakiety:"
+"Du kan `Laste ned UBports Installer fra GitHub <https://github.com/ubports/"
+"ubports-installer/releases/latest>`_. Følgende pakker er tilgjengelige:"
 
 #: ../../userguide/install.rst:11
 msgid "`Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_: ``ubports-installer-<version-number>.exe``"
@@ -1485,291 +1515,317 @@ msgstr ""
 #: ../../userguide/install.rst:13
 msgid "`Ubuntu or Debian <https://devices.ubuntu-touch.io/installer/?package=deb>`_: ``ubports-installer-<version-number>.deb``"
 msgstr ""
-"`Ubuntu lub Debian <https://devices.ubuntu-touch.io/installer/"
+"`Ubuntu eller Debian <https://devices.ubuntu-touch.io/installer/"
 "?package=deb>`_: ``ubports-installer-<version-number>.deb``"
 
 #: ../../userguide/install.rst:14
 msgid "`Other Linux distributions (snap) <https://snapcraft.io/ubports-installer>`_: ``ubports-installer-<version-number>.snap``"
 msgstr ""
-"`Inne dystrybucje Linuxowe (snap) <https://snapcraft.io/ubports-installer>`_:"
-" ``ubports-installer-<version-number>.snap``"
+"`Andre Linux distributioner (snap) <https://snapcraft.io/ubports-"
+"installer>`_: ``ubports-installer-<version-number>.snap``"
 
 #: ../../userguide/install.rst:15
 msgid "`Other Linux distributions (AppImage) <https://devices.ubuntu-touch.io/installer/?package=appimage>`_: ``ubports-installer-<version-number>.AppImage``"
 msgstr ""
-"`Inne dystrybucje Linuxowe (AppImage) <https://devices.ubuntu-touch.io/"
+"`Andre Linux distributioner (AppImage) <https://devices.ubuntu-touch.io/"
 "installer/?package=appimage>`_: ``ubports-installer-<version-"
 "number>.AppImage``"
 
 #: ../../userguide/install.rst:17
+#, fuzzy
 msgid "Start the installer and follow the on-screen instructions that will walk you through the installation process. That's it! Have fun exploring Ubuntu Touch!"
 msgstr ""
-"Rozpocznij instalacje i wykonuj instrukcje pojawiające się na ekranie, "
-"przeprowadzą cię przez cały proces instalacji. To wszystko! Ciesz się "
-"eksplorowaniem Ubuntu Touch!"
+"Start installasjonsprogrammet og følg instruksjonene på skjermen som vil "
+"lede deg gjennom installasjonsprosessen. Det er det! Ha det gøy å utforske "
+"Ubuntu Touch!"
 
 #: ../../userguide/install.rst:19
-msgid "If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/Intro>`."
+#, fuzzy
+msgid "If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/index>`."
 msgstr ""
-"Jeśli jesteś doświadczonym programistą androidowym i chcesz pomóc nam "
-"poszerzyć liste urządzeń wspieranych przez Ubuntu Touch, odwiedź :doc: `"
-"sekcje portowania </porting/Intro>`."
+"Hvis du er en erfaren android-utvikler og vil hjelpe oss med å bringe Ubuntu "
+"Touch til flere enheter, kan du gå til: doc: ``porting seksjon </ porting / "
+"index>``."
 
-#: ../../userguide/install.rst:24
-msgid "If you need help, you can join UBports' support channels on `telegram <https://t.me/WelcomePlus>`_ or `matrix <https://matrix.to/#/!KwdniMNeTmClpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot.org>`_ or ask a question `in the forum <https://forums.ubports.com/>`_ or on `askubuntu <https://askubuntu.com>`_. If you believe that the UBports Installer is not working correctly, you can also `file a new issue <https://github.com/ubports/ubports-installer/issues/new>`_ to help us solve the problem."
+#: ../../userguide/install.rst:22
+msgid "Please do **not** start the installer with ``sudo``. It is meant to be run as a normal user, not as root. Using the installer with sudo will mess up permissions in the installer's cached files and lead to problems down the road. If the installer does not recognize your device, check the troubleshooting information below."
 msgstr ""
-"Jeśli potrzebujesz pomocy możesz dołączyć do grupy pomocy UBports na `"
-"telegramie <https://t.me/WelcomePlus>` albo `matrixie <https://matrix.to/#/!K"
-"wdniMNeTmClpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot.org>"
-"`_ lub zadać pytanie `na forum <https://forums.ubports.com/>`_ . Jeżeli masz "
-"wątpliwości czy Instalator UBports działa poprawnie, możesz równiesz `"
-"rozpocząć nowy problem <https://github.com/ubports/ubports-installer/issues/"
-"new>`_ aby pomóc nam go rozwiązać."
+"Vennligst **ikke** start installasjonsprogrammet med ``sudo``. Det er ment å "
+"kjøres som en vanlig bruker, ikke som root. Å bruke installasjonsprogrammet "
+"med sudo vil ødelegge tillatelsene i installasjonsprogrammets hurtigbuffrede "
+"filer og føre til problemer på veien. Hvis installasjonsprogrammet ikke "
+"gjenkjenner enheten din, kan du sjekke feilsøkingsinformasjonen nedenfor."
 
 #: ../../userguide/install.rst:27
-msgid "Connection lost during installation"
-msgstr "Utrata połączenia podczas instalacji"
-
-#: ../../userguide/install.rst:29
-msgid "Try a different USB cable and a different USB port on your computer. Cheap and old cables tend to lose connection during the installation."
+#, fuzzy
+msgid "If you need help, you can join UBports' support channels on `telegram <https://t.me/WelcomePlus>`_ or `matrix <https://matrix.to/#/!KwdniMNeTmClpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot.org>`_ or ask a question `in the forum <https://forums.ubports.com/>`_ or on `askubuntu <https://askubuntu.com>`_. If you believe that the UBports Installer is not working correctly, you can also `file a new issue <https://github.com/ubports/ubports-installer/issues/new>`_ to help us solve the problem."
 msgstr ""
-"Spróbuj innego kabla USB i innego portu USB w twoim komputerze. Tanie i "
-"stare kable mają słonność to tracenia połączenia podczas instalacji."
+"Hvis du trenger hjelp, kan du bli med i UBports supportkanaler på `telegram "
+"<https://t.me/WelcomePlus>` _ eller `matrix <https://matrix.to/#/!KwdniMNeTmC"
+"lpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot.org>`_ eller "
+"still et spørsmål` i forumet <https://forums.ubports.com/>`_ eller på`"
+"askubuntu <https://askubuntu.com>`_. Hvis du mener at UBports Installer ikke "
+"fungerer som den skal, kan du også `arkivere et nytt problem <https://github."
+"com/ubports/ubports-installer/issues/new>` _ for å hjelpe oss med å løse "
+"problemet."
+
+#: ../../userguide/install.rst:30
+#, fuzzy
+msgid "Connection lost during installation"
+msgstr "Tilkoblingen mistet under installasjonen"
 
 #: ../../userguide/install.rst:32
-msgid "Windows Defender prevents Installer from starting"
-msgstr "Windows Defender zapobiegł startowi Instalatora"
-
-#: ../../userguide/install.rst:34
-msgid "We have contacted Microsoft about this problem, but they seem to think it's `enjoyable <https://twitter.com/Windows/status/1014984163433295875>`__. To dismiss the warning, click on \"More Information\", then select \"Run anyway\"."
+msgid "Try a different USB cable and a different USB port on your computer. Cheap and old cables tend to lose connection during the installation."
 msgstr ""
-"Skontaktowaliśmy się z Microsoftem ws. tego problemu, jednak oni uważają, że "
-"`jest nam do śmiechu <https://twitter.com/Windows/status/"
-"1014984163433295875>`__. Aby odrzucić ostrzeżenie, kliknij na \"Więcej "
-"Informacji\", potem zaznacz \"Uruchom mimo to\"."
+"Prøv en annen USB-kabel og en annen USB-port på datamaskinen. Billige og "
+"gamle kabler har en tendens til å miste tilkoblingen under installasjonen."
+
+#: ../../userguide/install.rst:35
+msgid "Windows Defender prevents Installer from starting"
+msgstr "Windows Defender forhindrer installasjonen i å starte"
 
 #: ../../userguide/install.rst:37
-msgid "Device not detected"
-msgstr "Nie wykryto urządzenia"
+#, fuzzy
+msgid "We have contacted Microsoft about this problem, but they seem to think it's `enjoyable <https://twitter.com/Windows/status/1014984163433295875>`__. To dismiss the warning, click on \"More Information\", then select \"Run anyway\"."
+msgstr ""
+"Vi har kontaktet Microsoft om dette problemet, men de ser ut til å synes det "
+"er `hyggelig <https://twitter.com/Windows/status/1014984163433295875>`__. "
+"For å avvise advarselen, klikk på \"Mer informasjon\", og velg deretter \""
+"Kjør uansett\"."
 
 #: ../../userguide/install.rst:40
-msgid "Virtual Machine"
-msgstr "Wirtualna maszyna"
+#, fuzzy
+msgid "Device not detected"
+msgstr "Enheten ble ikke oppdaget"
 
-#: ../../userguide/install.rst:42
-msgid "If you're running the installer in a virtual machine, make sure the virtual machine is allowed to access the USB port."
-msgstr ""
-"Jeśli instalator działa w maszynie wirtualnej, upewnij się, że maszyna ma "
-"dostęp do portu USB."
+#: ../../userguide/install.rst:43
+#, fuzzy
+msgid "Virtual Machine"
+msgstr "Virtuell maskin"
 
 #: ../../userguide/install.rst:45
-msgid "Windows ADB drivers"
-msgstr "Sterowniki ADB dla Windowsa"
-
-#: ../../userguide/install.rst:47
-msgid "Install the `universal adb driver <http://adb.clockworkmod.com/>`_ and reboot your computer."
+msgid "If you're running the installer in a virtual machine, make sure the virtual machine is allowed to access the USB port."
 msgstr ""
-"Zainstaluj `uniwersalne sterowniki adb <http://adb.clockworkmod.com/>`_ i "
-"uruchom ponownie swój komputer."
+"Hvis du kjører installasjonsprogrammet på en virtuell maskin, må du sørge "
+"for at den virtuelle maskinen har tilgang til USB-porten."
+
+#: ../../userguide/install.rst:48
+msgid "Windows ADB drivers"
+msgstr "Windows ADB drivere"
 
 #: ../../userguide/install.rst:50
-msgid "Fairphone 2 Vendor-ID"
-msgstr "Fairphone 2 Vendor-ID"
-
-#: ../../userguide/install.rst:52
-msgid "Run ``echo 0x2ae5 >> ~/.android/adb_usb.ini`` in the terminal and restart the installer. This does not affect the snap package."
+msgid "Install the `universal adb driver <http://adb.clockworkmod.com/>`_ and reboot your computer."
 msgstr ""
-"Wykonaj ``echo 0x2ae5 >> ~/.android/adb_usb.ini`` w terminalu i zresetuj "
-"instalator. Nie dotyczy pakietu ze snapa."
+"Installer den `universelle adb-driveren <http://adb.clockworkmod.com/>`_ og "
+"start datamaskinen på nytt."
+
+#: ../../userguide/install.rst:53
+msgid "Fairphone 2 Vendor-ID"
+msgstr "Fairphone 2 Leverandør-ID"
 
 #: ../../userguide/install.rst:55
-msgid "Missing udev-rules"
-msgstr "Brak udev-rules"
+#, fuzzy
+msgid "Run ``echo 0x2ae5 >> ~/.android/adb_usb.ini`` in the terminal and restart the installer. This does not affect the snap package."
+msgstr ""
+"Kjør ``echo 0x2ae5 >> ~/.android/adb_usb.ini`` i terminalen og start "
+"installasjonsprogrammet på nytt. Dette påvirker ikke snappakken."
 
-#: ../../userguide/install.rst:57
+#: ../../userguide/install.rst:58
+#, fuzzy
+msgid "Missing udev-rules"
+msgstr "Manglende udev-regler"
+
+#: ../../userguide/install.rst:60
+#, fuzzy
 msgid "If the device not detected on Linux and packages other than snap, you might be missing **udev-rules**."
 msgstr ""
-"Jeśli urządzenie nie zostało wykryte na Linuxie i pakietach innych niż snap, "
-"może ci brakować **udev-rules**."
+"Hvis enheten ikke oppdages på Linux og andre pakker enn snap, kan du mangle "
+"**udev-regler**."
 
-#: ../../userguide/install.rst:59
+#: ../../userguide/install.rst:62
 msgid "See if ``/etc/udev/rules.d/51-android.rules`` exists and contains the rules below. If not, add them to the file and run ``sudo service udev restart`` or ``sudo udevadm control --reload-rules && udevadm trigger``."
 msgstr ""
-"Zobacz czy ``/etc/udev/rules.d/51-android.rules`` istnieją i zawierają "
-"zasady poniżej. Jeśli nie, dodaj je do tego pliku i wykonaj ``sudo service "
-"udev restart`` lub ``sudo udevadm control --reload-rules && udevadm "
-"trigger``."
 
-#: ../../userguide/install.rst:99
+#: ../../userguide/install.rst:102
 msgid "Other issues"
-msgstr "Inne problemy"
-
-#: ../../userguide/install.rst:101
-msgid "If the troubleshooting tips do not work, you might also try following the manual installation instructions for your device `on the devices page <https://devices.ubuntu-touch.io/>`_."
-msgstr ""
-"Jeśli wymienione wskazówki nie działają, możesz sprawdzić instrukcje "
-"instalacji dla twojego urządzenia `na stronie z urządzeniami <https://devices"
-".ubuntu-touch.io/>`_."
+msgstr "Andre problemer"
 
 #: ../../userguide/install.rst:104
-msgid "Install on legacy Android devices"
-msgstr "Instalacja na starszych urządzeniach z Androidem"
+msgid "If the troubleshooting tips do not work, you might also try following the manual installation instructions for your device `on the devices page <https://devices.ubuntu-touch.io/>`_."
+msgstr ""
+"Hvis feilsøkingstipsene ikke fungerer, kan du også prøve å følge de manuelle "
+"installasjonsinstruksjonene for enheten `på enhetssiden <https://devices"
+".ubuntu-touch.io/>`_."
 
-#: ../../userguide/install.rst:106
+#: ../../userguide/install.rst:107
+msgid "Install on legacy Android devices"
+msgstr "Installer på eldre Android-enheter"
+
+#: ../../userguide/install.rst:109
+#, fuzzy
 msgid "While the installation process is fairly simple on most devices, some legacy Bq and Meizu devices require special steps. This part of the guide does not apply to other devices."
 msgstr ""
-"Proces instalacji jest bardzo prosty na większości urządzeń, jedynie "
-"niektóre starsze urządzenia Bq i Meizu potrzebują dodatkowych kroków. Ta "
-"część poradnika nie obejmuje pozostałych urządzeń."
+"Mens installasjonsprosessen er ganske enkel på de fleste enheter, krever "
+"noen eldre Bq- og Meizu-enheter spesielle trinn. Denne delen av guiden "
+"gjelder ikke andre enheter."
 
-#: ../../userguide/install.rst:110
+#: ../../userguide/install.rst:113
+#, fuzzy
 msgid "This is more or less uncharted territory. If your device's manufacturer does not want you to install an alternative operating system, there's not a lot we can do about it. The instructions below should only be followed by experienced users. While we appreciate that lots of people want to use our OS, flashing a device with OEM tools shouldn't be done without a bit of know-how and plenty of research."
 msgstr ""
-"To jest mniej więcej niezbadany grunt. Jeśli producent twojego urządzenia "
-"nie chce byś instalował inne systemy operacyjne niewiele możesz z tym "
-"zrobić. Instrukcje poniżej powinny być wykonywane tylko przez doświadcznoych "
-"użytkowników. Doceniamy, że sporo osób chce używać naszego systemu, ale "
-"flashowanie urządzenia nie powinno mieć miejsca bez odrobiny wiedzy jak to "
-"zrobić i mnóstwa wyszukiwania."
+"Dette er mer eller mindre ukjent territorium. Hvis produsenten av enheten "
+"din ikke vil at du skal installere et alternativt operativsystem, er det "
+"ikke mye vi kan gjøre med det. Instruksjonene nedenfor skal bare følges av "
+"erfarne brukere. Selv om vi setter pris på at mange mennesker vil bruke "
+"operativsystemet vårt, bør det ikke gjøres blinking av en enhet med OEM-"
+"verktøy uten litt kunnskap og mye forskning."
 
-#: ../../userguide/install.rst:112
+#: ../../userguide/install.rst:115
+#, fuzzy
 msgid "Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed successfully in some cases, the Pro5 is Exynos-based and has its own headaches."
 msgstr ""
-"Urządzenia Meizu przeważnie zatrzymują się na Flyme. Podczas gdy MX4 może "
-"zostać zflashowana bez problemu w niektórych przypadkach, Pro5 bazujący na "
-"Exynosie ma swoje kaprysy."
-
-#: ../../userguide/install.rst:116
-msgid "BE VERY CAREFUL! You are responsible for your own actions!"
-msgstr "BĄDŹ OSTROŻNY! Sam odpowiadasz za swoje czyny!"
-
-#: ../../userguide/install.rst:118
-msgid "Disconnect all devices and non-essential peripherals from your PC. Charge your device on a wall-charger (not your PC) to at least 40 percent."
-msgstr ""
-"Odłącz wszystkie urządzenia i niepotrzebne peryferia z komputera. Naładuj "
-"swoje urządzenia do conajmniej 40 procent."
+"Meizu-enheter sitter ganske mye fast på Flyme. Mens MX4 kan bli blinket med "
+"suksess i noen tilfeller, er Pro5 Exynos-basert og har sin egen hodepine."
 
 #: ../../userguide/install.rst:119
-msgid "Download the Ubuntu Touch ROM for your device and extract the zip files:"
-msgstr "Pobierz ROM Ubuntu Touch na twoje urządzenie i rozpakuj pliki zip:"
+msgid "BE VERY CAREFUL! You are responsible for your own actions!"
+msgstr "VÆR VELDIG FORSIKTIG! Du er ansvarlig for dine egne handlinger!"
 
 #: ../../userguide/install.rst:121
+#, fuzzy
+msgid "Disconnect all devices and non-essential peripherals from your PC. Charge your device on a wall-charger (not your PC) to at least 40 percent."
+msgstr ""
+"Koble alle enheter og ikke-nødvendige eksterne enheter fra PCen. Lad enheten "
+"din på en vegglader (ikke din PC) til minst 40 prosent."
+
+#: ../../userguide/install.rst:122
+msgid "Download the Ubuntu Touch ROM for your device and extract the zip files:"
+msgstr "Last ned Ubuntu Touch ROM for enheten din og pakk ut zip-filene:"
+
+#: ../../userguide/install.rst:124
 msgid "`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ (*krillin*)"
 msgstr ""
 "`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ "
 "(*krillin*)"
 
-#: ../../userguide/install.rst:122
+#: ../../userguide/install.rst:125
 msgid "`Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 msgstr ""
 "`Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/"
 "Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 
-#: ../../userguide/install.rst:123
+#: ../../userguide/install.rst:126
 msgid "`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
 msgstr ""
 "`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/"
 "OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
 
-#: ../../userguide/install.rst:124
+#: ../../userguide/install.rst:127
 msgid "`Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)"
 msgstr ""
 "`Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/"
 "Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)"
 
-#: ../../userguide/install.rst:125
+#: ../../userguide/install.rst:128
 msgid "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
 msgstr ""
 "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
 
-#: ../../userguide/install.rst:127
+#: ../../userguide/install.rst:130
 msgid "Download the latest version of `SP flash tool <https://spflashtool.com/download/>`_ (*aka MTK flash tool*)."
 msgstr ""
-"Pobierz najnowszą wersje `SP flash tool <https://spflashtool.com/download/>`"
-"_ (*aka MTK flash tool*)."
+"Last ned siste versjon av`SP Flash Tool <https://spflashtool.com/download/>`"
+"_ (*også kjent som MTK flash tool*)."
 
-#: ../../userguide/install.rst:128
+#: ../../userguide/install.rst:131
 msgid "Extract the zip files"
-msgstr "Rozpakuj pliki zip"
+msgstr "Pakk ut zip filene"
 
-#: ../../userguide/install.rst:129
+#: ../../userguide/install.rst:132
+#, fuzzy
 msgid "Open a Terminal, enter the SP flash tool directory and run it with ``sudo ./flash_tool.sh``."
 msgstr ""
-"Otwórz Terminal, wejdź do folderu gdzie znajduje się SP flash tool i wpisz ``"
+"Åpne en terminal, gå inn i katalogen for SP-flashverktøy og kjør den med ``"
 "sudo ./flash_tool.sh``."
 
-#: ../../userguide/install.rst:133
+#: ../../userguide/install.rst:136
+#, fuzzy
 msgid "On Ubuntu 17.10, there are issues with flash_tool loading the shared library 'libpng12', so this can be used as a workaround:"
 msgstr ""
-"Na Ubuntu 17.10 występują problemy podczas ładowania biblioteki 'libpng12' "
-"przez flash_tool, użyj tego jako obejścia:"
+"På Ubuntu 17.10 er det problemer med at flash_tool laster det delte "
+"biblioteket 'libpng12', så dette kan brukes som en løsning:"
 
-#: ../../userguide/install.rst:141
+#: ../../userguide/install.rst:144
+#, fuzzy
 msgid "In the \"Scatter-loading File\" section, press the \"choose\" button and select the ``*Android_scatter.txt`` file from the archive you downloaded in the second step."
 msgstr ""
-"W sekcji \"Scatter-loading File\", naciśnij przycisk \"choose\" i zaznacz "
-"plik ``*Android_scatter.txt`` z archiwum, które pobrałeś/aś w poprzednim "
-"etapie."
+"I delen \"Scatter-loading File\", trykk på \"velg\" -knappen og velg filen "
+"``*Android_scatter.txt`` fra arkivet du lastet ned i andre trinn."
 
-#: ../../userguide/install.rst:142
+#: ../../userguide/install.rst:145
 msgid "Choose \"Firmware Upgrade\" from the drop-down menu."
-msgstr "Wybierz \"Firmware Upgrade\" z wysuwanego menu."
+msgstr "Velg \"Firmware Upgrade\" fra rullegardinmenyen."
 
-#: ../../userguide/install.rst:146
+#: ../../userguide/install.rst:149
+#, fuzzy
 msgid "If you select DOWNLOAD ONLY rather than FIRMWARE UPGRADE, you will end up with a useless brick rather than a fancy Ubuntu Touch device. Be sure to select FIRMWARE UPGRADE."
 msgstr ""
-"Jeśli wybrałeś/aś DOWNLOAD ONLY zamiast FIRMWARE UPGRADE, skończysz z "
-"bezużyteczną cegłą zamiast z urządzeniem działąjącym na Ubuntu Touch. Bądź "
-"pewny/a, że zaznaczyłeś/aś FIRMWARE UPGRADE."
-
-#: ../../userguide/install.rst:148
-msgid "Also, after selecting the ``*Android_scatter.txt``, the drop-down menu choice is reset to DOWNLOAD ONLY. Be sure to select it after selecting the file."
-msgstr ""
-"Także, po zaznaczeniu ``*Android_scatter.txt``, wybór w menu zostaje "
-"zresetowany do DOWNLOAD ONLY. Bądź pewny/a, aby to zaznaczyć po wybraniu "
-"tego pliku."
-
-#: ../../userguide/install.rst:150
-msgid "Turn your device completely off, but do not connect it yet."
-msgstr "Kompletnie wyłącz twoje urządzenie, ale nie odłączaj go jeszcze."
+"Hvis du velger BARE LAST NED i stedet for FIRMWARE-OPPGRADERING, vil du ende "
+"opp med en ubrukelig murstein i stedet for en fancy Ubuntu Touch-enhet. Sørg "
+"for å velge FIRMWARE UPGRADE."
 
 #: ../../userguide/install.rst:151
-msgid "Press the button labeled \"Download\"."
-msgstr "Naciśnij przycisk z napisem \"Pobierz\"."
-
-#: ../../userguide/install.rst:152
-msgid "Perform a final sanity-check that you selected the \"Firmware Upgrade\" option, not \"Download Only\"."
+#, fuzzy
+msgid "Also, after selecting the ``*Android_scatter.txt``, the drop-down menu choice is reset to DOWNLOAD ONLY. Be sure to select it after selecting the file."
 msgstr ""
-"Wykonaj ostatni test bezpieczeństwa czy zaznaczyłeś/aś opcje \"Firmware "
-"Upgrade\", nie \"Download Only\"."
+"Etter at du har valgt ``* Android_scatter.txt``, blir rullegardinmenyvalget "
+"tilbakestilt til KUN LAST NED. Sørg for å velge den etter at du har valgt "
+"filen."
 
 #: ../../userguide/install.rst:153
-msgid "Make sure your device is off and connect it to your PC. Don't use a USB 3.0 port, since that's known to cause communication issues with your device."
-msgstr ""
-"Upewnij się, że twoje urządzenie jest wyłączone i podłączone do komputera. "
-"Nie używaj portu USB 3.0, ponieważ może to powodować problemy z komunikacją "
-"z twoim urządzeniem."
+msgid "Turn your device completely off, but do not connect it yet."
+msgstr "Slå enheten din helt av, men ikke koble den til ennå."
 
 #: ../../userguide/install.rst:154
+msgid "Press the button labeled \"Download\"."
+msgstr "Trykk på knappen merket \"Last ned\"."
+
+#: ../../userguide/install.rst:155
+#, fuzzy
+msgid "Perform a final sanity-check that you selected the \"Firmware Upgrade\" option, not \"Download Only\"."
+msgstr ""
+"Utfør en siste sunnhetskontroll at du valgte alternativet \"Firmware "
+"Upgrade\", ikke \"Only Download\"."
+
+#: ../../userguide/install.rst:156
+msgid "Make sure your device is off and connect it to your PC. Don't use a USB 3.0 port, since that's known to cause communication issues with your device."
+msgstr ""
+"Forsikre deg om at enheten er slått av, og koble den til PCen din. Ikke bruk "
+"en USB 3.0-port, siden det er kjent at det forårsaker "
+"kommunikasjonsproblemer med enheten din."
+
+#: ../../userguide/install.rst:157
+#, fuzzy
 msgid "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Wait till all the progress bars ended."
 msgstr ""
-"`Czary <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ mary. Poczekaj, "
-"aż proces się zakończy."
+"`Magi <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ skjer. Vent til "
+"alle fremdriftslinjene ble avsluttet."
 
-#: ../../userguide/install.rst:158
+#: ../../userguide/install.rst:161
+#, fuzzy
 msgid "If the installation fails with a 100% red bar and hangs there (and logs says something like ``COM port is open. Trying to sync with the target...``), remove the ``modemmanager`` package as the one installed `is not compatible <https://web.archive.org/web/20180118130643/http://www.mibqyyo.com/en-articles/2015/09/16/ubuntu-android-installation-process-for-bq-aquaris-e4-5-and-e5/>`_ with SP flash tool, close it and try again from step 4."
 msgstr ""
-"Jeśli instalacja zatrzyma się na czerwonym paski na 100% (i logi będą mówiły "
-"coś jak ``COM port is open. Trying to sync with the target...``), usuń "
-"pakiet ``modemmanager`` jako, że ten zainstalowany `nie jest kompatybilny "
+"Hvis installasjonen mislykkes med en 100% rød bar og henger der (og loggene "
+"sier noe som ``COM-porten er åpen. Prøver å synkronisere med målet ... ``), "
+"fjern pakken ``modemmanager`` som den installert `er ikke kompatibel "
 "<https://web.archive.org/web/20180118130643/http://www.mibqyyo.com/"
-"en-articles/2015/09/16/"
-"ubuntu-android-installation-process-for-bq-aquaris-e4-5-and-e5/>`_ z "
-"narzędziem SPI flash, zamknij to i spróbuj od nowa od etapu 4."
+"en-articles/2015/09/16/ubuntu-android-installation-process-for- bq-"
+"aquaris-e4-5-and-e5 />`_ med SP-flashverktøy, lukk det og prøv igjen fra "
+"trinn 4."
 
-#: ../../userguide/install.rst:160
+#: ../../userguide/install.rst:163
 msgid "Congratulations! Your device will now boot into a super old version of Ubuntu Touch. You can now use the UBports Installer to install an updated version."
 msgstr ""
-"Gratulacje! Twoje urządzenie bootuje teraz do bardzo starej wersji Ubuntu "
-"Touch. Możesz teraz użyć Instalatora UBports, żeby zainstalować nowszą "
-"wersje."
+"Gratulerer! Enheten din vil nå starte opp i en eldgammel versjon av Ubuntu "
+"Touch. Du kan nå bruke UBports-installasjonsprogrammet til å installere en "
+"oppdatert versjon."

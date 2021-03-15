@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-15 09:19-0500\n"
+"POT-Creation-Date: 2021-03-09 17:42-0600\n"
 "PO-Revision-Date: 2020-10-27 14:25+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
@@ -1530,7 +1530,9 @@ msgstr ""
 "размером 252 на 252 пикселя."
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:16
-msgid "Different redered sizes of the same svg image"
+#, fuzzy
+#| msgid "Different redered sizes of the same svg image"
+msgid "Different rendered sizes of the same svg image"
 msgstr "Разные размеры одного и того же SVG-изображения после рендеринга"
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:18

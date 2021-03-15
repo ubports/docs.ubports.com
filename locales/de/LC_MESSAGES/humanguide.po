@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-15 09:19-0500\n"
+"POT-Creation-Date: 2021-03-09 17:42-0600\n"
 "PO-Revision-Date: 2021-02-02 00:03+0000\n"
 "Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
@@ -175,8 +175,8 @@ msgid ""
 "used."
 msgstr ""
 "Der obere Bereich beinhaltet einen zurück-Knopf, wenn ein `Register Stapel "
-"<https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Components/PageStack.html>`"
-"__ Benutzt wird."
+"<https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Components/PageStack."
+"html>`__ Benutzt wird."
 
 #: ../../humanguide/app-layout/importing-data.rst:2
 msgid "Importing Data"
@@ -1310,7 +1310,7 @@ msgid ""
 msgstr ""
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:16
-msgid "Different redered sizes of the same svg image"
+msgid "Different rendered sizes of the same svg image"
 msgstr ""
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:18

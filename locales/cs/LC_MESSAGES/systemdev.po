@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2020-08-25 23:00+0000\n"
-"Last-Translator: Milan Korecký <milan.korecky@gmail.com>\n"
+"POT-Creation-Date: 2021-03-09 17:42-0600\n"
+"PO-Revision-Date: 2021-03-03 13:17+0000\n"
+"Last-Translator: Jan Kožíšek <hlubinix@gmail.com>\n"
 "Language-Team: Czech <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-systemdev/cs/>\n"
 "Language: cs\n"
@@ -192,7 +192,6 @@ msgid "System software development"
 msgstr "Vývoj systémového softwaru"
 
 #: ../../systemdev/index.rst:4
-#, fuzzy
 msgid ""
 "This section has various documents which will teach you how to work with the "
 "system level of Ubuntu Touch. This includes the Kernel, Android HAL, Ubuntu "
@@ -200,8 +199,9 @@ msgid ""
 "what it is."
 msgstr ""
 "Tato část obsahuje různé dokumenty, které vás naučí, jak pracovat s balíčky "
-"zahrnutými v Ubuntu Touch. Patří sem sada nástrojů Ubuntu UI Toolkit, Unity8 "
-"a veškerý další software, díky němuž je Ubuntu Touch tím, čím je."
+"zahrnutými v Ubuntu Touch. Patří sem sada nástrojů Ubuntu UI Toolkit, "
+"Unity8, Kernel a veškerý další software, díky němuž je Ubuntu Touch tím, čím "
+"je."
 
 #: ../../systemdev/index.rst:6
 msgid ""
@@ -215,13 +215,15 @@ msgstr ""
 
 #: ../../systemdev/index.rst:9 ../../systemdev/kernel-hal.rst:2
 msgid "Kernel and hardware abstraction"
-msgstr ""
+msgstr "Abstrakce jádra a hardwaru"
 
 #: ../../systemdev/index.rst:11
 msgid ""
 "This section covers how to build and install the Linux kernel and hardware "
 "abstraction layer for supported devices."
 msgstr ""
+"Tato sekce popisuje, jak vytvořit a nainstalovat abstraktní vrstvu mezi "
+"jádrem Linuxu a hardwarem."
 
 #: ../../systemdev/index.rst:23
 msgid "System Software guides"
@@ -277,18 +279,21 @@ msgid ""
 "hardware abstraction for UT devices. This document is useful if you would "
 "like to work on:"
 msgstr ""
+"Tato stránka shromažďuje zdroje a procesy pro vytváření vrstvy abstrakce "
+"mezi jádrem a hardwarem pro UT zařízení. Stránka je užitečná, hlavně pokud "
+"chcete pracovat na:"
 
 #: ../../systemdev/kernel-hal.rst:6
 msgid "A hardware related issue (camera, sensors, radios)"
-msgstr ""
+msgstr "Problému spojeném s hardwarem (kamera, senzory, rádia)"
 
 #: ../../systemdev/kernel-hal.rst:7
 msgid "A Linux kernel related issue"
-msgstr ""
+msgstr "Problému spojeném s Linuxovým jádrem"
 
 #: ../../systemdev/kernel-hal.rst:8
 msgid "An issue related to the system-image upgrade process"
-msgstr ""
+msgstr "Problému spojeném s aktualizací bitové kopie systému"
 
 #: ../../systemdev/kernel-hal.rst:10
 msgid ""
@@ -296,24 +301,29 @@ msgid ""
 "preinstalled-apps` or :doc:`System software <../systemdev/index>`. See the "
 "respective documentation for each."
 msgstr ""
+"Tato stránka vám nepomůže, pokud chcete upravit :doc:`../contribute/"
+"preinstalled-apps` nebo :doc:`systémový software<..systemdev/index>`. V "
+"tomto případě se podívejte na příslušné dokumentace."
 
 #: ../../systemdev/kernel-hal.rst:14
 msgid ""
 "There are a few different groups of Ubuntu Touch devices with respect to how "
 "the kernel and hardware abstraction is implemented:"
 msgstr ""
+"Existuje několik různých skupin zařízení Ubuntu Touch s ohledem na "
+"implementaci jaderné a hardwarové abstrakce:"
 
 #: ../../systemdev/kernel-hal.rst:16 ../../systemdev/kernel-hal.rst:21
 msgid "Android 5.1 based ports"
-msgstr ""
+msgstr "Předělaných verzích založených na Androidu 5.1"
 
 #: ../../systemdev/kernel-hal.rst:17 ../../systemdev/kernel-hal.rst:56
 msgid "Halium based ports"
-msgstr ""
+msgstr "Předělaných verzích založených na projektu Halium"
 
 #: ../../systemdev/kernel-hal.rst:18
 msgid "Linux kernel"
-msgstr ""
+msgstr "Linuxovém jádru"
 
 #: ../../systemdev/kernel-hal.rst:23
 msgid ""
@@ -323,6 +333,11 @@ msgid ""
 "heavily modified for the specific hardware used in that device. These forks "
 "are also based off quite old Linux kernel versions."
 msgstr ""
+"Předělané verze Ubuntu Touch založené na Androidu 5.1 se skládají z Linux "
+"jádra pro dané zařízení a minimální části Android systému, na které funguje "
+"všechen hardware. Každé zařízení má svůj fork Linux jádra. Každý fork je "
+"velmi upraven pro hardware specifický pro dané zařízení. Tyto forky jsou "
+"také založeny na celkem starých verzích Linux jádra."
 
 #: ../../systemdev/kernel-hal.rst:25
 msgid ""
@@ -333,6 +348,11 @@ msgid ""
 "have kernel sources, but the \"Android device tree\" is not publicly "
 "available. The manufacturers of these devices provided binary builds instead."
 msgstr ""
+"Pro vytvoření jádra i systému Android byla pro některá zařízení nastavena "
+"průběžná integrace (CI). Pro ostatní zařízení je nutno manuální vytvoření z "
+"jejich repozitářů. Bohužel však nemáme dostupný zdrojový kód pro třetinu "
+"zařízení. Zařízení Bq a Meizu sice mají zdroje jádra, ale \"Android device "
+"tree\" není veřejně dostupný."
 
 #: ../../systemdev/kernel-hal.rst:29
 msgid "With CI"
@@ -459,7 +479,7 @@ msgstr ""
 #: ../../systemdev/kernel-hal.rst:67
 msgid ""
 "All new ports of UT to Android devices should follow the Halium process. "
-"Further details can be found under :doc:`Halium porting <../porting/Intro>`"
+"Further details can be found under :doc:`Halium porting <../porting/index>`"
 msgstr ""
 
 #: ../../systemdev/kernel-hal.rst:70
@@ -1278,7 +1298,7 @@ msgstr ""
 #: ../../systemdev/ubp-5.1.rst:9
 msgid ""
 "We highly suggest that you follow the :doc:`Halium porting guide <../porting/"
-"Intro>` if you want to bring up a new device. The steps in here are only "
+"index>` if you want to bring up a new device. The steps in here are only "
 "relevant for hammerhead, bacon and FP2."
 msgstr ""
 
