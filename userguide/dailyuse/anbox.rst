@@ -8,8 +8,8 @@ Android apps
     Your host device must have ``adb`` and ``fastboot`` installed.
 
 .. note::
-    You will need to execute commands on your Ubuntu Touch device to install Anbox and APKs.
-    You can do that by using the terminal application, but it is easier to use ``adb shell`` or :doc:`set up ssh </userguide/advanceduse/ssh>` to access your Ubuntu Touch device from your host.
+    You will need to execute commands on your Ubuntu Touch device (and/or attached computer) to install Anbox and APKs.
+    You can do that by using the terminal application, but it is easier to use ``adb shell`` or :doc:`set up SSH </userguide/advanceduse/ssh>` to access your Ubuntu Touch device from your computer.
 
 Supported devices
 -----------------
