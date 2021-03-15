@@ -85,7 +85,7 @@ As an example, these are the labels used in the Ubuntu Touch tracker:
   postpone the release are labeled this way.
 - **device: [DEVICE CODENAME]**: Issue affecting only the specified
   device(s).
-- **team: [TEAM NAME]**: Issue falls under the responsibility of a specific team (hal, middleware, UI).
+- **team: [TEAM NAME]**: Issue falls under the responsibility of a specific team (HAL, middleware, UI).
 
 .. note::
     If a repository tracking issues locally defines it's own labels, they
@@ -120,7 +120,7 @@ Bug Lifecycle
     **enhancement** instead of **bug**. **needs confirmation** is not
     applicable for feature requests.
 
-- A *User* files a new bug using the issue-template.
+- A *user* files a new bug using the issue-template.
 - The *QA-Team* labels it **needs confirmation** and tries to work with the user to confirm the bug and add potentially missing info to the report.
 - Once the report is complete a **team-label** is added to the issue, the issue will be put on the **awaiting-triage-list** of the project and the label needs confirmation will be replaced with **bug**.
 - The affected *Team* triages the issue and either rejects (label **wontfix**, closes and removes from the project) or accepts the issue.
