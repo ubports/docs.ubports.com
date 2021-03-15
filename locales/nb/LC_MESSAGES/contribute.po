@@ -1,0 +1,1229 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
+# This file is distributed under the same license as the UBports package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: UBports\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-09 17:42-0600\n"
+"PO-Revision-Date: 2021-03-14 07:55+0000\n"
+"Last-Translator: Jan Christian Sherdahl <jan@sherdahl.no>\n"
+"Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
+"ubports-docs/documentation-contribute/nb/>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
+
+#: ../../contribute/bugreporting.rst:2
+msgid "Bug reporting"
+msgstr "Feilrapportering"
+
+#: ../../contribute/bugreporting.rst:4
+#, fuzzy
+msgid "This page contains information to help you help us by reporting an actionable bug for Ubuntu Touch. It does NOT contain information on reporting bugs in apps, most of the time their entry in the OpenStore will specify where and how to do that."
+msgstr ""
+"Denne siden inneholder informasjon som hjelper deg med å rapportere en "
+"handlingsbar feil for Ubuntu Touch. Den inneholder IKKE informasjon om "
+"rapportering av feil i apper, mesteparten av tiden deres oppføring i "
+"OpenStore vil spesifisere hvor og hvordan de skal gjøre det."
+
+#: ../../contribute/bugreporting.rst:7
+msgid "Get the latest Ubuntu Touch"
+msgstr "Få den nyeste Ubuntu Touch"
+
+#: ../../contribute/bugreporting.rst:9
+msgid "This might seem obvious, but it's easy to miss. Go to (Settings - Updates) and make sure that your device doesn't have any Ubuntu updates available. If not, continue through this guide. If so, update your device and try to reproduce the bug. If it still occurs, continue through this guide. If not, do a little dance! The bug has already been fixed and you can continue using Ubuntu Touch."
+msgstr ""
+"Dette kan virke åpenbart, men det er lett å gå glipp av det. Gå til ("
+"Innstillinger - Oppdateringer) og sørg for at enheten ikke har noen "
+"tilgjengelige Ubuntu-oppdateringer. Hvis ikke, fortsett gjennom denne "
+"guiden. I så fall oppdaterer du enheten og prøver å reprodusere feilen. Hvis "
+"det fremdeles oppstår, fortsett gjennom denne guiden. Hvis ikke, gjør en "
+"liten dans! Feilen er allerede løst, og du kan fortsette å bruke Ubuntu "
+"Touch."
+
+#: ../../contribute/bugreporting.rst:12
+msgid "Check if the bug is already reported"
+msgstr "Sjekk om feilen allerede er rapportert"
+
+#: ../../contribute/bugreporting.rst:14
+#, fuzzy
+msgid "Open up the bug tracker for `ubuntu-touch <https://github.com/ubports/ubuntu-touch>`_."
+msgstr ""
+"Åpne feilsporeren for `ubuntu-touch <https://github.com/ubports/ubuntu-"
+"touch>`_."
+
+#: ../../contribute/bugreporting.rst:17
+msgid "Pinephone users should check for and report bugs `here <https://gitlab.com/ubports/community-ports/pinephone>`_"
+msgstr ""
+"Pinephone-brukere bør se etter og rapportere feil `her <https://gitlab.com/"
+"ubports/community-ports/pinephone>`_"
+
+#: ../../contribute/bugreporting.rst:19
+msgid "First, you'll need to make sure that the bug you're trying to report hasn't been reported before. Search through the bugs reported. When searching, use a few words that describe what you're seeing. For example, \"Lock screen transparent\" or \"Lock screen shows activities\"."
+msgstr ""
+"Først må du sørge for at feilen du prøver å rapportere ikke har blitt "
+"rapportert tidligere. Søk gjennom de rapporterte feilene. Når du søker, bruk "
+"noen få ord som beskriver det du ser. For eksempel \"Låseskjerm "
+"gjennomsiktig\" eller \"Låseskjerm viser aktiviteter\"."
+
+#: ../../contribute/bugreporting.rst:21
+msgid "If you find that a bug report already exists, select the \"Add your Reaction\" button (it looks like a smiley face) and select the +1 (thumbs up) reaction. This shows that you are also experiencing the bug."
+msgstr ""
+"Hvis du oppdager at en feilrapport allerede eksisterer, velger du knappen \""
+"Legg til din reaksjon\" (det ser ut som et smilefjes) og velger +1 (tommel "
+"opp) reaksjonen. Dette viser at du også opplever feilen."
+
+#: ../../contribute/bugreporting.rst:23
+msgid "If the report is missing any of the information specified later in this document, please add it yourself to help the developers fix the bug."
+msgstr ""
+"Hvis rapporten mangler noe av informasjonen som er spesifisert senere i "
+"dette dokumentet, kan du legge den til for å hjelpe utviklerne med å fikse "
+"feilen."
+
+#: ../../contribute/bugreporting.rst:26
+#, fuzzy
+msgid "Reproduce the issue you've found"
+msgstr "Gjengi problemet du har funnet"
+
+#: ../../contribute/bugreporting.rst:28
+msgid "Next, find out exactly how to recreate the bug that you've found. Document the exact steps that you took to find the problem in detail. Then, reboot your phone and perform those steps again. If the problem still occurs, continue on to the next step. `If not... <https://youtu.be/nn2FB1P_Mn8?t=10s>`_"
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:31
+msgid "Making the bug report"
+msgstr "Å lage feilrapporten"
+
+#: ../../contribute/bugreporting.rst:33
+msgid "Now it's time for what you've been waiting for, the bug report itself! Bug reports need to be filed in English."
+msgstr ""
+"Nå er det tid for det du har ventet på, selve feilrapporten! Feilrapporter "
+"må arkiveres på engelsk."
+
+#: ../../contribute/bugreporting.rst:35
+#, fuzzy
+msgid "First, pull up the `bug tracker <https://github.com/ubports/ubuntu-touch>`_ and click \"New Issue\". Log in to GitHub if you haven't yet."
+msgstr ""
+"Først trekker du opp `bug tracker <https://github.com/ubports/ubuntu-touch>` "
+"_ og klikker \"New Issue\". Logg inn på GitHub hvis du ikke har gjort det "
+"ennå."
+
+#: ../../contribute/bugreporting.rst:37
+msgid "Next, you'll need to name your bug. Pick a name that says what's happening, but don't be too wordy. Four to eight words should be enough."
+msgstr ""
+"Deretter må du gi navngi feilen ditt. Velg et navn som sier hva som skjer, "
+"men ikke bruk for mange ord. Fire til åtte ord skal være nok."
+
+#: ../../contribute/bugreporting.rst:39
+msgid "Now, write your bug report. A good bug report includes the following:"
+msgstr "Nå, skriv feilrapporten din. En god feilrapport inneholder følgende:"
+
+#: ../../contribute/bugreporting.rst:41
+msgid "What happened: A synopsis of the erroneous behavior"
+msgstr "Hva skjedde: En oversikt over feilaktig oppførsel"
+
+#: ../../contribute/bugreporting.rst:42
+msgid "What I expected to happen: A synopsis of what should have happened, if there wasn't an error"
+msgstr ""
+"Hva jeg forventet å skje: En oversikt over hva som burde ha skjedd, hvis det "
+"ikke var en feil"
+
+#: ../../contribute/bugreporting.rst:43
+msgid "Steps to reproduce: You wrote these down earlier, right?"
+msgstr ""
+"Fremgangsmåte for å reprodusere: Du skrev disse ned tidligere, ikke sant?"
+
+#: ../../contribute/bugreporting.rst:44
+#, fuzzy
+msgid "Software Version: Go to (Settings - About) and list what appears on the \"OS\" line of this screen. Also include the release channel that you used when you installed Ubuntu on this phone."
+msgstr ""
+"Programvareversjon: Gå til (Innstillinger - Om) og oppgi hva som vises på \""
+"OS\" -linjen på dette skjermbildet. Ta også med utgivelseskanalen du brukte "
+"da du installerte Ubuntu på denne telefonen."
+
+#: ../../contribute/bugreporting.rst:46
+msgid "Once you're finished with that, post the report. You can't add labels yourself, so please don't forget to state the device you're experiencing the issue on in the description so a moderator can easily add the correct tags later."
+msgstr ""
+"Når du er ferdig med det, legg ut rapporten. Du kan ikke legge til etiketter "
+"selv, så ikke glem å oppgi enheten du opplever problemet i beskrivelsen, "
+"slik at en moderator enkelt kan legge til de riktige etikettene senere."
+
+#: ../../contribute/bugreporting.rst:48
+msgid "A developer or QA-team member will confirm and triage your bug, then work can begin on it. If you are missing any information, you will be asked for it, so make sure to check in often!"
+msgstr ""
+"En utvikler eller et QA-teammedlem vil bekrefte og prioritere feilen din, så "
+"kan arbeidet begynne med den. Hvis du mangler informasjon, blir du bedt om "
+"det, så sørg for å sjekke inn ofte!"
+
+#: ../../contribute/bugreporting.rst:51
+#, fuzzy
+msgid "Getting Logs"
+msgstr "Få logger"
+
+#: ../../contribute/bugreporting.rst:53
+msgid "Here we'll discuss the general steps to get logs, files that contain important debugging messages, on Ubuntu Touch. You may be asked for logs after submitting your issue. This section will help you to retrieve these logs from the device."
+msgstr ""
+"Her vil vi diskutere de generelle trinnene for å få logger, filer som "
+"inneholder viktige feilsøkingsmeldinger, på Ubuntu Touch. Du kan bli bedt om "
+"logger etter at du har sendt inn problemet. Denne delen vil hjelpe deg med å "
+"hente ut disse loggene fra enheten."
+
+#: ../../contribute/bugreporting.rst:57
+msgid "Log files may contain information you prefer to keep private. Please be sure to skim through them to ensure this is not the case before posting them. We can coordinate to get them through e-mail or a similarly less public medium."
+msgstr ""
+"Loggfiler kan inneholde informasjon du foretrekker å holde privat. Sørg for "
+"å skumme gjennom dem for å sikre at dette ikke er tilfelle før du legger dem "
+"ut. Vi kan koordinere for å få de via e-post eller et lignende mindre "
+"offentlig medium."
+
+#: ../../contribute/bugreporting.rst:59
+msgid "To get ready, download the `Logviewer app <https://open-store.io/app/logviewer.neothethird>`_ from the OpenStore. This app will help us find, view, and send the logs we need."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:61
+msgid "Now, open the Logviewer app. You'll see a list of all of the log files available in your user log folder, ``/home/phablet/.cache/upstart/``. This folder contains many, but not all, of the logs for software running on your device. You can tap on any log to view it, then tap the \"send\" icon in the top right corner to share it using an online service."
+msgstr ""
+
+#: ../../contribute/bugreporting.rst:63
+msgid "If you don't see the log that you've been asked to send in Logviewer, it may be in a different folder or the application may not have created any logs yet. Tell this to the person who asked you for the logs. They should be able to get you the information you need to get back on track."
+msgstr ""
+"Hvis du ikke ser loggen du har blitt bedt om å sende i Logviewer, kan den "
+"være i en annen mappe eller applikasjonen har kanskje ikke opprettet noen "
+"logger ennå. Fortell dette til personen som ba deg om loggene. De skal kunne "
+"få den informasjonen du trenger for å komme tilbake på sporet."
+
+#: ../../contribute/documentation.rst:2
+msgid "Documentation"
+msgstr "Dokumentasjon"
+
+#: ../../contribute/documentation.rst:5
+msgid "Documentation on this site is written in ReStructuredText, or RST for short. Please check the `RST Primer <http://www.sphinx-doc.org/en/stable/rest.html>`_ if you are not familiar with RST."
+msgstr ""
+
+#: ../../contribute/documentation.rst:7
+msgid "This page will guide you through writing great documentation for the UBports project that can be featured on this site."
+msgstr ""
+"Denne siden vil guide deg gjennom å skrive god dokumentasjon for UBports-"
+"prosjektet som kan vises på dette nettstedet."
+
+#: ../../contribute/documentation.rst:10
+msgid "Documentation guidelines"
+msgstr "Retningslinjer for dokumentasjon"
+
+#: ../../contribute/documentation.rst:12
+msgid "These rules govern how you should write your documentation to avoid problems with style, format, or linking."
+msgstr ""
+"Disse reglene styrer hvordan du skal skrive dokumentasjonen for å unngå "
+"problemer med stil, format eller kobling."
+
+#: ../../contribute/documentation.rst:15
+msgid "Title"
+msgstr "Tittel"
+
+#: ../../contribute/documentation.rst:17
+msgid "All pages must have a document title that will be shown in the table of contents (left sidebar) and at the top of the page."
+msgstr ""
+"Alle sider må ha en dokumenttittel som vises i innholdsfortegnelsen (venstre "
+"sidefelt) og øverst på siden."
+
+#: ../../contribute/documentation.rst:19
+#, fuzzy
+msgid "Titles should be \"sentence cased\" rather than \"Title Cased\". For example::"
+msgstr ""
+"Titler skal være \"setningsdommer\" i stedet for \"Tittel tilfelle\". For "
+"eksempel::"
+
+#: ../../contribute/documentation.rst:28
+#, fuzzy
+msgid "There isn't a single definition of title casing that everyone follows, but sentence casing is easy. This helps keep capitalization in the table of contents consistent."
+msgstr ""
+"Det er ikke en eneste definisjon av tittelhus som alle følger, men "
+"setningshus er enkelt. Dette bidrar til å holde bokstaver i "
+"innholdsfortegnelsen konsistente."
+
+#: ../../contribute/documentation.rst:30
+msgid "Page titles are underlined with equals signs. For example, the markup for :doc:`./bugreporting` includes the following title:"
+msgstr ""
+
+#: ../../contribute/documentation.rst:37
+msgid "Note that:"
+msgstr "Merk at:"
+
+#: ../../contribute/documentation.rst:39
+msgid "The title is sentence cased"
+msgstr ""
+
+#: ../../contribute/documentation.rst:40
+msgid "The title is underlined with equals signs"
+msgstr "Tittelen er understreket med likhetstegn"
+
+#: ../../contribute/documentation.rst:41
+#, fuzzy
+msgid "The underline spans the title completely without going over"
+msgstr "Understreken spenner over tittelen helt uten å gå over"
+
+#: ../../contribute/documentation.rst:43
+msgid "Incorrect examples of titles include:"
+msgstr "Feil eksempler på titler inkluderer:"
+
+#: ../../contribute/documentation.rst:45
+msgid "Incorrect casing"
+msgstr ""
+
+#: ../../contribute/documentation.rst:52
+#, fuzzy
+msgid "Underline too short"
+msgstr "Understreker for kort"
+
+#: ../../contribute/documentation.rst:59
+#, fuzzy
+msgid "Underline too long"
+msgstr "Understreker for lange"
+
+#: ../../contribute/documentation.rst:68
+msgid "Headings"
+msgstr "Topptekst"
+
+#: ../../contribute/documentation.rst:70
+msgid "There are several levels of headings that you may place on your page. These levels are shown here in order:"
+msgstr ""
+"Det er flere nivåer av overskrifter du kan plassere på siden din. Disse "
+"nivåene vises her i rekkefølge:"
+
+#: ../../contribute/documentation.rst:86
+#, fuzzy
+msgid "Each heading level creates a sub-section in the global table of contents tree available when the documentation is built. In the primary (web) version of the documentation, this only shows four levels deep from the top level of the documentation. Please refrain from using more heading levels than will show in this tree as it makes navigating your document difficult. If you must use this many heading levels, it is a good sign that your document should be split up into multiple pages."
+msgstr ""
+"Hvert overskriftsnivå oppretter en underseksjon i det globale "
+"innholdsfortegnelsestreet som er tilgjengelig når dokumentasjonen er bygget. "
+"I den primære (nett) versjonen av dokumentasjonen viser dette bare fire "
+"nivåer dypt fra det øverste nivået i dokumentasjonen. Avstå fra å bruke "
+"flere overskriftsnivåer enn det som vises i dette treet, da det "
+"vanskeliggjør navigering i dokumentet. Hvis du må bruke så mange "
+"overskriftsnivåer, er det et godt tegn på at dokumentet ditt skal deles opp "
+"i flere sider."
+
+#: ../../contribute/documentation.rst:89
+msgid "Table of contents"
+msgstr "Innholdsfortegnelse"
+
+#: ../../contribute/documentation.rst:91
+msgid "People can't navigate to your new page if they can't find it. Neither can Sphinx. That's why you need to add new pages to Sphinx's table of contents."
+msgstr ""
+"Folk kan ikke navigere til den nye siden din hvis de ikke finner den. Det "
+"kan heller ikke Sphinx. Derfor må du legge til nye sider i Sphinx "
+"innholdsfortegnelse."
+
+#: ../../contribute/documentation.rst:93
+msgid "You can do this by adding the page to the ``index.rst`` file in the same directory that you created it. For example, if you create a file called \"newpage.rst\", you would add the line marked with a chevron (>) in the nearest index:"
+msgstr ""
+
+#: ../../contribute/documentation.rst:105
+msgid "The order matters. If you would like your page to appear in a certain place in the table of contents, place it there. In the previous example, newpage would be added to the end of this table of contents."
+msgstr ""
+"Bestillingen betyr noe. Hvis du vil at siden din skal vises på et bestemt "
+"sted i innholdsfortegnelsen, plasserer du den der. I forrige eksempel vil "
+"newpage bli lagt til på slutten av denne innholdsfortegnelsen."
+
+#: ../../contribute/documentation.rst:108
+msgid "Moving pages"
+msgstr ""
+
+#: ../../contribute/documentation.rst:110
+msgid "Sometimes it becomes necessary to move a page from one place in the documentation to another. Generally this is to improve document flow: For example, it makes more sense for the page to come after a page you've just added in a different section."
+msgstr ""
+"Noen ganger blir det nødvendig å flytte en side fra ett sted i "
+"dokumentasjonen til et annet. Generelt er dette for å forbedre "
+"dokumentflyten: For eksempel er det mer fornuftig at siden kommer etter en "
+"side du nettopp har lagt til i en annen seksjon."
+
+#: ../../contribute/documentation.rst:112
+msgid "However, people link to our documentation from many sources that we do not control. Blogs, websites, and other documentation sites can direct people here using links that they may never update. It is a terrible experience to follow a link from a different site and land on a 404 page, left to your own devices to find your way in restructured documentation."
+msgstr ""
+"Imidlertid lenker folk til dokumentasjonen vår fra mange kilder som vi ikke "
+"kontrollerer. Blogger, nettsteder og andre dokumentasjonssider kan henvise "
+"folk hit ved hjelp av lenker som de kanskje aldri oppdaterer. Det er en "
+"forferdelig opplevelse å følge en lenke fra et annet nettsted og lande på en "
+"404-side, overlatt til dine egne enheter for å finne veien i omstrukturert "
+"dokumentasjon."
+
+#: ../../contribute/documentation.rst:114
+msgid "We use a tool called Rediraffe to avoid this bad experience. Rediraffe creates redirect pages which can send a user from an old, invalid link to a new, useful link. Please create a redirect link when changing a page's name or moving a page within the documentation's directory structure. Redirect links are created by placing the filename of the old document and the filename of the new document, relative to the documentation's root, in the `redirects.txt file <https://github.com/ubports/docs.ubports.com/blob/master/redirects.txt>`_."
+msgstr ""
+
+#: ../../contribute/documentation.rst:116
+msgid "We use Rediraffe's ``checkdiff`` builder to ensure that pages are not deleted from the documentation without a redirect in place. This builder is run as part of the ``build.sh`` script in the repository and as part of our automated build once you submit a Pull Request."
+msgstr ""
+
+#: ../../contribute/documentation.rst:118
+msgid "What follows are some examples of situations where you should create redirects."
+msgstr ""
+"Det som følger er noen eksempler på situasjoner der du bør opprette "
+"viderekoblinger."
+
+#: ../../contribute/documentation.rst:120
+msgid "You are moving ``systemdev/calendars.rst`` to ``appdev/calendars.rst``. Add the following to the ``redirects.txt`` file::"
+msgstr ""
+
+#: ../../contribute/documentation.rst:124
+msgid "You are moving ``appdev/clickable.rst`` into several pages in ``appdev/clickable/`` to give significantly more information about the tool than there was previously. You have created an introduction page, ``appdev/clickable/introduction.rst``. In this case, it would be a good idea to redirect the old page to the new introduction page. This can be done by adding the following to ``redirects.txt``::"
+msgstr ""
+
+#: ../../contribute/documentation.rst:129
+msgid "Warnings"
+msgstr "Advarsler"
+
+#: ../../contribute/documentation.rst:131
+msgid "Your edits must not introduce any warnings into the documentation build. If any warnings occur, the build will fail and your pull request will be marked with a red 'X'. Please ensure that your RST is valid and correct before you create a pull request. This is done automatically (via sphinx-build crashing with your error) if you follow :ref:`our build instructions <doc-contribution-workflow>` below."
+msgstr ""
+
+#: ../../contribute/documentation.rst:135
+msgid "Line length"
+msgstr "Linjelengde"
+
+#: ../../contribute/documentation.rst:137
+msgid "There is no restriction on line length in this repository. Please do not break lines at an arbitrary line length. Instead, turn on word wrap in your text editor."
+msgstr ""
+"Det er ingen begrensning på linjelengden i dette arkivet. Vennligst ikke "
+"bryt linjer med en vilkårlig linjelengde. I stedet slår du på ordpakking i "
+"tekstredigeringsprogrammet."
+
+#: ../../contribute/documentation.rst:142
+#, fuzzy
+msgid "Contribution workflow"
+msgstr "Arbeidslyt bidrag"
+
+#: ../../contribute/documentation.rst:144
+msgid "The following steps will help you to make a contribution to this documentation after you have written a document."
+msgstr ""
+"Følgende trinn vil hjelpe deg med å gi et bidrag til denne dokumentasjonen "
+"etter at du har skrevet et dokument."
+
+#: ../../contribute/documentation.rst:147
+msgid "You will need a GitHub account to complete these steps. If you do not have one, click `here <https://github.com/join>`_ to begin the process of making an account."
+msgstr ""
+
+#: ../../contribute/documentation.rst:150
+msgid "Forking the repository"
+msgstr "Forgrene arkivet"
+
+#: ../../contribute/documentation.rst:152
+msgid "You can make more advanced edits to our documentation by forking `ubports/docs.ubports.com <https://github.com/ubports/docs.ubports.com>`_ on GitHub. If you're not sure how to do this, check out the excellent GitHub guide on `forking projects <https://guides.github.com/activities/forking/>`_."
+msgstr ""
+
+#: ../../contribute/documentation.rst:155
+msgid "Building the documentation"
+msgstr ""
+
+#: ../../contribute/documentation.rst:157
+msgid "If you'd like to build this documentation *before* sending a PR (which you should), follow these instructions on your *local copy* of your fork of the repository."
+msgstr ""
+
+#: ../../contribute/documentation.rst:159
+msgid "The documentation can be built by running ``./build.sh`` in the root of this repository. The script will also create a virtual build environment in ``~/ubportsdocsenv`` if none is present."
+msgstr ""
+
+#: ../../contribute/documentation.rst:161
+msgid "If all went well, you can enter the ``_build/html`` directory and open ``index.html`` to view the UBports documentation."
+msgstr ""
+
+#: ../../contribute/documentation.rst:163
+msgid "If you have trouble building the docs, the first thing to try is deleting the build environment. Run ``rm -r ~/ubportsdocsenv`` and try the build again. Depending on when you first used the build script, you may need to run the ``rm`` command with ``sudo``."
+msgstr ""
+
+#: ../../contribute/documentation.rst:166
+msgid "Final check of your contribution"
+msgstr "Sluttkontroll av ditt bidrag"
+
+#: ../../contribute/documentation.rst:168
+#, fuzzy
+msgid "After you have created your PR on github, the CI (continuous integration) system will make a test build of your contribution. Please double check whether this builds successfully and whether the result looks as you intended it to:"
+msgstr ""
+"Etter at du har opprettet din PR på github, vil CI (kontinuerlig integrasjon)"
+" -systemet lage en testoppbygging av ditt bidrag. Vennligst dobbeltsjekk om "
+"dette bygger vellykket, og om resultatet ser ut som du hadde tenkt det:"
+
+#: ../../contribute/documentation.rst:170
+msgid "Scroll to the bottom of the \"Conversation\" tab of your PR on github, here you will see the checks (You may have to click on \"Show all checks\")"
+msgstr ""
+
+#: ../../contribute/documentation.rst:171
+msgid "It can have a yellow dot, i.e., \"pending\" then wait a few more seconds."
+msgstr ""
+"Den kan ha en gul prikk, dvs. \"på vent\", deretter vent noen sekunder til."
+
+#: ../../contribute/documentation.rst:172
+msgid "Or it may have a red X, i.e., it failed. In this case please check why it failed"
+msgstr ""
+"Eller det kan ha en rødt X, dvs. det mislyktes. I dette tilfellet må du "
+"sjekke hvorfor det mislyktes"
+
+#: ../../contribute/documentation.rst:173
+msgid "If it shows a green check mark, it means the PR could be built successfully"
+msgstr ""
+
+#: ../../contribute/documentation.rst:174
+msgid "Now please click on \"Details\","
+msgstr "Nå vennligst klikk på \"Detaljer\","
+
+#: ../../contribute/documentation.rst:175
+msgid "then \"Artifacts\" on the top right,"
+msgstr "deretter \"Artefakter\" øverst til høyre,"
+
+#: ../../contribute/documentation.rst:176
+msgid "then \"_build/html/..index.html\","
+msgstr "deretter \"_build/html/..index.html\","
+
+#: ../../contribute/documentation.rst:177
+msgid "and finally on \"Go to start page\"."
+msgstr "og til slutt på \"Gå til startside\"."
+
+#: ../../contribute/documentation.rst:179
+msgid "Now you can browse a complete build of the UBports docs site with your contribution included. Double check whether your changes look ok."
+msgstr ""
+"Nå kan du bla gjennom en komplett versjon av UBports docs-nettstedet med "
+"bidraget ditt inkludert. Dobbeltsjekk om endringene dine ser bra ut."
+
+#: ../../contribute/documentation.rst:183
+msgid "Alternative methods to contribute"
+msgstr "Alternative metoder for å bidra"
+
+#: ../../contribute/documentation.rst:186
+#: ../../contribute/translations.rst:2
+msgid "Translations"
+msgstr "Oversettelser"
+
+#: ../../contribute/documentation.rst:188
+#, fuzzy
+msgid "You may find the components of this document to translate at `its project in UBports Weblate`_."
+msgstr ""
+"Du kan finne komponentene i dette dokumentet som skal oversettes i `"
+"prosjektet i UBports Weblate`_."
+
+#: ../../contribute/documentation.rst:191
+msgid "Writing documents not in RST format"
+msgstr ""
+
+#: ../../contribute/documentation.rst:193
+msgid "If you would like to write documents for UBports but are not comfortable writing ReStructuredText, please write it without formatting and post it on the `UBports Forum`_ in the relevant section (likely General). Someone will be able to help you revise your draft and write the required ReStructuredText."
+msgstr ""
+"Hvis du ønsker å skrive dokumenter for UBports, men ikke er komfortabel med "
+"å skrive ReStructuredText, kan du skrive det uten formatering og legge det "
+"ut på `UBports Forum`_ i den aktuelle delen (sannsynligvis Generelt). Noen "
+"vil kunne hjelpe deg med å revidere utkastet ditt og skrive den nødvendige "
+"ReStructuredText."
+
+#: ../../contribute/documentation.rst:196
+msgid "Uncomfortable with Git"
+msgstr "Ukomfortabel med Git"
+
+#: ../../contribute/documentation.rst:198
+msgid "If you've written a complete document in ReStructuredText but aren't comfortable using Git or GitHub, please post it on the `UBports Forum`_ in the relevant section (likely General). Someone will be able to help you revise your draft and submit it to this documentation."
+msgstr ""
+"Hvis du har skrevet et komplett dokument i ReStructuredText, men ikke er "
+"komfortabel med å bruke Git eller GitHub, kan du legge det ut på `UBports "
+"Forum`_ i den relevante seksjonen (sannsynligvis Generelt). Noen vil kunne "
+"hjelpe deg med å revidere utkastet ditt og sende det inn til denne "
+"dokumentasjonen."
+
+#: ../../contribute/documentation.rst:201
+msgid "Current TODOs"
+msgstr "Nåværende GJØREMÅL"
+
+#: ../../contribute/documentation.rst:203
+msgid "This section lists the TODOs that have been included in this documentation. If you know how to fix one, please send us a Pull Request to make it better!"
+msgstr ""
+"Denne delen viser GJØREMÅL som er inkludert i denne dokumentasjonen. Hvis du "
+"vet hvordan du fikser en, kan du sende oss en Pull Request for å gjøre det "
+"bedre!"
+
+#: ../../contribute/documentation.rst:205
+msgid "To create a todo, add this markup to your page::"
+msgstr "For å lage et gjøremål, legg til denne markeringen på siden din ::"
+
+#: ../../contribute/index.rst:2
+#, fuzzy
+msgid "Contributing to UBports"
+msgstr "Bidrar til UBports"
+
+#: ../../contribute/index.rst:4
+msgid "Welcome! You're probably here because you want to contribute to UBports. The pages you'll find below here will help you do this in a way that's helpful to both the project and yourself."
+msgstr ""
+"Velkommen! Du er sannsynligvis her fordi du vil bidra til UBports. Sidene du "
+"finner nedenfor vil hjelpe deg med å gjøre dette på en måte som er nyttig "
+"for både prosjektet og deg selv."
+
+#: ../../contribute/index.rst:6
+#, fuzzy
+msgid "If you're just getting started, we always need help with :doc:`thorough bug reporting <bugreporting>`. If you are multilingual, :doc:`translations <translations>` are also a great place to start."
+msgstr ""
+"Hvis du akkurat har begynt, trenger vi alltid hjelp med: doc: `grundig "
+"feilrapportering <feilrapportering>`. Hvis du er flerspråklig, er: doc: `"
+"oversettelser <oversettelser> også et flott sted å starte."
+
+#: ../../contribute/index.rst:8
+msgid "If those aren't enough for you, see `our contribute page <https://ubports.com/page/vo-get-involved>`_ for an introduction of our focus groups."
+msgstr ""
+"Hvis det ikke er nok for deg, kan du se `vår bidragsside <https://ubports."
+"com/page/vo-get-involved>` _ for en introduksjon av våre fokusgrupper."
+
+#: ../../contribute/monetary.rst:2
+msgid "Monetary support"
+msgstr "Pengestøtte"
+
+#: ../../contribute/monetary.rst:4
+msgid "You can help us keep the lights on at UBports by becoming a patron on `Liberapay <https://liberapay.com/UBports/>`_ or `Patreon <https://www.patreon.com/ubports>`_!"
+msgstr ""
+"Du kan hjelpe oss med å holde lysene på UBports ved å bli bidragsyter `"
+"Liberapay <https://liberapay.com/UBports/>`_ eller `Patreon "
+"<https://www.patreon.com/ubports>`_!"
+
+#: ../../contribute/monetary.rst:6
+msgid "Your contribution finances our server infrastructure and debug services, and helps covering additional costs."
+msgstr ""
+"Ditt bidrag finansierer serverinfrastrukturen og feilsøkingstjenestene våre, "
+"og hjelper til med å dekke merkostnader."
+
+#: ../../contribute/preinstalled-apps.rst:2
+msgid "Preinstalled apps"
+msgstr "Preinstallerte apper"
+
+#: ../../contribute/preinstalled-apps.rst:4
+msgid "This page will help you get started with developing the apps which are included with Ubuntu Touch."
+msgstr ""
+"Denne siden hjelper deg med å komme i gang med å utvikle appene som følger "
+"med Ubuntu Touch."
+
+#: ../../contribute/preinstalled-apps.rst:7
+msgid "Core apps"
+msgstr "Kjerneapper"
+
+#: ../../contribute/preinstalled-apps.rst:9
+msgid "Core apps are applications which are included with UBports distributions of Ubuntu Touch **and** placed in the OpenStore for updates. Core apps are a good \"first development\" experience within UBports. Many are built with `Clickable`_, an easy to use build and test system for Ubuntu Touch apps. Most core apps can even be built and run without an Ubuntu Touch device!"
+msgstr ""
+"Kjerneapper er applikasjoner som er inkludert i UBports-distribusjoner av "
+"Ubuntu Touch **og** plassert i OpenStore for oppdateringer. Kjerne apper er "
+"en god \"første utvikling\" -opplevelse innen UBports. Mange er bygget med "
+"`Clickable`_, et brukervennlig bygge- og testsystem for Ubuntu Touch-apper. "
+"De fleste kjerneappene kan til og med bygges og kjøres uten en Ubuntu Touch-"
+"enhet!"
+
+#: ../../contribute/preinstalled-apps.rst:12
+msgid "Which core apps currently exist?"
+msgstr "Hvilke kjerneapper eksisterer for tiden?"
+
+#: ../../contribute/preinstalled-apps.rst:14
+msgid "A full list of the Ubuntu Touch core apps follows."
+msgstr "En fullstendig liste over Ubuntu Touch-kjerneapper følger."
+
+#: ../../contribute/preinstalled-apps.rst:21
+msgid "Application Name"
+msgstr "Applikasjon navn"
+
+#: ../../contribute/preinstalled-apps.rst:21
+msgid "Store page"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:21
+msgid "Code repository"
+msgstr "Kode arkiv"
+
+#: ../../contribute/preinstalled-apps.rst:23
+msgid "Calculator"
+msgstr "Kalkulator"
+
+#: ../../contribute/preinstalled-apps.rst:23
+msgid "`Calculator on OpenStore`_"
+msgstr "`Kalkulator i OpenStore`_"
+
+#: ../../contribute/preinstalled-apps.rst:23
+#, fuzzy
+msgid "`calculator-app on GitLab`_"
+msgstr "`kalkulator-app på GitLab`_"
+
+#: ../../contribute/preinstalled-apps.rst:24
+msgid "Calendar"
+msgstr "Kalender"
+
+#: ../../contribute/preinstalled-apps.rst:24
+msgid "`Calendar on OpenStore`_"
+msgstr "`Kalender i OpenStore`_"
+
+#: ../../contribute/preinstalled-apps.rst:24
+#, fuzzy
+msgid "`calendar-app on GitLab`_"
+msgstr "`kalender-app på GitLab`_"
+
+#: ../../contribute/preinstalled-apps.rst:25
+msgid "Clock"
+msgstr "Klokke"
+
+#: ../../contribute/preinstalled-apps.rst:25
+msgid "`Clock on OpenStore`_"
+msgstr "`Klokke i OpenStore`_"
+
+#: ../../contribute/preinstalled-apps.rst:25
+#, fuzzy
+msgid "`clock-app on GitLab`_"
+msgstr "`klokk-app på GitLab`_"
+
+#: ../../contribute/preinstalled-apps.rst:26
+msgid "File Manager"
+msgstr "Filbehandler"
+
+#: ../../contribute/preinstalled-apps.rst:26
+msgid "`File Manager on OpenStore`_"
+msgstr "`Filbehandler i OpenStore`_"
+
+#: ../../contribute/preinstalled-apps.rst:26
+#, fuzzy
+msgid "`filemanager-app on GitLab`_"
+msgstr "`filbehandler-app på GitLab`_"
+
+#: ../../contribute/preinstalled-apps.rst:27
+msgid "Gallery"
+msgstr "Galleri"
+
+#: ../../contribute/preinstalled-apps.rst:27
+msgid "`Gallery on OpenStore`_"
+msgstr "`Galleri i OpenStore`_"
+
+#: ../../contribute/preinstalled-apps.rst:27
+#, fuzzy
+msgid "`gallery-app on GitLab`_"
+msgstr "`galleri-app på GitLab`_"
+
+#: ../../contribute/preinstalled-apps.rst:28
+msgid "Music"
+msgstr "Musikk"
+
+#: ../../contribute/preinstalled-apps.rst:28
+msgid "`Music on OpenStore`_"
+msgstr "`Musikk i OpenStore`_"
+
+#: ../../contribute/preinstalled-apps.rst:28
+#, fuzzy
+msgid "`music-app on GitLab`_"
+msgstr "`musikk-app på GitLab`_"
+
+#: ../../contribute/preinstalled-apps.rst:29
+msgid "Notes"
+msgstr "Notater"
+
+#: ../../contribute/preinstalled-apps.rst:29
+msgid "`Notes on OpenStore`_"
+msgstr "`Notater i OpenStore`_"
+
+#: ../../contribute/preinstalled-apps.rst:29
+#, fuzzy
+msgid "`notes-app on GitLab`_"
+msgstr "`notater-app på GitLab`_"
+
+#: ../../contribute/preinstalled-apps.rst:30
+msgid "OpenStore"
+msgstr "OpenStore"
+
+#: ../../contribute/preinstalled-apps.rst:30
+msgid "`OpenStore... on OpenStore`_"
+msgstr "`OpenStore... i OpenStore`_"
+
+#: ../../contribute/preinstalled-apps.rst:30
+#, fuzzy
+msgid "`openstore-app on GitLab`_"
+msgstr "`openstore-app på GitLab`_"
+
+#: ../../contribute/preinstalled-apps.rst:31
+msgid "Terminal"
+msgstr "Terminal"
+
+#: ../../contribute/preinstalled-apps.rst:31
+msgid "`Terminal on OpenStore`_"
+msgstr "`Terminal i OpenStore`_"
+
+#: ../../contribute/preinstalled-apps.rst:31
+#, fuzzy
+msgid "`terminal-app on GitLab`_"
+msgstr "`terminal-app på GitLab`_"
+
+#: ../../contribute/preinstalled-apps.rst:32
+msgid "UBports Welcome"
+msgstr "UBports velkommen"
+
+#: ../../contribute/preinstalled-apps.rst:32
+msgid "`UBports Welcome on OpenStore`_"
+msgstr "`UBports velkommen i OpenStore`_"
+
+#: ../../contribute/preinstalled-apps.rst:32
+#, fuzzy
+msgid "`ubports-app on GitLab`_"
+msgstr "`ubports-app på GitLab`_"
+
+#: ../../contribute/preinstalled-apps.rst:33
+msgid "Weather"
+msgstr "Vær"
+
+#: ../../contribute/preinstalled-apps.rst:33
+msgid "`Weather on OpenStore`_"
+msgstr "`Vær i OpenStore`_"
+
+#: ../../contribute/preinstalled-apps.rst:33
+#, fuzzy
+msgid "`weather-app on GitLab`_"
+msgstr "`vær-app på GitLab`_"
+
+#: ../../contribute/preinstalled-apps.rst:37
+msgid "Other preinstalled apps"
+msgstr "Andre preinstallerte apper"
+
+#: ../../contribute/preinstalled-apps.rst:39
+msgid "The following applications are preinstalled in Ubuntu Touch but are not considered core apps. Most of the time these projects must be updated with the system because they use many system services which do not necessarily have a stable API."
+msgstr ""
+"Følgende applikasjoner er forhåndsinstallert i Ubuntu Touch, men regnes ikke "
+"som kjerneapper. Mesteparten av tiden må disse prosjektene oppdateres med "
+"systemet fordi de bruker mange systemtjenester som ikke nødvendigvis har en "
+"stabil API."
+
+#: ../../contribute/preinstalled-apps.rst:41
+msgid "These apps may be more difficult to work with, but their repository should contain a document stating how to build and run them on a device."
+msgstr ""
+"Disse appene kan være vanskeligere å jobbe med, men arkivet deres bør "
+"inneholde et dokument som sier hvordan du bygger og kjører dem på en enhet."
+
+#: ../../contribute/preinstalled-apps.rst:45
+#, fuzzy
+msgid "Browser (`morph-browser on GitHub`_)"
+msgstr "Nettleser (`morph-browser på GitHub`_)"
+
+#: ../../contribute/preinstalled-apps.rst:46
+#, fuzzy
+msgid "Contacts (`address-book-app on GitHub`_)"
+msgstr "Kontakter (`address-book-app på GitHub`_)"
+
+#: ../../contribute/preinstalled-apps.rst:47
+#, fuzzy
+msgid "Camera (`camera-app on GitLab`_)"
+msgstr "Kamera (`camera-app på GitLab`_)"
+
+#: ../../contribute/preinstalled-apps.rst:48
+#, fuzzy
+msgid "External Drives (`ciborium on GitHub`_)"
+msgstr "Eksterne disker (`ciborium på GitHub`_)"
+
+#: ../../contribute/preinstalled-apps.rst:49
+#, fuzzy
+msgid "Media Player (`mediaplayer-app on GitHub`_)"
+msgstr "Mediaspiller (`mediaplayer-app på GitHub`_)"
+
+#: ../../contribute/preinstalled-apps.rst:50
+#, fuzzy
+msgid "Messaging (`messaging-app on GitHub`_)"
+msgstr "Meldinger (`messaging-app på GitHub`_)"
+
+#: ../../contribute/preinstalled-apps.rst:51
+#, fuzzy
+msgid "Phone (`dialer-app on GitHub`_)"
+msgstr "Telefon (`dialer-app på GitHub`_)"
+
+#: ../../contribute/preinstalled-apps.rst:52
+#, fuzzy
+msgid "System Settings (`system-settings on GitHub`_)"
+msgstr "Systeminnstillinger (`system-settings på GitHub`_)"
+
+#: ../../contribute/preinstalled-apps.rst:54
+msgid "Instructions for contributing to these applications can be found in their respective repositories."
+msgstr ""
+"Instruksjoner for å bidra til disse applikasjonene finner du i deres "
+"respektive arkiver."
+
+#: ../../contribute/quality-assurance.rst:2
+msgid "Quality Assurance"
+msgstr "Kvalitetssikring"
+
+#: ../../contribute/quality-assurance.rst:4
+#, fuzzy
+msgid "This page explains how to help the UBports QA team, both as an official member or a new contributor. Please also read the :doc:`issue tracking </about/process/issue-tracking>` and :doc:`bugreporting <bugreporting>` guides to better understand the workflow. For real-time communication, you can join our `telegram group <http://t.me/ubports_qa_team>`_."
+msgstr ""
+"Denne siden forklarer hvordan du kan hjelpe UBports QA-team, både som et "
+"offisielt medlem eller som en ny bidragsyter. Les også: doc: `issue tracking "
+"</about/process/issue-tracking>` og: doc: `bugreporting <bugreporting>` "
+"guider for bedre å forstå arbeidsflyten. For sanntidskommunikasjon kan du "
+"bli med i `telegramgruppen <http://t.me/ubports_qa_team>` _."
+
+#: ../../contribute/quality-assurance.rst:7
+msgid "Smoke testing"
+msgstr "Røyktesting"
+
+#: ../../contribute/quality-assurance.rst:9
+msgid "To test the core functionality of the operating system, we have compiled `a set of standardized tests <https://gitlab.com/ubports/teams/qa/project-management/raw/master/QA-Plan-Template.ots>`_. Run these tests on your device to :doc:`find and report bugs and regressions <bugreporting>`. It's usually run on all devices before a new release to make sure no new issues were introduced."
+msgstr ""
+"For å teste kjernefunksjonaliteten til operativsystemet, har vi samlet `et "
+"sett med standardiserte tester <https://gitlab.com/ubports/teams/qa/"
+"project-management/raw/master/QA-Plan-Template.ots> `_. Kjør disse testene "
+"på enheten din til: doc: `finn og rapporter feil og regresjoner "
+"<feilrapportering>`. Det kjøres vanligvis på alle enheter før en ny "
+"utgivelse for å sikre at ingen nye problemer ble introdusert."
+
+#: ../../contribute/quality-assurance.rst:12
+#, fuzzy
+msgid "Confirming bug reports"
+msgstr "Bekrefter feilrapporter"
+
+#: ../../contribute/quality-assurance.rst:14
+#, fuzzy
+msgid "Unconfirmed bugreports are labeld **needs confirmation** to enable `global filtering <https://github.com/ubports/ubuntu-touch/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__. Browse through the list, read the bugreports and try to reproduce the issues that are described. If necessary, add :doc:`missing information or logs, or improve the quality of the report by other means <bugreporting>`. Leave a comment stating your device, channel, build number and whether or not you were able to reproduce the issue."
+msgstr ""
+"Ubekreftede feilrapporter merkes **trenger bekreftelse** for å aktivere `"
+"global filtrering <https://github.com/ubports/ubuntu-touch/"
+"issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation% 22> `__. Bla "
+"gjennom listen, les feilrapporter og prøv å gjengi problemene som er "
+"beskrevet. Hvis nødvendig, legg til: doc: `manglende informasjon eller "
+"logger, eller forbedre kvaliteten på rapporten på annen måte "
+"<feilrapportering>`. Legg igjen en kommentar der du angir enheten, kanalen, "
+"byggenummeret ditt og om du klarte å gjengi problemet."
+
+#: ../../contribute/quality-assurance.rst:16
+#, fuzzy
+msgid "If you have write-access to the repository, you can replace the **needs confirmation** label with **bug** (to mark it confirmed) or **invalid** (if the issue is definitely not reproducible). In that case it should be closed."
+msgstr ""
+"Hvis du har skrivetilgang til arkivet, kan du erstatte **behovsbekreftelse** "
+"-etiketten med **feil** (for å markere det bekreftet) eller **ugyldig** ("
+"hvis problemet definitivt ikke er reproduserbart). I så fall bør det lukkes."
+
+#: ../../contribute/quality-assurance.rst:18
+msgid "If you find two issues describing the same problem, leave a comment and try to find their differences. If they are in fact identical, close the newer one and label it **duplicate**."
+msgstr ""
+"Hvis du finner to problemer som beskriver det samme problemet, kan du legge "
+"igjen en kommentar og prøve å finne forskjellene. Hvis de faktisk er "
+"identiske, lukker du den nyere og merker den **duplikat**."
+
+#: ../../contribute/quality-assurance.rst:21
+msgid "Testing patches"
+msgstr "Testing av feilrettinger"
+
+#: ../../contribute/quality-assurance.rst:23
+#, fuzzy
+msgid "Pull-requests can be tested using the `QA scripts <https://github.com/ubports/ubports-qa-scripts>`_. Run ``ubports-qa -h`` for usage information."
+msgstr ""
+"Pull-forespørsler kan testes ved å bruke `QA-skriptene <https://github.com/"
+"ubports/ubports-qa-scripts>` _. Kjør ``ubports-qa -h`` for bruksinformasjon."
+
+#: ../../contribute/quality-assurance.rst:25
+#, fuzzy
+msgid "Once the pull-request has been merged, the issue it fixes is moved to the quality assurance column of the `GitHub project <https://github.com/ubports/ubuntu-touch/projects/3>`__. Please check if the issues in this column are still present in the latest update on the devel channel, then see if anything else has broken in the update. Check if the developer mentioned specific things to look out for when testing and leave a comment detailing your experience. If you have write-access to the repository, you can move the issue back to **In Development** (and reopen it) or forward to **Release Candidate** as specified by the :doc:`issue tracking guidelines </about/process/issue-tracking>`."
+msgstr ""
+"Når pull-forespørselen er slått sammen, blir problemet den løser flyttet til "
+"kvalitetssikringskolonnen i `GitHub-prosjektet <https://github.com/ubports/"
+"ubuntu-touch/projects/3>` __. Kontroller om problemene i denne kolonnen "
+"fremdeles er til stede i den siste oppdateringen på utviklingskanalen, og se "
+"om noe annet har brutt i oppdateringen. Sjekk om utvikleren nevnte "
+"spesifikke ting å passe på når du tester, og legg igjen en kommentar som "
+"beskriver din opplevelse. Hvis du har skrivetilgang til depotet, kan du "
+"flytte problemet tilbake til **In Development** (og åpne det på nytt) eller "
+"videresende til **Release Candidate** som spesifisert av: doc: `"
+"retningslinjer for problemsporing </ om / prosess / problemsporing> `."
+
+#: ../../contribute/quality-assurance.rst:28
+msgid "Initial triaging of issues"
+msgstr "Innledende prioritering av problemer"
+
+#: ../../contribute/quality-assurance.rst:30
+msgid "Initial triaging of new issues is done by QA-team members with write-access to the repository. If a new issue is filed, read the report and add the correct labels as specified by the :doc:`issue tracking guidelines </about/process/issue-tracking>`. You can also immediately start confirming the bugreport."
+msgstr ""
+"Innledende prioritering av nye utgaver gjøres av QA-teammedlemmer med "
+"skrivetilgang til arkivet. Hvis en ny utgave er arkivert, kan du lese "
+"rapporten og legge til de riktige etikettene som angitt i: doc: `"
+"retningslinjer for problemsporing </about/process/issue-tracking>`. Du kan "
+"også umiddelbart bekrefte feilrapporten."
+
+#: ../../contribute/quality-assurance.rst:32
+msgid "If the new issue has already been reported elsewhere, label it **duplicate** and close it."
+msgstr ""
+"Hvis det nye problemet allerede er rapportert andre steder, merk det "
+"**duplikat** og lukk det."
+
+#: ../../contribute/translations.rst:4
+msgid "Although English is the official base language for all UBports projects we believe you have the right to use it in any language you want."
+msgstr ""
+"Selv om engelsk er det offisielle basisspråket for alle UBports-prosjekter, "
+"mener vi at du har rett til å bruke det på hvilket som helst språk du vil."
+
+#: ../../contribute/translations.rst:6
+msgid "We are working hard to meet that goal, and you can help as well. You decide how much time you can put into translation. From minutes to hours, everything counts."
+msgstr ""
+"Vi jobber hardt for å nå det målet, og du kan også hjelpe. Du bestemmer hvor "
+"mye tid du kan bruke på oversettelse. Fra minutter til timer, alt teller."
+
+#: ../../contribute/translations.rst:9
+msgid "How does a text get translated (technical background)"
+msgstr "Hvordan oversettes en tekst (teknisk bakgrunn)"
+
+#: ../../contribute/translations.rst:10
+#, fuzzy
+msgid "Most apps running on Ubuntu Touch use `GNU gettext <https://www.gnu.org/software/gettext/>`_ for translations. A *.pot* template file holds an apps strings. From this template for every language an individual *.po* file is derived. Those *.po* files do contain the actual translations. To add a new language a new *.po* file needs to be created. To translate a string the *.po* file needs to be edited. Next to the original string (english in most cases) the appropriate translation needs to be entered following the *.po* gettext file syntax. Some apps do use `QtLinguist <https://doc.qt.io/qt-5/qtlinguist-index.html>`_ for translation. It does follow the same priciples only using *.ts* files for translations with another syntax. As template one *.ts* file is used."
+msgstr ""
+"De fleste apper som kjører på Ubuntu Touch bruker `GNU gettext "
+"<https://www.gnu.org/software/gettext/>` _ for oversettelser. En *.pot* "
+"malfil inneholder en appstrenger. Fra denne malen for hvert språk er en "
+"individuell *.po* -fil avledet. Disse *.po* -filene inneholder de faktiske "
+"oversettelsene. For å legge til et nytt språk må en ny *.po* -fil opprettes. "
+"For å oversette en streng må *.po* -filen redigeres. Ved siden av den "
+"originale strengen (i de fleste tilfeller engelsk), må den riktige "
+"oversettelsen legges inn etter *.po* gettext-filsyntaks. Noen apper bruker `"
+"QtLinguist <https://doc.qt.io/qt-5/qtlinguist-index.html>` _ for "
+"oversettelse. Det følger de samme prinsippene bare ved bruk av *.ts* -filer "
+"for oversettelser med en annen syntaks. Som mal brukes en *.ts* -fil."
+
+#: ../../contribute/translations.rst:14
+msgid "Within an app strings are marked either this way ``i18n.tr(\"string\")`` when using gettext or like this ``tr(\"string\")`` when using QtLinguist. When the app is built those translatable strings are extracted and written into the *.pot* or *.ts* template files. The *.po* and *.ts* language files then need to be updated from their template."
+msgstr ""
+"I en app er strengene merket på denne måten ``i18n.tr (\"string\") ``når du "
+"bruker gettext eller som denne ``tr (\"string\")`` når du bruker QtLinguist. "
+"Når appen er bygget, blir de oversettbare strengene hentet ut og skrevet inn "
+"i *.pot* eller *.ts* malfiler. Språkfilene *.po* og *.ts* må deretter "
+"oppdateres fra malen."
+
+#: ../../contribute/translations.rst:16
+msgid "Once strings have been translated, they are made available for users with a new release of an app."
+msgstr ""
+"Når strenger er oversatt, blir de gjort tilgjengelig for brukere med en ny "
+"utgivelse av en app."
+
+#: ../../contribute/translations.rst:19
+msgid "Methods of Translation"
+msgstr "Metoder for oversettelse"
+
+#: ../../contribute/translations.rst:21
+msgid "There are three commonly used ways to translate an app:"
+msgstr "Det er tre vanlige måter å oversette en app på:"
+
+#: ../../contribute/translations.rst:23
+#, fuzzy
+msgid "Weblate: A web based translation tool. UBports apps using Weblate can be translated `here <https://translate.ubports.com/projects/>`_. There is an automatic transfer of new strings from an apps repo to weblate. Translated strings get back as commits to the repo from weblate."
+msgstr ""
+"Weblate: Et nettbasert oversettelsesverktøy. UBports-apper som bruker "
+"Weblate kan oversettes `her <https://translate.ubports.com/projects/> `_. "
+"Det er en automatisk overføring av nye strenger fra en app-repo til weblate. "
+"Oversatte strenger kommer tilbake når de forplikter seg til repoen fra "
+"nettstedet."
+
+#: ../../contribute/translations.rst:24
+#, fuzzy
+msgid "Editor: Translation is done by changing *.po* files with the editor of your choice, and a GitHub/GitLab account. The *.po*/*.ts* files for each project are in their repository on `our GitLab organization <https://gitlab.com/ubports/apps>`_ or on `our GitHub organization <https://github.com/ubports>`_. After translating the translator commits new translations to an apps repo generally by opening a merge request/pull request."
+msgstr ""
+"Editor: Oversettelse gjøres ved å endre *.po* -filer med redaktøren du "
+"ønsker, og en GitHub / GitLab-konto. *.Po*/*. Ts* -filene for hvert prosjekt "
+"er i deres arkiv på `vår GitLab-organisasjon <https://gitlab.com/ubports/"
+"apps>` _ eller på vår GitHub-organisasjon <https: // github .com / ubports>`"
+"_. Etter oversettelsen forplikter oversetteren seg til nye oversettelser til "
+"en app-repo, vanligvis ved å åpne en fusjons-/trekkforespørsel."
+
+#: ../../contribute/translations.rst:25
+msgid "Team translation: We also have  a `Translation Forum <https://forums.ubports.com/category/39/translations>`_ to discuss translating Ubuntu Touch and its core apps. Some projects are using Telegram or Matrix groups too, and some teams are still using the Ubuntu Launchpad framework."
+msgstr ""
+"Teamoversettelse: Vi har også et `Oversettelsesforum <https://forums.ubports."
+"com/category/39/translations>` for å diskutere oversettelse av Ubuntu Touch "
+"og dets kjerneapper. Noen prosjekter bruker også Telegram- eller Matrix-"
+"grupper, og noen team bruker fortsatt Ubuntu Launchpad-rammeverket."
+
+#: ../../contribute/translations.rst:27
+msgid "Core apps and some community apps like dekko or TELEports are generally using weblate for translation. This is the preferred way to translate and it does not need any programming skills. Please have a look at the `UBports translation projects <https://translate.ubports.com/projects/>`_. When using weblate do not edit *.po* files manually. Commiting edited *.po* files can break the automated process of translation."
+msgstr ""
+"Kjerneapps og noen fellesskapsapper som dekko eller TELEports bruker "
+"vanligvis weblate for oversettelse. Dette er den foretrukne måten å "
+"oversette på, og det trenger ingen programmeringsferdigheter. Ta en titt på `"
+"UBports oversettelsesprosjekter <https://translate.ubports.com/projects/>` "
+"_. Når du bruker weblate, må du ikke redigere *.po* -filer manuelt. "
+"Forpliktelse av redigerte *.po* -filer kan bryte den automatiserte prosessen "
+"med oversettelse."
+
+#: ../../contribute/translations.rst:29
+#, fuzzy
+msgid "Most apps maintained by individual developers are mainly using *.pot*/*.po* files for translation. Those generally need to be edited manually and commited to the apps repo."
+msgstr ""
+"De fleste apper som vedlikeholdes av individuelle utviklere bruker "
+"hovedsakelig *.pot*/*. Po* filer for oversettelse. De må vanligvis redigeres "
+"manuelt og commited til appens arkiv."
+
+#: ../../contribute/translations.rst:32
+msgid "How-To"
+msgstr ""
+
+#: ../../contribute/translations.rst:35
+msgid "UBports Weblate"
+msgstr "UBports Weblate"
+
+#: ../../contribute/translations.rst:37
+msgid "You can go to `UBports Weblate <https://translate.ubports.com/projects/>`_, click on \"Dashboard\" button, go to a project, and start making anonymous suggestions without being registered. If you want to save your translations, you must be logged in."
+msgstr ""
+"Du kan gå til `UBports Weblate <https://translate.ubports.com/projects/>` _, "
+"klikke på \"Dashboard\" -knappen, gå til et prosjekt og begynne å komme med "
+"anonyme forslag uten å være registrert. Hvis du vil lagre oversettelsene "
+"dine, må du være logget inn."
+
+#: ../../contribute/translations.rst:39
+msgid "For that, go to UBports Weblate and click on the \"Register\" button. Once in the \"Registration\" page, you'll find two options:"
+msgstr ""
+"For det, gå til UBports Weblate og klikk på \"Registrer\" -knappen. Når på \""
+"Registrering\"s-siden finner du to alternativer:"
+
+#: ../../contribute/translations.rst:41
+msgid "Register using a valid email address, a username, and your full name. You'll need to resolve an easy control question too."
+msgstr ""
+"Registrer deg ved hjelp av en gyldig e-postadresse, et brukernavn og ditt "
+"fulle navn. Du må også løse et enkelt kontrollspørsmål."
+
+#: ../../contribute/translations.rst:42
+msgid "Register using a third party registration. Currently the system supports accounts from openSUSE, GitHub, Fedora, and Ubuntu."
+msgstr ""
+"Registrer deg ved hjelp av en tredjepartsregistrering. For tiden støtter "
+"systemet kontoer fra openSUSE, GitHub, Fedora og Ubuntu."
+
+#: ../../contribute/translations.rst:44
+msgid "Once you're logged in, the site is self-explanatory and there you'll find all the options and customization you can do."
+msgstr ""
+"Når du er logget inn, er nettstedet selvforklarende, og der finner du alle "
+"alternativene og tilpasningene du kan gjøre."
+
+#: ../../contribute/translations.rst:46
+#, fuzzy
+msgid "Now, get on with it. The first step is to search if your language already exists in the project of your choice. If your language is not available for a specific project, you can add it yourself."
+msgstr ""
+"Nå, fortsett med det. Det første trinnet er å søke om språket ditt allerede "
+"eksisterer i prosjektet du velger. Hvis språket ditt ikke er tilgjengelig "
+"for et bestemt prosjekt, kan du legge det til selv."
+
+#: ../../contribute/translations.rst:49
+msgid ".po/.ts File Editor"
+msgstr ""
+
+#: ../../contribute/translations.rst:51
+msgid "If you want to work with *.po*/*.ts* files directly you need to know what you're doing for sure. The first thing you should always remember is:"
+msgstr ""
+"Hvis du vil jobbe med *.po*/*. Ts* filer direkte, må du være helt sikker på "
+"hva du gjør. Det første du alltid bør huske er:"
+
+#: ../../contribute/translations.rst:54
+msgid "Do **never** commit *.po* files to projects that are translated using weblate. This could break the whole translation exchange process with weblate."
+msgstr ""
+"Utfør **aldri** commit på *.po* -filer til prosjekter som oversettes ved "
+"hjelp av weblate. Dette kan bryte hele oversettelsesprosessen med weblate."
+
+#: ../../contribute/translations.rst:56
+#, fuzzy
+msgid "As was said up above, you need a file editor of your choice and a GitHub/GitLab account to translate *.po*/*.ts* files directly. Idealy you do have `clickable <http://clickable.bhdouglass.com/en/latest/>`_ set up and know how to build an app."
+msgstr ""
+"Som det ble sagt ovenfor, trenger du en filredigerer du ønsker og en GitHub /"
+" GitLab-konto for å oversette *.po*/*. Ts* filer direkte. Ideelt sett har du "
+"`klikkbar <http://clickable.bhdouglass.com/en/latest/>` _ konfigurert og vet "
+"hvordan du bygger en app."
+
+#: ../../contribute/translations.rst:58
+msgid "There are online gettext .po editors and those you can install on your computer. You can choose whatever editor you want, but we prefer to work with free software only. There are too many plain text editors and tools to help you translate *.po*/*.ts* files to list here."
+msgstr ""
+"Det er getpo .po-redaktører på nettet og disse kan du installere på "
+"datamaskinen din. Du kan velge hvilken redaktør du vil ha, men vi "
+"foretrekker å bare bruke gratis programvare. Det er for mange "
+"redigeringsprogrammer og verktøy for å hjelpe deg med å oversette *.po*/*. "
+"Ts* -filer til å liste her."
+
+#: ../../contribute/translations.rst:61
+#, fuzzy
+msgid "For high quality translations it is recommended to go through all of the steps given below. Although if you are not familiar with building apps using clickable, skip the steps 4. to 6. Although, you may not be able to translate the latest strings and you will not know if the strings fit into the apps layout."
+msgstr ""
+"For oversettelser av høy kvalitet anbefales det å gå gjennom alle trinnene "
+"nedenfor. Selv om du ikke er kjent med å bygge apper som kan klikkes, hopper "
+"du over trinn 4. til 6. Selv om du kanskje ikke kan oversette de nyeste "
+"strengene, vil du ikke vite om strengene passer inn i applayouten."
+
+#: ../../contribute/translations.rst:63
+msgid "How to proceed:"
+msgstr "Hvordan fortsette:"
+
+#: ../../contribute/translations.rst:65
+msgid "Fork the apps repo into your GitHub or GitLab account"
+msgstr ""
+
+#: ../../contribute/translations.rst:66
+msgid "Clone the repo locally or use GitLab's online editor"
+msgstr "Klon arkivet lokalt eller bruk GitLabs nettredigerer"
+
+#: ../../contribute/translations.rst:67
+msgid "(optional) Create a new branch for the translation"
+msgstr "(valgfritt) Opprett en ny gren for oversettelsen"
+
+#: ../../contribute/translations.rst:68
+#, fuzzy
+msgid "Build the app using clickable to get up-to-date *.pot*/*.ts* template files"
+msgstr "Bygg appen ved å klikke, for å bli oppdatert *.pot*/*. Ts* maler"
+
+#: ../../contribute/translations.rst:69
+msgid "Update the desired *.po*/*.ts* language file(s) from the template"
+msgstr "Oppdater ønsket *.po*/*. Ts* språkfil (er) fra malen"
+
+#: ../../contribute/translations.rst:70
+msgid "Translate all strings"
+msgstr "Oversett alle strengene"
+
+#: ../../contribute/translations.rst:71
+msgid "Build and install the app on your device and test the translations"
+msgstr "Bygg og installer appen på enheten din og test oversettelsene"
+
+#: ../../contribute/translations.rst:72
+msgid "(optional) Repeat steps 6. and 7. until you are satisfied with your work"
+msgstr "(valgfritt) Gjenta trinn 6. og 7. til du er fornøyd med arbeidet ditt"
+
+#: ../../contribute/translations.rst:73
+msgid "Push the translated *.po*/*.ts* file(s) to your forked repo [do NOT commit *.pot*/*.ts* template files]"
+msgstr ""
+
+#: ../../contribute/translations.rst:74
+msgid "Open a merge/pull request from your fork to the apps repo"
+msgstr ""
+
+#: ../../contribute/translations.rst:78
+#, fuzzy
+msgid "Translation Team Communication"
+msgstr "Kommunikasjon med oversettelsesteamet"
+
+#: ../../contribute/translations.rst:80
+msgid "You may talk to others regarding translations by using `the forum category <https://forums.ubports.com/category/39/translations>`_ that UBports provides for this task. To use it you need to register, or login if you're registered already."
+msgstr ""
+"Du kan snakke med andre angående oversettelser ved å bruke `forumkategorien "
+"<https://forums.ubports.com/category/39/translations>` _ som UBports leverer "
+"for denne oppgaven. For å bruke den må du registrere deg, eller logge inn "
+"hvis du allerede er registrert."
+
+#: ../../contribute/translations.rst:82
+msgid "The only requirement is to start your post putting down your language in brackets in the \"Enter your topic title here\" field. For example, ``[Spanish] How to translate whatever?``"
+msgstr ""
+"Det eneste kravet er å starte innlegget ditt med å sette ned språket ditt i "
+"parentes i feltet \"Skriv inn emnetittelen din her\". For eksempel, "
+"``[Spansk] Hvordan oversette hva som helst?``"
+
+#: ../../contribute/translations.rst:84
+#, fuzzy
+msgid "In your interactions with your team you'll find the best way to coordinate your translations."
+msgstr ""
+"I samspillet ditt med teamet ditt finner du den beste måten å koordinere "
+"oversettelsene dine på."
+
+#: ../../contribute/translations.rst:87
+msgid "License"
+msgstr "Lisens"
+
+#: ../../contribute/translations.rst:89
+msgid "All the translation projects, and all your contributions to this project, are under a `Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) <https://creativecommons.org/licenses/by-sa/4.0/>`_ license that you explicitly accept by contributing to the project."
+msgstr ""
+"Alle oversettelsesprosjektene, og alle bidragene dine til dette prosjektet, "
+"er under en `Creative Commons Attribution-ShareAlike 4.0 International (CC "
+"BY-SA 4.0) <https://creativecommons.org/licenses/by-sa/4.0/>` _ lisens som "
+"du eksplisitt godtar ved å bidra til prosjektet."
+
+#: ../../contribute/translations.rst:91
+msgid "Go to that link to learn what this exactly means."
+msgstr "Følg denne lenken for å lære hva dette betyr."

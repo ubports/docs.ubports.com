@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-02-22 08:32+0000\n"
+"PO-Revision-Date: 2021-02-23 23:42+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/ru/>\n"
@@ -462,7 +462,7 @@ msgid ""
 "Prepare your computer to listen to a tcp port(here 1234) and forward raw "
 "stream to a video player (here mplayer) with a frame size of 384x640::"
 msgstr ""
-"Настройте на компьютер режим прослушивания tcp-порта (здесь, в примере, "
+"Настройте на компьютере режим прослушивания tcp-порта (здесь, в примере, "
 "1234) и перенаправьте видеосигнал на видеоплеер (здесь, в примере, mplayer) "
 "с разрешением кадра 384x640::"
 
@@ -475,7 +475,7 @@ msgid ""
 "Prepare your computer to listen to a tcp port(here 1234), ungzip and forward "
 "raw stream to a video encoder (here mencoder)::"
 msgstr ""
-"Настройте на компьютер режим прослушивания tcp-порта (здесь, в примере, "
+"Настройте на компьютере режим прослушивания tcp-порта (здесь, в примере, "
 "1234), разархивируйте и перенаправьте необработанный видеосигнал в программу-"
 "видеокодер (здесь, примере, mencoder)::"
 
@@ -507,7 +507,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:69
 msgid "You can download it here: :download:`files/mircast.sh`"
-msgstr "Вы можете скачать его здесь: :download:`files/mircast.sh`"
+msgstr "Скрипт можно скачать здесь: :download:`files/mircast.sh`"
 
 #: ../../userguide/advanceduse/screencasting.rst:74
 msgid "initial source: https://wiki.ubuntu.com/Touch/ScreenRecording"
@@ -515,7 +515,9 @@ msgstr "Первоначальный источник: https://wiki.ubuntu.com/T
 
 #: ../../userguide/advanceduse/screencasting.rst:75
 msgid "demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
-msgstr "Демо: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
+msgstr ""
+"Видеоролик с демонстрацией режима Screencasting: https://www.youtube.com/"
+"watch?v=HYm4RUwwo5Q"
 
 #: ../../userguide/advanceduse/ssh.rst:2
 msgid "Shell access via ssh"
@@ -526,8 +528,8 @@ msgid ""
 "You can use ssh to access a shell from your PC. This is useful for debugging "
 "or more advanced shell usage."
 msgstr ""
-"Вы можете использовать ssh для доступа к shell с вашего ПК. Это полезно для "
-"отладки или более эффективной работы в shell."
+"При работе на компьютере для доступа к командной оболочке можно использовать "
+"ssh. Это полезно для отладки и позволяет эффективнее работать в оболочке."
 
 #: ../../userguide/advanceduse/ssh.rst:6
 msgid ""
@@ -547,8 +549,8 @@ msgid ""
 "each time::"
 msgstr ""
 "Создайте свой открытый ключ, если раньше этого не делали. При создании нужно "
-"выбрать \" ключ для локальной сети\" (по умолчанию, такой и предлагается). "
-"Можно оставить пустой пароль, если  не хочется вводить его каждый раз::"
+"выбрать \"ключ для локальной сети\" (по умолчанию, такой и предлагается). "
+"Можно оставить пустой пароль, если не хочется вводить его каждый раз::"
 
 #: ../../userguide/advanceduse/ssh.rst:16
 msgid "Copy the public key to your device"
@@ -559,7 +561,7 @@ msgid ""
 "You need then to transfer your public key to your device. There are multiple "
 "ways to do this. For example:"
 msgstr ""
-"Затем  нужно перенести открытый ключ на ваше устройство. Это можно сделать "
+"Затем нужно перенести открытый ключ на ваше устройство. Это можно сделать "
 "несколькими способами. Например:"
 
 #: ../../userguide/advanceduse/ssh.rst:20
@@ -567,7 +569,7 @@ msgid ""
 "Connect the ubports device and the PC with a USB cable. Then copy the file "
 "using your filemanager."
 msgstr ""
-"Соедините смартфон и ПК с помощью USB-кабеля. Затем скопируйте файл через "
+"Подключите смартфон к ПК с помощью USB-кабеля. Затем скопируйте файл через "
 "любой файловый менеджер."
 
 #: ../../userguide/advanceduse/ssh.rst:21
@@ -583,7 +585,7 @@ msgid ""
 "You can also connect via :doc:`adb <adb>` and use the following command to "
 "copy it::"
 msgstr ""
-"Вы также можете использовать соединение через  :doc:`adb <adb>, ключ "
+"Вы также можете использовать соединение через :doc:`adb <adb>, ключ "
 "копируется следующей командой::"
 
 #: ../../userguide/advanceduse/ssh.rst:27
@@ -597,7 +599,7 @@ msgid ""
 "to perform the following steps on your phone. ::"
 msgstr ""
 "Теперь у Вас на смартфоне есть открытый ключ. Давайте предположим, что он "
-"хранится в директории`` /home/phablet/id_rsa.pub``. Через терминал или  adb "
+"хранится в директории``/home/phablet/id_rsa.pub``. Через терминал или adb "
 "выполните следующие команды. ::"
 
 #: ../../userguide/advanceduse/ssh.rst:38
@@ -646,7 +648,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/switchchannel.rst:2
 msgid "Switch release channels"
-msgstr "Переключить каналы с релизами"
+msgstr "Переключение каналов с релизами"
 
 #: ../../userguide/advanceduse/switchchannel.rst:3
 msgid ""
@@ -655,9 +657,9 @@ msgid ""
 "more info, see :doc:`the release schedule </about/process/release-schedule>`."
 msgstr ""
 "Вы можете изменить канал выпуска в системных настройках. Существуют 3 канала:"
-" stable, rc (релиз-кандидат) и devel (ночные сборки). Дополнительную "
-"информацию можно узнать тут:doc:`расписание релизов </about/process/release-"
-"schedule>`."
+" stable (стабильный), rc (релиз-кандидат) и devel (ночные сборки). "
+"Дополнительную информацию можно узнать тут :doc:`расписание релизов </about/"
+"process/release-schedule>`."
 
 #: ../../userguide/dailyuse/anbox.rst:2
 msgid "Android apps"
@@ -1009,11 +1011,6 @@ msgid ""
 msgstr ""
 "Откройте \"Настройки\" и выберите пункт *Libertine*, который находится под "
 "пунктом *Система*."
-
-#: ../../userguide/dailyuse/libertine.rst:16
-msgid ""
-"Open Settings and scroll down to *Libertine* under the *System* sub-heading."
-msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:18
 msgid ""
