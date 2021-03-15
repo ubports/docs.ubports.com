@@ -199,7 +199,7 @@ Background
 
 A display server coordinates input and output of an operating system.
 Most Linux|GNU distributions today use the X server.
-Ubuntu Touch does not use X, but  a new display server called Mir.
+Ubuntu Touch does not use X, but a new display server called Mir.
 This means standard X apps are not directly compatible with Ubuntu Touch.
 A compatibility layer called XMir resolves this.
 Libertine relies on XMir to display desktop apps.
@@ -207,4 +207,3 @@ Libertine relies on XMir to display desktop apps.
 Another challenge is that Ubuntu Touch system updates are released as OTA images.
 As a consequence of this the root filesystem is read-only.
 Libertine provides a container with a read-write filesystem to allow installation of regular Linux|GNU desktop apps.
-
