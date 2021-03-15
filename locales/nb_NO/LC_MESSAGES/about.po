@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-29 13:44-0500\n"
-"PO-Revision-Date: 2021-03-15 09:12+0000\n"
-"Last-Translator: Jan Christian Sherdahl <jan@sherdahl.no>\n"
+"PO-Revision-Date: 2021-03-15 19:09+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-about/nb_NO/>\n"
 "Language: nb_NO\n"
@@ -287,7 +287,7 @@ msgstr ""
 
 #: ../../about/process/issue-tracking.rst:89
 msgid "Milestones"
-msgstr ""
+msgstr "Milepæler"
 
 #: ../../about/process/issue-tracking.rst:91
 msgid "Milestones are used for stable OTA releases only. In general, milestones for the work-in-progress OTA and the next OTA are created. The ETA is set, once the work on the release starts (that is 6 weeks from start date), but can be adjusted afterwards. See the :doc:`release-schedule <release-schedule>` for more info."
@@ -399,15 +399,17 @@ msgstr ""
 
 #: ../../about/process/release-schedule.rst:6
 msgid "devel: daily builds"
-msgstr ""
+msgstr "devel: daglige bygg"
 
 #: ../../about/process/release-schedule.rst:7
 msgid "rc: weekly if no critical issue exists in the devel channel"
-msgstr ""
+msgstr "rc: ukentlig hvis ingen kritisk feil oppstår i devel-kanalen"
 
 #: ../../about/process/release-schedule.rst:8
 msgid "stable: every six through eight weeks, if no critical issue exists in the rc channel"
 msgstr ""
+"stable: hver sjette til åttende uke, hvis ingen kritisk feil oppstår i devel-"
+"kanalen"
 
 #: ../../about/process/release-schedule.rst:11
 msgid "This is not a definitive cycle. Stable releases are ready when they're ready and should not introduce new bugs or ship very incomplete features. Since the OTA update can not be released before all critical issues are closed, the ETA might have to be moved by making an educated guess for when all the issues can be handled. If there are too many issues added to a milestone, they are either removed or added to the next milestone."
