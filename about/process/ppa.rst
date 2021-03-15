@@ -25,7 +25,7 @@ For example, a packaging repository that generates a source package called ``san
 Creating new PPAs
 -----------------
 
-New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`. The name of the branch translates literally to the name of the PPA: ``http://repo.ubports.com/dists/[branch name]``
+New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`. The name of the branch translates literally to the name of the PPA: ``https://repo.ubports.com/dists/[branch name]``
 
 Non-standard PPAs (i.e. not ``vivid``, ``xenial``, or ``bionic``) are kept for three months.
 If they need to be kept for longer, a file with the name ``ubports.keep`` containing a date in the form of in the form of ``YYYY-MM-dd`` can be used to decide how long to keep the PPA in the repository for.
