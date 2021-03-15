@@ -9,7 +9,7 @@ Repository naming convention
 Native packages
 ^^^^^^^^^^^^^^^
 
-Native packages are repositories which contain a ``DEBIAN/`` folder **with** the source used to create the Debian source package (``.dsc``).
+Native packages are repositories which contain a ``DEBIAN/`` folder **with** the source used to create the DEB source package (``.dsc``).
 
 The name of the Debian source package generated from the repository and the name of the Git-repository should be the same.
 
