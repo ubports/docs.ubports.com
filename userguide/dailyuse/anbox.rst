@@ -4,8 +4,8 @@ Android apps
 `Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer to run Android apps on GNU/Linux operating systems such as UBports.
 
 .. note::
-    When "host" is used in this document, it refers to another device you can connect your Ubuntu Touch device to.
-    Your host device must have ``adb`` and ``fastboot`` installed.
+    "Computer" refers to another device you can connect your Ubuntu Touch device to.
+    Your attached computer must have ``adb`` and ``fastboot`` installed.
 
 .. note::
     You will need to execute commands on your Ubuntu Touch device (and/or attached computer) to install Anbox and APKs.
@@ -46,13 +46,13 @@ Not doing so can put your Ubuntu Touch device into an unstable state.
 Only update your Ubuntu Touch device when you have a computer with you to re-flash the modified kernel image.
 
 #. Be sure to have a `backup <https://askubuntu.com/questions/602850/how-do-i-backup-my-ubuntu-phone>`_ of your device.
-#. Open a terminal on your host and set some device specific variables by running ``export CODENAME="turbo" && export PARTITIONNAME="bootimg"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list.
+#. Open a terminal on your computer and set some device specific variables by running ``export CODENAME="turbo" && export PARTITIONNAME="bootimg"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list.
 #. Activate `Developer mode` on your device.
-#. Connect the device to your host and run the following commands from your host (the same terminal you ran the ``export`` command)::
+#. Connect the device to your computer and run the following commands from your computer (the same terminal you ran the ``export`` command)::
 
     wget https://cdimage.ubports.com/anbox-images/anbox-boot-$CODENAME.img
-    adb shell # connect from your host computer to your Ubuntu Touch device
-    sudo reboot -f bootloader # 'adb shell' will exit after this command, the prompt will be back on your host
+    adb shell # connect from your computer to your Ubuntu Touch device
+    sudo reboot -f bootloader # 'adb shell' will exit after this command, the prompt will be back on your computer
     sudo fastboot flash $PARTITIONNAME anbox-boot-$CODENAME.img
     sudo fastboot reboot
     rm anbox-boot-$CODENAME.img
@@ -65,7 +65,7 @@ Run the Anbox installer
 
 Once your device has the Anbox kernel installed, you can use the Anbox Tool to install the Anbox container.
 
-#. Run ``adb shell`` from your host computer to get a shell on your Ubuntu Touch device.
+#. Run ``adb shell`` from your computer to get a shell on your Ubuntu Touch device.
 #. Run the following command on your Ubuntu Touch device: ``anbox-tool install``.
 #. Follow the on-screen instructions.
 
@@ -88,8 +88,8 @@ How to install new APKs
 
 - Copy the APK to ``/home/phablet/Downloads``. Then run the following from your computer::
 
-    adb shell # connect from your host computer to your UT device
-    adb install /home/phablet/Downloads/my-app.apk # This is the adb of your device, not your host
+    adb shell # connect from your computer to your Ubuntu Touch device
+    adb install /home/phablet/Downloads/my-app.apk # This is the adb of your device, not your computer
     exit
 
 - Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
@@ -109,7 +109,7 @@ How to uninstall apps
 
     adb shell # connect from your computer to your Ubuntu Touch device
     sudo mount -o rw,remount /
-    adb uninstall [APP_ID] # This is the adb of your device, not your host
+    adb uninstall [APP_ID] # This is the adb of your device, not your computer
     exit
 
 - Done! You might have to pull down from the center of the screen and release for the new Android apps to show up.
