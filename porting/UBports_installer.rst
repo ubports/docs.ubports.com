@@ -3,4 +3,12 @@ Configuring the UBports installer
 
 *Work in progress*
 
+.. Tip::
+    Applies to:
+        * Method 1
+        * Method 2
+        * Method 3
+
+        (See :ref:`porting methods <Porting-methods>`.)
+
 For the time being, Halium 7.1 porters should refer to the UBports porting notes on `the UBPorts installer and System image <https://github.com/ubports/porting-notes/wiki/HowTo:-UBports-Installer-&-System-Image-(Halium-7.1)>`_.

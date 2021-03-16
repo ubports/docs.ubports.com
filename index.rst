@@ -65,8 +65,13 @@ You may view this documentation in the following languages:
 
    porting/Intro
    porting/Preparations
-   porting/halium_7-1/index.rst
-   porting/halium_9/index.rst
+   porting/Setting_up
+   porting/Obtaining_sources
+   porting/Building
+   porting/Installing
+   porting/Booting
+   porting/Lomiri
+   porting/Configuring
    porting/UBports_recovery
    porting/UBports_installer
 

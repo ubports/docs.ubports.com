@@ -59,16 +59,16 @@ How does this change the porting process?
 
 Since the GSI is a prebuilt, device-independent component, it effectively simplifies the task of building a viable port by removing much of the meticulous and time consuming task of getting the hardware-specific vendor blobs compiled into the system image and configured to function properly.
 
+.. _Porting-methods:
+
 Three porting methods
 ---------------------
 
-.. _Porting_methods:
-
 There are three main methods that can be used when porting Ubuntu Touch. These are:
 
-* Method 1: Build both the halium-boot.img and the full device specific system.img (*i.e.* not GSI) from source and install these together with the UBports rootfs. (This is the only possible method for Halium 7.1 porting.)
-* Method 2: Build halium-boot.img and install this together with the Halium GSI and the UBports rootfs. (Halium 9.0 and newer.)
-* Method 3: Build only the kernel and install this together with the Halium ramdisk, the Halium GSI and the UBports rootfs. (Halium 9.0 and newer.)
+* **Method 1:** Build both the halium-boot.img and the full device specific system.img (*i.e.* not GSI) from source and install these together with the UBports rootfs. (This is the only possible method for Halium 7.1 porting.)
+* **Method 2:** Build halium-boot.img and install this together with the Halium GSI and the UBports rootfs. (Halium 9.0 and newer.)
+* **Method 3:** Build only the kernel and install this together with the Halium ramdisk, the Halium GSI and the UBports rootfs. (Halium 9.0 and newer.)
 
 Although there are significant differences between these methods they also share certain steps of the porting process. This guide at present describes methods 1 and 2 in full, and will in the near future also cover method 3. Pending the completion of the guide, the more experienced (or more adventurous) porters can find information about method 3 (albeit not under this name) in the UBports Wiki - `porting notes page <https://github.com/ubports/porting-notes/wiki/Halium-9>`_ and `Generic System Image page <https://github.com/ubports/porting-notes/wiki/Generic-system-image-(GSI)>`_.
 
@@ -76,6 +76,13 @@ Although there are significant differences between these methods they also share
     Currently the Halium GSI is only built for arm64 devices. Consequently, owners of armhf devices must resort to method 1.
 
 The next section explains the structure of the remainder of this guide, pointing out which parts are relevant to each of the three methods above. The remainder of this section gives some words of advice to new porters.
+
+.. _Guide-structure:
+
+Structure of this guide and how to use it
+-----------------------------------------
+
+
 
 .. _The-challenges-of-the-porting-process:
 

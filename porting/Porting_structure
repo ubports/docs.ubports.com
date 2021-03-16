@@ -1,0 +1,32 @@
+Setting up the build environment
+    Installing build tools, downloading Halium source (Incorporate from Halium guide)
+    Explain structure of source code + function of device manifest file
+    Setting up device manifest
+    Downloading device-specific code
+Building
+    Building halium-boot
+    Building system image
+    Building kernel only
+Installing
+    Flashing halium-boot.img
+    Installing system image and rootfs
+    Flashing kernel only
+Booting
+    What is a successful boot?
+    What can typically go wrong?
+    Debugging and fixing known problems
+Bringing up the graphical UI
+    What are udev rules?
+    Setting up udev rules
+    Debugging and fixing known problems
+Configuring
+    AppArmor
+    Bluetooth
+    Feature configuration using overlay files
+        Display
+        Sound
+        <What else?>
+UBports recovery
+    <?>
+UBports installer
+    <?>

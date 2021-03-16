@@ -1,6 +1,12 @@
 Setting up the build environment
 ================================
 
+.. Tip::
+
+    This section applies irrespective of the :ref:`porting method <Porting-methods>` you will be using.
+
+Your host PC needs a number of tools installed before you can begin to port. This section describes the necessary preparations.
+
 Prerequisites
 -------------
 
@@ -21,7 +27,7 @@ When setting up the build environment you need to have Python 3.6 or newer insta
         rm /usr/bin/python
         ln -s /usr/bin/<your python2 binary> /usr/bin/python
 
-    If you are using Linux Arch, this distribution uses Python 3 as it's default python version, but Python 2 can be invoked using virtualenv. Please refer to `‘Python/Virtual environment’ on the Arch Wiki <https://wiki.archlinux.org/index.php/Python/Virtual_environment>`_ for instructions on setting up a virtual environment.
+    If you are using Linux Arch, this distribution uses Python 3 as it's default python version, but Python 2 can be invoked using a virtual environment. Please refer to `‘Python/Virtual environment’ on the Arch Wiki <https://wiki.archlinux.org/index.php/Python/Virtual_environment>`_ for instructions on setting this up.
 
 Debian (Stretch or newer) / Ubuntu (16.04 or 18.04)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
