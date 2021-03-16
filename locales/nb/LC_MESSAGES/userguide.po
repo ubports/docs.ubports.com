@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 17:42-0600\n"
-"PO-Revision-Date: 2021-03-13 17:03+0000\n"
+"PO-Revision-Date: 2021-03-14 06:26+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-userguide/nb/>\n"
@@ -1800,8 +1800,8 @@ msgstr ""
 #: ../../userguide/install.rst:156
 msgid "Make sure your device is off and connect it to your PC. Don't use a USB 3.0 port, since that's known to cause communication issues with your device."
 msgstr ""
-"Forsikre deg om at enheten er slått av, og koble den til PCen din. Ikke bruk "
-"en USB 3.0-port, siden det er kjent at det forårsaker "
+"Forsikre deg om at enheten er slått av, og koble den til PC-en din. Ikke "
+"bruk en USB 3.0-port, siden det er kjent at det forårsaker "
 "kommunikasjonsproblemer med enheten din."
 
 #: ../../userguide/install.rst:157
@@ -1809,7 +1809,7 @@ msgstr ""
 msgid "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Wait till all the progress bars ended."
 msgstr ""
 "`Magi <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ skjer. Vent til "
-"alle fremdriftslinjene ble avsluttet."
+"alle framdriftsviserne er avsluttet."
 
 #: ../../userguide/install.rst:161
 #, fuzzy

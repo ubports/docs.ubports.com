@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-29 13:44-0500\n"
-"PO-Revision-Date: 2021-03-12 19:18+0000\n"
+"PO-Revision-Date: 2021-03-15 19:09+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-about/nb_NO/>\n"
@@ -24,8 +24,12 @@ msgid "Introduction"
 msgstr "Intro"
 
 #: ../../about/introduction.rst:4
+#, fuzzy
 msgid "This is the documentation for the UBports project. Our goal is to create a Free and open-source (GPL if possible) mobile operating system that converges and respects your freedom."
 msgstr ""
+"Dette er dokumentasjonen for UBports-prosjektet. Målet vårt er å lage et "
+"gratis operativsystem med åpen kildekode (GPL hvis mulig) som konvergerer og "
+"respekterer din frihet."
 
 #: ../../about/introduction.rst:7
 msgid "About UBports"
@@ -34,6 +38,9 @@ msgstr "Om UBports"
 #: ../../about/introduction.rst:9
 msgid "The UBports project was founded by Marius Gripsgard in 2015 and in its infancy was a place where developers could share ideas and educate each other in hopes of bringing the Ubuntu Touch platform to more mobile devices."
 msgstr ""
+"UBports-prosjektet ble grunnlagt av Marius Gripsgard i 2015 og var i sin "
+"spede begynnelse et sted der utviklere kunne dele ideer og utdanne hverandre "
+"i håp om å bringe Ubuntu Touch-plattformen til flere mobile enheter."
 
 #: ../../about/introduction.rst:11
 msgid "After Canonical suddenly announced `their plans to terminate support of Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ in April 2017, UBports and its sister projects began work on the open-source code, maintaining and expanding its possibilities for the future."
@@ -50,6 +57,9 @@ msgstr ""
 #: ../../about/introduction.rst:18
 msgid "All documents are licensed under the Creative Commons Attribution ShareAlike 4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_) license. Please give attribution to \"The UBports Community\"."
 msgstr ""
+"Alle dokumenter er lisensiert under Creative Commons Attribution ShareAlike "
+"4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_) "
+"lisens. Gi heder til \"UBports fellesskapet\"."
 
 #: ../../about/introduction.rst:21
 msgid "Attribution"
@@ -277,7 +287,7 @@ msgstr ""
 
 #: ../../about/process/issue-tracking.rst:89
 msgid "Milestones"
-msgstr ""
+msgstr "Milepæler"
 
 #: ../../about/process/issue-tracking.rst:91
 msgid "Milestones are used for stable OTA releases only. In general, milestones for the work-in-progress OTA and the next OTA are created. The ETA is set, once the work on the release starts (that is 6 weeks from start date), but can be adjusted afterwards. See the :doc:`release-schedule <release-schedule>` for more info."
@@ -389,15 +399,17 @@ msgstr ""
 
 #: ../../about/process/release-schedule.rst:6
 msgid "devel: daily builds"
-msgstr ""
+msgstr "devel: daglige bygg"
 
 #: ../../about/process/release-schedule.rst:7
 msgid "rc: weekly if no critical issue exists in the devel channel"
-msgstr ""
+msgstr "rc: ukentlig hvis ingen kritisk feil oppstår i devel-kanalen"
 
 #: ../../about/process/release-schedule.rst:8
 msgid "stable: every six through eight weeks, if no critical issue exists in the rc channel"
 msgstr ""
+"stable: hver sjette til åttende uke, hvis ingen kritisk feil oppstår i devel-"
+"kanalen"
 
 #: ../../about/process/release-schedule.rst:11
 msgid "This is not a definitive cycle. Stable releases are ready when they're ready and should not introduce new bugs or ship very incomplete features. Since the OTA update can not be released before all critical issues are closed, the ETA might have to be moved by making an educated guess for when all the issues can be handled. If there are too many issues added to a milestone, they are either removed or added to the next milestone."

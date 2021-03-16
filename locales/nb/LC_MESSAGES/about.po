@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-29 13:44-0500\n"
-"PO-Revision-Date: 2021-03-12 19:18+0000\n"
+"PO-Revision-Date: 2021-03-15 19:09+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-about/nb/>\n"
@@ -84,15 +84,19 @@ msgstr ""
 
 #: ../../about/process/branch-naming.rst:2
 msgid "Branch-naming convention"
-msgstr ""
+msgstr "Navnesystem for forgreninger"
 
 #: ../../about/process/branch-naming.rst:4
 msgid "Our branch-naming conventions ensure that software can be built by our CI and tested easily by other developers."
 msgstr ""
+"Navngivningen av forgreningene forsikrer at programvare enkelt kan bygges av "
+"vårt KI, og testes av andre utviklere."
 
 #: ../../about/process/branch-naming.rst:6
 msgid "Every Git repository's README file should state which branch-naming convention is used and possible deviations from the norm."
 msgstr ""
+"README-filen i hvert Git-kodelager skal inneholde info om hvilket "
+"forgreningsnavnesystem som er i bruk, og mulige avvik fra normen."
 
 #: ../../about/process/branch-naming.rst:9
 #, fuzzy
@@ -146,7 +150,7 @@ msgstr ""
 
 #: ../../about/process/branch-naming.rst:23
 msgid "Branch-extensions"
-msgstr ""
+msgstr "Forgreningsutvidelser"
 
 #: ../../about/process/branch-naming.rst:25
 #, fuzzy
@@ -329,6 +333,12 @@ msgstr "Etiketter"
 #: ../../about/process/issue-tracking.rst:48
 msgid "All issues - even closed ones - should be labeled to allow the use of GitHub's global filtering. For example, `these are all of the issues labeled 'enhancement' inside @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A%22feature+request%22&type=>`_. Consult the `GitHub help pages <https://help.github.com/articles/about-searching-on-github/>`__ for more information on search and filtering."
 msgstr ""
+"Alle feil (selv lukkede) skal merkes for å tillate bruk av GitHubs "
+"filtrering. For eksempel er dette `feilrapportene med etiketten "
+"'enhancement' i @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aope"
+"n+org%3Aubports+label%3A%22feature+request%22&type=>`_. Hendend dem til `"
+"GitHub sine hjelpesider <https://help.github.com/articles/"
+"about-searching-on-github/>`__ for mer info om søk og filtrering."
 
 #: ../../about/process/issue-tracking.rst:51
 msgid "Here's a list of labels that are normally used by all repositories."
@@ -443,8 +453,9 @@ msgstr ""
 "etterpå. Se: doc: ``release-schedule <release-schedule>' for mer info."
 
 #: ../../about/process/issue-tracking.rst:98
+#, fuzzy
 msgid "Assignees"
-msgstr ""
+msgstr "Tilknyttede"
 
 #: ../../about/process/issue-tracking.rst:100
 msgid "To make it transparent who's working on an issue, the developer should be assigned. This also allows the use of GitHub's global filtering as a type of TODO list. For example, `this is everything assigned to mariogrip in @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_."
@@ -467,7 +478,7 @@ msgstr "Eksempler"
 
 #: ../../about/process/issue-tracking.rst:110
 msgid "Bug Lifecycle"
-msgstr ""
+msgstr "Livssyklus for feil"
 
 #: ../../about/process/issue-tracking.rst:113
 msgid "The same principle applies to feature requests. The only difference is, that instead of the label **bug**, the label **enhancement** is used. The **needs confirmation** label is not applicable for feature requests."
@@ -537,15 +548,17 @@ msgstr ""
 
 #: ../../about/process/ppa.rst:7
 msgid "Repository naming convention"
-msgstr ""
+msgstr "Navnesystem for kodelager"
 
 #: ../../about/process/ppa.rst:10
 msgid "Native packages"
-msgstr ""
+msgstr "Systemspesifikke pakker"
 
 #: ../../about/process/ppa.rst:12
 msgid "Native packages are repositories which contain a ``debian/`` directory **with** the source used to create the Debian source package (``.dsc``)."
 msgstr ""
+"Systemspesifikke pakker er kodelager som inneholder en ``debian/``-mappe "
+"**med** kildekoden for å opprette Debian-kildepakken (``.dsc``)."
 
 #: ../../about/process/ppa.rst:14
 msgid "The name of the Debian source package generated from the repository and the name of the git-repository should be the same."
@@ -555,15 +568,21 @@ msgstr ""
 
 #: ../../about/process/ppa.rst:17
 msgid "Packaging repositories"
-msgstr ""
+msgstr "Pakking av kodelager"
 
 #: ../../about/process/ppa.rst:19
 msgid "Packaging repositories contain a ``debian/`` directory **without** the source used to create the Debian source package (``.dsc``). They also contain instructions to tell ``debhelper`` how to get the source used to create the source package."
 msgstr ""
+"Pakkede kodelager inneholder en ``debian/``-mappe **uten** kildekoden brukt "
+"til å opprette Debian-kildepakken (``.dsc``). De inneholder også instruks "
+"for å fortelle ``debhelper`` kilden skal brukes til å opprette kildepakken."
 
 #: ../../about/process/ppa.rst:21
 msgid "The repository should have the name of the source package it generates with ``-packaging`` appended to the end. For example, a packaging repository that generates a source package called ``sandwich`` would be called ``sandwich-packaging``."
 msgstr ""
+"Kodelageret skal ha navnet på kildepakken det genererer med ``-packaging`` "
+"lagt til på slutten. For eksempel vil et pakkingskodelager som genererer en "
+"kildepakke kalt ``sandwich`` ha navnet ``sandwich-packaging``."
 
 #: ../../about/process/ppa.rst:24
 #, fuzzy
@@ -599,7 +618,7 @@ msgstr "OTA-oppdateringer følger vanligvis denne rytmen:"
 
 #: ../../about/process/release-schedule.rst:6
 msgid "devel: daily builds"
-msgstr ""
+msgstr "devel: daglige bygg"
 
 #: ../../about/process/release-schedule.rst:7
 msgid "rc: weekly if no critical issue exists in the devel channel"

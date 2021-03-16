@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-15 09:19-0500\n"
-"PO-Revision-Date: 2021-03-06 13:27+0000\n"
+"PO-Revision-Date: 2021-03-14 16:19+0000\n"
 "Last-Translator: Carlod <carlod@disroot.org>\n"
 "Language-Team: Polish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/pl/>\n"
@@ -235,8 +235,8 @@ msgstr "Tytuł"
 #: ../../contribute/documentation.rst:17
 msgid "All pages must have a document title that will be shown in the table of contents (left sidebar) and at the top of the page."
 msgstr ""
-"Wszystkie strony muszą zawierać tytuł, który będzie pokazany w tabeli "
-"zawartości (lewy pasek) i na górze strony."
+"Wszystkie strony muszą zawierać tytuł, który będzie pokazany w spisie treści "
+"(lewy pasek) i na górze strony."
 
 #: ../../contribute/documentation.rst:19
 msgid "Titles should be \"sentence cased\" rather than \"Title Cased\". For example::"
@@ -268,7 +268,7 @@ msgstr "Tytuł jest podkreślony znakami równości"
 
 #: ../../contribute/documentation.rst:41
 msgid "The underline spans the title completely without going over"
-msgstr ""
+msgstr "Podkreślenie obejmuje cały tytuł bez przechodzenia dalej"
 
 #: ../../contribute/documentation.rst:43
 msgid "Incorrect examples of titles include:"
@@ -299,18 +299,31 @@ msgstr ""
 #: ../../contribute/documentation.rst:86
 msgid "Each heading level creates a sub-section in the global table of contents tree available when the documentation is built. In the primary (web) version of the documentation, this only shows four levels deep from the top level of the documentation. Please refrain from using more heading levels than will show in this tree as it makes navigating your document difficult. If you must use this many heading levels, it is a good sign that your document should be split up into multiple pages."
 msgstr ""
+"Każdy poziom nagłówka tworzy sub-sekcje w globalnym drzewie spisu treści "
+"dostępnym, gdy dokumentacja jest budowana. W głównej (webowej) wersji tego "
+"dokumentu są pokazywane tylko cztery poziomy wielkości od głównego poziomu "
+"dokumentacji. Prosimy stronić od używania większym poziomów niż jest "
+"pokazane na tym drzewie, jako że utrudnia to nawigowanie po stronie. Jeśli "
+"musisz użyć tyle poziomów nagłówka, to znak, że twoja dokumentacja powinna "
+"być rozdzielona na więcej stron."
 
 #: ../../contribute/documentation.rst:89
 msgid "Table of contents"
-msgstr "Tabela treści"
+msgstr "Spis treści"
 
 #: ../../contribute/documentation.rst:91
 msgid "People can't navigate to your new page if they can't find it. Neither can Sphinx. That's why you need to add new pages to Sphinx's table of contents."
 msgstr ""
+"Ludzie nie mogą nawigować się po twojej stronie jeśli jej nie znajdą. Także "
+"Sphinx nie może. Właśnie dlatego musisz dodać nowe strony do spisu treści."
 
 #: ../../contribute/documentation.rst:93
 msgid "You can do this by adding the page to the ``index.rst`` file in the same directory that you created it. For example, if you create a file called \"newpage.rst\", you would add the line marked with a chevron (>) in the nearest index:"
 msgstr ""
+"Możesz to zrobić przez dodanie strony do pliku ``index.rst`` w tej samej "
+"lokalizacji, którą stworzyłeś/aś. Na przykład, jeśli stworzyłeś/aś plik "
+"nazywający się \"newpage.rst\", chcesz dodać linie oznaczoną znakiem (>) w "
+"najbliższym indexie:"
 
 #: ../../contribute/documentation.rst:105
 msgid "The order matters. If you would like your page to appear in a certain place in the table of contents, place it there. In the previous example, newpage would be added to the end of this table of contents."
@@ -953,19 +966,28 @@ msgstr ""
 
 #: ../../contribute/translations.rst:78
 msgid "Translation Team Communication"
-msgstr ""
+msgstr "Komunikacja z zespołem tłumaczeń"
 
 #: ../../contribute/translations.rst:80
 msgid "You may talk to others regarding translations by using `the forum category <https://forums.ubports.com/category/39/translations>`_ that UBports provides for this task. To use it you need to register, or login if you're registered already."
 msgstr ""
+"Możesz rozmawiać z innymi odnośnie tłumaczeń na forum `w kategorii "
+"<https://forums.ubports.com/category/39/translations>`_, którą UBports "
+"przygotowało do tego celu. Aby móc z niego korzystać musisz się "
+"zarejestrować, albo zalogować jeśli już jesteś zarejestrowany/a."
 
 #: ../../contribute/translations.rst:82
 msgid "The only requirement is to start your post putting down your language in brackets in the \"Enter your topic title here\" field. For example, ``[Spanish] How to translate whatever?``"
 msgstr ""
+"Jedynym wymogiem jest, aby zaczynać swoje posty od swojego języka w "
+"kwadratowych nawiasach w polu \"Enter your topic here\". Na przykład, "
+"``[Spanish] How to translate whatever?``"
 
 #: ../../contribute/translations.rst:84
 msgid "In your interactions with your team you'll find the best way to coordinate your translations."
 msgstr ""
+"W twoich interakcjach z twoim zespołem znajdziesz najlepszy sposób, aby "
+"koordynować swoje tłumaczenia."
 
 #: ../../contribute/translations.rst:87
 msgid "License"

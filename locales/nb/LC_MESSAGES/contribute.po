@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 17:42-0600\n"
-"PO-Revision-Date: 2021-03-13 08:24+0000\n"
+"PO-Revision-Date: 2021-03-14 07:55+0000\n"
 "Last-Translator: Jan Christian Sherdahl <jan@sherdahl.no>\n"
 "Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-contribute/nb/>\n"
@@ -124,9 +124,8 @@ msgid "Now, write your bug report. A good bug report includes the following:"
 msgstr "Nå, skriv feilrapporten din. En god feilrapport inneholder følgende:"
 
 #: ../../contribute/bugreporting.rst:41
-#, fuzzy
 msgid "What happened: A synopsis of the erroneous behavior"
-msgstr "Hva skjedde: En oversikt over feil oppførsel"
+msgstr "Hva skjedde: En oversikt over feilaktig oppførsel"
 
 #: ../../contribute/bugreporting.rst:42
 msgid "What I expected to happen: A synopsis of what should have happened, if there wasn't an error"
@@ -155,12 +154,11 @@ msgstr ""
 "slik at en moderator enkelt kan legge til de riktige etikettene senere."
 
 #: ../../contribute/bugreporting.rst:48
-#, fuzzy
 msgid "A developer or QA-team member will confirm and triage your bug, then work can begin on it. If you are missing any information, you will be asked for it, so make sure to check in often!"
 msgstr ""
-"En utvikler eller et QA-teammedlem vil bekrefte og triage feilen din, så kan "
-"arbeidet begynne med den. Hvis du mangler informasjon, blir du bedt om det, "
-"så sørg for å sjekke inn ofte!"
+"En utvikler eller et QA-teammedlem vil bekrefte og prioritere feilen din, så "
+"kan arbeidet begynne med den. Hvis du mangler informasjon, blir du bedt om "
+"det, så sørg for å sjekke inn ofte!"
 
 #: ../../contribute/bugreporting.rst:51
 #, fuzzy
@@ -192,11 +190,10 @@ msgid "Now, open the Logviewer app. You'll see a list of all of the log files av
 msgstr ""
 
 #: ../../contribute/bugreporting.rst:63
-#, fuzzy
 msgid "If you don't see the log that you've been asked to send in Logviewer, it may be in a different folder or the application may not have created any logs yet. Tell this to the person who asked you for the logs. They should be able to get you the information you need to get back on track."
 msgstr ""
 "Hvis du ikke ser loggen du har blitt bedt om å sende i Logviewer, kan den "
-"være i en annen mappe, eller applikasjonen har kanskje ikke opprettet noen "
+"være i en annen mappe eller applikasjonen har kanskje ikke opprettet noen "
 "logger ennå. Fortell dette til personen som ba deg om loggene. De skal kunne "
 "få den informasjonen du trenger for å komme tilbake på sporet."
 
@@ -219,7 +216,6 @@ msgid "Documentation guidelines"
 msgstr "Retningslinjer for dokumentasjon"
 
 #: ../../contribute/documentation.rst:12
-#, fuzzy
 msgid "These rules govern how you should write your documentation to avoid problems with style, format, or linking."
 msgstr ""
 "Disse reglene styrer hvordan du skal skrive dokumentasjonen for å unngå "
@@ -391,10 +387,9 @@ msgid "Line length"
 msgstr "Linjelengde"
 
 #: ../../contribute/documentation.rst:137
-#, fuzzy
 msgid "There is no restriction on line length in this repository. Please do not break lines at an arbitrary line length. Instead, turn on word wrap in your text editor."
 msgstr ""
-"Det er ingen begrensning på linjelengden i dette depotet. Vennligst ikke "
+"Det er ingen begrensning på linjelengden i dette arkivet. Vennligst ikke "
 "bryt linjer med en vilkårlig linjelengde. I stedet slår du på ordpakking i "
 "tekstredigeringsprogrammet."
 
@@ -415,7 +410,7 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:150
 msgid "Forking the repository"
-msgstr ""
+msgstr "Forgrene arkivet"
 
 #: ../../contribute/documentation.rst:152
 msgid "You can make more advanced edits to our documentation by forking `ubports/docs.ubports.com <https://github.com/ubports/docs.ubports.com>`_ on GitHub. If you're not sure how to do this, check out the excellent GitHub guide on `forking projects <https://guides.github.com/activities/forking/>`_."
@@ -524,18 +519,17 @@ msgstr ""
 "ReStructuredText."
 
 #: ../../contribute/documentation.rst:196
-#, fuzzy
 msgid "Uncomfortable with Git"
-msgstr "Ikke komfortabel med Git"
+msgstr "Ukomfortabel med Git"
 
 #: ../../contribute/documentation.rst:198
-#, fuzzy
 msgid "If you've written a complete document in ReStructuredText but aren't comfortable using Git or GitHub, please post it on the `UBports Forum`_ in the relevant section (likely General). Someone will be able to help you revise your draft and submit it to this documentation."
 msgstr ""
 "Hvis du har skrevet et komplett dokument i ReStructuredText, men ikke er "
 "komfortabel med å bruke Git eller GitHub, kan du legge det ut på `UBports "
-"Forum`_ i den aktuelle delen (sannsynligvis Generelt). Noen vil kunne hjelpe "
-"deg med å revidere utkastet ditt og sende det inn til denne dokumentasjonen."
+"Forum`_ i den relevante seksjonen (sannsynligvis Generelt). Noen vil kunne "
+"hjelpe deg med å revidere utkastet ditt og sende det inn til denne "
+"dokumentasjonen."
 
 #: ../../contribute/documentation.rst:201
 msgid "Current TODOs"
@@ -896,9 +890,9 @@ msgstr ""
 #, fuzzy
 msgid "If you have write-access to the repository, you can replace the **needs confirmation** label with **bug** (to mark it confirmed) or **invalid** (if the issue is definitely not reproducible). In that case it should be closed."
 msgstr ""
-"Hvis du har skrivetilgang til depotet, kan du erstatte **behovsbekreftelse** "
-"-etiketten med **bug** (for å markere det bekreftet) eller **ugyldig** (hvis "
-"problemet definitivt ikke er reproduserbart). I så fall bør det lukkes."
+"Hvis du har skrivetilgang til arkivet, kan du erstatte **behovsbekreftelse** "
+"-etiketten med **feil** (for å markere det bekreftet) eller **ugyldig** ("
+"hvis problemet definitivt ikke er reproduserbart). I så fall bør det lukkes."
 
 #: ../../contribute/quality-assurance.rst:18
 msgid "If you find two issues describing the same problem, leave a comment and try to find their differences. If they are in fact identical, close the newer one and label it **duplicate**."
@@ -934,16 +928,14 @@ msgstr ""
 "retningslinjer for problemsporing </ om / prosess / problemsporing> `."
 
 #: ../../contribute/quality-assurance.rst:28
-#, fuzzy
 msgid "Initial triaging of issues"
-msgstr "Innledende triaging av problemer"
+msgstr "Innledende prioritering av problemer"
 
 #: ../../contribute/quality-assurance.rst:30
-#, fuzzy
 msgid "Initial triaging of new issues is done by QA-team members with write-access to the repository. If a new issue is filed, read the report and add the correct labels as specified by the :doc:`issue tracking guidelines </about/process/issue-tracking>`. You can also immediately start confirming the bugreport."
 msgstr ""
-"Innledende triaging av nye utgaver gjøres av QA-teammedlemmer med "
-"skrivetilgang til depotet. Hvis en ny utgave er arkivert, kan du lese "
+"Innledende prioritering av nye utgaver gjøres av QA-teammedlemmer med "
+"skrivetilgang til arkivet. Hvis en ny utgave er arkivert, kan du lese "
 "rapporten og legge til de riktige etikettene som angitt i: doc: `"
 "retningslinjer for problemsporing </about/process/issue-tracking>`. Du kan "
 "også umiddelbart bekrefte feilrapporten."
@@ -1062,7 +1054,6 @@ msgid "How-To"
 msgstr ""
 
 #: ../../contribute/translations.rst:35
-#, fuzzy
 msgid "UBports Weblate"
 msgstr "UBports Weblate"
 

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 17:42-0600\n"
-"PO-Revision-Date: 2021-03-11 01:16+0000\n"
+"PO-Revision-Date: 2021-03-14 16:19+0000\n"
 "Last-Translator: Carlod <carlod@disroot.org>\n"
 "Language-Team: Polish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-index/pl/>\n"
@@ -50,7 +50,7 @@ msgstr "UI-Toolkit Ubuntu"
 
 #: ../../index.rst:73
 msgid "Clickable"
-msgstr "Klikalne"
+msgstr "Clickable"
 
 #: ../../index.rst:73
 msgid "Halium"
