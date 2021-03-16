@@ -27,7 +27,7 @@ Configure your device
 ---------------------
 
 Now you have the public key on the UBports device. 
-Let's assume it's stored as ``/home/phablet/id_rsa.pub``. Use the terminal app or and ADB connection to perform the following steps on your device. ::
+Let's assume it's stored as ``/home/phablet/id_rsa.pub``. Use the terminal app or an ADB connection to perform the following steps on your device. ::
 
     mkdir /home/phablet/.ssh
     chmod 700 /home/phablet/.ssh
@@ -66,6 +66,7 @@ On your PC or laptop: ::
     192.168.42.41 2001:982:89e9:1:bc6b:758:7ba2:c190
     
 On the phone: ::
+
     phablet@ubuntu-phablet:~$ hostname -I
     10.55.74.177 192.168.42.52 2001:982:89e9:1:ef68:5f7c:3db4:c0d3
 
