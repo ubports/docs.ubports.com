@@ -161,4 +161,10 @@ It is also a good idea to start a discussion on the `UBports Forum <https://foru
 Setting up for a kernel only build
 ----------------------------------
 
-*WIP*
+*Work in progress*
+
+.. Tip::
+    Applies to:
+        * Method 3
+
+        (See :ref:`porting methods <Porting-methods>`.)

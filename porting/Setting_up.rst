@@ -2,8 +2,12 @@ Setting up the build environment
 ================================
 
 .. Tip::
+    Applies to:
+        * Method 1
+        * Method 2
+        * Method 3
 
-    This section applies irrespective of the :ref:`porting method <Porting-methods>` you will be using.
+        (See :ref:`porting methods <Porting-methods>`.)
 
 Your host PC needs a number of tools installed before you can begin to port. This section describes the necessary preparations.
 
@@ -25,7 +29,7 @@ When setting up the build environment you need to have Python 3.6 or newer insta
     This will also list the available binaries. If your /usr/bin/python is linked to a python 3 binary, you can switch by deleting the symbolic link and creating a new one::
 
         rm /usr/bin/python
-        ln -s /usr/bin/<your python2 binary> /usr/bin/python
+        ln -s /usr/bin/<your_python2_binary> /usr/bin/python
 
     If you are using Linux Arch, this distribution uses Python 3 as it's default python version, but Python 2 can be invoked using a virtual environment. Please refer to `‘Python/Virtual environment’ on the Arch Wiki <https://wiki.archlinux.org/index.php/Python/Virtual_environment>`_ for instructions on setting this up.
 

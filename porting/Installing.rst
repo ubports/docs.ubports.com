@@ -3,6 +3,28 @@ Installing
 
 *Work in progress*
 
+Flashing halium-boot.img
+------------------------
+
+.. Tip::
+    Applies to:
+        * Method 1
+        * Method 2
+
+        (See :ref:`porting methods <Porting-methods>`.)
+
+Installating a kernel-only build
+--------------------------------
+
+.. Tip::
+    Applies to:
+        * Method 3
+
+        (See :ref:`porting methods <Porting-methods>`.)
+
+Installing system image and rootfs
+----------------------------------
+
 .. Tip::
     Applies to:
         * Method 1
@@ -10,12 +32,3 @@ Installing
         * Method 3
 
         (See :ref:`porting methods <Porting-methods>`.)
-
-Flashing halium-boot.img
-------------------------
-
-Installating a kernel-only build
---------------------------------
-
-Installing system image and rootfs
-----------------------------------
