@@ -1,3 +1,5 @@
+.. _Lomiri:
+
 Bringing up Lomiri - the graphical UI
 =====================================
 

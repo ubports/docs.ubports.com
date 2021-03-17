@@ -1,8 +1,6 @@
 Installing
 ==========
 
-*Work in progress*
-
 With the necessary compontents built, you are now ready to install them on your device.
 
 Refer to the section (or sections) below as they apply to your porting method. In brief:
@@ -14,6 +12,8 @@ Refer to the section (or sections) below as they apply to your porting method. I
 In order to install Ubuntu Touch, you need a recovery image with Busybox, such as TWRP, installed on your phone. If you have not done so yet, refer to section :ref:`Install-TWRP-recovery` and install it now. 
 
 You will also need to ensure the ``/data`` partition is formatted with ``ext4`` and does not have any encryption on it. Boot into the recovery image you just installed, check and adjust as necessary.
+
+.. _Flash-boot:
 
 Flashing halium-boot.img
 ------------------------
@@ -40,6 +40,8 @@ On your device, choose *Install* in the TWRP menu, navigate to the sdcard direct
 .. Note::
     Samsung devices: Flashing halium-boot.img on Samsung devices is done using the Heimdall flashing utility (on Linux) or the Odin utility (on Windows) after first bringing the device into 'download mode'. See more information on these utilities `here <http://docs.halium.org/en/latest/porting/install-build/reference-rootfs.html#install-hybris-boot-img-on-samsung-devices>`_. Follow the instructions for the utility you choose, including the specific flashing command for flashing the boot partition. Install system.img and rootfs (below) with the device in recovery mode. 
 
+.. _Inst-kern:
+
 Installating a kernel-only build
 --------------------------------
 
@@ -51,6 +53,8 @@ Installating a kernel-only build
 
 
 *Work in progress*
+
+.. _Inst-sys:
 
 Installing system image and rootfs
 ----------------------------------
@@ -75,7 +79,7 @@ Start by downloading the appropriate rootfs for your device. You need a rootfs c
 
 Download the GSI
 ^^^^^^^^^^^^^^^^
-This step is only relevant if you have not built a device-specific system image yourself, *i.e.* for porting methods 2 and 3.
+**This step is only relevant for porting methods 2 and 3!**
 
 Download `the Halium 9 LXC container image (GSI) <https://ci.ubports.com/job/UBportsCommunityPortsJenkinsCI/job/ubports%252Fcommunity-ports%252Fjenkins-ci%252Fgeneric_arm64/job/main/>`_.
 

@@ -1,3 +1,5 @@
+.. _Setting-up:
+
 Setting up the build environment
 ================================
 

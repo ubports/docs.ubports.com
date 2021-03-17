@@ -1,3 +1,5 @@
+.. _Configuring:
+
 Configuring device features
 ===========================
 

@@ -1,7 +1,11 @@
+.. _Obtain-sources:
+
 Obtaining the necessary sources
 ===============================
 
 The sources necessary for the build depend on the method you have chosen. Methods 1 and 2 require the full Halium sources as opposed to method 3 which only requires building the kernel.
+
+.. _Get-Halium:
 
 Initializing and downloading the Halium source
 ----------------------------------------------
@@ -76,7 +80,7 @@ Your sources must now be entered into the manifest. Start with your device repos
 
 'path' specifies the target path (subdirectory of your BUILDDIR) where the source code from repository 'name', which is found at 'remote', will be placed. The repository may contain a number of branches and it is important to secure the correct branch with 'revision='
 
-.. NOTE:
+.. Note::
     The revision attribute may be omitted if the default revision for this remote is the one that you wish to use.
 
 If you are unsure of your remote, refer to :ref:`Remotes`.
@@ -163,6 +167,7 @@ After completing the relevant steps above (according to your chosen :ref:`portin
 
 It is also a good idea to start a discussion on the `UBports Forum <https://forums.ubports.com/>`_ under Devices.
 
+.. _Kernel-source:
 
 Setting up for a kernel-only build
 ----------------------------------

@@ -1,3 +1,5 @@
+.. _Installer:
+
 Configuring the UBports installer
 =================================
 

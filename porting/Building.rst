@@ -11,6 +11,8 @@ A Halium 9.0 - GSI port consists of the following parts:
 
 Which of the above you need to build for your port depends on the porting method you have selected, as described in previous sections and pointed out below.
 
+.. _Boot-img:
+
 Building the boot image (halium-boot.img)
 -----------------------------------------
 
@@ -74,6 +76,8 @@ Now build the ``halium-boot.img`` using the commands::
 
     If you prefer ``make`` instead of ``mka`` you should set ``-j[num]`` for parallel building, which reduces build time. Replace ``[num]`` with the number of threads in your system plus 2.
 
+.. _System:
+
 Building the system image (system.img)
 --------------------------------------
 
@@ -85,6 +89,8 @@ Building the system image (system.img)
 
 
 *Work in progress*
+
+.. _Kernel:
 
 Building the kernel
 -------------------

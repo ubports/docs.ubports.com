@@ -1,3 +1,5 @@
+.. _Recovery:
+
 Building UBports recovery
 =========================
 
