@@ -93,9 +93,9 @@ Now build the ``halium-boot.img`` using the commands::
    export USE_HOST_LEX=yes
    mka halium-boot
 
-.. note::
+.. Note::
 
-    If you use ``make`` and not ``mka`` it is recommended to set ``-j[num]`` to do parallel building, which reduces build time. Replace ``[num]`` with the number of threads in your system plus 2.
+    If you prefer ``make`` instead of ``mka`` you should set ``-j[num]`` for parallel building, which reduces build time. Replace ``[num]`` with the number of threads in your system plus 2.
 
 Building the system image (system.img)
 --------------------------------------
