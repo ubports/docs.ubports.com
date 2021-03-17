@@ -123,21 +123,27 @@ For example, let’s say that you have a bunch of repositories at https://github
 
 There are also some remotes available to you by default, though they differ between halium versions. The following tables will help you identify these. See more information on these remotes can be found at the top of the file BUILDDIR/halium/.repo/manifests/default.xml.
 
-The following remotes are available by default in Halium-7.1::
+The following remotes are available by default in Halium 7.1:
 
-    Remote Name	Remote Description, URL
-    aosp	Android Open Source Project, https://android.googlesource.com
-    los	    LineageOS, https://github.com/LineageOS
-    hal	    Halium (link to GitHub root for legacy reasons), https://github.com
-    them	TheMuppets, https://github.com/TheMuppets
-    them2	TheMuppets (for some xiaomi vendor repos) https://gitlab.com/the-muppets
+===========  =======================
+Remote Name  Remote Description, URL
+-----------  -----------------------
+aosp         Android Open Source Project, https://android.googlesource.com
+los          LineageOS, http://github.com/LineageOS
+hal          Halium (link to GitHub root for legacy reasons), http://github.com
+them         TheMuppets, http://github.com/TheMuppets
+them2        TheMuppets (for some xiaomi vendor repos) https://gitlab.com/the-muppets
+===========  =======================
 
-The following remotes are available by default in Halium 9.0::
+The following remotes are available by default in Halium 9.0:
 
-    Remote Name	Remote Description, URL
-    github  LineageOS, https://github.com/
-    gitlab  Gitlab, ssh://git@gitlab.com
-    aosp    Android Open Source Project, https://android.googlesource.com
+===========  =======================
+Remote Name  Remote Description, URL
+-----------  -----------------------
+github       LineageOS, https://github.com/
+gitlab       Gitlab, ssh://git@gitlab.com
+aosp         Android Open Source Project, https://android.googlesource.com
+===========  =======================
 
 If you do not specify a remote, aosp is assumed.
 
