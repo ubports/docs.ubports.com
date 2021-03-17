@@ -74,17 +74,7 @@ There are three main methods that can be used when porting Ubuntu Touch. These a
 
 Although there are significant differences between these methods they also share certain steps of the porting process. This guide at present describes methods 1 and 2 in full, and will in the near future also cover method 3. Pending the completion of the guide, the more experienced (or more adventurous) porters can find information about method 3 (albeit not under this name) in the UBports Wiki - `porting notes page <https://github.com/ubports/porting-notes/wiki/Halium-9>`_ and `Generic System Image page <https://github.com/ubports/porting-notes/wiki/Generic-system-image-(GSI)>`_.
 
-.. Note::
-    Currently the Halium GSI is only built for arm64 devices. Consequently, owners of armhf devices must resort to method 1.
-
-The next section explains the structure of the remainder of this guide, pointing out which parts are relevant to each of the three methods above. The remainder of this section gives some words of advice to new porters.
-
-.. _Guide-structure:
-
-Structure of this guide and how to use it
------------------------------------------
-
-*Work in progress*
+The remainder of this section gives some words of advice to new porters. If you are already have porting experience or ROM building experience, you can likely skip straight to :ref:`the next section <Key>`, which presents a key to the rest of the guide.
 
 .. _The-challenges-of-the-porting-process:
 
@@ -125,3 +115,5 @@ General advice
 The more rigorous you are at making notes and documenting your steps, the less time you will spend backtracking your steps and guessing your way along. When dealing with issues that arise along the way, it is wise to work on them one at a time. If you try to correct several things at once, you risk ending up trying to guess which changes solved a given issue, which easily leads to breaking the issue in question once more at some later stage.
 
 If you are not discouraged after reading this, we welcome your efforts and wish you the best of luck!
+
+The next section presents a key to the rest of this guide.

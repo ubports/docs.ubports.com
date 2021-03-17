@@ -64,6 +64,7 @@ You may view this documentation in the following languages:
    :name: sec-porting
 
    porting/Intro
+   porting/Key_to_guide
    porting/Preparations
    porting/Setting_up
    porting/Obtaining_sources
