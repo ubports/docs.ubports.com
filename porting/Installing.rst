@@ -49,6 +49,9 @@ Installating a kernel-only build
 
         (See :ref:`porting methods <Porting-methods>`.)
 
+
+*Work in progress*
+
 Installing system image and rootfs
 ----------------------------------
 

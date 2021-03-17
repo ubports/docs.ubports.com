@@ -158,7 +158,7 @@ After completing the relevant steps above (according to your chosen :ref:`portin
 It is also a good idea to start a discussion on the `UBports Forum <https://forums.ubports.com/>`_ under Devices.
 
 
-Setting up for a kernel only build
+Setting up for a kernel-only build
 ----------------------------------
 
 *Work in progress*

@@ -45,7 +45,9 @@ Android version  Halium version  Lineage OS (LOS)
 9.0              9.0             16.0            
 ===============  ==============  ================
 
-With Android 9.0 there came a significant change of architecture. The device-specific vendor blobs now reside on a separate partition instead of sharing a partition with the rest of the system image. This separation of device-specific code from generic code made possible what is known as the Generic System Image (GSI).
+.. _What-is-a-GSI:
+
+With Android 9.0 there came a significant change of architecture. The device-specific vendor blobs now reside on a separate partition instead of sharing a partition with the rest of the system image. This separation of device-specific code from generic code made possible what is known as the **Generic System Image (GSI)**.
 
 A GSI  is a system image that is built to be able to function with a wide range of devices. Android devices, as of version 9.0, use a GSI. For more information, see the `Android Developer pages <https://developer.android.com/topic/generic-system-image/>`_
 
@@ -82,7 +84,7 @@ The next section explains the structure of the remainder of this guide, pointing
 Structure of this guide and how to use it
 -----------------------------------------
 
-
+*Work in progress*
 
 .. _The-challenges-of-the-porting-process:
 
