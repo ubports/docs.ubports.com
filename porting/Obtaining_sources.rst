@@ -121,7 +121,7 @@ For example, let’s say that you have a bunch of repositories at https://github
         fetch="https://github.com/SomeUserName"
         revision="cm-14.1" />
 
-There are also some remotes available to you by default, though they differ between halium versions. The following tables will help you identify these. See more information on these remotes can be found at the top of the file BUILDDIR/halium/.repo/manifests/default.xml.
+There are also some remotes available to you by default, though they differ between Halium versions. The following tables will help you identify these. See more information on these remotes can be found at the top of the file BUILDDIR/halium/.repo/manifests/default.xml.
 
 The following remotes are available by default in Halium 7.1:
 
