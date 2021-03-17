@@ -42,7 +42,7 @@ The next step is to add the device-specific sources that need to be integrated i
 
 The necessary sources need to be located and specified by creating a device manifest file (or editing an existing one) in the directory BUILDDIR/halium/devices/manifests. 
 
-.. NOTE: 
+.. Note::
     A correct device manifest is crucial to the success of your port.
 
 Locating the sources
