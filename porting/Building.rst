@@ -58,29 +58,6 @@ Then, from the root of your BUILDDIR, run::
 
 You may have to do this twice. It will likely fix things both times. Then, run the script without the ``-w`` flag to see if there are any more errors. If there are, fix them manually. Once finished, run the script without the ``-w`` flag one more time to make sure everything is correct.
 
-Include your device in fixup-mountpoints
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Fixup-mountpoints replaces the aliases of block device nodes in ``/dev/block/by-name`` with their literal nodes under ``/dev/block``. This prevents issues caused by ``by-name`` not being populated by systemd.
-
-First check if the codename of your device is already included in the ``<BUILDDIR>/halium/hybris-boot/fixup-mountpoints`` script.
-
-If it's not already included, you will need to add it. Your device should be running LineageOS or another ROM where you can get root access over ADB.
-
-1. Find the fstab file for your device. For my Moto G5 Plus, this was ``fstab.qcom`` in ``device/motorola/potter/rootdir/etc``
-2. Enable adb root access
-3. Create the skeleton for your device in fixup-mountpoints, right befHalium-boot's ``mount`` is not aware of SELinux contexts. If your device's file system table (``fstab`` file) includes any contexts, the partition that they are on will fail to mount and your port will not work correctly.
-
-Start by locating your fstab file. This will commonly be inside ``<BUILDDIR>/device/MANUFACTUER/CODENAME/rootdir/etc`` (e.g. for the Samsung S7 - codename *herolte*: ``halium/device/samsung/herolte/rootdir/etc``) and it is named either ``fstab.qcom`` or ``fstab.devicename``. Open the file for editing.
-
-If the type of the 'data' or 'userdata' partition is ``f2fs``, you need to change it to ``ext4``.
-
-With the file open, remove all ``context=`` options from all block devices in the file. The option will start at the text ``context=`` and end at the comma following it.
-
-For example, the line ``ro,nosuid,nodev,context=u:object_r:firmware_file:s0,barrier=0`` should become ``ro,nosuid,nodev,barrier=0``
-
-Save and exit.
-
 Build
 ^^^^^
 
