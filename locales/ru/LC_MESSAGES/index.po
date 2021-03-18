@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 17:42-0600\n"
-"PO-Revision-Date: 2021-02-22 23:35+0000\n"
+"PO-Revision-Date: 2021-03-18 00:13+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-index/ru/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.3\n"
 
 #: ../../index.rst:25
@@ -42,7 +42,7 @@ msgstr "Портирование на устройства"
 
 #: ../../index.rst:73
 msgid "Click Packages"
-msgstr ""
+msgstr "Click-пакеты"
 
 #: ../../index.rst:73
 msgid "Ubuntu UI-Toolkit"

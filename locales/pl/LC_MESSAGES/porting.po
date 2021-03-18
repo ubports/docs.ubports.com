@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-03-10 08:53+0000\n"
+"PO-Revision-Date: 2021-03-18 00:13+0000\n"
 "Last-Translator: Carlod <carlod@disroot.org>\n"
 "Language-Team: Polish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/pl/>\n"
@@ -963,7 +963,7 @@ msgstr ""
 
 #: ../../porting/halium_7-1/Common_errors.rst:169
 msgid "Refer to section :ref:`Apply-apparmor-kernel-patches`."
-msgstr "Odwołanie do sekcji :ref: `Zaaplikuj patche apparmora do kernela`."
+msgstr "Odwołanie do sekcji :ref:`Zaaplikuj patche apparmora do kernela`."
 
 #: ../../porting/halium_7-1/Common_errors.rst:171
 msgid "This section is a *Work in progress*"
@@ -1093,7 +1093,7 @@ msgid "There are also other options available that may be useful for you dependi
 msgstr ""
 "Dostępne są także inne opcje, które mogą być ci przydatne zależnie od "
 "formatu twojego urządzenia. Są wymienione poniżej i szczegółowo wyjaśnione w "
-"sekcji :ref: `Ustawienia-wyświetlania`."
+"sekcji :ref:`Ustawienia-wyświetlania`."
 
 #: ../../porting/halium_7-1/Configuring.rst:68
 msgid "All of these settings are guessed by Unity 8 if none are set. There are many cases, however, where the guess is wrong (for example, very high resolution phone displays will be identified as desktop computers). To manually set a value for these variables, simply edit the file at ``etc/ubuntu-touch-session.d/android.conf`` specifying them. For example, this is the file for the Nexus 7 tablet::"
@@ -1102,7 +1102,7 @@ msgstr ""
 #: ../../porting/halium_7-1/Configuring.rst:76
 msgid "The :ref:`Display-settings` section details methods for deriving values for these variables."
 msgstr ""
-"Sekcja :ref: `Ustawinia-wyświetlania`szczegółowo opisuje metody wprowadzania "
+"Sekcja :ref:`Ustawinia-wyświetlania` szczegółowo opisuje metody wprowadzania "
 "tych wartości do zmiennych."
 
 #: ../../porting/halium_7-1/Configuring.rst:78
@@ -1116,7 +1116,7 @@ msgid "Create the file android.conf in your 'ubuntu' directory and enter the set
 msgstr ""
 "Stwórz plik android.conf w folderze 'ubuntu' i wpisz ustawienia które "
 "ustaliłeś/aś i przetestowałeś/aś w poprzedniej sekcji. Wykonaj 3 i 4 etap "
-"powyżej, pamiętając :ref: `Zbuduj-ponownie-system.img`."
+"powyżej, pamiętając :ref:`Zbuduj-ponownie-system.img`."
 
 #: ../../porting/halium_7-1/Configuring.rst:85
 msgid "Apply apparmor kernel patches"
@@ -1218,7 +1218,7 @@ msgid "In order to install Ubuntu Touch, you will need a recovery with Busybox, 
 msgstr ""
 "Aby zainstalować Ubuntu Touch, będziesz potrzebował recovery z Busyboxem, "
 "takie jak TWRP, zainstalowane na twoim urządzeniu. Jeśli tego jeszcze nie "
-"zrobiłeś, zobacz :ref: `Install-TWRP-recovery` i zainstaluj je teraz."
+"zrobiłeś, zobacz :ref:`Install-TWRP-recovery` i zainstaluj je teraz."
 
 #: ../../porting/halium_7-1/Installing.rst:17
 msgid "You will also need to ensure the ``/data`` partition is formatted with ``ext4`` and does not have any encryption on it. Boot into the recovery image you just installed, check and adjust as necessary."
@@ -1295,14 +1295,14 @@ msgstr ""
 "JBBgameich/halium-install>`_. Te repozytorium zawiera narzędzia, które służą "
 "do instalacji obrazu systemu Halium i rootfs'u dystrybucji. Uruchom ponownie "
 "swoje urządzenie do trybu recovery (np. TWRP), aby znów uzyskać dostęp do "
-"adb. Teraz użyj skryptu ``halium-install`, aby zainstalować Ubuntu Touch na "
+"adb. Teraz użyj skryptu ``halium-install``, aby zainstalować Ubuntu Touch na "
 "twoim urządzeniu::"
 
 #: ../../porting/halium_7-1/Installing.rst:51
 msgid "The script will copy and extract the files to their proper places, then allow you to set the user password for your device (the *phablet* user's password)."
 msgstr ""
 "Skrypt skopiuje i rozpakuje pliki do ich właściwych miejsc, potem pozwoli ci "
-"wybrać hasło dla twojego urządzenia (hasło użytkownika *phablet*)."
+"wybrać hasło dla twojego urządzenia (hasło użytkownika *phablet* )."
 
 #: ../../porting/halium_7-1/Installing.rst:54
 msgid "Get SSH access"
@@ -1343,7 +1343,7 @@ msgstr "Rozwiązywanie problemów procesu wczesnego bootowania"
 
 #: ../../porting/halium_7-1/Installing.rst:69
 msgid "Refer to :ref:`Known-issues-with-initial-boot`."
-msgstr "Odwołanie do :ref: `Znane-problemy-z-procesem-wczesnego-bootowania`."
+msgstr "Odwołanie do :ref:`Znane-problemy-z-procesem-wczesnego-bootowania`."
 
 #: ../../porting/halium_7-1/Reference_material.rst:2
 msgid "Reference material"
@@ -1621,7 +1621,7 @@ msgstr ""
 "Teraz, kiedy jesteś zalogowany/a pozostało jeszcze wiele rzeczy do "
 "skonfigurowania zanim twoje urządzenie stanie się w pełni funkcjonalnym "
 "portem Ubuntu Touch. Właściwym sposobem jest przechowywanie tych "
-"konfiguracji jako nakładkę (:ref `Nakładka), a nie tworzenie folderu "
+"konfiguracji jako nakładkę (:ref:`Nakładka`), a nie tworzenie folderu "
 "głównego możliwym do zapisu, jak opisano poniżej. Jednakże, aby szybko "
 "ustawić udev rules, które są niezbędne, aby wykonać następne kroki, będziesz "
 "musiał użyć tej metody podczas pierwszej konfiguracji."
@@ -1659,7 +1659,7 @@ msgstr ""
 msgid "When Unity 8 is first brought up on your device, you will probably notice that everything is very small. The :ref:`Display-scaling` section describes how to deal with this."
 msgstr ""
 "Kiedy Unity 8 pojawi się po raz pierwszy na twoim urządzeniu zauważysz, że "
-"wszystko jest strasznie małe. Sekcja :ref: `Skalowanie-ekranu` opisze jak "
+"wszystko jest strasznie małe. Sekcja :ref:`Skalowanie-ekranu` opisze jak "
 "sobie z tym poradzić."
 
 #: ../../porting/halium_7-1/Unity8.rst:31
@@ -1668,7 +1668,7 @@ msgstr "Problemy z uruchamianiem Unity 8"
 
 #: ../../porting/halium_7-1/Unity8.rst:33
 msgid "Refer to :ref:`Known-issues-when-bringing-up-Unity-8`."
-msgstr "Odwołanie do :ref: `Znane-problemy-z-uruchamianiem-Unity-8`."
+msgstr "Odwołanie do :ref:`Znane-problemy-z-uruchamianiem-Unity-8`."
 
 #: ../../porting/halium_7-1/index.rst:2
 msgid "Halium 7.1"

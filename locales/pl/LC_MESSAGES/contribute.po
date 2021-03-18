@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-15 09:19-0500\n"
-"PO-Revision-Date: 2021-03-14 16:19+0000\n"
+"PO-Revision-Date: 2021-03-18 00:13+0000\n"
 "Last-Translator: Carlod <carlod@disroot.org>\n"
 "Language-Team: Polish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/pl/>\n"
@@ -510,7 +510,7 @@ msgstr ""
 
 #: ../../contribute/index.rst:2
 msgid "Contributing to UBports"
-msgstr ""
+msgstr "Wnoszenie wkładu do UBports"
 
 #: ../../contribute/index.rst:4
 msgid "Welcome! You're probably here because you want to contribute to UBports. The pages you'll find below here will help you do this in a way that's helpful to both the project and yourself."
