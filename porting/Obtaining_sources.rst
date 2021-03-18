@@ -145,7 +145,7 @@ The following remotes are available by default in Halium 9.0:
 Remote Name  Remote Description, URL
 -----------  -----------------------
 github       LineageOS, https://github.com/
-gitlab       Gitlab, ssh://git@gitlab.com
+gitlab       Gitlab, https://about.gitlab.com/  
 aosp         Android Open Source Project, https://android.googlesource.com
 ===========  =======================
 
