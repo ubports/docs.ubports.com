@@ -101,7 +101,7 @@ Now build the ``halium-boot.img`` using the commands::
 Build errors
 ^^^^^^^^^^^^
 
-There are a number of known build errors which you might encounter, depending first of all upon how rigorous you have been in following the steps outlined, but you may also run into unforeseen issues. If your build fails at first, make sure you have done exactly as described, then go through the list of known errors in `the Halium guide <https://docs.halium.org/en/latest/porting/common-kernel-build-errors.html#common-kernel-build-errors>`_. 
+There are a number of known build errors which you might encounter, depending first of all upon how rigorous you have been in following the steps outlined, but you may also run into unforeseen issues. If your build fails at first, make sure you have done exactly as described, then go through the list of `known errors in the Halium guide <https://docs.halium.org/en/latest/porting/common-kernel-build-errors.html#common-kernel-build-errors>`_. 
 
 I your particular error is not listed, you will need to do some research of your own. If you end up here, know that there is a community of porters, developers and enthusiasts who might be able to help you. Refer to :ref:`Getting-community-help`.
 
