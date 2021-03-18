@@ -11,7 +11,7 @@ Refer to the section (or sections) below as they apply to your porting method. I
 
 In order to install Ubuntu Touch, you need a recovery image with Busybox, such as TWRP, installed on your phone. If you have not done so yet, refer to section :ref:`Install-TWRP-recovery` and install it now. 
 
-You will also need to ensure the ``/data`` partition is formatted with ``ext4`` and does not have any encryption on it. Boot into the recovery image you just installed, check and adjust as necessary.
+You will also need to ensure the ``/data`` partition is formatted with ``ext4`` and is not encrypted. Boot into recovery, check and adjust as necessary.
 
 .. _Flash-boot:
 
@@ -100,9 +100,11 @@ For **Halium 7.1 ports (method 1)** use the following command::
 
 For **Halium 9.0 ports following method 1 or 2**, use the following command::
 
-    path/to/halium-install -p ut -s path/to/ubuntu-touch-android9-arm64.tar.gz path/to/android-rootfs.img
+    path/to/halium-install -p ut -s path/to/ubuntu-touch-android9-arm64.tar.gz path/to/[SYSTEM IMAGE]
 
-In both cases, the script will copy and extract the files to their proper places, then allow you to set the user password for your device (the *phablet* user's password).
+Were [SYSTEM IMAGE] will be the file system.img you have built (method 1) or the file android-rootfs.img you have downloaded (method 2).
+
+The script will copy and extract the files to their proper places, then allow you to set the user password for your device (the *phablet* user's password).
 
 Perform the installation (method 3)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
