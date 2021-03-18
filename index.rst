@@ -75,6 +75,7 @@ You may view this documentation in the following languages:
    porting/Configuring
    porting/UBports_recovery
    porting/UBports_installer
+   porting/Reference_material
 
 .. toctree::
    :maxdepth: 1

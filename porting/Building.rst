@@ -47,6 +47,8 @@ The ``breakfast`` command is used to set up the build environment for a specific
 
 Breakfast will attempt to find your device, set up all of the environment variables needed for building, and give you a summary at the end.
 
+.. _Edit-kernel-config:
+
 Modify the kernel configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

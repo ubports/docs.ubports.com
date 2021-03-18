@@ -83,7 +83,9 @@ When you have made the adjustments you need and prepared your source as describe
 Udev rules
 ^^^^^^^^^^
 
+Extract the file 70-android.rules which you created in the previous section using ``adb pull`` or ``scp`` and copy it to the 'ubuntu' directory of your device source tree. Complete :ref:`steps 3 and 4 above <Overlay>`.
 
+.. _Display-scaling:
 
 Display scaling
 ^^^^^^^^^^^^^^^
