@@ -20,20 +20,7 @@ When setting up the build environment you need to have Python 3.6 or newer insta
 
     python -V
 
-.. Note::
-
-    Irrespective of the Linux distribution you are using, Python 3 may cause errors when you reach the build stage.
-
-    One method of switching to Python 2 is to redirect the symbolic link in /usr/bin. Check which binary your /usr/bin/python is linked to by issuing::
-
-        ls -l /usr/bin/py*
-
-    This will also list the available binaries. If your /usr/bin/python is linked to a python 3 binary, you can switch by deleting the symbolic link and creating a new one::
-
-        rm /usr/bin/python
-        ln -s /usr/bin/<your_python2_binary> /usr/bin/python
-
-    If you are using Linux Arch, this distribution uses Python 3 as it's default python version, but Python 2 can be invoked using a virtual environment. Please refer to `‘Python/Virtual environment’ on the Arch Wiki <https://wiki.archlinux.org/index.php/Python/Virtual_environment>`_ for instructions on setting this up.
+If you are using Linux Arch, this distribution uses Python 3 as it's default python version, but Python 2 can be invoked using a virtual environment. Please refer to `‘Python/Virtual environment’ on the Arch Wiki <https://wiki.archlinux.org/index.php/Python/Virtual_environment>`_ for instructions on setting this up.
 
 Debian (Stretch or newer) / Ubuntu (16.04 or 18.04)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
