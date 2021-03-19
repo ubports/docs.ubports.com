@@ -3,8 +3,6 @@
 Configuring device features
 ===========================
 
-*Work in progress*
-
 .. Tip::
     Applies to:
         * Method 1
@@ -26,6 +24,8 @@ Seek help as needed from one of the sources mentioned in the subsection on :ref:
 
 Bluetooth
 ---------
+
+*Work in progress*
 
 .. _Overlay-files:
 
@@ -131,3 +131,5 @@ Now complete :ref:`steps 3 and 4 above <Overlay>`, taking care to remember the n
 
 GPS
 ^^^
+
+*Work in progress*
