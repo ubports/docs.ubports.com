@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 09:34-0500\n"
-"PO-Revision-Date: 2021-03-11 01:15+0000\n"
-"Last-Translator: AO-LocLab <ao@localizationlab.org>\n"
+"PO-Revision-Date: 2021-03-19 14:27+0000\n"
+"Last-Translator: Anne Onyme <anneonyme017@netcourrier.com>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/fr/>\n"
 "Language: fr\n"
@@ -506,12 +506,22 @@ msgid ""
 "need (likely ``armhf`` or ``arm64``). In this case you have to compile the "
 "library as described above."
 msgstr ""
+"En général, une bibliothèque pré-compilée est utilisable uniquement comme un "
+"objet partagé lié dynamiquement. En plus, elle peut contenir des composants "
+"que vous n'utilisez pas et qui risquent d'alourdir votre application. Une "
+"bibliothèque peut aussi faire moins bien des choses que vous pourriez "
+"compiler vous-même. Parfois, une bibliothèque est disponible dans les dépôts "
+"d'Ubuntu mais n'est pas installable pour l'architecture que vous désirez (le "
+"plus souvent ``armhf`` ou ``arm64``). Dans ce cas, vous devrez compiler la "
+"bibliothèque comme décrit ci-dessus."
 
 #: ../../appdev/guides/dependencies.rst:62
 msgid ""
 "If the library is available in the Ubuntu Repositories, you can add it to "
 "the dependencies list, like this:"
 msgstr ""
+"Si la bibliothèque est disponible dans les dépôts d'Ubuntu, vous pouvez "
+"l'ajouter à la liste des dépendances comme ceci :"
 
 #: ../../appdev/guides/dependencies.rst:74
 msgid ""
@@ -520,20 +530,26 @@ msgid ""
 "Tools' clickable.json <https://github.com/t-mon/guitar-tools/blob/master/"
 "clickable.json#L4>`_."
 msgstr ""
+"Clickable va installer automatiquement le paquet spécifié pour "
+"l'architecture cible dans le conteneur servant à la compilation. Un exemple "
+"peut être trouvé dans le fichier `clickable.json de Guitar Tools "
+"<https://github.com/t-mon/guitar-tools/blob/master/clickable.json#L4>`_."
 
 #: ../../appdev/guides/dependencies.rst:76
 msgid ""
 "If the library can be found in a PPA, you can add the PPA to the clickable."
 "json, too. For example:"
 msgstr ""
+"Si la bibliothèque est incluse dans un PPA, vous pouvez aussi ajouter ce PPA "
+"dans le fichier clickable.json. Par exemple :"
 
 #: ../../appdev/guides/dependencies.rst:91
 msgid "Otherwise add a script to download the pre-built library."
-msgstr ""
+msgstr "Sinon, ajoutez un script pour télécharger la bibliothèque pré-compilée."
 
 #: ../../appdev/guides/dependencies.rst:94
 msgid "Usage"
-msgstr ""
+msgstr "Utilisation"
 
 #: ../../appdev/guides/dependencies.rst:95
 msgid ""
@@ -541,6 +557,10 @@ msgid ""
 "found that you include into the app's source code. Second, you need to link "
 "the library's binary against your app's binary."
 msgstr ""
+"Tout d'abord, vous devez spécifier le répertoire d'inclusion où se trouvent "
+"les en-têtes que vous devez intégrer dans le code source de l'application. "
+"Puis, vous devez lier le binaire de la bibliothèque à celui de votre "
+"application."
 
 #: ../../appdev/guides/dependencies.rst:97
 msgid ""
@@ -550,6 +570,12 @@ msgid ""
 "variables pointing to the library's binary and include directories. The "
 "additional lines on your CMakeLists.txt then may look like:"
 msgstr ""
+"Si la bibliothèque contient un fichier de configuration CMake, vous pouvez "
+"utiliser la commande `find_package <https://cmake.org/cmake/help/latest/"
+"command/find_package.html>`_ , qui vous donnera la cible pour la liaison ou "
+"des variables pointant vers le binaire de la bibliotèque et ses dossiers "
+"d'entêtes. Les lignes supplémentaires dans votre fichier CMakeLists.txt "
+"peuvent ressembler à cela :"
 
 #: ../../appdev/guides/dependencies.rst:106
 msgid ""
@@ -568,16 +594,21 @@ msgid ""
 "At this point you should already be able to test with Clickable's desktop "
 "mode running ``clickable desktop``."
 msgstr ""
+"À ce stade, vous devriez déjà pouvoir tester le mode ordinateur de Clickable "
+"en lançant ``clickable desktop``."
 
 #: ../../appdev/guides/dependencies.rst:111
 msgid "Deployment"
-msgstr ""
+msgstr "Déploiement"
 
 #: ../../appdev/guides/dependencies.rst:112
 msgid ""
 "If you linked the library statically, you can skip this step, as the "
 "library's binary is already inside your app's binary."
 msgstr ""
+"Si vous avez lié votre bibliothèque de façon statique, vous pouvez passer "
+"cette étape. En effet, le binaire de cette bibliothèque est alors déjà "
+"inclus à celui de votre application."
 
 #: ../../appdev/guides/dependencies.rst:114
 msgid ""
@@ -586,6 +617,10 @@ msgid ""
 "You should see an error message telling you which shared object file was "
 "missing."
 msgstr ""
+"Trouvez quels fichiers objets partagés (``*.so``) sont à intégrer dans le "
+"paquet. Pour cela, démarrez l'application sur votre appareil en passant par "
+"``clickable && clickable logs``. Vous devriez voir un message d'erreur vous "
+"indiquant quels objets partagés sont manquants."
 
 #: ../../appdev/guides/dependencies.rst:116
 msgid ""
@@ -618,12 +653,18 @@ msgid ""
 "Depending on the library, you might need to ship some additional data. In "
 "that case consult the library's readme or install instructions."
 msgstr ""
+"Selon la bibliothèque concernée, vous devrez peut être intégrer des données "
+"supplémentaires. Dans ce cas, il faut consulter le fichier lisez-moi ou les "
+"instructions d'installation."
 
 #: ../../appdev/guides/dependencies.rst:140
 msgid ""
 "You should be set up to build and install your click package on a device "
 "connected to your computer now by running ``clickable``."
 msgstr ""
+"Vous devriez maintenant être en mesure de compiler et d'installer votre "
+"paquet Click sur un appareil connecté à votre ordinateur en lançant "
+"``clickable``."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:2
 msgid "Importing from Content Hub and URLdispatcher"
