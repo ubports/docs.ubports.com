@@ -3,7 +3,7 @@ Run desktop applications
 
 Libertine allows you to use standard desktop applications in Ubuntu Touch.
 
-To install apps you may use the *Settings* interface on your Ubuntu Touch device, or you may use the command-line as described further below.
+To install applications you can use the *Settings* interface on your Ubuntu Touch device, or the command-line as described further below.
 
 Manage containers
 -----------------
@@ -81,7 +81,7 @@ Packages may also be installed via the command-line::
 Remove a package
 ^^^^^^^^^^^^^^^^
 
-On the package list, within the container (*System Settings* > *Libertine* > *Manage Libertine Containers* > *CONTAINER NAME*), swipe right on the package you want to remove to reveal the option to remove it.
+Remove a package by swiping it to the right from its entry in the package list (in *System Settings* > *Libertine* > *Manage Libertine Containers* > *CONTAINER NAME*). An option to remove it will be revealed.
 
 Or you can remove the package via the command-line::
 
@@ -200,7 +200,7 @@ Background
 A display server coordinates input and output of an operating system.
 Most Linux|GNU distributions today use the X server.
 Ubuntu Touch does not use X, but a new display server called Mir.
-This means standard X apps are not directly compatible with Ubuntu Touch.
+This means standard X applications are not directly compatible with Ubuntu Touch.
 A compatibility layer called XMir resolves this.
 Libertine relies on XMir to display desktop apps.
 
