@@ -9,14 +9,14 @@ Repository naming convention
 Native packages
 ^^^^^^^^^^^^^^^
 
-Native packages are repositories which contain a ``DEBIAN/`` folder **with** the source used to create the DEB source package (``.dsc``).
+Native packages (like https://github.com/ubports/system-settings) are repositories that contain a ``debian/`` folder **with** the source used to create the DEB source package (``.dsc``).
 
 The name of the Debian source package generated from the repository and the name of the Git-repository should be the same.
 
 Packaging repositories
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Packaging repositories contain a ``DEBIAN`` folder **without** the source used to create the Debian source package (``.dsc``).
+Packaging repositories (like https://github.com/ubports/pulseaudio-packaging) contain a ``debian`` folder **without** the source used to create the Debian source package (``.dsc``).
 They also contain instructions to tell ``debhelper`` how to get the sources used to create the source package.
 
 The repository should have the name of the source package it generates with ``-packaging`` appended to the end.
