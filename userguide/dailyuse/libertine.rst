@@ -36,7 +36,7 @@ Creation can take a while due to the size of the container (some hundred megabyt
 
 .. note::
     The ``create`` command shown above cannot be run directly in the terminal app, due to AppArmor restrictions.
-    You can run it from another device using either ``adb`,` or an ``SSH`` connection.
+    You can run it from another device using either an ADB or SSH connection.
     Alternatively, you can run it from the terminal app using a loopback SSH connection by running this command: ``ssh localhost``.
 
 List containers
@@ -72,7 +72,7 @@ From the apps list in the *Manage Libertine Containers* menu you can tap the + s
 Enter the package name if you know it.
 Otherwise you can search the archives for a package.
 You can make this process easier by making the *Lubuntu Software Center* your first package install.
-Being a desktop app, you will need to use the *Libertine Tweak Tool* in the *Open Store* to make the text large enough to read on a mobile device.
+Being a desktop application, you will need to use the *Libertine Tweak Tool* in the *Open Store* to make the text large enough to read on a mobile device.
 
 Packages may also be installed via the command-line::
 
@@ -198,7 +198,6 @@ Background
 ----------
 
 A display server coordinates input and output of an operating system.
-Most Linux|GNU distributions today use the X server.
 Ubuntu Touch does not use X, but a new display server called Mir.
 This means standard X applications are not directly compatible with Ubuntu Touch.
 A compatibility layer called XMir resolves this.
