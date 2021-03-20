@@ -8,7 +8,7 @@ Where are bugs tracked?
 -----------------------
 
 Since quality assurance depends heavily on community effort, issues are
-tracked where users expects them, instead of separated by repository.
+tracked where users expect them, instead of separated by repository.
 This means issues of almost all distributed components (as with the system-image)
 are tracked in the `Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch>`__.
 An exception to this are click-apps, which can be updated independently through
@@ -22,7 +22,7 @@ This page is mainly about the Ubuntu Touch tracker, but most principles apply
 to other projects as well.
 
 .. note::
-     Practical exceptions to purity might apply and must (no exceptions) be described in the project's README.md file.
+     Practical exceptions to purity are to be described in the project's README.md file.
 
 GitHub projects
 ---------------
