@@ -1,11 +1,11 @@
 Android apps
 ========================
 
-`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer to run Android apps on GNU/Linux operating systems such as UBports.
+`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer to run Android apps on GNU/Linux operating systems such as Ubuntu Touch.
 
 .. note::
     "Computer" refers to another device you can connect your Ubuntu Touch device to.
-    Your attached computer must have ``adb`` and ``fastboot`` installed.
+    Your USB-attached computer must have ``adb`` and ``fastboot`` installed.
 
 .. note::
     You will need to execute commands on your Ubuntu Touch device (and/or attached computer) to install Anbox and APKs.
@@ -105,7 +105,7 @@ Keep your apps up to date
 How to uninstall apps
 ---------------------
 
-- To uninstall apps, run ``adb uninstall [APP_ID]`` from your computer::
+- To uninstall apps from the Ubuntu Touch device, run ``adb uninstall [APP_ID]`` from your computer::
 
     adb shell # connect from your computer to your Ubuntu Touch device
     sudo mount -o rw,remount /
@@ -139,4 +139,4 @@ Troubleshooting
 Reporting bugs
 --------------
 
-Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs concering Ubuntu Touch are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with Anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!
+Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs concerning Ubuntu Touch are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with Anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!
