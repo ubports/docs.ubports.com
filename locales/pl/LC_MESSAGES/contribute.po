@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-15 09:19-0500\n"
-"PO-Revision-Date: 2021-03-18 00:13+0000\n"
+"PO-Revision-Date: 2021-03-19 14:27+0000\n"
 "Last-Translator: Carlod <carlod@disroot.org>\n"
 "Language-Team: Polish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/pl/>\n"
@@ -535,7 +535,7 @@ msgstr ""
 #: ../../contribute/monetary.rst:6
 msgid "Your contribution finances our server infrastructure and debug services, and helps covering additional costs."
 msgstr ""
-"Dzięki waszemu wsparciu finansowym możemy finansować nasą infrastrukure "
+"Dzięki waszemu wsparciu finansowemu możemy finansować naszą infrastrukure "
 "serwerową i usługi debugowania oraz pokryć dodatkowe koszty."
 
 #: ../../contribute/preinstalled-apps.rst:2
