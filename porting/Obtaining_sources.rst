@@ -56,7 +56,7 @@ Locate your device repository on `LineageOS’s GitHub organization <https://git
 
 Open the device repository on Github. It will contain a lineage.dependencies (or cm.dependencies) file which specifies all other repositories that your device is reliant upon.
 
-.. 
+.. _Note:
     During the course of the porting process you will need to make modifications to the device repository as well as one or more of the others specified in lineage.dependencies (or cm.dependencies). It is therefore adviseable to create a Github account and save your own copy of these by forking them to your account.
 
 Creating the device manifest file
