@@ -55,7 +55,7 @@ Clone the backport scripts into a directory outside your halium source tree by i
 
     git clone https://github.com/ubuntu-phonedations/backports.git -b for-ubuntu backport-scripts
 
-This downloads the backport scripts prepared by Canonical based on the :ref:`original Backports Project <Backports>` mentioned above.
+This downloads the backport scripts prepared by Canonical based on the :ref:`original Backports Project <Backports>` mentioned above, and places them in the directory ``~/backport-scripts``.
 
 Download kernel source to backport from
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
