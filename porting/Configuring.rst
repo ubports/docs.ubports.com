@@ -51,13 +51,8 @@ The following steps need to be done::
 Download the backports scripts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Create a directory (outside your halium source tree) for the backports scripts::
+Clone the backport scripts into a directory outside your halium source tree by issuing this command from your home (~) directory::
 
-    mkdir ~/backport-scripts
-
-Now clone the scripts into this directory::
-
-    cd ~/backport-scripts
     git clone https://github.com/ubuntu-phonedations/backports.git -b for-ubuntu backport-scripts
 
 This downloads the backport scripts prepared by Canonical based on the :ref:`original Backports Project <Backports>` mentioned above.
