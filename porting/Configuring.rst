@@ -14,18 +14,85 @@ AppArmor
 
 `What is AppArmor? <https://wiki.ubuntu.com/AppArmor>`_
 
-Start by downloading the backported `AppArmor patch <https://github.com/ubports/AppArmor-backports-ut>`_ corresponding to your device's kernel version. Your kernel version is specified at the beginning of your kernel defconfig file, i.e. the one you edited in section :ref:`Edit-kernel-config` above.
+Start by downloading the backported `AppArmor patch <https://github.com/ubports/AppArmor-backports-ut>`_ corresponding to your device's kernel version. Your kernel version is specified at the beginning of your kernel defconfig file, i.e. the one you edited in section :ref:`Edit-kernel-config` above. (For more information on backporting, see the :ref:`bluetooth <Bluetooth>` section below.)
 
-You now need to delete your entire BUILDDIR/kernel/VENDOR/MODEL/security/AppArmor subdirectory and replace it with the one you downloaded. Then rebuild halium-boot. 
+You now need to delete your entire BUILDDIR/kernel/VENDOR/MODEL/security/apparmor subdirectory and replace it with the one you downloaded. Then rebuild halium-boot. 
 
-If you get errors when building, you will need to resolve them one by one, modifying your source code as needed. Note that you should only modify the code in the AppArmor subdirectory if at all possible. Modifying code elsewhere will more than likely just compound your problems.
+If you get errors when building, resolve them one at a time, modifying your source code as needed. Note that you should only modify the code in the AppArmor subdirectory if at all possible. Modifying code elsewhere will more than likely just compound your problems.
 
 Seek help as needed from one of the sources mentioned in the subsection on :ref:`getting community help <Getting-community-help>`.
+
+.. _Bluetooth:
 
 Bluetooth
 ---------
 
 *Work in progress*
+
+When porting to devices running older kernel versions (mostly 3.x) which were in use with older versions of Ubuntu (mainly pre 16.04), it is necessary to replace the kernel bluetooth stack with a newer one. This is because the newer bluetooth hardware in today's bluetooth peripheral devices often has trouble talking to the older bluetooth drivers. This can be fixed by bringing in driver code from newer Linux kernel versions. The process is called *backporting*.
+
+.. _Backports:
+
+Backporting has been greatly fascilitated by the `Linux Backports Project <https://backports.wiki.kernel.org/index.php/Main_Page>`_ which has existed for some time. This project is aimed at mainline Linux kernels. Consequently, the tools (scripts) therein are not specifically tailored to Ubuntu Touch, and they will therefore abort at some point during the process. However, they are the best option available, and can provide significant help all the same.
+
+Bluetooth backporting steps
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The following steps need to be done::
+
+    1. Clone/download the backports scripts.
+    2. Clone/download the kernel source from the newer kernel version you wish to backport from.
+    3. Run the script to integrate the newer sources into your kernel source tree.
+    4. Fix errors that *will* occur when the script is run.
+    5. Make necessary changes to your kernel defconfig file.
+    6. Rebuild the full halium-boot.img (methods 1 and 2) or just the kernel (method 3)
+    7. Reflash, check and debug.
+
+Download the backports scripts
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Create a directory (outside your halium source tree) for the backports scripts::
+
+    mkdir ~/backports-scripts
+
+Now clone the scripts into this directory::
+
+    cd ~/backports-scripts
+    git clone https://github.com/ubuntu-phonedations/backports.git -b for-ubuntu backport-scripts
+
+This downloads the backports scripts prepared by Canonical based on the :ref:`original Backports Project <Backports>` mentioned above.
+
+Download kernel source to backport from
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Create a directory (outside your halium source tree) for the kernel source you will pull the newer drivers from::
+
+    mkdir ~/kernel-backports
+
+Now clone the kernel source for the version and branch you need (v4.2 in the example below) into this directory::
+
+    cd ~/kernel-backports
+    git clone https://kernel.googlesource.com/pub/scm/linux/kernel/git/next/linux-next -b v4.2
+
+.. Note::
+
+    Choosing kernel version 4.2 should be sufficient. Other available versions can be seen by visiting `the webpage <https://kernel.googlesource.com/pub/scm/linux/kernel/git/next/linux-next>`_ and examining the tags.
+
+Run script and fix errors
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Edit kernel defconfig
+^^^^^^^^^^^^^^^^^^^^^
+
+Build
+^^^^^
+
+Return to the root of your BUILDDIR and build::
+
+    croot
+    mka halium-boot
+
+Build errors are liable to occur and will vary depending on device. Handle them one at a time, seeking help as necessary.
 
 .. _Overlay-files:
 
@@ -131,5 +198,15 @@ Now complete :ref:`steps 3 and 4 above <Overlay>`, taking care to remember the n
 
 GPS
 ^^^
+
+*Work in progress*
+
+Camera
+^^^^^^
+
+*Work in progress*
+
+Video
+^^^^^
 
 *Work in progress*
