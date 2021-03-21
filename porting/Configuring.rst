@@ -53,14 +53,14 @@ Download the backports scripts
 
 Create a directory (outside your halium source tree) for the backports scripts::
 
-    mkdir ~/backports-scripts
+    mkdir ~/backport-scripts
 
 Now clone the scripts into this directory::
 
-    cd ~/backports-scripts
+    cd ~/backport-scripts
     git clone https://github.com/ubuntu-phonedations/backports.git -b for-ubuntu backport-scripts
 
-This downloads the backports scripts prepared by Canonical based on the :ref:`original Backports Project <Backports>` mentioned above.
+This downloads the backport scripts prepared by Canonical based on the :ref:`original Backports Project <Backports>` mentioned above.
 
 Download kernel source to backport from
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -81,6 +81,12 @@ Now clone the kernel source for the version and branch you need (v4.2 in the exa
 Run script and fix errors
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Got to the backport scripts directory and issue the command::
+
+    ./gentree.py --copy-list ./copy-list --integrate --clean --git-revision v4.2 ~/kernel-backports/linux-next ~/halium/kernel/[VENDOR]/[VERSION??]
+
+<'VERSION' is the wrong term above. What is the correct one?>
+
 Edit kernel defconfig
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -89,10 +95,9 @@ Build
 
 Return to the root of your BUILDDIR and build::
 
-    croot
     mka halium-boot
 
-Build errors are liable to occur and will vary depending on device. Handle them one at a time, seeking help as necessary.
+Build errors are liable to occur and will vary depending on device. Handle them one at a time, :ref:`seeking help <Getting-community-help>` as necessary.
 
 .. _Overlay-files:
 
