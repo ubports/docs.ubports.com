@@ -42,8 +42,8 @@ On your device, choose *Install* in the TWRP menu, navigate to the sdcard direct
 
 .. _Inst-kern:
 
-Installating a kernel-only build
---------------------------------
+Installing a kernel-only build
+------------------------------
 
 .. Tip::
     Applies to:
@@ -83,7 +83,7 @@ Download the GSI
 
 Download `the Halium 9 LXC container image (GSI) <https://ci.ubports.com/job/UBportsCommunityPortsJenkinsCI/job/ubports%252Fcommunity-ports%252Fjenkins-ci%252Fgeneric_arm64/job/main/>`_.
 
-Extract the downloaded file and locate the file ``android_rootfs.img`` in the directory ``system/var/lib/lxc/android``. This is the GSI file you will be transferring to the device.
+Extract the downloaded file and locate the file ``android-rootfs.img`` in the directory ``system/var/lib/lxc/android``. This is the GSI file you will be transferring to the device.
 
 Download the halium-install script
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
