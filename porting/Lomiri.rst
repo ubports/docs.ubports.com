@@ -23,7 +23,7 @@ What are udev rules?
 Add udev rules
 --------------
 
-The correct way to do this is by storing these settings in overlay files (:ref:`Overlay-files`), and not by making the root directory writeable, as described below. However, in order to quickly set up udev rules which are necessary to complete subsequent steps, you can use this method for first time setup.
+The correct way to do this is by storing these settings in overlay files (:ref:`Configuring`), and not by making the root directory writeable, as described below. However, in order to quickly set up udev rules which are necessary to complete subsequent steps, you can use this method for first time setup.
 
 Make / (root) writable
 ^^^^^^^^^^^^^^^^^^^^^^

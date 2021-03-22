@@ -22,7 +22,9 @@ Section/subsection                          Method 1 Method 2 Method 3
 :ref:`Install system.img/rootfs <Inst-sys>`     x        x        x
 :ref:`Boot <Boot>`                              x        x        x
 :ref:`Bring up Lomiri <Lomiri>`                 x        x        x
-:ref:`Configure features <Configuring>`         x        x        
+:ref:`AppArmor patching <Apparmor>`             x                
+:ref:`Backport bluetooth <Bluetooth>`           x        x        x     
+:ref:`Configure features <Configuring>`         x                
 :ref:`Build recovery <Recovery>`                x        x        x
 :ref:`Set up installer <Installer>`             x        x        x
 =========================================== ======== ======== ========

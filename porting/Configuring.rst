@@ -1,7 +1,7 @@
-.. _Configuring:
-
 Configuring device features
 ===========================
+
+.. _Apparmor:
 
 AppArmor
 --------
@@ -177,7 +177,7 @@ Return to the root of your BUILDDIR and build::
 
 Build errors are liable to occur and will vary depending on device. Handle them one at a time, :ref:`seeking help <Getting-community-help>` as necessary.
 
-.. _Overlay-files:
+.. _Configuring:
 
 Configuring features with overlay files
 ---------------------------------------
