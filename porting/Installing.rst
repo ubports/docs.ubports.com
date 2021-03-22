@@ -60,12 +60,7 @@ Installing system image and rootfs
 ----------------------------------
 
 .. Tip::
-    Applies to:
-        * Method 1
-        * Method 2
-        * Method 3
-
-        (See :ref:`porting methods <Porting-methods>`.)
+    All three porting methods require the installation of these two components, but not all steps below apply to all methods. **Read carefully** and perform only the steps which apply to your method!
 
 Download the appropriate rootfs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -79,6 +74,7 @@ Start by downloading the appropriate rootfs for your device. You need a rootfs c
 
 Download the GSI
 ^^^^^^^^^^^^^^^^
+
 **This step is only relevant for porting methods 2 and 3!**
 
 Download `the Halium 9 LXC container image (GSI) <https://ci.ubports.com/job/UBportsCommunityPortsJenkinsCI/job/ubports%252Fcommunity-ports%252Fjenkins-ci%252Fgeneric_arm64/job/main/>`_.
@@ -100,9 +96,9 @@ For **Halium 7.1 ports (method 1)** use the following command::
 
 For **Halium 9.0 ports following method 1 or 2**, use the following command::
 
-    path/to/halium-install -p ut -s path/to/ubuntu-touch-android9-arm64.tar.gz path/to/[SYSTEM IMAGE]
+    path/to/halium-install -p ut -s path/to/ubuntu-touch-android9-arm64.tar.gz path/to/[SYSTEM_IMAGE]
 
-Were [SYSTEM IMAGE] will be the file system.img you have built (method 1) or the file android-rootfs.img you have downloaded (method 2).
+Were [SYSTEM_IMAGE] will be the file system.img you have built (method 1) or the file android-rootfs.img you have downloaded (method 2).
 
 The script will copy and extract the files to their proper places, then allow you to set the user password for your device (the *phablet* user's password).
 
