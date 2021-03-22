@@ -3,14 +3,14 @@
 Configuring device features
 ===========================
 
+AppArmor
+--------
+
 .. Tip::
     Applies to:
         * Method 1
 
         (See :ref:`porting methods <Porting-methods>`.)
-
-AppArmor
---------
 
 `What is AppArmor? <https://wiki.ubuntu.com/AppArmor>`_
 
@@ -27,7 +27,13 @@ Seek help as needed from one of the sources mentioned in the subsection on :ref:
 Bluetooth
 ---------
 
-*Work in progress*
+.. Tip::
+    Applies to:
+        * Method 1
+        * Method 2 (depending on kernel version)
+        * Method 3 (depending on kernel version)
+
+        (See :ref:`porting methods <Porting-methods>`.)
 
 When porting to devices running older kernel versions (mostly 3.x) which were in use with older versions of Ubuntu (mainly pre 16.04), it is necessary to replace the kernel bluetooth stack with a newer one. This is because the newer bluetooth hardware in today's bluetooth peripheral devices often has trouble talking to the older bluetooth drivers. This can be fixed by bringing in driver code from newer Linux kernel versions. The process is called *backporting*.
 
@@ -48,8 +54,8 @@ The steps are as follows::
     6. Rebuild the full halium-boot.img (methods 1 and 2) or just the kernel (method 3)
     7. Reflash, check and debug.
 
-Download the backports scripts
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Download the backport scripts
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Clone the backport scripts into a directory outside your halium source tree by issuing this command from your home (~) directory::
 
@@ -156,13 +162,11 @@ Once the above is complete, add the following lines, and then edit as described 
 
 As an example, the lines above have been edited to conform with backporting from kernel 4.2 to a device with kernel version 3.18. 
 
-For devices running lower kernel versions enable each line specifying a version above the device's kernel version by removing the leading ``# `` on these lines. Make sure the highest version number in the sequence corresponds to the kernel version you are backporting from. Thus, if backporting from kernel version 4.3 one would need to insert an additional line::
+For devices running lower kernel versions enable each line specifying a version above the device's kernel version by removing the leading ``#`` on these lines. Make sure the highest version number in the sequence corresponds to the kernel version you are backporting from. Thus, if backporting from kernel version 4.3 one would need to insert an additional line::
 
         CONFIG_BACKPORT_KERNEL_4_3=y
 
 Edit the lines ``CONFIG_BACKPORT_KERNEL_VERSION="v4.2"`` and ``CONFIG_BACKPORT_VERSION="v4.2"`` to correspond to the kernel version you are backporting from.
-
-
 
 Build
 ^^^^^
@@ -177,6 +181,12 @@ Build errors are liable to occur and will vary depending on device. Handle them 
 
 Configuring features with overlay files
 ---------------------------------------
+
+.. Tip::
+    The remainder of this section applies only to:
+        * Method 1
+
+        (See :ref:`porting methods <Porting-methods>`.)
 
 Note that as a rule of thumb, the method described below applies if the file you need to edit can be found in the /etc directory (or a subdirectory of this) on your device. You should not attempt to overwrite files located elsewhere using the method described here.
 
