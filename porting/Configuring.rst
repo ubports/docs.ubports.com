@@ -33,12 +33,12 @@ When porting to devices running older kernel versions (mostly 3.x) which were in
 
 .. _Backports:
 
-Backporting has been greatly fascilitated by the `Linux Backports Project <https://backports.wiki.kernel.org/index.php/Main_Page>`_ which has existed for some time. This project is aimed at mainline Linux kernels. Consequently, the tools (scripts) therein are not specifically tailored to Ubuntu Touch, and they will therefore abort at some point during the process. However, they are the best option available, and can provide significant help all the same.
+Backporting has been greatly fascilitated by the `Linux Backports Project <https://backports.wiki.kernel.org/index.php/Main_Page>`_ which has existed for some time. This project is aimed at mainline Linux kernels. Consequently, the tools (scripts) therein are not specifically tailored to Ubuntu Touch, and they will therefore abort at some point during the process. However, they are the best option available, and can provide significant help all the same. The method below is based on the use of a version of these scripts which has been specially prepared by Canonical.
 
 Bluetooth backporting steps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The following steps need to be done::
+The steps are as follows::
 
     1. Clone/download the backports scripts.
     2. Clone/download the kernel source from the newer kernel version you wish to backport from.
@@ -60,7 +60,7 @@ This downloads the backport scripts prepared by Canonical based on the :ref:`ori
 Download kernel source to backport from
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Create a directory (outside your halium source tree) for the kernel source you will pull the newer drivers from::
+Create a directory (outside your halium source tree) for the kernel source from which you will pull the newer drivers::
 
     mkdir ~/kernel-backports
 
@@ -76,7 +76,7 @@ Now clone the kernel source for the version and branch you need (v4.2 in the exa
 Run script and fix errors
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Got to the backport scripts directory and issue the command::
+Go to the backport scripts directory and issue the command::
 
     ./gentree.py --copy-list ./copy-list --integrate --clean --git-revision v4.2 ~/kernel-backports/linux-next ~/halium/kernel/[VENDOR]/[VERSION??]
 
@@ -84,6 +84,85 @@ Got to the backport scripts directory and issue the command::
 
 Edit kernel defconfig
 ^^^^^^^^^^^^^^^^^^^^^
+
+Your kernel config file (defconfig) needs to be modified in order for the backported driver and protocol code to be activated.
+
+Start by locating all lines beginning with ``CONFIG_BT_`` and move these to the end of the file. Collecting them there makes the subsequent steps somewhat easier by helping to keep track of the changes you make.
+
+Next, deactivate all that are activated, *i.e.* do not have a leading ``#``, by inserting this leading ``#``. At the same time, for each one add a corresponding one beginning with ``CONFIG_BACKPORT_BT_``, *e.g.*::
+
+    CONFIG_BT=y
+
+becomes::
+
+    #CONFIG_BT=y
+
+and then insert the corresponding line for backports::
+
+    CONFIG_BACKPORT_BT=y
+
+Some additional configuration settings are necessary, depending on your device. You will likely need the settings listed here, but additional ones can also be necessary::
+
+    #Depending options for new stuff from backports
+    #CONFIG_CRC16=y
+    CONFIG_CRYPTO=y
+    CONFIG_CRYPTO_BLKCIPHER=y
+    CONFIG_CRYPTO_AES=y
+    CONFIG_CRYPTO_CMAC=y
+    CONFIG_CRYPTO_HMAC=y
+    CONFIG_CRYPTO_ECB=y
+    CONFIG_CRYPTO_SHA256=y
+    CONFIG_CRYPTO_USER_API=y
+    CONFIG_CRYPTO_USER_API_HASH=y
+    CONFIG_CRYPTO_USER_API_SKCIPHER=y
+    #CONFIG_TTY=y
+
+To find out exactly which settings are necessary for your device, go to your kernel's ``backports/drivers`` directory, locate the Kconfig file and check the necessary settings specified therein. Example::
+
+    config BACKPORT_BT_BCM
+        tristate
+        depends on !BT_BCM
+        depends on FW_LOADER
+
+Here you are instructed to add ``CONFIG_BACKPORT_BT_BCM=y`` while deactivating ``CONFIG_BT_BCM=y`` (by commenting it out, like this ``#CONFIG_BT_BCM=y``) but also add ``CONFIG_FW_LOADER=y``.
+
+Once the above is complete, add the following lines, and then edit as described below::
+
+    CONFIG_BACKPORT_DIR="backports/"
+    CONFIG_BACKPORT_INTEGRATE=y
+    # CONFIG_BACKPORT_KERNEL_3_5=y #disable for kernel > 3.4
+    # CONFIG_BACKPORT_KERNEL_3_6=y #disable for kernel > 3.4
+    # CONFIG_BACKPORT_KERNEL_3_7=y #disable for kernel > 3.4
+    # CONFIG_BACKPORT_KERNEL_3_8=y #disable for kernel > 3.4
+    # CONFIG_BACKPORT_KERNEL_3_9=y #disable for kernel > 3.4
+    # CONFIG_BACKPORT_KERNEL_3_10=y #disable for kernel > 3.10
+    # CONFIG_BACKPORT_KERNEL_3_11=y #disable for kernel > 3.10
+    # CONFIG_BACKPORT_KERNEL_3_12=y #disable for kernel > 3.10
+    # CONFIG_BACKPORT_KERNEL_3_13=y #disable for kernel > 3.10
+    # CONFIG_BACKPORT_KERNEL_3_14=y #disable for kernel > 3.10
+    # CONFIG_BACKPORT_KERNEL_3_15=y #disable for kernel > 3.10
+    # CONFIG_BACKPORT_KERNEL_3_16=y #disable for kernel > 3.10
+    # CONFIG_BACKPORT_KERNEL_3_17=y #disable for kernel > 3.10
+    # CONFIG_BACKPORT_KERNEL_3_18=y #disable for kernel = 3.18
+    CONFIG_BACKPORT_KERNEL_3_19=y
+    CONFIG_BACKPORT_KERNEL_4_0=y
+    CONFIG_BACKPORT_KERNEL_4_1=y
+    CONFIG_BACKPORT_KERNEL_4_2=y
+    CONFIG_BACKPORT_KERNEL_NAME="Linux"
+    CONFIG_BACKPORT_KERNEL_VERSION="v4.2"
+    CONFIG_BACKPORT_LINUX=y
+    CONFIG_BACKPORT_VERSION="v4.2"
+    CONFIG_BACKPORT_BPAUTO_USERSEL_BUILD_ALL=y
+
+As an example, the lines above have been edited to conform with backporting from kernel 4.2 to a device with kernel version 3.18. 
+
+For devices running lower kernel versions enable each line specifying a version above the device's kernel version by removing the leading ``# `` on these lines. Make sure the highest version number in the sequence corresponds to the kernel version you are backporting from. Thus, if backporting from kernel version 4.3 one would need to insert an additional line::
+
+        CONFIG_BACKPORT_KERNEL_4_3=y
+
+Edit the lines ``CONFIG_BACKPORT_KERNEL_VERSION="v4.2"`` and ``CONFIG_BACKPORT_VERSION="v4.2"`` to correspond to the kernel version you are backporting from.
+
+
 
 Build
 ^^^^^
