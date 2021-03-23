@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 17:42-0600\n"
-"PO-Revision-Date: 2021-03-18 00:13+0000\n"
-"Last-Translator: Jan Christian Sherdahl <jan@sherdahl.no>\n"
+"PO-Revision-Date: 2021-03-23 16:04+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-userguide/nb/>\n"
 "Language: nb\n"
@@ -183,11 +183,9 @@ msgid "server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your ownC
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:16
-#, fuzzy
 msgid "CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmetic)"
 msgstr ""
-"KONTAKT- og KALENDER_NAVN / SYNLIG_NAVN / KONFIGURASJONS_NAVN (det er mer "
-"kosmetisk)"
+"KONTAKT- og KALENDERNAVN / SYNLIG_NAVN / OPPSETTSNAVN (det er mer estetisk)"
 
 #: ../../userguide/advanceduse/dav.rst:17
 msgid "CRON_FREQUENCY (for the frequency of synchronization)"
