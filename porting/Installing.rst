@@ -72,29 +72,27 @@ Start by downloading the appropriate rootfs for your device. You need a rootfs c
     * Halium 9.0, armhf (32 bit): `ubuntu-touch-android9-armhf.tar.gz <https://ci.ubports.com/job/xenial-hybris-android9-rootfs-armhf/>`_
     * Halium 9.0, arm64 (64 bit): `ubuntu-touch-android9-arm64.tar.gz <https://ci.ubports.com/job/xenial-hybris-android9-rootfs-arm64/>`_
 
-Download the GSI
-^^^^^^^^^^^^^^^^
-
-**This step is only relevant for porting methods 2 and 3!**
+Download the GSI (Methods 2 and 3 only)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Download `the Halium 9 LXC container image (GSI) <https://ci.ubports.com/job/UBportsCommunityPortsJenkinsCI/job/ubports%252Fcommunity-ports%252Fjenkins-ci%252Fgeneric_arm64/job/main/>`_.
 
 Extract the downloaded file and locate the file ``android-rootfs.img`` in the directory ``system/var/lib/lxc/android``. This is the GSI file you will be transferring to the device.
 
-Download the halium-install script
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Download the halium-install script (All methods)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Clone or download the `halium-install repository <https://gitlab.com/JBBgameich/halium-install>`_. This repository contains tools that can be used to install a Halium system image and distribution rootfs.
 Reboot your device to recovery (e.g. TWRP), to get adb access again. Now use the ``halium-install`` script to install Ubuntu Touch on your device.
 
-Perform the installation (methods 1 and 2)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Perform the installation (Methods 1 and 2 only)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 For **Halium 7.1 ports (method 1)** use the following command::
 
     path/to/halium-install -p ut path/to/rootfs.tar.gz path/to/system.img
 
-For **Halium 9.0 ports following method 1 or 2**, use the following command::
+For **Halium 9.0 ports (methods 1 and 2)**, use the following command::
 
     path/to/halium-install -p ut -s path/to/ubuntu-touch-android9-arm64.tar.gz path/to/[SYSTEM_IMAGE]
 
@@ -102,7 +100,7 @@ Were [SYSTEM_IMAGE] will be the file system.img you have built (method 1) or the
 
 The script will copy and extract the files to their proper places, then allow you to set the user password for your device (the *phablet* user's password).
 
-Perform the installation (method 3)
+Perform the installation (Method 3)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 *Work in progress*
