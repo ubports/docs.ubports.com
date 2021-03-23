@@ -18,7 +18,7 @@ Now that you have gained access to your newly booted device, there remain a numb
 What are udev rules?
 --------------------
 
-*Work in progress*
+On your running system there is a continuously running udev daemon which governs how the system handles events on peripheral devices, *e.g.* connecting the device to a PC via USB cable. This daemon needs a set of rules, *the udev rules*, to tell it what to do for each possible event. These rules must observe a specific format and they are stored in a file which needs to be generated for each specific device.
 
 Add udev rules
 --------------
