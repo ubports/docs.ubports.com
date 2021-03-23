@@ -23,12 +23,12 @@ What are udev rules?
 Add udev rules
 --------------
 
-The correct way to do this is by storing these settings in overlay files (:ref:`Configuring`), and not by making the root directory writeable, as described below. However, in order to quickly set up udev rules which are necessary to complete subsequent steps, you can use this method for first time setup.
+The correct way to do this is by storing these settings in overlay files (:ref:`Configuring`), and not by making the root directory writeable, as described below. However, in order to quickly set up udev rules which are necessary to complete subsequent steps, you can use the method detailed here for first time setup.
 
 Make / (root) writable
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Before you make any changes to the rootfs (which will be required for the next steps), you'll need to remount it with write permissions. To do that, run the following command::
+Before you make any changes to the rootfs (which will be required for the next steps), you'll need to remount your root directory (/) with write permissions. Do this by running the following command::
 
     sudo mount -o remount,rw /
 
