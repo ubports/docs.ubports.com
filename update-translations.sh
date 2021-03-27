@@ -21,7 +21,7 @@ else
   virtualenv ~/ubportsdocsenv
   . ~/ubportsdocsenv/bin/activate
   echo -e "${YELLOW}Installing build tools and prerequisites.${PLAIN}"
-  pip install sphinx sphinx_rtd_theme sphinx-intl
+  pip install sphinx sphinx-intl furo
 fi
 echo -e "${GREEN}Building...${PLAIN}"
 sphinx-build -Wa . locales/pot -b gettext -j `nproc --all`
