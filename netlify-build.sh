@@ -8,6 +8,8 @@ YELLOW='\033[1;33m'
 RED='\033[0;31m'
 PLAIN='\033[0m'
 
+sphinx-build -Wa . locales/pot -b gettext -j `nproc --all`
+
 echo -e "${GREEN}Building...${PLAIN}"
 rm -rf _build/
 if [ "$(uname)" == "Linux" ]; then
