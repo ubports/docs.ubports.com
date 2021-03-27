@@ -1,4 +1,4 @@
 sphinx>2
-sphinx_rtd_theme
+furo
 sphinx-intl
 sphinxext-rediraffe
