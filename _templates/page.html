@@ -1,7 +1,7 @@
 {% extends "!base.html" %}
 
 {% block body -%}
-{% include "!partials/icons.html" %}
+{% include "partials/icons.html" %}
 
 <input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
 <input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
@@ -37,7 +37,7 @@
       {% block left_sidebar %}
       <div class="sidebar-sticky">
         {%- for sidebar_section in sidebars %}
-          {%- include !sidebar_section %}
+          {%- include sidebar_section %}
         {%- endfor %}
       </div>
       {% endblock left_sidebar %}
