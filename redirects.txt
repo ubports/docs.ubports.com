@@ -1,0 +1,7 @@
+"porting/index.rst" "porting/Intro.rst"
+"porting/halium_7-1/Building.rst" "porting/Building.rst"
+"porting/halium_7-1/Common_errors.rst" "porting/Installing.rst"
+"porting/halium_7-1/Common_errors.rst" "porting/Booting.rst"
+"porting/running-ut.rst" "porting/halium_7-1/Installing.rst" "porting/Installing.rst"
+"porting/halium_7-1/Configuring.rst" "porting/Configuring.rst"
+"porting/halium_9/Halium_9_GSI_porting.rst" "porting/Key_to_guide.rst"
