@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-03-18 00:13+0000\n"
+"PO-Revision-Date: 2021-03-28 07:27+0000\n"
 "Last-Translator: Carlod <carlod@disroot.org>\n"
 "Language-Team: Polish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/pl/>\n"
@@ -1347,7 +1347,7 @@ msgstr "Odwołanie do :ref:`Znane-problemy-z-procesem-wczesnego-bootowania`."
 
 #: ../../porting/halium_7-1/Reference_material.rst:2
 msgid "Reference material"
-msgstr "Materiały źródłowe"
+msgstr "Materiały referencyjne"
 
 #: ../../porting/halium_7-1/Reference_material.rst:7
 msgid "Display settings"
