@@ -85,7 +85,8 @@
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             {%- endtrans %}
           {%- endif %}
-          {% include "gitedit.html" %}
+          |
+          {% include "editpage.html" %}
         </div>
         {% endblock footer %}
       </footer>
@@ -104,7 +105,7 @@
             {{ toc }}
           </div>
         </div>
-        {% include "giteditsidebar.html" %}
+        {% include "editpage.html" %}
       </div>
       {% endif %}
       {% endblock right_sidebar %}
