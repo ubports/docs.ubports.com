@@ -45,13 +45,15 @@
   </aside>
   <main class="main">
     <div class="content">
-      {% include "prev-next.html" %}
-      <article role="main">
-        <label class="toc-overlay-icon toc-content-icon{% if furo_hide_toc %} no-toc{% endif %}" for="__toc">
-          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
-        </label>
-        {% block content %}{{ body }}{% endblock %}
-      </article>
+      <div class="article-container">
+        {% include "prev-next.html" %}
+        <article role="main">
+          <label class="toc-overlay-icon toc-content-icon{% if furo_hide_toc %} no-toc{% endif %}" for="__toc">
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+          {% block content %}{{ body }}{% endblock %}
+        </article>
+      </div>
       <footer>
         {% block footer %}
 
