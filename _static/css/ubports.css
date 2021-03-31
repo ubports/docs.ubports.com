@@ -31,7 +31,12 @@ p {
     display: none;
 }
 
-.content > .related-pages {
+.article-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-container > .related-pages {
     margin-top: 25px;
     font-size: var(--font-size--small);
     border-bottom: 1px solid var(--color-background-border);
