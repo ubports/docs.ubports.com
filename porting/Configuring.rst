@@ -61,7 +61,7 @@ Clone the backport scripts into a directory outside your halium source tree by i
 
     git clone https://github.com/ubuntu-phonedations/backports.git -b for-ubuntu backport-scripts
 
-This downloads the backport scripts prepared by Canonical based on the :ref:`original Backports Project <Backports>` mentioned above, and places them in the directory ``~/backport-scripts``.
+This downloads the backport scripts prepared by Canonical based on the :ref:`original Backports Project <Backports>` mentioned above, and places them in the directory ``~/backport-scripts``. The scripts are specifically written to backport from kernel version 4.2.
 
 Download kernel source to backport from
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -77,7 +77,7 @@ Now clone the kernel source for the version and branch you need (v4.2 in the exa
 
 .. Note::
 
-    Choosing kernel version 4.2 should be sufficient. Other available versions can be seen by visiting `the webpage <https://kernel.googlesource.com/pub/scm/linux/kernel/git/next/linux-next>`_ and examining the tags.
+    Choosing kernel version 4.2 should be sufficient. Other available version tags can be seen by visiting `the webpage <https://kernel.googlesource.com/pub/scm/linux/kernel/git/next/linux-next>`_. Remember that the backporting scripts were set up specifically for version 4.2. Your choice is therefore limited to the different branches in this main kernel version.
 
 Run script and fix errors
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -162,11 +162,7 @@ Once the above is complete, add the following lines, and then edit as described 
 
 As an example, the lines above have been edited to conform with backporting from kernel 4.2 to a device with kernel version 3.18. 
 
-For devices running lower kernel versions enable each line specifying a version above the device's kernel version by removing the leading ``#`` on these lines. Make sure the highest version number in the sequence corresponds to the kernel version you are backporting from. Thus, if backporting from kernel version 4.3 one would need to insert an additional line::
-
-        CONFIG_BACKPORT_KERNEL_4_3=y
-
-Edit the lines ``CONFIG_BACKPORT_KERNEL_VERSION="v4.2"`` and ``CONFIG_BACKPORT_VERSION="v4.2"`` to correspond to the kernel version you are backporting from.
+For devices running lower kernel versions enable each line specifying a version above the device's kernel version by removing the leading ``#`` on these lines. Edit the lines ``CONFIG_BACKPORT_KERNEL_VERSION="v4.2"`` and ``CONFIG_BACKPORT_VERSION="v4.2"`` to correspond to the kernel version you are backporting from. (Check the file backports/Kconfig for details)
 
 Build
 ^^^^^
