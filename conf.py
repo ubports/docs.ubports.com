@@ -96,6 +96,10 @@ html_theme_options = {
     "light_css_variables": {
         "font-stack": "ubuntu, sans-serif",
         "font-stack--monospace": "ubuntu-mono, Courier, monospace",
+        "color-brand-primary": "#000000"
+    },
+    "dark_css_variables": {
+        "color-brand-primary": "#ffffff"
     },
 }
 
