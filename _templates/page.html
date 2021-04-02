@@ -45,15 +45,12 @@
   </aside>
   <main class="main">
     <div class="content">
-      <div class="article-container">
-        {% include "prev-next.html" %}
-        <article role="main">
-          <label class="toc-overlay-icon toc-content-icon{% if furo_hide_toc %} no-toc{% endif %}" for="__toc">
-            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
-          </label>
-          {% block content %}{{ body }}{% endblock %}
-        </article>
-      </div>
+      <article role="main">
+        <label class="toc-overlay-icon toc-content-icon{% if furo_hide_toc %} no-toc{% endif %}" for="__toc">
+          <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+        </label>
+        {% block content %}{{ body }}{% endblock %}
+      </article>
       <footer>
         {% block footer %}
 
@@ -84,8 +81,6 @@
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             {%- endtrans %}
           {%- endif %}
-          |
-          {% include "editpage.html" %}
         </div>
         {% endblock footer %}
       </footer>
