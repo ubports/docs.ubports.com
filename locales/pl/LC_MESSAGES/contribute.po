@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-15 09:19-0500\n"
-"PO-Revision-Date: 2021-03-19 14:27+0000\n"
+"PO-Revision-Date: 2021-03-28 07:27+0000\n"
 "Last-Translator: Carlod <carlod@disroot.org>\n"
 "Language-Team: Polish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/pl/>\n"
@@ -790,7 +790,7 @@ msgstr ""
 
 #: ../../contribute/quality-assurance.rst:21
 msgid "Testing patches"
-msgstr ""
+msgstr "Testowanie poprawek"
 
 #: ../../contribute/quality-assurance.rst:23
 msgid "Pull-requests can be tested using the `QA scripts <https://github.com/ubports/ubports-qa-scripts>`_. Run ``ubports-qa -h`` for usage information."
@@ -870,7 +870,7 @@ msgstr ""
 
 #: ../../contribute/translations.rst:35
 msgid "UBports Weblate"
-msgstr ""
+msgstr "UBports Weblate"
 
 #: ../../contribute/translations.rst:37
 msgid "You can go to `UBports Weblate <https://translate.ubports.com/projects/>`_, click on \"Dashboard\" button, go to a project, and start making anonymous suggestions without being registered. If you want to save your translations, you must be logged in."
