@@ -27,7 +27,7 @@ p {
     text-align: justify; 
 }
 
-.fa-home:before, .icon-home:before, .sidebar-brand-text, .headerlink {
+.fa-home:before, .icon-home:before, .headerlink {
     display: none;
 }
 
