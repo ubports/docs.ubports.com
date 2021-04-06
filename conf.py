@@ -91,6 +91,7 @@ html_theme = "furo"
 # documentation.
 #
 html_theme_options = {
+    "sidebar_hide_name": True,
     "light_logo": "images/logo-light.svg",
     "dark_logo": "images/logo-dark.svg",
     "light_css_variables": {
