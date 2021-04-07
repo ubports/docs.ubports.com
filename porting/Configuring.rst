@@ -54,6 +54,21 @@ The steps are as follows::
     6. Rebuild the full halium-boot.img (methods 1 and 2) or just the kernel (method 3)
     7. Reflash, check and debug.
 
+.. _BT-driver:
+
+Determine which driver your device uses
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+By the time you reach this point in the porting process, you will have completed building halium-boot (probably a number of times). It is wise to note all kernel defconfig settings related to bluetooth before proceeding with the steps below. One of them will be the setting for the driver employed by your device and it is not certain that it is included among the parts you will be bringing into your kernel in this backporting process. This can be fixed, provided you know which driver this is. Unfortunately, it can be a bit challenging to determine which driver this is, but the directions below may help.
+
+After completing a build of halium-boot.img, go to your ``out/target/product/[device]/obj/KERN_OBJ`` directory. There, run the following command::
+
+    ARCH=arm64 make menuconfig
+
+If your device is armhf, use ``ARCH=arm`` instead.
+
+This will bring up menuconfig complete with the defconfig settings from your build. You then navigate to the bluetooth drivers submenu and browse through all activated settings, recording which ``CONFIG_xxxxx`` settings apply to those that are activated for your device, as well as the information about what this setting does (found under Help). Save this information for later reference.
+
 Download the backport scripts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -77,16 +92,20 @@ Now clone the kernel source for the version and branch you need (v4.2 in the exa
 
 .. Note::
 
-    Choosing kernel version 4.2 should be sufficient. Other available version tags can be seen by visiting `the webpage <https://kernel.googlesource.com/pub/scm/linux/kernel/git/next/linux-next>`_. Remember that the backporting scripts were set up specifically for version 4.2. Your choice is therefore limited to the different branches in this main kernel version.
+    Although there are other kernel versions besides v4.2 available (as witnessed by available version tags on `the webpage <https://kernel.googlesource.com/pub/scm/linux/kernel/git/next/linux-next>`_), the backport script is specifically tailored to backporting from version 4.2 and thus effectively limits you to this option.
 
 Run script and fix errors
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Go to the backport scripts directory and issue the command::
+The script may need to be run using Python2. Your system likely has both Python2 and Python3 installed. Check which is active by issuing ``python -V``.
 
-    ./gentree.py --copy-list ./copy-list --integrate --clean --git-revision v4.2 ~/kernel-backports/linux-next ~/halium/kernel/[VENDOR]/[VERSION??]
+Now, standing in the backport scripts directory issue the command::
 
-<'VERSION' is the wrong term above. What is the correct one?>
+    ./gentree.py --copy-list ./copy-list --integrate --clean --git-revision v4.2 ~/kernel-backports/linux-next ~/halium/kernel/[VENDOR]/[MODEL_NAME]
+
+You will get error messages at the end and if they do not mention the backport Makefile and/or Kconfig, this means that the script has aborted before completion. You will then need to determine the cause and retry. 
+
+If the final error message concerns the Makefile and includes info about having generated a file named ``Makefile.rej``, this means you will find information in this file about changes that did not complete successfully, but which you can apply yourself. These need to be completed before proceeding with the build.
 
 Edit kernel defconfig
 ^^^^^^^^^^^^^^^^^^^^^
@@ -95,7 +114,7 @@ Your kernel config file (defconfig) needs to be modified in order for the backpo
 
 Start by locating all lines beginning with ``CONFIG_BT_`` and move these to the end of the file. Collecting them there makes the subsequent steps somewhat easier by helping to keep track of the changes you make.
 
-Next, deactivate all that are activated, *i.e.* do not have a leading ``#``, by inserting this leading ``#``. At the same time, for each one add a corresponding one beginning with ``CONFIG_BACKPORT_BT_``, *e.g.*::
+Next, deactivate all that are activated, *i.e.* do not have a leading ``#``, by inserting this leading ``#``. At the same time, for each one, add a corresponding one beginning with ``CONFIG_BACKPORT_BT_``, *e.g.*::
 
     CONFIG_BT=y
 
@@ -132,6 +151,8 @@ To find out exactly which settings are necessary for your device, go to your ker
 
 Here you are instructed to add ``CONFIG_BACKPORT_BT_BCM=y`` while deactivating ``CONFIG_BT_BCM=y`` (by commenting it out, like this ``#CONFIG_BT_BCM=y``) but also add ``CONFIG_FW_LOADER=y``.
 
+At this point, check for any remaining settings you ref::`recorded from your original defconfig <BT-driver>`. Settings dependent on CONFIG_BT will no longer have any effect. They need to be replaced. If you find a setting that is not yet included this probably means it and the corresponding source file(s) will have to be migrated from their original location to the corresponding location in your ``backport/bluetooth``. The files ``Makefile`` and ``Kconfig`` need to be edited to include this missing setting.
+
 Once the above is complete, add the following lines, and then edit as described below::
 
     CONFIG_BACKPORT_DIR="backports/"
@@ -164,6 +185,8 @@ As an example, the lines above have been edited to conform with backporting from
 
 For devices running lower kernel versions enable each line specifying a version above the device's kernel version by removing the leading ``#`` on these lines. Edit the lines ``CONFIG_BACKPORT_KERNEL_VERSION="v4.2"`` and ``CONFIG_BACKPORT_VERSION="v4.2"`` to correspond to the kernel version you are backporting from. (Check the file backports/Kconfig for details)
 
+You are now ready to build.
+
 Build
 ^^^^^
 
@@ -171,7 +194,40 @@ Return to the root of your BUILDDIR and build::
 
     mka halium-boot
 
-Build errors are liable to occur and will vary depending on device. Handle them one at a time, :ref:`seeking help <Getting-community-help>` as necessary.
+Build errors may occur and will vary depending on device. Handle them one at a time, :ref:`seeking help <Getting-community-help>` as necessary.
+
+After building and flashing halium-boot, check the output of ``dmesg`` on the device to see that bluetooth has been enabled::
+
+    dmesg | grep tooth
+
+Your output should resemble the following::
+
+    phablet@ubuntu-phablet:~$ dmesg | grep tooth
+    [    2.219667] lucky-audio sound: moon-aif3 <-> lucky-ext bluetooth sco mapping ok
+    [    2.252591] Bluetooth: RFCOMM TTY layer initialized
+    [    2.252601] Bluetooth: RFCOMM socket layer initialized
+    [    2.252613] Bluetooth: RFCOMM ver 1.11
+    [    2.252626] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+    [    2.252631] Bluetooth: BNEP filters: protocol multicast
+    [    2.252639] Bluetooth: BNEP socket layer initialized
+    [    2.252646] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+    [    2.252654] Bluetooth: HIDP socket layer initialized
+    [    2.252661] Bluetooth: Virtual HCI driver ver 1.5
+    [    2.252736] Bluetooth: HCI UART driver ver 2.3
+    [    2.252743] Bluetooth: HCI UART protocol H4 registered
+    [    2.252749] Bluetooth: HCI UART protocol BCSP registered
+    [    2.252754] Bluetooth: HCI UART protocol LL registered
+    [    2.252760] Bluetooth: HCI UART protocol ATH3K registered
+    [    2.252765] Bluetooth: HCI UART protocol Three-wire (H5) registered
+    [    2.252771] Bluetooth: HCI UART protocol BCM registered
+    [    2.252876] Bluetooth: Generic Bluetooth SDIO driver ver 0.1
+    [    2.253388] [BT] bcm4359_bluetooth_probe.
+    [    2.253630] [BT] bcm4359_bluetooth_probe End 
+    [    5.376110] [BT] Bluetooth Power On.
+    [    7.499943] [BT] Bluetooth Power On.
+    [    8.051620] [BT] Bluetooth Power On.
+
+If you do not get similar output, something has gone wrong. Check that you completed all steps above as described and seek help as needed.
 
 .. _Configuring:
 
