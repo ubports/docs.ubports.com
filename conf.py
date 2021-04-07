@@ -97,10 +97,19 @@ html_theme_options = {
     "light_css_variables": {
         "font-stack": "ubuntu, sans-serif",
         "font-stack--monospace": "ubuntu-mono, Courier, monospace",
-        "color-brand-primary": "#000000"
+        "color-brand-primary": "#000000",
+        "color-background-primary": "#F7F7F7",
+        "color-sidebar-search-border": "transparent",
+        "color-sidebar-search-background": "#F7F7F7",
+        "color-sidebar-background": "#FFFFFF",
+        "sidebar-search-icon-size": "1px",
+        "color-sidebar-background-border": "transparent"
     },
     "dark_css_variables": {
-        "color-brand-primary": "#ffffff"
+        "color-brand-primary": "#EDEDED",
+        "color-background-primary": "#141417",
+        "color-sidebar-search-background": "#141417",
+        "color-sidebar-background": "#1A1C1E"
     },
 }
 
