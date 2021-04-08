@@ -35,7 +35,7 @@ Bluetooth
 
         (See :ref:`porting methods <Porting-methods>`.)
 
-When porting to devices running older kernel versions (mostly 3.x) which were in use with older versions of Ubuntu (mainly pre 16.04), it is necessary to replace the kernel bluetooth stack with a newer one. This is because the newer bluetooth hardware in today's bluetooth peripheral devices often has trouble talking to the older bluetooth drivers. This can be fixed by bringing in driver code from newer Linux kernel versions. The process is called *backporting*.
+When porting to devices running older kernel versions (mainly 3.x), it is necessary to replace the kernel bluetooth stack with a newer one. This is because the newer bluetooth hardware in today's bluetooth peripheral devices often has trouble talking to the older bluetooth drivers. This can be fixed by bringing in driver code from newer Linux kernel versions. The process is called *backporting*.
 
 .. _Backports:
 
@@ -46,20 +46,24 @@ Bluetooth backporting steps
 
 The steps are as follows::
 
-    1. Clone/download the backports scripts.
-    2. Clone/download the kernel source from the newer kernel version you wish to backport from.
-    3. Run the script to integrate the newer sources into your kernel source tree.
-    4. Fix errors that *will* occur when the script is run.
-    5. Make necessary changes to your kernel defconfig file.
-    6. Rebuild the full halium-boot.img (methods 1 and 2) or just the kernel (method 3)
-    7. Reflash, check and debug.
+    1. Record bluetooth driver and settings. 
+    2. Clone/download the backports scripts.
+    3. Clone/download the kernel source from the newer kernel version you wish to backport from.
+    4. Run the script to integrate the newer sources into your kernel source tree.
+    5. Fix errors that *will* occur when the script is run.
+    6. Add a security patch.
+    7. Make necessary changes to your kernel defconfig file.
+    8. Rebuild and flash the full halium-boot.img (methods 1 and 2) or just the kernel (method 3)
+    9. Add bluetooth initializaton script, rebuild and flash system.img (only methods 1 and 2)
 
 .. _BT-driver:
 
-Determine which driver your device uses
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Determine driver and bluetooth settings for your device
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-By the time you reach this point in the porting process, you will have completed building halium-boot (probably a number of times). It is wise to note all kernel defconfig settings related to bluetooth before proceeding with the steps below. One of them will be the setting for the driver employed by your device and it is not certain that it is included among the parts you will be bringing into your kernel in this backporting process. This can be fixed, provided you know which driver this is. Unfortunately, it can be a bit challenging to determine which driver this is, but the directions below may help.
+By the time you reach this point in the porting process, you will have completed building halium-boot (probably a number of times). It is wise to note all kernel defconfig settings related to bluetooth before proceeding with the steps below. One of these settings designates the bluetooth driver used by your device, which you will need to know at a later stage.
+
+Although many of these settings will be collected in one place in your defconfig file, some will likely be in other places as well, making it difficult to ascertain all necessary settings. The directions below may help.
 
 After completing a build of halium-boot.img, go to your ``out/target/product/[device]/obj/KERN_OBJ`` directory. There, run the following command::
 
@@ -67,7 +71,7 @@ After completing a build of halium-boot.img, go to your ``out/target/product/[de
 
 If your device is armhf, use ``ARCH=arm`` instead.
 
-This will bring up menuconfig complete with the defconfig settings from your build. You then navigate to the bluetooth drivers submenu and browse through all activated settings, recording which ``CONFIG_xxxxx`` settings apply to those that are activated for your device, as well as the information about what this setting does (found under Help). Save this information for later reference.
+This will bring up menuconfig complete with the defconfig settings from your build. You then navigate to the bluetooth drivers submenu and browse through all activated settings, recording which ``CONFIG_xxxxx`` settings apply to those that are activated for your device, as well as the information about what this setting does and which other settings it depends upon (found under Help). Save this information for later reference.
 
 Download the backport scripts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -107,6 +111,11 @@ You will get error messages at the end and if they do not mention the backport M
 
 If the final error message concerns the Makefile and includes info about having generated a file named ``Makefile.rej``, this means you will find information in this file about changes that did not complete successfully, but which you can apply yourself. These need to be completed before proceeding with the build.
 
+Apply security patch
+^^^^^^^^^^^^^^^^^^^^
+
+An additional `generic security patch <https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/patch/?id=8a7b081660857a80c3efc463b3da790c4fa0c801>`_ needs to be applied. 
+
 Edit kernel defconfig
 ^^^^^^^^^^^^^^^^^^^^^
 
@@ -126,7 +135,7 @@ and then insert the corresponding line for backports::
 
     CONFIG_BACKPORT_BT=y
 
-Some additional configuration settings are necessary, depending on your device. You will likely need the settings listed here, but additional ones can also be necessary::
+Some more configuration settings are necessary, depending on your device. You will likely need the settings listed here, but additional ones can also be necessary::
 
     #Depending options for new stuff from backports
     #CONFIG_CRC16=y
@@ -142,18 +151,11 @@ Some additional configuration settings are necessary, depending on your device. 
     CONFIG_CRYPTO_USER_API_SKCIPHER=y
     #CONFIG_TTY=y
 
-To find out exactly which settings are necessary for your device, go to your kernel's ``backports/drivers`` directory, locate the Kconfig file and check the necessary settings specified therein. Example::
+At this point, check for any remaining settings you :ref:`recorded from your original defconfig <BT-driver>`, making sure not to forget your device's bluetooth driver. 
 
-    config BACKPORT_BT_BCM
-        tristate
-        depends on !BT_BCM
-        depends on FW_LOADER
+Any remaining settings which are dependent upon CONFIG_BT will no longer have any effect. They need to be replaced. If you find a setting that is not yet included after the changes you made (above) this probably means it and the corresponding source file(s) will have to be migrated from their original location to the corresponding location under ``backport/bluetooth/``. The files ``Makefile`` and ``Kconfig`` need to be edited to include this missing setting or else they will not be built. Check the corresponding files in the original location for the necessary settings.
 
-Here you are instructed to add ``CONFIG_BACKPORT_BT_BCM=y`` while deactivating ``CONFIG_BT_BCM=y`` (by commenting it out, like this ``#CONFIG_BT_BCM=y``) but also add ``CONFIG_FW_LOADER=y``.
-
-At this point, check for any remaining settings you ref::`recorded from your original defconfig <BT-driver>`. Settings dependent on CONFIG_BT will no longer have any effect. They need to be replaced. If you find a setting that is not yet included this probably means it and the corresponding source file(s) will have to be migrated from their original location to the corresponding location in your ``backport/bluetooth``. The files ``Makefile`` and ``Kconfig`` need to be edited to include this missing setting.
-
-Once the above is complete, add the following lines, and then edit as described below::
+Once the above is complete, add the following lines and edit as necessary, following the directions below::
 
     CONFIG_BACKPORT_DIR="backports/"
     CONFIG_BACKPORT_INTEGRATE=y
@@ -228,6 +230,21 @@ Your output should resemble the following::
     [    8.051620] [BT] Bluetooth Power On.
 
 If you do not get similar output, something has gone wrong. Check that you completed all steps above as described and seek help as needed.
+
+You have now rebuilt your halium-boot.img to include updated bluetooth drivers and only one final step remains.
+
+Initialization script
+^^^^^^^^^^^^^^^^^^^^^
+
+The system image needs to be rebuilt with an initialization script for bluetooth adapted to your device. On the completed build, this file is located at::
+
+    /etc/init/bluetooth-touch-android.conf
+
+`An example script can be found here <https://github.com/Flohack74/android_device_huawei_angler/blob/halium-7.1/ubuntu/bluetooth/bluetooth-touch-android.conf>`_. Make sure to adapt as necessary.
+
+Place this script in your ``device/[VENDOR]/[DEVICE]/ubuntu`` directory and inject it using the overlay file method described below.
+
+Rebuild and flash your ``system.img``.
 
 .. _Configuring:
 
