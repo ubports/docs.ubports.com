@@ -39,7 +39,7 @@ When porting to devices running older kernel versions (mainly 3.x), it is necess
 
 .. _Backports:
 
-Backporting has been greatly fascilitated by the `Linux Backports Project <https://backports.wiki.kernel.org/index.php/Main_Page>`_ which has existed for some time. This project is aimed at mainline Linux kernels. Consequently, the tools (scripts) therein are not specifically tailored to Ubuntu Touch, and they will therefore abort at some point during the process. However, they are the best option available, and can provide significant help all the same. The method below is based on the use of a version of these scripts which has been specially prepared by Canonical.
+Backporting has been greatly fascilitated by the `Linux Backports Project <https://backports.wiki.kernel.org/index.php/Main_Page>`_ which has existed for some time. This project is aimed at mainline Linux kernels and the tools (scripts) therein are not specifically tailored to Ubuntu Touch. They will consequently abort at some point during the process. However, they are the best option available, and can provide significant help all the same. The method below is based on the use of a version of these scripts which has been specially prepared by Canonical.
 
 Bluetooth backporting steps
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -101,11 +101,9 @@ Now clone the kernel source for the version and branch you need (v4.2 in the exa
 Run script and fix errors
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The script may need to be run using Python2. Your system likely has both Python2 and Python3 installed. Check which is active by issuing ``python -V``.
+Navigate to your backport scripts directory and issue the command below (using Python2 as shown)::
 
-Now, standing in the backport scripts directory issue the command::
-
-    ./gentree.py --copy-list ./copy-list --integrate --clean --git-revision v4.2 ~/kernel-backports/linux-next ~/halium/kernel/[VENDOR]/[MODEL_NAME]
+    python2 ./gentree.py --copy-list ./copy-list --integrate --clean --git-revision v4.2 ~/kernel-backports/linux-next ~/halium/kernel/[VENDOR]/[MODEL_NAME]
 
 You will get error messages at the end and if they do not mention the backport Makefile and/or Kconfig, this means that the script has aborted before completion. You will then need to determine the cause and retry. 
 
