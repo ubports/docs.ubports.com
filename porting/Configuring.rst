@@ -54,7 +54,7 @@ The steps are as follows::
     6. Add a security patch.
     7. Make necessary changes to your kernel defconfig file.
     8. Rebuild and flash the full halium-boot.img (methods 1 and 2) or just the kernel (method 3)
-    9. Add bluetooth initializaton script, rebuild and flash system.img (only methods 1 and 2)
+    9. Add bluetooth initializaton script, rebuild and flash system.img (method 1 only)
 
 .. _BT-driver:
 
