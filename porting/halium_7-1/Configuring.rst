@@ -118,6 +118,218 @@ At the end of the file, append this::
 
 Now complete steps 3 and 4, taking care to remember the note on how to :ref:`Rebuild-system.img`.
 
+Bluetooth
+---------
+
+When porting to devices running older kernel versions (mainly 3.x), it is necessary to replace the kernel bluetooth stack with a newer one. This is because the newer bluetooth hardware in today's bluetooth peripheral devices often has trouble talking to the older bluetooth drivers. This can be fixed by bringing in driver code from newer Linux kernel versions. The process is called *backporting*.
+
+.. _Backports:
+
+Backporting has been greatly fascilitated by the `Linux Backports Project <https://backports.wiki.kernel.org/index.php/Main_Page>`_ which has existed for some time. This project is aimed at mainline Linux kernels and the tools (scripts) therein are not specifically tailored to Ubuntu Touch. They will consequently abort at some point during the process. However, they are the best option available, and can provide significant help all the same. The method below is based on the use of a version of these scripts which has been specially prepared by Canonical.
+
+Bluetooth backporting steps
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The steps are as follows::
+
+    1. Record bluetooth driver and settings. 
+    2. Clone/download the backports scripts.
+    3. Clone/download the kernel source from the newer kernel version you wish to backport from.
+    4. Run the script to integrate the newer sources into your kernel source tree.
+    5. Fix errors that *will* occur when the script is run.
+    6. Add a security patch.
+    7. Make necessary changes to your kernel defconfig file.
+    8. Rebuild and flash the full halium-boot.img.
+    9. Add bluetooth initializaton script, rebuild and flash system.img.
+
+.. _BT-driver:
+
+Determine driver and bluetooth settings for your device
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+By the time you reach this point in the porting process, you will have completed building halium-boot (probably a number of times). It is wise to note all kernel defconfig settings related to bluetooth before proceeding with the steps below. One of these settings designates the bluetooth driver used by your device, which you will need to know at a later stage.
+
+Although many of these settings will be collected in one place in your defconfig file, some will likely be in other places as well, making it difficult to ascertain all necessary settings. The directions below may help.
+
+After completing a build of halium-boot.img, go to your ``out/target/product/[device]/obj/KERN_OBJ`` directory. There, run the following command::
+
+    ARCH=arm64 make menuconfig
+
+If your device is armhf, use ``ARCH=arm`` instead.
+
+This will bring up menuconfig complete with the defconfig settings from your build. You then navigate to the bluetooth drivers submenu and browse through all activated settings, recording which ``CONFIG_xxxxx`` settings apply to those that are activated for your device, as well as the information about what this setting does and which other settings it depends upon (found under Help). Save this information for later reference.
+
+Download the backport scripts
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Clone the backport scripts into a directory outside your halium source tree by issuing this command from your home (~) directory::
+
+    git clone https://github.com/ubuntu-phonedations/backports.git -b for-ubuntu backport-scripts
+
+This downloads the backport scripts prepared by Canonical based on the :ref:`original Backports Project <Backports>` mentioned above, and places them in the directory ``~/backport-scripts``. The scripts are specifically written to backport from kernel version 4.2.
+
+Download kernel source to backport from
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Create a directory (outside your halium source tree) for the kernel source from which you will pull the newer drivers::
+
+    mkdir ~/kernel-backports
+
+Now clone the kernel source for the version and branch you need (v4.2 in the example below) into this directory::
+
+    cd ~/kernel-backports
+    git clone https://kernel.googlesource.com/pub/scm/linux/kernel/git/next/linux-next -b v4.2
+
+.. Note::
+
+    Although there are other kernel versions besides v4.2 available (as witnessed by available version tags on `the webpage <https://kernel.googlesource.com/pub/scm/linux/kernel/git/next/linux-next>`_), the backport script is specifically tailored to backporting from version 4.2 and thus effectively limits you to this option.
+
+Run script and fix errors
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Navigate to your backport scripts directory and issue the command below (using Python2 as shown)::
+
+    python2 ./gentree.py --copy-list ./copy-list --integrate --clean --git-revision v4.2 ~/kernel-backports/linux-next ~/halium/kernel/[VENDOR]/[MODEL_NAME]
+
+You will get error messages at the end and if they do not mention the backport Makefile and/or Kconfig, this means that the script has aborted before completion. You will then need to determine the cause and retry. 
+
+If the final error message concerns the Makefile and includes info about having generated a file named ``Makefile.rej``, this means you will find information in this file about changes that did not complete successfully, but which you can apply yourself. These need to be completed before proceeding with the build.
+
+Apply security patch
+^^^^^^^^^^^^^^^^^^^^
+
+An additional `generic security patch <https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/patch/?id=8a7b081660857a80c3efc463b3da790c4fa0c801>`_ needs to be applied. 
+
+Edit kernel defconfig
+^^^^^^^^^^^^^^^^^^^^^
+
+Your kernel config file (defconfig) needs to be modified in order for the backported driver and protocol code to be activated.
+
+Start by locating all lines beginning with ``CONFIG_BT_`` and move these to the end of the file. Collecting them there makes the subsequent steps somewhat easier by helping to keep track of the changes you make.
+
+Next, deactivate all that are activated, *i.e.* do not have a leading ``#``, by inserting this leading ``#``. At the same time, for each one, add a corresponding one beginning with ``CONFIG_BACKPORT_BT_``, *e.g.*::
+
+    CONFIG_BT=y
+
+becomes::
+
+    #CONFIG_BT=y
+
+and then insert the corresponding line for backports::
+
+    CONFIG_BACKPORT_BT=y
+
+Some more configuration settings are necessary, depending on your device. You will likely need the settings listed here, but additional ones can also be necessary::
+
+    #Depending options for new stuff from backports
+    #CONFIG_CRC16=y
+    CONFIG_CRYPTO=y
+    CONFIG_CRYPTO_BLKCIPHER=y
+    CONFIG_CRYPTO_AES=y
+    CONFIG_CRYPTO_CMAC=y
+    CONFIG_CRYPTO_HMAC=y
+    CONFIG_CRYPTO_ECB=y
+    CONFIG_CRYPTO_SHA256=y
+    CONFIG_CRYPTO_USER_API=y
+    CONFIG_CRYPTO_USER_API_HASH=y
+    CONFIG_CRYPTO_USER_API_SKCIPHER=y
+    #CONFIG_TTY=y
+
+At this point, check for any remaining settings you :ref:`recorded from your original defconfig <BT-driver>`, making sure not to forget your device's bluetooth driver. 
+
+Any remaining settings which are dependent upon CONFIG_BT will no longer have any effect. They need to be replaced. If you find a setting that is not yet included after the changes you made (above) this probably means it and the corresponding source file(s) will have to be migrated from their original location to the corresponding location under ``backport/bluetooth/``. The files ``Makefile`` and ``Kconfig`` need to be edited to include this missing setting or else they will not be built. Check the corresponding files in the original location for the necessary settings.
+
+Once the above is complete, add the following lines and edit as necessary, following the directions below::
+
+    CONFIG_BACKPORT_DIR="backports/"
+    CONFIG_BACKPORT_INTEGRATE=y
+    # CONFIG_BACKPORT_KERNEL_3_5=y #disable for kernel > 3.4
+    # CONFIG_BACKPORT_KERNEL_3_6=y #disable for kernel > 3.4
+    # CONFIG_BACKPORT_KERNEL_3_7=y #disable for kernel > 3.4
+    # CONFIG_BACKPORT_KERNEL_3_8=y #disable for kernel > 3.4
+    # CONFIG_BACKPORT_KERNEL_3_9=y #disable for kernel > 3.4
+    # CONFIG_BACKPORT_KERNEL_3_10=y #disable for kernel > 3.10
+    # CONFIG_BACKPORT_KERNEL_3_11=y #disable for kernel > 3.10
+    # CONFIG_BACKPORT_KERNEL_3_12=y #disable for kernel > 3.10
+    # CONFIG_BACKPORT_KERNEL_3_13=y #disable for kernel > 3.10
+    # CONFIG_BACKPORT_KERNEL_3_14=y #disable for kernel > 3.10
+    # CONFIG_BACKPORT_KERNEL_3_15=y #disable for kernel > 3.10
+    # CONFIG_BACKPORT_KERNEL_3_16=y #disable for kernel > 3.10
+    # CONFIG_BACKPORT_KERNEL_3_17=y #disable for kernel > 3.10
+    # CONFIG_BACKPORT_KERNEL_3_18=y #disable for kernel = 3.18
+    CONFIG_BACKPORT_KERNEL_3_19=y
+    CONFIG_BACKPORT_KERNEL_4_0=y
+    CONFIG_BACKPORT_KERNEL_4_1=y
+    CONFIG_BACKPORT_KERNEL_4_2=y
+    CONFIG_BACKPORT_KERNEL_NAME="Linux"
+    CONFIG_BACKPORT_KERNEL_VERSION="v4.2"
+    CONFIG_BACKPORT_LINUX=y
+    CONFIG_BACKPORT_VERSION="v4.2"
+    CONFIG_BACKPORT_BPAUTO_USERSEL_BUILD_ALL=y
+
+As an example, the lines above have been edited to conform with backporting from kernel 4.2 to a device with kernel version 3.18. 
+
+For devices running lower kernel versions enable each line specifying a version above the device's kernel version by removing the leading ``#`` on these lines. Edit the lines ``CONFIG_BACKPORT_KERNEL_VERSION="v4.2"`` and ``CONFIG_BACKPORT_VERSION="v4.2"`` to correspond to the kernel version you are backporting from. (Check the file backports/Kconfig for details)
+
+You are now ready to build.
+
+Build
+^^^^^
+
+Return to the root of your BUILDDIR and build::
+
+    mka halium-boot
+
+Build errors may occur and will vary depending on device. Handle them one at a time, :ref:`seeking help <Getting-community-help>` as necessary.
+
+After building and flashing halium-boot, check the output of ``dmesg`` on the device to see that bluetooth has been enabled::
+
+    dmesg | grep tooth
+
+Your output should resemble the following::
+
+    phablet@ubuntu-phablet:~$ dmesg | grep tooth
+    [    2.219667] lucky-audio sound: moon-aif3 <-> lucky-ext bluetooth sco mapping ok
+    [    2.252591] Bluetooth: RFCOMM TTY layer initialized
+    [    2.252601] Bluetooth: RFCOMM socket layer initialized
+    [    2.252613] Bluetooth: RFCOMM ver 1.11
+    [    2.252626] Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+    [    2.252631] Bluetooth: BNEP filters: protocol multicast
+    [    2.252639] Bluetooth: BNEP socket layer initialized
+    [    2.252646] Bluetooth: HIDP (Human Interface Emulation) ver 1.2
+    [    2.252654] Bluetooth: HIDP socket layer initialized
+    [    2.252661] Bluetooth: Virtual HCI driver ver 1.5
+    [    2.252736] Bluetooth: HCI UART driver ver 2.3
+    [    2.252743] Bluetooth: HCI UART protocol H4 registered
+    [    2.252749] Bluetooth: HCI UART protocol BCSP registered
+    [    2.252754] Bluetooth: HCI UART protocol LL registered
+    [    2.252760] Bluetooth: HCI UART protocol ATH3K registered
+    [    2.252765] Bluetooth: HCI UART protocol Three-wire (H5) registered
+    [    2.252771] Bluetooth: HCI UART protocol BCM registered
+    [    2.252876] Bluetooth: Generic Bluetooth SDIO driver ver 0.1
+    [    2.253388] [BT] bcm4359_bluetooth_probe.
+    [    2.253630] [BT] bcm4359_bluetooth_probe End 
+    [    5.376110] [BT] Bluetooth Power On.
+    [    7.499943] [BT] Bluetooth Power On.
+    [    8.051620] [BT] Bluetooth Power On.
+
+If you do not get similar output, something has gone wrong. Check that you completed all steps above as described and seek help as needed.
+
+You have now rebuilt your halium-boot.img to include updated bluetooth drivers and only one final step remains.
+
+Initialization script
+^^^^^^^^^^^^^^^^^^^^^
+
+The system image needs to be rebuilt with an initialization script for bluetooth adapted to your device. On the completed build, this file is located at::
+
+    /etc/init/bluetooth-touch-android.conf
+
+`An example script can be found here <https://github.com/Flohack74/android_device_huawei_angler/blob/halium-7.1/ubuntu/bluetooth/bluetooth-touch-android.conf>`_. Make sure to adapt as necessary.
+
+Place this script in your ``device/[VENDOR]/[DEVICE]/ubuntu`` directory and inject it using the :ref:`overlay file method <Overlay-files>` described above.
+
+Rebuild and flash your ``system.img``.
+
 Further configuration
 ---------------------
 
