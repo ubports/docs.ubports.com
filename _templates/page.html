@@ -85,10 +85,10 @@
         {% endblock footer %}
       </footer>
     </div>
-    <aside class="toc-drawer{% if furo_hide_toc %} no-toc{% endif %}">
+    <aside class="toc-drawer">
       {% block right_sidebar %}
-      {% if not furo_hide_toc %}
       <div class="toc-sticky">
+        {% if not furo_hide_toc %}
         <div class="toc-scroll">
           <div class="toc-title-container">
             <span class="toc-title">
@@ -101,6 +101,7 @@
             </div>
           </div>
         </div>
+        {% endif %}
         <div class="edit-this-page">
           <div class="edit-container">
             <p>Feel you can make this Doc better? try.</p>
@@ -108,7 +109,6 @@
           </div>
         </div>
       </div>
-      {% endif %}
       {% endblock right_sidebar %}
     </aside>
   </main>

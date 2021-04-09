@@ -87,6 +87,7 @@ a.current, .content h1, .toc-tree li.scroll-current > .reference, .edit-containe
     width: 200%;
     background-color: var(--color-sidebar-background);
     border-radius: 20px 0 0 20px;
+    margin-top: 20px;
 }
 
 .edit-container {
