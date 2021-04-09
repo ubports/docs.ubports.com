@@ -159,8 +159,8 @@ If your device is armhf, use ``ARCH=arm`` instead.
 
 This will bring up menuconfig complete with the defconfig settings from your build. You then navigate to the bluetooth drivers submenu and browse through all activated settings, recording which ``CONFIG_xxxxx`` settings apply to those that are activated for your device, as well as the information about what this setting does and which other settings it depends upon (found under Help). Save this information for later reference.
 
-Download the backport scripts
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Download the backports scripts
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Clone the backports scripts into a directory outside your halium source tree by issuing this command from your home (~) directory::
 
