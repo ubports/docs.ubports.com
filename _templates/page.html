@@ -81,8 +81,6 @@
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
             {%- endtrans %}
           {%- endif %}
-          |
-          {% include "editpage.html" %}
         </div>
         {% endblock footer %}
       </footer>
@@ -90,18 +88,25 @@
     <aside class="toc-drawer{% if furo_hide_toc %} no-toc{% endif %}">
       {% block right_sidebar %}
       {% if not furo_hide_toc %}
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            {{ _("Contents") }}
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            {{ toc }}
+      <div class="toc-sticky">
+        <div class="toc-scroll">
+          <div class="toc-title-container">
+            <span class="toc-title">
+              {{ _("Contents") }}
+            </span>
+          </div>
+          <div class="toc-tree-container">
+            <div class="toc-tree">
+              {{ toc }}
+            </div>
           </div>
         </div>
-        {% include "editpage.html" %}
+        <div class="edit-this-page">
+          <div class="edit-container">
+            <p>Feel you can make this Doc better? try.</p>
+            {% include "editpage.html" %}
+          </div>
+        </div>
       </div>
       {% endif %}
       {% endblock right_sidebar %}
