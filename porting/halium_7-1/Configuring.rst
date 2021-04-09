@@ -317,10 +317,10 @@ If you do not get similar output, something has gone wrong. Check that you compl
 
 You have now rebuilt your halium-boot.img to include updated bluetooth drivers and only one final step remains.
 
-Initialization script
-^^^^^^^^^^^^^^^^^^^^^
+Configuration script
+^^^^^^^^^^^^^^^^^^^^
 
-The system image needs to be rebuilt with an initialization script for bluetooth adapted to your device. On the completed build, this file is located at::
+The system image needs to be rebuilt with a configuration script for bluetooth adapted to your device. On the completed build, this file is located at::
 
     /etc/init/bluetooth-touch-android.conf
 
