@@ -132,15 +132,15 @@ Bluetooth backporting steps
 
 The steps are as follows:
 
-    1. Record bluetooth driver and settings. 
-    2. Clone/download the backports scripts.
-    3. Clone/download the kernel source from the newer kernel version you wish to backport from.
-    4. Run the script to integrate the newer sources into your kernel source tree.
-    5. Fix errors that *will* occur when the script is run.
-    6. Add a security patch.
-    7. Make necessary changes to your kernel defconfig file.
-    8. Rebuild and flash the full halium-boot.img.
-    9. Add bluetooth initializaton script, rebuild and flash system.img.
+#.  Record bluetooth driver and settings. 
+#.  Clone/download the backports scripts.
+#.  Clone/download the kernel source from the newer kernel version you wish to backport from.
+#.  Run the script to integrate the newer sources into your kernel source tree.
+#.  Fix errors that *will* occur when the script is run.
+#.  Add a security patch.
+#.  Make necessary changes to your kernel defconfig file.
+#.  Rebuild and flash the full halium-boot.img.
+#.  Add bluetooth initializaton script, rebuild and flash system.img.
 
 .. _BT-driver:
 
