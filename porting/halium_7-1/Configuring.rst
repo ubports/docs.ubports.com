@@ -162,11 +162,11 @@ This will bring up menuconfig complete with the defconfig settings from your bui
 Download the backport scripts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Clone the backport scripts into a directory outside your halium source tree by issuing this command from your home (~) directory::
+Clone the backports scripts into a directory outside your halium source tree by issuing this command from your home (~) directory::
 
     git clone https://github.com/ubuntu-phonedations/backports.git -b for-ubuntu backport-scripts
 
-This downloads the backport scripts prepared by Canonical based on the :ref:`Backports Project <Backports>` mentioned above, and places them in the directory ``~/backport-scripts``. The scripts are specifically written to backport from kernel version 4.2.
+This downloads the backports scripts prepared by Canonical based on the :ref:`Backports Project <Backports>` mentioned above, and places them in the directory ``~/backport-scripts``. The scripts are specifically written to backport from kernel version 4.2.
 
 Download kernel source to backport from
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -182,12 +182,12 @@ Now clone the kernel source for v4.2::
 
 .. Note::
 
-    Although there are other kernel versions besides v4.2 available (as witnessed by available version tags on `the webpage <https://kernel.googlesource.com/pub/scm/linux/kernel/git/next/linux-next>`_), the backport script is specifically tailored to backporting from version 4.2 and thus effectively limits you to this option.
+    Although there are other kernel versions besides v4.2 available (as witnessed by available version tags on `the webpage <https://kernel.googlesource.com/pub/scm/linux/kernel/git/next/linux-next>`_), the backports script is specifically tailored to backporting from version 4.2 and thus effectively limits you to this option.
 
 Run script and fix errors
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Navigate to your backport scripts directory and issue the command below (using Python2 as shown)::
+Navigate to your backports scripts directory and issue the command below (using Python2 as shown)::
 
     python2 ./gentree.py --copy-list ./copy-list --integrate --clean --git-revision v4.2 ~/kernel-backports/linux-next ~/halium/kernel/[VENDOR]/[MODEL_NAME]
 
