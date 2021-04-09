@@ -217,7 +217,7 @@ and then insert the corresponding line for backports::
 
     CONFIG_BACKPORT_BT=y
 
-Some more configuration settings are necessary, depending on your device. You will likely need the settings listed here, but additional ones can also be necessary::
+Now add these settings::
 
     #Depending options for new stuff from backports
     #CONFIG_CRC16=y
@@ -233,7 +233,7 @@ Some more configuration settings are necessary, depending on your device. You wi
     CONFIG_CRYPTO_USER_API_SKCIPHER=y
     #CONFIG_TTY=y
 
-At this point, check for any remaining settings you :ref:`recorded from your original defconfig <BT-driver>`, which were dependent upon ``CONFIG_BT=y`` and have not been replaced by a corresponding CONFIG_BACKPORT_BT_ setting, making sure not to forget your device's bluetooth driver. Such settings will no longer have any effect and must be pulled in in the following way:
+At this point, check for any remaining settings you :ref:`recorded from your original defconfig <BT-driver>`, which were dependent upon ``CONFIG_BT=y`` and have not been replaced by a corresponding CONFIG_BACKPORT_BT_ setting, making sure not to forget your device's bluetooth driver. Such settings will no longer have any effect and must be pulled in in the following manner:
 
 The corresponding source file(s) will have to be migrated from their original location to the corresponding location under ``backport/bluetooth/``. The files ``Makefile`` and ``Kconfig`` need to be edited to include this missing setting or else they will not be built. Check the corresponding files in the original location for the necessary settings.
 
