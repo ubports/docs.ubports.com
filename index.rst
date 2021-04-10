@@ -64,10 +64,13 @@ You may view this documentation in the following languages:
    :name: sec-porting
 
    porting/introduction/index
-   porting/introduction/Preparations.rst .. FIXME: just a placeholder link, should be 'inside' intro
+   porting/introduction/Preparations.rst
    porting/base_build/index
    porting/test_and_fix/index
    porting/finalizing/index
+
+.. warning::
+   FIXME: Preparations above is just a placeholder link, should be 'inside' intro
 
 .. toctree::
    :maxdepth: 1
