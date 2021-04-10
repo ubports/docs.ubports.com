@@ -18,7 +18,7 @@ pipeline {
         }
         stage("Build docs"){
             steps {
-                sh 'python3 -m sphinx -Wab html . _build/html/'
+                sh 'python3 -m sphinx -b html . _build/html/'
                 sh 'cp redir.html _build/html/..index.html'
                 archiveArtifacts artifacts: '_build/html/', onlyIfSuccessful: true
             }
@@ -33,7 +33,7 @@ pipeline {
         }
         stage('Check redirects') {
             steps {
-                sh 'python3 -m sphinx -Wab rediraffecheckdiff . _build/html'
+                sh 'python3 -m sphinx -b rediraffecheckdiff . _build/html'
             }
         }
     }
