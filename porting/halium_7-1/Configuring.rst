@@ -170,6 +170,7 @@ After completing a build of halium-boot.img::
 Navigate to the bluetooth drivers submenu and note down all activated settings and what they do. Also note which other settings they depend on (found under Help).
 
 Example:
+""""""""
 
     For the Samsung Galaxy S7 (herolte) the original defconfig file contains a number of CONFIG_BT settings, none of which actually designate the bluetooth driver used by this device. The setting for the driver itself is CONFIG_BCM4359=y. This was not one of the drivers brought in by the backporting steps below. It therefore had to be :ref:`added afterwards <Missing-drivers>`.
 
