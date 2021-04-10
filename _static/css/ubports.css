@@ -124,6 +124,10 @@ a.current, .content h1, .toc-tree li.scroll-current > .reference, .edit-containe
     padding: 5px 20px;
 }
 
+.injected {
+    display: none;
+}
+
 /* override table width restrictions */
 .wy-table-responsive table th
 , .wy-table-responsive table td
