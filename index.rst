@@ -63,12 +63,11 @@ You may view this documentation in the following languages:
    :caption: Porting
    :name: sec-porting
 
-   porting/index
-   porting/Preparations
-   porting/halium_7-1/index.rst
-   porting/halium_9/index.rst
-   porting/UBports_recovery
-   porting/UBports_installer
+   porting/introduction/index
+   porting/introduction/Preparations.rst .. FIXME: just a placeholder link, should be 'inside' intro
+   porting/base_build/index
+   porting/test_and_fix/index
+   porting/finalizing/index
 
 .. toctree::
    :maxdepth: 1
