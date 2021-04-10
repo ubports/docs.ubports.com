@@ -136,20 +136,19 @@ Bluetooth backporting steps
 
 The steps are as follows:
 
-#.  Record bluetooth driver and settings. 
-#.  Clone/download the backports scripts.
-#.  Clone/download the kernel source from the newer kernel version you wish to backport from.
-#.  Run the script to integrate the newer sources into your kernel source tree.
-#.  Fix errors that *will* occur when the script is run.
-#.  Add a security patch.
-#.  Make necessary changes to your kernel defconfig file.
-#.  Rebuild and flash the full halium-boot.img.
-#.  Add bluetooth initializaton script, rebuild and flash system.img.
+#.  Record bluetooth driver and settings
+#.  Download backports script
+#.  Download 4.2 kernel source
+#.  Run backports script and fix errors
+#.  Apply security patch
+#.  Apply new settings
+#.  Build and flash halium-boot.img
+#.  Build and flash system.img
 
 .. _BT-driver:
 
-Determine driver and record old configs
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Record bluetooth driver and settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 By the time you reach this point in the porting process, you will have completed building halium-boot (probably a number of times). Your kernel defconfig will contain bluetooth settings including one that designates the driver used by your device. These must be recorded before proceeding.
 
@@ -174,8 +173,8 @@ Example:
 
     For the Samsung Galaxy S7 (herolte) the original defconfig file contains a number of CONFIG_BT settings, none of which actually designate the bluetooth driver used by this device. The setting for the driver itself is CONFIG_BCM4359=y. This was not one of the drivers brought in by the backporting steps below. It therefore had to be :ref:`added afterwards <Missing-drivers>`.
 
-Download the backports scripts
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Download backports script
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Clone the backports scripts into a directory outside your halium source tree by issuing this command from your home (~) directory::
 
@@ -183,8 +182,8 @@ Clone the backports scripts into a directory outside your halium source tree by 
 
 This downloads the backports scripts prepared by Canonical based on the `Backports Project <https://backports.wiki.kernel.org/index.php/Main_Page>`_ mentioned above, and places them in the directory ``~/backport-scripts``. The scripts are specifically written to backport from kernel version 4.2.
 
-Download kernel source to backport from
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Download 4.2 kernel sources
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Create a directory (outside your halium source tree) for the kernel source from which you will pull the newer drivers::
 
@@ -195,8 +194,8 @@ Now clone the kernel source for v4.2::
     cd ~/kernel-backports
     git clone https://kernel.googlesource.com/pub/scm/linux/kernel/git/next/linux-next -b v4.2
 
-Run script and fix errors
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Run backports script and fix errors
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Navigate to your backports scripts directory and issue the command below (using Python2 as shown)::
 
@@ -209,8 +208,8 @@ Apply security patch
 
 An additional `generic security patch <https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/patch/?id=8a7b081660857a80c3efc463b3da790c4fa0c801>`_ needs to be applied. 
 
-Edit kernel defconfig
-^^^^^^^^^^^^^^^^^^^^^
+Apply new settings
+^^^^^^^^^^^^^^^^^^
 
 Your kernel config file (defconfig) needs to be modified in order for the backported driver and protocol code to be activated.
 
@@ -282,8 +281,8 @@ As an example, the lines above have been edited to conform with backporting from
 
 You are now ready to build.
 
-Build
-^^^^^
+Build and flash halium-boot.img
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Return to the root of your BUILDDIR and build::
 
@@ -326,8 +325,8 @@ If you do not get similar output, something has gone wrong. Check that you compl
 
 You have now rebuilt your halium-boot.img to include updated bluetooth drivers and only one final step remains.
 
-Configuration script
-^^^^^^^^^^^^^^^^^^^^
+Build and flash system.img
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The system image needs to be rebuilt with a configuration script for bluetooth adapted to your device. On the completed build, this file is located at::
 
