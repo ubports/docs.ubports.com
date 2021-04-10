@@ -162,7 +162,7 @@ If you do not have extensive experience, use the ``menuconfig`` tool instead, ta
 
 After completing a build of halium-boot.img::
 
-    cd out/target/product/[device]/obj/KERN_OBJ
+    cd out/target/product/[DEVICE]/obj/KERN_OBJ
     ARCH=arm64 make menuconfig
 
 (If your device is armhf, use ``ARCH=arm`` instead.)
