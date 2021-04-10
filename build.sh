@@ -26,7 +26,7 @@ fi
 echo -e "${GREEN}Building...${PLAIN}"
 rm -rf _build/
 if [ "$(uname)" == "Linux" ]; then
-  sphinx-build -Wa . _build/html -j `nproc --all` || exit $?
+  sphinx-build . _build/html -j `nproc --all` || exit $?
 else
   sphinx-build -Wa . _build/html -j `sysctl -n hw.ncpu` || exit $?
 fi
