@@ -69,7 +69,7 @@ p {
     border-radius: 20px 0 0 20px;
 }
 
-.content h1, .edit-container > p {
+.content h1, .edit-container > p, .bold {
     font-weight: 800;
 }
 
@@ -77,17 +77,12 @@ a.current, .content h1, .toc-tree li.scroll-current > .reference, .edit-containe
     color: #E95420 !important;
 }
 
-@media (prefers-color-scheme: dark) {
-    a.current, .content h1, .toc-tree li.scroll-current > .reference, .edit-container > p {
-        color: #8B3583 !important;
-    }
-}
-
 .edit-this-page {
     width: 200%;
     background-color: var(--color-sidebar-background);
     border-radius: 20px 0 0 20px;
     margin-top: 20px;
+    margin-bottom: 150px;
 }
 
 .edit-container {
@@ -123,6 +118,36 @@ a.current, .content h1, .toc-tree li.scroll-current > .reference, .edit-containe
     text-decoration: none;
     padding: 5px 20px;
 }
+/* Social css from devices */
+.ext-link-icon {
+  width: 30px;
+}
+
+.footer-links {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+
+.footer-links > p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-links > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links > ul > li {
+    margin: 5px;
+    display: inline-block;
+}
+
+.footer-links img {
+    display: block;
+}
 
 .injected {
     display: none;
@@ -140,4 +165,14 @@ a.current, .content h1, .toc-tree li.scroll-current > .reference, .edit-containe
 .wy-table-responsive
 {
     overflow: visible !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    a.current, .content h1, .toc-tree li.scroll-current > .reference, .edit-container > p {
+        color: #8B3583 !important;
+    }
+    .footer-links img {
+        -webkit-filter: invert(100%); /* safari 6.0 - 9.0 */
+        filter: invert(100%);
+    }
 }
