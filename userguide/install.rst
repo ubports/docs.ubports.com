@@ -57,7 +57,7 @@ Run ``echo 0x2ae5 >> ~/.android/adb_usb.ini`` in the terminal and restart the in
 Missing udev-rules
 """"""""""""""""""
 
-If the device not detected on Linux and packages other than snap, you might be missing **udev-rules**.
+If the device is not detected on Linux and you are not using the snap package, then you might be missing some **udev-rules**.
 
 1. See if ``/etc/udev/rules.d/51-android.rules`` exists and contains the rules below. If not, add them to the file and run
    ``sudo service udev restart`` or
