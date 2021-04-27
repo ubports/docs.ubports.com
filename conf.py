@@ -103,7 +103,11 @@ html_theme_options = {
         "color-sidebar-search-background": "#F7F7F7",
         "color-sidebar-background": "#FFFFFF",
         "sidebar-search-icon-size": "1px",
-        "color-sidebar-background-border": "transparent"
+        "color-sidebar-background-border": "transparent",
+        "color-link": "var(--color-foreground-primary)",
+        "color-link--hover": "var(--color-foreground-primary)",
+        "color-link-underline": "var(--color-foreground-primary)",
+        "color-link-underline--hover": "#E95420"
     },
     "dark_css_variables": {
         "color-brand-primary": "#EDEDED",
