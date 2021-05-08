@@ -1,3 +1,5 @@
+/* Import fonts */
+
 @font-face {
   font-family: 'ubuntu';
   src: url('../font/Ubuntu-Light.ttf');
@@ -19,39 +21,67 @@
   font-style: normal;
 }
 
+/* Content style */
 table {
     width: 100%;
 }
 
+blockquote {
+    font-style: none;
+}
+
+h4, h5, h6 {
+    text-transform: none;
+}
+
+/* override table width restrictions */
+.wy-table-responsive table th
+, .wy-table-responsive table td
+{
+    /* !important prevents the common CSS stylesheets from
+       overriding this as on RTD they are loaded after this stylesheet */
+    white-space: normal !important;
+}
+
+.wy-table-responsive
+{
+    overflow: visible !important;
+}
+
+/* Section spacing */
 .section {
     margin-top: 3rem;
 }
 
-.fa-home:before, .icon-home:before, .headerlink {
+.section .section .section {
+    margin-top: 2rem;
+}
+
+.section .section .section .section {
+    margin-top: 1rem;
+}
+
+/* Hidden elements */
+.headerlink, .injected {
     display: none;
 }
 
-.article-container {
-  display: flex;
-  flex-direction: column;
+/* Bold */
+.content h1, .content h2, .content h3, .edit-container > p, .bold {
+    font-weight: 800;
 }
 
-.article-container > .related-pages {
-    margin-top: 25px;
-    font-size: var(--font-size--small);
-    border-bottom: 1px solid var(--color-background-border);
-    padding-bottom: 1rem;
+/* Primary color */
+a.current, .content h1, .toc-tree li.scroll-current > .reference, .edit-container > p {
+    color: #E95420 !important;
 }
 
-.icon-home {
-    font-size: 0 !important;
-}
-
+/* Left sidebar */
 .sidebar-brand {
     padding-top: 0;
 }
 
-.sidebar-logo-container{
+.sidebar-logo-container {
     margin-top: 0;
 }
 
@@ -69,18 +99,7 @@ table {
     border-radius: 20px 0 0 20px;
 }
 
-h4, h5, h6 {
-    text-transform: none;
-}
-
-.content h1, .content h2, .content h3, .edit-container > p, .bold {
-    font-weight: 800;
-}
-
-a.current, .content h1, .toc-tree li.scroll-current > .reference, .edit-container > p {
-    color: #E95420 !important;
-}
-
+/* Edit this page styles */
 .edit-this-page {
     width: 200%;
     background-color: var(--color-sidebar-background);
@@ -104,7 +123,16 @@ a.current, .content h1, .toc-tree li.scroll-current > .reference, .edit-containe
     background-color: var(--color-background-primary);
     padding: 5px 20px;
     border-radius: 20px;
+    transition: all .5s;
 }
+
+.edit-container .muted-link:hover {
+    color: var(--color-background-primary);
+    background-color: var(--color-content-foreground);
+    text-decoration: none;
+}
+
+/* Language list */
 
 .lang-list {
     list-style: none;
@@ -121,7 +149,14 @@ a.current, .content h1, .toc-tree li.scroll-current > .reference, .edit-containe
     border-radius: 20px;
     text-decoration: none;
     padding: 5px 20px;
+    transition: all .5s;
 }
+
+.lang-list > li > p > a:hover {
+    color: var(--color-background-primary);
+    background-color: var(--color-content-foreground);
+}
+
 /* Social css from devices */
 .ext-link-icon {
   width: 30px;
@@ -151,37 +186,30 @@ a.current, .content h1, .toc-tree li.scroll-current > .reference, .edit-containe
 
 .footer-links img {
     display: block;
+    transition: all .5s;
+    -webkit-filter: invert(20%); /* safari 6.0 - 9.0 */
+    filter: invert(20%);
 }
 
-.injected {
-    display: none;
+.footer-links img:hover {
+    -webkit-filter: invert(0%); /* safari 6.0 - 9.0 */
+    filter: invert(0%);
 }
 
-blockquote {
-    font-style: none;
-}
-
-/* override table width restrictions */
-.wy-table-responsive table th
-, .wy-table-responsive table td
-{
-    /* !important prevents the common CSS stylesheets from
-       overriding this as on RTD they are loaded after this stylesheet */
-    white-space: normal !important;
-}
-
-.wy-table-responsive
-{
-    overflow: visible !important;
-}
+/* Dark color scheme */
 
 @media (prefers-color-scheme: dark) {
     .footer-links img {
-        -webkit-filter: invert(20%); /* safari 6.0 - 9.0 */
-        filter: invert(20%);
+        -webkit-filter: invert(30%); /* safari 6.0 - 9.0 */
+        filter: invert(30%);
+    }
+    .footer-links img:hover {
+        -webkit-filter: invert(70%); /* safari 6.0 - 9.0 */
+        filter: invert(70%);
     }
 }
 
+/* Disable border radius on smaller displays */
 @media (max-width:82em) {
     .edit-this-page {
         border-radius: 0;
