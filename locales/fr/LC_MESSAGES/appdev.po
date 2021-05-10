@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 09:34-0500\n"
-"PO-Revision-Date: 2021-03-19 14:27+0000\n"
-"Last-Translator: Anne Onyme <anneonyme017@netcourrier.com>\n"
+"PO-Revision-Date: 2021-04-25 21:09+0000\n"
+"Last-Translator: Laurent Rouxel <lrouxel@free.fr>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/fr/>\n"
 "Language: fr\n"
@@ -588,6 +588,14 @@ msgid ""
 "camera-scanner/blob/master/plugins/ImageProcessing/CMakeLists.txt#L23>`_ for "
 "a real world example."
 msgstr ""
+"La commande ``find_package`` décrit habituellement le chemin du répertoire "
+"d'inclusion comme ``SOMELIBRARY_INCLUDE_DIRS`` et les binaires de la "
+"bibliothèque comme ``SOMELIBRARY_LIBS`` (vérifiez dans la documentation de "
+"la bibliothèque ce que leur configuration CMake fournit exactement). "
+"Utilisez-les avec les commandes ``include_directories`` et "
+"``target_link_libraries``. Voir `Camera Scanner ImageProcessing "
+"CMakeLists.txt <https://github.com/jonnius/camera-scanner/blob/master/"
+"plugins/ImageProcessing/CMakeLists.txt#L23>`_ pour un exemple concret."
 
 #: ../../appdev/guides/dependencies.rst:108
 msgid ""
@@ -633,6 +641,16 @@ msgid ""
 "error messages you can ignore). In general, ``/usr/lib``  is a good bet when "
 "looking for the shared object files."
 msgstr ""
+"Trouvez le chemin vers les fichiers des objets partagés. Pour les "
+"bibliothèques compilées via clickable, ils sont situés quelque part dans le "
+"répertoire d'installation de la bibliothèque, qui se trouve dans le "
+"répertoire des sources de la bibliothèque par défaut (par exemple, ``build/"
+"arm-linux-gnueabihf/opencv/install``). Pour les bibliothèques précompilées, "
+"lancez ``clickable run \"find / -name 'libSomething.so'\"`` (en remplaçant "
+"``libSomething.so`` par le fichier que vous recherchez). Cela devrait "
+"afficher le chemin d'accès au fichier (ainsi que quelques messages d'erreur "
+"que vous pouvez ignorer). En général, ``/usr/lib`` est un bon endroit pour "
+"chercher les fichiers d'objets partagés."
 
 #: ../../appdev/guides/dependencies.rst:118
 msgid ""
@@ -640,6 +658,9 @@ msgid ""
 "clickable.bhdouglass.com/en/latest/clickable-json.html#install-lib>`_ key to "
 "your clickable.json:"
 msgstr ""
+"Pour inclure ces fichiers dans le package click, ajoutez la clé `install_lib "
+"<http://clickable.bhdouglass.com/en/latest/clickable-json.html#install-lib>`"
+"_ à votre clickable.json :"
 
 #: ../../appdev/guides/dependencies.rst:136
 msgid ""
@@ -647,6 +668,10 @@ msgid ""
 "built with Clickable. The asterisk in ``.so*`` helps to catch symbolic links "
 "along with the actual library which are used to point to the current version."
 msgstr ""
+"Les lignes ci-dessus contiennent deux exemples. Le premier est "
+"l'installation d'une bibliothèque compilée avec Clickable. L'astérisque dans "
+"``.so*`` permet de pouvoir utiliser les liens symboliques qui pointent vers "
+"la version courante."
 
 #: ../../appdev/guides/dependencies.rst:138
 msgid ""
@@ -839,6 +864,8 @@ msgid ""
 "Let's check if ``Qt.application.arguments`` is not empty and if not, if any "
 "argument matches our URI format."
 msgstr ""
+"Vérifions si ``Qt.application.arguments`` n'est pas vide et dans ce cas, si "
+"un argument correspond à notre format URI."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:135
 msgid ""
@@ -847,6 +874,10 @@ msgid ""
 "com/ubports-linphone/linphone-simple/-/blob/master/linphone.desktop.in#L7>`_ "
 "file of the app."
 msgstr ""
+"N'oublions pas de vérifier que %u (pour recevoir 1 URL) ou %U (pour recevoir "
+"1 ou plusieurs URL) est présent sous la ligne ``Exec`` dans le fichier `"
+".desktop <https://gitlab.com/ubports-linphone/linphone-simple/-/blob/master/"
+"linphone.desktop.in#L7>`_ de l'application."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:138
 msgid "What happens if more than one app has the same URL type defined?"
@@ -909,6 +940,10 @@ msgid ""
 "the OpenStore. But now you want to be able to send Push Notifications to "
 "your users. First of all, you need to understand how this is working:"
 msgstr ""
+"Supposons que vous ayez une appli créée avec Clickable et publiée sur "
+"l'OpenStore. Mais vous souhaitez maintenant pouvoir envoyer des "
+"notifications push à vos utilisateurs. Tout d'abord, vous devez comprendre "
+"comment tout cela fonctionne :"
 
 #: ../../appdev/guides/pushnotifications.rst:8
 msgid ""
@@ -916,22 +951,29 @@ msgid ""
 "identifies the user, the device and the app itself. The token is generated "
 "by the UBports Push Service."
 msgstr ""
+"Chaque appli qui utilise les notifications push dispose d'un jeton unique. "
+"Ce jeton identifie l'utilisateur, l'appareil et l'application elle-même. Le "
+"jeton est généré par le service Push de UBports."
 
 #: ../../appdev/guides/pushnotifications.rst:9
 msgid ""
 "You will need the token to send a push notification. So the app sends its "
 "token to the app developer's server."
 msgstr ""
+"Vous aurez besoin du jeton pour envoyer une notification push. Ceci pour que "
+"l'appli puisse l'envoyer au serveur du développeur."
 
 #: ../../appdev/guides/pushnotifications.rst:10
 msgid ""
 "With the token you can send a HTTP request to the UBports Push Server which "
 "will forward the notification the user's device."
 msgstr ""
+"Avec le jeton, vous pouvez envoyer une requête HTTP au serveur Push de "
+"UBports qui transmettra la notification à l'appareil de l'utilisateur."
 
 #: ../../appdev/guides/pushnotifications.rst:12
 msgid "Let's practice this step-by-step."
-msgstr ""
+msgstr "Faisons-le donc étape par étape."
 
 #: ../../appdev/guides/pushnotifications.rst:15
 msgid ""
@@ -940,26 +982,33 @@ msgid ""
 "the user about the communication with your server by providing a privacy "
 "policy!"
 msgstr ""
+"Dans l'exemple suivant, nous n'implémenterons pas de serveur. C'est vous qui "
+"gérez la communication entre votre appli et votre serveur. Veuillez informer "
+"l'utilisateur à ce sujet en fournissant une politique de confidentialité !"
 
 #: ../../appdev/guides/pushnotifications.rst:18
 msgid "Make the app ready for push notifications"
-msgstr ""
+msgstr "Préparons l'application pour les notifications push"
 
 #: ../../appdev/guides/pushnotifications.rst:21
 msgid "Implementing the PushClient"
-msgstr ""
+msgstr "Implémentation du client push"
 
 #: ../../appdev/guides/pushnotifications.rst:23
 msgid ""
 "First we need to add the policy group \"push-notification-client\". Your "
 "apparmor file could look like this:"
 msgstr ""
+"Tout d'abord, nous devons ajouter la stratégie de groupe \"push-notification-"
+"client\". Votre fichier apparmor pourrait ressembler à ceci :"
 
 #: ../../appdev/guides/pushnotifications.rst:36
 msgid ""
 "In the next step we need to modify the Qml parts. We need to add a "
 "pushclient component:"
 msgstr ""
+"Dans l'étape suivante, nous devons modifier la partie Qml. Nous devons "
+"ajouter un composant pushclient :"
 
 #: ../../appdev/guides/pushnotifications.rst:52
 msgid ""
@@ -971,10 +1020,18 @@ msgid ""
 "But the app is not yet ready to receive a push notification. For this we "
 "need something called a pushhelper!"
 msgstr ""
+"Vous devez définir le bon appId ! Si le nom de l'application dans votre "
+"fichier manifeste est myapp.yourname et que le nom du hook principal (celui "
+"qui gère le fichier .desktop) est hookname, alors l'appId est : "
+"myapp.yourname_hookname. Lorsque nous démarrons l'application, elle obtient "
+"un jeton et l'inscrit dans les journaux. Avec les journaux cliquables, nous "
+"serons en mesure de copier ce jeton à partir du terminal. Mais l'application "
+"n'est pas encore prête à recevoir une notification push. Pour cela, nous "
+"avons besoin de quelque chose appelé pushhelper !"
 
 #: ../../appdev/guides/pushnotifications.rst:56
 msgid "Implementing the pushhelper"
-msgstr ""
+msgstr "Implémentation du pushhelper"
 
 #: ../../appdev/guides/pushnotifications.rst:58
 msgid ""
@@ -984,6 +1041,12 @@ msgid ""
 "json-file in the correct format. The pushhelper is seperated from the app. "
 "So we need a new hook in the manifest. It could look like this:"
 msgstr ""
+"Le pushhelper est une partie de l'application qui va recevoir toutes les "
+"notifications push et les traiter avant de les envoyer au centre de "
+"notification du système. Il recevra un fichier json et devra produire un "
+"autre fichier json formaté correctement. Le pushhelper est séparé de "
+"l'appli. Nous avons donc besoin d'un nouveau hook dans le manifeste. Cela "
+"pourrait ressembler à ceci :"
 
 #: ../../appdev/guides/pushnotifications.rst:81
 msgid ""
@@ -991,30 +1054,40 @@ msgid ""
 "different executable file. The **push-apparmor.json** file must only contain "
 "the policy group push-notification-client and should look like this:"
 msgstr ""
+"Il est clair que nous avons maintenant besoin d'un fichier apparmor et d'un "
+"fichier executable différents. Le fichier **push-apparmor.json** doit "
+"uniquement contenir la stratégie de groupe push-notification-client et doit "
+"ressembler à ceci :"
 
 #: ../../appdev/guides/pushnotifications.rst:93
 msgid "The **push.json** is for redirecting to the executable file:"
-msgstr ""
+msgstr "**push.json** sert à la redirection vers le fichier exécutable :"
 
 #: ../../appdev/guides/pushnotifications.rst:101
 msgid ""
 "In our tutorial we will use python to create a executable named **pushexec** "
 "which will forward the notification without changing anything:"
 msgstr ""
+"Dans notre tutoriel, nous allons utiliser le langage python pour créer un "
+"exécutable nommé **pushexec** qui transmettra la notification sans rien "
+"changer :"
 
 #: ../../appdev/guides/pushnotifications.rst:113
 msgid ""
 "We also need to add this new files to the **CMakeLists.txt** and make the "
 "pushexec executable::"
 msgstr ""
+"Nous devons également ajouter ces nouveaux fichiers à **CMakeLists.txt** et "
+"rendre le fichier pushexec exécutable: :"
 
 #: ../../appdev/guides/pushnotifications.rst:123
 msgid "Now the app is ready to receive and process push notifications!"
 msgstr ""
+"L'appli est maintenant prête à recevoir et à traiter les notifications push !"
 
 #: ../../appdev/guides/pushnotifications.rst:126
 msgid "Using the Push Service API"
-msgstr ""
+msgstr "Utilisation de l'API Push Service"
 
 #: ../../appdev/guides/pushnotifications.rst:128
 msgid ""
@@ -1024,10 +1097,16 @@ msgid ""
 "application/json and it must fit in the correct format. A example in "
 "javascript could look like this:"
 msgstr ""
+"A ce stade, vous avez le jeton et l'application est prête à recevoir et à "
+"traiter les notifications push. Pour envoyer une notification, vous devez "
+"envoyer une requête HTTP à cette adresse : https://push.ubports.com/notify. "
+"La valeur de l'entête http content-type doit être application/json et doit "
+"aussi être au bon format. Un exemple en javascript pourrait ressembler à "
+"ceci :"
 
 #: ../../appdev/guides/pushnotifications.rst:165
 msgid "Push Notification Object"
-msgstr "Notifications poussées"
+msgstr "L'objet notification push"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -1036,7 +1115,7 @@ msgstr "Notifications poussées"
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Parameter"
-msgstr ""
+msgstr "Paramètre"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -1045,7 +1124,7 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -1054,11 +1133,11 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #: ../../appdev/guides/pushnotifications.rst:170
 msgid "appid"
-msgstr ""
+msgstr "appid"
 
 #: ../../appdev/guides/pushnotifications.rst:170
 #: ../../appdev/guides/pushnotifications.rst:173
@@ -1069,337 +1148,359 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:233
 #: ../../appdev/guides/pushnotifications.rst:241
 msgid "string"
-msgstr "Partage"
+msgstr "chaîne"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. ID of the application that will receive the notification,"
-msgstr ""
+msgstr "Requis. ID de l'application qui recevra la notification,"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "as described in the client side documentation."
-msgstr ""
+msgstr "comme décrit dans la documentation partie client."
 
 #: ../../appdev/guides/pushnotifications.rst:173
 msgid "expire_on"
-msgstr ""
+msgstr "expire_on"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. Expiration date/time for this message, in"
-msgstr ""
+msgstr "Requis. Date et heure d'expiration du message, au format"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "`ISO8601 Extendendformat <https://www.w3.org/TR/NOTE-datetime>`_."
-msgstr ""
+msgstr "`ISO8601 Extendendformat <https://www.w3.org/TR/NOTE-datetime>`_."
 
 #: ../../appdev/guides/pushnotifications.rst:176
 msgid "token"
-msgstr ""
+msgstr "token"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. The token identifying the user+device to which the message is"
 msgstr ""
+"Requis. Le jeton identifiant utilisateur+dispositif auxquels le message est"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "directed, as described in the client side documentation."
-msgstr ""
+msgstr "destiné, comme décrit dans la documentation partie client."
 
 #: ../../appdev/guides/pushnotifications.rst:179
 msgid "clear_pending"
-msgstr ""
+msgstr "clear_pending"
 
 #: ../../appdev/guides/pushnotifications.rst:179
 #: ../../appdev/guides/pushnotifications.rst:248
 #: ../../appdev/guides/pushnotifications.rst:250
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "bool"
-msgstr ""
+msgstr "booléen"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Discards all previous pending notifications. Usually in response to"
 msgstr ""
+"Abandonne toutes les précédentes notifications en attente. Généralement en "
+"réponse"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "getting a \"too-many-pending\" error. Defaults to false."
-msgstr ""
+msgstr "à une erreur \"too-many-pending\". La valeur par défaut est false."
 
 #: ../../appdev/guides/pushnotifications.rst:182
 msgid "replace_tag"
-msgstr ""
+msgstr "replace_tag"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If there's a pending notification with the same tag, delete it before"
-msgstr ""
+msgstr "Si il y a une notification avec le même tag, elle sera effacée avant de"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "queuing this new one."
-msgstr ""
+msgstr "mettre la nouvelle dans la file d'attente."
 
 #: ../../appdev/guides/pushnotifications.rst:185
 msgid "data"
-msgstr "Données de l'application"
+msgstr "data"
 
 #: ../../appdev/guides/pushnotifications.rst:185
 #: ../../appdev/guides/pushnotifications.rst:190
 msgid "Data"
-msgstr ""
+msgstr "données"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object. The contents of the data field are arbitrary. We can use"
 msgstr ""
+"Un objet JSON. Le contenu du champ de données est arbitraire. On peut "
+"l'utiliser"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "it to send any data to the app."
-msgstr ""
+msgstr "pour envoyer tout type de données à l'appli."
 
 #: ../../appdev/guides/pushnotifications.rst:195
 msgid "notification"
-msgstr "Notifications poussées"
+msgstr "notification"
 
 #: ../../appdev/guides/pushnotifications.rst:195
 #: ../../appdev/guides/pushnotifications.rst:201
 msgid "Notification"
-msgstr "Notifications poussées"
+msgstr "Notification"
 
 #: ../../appdev/guides/pushnotifications.rst:195
 msgid "A JSON object which defines how this notification will be presented."
-msgstr ""
+msgstr "Un objet JSON qui définit comment cette notification sera présentée."
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "message"
-msgstr ""
+msgstr "message"
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "object"
-msgstr ""
+msgstr "objet"
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "A JSON object that is passed as-is to the application via PopAll."
-msgstr ""
+msgstr "Un objet JSON qui est transmis tel quel à l'application via PopAll."
 
 #: ../../appdev/guides/pushnotifications.rst:206
 msgid "tag"
-msgstr ""
+msgstr "tag"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "The tag of the push notification."
-msgstr "Notifications poussées."
+msgstr "Le tag de la notification push."
 
 #: ../../appdev/guides/pushnotifications.rst:208
 msgid "sound"
-msgstr ""
+msgstr "sound"
 
 #: ../../appdev/guides/pushnotifications.rst:208
 msgid "bool or string"
-msgstr ""
+msgstr "booléen ou chaîne"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "This is either a boolean (play a predetermined sound) or the"
-msgstr ""
+msgstr "Il s'agit soit d'un booléen (lecture d'un son prédéterminé), soit du"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "path to a sound file. The user can disable it, so don't rely"
 msgstr ""
+"chemin vers un fichier son. L'utilisateur peut le désactiver, donc ne pas se "
+"baser"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "on it exclusively. Defaults to empty (no sound). The path is"
-msgstr ""
+msgstr "exclusivement sur celui-ci. Vide par défaut (pas de son). Le chemin est"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "relative, and will be looked up in (a) the application's"
 msgstr ""
+"relatif et sera recherché dans (a) le dossier ``.local/share/<pkgname>``"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "``.local/share/<pkgname>``, and (b) standard xdg dirs."
-msgstr ""
+msgstr "de l'application, (b) les dossiers xdg standards."
 
 #: ../../appdev/guides/pushnotifications.rst:214
 msgid "vibrate"
-msgstr ""
+msgstr "vibrate"
 
 #: ../../appdev/guides/pushnotifications.rst:214
 msgid "bool or Vibrate"
-msgstr ""
+msgstr "booléen ou vibrate"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "The notification can contain a vibrate field, causing haptic"
 msgstr ""
+"La notification peut contenir un champ vibration, pour déclencher le "
+"dispositif de"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "feedback, which can be either a boolean (if true, vibrate a"
-msgstr ""
+msgstr "vibration, ce champ peut être soit un booléen (si vrai, vibre"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "predetermined way) or an Vibrate object."
-msgstr ""
+msgstr "d'une façon prédéterminée) ou un objet vibrate."
 
 #: ../../appdev/guides/pushnotifications.rst:218
 msgid "emblem-counter"
-msgstr ""
+msgstr "emblem-counter"
 
 #: ../../appdev/guides/pushnotifications.rst:218
 msgid "Emblem-counter"
-msgstr ""
+msgstr "Emblem-counter"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object, which defines how to display the emblem"
-msgstr ""
+msgstr "Un objet JSON qui définit comment afficher le compteur"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "counter."
-msgstr "Comptes en ligne."
+msgstr "sur l'icône de l'appli."
 
 #: ../../appdev/guides/pushnotifications.rst:221
 msgid "card"
-msgstr ""
+msgstr "card"
 
 #: ../../appdev/guides/pushnotifications.rst:221
 #: ../../appdev/guides/pushnotifications.rst:225
 msgid "Card"
-msgstr ""
+msgstr "Card"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object with information about the notification card."
 msgstr ""
+"Un objet JSON contenant des informations sur la carte de la notification."
 
 #: ../../appdev/guides/pushnotifications.rst:230
 msgid "summary"
-msgstr ""
+msgstr "summary"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. A title. The card will not be presented if this is"
-msgstr ""
+msgstr "Requis. Un titre. La carte ne sera pas affichée si il est"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "missing."
-msgstr ""
+msgstr "manquant."
 
 #: ../../appdev/guides/pushnotifications.rst:233
 msgid "body"
-msgstr ""
+msgstr "body"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Longer text, defaults to empty."
-msgstr ""
+msgstr "Description plus longue, vide par défaut."
 
 #: ../../appdev/guides/pushnotifications.rst:235
 msgid "actions"
-msgstr "location"
+msgstr "actions"
 
 #: ../../appdev/guides/pushnotifications.rst:235
 #: ../../appdev/guides/pushnotifications.rst:261
 msgid "array"
-msgstr ""
+msgstr "tableau"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If empty (the default), a bubble notification is"
-msgstr ""
+msgstr "si vide (par défaut), une bulle de notification est"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "non-clickable. If you add a URL, then bubble notifications"
 msgstr ""
+"non cliquable. Si vous ajoutez une URL, alors ces bulles de notifications"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "are clickable and launch that URL. One use for this is using"
 msgstr ""
+"sont cliquables et lancent cette URL. Une utilisation possible est d'utiliser"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "a URL like ``appid://com.ubuntu.developer.ralsina.hello``"
-msgstr ""
+msgstr "une URL comme ``appid://com.ubuntu.developer.ralsina.hello``"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "which will switch to the app or launch it."
-msgstr ""
+msgstr "qui permet de basculer sur l'application ou de la lancer."
 
 #: ../../appdev/guides/pushnotifications.rst:241
 msgid "icon"
-msgstr ""
+msgstr "icon"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "An icon relating to the event being notified. Defaults to"
-msgstr ""
+msgstr "Une icône relative à l'événement qui est notifié. Est vide par défaut"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "empty (no icon); a secondary icon relating to the application"
-msgstr ""
+msgstr "(pas d'icône); une icône secondaire en lien avec l'application"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "will be shown as well, regardless of this field."
-msgstr ""
+msgstr "sera également affiché, indépendamment de ce champ."
 
 #: ../../appdev/guides/pushnotifications.rst:245
 msgid "timestamp"
-msgstr ""
+msgstr "timestamp"
 
 #: ../../appdev/guides/pushnotifications.rst:245
 #: ../../appdev/guides/pushnotifications.rst:264
 #: ../../appdev/guides/pushnotifications.rst:275
 msgid "integer"
-msgstr ""
+msgstr "entier"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Seconds since the unix epoch, only used for persist for now."
 msgstr ""
+"En secondes (heure Unix), pour le moment seulement utilisé pour persist."
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If zero or unset, defaults to current timestamp."
 msgstr ""
+"si à zéro ou non définit, l'horodatage courant sera la valeur par défaut."
 
 #: ../../appdev/guides/pushnotifications.rst:248
 msgid "persist"
-msgstr ""
+msgstr "persist"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Whether to show in notification centre; defaults to false."
 msgstr ""
+"Si on veut l'afficher dans le centre de notification; la valeur par défaut "
+"est false."
 
 #: ../../appdev/guides/pushnotifications.rst:250
 msgid "popup"
-msgstr ""
+msgstr "popup"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Whether to show in a bubble. Users can disable this, and can"
 msgstr ""
+"Si on veut montrer la notification dans une bulle. Les utilisateurs peuvent "
+"le désactiver,"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "easily miss them, so don't rely on it exclusively. Defaults"
 msgstr ""
+"et peuvent aisément la manquer, donc ne pas compter exclusivement dessus."
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "to false."
-msgstr ""
+msgstr "Prend la valeur false par défaut."
 
 #: ../../appdev/guides/pushnotifications.rst:256
 msgid "Vibrate"
-msgstr ""
+msgstr "Vibration"
 
 #: ../../appdev/guides/pushnotifications.rst:261
 msgid "pattern"
-msgstr "Les modèles d'URL"
+msgstr "pattern"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid ""
 "A list of integers describing a vibration pattern (duration of alternating"
 msgstr ""
+"Une liste d'entiers décrivant un motif de vibration (alternances de périodes"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "vibration/no vibration times, in milliseconds)."
-msgstr ""
+msgstr "avec/sans vibration, en millisecondes)."
 
 #: ../../appdev/guides/pushnotifications.rst:264
 msgid "repeat"
-msgstr ""
+msgstr "repeat"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Number of times the pattern has to be repeated (defaults to 1, 0 is the"
 msgstr ""
+"Nombre de répétition du motif (1 est la valeur par défaut, 0 est considéré"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "same as 1)."
-msgstr ""
+msgstr "de la même façon que 1)."
 
 #: ../../appdev/guides/pushnotifications.rst:270
 msgid "Emblem-Counter"
-msgstr ""
+msgstr "Compteur sur l'Icône"
 
 #: ../../appdev/guides/pushnotifications.rst:275
 msgid "count"
@@ -1407,23 +1508,23 @@ msgstr "Comptes en ligne"
 
 #: ../../appdev/guides/pushnotifications.rst:275
 msgid "A number to be displayed over the application's icon in the launcher."
-msgstr ""
+msgstr "Un nombre qui sera affiché sur l'icône de l'appli dans le lanceur."
 
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "visible"
-msgstr ""
+msgstr "visible"
 
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "Set to true to show the counter, or false to hide it."
-msgstr ""
+msgstr "Positionné à true pour montrer le compteur, false pour le cacher."
 
 #: ../../appdev/guides/user-metrics.rst:2
 msgid "User Metrics"
-msgstr "usermetrics"
+msgstr "Métriques utilisateur"
 
 #: ../../appdev/guides/user-metrics.rst:5
 msgid "What are User Metrics?"
-msgstr ""
+msgstr "Que sont les métriques utilisateur ?"
 
 #: ../../appdev/guides/user-metrics.rst:7
 msgid ""
@@ -1432,49 +1533,67 @@ msgid ""
 "the user’s activity. Double tap on the middle of the circle, and you will "
 "see more \"metrics\" about the user."
 msgstr ""
+"Si vous regardez sur l'écran de verrouillage, vous verrez un cercle. À "
+"l'intérieur de ce cercle se trouve du texte. Regardez de plus près, et vous "
+"remarquerez que sont des données concernant l'activité de l'utilisateur. "
+"Appuyez deux fois sur le milieu du cercle et vous verrez d'autres \"mesures\""
+" concernant l'activité de l'utilisateur."
 
 #: ../../appdev/guides/user-metrics.rst:11
 msgid "This shows \"7 text messages sent today.\" How did it know?"
 msgstr ""
+"Le texte indique \"7 messages texte envoyés aujourd'hui\". Comment cette "
+"donnée est-elle récupérée ?"
 
 #: ../../appdev/guides/user-metrics.rst:15
 msgid ""
 "This is from a 3rd-party application (`nCounter <https://gitlab.com/"
 "joboticon/ncounter/>`_) that makes use of the User Metrics feature."
 msgstr ""
+"Ceci provient d'une application tierce (`nCounter <https://gitlab.com/"
+"joboticon/ncounter/>`_) qui utilise la fonction User Metrics."
 
 #: ../../appdev/guides/user-metrics.rst:17
 msgid ""
 "For the most part, these messages are quite clearly state what they are "
 "counting, and which app is related. But where do these metrics come from?"
 msgstr ""
+"Pour la plupart, ces messages indiquent clairement ce qu'ils comptent, et "
+"quelle application est concernée. Mais d'où viennent ces données ?"
 
 #: ../../appdev/guides/user-metrics.rst:20
 msgid "How can I use User Metrics in my application?"
 msgstr ""
+"Comment puis-je utiliser les métriques utilisateur dans mon application ?"
 
 #: ../../appdev/guides/user-metrics.rst:22
 msgid ""
 "All of the following information will be based on the code for `nCounter`_."
-msgstr ""
+msgstr "Les explications suivantes seront basées sur le code de `nCounter`_."
 
 #: ../../appdev/guides/user-metrics.rst:24
 msgid "Your app's apparmor file must include ``usermetrics`` in the policy:"
 msgstr ""
+"Le fichier apparmor de votre application doit inclure ``usermetrics`` dans "
+"la stratégie de sécurité :"
 
 #: ../../appdev/guides/user-metrics.rst:35
 msgid ""
 "Next, you will need to import the module in the QML file that will handle "
 "the User Metrics:"
 msgstr ""
+"Ensuite, vous il faut importer le module dans le fichier QML qui gérera les "
+"données utilisateur :"
 
 #: ../../appdev/guides/user-metrics.rst:41
 msgid "(There may be updated versions of this above 0.1)"
-msgstr ""
+msgstr "(Il peut y avoir des versions plus à jour pour ceci après la 0.1)"
 
 #: ../../appdev/guides/user-metrics.rst:43
 msgid "Next, the specific Metric must be defined in the code as an object:"
 msgstr ""
+"Ensuite, la métrique en question doit être définie dans le code comme un "
+"objet (Metric) :"
 
 #: ../../appdev/guides/user-metrics.rst:56
 msgid ""
@@ -1482,69 +1601,89 @@ msgid ""
 "\" when an event takes place by referencing the variables in the Metric "
 "object."
 msgstr ""
+"Maintenant que la métrique est créée, nous pouvons mettre à jour \"format\" "
+"ou \"emptyFormat\" lorsqu'un événement se produit en faisant référence aux "
+"variables de l'objet Metric."
 
 #: ../../appdev/guides/user-metrics.rst:66
 msgid ""
 "Here we assign a new value to the circleMetric string variable that’s inside "
 "the Metric object:"
 msgstr ""
+"Ici, nous attribuons une nouvelle valeur à la variable chaîne circleMetric "
+"qui se trouve dans l'objet Metric :"
 
 #: ../../appdev/guides/user-metrics.rst:68
 msgid "(Remember that circleMetric is the variable value assigned to format)"
 msgstr ""
+"(Rappelez-vous que circleMetric est la valeur de la variable affectée au "
+"format)"
 
 #: ../../appdev/guides/user-metrics.rst:70
 msgid "Metric Id [dot] Variable Name [equals] New variable information"
 msgstr ""
+"Id Metric [point] Nom de la variable [égal] Nouvelles informations sur la "
+"variable"
 
 #: ../../appdev/guides/user-metrics.rst:72
 msgid "``metric.circleMetric = \"New Metric Message\"``"
-msgstr ""
+msgstr "``metric.circleMetric = \"New Metric Message\"``"
 
 #: ../../appdev/guides/user-metrics.rst:74
 msgid "We then tell the lock screen to update the metric."
 msgstr ""
+"Nous demandons ensuite à l'écran de verrouillage de mettre à jour la "
+"métrique."
 
 #: ../../appdev/guides/user-metrics.rst:76
 msgid ""
 "Metric ID [dot] update (specific amount to set if included in the format)"
 msgstr ""
+"Id Metric [point] mise à jour (contenu spécifique à définir si inclus dans "
+"le format)"
 
 #: ../../appdev/guides/user-metrics.rst:78
 msgid "``metric.update(0)``"
-msgstr ""
+msgstr "``metric.update(0)``"
 
 #: ../../appdev/guides/user-metrics.rst:80
 msgid ""
 "(Note: In this example, ``0`` is arbitrary since the metric value doesn't "
 "include a counter)"
 msgstr ""
+"(Note : Dans cet exemple, ``0`` est arbitraire puisque metric n'inclut pas "
+"de compteur)"
 
 #: ../../appdev/guides/user-metrics.rst:82
 msgid ""
 "We have now updated the metric for today. When the time rolls over to "
 "tomorrow, the metric will be reset to whatever is in ``emptyFormat``."
 msgstr ""
+"Nous avons maintenant mis à jour la métrique pour le jour courant. Rendu à "
+"demain, cette métrique sera réinitialisé à ce qui se trouve dans "
+"``emptyFormat``."
 
 #: ../../appdev/guides/user-metrics.rst:84
 msgid "For most apps, this defaults to 0 counts for messages, calls, etc."
 msgstr ""
+"Pour la plupart des appli, la valeur par défaut est de 0 pour les messages, "
+"les appels, etc."
 
 #: ../../appdev/guides/user-metrics.rst:87
 msgid "How do User Metrics work?"
-msgstr ""
+msgstr "Comment les métriques utilisateur fonctionne-t-elles ?"
 
 #: ../../appdev/guides/user-metrics.rst:89
 msgid "User Metrics are made up of two \"formats\":"
-msgstr ""
+msgstr "L'objet est constitué de deux \"formats\" :"
 
 #: ../../appdev/guides/user-metrics.rst:91
 msgid "metrics/messages for today (``format``)"
-msgstr ""
+msgstr "metrics/messages pour aujourd'hui (``format``)"
 
 #: ../../appdev/guides/user-metrics.rst:92
 msgid "metrics/messages for tomorrow (``emptyFormat``)"
-msgstr ""
+msgstr "metrics/messages pour demain (``emptyFormat``)"
 
 #: ../../appdev/guides/user-metrics.rst:94
 msgid ""
@@ -1552,14 +1691,17 @@ msgid ""
 "value has been stored in ``format``. In order to display a new value of "
 "``format`` the metric must be updated."
 msgstr ""
+"La valeur de ``emptyFormat`` est ce qui s'affiche sur l'écran de "
+"verrouillage quand aucune valeur n'a été stockée dans ``format``. Afin "
+"d'afficher une nouvelle valeur de ``format``, metric doit être mis à jour."
 
 #: ../../appdev/guides/user-metrics.rst:96
 msgid "There are two options for updating the metric:"
-msgstr ""
+msgstr "Il existe deux façon de mettre à jour metric :"
 
 #: ../../appdev/guides/user-metrics.rst:98
 msgid "Set the metric to a specific amount:"
-msgstr ""
+msgstr "Positionner la métrique à un certain montant :"
 
 #: ../../appdev/guides/user-metrics.rst:100
 msgid ""
@@ -1568,21 +1710,29 @@ msgid ""
 "The counter value can be included in the ``format`` setting by using ``%1``. "
 "e.g. ``format: \"%1 buttons pressed today\"``"
 msgstr ""
+"``metricID.update(x)`` (où x est un nombre de type `double` à définir pour "
+"une valeur de compteur). ``metricID`` est le ``id:`` spécifié dans l'élément "
+"Metric. La valeur du compteur peut être incluse dans le paramètre ``format`` "
+"en utilisant ``%1``. Par exemple, ``format : \"%1 boutons pressés aujourd'"
+"hui\"``"
 
 #: ../../appdev/guides/user-metrics.rst:102
 msgid "Increment the metric:"
-msgstr ""
+msgstr "Incrémenter la métrique:"
 
 #: ../../appdev/guides/user-metrics.rst:104
 msgid ""
 "``metricID.increment(x)`` (where x is the amount to add to the current "
 "counter)"
 msgstr ""
+"``metricID.increment(x)`` (où x est le montant à ajouter au compteur actuel)"
 
 #: ../../appdev/guides/user-metrics.rst:106
 msgid ""
 "The metric will reset back to the value stored in ``emptyFormat`` each day."
 msgstr ""
+"La métrique sera réinitialisé à la valeur stockée dans ``emptyFormat`` "
+"chaque jour."
 
 #: ../../appdev/guides/user-metrics.rst:108
 msgid ""
@@ -1593,16 +1743,25 @@ msgid ""
 "lib/usermetrics <https://github.com/ubports/libusermetrics/tree/xenial/doc/"
 "pages>`_)."
 msgstr ""
+"Les applications utilisent les métriques utilisateur en définissant et en "
+"mettant à jour les \"formats\" chaque fois qu'un certain événement a lieu, "
+"par exemple lorsque vous appuyez sur envoyer dans Telegram, ou lorsque vous "
+"recevez un appel téléphonique. L'application peut stocker les données pour "
+"les manipuler, mais généralement celles-ci sont stockées dans le système (`/"
+"var/lib/usermetrics <https://github.com/ubports/libusermetrics/tree/xenial/"
+"doc/pages>`_)."
 
 #: ../../appdev/guides/user-metrics.rst:111
 msgid ""
 "(See this `blog post <https://daker.me/2013/11/adding-usermetrics-to-your-"
 "app-on-ubuntu-touch.html>`_ for a simple example)"
 msgstr ""
+"(Voir cet `article de blog <https://daker.me/2013/11/adding-usermetrics-to-"
+"your-app-on-ubuntu-touch.html>`_ pour un exemple simple)"
 
 #: ../../appdev/guides/user-metrics.rst:114
 msgid "Limitations and wonders"
-msgstr ""
+msgstr "Limitations et expectatives"
 
 #: ../../appdev/guides/user-metrics.rst:115
 msgid ""
@@ -1612,6 +1771,12 @@ msgid ""
 "this file and rebooting will remove all stored metrics. Presumably, the db "
 "file could be edited instead of deleted."
 msgstr ""
+"Une fois qu'une métrique est enregistrée, elle reste sur l'écran de "
+"verrouillage même après la désinstallation de l'application. Un fichier de "
+"base de données (db) est stocké dans `/var/lib/usermetrics`, qui peut être "
+"supprimé par root (mais pas avec sudo). La suppression de ce fichier et le "
+"redémarrage supprimeront toutes les métriques stockées. Le fichier db "
+"pourrait sans doute être édité au lieu d'être supprimé."
 
 #: ../../appdev/guides/user-metrics.rst:117
 msgid ""
@@ -1619,6 +1784,10 @@ msgid ""
 "maintain a running tally beyond one day (though not impossible. See "
 "`FluffyChat <https://gitlab.com/ChristianPauly/fluffychat>`_)."
 msgstr ""
+"En se basant sur la façon dont les \"formats\" sont mis en place, il semble "
+"qu'il soit difficile de maintenir un décompte courant au-delà d'un jour ("
+"mais pas impossible. Voir `FluffyChat <https://gitlab.com/ChristianPauly/"
+"fluffychat>`_)."
 
 #: ../../appdev/guides/user-metrics.rst:119
 msgid ""
@@ -1629,6 +1798,13 @@ msgid ""
 "This, however, nearly defeats the purpose of the metric entirely, other than "
 "having a neat stat reminder for the day."
 msgstr ""
+"Dans le cas de l'application `nCounter`_. Je voulais compter le nombre de "
+"jours, mais comme la métrique se \"réinitialise\" chaque jour, cela pose un "
+"problème. J'ai créé une solution de contournement qui met à jour la métrique "
+"chaque fois que l'application est ouverte. Ainsi, ``emptyFormat`` (par "
+"défaut) indique à l'utilisateur d'ouvrir l'application. Cependant, cela va "
+"presque à l'encontre de l'utilité des métriques, si ce n'est d'avoir un "
+"rappel des statistiques pour la journée."
 
 #: ../../appdev/guides/user-metrics.rst:121
 msgid ""
@@ -1637,6 +1813,11 @@ msgid ""
 "Indicator Weather app. This runs a process every X minutes to update the "
 "weather indicator automatically without having to open the app."
 msgstr ""
+"Il y a sûrement un moyen pour un processus de s'exécuter indépendamment en "
+"arrière-plan (par exemple, cron) pour récupérer les données d'une "
+"d'application spécifique. L'application Indicator Weather en est un exemple. "
+"Elle exécute un processus toutes les X minutes pour mettre à jour "
+"automatiquement l'indicateur météo sans avoir à être ouverte."
 
 #: ../../appdev/guides/writeable-dirs.rst:2
 msgid "Writable directories"
@@ -1750,6 +1931,10 @@ msgid ""
 "html#applicationName-prop>`_, this needs to be the same as the clickable "
 "application name."
 msgstr ""
+"Puisque la valeur des chaînes QStandardPaths est décidée par le `nom de "
+"l'application Qt <https://doc.qt.io/qt-5/qcoreapplication.html"
+"#applicationName-prop>`_, celui-ci doit être le même que le nom de "
+"l'application cliquable."
 
 #: ../../appdev/guides/writeable-dirs.rst:45
 msgid "Using Standard Paths in QML"
@@ -1761,6 +1946,9 @@ msgid ""
 "labs-platform-standardpaths.html>`_ provides the app's writable locations in "
 "QML:"
 msgstr ""
+"Le module Qt `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-"
+"labs-platform-standardpaths.html>`_ fournit les emplacements accessibles en "
+"écriture pour l'application en QML :"
 
 #: ../../appdev/index.rst:2
 msgid "App development"
@@ -1771,6 +1959,8 @@ msgid ""
 "Great!, you'd like to develop an app for Ubuntu Touch. Here are some "
 "resources that we hope help you get started."
 msgstr ""
+"Super ! Vous souhaitez développer une application pour Ubuntu Touch. Voici "
+"quelques ressources qui, nous l'espérons, vous aideront à démarrer."
 
 #: ../../appdev/index.rst:6
 msgid ""
@@ -1828,10 +2018,13 @@ msgid ""
 "publicly shared on the official app store `OpenStore <https://open-store."
 "io>`__"
 msgstr ""
+"Les applications sont livrées sous la forme d'un paquet :ref:`Click <click>` "
+"et peuvent être partagées publiquement dans le magasin d'applications "
+"officiel `OpenStore <https://open-store.io>`__"
 
 #: ../../appdev/index.rst:25
 msgid "Code Editor Integrations"
-msgstr ""
+msgstr "Intégration de l'éditeur de code"
 
 #: ../../appdev/index.rst:27
 msgid ""
@@ -1840,6 +2033,11 @@ msgid ""
 "clickable-plugin>`__. This provides some common clickable tools needed to "
 "build and run click packages for Ubuntu Touch from within Atom editor."
 msgstr ""
+"Vous pouvez utiliser clickable avec l' `éditeur Atom <https://atom.io>`__ en "
+"installant `atom-clickable-plugin <https://atom.io/packages/atom-clickable-"
+"plugin>`__. Cela fournit certains outils clickable communs nécessaires pour "
+"construire et exécuter des paquets clickable pour Ubuntu Touch à partir de "
+"l'éditeur Atom."
 
 #: ../../appdev/index.rst:29
 msgid ""
@@ -1918,16 +2116,23 @@ msgid ""
 "Ubuntu Touch. If running on other operating systems is an requirement for "
 "your app, you can refer to this  APIs instead:"
 msgstr ""
+"Il est possible de développer des applications multiplateforme qui ne "
+"dépendent pas des API spécifiques d'Ubuntu, bien que ce ne soit pas la "
+"manière officielle de développer des applications pour Ubuntu Touch. Si le "
+"fonctionnement sur d'autres systèmes d'exploitation est une exigence pour "
+"votre application, vous pouvez vous référer à ces API à la place :"
 
 #: ../../appdev/index.rst:79
 msgid "`Kirigami API <https://api.kde.org/frameworks/kirigami/html/>`__"
-msgstr ""
+msgstr "`API Kirigami <https://api.kde.org/frameworks/kirigami/html/>`__"
 
 #: ../../appdev/index.rst:80
 msgid ""
 "`Qt Quick Controls 2 API <https://doc.qt.io/qt-5/qtquickcontrols-index."
 "html>`__"
 msgstr ""
+"`API Qt Quick Controls 2 <https://doc.qt.io/qt-5/qtquickcontrols-"
+"index.html>`__"
 
 #: ../../appdev/index.rst:84 ../../appdev/platform/index.rst:4
 msgid "Platform"
@@ -1969,6 +2174,11 @@ msgid ""
 "traditional C++<->QML Qt model, you can use also Python, Go, Rust or even "
 "Javascript for your backend."
 msgstr ""
+"La méthode recommandée pour construire une application native sur Ubuntu "
+"Touch est d'utiliser le framework `Qt <https://doc.qt.io/>`__ ( la version "
+"actuelle livrée sur Ubuntu Touch 16.04 est Qt 5.9.5 ). Vous n'êtes pas "
+"obligé de vous en tenir au modèle traditionnel C++<->QML Qt, vous pouvez "
+"également utiliser Python, Go, Rust ou même Javascript pour votre backend."
 
 #: ../../appdev/nativeapp/index.rst:9
 msgid ""
@@ -1978,6 +2188,12 @@ msgid ""
 "latest/>`__, but you can also ship your cross platform app using standard Qt "
 "QML QtQuick2 components."
 msgstr ""
+"Ubuntu Touch fournit un sous-ensemble de composants Qt QML pour faciliter le "
+"développement de votre appli : `API QML <https://api-docs.ubports.com/sdk/"
+"apps/qml/index.html>`__ et icônes : `Suru Icons <http://docs.ubports.com/"
+"projects/icons/en/latest/>`__, mais vous pouvez également packager votre "
+"application multiplateforme en utilisant les composants Qt QML standard "
+"QtQuick2."
 
 #: ../../appdev/nativeapp/index.rst:12
 msgid ""
@@ -1992,6 +2208,8 @@ msgid ""
 "Check out informations about the platform and confinement model in :ref:"
 "`Platform <platform>` section"
 msgstr ""
+"Consultez les informations sur la plateforme et le modèle de confinement "
+"dans la section :ref:`Plateforme <platform>`"
 
 #: ../../appdev/platform/apparmor.rst:2
 msgid "AppArmor Policy Groups"
@@ -2026,10 +2244,13 @@ msgid ""
 "Coding tip: Everytime you change your apparmor policy file you need to "
 "update your app's version for this to be taken into account."
 msgstr ""
+"Astuce de codage : Chaque fois que vous modifiez votre fichier de stratégie "
+"apparmor, vous devez mettre à jour la version de votre application pour que "
+"cela soit pris en compte."
 
 #: ../../appdev/platform/apparmor.rst:26
 msgid "accounts"
-msgstr "Comptes en ligne"
+msgstr "comptes"
 
 #: ../../appdev/platform/apparmor.rst:28
 msgid "Description: Can use Online Accounts."
@@ -2670,6 +2891,8 @@ msgid ""
 "X-Ubuntu-Supported-Orientations: ``landscape`` or ``portrait`` to force your "
 "app start in landscape mode and portrait mode respectively."
 msgstr ""
+"X-Ubuntu-Supported-Orientations : ``landscape`` ou ``portrait`` pour forcer "
+"votre démarrage d'appli en mode paysage et portrait."
 
 #: ../../appdev/platform/click.rst:60
 msgid "Security and app isolation"
@@ -2710,6 +2933,8 @@ msgid ""
 "Here are Ubuntu Touch platforms key topics when you want to extend your app "
 "with Ubuntu Touch ecosystem:"
 msgstr ""
+"Voici les thématiques clés pour les plateformes Ubuntu Touch lorsque vous "
+"souhaitez étendre le support pour votre appli par l'écosystème Ubuntu Touch :"
 
 #: ../../appdev/platform/index.rst:9
 msgid "Content Hub"
@@ -2775,6 +3000,8 @@ msgid ""
 "Here you will get some informations about the confinment model and the "
 "packaging system:"
 msgstr ""
+"Vous trouverez ici des informations sur le modèle de confinement et le "
+"système de packaging :"
 
 #: ../../appdev/publishing/index.rst:4
 msgid "App publishing guides"
@@ -3044,7 +3271,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:75
 msgid "More complex wildcard patterns"
-msgstr ""
+msgstr "Combinaison de caractères génériques plus complexes"
 
 #: ../../appdev/webapp/guide.rst:77
 msgid ""
@@ -3247,7 +3474,7 @@ msgstr ""
 
 #: ../../appdev/webapp/guide.rst:170
 msgid "Storage"
-msgstr ""
+msgstr "Stockage"
 
 #: ../../appdev/webapp/guide.rst:172
 msgid ""

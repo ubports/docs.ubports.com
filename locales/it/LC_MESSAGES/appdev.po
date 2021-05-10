@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 09:34-0500\n"
-"PO-Revision-Date: 2021-01-03 01:03+0000\n"
-"Last-Translator: FlavioMala <flavio.malatino@post.com>\n"
+"PO-Revision-Date: 2021-04-23 20:34+0000\n"
+"Last-Translator: Davide Pruccoli <davide.pruccoli@protonmail.com>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/it/>\n"
 "Language: it\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:4
 msgid "The content hub - tips and tricks"
-msgstr ""
+msgstr "Hub dei contenuti - tips and tricks"
 
 #: ../../appdev/guides/contenthub.rst:9
 #, fuzzy
@@ -63,7 +63,6 @@ msgstr ""
 "file importato)"
 
 #: ../../appdev/guides/contenthub.rst:19
-#, fuzzy
 msgid ""
 "``ContentHandler.Destination`` (The selected app will be the destination for "
 "the exported file)"
@@ -72,13 +71,12 @@ msgstr ""
 "destinazione del file esportato)"
 
 #: ../../appdev/guides/contenthub.rst:20
-#, fuzzy
 msgid ""
 "``ContentHandler.Share`` (The selected app will be the destination for the "
 "exported file, which will then be shared externally)"
 msgstr ""
-"``ContentHandler.Share`` (L'app selezionata sarà l'app da cui il file verrà "
-"condiviso)"
+"``ContentHandler.Share`` (L'app selezionata sarà la destinazione per il file "
+"esportato, il quale sarà poi condiviso esternamente)"
 
 #: ../../appdev/guides/contenthub.rst:26
 msgid "Importing"
@@ -96,6 +94,12 @@ msgid ""
 "Creator source code <https://gitlab.com/cibersheep/webapp-creator/blob/"
 "master/webapp-creator/app/ImportPage.qml#L38>`_)"
 msgstr ""
+"Cercando all'interno del codice di Webapp Creator, troveremo il codice per "
+"importare un'immagine da utilizzare come icona. Cliccando sul segnaposto si "
+"aprirà l'Hub dei Contenuti, che permetterà di scegliere la posizione dalla "
+"quale importare l'immagine (`vedi il codice sorgente di Webapp Creator "
+"<https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/"
+"ImportPage.qml#L38>`_)"
 
 #: ../../appdev/guides/contenthub.rst:44
 msgid "``ContentPeerPicker`` is the element that shows the apps."
@@ -175,6 +179,13 @@ msgid ""
 "the destination app may share the content externally (for example, over "
 "Telegram or text message)."
 msgstr ""
+"In maniera simile, cliccando sull'icona di condivisione potremo inviare a "
+"noi stessi tramite Telegram il gioco salvato (`vedi il codice sorgente di "
+"Webapp Creator Import Page <https://gitlab.com/cibersheep/webapp-creator/"
+"blob/master/webapp-creator/app/ImportPage.qml#L38>`_). Condividere è simile "
+"all'esportazione, con la differenza che l'app di destinazione può "
+"condividere il contenuto esternamente (per esempio, attraverso Telegram o "
+"messaggi di testo)."
 
 #: ../../appdev/guides/contenthub.rst:99
 #, fuzzy

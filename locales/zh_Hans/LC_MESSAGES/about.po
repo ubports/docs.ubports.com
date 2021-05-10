@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-29 13:44-0500\n"
-"PO-Revision-Date: 2019-12-03 17:13+0000\n"
-"Last-Translator: Sam Zhang <sammyok@163.com>\n"
+"PO-Revision-Date: 2021-05-04 04:27+0000\n"
+"Last-Translator: Enceka <enceka@yeah.net>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-about/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -16,38 +16,33 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../../about/introduction.rst:2
 msgid "Introduction"
 msgstr "介绍"
 
 #: ../../about/introduction.rst:4
-#, fuzzy
 msgid ""
 "This is the documentation for the UBports project. Our goal is to create a "
 "Free and open-source (GPL if possible) mobile operating system that "
 "converges and respects your freedom."
-msgstr ""
-"这是 UBports 项目的文档。我们的目标是创建一个开源（若可能则为 GPL 许可证）的"
-"移动操作系统，它将拥有融合性并尊重您的自由。"
+msgstr "这是 UBports 项目的文档。我们的目标是创建一个开源（若可能则为 GPL 许可证）的移动操作系统，它将拥有融合性并尊重您的自由。"
 
 #: ../../about/introduction.rst:7
 msgid "About UBports"
 msgstr "关于 UBports"
 
 #: ../../about/introduction.rst:9
-#, fuzzy
 msgid ""
 "The UBports project was founded by Marius Gripsgard in 2015 and in its "
 "infancy was a place where developers could share ideas and educate each "
 "other in hopes of bringing the Ubuntu Touch platform to more mobile devices."
 msgstr ""
-"UBports 项目由 Marius Gripsgard 于 2015 年创立，在其初期阶段，开发人员可以分"
-"享想法并互相教育，希望将 Ubuntu Touch 平台带入越来越多的设备。"
+"UBports 项目由 Marius Gripsgard 于 2015 年创立，在其初期阶段，开发人员可以分享想法并互相教育，希望将 Ubuntu "
+"Touch 平台带入越来越多的设备。"
 
 #: ../../about/introduction.rst:11
-#, fuzzy
 msgid ""
 "After Canonical suddenly announced `their plans to terminate support of "
 "Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-"
@@ -56,16 +51,15 @@ msgid ""
 "expanding its possibilities for the future."
 msgstr ""
 "在 2017 年四月 Canonical 突然宣布：“他们计划终止对 Ubuntu Touch 的支持后 "
-"<https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-"
-"rather-than-phone-and-convergence/>”，UBports 及其姐妹项目开始研究开源代码，"
-"保持并扩展其未来的可能性。"
+"<https://insights.ubuntu.com/2017/04/05/"
+"growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>”，"
+"UBports 及其姐妹项目开始研究开源代码，保持并扩展其未来的可能性。"
 
 #: ../../about/introduction.rst:14
 msgid "About the Documentation"
 msgstr "关于本文档"
 
 #: ../../about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This documentation is always improving thanks to the members of the UBports "
 "community. It is written in ReStructuredText and converted into this "
@@ -75,10 +69,10 @@ msgid ""
 "out the :doc:`Documentation contribution document </contribute/"
 "documentation>`."
 msgstr ""
-"感谢 UBports 社区的成员，本文档得以不断改进。它由 ReStructuredText 写成并由 "
-"`Sphinx <http://www.sphinx-doc.org/en/stable/>`_ 、 `ReCommonMark <http://"
-"recommonmark.readthedocs.io/en/latest/>`_ 和 `Read the Docs <https://"
-"readthedocs.io>`_ 转换为可读格式。您可以通过阅读 :doc:`介绍 </contribute/"
+"感谢 UBports 社区的成员，本文档得以不断改进。它由 ReStructuredText 写成并由 `Sphinx <http://www"
+".sphinx-doc.org/en/stable/>`_ 、 `ReCommonMark "
+"<http://recommonmark.readthedocs.io/en/latest/>`_ 和 `Read the Docs "
+"<https://readthedocs.io>`_ 转换为可读格式。您可以通过阅读 :doc:`介绍 </contribute/"
 "documentation>` 开始你的贡献。"
 
 #: ../../about/introduction.rst:18
@@ -362,14 +356,13 @@ msgstr ""
 "**In Development** ：补丁正在开发中。 通常意味着开发人员已被分配到该问题。"
 
 #: ../../about/process/issue-tracking.rst:41
-#, fuzzy
 msgid ""
 "**Quality Assurance**: The patch is completed and has passed initial "
 "testing. The QA team will now review it and provide feedback. If problems "
 "are found, the issue is moved back to \"Accepted\"."
 msgstr ""
-"**Quality Assurance** ：补丁已完成并已通过初始测试。 质量检查小组现在将对其进"
-"行检查并提供反馈。 如果发现问题，问题将转回“已接受”。"
+"**Quality Assurance** ：补丁已完成并已通过初始测试。 质量检查小组现在将对其进行检查并提供反馈。 "
+"如果发现问题，问题将转回“已接受”。"
 
 #: ../../about/process/issue-tracking.rst:42
 msgid ""
@@ -383,7 +376,6 @@ msgstr ""
 "在稳定版频道的下一个版本中发布。"
 
 #: ../../about/process/issue-tracking.rst:43
-#, fuzzy
 msgid ""
 "**None (removed from the project)**: If the issue is open and labeled \"help "
 "wanted\", community contributions are required to resolve the issue. If it's "
@@ -391,9 +383,8 @@ msgid ""
 "channel (a comment on the issue should link to the patch) or the issue has "
 "been rejected (labeled \"wontfix\")."
 msgstr ""
-"**None (removed from the project)** ：如果问题是开放的且标记为“需要帮助”，则"
-"需要社群贡献才能解决问题。 如果它关闭，这意味着或者在稳定频道上发布了一个补丁"
-"（对该问题的评论应链接到该补丁），或者该问题已被拒绝（标记为“wontfix”）。"
+"**None (removed from the project)** ：如果问题是开放的且标记为“需要帮助”，则需要社群贡献才能解决问题。 "
+"如果它关闭，这意味着或者在稳定频道上发布了一个补丁（对该问题的评论应链接到该补丁），或者该问题已被拒绝（标记为“wontfix”）。"
 
 #: ../../about/process/issue-tracking.rst:46
 msgid "Labels"
@@ -465,7 +456,7 @@ msgid ""
 "**good first issue**: The report contains instructions or hints required to "
 "fix it. It is an excellent place for someone new to learn about the project "
 "by fixing a real issue."
-msgstr ""
+msgstr "**好第一个问题**：该报告包含修复它所需的说明或提示。对于新手来说，这是一个通过解决实际问题来学习该项目绝佳的地方。"
 
 #: ../../about/process/issue-tracking.rst:67
 msgid ""
@@ -612,7 +603,6 @@ msgstr ""
 "的非关键问题，也可以添加标签**良好的第一期**。"
 
 #: ../../about/process/issue-tracking.rst:120
-#, fuzzy
 msgid ""
 "Once a *developer* is assigned and starts working on the issue, it is moved "
 "to \"In Development\". As soon as they have something to show for, the issue "
@@ -620,21 +610,18 @@ msgid ""
 "the QA team. If necessary, the developer will provide hints on how to test "
 "his patch in a comment on the issue."
 msgstr ""
-"一旦*开发人员*被分配并开始处理该问题，它将被移至“开发中”。 一旦他们有了展示的"
-"东西，问题就会被关闭，并自动转移到“质量保证”，以获得QA团队的反馈。 如果需要，"
-"开发人员将提供关于如何在对该问题的评论中测试其补丁的提示。"
+"一旦*开发人员*被分配并开始处理该问题，它将被移至“开发中”。 一旦他们有了展示的东西，问题就会被关闭，并自动转移到“质量保证”，以获得QA团队的反馈。 "
+"如果需要，开发人员将提供关于如何在对该问题的评论中测试其补丁的提示。"
 
 #: ../../about/process/issue-tracking.rst:121
-#, fuzzy
 msgid ""
 "The *QA-Team* tests the fix on all devices and provides feedback to the "
 "developer. If problems are found, the issue is re-opened and goes back to "
 "\"Accepted\", else it’s moved to \"Release Candidate\" to be included in the "
 "next release."
 msgstr ""
-"* QA-Team *测试所有设备上的修复程序并向开发人员提供反馈。 如果发现问题，则重"
-"新打开该问题并返回“已接受”，否则将其移至“Release Candidate”以包含在下一版本"
-"中。"
+"* QA-Team *测试所有设备上的修复程序并向开发人员提供反馈。 如果发现问题，则重新打开该问题并返回“已接受”，否则将其移至“Release "
+"Candidate”以包含在下一版本中。"
 
 #: ../../about/process/issue-tracking.rst:122
 msgid ""
@@ -649,17 +636,14 @@ msgid "repo.ubports.com"
 msgstr "repo.ubports.com"
 
 #: ../../about/process/ppa.rst:4
-#, fuzzy
 msgid ""
 "This is the package archive system for UBports projects. It hosts various "
 "PPAs containing all deb-components of Ubuntu Touch."
 msgstr ""
-"这是UBports项目的包归档系统。 它托管了各种包含Ubuntu Touch所有deb组件的PPA。 "
-"CI服务器可以使用特殊的：doc：`git-branch命名约定<branch-naming>`动态创建新的"
-"PPA。"
+"这是UBports项目的包归档系统。 它托管了各种包含Ubuntu Touch所有deb组件的PPA。 CI服务器可以使用特殊的：doc：`git-"
+"branch命名约定<branch-naming>`动态创建新的PPA。"
 
 #: ../../about/process/ppa.rst:7
-#, fuzzy
 msgid "Repository naming convention"
 msgstr "文件命名规则"
 
@@ -711,18 +695,14 @@ msgid "Creating new PPAs"
 msgstr "创建新的 PPA"
 
 #: ../../about/process/ppa.rst:26
-#, fuzzy
 msgid ""
 "New PPAs can be created dynamically by the CI server using a special :doc:"
 "`git-branch naming convention <branch-naming>`. The name of the branch "
 "translates literally to the name of the PPA: ``http://repo.ubports.com/dists/"
 "[branch name]``"
-msgstr ""
-"分支的名称字面翻译为PPA的名称：``http://repo.ubports.com/dists/[branch "
-"name]``"
+msgstr "分支的名称字面翻译为PPA的名称：``http://repo.ubports.com/dists/[branch name]``"
 
 #: ../../about/process/ppa.rst:28
-#, fuzzy
 msgid ""
 "Non-standard PPAs (i.e. not ``xenial``, ``vivid`` or ``bionic``) are kept "
 "for three months. In case they need to be kept for a longer time, a file "
@@ -731,10 +711,9 @@ msgid ""
 "``YYYY-MM-dd``. If this file is empty, the PPA will be kept for two years "
 "after the last build."
 msgstr ""
-"非标准PPA（即不是“xenial”，“vivid”或“bionic”）保存三个月。 如果它们需要保存较"
-"长时间，可以在存储库的根目录中创建一个名为“ubports.keep”的文件，其中包含PPA应"
-"以*的形式保持打开的日期。* YYYY-MM-DD**。 如果此文件为空，则PPA将在最后一次构"
-"建后保留两年。"
+"非标准PPA（即不是“xenial”，“vivid”或“bionic”）保存三个月。 "
+"如果它们需要保存较长时间，可以在存储库的根目录中创建一个名为“ubports.keep”的文件，其中包含PPA应以*的形式保持打开的日期。* YYYY-"
+"MM-DD**。 如果此文件为空，则PPA将在最后一次构建后保留两年。"
 
 #: ../../about/process/release-schedule.rst:2
 msgid "Release Schedule"
