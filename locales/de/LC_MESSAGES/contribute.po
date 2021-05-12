@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-15 09:19-0500\n"
-"PO-Revision-Date: 2021-02-12 13:27+0000\n"
-"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
+"PO-Revision-Date: 2021-05-12 16:18+0000\n"
+"Last-Translator: Martin Breternitz <martin.breternitz@onlinehome.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/de/>\n"
 "Language: de\n"
@@ -192,17 +192,16 @@ msgstr ""
 "dem Ubuntu auf dem Gerät installiert wurde."
 
 #: ../../contribute/bugreporting.rst:46
-#, fuzzy
 msgid ""
 "Once you're finished with that, post the report. You can't add labels "
 "yourself, so please don't forget to state the device you're experiencing the "
 "issue on in the description so a moderator can easily add the correct tags "
 "later."
 msgstr ""
-"Wenn alles fertig ist, wird der Fehlerbericht veröffentlicht. Da normale "
-"Nutzer keine Markierungen anbringen können, bitte nicht vergessen, in der "
-"Beschreibung das konkrete Gerät zu nennen, bei dem der Fehler auftritt. Ein "
-"Moderator kann dann einfach die korrekten Markierungen anfügen."
+"Sobald Sie damit fertig sind, veröffentlichen Sie den Bericht. Sie können "
+"keine Beschriftungen selbst hinzufügen, also vergessen Sie bitte nicht, das "
+"Gerät, auf dem das Problem auftritt, in der Beschreibung anzugeben, damit "
+"ein Moderator später problemlos die richtigen Tags hinzufügen kann."
 
 #: ../../contribute/bugreporting.rst:48
 msgid ""
@@ -226,6 +225,11 @@ msgid ""
 "after submitting your issue. This section will help you to retrieve these "
 "logs from the device."
 msgstr ""
+"‎Hier werden die allgemeinen Schritte zum Abrufen von Protokollen (Dateien, "
+"die wichtige Nachrichten zur Fehlerbeseitigung enthalten) auf Ubuntu Touch "
+"erläutert. Möglicherweise werden Sie nach dem Absenden des Problems nach "
+"Protokollen gefragt. Dieser Abschnitt hilft Ihnen, diese Protokolle vom "
+"Gerät abzurufen."
 
 #: ../../contribute/bugreporting.rst:57
 msgid ""
@@ -256,6 +260,13 @@ msgid ""
 "device. You can tap on any log to view it, then tap the \"send\" icon in the "
 "top right corner to share it using an online service."
 msgstr ""
+"‎Öffnen Sie nun die Logviewer App. Es wird eine Liste aller Protokolldateien "
+"angezeigt, die in Ihrem Benutzerprotokollordner ``/home/phablet/.cache/"
+"upstart/`` verfügbar sind. Dieser Ordner enthält viele, aber nicht alle "
+"Protokolle für Software, die auf Ihrem Gerät ausgeführt wird. Sie können auf "
+"ein beliebiges Protokoll tippen, um es anzuzeigen, und dann auf das Symbol \""
+"Senden\" in der oberen rechten Ecke tippen, um es über einen Online-Dienst "
+"zu teilen."
 
 #: ../../contribute/bugreporting.rst:63
 msgid ""
@@ -264,6 +275,12 @@ msgid ""
 "yet. Tell this to the person who asked you for the logs. They should be able "
 "to get you the information you need to get back on track."
 msgstr ""
+"‎Wenn das Protokoll, das Sie mit der Logviewer App senden sollen, nicht "
+"angezeigt wird, befindet es sich möglicherweise in einem anderen Ordner, "
+"oder die Anwendung hat noch keine Protokolle erstellt. Sagen Sie dies der "
+"Person, die Sie nach den Protokollen gefragt hat. Sie sollte in der Lage "
+"sein, Ihnen die Informationen zu geben, die Sie benötigen, um wieder auf "
+"Kurs zu kommen."
 
 #: ../../contribute/documentation.rst:2
 msgid "Documentation"
@@ -438,7 +455,7 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:108
 msgid "Moving pages"
-msgstr ""
+msgstr "Seiten verschieben"
 
 #: ../../contribute/documentation.rst:110
 msgid ""
@@ -447,6 +464,10 @@ msgid ""
 "example, it makes more sense for the page to come after a page you've just "
 "added in a different section."
 msgstr ""
+"Manchmal wird es notwendig, eine Seite in der Dokumentation an eine andere "
+"Stelle zu verschieben. Im Allgemeinen dient dies der Verbesserung des "
+"Dokumentflusses: So ist es z. B. sinnvoller, die Seite hinter einer gerade "
+"bearbeiteten Seite eines anderen Abschnittes einzufügen."
 
 #: ../../contribute/documentation.rst:112
 msgid ""
@@ -456,6 +477,13 @@ msgid ""
 "follow a link from a different site and land on a 404 page, left to your own "
 "devices to find your way in restructured documentation."
 msgstr ""
+"‎Die Leute verlinken jedoch aus vielen Quellen zu unserer Dokumentation, was "
+"wir nicht beeinflussen können. ‎Personen können über Blogs, Websites und "
+"andere Dokumentationsseiten, deren Links möglicherweise nie aktualisiert "
+"werden, hierhergelangen. ‎Es ist keine schöne Erfahrung, einem Link von "
+"einer anderen Website zu folgen und auf einer 404-Seite zu landen, um sich "
+"selbst überlassen in einer neu strukturierten Dokumentation zurechtfinden zu "
+"müssen."
 
 #: ../../contribute/documentation.rst:114
 msgid ""
@@ -468,6 +496,15 @@ msgid ""
 "`redirects.txt file <https://github.com/ubports/docs.ubports.com/blob/master/"
 "redirects.txt>`_."
 msgstr ""
+"‎Wir verwenden ein Tool namens Rediraffe, um diese schlechte Erfahrung zu "
+"vermeiden. Rediraffe erstellt Weiterleitungsseiten, die einen Benutzer von "
+"einem alten, ungültigen Link zu einem neuen, nützlichen Link befördern "
+"können. ‎Erstellen Sie einen Weiterleitungslink, wenn Sie den Namen einer "
+"Seite ändern oder eine Seite innerhalb der Verzeichnisstruktur der "
+"Dokumentation verschieben. Weiterleitungslinks werden erstellt, indem der "
+"Dateiname des alten Dokuments und der Dateiname des neuen Dokuments relativ "
+"zum Stamm der Dokumentation in der `Datei redirects.txt <https://github.com/"
+"ubports/docs.ubports.com/blob/master/redirects.txt>`_ platziert werden."
 
 #: ../../contribute/documentation.rst:116
 msgid ""
@@ -476,18 +513,27 @@ msgid ""
 "run as part of the ``build.sh`` script in the repository and as part of our "
 "automated build once you submit a Pull Request."
 msgstr ""
+"‎Wir verwenden den ``checkdiff`` Builder von Rediraffe, um sicherzustellen, "
+"dass Seiten nicht ohne Weiterleitung aus der Dokumentation gelöscht werden. "
+"Dieses Programm wird als Teil des ``build.sh`` Skripts im Repository und als "
+"Teil unseres automatisierten Build-Prozesses ausgeführt, sobald Sie einen "
+"Pull Request senden."
 
 #: ../../contribute/documentation.rst:118
 msgid ""
 "What follows are some examples of situations where you should create "
 "redirects."
 msgstr ""
+"Es folgen einige Beispiele für Fälle, in denen Sie Weiterleitungen erstellen "
+"sollten."
 
 #: ../../contribute/documentation.rst:120
 msgid ""
 "You are moving ``systemdev/calendars.rst`` to ``appdev/calendars.rst``. Add "
 "the following to the ``redirects.txt`` file::"
 msgstr ""
+"Wenn Sie ``systemdev/calendars.rst`` nach ``appdev/calendars.rst`` "
+"verschieben, fügen Sie Folgendes der Datei ``redirects.txt`` hinzu:"
 
 #: ../../contribute/documentation.rst:124
 msgid ""
@@ -498,6 +544,13 @@ msgid ""
 "redirect the old page to the new introduction page. This can be done by "
 "adding the following to ``redirects.txt``::"
 msgstr ""
+"Wenn Sie ``appdev/clickable.rst`` auf mehrere Seiten in ``appdev/clickable/``"
+" verschieben, um deutlich mehr Informationen über das Tool bereitzustellen "
+"als zuvor, und wenn Sie eine Einführungsseite ``appdev/clickable/"
+"introduction.rst`` erstellt haben, wäre es in diesem Fall eine gute Idee, "
+"die alte Seite auf die neue Einführungsseite weiterzuleiten. Dies kann "
+"erreicht werden, indem Folgendes zur Datei ``redirects.txt`` hinzugefügt "
+"wird:"
 
 #: ../../contribute/documentation.rst:129
 msgid "Warnings"
@@ -618,7 +671,7 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:166
 msgid "Final check of your contribution"
-msgstr ""
+msgstr "Endkontrolle Ihres Beitrags"
 
 #: ../../contribute/documentation.rst:168
 msgid ""
@@ -627,50 +680,67 @@ msgid ""
 "whether this builds successfully and whether the result looks as you "
 "intended it to:"
 msgstr ""
+"‎Nachdem Sie Ihren Pull Request auf GitHub erstellt haben, wird das System "
+"zur kontinuierlichen Integration (CI) eine Testversion Ihres Beitrags "
+"erstellen. Überprüfen Sie bitte genau, ob dies erfolgreich war und ob das "
+"Ergebnis wie beabsichtigt aussieht:"
 
 #: ../../contribute/documentation.rst:170
 msgid ""
 "Scroll to the bottom of the \"Conversation\" tab of your PR on github, here "
 "you will see the checks (You may have to click on \"Show all checks\")"
 msgstr ""
+"‎Scrollen Sie zum unteren Rand der Registerkarte \"Conversation\" "
+"(Unterhaltung) Ihres Pull Requests auf GitHub, hier sehen Sie die "
+"Überprüfungen (Checks), möglicherweise müssen Sie auf \"Show all checks\" ("
+"Alle Überprüfungen anzeigen) klicken"
 
 #: ../../contribute/documentation.rst:171
 msgid ""
 "It can have a yellow dot, i.e., \"pending\" then wait a few more seconds."
 msgstr ""
+"‎Es kann ein gelber Punkt angezeigt werden, d.h. \"ausstehend\", dann warten "
+"Sie ein paar Sekunden länger."
 
 #: ../../contribute/documentation.rst:172
 msgid ""
 "Or it may have a red X, i.e., it failed. In this case please check why it "
 "failed"
 msgstr ""
+"‎Oder es wird ein rotes X angezeigt, d.h. es ist fehlgeschlagen. Überprüfen "
+"Sie in diesem Fall, warum es fehlgeschlagen ist‎"
 
 #: ../../contribute/documentation.rst:173
 msgid ""
 "If it shows a green check mark, it means the PR could be built successfully"
 msgstr ""
+"‎Wenn ein grünes Häkchen angezeigt wird, konnte der Pull Request erfolgreich "
+"erstellt werden"
 
 #: ../../contribute/documentation.rst:174
 msgid "Now please click on \"Details\","
-msgstr ""
+msgstr "‎Klicken Sie jetzt bitte auf \"Details\" (Einzelheiten),‎"
 
 #: ../../contribute/documentation.rst:175
 msgid "then \"Artifacts\" on the top right,"
-msgstr ""
+msgstr "‎dann \"Artifacts\" (Werkzeuge) oben rechts,‎"
 
 #: ../../contribute/documentation.rst:176
 msgid "then \"_build/html/..index.html\","
-msgstr ""
+msgstr "dann \"_build/html/..index.html\","
 
 #: ../../contribute/documentation.rst:177
 msgid "and finally on \"Go to start page\"."
-msgstr ""
+msgstr "‎und schließlich auf \"Go to start page\" (Gehe zur Startseite)."
 
 #: ../../contribute/documentation.rst:179
 msgid ""
 "Now you can browse a complete build of the UBports docs site with your "
 "contribution included. Double check whether your changes look ok."
 msgstr ""
+"‎Jetzt können Sie eine vollständige Version der UBports docs-Website mit "
+"Ihrem Beitrag einsehen. Überprüfen Sie genau, ob Ihre Änderungen in Ordnung "
+"sind."
 
 #: ../../contribute/documentation.rst:183
 msgid "Alternative methods to contribute"
@@ -1211,7 +1281,7 @@ msgstr ""
 
 #: ../../contribute/translations.rst:9
 msgid "How does a text gets translated (technical background)"
-msgstr ""
+msgstr "Wie ein Text übersetzt wird (technischer Hintergrund)"
 
 #: ../../contribute/translations.rst:10
 msgid ""
@@ -1227,6 +1297,19 @@ msgid ""
 "only using *.ts* files for translations with another syntax. As template one "
 "*.ts* file is used."
 msgstr ""
+"‎Die meisten Apps, die auf Ubuntu Touch laufen, verwenden `‎‎GNU gettext‎‎ "
+"<https://www.gnu.org/software/gettext/>`_ für Übersetzungen. Eine "
+"‎‎*.pot*-Vorlagendatei‎‎ enthält App-Zeichenfolgen. Aus dieser Vorlage wird "
+"für jede Sprache eine einzelne ‎‎*.po*-Datei‎‎ abgeleitet. Diese "
+"‎‎*.po*-Dateien‎‎ enthalten die eigentlichen Übersetzungen. Um eine neue "
+"Sprache hinzuzufügen, muss eine neue *‎‎.po*-Datei‎‎ erstellt werden. Um "
+"eine Zeichenfolge zu übersetzen, muss die ‎‎*.po*-Datei‎‎ bearbeitet werden. "
+"Neben der ursprünglichen Zeichenfolge (meistens Englisch) muss die "
+"entsprechende Übersetzung gemäß der *‎‎.po*‎‎ gettext Dateisyntax eingegeben "
+"werden. Einige Apps verwenden ‎‎`QtLinguist‎‎ <https://doc.qt.io/qt-5/"
+"qtlinguist-index.html>`_ für die Übersetzung. Es folgt den gleichen "
+"Prinzipen, aber mit ‎‎*.ts*-Dateien‎‎ für Übersetzungen mit einer anderen "
+"Syntax. Als Vorlage wird eine *‎‎.ts*-Datei‎‎ verwendet."
 
 #: ../../contribute/translations.rst:14
 msgid ""
@@ -1236,12 +1319,21 @@ msgid ""
 "the *.pot* or *.ts* template files. The *.po* and *.ts* language files then "
 "need to be updated from their template."
 msgstr ""
+"Innerhalb einer App werden Zeichenfolgen bei Verwendung von gettext mit "
+"``i18n.tr(\"string\")`` markiert, oder mit ``tr(\"string\")`` wenn "
+"QtLinguist verwendet wird. Wenn die App erstellt wird, werden diese "
+"übersetzbaren Zeichenfolgen extrahiert und in die ‎‎*.pot*-‎‎ oder "
+"*‎‎.ts*-Vorlagendateien‎‎ geschrieben. Die ‎‎*.po*-‎‎ und "
+"*‎‎.ts*-Sprachdateien‎‎ müssen dann ausgehend von ihrer Vorlage aktualisiert "
+"werden."
 
 #: ../../contribute/translations.rst:16
 msgid ""
 "Once strings have been translated, they are made available for users with a "
 "new release of an app."
 msgstr ""
+"‎Sobald Zeichenfolgen übersetzt wurden, werden sie Benutzern mit einer neuen "
+"Version der App zur Verfügung gestellt."
 
 #: ../../contribute/translations.rst:19
 msgid "Methods of Translation"
@@ -1249,7 +1341,7 @@ msgstr "Übersetzerwerkzeuge"
 
 #: ../../contribute/translations.rst:21
 msgid "There are three common ways used to translate an app:"
-msgstr ""
+msgstr "‎Es gibt drei gebräuchliche Möglichkeiten zur Übersetzung einer App:"
 
 #: ../../contribute/translations.rst:23
 msgid ""
@@ -1258,6 +1350,11 @@ msgid ""
 "automatic transfer of new strings from an apps repo to weblate. Translated "
 "strings get back as commits to the repo from weblate."
 msgstr ""
+"Weblate: Ein webbasiertes Übersetzungswerkzeug. UBports Apps können mit "
+"Weblate `‎‎hier <https://translate.ubports.com/projects/>`_ ‎‎übersetzt "
+"werden. Es gibt eine automatische Übertragung neuer Zeichenfolgen vom App "
+"Repository zu Weblate. Übersetzte Zeichenfolgen werden von Weblate als "
+"bestätigte Änderungen (Commits) für das Repository zurückgegeben."
 
 #: ../../contribute/translations.rst:24
 msgid ""
@@ -1298,6 +1395,13 @@ msgid ""
 "weblate do not edit *.po* files manually. Commiting edited *.po* files can "
 "break the automated process of translation."
 msgstr ""
+"‎Core-Apps und einige Community-Apps wie dekko oder TELEports verwenden in "
+"der Regel Weblate für die Übersetzung. Dies ist der bevorzugte Weg zu "
+"übersetzen und es braucht keine Programmierkenntnisse. Bitte werfen Sie "
+"einen Blick auf die ‎‎`UBports Übersetzungsprojekte‎‎ "
+"<https://translate.ubports.com/projects/>`_. Bearbeiten Sie bei der "
+"Verwendung von Weblate *.po*-Dateien‎‎ nicht manuell. Dies kann den "
+"automatisierten Übersetzungsprozess unterbrechen."
 
 #: ../../contribute/translations.rst:29
 msgid ""
@@ -1305,6 +1409,9 @@ msgid ""
 "files for translation. Those generally need to be edited manually and "
 "commited to the apps repo."
 msgstr ""
+"‎Die meisten Apps, die von einzelnen Entwicklern verwaltet werden, verwenden "
+"hauptsächlich *‎‎.pot*‎‎/*‎‎.po*-Dateien für die Übersetzung. Diese müssen "
+"in der Regel manuell bearbeitet und in das App-Repository übertragen werden."
 
 #: ../../contribute/translations.rst:32
 msgid "How-To"
@@ -1404,16 +1511,17 @@ msgstr ""
 "und weiss wie man ein App baut."
 
 #: ../../contribute/translations.rst:58
-#, fuzzy
 msgid ""
 "There are online gettext .po editors and those you can install in your "
 "computer. You can choose whatever editor you want, but we prefer to work "
 "with free software only. There are too many plain text editors and tools to "
 "help you translate *.po*/*.ts* files to put down a list here."
 msgstr ""
-"Man kann den Editor frei wählen, aber wir bevorzugen die Arbeit mit "
-"ausschließlich Freier Software. Es gibt zu viele Texteditoren und solche, "
-"die bei der Übersetzung von .po-Dateien helfen, um sie hier alle aufzuzählen."
+"‎Es gibt gettext .po Editoren entweder als Online-Version oder auch zum "
+"Installieren auf Ihrem Computer. Sie können einen Editor Ihrer Wahl "
+"benutzen, aber wir bevorzugen die Verwendung von freier Software. Es gibt zu "
+"viele Klartext-Editoren und Tools, die Ihnen ‎‎.po‎‎/‎‎.ts‎‎ Dateien zu "
+"übersetzen helfen, um sie hier alle aufzulisten."
 
 #: ../../contribute/translations.rst:61
 msgid ""
@@ -1482,16 +1590,16 @@ msgid "Translation Team Communication"
 msgstr "Kommunikation im Übersetzerteam"
 
 #: ../../contribute/translations.rst:80
-#, fuzzy
 msgid ""
 "You may talk to others regarding translations by using `the forum category "
 "<https://forums.ubports.com/category/39/translations>`_ that UBports "
 "provides for this task. To use it you need to register, or login if you're "
 "registered already."
 msgstr ""
-"Der unkomplizierteste und empfohlene Weg ist die Nutzung der `Forumkategorie "
-"<https://forums.ubports.com/category/39/translations>`_, die UBports für "
-"diesen Zweck bereitstellt."
+"‎Sie können mit anderen Personen über Übersetzungen sprechen, indem Sie ‎‎"
+"die `Forumskategorie‎‎ <https://forums.ubports.com/category/39/translations>`"
+"_ verwenden, die UBports für diese Aufgabe bereitstellt. Dazu müssen Sie "
+"sich registrieren oder anmelden wenn Sie bereits registriert sind."
 
 #: ../../contribute/translations.rst:82
 msgid ""
