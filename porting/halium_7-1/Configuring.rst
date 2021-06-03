@@ -145,6 +145,8 @@ The steps are as follows:
 #.  Build and flash halium-boot.img
 #.  Build and flash system.img
 
+These steps will bring in bluetooth driver source from the mainline 4.2 kernel and place it in a directory named ``backports`` in your device's kernel source tree. It will also modify Makefiles and Kconfigs as necessary, thereby disabling the original ``drivers/bluetooth`` directory of your kernel source. The mainline kernel may not contain all bluetooth drivers required for the device being ported. For this reason it is important to make sure to first record all necessary drivers, as any ones missing in the mainline kernel will have to be migrated from their original location (``drivers/bluetooth``) into the ``backports/drivers/bluetooth`` directory as described :ref:`later in this section <Missing-drivers>` before rebuilding halium-boot.img.
+
 .. _BT-driver:
 
 Record bluetooth driver and settings
@@ -248,7 +250,7 @@ Now add these settings::
 
 At this point, check for any remaining settings you :ref:`recorded from your original defconfig <BT-driver>`, which were dependent upon ``CONFIG_BT=y`` and have not been replaced by a corresponding ``CONFIG_BACKPORT_BT_XXXX=y`` setting, making sure not to forget your device's bluetooth driver. Such settings will no longer have any effect and must be pulled into the build in the following manner:
 
-The corresponding source file(s) will have to be migrated from their original location to the corresponding location under ``backport/bluetooth/``. The files ``Makefile`` and ``Kconfig`` need to be edited to include this missing setting or else they will not be built. Check the corresponding files in the original location for the necessary settings.
+The corresponding source file(s) will have to be migrated from their original location to the corresponding location under ``backports/drivers/bluetooth/``. The files ``Makefile`` and ``Kconfig`` need to be edited to include this missing setting or else they will not be built. Check the corresponding files in the original location for the necessary settings.
 
 Once the above is complete, add the following lines and edit as necessary, following the directions below::
 
