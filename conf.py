@@ -107,7 +107,10 @@ html_theme_options = {
         "color-link": "var(--color-foreground-primary)",
         "color-link--hover": "var(--color-foreground-primary)",
         "color-link-underline": "var(--color-foreground-primary)",
-        "color-link-underline--hover": "#E95420"
+        "color-link-underline--hover": "#E95420",
+        "color-admonition-title--note": "var(--color-toc-item-text)",
+        "color-admonition-title-background--note": "var(--color-sidebar-background)",
+        "sidebar-caption-font-size": "1.6rem"
     },
     "dark_css_variables": {
         "color-brand-primary": "#EDEDED",
