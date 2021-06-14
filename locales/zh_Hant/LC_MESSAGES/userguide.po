@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-02-21 20:38+0000\n"
-"Last-Translator: louies0623 <louies0623@gmail.com>\n"
+"PO-Revision-Date: 2021-06-14 14:10+0000\n"
+"Last-Translator: Ito Rimai <ItoRimai@foxmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-userguide/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -330,12 +330,11 @@ msgstr "添加閘道: \"sudo route add default gw YOUR_COMPUTER_RNDIS_IP\""
 #: ../../userguide/advanceduse/reverse-tethering.rst:20
 msgid ""
 "add nameservers: ``echo \"nameserver 8.8.8.8\" | sudo tee /etc/resolv.conf``"
-msgstr ""
-"添加名稱伺服器: \"[echo \"nameserver 8.8.8.8\" | sudo tee /etc/resolv.conf]\""
+msgstr "添加DNS伺服器: \"[echo \"nameserver 8.8.8.8\" | sudo tee /etc/resolv.conf]\""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:22
 msgid "refresh dns table: ``resolvconf -u``"
-msgstr "重新整理 dns 表: \"resolvconf -u\""
+msgstr "重繪DNS: \"resolvconf -u\""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:24
 msgid "On computer:"
