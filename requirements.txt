@@ -1,4 +1,4 @@
 sphinx>2
-sphinx_rtd_theme
+furo==2021.3.20b30
 sphinx-intl
 sphinxext-rediraffe

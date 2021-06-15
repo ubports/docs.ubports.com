@@ -11,6 +11,8 @@ If you want to help improving this documentation, :doc:`the Documentation contri
 
 You may view this documentation in the following languages:
 
+.. rst-class:: lang-list
+
 * `English <https://docs.ubports.com/en/latest/>`_
 * `Català <https://docs.ubports.com/ca/latest/>`_
 * `Français <https://docs.ubports.com/fr/latest/>`_
