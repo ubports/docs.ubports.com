@@ -90,6 +90,10 @@ a.current, .content h1, .toc-tree li.scroll-current > .reference {
     padding-top: 0;
 }
 
+.sidebar-logo {
+    max-height: 170px;
+}
+
 .sidebar-logo-container {
     margin-top: 0;
 }
@@ -235,5 +239,12 @@ a.current, .content h1, .toc-tree li.scroll-current > .reference {
 @media (max-width:67em) {
     .sidebar-search {
         border-radius: 0;
+    }
+}
+
+/* Wider sidebars on wider screens */
+@media (min-width:82em) {
+    .sidebar-container {
+        width: 17em;
     }
 }
