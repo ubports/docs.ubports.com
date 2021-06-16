@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 17:42-0600\n"
+"POT-Creation-Date: 2021-06-16 17:49-0500\n"
 "PO-Revision-Date: 2021-06-14 14:10+0000\n"
 "Last-Translator: Ito Rimai <ItoRimai@foxmail.com>\n"
 "Language-Team: Japanese <https://translate.ubports.com/projects/ubports-docs/"
@@ -19,44 +19,44 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 3.11.3\n"
 
-#: ../../index.rst:25
+#: ../../index.rst:27
 msgid "About"
 msgstr "UBportsについて"
 
-#: ../../index.rst:34
+#: ../../index.rst:36
 msgid "User Guide"
 msgstr "ユーザーガイド"
 
-#: ../../index.rst:44
+#: ../../index.rst:46
 msgid "Contribute"
 msgstr "貢献する"
 
-#: ../../index.rst:52
+#: ../../index.rst:54
 msgid "Development"
 msgstr "開発する"
 
-#: ../../index.rst:61
+#: ../../index.rst:63
 msgid "Porting"
 msgstr "ポーティング"
 
-#: ../../index.rst:73
+#: ../../index.rst:75
 msgid "Click Packages"
 msgstr "Click パッケージ"
 
-#: ../../index.rst:73
+#: ../../index.rst:75
 msgid "Ubuntu UI-Toolkit"
 msgstr "Ubuntu UI ツールキット"
 
-#: ../../index.rst:73
+#: ../../index.rst:75
 #, fuzzy
 msgid "Clickable"
 msgstr "Clickable"
 
-#: ../../index.rst:73
+#: ../../index.rst:75
 msgid "Halium"
 msgstr "Halium"
 
-#: ../../index.rst:73
+#: ../../index.rst:75
 msgid "Platform"
 msgstr "プラットフォーム"
 
@@ -74,8 +74,8 @@ msgid ""
 "Touch is a mobile operating system focused on ease of use, privacy, and "
 "convergence."
 msgstr ""
-"UBportsは携帯電話向けOSのUbuntu Touchを開発しています。Ubuntu "
-"Touchは使いやすさ、プライバシー、マルチプラットフォーム性に注力したモバイルOSです。"
+"UBportsは携帯電話向けOSのUbuntu Touchを開発しています。Ubuntu Touchは使いやす"
+"さ、プライバシー、マルチプラットフォーム性に注力したモバイルOSです。"
 
 #: ../../index.rst:8
 msgid ""
@@ -86,11 +86,12 @@ msgid ""
 "system components <systemdev/index>`. If this is your first time here, "
 "please consider reading our :doc:`introduction <about/introduction>`."
 msgstr ""
-"このウェブサイトでは、 :doc:`携帯電話にUbuntu Touchをインストールする方法 <userguide/install>`、:doc:`"
-"Ubuntu Touchの使い方 <userguide/dailyuse/index>`、:doc:`Ubuntu Touch向けアプリの開発 <"
-"appdev/index>`、:doc:`Ubuntu TouchをAndroid端末にポーティングする方法 <porting/"
-"index>`、:doc:`システムコンポーネントについて <systemdev/index>` "
-"を取り扱っています。初めてこのサイトに来られた方は、:doc:`はじめに <about/introduction>`をご覧ください。"
+"このウェブサイトでは、 :doc:`携帯電話にUbuntu Touchをインストールする方法 "
+"<userguide/install>`、:doc:`Ubuntu Touchの使い方 <userguide/dailyuse/"
+"index>`、:doc:`Ubuntu Touch向けアプリの開発 <appdev/index>`、:doc:`Ubuntu "
+"TouchをAndroid端末にポーティングする方法 <porting/index>`、:doc:`システムコン"
+"ポーネントについて <systemdev/index>` を取り扱っています。初めてこのサイトに"
+"来られた方は、:doc:`はじめに <about/introduction>`をご覧ください。"
 
 #: ../../index.rst:10
 msgid ""
@@ -102,42 +103,42 @@ msgstr ""
 msgid "You may view this documentation in the following languages:"
 msgstr ""
 
-#: ../../index.rst:14
+#: ../../index.rst:16
 msgid "`English <https://docs.ubports.com/en/latest/>`_"
 msgstr ""
 
-#: ../../index.rst:15
+#: ../../index.rst:17
 msgid "`Català <https://docs.ubports.com/ca/latest/>`_"
 msgstr ""
 
-#: ../../index.rst:16
+#: ../../index.rst:18
 msgid "`Français <https://docs.ubports.com/fr/latest/>`_"
 msgstr ""
 
-#: ../../index.rst:17
+#: ../../index.rst:19
 msgid "`Deutsch <https://docs.ubports.com/de/latest/>`_"
 msgstr ""
 
-#: ../../index.rst:18
+#: ../../index.rst:20
 msgid "`Italiano <https://docs.ubports.com/it/latest/>`_"
 msgstr ""
 
-#: ../../index.rst:19
+#: ../../index.rst:21
 msgid "`Română <https://docs.ubports.com/ro/latest/>`_"
 msgstr ""
 
-#: ../../index.rst:20
+#: ../../index.rst:22
 msgid "`Русский <https://docs.ubports.com/ru/latest>`_"
 msgstr ""
 
-#: ../../index.rst:21
+#: ../../index.rst:23
 msgid "`Türkçe <https://docs.ubports.com/tr/latest/>`_"
 msgstr ""
 
-#: ../../index.rst:22
+#: ../../index.rst:24
 msgid "`Español <https://docs.ubports.com/es/latest/>`_"
 msgstr ""
 
-#: ../../index.rst:23
+#: ../../index.rst:25
 msgid "`Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_"
 msgstr ""
