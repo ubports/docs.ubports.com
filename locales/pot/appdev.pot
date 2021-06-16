@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 17:42-0600\n"
+"POT-Creation-Date: 2021-06-16 17:49-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -421,18 +421,34 @@ msgid "Remember to check that %u (to receive 1 URL) or %U (to receive 1 or more 
 msgstr ""
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:138
-msgid "What happens if more than one app has the same URL type defined?"
+msgid "Tools"
 msgstr ""
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:140
-msgid "A very good question. What happens if we tap on a Twitter link? How is such a URL handled by the ``URLdispatcher`` as protocol ``http`` or the protocol ``http://twitter``?"
+msgid "From command line, ``url-dispatcher-dump`` command will give you the full list of registered protocol schemes and their corresponding app."
 msgstr ""
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:142
-msgid "What happens if two apps have the same defined protocol?"
+msgid "Another usefull tool, but not installed by default on devices is ``url-dispatcher-tools``, it allows you to simulate a call from a third party app. e.g: ``url-dispatcher https://youtu.be/CIX-a-i6B1w`` will launch youtube webapp."
 msgstr ""
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:144
+msgid "To install, it make your partition writable (``sudo mount -o rw,remount /``) and install it via ``sudo apt install url-dispatcher-tools``"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:149
+msgid "What happens if more than one app has the same URL type defined?"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:151
+msgid "A very good question. What happens if we tap on a Twitter link? How is such a URL handled by the ``URLdispatcher`` as protocol ``http`` or the protocol ``http://twitter``?"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:153
+msgid "What happens if two apps have the same defined protocol?"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:155
 msgid "Now it’s time to do some tests and share the results in the next guide."
 msgstr ""
 
@@ -1181,115 +1197,119 @@ msgid "Getting Started"
 msgstr ""
 
 #: ../../appdev/index.rst:11
-msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish ``click`` packages and provides various templates to get you started with app development. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. You can use any code editor or IDE that you choose and build your apps from the commandline with Clickable."
+msgid "We use Clickable as our build system. `Click here <http://clickable.bhdouglass.com/en/latest/>`_ to get started using Clickable."
 msgstr ""
 
 #: ../../appdev/index.rst:13
-msgid "Ubuntu Touch supports two kind of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, Rust or Go. :ref:`Web apps <webapp>` are special containers to run websites in."
+msgid "Want to know more about Clickable first? Clickable is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish ``click`` packages and provides various templates to get you started with app development. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. You can use any code editor or IDE that you choose and build your apps from the commandline with Clickable."
 msgstr ""
 
 #: ../../appdev/index.rst:15
+msgid "Ubuntu Touch supports two kind of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, Rust or Go. :ref:`Web apps <webapp>` are special containers to run websites in."
+msgstr ""
+
+#: ../../appdev/index.rst:17
 msgid "Applications are shipped as a :ref:`Click <click>` package and can be publicly shared on the official app store `OpenStore <https://open-store.io>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:25
+#: ../../appdev/index.rst:27
 msgid "Code Editor Integrations"
 msgstr ""
 
-#: ../../appdev/index.rst:26
+#: ../../appdev/index.rst:28
 msgid "Atom"
 msgstr ""
 
-#: ../../appdev/index.rst:28
+#: ../../appdev/index.rst:30
 msgid "You can use clickable with the `Atom Editor <https://atom.io>`__ by installing the `atom-clickable-plugin <https://atom.io/packages/atom-clickable-plugin>`__. This provides some common clickable tools needed to build and run click packages for Ubuntu Touch from within Atom editor."
 msgstr ""
 
-#: ../../appdev/index.rst:30
+#: ../../appdev/index.rst:32
 msgid "QtCreator"
 msgstr ""
 
-#: ../../appdev/index.rst:32
+#: ../../appdev/index.rst:34
 msgid "Available on top of clickable docker image, ``clickable ide qtcreator`` command within your project directory will launch a QtCreator instance and auto setup the project for you, you will have code completion and navigation for Ubuntu Touch components as well as run/debug facilities."
 msgstr ""
 
-#: ../../appdev/index.rst:35
+#: ../../appdev/index.rst:37
 msgid "Ubuntu SDK ( Unmaintained )"
 msgstr ""
 
-#: ../../appdev/index.rst:37
+#: ../../appdev/index.rst:39
 msgid "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower."
 msgstr ""
 
-#: ../../appdev/index.rst:39
+#: ../../appdev/index.rst:41
 msgid "You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed to work correctly. You can use the following commands to install::"
 msgstr ""
 
-#: ../../appdev/index.rst:49
+#: ../../appdev/index.rst:51
 msgid "Guides"
 msgstr ""
 
-#: ../../appdev/index.rst:51
+#: ../../appdev/index.rst:53
 msgid "Get started building your first app or learn about advanced concepts with our :ref:`Developer guides <devguides>`."
 msgstr ""
 
-#: ../../appdev/index.rst:67
+#: ../../appdev/index.rst:69
 msgid "Publishing"
 msgstr ""
 
-#: ../../appdev/index.rst:69
+#: ../../appdev/index.rst:71
 msgid "After you are done building your app, distribute it on the `OpenStore <https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`."
 msgstr ""
 
-#: ../../appdev/index.rst:78
+#: ../../appdev/index.rst:80
 msgid "Documentation"
 msgstr ""
 
-#: ../../appdev/index.rst:80
+#: ../../appdev/index.rst:82
 msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:81
+#: ../../appdev/index.rst:83
 msgid "`Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:82
+#: ../../appdev/index.rst:84
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:83
+#: ../../appdev/index.rst:85
 msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:85
+#: ../../appdev/index.rst:87
 msgid "It is possible to develop cross-platform apps that don't depend on Ubuntu specific APIs, although this is not the official way of developing apps for Ubuntu Touch. If running on other operating systems is an requirement for your app, you can refer to this  APIs instead:"
 msgstr ""
 
-#: ../../appdev/index.rst:87
+#: ../../appdev/index.rst:89
 msgid "`Kirigami API <https://api.kde.org/frameworks/kirigami/html/>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:88
+#: ../../appdev/index.rst:90
 msgid "`Qt Quick Controls 2 API <https://doc.qt.io/qt-5/qtquickcontrols-index.html>`__"
 msgstr ""
 
-#: ../../appdev/index.rst:92
+#: ../../appdev/index.rst:94
 #: ../../appdev/platform/index.rst:4
 msgid "Platform"
 msgstr ""
 
-#: ../../appdev/index.rst:105
+#: ../../appdev/index.rst:107
 msgid "Sample apps"
 msgstr ""
 
-#: ../../appdev/index.rst:107
+#: ../../appdev/index.rst:109
 msgid "Learn more about app development by digging into our :ref:`Sample apps <sampleapps>`."
 msgstr ""
 
-#: ../../appdev/index.rst:117
+#: ../../appdev/index.rst:119
 msgid "Preinstalled apps"
 msgstr ""
 
-#: ../../appdev/index.rst:119
+#: ../../appdev/index.rst:121
 msgid "The :doc:`/contribute/preinstalled-apps` page has information on developing the apps which are included with Ubuntu Touch."
 msgstr ""
 
@@ -1298,7 +1318,7 @@ msgid "Native applications"
 msgstr ""
 
 #: ../../appdev/nativeapp/index.rst:6
-msgid "The recommended way to build a native application on Ubuntu Touch is to use the `Qt <https://doc.qt.io/>`__ framework ( current version shipped on Ubuntu Touch 16.04 is Qt 5.9.5 ). You do not have to stick with the traditional C++<->QML Qt model, you can use also Python, Go, Rust or even Javascript for your backend."
+msgid "The recommended way to build a native application on Ubuntu Touch is to use the `Qt <https://doc.qt.io/>`__ framework ( current version since OTA-16 is Qt 5.12.9 ). You do not have to stick with the traditional C++<->QML Qt model, you can use also Python, Go, Rust or even Javascript for your backend."
 msgstr ""
 
 #: ../../appdev/nativeapp/index.rst:9
@@ -1351,11 +1371,12 @@ msgstr ""
 #: ../../appdev/platform/apparmor.rst:165
 #: ../../appdev/platform/apparmor.rst:175
 #: ../../appdev/platform/apparmor.rst:203
-#: ../../appdev/platform/apparmor.rst:233
-#: ../../appdev/platform/apparmor.rst:241
+#: ../../appdev/platform/apparmor.rst:213
+#: ../../appdev/platform/apparmor.rst:243
 #: ../../appdev/platform/apparmor.rst:251
 #: ../../appdev/platform/apparmor.rst:261
-#: ../../appdev/platform/apparmor.rst:289
+#: ../../appdev/platform/apparmor.rst:271
+#: ../../appdev/platform/apparmor.rst:299
 msgid "Usage: common"
 msgstr ""
 
@@ -1392,10 +1413,10 @@ msgstr ""
 #: ../../appdev/platform/apparmor.rst:149
 #: ../../appdev/platform/apparmor.rst:183
 #: ../../appdev/platform/apparmor.rst:193
-#: ../../appdev/platform/apparmor.rst:213
 #: ../../appdev/platform/apparmor.rst:223
-#: ../../appdev/platform/apparmor.rst:269
+#: ../../appdev/platform/apparmor.rst:233
 #: ../../appdev/platform/apparmor.rst:279
+#: ../../appdev/platform/apparmor.rst:289
 msgid "Usage: reserved"
 msgstr ""
 
@@ -1584,102 +1605,114 @@ msgid "The networking policy group allows an app to contact network devices and 
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:209
-msgid "picture_files"
+msgid "nfc"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:211
-msgid "Description: Can read and write to picture files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access picture files instead."
+msgid "Description: Can access the NFC functionality"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:215
-msgid "The picture_files policy group allows an app to read and write to the Pictures directories in the user's home folder or on external media."
+msgid "The nfc policy group allows an app to read and write NFC tags via NDEF data as well as establishing a peer-to-peer connection between two devices."
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:219
-msgid "picture_files_read"
+msgid "picture_files"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:221
-msgid "Description: Can read all picture files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access picture files instead."
+msgid "Description: Can read and write to picture files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access picture files instead."
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:225
-msgid "The picture_files_read policy group allows an app to read the Pictures directories in the user's home folder or on external media."
+msgid "The picture_files policy group allows an app to read and write to the Pictures directories in the user's home folder or on external media."
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:229
-msgid "push-notification-client"
+msgid "picture_files_read"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:231
-msgid "Description: Can use push notifications as a client"
+msgid "Description: Can read all picture files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access picture files instead."
 msgstr ""
 
-#: ../../appdev/platform/apparmor.rst:237
-msgid "sensors"
+#: ../../appdev/platform/apparmor.rst:235
+msgid "The picture_files_read policy group allows an app to read the Pictures directories in the user's home folder or on external media."
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:239
-msgid "Description: Can access the sensors"
+msgid "push-notification-client"
 msgstr ""
 
-#: ../../appdev/platform/apparmor.rst:243
-msgid "Allows apps to access `device sensors`_"
+#: ../../appdev/platform/apparmor.rst:241
+msgid "Description: Can use push notifications as a client"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:247
-msgid "usermetrics"
+msgid "sensors"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:249
-msgid "Description: Can use UserMetrics to update the InfoGraphic"
+msgid "Description: Can access the sensors"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:253
-msgid "Allows an app to write metrics to the UserMetrics service so they can be displayed on the InfoGraphic."
+msgid "Allows apps to access `device sensors`_"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:257
-msgid "video"
+msgid "usermetrics"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:259
-msgid "Description: Can play video (allows playing remote content via media-hub)"
+msgid "Description: Can use UserMetrics to update the InfoGraphic"
 msgstr ""
 
-#: ../../appdev/platform/apparmor.rst:265
-msgid "video_files"
+#: ../../appdev/platform/apparmor.rst:263
+msgid "Allows an app to write metrics to the UserMetrics service so they can be displayed on the InfoGraphic."
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:267
-msgid "Description: Can read and write to video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead."
+msgid "video"
 msgstr ""
 
-#: ../../appdev/platform/apparmor.rst:271
-msgid "The video_files policy group allows an app to read and write to the Videos directories in the user's home folder or on external media."
+#: ../../appdev/platform/apparmor.rst:269
+msgid "Description: Can play video (allows playing remote content via media-hub)"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:275
-msgid "video_files_read"
+msgid "video_files"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:277
-msgid "Description: Can read all video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead."
+msgid "Description: Can read and write to video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead."
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:281
-msgid "The video_files_read policy group allows an app to read the Videos directories in the user's home folder or on external media."
+msgid "The video_files policy group allows an app to read and write to the Videos directories in the user's home folder or on external media."
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:285
-msgid "webview"
+msgid "video_files_read"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:287
-msgid "Description: Can use the UbuntuWebview"
+msgid "Description: Can read all video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead."
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:291
+msgid "The video_files_read policy group allows an app to read the Videos directories in the user's home folder or on external media."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:295
+msgid "webview"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:297
+msgid "Description: Can use the UbuntuWebview"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:301
 msgid "The webview policy group allows apps to embed a `web browser view`_."
 msgstr ""
 

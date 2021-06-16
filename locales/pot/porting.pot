@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 17:42-0600\n"
+"POT-Creation-Date: 2021-06-16 17:49-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr ""
 
 #: ../../porting/UBports_installer.rst:4
 #: ../../porting/UBports_recovery.rst:4
-#: ../../porting/halium_7-1/Configuring.rst:124
+#: ../../porting/halium_7-1/Configuring.rst:347
 #: ../../porting/halium_9/Halium_9_GSI_porting.rst:4
 #: ../../porting/halium_9/Halium_9_common_errors.rst:4
 msgid "*Work in progress*"
@@ -613,10 +613,229 @@ msgid "Now complete steps 3 and 4, taking care to remember the note on how to :r
 msgstr ""
 
 #: ../../porting/halium_7-1/Configuring.rst:122
+msgid "Bluetooth"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:124
+msgid "When porting to devices running older kernel versions (mainly 3.x), it is necessary to replace the kernel bluetooth stack with a newer one. This is because the newer bluetooth hardware in today's bluetooth peripheral devices often has trouble talking to the older bluetooth drivers. This can be fixed by bringing in driver code from newer Linux kernel versions. The process is called *backporting*."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:128
+msgid "Backporting has been greatly facilitated by the `Linux Backports Project <https://backports.wiki.kernel.org/index.php/Main_Page>`_ which has existed for some time. This project is aimed at mainline Linux kernels and the tools (scripts) therein are not specifically tailored to Ubuntu Touch. They will consequently abort at some point during the process. However, they are the best option available, and can provide significant help all the same. The method below is based on the use of a version of these scripts which has been specially prepared by Canonical."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:132
+msgid "Although there are `other kernel versions besides v4.2 available <https://www.kernel.org/>`_, the backports script is specifically tailored to backporting from version 4.2 and thus effectively limits you to this option."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:135
+msgid "Bluetooth backporting steps"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:137
+msgid "The steps are as follows:"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:139
+#: ../../porting/halium_7-1/Configuring.rst:153
+msgid "Record bluetooth driver and settings"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:140
+#: ../../porting/halium_7-1/Configuring.rst:180
+msgid "Download backports script"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:141
+msgid "Download 4.2 kernel source"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:142
+#: ../../porting/halium_7-1/Configuring.rst:201
+msgid "Run backports script and fix errors"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:143
+#: ../../porting/halium_7-1/Configuring.rst:210
+msgid "Apply security patch"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:144
+#: ../../porting/halium_7-1/Configuring.rst:215
+msgid "Apply new settings"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:145
+#: ../../porting/halium_7-1/Configuring.rst:288
+msgid "Build and flash halium-boot.img"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:146
+#: ../../porting/halium_7-1/Configuring.rst:332
+msgid "Build and flash system.img"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:148
+msgid "These steps will bring in bluetooth driver source from the mainline 4.2 kernel and place it in a directory named ``backports`` in your device's kernel source tree. It will also modify Makefiles and Kconfigs as necessary, thereby disabling the original ``drivers/bluetooth`` directory of your kernel source. The mainline kernel may not contain all bluetooth drivers required for the device being ported. For this reason it is important to make sure to first record all necessary drivers, as any ones missing in the mainline kernel will have to be migrated from their original location (``drivers/bluetooth``) into the ``backports/drivers/bluetooth`` directory as described :ref:`later in this section <Missing-drivers>` before rebuilding halium-boot.img."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:155
+msgid "By the time you reach this point in the porting process, you will have completed building halium-boot (probably a number of times). Your kernel defconfig will contain bluetooth settings including one that designates the driver used by your device. These must be recorded before proceeding."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:157
+msgid "The experienced developer will likely be able to determine the relevant settings manually by searching through the defconfig file. Many of them will appear next to each other in one place in the file. Some may be spread elsewhere making them difficult to locate. When searching manually, help can be found by consulting the `Kconfig` files in relevant subdirectories of your kernel source tree."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:159
+msgid "If you do not have extensive experience, use the ``menuconfig`` tool instead, taking care to use it ONLY for reference, *i.e.* without making any changes."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:163
+msgid "Modifications done with ``menuconfig`` will not affect your kernel defconfig file, but may still corrupt your build."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:165
+msgid "After completing a build of halium-boot.img::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:170
+msgid "(If your device is armhf, use ``ARCH=arm`` instead.)"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:172
+msgid "Navigate to the bluetooth drivers submenu and note down all activated settings and what they do. Also note which other settings they depend on (found under Help)."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:175
+msgid "Example:"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:177
+msgid "For the Samsung Galaxy S7 (herolte) the original defconfig file contains a number of CONFIG_BT settings, none of which actually designate the bluetooth driver used by this device. The setting for the driver itself is CONFIG_BCM4359=y. This was not one of the drivers brought in by the backporting steps below. It therefore had to be :ref:`added afterwards <Missing-drivers>`."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:182
+msgid "Clone the backports scripts into a directory outside your halium source tree by issuing this command from your home (~) directory::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:186
+msgid "This downloads the backports scripts prepared by Canonical based on the `Backports Project <https://backports.wiki.kernel.org/index.php/Main_Page>`_ mentioned above, and places them in the directory ``~/backport-scripts``. The scripts are specifically written to backport from kernel version 4.2."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:189
+msgid "Download 4.2 kernel sources"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:191
+msgid "Create a directory (outside your halium source tree) for the kernel source from which you will pull the newer drivers::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:195
+msgid "Now clone the kernel source for v4.2::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:203
+msgid "Navigate to your backports scripts directory and issue the command below (using Python2 as shown)::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:207
+msgid "It is to be expected that there are errors during this step. You will then have to determine the cause, fix it and retry. The last error message concerns the Makefile and includes info about having generated a file named ``Makefile.rej``, this means you will find information in this file about changes that did not complete successfully, but which you can apply yourself. These need to be completed before proceeding with the build."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:212
+msgid "An additional `generic security patch <https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/patch/?id=8a7b081660857a80c3efc463b3da790c4fa0c801>`_ needs to be applied."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:217
+msgid "Your kernel config file (defconfig) needs to be modified in order for the backported driver and protocol code to be activated."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:219
+msgid "Start by locating all lines beginning with ``CONFIG_BT_`` and move these to the end of the file. Collecting them there makes the subsequent steps somewhat easier by helping to keep track of the changes you make."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:221
+msgid "Next, deactivate all that are activated, *i.e.* do not have a leading ``#``, by inserting this leading ``#``. At the same time, for each one, add a corresponding one beginning with ``CONFIG_BACKPORT_BT_``, *e.g.*::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:225
+msgid "becomes::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:229
+msgid "and then insert the corresponding line for backports::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:233
+msgid "Now add these settings::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:251
+msgid "At this point, check for any remaining settings you :ref:`recorded from your original defconfig <BT-driver>`, which were dependent upon ``CONFIG_BT=y`` and have not been replaced by a corresponding ``CONFIG_BACKPORT_BT_XXXX=y`` setting, making sure not to forget your device's bluetooth driver. Such settings will no longer have any effect and must be pulled into the build in the following manner:"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:253
+msgid "The corresponding source file(s) will have to be migrated from their original location to the corresponding location under ``backports/drivers/bluetooth/``. The files ``Makefile`` and ``Kconfig`` need to be edited to include this missing setting or else they will not be built. Check the corresponding files in the original location for the necessary settings."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:255
+msgid "Once the above is complete, add the following lines and edit as necessary, following the directions below::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:283
+msgid "As an example, the lines above have been edited to conform with backporting from kernel 4.2 to a device with kernel version 3.18. For devices running lower kernel versions enable each line specifying a version above the device's kernel version by removing the leading ``#`` on these lines."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:285
+msgid "You are now ready to build."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:290
+msgid "Return to the root of your BUILDDIR and build::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:294
+msgid "Build errors may occur and will vary depending on device. Handle them one at a time, :ref:`seeking help <Getting-community-help>` as necessary."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:296
+msgid "After building and flashing halium-boot, check the output of ``dmesg`` on the device to see that bluetooth has been enabled::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:300
+msgid "Your output should resemble the following (from the Samsung Galaxy S7)::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:327
+msgid "If you do not get similar output, something has gone wrong. Check that you completed all steps above as described and seek help as needed."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:329
+msgid "You have now rebuilt your halium-boot.img to include updated bluetooth drivers and only one final step remains."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:334
+msgid "The system image needs to be rebuilt with a configuration script for bluetooth adapted to your device. On the completed build, this file is located at::"
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:338
+msgid "`An example script can be found here <https://github.com/Flohack74/android_device_huawei_angler/blob/halium-7.1/ubuntu/bluetooth/bluetooth-touch-android.conf>`_. Make sure to adapt as necessary."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:340
+msgid "Place this script in your ``device/[VENDOR]/[DEVICE]/ubuntu`` directory and inject it using the :ref:`overlay file method <Overlay-files>` described above."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:342
+msgid "Rebuild and flash your ``system.img``."
+msgstr ""
+
+#: ../../porting/halium_7-1/Configuring.rst:345
 msgid "Further configuration"
 msgstr ""
 
-#: ../../porting/halium_7-1/Configuring.rst:126
+#: ../../porting/halium_7-1/Configuring.rst:349
 msgid "For the time being, refer to the `porting faq <https://pad.ubports.com/p/porting-faq>`_ and `porting check list <https://pad.ubports.com/p/PortChecklist>`_."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-29 13:44-0500\n"
+"POT-Creation-Date: 2021-06-16 17:49-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Introduction"
 msgstr ""
 
 #: ../../about/introduction.rst:4
-msgid "This is the documentation for the UBports project. Our goal is to create a Free and open-source (GPL if possible) mobile operating system that converges and respects your freedom."
+msgid "Our goal is to create a copylefted libre mobile operating system. One you can use, study, change and share; with all."
 msgstr ""
 
 #: ../../about/introduction.rst:7
@@ -29,11 +29,11 @@ msgid "About UBports"
 msgstr ""
 
 #: ../../about/introduction.rst:9
-msgid "The UBports project was founded by Marius Gripsgard in 2015 and in its infancy was a place where developers could share ideas and educate each other in hopes of bringing the Ubuntu Touch platform to more mobile devices."
+msgid "The project was founded by Marius Gripsgard in 2015 and in its infancy a place where developers could share ideas and educate each other in hopes of bringing the Ubuntu Touch platform to more mobile devices."
 msgstr ""
 
 #: ../../about/introduction.rst:11
-msgid "After Canonical suddenly announced `their plans to terminate support of Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ in April 2017, UBports and its sister projects began work on the open-source code, maintaining and expanding its possibilities for the future."
+msgid "After Canonical suddenly announced `plans to terminate support for Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ in April of 2017, UBports and its sister projects began work on the source code; maintaining and expanding its possibilities for the future."
 msgstr ""
 
 #: ../../about/introduction.rst:14
@@ -41,11 +41,11 @@ msgid "About the Documentation"
 msgstr ""
 
 #: ../../about/introduction.rst:16
-msgid "This documentation is always improving thanks to the members of the UBports community. It is written in ReStructuredText and converted into this readable form by `Sphinx <http://www.sphinx-doc.org/en/stable/>`_, `ReCommonMark <http://recommonmark.readthedocs.io/en/latest/>`_, and `Read the Docs <https://readthedocs.io>`_. You can start contributing by checking out the :doc:`Documentation contribution document </contribute/documentation>`."
+msgid "Changes to the documentation are made by the UBports community. It is written in reStructuredText and converted into this readable form by `Sphinx <https://www.sphinx-doc.org/en/master/>`_, `recommonmark <http://recommonmark.readthedocs.io/en/latest/>`_, and `Read the Docs <https://readthedocs.io>`_. Start contributing by checking out the :doc:`Documentation contribution document </contribute/documentation>`."
 msgstr ""
 
 #: ../../about/introduction.rst:18
-msgid "All documents are licensed under the Creative Commons Attribution ShareAlike 4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_) license. Please give attribution to \"The UBports Community\"."
+msgid "All documents are licensed Creative Commons Attribution ShareAlike 4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_). Please give attribution to \"The UBports Community\"."
 msgstr ""
 
 #: ../../about/introduction.rst:21
@@ -53,7 +53,7 @@ msgid "Attribution"
 msgstr ""
 
 #: ../../about/introduction.rst:23
-msgid "This documentation was heavily modeled after the `Godot Engine's Documentation <http://docs.godotengine.org/en/stable/>`_, attribution to Juan Linietsky, Ariel Manzur and the Godot community."
+msgid "This documentation was heavily modeled after the `Godot Engine's Documentation <https://docs.godotengine.org/en/stable/>`_, by Juan Linietsky, Ariel Manzur and the Godot community."
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:2
@@ -61,11 +61,11 @@ msgid "Branch-naming convention"
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:4
-msgid "Our branch-naming conventions ensure that software can be built by our CI and tested easily by other developers."
+msgid "Our branch-naming convention ensures software can be built by our CI and tested easily by other developers."
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:6
-msgid "Every Git repository's README file should state which branch-naming convention is used and possible deviations from the norm."
+msgid "Every Git repository's README file should state which branch-naming convention is used and any deviations from the norm."
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:9
@@ -73,23 +73,23 @@ msgid "Click-Packages"
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:11
-msgid "Software that is exclusively distributed as a click-package (and not also as a deb) only uses one ``master`` branch that is protected. Separate temporary development branches with arbitrary descriptive names can be created and merged into master when the time comes. For marking and archiving milestones in development history, ideally Git tags or GitHub releases should be used."
+msgid "Software exclusively distributed as a click-package (and not also as a DEB) only uses one ``master`` branch that is protected. Separate temporary development branches with arbitrary descriptive names can be created and merged into master when the time comes. Ideally Git tags or GitHub releases should be used to mark and archive milestones in the development history."
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:14
-msgid "Deb-Packages"
+msgid "DEB Packages"
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:16
-msgid "To make most efficient use of our CI system, a special naming convention for git-branches is used."
+msgid "To make most efficient use of our CI system, a special naming convention for Git branches is used."
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:18
-msgid "For pre-installed Ubuntu Touch components, deb-packages are used wherever possible. This includes Core Apps, since they can still be independently updated using click-package downloads from the OpenStore. This policy allows us to make use of the powerful Debian build system to resolve dependencies."
+msgid "For pre-installed Ubuntu Touch components, DEB-packages are used wherever possible. This includes Core apps, since they can still be independently updated using click-package downloads from the OpenStore. This policy allows making use of the powerful Debian build-system to resolve dependencies."
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:20
-msgid "Every repository that uses this convention will have branches for the actively supported Ubuntu releases referenced by their codenames (``bionic``, ``xenial``, ``vivid``, etc.). These are the branches that are built directly into the corresponding images and published on :doc:`repo.ubports.com <ppa>`. If no separate versions for the different Ubuntu bases are needed, the repository will just have one ``master`` branch and the CI system will still build versions for all actively supported releases and resolve dependencies accordingly."
+msgid "Every repository using this convention will have branches for the actively supported Ubuntu releases referenced by their codenames (``bionic``, ``xenial``, ``vivid``, etc.). These are the branches built directly into the corresponding images and published on :doc:`repo.ubports.com <ppa>`. If no separate versions for the different Ubuntu bases are needed, the repository will have one ``master`` branch and the CI system will still build versions for all actively supported releases and resolve dependencies accordingly."
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:23
@@ -97,15 +97,15 @@ msgid "Branch-extensions"
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:25
-msgid "To build and publish packages based on another repository, an extension in the form of  ``xenial_-_some-descriptive_extension`` can be used. The CI system will then resolve all dependencies using the ``xenial_-_some-descriptive_extension`` branch of other repositories or fall back on the normal ``xenial`` dependencies, if that doesn't exist. These special dependencies are not built into the image but still pushed to  on :doc:`repo.ubports.com <ppa>`."
+msgid "To build and publish packages based on another repository, an extension in the form of  ``xenial_-_some-descriptive_extension`` can be used. The CI system will then resolve all dependencies using the ``xenial_-_some-descriptive_extension`` branch of other repositories or fall back to using the normal ``xenial`` dependencies, if it doesn't exist. These special dependencies are not built into the image, but still pushed to :doc:`repo.ubports.com <ppa>`."
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:27
-msgid "Multiple branch extensions can be chained together in the form of ``xenial_-_dependency-1_-_dependency-2_-_dependency-3``. This means that the CI system will look for dependencies in the following repositories:"
+msgid "Multiple branch extensions can be chained together in the form of ``xenial_-_dependency-1_-_dependency-2_-_dependency-3``. This means the CI system will look for dependencies in the following repositories:"
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:38
-msgid "There is no prioritization, so the build system will always use the package with the highest version number or the newest build if the version is equal."
+msgid "There is no prioritization, so the build system will always use the package with the highest version number, or the newest build if the version is equal."
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:41
@@ -333,7 +333,7 @@ msgid "repo.ubports.com"
 msgstr ""
 
 #: ../../about/process/ppa.rst:4
-msgid "This is the package archive system for UBports projects. It hosts various PPAs containing all deb-components of Ubuntu Touch."
+msgid "This is the package archive system for UBports projects. It hosts various PPAs containing all the DEB-components of Ubuntu Touch."
 msgstr ""
 
 #: ../../about/process/ppa.rst:7
@@ -345,11 +345,11 @@ msgid "Native packages"
 msgstr ""
 
 #: ../../about/process/ppa.rst:12
-msgid "Native packages are repositories which contain a ``debian/`` directory **with** the source used to create the Debian source package (``.dsc``)."
+msgid "Native packages (like https://github.com/ubports/system-settings) are repositories that contain a ``debian/`` folder **with** the source used to create the DEB source package (``.dsc``)."
 msgstr ""
 
 #: ../../about/process/ppa.rst:14
-msgid "The name of the Debian source package generated from the repository and the name of the git-repository should be the same."
+msgid "The name of the Debian source package generated from the repository and the name of the Git-repository should be the same."
 msgstr ""
 
 #: ../../about/process/ppa.rst:17
@@ -357,23 +357,23 @@ msgid "Packaging repositories"
 msgstr ""
 
 #: ../../about/process/ppa.rst:19
-msgid "Packaging repositories contain a ``debian/`` directory **without** the source used to create the Debian source package (``.dsc``). They also contain instructions to tell ``debhelper`` how to get the source used to create the source package."
+msgid "Packaging repositories (like https://github.com/ubports/pulseaudio-packaging) contain a ``debian`` folder **without** the source used to create the Debian source package (``.dsc``). They also contain instructions to tell ``debhelper`` how to get the sources used to create the source package."
 msgstr ""
 
-#: ../../about/process/ppa.rst:21
+#: ../../about/process/ppa.rst:22
 msgid "The repository should have the name of the source package it generates with ``-packaging`` appended to the end. For example, a packaging repository that generates a source package called ``sandwich`` would be called ``sandwich-packaging``."
 msgstr ""
 
-#: ../../about/process/ppa.rst:24
+#: ../../about/process/ppa.rst:26
 msgid "Creating new PPAs"
 msgstr ""
 
-#: ../../about/process/ppa.rst:26
-msgid "New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`. The name of the branch translates literally to the name of the PPA: ``http://repo.ubports.com/dists/[branch name]``"
+#: ../../about/process/ppa.rst:28
+msgid "New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`. The name of the branch translates literally to the name of the PPA: ``https://repo.ubports.com/dists/[branch name]``"
 msgstr ""
 
-#: ../../about/process/ppa.rst:28
-msgid "Non-standard PPAs (i.e. not ``xenial``, ``vivid`` or ``bionic``) are kept for three months. In case they need to be kept for a longer time, a file with the name ``ubports.keep`` can be created in the root of the repository, containing the date until which the PPA shall be kept open in the form of ``YYYY-MM-dd``. If this file is empty, the PPA will be kept for two years after the last build."
+#: ../../about/process/ppa.rst:30
+msgid "Non-standard PPAs (i.e. not ``vivid``, ``xenial``, or ``bionic``) are kept for three months. If they need to be kept for longer, a file with the name ``ubports.keep`` containing a date in the form of in the form of ``YYYY-MM-dd`` can be used to decide how long to keep the PPA in the repository for. If this file is empty, the PPA will be kept for two years after the last build."
 msgstr ""
 
 #: ../../about/process/release-schedule.rst:2

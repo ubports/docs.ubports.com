@@ -1,0 +1,60 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
+# This file is distributed under the same license as the UBports package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: UBports \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-16 17:49-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../_templates/editpage.html:33
+#: ../../_templates/editpage.html:35
+msgid "Edit on GitHub"
+msgstr ""
+
+#: ../../_templates/editpage.html:40
+#: ../../_templates/editpage.html:42
+msgid "Edit on Bitbucket"
+msgstr ""
+
+#: ../../_templates/editpage.html:47
+#: ../../_templates/editpage.html:49
+msgid "Edit on GitLab"
+msgstr ""
+
+#: ../../_templates/editpage.html:52
+#: ../../_templates/editpage.html:54
+msgid "Show source"
+msgstr ""
+
+#: ../../_templates/page.html:60
+msgid "<a href=\"%(path)s\">Copyright</a> &#169; %(copyright)s."
+msgstr ""
+
+#: ../../_templates/page.html:64
+msgid "Copyright &#169; %(copyright)s"
+msgstr ""
+
+#: ../../_templates/page.html:71
+msgid "Last updated on %(last_updated)s."
+msgstr ""
+
+#: ../../_templates/page.html:77
+msgid "Built with <a href=\"https://www.sphinx-doc.org/\">Sphinx</a>\n"
+"              and\n"
+"              <a class=\"muted-link\" href=\"https://pradyunsg.me\">@pradyunsg</a>'s\n"
+"              <a href=\"https://github.com/pradyunsg/furo\">Furo theme</a>."
+msgstr ""
+
+#: ../../_templates/page.html:95
+msgid "Contents"
+msgstr ""
