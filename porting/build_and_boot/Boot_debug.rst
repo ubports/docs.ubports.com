@@ -3,14 +3,6 @@
 Booting
 =======
 
-.. Tip::
-    Applies to:
-        * Method 1
-        * Method 2
-        * Method 3
-
-        (See :ref:`porting methods <Porting-methods>`.)
-
 In the previous section you completed the installation of Ubuntu Touch on your device. The next step is to boot the device and gain remote access.
 
 What is a successful boot?

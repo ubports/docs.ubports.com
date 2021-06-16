@@ -8,7 +8,7 @@ Your host PC needs a number of tools installed before you can begin to port. Thi
 Prerequisites
 -------------
 
-When setting up the build environment you need to have Python 3.6 or newer installed on your system. This can be installed via your system's package management system. Note that significant changes in syntax were introduced from Python 2 to Python 3, and that both versions can coexist on your system. Check which is active by issuing::
+When setting up the build environment you need to have Python 3.6 or newer installed on your system. This can be installed via your system's package management system. Significant changes in syntax were introduced from Python 2 to Python 3, and some stages of the porting process may require Python 2 instead of Python 3. To check which version is active on your system, type::
 
     python -V
 

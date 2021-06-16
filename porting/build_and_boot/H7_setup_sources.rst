@@ -1,21 +1,10 @@
-.. _Obtain-sources:
+Halium-7.1 - setup and build
+============================
 
-Obtaining the necessary sources
-===============================
+The sources necessary for the build depend on the porting method you will be following. 
 
-The sources necessary for the build depend on the method you have chosen. Methods 1 and 2 require the full Halium sources as opposed to method 3 which only requires building the kernel.
-
-.. _Get-Halium:
-
-Initializing and downloading the Halium source
-----------------------------------------------
-
-.. Tip::
-    Applies to:
-        * Method 1
-        * Method 2
-
-        (See :ref:`porting methods <Porting-methods>`.)
+Setting up the sources for Halium-7.1 builds
+--------------------------------------------
 
 Create a directory for your Halium source tree::   
 
@@ -23,13 +12,7 @@ Create a directory for your Halium source tree::
 
 This directory will be referred to as BUILDDIR throughout the remainder of this guide.
 
-First, initialize your source to the correct version of Halium, depending on your device. If in doubt, refer to :ref:`Android-and-Halium-versions`.
-
-For Halium 9.0::
-
-    repo init -u https://github.com/Halium/android -b halium-9.0 --depth=1
-
-For Halium-7.1::
+First, initialize your source to the correct version of Halium::
 
     repo init -u https://github.com/Halium/android -b halium-7.1 --depth=1
 
@@ -110,7 +93,7 @@ Remotes
 
 A remote entry specifies the name, location (fetch) prefix, code review server, and default revision (branch/tag) for the source.
 
-You can create a remote by adding a remote tag to your manifest::
+You can create a remote by adding a remote tag to your manifest as shown in the following example::
 
     <remote  name="aosp"
         fetch="https://android.googlesource.com"
@@ -119,11 +102,11 @@ You can create a remote by adding a remote tag to your manifest::
 
 Only the name, fetch, and revision attributes are required. The review attribute specifies a Gerrit Code Review server, which probably won’t be useful for initial porting purposes.
 
-For example, let’s say that you have a bunch of repositories at https://github.com/SomeUserName/ and your desired branch name is cm-14.1 in each. You would create a remote as follows and place it into your local manifest::
+For example, let’s say that you have a bunch of repositories at https://github.com/SomeUserName/ and your desired branch name is los-14.1 in each. You would create a remote as follows and place it into your local manifest::
 
     <remote name="sun"
         fetch="https://github.com/SomeUserName"
-        revision="cm-14.1" />
+        revision="los-14.1" />
 
 There are also some remotes available to you by default, though they differ between Halium versions. The following tables will help you identify these. See more information on these remotes can be found at the top of the file BUILDDIR/halium/.repo/manifests/default.xml.
 
@@ -138,44 +121,3 @@ hal          Halium (link to GitHub root for legacy reasons), http://github.com
 them         TheMuppets, http://github.com/TheMuppets
 them2        TheMuppets (for some xiaomi vendor repos) https://gitlab.com/the-muppets
 ===========  =======================
-
-The following remotes are available by default in Halium 9.0:
-
-===========  =======================
-Remote Name  Remote Description, URL
------------  -----------------------
-github       LineageOS, https://github.com/
-gitlab       Gitlab, https://about.gitlab.com/  
-aosp         Android Open Source Project, https://android.googlesource.com
-===========  =======================
-
-If you do not specify a remote, aosp is assumed.
-
-Sync
-""""
-
-With your manifest now complete, go to the root of your BUILDDIR and issue the following command (replace DEVICE with your device’s codename) to bring the device-specific source code into your source tree::
-
-    ./halium/devices/setup DEVICE
-
-This will first link your manifest from Halium devices to .repo/local_manifests/device.xml and then sync all repositories.
-
-Document
-""""""""
-
-After completing the relevant steps above (according to your chosen :ref:`porting method <Porting-methods>`), create a pull request containing your device manifest on the Halium devices repository. Also, create a device page on the UBports page under devices. You should link the manifest on Halium devices in your UBports device page.
-
-It is also a good idea to start a discussion on the `UBports Forum <https://forums.ubports.com/>`_ under Devices.
-
-.. _Kernel-source:
-
-Setting up for a kernel-only build
-----------------------------------
-
-*Work in progress*
-
-.. Tip::
-    Applies to:
-        * Method 3
-
-        (See :ref:`porting methods <Porting-methods>`.)

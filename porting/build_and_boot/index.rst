@@ -5,7 +5,11 @@ Building and booting
    :maxdepth: 1
    :name: build_and_boot
 
-   Obtaining_sources
-   Building
-   Installing
-   Booting
+   H7_setup_sources
+   H7_build
+   H9_setup_sources
+   H9_build
+   Standalone_kernel_build
+   Halium_install
+   Standalone_install
+   Boot_debug

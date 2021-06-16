@@ -1,13 +1,12 @@
-Installing
-==========
+Installing Halium-based builds
+==============================
 
-With the necessary compontents built, you are now ready to install them on your device.
+With the necessary compontents built, you are now ready to install them on your device. There are only minor differences between Halium versions when it comes to the installation process.
 
-Refer to the section (or sections) below as they apply to your porting method. In brief:
+In brief:
 
-    * **Method 1** requires installing the boot image, system image and rootfs, of which you have built the two first.
-    * **Method 2** requires installing the boot image you have built together with the downloaded GSI and rootfs.
-    * **Method 3** requires taking the kernel you have built and assembling a complete boot image based on this, then installing the downloaded GSI and rootfs.
+    * **Halium-7.1** requires installing the boot image and system image you have built, together with the UBports rootfs, which you need to download.
+    * **Halium-9.0 and newer** requires installing the boot image you have built together with the GSI or you own system image (if you built one) and the UBports rootfs. Both the GSI and the rootfs are available for download.
 
 In order to install Ubuntu Touch, you need a recovery image with Busybox, such as TWRP, installed on your phone. If you have not done so yet, refer to section :ref:`Install-TWRP-recovery` and install it now. 
 
@@ -18,13 +17,6 @@ You will also need to ensure the ``/data`` partition is formatted with ``ext4`` 
 Flashing halium-boot.img
 ------------------------
 
-.. Tip::
-    Applies to:
-        * Method 1
-        * Method 2
-
-        (See :ref:`porting methods <Porting-methods>`.)
-
 To install halium-boot, reboot your phone into fastboot mode. Then do the following from the root of your BUILDDIR::
 
     cout
@@ -33,34 +25,19 @@ To install halium-boot, reboot your phone into fastboot mode. Then do the follow
 If you have trouble accessing your device in fastboot mode, but are able to access it in TWRP recovery mode using adb, then boot into recovery mode and try the following alternative method::
 
     cout
-    adb push halium-boot.img /sdcard
+    adb push halium-boot.img /tmp/
 
-On your device, choose *Install* in the TWRP menu, navigate to the sdcard directory, choose *Image*, select your image file, select *Boot* and swipe to flash.
+On your device, choose *Install* in the TWRP menu, navigate to the ``/tmp`` directory, choose *Image*, select your image file, select *Boot* and swipe to flash.
     
 .. Note::
     Samsung devices: Flashing halium-boot.img on Samsung devices is done using the Heimdall flashing utility (on Linux) or the Odin utility (on Windows) after first bringing the device into 'download mode'. See more information on these utilities `here <http://docs.halium.org/en/latest/porting/install-build/reference-rootfs.html#install-hybris-boot-img-on-samsung-devices>`_. Follow the instructions for the utility you choose, including the specific flashing command for flashing the boot partition. Install system.img and rootfs (below) with the device in recovery mode. 
-
-.. _Inst-kern:
-
-Installing a kernel-only build
-------------------------------
-
-.. Tip::
-    Applies to:
-        * Method 3
-
-        (See :ref:`porting methods <Porting-methods>`.)
-
-
-*Work in progress*
 
 .. _Inst-sys:
 
 Installing system image and rootfs
 ----------------------------------
 
-.. Tip::
-    All three porting methods require the installation of these two components, but not all steps below apply to all methods. **Read carefully** and perform only the steps which apply to your method!
+**Read carefully** and perform only the steps which apply to your Halium version and the files you will be flashing!
 
 Download the appropriate rootfs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -72,35 +49,32 @@ Start by downloading the appropriate rootfs for your device. You need a rootfs c
     * Halium 9.0, armhf (32 bit): `ubuntu-touch-android9-armhf.tar.gz <https://ci.ubports.com/job/xenial-hybris-android9-rootfs-armhf/>`_
     * Halium 9.0, arm64 (64 bit): `ubuntu-touch-android9-arm64.tar.gz <https://ci.ubports.com/job/xenial-hybris-android9-rootfs-arm64/>`_
 
-Download the GSI (Methods 2 and 3 only)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Halium-9.0: Download the GSI
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+(If you have built your own system.img, skip to the next step.)
 
 Download `the Halium 9 LXC container image (GSI) <https://ci.ubports.com/job/UBportsCommunityPortsJenkinsCI/job/ubports%252Fcommunity-ports%252Fjenkins-ci%252Fgeneric_arm64/job/main/>`_.
 
 Extract the downloaded file and locate the file ``android-rootfs.img`` in the directory ``system/var/lib/lxc/android``. This is the GSI file you will be transferring to the device.
 
-Download the halium-install script (All methods)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Download the halium-install script
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Clone or download the `halium-install repository <https://gitlab.com/JBBgameich/halium-install>`_. This repository contains tools that can be used to install a Halium system image and distribution rootfs.
 Reboot your device to recovery (e.g. TWRP), to get adb access again. Now use the ``halium-install`` script to install Ubuntu Touch on your device.
 
-Perform the installation (Methods 1 and 2 only)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Perform the installation
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-For **Halium 7.1 ports (method 1)** use the following command::
+For **Halium 7.1 ports** use the following command::
 
     path/to/halium-install -p ut path/to/rootfs.tar.gz path/to/system.img
 
-For **Halium 9.0 ports (methods 1 and 2)**, use the following command::
+For **Halium 9.0 ports**, use the this command::
 
     path/to/halium-install -p ut -s path/to/ubuntu-touch-android9-arm64.tar.gz path/to/[SYSTEM_IMAGE]
 
-Were [SYSTEM_IMAGE] will be the file system.img you have built (method 1) or the file android-rootfs.img you have downloaded (method 2).
+where [SYSTEM_IMAGE] will be the file ``android-rootfs.img`` you downloaded and extracted, alternatively the file ``system.img`` you yourself built.
 
 The script will copy and extract the files to their proper places, then allow you to set the user password for your device (the *phablet* user's password).
-
-Perform the installation (Method 3)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-*Work in progress*

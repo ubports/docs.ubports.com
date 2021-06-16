@@ -1,30 +1,7 @@
-Building
-========
+Halium-7.1 - Building
+=====================
 
-*Work in progress*
-
-A Halium 9.0 - GSI port consists of the following parts:
-    
-    * The boot image, obtained by building the full halium-boot.img, or by compiling only the kernel and assembling the boot image based on this.
-    * The system image, either a device specific one or the GSI (see :ref:`explanation of GSI <What-is-a-GSI>`)
-    * The UBports - Ubuntu Touch - root file system (hereafter referred to as the *rootfs*)
-
-Which of the above you need to build for your port depends on the porting method you have selected, as described in previous sections and pointed out below.
-
-.. _Boot-img:
-
-Building the boot image (halium-boot.img)
------------------------------------------
-
-.. Tip::
-    Applies to:
-        * Method 1
-        * Method 2
-
-        (See :ref:`porting methods <Porting-methods>`.)
-
-*Work in progress*
-
+For Halium-7.1 porting it is necessary to build both halium-boot.img and system.img.
 
 Initializing the build environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -41,9 +18,9 @@ The output will look like this::
     including vendor/cm/bash_completion/git.bash
     including vendor/cm/bash_completion/repo.bash
 
-The ``breakfast`` command is used to set up the build environment for a specific device. From the root of your BUILDDIR run the following::
+The ``breakfast`` command is used to set up the build environment for a specific device. From the root of your BUILDDIR run the following, replacing [CODENAME] with your device's specific codename::
 
-    breakfast [codename]
+    breakfast [CODENAME]
 
 Breakfast will attempt to find your device, set up all of the environment variables needed for building, and give you a summary at the end.
 
@@ -112,29 +89,8 @@ I your particular error is not listed, you will need to do some research of your
 Building the system image (system.img)
 --------------------------------------
 
-.. Tip::
-    Applies to:
-        * Method 1
-
-        (See :ref:`porting methods <Porting-methods>`.)
-
-
 Once you have successfully built halium-boot.img you can proceed to directly to building system.img::
 
     mka systemimage
 
 Likelier than not, you will run into one or more errors along the way when building the system image. A number of possible errors are documented in `the Halium guide <https://docs.halium.org/en/latest/porting/common-system-build-errors.html#common-system-build-errors>`_. If yours is not listed, :ref:`seek community help <Getting-community-help>`.
-
-.. _Kernel:
-
-Building the kernel
--------------------
-
-.. Tip::
-    Applies to:
-        * Method 3
-
-        (See :ref:`porting methods <Porting-methods>`.)
-
-
-*Work in progress*
