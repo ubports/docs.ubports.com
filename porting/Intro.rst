@@ -63,16 +63,29 @@ Since the GSI is a prebuilt, device-independent component, it effectively simpli
 
 .. _Porting-methods:
 
-Three porting methods
----------------------
+Porting methods
+---------------
 
-There are three main methods that can be used when porting Ubuntu Touch. These are:
+When porting based on Halium-7.1 there is only one available method to follow. However, the change in architecture introduced with Android 9 (Halium-9.0) entailed changes in porting method, clearing the way for different courses of action. This guide describes two main methods for porting based on Halium-9.0 or later.
 
-* **Method 1:** Build both the halium-boot.img and the full device specific system.img (*i.e.* not GSI) from source and install these together with the UBports rootfs. (This is the only possible method for Halium 7.1 porting.)
-* **Method 2:** Build halium-boot.img and install this together with the Halium GSI and the UBports rootfs. (Halium 9.0 and newer.)
-* **Method 3:** Build only the kernel and install this together with the Halium ramdisk, the Halium GSI and the UBports rootfs. (Halium 9.0 and newer.)
+Porting based on Halium-7.1
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Although there are significant differences between these methods they also share certain steps of the porting process. This guide at present describes methods 1 and 2 in full, and will in the near future also cover method 3. Pending the completion of the guide, the more experienced (or more adventurous) porters can find information about method 3 (albeit not under this name) in the UBports Wiki - `porting notes page <https://github.com/ubports/porting-notes/wiki/Halium-9>`_ and `Generic System Image page <https://github.com/ubports/porting-notes/wiki/Generic-system-image-(GSI)>`_.
+This version of Halium requires building both the boot image (halium-boot.img) and the full device specific system image (system.img) from source and installing these together with the UBports root file system (rootfs).
+
+Porting based on Halium-9.0 (and later)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Owing to the changes in architecture following the introduction of Android 9 / Halium-9.0, porters now have the option to choose between two main courses of action:
+
+* **Halium-boot method:** Build halium-boot.img and install this together with the Halium GSI and the UBports rootfs.
+* **Standalone kernel method:** Build only the kernel and install this together with the Halium ramdisk, the Halium GSI and the UBports rootfs.
+
+The methods outlined above share some common steps, even between Halium versions. However, there are also significant differences that must not be missed. Therefore, the methods will be treated separately in the subsequent sections of this guide whenever the differences, and the concern for understandability, justify it.
+
+TODO: Remove next paragraph once links are moved (if they are to be kept)
+
+This guide at present describes methods 1 and 2 in full, and will in the near future also cover method 3. Pending the completion of the guide, the more experienced (or more adventurous) porters can find information about method 3 (albeit not under this name) in the UBports Wiki - `porting notes page <https://github.com/ubports/porting-notes/wiki/Halium-9>`_ and `Generic System Image page <https://github.com/ubports/porting-notes/wiki/Generic-system-image-(GSI)>`_.
 
 The remainder of this section gives some words of advice to new porters. If you are already have porting experience or ROM building experience, you can likely skip straight to :ref:`the next section <Key>`, which presents a key to the rest of the guide.
 
