@@ -3,14 +3,6 @@
 Preparations
 ============
 
-.. Tip::
-    Applies to:
-        * Method 1
-        * Method 2
-        * Method 3
-
-        (See :ref:`porting methods <Porting-methods>`.)
-
 Not all devices can be made to run Ubuntu Touch. Research your target device before you start.
 
 To determine your device's specifications, search for it on `GSM Arena <https://www.gsmarena.com>`_ and/or `Device Specification <https://www.devicespecifications.com/en>`_.

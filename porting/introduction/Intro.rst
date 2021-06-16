@@ -87,7 +87,7 @@ TODO: Remove next paragraph once links are moved (if they are to be kept)
 
 This guide at present describes methods 1 and 2 in full, and will in the near future also cover method 3. Pending the completion of the guide, the more experienced (or more adventurous) porters can find information about method 3 (albeit not under this name) in the UBports Wiki - `porting notes page <https://github.com/ubports/porting-notes/wiki/Halium-9>`_ and `Generic System Image page <https://github.com/ubports/porting-notes/wiki/Generic-system-image-(GSI)>`_.
 
-The remainder of this section gives some words of advice to new porters. If you are already have porting experience or ROM building experience, you can likely skip straight to :ref:`the next section <Key>`, which presents a key to the rest of the guide.
+The remainder of this section gives some words of advice to new porters. If you are already have porting experience or ROM building experience, you can likely skip straight to :ref:`Preparations <Preparations>`.
 
 .. _The-challenges-of-the-porting-process:
 

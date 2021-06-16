@@ -5,7 +5,7 @@ Welcome to the official documentation of the UBports project!
 
 UBports develops the mobile phone operating system Ubuntu Touch. Ubuntu Touch is a mobile operating system focused on ease of use, privacy, and convergence.
 
-On this website you find guides to :doc:`install Ubuntu Touch on your mobile phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/dailyuse/index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:`port Ubuntu Touch to an Android handset <porting/Intro>` and :doc:`learn more about system components <systemdev/index>`. If this is your first time here, please consider reading our :doc:`introduction <about/introduction>`.
+On this website you find guides to :doc:`install Ubuntu Touch on your mobile phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/dailyuse/index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:`port Ubuntu Touch to an Android handset <porting/introduction/index>` and :doc:`learn more about system components <systemdev/index>`. If this is your first time here, please consider reading our :doc:`introduction <about/introduction>`.
 
 If you want to help improving this documentation, :doc:`the Documentation contribute page <contribute/documentation>` will get you started.
 
@@ -63,19 +63,10 @@ You may view this documentation in the following languages:
    :caption: Porting
    :name: sec-porting
 
-   porting/Intro
-   porting/Key_to_guide
-   porting/Preparations
-   porting/Setting_up
-   porting/Obtaining_sources
-   porting/Building
-   porting/Installing
-   porting/Booting
-   porting/Lomiri
-   porting/Configuring
-   porting/UBports_recovery
-   porting/UBports_installer
-   porting/Reference_material
+   porting/introduction/index.rst
+   porting/build_and_boot/index.rst
+   porting/configure_test_fix/index.rst
+   porting/finalize/index.rst
 
 .. toctree::
    :maxdepth: 1
