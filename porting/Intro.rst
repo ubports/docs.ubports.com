@@ -66,7 +66,7 @@ Since the GSI is a prebuilt, device-independent component, it effectively simpli
 Porting methods
 ---------------
 
-When porting based on Halium-7.1 there is only one available method to follow. However, the change in architecture introduced with Android 9 (Halium-9.0) entailed changes in porting method, clearing the way for different courses of action. This guide describes two main methods for porting based on Halium-9.0 or later.
+When porting based on Halium-7.1 there is only one available method to follow. However, the change in architecture introduced with Android 9 (Halium-9.0) entailed changes in porting method, clearing the way for different courses of action. This guide describes the Halium-7.1 method of porting, as well as two main methods for porting based on Halium-9.0 or later.
 
 Porting based on Halium-7.1
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -78,8 +78,8 @@ Porting based on Halium-9.0 (and later)
 
 Owing to the changes in architecture following the introduction of Android 9 / Halium-9.0, porters now have the option to choose between two main courses of action:
 
-* **Halium-boot method:** Build halium-boot.img and install this together with the Halium GSI and the UBports rootfs.
-* **Standalone kernel method:** Build only the kernel and install this together with the Halium ramdisk, the Halium GSI and the UBports rootfs.
+* **The Halium-boot method:** Build halium-boot.img and install this together with the Halium GSI and the UBports rootfs.
+* **The standalone kernel method:** Build only the kernel and install this together with the Halium ramdisk, the Halium GSI and the UBports rootfs.
 
 The methods outlined above share some common steps, even between Halium versions. However, there are also significant differences that must not be missed. Therefore, the methods will be treated separately in the subsequent sections of this guide whenever the differences, and the concern for understandability, justify it.
 
