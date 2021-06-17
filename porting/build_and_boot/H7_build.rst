@@ -39,8 +39,8 @@ Then, from the root of your BUILDDIR, run::
 
 You may have to do this twice. It will likely fix things both times. Then, run the script without the ``-w`` flag to see if there are any more errors. If there are, fix them manually. Once finished, run the script without the ``-w`` flag one more time to make sure everything is correct.
 
-Ubuntu Touch requires setting console=tty0
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Halium-7.1 based Ubuntu Touch requires setting console=tty0
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The halium-boot initramfs expects ``/dev/console`` to be a console device and will not start init if it is not available. This is commonly the case on recent devices, because they either have UART disabled or ``console=`` is not specified (null) by default. This can be fixed by supplying ``console=tty0`` as the last argument in the kernel cmdline. To achieve this, proceed as follows:
 
