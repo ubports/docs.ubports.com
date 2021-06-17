@@ -24,7 +24,7 @@ The ``breakfast`` command is used to set up the build environment for a specific
 
 Breakfast will attempt to find your device, set up all of the environment variables needed for building, and give you a summary at the end.
 
-.. _Edit-kernel-config:
+.. _H7_edit-kernel-config:
 
 Modify the kernel configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -84,7 +84,7 @@ There are a number of known build errors which you might encounter, depending fi
 
 I your particular error is not listed, you will need to do some research of your own. If you end up here, know that there is a community of porters, developers and enthusiasts who might be able to help you. Refer to :ref:`Getting-community-help`.
 
-.. _System:
+.. _H7_system:
 
 Building the system image (system.img)
 --------------------------------------

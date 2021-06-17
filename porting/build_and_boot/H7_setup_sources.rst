@@ -1,5 +1,5 @@
-Halium-7.1 - setup and build
-============================
+Halium-7.1 - Setting up the sources
+===================================
 
 The sources necessary for the build depend on the porting method you will be following. 
 
@@ -66,7 +66,7 @@ Your sources must now be entered into the manifest. Start with your device repos
 .. Note::
     The revision attribute may be omitted if the default revision for this remote is the one that you wish to use.
 
-If you are unsure of your remote, refer to :ref:`Remotes`.
+If you are unsure of your remote, refer to :ref:`H7_remotes`.
 
 Dependencies
 """"""""""""
@@ -86,7 +86,7 @@ The first place to search for your device’s vendor blobs is in `'TheMuppets' G
 
 It may also be possible to extract the vendor blobs from the device itself by following instructions for your device on `the LineageOS wiki <https://wiki.lineageos.org/>`_ as applicable.
 
-.. _Remotes:
+.. _H7_remotes:
 
 Remotes
 """""""
