@@ -46,15 +46,6 @@ h4, h5, h6 {
     text-transform: none;
 }
 
-.highlight {
-    background-color: #202020;
-    color: #ffffff;
-}
-
-.highlight .mf {
-    color: #3677a9;
-}
-
 /* override table width restrictions */
 .wy-table-responsive table th
 , .wy-table-responsive table td
