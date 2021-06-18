@@ -65,12 +65,14 @@ There are a number of known build errors which you might encounter, depending fi
 
 I your particular error is not listed, you will need to do some research of your own. If you end up here, know that there is a community of porters, developers and enthusiasts who might be able to help you. Refer to :ref:`Getting-community-help`.
 
-.. _System:
+.. _H9_system:
 
 Building the system image (system.img)
 --------------------------------------
 
-Once you have successfully built halium-boot.img you can proceed to directly to building system.img::
+Skip this step if you are going to base your port on the GSI. 
+
+If on the other hand your goal is to build both halium-boot.img and a device specific system.img, you can now proceed directly to building the latter::
 
     mka systemimage
 
