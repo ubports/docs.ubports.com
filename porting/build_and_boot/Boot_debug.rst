@@ -3,7 +3,7 @@
 Booting
 =======
 
-In the previous section you completed the installation of Ubuntu Touch on your device. The next step is to boot the device and gain remote access.
+In the previous sections you completed building and installing Ubuntu Touch on your device. The next step is to boot the device, gain remote access and debug as necessary.
 
 What is a successful boot?
 --------------------------
@@ -37,3 +37,5 @@ The password will be the one you set when you ran the halium-install script.
 
 Known problems and how to deal with them
 ----------------------------------------
+
+* Work in progress *
