@@ -22,6 +22,18 @@
 }
 
 /* Content style */
+html {
+    scrollbar-color: var(--color-foreground-border) var(--color-sidebar-background);
+}
+
+.main {
+    margin-right: 50px;
+}
+
+.content {
+    margin: 0 auto;
+}
+
 table {
     width: 100%;
 }
@@ -118,6 +130,14 @@ a.current, .content h1, .toc-tree li.scroll-current > .reference {
     color: var(--color-sidebar-link-text--top-level);
 }
 
+.sidebar-drawer {
+    width: unset !important;
+}
+
+.sidebar-container {
+    margin-left: 50px;
+}
+
 /* Edit this page styles */
 .edit-this-page {
     width: 200%;
@@ -187,6 +207,9 @@ a.current, .content h1, .toc-tree li.scroll-current > .reference {
     position: absolute;
     bottom: 10px;
     text-align: center;
+    left: calc(50% + 8px);
+    transform: translateX(-50%);
+    width: 15em;
 }
 
 .footer-links > p {
@@ -236,9 +259,13 @@ a.current, .content h1, .toc-tree li.scroll-current > .reference {
         border-radius: 0;
     }
 }
-@media (max-width:67em) {
+@media (max-width:90em) {
     .sidebar-search {
         border-radius: 0;
+    }
+
+    .sidebar-container {
+        margin-left: 0;
     }
 }
 
