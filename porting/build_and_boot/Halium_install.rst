@@ -75,6 +75,6 @@ For **Halium 9.0 ports**, use this command::
 
     path/to/halium-install -p ut -s path/to/ubuntu-touch-android9-arm64.tar.gz path/to/[SYSTEM_IMAGE]
 
-where [SYSTEM_IMAGE] will be the file ``android-rootfs.img`` you downloaded and extracted, alternatively the file ``system.img`` you yourself built.
+where [SYSTEM_IMAGE] will be the file ``android-rootfs.img`` you downloaded and extracted, alternatively the file ``system.img`` you built yourself.
 
 The script will copy and extract the files to their proper places, then allow you to set the user password for your device (the *phablet* user's password).
