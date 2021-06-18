@@ -6,7 +6,7 @@ With the necessary compontents built, you are now ready to install them on your 
 In brief:
 
     * **Halium-7.1** requires installing the boot image and system image you have built, together with the UBports rootfs, which you need to download.
-    * **Halium-9.0 and newer** requires installing the boot image you have built together with the GSI or you own system image (if you built one) and the UBports rootfs. Both the GSI and the rootfs are available for download.
+    * **Halium-9.0 and newer** requires installing the boot image you have built together with the GSI or your own system image (if you built one) and the UBports rootfs. Both the GSI and the rootfs are available for download.
 
 In order to install Ubuntu Touch, you need a recovery image with Busybox, such as TWRP, installed on your phone. If you have not done so yet, refer to section :ref:`Install-TWRP-recovery` and install it now. 
 
