@@ -17,6 +17,14 @@ There are a few different groups of Ubuntu Touch devices with respect to how the
 * Halium based ports
 * Linux kernel
 
+.. toctree::
+   :hidden:
+   :maxdepth: 1
+   :name: toc-hal
+
+   ubp-5.1
+   kernel-pinephone
+
 Android 5.1 based ports
 -----------------------
 
