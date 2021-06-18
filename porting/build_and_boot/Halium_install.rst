@@ -71,7 +71,7 @@ For **Halium 7.1 ports** use the following command::
 
     path/to/halium-install -p ut path/to/rootfs.tar.gz path/to/system.img
 
-For **Halium 9.0 ports**, use the this command::
+For **Halium 9.0 ports**, use this command::
 
     path/to/halium-install -p ut -s path/to/ubuntu-touch-android9-arm64.tar.gz path/to/[SYSTEM_IMAGE]
 
