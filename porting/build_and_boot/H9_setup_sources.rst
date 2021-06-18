@@ -125,14 +125,20 @@ aosp         Android Open Source Project, https://android.googlesource.com
 
 If you do not specify a remote, aosp is assumed.
 
-Sync
-""""
+Sync and apply hybris patches
+"""""""""""""""""""""""""""""
 
 With your manifest now complete, go to the root of your BUILDDIR and issue the following command (replace DEVICE with your device’s codename) to bring the device-specific source code into your source tree::
 
     ./halium/devices/setup DEVICE
 
 This will first link your manifest from Halium devices to .repo/local_manifests/device.xml and then sync all repositories.
+
+Once complete you can now run a script to apply hybris patches. These are mainly used for building the system image and can be omitted if your goal is to only build ``halium-boot.img``. However, if you run into build errors, it might be worthwhile to try applying these patches all the same.
+
+From the root of your BUILDDIR, run the following command::
+
+    hybris-patches/apply-patches.sh --mb
 
 Document
 """"""""
