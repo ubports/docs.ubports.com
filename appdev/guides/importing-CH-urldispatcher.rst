@@ -1,8 +1,16 @@
 Importing from Content Hub and URLdispatcher
 ============================================
 
-.. figure:: /_static/images/appdev/guides/importingCHdispatcherimages/01ichu.png
-        :align: center
+.. code:: javascript
+
+        "hooks": {
+            "openstore": {
+                "apparmor": "openstore/openstore.apparmor",
+                "desktop": "openstore/openstore.desktop",
+                "urls": "openstore/openstore.url-dispatcher",
+                "content-hub": "openstore/openstore-contenthub.json"
+            }
+        },
 
 In the previous guide we have seen a little bit about how Content Hub works. In this guide we will see how ``URLdispatcher`` works and how to handle imported data from the Content Hub.
 
