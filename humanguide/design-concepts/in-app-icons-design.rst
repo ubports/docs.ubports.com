@@ -21,12 +21,16 @@ Font
 
 To provide a consistent look to the UI and to make the Suru icons distinctive, the design is based on the same patterns as the Ubuntu font. The font patterns can applied to the symbol to define its contours.
 
+.. rst-class:: invert-grayscale
+
 .. figure:: /_static/images/humanguide/14.png
 
 Strokes
 ~~~~~~~
 
 Stroke ends are squared but the upper end of vertical strokes is slightly oblique with a +10º angle.
+
+.. rst-class:: invert-color
 
 .. figure:: /_static/images/humanguide/15.png
 
@@ -35,12 +39,16 @@ Rotation
 
 When they are not horizontal or vertical, objects are oriented along a +45º axis.
 
+.. rst-class:: invert-color
+
 .. figure:: /_static/images/humanguide/16.png
 
 Corners
 ~~~~~~~
 
 Curved corners are preferred if possible. The following picture shows a zoom on the default outer and inner curvatures, with nodes and Bezier handle. The default curvature can be scaled down when the shape is smaller.
+
+.. rst-class:: invert-color
 
 .. figure:: /_static/images/humanguide/17.png
 
@@ -49,6 +57,8 @@ Arrows
 
 A chevron symbol is used for navigation arrows. The arrowhead is an isosceles triangle where the two equal sides are slightly curved (following the pattern of the Y character).
 
+.. rst-class:: invert-color
+
 .. figure:: /_static/images/humanguide/18.png
 
 Opacity
@@ -56,12 +66,16 @@ Opacity
 
 50% opacity is used to reflect the status of an indicator. In case of a double space (enabled and disabled, for example), the opacity of the whole icon changes. When the status allows a range of values, the opacity of a single portion of icon can be altered.
 
+.. rst-class:: invert-grayscale
+
 .. figure:: /_static/images/humanguide/19.png
 
 Grid
 ~~~~
 
 Interface icons are designed for 96x96 pixels, with at least 4 pixels of margin on every side.
+
+.. rst-class:: invert-grayscale
 
 .. figure:: /_static/images/humanguide/20.png
 
