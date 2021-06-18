@@ -9,7 +9,7 @@ Building and booting
    H7_build
    H9_setup_sources
    H9_build
-   Standalone_kernel_build
    Halium_install
+   Standalone_kernel_build
    Standalone_install
    Boot_debug
