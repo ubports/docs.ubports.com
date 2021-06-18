@@ -34,6 +34,10 @@ html {
     margin: 0 auto;
 }
 
+.content img {
+    border-radius: .2rem;
+}
+
 table {
     width: 100%;
 }
@@ -238,9 +242,18 @@ a.current, .content h1, .toc-tree li.scroll-current > .reference {
         -webkit-filter: invert(30%); /* safari 6.0 - 9.0 */
         filter: invert(30%);
     }
+
     .footer-links img:hover {
         -webkit-filter: invert(70%); /* safari 6.0 - 9.0 */
         filter: invert(70%);
+    }
+
+    .invert-grayscale img, img.invert-grayscale {
+        filter: invert() grayscale();
+    }
+
+    .invert-color img, img.invert-color {
+        filter: invert();
     }
 }
 

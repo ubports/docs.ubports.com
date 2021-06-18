@@ -37,11 +37,15 @@ Outgoing MMS
 
 Incoming MMS diagram
 ********************
+.. rst-class:: invert-grayscale
+
 .. image:: files/incoming-mms.png
    :alt: incoming-MMS.png
 
 Outgoing MMS diagram
 ********************
+.. rst-class:: invert-grayscale
+
 .. image:: files/outgoing-mms.png
    :alt: outgoing-MMS.png
 
