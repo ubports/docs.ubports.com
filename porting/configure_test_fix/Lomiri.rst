@@ -3,17 +3,7 @@
 Bringing up Lomiri - the graphical UI
 =====================================
 
-*Work in progress*
-
-.. Tip::
-    Applies to:
-        * Method 1
-        * Method 2
-        * Method 3
-
-        (See :ref:`porting methods <Porting-methods>`.)
-
-Now that you have gained access to your newly booted device, there remain a number of things to be configured before Ubuntu Touch will be fully functional on your device. The first is to add udev rules.
+Now that you have gained access to your newly booted device, there remain a number of things to be configured before Ubuntu Touch will be fully functional on your device. The first is to add udev rules which are required for the graphical UI to be able to launch.
 
 What are udev rules?
 --------------------
@@ -46,3 +36,5 @@ When Unity 8 is first brought up on your device, you will probably notice that e
 
 Known problems and how to deal with them
 ----------------------------------------
+
+* Work in progress *
