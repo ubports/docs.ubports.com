@@ -1,5 +1,5 @@
-Halium-9.0 and newer - Building
-===============================
+Halium-9.0 - Building
+=====================
 
 When doing a Halium 9.0 port, you first need to build halium-boot.img. This boot image can then either be combined with the GSI, or you can build your own, device-specific system.img as well.
 

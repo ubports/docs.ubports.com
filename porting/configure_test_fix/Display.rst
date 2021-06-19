@@ -1,10 +1,30 @@
-Reference material
-==================
+.. _Display:
+
+Display settings
+================
+
+There are two variables that set the content scaling for Lomiri and Ubuntu Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``.
+
+There are also other options available that may be useful for you depending on your device's form factor. These are mentioned below and explained in depth :ref:`further down <Display-settings>`.
+
+All of these settings are guessed by Unity 8 if none are set. There are many cases, however, where the guess is wrong (for example, very high resolution phone displays will be identified as desktop computers). To manually set a value for these variables, simply edit the file at ``etc/ubuntu-touch-session.d/android.conf`` specifying them. For example, this is the file for the Nexus 7 tablet::
+
+    $ cat /etc/ubuntu-touch-session.d/flo.conf
+    GRID_UNIT_PX=18
+    QTWEBKIT_DPR=2.0
+    NATIVE_ORIENTATION=landscape
+    FORM_FACTOR=tablet
+
+The method for deriving values for these variables :ref:`is explained below. <Display-settings>` 
+
+Once you have adjusted the ``android.conf`` file to the display settings needed for your device, this file should be incorporated into your build.
+
+Create the file android.conf in your 'ubuntu' directory and enter the settings you have determined and tested. Complete :ref:`steps 3 and 4 above described in the Overlay section <Overlay>`, taking care to remember how to correctly :ref:`rebuild the system image <Rebuild-system.img>`.
 
 .. _Display-settings:
 
-Display settings
-----------------
+Determining the correct display settings
+----------------------------------------
 
 Display scaling
 ^^^^^^^^^^^^^^^

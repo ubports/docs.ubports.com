@@ -1,5 +1,5 @@
-Setting up and building a standalone kernel
-===========================================
+Standalone kernel building
+==========================
 
 This method involves building just the Android Linux kernel for your specific device and SoC (system on chip). This can subsequently be rebuilt and integrated into a full boot image to be flashed together with the necessary components that constitute a complete build of Ubuntu Touch.
 

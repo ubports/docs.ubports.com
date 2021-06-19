@@ -1,6 +1,14 @@
 Building and booting
 ====================
 
+Having done the necessary research into the specifics of your particular device and prepared a suitable host PC, you are now ready to download and configure the necessary source code and start building.
+
+This part of the porting process will differ depending on the Halium version you will be building, and which method you choose to follow (in cases where a choice is available). Although the build process for Halium-7.1 and Halium-9.0 carry definite similarities, there are also key differences. Please refer only to the sections that are relevant to the method you will be following!
+
+Installing is described in the same section for both Halium versions. Make sure to note the differences here also.
+
+Finally, standalone kernel building for Halium-9.0 is treated separately, even though significant parts of this process is actually the same as for Halium-9.0/GSI porting.
+
 .. toctree::
    :maxdepth: 1
    :name: build_and_boot

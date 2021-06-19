@@ -1,5 +1,5 @@
-Halium-9.0 and newer - Setting up the sources
-=============================================
+Halium-9.0 - Setting up the sources
+===================================
 
 
 Initializing and downloading the Halium source
