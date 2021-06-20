@@ -25,16 +25,11 @@ Before you make any changes to the rootfs (which will be required for the next s
 Create and add udev rules
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You must create some udev rules to allow Ubuntu Touch software to access your hardware. Run the following command, replacing [codename] with your device's codename::
+You must create some udev rules to allow Ubuntu Touch software to access your hardware. Run the following command, replacing [CODENAME] with your device's codename::
 
     sudo -i # And enter your password
-    cat /var/lib/lxc/android/rootfs/ueventd*.rc|grep ^/dev|sed -e 's/^\/dev\///'|awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | sed -e 's/\r//' >/usr/lib/lxc-android-config/70-[codename].rules
+    cat /var/lib/lxc/android/rootfs/ueventd*.rc|grep ^/dev|sed -e 's/^\/dev\///'|awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | sed -e 's/\r//' >/usr/lib/lxc-android-config/70-[CODENAME].rules
 
 Now, reboot the device. If all has gone well, you will eventually see the Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as you set for SSH.
 
 When Unity 8 is first brought up on your device, you will probably notice that everything is very small. The :ref:`Display` section describes how to deal with this.
-
-Known problems and how to deal with them
-----------------------------------------
-
-* Work in progress *
