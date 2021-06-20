@@ -3,6 +3,8 @@
 Overlay file method
 ===================
 
+The UBports rootfs comes with a set of standard configuration files for a number of features such as display scaling, sound, bluetooth and more. These files are probably not tailored to your specific device and need to be replaced in order for the feature in question to function as it should. This is done with overlay files, i.e. files that the original files get overwritten with. In other words, you need to rewrite the files in question, making the necessary adjustments for your device, and then see to it that these are incorporated into the build so that they will replace the originals. 
+
 Configuring features with overlay files
 ---------------------------------------
 
