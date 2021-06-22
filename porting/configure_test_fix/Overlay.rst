@@ -10,8 +10,8 @@ Configuring features with overlay files
 
 The method described below applies if the file you need to edit can be found in the /etc directory (or a subdirectory of this) on your device. You should not attempt to overwrite files located elsewhere using the method described here.
 
-Method
-^^^^^^
+Overlay method for full system.img builds
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In your device directory, create a subdirectory named 'ubuntu'. Collect the files you wish to inject into your build in this directory. 
 
@@ -61,3 +61,8 @@ For Halium-7.1 ports and Halium-9.0 ports using a device specific system.img in 
 When you have made the adjustments you need and prepared your source as described above, rebuild the system image: ``mka systemimage``. 
 
 When rebuilding the system image after small changes like these, you need not ``mka clean`` first. However, changes to PRODUCT_PROPERTY_OVERRIDES might not get detected by the build system. To ensure this, go to the directory ``BUILDDIR/out/target/product/CODENAME/system`` and delete the file ``build.prop`` before rebuilding.
+
+Overlay method for GSI-based builds
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Work in progress *
