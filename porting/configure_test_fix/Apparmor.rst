@@ -1,13 +1,12 @@
-Apparmor
-========
 
 .. _Apparmor:
 
-AppArmor
+Apparmor
+========
 
-`What is AppArmor? <https://wiki.ubuntu.com/AppArmor>`_
+Without AppArmor a number of device features will not function properly and most apps will crash when launched. For more information on what AppArmor is, refer to the `Ubuntu Wiki. <https://wiki.ubuntu.com/AppArmor>`_
 
-Apparmor is added through a combination of integrating the necessary code into the kernel source tree and setting necessary kernel configuration.
+Apparmor is added through a combination of integrating the necessary code into the kernel source tree and setting necessary kernel configuration. The process is slightly different on Halium-7.1, compared to newer Halium versions.
 
 Apparmor for Halium-7.1 ports
 -----------------------------
