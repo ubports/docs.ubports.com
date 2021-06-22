@@ -58,6 +58,6 @@ Rebuild system.img
 
 For Halium-7.1 ports and Halium-9.0 ports using a device specific system.img in place of the GSI, the system.img now needs to be rebuilt.
 
-When you have made the adjustments you need and prepared your source as described above, rebuild your system.img: ``mka systemimage``. 
+When you have made the adjustments you need and prepared your source as described above, rebuild the system image: ``mka systemimage``. 
 
-When rebuilding the system image after small changes like these, you need not ``mka clean`` first. However, changes to PRODUCT_PROPERTY_OVERRIDES might not get detected by the build system. Go to your output folder, enter the system folder and delete ``build.prop`` in order to get it regenerated.
+When rebuilding the system image after small changes like these, you need not ``mka clean`` first. However, changes to PRODUCT_PROPERTY_OVERRIDES might not get detected by the build system. To ensure this, go to the directory ``BUILDDIR/out/target/product/CODENAME/system`` and delete the file ``build.prop`` before rebuilding.
