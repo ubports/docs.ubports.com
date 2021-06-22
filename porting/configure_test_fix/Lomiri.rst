@@ -1,7 +1,7 @@
 .. _Lomiri:
 
-Bringing up Lomiri - the graphical UI
-=====================================
+Lomiri - the graphical UI
+=========================
 
 Now that you have gained access to your newly booted device, there remain a number of things to be configured before Ubuntu Touch will be fully functional on your device. The first is to add udev rules which are required for the graphical UI to be able to launch.
 
