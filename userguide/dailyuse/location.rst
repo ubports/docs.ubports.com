@@ -10,13 +10,13 @@ Checking if location services are enabled
 
 The Location Indicator is displayed whenever location services are enabled. Normally, this indicator will appear to be dark.
 
-.. figure:: /_static/images/userguide/location/location-indicator-inactive-circled.jpg
+.. figure:: /_static/images/userguide/location/location-indicator-inactive-circled.png
 
     The Location Indicator, showing location enabled but not in use
 
 If an app is accessing location data, the Location Indicator brightens.
 
-.. figure:: /_static/images/userguide/location/location-indicator-active-circled.jpg
+.. figure:: /_static/images/userguide/location/location-indicator-active-circled.png
 
     The Location Indicator, showing location enabled and in use
 
