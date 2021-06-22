@@ -1,7 +1,9 @@
 Sound
 =====
 
-The supplied touch.pa file located in the /etc/pulse directory of your device needs adjustment. Extract the file and copy it to your 'ubuntu' directory. 
+Ubuntu Touch uses Pulseaudio as sound server. Documentation can be found at `freedesktop.org <https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/>_` and in the `Ubuntu manpages <https://manpages.ubuntu.com/manpages/focal/man1/pulseaudio.1.html>_`
+
+The default configuration file used on Ubuntu Touch is ``touch.pa``. This file is located in the ``/etc/pulse`` directory of your device and this will need adjustment in order for sound to function properly. Extract the file and copy it to your the ``ubuntu`` you created in your device repo.
 
 Locate the line::
 
@@ -18,4 +20,4 @@ At the end of the file, append this::
     load-module module-droid-glue-24
     .endif
 
-Now complete :ref:`steps 3 and 4 above <Overlay>`, taking care to remember the note on how to :ref:`Rebuild-system.img`.
+Now complete :ref:`the last steps of the overlay method <Overlay-steps>`, taking care to remember to correctly :ref:`rebuild the system image. <Rebuild-system.img>`
