@@ -20,9 +20,11 @@ This is why Ubuntu Touch cannot be built completely from source code for most co
 
 The next component of Ubuntu Touch is a pre-compiled root filesystem which needs to be installed on the device. This component does not communicate directly with the device hardware. Instead, this communication is mediated by a Hardware Abstraction Layer (HAL) which needs to be built for each specific device, because each device has its specific hardware architecture. This component is called Halium  and is available in different versions (5.1 which is largely obsolete, 7.1, 9 and 10 as of writing) corresponding to different Android versions.
 
-The `Halium project <https://halium.org/>`_ enables Linux systems to run on Android hardware. It is a joint effort by multiple mobile operating systems, notably Plasma mobile, Lune OS and UBports. UBports porting builds on top of Halium porting. Consequently, you will be using both the Halium porting guide and the UBports porting guide. At times it can also be helpful to test with one of the other operating systems to debug a problem from different angles.
+The `Halium project <https://halium.org/>`_ enables Linux systems to run on Android hardware. It is a joint effort by multiple mobile operating systems, notably Plasma mobile, Lune OS and UBports. 
 
-Halium is thus an indispensible part of an Ubuntu Touch port and is available in the form of open source software. Developing a new version of Halium is a very considerable task which is why only a few versions of Halium are available. Each port of Ubuntu Touch has to be based on one of the available Halium versions and vendor blobs from the corresponding Android version. See the first two columns of the table below for details.
+UBports porting builds on top of Halium porting. Consequently, you will be using both the Halium porting guide and the UBports porting guide. At times it may also be helpful to test with one of the other operating systems to debug a problem from different angles.
+
+Halium is an indispensible part of an Ubuntu Touch port and is available in the form of open source software. Developing a new version of Halium is a very considerable task which is why only a few versions of Halium are available. Each port of Ubuntu Touch has to be based on one of the available Halium versions and vendor blobs from the corresponding Android version. See the first two columns of the table below for details.
 
 Thus an Ubuntu Touch port is composed of the these components:
     * The Ubuntu Touch (UT) root filesystem (rootfs)
@@ -48,6 +50,9 @@ Android version  Halium version  Lineage OS (LOS)
 
 .. _What-is-a-GSI:
 
+What is a GSI?
+--------------
+
 With Android 9.0 there came a significant change of architecture. The device-specific vendor blobs now reside on a separate partition instead of sharing a partition with the rest of the system image. This separation of device-specific code from generic code made possible what is known as the **Generic System Image (GSI)**.
 
 A GSI  is a system image that is built to be able to function with a wide range of devices. Android devices, as of version 9.0, use a GSI. For more information, see the `Android Developer pages <https://developer.android.com/topic/generic-system-image/>`_
@@ -58,7 +63,7 @@ The development of the Android GSI architecture also cleared the way for the now
     Technically, the Halium GSI is a generic LXC container image. For a more detailed description, please refer to `the wiki page on Gitlab CI builds of the generic Halium system image <https://github.com/ubports/porting-notes/wiki/GitLab-CI-builds-for-devices-based-on-halium_arm64-(Halium-9)>`_.
 
 How does this change the porting process?
------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Since the GSI is a prebuilt, device-independent component, it effectively simplifies the task of building a viable port by removing much of the meticulous and time consuming task of getting the hardware-specific vendor blobs compiled into the system image and configured to function properly.
 
@@ -95,7 +100,7 @@ The remainder of this section gives some words of advice to new porters. If you 
 The challenges of the porting process
 -------------------------------------
 
-Building the necessary components and getting them to work together properly always involves an amount of code modifications, configuring and testing, but normally considerably moreso when using method 1 compared to methods 2 and 3 above (see :ref:`porting methods <Porting-methods>`).
+Building the necessary components and getting them to work together properly always involves an amount of code modifications, configuring and testing, but considerably moreso when doing full system image builds, compared to builds using the GSI (see :ref:`porting methods <Porting-methods>`).
 
 Luckily, there is a community of porters out there who are eager to see Ubuntu Touch ported to new devices. When you run into trouble, you should search the sources below (:ref:`Getting-community-help`) to see if others before you have solved the issue. There are online Telegram chat groups you can join to ask for help, but please bear in mind that those participating are doing so in their spare time.
 
@@ -104,9 +109,9 @@ Luckily, there is a community of porters out there who are eager to see Ubuntu T
 Prior knowledge and skills
 --------------------------
 
-Porters come in all sizes and shapes, so to speak. Therefore, this guide does not presuppose extensive knowledge or skills in any particular field. You should, however, as a bare minimum be familiar with some common shell commands and be comfortable working from the terminal on you host PC. Furthermore, the guide is based on a host PC running Linux. If you have some knowledge of programming, this will come in handy at some point, especially if you are familiar with C / C++. Also, you should familiarize yourself with git, setup a Github (or Gitlab) to keep track of your code changes. It is also wise to start documenting your steps from the very beginning.
+Porters come in all sizes and shapes, so to speak. Therefore, this guide does not presuppose extensive knowledge or skills in any particular field. You should, however, as a bare minimum be familiar with some common shell commands and be comfortable working from the terminal on you host PC. Furthermore, the guide is based on a host PC running Linux. If you have some knowledge of programming, this will come in handy at some point, especially if you are familiar with C / C++. Also, you should familiarize yourself with git and set up a Github or Gitlab account to keep track of your code changes. It is wise to start documenting your steps from the very beginning.
 
-We have attempted to give a certain amount of explanation along the way, but this guide is in not an in-depth reference into architecture and inner workings of Ubuntu Touch, and gaining a deeper understanding will consequently require an amount of research on your part.
+We have attempted to give a certain amount of explanation along the way. However, this guide is not an in-depth reference into the architecture and inner workings of Ubuntu Touch, and gaining a deeper understanding will consequently require an amount of research on your part.
 
 .. _Getting-community-help:
 
