@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-05-27 12:31+0000\n"
-"Last-Translator: kuailexs <952415538@qq.com>\n"
+"PO-Revision-Date: 2021-06-14 14:10+0000\n"
+"Last-Translator: Ito Rimai <ItoRimai@foxmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-userguide/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -131,13 +131,10 @@ msgstr ""
 "通话的设备。"
 
 #: ../../userguide/advanceduse/adb.rst:58
-#, fuzzy
 msgid ""
 "Just run the command for your selected device if it's below. Then, run ``adb "
 "kill-server`` followed by the command you were initially trying to run."
-msgstr ""
-"如果下面有您所选的设备，请运行此命令。然后运行 ``adb kill-server`` 执行最初的"
-"尝试。"
+msgstr "如果下面有您所选的设备，请运行此命令。然后运行 ``adb kill-server`` 然后执行你最初所要执行的命令。"
 
 #: ../../userguide/advanceduse/adb.rst:60
 msgid "Fairphone 2::"
@@ -152,13 +149,10 @@ msgid "CalDAV and CardDAV synchronization"
 msgstr "CallDAV和CardDAV同步"
 
 #: ../../userguide/advanceduse/dav.rst:4
-#, fuzzy
 msgid ""
 "CalDAV and CardDAV are protocols to synchronize calendars and contacts with "
 "a remote server. Many email-hosters provide a CalDAV and CardDAV interface."
-msgstr ""
-"CalDAV和CardDAV是使用远程服务器进行同步日历、联系人的协议。许多邮件服务商都提"
-"供CalDAV和CardDAV的接口。"
+msgstr "CalDAV和CardDAV是使用远程服务器进行同步日历、联系人的协议。许多邮件服务商都提供CalDAV和CardDAV的接口。"
 
 #: ../../userguide/advanceduse/dav.rst:6
 #, fuzzy
@@ -173,7 +167,6 @@ msgstr ""
 "密码来完成此操作。"
 
 #: ../../userguide/advanceduse/dav.rst:8
-#, fuzzy
 msgid ""
 "At the moment, there is no carddav implementation directly accessible from "
 "the Ubuntu Touch graphical user-interface, so the only way to sync carddav "
@@ -181,9 +174,8 @@ msgid ""
 "with a script that you can run in the terminal or via phablet SSH "
 "connection. These instructions work for caldav as well."
 msgstr ""
-"目前，还没有能在Ubuntu Touch上实现直接访问CardDAV的图形用户界面，因此唯一能同"
-"步CardDAV的方式是使用syncevolution+cron。但是，还有一个简单的方式，就是在终端"
-"中或者通过SSH连接来运行一个脚本。这种方法同步CalDAV还算不错。"
+"目前，还没有能在Ubuntu Touch上实现直接访问CardDAV的图形用户界面，因此唯一能同步CardDAV的方式是使用syncevolution+c"
+"ron。但是，还有一个简单的方式，就是在终端中或者通过SSH连接来运行一个脚本。这也是同步caldav的一种方式。"
 
 #: ../../userguide/advanceduse/dav.rst:10
 msgid ""
@@ -215,7 +207,7 @@ msgstr ""
 #: ../../userguide/advanceduse/dav.rst:16
 msgid ""
 "CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmetic)"
-msgstr ""
+msgstr "CONTACT 和 CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (它更美观)"
 
 #: ../../userguide/advanceduse/dav.rst:17
 #, fuzzy
@@ -232,11 +224,10 @@ msgstr ""
 "``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, 以避免权限不足的错误"
 
 #: ../../userguide/advanceduse/dav.rst:20
-#, fuzzy
 msgid ""
 "Move the file to your Ubuntu Touch device, either by file manager or with "
 "adb::"
-msgstr "将文件移动到你的Ubuntu Touch设备，用文件管理器或者adb::"
+msgstr "将文件复制到你的Ubuntu Touch设备，用文件管理器或者adb连接:"
 
 #: ../../userguide/advanceduse/dav.rst:24
 msgid ""
@@ -296,9 +287,8 @@ msgstr ""
 "Ubuntu Touch设备的整体安全性。在您玩机之前请三思！"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:2
-#, fuzzy
 msgid "Reverse tethering"
-msgstr "反向绑定"
+msgstr "反向连接"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:4
 msgid ""
@@ -333,16 +323,16 @@ msgstr "在手机上:"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:18
 msgid "add gateway: ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``"
-msgstr ""
+msgstr "添加通道: ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:20
 msgid ""
 "add nameservers: ``echo \"nameserver 8.8.8.8\" | sudo tee /etc/resolv.conf``"
-msgstr ""
+msgstr "添加DNS服务器: ``echo \"nameserver 8.8.8.8\" | sudo tee /etc/resolv.conf``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:22
 msgid "refresh dns table: ``resolvconf -u``"
-msgstr ""
+msgstr "刷新DNS: ``resolvconf -u``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:24
 msgid "On computer:"
@@ -351,13 +341,15 @@ msgstr "在计算机上:"
 #: ../../userguide/advanceduse/reverse-tethering.rst:26
 msgid ""
 "enable ip forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``"
-msgstr ""
+msgstr "启用ip转发: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:28
 msgid ""
 "apply NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j "
 "MASQUERADE``"
 msgstr ""
+"使用 NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j "
+"MASQUERADE``"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:32
 #: ../../userguide/advanceduse/screencasting.rst:72
@@ -366,14 +358,17 @@ msgid "References"
 msgstr "参考文献"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:34
+#, fuzzy
 msgid ""
 "askubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-"
 "tethering-and-click-apps-updates"
 msgstr ""
+"askubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-"
+"tethering-and-click-apps-updates"
 
 #: ../../userguide/advanceduse/screencasting.rst:2
 msgid "Screen Casting your UT device to your computer"
-msgstr ""
+msgstr "将你的Ubuntu Touch设备显示投射到计算机上"
 
 #: ../../userguide/advanceduse/screencasting.rst:5
 msgid ""

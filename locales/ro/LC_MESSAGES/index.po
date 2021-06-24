@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 17:42-0600\n"
+"POT-Creation-Date: 2021-06-16 17:49-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,43 +18,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.3\n"
 
-#: ../../index.rst:25
+#: ../../index.rst:27
 msgid "About"
 msgstr ""
 
-#: ../../index.rst:34
+#: ../../index.rst:36
 msgid "User Guide"
 msgstr ""
 
-#: ../../index.rst:44
+#: ../../index.rst:46
 msgid "Contribute"
 msgstr ""
 
-#: ../../index.rst:52
+#: ../../index.rst:54
 msgid "Development"
 msgstr ""
 
-#: ../../index.rst:61
+#: ../../index.rst:63
 msgid "Porting"
 msgstr ""
 
-#: ../../index.rst:73
+#: ../../index.rst:75
 msgid "Click Packages"
 msgstr ""
 
-#: ../../index.rst:73
+#: ../../index.rst:75
 msgid "Ubuntu UI-Toolkit"
 msgstr ""
 
-#: ../../index.rst:73
+#: ../../index.rst:75
 msgid "Clickable"
 msgstr ""
 
-#: ../../index.rst:73
+#: ../../index.rst:75
 msgid "Halium"
 msgstr ""
 
-#: ../../index.rst:73
+#: ../../index.rst:75
 msgid "Platform"
 msgstr ""
 
@@ -93,42 +93,42 @@ msgstr ""
 msgid "You may view this documentation in the following languages:"
 msgstr ""
 
-#: ../../index.rst:14
+#: ../../index.rst:16
 msgid "`English <https://docs.ubports.com/en/latest/>`_"
 msgstr ""
 
-#: ../../index.rst:15
+#: ../../index.rst:17
 msgid "`Català <https://docs.ubports.com/ca/latest/>`_"
 msgstr ""
 
-#: ../../index.rst:16
+#: ../../index.rst:18
 msgid "`Français <https://docs.ubports.com/fr/latest/>`_"
 msgstr ""
 
-#: ../../index.rst:17
+#: ../../index.rst:19
 msgid "`Deutsch <https://docs.ubports.com/de/latest/>`_"
 msgstr ""
 
-#: ../../index.rst:18
+#: ../../index.rst:20
 msgid "`Italiano <https://docs.ubports.com/it/latest/>`_"
 msgstr ""
 
-#: ../../index.rst:19
+#: ../../index.rst:21
 msgid "`Română <https://docs.ubports.com/ro/latest/>`_"
 msgstr ""
 
-#: ../../index.rst:20
+#: ../../index.rst:22
 msgid "`Русский <https://docs.ubports.com/ru/latest>`_"
 msgstr ""
 
-#: ../../index.rst:21
+#: ../../index.rst:23
 msgid "`Türkçe <https://docs.ubports.com/tr/latest/>`_"
 msgstr ""
 
-#: ../../index.rst:22
+#: ../../index.rst:24
 msgid "`Español <https://docs.ubports.com/es/latest/>`_"
 msgstr ""
 
-#: ../../index.rst:23
+#: ../../index.rst:25
 msgid "`Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_"
 msgstr ""
