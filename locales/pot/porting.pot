@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-16 17:49-0500\n"
+"POT-Creation-Date: 2021-06-29 16:27-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1468,21 +1468,17 @@ msgid "`The UBports Forum <https://forums.ubports.com/category/33/porting>`_"
 msgstr ""
 
 #: ../../porting/index.rst:91
-msgid "IRC: #halium on Freenode"
-msgstr ""
-
-#: ../../porting/index.rst:92
 msgid "Matrix: #halium:matrix.org"
 msgstr ""
 
-#: ../../porting/index.rst:97
+#: ../../porting/index.rst:96
 msgid "General advice"
 msgstr ""
 
-#: ../../porting/index.rst:99
+#: ../../porting/index.rst:98
 msgid "The more rigorous you are at making notes and documenting your steps, the less time you will spend backtracking your steps and guessing your way along. When dealing with issues that arise along the way, it is wise to work on them one at a time. If you try to correct several things at once, you risk ending up trying to guess which changes solved a given issue, which easily leads to breaking the issue in question once more."
 msgstr ""
 
-#: ../../porting/index.rst:101
+#: ../../porting/index.rst:100
 msgid "If you are not discouraged after reading this, we wish you the best of luck!"
 msgstr ""
