@@ -1,12 +1,12 @@
 Installing Halium-based builds
 ==============================
 
-With the necessary compontents built, you are now ready to install them on your device. There are only minor differences between Halium versions when it comes to the installation process.
+With the necessary compontents built, you are now ready to install them on your device and check whether they function as intended. There are only minor differences between Halium versions when it comes to the installation process. In all cases, the system image and rootfs are installed together on the userdata partition of the device. This is done for practical reasons, as it makes the installation process simpler to manage during the first phases of the porting process. Once the port reaches the level of maturity required for it to be offered through the UBports installer (see :ref:`Finalize`), this must be changed in order to reserve a maximum of possible space for userdata.
 
 In brief:
 
     * **Halium-7.1** requires installing the boot image and system image you have built, together with the UBports rootfs, which you need to download.
-    * **Halium-9.0 and newer** requires installing the boot image you have built together with the GSI or your own system image (if you built one) and the UBports rootfs. Both the GSI and the rootfs are available for download.
+    * **Halium-9.0 and newer** require installing the boot image you have built together with the GSI and the UBports rootfs. Both the GSI and the rootfs are available for download. Note: If you chose to build your own system.img, then you must use this instead of the GSI when installing.
 
 In order to install Ubuntu Touch, you need a recovery image with Busybox, such as TWRP, installed on your phone. If you have not done so yet, refer to section :ref:`Install-TWRP-recovery` and install it now. 
 
