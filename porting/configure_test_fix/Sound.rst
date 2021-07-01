@@ -3,7 +3,7 @@ Sound
 
 Ubuntu Touch uses Pulseaudio as sound server. Documentation can be found at `freedesktop.org <https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/>`_ and in the `Ubuntu manpages <https://manpages.ubuntu.com/manpages/focal/man1/pulseaudio.1.html>`_
 
-The default configuration file used on Ubuntu Touch is ``touch.pa``. This file is located in the ``/etc/pulse`` directory on your device and it will need adjustment in order for sound to function properly. Extract the file and copy it to your the ``ubuntu`` directory you created in your device repo (see :ref:`Overlay`).
+The default configuration file used on Ubuntu Touch is ``touch.pa``. This file is located in the ``/etc/pulse`` directory on your device and it will need adjustment in order for sound to function properly. Extract the file and copy it to the ``ubuntu`` directory you created in your device repo (see :ref:`Overlay`).
 
 Locate the line::
 
