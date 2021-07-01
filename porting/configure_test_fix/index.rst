@@ -9,7 +9,7 @@ On the other hand, Halium 7.1 porting and Halium-9.0 porting (when building the 
 
 Start by bringing up Lomiri, adjusting the display as required, and adding AppArmor. The remaining steps can be performed in arbitrary order and some may not apply to your particular port.
 
-As you go along, it can be helpful to have `a list of device functions <https://gitlab.com/ubports/community-ports/general/-/blob/master/DeviceChecklist.md>`_ to go by when checking what works and what needs debugging and fixing. Use the same list when you eventually submit a pull request to add your device to the list of ports being developed.
+As you go along, it can be helpful to have a list of device functions to go by when checking what works and what needs debugging and fixing. This list, along with instructions on how to add your device to the list of devices that can run Ubuntu Touch, can be found in `the informative README.md file linked here. <https://gitlab.com/ubports/infrastructure/devices.ubuntu-touch.io/-/blob/main/README.md>`_
 
 .. toctree::
    :maxdepth: 1
