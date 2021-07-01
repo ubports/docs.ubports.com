@@ -10,6 +10,8 @@ Configuring features with overlay files
 
 The method described below applies if the file you need to edit can be found in the /etc directory (or a subdirectory of this) on your device. You should not attempt to overwrite files located elsewhere using the method described here.
 
+The exact steps to follow differ somewhat, depending on whether you are doing a full system.img build or a GSI based port. We present the former first. If your build is based on the GSI, it may still be wise to read both sections to gain a better understanding of what this method actually does.
+
 Overlay method for full system.img builds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
