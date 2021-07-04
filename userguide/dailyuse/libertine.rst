@@ -11,7 +11,7 @@ Manage containers
 Create a container
 ^^^^^^^^^^^^^^^^^^
 
-The first step is to create a container where apps can be installed:
+The first step is to create a container where applications can be installed:
 
 Open Settings and scroll down to *Libertine* under the *System* sub-heading.
 
@@ -58,7 +58,7 @@ Destroy a container
 Manage applications
 -------------------
 
-Once a container is set up, the installed apps are available in the app drawer.
+Once a container is set up, the installed applications are available in the app drawer.
 You can also tap the name of the container in the *Manage Libertine Containers* menu.
 
 You can also list them via the command-line::
@@ -73,7 +73,7 @@ From the apps list in the *Manage Libertine Containers* menu you can tap the + s
 Enter the package name if you know it.
 Otherwise you can search the archives for a package.
 You can make this process easier by making the *Lubuntu Software Center* your first package install.
-Being a desktop application, you will need to use the *Libertine Tweak Tool* in the *Open Store* to make the text large enough to read on a mobile device.
+Being a desktop app, you will need to use the *Libertine Tweak Tool* in the *Open Store* to make the text large enough to read on a mobile device.
 
 Packages may also be installed via the command-line::
 
@@ -102,7 +102,7 @@ Run it from the app menu like any other app. To start a graphical app from the c
 Files
 -----
 
-Libertine apps have access to these folders:
+Libertine applications have access to these folders:
 
  * Documents
  * Music
@@ -202,8 +202,8 @@ A display server coordinates input and output of an operating system.
 Ubuntu Touch does not use X, but a new display server called Mir.
 This means standard X applications are not directly compatible with Ubuntu Touch.
 A compatibility layer called XMir resolves this.
-Libertine relies on XMir to display desktop apps.
+Libertine relies on XMir to display desktop applications.
 
 Another challenge is that Ubuntu Touch system updates are released as OTA images.
 As a consequence of this the root filesystem is read-only.
-Libertine provides a container with a read-write filesystem to allow installation of regular Linux|GNU desktop apps.
+Libertine provides a container with a read-write filesystem to allow installation of regular Linux desktop applications.
