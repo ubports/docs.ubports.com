@@ -35,16 +35,16 @@ device can be viewed.
 
 These are the standard columns:
 
-* **None (awaiting triage)**: Issue approved by a member of the QA team awaiting review from the responsible development team. If a bug, instructions to reproduce are included in the issue description.
-* If a feature request, it has passed a primary sanity check by the QA team, but not yet been accepted by the responsible development-team.
-* **Accepted**: Issue accepted by the responsible development-team. If a bugreport, the team has decided it should be fixable and accept responsibility.
-* If a feature request, the team thinks it should be implemented as described.
-* **In Development**: A patch in development. Usually means a developer is assigned to the issue.
-* **Quality Assurance**: A completed patch passing initial testing. The QA team will review it and provide feedback.
-* If problems are found, the issue is moved back to "Accepted".
-* **Release Candidate**: A patch passing QA, ready for release.
-* In case of DEB packages included in the system-image, the patch will be included in the next over-the-air update on the `rc` channel, and (provided  everything goes well) in the next release of the `stable` channel.
-* **None (removed from the project)**: Open issue labeled "help wanted". Community contributions are required to resolve it. If it's closed, either a patch has been released on the stable channel (a comment on the issue should link to the patch) or the issue is rejected (labeled "wontfix").
+- **None (awaiting triage)**: Issue approved by a member of the QA team awaiting review from the responsible development team. If a bug, instructions to reproduce are included in the issue description.
+- If a feature request, it has passed a primary sanity check by the QA team, but not yet been accepted by the responsible development-team.
+- **Accepted**: Issue accepted by the responsible development-team. If a bugreport, the team has decided it should be fixable and accept responsibility.
+- If a feature request, the team thinks it should be implemented as described.
+- **In Development**: A patch in development. Usually means a developer is assigned to the issue.
+- **Quality Assurance**: A completed patch passing initial testing. The QA team will review it and provide feedback.
+- If problems are found, the issue is moved back to "Accepted".
+- **Release Candidate**: A patch passing QA, ready for release.
+- In case of DEB packages included in the system-image, the patch will be included in the next over-the-air update on the `rc` channel, and (provided  everything goes well) in the next release of the `stable` channel.
+- **None (removed from the project)**: Open issue labeled "help wanted". Community contributions are required to resolve it. If it's closed, either a patch has been released on the stable channel (a comment on the issue should link to the patch) or the issue is rejected (labeled "wontfix").
 
 Labels
 ------
