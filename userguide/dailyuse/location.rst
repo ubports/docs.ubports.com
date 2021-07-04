@@ -153,6 +153,7 @@ If location services have not been used for a long time *and* the device does no
 #. Turn off ``Lock when idle`` in the Battery settings
 #. Download an app which uses location services and use it to start accessing location data.
 #. Leave your device near a window, but out of direct sunlight.
+
 (Turn the screen brightness down to reduce energy consumption.)
 
 After 20-60 minutes, your device should display your current location.
