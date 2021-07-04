@@ -73,6 +73,7 @@ Now you're done! You might have to refresh the app drawer (pull down from the ce
 
 .. note::
     You now have an ADB server running on your Ubuntu Touch device.
+
 This guide asks you to run some ADB commands, sometimes on your computer, other times on the device itself.
 Carefully check which device you are on!
 
