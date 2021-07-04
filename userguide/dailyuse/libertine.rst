@@ -30,6 +30,7 @@ You can add extra options such as:
 
  * ``-n name`` name is a more user-friendly name of the container
  * ``-t type`` type can be either ``chroot`` or ``lxc``. The default is ``chroot`` , which is compatible with every device.
+ 
  If the kernel of your device supports it, ``lxc`` is suggested.
 
 Creation can take a while due to the size of the container (some hundred megabytes).
