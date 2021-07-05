@@ -1,4 +1,4 @@
 sphinx>2
-furo==2021.3.20b30
+furo==2021.6.24b37
 sphinx-intl
 sphinxext-rediraffe
