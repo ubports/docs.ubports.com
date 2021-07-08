@@ -9,7 +9,9 @@ For the remainder of this guide, information pertaining to Halium-9.0 is also in
 
 There is a separate section describing how to install the build. This section covers both Halium versions. Make sure to note the differences here also.
 
-Finally, standalone kernel building for Halium-9.0 is treated separately, even though significant parts of this process actually are the same as for Halium-9.0/GSI porting.
+Furthermore, a section describing an alternate method of building for Halium-9.0 based on Gitlab CI scripts has been included.
+
+The final section is concerned with booting and debugging the boot process.
 
 .. toctree::
    :maxdepth: 1
@@ -20,6 +22,5 @@ Finally, standalone kernel building for Halium-9.0 is treated separately, even t
    H9_setup_sources
    H9_build
    Halium_install
-   Standalone_kernel_build
-   Standalone_install
+   H9_gitlab_build
    Boot_debug
