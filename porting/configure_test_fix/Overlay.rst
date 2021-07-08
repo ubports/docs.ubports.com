@@ -71,7 +71,7 @@ Overlay method for Gitlab CI script-based builds
 
 Builds in this category can also be adapted to a particular device using overlay files, and when building by this method (see :ref:`Gitlab-CI`) it is possible not only to replace existing files, but also to introduce new ones.
 
-When you have prepared the files to replace or introduce, and determined the exact locations where they need to go on your device, these locations need to be replicated under the directory ``overlay/system/`` before running the Gitlab CI scripts according to `the instructions included.<https://gitlab.com/ubports/community-ports/android9/xiaomi-redmi-note-7-pro/xiaomi-violet/-/blob/master/README.md>`_
+When you have prepared the files to replace or introduce, and determined the exact locations where they need to go on your device, these locations need to be replicated under the directory ``overlay/system/`` before running the Gitlab CI scripts according to `the instructions included. <https://gitlab.com/ubports/community-ports/android9/xiaomi-redmi-note-7-pro/xiaomi-violet/-/blob/master/README.md>`_
 
 For example:
 """"""""""""
@@ -81,4 +81,4 @@ The udev rules file ``70-android.rules`` needs to go into ``system/halium/lib/ud
     mkdir /halium/lib/udev/rules.d
     cp <path-to-70-android.rules> /halium/lib/udev/rules.d/70-android.rules
 
-Now run the build scripts and the file will get incorporated into your build. Flash the files as per `the instructions.<https://gitlab.com/ubports/community-ports/android9/xiaomi-redmi-note-7-pro/xiaomi-violet/-/blob/master/README.md>`_
+Now run the build scripts and the file will get incorporated into your build. Flash the files as per `the instructions. <https://gitlab.com/ubports/community-ports/android9/xiaomi-redmi-note-7-pro/xiaomi-violet/-/blob/master/README.md>`_
