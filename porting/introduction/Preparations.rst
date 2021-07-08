@@ -1,3 +1,5 @@
+.. _Preparations:
+
 Preparations
 ============
 
@@ -5,14 +7,14 @@ Not all devices can be made to run Ubuntu Touch. Research your target device bef
 
 To determine your device's specifications, search for it on `GSM Arena <https://www.gsmarena.com>`_ and/or `Device Specification <https://www.devicespecifications.com/en>`_.
 
-Refer to the `Halium Porting Guide <http://docs.halium.org/en/latest/porting/first-steps.html#pick-an-android-target-device>`_ for further information on requirements and how to check if your device qualifies.
+Refer to `Pick an Android target device in the Halium Porting Guide <http://docs.halium.org/en/latest/porting/first-steps.html#pick-an-android-target-device>`_ for further information on requirements and how to check if your device qualifies.
 
 .. _Locate-relevant-guides-and-other-information:
 
 Locate relevant guides and other information
 --------------------------------------------
 
-If your desired target device complies to the above, the next thing to do is to locate the available guides and other documentation. This step will help you later on when you run into issues developing your port. For now, the main thing to look for is how to unlock your bootloader. (See below).
+If your desired target device complies to the above, the next thing to do is locate the available guides and other documentation. This step will help you later on when you run into issues developing your port. For now, the main thing to look for is how to unlock your bootloader. (See below).
 
 Head over to the `LineageOS Wiki <https://wiki.lineageos.org/>`_. Look up your device and read and bookmark the guides that are listed there. Try a web search for additional information, specifying both its retail name and the code name you found on the LineageOS site. Be careful to check that the information you gather applies to your specific device, keeping in mind that many devices are sold in a number of different variants with different hardware specifications.
 
