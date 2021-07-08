@@ -21,6 +21,8 @@ Adapt kernel to Ubuntu Touch
 
 * Add instructions here *
 
+.. _Gitlab-CI:
+
 Builds based on Gitlab CI scripts
 ---------------------------------
 
