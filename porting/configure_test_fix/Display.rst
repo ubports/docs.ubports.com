@@ -17,9 +17,7 @@ All of these settings are guessed by Unity 8 if none are set. There are many cas
 
 The method for deriving values for these variables :ref:`is explained below. <Display-settings>` 
 
-Once you have adjusted the ``android.conf`` file to the display settings needed for your device, this file should be incorporated into your build.
-
-Create the file android.conf in your 'ubuntu' directory and enter the settings you have determined and tested. Complete :ref:`the last steps of the overlay file method <Overlay-steps>`, taking care to remember how to correctly :ref:`rebuild the system image. <Rebuild-system.img>`
+Once you have adjusted the ``android.conf`` file to the display settings needed for your device, this file should be incorporated into your build. Follow `the overlay file method <Overlay-steps>` corresponding to your Halium version. 
 
 .. _Display-settings:
 

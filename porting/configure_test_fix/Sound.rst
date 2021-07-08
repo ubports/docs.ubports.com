@@ -20,4 +20,4 @@ At the end of the file, append this::
     load-module module-droid-glue-24
     .endif
 
-Now complete :ref:`the last steps of the overlay method <Overlay-steps>`, taking care to remember to correctly :ref:`rebuild the system image. <Rebuild-system.img>`
+Your modified ``touch.pa`` file now needs to be included in your build. Follow `the overlay file method <Overlay-steps>` corresponding to your Halium version.
