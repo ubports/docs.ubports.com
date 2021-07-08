@@ -1,10 +1,28 @@
-Reference material
-==================
+.. _Display:
+
+Display settings
+================
+
+There are two variables that set the content scaling for Lomiri and Ubuntu Touch applications: ``GRID_UNIT_PX`` and ``QTWEBKIT_DPR``.
+
+There are also other options available that may be useful for you depending on your device's form factor. These are mentioned below and explained in depth :ref:`in the section on display settings<Display-settings>`.
+
+All of these settings are guessed by Unity 8 if none are set. There are many cases, however, where the guess is wrong (for example, very high resolution phone displays will be identified as desktop computers). To manually set a value for these variables, simply edit the file at ``etc/ubuntu-touch-session.d/android.conf`` specifying them. For example, this is the file for the Nexus 7 tablet::
+
+    $ cat /etc/ubuntu-touch-session.d/flo.conf
+    GRID_UNIT_PX=18
+    QTWEBKIT_DPR=2.0
+    NATIVE_ORIENTATION=landscape
+    FORM_FACTOR=tablet
+
+The method for deriving values for these variables :ref:`is explained below. <Display-settings>` 
+
+Once you have adjusted the ``android.conf`` file to the display settings needed for your device, this file should be incorporated into your build. Follow :ref:`the overlay file method <Overlay-steps>` corresponding to your Halium version. 
 
 .. _Display-settings:
 
-Display settings
-----------------
+Determining the correct display settings
+----------------------------------------
 
 Display scaling
 ^^^^^^^^^^^^^^^
@@ -41,26 +59,3 @@ Native orientation
 ^^^^^^^^^^^^^^^^^^
 
 ``NATIVE_ORIENTATION`` sets the display orientation for the device's built-in screen. This value is used whenever autorotation isn't working correctly or when an app wishes to be locked to the device's native orientation. Acceptable values are ``landscape``, which is normally used for tablets, laptops, and desktops; and ``portrait``, which is usually used for phone handsets.
-
-.. _AppArmor:
-
-AppArmor
---------
-
-To understand Apparmor, what it is and how it works, refer to `AppArmor on the Ubuntu Wiki <https://wiki.ubuntu.com/AppArmor>`_
-
-.. _Backporting-kernel-drivers:
-
-Backporting kernel drivers
---------------------------
-
-Depending on your device port, what kernel and Halium versions it is based on, you may need to backport one or more kernel drivers. The procedure for backporting bluetooth to Halium 7.1-based ports is described in `the porting-FAQ <https://pad.ubports.com/p/porting-faq>`_ . The process is challenging and has potential pitfalls. 
-
-If you wish to gain a better understanding of backporting, please refer to `the Backports Project wiki page <https://backports.wiki.kernel.org/index.php/Main_Page>`_
-
-.. _Understanding-init-scripts:
-
-Android init scripts
---------------------
-
-The init scripts play a key role in bringing up the different services inside your Android container that need to run on your device in order for it to function properly. Refer to `the Android init language <https://android.googlesource.com/platform/system/core/+/master/init/README.md>`_ for an explanation of the syntax of these scripts.
