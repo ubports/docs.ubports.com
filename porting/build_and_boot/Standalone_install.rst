@@ -1,3 +1,0 @@
-Standalone kernel installation
-==============================
-
