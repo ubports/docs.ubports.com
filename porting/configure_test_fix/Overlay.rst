@@ -7,6 +7,8 @@ The UBports rootfs comes with a set of standard configuration files for a number
 
 If your build is based on the downloaded GSI and rootfs, installed using the halium-install script, then further adjustment of the build will not be possible. This is because the halium-script does not include any method for injecting overlay files. If, on the other hand, your build is based on Gitlab CI scripts, there is a way to further tweak your port with overlay files. This method is described at the end of this section.
 
+.. _Overlay-steps:
+
 Configuring features with overlay files
 ---------------------------------------
 
@@ -38,8 +40,6 @@ The first of these three files, 70-android.rules, is the one you created when br
 Explanation:
 
 The string before the colon '$(LOCAL_PATH)/ubuntu/70-android.rules' specifies the path to the source file to be injected. The string after the colon 'system/halium/lib/udev/rules.d/70-android.rules' specifies the target location on your device.
-
-.. _Overlay-steps:
 
 The general steps to follow are thus:
     1. Copy the file you wish to modify to the 'ubuntu' directory you have created in your device source tree.
