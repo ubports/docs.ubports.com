@@ -34,11 +34,9 @@ To complete the ``deviceinfo_flash_offset_`` lines, you will need to obtain and 
 
     <path-to-unpack_bootimg.py> --boot_img <path-to-boot.img>
 
-This tool will not supply the base offset, only the others, and it gives the absolute value. To calculate the correct values for the file ``deviceinfo``, proceed as follows:
+This tool will not supply the base offset, only the others, and it gives the absolute value. In other words, the value returned by the script for the kernel offset is in fact the (base offset + kernel offset). In the same manner, the other values are also the sum of the base offset and the offset value in question. Note that offset values for devices that share the same SoC will be the same.
 
-<Explain how to calculate>
+Using this information, you can calculate the correct values for the offsets to be specified in the file ``deviceinfo``. If in doubt, :ref:`seek help <Getting-community-help>`.
 
-If in doubt, :ref:`seek help <Getting-community-help>`.
-
-Now, carefully read and follow the instructions `on this page <https://gitlab.com/ubports/community-ports/android9/xiaomi-redmi-note-7-pro/xiaomi-violet/-/blob/master/README.md>`_ to build and install, remembering to replace 'violet' with your device's codename.
+When you have finished editing ``deviceinfo``, carefully read and follow the instructions `on this page <https://gitlab.com/ubports/community-ports/android9/xiaomi-redmi-note-7-pro/xiaomi-violet/-/blob/master/README.md>`_ to build and install, remembering to replace 'violet' with your device's codename.
 
