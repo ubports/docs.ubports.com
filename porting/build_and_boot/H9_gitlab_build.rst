@@ -9,14 +9,16 @@ For some devices, Halium-9.0 (and later) ports can be built based on just the ke
 Setting up the build environment
 --------------------------------
 
-Prepare your build environment as follows::
+Assuming you have already installed the tools specified in the section on :ref:`Setting-up`, there are just a few more to add before your build environment is complete. Run this commmand to add them::
 
-    sudo apt install android-tools-mkbootimg bc bison build-essential ca-certificates cpio curl flex git kmod libssl-dev libtinfo5 python2 sudo unzip wget xz-utils img2simg jq
+    sudo apt install android-tools-mkbootimg bc bison build-essential \
+    ca-certificates cpio curl flex git kmod libssl-dev libtinfo5 python2 \
+    sudo unzip wget xz-utils img2simg jq
 
 Obtaining kernel source
 -----------------------
 
-Locate the kernel source code for your device. Fork this repo to your own Github account so that you can easily make any necessary adjustments as your work progresses. Make a note of the link to this repo. It needs to be specified in a configuration script for the build (see :ref:`Configure`).
+Locate the kernel source code for your device. Fork this repo to your own Github account so that you can easily make any necessary adjustments as your work progresses. Make a note of the link to your repo. It needs to be specified in a configuration script for the build (see :ref:`Configure`).
 
 Clone a Gitlab CI repo to base your build on
 --------------------------------------------
