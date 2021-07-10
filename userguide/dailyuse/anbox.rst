@@ -4,7 +4,7 @@ Android apps
 `Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer to run Android apps on GNU/Linux operating systems such as Ubuntu Touch.
 
 .. note::
-    "Computer" refers to another device you connect your Ubuntu Touch device to via USB.
+    "Computer" refers to another device you connect your Ubuntu Touch device to (via USB here).
     Your USB-attached computer must have ``adb`` and ``fastboot`` installed.
 
 .. note::
@@ -113,7 +113,7 @@ How to uninstall apps
     adb uninstall [APP_ID] # This is the adb of your device, not your computer
     exit
 
-- Done! You might have to pull down from the center of the screen and release for the new Android apps to show up.
+- Done! You might have to pull down from the app list for the new Android apps to show up.
 
 Access Android storage
 -----------------------
