@@ -23,7 +23,7 @@ Locate the kernel source code for your device. Fork this repo to your own Github
 Clone a Gitlab CI repo to base your build on
 --------------------------------------------
 
-Ideally you should base your build off of a previous build for a device with a similar platform/SoC. However, if unsure, use `the repo for Xiaomi-violet <https://gitlab.com/ubports/community-ports/android9/xiaomi-redmi-note-7-pro/xiaomi-violet/-/tree/master/>`_
+Ideally you should base your build on a previous build for a device with similar platform/SoC. However, if unsure, use `the repo for Xiaomi-violet <https://gitlab.com/ubports/community-ports/android9/xiaomi-redmi-note-7-pro/xiaomi-violet/-/tree/master/>`_
 
 .. _Configure:
 
