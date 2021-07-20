@@ -19,7 +19,7 @@ You need then to transfer your public key to your device. There are multiple way
 
 * Connect the UBports device and the PC with a USB cable. Then copy the file using your file-manager.
 * Or, transfer the key via the Internet by e-mailing it to yourself, or uploading it to your own cloud storage, web-server, etc. 
-* You can also connect via :doc:`adb <adb>` and use the following command to copy it::
+* You can also connect via :doc:`adb <adb>` and use the following command to copy it (Some devices cant support ADB, check the devices page to learn more.)::
 
     adb push ~/.ssh/id_rsa.pub /home/phablet/
 
