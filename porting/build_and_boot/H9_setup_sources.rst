@@ -108,7 +108,7 @@ For example, let’s say that you have a bunch of repositories at https://github
 
     <remote name="sun"
         fetch="https://github.com/SomeUserName"
-        revision="los-16.0 />
+        revision="los-16.0" />
 
 There are also some remotes available to you by default, though they differ between Halium versions. The following tables will help you identify these. See more information on these remotes can be found at the top of the file BUILDDIR/halium/.repo/manifests/default.xml.
 
