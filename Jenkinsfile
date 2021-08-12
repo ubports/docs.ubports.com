@@ -5,7 +5,7 @@ pipeline {
         }
     }
     options {
-        buildDiscarder(logRotator(artifactDaysToKeepStr: '180'))
+        buildDiscarder(logRotator(daysToKeepStr: '120'))
     }
     environment {
         HOME = "${env.WORKSPACE}"
