@@ -78,3 +78,6 @@ For **Halium 9.0 ports**, use this command::
 where [SYSTEM_IMAGE] will be the file ``android-rootfs.img`` you downloaded and extracted, or alternatively the file ``system.img`` you built yourself.
 
 The script will copy and extract the files to their proper places, then allow you to set the user password for your device (the *phablet* user's password).
+
+.. Note::
+    halium-install might fail due to unconfigured bintfmt-support for qemu throwing errors such as 'chroot: failed to run command ‘passwd’: Exec format error'.    To fix this,/proc/sys/fs/binfmt_misc/register should be updated. `binfmt_manager `<https://github.com/mikkeloscar/binfmt_manager>`_ by @mikkeloscar `<https://github.com/mikkeloscar/>`_ can provide quickfix.
