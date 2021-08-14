@@ -21,6 +21,6 @@ The final section is concerned with booting and debugging the boot process.
    H7_build
    H9_setup_sources
    H9_build
-   Halium_install
    H9_gitlab_build
+   Halium_install
    Boot_debug
