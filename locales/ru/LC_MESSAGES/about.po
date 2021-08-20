@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-29 13:44-0500\n"
-"PO-Revision-Date: 2021-02-23 23:42+0000\n"
+"PO-Revision-Date: 2021-08-20 19:08+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-about/ru/>\n"
@@ -83,9 +83,9 @@ msgstr ""
 "работе сообщества UBports. Текст написан в ReStructuredText и переведён в "
 "читаемый вид с помощью приложений `Sphinx <http://www.sphinx-doc.org/en/"
 "stable/>`_, `ReCommonMark <http://recommonmark.readthedocs.io/en/latest/>`_, "
-"и `Read the Docs <https://readthedocs.io>`_. Вы можете проверить и дополнить "
-"любой раздел документации :doc:`Documentation contribution document </"
-"contribute/documentation>`."
+"и `Read the Docs <https://readthedocs.io>`_. Вы можете исправить и дополнить "
+"любой раздел документации, подробнее смотрите главу :doc:`Documentation "
+"contribution document </contribute/documentation>`."
 
 #: ../../about/introduction.rst:18
 msgid ""
@@ -113,16 +113,16 @@ msgstr ""
 
 #: ../../about/process/branch-naming.rst:2
 msgid "Branch-naming convention"
-msgstr "Соглашение о названиях веток разработки"
+msgstr "Соглашение об именовании ветвей"
 
 #: ../../about/process/branch-naming.rst:4
 msgid ""
 "Our branch-naming conventions ensure that software can be built by our CI "
 "and tested easily by other developers."
 msgstr ""
-"Наши соглашения о названиях веток разработки гарантируют, что программное "
-"обеспечение создается по технологии непрерывной интеграции (CI) и может быть "
-"легко протестировано другими разработчиками."
+"Наши соглашения по присвоению имен веткам гарантируют, что программное "
+"обеспечение может быть создано нашим CI и легко протестировано другими "
+"разработчиками."
 
 #: ../../about/process/branch-naming.rst:6
 msgid ""

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-03-28 07:27+0000\n"
+"PO-Revision-Date: 2021-07-08 19:57+0000\n"
 "Last-Translator: Carlod <carlod@disroot.org>\n"
 "Language-Team: Polish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/pl/>\n"
@@ -368,7 +368,7 @@ msgstr ""
 msgid "To determine your device's specifications, search for it on `GSM Arena <https://www.gsmarena.com>`_ and/or `Device Specification <https://www.devicespecifications.com/en>`_."
 msgstr ""
 "By określić specyfikacje twojego urządzenia, wyszkaj je na `GSM Arena "
-"<https://www.gsmarena.com>` i/lub `Device Specification "
+"<https://www.gsmarena.com>`_ i/lub `Device Specification "
 "<https://www.devicespecifications.com/en>`_."
 
 #: ../../porting/Preparations.rst:8
@@ -963,7 +963,7 @@ msgstr ""
 
 #: ../../porting/halium_7-1/Common_errors.rst:169
 msgid "Refer to section :ref:`Apply-apparmor-kernel-patches`."
-msgstr "Odwołanie do sekcji :ref:`Zaaplikuj patche apparmora do kernela`."
+msgstr "Odwołanie do sekcji :ref:`Apply-apparmor-kernel-patches`."
 
 #: ../../porting/halium_7-1/Common_errors.rst:171
 msgid "This section is a *Work in progress*"
@@ -1093,17 +1093,23 @@ msgid "There are also other options available that may be useful for you dependi
 msgstr ""
 "Dostępne są także inne opcje, które mogą być ci przydatne zależnie od "
 "formatu twojego urządzenia. Są wymienione poniżej i szczegółowo wyjaśnione w "
-"sekcji :ref:`Ustawienia-wyświetlania`."
+"sekcji :ref:`Display-settings`."
 
 #: ../../porting/halium_7-1/Configuring.rst:68
 msgid "All of these settings are guessed by Unity 8 if none are set. There are many cases, however, where the guess is wrong (for example, very high resolution phone displays will be identified as desktop computers). To manually set a value for these variables, simply edit the file at ``etc/ubuntu-touch-session.d/android.conf`` specifying them. For example, this is the file for the Nexus 7 tablet::"
 msgstr ""
+"Wszystkie te ustawienia są przyjmowane jako domyślne, jeśli nie są "
+"ustawione. Jest dużo przykładów, gdzie domyślne ustawienia są niepoprawne ("
+"np, smartfon z wysoką rozdzielczością będzie indentyfikowany jako komputer "
+"stacjonarny). Aby manualnie ustawić te wartości, zedytuj plik ``etc/ubuntu-"
+"touch-session.d/android.conf``. Na przykład, to jest plik dla tabletu Nexus "
+"7::"
 
 #: ../../porting/halium_7-1/Configuring.rst:76
 msgid "The :ref:`Display-settings` section details methods for deriving values for these variables."
 msgstr ""
-"Sekcja :ref:`Ustawinia-wyświetlania` szczegółowo opisuje metody wprowadzania "
-"tych wartości do zmiennych."
+"Sekcja :ref:`Display-settings` szczegółowo opisuje metody wprowadzania tych "
+"wartości do zmiennych."
 
 #: ../../porting/halium_7-1/Configuring.rst:78
 msgid "Once you have adjusted the ``android.conf`` file to the display settings needed for your device, this file should be incorporated into your build."
@@ -1116,7 +1122,7 @@ msgid "Create the file android.conf in your 'ubuntu' directory and enter the set
 msgstr ""
 "Stwórz plik android.conf w folderze 'ubuntu' i wpisz ustawienia które "
 "ustaliłeś/aś i przetestowałeś/aś w poprzedniej sekcji. Wykonaj 3 i 4 etap "
-"powyżej, pamiętając :ref:`Zbuduj-ponownie-system.img`."
+"powyżej, pamiętając :ref:`Rebuild-system.img`."
 
 #: ../../porting/halium_7-1/Configuring.rst:85
 msgid "Apply apparmor kernel patches"
@@ -1129,6 +1135,11 @@ msgstr "Czym jest apparmor? <https://wiki.ubuntu.com/AppArmor>`_"
 #: ../../porting/halium_7-1/Configuring.rst:89
 msgid "Start by downloading the backported `apparmor patch <https://github.com/ubports/apparmor-backports-ut>`_ corresponding to your device's kernel version. Your kernel version is specified at the beginning of your kernel defconfig file, i.e. the one you edited in section :ref:`Edit-kernel-config` above."
 msgstr ""
+"Zacznij od pobrania backportowanej `łatki apparmora <https://github.com/"
+"ubports/apparmor-backports-ut>`_ odpowiadającej wersji kernela twojego "
+"urządzenia. Wersja kernela jest sprecytowana na początku defconfigu twojego "
+"kernela, tj. tego, którego edytowałeś/aś w sekcji :ref:`Edit-kernel-config` "
+"powyżej."
 
 #: ../../porting/halium_7-1/Configuring.rst:91
 msgid "You now need to delete your entire BUILDDIR/kernel/VENDOR/MODEL/security/apparmor subdirectory and replace it with the one you downloaded. Then rebuild halium-boot."
@@ -1149,8 +1160,8 @@ msgstr ""
 #: ../../porting/halium_7-1/Configuring.rst:95
 msgid "Seek help as needed from one of the sources mentioned in section :ref:`Getting-community-help`."
 msgstr ""
-"Pomocy szukaj jeśli będziesz jej potrzebował/a w jednych ze źródeł "
-"wymienionych w sekcji :ref:`Uzyskiwanie-pomocy-od-społeczności`."
+"Jeśli będziesz jej potrzebował/a szkuaj pomocy w jednym ze źródeł "
+"wymienionych w sekcji :ref:`Getting-community-help`."
 
 #: ../../porting/halium_7-1/Configuring.rst:98
 msgid "Sound configuration"
@@ -1178,8 +1189,7 @@ msgstr "Na końcu pliku dodaj to::"
 #: ../../porting/halium_7-1/Configuring.rst:117
 msgid "Now complete steps 3 and 4, taking care to remember the note on how to :ref:`Rebuild-system.img`."
 msgstr ""
-"Teraz wykonaj kroki 3 i 4, pamiętając o tym jak :ref:`Zbuduj-ponownie-"
-"system.img`."
+"Teraz wykonaj kroki 3 i 4, pamiętając o tym jak :ref:`Rebuild-system.img`."
 
 #: ../../porting/halium_7-1/Configuring.rst:120
 msgid "Further configuration"
@@ -1621,7 +1631,7 @@ msgstr ""
 "Teraz, kiedy jesteś zalogowany/a pozostało jeszcze wiele rzeczy do "
 "skonfigurowania zanim twoje urządzenie stanie się w pełni funkcjonalnym "
 "portem Ubuntu Touch. Właściwym sposobem jest przechowywanie tych "
-"konfiguracji jako nakładkę (:ref:`Nakładka`), a nie tworzenie folderu "
+"konfiguracji jako nakładkę (:ref:`Overlay-files`), a nie tworzenie folderu "
 "głównego możliwym do zapisu, jak opisano poniżej. Jednakże, aby szybko "
 "ustawić udev rules, które są niezbędne, aby wykonać następne kroki, będziesz "
 "musiał użyć tej metody podczas pierwszej konfiguracji."
@@ -1659,8 +1669,8 @@ msgstr ""
 msgid "When Unity 8 is first brought up on your device, you will probably notice that everything is very small. The :ref:`Display-scaling` section describes how to deal with this."
 msgstr ""
 "Kiedy Unity 8 pojawi się po raz pierwszy na twoim urządzeniu zauważysz, że "
-"wszystko jest strasznie małe. Sekcja :ref:`Skalowanie-ekranu` opisze jak "
-"sobie z tym poradzić."
+"wszystko jest strasznie małe. Sekcja :ref:`Display-scaling` opisze jak sobie "
+"z tym poradzić."
 
 #: ../../porting/halium_7-1/Unity8.rst:31
 msgid "Problems when bringing up Unity 8"
@@ -1668,7 +1678,7 @@ msgstr "Problemy z uruchamianiem Unity 8"
 
 #: ../../porting/halium_7-1/Unity8.rst:33
 msgid "Refer to :ref:`Known-issues-when-bringing-up-Unity-8`."
-msgstr "Odwołanie do :ref:`Znane-problemy-z-uruchamianiem-Unity-8`."
+msgstr "Odwołanie do :ref:`Known-issues-when-bringing-up-Unity-8`."
 
 #: ../../porting/halium_7-1/index.rst:2
 msgid "Halium 7.1"

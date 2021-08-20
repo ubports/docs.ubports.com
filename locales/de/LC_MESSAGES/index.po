@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-16 17:49-0500\n"
-"PO-Revision-Date: 2019-11-10 16:36+0000\n"
-"Last-Translator: Kai Goldbeck <kaiuwe.goldbeck@mailbox.org>\n"
+"PO-Revision-Date: 2021-07-24 14:45+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-index/de/>\n"
 "Language: de\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../index.rst:27
@@ -42,19 +42,19 @@ msgstr "Portierung"
 
 #: ../../index.rst:75
 msgid "Click Packages"
-msgstr ""
+msgstr "Click Pakete"
 
 #: ../../index.rst:75
 msgid "Ubuntu UI-Toolkit"
-msgstr ""
+msgstr "Ubuntu Benutzeroberflächen-Werkzeug (UI-Toolkit)"
 
 #: ../../index.rst:75
 msgid "Clickable"
-msgstr ""
+msgstr "Anklickbar"
 
 #: ../../index.rst:75
 msgid "Halium"
-msgstr ""
+msgstr "Halium (Portierungsprojekt)"
 
 #: ../../index.rst:75
 msgid "Platform"
@@ -87,6 +87,13 @@ msgid ""
 "system components <systemdev/index>`. If this is your first time here, "
 "please consider reading our :doc:`introduction <about/introduction>`."
 msgstr ""
+"Auf diesen Seiten stellen wir Anleitungen zur Verfügung, um :doc:`Ubuntu "
+"Touch auf Smartphones zu installieren <userguide/install>`, :doc:`Ubuntu "
+"Touch zu nutzen <userguide/dailyuse/index>`, :doc:`Apps für Ubuntu Touch zu "
+"entwickeln <appdev/index>`, :doc:`Ubuntu Touch auf ein Android-Smartphone zu "
+"portieren <porting/index>` und :doc:`mehr über Systemkomponenten zu lernen <"
+"systemdev/index>`. Sofern dies der erste Besuch hier bei uns ist, empfehlen "
+"wir einen Blick in unsere :doc:`Einführung <about/introduction>`."
 
 #: ../../index.rst:10
 msgid ""
@@ -104,15 +111,15 @@ msgstr ""
 
 #: ../../index.rst:16
 msgid "`English <https://docs.ubports.com/en/latest/>`_"
-msgstr "`Englisch <https://docs.ubports.com/en/latest/>`_"
+msgstr "`English <https://docs.ubports.com/en/latest/>`_"
 
 #: ../../index.rst:17
 msgid "`Català <https://docs.ubports.com/ca/latest/>`_"
-msgstr "`Katalanisch <https://docs.ubports.com/ca/latest/>`_"
+msgstr "`Català <https://docs.ubports.com/ca/latest/>`_"
 
 #: ../../index.rst:18
 msgid "`Français <https://docs.ubports.com/fr/latest/>`_"
-msgstr "`Französisch <https://docs.ubports.com/fr/latest/>`_"
+msgstr "`Français <https://docs.ubports.com/fr/latest/>`_"
 
 #: ../../index.rst:19
 msgid "`Deutsch <https://docs.ubports.com/de/latest/>`_"
@@ -120,27 +127,27 @@ msgstr "`Deutsch <https://docs.ubports.com/de/latest/>`_"
 
 #: ../../index.rst:20
 msgid "`Italiano <https://docs.ubports.com/it/latest/>`_"
-msgstr "`Italienisch <https://docs.ubports.com/de/latest/>`_"
+msgstr "`Italiano <https://docs.ubports.com/it/latest/>`_"
 
 #: ../../index.rst:21
 msgid "`Română <https://docs.ubports.com/ro/latest/>`_"
-msgstr "`Rumänsich <https://docs.ubports.com/ro/latest/>`_"
+msgstr "`Română <https://docs.ubports.com/ro/latest/>`_"
 
 #: ../../index.rst:22
 msgid "`Русский <https://docs.ubports.com/ru/latest>`_"
-msgstr ""
+msgstr "`Русский <https://docs.ubports.com/ru/latest>`_"
 
 #: ../../index.rst:23
 msgid "`Türkçe <https://docs.ubports.com/tr/latest/>`_"
-msgstr "`Türkisch <https://docs.ubports.com/tr/latest/>`_"
+msgstr "`Türkçe <https://docs.ubports.com/tr/latest/>`_"
 
 #: ../../index.rst:24
 msgid "`Español <https://docs.ubports.com/es/latest/>`_"
-msgstr "`Spanisch <https://docs.ubports.com/es/latest/>`_"
+msgstr "`Español <https://docs.ubports.com/es/latest/>`_"
 
 #: ../../index.rst:25
 msgid "`Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_"
-msgstr ""
+msgstr "`Vereinfachtes Chinesisch <https://docs.ubports.com/zh_CN/latest/>`_"
 
 #~ msgid ""
 #~ "On this website you find instructions how to install Ubuntu Touch on your "

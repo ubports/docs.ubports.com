@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 17:42-0600\n"
-"PO-Revision-Date: 2020-10-27 14:25+0000\n"
+"POT-Creation-Date: 2021-06-29 16:27-0500\n"
+"PO-Revision-Date: 2021-08-20 09:43+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-humanguide/ru/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.3\n"
 
 #: ../../humanguide/app-layout/app-main-view.rst:2
@@ -471,7 +471,7 @@ msgstr ""
 "Вся система и приложения выполнены по правилам `Suru design principles "
 "<http://web.archive.org/web/20191223082720/https://docs.ubuntu.com/phone/en/"
 "apps/design/get-started/design-philosophy>`__, авторы которых - компания "
-"Canonical и`Samuel Hewitt <https://samuelhewitt.com>`__."
+"Canonical и`Samuel Hewitt<https://samuelhewitt.com>`__."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:7
 msgid "Design Philosophy and Suru Meaning"
@@ -765,7 +765,7 @@ msgid ""
 "|settings.svg|"
 msgstr ""
 "|stock_message.svg| |share.svg| |stock_alarm-clock.svg| |security-alert.svg| "
-"|settings.svg|"
+"|settings.svg| (иконки)"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:12
 msgid ""
@@ -801,11 +801,11 @@ msgstr ""
 "Ubuntu. Шаблоны шрифтов можно применить к символу, чтобы определить его "
 "контуры."
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:27
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:29
 msgid "Strokes"
 msgstr "Линии"
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:29
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:31
 msgid ""
 "Stroke ends are squared but the upper end of vertical strokes is slightly "
 "oblique with a +10º angle."
@@ -813,11 +813,11 @@ msgstr ""
 "Концы линий имеют прямоугольную форму, но верхний конец вертикальных линий "
 "слегка скошен под углом + 10º."
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:34
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:38
 msgid "Rotation"
 msgstr "Вращение"
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:36
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:40
 msgid ""
 "When they are not horizontal or vertical, objects are oriented along a +45º "
 "axis."
@@ -825,11 +825,11 @@ msgstr ""
 "Когда объекты не расположены горизонтально или вертикально, они "
 "ориентированы по оси + 45º."
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:41
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:47
 msgid "Corners"
 msgstr "Углы"
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:43
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:49
 msgid ""
 "Curved corners are preferred if possible. The following picture shows a zoom "
 "on the default outer and inner curvatures, with nodes and Bezier handle. The "
@@ -840,11 +840,11 @@ msgstr ""
 "узлами и маркером Безье. Кривизну по умолчанию можно уменьшить, если "
 "используется форма поменьше."
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:48
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:56
 msgid "Arrows"
 msgstr "Стрелки"
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:50
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:58
 msgid ""
 "A chevron symbol is used for navigation arrows. The arrowhead is an "
 "isosceles triangle where the two equal sides are slightly curved (following "
@@ -854,11 +854,11 @@ msgstr ""
 "собой равнобедренный треугольник, две равные стороны которого слегка "
 "изогнуты (по образцу буквы \"Y\")."
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:55
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:65
 msgid "Opacity"
 msgstr "Тени и непрозрачность"
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:57
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:67
 msgid ""
 "50% opacity is used to reflect the status of an indicator. In case of a "
 "double space (enabled and disabled, for example), the opacity of the whole "
@@ -870,11 +870,11 @@ msgstr ""
 "значка изменится. Когда статус допускает диапазон значений, можно изменить "
 "прозрачность отдельной части значка."
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:62
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:74
 msgid "Grid"
 msgstr "Сетка"
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:64
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:76
 msgid ""
 "Interface icons are designed for 96x96 pixels, with at least 4 pixels of "
 "margin on every side."
@@ -1063,7 +1063,7 @@ msgstr ""
 "По умолчанию в системе используется шрифт `Ubuntu <https://design.ubuntu.com/"
 "font/>`__ `[2] <https://en.wikipedia.org/wiki/Ubuntu_(typeface)>`__."
 
-#: ../../humanguide/design-concepts/typography.rst:11
+#: ../../humanguide/design-concepts/typography.rst:13
 msgid ""
 "For the font sizes to be consistent across devices, instead of setting the "
 "font size as a number of pixels or points, it is imperative to define the "
@@ -1073,128 +1073,128 @@ msgstr ""
 "устанавливать размер шрифта не в виде количества пикселей или точек, а "
 "названиях размеров:"
 
-#: ../../humanguide/design-concepts/typography.rst:14
+#: ../../humanguide/design-concepts/typography.rst:16
 msgid "Font Size Name"
 msgstr "Название размера шрифта"
 
-#: ../../humanguide/design-concepts/typography.rst:14
+#: ../../humanguide/design-concepts/typography.rst:16
 msgid "gu"
 msgstr "gu"
 
-#: ../../humanguide/design-concepts/typography.rst:14
+#: ../../humanguide/design-concepts/typography.rst:16
 msgid "Desktop"
 msgstr "Десктоп"
 
-#: ../../humanguide/design-concepts/typography.rst:14
+#: ../../humanguide/design-concepts/typography.rst:16
 msgid "Phone"
 msgstr "Смартфон"
 
-#: ../../humanguide/design-concepts/typography.rst:14
+#: ../../humanguide/design-concepts/typography.rst:16
 msgid "Tablet"
 msgstr "Планшет"
 
-#: ../../humanguide/design-concepts/typography.rst:18
+#: ../../humanguide/design-concepts/typography.rst:20
 msgid "4\" HD Screen"
 msgstr "Экран 4\" HD"
 
-#: ../../humanguide/design-concepts/typography.rst:18
+#: ../../humanguide/design-concepts/typography.rst:20
 msgid "10\" HD screen"
 msgstr "Экран 10\" HD"
 
-#: ../../humanguide/design-concepts/typography.rst:21
+#: ../../humanguide/design-concepts/typography.rst:23
 msgid "x-small"
-msgstr "x-small"
+msgstr "x-small (xs)"
 
-#: ../../humanguide/design-concepts/typography.rst:21
+#: ../../humanguide/design-concepts/typography.rst:23
 msgid "1.25"
 msgstr "1.25"
 
-#: ../../humanguide/design-concepts/typography.rst:21
+#: ../../humanguide/design-concepts/typography.rst:23
 msgid "10 px"
 msgstr "10 px"
 
-#: ../../humanguide/design-concepts/typography.rst:21
+#: ../../humanguide/design-concepts/typography.rst:23
 msgid "22 px"
 msgstr "22 px"
 
-#: ../../humanguide/design-concepts/typography.rst:21
 #: ../../humanguide/design-concepts/typography.rst:23
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "12 px"
 msgstr "12 px"
 
-#: ../../humanguide/design-concepts/typography.rst:23
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "small"
-msgstr "small"
+msgstr "small (малый)"
 
-#: ../../humanguide/design-concepts/typography.rst:23
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "1.5"
 msgstr "1.5"
 
-#: ../../humanguide/design-concepts/typography.rst:23
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "27 px"
 msgstr "27 px"
 
-#: ../../humanguide/design-concepts/typography.rst:23
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "15 px"
 msgstr "15 px"
 
-#: ../../humanguide/design-concepts/typography.rst:25
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "medium"
 msgstr "medium"
 
-#: ../../humanguide/design-concepts/typography.rst:25
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "1.75"
 msgstr "1.75"
 
-#: ../../humanguide/design-concepts/typography.rst:25
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "14 px"
 msgstr "14 px"
 
-#: ../../humanguide/design-concepts/typography.rst:25
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "31 px"
 msgstr "31 px"
 
-#: ../../humanguide/design-concepts/typography.rst:25
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "18 px"
 msgstr "18 px"
 
-#: ../../humanguide/design-concepts/typography.rst:27
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "large"
 msgstr "large"
 
-#: ../../humanguide/design-concepts/typography.rst:27
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "2.5"
 msgstr "2.5"
 
-#: ../../humanguide/design-concepts/typography.rst:27
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "20 px"
 msgstr "20 px"
 
-#: ../../humanguide/design-concepts/typography.rst:27
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "45 px"
 msgstr "45 px"
 
-#: ../../humanguide/design-concepts/typography.rst:27
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "25 px"
 msgstr "25 px"
 
-#: ../../humanguide/design-concepts/typography.rst:29
+#: ../../humanguide/design-concepts/typography.rst:31
 msgid "x-large"
 msgstr "x-large"
 
-#: ../../humanguide/design-concepts/typography.rst:29
+#: ../../humanguide/design-concepts/typography.rst:31
 msgid "3.5"
 msgstr "3.5"
 
-#: ../../humanguide/design-concepts/typography.rst:29
+#: ../../humanguide/design-concepts/typography.rst:31
 msgid "34 px"
 msgstr "34 px"
 
-#: ../../humanguide/design-concepts/typography.rst:29
+#: ../../humanguide/design-concepts/typography.rst:31
 msgid "76 px"
 msgstr "76 px"
 
-#: ../../humanguide/design-concepts/typography.rst:29
+#: ../../humanguide/design-concepts/typography.rst:31
 msgid "42 px"
 msgstr "42 px"
 
@@ -1226,7 +1226,7 @@ msgstr "Единицы измерения"
 
 #: ../../humanguide/design-concepts/units.rst:13
 msgid "Grid Unit"
-msgstr "Grid Unit"
+msgstr "Grid Unit (Единица сетки)"
 
 #: ../../humanguide/design-concepts/units.rst:15
 msgid ""
@@ -1530,10 +1530,8 @@ msgstr ""
 "размером 252 на 252 пикселя."
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:16
-#, fuzzy
-#| msgid "Different redered sizes of the same svg image"
 msgid "Different rendered sizes of the same svg image"
-msgstr "Разные размеры одного и того же SVG-изображения после рендеринга"
+msgstr "Разные размеры одного SVG-изображения после рендеринга"
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:18
 msgid ""

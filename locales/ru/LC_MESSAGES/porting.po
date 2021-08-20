@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-01-29 20:35+0000\n"
-"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
+"PO-Revision-Date: 2021-07-13 23:02+0000\n"
+"Last-Translator: German Semenov <GermanAizek@yandex.ru>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/ru/>\n"
 "Language: ru\n"
@@ -207,7 +207,7 @@ msgstr "Версия Halium"
 
 #: ../../porting/Intro.rst:35
 msgid "Lineage OS (LOS)"
-msgstr "Lineage OS (LOS)"
+msgstr "Lineage OS"
 
 #: ../../porting/Intro.rst:37
 msgid "7.1"
@@ -389,10 +389,10 @@ msgid ""
 msgstr ""
 "Это руководство не предполагает обширных знаний или навыков в какой-либо "
 "конкретной области. Однако , нужно знать как минимум минимум основы работы в "
-"консоли и базовые команды оболочки Linux.Если у вас есть навыки "
-"программирования, это будет серьезным подспорьем, особенно если Вы знакомы с "
-"C / C ++. Кроме того, нужно ознакомиться с git, настроить учетную запись "
-"github и начать документировать свои действия, как описано в этом "
+"консоли и базовые команды оболочки Linux. Если у вас есть навыки "
+"программирования, это пригодится в какой-то момент, особенно если вы будете "
+"знакомы с C/C++. Кроме того, нужно ознакомиться с git, настроить учетную "
+"запись github и начать документировать свои действия, как описано в этом "
 "руководстве и `руководстве по написанию сборок Halium <http://docs.halium."
 "org/en/latest/porting/first-steps.html>`_ ."
 
@@ -437,7 +437,7 @@ msgstr "IRC: #halium на freenode"
 
 #: ../../porting/Intro.rst:92
 msgid "Matrix: #halium:matrix.org"
-msgstr "Matrix: #halium:matrix.org"
+msgstr "Matrix Project: #halium:matrix.org"
 
 #: ../../porting/Intro.rst:97
 msgid "General advice"
@@ -727,9 +727,8 @@ msgid "Build the images for Ubuntu Touch"
 msgstr "Сборка образа с Ubuntu Touch"
 
 #: ../../porting/halium_7-1/Building.rst:29
-#, fuzzy
 msgid "Fix mount points"
-msgstr "Настройка точек монтирования"
+msgstr "Исправление точек монтирования"
 
 #: ../../porting/halium_7-1/Building.rst:31
 msgid ""
@@ -904,23 +903,23 @@ msgstr ""
 
 #: ../../porting/halium_7-1/Building.rst:83
 msgid "``cd BUILDDIR``"
-msgstr "``cd BUILDDIR``"
+msgstr "`` cd BUILDDIR ``"
 
 #: ../../porting/halium_7-1/Building.rst:84
 msgid "``source build/envsetup.sh``"
-msgstr "``source build/envsetup.sh``"
+msgstr "`` source build/envsetup.sh ``"
 
 #: ../../porting/halium_7-1/Building.rst:85
 msgid "``breakfast devicename``"
-msgstr "``breakfast devicename``"
+msgstr "`` breakfast devicename ``"
 
 #: ../../porting/halium_7-1/Building.rst:86
 msgid "``mka halium-boot``"
-msgstr "``mka halium-boot``"
+msgstr "`` mka halium-boot ``"
 
 #: ../../porting/halium_7-1/Building.rst:87
 msgid "``mka systemimage``"
-msgstr "``mka systemimage``"
+msgstr "`` mka systemimage ``"
 
 #: ../../porting/halium_7-1/Building.rst:90
 msgid "Troubleshooting the build process"
@@ -1733,8 +1732,8 @@ msgid ""
 msgstr ""
 "Если у вас 64-битное устройство ARM (aarch64), для установки подойдет тот же "
 "rootfs. Можно установить 64-битную версию, но с ней может быть больше "
-"проблем из-за текущего состояния разработки rootfs. Если у вас устройство "
-"x86, сообщите нам. Для этой платформы пока нет rootfs-сборок."
+"проблем из-за текущего состояния разработки rootfs. (Если у вас устройство "
+"x86, сообщите нам. Для этой платформы пока нет rootfs-сборок.)"
 
 #: ../../porting/halium_7-1/Installing.rst:46
 msgid ""
@@ -1886,7 +1885,7 @@ msgstr "Px/GU"
 
 #: ../../porting/halium_7-1/Reference_material.rst:19
 msgid "QtWebKit DPR"
-msgstr "QtWebKit DPR"
+msgstr "QTWEBKIT_DPR"
 
 #: ../../porting/halium_7-1/Reference_material.rst:21
 msgid "'Normal' density laptop"
@@ -1911,7 +1910,7 @@ msgstr "1.0"
 
 #: ../../porting/halium_7-1/Reference_material.rst:22
 msgid "ASUS Nexus 7"
-msgstr "ASUS Nexus 7"
+msgstr "Nexus 7 (ASUS)"
 
 #: ../../porting/halium_7-1/Reference_material.rst:22
 msgid "1280x800"
@@ -1954,7 +1953,7 @@ msgstr "1.5"
 
 #: ../../porting/halium_7-1/Reference_material.rst:24
 msgid "Samsung Galaxy Nexus"
-msgstr "Samsung Galaxy Nexus"
+msgstr "Galaxy Nexus (Samsung)"
 
 #: ../../porting/halium_7-1/Reference_material.rst:24
 msgid "1280x720"
@@ -1975,7 +1974,7 @@ msgstr "18"
 
 #: ../../porting/halium_7-1/Reference_material.rst:25
 msgid "LG Nexus 4"
-msgstr "LG Nexus 4"
+msgstr "Nexus 4 (LG)"
 
 #: ../../porting/halium_7-1/Reference_material.rst:25
 msgid "1280x768"
@@ -1991,7 +1990,7 @@ msgstr "320"
 
 #: ../../porting/halium_7-1/Reference_material.rst:26
 msgid "Samsung Nexus 10"
-msgstr "Samsung Nexus 10"
+msgstr "Nexus 10 (Samsung)"
 
 #: ../../porting/halium_7-1/Reference_material.rst:26
 msgid "2560x1600"
@@ -2011,7 +2010,7 @@ msgstr "20"
 
 #: ../../porting/halium_7-1/Reference_material.rst:27
 msgid "Fairphone 2"
-msgstr "Fairphone 2"
+msgstr "Fairphone 2 (FP2)"
 
 #: ../../porting/halium_7-1/Reference_material.rst:27
 #: ../../porting/halium_7-1/Reference_material.rst:28
@@ -2038,7 +2037,7 @@ msgstr "2.5"
 
 #: ../../porting/halium_7-1/Reference_material.rst:28
 msgid "LG Nexus 5"
-msgstr "LG Nexus 5"
+msgstr "Nexus 5 (LG)"
 
 #: ../../porting/halium_7-1/Reference_material.rst:28
 msgid "4.95\""
@@ -2186,7 +2185,7 @@ msgstr "Прочитайте главу :ref:`Known-issues-when-bringing-up-Unit
 
 #: ../../porting/halium_7-1/index.rst:2
 msgid "Halium 7.1"
-msgstr "Halium 7.1"
+msgstr "Halium Project 7.1"
 
 #: ../../porting/halium_7-1/index.rst:4
 msgid ""

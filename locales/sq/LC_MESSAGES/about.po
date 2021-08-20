@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-29 13:44-0500\n"
-"PO-Revision-Date: 2018-06-03 16:55+0000\n"
-"Last-Translator: Rrahim Gashi <jimmygashi@gmail.com>\n"
+"PO-Revision-Date: 2021-07-24 20:04+0000\n"
+"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
 "Language-Team: Albanian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-about/sq/>\n"
 "Language: sq\n"
@@ -17,14 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../../about/introduction.rst:2
 msgid "Introduction"
 msgstr "Paraqitje"
 
 #: ../../about/introduction.rst:4
-#, fuzzy
 msgid ""
 "This is the documentation for the UBports project. Our goal is to create a "
 "Free and open-source (GPL if possible) mobile operating system that "
@@ -39,7 +38,6 @@ msgid "About UBports"
 msgstr "Rreth UBports"
 
 #: ../../about/introduction.rst:9
-#, fuzzy
 msgid ""
 "The UBports project was founded by Marius Gripsgard in 2015 and in its "
 "infancy was a place where developers could share ideas and educate each "
@@ -51,7 +49,6 @@ msgstr ""
 "gjithnjë e më shumë pajisje."
 
 #: ../../about/introduction.rst:11
-#, fuzzy
 msgid ""
 "After Canonical suddenly announced `their plans to terminate support of "
 "Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-"
@@ -70,7 +67,6 @@ msgid "About the Documentation"
 msgstr "Rreth dokumentacionit"
 
 #: ../../about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This documentation is always improving thanks to the members of the UBports "
 "community. It is written in ReStructuredText and converted into this "
@@ -84,8 +80,8 @@ msgstr ""
 "komunitetit. Është shkruar në ReStructuredText dhe sphinx <http://www.sphinx-"
 "doc.org/en/stable/> `_,` ReCommonMark <http://recommonmark.readthedocs.io/en/"
 "latest/> `_ dhe 'Lexo Dokumentet <https://readthedocs.io> `_ konvertuar në "
-"këtë formë të lexueshme. Edhe ju mund të merrni pjesë dhe të filloni me: "
-"doc: `paraqitja e dokumentacionit </ kontribute / dokumentacioni>`."
+"këtë formë të lexueshme. Edhe ju mund të merrni pjesë dhe të filloni me: doc:"
+" `paraqitja e dokumentacionit </ kontribute / dokumentacioni>`."
 
 #: ../../about/introduction.rst:18
 msgid ""
@@ -296,7 +292,6 @@ msgid "Where are bugs tracked?"
 msgstr "Ku janë përndjekur gabimet?"
 
 #: ../../about/process/issue-tracking.rst:9
-#, fuzzy
 msgid ""
 "Since our quality assurance depends heavily on the community, we try to "
 "track issues where the user would expect them, instead of separated by "
@@ -345,7 +340,6 @@ msgid "GitHub projects"
 msgstr "GitHub-Projektet"
 
 #: ../../about/process/issue-tracking.rst:30
-#, fuzzy
 msgid ""
 "To increase transparency and communication, GitHub projects (Kanban-Boards) "
 "are used wherever practical. In case of github.com/ubports/ubuntu-touch, a "
@@ -353,18 +347,17 @@ msgid ""
 "so that only issues that belong to a specific team or affect a specific "
 "device can be viewed."
 msgstr ""
-"Për të rritur transparencën dhe komunikimin, projektet GitHub (bordet "
-"Kanban) përdoren sa herë që është praktike. Në rastin e github.com/ubports/"
-"ubuntu-touch, një projekt përdoret për të gjitha problemet. Projektet "
-"mbështesin filtrimin e etiketimit në mënyrë që të mund të shihni probleme të "
-"një ekipi ose pajisjeje të veçantë."
+"Për të rritur transparencën dhe komunikimin, projektet GitHub (bordet Kanban)"
+" përdoren sa herë që është praktike. Në rastin e github.com/ubports/ubuntu-"
+"touch, një projekt përdoret për të gjitha problemet. Projektet mbështesin "
+"filtrimin e etiketimit në mënyrë që të mund të shihni probleme të një ekipi "
+"ose pajisjeje të veçantë."
 
 #: ../../about/process/issue-tracking.rst:36
 msgid "These are the standard columns:"
 msgstr "Këto janë kolonat standarde:"
 
 #: ../../about/process/issue-tracking.rst:38
-#, fuzzy
 msgid ""
 "**None (awaiting triage)**: The issue has been approved by a member of the "
 "QA team and is awaiting review from the responsible development team. if the "
@@ -381,7 +374,6 @@ msgstr ""
 "pranohet nga ekipi i zhvillimit."
 
 #: ../../about/process/issue-tracking.rst:39
-#, fuzzy
 msgid ""
 "**Accepted**: The issue has been accepted by the responsible development-"
 "team. If the issue is a bugreport, the team has decided that it should be "
@@ -402,7 +394,6 @@ msgstr ""
 "thotë se një zhvillues i ka caktuar problemit."
 
 #: ../../about/process/issue-tracking.rst:41
-#, fuzzy
 msgid ""
 "**Quality Assurance**: The patch is completed and has passed initial "
 "testing. The QA team will now review it and provide feedback. If problems "
@@ -425,7 +416,6 @@ msgstr ""
 "shkon mirë, në lirimin e ardhshëm të kanalit të qëndrueshëm."
 
 #: ../../about/process/issue-tracking.rst:43
-#, fuzzy
 msgid ""
 "**None (removed from the project)**: If the issue is open and labeled \"help "
 "wanted\", community contributions are required to resolve the issue. If it's "
@@ -474,7 +464,6 @@ msgstr ""
 "informacione të tjera nga përdoruesit e prekur"
 
 #: ../../about/process/issue-tracking.rst:55
-#, fuzzy
 msgid ""
 "**bug**: This issue is a confirmed bug. If it's reproducible, reproduction "
 "steps are described."
@@ -695,7 +684,6 @@ msgstr ""
 "shtohet gjithashtu."
 
 #: ../../about/process/issue-tracking.rst:120
-#, fuzzy
 msgid ""
 "Once a *developer* is assigned and starts working on the issue, it is moved "
 "to \"In Development\". As soon as they have something to show for, the issue "
@@ -710,7 +698,6 @@ msgstr ""
 "kuptohet se si të testojë patch-in e tij në një koment mbi çështjen."
 
 #: ../../about/process/issue-tracking.rst:121
-#, fuzzy
 msgid ""
 "The *QA-Team* tests the fix on all devices and provides feedback to the "
 "developer. If problems are found, the issue is re-opened and goes back to "
@@ -718,9 +705,9 @@ msgid ""
 "next release."
 msgstr ""
 "* QA-Team * teston rregullimin në të gjitha pajisjet dhe jep reagime për "
-"zhvilluesin. Nëse gjenden probleme, çështja rihapet dhe shkon prapa në "
-"\"Pranohet\", përndryshe është zhvendosur në \"Çlirimin e kandidatit\" për "
-"t'u përfshirë në lirimin e ardhshëm."
+"zhvilluesin. Nëse gjenden probleme, çështja rihapet dhe shkon prapa në \""
+"Pranohet\", përndryshe është zhvendosur në \"Çlirimin e kandidatit\" për t'u "
+"përfshirë në lirimin e ardhshëm."
 
 #: ../../about/process/issue-tracking.rst:122
 msgid ""
@@ -735,7 +722,6 @@ msgid "repo.ubports.com"
 msgstr "repo.ubports.com"
 
 #: ../../about/process/ppa.rst:4
-#, fuzzy
 msgid ""
 "This is the package archive system for UBports projects. It hosts various "
 "PPAs containing all deb-components of Ubuntu Touch."
@@ -746,7 +732,6 @@ msgstr ""
 "speciale: doc: `git-branch naming convention <branch-naming>`."
 
 #: ../../about/process/ppa.rst:7
-#, fuzzy
 msgid "Repository naming convention"
 msgstr "Konventa e emërtimit të degës"
 
@@ -791,18 +776,16 @@ msgid "Creating new PPAs"
 msgstr ""
 
 #: ../../about/process/ppa.rst:26
-#, fuzzy
 msgid ""
 "New PPAs can be created dynamically by the CI server using a special :doc:"
 "`git-branch naming convention <branch-naming>`. The name of the branch "
 "translates literally to the name of the PPA: ``http://repo.ubports.com/dists/"
 "[branch name]``"
 msgstr ""
-"Emri i degës përkthehet fjalë për fjalë në emër të APP-së: `` http://repo."
-"ubports.com/dists/[branch name] ``"
+"Emri i degës përkthehet fjalë për fjalë në emër të APP-së: `` "
+"http://repo.ubports.com/dists/[branch name] ``"
 
 #: ../../about/process/ppa.rst:28
-#, fuzzy
 msgid ""
 "Non-standard PPAs (i.e. not ``xenial``, ``vivid`` or ``bionic``) are kept "
 "for three months. In case they need to be kept for a longer time, a file "
