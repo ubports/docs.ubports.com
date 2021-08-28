@@ -69,12 +69,13 @@ Since the GSI is a prebuilt, device-independent component, it effectively simpli
 Porting methods
 ---------------
 
-When porting based on Halium-7.1 there is only one available method to follow. However, the change in architecture introduced with Android 9 (Halium-9.0) entailed changes in porting method, clearing the way for different courses of action. This guide describes the Halium-7.1 method of porting, as well as two main methods for porting based on Halium-9.0 or later.
+This guide documents three different porting methods, which we call: **Full system image method**, **Halium-boot method**, and **Standalone kernel method**.
+When porting based on Halium-7.1 there is only one available method to follow. However, the change in architecture introduced with Android 9 (Halium-9.0) entailed changes in porting method, clearing the way for different courses of action.
 
 Porting based on Halium-7.1
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This version of Halium requires building both the boot image (halium-boot.img) and the full device specific system image (system.img) from source and installing these together with the UBports root file system (rootfs).
+**The full system image method:** This version of Halium requires building both the boot image (halium-boot.img) and the full device specific system image (system.img) from source and installing these together with the UBports root file system (rootfs).
 
 Porting based on Halium-9.0 (and later)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -84,7 +85,7 @@ Owing to the changes in architecture following the introduction of Android 9 / H
 * **The Halium-boot method:** Build halium-boot.img and install this together with the Halium GSI and the UBports rootfs.
 * **The standalone kernel method:** Build only the kernel and install this together with the Halium ramdisk, the Halium GSI and the UBports rootfs.
 
-The methods outlined above share some common steps, even between Halium versions. However, there are also significant differences that must not be missed. Therefore, the methods will be treated separately in the subsequent sections of this guide whenever the differences, and the concern for understandability, justify it.
+These methods share some common steps, however, there are also significant differences that must not be missed. Therefore, the methods will be treated separately in the subsequent sections where needed.
 
 The remainder of this section gives some words of advice to new porters. If you already have porting experience or ROM building experience, you can likely skip straight to :ref:`Preparations <Preparations>`.
 

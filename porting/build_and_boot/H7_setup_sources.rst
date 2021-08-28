@@ -1,7 +1,7 @@
 Halium-7.1 - Setting up the sources
 ===================================
 
-The sources necessary for the build depend on the porting method you will be following. 
+The sources necessary for the **full system image build** for Halium-7.1.
 
 Setting up the sources for Halium-7.1 builds
 --------------------------------------------

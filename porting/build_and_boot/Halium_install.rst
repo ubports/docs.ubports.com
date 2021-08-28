@@ -52,7 +52,7 @@ Start by downloading the appropriate rootfs for your device. You need a rootfs c
 Halium-9.0: Download the GSI
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-(If you have built your own system.img, skip to the next step.)
+If you have built your own system.img, skip to the next step.
 
 Download `the Halium 9 LXC container image (GSI) <https://ci.ubports.com/job/UBportsCommunityPortsJenkinsCI/job/ubports%252Fcommunity-ports%252Fjenkins-ci%252Fgeneric_arm64/job/main/>`_.
 

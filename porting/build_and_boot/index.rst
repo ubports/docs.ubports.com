@@ -1,18 +1,41 @@
 Building and booting
 ====================
 
-Now it's time to download and configure the necessary source code and start building.
+Now it's time to download and configure the necessary source code.
+Then we'll build it and get it to boot.
+Depending on the porting method, follow the sections outlined below:
 
-This depends on the Halium version and the porting method. Please refer only to the sections that are relevant to the method you are following.
-
+Full system image method
+------------------------
 .. toctree::
    :maxdepth: 1
-   :name: build_and_boot
 
    H7_setup_sources
    H7_build
+
+Halium-boot method
+------------------
+.. toctree::
+   :maxdepth: 1
+
    H9_setup_sources
    H9_build
-   Halium_install
+
+Standalone kernel method
+------------------------
+
+.. toctree::
+   :maxdepth: 1
+
    H9_gitlab_build
+
+Install and boot
+----------------
+
+Afterwards, proceed with these steps for all methods.
+
+.. toctree::
+   :maxdepth: 1
+
+   Halium_install
    Boot_debug

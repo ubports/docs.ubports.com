@@ -1,10 +1,12 @@
 
 .. _Gitlab-CI:
 
-Halium-9.0 - Using Gitlab CI scripts
-====================================
+Halium-9.0 - Standalone kernel method
+=====================================
 
-For some devices, Halium-9.0 (and later) ports can be built based on just the kernel source code for your specific device and SoC (system on chip). This method makes use of scripts that download and prepare the kernel source, build the boot image and combine this together with other necessary components, thus creating the files needed which can subsequently be flashed to the device.
+For some devices, Halium-9.0 (and later) ports can be built based on just the standalone kernel source code.
+
+This method makes use of scripts that download and prepare the kernel source, build the boot image and combine this together with other necessary components, thus creating the files needed which can subsequently be flashed to the device.
 
 Setting up the build environment
 --------------------------------
