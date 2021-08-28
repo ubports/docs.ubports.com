@@ -68,7 +68,7 @@ Download the repo script and make it executable::
     chmod a+rx ~/bin/repo
 
 Arch
-^^^^^
+^^^^
 
 If your host PC has a 64-bit architecture, you need to add the [multilib] repository to your /etc/pacman.conf . This will allow you to install and run i686 packages. Please refer to `‘Official Repositories/multilib’ on the Arch Wiki <https://wiki.archlinux.org/index.php/Official_repositories>`_.
 
