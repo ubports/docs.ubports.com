@@ -50,8 +50,8 @@ Android version  Halium version  Lineage OS (LOS)
 
 .. _What-is-a-GSI:
 
-What is a GSI?
---------------
+Generic System Image
+--------------------
 
 With Android 9.0 there came a significant change of architecture. The device-specific vendor blobs now reside on a separate partition instead of sharing a partition with the rest of the system image. This separation of device-specific code from generic code made possible what is known as the **Generic System Image (GSI)**.
 
