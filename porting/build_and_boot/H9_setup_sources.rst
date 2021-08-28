@@ -4,7 +4,7 @@ Halium-9.0 - Setting up the sources
 Initializing and downloading the Halium source
 ----------------------------------------------
 
-Create a directory for your Halium source tree::   
+Create a directory for your Halium source tree::
 
     mkdir halium && cd halium
 
@@ -20,7 +20,7 @@ With the Halium tree initialized you are ready to download the code by issuing t
 
     repo sync -c -j 16
 
-The download will take some time as it counts several gigabytes. If you have a fast internet connection, you may set an extra JOBS=[number] environment variable at the beginning of the command to open more parallel downloading jobs. Generally, 12 is recommended, which is the default. When it completes, your BUILDDIR will contain a copy of the Halium source tree, but important parts are still missing. 
+The download will take some time as it counts several gigabytes. If you have a fast internet connection, you may set an extra JOBS=[number] environment variable at the beginning of the command to open more parallel downloading jobs. Generally, 12 is recommended, which is the default. When it completes, your BUILDDIR will contain a copy of the Halium source tree, but important parts are still missing.
 
 Adding your device-specific source
 ----------------------------------
@@ -80,7 +80,7 @@ The target path is found in the repository’s name. The preceding “android”
 Vendor blobs
 """"""""""""
 
-Vendor blobs go in the vendor/ folder of your BUILDDIR. 
+Vendor blobs go in the vendor/ folder of your BUILDDIR.
 
 The first place to search for your device’s vendor blobs is in `'TheMuppets' GitHub organization <https://github.com/TheMuppets>`_. Enter your device’s codename into the search field and see if you get a match. If you are unable to find your device in TheMuppets, you will need to search elsewhere.
 
@@ -118,7 +118,7 @@ The following remotes are available by default in Halium 9.0:
 Remote Name  Remote Description, URL
 -----------  -----------------------
 github       LineageOS, https://github.com/
-gitlab       Gitlab, https://about.gitlab.com/  
+gitlab       Gitlab, https://about.gitlab.com/
 aosp         Android Open Source Project, https://android.googlesource.com
 ===========  =======================
 

@@ -10,7 +10,7 @@ What is a successful boot?
 
 When you boot your build for the first time you will normally not get anything on the screen. This is not necessarily an indication of something gone wrong. Your system may well have booted successfully and this can be ascertained by gaining remote access.
 
-If your system booted successfully, you will be able to connect to your device from your host using ssh and continue debugging and configuring from there. 
+If your system booted successfully, you will be able to connect to your device from your host using ssh and continue debugging and configuring from there.
 
 If something went wrong, you should normally be offered a telnet connection through which you can proceed with debugging. If you don't get either of these, the problem might be more difficult to determine. In either of these cases you should seek help, as explained below.
 

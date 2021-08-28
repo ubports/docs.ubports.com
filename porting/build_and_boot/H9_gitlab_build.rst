@@ -30,7 +30,7 @@ Ideally you should base your build on a previous build for a device with similar
 Configure, build and install
 ----------------------------
 
-Go through the file ``deviceinfo`` and make all necessary adjustments so that it conforms to your device. The first lines should be self-explanatory. 
+Go through the file ``deviceinfo`` and make all necessary adjustments so that it conforms to your device. The first lines should be self-explanatory.
 
 To complete the ``deviceinfo_flash_offset_`` lines, you will need to obtain and examine an existing ``boot.img`` for your particular device, e.g. from a LineageOS ROM. Lineage provides `a Python script for reading the information in question. <https://raw.githubusercontent.com/LineageOS/android_system_core/lineage-17.1/mkbootimg/unpack_bootimg.py>`_ Download this script and run it on the boot image you have obtained::
 

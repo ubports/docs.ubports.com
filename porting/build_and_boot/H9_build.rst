@@ -32,7 +32,7 @@ Breakfast will attempt to find your device, set up all of the environment variab
 Modify the kernel configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The default LineageOS/Halium kernel configuration file needs modifications as Ubuntu Touch requires a slightly different kernel config than Halium, including enabling Apparmor. A script that does this job is provided in your Halium source tree: ``BUILDDIR/halium/halium-boot/check-kernel-config``. 
+The default LineageOS/Halium kernel configuration file needs modifications as Ubuntu Touch requires a slightly different kernel config than Halium, including enabling Apparmor. A script that does this job is provided in your Halium source tree: ``BUILDDIR/halium/halium-boot/check-kernel-config``.
 
 Locate your configuration file. It should be at ``arch/arm/configs/<CONFIG>`` or ``arch/arm64/configs/<CONFIG>`` depending on the architecture of your device. If you have trouble finding it, run ``grep "TARGET_KERNEL_CONFIG" device/<VENDOR>/<CODENAME>/BoardConfig.mk`` to determine the location.
 
@@ -61,7 +61,7 @@ Now build the ``halium-boot.img`` using the commands::
 Build errors
 ^^^^^^^^^^^^
 
-There are a number of known build errors which you might encounter, depending first of all upon how rigorous you have been in following the steps outlined, but you may also run into unforeseen issues. If your build fails at first, make sure you have done exactly as described, then go through the list of `known errors in the Halium guide <https://docs.halium.org/en/latest/porting/common-kernel-build-errors.html#common-kernel-build-errors>`_. 
+There are a number of known build errors which you might encounter, depending first of all upon how rigorous you have been in following the steps outlined, but you may also run into unforeseen issues. If your build fails at first, make sure you have done exactly as described, then go through the list of `known errors in the Halium guide <https://docs.halium.org/en/latest/porting/common-kernel-build-errors.html#common-kernel-build-errors>`_.
 
 I your particular error is not listed, you will need to do some research of your own. If you end up here, know that there is a community of porters, developers and enthusiasts who might be able to help you. Refer to :ref:`Getting-community-help`.
 
@@ -70,7 +70,7 @@ I your particular error is not listed, you will need to do some research of your
 Building the system image (system.img)
 --------------------------------------
 
-Skip this step if you are going to base your port on the GSI. 
+Skip this step if you are going to base your port on the GSI.
 
 If on the other hand your goal is to build both halium-boot.img and a device specific system.img, you can now proceed directly to building the latter::
 
