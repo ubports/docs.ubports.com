@@ -6,7 +6,7 @@ The sources necessary for the build depend on the porting method you will be fol
 Setting up the sources for Halium-7.1 builds
 --------------------------------------------
 
-Create a directory for your Halium source tree::   
+Create a directory for your Halium source tree::
 
     mkdir halium && cd halium
 
@@ -20,14 +20,14 @@ With the Halium tree initialized you are ready to download the code by issuing t
 
     repo sync -c -j 16
 
-The download will take some time as it counts several gigabytes. If you have a fast internet connection, you may set an extra JOBS=[number] environment variable at the beginning of the command to open more parallel downloading jobs. Generally, 12 is recommended, which is the default. When it completes, your BUILDDIR will contain a copy of the Halium source tree, but important parts are still missing. 
+The download will take some time as it counts several gigabytes. If you have a fast internet connection, you may set an extra JOBS=[number] environment variable at the beginning of the command to open more parallel downloading jobs. Generally, 12 is recommended, which is the default. When it completes, your BUILDDIR will contain a copy of the Halium source tree, but important parts are still missing.
 
 Adding your device-specific source
 ----------------------------------
 
 The next step is to add the device-specific sources that need to be integrated into the source tree before you can attempt to build. The missing sources are those required to build the kernel as well as a host of other hardware-specific components of the port.
 
-The necessary sources need to be located and specified by creating a device manifest file (or editing an existing one) in the directory BUILDDIR/halium/devices/manifests. 
+The necessary sources need to be located and specified by creating a device manifest file (or editing an existing one) in the directory BUILDDIR/halium/devices/manifests.
 
 .. Note::
     A correct device manifest is crucial to the success of your port.

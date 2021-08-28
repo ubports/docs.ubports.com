@@ -18,7 +18,7 @@ When setting up the build environment you need to have Python 3.6 or newer insta
 Debian (Stretch or newer) / Ubuntu (16.04 or 18.04)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If your host PC has a 64-bit architecture (amd64), enable the usage of the i386 architecture::  
+If your host PC has a 64-bit architecture (amd64), enable the usage of the i386 architecture::
 
     sudo dpkg --add-architecture i386
 
@@ -38,7 +38,7 @@ Install the required dependencies::
 Ubuntu (20.04 or newer)
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-If your host PC has a 64-bit architecture (amd64), enable the usage of the i386 architecture::  
+If your host PC has a 64-bit architecture (amd64), enable the usage of the i386 architecture::
 
     sudo dpkg --add-architecture i386
 
