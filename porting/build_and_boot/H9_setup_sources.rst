@@ -27,7 +27,7 @@ Adding your device-specific source
 
 The next step is to add the device-specific sources that need to be integrated into the source tree before you can attempt to build. The missing sources are those required to build the kernel as well as a host of other hardware-specific components of the port.
 
-The necessary sources need to be located and specified by creating a device manifest file (or editing an existing one) in the directory BUILDDIR/halium/devices/manifests. 
+The necessary sources need to be located and specified by creating a device manifest file (or editing an existing one) in the directory ``BUILDDIR/halium/devices/manifests``.
 
 .. Note::
     A correct device manifest is crucial to the success of your port.
@@ -37,15 +37,15 @@ Locating the sources
 
 Locate your device repository on `LineageOS’s GitHub organization <https://github.com/LineageOS>`_. This is done by typing your device’s codename into the search box. The device repository follows the naming convention: android_device_[manufacturer]_[device]. Make a note of this name.
 
-Open the device repository on Github. It will contain a lineage.dependencies (or cm.dependencies) file which specifies all other repositories that your device is reliant upon.
+Open the device repository on Github. It will contain a ``lineage.dependencies`` (or ``cm.dependencies``) file which specifies all other repositories that your device is reliant upon.
 
 .. _Note:
-    During the course of the porting process you will need to make modifications to the device repository as well as one or more of the others specified in lineage.dependencies (or cm.dependencies). It is therefore adviseable to create a Github account and save your own copy of these by forking them to your account.
+    During the course of the porting process you will need to make modifications to the device repository as well as one or more of the others specified in ``lineage.dependencies`` (or ``cm.dependencies``). It is therefore adviseable to create a Github account and save your own copy of these by forking them to your account.
 
 Creating the device manifest file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Now create (or edit) the file BUILDDIR/halium/devices/manifests/[manufacturer]_[device].xml. (The description below presupposes that you are creating the file from scratch.)
+Now create (or edit) the file ``BUILDDIR/halium/devices/manifests/[manufacturer]_[device].xml``. (The description below presupposes that you are creating the file from scratch.)
 
 Paste the following into the file::
 
@@ -57,7 +57,7 @@ Paste the following into the file::
 The device repository
 """""""""""""""""""""
 
-Your sources must now be entered into the manifest. Start with your device repository. Between the <manifest> and </manifest> tags, create the line below, making sure to replace the information inside the square brackets with your own::
+Your sources must now be entered into the manifest. Start with your device repository. Between the ``<manifest>`` and ``</manifest>`` tags, create the line below, making sure to replace the information inside the square brackets with your own::
 
     <project path="device/[manufacturer]/[device]" name="[repository name]" remote="[remote]" revision="[revision]" />
 
@@ -71,7 +71,7 @@ If you are unsure of your remote, refer to :ref:`H9_remotes`.
 Dependencies
 """"""""""""
 
-Now create more lines like the previous one, using the lineage.dependencies (or cm.dependencies) file you found earlier in your device repository. This file lists all the remaining repositories needed to build for your selected device. Create one line for each entry in this file, using the following template::
+Now create more lines like the previous one, using the ``lineage.dependencies`` (or ``cm.dependencies``) file you found earlier in your device repository. This file lists all the remaining repositories needed to build for your selected device. Create one line for each entry in this file, using the following template::
 
     <project path="[target_path]" name="[repository]" remote="[remote]" revision="[revision]" />
 
@@ -127,11 +127,11 @@ If you do not specify a remote, aosp is assumed.
 Sync and apply hybris patches
 """""""""""""""""""""""""""""
 
-With your manifest now complete, go to the root of your BUILDDIR and issue the following command (replace DEVICE with your device’s codename) to bring the device-specific source code into your source tree::
+With your manifest now complete, go to the root of your ``BUILDDIR`` and issue the following command (replace DEVICE with your device’s codename) to bring the device-specific source code into your source tree::
 
     ./halium/devices/setup DEVICE
 
-This will first link your manifest from Halium devices to .repo/local_manifests/device.xml and then sync all repositories.
+This will first link your manifest from Halium devices to ``.repo/local_manifests/device.xml`` and then sync all repositories.
 
 Once complete you can now run a script to apply hybris patches. These are mainly used for building the system image and can be omitted if your goal is to only build ``halium-boot.img``. However, if you run into build errors, it might be worthwhile to try applying these patches all the same.
 

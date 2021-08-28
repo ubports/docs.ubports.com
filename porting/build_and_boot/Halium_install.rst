@@ -17,7 +17,7 @@ You will also need to ensure the ``/data`` partition is formatted with ``ext4`` 
 Flashing halium-boot.img
 ------------------------
 
-To install halium-boot, reboot your phone into fastboot mode. Then do the following from the root of your BUILDDIR::
+To install halium-boot, reboot your phone into fastboot mode. Then do the following from the root of your ``BUILDDIR``::
 
     cout
     fastboot flash boot halium-boot.img

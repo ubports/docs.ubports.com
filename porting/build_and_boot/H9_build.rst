@@ -1,7 +1,7 @@
 Halium-9.0 - Building
 =====================
 
-When doing a Halium 9.0 port, you first need to build halium-boot.img. This boot image can then either be combined with the GSI, or you can build your own, device-specific system.img as well.
+When doing a Halium 9.0 port, you first need to build ``halium-boot.img``. This boot image can then either be combined with the GSI, or you can build your own, device-specific ``system.img`` as well.
 
 Building the boot image (halium-boot.img)
 -----------------------------------------
@@ -9,7 +9,7 @@ Building the boot image (halium-boot.img)
 Initializing the build environment
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-First you need to initialize the environment using the envsetup.sh tool included in your source tree. Enter your BUILDDIR and issue the command::
+First you need to initialize the environment using the ``envsetup.sh`` tool included in your source tree. Enter your ``BUILDDIR`` and issue the command::
 
    source build/envsetup.sh
 
@@ -21,7 +21,7 @@ The output should resemble this::
     including vendor/cm/bash_completion/git.bash
     including vendor/cm/bash_completion/repo.bash
 
-The ``breakfast`` command is used to set up the build environment for a specific device. From the root of your BUILDDIR run the following command, replacing [CODENAME] with your device's specific codename::
+The ``breakfast`` command is used to set up the build environment for a specific device. From the root of your ``BUILDDIR`` run the following command, replacing [CODENAME] with your device's specific codename::
 
     breakfast [CODENAME]
 
@@ -36,7 +36,7 @@ The default LineageOS/Halium kernel configuration file needs modifications as Ub
 
 Locate your configuration file. It should be at ``arch/arm/configs/<CONFIG>`` or ``arch/arm64/configs/<CONFIG>`` depending on the architecture of your device. If you have trouble finding it, run ``grep "TARGET_KERNEL_CONFIG" device/<VENDOR>/<CODENAME>/BoardConfig.mk`` to determine the location.
 
-Then, from the root of your BUILDDIR, run::
+Then, from the root of your ``BUILDDIR``, run::
 
     ./halium/halium-boot/check-kernel-config path/to/my/defconfig -w
 
@@ -45,7 +45,7 @@ You may have to do this twice. It will likely fix things both times. Then, run t
 Build
 ^^^^^
 
-Halium will use the mkbootimg tool for creating the boot image. In most cases it is not on the local harddisk, so it can be built by issuing::
+Halium will use the ``mkbootimg`` tool for creating the boot image. In most cases it is not on the local harddisk, so it can be built by issuing::
 
    mka mkbootimg
 
@@ -72,7 +72,7 @@ Building the system image (system.img)
 
 Skip this step if you are going to base your port on the GSI.
 
-If on the other hand your goal is to build both halium-boot.img and a device specific system.img, you can now proceed directly to building the latter::
+If on the other hand your goal is to build both ``halium-boot.img`` and a device specific ``system.img``, you can now proceed directly to building the latter::
 
     mka systemimage
 
