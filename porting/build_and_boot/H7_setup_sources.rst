@@ -27,7 +27,7 @@ Adding your device-specific source
 
 The next step is to add the device-specific sources that need to be integrated into the source tree before you can attempt to build. The missing sources are those required to build the kernel as well as a host of other hardware-specific components of the port.
 
-The necessary sources need to be located and specified by creating a device manifest file (or editing an existing one) in the directory BUILDDIR/halium/devices/manifests.
+The necessary sources need to be located and specified by creating a device manifest file (or editing an existing one) in the directory ``BUILDDIR/halium/devices/manifests``.
 
 .. Note::
     A correct device manifest is crucial to the success of your port.
@@ -37,15 +37,15 @@ Locating the sources
 
 Locate your device repository on `LineageOS’s GitHub organization <https://github.com/LineageOS>`_. This is done by typing your device’s codename into the search box. The device repository follows the naming convention: android_device_[manufacturer]_[device]. Make a note of this name.
 
-Open the device repository on Github. It will contain a lineage.dependencies (or cm.dependencies) file which specifies all other repositories that your device is reliant upon.
+Open the device repository on Github. It will contain a ``lineage.dependencies`` (or ``cm.dependencies``) file which specifies all other repositories that your device is reliant upon.
 
 .. _Note:
-    During the course of the porting process you will need to make modifications to the device repository as well as one or more of the others specified in lineage.dependencies (or cm.dependencies). It is therefore adviseable to create a Github account and save your own copy of these by forking them to your account.
+    During the course of the porting process you will need to make modifications to the device repository as well as one or more of the others specified in ``lineage.dependencies`` (or ``cm.dependencies``). It is therefore adviseable to create a Github account and save your own copy of these by forking them to your account.
 
 Creating the device manifest file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Now create (or edit) the file BUILDDIR/halium/devices/manifests/[manufacturer]_[device].xml. (The description below presupposes that you are creating the file from scratch.)
+Now create (or edit) the file ``BUILDDIR/halium/devices/manifests/[manufacturer]_[device].xml``. (The description below presupposes that you are creating the file from scratch.)
 
 Paste the following into the file::
 
@@ -71,16 +71,16 @@ If you are unsure of your remote, refer to :ref:`H7_remotes`.
 Dependencies
 """"""""""""
 
-Now create more lines like the previous one, using the lineage.dependencies (or cm.dependencies) file you found earlier in your device repository. This file lists all the remaining repositories needed to build for your selected device. Create one line for each entry in this file, using the following template::
+Now create more lines like the previous one, using the ``lineage.dependencies`` (or ``cm.dependencies``) file you found earlier in your device repository. This file lists all the remaining repositories needed to build for your selected device. Create one line for each entry in this file, using the following template::
 
     <project path="[target_path]" name="[repository]" remote="[remote]" revision="[revision]" />
 
-The target path is found in the repository’s name. The preceding “android” or “proprietary” is omitted and underscores are replaced with slashes. For example, android_device_lge_bullhead goes in device/lge/bullhead.
+The target path is found in the repository’s name. The preceding “android” or “proprietary” is omitted and underscores are replaced with slashes. For example, ``android_device_lge_bullhead`` goes in ``device/lge/bullhead``.
 
 Vendor blobs
 """"""""""""
 
-Vendor blobs go in the vendor/ folder of your BUILDDIR. 
+Vendor blobs go in the ``vendor/`` folder of your ``BUILDDIR``.
 
 The first place to search for your device’s vendor blobs is in `'TheMuppets' GitHub organization <https://github.com/TheMuppets>`_. Enter your device’s codename into the search field and see if you get a match. If you are unable to find your device in TheMuppets, you will need to search elsewhere.
 
@@ -108,7 +108,7 @@ For example, let’s say that you have a bunch of repositories at https://github
         fetch="https://github.com/SomeUserName"
         revision="los-14.1" />
 
-There are also some remotes available to you by default, though they differ between Halium versions. The following tables will help you identify these. See more information on these remotes can be found at the top of the file BUILDDIR/halium/.repo/manifests/default.xml.
+There are also some remotes available to you by default, though they differ between Halium versions. The following tables will help you identify these. See more information on these remotes can be found at the top of the file ``BUILDDIR/halium/.repo/manifests/default.xml``.
 
 The following remotes are available by default in Halium 7.1:
 
