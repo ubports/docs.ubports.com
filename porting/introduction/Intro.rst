@@ -10,7 +10,7 @@ The guide as a whole is written as a sequence of steps describing how an ideal p
 What is Ubuntu Touch?
 ---------------------
 
-Ubuntu Touch is an open source operating system for mobile devices. It can be ported to devices that originally shipped with Android OS. Alas, the majority of these devices are dependent to some degree on proprietary software. 
+Ubuntu Touch is an open source operating system for mobile devices. It can be ported to devices that originally shipped with Android OS. Alas, the majority of these devices are dependent to some degree on proprietary software.
 
 .. _Vendor_blobs:
 
@@ -31,7 +31,7 @@ Thus an Ubuntu Touch port is composed of the these components:
     * `Halium <https://halium.org/>`_ (contained in the boot and system images)
     * The vendor blobs
 
-You, the porter, need to build Halium (in part or in whole, depending on :ref:`porting method <Porting-methods>`) and install this together with the Ubuntu Touch rootfs in order to create a functioning Ubuntu Touch port. 
+You, the porter, need to build Halium (in part or in whole, depending on :ref:`porting method <Porting-methods>`) and install this together with the Ubuntu Touch rootfs in order to create a functioning Ubuntu Touch port.
 
 .. _Android-and-Halium-versions:
 
@@ -43,8 +43,8 @@ Halium is built using source code for a modified version of the Android operatin
 ===============  ==============  ================
 Android version  Halium version  Lineage OS (LOS)
 ===============  ==============  ================
-7.1              7.1             14.1            
-9.0              9.0             16.0            
+7.1              7.1             14.1
+9.0              9.0             16.0
 10.0             10.0            17.0
 ===============  ==============  ================
 
@@ -116,7 +116,7 @@ When you run into trouble, and you will, refer to one or more of the sources bel
 * `Telegram: @halium <https://t.me/halium>`_
 * `Telegram: @ubports_porting <https://t.me/ubports_porting>`_
 * `The UBports Forum <https://forums.ubports.com/category/33/porting>`_
-* Matrix: #halium:matrix.org 
+* Matrix: #halium:matrix.org
 
 .. _General-advice:
 
