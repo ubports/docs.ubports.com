@@ -143,5 +143,3 @@ Document
 """"""""
 
 After completing the relevant steps above (according to your chosen, create a pull request containing your device manifest on the Halium devices repository. Also, create a device page on the UBports page under devices. You should link the manifest on Halium devices in your UBports device page.
-
-It is also a good idea to start a discussion on the `UBports Forum <https://forums.ubports.com/>`_ under Devices.
