@@ -16,7 +16,7 @@ First, initialize your source to the correct version of Halium::
 
     repo init -u https://github.com/Halium/android -b halium-7.1 --depth=1
 
-With the Halium tree initialized you are ready to download the code by issuing the command::
+Then download the code by issuing the command::
 
     repo sync -c -j 16
 
