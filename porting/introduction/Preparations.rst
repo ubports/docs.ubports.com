@@ -6,7 +6,6 @@ Preparations
 Not all devices can be made to run Ubuntu Touch. Research your target device before you start.
 
 To determine your device's specifications, search for it on `GSM Arena <https://www.gsmarena.com>`_ and/or `Device Specification <https://www.devicespecifications.com/en>`_.
-
 Refer to `Pick an Android target device in the Halium Porting Guide <http://docs.halium.org/en/latest/porting/first-steps.html#pick-an-android-target-device>`_ for further information on requirements and how to check if your device qualifies.
 
 .. _Locate-relevant-guides-and-other-information:
