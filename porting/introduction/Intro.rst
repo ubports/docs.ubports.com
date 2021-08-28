@@ -55,7 +55,7 @@ Generic System Image
 
 With Android 9.0 there came a significant change of architecture. The device-specific vendor blobs now reside on a separate partition instead of sharing a partition with the rest of the system image. This separation of device-specific code from generic code made possible what is known as the **Generic System Image (GSI)**.
 
-A GSI  is a system image that is built to be able to function with a wide range of devices. Android devices, as of version 9.0, use a GSI. For more information, see the `Android Developer pages <https://developer.android.com/topic/generic-system-image/>`_
+A GSI is a system image that is built to be able to function with a wide range of devices. Android devices, as of version 9.0, use a GSI. For more information, see the `Android Developer pages <https://developer.android.com/topic/generic-system-image/>`_
 
 The development of the Android GSI architecture also cleared the way for the now available generic Halium 9.0 arm64 system image (hereafter referred to as *the Halium GSI*, or simply *the GSI*) which is used for Ubuntu Touch. This, however, is somewhat different from the Android GSI. For a more detailed explanation of the Halium GSI, please refer to `the wiki page on Gitlab CI builds of the generic Halium system image <https://github.com/ubports/porting-notes/wiki/GitLab-CI-builds-for-devices-based-on-halium_arm64-(Halium-9)>`_.
 
