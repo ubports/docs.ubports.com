@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 17:42-0600\n"
-"PO-Revision-Date: 2021-01-05 00:26+0000\n"
-"Last-Translator: FlavioMala <flavio.malatino@post.com>\n"
+"POT-Creation-Date: 2021-06-29 16:27-0500\n"
+"PO-Revision-Date: 2021-07-24 20:04+0000\n"
+"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-humanguide/it/>\n"
 "Language: it\n"
@@ -67,11 +67,11 @@ msgstr "Menu sul bordo inferiore"
 
 #: ../../humanguide/app-layout/app-main-view.rst:29
 msgid "For quick actions. See `Quick actions`_."
-msgstr ""
+msgstr "Per le azioni veloci. Vedi `Quick actions`_."
 
 #: ../../humanguide/app-layout/dialogs.rst:2
 msgid "Dialogs"
-msgstr ""
+msgstr "Dialoghi"
 
 #: ../../humanguide/app-layout/dialogs.rst:4
 msgid ""
@@ -114,13 +114,15 @@ msgstr ""
 
 #: ../../humanguide/app-layout/dialogs.rst:17
 msgid "Examples of designs to avoid"
-msgstr ""
+msgstr "Esempi di design da evitare"
 
 #: ../../humanguide/app-layout/dialogs.rst:21
 msgid ""
 "Left: Download button uses old focus color, Cancel button (secondary action) "
 "uses old grey color."
 msgstr ""
+"Sinistra: bottone di download usa il vecchio colore di focus, il bottone di "
+"cancellazione (azione secondaria) usa il vecchio colore grigio."
 
 #: ../../humanguide/app-layout/dialogs.rst:23
 msgid ""
@@ -165,12 +167,16 @@ msgid ""
 "Interchange of data between apps is done through Content Hub. This improves "
 "isolation between apps."
 msgstr ""
+"Lo scambio di dati tra app avviene tramite il Content Hub. Questo migliora "
+"l'isolamento tra le app."
 
 #: ../../humanguide/app-layout/importing-data.rst:8
 msgid ""
 "Apps with the appropriate apparmor permissions can import, export or share "
 "data between them."
 msgstr ""
+"Le app con appropriati permessi apparmor possono importare, esportare o "
+"scambiare dati tra loro."
 
 #: ../../humanguide/app-layout/importing-data.rst:10
 msgid ""
@@ -179,25 +185,29 @@ msgstr ""
 
 #: ../../humanguide/app-layout/index.rst:2
 msgid "App layout"
-msgstr ""
+msgstr "Layout della app"
 
 #: ../../humanguide/app-layout/main-actions.rst:2
 msgid "Main actions"
-msgstr ""
+msgstr "Azioni principali"
 
 #: ../../humanguide/app-layout/main-actions.rst:4
 msgid ""
 "Main actions are displayed in the corresponding header of the Page. The "
 "header should show only relevant actions to the current page."
 msgstr ""
+"Le azioni principali sono mostrate nel header corrispondente della pagina. "
+"L'header dovrebbe mostrare solo le azioni rilevanti per la pagina corrente."
 
 #: ../../humanguide/app-layout/main-actions.rst:6
 msgid "Main page of Contacts app shows:"
-msgstr ""
+msgstr "La pagina principale dell'app Contacts mostra:"
 
 #: ../../humanguide/app-layout/main-actions.rst:10
 msgid "When viewing a single contact, only relevant actions are shown:"
 msgstr ""
+"Mentre si visualizza un singolo contatto, sono mostrate solo le azioni "
+"rilevanti:"
 
 #: ../../humanguide/app-layout/main-actions.rst:15
 msgid "Slots"
@@ -209,6 +219,10 @@ msgid ""
 "options. Depending on the surface or window size, additional slots can be "
 "added to show the actions otherwise hidden in drawers."
 msgstr ""
+"L'header contiene un numero di slot che possono ospitare azioni o opzioni di "
+"navigazione. In base allo schermo o alla dimensione della finestra, possono "
+"essere aggiunti slot per mostrare le azioni che altrimenti sarebbero "
+"nascoste."
 
 #: ../../humanguide/app-layout/main-actions.rst:22
 msgid "Action Drawer"
@@ -264,21 +278,23 @@ msgstr ""
 
 #: ../../humanguide/app-layout/main-actions.rst:69
 msgid "Keep in mind to keep a clean design. The simpler, the better."
-msgstr ""
+msgstr "Ricorda di mantenere un design pulito. Più è semplice, meglio è."
 
 #: ../../humanguide/app-layout/presenting-data.rst:2
 msgid "Presenting data"
-msgstr ""
+msgstr "Presentare i dati"
 
 #: ../../humanguide/app-layout/presenting-data.rst:5
 msgid "List Items"
-msgstr ""
+msgstr "Lista di oggetti"
 
 #: ../../humanguide/app-layout/presenting-data.rst:7
 msgid ""
 "List items can be used to make up a list of ordered scrollable items that "
 "are related to each other."
 msgstr ""
+"La lista di oggetti può essere usata per fare una lista ordinata e "
+"scorrevole di oggetti che sono relazioni tra loro."
 
 #: ../../humanguide/app-layout/presenting-data.rst:11
 msgid ""
@@ -306,20 +322,22 @@ msgstr ""
 
 #: ../../humanguide/app-layout/presenting-data.rst:27
 msgid "Mouse right click"
-msgstr ""
+msgstr "Click destro del mouse"
 
 #: ../../humanguide/app-layout/presenting-data.rst:32
 msgid "Keyboard navigation"
-msgstr ""
+msgstr "Navigazione da tastiera"
 
 #: ../../humanguide/app-layout/presenting-data.rst:37
 msgid "Lists in edit mode"
-msgstr ""
+msgstr "Liste in modalità editing"
 
 #: ../../humanguide/app-layout/presenting-data.rst:39
 msgid ""
 "Edit mode allows users to modify a particular item or multiple items at once."
 msgstr ""
+"La modalità di editing permette all'utente di modificare un particolare "
+"oggetto o oggetti multipli."
 
 #: ../../humanguide/app-layout/presenting-data.rst:41
 msgid ""
@@ -332,7 +350,7 @@ msgstr ""
 
 #: ../../humanguide/app-layout/presenting-data.rst:48
 msgid "Layout of detailed list items"
-msgstr ""
+msgstr "Layout di una lista dettagliata di oggetti"
 
 #: ../../humanguide/app-layout/presenting-data.rst:52
 msgid "1 line – Title"
@@ -348,7 +366,7 @@ msgstr ""
 
 #: ../../humanguide/app-layout/quick-actions.rst:2
 msgid "Quick actions"
-msgstr ""
+msgstr "Azioni rapide"
 
 #: ../../humanguide/app-layout/quick-actions.rst:4
 msgid ""
@@ -364,13 +382,15 @@ msgstr ""
 
 #: ../../humanguide/app-layout/quick-actions.rst:11
 msgid "Hint"
-msgstr ""
+msgstr "Suggerimento"
 
 #: ../../humanguide/app-layout/quick-actions.rst:13
 msgid ""
 "The hint is used to let the user know that there is something worth trying "
 "at the bottom of the screen."
 msgstr ""
+"Il suggerimento è usato per permettere all'utente di sapere che c'è qualcosa "
+"che vale la pena provare nella parte inferiore dello schermo."
 
 #: ../../humanguide/app-layout/quick-actions.rst:15
 msgid "After opening an app, a hint with a text and/or an icon is shown:"
@@ -378,11 +398,11 @@ msgstr ""
 
 #: ../../humanguide/app-layout/quick-actions.rst:19
 msgid "After after a few seconds it hides and a floating icon is shown"
-msgstr ""
+msgstr "Dopo pochi secondo si nasconde e viene mostrata una icona mobile"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:2
 msgid "App icon design"
-msgstr ""
+msgstr "Design dell'icona dell'App"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:4
 msgid ""
@@ -394,15 +414,15 @@ msgstr ""
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:7
 msgid "Design Philosophy and Suru Meaning"
-msgstr ""
+msgstr "Filosofia del design e significato di Suru"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:9
 msgid "Suru alludes to Japanese culture."
-msgstr ""
+msgstr "Suru allude alla cultura giapponese."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:10
 msgid "The design of Suru is inspired by origami."
-msgstr ""
+msgstr "Il design di Suru è ispirato dagli origami."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:11
 msgid ""
@@ -419,11 +439,11 @@ msgstr ""
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:17
 msgid "Design Tips for an App Icon"
-msgstr ""
+msgstr "Suggerimenti per il design dell'Icona dell'App"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:20
 msgid "Descriptive design"
-msgstr ""
+msgstr "Design descrittivo"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:22
 msgid ""
@@ -433,7 +453,7 @@ msgstr ""
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:27
 msgid "Distinctive shapes"
-msgstr ""
+msgstr "Forme distintive"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:29
 msgid ""
@@ -445,7 +465,7 @@ msgstr ""
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:34
 msgid "Details"
-msgstr ""
+msgstr "Dettagli"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:36
 msgid ""
@@ -457,7 +477,7 @@ msgstr ""
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:41
 msgid "Colours"
-msgstr ""
+msgstr "Colori"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:43
 msgid ""
@@ -647,53 +667,53 @@ msgid ""
 "The font patterns can applied to the symbol to define its contours."
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:27
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:29
 msgid "Strokes"
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:29
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:31
 msgid ""
 "Stroke ends are squared but the upper end of vertical strokes is slightly "
 "oblique with a +10º angle."
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:34
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:38
 msgid "Rotation"
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:36
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:40
 msgid ""
 "When they are not horizontal or vertical, objects are oriented along a +45º "
 "axis."
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:41
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:47
 msgid "Corners"
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:43
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:49
 msgid ""
 "Curved corners are preferred if possible. The following picture shows a zoom "
 "on the default outer and inner curvatures, with nodes and Bezier handle. The "
 "default curvature can be scaled down when the shape is smaller."
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:48
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:56
 msgid "Arrows"
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:50
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:58
 msgid ""
 "A chevron symbol is used for navigation arrows. The arrowhead is an "
 "isosceles triangle where the two equal sides are slightly curved (following "
 "the pattern of the Y character)."
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:55
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:65
 msgid "Opacity"
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:57
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:67
 msgid ""
 "50% opacity is used to reflect the status of an indicator. In case of a "
 "double space (enabled and disabled, for example), the opacity of the whole "
@@ -701,11 +721,11 @@ msgid ""
 "single portion of icon can be altered."
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:62
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:74
 msgid "Grid"
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:64
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:76
 msgid ""
 "Interface icons are designed for 96x96 pixels, with at least 4 pixels of "
 "margin on every side."
@@ -872,135 +892,136 @@ msgid ""
 "<https://en.wikipedia.org/wiki/Ubuntu_(typeface)>`__ installed in the system."
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:11
+#: ../../humanguide/design-concepts/typography.rst:13
 msgid ""
 "For the font sizes to be consistent across devices, instead of setting the "
 "font size as a number of pixels or points, it is imperative to define the "
 "font size in terms of size names:"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:14
+#: ../../humanguide/design-concepts/typography.rst:16
 msgid "Font Size Name"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:14
+#: ../../humanguide/design-concepts/typography.rst:16
 msgid "gu"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:14
+#: ../../humanguide/design-concepts/typography.rst:16
 msgid "Desktop"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:14
+#: ../../humanguide/design-concepts/typography.rst:16
 msgid "Phone"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:14
+#: ../../humanguide/design-concepts/typography.rst:16
 msgid "Tablet"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:18
+#: ../../humanguide/design-concepts/typography.rst:20
 msgid "4\" HD Screen"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:18
+#: ../../humanguide/design-concepts/typography.rst:20
 msgid "10\" HD screen"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:21
+#: ../../humanguide/design-concepts/typography.rst:23
 msgid "x-small"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:21
+#: ../../humanguide/design-concepts/typography.rst:23
 msgid "1.25"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:21
+#: ../../humanguide/design-concepts/typography.rst:23
 msgid "10 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:21
+#: ../../humanguide/design-concepts/typography.rst:23
 msgid "22 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:21
 #: ../../humanguide/design-concepts/typography.rst:23
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "12 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:23
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "small"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:23
+#: ../../humanguide/design-concepts/typography.rst:25
+#, fuzzy
 msgid "1.5"
-msgstr ""
+msgstr "1.5"
 
-#: ../../humanguide/design-concepts/typography.rst:23
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "27 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:23
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "15 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:25
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "medium"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:25
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "1.75"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:25
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "14 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:25
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "31 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:25
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "18 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:27
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "large"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:27
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "2.5"
-msgstr ""
+msgstr "2.5"
 
-#: ../../humanguide/design-concepts/typography.rst:27
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "20 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:27
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "45 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:27
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "25 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:29
+#: ../../humanguide/design-concepts/typography.rst:31
 msgid "x-large"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:29
+#: ../../humanguide/design-concepts/typography.rst:31
 msgid "3.5"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:29
+#: ../../humanguide/design-concepts/typography.rst:31
 msgid "34 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:29
+#: ../../humanguide/design-concepts/typography.rst:31
 msgid "76 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:29
+#: ../../humanguide/design-concepts/typography.rst:31
 msgid "42 px"
 msgstr ""
 
@@ -1043,7 +1064,7 @@ msgstr ""
 
 #: ../../humanguide/design-concepts/units.rst:18
 msgid "Device"
-msgstr ""
+msgstr "Dispositivo"
 
 #: ../../humanguide/design-concepts/units.rst:18
 msgid "Conversion"
@@ -1305,7 +1326,7 @@ msgstr ""
 
 #: ../../humanguide/other-design-considerations/translations.rst:2
 msgid "Translations"
-msgstr ""
+msgstr "Traduzioni"
 
 #: ../../humanguide/other-design-considerations/translations.rst:4
 msgid ""

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-03-19 14:27+0000\n"
+"PO-Revision-Date: 2021-06-26 11:43+0000\n"
 "Last-Translator: Carlod <carlod@disroot.org>\n"
 "Language-Team: Polish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/pl/>\n"
@@ -480,7 +480,7 @@ msgstr ""
 #: ../../userguide/advanceduse/ssh.rst:22
 msgid "You can also connect via :doc:`adb <adb>` and use the following command to copy it::"
 msgstr ""
-"Możesz również połączyć sie przez :doc: `adb <adb` i użyć komendy poniżej "
+"Możesz również połączyć sie przez :doc:`adb <adb>` i użyć komendy poniżej "
 "aby go skopiować::"
 
 #: ../../userguide/advanceduse/ssh.rst:27
@@ -540,7 +540,7 @@ msgid "You can change the release channel using the system settings. The 3 exist
 msgstr ""
 "Możesz zmienić kanał aktualizacji używając ustawień systemowych. 3 "
 "istniejące kanały to stabilny, rc (release candidate) i devel (codzienne "
-"kompilacje). Po więcej informacji zobacz :doc: `harmonogram aktualizacji </"
+"kompilacje). Po więcej informacji zobacz :doc:`harmonogram aktualizacji </"
 "about/process/release-schedule>`."
 
 #: ../../userguide/dailyuse/anbox.rst:2
@@ -566,7 +566,7 @@ msgid "You will need to execute commands on your Ubuntu Touch device to install 
 msgstr ""
 "Będziesz musiał wykonać komendy na twoim urządzeniu Ubuntu Touch aby "
 "zainstalować APK'i. Możesz to zrobić używając aplikacji terminala, ale "
-"łatwiejsze w użyciu jest ``adb shell` albo :doc: `ustawienie ssh </userguide/"
+"łatwiejsze w użyciu jest ``adb shell` albo :doc:`ustawienie ssh </userguide/"
 "advanceduse/ssh>`, aby uzyskać dostęp do telefonu na swoim host'cie."
 
 #: ../../userguide/dailyuse/anbox.rst:13
@@ -774,7 +774,7 @@ msgstr "Zgłaszanie błędów"
 #: ../../userguide/dailyuse/anbox.rst:136
 msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with Anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
-"Prosimy o :doc: `zgłaszanie błędów </contribute/bugreporting`, na które się "
+"Prosimy o :doc:`zgłaszanie błędów </contribute/bugreporting>`, na które się "
 "natrafisz. Błędy związane z Ubuntu 16.04 są zgłaszane w `ogólnym trackerze "
 "Ubuntu Touch <https://github.com/ubports/ubuntu-touch/issues>`_ i problemy "
 "związane z Anboxem są zgłaszane w `naszym oddolnym forku <https://github.com/"
@@ -1512,8 +1512,8 @@ msgstr ""
 msgid "If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/Intro>`."
 msgstr ""
 "Jeśli jesteś doświadczonym programistą androidowym i chcesz pomóc nam "
-"poszerzyć liste urządzeń wspieranych przez Ubuntu Touch, odwiedź :doc: `"
-"sekcje portowania </porting/Intro>`."
+"poszerzyć liste urządzeń wspieranych przez Ubuntu Touch, odwiedź :doc:`"
+"sekcję portowania </porting/Intro>`."
 
 #: ../../userguide/install.rst:24
 msgid "If you need help, you can join UBports' support channels on `telegram <https://t.me/WelcomePlus>`_ or `matrix <https://matrix.to/#/!KwdniMNeTmClpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot.org>`_ or ask a question `in the forum <https://forums.ubports.com/>`_ or on `askubuntu <https://askubuntu.com>`_. If you believe that the UBports Installer is not working correctly, you can also `file a new issue <https://github.com/ubports/ubports-installer/issues/new>`_ to help us solve the problem."

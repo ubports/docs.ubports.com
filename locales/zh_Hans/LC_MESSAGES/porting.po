@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Chinese (Simplified) (UBports Docs)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2020-01-19 19:40+0000\n"
-"Last-Translator: fuckyounet <oneplusanotherone@foxmail.com>\n"
+"PO-Revision-Date: 2021-08-20 19:08+0000\n"
+"Last-Translator: GrieferPig <grieferpig@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-porting/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -12,13 +12,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.8\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../../porting/Intro.rst:2
 msgid "Introduction to porting"
-msgstr ""
+msgstr "移植简介"
 
 #: ../../porting/Intro.rst:4
+#, fuzzy
 msgid ""
 "This first section will introduce you to the specifics of porting Ubuntu "
 "Touch to an Android device. Note that it is written with the general public "
@@ -27,6 +28,8 @@ msgid ""
 "more concise in order to meet the needs of the more experienced reader, "
 "while providing links to supplementary reading for the less experienced."
 msgstr ""
+"第一个章节介绍了移植Ubuntu Touch 到一个安卓设备上的细节。请注意这个教程是为通用目的而编写的，而不是有经验的移植开发人员。 "
+"在随后的章节里，我们使正文更加简洁以满足有经验的读者的需求，同时为没有经验的读者提供补充阅读的链接。"
 
 #: ../../porting/Intro.rst:6
 msgid ""
@@ -35,11 +38,12 @@ msgid ""
 "device is different and in reality you will likely iterate and revisit some "
 "steps, skip over other steps and uncover new and undocumented challenges."
 msgstr ""
+"这篇教程介绍了理想情况下移植的一系列步骤。但是，移植工作经常会遇到烦人的问题。每一个设备都不一样，而且实际上你可能会重复，跳过一些步骤以及发现新的和搜不到"
+"的问题。"
 
 #: ../../porting/Intro.rst:11
-#, fuzzy
 msgid "What is Ubuntu Touch?"
-msgstr "运行 Ubuntu Touch"
+msgstr "什么是Ubuntu Touch？"
 
 #: ../../porting/Intro.rst:13
 msgid ""
@@ -47,9 +51,10 @@ msgid ""
 "be ported to devices that originally shipped with Android OS. Alas, the "
 "majority of these devices are dependent to some degree on proprietary "
 "software."
-msgstr ""
+msgstr "Ubuntu Touch 是一个开源的手机系统。它可以被移植到装有安卓的手机上。不过，大部分的设备上依赖一些专有软件。"
 
 #: ../../porting/Intro.rst:15
+#, fuzzy
 msgid ""
 "To be specific, device vendors tend to keep the code that speaks directly to "
 "the device hardware (the low level device drivers) proprietary. These "
@@ -59,14 +64,19 @@ msgid ""
 "therefore necessary to secure the correct version of these components when "
 "building a port."
 msgstr ""
+"具体来讲，设备制造商趋向于把设备硬件的底层代码闭源。这些代码通常叫做“Vendor blobs”。在移植时，“Vendor blobs\""
+"需要被集成到系统中。有些代码不仅只适用于某个设备，还只适用于某个安卓版本。所以，在移植时必须确保这些代码的版本正确。"
 
 #: ../../porting/Intro.rst:17
+#, fuzzy
 msgid ""
 "This is why Ubuntu Touch cannot be built completely from source code for "
 "most commercial devices. Instead, porting the system to these devices "
 "involves integrating the previously mentioned vendor blobs into the rest of "
 "the system, which can be built from source."
 msgstr ""
+"这就是为什么对于大部分普通设备来说，Ubuntu Touch不能直接从源码构建。相反，将系统移植到这些设备上涉及前面提到的“Vendor "
+"blobs”，这可以从源代码构建。"
 
 #: ../../porting/Intro.rst:19
 msgid ""
@@ -79,6 +89,9 @@ msgid ""
 "which is largely obsolete, 7.1, and 9 as of writing) corresponding to "
 "different Android versions."
 msgstr ""
+"Ubuntu Touch 的下一个组件是需要安装在设备上的预编译根文件系统， 这个组件不直接与设备硬件通信。 相反，因为每个设备都有其特定的硬件架构，"
+"它通过为每个特定设备构建的硬件抽象层 (HAL) 进行通信。 这个组件叫做 Halium，有不同的版本（5.1 已过时，7.1 ，以及9）对应不同的 "
+"Android 版本。"
 
 #: ../../porting/Intro.rst:21
 msgid ""
@@ -89,6 +102,9 @@ msgid ""
 "UBports porting guide. At times it can also be helpful to test with one of "
 "the other operating systems to debug a problem from different angles."
 msgstr ""
+"Halium 使得Linux系统能够跑在安卓硬件上。它由多个移动操作系统的共同努力写成，特别是 Plasma mobile、Lune OS 和 "
+"UBports 。UBports在Halium的基础上移植。所以，你可能需要阅读Halium移植指南和UBports移植指南。有时，使用其他操作系统之一进"
+"行测试以从不同角度调试问题也很有帮助。"
 
 #: ../../porting/Intro.rst:23
 msgid ""
@@ -99,23 +115,25 @@ msgid ""
 "the available Halium versions and vendor blobs from the corresponding "
 "Android version. See the first two columns of the table below for details."
 msgstr ""
+"Halium因此成为Ubuntu Touch移植中不可或缺的一部分，并以开源软件的形式提供。 开发新版本的 Halium 是一项非常艰巨的任务，"
+"因此只有少数几个版本的 Halium 可用。"
 
 #: ../../porting/Intro.rst:28
 msgid "Thus an Ubuntu Touch port is composed of the these components:"
-msgstr ""
+msgstr "所以一个Ubuntu Touch移植基于以下部件："
 
 #: ../../porting/Intro.rst:26
 msgid "The Ubuntu Touch (UT) root filesystem (rootfs)"
-msgstr ""
+msgstr "Ubuntu Touch根文件系统（Ubuntu Touch root filesystem (rootfs)）"
 
 #: ../../porting/Intro.rst:27
 msgid ""
 "`Halium <https://halium.org/>`_ (contained in the boot and system images)"
-msgstr ""
+msgstr "`Halium <https://halium.org/>`_ (包含在启动（boot）和系统镜像（system images）中)"
 
 #: ../../porting/Intro.rst:28
 msgid "The vendor blobs"
-msgstr ""
+msgstr "制造商驱动"
 
 #: ../../porting/Intro.rst:30
 msgid ""
@@ -123,6 +141,8 @@ msgid ""
 "and install these together with the Ubuntu Touch rootfs in order to create a "
 "functioning Ubuntu Touch port."
 msgstr ""
+"你，移植者，需要构建Halium（例如，halium-boot.img 和 system.img）并随Ubuntu "
+"Touch根目录一起安装以构建一个能用的Ubuntu Touch移植。"
 
 #: ../../porting/Intro.rst:32
 msgid ""
@@ -132,54 +152,55 @@ msgid ""
 "version for each individual device port. The table below shows which "
 "versions are required for the different Halium versions."
 msgstr ""
+"Halium 基于 LineageOS 的安卓源代码。 所需的源代码可在线获取。你需要下载和配置才能构建正确的 Halium 版本。 下表显示了不同 "
+"Halium 版本所需的版本。"
 
 #: ../../porting/Intro.rst:35
 msgid "Android version"
-msgstr ""
+msgstr "安卓版本"
 
 #: ../../porting/Intro.rst:35
 msgid "Halium version"
-msgstr ""
+msgstr "Halium版本"
 
 #: ../../porting/Intro.rst:35
 msgid "Lineage OS (LOS)"
-msgstr ""
+msgstr "Lineage OS (LOS)"
 
 #: ../../porting/Intro.rst:37
 msgid "7.1"
-msgstr ""
+msgstr "7.1"
 
 #: ../../porting/Intro.rst:37
 msgid "14.1"
-msgstr ""
+msgstr "14.1"
 
 #: ../../porting/Intro.rst:38
-#, fuzzy
 msgid "9.0"
-msgstr "1.0"
+msgstr "9.0"
 
 #: ../../porting/Intro.rst:38
 msgid "16.0"
-msgstr ""
+msgstr "16.0"
 
 #: ../../porting/Intro.rst:44
 msgid "Overview of the porting process"
-msgstr ""
+msgstr "移植过程总览"
 
 #: ../../porting/Intro.rst:46 ../../porting/Preparations.rst:2
 msgid "Preparations"
-msgstr ""
+msgstr "准备工作"
 
 #: ../../porting/Intro.rst:47
 msgid ""
 "In this first stage you will choose a target device, gather information "
 "about it and choose a suitable workstation (PC or laptop) on which to do "
 "your work."
-msgstr ""
+msgstr "首先你需要选择一个目标设备，获得关于它的信息，选择一个合适的工作环境（个人电脑或者笔记本）来移植。"
 
 #: ../../porting/Intro.rst:48
 msgid "Set up your Halium build environment and complete a test build"
-msgstr ""
+msgstr "设置好Halium构建环境并测试"
 
 #: ../../porting/Intro.rst:49
 msgid ""
@@ -188,10 +209,12 @@ msgid ""
 "according to the Halium guide to ensure that all your sources are set up "
 "correctly and work in unison."
 msgstr ""
+"这个步骤需要下载所有与设备驱动相关的源代码。然后，你需要根据Halium指南构建Halium启动镜像（boot image）和系统镜像（system "
+"image）来确保源代码设置完毕且可以用。"
 
 #: ../../porting/Intro.rst:50
 msgid "Build halium-boot.img and system.img for Ubuntu Touch"
-msgstr ""
+msgstr "为Ubuntu Touch构建halium-boot.img和system.img"
 
 #: ../../porting/Intro.rst:51
 msgid ""
