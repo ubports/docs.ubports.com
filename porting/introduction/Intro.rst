@@ -126,5 +126,3 @@ General advice
 The more rigorous you are at making notes and documenting your steps, the less time you will spend backtracking your steps and guessing your way along. When dealing with issues that arise along the way, it is wise to work on them one at a time. If you try to correct several things at once, you risk ending up trying to guess which changes solved a given issue, which easily leads to breaking the functionality in question once more at some later stage.
 
 If you are not discouraged after reading this, we welcome your efforts and wish you the best of luck!
-
-The next section presents a key to the rest of this guide.
