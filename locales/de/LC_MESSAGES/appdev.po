@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 09:34-0500\n"
-"PO-Revision-Date: 2020-12-24 06:26+0000\n"
-"Last-Translator: Kai Goldbeck <kaiuwe.goldbeck@mailbox.org>\n"
+"PO-Revision-Date: 2021-08-13 04:21+0000\n"
+"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/de/>\n"
 "Language: de\n"
@@ -70,13 +70,12 @@ msgstr ""
 "exportierten Datei)"
 
 #: ../../appdev/guides/contenthub.rst:20
-#, fuzzy
 msgid ""
 "``ContentHandler.Share`` (The selected app will be the destination for the "
 "exported file, which will then be shared externally)"
 msgstr ""
-"``ContentHandler.Share`` (Die ausgewählte App ist die App, von der aus die "
-"Datei freigegeben wird)"
+"``ContentHandler.Share`` (Die ausgewählte App ist das Ziel der exportierten "
+"Datei, welche dann extern freigegeben wird)"
 
 #: ../../appdev/guides/contenthub.rst:26
 msgid "Importing"
@@ -191,8 +190,8 @@ msgid ""
 msgstr ""
 "Ebenso können Sie das gespeicherte Spiel per Telegram an uns senden (siehe "
 "Quellcode der Webapp Creator Import Page <https://gitlab.com/cibersheep/"
-"webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>``_).\n"
-"Das Teilen ist gleichbedeutend dem Exportieren, außer dass die Ziel-App den "
+"webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>``_). Das "
+"Teilen ist gleichbedeutend dem Exportieren, außer dass die Ziel-App den "
 "Inhalt möglicherweise extern freigibt (über Telegram oder Textnachricht, zum "
 "Beispiel)."
 
@@ -202,7 +201,7 @@ msgid ""
 "is ``ContentHandler.Share``."
 msgstr ""
 "Der einzige Unterschied zwischen diesem und dem vorherigen Code besteht "
-"darin, dass ``handler`` jetzt ``ContentHandler.Share`` ist"
+"darin, dass ``handler`` jetzt ``ContentHandler.Share`` ist."
 
 #: ../../appdev/guides/contenthub.rst:102
 msgid "Wait a minute. Why the different apps?"
@@ -392,7 +391,7 @@ msgstr ""
 
 #: ../../appdev/guides/dependencies.rst:7
 msgid "Building"
-msgstr ""
+msgstr "Erstellung"
 
 #: ../../appdev/guides/dependencies.rst:8
 msgid ""
@@ -480,14 +479,19 @@ msgid ""
 "blob/master/clickable.json#L21>`_ uses the libraries feature to build its "
 "dependency tdlib."
 msgstr ""
+"Sieh wie `Teleports clickable.json <https://gitlab.com/ubports/apps/"
+"teleports/blob/master/clickable.json#L21>`_die Bibliotheksmerkmale zur "
+"Erstellung seiner Abhängigkeiten tdlib nutzt."
 
 #: ../../appdev/guides/dependencies.rst:57
 msgid "Pre-built"
-msgstr ""
+msgstr "Vorkompiliert"
 
 #: ../../appdev/guides/dependencies.rst:58
 msgid "If you compiled your library as described above, skip this step."
 msgstr ""
+"Überspringe den Schritt, wenn du deine Bibliothek wie oben beschrieben "
+"kompiliert hast."
 
 #: ../../appdev/guides/dependencies.rst:60
 msgid ""
@@ -499,12 +503,22 @@ msgid ""
 "need (likely ``armhf`` or ``arm64``). In this case you have to compile the "
 "library as described above."
 msgstr ""
+"Eine vorgefertigte Bibliothek ist meist nur als gemeinsam genutztes Objekt "
+"verfügbar, das dynamisch verlinkt werden muss. Außerdem kann sie Komponenten "
+"enthalten, die du nicht benötigst, was zu einer aufgeblähten App führt. "
+"Möglicherweise kann die Bibliothek für deine Zwecke auch unvollständig sein, "
+"was du durch eigenständiges Kompilieren verhindern kannst. Manchmal ist eine "
+"Bibliothek in den Ubuntu Repositories verfügbar, aber nicht für deine "
+"Architektur (wahrscheinlich ``armhf`` oder ``arm64``). In diesem Fall muss "
+"du die Bibliothek wie oben beschrieben kompilieren."
 
 #: ../../appdev/guides/dependencies.rst:62
 msgid ""
 "If the library is available in the Ubuntu Repositories, you can add it to "
 "the dependencies list, like this:"
 msgstr ""
+"Falls die Bibliothek in den Ubuntu Repositories verfügbar ist, kannst du sie "
+"wie folgt der Abhängigkeitsliste hinzufügen:"
 
 #: ../../appdev/guides/dependencies.rst:74
 msgid ""
@@ -513,20 +527,28 @@ msgid ""
 "Tools' clickable.json <https://github.com/t-mon/guitar-tools/blob/master/"
 "clickable.json#L4>`_."
 msgstr ""
+"Clickable installiert das angegebene Paket automatisch für die "
+"Zielarchitektur innerhalb des Build-Containers. Ein Beispiel findest du in `"
+"Guitar Tools' clickable.json <https://github.com/t-mon/guitar-tools/blob/"
+"master/clickable.json#L4>`_."
 
 #: ../../appdev/guides/dependencies.rst:76
 msgid ""
 "If the library can be found in a PPA, you can add the PPA to the clickable."
 "json, too. For example:"
 msgstr ""
+"Falls die Bibliothek in einem PPA zu finden ist, kannst du das PPA auch der "
+"clickable.json hinzufügen. Zum Beispiel:"
 
 #: ../../appdev/guides/dependencies.rst:91
 msgid "Otherwise add a script to download the pre-built library."
 msgstr ""
+"Anderenfalls füge zum Download der vorkonfigurierten Bibliothek ein Skript "
+"hinzu."
 
 #: ../../appdev/guides/dependencies.rst:94
 msgid "Usage"
-msgstr ""
+msgstr "Benutzung"
 
 #: ../../appdev/guides/dependencies.rst:95
 msgid ""
@@ -534,8 +556,12 @@ msgid ""
 "found that you include into the app's source code. Second, you need to link "
 "the library's binary against your app's binary."
 msgstr ""
+"Zuerst musst du das Include-Verzeichnis angeben, in dem sich die Header "
+"befinden die du in den Quellcode der App einbindenst. Dann musst du die "
+"Binärdatei der Bibliothek mit der Binärdatei der App verknüpfen."
 
 #: ../../appdev/guides/dependencies.rst:97
+#, fuzzy
 msgid ""
 "In case the library contains a CMake configuration file, you can use the "
 "`find_package <https://cmake.org/cmake/help/latest/command/find_package."
@@ -543,6 +569,12 @@ msgid ""
 "variables pointing to the library's binary and include directories. The "
 "additional lines on your CMakeLists.txt then may look like:"
 msgstr ""
+"Falls die Bibliothek eine CMake Konfigurationdatei beinhaltet, kannst Du den "
+"`find_package <https://cmake.org/cmake/help/latest/command/"
+"find_package.html>`_ Befehl verwenden, das entweder einen Ziellink gegen "
+"oder Variablen auf die Binardateien der Bibliothek oder die \"Include-"
+"Verzeichnisse\" bereitstellt. Die zusätzlichen Zeilen Deiner CMakeLists.txt "
+"könnten dann wie folgt aussehen:"
 
 #: ../../appdev/guides/dependencies.rst:106
 msgid ""
@@ -555,22 +587,35 @@ msgid ""
 "camera-scanner/blob/master/plugins/ImageProcessing/CMakeLists.txt#L23>`_ for "
 "a real world example."
 msgstr ""
+"Der Befehl ``find_package`` definiert normalerweise den Pfad zum Include-"
+"Verzeichnis als ``SOMELIBRARY_INCLUDE_DIRS`` und die Binärdateien der "
+"Bibliothek als ``SOMELIBRARY_LIBS`` (überprüfe in der Dokumentation der "
+"Bibliothek, was deren CMake-Konfiguration genau liefert). Verwende diese mit "
+"den Befehlen ``include_directories`` und ``target_link_libraries``. Siehe `"
+"Camera Scanner ImageProcessing CMakeLists.txt <https://github.com/jonnius/"
+"camera-scanner/blob/master/plugins/ImageProcessing/CMakeLists.txt#L23>`_ für "
+"ein Beispiel aus der Praxis."
 
 #: ../../appdev/guides/dependencies.rst:108
 msgid ""
 "At this point you should already be able to test with Clickable's desktop "
 "mode running ``clickable desktop``."
 msgstr ""
+"Nun solltest Du durch die Eingabe von ``clickable desktop`` bereits mit dem "
+"Clickable's desktop Modus testen können."
 
 #: ../../appdev/guides/dependencies.rst:111
 msgid "Deployment"
-msgstr ""
+msgstr "Bereitstellung"
 
 #: ../../appdev/guides/dependencies.rst:112
 msgid ""
 "If you linked the library statically, you can skip this step, as the "
 "library's binary is already inside your app's binary."
 msgstr ""
+"Falls Du die Bibliotheken statisch verlinkt hast, kannst Du diesen Schritt "
+"überspringen, da die Bibliothek bereits in der Binärdatei Deine App "
+"beinhaltet ist."
 
 #: ../../appdev/guides/dependencies.rst:114
 msgid ""
@@ -579,6 +624,10 @@ msgid ""
 "You should see an error message telling you which shared object file was "
 "missing."
 msgstr ""
+"Eruiere welche \"shared object\" Dateien (``*.so``) Du mitliefern musst. Das "
+"machst Du indem Du die App auf Deinem Gerät mittels ``clickable && clickable "
+"logs`` startest. Du solltest anhand der Fehlermeldung sehen, welche Dateien "
+"fehlen."
 
 #: ../../appdev/guides/dependencies.rst:116
 msgid ""
@@ -975,9 +1024,8 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:165
-#, fuzzy
 msgid "Push Notification Object"
-msgstr "Push-Benachrichtigungen"
+msgstr "Push Notification Object"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -986,7 +1034,7 @@ msgstr "Push-Benachrichtigungen"
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Parameter"
-msgstr ""
+msgstr "Parameter"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -995,7 +1043,7 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -1004,11 +1052,11 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #: ../../appdev/guides/pushnotifications.rst:170
 msgid "appid"
-msgstr ""
+msgstr "appid"
 
 #: ../../appdev/guides/pushnotifications.rst:170
 #: ../../appdev/guides/pushnotifications.rst:173
@@ -1018,9 +1066,8 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:230
 #: ../../appdev/guides/pushnotifications.rst:233
 #: ../../appdev/guides/pushnotifications.rst:241
-#, fuzzy
 msgid "string"
-msgstr "Teilen"
+msgstr "string"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. ID of the application that will receive the notification,"
@@ -1032,7 +1079,7 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:173
 msgid "expire_on"
-msgstr ""
+msgstr "expire_on"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. Expiration date/time for this message, in"
@@ -1040,11 +1087,11 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "`ISO8601 Extendendformat <https://www.w3.org/TR/NOTE-datetime>`_."
-msgstr ""
+msgstr "`ISO8601 Extendendformat <https://www.w3.org/TR/NOTE-datetime>`_."
 
 #: ../../appdev/guides/pushnotifications.rst:176
 msgid "token"
-msgstr ""
+msgstr "token"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. The token identifying the user+device to which the message is"
@@ -1056,14 +1103,14 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:179
 msgid "clear_pending"
-msgstr ""
+msgstr "clear_pending"
 
 #: ../../appdev/guides/pushnotifications.rst:179
 #: ../../appdev/guides/pushnotifications.rst:248
 #: ../../appdev/guides/pushnotifications.rst:250
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Discards all previous pending notifications. Usually in response to"
@@ -1075,7 +1122,7 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:182
 msgid "replace_tag"
-msgstr ""
+msgstr "replace_tag"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If there's a pending notification with the same tag, delete it before"
@@ -1086,14 +1133,13 @@ msgid "queuing this new one."
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:185
-#, fuzzy
 msgid "data"
-msgstr "App-Daten"
+msgstr "data"
 
 #: ../../appdev/guides/pushnotifications.rst:185
 #: ../../appdev/guides/pushnotifications.rst:190
 msgid "Data"
-msgstr ""
+msgstr "Data"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object. The contents of the data field are arbitrary. We can use"
@@ -1120,11 +1166,11 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "message"
-msgstr ""
+msgstr "Nachricht"
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "object"
-msgstr ""
+msgstr "Objekt"
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "A JSON object that is passed as-is to the application via PopAll."
@@ -1132,20 +1178,19 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:206
 msgid "tag"
-msgstr ""
+msgstr "tag"
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "The tag of the push notification."
-msgstr "Push-Benachrichtigungen"
+msgstr "der \"Tag\" der Push-Benachrichtigungen."
 
 #: ../../appdev/guides/pushnotifications.rst:208
 msgid "sound"
-msgstr ""
+msgstr "Klang"
 
 #: ../../appdev/guides/pushnotifications.rst:208
 msgid "bool or string"
-msgstr ""
+msgstr "Bool oder String"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "This is either a boolean (play a predetermined sound) or the"
@@ -1165,15 +1210,15 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "``.local/share/<pkgname>``, and (b) standard xdg dirs."
-msgstr ""
+msgstr "``.local/share/<pkgname>``, und (b) standard xdg Verzeichnisse."
 
 #: ../../appdev/guides/pushnotifications.rst:214
 msgid "vibrate"
-msgstr ""
+msgstr "vibrate"
 
 #: ../../appdev/guides/pushnotifications.rst:214
 msgid "bool or Vibrate"
-msgstr ""
+msgstr "Bool oder vibrate"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "The notification can contain a vibrate field, causing haptic"
@@ -1189,20 +1234,20 @@ msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:218
 msgid "emblem-counter"
-msgstr ""
+msgstr "emblem-counter"
 
 #: ../../appdev/guides/pushnotifications.rst:218
+#, fuzzy
 msgid "Emblem-counter"
-msgstr ""
+msgstr "Emblem-counter"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object, which defines how to display the emblem"
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "counter."
-msgstr "Konten"
+msgstr "Zähler."
 
 #: ../../appdev/guides/pushnotifications.rst:221
 msgid "card"
@@ -1825,7 +1870,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:41
 msgid "Guides"
-msgstr "Guides"
+msgstr "Handbücher"
 
 #: ../../appdev/index.rst:43
 msgid ""
@@ -1942,13 +1987,12 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/nativeapp/index.rst:12
-#, fuzzy
 msgid ""
 "You can use `Clickable <http://clickable.bhdouglass.com/en/latest/>`_ to "
 "facilitate Packaging, deploying, publishing and tests ."
 msgstr ""
 "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ "
-"Kommandozeilenprogramm"
+"Kommandozeilenprogramm."
 
 #: ../../appdev/nativeapp/index.rst:14
 msgid ""
@@ -2079,7 +2123,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:56
 msgid "calendar"
-msgstr "calendar"
+msgstr "Kalender"
 
 #: ../../appdev/platform/apparmor.rst:58
 msgid "Description: Can access the calendar."
@@ -2104,7 +2148,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:68
 msgid "camera"
-msgstr "camera"
+msgstr "Kamera"
 
 #: ../../appdev/platform/apparmor.rst:70
 msgid "Description: Can access the camera(s)"
@@ -2116,7 +2160,7 @@ msgstr "Die Richtlinie camera gewährt Zugriff auf Gerätekameras."
 
 #: ../../appdev/platform/apparmor.rst:78
 msgid "connectivity"
-msgstr "connectivity"
+msgstr "Konnektivität"
 
 #: ../../appdev/platform/apparmor.rst:80
 msgid "Description: Can access coarse network connectivity information"
@@ -2278,7 +2322,7 @@ msgstr "Beschreibung: Kann anfordern, den Bildschirm eingeschaltet zu lassen"
 
 #: ../../appdev/platform/apparmor.rst:161
 msgid "location"
-msgstr "location"
+msgstr "Standort"
 
 #: ../../appdev/platform/apparmor.rst:163
 msgid "Description: Can access Location"
@@ -2292,7 +2336,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:171
 msgid "microphone"
-msgstr "microphone"
+msgstr "Microphon"
 
 #: ../../appdev/platform/apparmor.rst:173
 msgid "Description: Can access the microphone"
@@ -2348,7 +2392,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:199
 msgid "networking"
-msgstr "networking"
+msgstr "Netzwerk"
 
 #: ../../appdev/platform/apparmor.rst:201
 msgid "Description: Can access the network"
@@ -2422,7 +2466,7 @@ msgstr "Beschreibung: Kann Push-Benachrichtigungen als Client verwenden"
 
 #: ../../appdev/platform/apparmor.rst:237
 msgid "sensors"
-msgstr "sensors"
+msgstr "Sensoren"
 
 #: ../../appdev/platform/apparmor.rst:239
 msgid "Description: Can access the sensors"
@@ -2434,7 +2478,7 @@ msgstr "Ermöglicht Apps den Zugriff auf `Gerätesensoren`_"
 
 #: ../../appdev/platform/apparmor.rst:247
 msgid "usermetrics"
-msgstr "usermetrics"
+msgstr "Benutzermetriken"
 
 #: ../../appdev/platform/apparmor.rst:249
 msgid "Description: Can use UserMetrics to update the InfoGraphic"

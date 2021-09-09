@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-02-23 23:42+0000\n"
+"PO-Revision-Date: 2021-08-20 19:08+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/ru/>\n"
@@ -95,7 +95,7 @@ msgid ""
 "When you're done using the shell, it's a good idea to turn Developer Mode "
 "off again."
 msgstr ""
-"Когда Вы закончите работу с shell, рекомендуется снова выключить режим "
+"Когда Вы закончите работу с оболочкой, рекомендуется снова выключить режим "
 "разработчика."
 
 #: ../../userguide/advanceduse/adb.rst:39
@@ -612,9 +612,8 @@ msgid "If you are using a Linux-based phone (like the Pinephone)::"
 msgstr "Если Вы используете телефон на базе Linux (например, Pinephone)::"
 
 #: ../../userguide/advanceduse/ssh.rst:48
-#, fuzzy
 msgid "Connect"
-msgstr "Соединение"
+msgstr "Соединиться"
 
 #: ../../userguide/advanceduse/ssh.rst:50
 msgid "Now everything is set up and you can use ``ssh`` ::"
@@ -873,7 +872,7 @@ msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:85
 msgid "F-Droid: https://f-droid.org/"
-msgstr "F-Droid:  https://f-droid.org/"
+msgstr "F-Droid (FOSS): https://f-droid.org/"
 
 #: ../../userguide/dailyuse/anbox.rst:86
 msgid "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
@@ -1333,15 +1332,14 @@ msgid "In order to add a bind mount use::"
 msgstr "Это можно сделать так::"
 
 #: ../../userguide/dailyuse/libertine.rst:159
-#, fuzzy
 msgid ""
 "You can also make deep links in case you only want parts of your SD-card "
 "available in the container. In this case just the entire path to the "
 "directory you want to bind mount::"
 msgstr ""
-"Можно сделать deep links, если нужно, чтобы в контейнере была доступна "
-"только часть SD-карты. В этом случае можно просто указать полный путь к "
-"каталогу, который задан через bind mount ::"
+"Можно также создать deep links, если требуется, чтобы в контейнере была "
+"доступна только часть SD-карты. В этом случае можно просто указать полный "
+"путь к каталогу, который задан через bind mount ::"
 
 #: ../../userguide/dailyuse/libertine.rst:163
 msgid ""
@@ -1856,7 +1854,7 @@ msgid ""
 "available:"
 msgstr ""
 "Перейдите на страницу `загрузки <https://github.com/ubports/"
-"ubports-installer/releases/latest> `_ и скачайте подходящую версию "
+"ubports-installer/releases/latest>`_ и скачайте подходящую версию "
 "инсталятора. Доступны следующие пакеты:"
 
 #: ../../userguide/install.rst:11
@@ -1897,16 +1895,18 @@ msgid ""
 "installer/?package=appimage>`_: ``ubports-installer-<version-number>."
 "AppImage``"
 msgstr ""
-"`Другие дистрибутивы Linux: ``ubports-installer-<version-number>.snap`` или "
-"``ubports-installer-<version-number>.AppImage``"
+"`Другие дистрибутивы Linux (AppImage) <https://devices.ubuntu-touch.io/"
+"installer/?package=appimage>`_: ``ubports-installer-<version-"
+"number>.AppImage``"
 
 #: ../../userguide/install.rst:17
 msgid ""
 "Start the installer and follow the on-screen instructions that will walk you "
 "through the installation process. That's it! Have fun exploring Ubuntu Touch!"
 msgstr ""
-"Запустите программу-установщик и следуйте инструкциям на экране, которые "
-"будут сопровождать процесс установки."
+"Запустите программу установки и следуйте инструкциям на экране, которые "
+"помогут вам пройти процесс установки. Вот и все! Наслаждайтесь изучением "
+"Ubuntu Touch!"
 
 #: ../../userguide/install.rst:19
 msgid ""
@@ -1932,8 +1932,8 @@ msgstr ""
 "Telegram <https://t.me/WelcomePlus>`_ или в `matrix <https://matrix.to/#/!Kwd"
 "niMNeTmClpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot.org>`"
 "_, а также задать вопрос `на форуме <https://forums.ubports.com/> `_ или на "
-"сайте` askubuntu <https://askubuntu.com> `_. Если Вы считаете, что программа-"
-"установщик UBports работает некорректно, то можете ` создать тикет на баг-"
+"сайте `askubuntu <https://askubuntu.com> `_. Если Вы считаете, что программа-"
+"установщик UBports работает некорректно, то можете `создать тикет на баг-"
 "трекере <https://github.com/ubports/ubports-installer/issues/new>` _, чтобы "
 "мы узнали о проблеме."
 
@@ -2113,8 +2113,8 @@ msgid ""
 "`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ "
 "(*krillin*)"
 msgstr ""
-"`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ "
-"(*krillin*)"
+"`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ (*"
+"кодовое название krillin*)"
 
 #: ../../userguide/install.rst:122
 msgid ""
@@ -2122,7 +2122,8 @@ msgid ""
 "Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 msgstr ""
 "`Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/"
-"Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
+"Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*кодовое "
+"название vegetahd*)"
 
 #: ../../userguide/install.rst:123
 msgid ""
@@ -2130,15 +2131,15 @@ msgid ""
 "OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
 msgstr ""
 "`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/"
-"OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
+"OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*кодовое название cooler*)"
 
 #: ../../userguide/install.rst:124
 msgid ""
 "`Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/"
 "Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)"
 msgstr ""
-"`Bq M10 FHD  <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/"
-"Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)"
+"`Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/"
+"Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*кодовое название frieza*)"
 
 #: ../../userguide/install.rst:125
 msgid ""
@@ -2254,7 +2255,7 @@ msgstr ""
 "<https://web.archive.org/web/20180118130643/http://www.mibqyyo.com/"
 "en-articles/2015/09/16/"
 "ubuntu-android-installation-process-for-bq-aquaris-e4-5-and-e5/>`_ с "
-"системой) с помощью программы SP flash tool, потом закройте её  и повторите "
+"системой) с помощью программы SP flash tool, потом закройте её и повторите "
 "попытку, начиная с шага 4."
 
 #: ../../userguide/install.rst:160
