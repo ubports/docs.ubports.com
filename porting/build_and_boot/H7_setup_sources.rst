@@ -1,7 +1,7 @@
 Halium-7.1 - Setting up the sources
 ===================================
 
-The sources necessary for the **full system image build** for Halium-7.1.
+The sources necessary for the **full system image build** for Halium-7.1. Halium 7 requires a **full system image build**.
 
 Setting up the sources for Halium-7.1 builds
 --------------------------------------------
