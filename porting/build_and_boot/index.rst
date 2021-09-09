@@ -3,7 +3,7 @@ Building and booting
 
 Now it's time to download and configure the necessary source code.
 Then we'll build it and get it to boot.
-Depending on the porting method, follow the sections outlined below:
+Each of the following three subsections corresponds to one porting method. After following one of them  proceed with the final *Install and boot* section:
 
 Full system image method
 ------------------------
