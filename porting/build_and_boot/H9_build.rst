@@ -70,10 +70,11 @@ I your particular error is not listed, you will need to do some research of your
 Building the system image (system.img)
 --------------------------------------
 
-Skip this step if you are going to base your port on the GSI.
+If you are using the **Halium-boot** method, you can skip this step.
+If you are following the **Full system image** method, this step is required.
 
-If on the other hand your goal is to build both ``halium-boot.img`` and a device specific ``system.img``, you can now proceed directly to building the latter::
+To build the system image::
 
     mka systemimage
 
-Likelier than not, you will run into one or more errors along the way when building the system image. A number of possible errors are documented in `the Halium guide <https://docs.halium.org/en/latest/porting/common-system-build-errors.html#common-system-build-errors>`_. If yours is not listed, :ref:`seek community help <Getting-community-help>`.
+It's likely that you will run into one or more errors when building the system image. A number of possible errors and know solutions are documented in `the Halium guide <https://docs.halium.org/en/latest/porting/common-system-build-errors.html#common-system-build-errors>`_. If yours is not listed, :ref:`seek community help <Getting-community-help>`.
