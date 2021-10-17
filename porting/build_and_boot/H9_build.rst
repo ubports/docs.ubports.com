@@ -77,4 +77,4 @@ To build the system image::
 
     mka systemimage
 
-It's likely that you will run into one or more errors when building the system image. A number of possible errors and know solutions are documented in `the Halium guide <https://docs.halium.org/en/latest/porting/common-system-build-errors.html#common-system-build-errors>`_. If yours is not listed, :ref:`seek community help <Getting-community-help>`.
+It's likely that you will run into one or more errors when building the system image. A number of possible errors and known solutions are documented in `the Halium guide <https://docs.halium.org/en/latest/porting/common-system-build-errors.html#common-system-build-errors>`_. If yours is not listed, :ref:`seek community help <Getting-community-help>`.

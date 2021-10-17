@@ -53,7 +53,8 @@ Android version  Halium version  Lineage OS (LOS)
 Generic System Image
 --------------------
 
-Since Android version 9.0, Android has a significantly different architecture than before. The device-specific vendor blobs now reside on a separate partition instead of sharing a partition with the rest of the system image. This separation of device-specific code from generic code made possible what is known as the **Generic System Image (GSI)**.
+Starting with Android version 9.0, a significant change of architecture was introduced.
+The device-specific vendor blobs now reside on a separate partition instead of sharing a partition with the rest of the system image. This separation of device-specific code from generic code made possible what is known as the **Generic System Image (GSI)**.
 
 A GSI is a system image that is built to be able to function with a wide range of devices. Android devices, as of version 9.0, use a GSI. For more information, see the `Android Developer pages <https://developer.android.com/topic/generic-system-image/>`_
 
@@ -86,7 +87,7 @@ For this porting method it is sufficent to build the halium-boot.img and install
 Standalone kernel method
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-This porting method only requires building the kernel and install this together with the Halium ramdisk, the Halium GSI and the UBports rootfs. This method can be used for Halium 9.0 ports.
+This porting method only requires building the kernel and installing this together with the Halium ramdisk, the Halium GSI and the UBports rootfs. This method can be used for Halium 9.0 ports.
 
 All methods share some common steps. However, there are also significant differences that must not be missed. Therefore, the methods will be treated separately in the subsequent sections where needed.
 
