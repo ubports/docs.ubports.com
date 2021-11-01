@@ -20,7 +20,7 @@ This is why Ubuntu Touch cannot be built completely from source code for most co
 
 The next component of Ubuntu Touch is a pre-compiled root filesystem which needs to be installed on the device. This component does not communicate directly with the device hardware. Instead, this communication is mediated by a Hardware Abstraction Layer (HAL) which needs to be built for each specific device, because each device has its specific hardware architecture. This component is called Halium  and is available in different versions (5.1 which is largely obsolete, 7.1, 9 and 10 as of writing) corresponding to different Android versions.
 
-The `Halium project <https://halium.org/>`_ enables Linux systems to run on Android hardware. It is a joint effort by multiple mobile operating systems, notably Plasma mobile, Lune OS and UBports. 
+The `Halium project <https://halium.org/>`_ enables Linux systems to run on Android hardware. It is a joint effort by multiple mobile operating systems, notably Lune OS and UBports. 
 
 UBports porting builds on top of Halium porting. Consequently, you will be using both the Halium porting guide and the UBports porting guide. At times it may also be helpful to test with one of the other operating systems to debug a problem from different angles.
 
