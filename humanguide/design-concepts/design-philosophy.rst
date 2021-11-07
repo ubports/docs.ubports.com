@@ -3,7 +3,7 @@ Design philosophy
 =================
 
 The Ubuntu interface has been designed according to a philosophy called Suru.
-.. figure:: /_static/images/design-philosophy/750w_DesignPhilosophy_MainImage.png
+.. figure:: /_static/images/humanguide/750w_DesignPhilosophy_MainImage.png
 
 
 Suru meaning
@@ -27,14 +27,14 @@ When using a small layout, the information and functionality is folded into a co
 Origami
 -------
 
-.. figure:: /_static/images/design-philosophy/366w_DesignPhilosophy_origami.png
+.. figure:: /_static/images/humanguide/366w_DesignPhilosophy_origami.png
 
 Origami has long been associated with good fortune and represents the visual style for the Ubuntu Phone. Origami folds are used to define the design.
 
 Simple details
 --------------
 
-.. figure:: /_static/images/design-philosophy/366w_DesignPhilosophy_simple.png
+.. figure:: /_static/images/humanguide/366w_DesignPhilosophy_simple.png
 
 What is most important is that screen layouts retain a natural, rhythmic quality, and a neatness and clarity that helps the user find things quickly and use them intuitively.
 
@@ -43,7 +43,7 @@ Using subtle grids for accuracy
 
 The folds from origami produce simple graphical details that allow designers to create a subtle grid for positioning brand elements and components, such as logos, icons or copylines. This helps maintain focus on the main image or graphic element.
 
-.. figure:: /_static/images/design-philosophy/750w_DesignPhilosophy_SubtleGrid.png
+.. figure:: /_static/images/humanguide/750w_DesignPhilosophy_SubtleGrid.png
 
 Suru mood board
 ---------------
@@ -51,4 +51,4 @@ Suru mood board
 Influences and inspiration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. figure:: /_static/images/design-philosophy/suru_mood_board.png
+.. figure:: /_static/images/humanguide/suru_mood_board.png
