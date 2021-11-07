@@ -3,6 +3,7 @@ Design philosophy
 =================
 
 The Ubuntu interface has been designed according to a philosophy called Suru.
+
 .. figure:: /_static/images/humanguide/750w_DesignPhilosophy_MainImage.png
 
 
