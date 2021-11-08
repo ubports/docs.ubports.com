@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-29 16:27-0500\n"
-"PO-Revision-Date: 2021-08-20 09:43+0000\n"
+"PO-Revision-Date: 2021-10-05 10:57+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-humanguide/ru/>\n"
@@ -64,7 +64,7 @@ msgstr "Меню нижнего края"
 
 #: ../../humanguide/app-layout/app-main-view.rst:29
 msgid "For quick actions. See `Quick actions`_."
-msgstr "Для быстрых действий. См. раздел \"Быстрые действия\"_."
+msgstr "Для быстрых действий. См. раздел `Быстрые действия`_."
 
 #: ../../humanguide/app-layout/dialogs.rst:2
 msgid "Dialogs"
@@ -178,9 +178,9 @@ msgid ""
 "api-docs.ubports.com/sdk/apps/qml/Ubuntu.Components/PageStack.html>`__ is "
 "used."
 msgstr ""
-"Заголовок нужен, чтобы показать кнопку \"назад\", когда используется \"стек "
+"Заголовок нужен, чтобы показать кнопку \"назад\", когда используется `стек "
 "страниц <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Components/"
-"PageStack.html>' __ ."
+"PageStack.html>` __."
 
 #: ../../humanguide/app-layout/importing-data.rst:2
 msgid "Importing Data"
@@ -274,24 +274,24 @@ msgid ""
 "visible and actions in the drawer will appear automatically."
 msgstr ""
 "По мере увеличения ширины заголовка в разных размерах экрана становятся "
-"видны дополнительные слоты, и действия на панели быстрого доступа появляются "
-"автоматически."
+"видны дополнительные ячейки, и действия на панели быстрого доступа "
+"появляются автоматически."
 
 #: ../../humanguide/app-layout/main-actions.rst:34
 msgid "3 slot layout"
-msgstr "Третий слой слотов"
+msgstr "Третий слой ячеек"
 
 #: ../../humanguide/app-layout/main-actions.rst:41
 msgid "4 slot layout"
-msgstr "четвертый слой слотов"
+msgstr "Четвертый слой ячеек"
 
 #: ../../humanguide/app-layout/main-actions.rst:48
 msgid "5 slot layout"
-msgstr "пятый слой слотов"
+msgstr "Пятый слой ячеек"
 
 #: ../../humanguide/app-layout/main-actions.rst:55
 msgid "6 slot layout"
-msgstr "шестой слой слотов"
+msgstr "Шестой слой ячеек"
 
 #: ../../humanguide/app-layout/main-actions.rst:62
 msgid "Medium to large screens"

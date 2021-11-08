@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-29 13:44-0500\n"
-"PO-Revision-Date: 2021-08-20 19:08+0000\n"
+"PO-Revision-Date: 2021-10-04 21:26+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-about/ru/>\n"
@@ -113,16 +113,16 @@ msgstr ""
 
 #: ../../about/process/branch-naming.rst:2
 msgid "Branch-naming convention"
-msgstr "Соглашение об именовании ветвей"
+msgstr "Соглашение об именовании веток разработки"
 
 #: ../../about/process/branch-naming.rst:4
 msgid ""
 "Our branch-naming conventions ensure that software can be built by our CI "
 "and tested easily by other developers."
 msgstr ""
-"Наши соглашения по присвоению имен веткам гарантируют, что программное "
-"обеспечение может быть создано нашим CI и легко протестировано другими "
-"разработчиками."
+"Наши соглашения о названиях веток разработки гарантируют, что программное "
+"обеспечение создается по технологии непрерывной интеграции (CI) и может быть "
+"легко протестировано другими разработчиками."
 
 #: ../../about/process/branch-naming.rst:6
 msgid ""
@@ -130,11 +130,11 @@ msgid ""
 "convention is used and possible deviations from the norm."
 msgstr ""
 "В файле README каждого репозитория Git должно быть указано, какое соглашение "
-"об именах ветвей используется, и возможные отклонения от нормы."
+"об именах ветвей используется и возможные отклонения от него."
 
 #: ../../about/process/branch-naming.rst:9
 msgid "Click-Packages"
-msgstr "Click-Пакеты"
+msgstr "Click-пакеты"
 
 #: ../../about/process/branch-naming.rst:11
 msgid ""
@@ -153,7 +153,7 @@ msgstr ""
 
 #: ../../about/process/branch-naming.rst:14
 msgid "Deb-Packages"
-msgstr "Deb-Пакеты"
+msgstr "Deb-пакеты"
 
 #: ../../about/process/branch-naming.rst:16
 msgid ""
@@ -170,11 +170,10 @@ msgid ""
 "updated using click-package downloads from the OpenStore. This policy allows "
 "us to make use of the powerful Debian build system to resolve dependencies."
 msgstr ""
-"Для предустановленных компонентов Ubuntu Touch, deb-пакеты используются "
-"везде, где это возможно. Это включает в себя основные приложения, так как "
-"они все еще могут быть независимо обновлены с помощью загрузки пакетов из "
-"OpenStore. Эта политика позволяет нам использовать мощную систему сборки "
-"Debian для устранения зависимостей."
+"В предустановленных компонентах Ubuntu Touch deb-пакеты используются везде, "
+"где это возможно. Это основные приложения, так как их все еще можно обновить "
+"напрямую загружая пакеты из OpenStore. Эта политика позволяет нам "
+"использовать мощную систему сборки Debian для устранения зависимостей."
 
 #: ../../about/process/branch-naming.rst:20
 msgid ""

@@ -8,39 +8,42 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-09-30 00:37+0000\n"
+"Last-Translator: mk419 <mk419@fascode.net>\n"
+"Language-Team: Japanese <https://translate.ubports.com/projects/ubports-docs/"
+"documentation-userguide/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
 msgid "Shell access via adb"
-msgstr ""
+msgstr "adbを介したシェルへのアクセス"
 
 #: ../../userguide/advanceduse/adb.rst:4
 msgid ""
 "You can put your UBports device into developer mode and access a Bash shell "
 "from your PC. This is useful for debugging or more advanced shell usage."
-msgstr ""
+msgstr "UBportsデバイスを開発者モードにして、PCからBashシェルにアクセスできます。 これは、デバッグやより高度なシェルの使用に役立ちます。"
 
 #: ../../userguide/advanceduse/adb.rst:8
 msgid "Install ADB"
-msgstr ""
+msgstr "ADBのインストール"
 
 #: ../../userguide/advanceduse/adb.rst:10
 msgid "First, you'll need ADB installed on your computer."
-msgstr ""
+msgstr "まず、コンピュータにADBをインストールする必要があります。"
 
 #: ../../userguide/advanceduse/adb.rst:12
 msgid "On Ubuntu::"
-msgstr ""
+msgstr "Ubuntuの場合::"
 
 #: ../../userguide/advanceduse/adb.rst:16
 msgid "On Fedora::"
-msgstr ""
+msgstr "Fedoraの場合::"
 
 #: ../../userguide/advanceduse/adb.rst:20
 msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
@@ -54,15 +57,15 @@ msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:27
 msgid "Enable developer mode"
-msgstr ""
+msgstr "開発者モードを有効にする"
 
 #: ../../userguide/advanceduse/adb.rst:29
 msgid "Next, you'll need to turn on Developer Mode."
-msgstr ""
+msgstr "次に、開発者モードをオンにする必要があります。"
 
 #: ../../userguide/advanceduse/adb.rst:31
 msgid "Reboot your device"
-msgstr ""
+msgstr "デバイスの再起動"
 
 #: ../../userguide/advanceduse/adb.rst:32
 msgid ""
@@ -72,17 +75,17 @@ msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:33
 msgid "Plug the device into a computer with adb installed"
-msgstr ""
+msgstr "adbがインストールされているコンピューターにデバイスを接続します"
 
 #: ../../userguide/advanceduse/adb.rst:34
 msgid "Open a terminal and run ``adb devices``."
-msgstr ""
+msgstr "ターミナルを開き、``adb devices``を実行します。"
 
 #: ../../userguide/advanceduse/adb.rst:37
 msgid ""
 "When you're done using the shell, it's a good idea to turn Developer Mode "
 "off again."
-msgstr ""
+msgstr "シェルの使用が終了したら、開発者モードを再度オフにすることをお勧めします。"
 
 #: ../../userguide/advanceduse/adb.rst:39
 msgid ""
