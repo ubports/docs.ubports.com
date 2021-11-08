@@ -3,7 +3,7 @@
 Finalizing the port
 ===================
 
-Once most frequently used features are working on your port you can start thinking about finalizing it, i.e. building recovery and preparing the installer so that other people may start installing and testing it. This can give valuable feedback that will potentially help you to find and diagnose remaining issues faster than you could have done on your own.
+Once most frequently used features are working on your port you can start thinking about finalizing it, i.e. building recovery and preparing the installer so that it is easier for people to install and test it. This can give valuable feedback that will potentially help you to find and diagnose remaining issues faster than you could have done on your own.
 
 Previously, your port has had the rootfs and system image coexisting on the userdata partition. These need to be moved to the system partition in order to ensure a maximum of available space for user data. This is done by modifying the code, building ``recovery.img`` and subsequently rebuilding the boot image.
 

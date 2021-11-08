@@ -8,7 +8,7 @@ In brief:
     * **Halium-7.1** requires installing the boot image and system image you have built, together with the UBports rootfs, which you need to download.
     * **Halium-9.0 and newer** require installing the boot image you have built together with the GSI and the UBports rootfs. Both the GSI and the rootfs are available for download. Note: If you chose to build your own system.img, then you must use this instead of the GSI when installing.
 
-In order to install Ubuntu Touch, you need a recovery image with Busybox, such as TWRP, installed on your phone. If you have not done so yet, refer to section :ref:`Install-TWRP-recovery` and install it now. 
+In order to install Ubuntu Touch, you need a recovery image with Busybox, such as TWRP, installed on your phone. If you have not done so yet, refer to section :ref:`Install-TWRP-recovery` and install it now.
 
 You will also need to ensure the ``/data`` partition is formatted with ``ext4`` and is not encrypted. Boot into recovery, check and adjust as necessary.
 
@@ -17,7 +17,7 @@ You will also need to ensure the ``/data`` partition is formatted with ``ext4`` 
 Flashing halium-boot.img
 ------------------------
 
-To install halium-boot, reboot your phone into fastboot mode. Then do the following from the root of your BUILDDIR::
+To install halium-boot, reboot your phone into fastboot mode. Then do the following from the root of your ``BUILDDIR``::
 
     cout
     fastboot flash boot halium-boot.img
@@ -28,9 +28,9 @@ If you have trouble accessing your device in fastboot mode, but are able to acce
     adb push halium-boot.img /tmp/
 
 On your device, choose *Install* in the TWRP menu, navigate to the ``/tmp`` directory, choose *Image*, select your image file, select *Boot* and swipe to flash.
-    
+
 .. Note::
-    Samsung devices: Flashing halium-boot.img on Samsung devices is done using the Heimdall flashing utility (on Linux) or the Odin utility (on Windows) after first bringing the device into 'download mode'. See more information on these utilities `here <http://docs.halium.org/en/latest/porting/install-build/reference-rootfs.html#install-hybris-boot-img-on-samsung-devices>`_. Follow the instructions for the utility you choose, including the specific flashing command for flashing the boot partition. Install system.img and rootfs (below) with the device in recovery mode. 
+    Samsung devices: Flashing halium-boot.img on Samsung devices is done using the Heimdall flashing utility (on Linux) or the Odin utility (on Windows) after first bringing the device into 'download mode'. See more information on these utilities `here <http://docs.halium.org/en/latest/porting/install-build/reference-rootfs.html#install-hybris-boot-img-on-samsung-devices>`_. Follow the instructions for the utility you choose, including the specific flashing command for flashing the boot partition. Install system.img and rootfs (below) with the device in recovery mode.
 
 .. _Inst-sys:
 
@@ -52,7 +52,7 @@ Start by downloading the appropriate rootfs for your device. You need a rootfs c
 Halium-9.0: Download the GSI
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-(If you have built your own system.img, skip to the next step.)
+If you have built your own system.img, skip to the next step.
 
 Download `the Halium 9 LXC container image (GSI) <https://ci.ubports.com/job/UBportsCommunityPortsJenkinsCI/job/ubports%252Fcommunity-ports%252Fjenkins-ci%252Fgeneric_arm64/job/main/>`_.
 

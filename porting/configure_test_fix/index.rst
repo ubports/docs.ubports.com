@@ -1,9 +1,9 @@
 Configuring, testing and fixing
 ===============================
 
-Now that you have successfully booted your build, you are ready to bring up the graphical UI, merge apparmor into your port and see to any remaining functionality that needs configuring. This section explains how to perform these tasks.
+Now that you have successfully booted your build, you are ready to bring up the graphical UI, merge AppArmor into your port and see to any remaining functionality that needs configuring. This section explains how to perform these tasks.
 
-If you are doing a GSI port, much, if not all device features, should already work 'out of the box' once you have brought up Lomiri and added Apparmor. For this reason, Halium-9/GSI porting as well as porting based on standalone kernel builds should normally require only udev rules, Apparmor patches and only limited, if any, configuring using the overlay file method. If, despite performing these tasks, your GSI-based build still does not function properly, you may have to resort to building a device-specific ``system.img`` in order to reach your goal.
+If you are doing a GSI port, much, if not all device features, should already work 'out of the box' once you have brought up Lomiri and added AppArmor. For this reason, Halium-9/GSI porting as well as porting based on standalone kernel builds should normally require only udev rules, AppArmor patches and only limited, if any, configuring using the overlay file method. If, despite performing these tasks, your GSI-based build still does not function properly, you may have to resort to building a device-specific ``system.img`` in order to reach your goal.
 
 On the other hand, Halium 7.1 porting and Halium-9.0 porting (when building the full device-specific ``system.img``) will require the most work.
 

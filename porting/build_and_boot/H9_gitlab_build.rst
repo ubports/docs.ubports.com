@@ -1,10 +1,12 @@
 
 .. _Gitlab-CI:
 
-Halium-9.0 - Using Gitlab CI scripts
-====================================
+Halium-9.0 - Standalone kernel method
+=====================================
 
-For some devices, Halium-9.0 (and later) ports can be built based on just the kernel source code for your specific device and SoC (system on chip). This method makes use of scripts that download and prepare the kernel source, build the boot image and combine this together with other necessary components, thus creating the files needed which can subsequently be flashed to the device.
+For some devices, Halium-9.0 (and later) ports can be built based on just the kernel source code.
+
+This method makes use of scripts that download and prepare the kernel source, build the boot image and combine this together with other necessary components, thus creating the files needed which can subsequently be flashed to the device.
 
 Setting up the build environment
 --------------------------------
@@ -30,7 +32,7 @@ Ideally you should base your build on a previous build for a device with similar
 Configure, build and install
 ----------------------------
 
-Go through the file ``deviceinfo`` and make all necessary adjustments so that it conforms to your device. The first lines should be self-explanatory. 
+Go through the file ``deviceinfo`` and make all necessary adjustments so that it conforms to your device. The first lines should be self-explanatory.
 
 To complete the ``deviceinfo_flash_offset_`` lines, you will need to obtain and examine an existing ``boot.img`` for your particular device, e.g. from a LineageOS ROM. Lineage provides `a Python script for reading the information in question. <https://raw.githubusercontent.com/LineageOS/android_system_core/lineage-17.1/mkbootimg/unpack_bootimg.py>`_ Download this script and run it on the boot image you have obtained::
 

@@ -10,7 +10,7 @@ The guide as a whole is written as a sequence of steps describing how an ideal p
 What is Ubuntu Touch?
 ---------------------
 
-Ubuntu Touch is an open source operating system for mobile devices. It can be ported to devices that originally shipped with Android OS. Alas, the majority of these devices are dependent to some degree on proprietary software. 
+Ubuntu Touch is an open source operating system for mobile devices. It can be ported to devices that originally shipped with Android OS. Alas, the majority of these devices are dependent to some degree on proprietary software.
 
 .. _Vendor_blobs:
 
@@ -20,7 +20,7 @@ This is why Ubuntu Touch cannot be built completely from source code for most co
 
 The next component of Ubuntu Touch is a pre-compiled root filesystem which needs to be installed on the device. This component does not communicate directly with the device hardware. Instead, this communication is mediated by a Hardware Abstraction Layer (HAL) which needs to be built for each specific device, because each device has its specific hardware architecture. This component is called Halium  and is available in different versions (5.1 which is largely obsolete, 7.1, 9 and 10 as of writing) corresponding to different Android versions.
 
-The `Halium project <https://halium.org/>`_ enables Linux systems to run on Android hardware. It is a joint effort by multiple mobile operating systems, notably Lune OS and UBports. 
+The `Halium project <https://halium.org/>`_ enables Linux systems to run on Android hardware. It is a joint effort by multiple mobile operating systems, notably Lune OS and UBports.
 
 UBports porting builds on top of Halium porting. Consequently, you will be using both the Halium porting guide and the UBports porting guide. At times it may also be helpful to test with one of the other operating systems to debug a problem from different angles.
 
@@ -31,36 +31,37 @@ Thus an Ubuntu Touch port is composed of the these components:
     * `Halium <https://halium.org/>`_ (contained in the boot and system images)
     * The vendor blobs
 
-You, the porter, need to build Halium (in part or in whole, depending on :ref:`porting method <Porting-methods>`) and install this together with the Ubuntu Touch rootfs in order to create a functioning Ubuntu Touch port. 
+You, the porter, need to build Halium (in part or in whole, depending on :ref:`porting method <Porting-methods>`) and install this together with the Ubuntu Touch rootfs in order to create a functioning Ubuntu Touch port.
 
 .. _Android-and-Halium-versions:
 
 Android and Halium versions
 ---------------------------
 
-Halium is built using source code for a modified version of the Android operating system called LineageOS (see `the LineagesOS website <https://lineageos.org/>`_ and `wiki <https://wiki.lineageos.org/>`_). The required source code is available online and needs to be downloaded and configured to build the correct Halium version for each individual device port. The table below shows which versions are required for the different Halium versions.
+Halium is built using source code for a modified version of the Android operating system called LineageOS (see `the LineageOS website <https://lineageos.org/>`_ and `wiki <https://wiki.lineageos.org/>`_). The required source code is available online and needs to be downloaded and configured to build the correct Halium version for each individual device port. The table below shows which versions are required for the different Halium versions.
 
 ===============  ==============  ================
 Android version  Halium version  Lineage OS (LOS)
 ===============  ==============  ================
-7.1              7.1             14.1            
-9.0              9.0             16.0            
+7.1              7.1             14.1
+9.0              9.0             16.0
 10.0             10.0            17.0
 ===============  ==============  ================
 
 .. _What-is-a-GSI:
 
-What is a GSI?
---------------
+Generic System Image
+--------------------
 
-With Android 9.0 there came a significant change of architecture. The device-specific vendor blobs now reside on a separate partition instead of sharing a partition with the rest of the system image. This separation of device-specific code from generic code made possible what is known as the **Generic System Image (GSI)**.
+Starting with Android version 9.0, a significant change of architecture was introduced.
+The device-specific vendor blobs now reside on a separate partition instead of sharing a partition with the rest of the system image. This separation of device-specific code from generic code made possible what is known as the **Generic System Image (GSI)**.
 
-A GSI  is a system image that is built to be able to function with a wide range of devices. Android devices, as of version 9.0, use a GSI. For more information, see the `Android Developer pages <https://developer.android.com/topic/generic-system-image/>`_
+A GSI is a system image that is built to be able to function with a wide range of devices. Android devices, as of version 9.0, use a GSI. For more information, see the `Android Developer pages <https://developer.android.com/topic/generic-system-image/>`_
 
 The development of the Android GSI architecture also cleared the way for the now available generic Halium 9.0 arm64 system image (hereafter referred to as *the Halium GSI*, or simply *the GSI*) which is used for Ubuntu Touch. This, however, is somewhat different from the Android GSI. For a more detailed explanation of the Halium GSI, please refer to `the wiki page on Gitlab CI builds of the generic Halium system image <https://github.com/ubports/porting-notes/wiki/GitLab-CI-builds-for-devices-based-on-halium_arm64-(Halium-9)>`_.
 
-How does this change the porting process?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+What does this mean for the porting process?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Since the GSI is a prebuilt, device-independent component, it effectively simplifies the task of building a viable port by removing much of the meticulous and time consuming task of getting the hardware-specific vendor blobs compiled into the system image and configured to function properly.
 
@@ -69,22 +70,26 @@ Since the GSI is a prebuilt, device-independent component, it effectively simpli
 Porting methods
 ---------------
 
-When porting based on Halium-7.1 there is only one available method to follow. However, the change in architecture introduced with Android 9 (Halium-9.0) entailed changes in porting method, clearing the way for different courses of action. This guide describes the Halium-7.1 method of porting, as well as two main methods for porting based on Halium-9.0 or later.
+This guide documents three different porting methods, which we call: **Full system image method**, **Halium-boot method**, and **Standalone kernel method**.
+When porting based on Halium 7.1 the Full system image method is the only available method to follow. For Halium 9.0 all three methods are possible.
 
-Porting based on Halium-7.1
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Full system image method
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-This version of Halium requires building both the boot image (halium-boot.img) and the full device specific system image (system.img) from source and installing these together with the UBports root file system (rootfs).
+This porting method requires building both the boot image (halium-boot.img) and the full device specific system image (system.img) from source and installing these together with the UBports root file system (rootfs). For Halium 7.1 ports this is the only possible method (Consequently, this method is sometimes referred to as *the Halium 7.1 method*).
+For Halium 9.0 it is also possible to use this method, however for Halium 9.0 the other two methods below are probably easier.
 
-Porting based on Halium-9.0 (and later)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Halium-boot method
+^^^^^^^^^^^^^^^^^^
 
-Owing to the changes in architecture following the introduction of Android 9 / Halium-9.0, porters now have the option to choose between two main courses of action:
+For this porting method it is sufficent to build the halium-boot.img and install this together with the Halium GSI and the UBports rootfs. This method can be used for Halium 9.0 ports.
 
-* **The Halium-boot method:** Build halium-boot.img and install this together with the Halium GSI and the UBports rootfs.
-* **The standalone kernel method:** Build only the kernel and install this together with the Halium ramdisk, the Halium GSI and the UBports rootfs.
+Standalone kernel method
+^^^^^^^^^^^^^^^^^^^^^^^^
 
-The methods outlined above share some common steps, even between Halium versions. However, there are also significant differences that must not be missed. Therefore, the methods will be treated separately in the subsequent sections of this guide whenever the differences, and the concern for understandability, justify it.
+This porting method only requires building the kernel and installing this together with the Halium ramdisk, the Halium GSI and the UBports rootfs. This method can be used for Halium 9.0 ports.
+
+All methods share some common steps. However, there are also significant differences that must not be missed. Therefore, the methods will be treated separately in the subsequent sections where needed.
 
 The remainder of this section gives some words of advice to new porters. If you already have porting experience or ROM building experience, you can likely skip straight to :ref:`Preparations <Preparations>`.
 
@@ -116,7 +121,7 @@ When you run into trouble, and you will, refer to one or more of the sources bel
 * `Telegram: @halium <https://t.me/halium>`_
 * `Telegram: @ubports_porting <https://t.me/ubports_porting>`_
 * `The UBports Forum <https://forums.ubports.com/category/33/porting>`_
-* Matrix: #halium:matrix.org 
+* Matrix: #halium:matrix.org
 
 .. _General-advice:
 
