@@ -8,113 +8,135 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-16 17:49-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-10-11 00:27+0000\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: Dutch <https://translate.ubports.com/projects/ubports-docs/"
+"documentation-userguide/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
 msgid "Shell access via ADB"
-msgstr ""
+msgstr "Shell-toegang via ADB"
 
 #: ../../userguide/advanceduse/adb.rst:4
 msgid "You can put your UBports device into developer mode and access a Bash shell from your PC. This is useful for debugging or more advanced shell usage."
 msgstr ""
+"Je kunt op je UBports-apparaat de ontwikkelaarsmodus inschakelen om toegang "
+"op afstand te krijgen via een Bash-shell. Dit is erg handig bij "
+"foutopsporing of uitgebreider shell-gebruik."
 
 #: ../../userguide/advanceduse/adb.rst:8
 msgid "Install ADB"
-msgstr ""
+msgstr "ADB"
 
 #: ../../userguide/advanceduse/adb.rst:10
 msgid "First, you'll need ADB installed on your computer."
-msgstr ""
+msgstr "Het eerste wat je moet doen is ADB installeren op je computer."
 
 #: ../../userguide/advanceduse/adb.rst:12
 msgid "On Ubuntu::"
-msgstr ""
+msgstr "Ubuntu::"
 
 #: ../../userguide/advanceduse/adb.rst:16
 msgid "On Fedora::"
-msgstr ""
+msgstr "Fedora::"
 
 #: ../../userguide/advanceduse/adb.rst:20
 msgid "And on macOS with `Homebrew <https://brew.sh>`_::"
-msgstr ""
+msgstr "macOS (middels `Homebrew <https://brew.sh>`_)::"
 
 #: ../../userguide/advanceduse/adb.rst:24
 msgid "For Windows, grab the command-line tools only package from `developer.android.com <https://developer.android.com/studio/index.html#downloads>`_."
 msgstr ""
+"Op Windows kun je de opdrachtregelhulpmiddelen downloaden van `"
+"developer.android.com <https://developer.android.com/studio/"
+"index.html#downloads>`_."
 
 #: ../../userguide/advanceduse/adb.rst:27
 msgid "Enable developer mode"
-msgstr ""
+msgstr "Ontwikkelaarsmodus"
 
 #: ../../userguide/advanceduse/adb.rst:29
 msgid "Next, you'll need to turn on Developer Mode."
-msgstr ""
+msgstr "De volgende stap is het inschakelen van de ontwikkelaarsmodus."
 
 #: ../../userguide/advanceduse/adb.rst:31
 msgid "Reboot your device"
-msgstr ""
+msgstr "Herstart je apparaat"
 
 #: ../../userguide/advanceduse/adb.rst:32
 msgid "Place your device into developer mode (Settings - About - Developer Mode - check the box to turn it on)"
 msgstr ""
+"Schakel de ontwikkelaarsmodus in via Instellingen --> Over --> "
+"Ontwikkelaarsmodus"
 
 #: ../../userguide/advanceduse/adb.rst:33
 msgid "Plug the device into a computer with ADB installed"
-msgstr ""
+msgstr "Verbind je apparaat met je computer"
 
 #: ../../userguide/advanceduse/adb.rst:34
 msgid "Open a terminal and run ``adb devices``."
-msgstr ""
+msgstr "Open een terminalvenster en voer de opdracht ``adb devices`` uit."
 
 #: ../../userguide/advanceduse/adb.rst:37
 msgid "When you're done using the shell, it's a good idea to turn Developer Mode off again."
 msgstr ""
+"Nadien is het verstandig om de ontwikkelaarsmodus weer uit te schakelen."
 
 #: ../../userguide/advanceduse/adb.rst:39
 msgid "If there's a device in the list here (The command doesn't print \"List of devices attached\" and a blank line), you are able to use ADB. If not, continue to the next section."
 msgstr ""
+"Als je apparaat op deze lijst staat en de opdracht niet ‘List of devices "
+"attached’ gevolgd door een blanco regel toont, dan kun je ADB gebruiken. Als "
+"dat niet zo is, ga dan naar de volgende sectie."
 
 #: ../../userguide/advanceduse/adb.rst:42
 msgid "ADB shell commands::"
-msgstr ""
+msgstr "ADB-shellopdrachten::"
 
 #: ../../userguide/advanceduse/adb.rst:47
 msgid "Additional Adb commands::"
-msgstr ""
+msgstr "Aanvullende ADB-opdrachten::"
 
 #: ../../userguide/advanceduse/adb.rst:52
 msgid "For more ADB commands, refer to the `official documentation <https://developer.android.com/studio/command-line/adb>`_."
 msgstr ""
+"Meer ADB-opdrachten zijn te vinden in de `officiële documentatie "
+"<https://developer.android.com/studio/command-line/adb>`_."
 
 #: ../../userguide/advanceduse/adb.rst:55
 msgid "Add hardware IDs"
-msgstr ""
+msgstr "Hardware-id's"
 
 #: ../../userguide/advanceduse/adb.rst:57
 msgid "ADB doesn't always know what devices on your computer it should or should not talk to. You can manually add the devices that it does not know how to talk to."
 msgstr ""
+"ADB weet niet altijd met welke aan je computer aangesloten apparaten moet "
+"worden gecommuniceerd. Je kunt zelf apparaten toevoegen aan de lijst."
 
 #: ../../userguide/advanceduse/adb.rst:59
 msgid "Just run the command for your selected device if it's below. Then, run ``adb kill-server`` followed by the command you were initially trying to run."
 msgstr ""
+"Hieronder vind je een lijst met opdrachten. Voer de opdracht uit die bij je "
+"apparaat hoort. Voer daarna de opdracht ``adb kill-server`` uit, gevolgd "
+"door de opdracht voorafgaand aan het lezen van deze sectie."
 
 #: ../../userguide/advanceduse/adb.rst:61
 msgid "Fairphone 2::"
-msgstr ""
+msgstr "Fairphone 2::"
 
 #: ../../userguide/advanceduse/adb.rst:65
 msgid "OnePlus One::"
-msgstr ""
+msgstr "OnePlus One::"
 
 #: ../../userguide/advanceduse/dav.rst:2
 msgid "CalDAV and CardDAV syncing"
-msgstr ""
+msgstr "CalDAV- en CardDAV-synchronisatie"
 
 #: ../../userguide/advanceduse/dav.rst:4
 msgid "CalDAV and CardDAV are protocols to sync calendars and contacts with a remote server. Many e-mail hosters provide a CalDAV and CardDAV interface."

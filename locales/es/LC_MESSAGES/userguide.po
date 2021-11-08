@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-06-08 17:36+0000\n"
-"Last-Translator: germe-fur <FOSSgerme.deb@tuta.io>\n"
+"PO-Revision-Date: 2021-10-04 15:44+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/es/>\n"
 "Language: es\n"
@@ -603,10 +603,11 @@ msgstr ""
 #: ../../userguide/advanceduse/ssh.rst:38
 msgid "Now start the ssh server. If you are using an Android-based phone::"
 msgstr ""
+"Ahora inicie el servidor SSH. Si utiliza un teléfono basado en Android::"
 
 #: ../../userguide/advanceduse/ssh.rst:42
 msgid "If you are using a Linux-based phone (like the Pinephone)::"
-msgstr ""
+msgstr "Si utiliza un teléfono basado en Linux (como el Pinephone)::"
 
 #: ../../userguide/advanceduse/ssh.rst:48
 msgid "Connect"

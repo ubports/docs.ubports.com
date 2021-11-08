@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Chinese (Simplified) (UBports Docs)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-08-20 19:08+0000\n"
+"PO-Revision-Date: 2021-10-31 02:28+0000\n"
 "Last-Translator: GrieferPig <grieferpig@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-porting/zh_Hans/>\n"
@@ -19,7 +19,6 @@ msgid "Introduction to porting"
 msgstr "移植简介"
 
 #: ../../porting/Intro.rst:4
-#, fuzzy
 msgid ""
 "This first section will introduce you to the specifics of porting Ubuntu "
 "Touch to an Android device. Note that it is written with the general public "
@@ -124,7 +123,7 @@ msgstr "所以一个Ubuntu Touch移植基于以下部件："
 
 #: ../../porting/Intro.rst:26
 msgid "The Ubuntu Touch (UT) root filesystem (rootfs)"
-msgstr "Ubuntu Touch根文件系统（Ubuntu Touch root filesystem (rootfs)）"
+msgstr "Ubuntu Touch根文件系统 (rootfs)"
 
 #: ../../porting/Intro.rst:27
 msgid ""
@@ -217,34 +216,35 @@ msgid "Build halium-boot.img and system.img for Ubuntu Touch"
 msgstr "为Ubuntu Touch构建halium-boot.img和system.img"
 
 #: ../../porting/Intro.rst:51
+#, fuzzy
 msgid ""
 "Now you need to modify your source tree, after which you will proceed to "
 "build the halium-boot.img and system.img to be used in your port."
-msgstr ""
+msgstr "现在你需要处理源代码树，以便构建halium-boot.img和system.img。"
 
 #: ../../porting/Intro.rst:52
 msgid "Install and debug the boot process"
-msgstr ""
+msgstr "安装和调试启动流程"
 
 #: ../../porting/Intro.rst:53
 msgid ""
 "The goal of this stage is to successfully boot into Ubuntu Touch. You will "
 "be working from the command line."
-msgstr ""
+msgstr "在这一阶段的目的是成功启动到Ubuntu Touch。你需要从命令行开始搞起。"
 
 #: ../../porting/Intro.rst:54
 msgid "Bring up the Ubuntu Touch graphical user interface 'Unity 8'"
-msgstr ""
+msgstr "介绍Ubuntu Touch的GUI, \"Unity 8\""
 
 #: ../../porting/Intro.rst:55
 msgid ""
 "This stage involves adjusting some configuration and further debugging of "
 "your build."
-msgstr ""
+msgstr "这一部分包括对你的构建调整一些设置以及debug"
 
 #: ../../porting/Intro.rst:56
 msgid "Complete device configuration"
-msgstr ""
+msgstr "完成设备设置"
 
 #: ../../porting/Intro.rst:57
 msgid ""

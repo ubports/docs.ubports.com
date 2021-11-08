@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 17:42-0600\n"
-"PO-Revision-Date: 2021-03-23 16:04+0000\n"
+"PO-Revision-Date: 2021-10-03 12:38+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-userguide/nb/>\n"
@@ -181,6 +181,8 @@ msgstr ""
 #: ../../userguide/advanceduse/dav.rst:15
 msgid "server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your ownCloud/nextCloud/baikal/SOGO/... server)"
 msgstr ""
+"tjenersiden : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (for din "
+"ownCloud/nextCloud/baikal/SOGO/... -tjenerr)"
 
 #: ../../userguide/advanceduse/dav.rst:16
 msgid "CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmetic)"
@@ -206,6 +208,8 @@ msgstr ""
 #: ../../userguide/advanceduse/dav.rst:24
 msgid "Connect with the phablet shell (``adb shell``) or directly on the phone Terminal app and type the following::"
 msgstr ""
+"Koble til med phablet-skallet (``adb shell``) eller direkte i "
+"enhetsterminalen og skriv følgende::"
 
 #: ../../userguide/advanceduse/dav.rst:31
 msgid "Sources:"
@@ -253,7 +257,7 @@ msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:2
 msgid "Reverse tethering"
-msgstr ""
+msgstr "Omvendt tjudring"
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:4
 msgid "Some users may not have an available wifi connection for their phone nor a data subscription from their mobile provider. This short tutorial will help you to connect your Ubuntu Touch to your computer to access internet."
@@ -539,11 +543,15 @@ msgstr ""
 
 #: ../../userguide/advanceduse/switchchannel.rst:2
 msgid "Switch release channels"
-msgstr ""
+msgstr "Bytt utgivelseskanaler"
 
 #: ../../userguide/advanceduse/switchchannel.rst:3
 msgid "You can change the release channel using the system settings. The 3 existing channels are stable, rc (release candidate) and devel (nightly builds). For more info, see :doc:`the release schedule </about/process/release-schedule>`."
 msgstr ""
+"Du kan endre utgivelseskanal ved bruk av systeminnstillingene. De tre "
+"eksisterende kanalene er stabil, rc (utgivelseskandidat) og devel (nattlige "
+"bygg). Mer info er å finne i  :doc:`utgivelsesplanen </about/process/release-"
+"schedule>`."
 
 #: ../../userguide/dailyuse/anbox.rst:2
 msgid "Android apps"
@@ -860,6 +868,9 @@ msgstr "``-n name`` navn er et mer brukervennlig navn på containeren"
 #: ../../userguide/dailyuse/libertine.rst:29
 msgid "``-t type`` type can be either ``chroot`` or ``lxc``. Default is ``chroot`` and is compatible with every device. If the kernel of your device supports it then ``lxc`` is suggested."
 msgstr ""
+"``-t type``-type kan være enten``chroot`` eller ``lxc``. Forvalget er "
+"``chroot`` og er kompatibelt med alle enhter. Om kjernen på din enhet "
+"støtter det foreslås bruk av ``lxc``."
 
 #: ../../userguide/dailyuse/libertine.rst:31
 msgid "The creating process can take some time, due to the size of the container (some hundred of megabytes)."
@@ -1016,6 +1027,7 @@ msgstr "For hver container du oppretter, blir det opprettet to kataloger:"
 #: ../../userguide/dailyuse/libertine.rst:110
 msgid "A root directory ``~/.cache/libertine-container/CONTAINER-IDENTIFIER/rootfs/`` and"
 msgstr ""
+"En rotmappe ``~/.cache/libertine-container/CONTAINER-IDENTIFIER/rootfs/`` og"
 
 #: ../../userguide/dailyuse/libertine.rst:111
 #, fuzzy
@@ -1271,6 +1283,7 @@ msgstr "Hurtiginnstillinger"
 #: ../../userguide/dailyuse/location.rst:53
 msgid "`Open location quick settings`_, then select ``Location settings...``."
 msgstr ""
+"`Åpne hurtig-posisjonsinnstillingene`_, og velg ``Posisjonsinnstillinger …``."
 
 #: ../../userguide/dailyuse/location.rst:56
 #: ../../userguide/dailyuse/location.rst:76
@@ -1650,6 +1663,9 @@ msgstr ""
 #: ../../userguide/install.rst:62
 msgid "See if ``/etc/udev/rules.d/51-android.rules`` exists and contains the rules below. If not, add them to the file and run ``sudo service udev restart`` or ``sudo udevadm control --reload-rules && udevadm trigger``."
 msgstr ""
+"Sjekk om``/etc/udev/rules.d/51-android.rules`` finnes og inneholder reglene "
+"nedenfor. Hvis ikke kan du legge dem til og kjøre ``sudo service udev "
+"restart`` eller ``sudo udevadm control --reload-rules && udevadm trigger``."
 
 #: ../../userguide/install.rst:102
 msgid "Other issues"
