@@ -97,15 +97,6 @@ Building the necessary components and getting them to work together properly alw
 
 Luckily, there is a community of porters out there who are eager to see Ubuntu Touch ported to new devices. When you run into trouble, you should search the sources below (:ref:`Getting-community-help`) to see if others before you have solved the issue. There are online Telegram chat groups you can join to ask for help, but please bear in mind that those participating are doing so in their spare time.
 
-.. _Prior-knowledge-and-skills:
-
-Prior knowledge and skills
---------------------------
-
-Porters come in all sizes and shapes, so to speak. Therefore, this guide does not presuppose extensive knowledge or skills in any particular field. You should, however, as a bare minimum be familiar with some common shell commands and be comfortable working from the terminal on you host PC. Furthermore, the guide is based on a host PC running Linux. If you have some knowledge of programming, this will come in handy at some point, especially if you are familiar with C / C++. Also, you should familiarize yourself with git and set up a Github or Gitlab account to keep track of your code changes. It is wise to start documenting your steps from the very beginning.
-
-We have attempted to give a certain amount of explanation along the way. However, this guide is not an in-depth reference into the architecture and inner workings of Ubuntu Touch, and gaining a deeper understanding will consequently require an amount of research on your part.
-
 .. _Getting-community-help:
 
 Getting community help
