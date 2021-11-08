@@ -8,7 +8,7 @@ About UBports
 
 The project was founded by Marius Gripsgard in 2015 and in its infancy a place where developers could share ideas and educate each other in hopes of bringing the Ubuntu Touch platform to more mobile devices.
 
-After Canonical suddenly announced `plans to terminate support for Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ in April of 2017, UBports and its sister projects began work on the source code; maintaining and expanding its possibilities for the future.
+After Canonical suddenly announced `plans to terminate support for Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ in April of 2017, UBports and its sister projects began work on the source code; maintaining and expanding its possibilities for the future. Today, UBports is a volunteer group, formalised as a charitable foundation. 
 
 About the Documentation
 -----------------------
