@@ -10,7 +10,7 @@ Marius Gripsgard founded the project in 2015. In its infancy, developers could s
 
 After Canonical suddenly `announced <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ plans to terminate support for Ubuntu Touch in April of 2017, UBports and its sister projects began work on the source code, maintaining and expanding its possibilities for the future. 
 
-Determined to preserve the Ubuntu touch, UBports and its sister projects began work on the kernel and other growing challenges. Today, UBports is a community of developers and enthusiasts that focuses on Research and Development within the Ubuntu source code.
+Determined to preserve the Ubuntu touch, UBports and its sister projects began work on the kernel and other growing challenges. Today, UBports is a community of developers and enthusiasts that focuses on Research and Development within the Ubuntu source code, formalised as a charitable foundation.
 
 
 About the Documentation
