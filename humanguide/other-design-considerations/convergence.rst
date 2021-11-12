@@ -5,6 +5,8 @@ Convergence
 
 Convergence is one of the milestones Ubuntu Touch wants to achieve. One app available across all screen sizes and input methods, such as mobile handsets, tablets, and laptops.
 
+Convergence refers to the ability to use the same code base across multiple hardware form factors. Multiple devices using the same code base allows for features to be developed once, then shipped on multiple device types. This reducing development time and cost. The goal is for Ubuntu Touch to provide a consistent experience, whether you are using it on a big screen with mouse and keyboard or on a small touchscreen.
+
 Screen size
 -----------
 
