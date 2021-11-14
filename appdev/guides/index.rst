@@ -3,13 +3,24 @@
 Developer guides
 ================
 
-Get started building your first app or learn about advanced concepts with our developer guides.
+To get started with your first app check out the following developer guides:
+
+* `Ubuntu Touch programming book <https://mimecar.gitbooks.io/ubuntu-touch-programming-course/content/>`__
+* `Application Templates by fulvio <https://github.com/fulvio999/ubports_app_templates>`__
+* `Python examples by pavelprosto <https://forums.ubports.com/topic/5525/python-examples>`__
+* `Python + UT apps quickstart guide by AaronTheIssueGuy <https://aaron.place/blogs/UbPortsPython.html>`__
+
+* `Ubuntu Touch Programming Course <https://mimecar.gitbook.io/qt-course/>`__.
+
+If you are interested in helping create developer guides check out our
+`GitLab Project <https://gitlab.com/ubports/apps/development-resources>`__.
+
+To get more familiar with some more advanced concepts see the following sections:
 
 .. toctree::
     :maxdepth: 1
     :name: toc-dev-guides
 
-    cookbook
     contenthub
     importing-CH-urldispatcher
     pushnotifications
@@ -17,8 +28,19 @@ Get started building your first app or learn about advanced concepts with our de
     writeable-dirs
     dependencies
 
-We are currently working on expanding our list of developer guides. In the mean
-time we recommend the `Ubuntu Touch Programming Course <https://mimecar.gitbook.io/qt-course/>`__.
+Playground
+----------
 
-If you are interested in helping create developer guides check out our
-`GitLab Project <https://gitlab.com/ubports/apps/development-resources>`__.
+In a completely free and open source community, it is natural to have community members exploring the limits of the platform in many many directions. In this section you will find links to external resources that do exactly that: Explore. The purpose of this list is to show the unlimited possibilities of an open platform like Ubuntu Touch.
+
+.. note::
+    The resources listed here do not necessarily represent the officially endorsed way of developing applications for Ubuntu Touch, but are interesting experiments.
+
+* `Free Pascal development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__
+* `Lazarus development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/10/lazarus-development-for-ubuntu-phone.html>`__
+* `Geany on Ubuntu Touch device as text editor, source code editor, debugger and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-text.html>`__
+* `Deploy your existing Qt QML app to Ubuntu Touch using QMake (Video) <https://youtu.be/ehqlwRNrfO0>`__
+* `Deploy your existing Qt QML app to Ubuntu Touch using CMake (Video) <https://youtu.be/c2sq6aLeGec>`__
+* `Getting started with Clickable (Video) <https://youtu.be/TE-s5522v0Y>`__
+* `Content Hub overview (Video) <https://youtu.be/AihwC2sPIk0>`__
+* `Import files to your app with Content Hub (Video) <https://youtu.be/q6zzM16jw1U>`__

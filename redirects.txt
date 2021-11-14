@@ -15,3 +15,4 @@
 "appdev/getting-started.rst" "appdev/index.rst"
 "appdev/publishing/index.rst" "appdev/index.rst"
 "appdev/samples/index.rst" "appdev/index.rst"
+"appdev/guides/cookbook.rst" "appdev/guides/index.rst"
