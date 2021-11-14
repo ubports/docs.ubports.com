@@ -1,7 +1,7 @@
 .. _webapp:
 
-Web applications
-================
+Web apps
+========
 
 Ubuntu Webapps are a great way to deliver online web applications into Ubuntu.
 

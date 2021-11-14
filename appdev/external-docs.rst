@@ -1,4 +1,4 @@
-API Docs
+API docs
 ========
 
 In this section you find the various APIs you can use to develop Ubuntu Touch apps.

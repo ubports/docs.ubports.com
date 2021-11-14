@@ -12,3 +12,5 @@
 "porting/UBports_installer.rst" "porting/finalize/UBports_installer.rst"
 "porting/UBports_recovery.rst" "porting/finalize/UBports_recovery.rst"
 "porting/Preparations.rst" "porting/introduction/Preparations.rst"
+"appdev/getting-started.rst" "appdev/index.rst"
+"appdev/publishing/index.rst" "appdev/index.rst"

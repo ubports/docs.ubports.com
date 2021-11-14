@@ -1,6 +1,6 @@
 .. _sampleapps:
 
-Sample Apps
+Sample apps
 ===========
 
 We are currently working on expanding our list of sample apps. In the mean time many apps on the `OpenStore <https://open-store.io/>`__ are open source and can be used as a reference.

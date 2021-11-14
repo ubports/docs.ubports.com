@@ -1,9 +1,9 @@
-Debug web application
-=====================
+Debug webapps
+=============
 
 Most web-devs will probably want do most of their coding and debugging in the usual browser environment. The Ubuntu Touch browser is compliant with modern web standards, and most webapps will just work without further changes.
 
-For those (hopefully) rare cases where further debugging is needed, there are two ways to gain further information on the failure. 
+For those (hopefully) rare cases where further debugging is needed, there are two ways to gain further information on the failure.
 
 Watch the logs
 --------------
