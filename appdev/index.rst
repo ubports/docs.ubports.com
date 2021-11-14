@@ -29,7 +29,7 @@ Ubuntu Touch supports two kinds of apps: Firstly, *native apps* have a frontend 
     nativeapp/index
     webapp/index
 
-The following sections provide guides and API documentation and examples.
+The following sections provide guides and API documentation.
 
 `Clickable <https://clickable.bhdouglass.com>`_ is the main tool to build apps on Ubuntu Touch. It is an easy to use command line tool with a lot of great features. Clickable allows you to compile, build, test, and publish your app. It also provides various templates to get you started with app development.
 
@@ -37,7 +37,7 @@ You can use any code editor or IDE to work on the code. Then you build your app 
 
 .. figure:: /_static/images/appdev/appdev_desktop.png
 
-Applications are shipped as a :ref:`click <click>` package and can be published on the official app store `OpenStore <https://open-store.io>`__.
+Applications are shipped as a :ref:`click <click>` package and can be published on the official app store `OpenStore <https://open-store.io>`__. Note also that many apps in the OpenStore are open source and can serve as references and inspiration.
 
 References and guides
 ---------------------
@@ -49,7 +49,6 @@ References and guides
     code-editor
     guides/index
     external-docs
-    samples/index
     /contribute/preinstalled-apps
 
 Are you looking for other developers that might want to collaborate with you on your app, or
