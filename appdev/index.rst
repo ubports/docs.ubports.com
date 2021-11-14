@@ -1,7 +1,7 @@
 App development
 ===============
 
-Great!, you'd like to develop an app for Ubuntu Touch. Here are some resources that we hope help you get started. 
+Great!, you'd like to develop an app for Ubuntu Touch. Here are some resources that we hope help you get started.
 
 .. toctree::
     :maxdepth: 1
@@ -12,7 +12,6 @@ Great!, you'd like to develop an app for Ubuntu Touch. Here are some resources t
     guides/index
     publishing/index
     external-docs
-    platform/index
     samples/index
     /contribute/preinstalled-apps
 
