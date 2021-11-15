@@ -9,11 +9,14 @@ To get started with your first app check out the following developer guides:
 * `Application Templates by fulvio <https://github.com/fulvio999/ubports_app_templates>`__
 * `Python examples by pavelprosto <https://forums.ubports.com/topic/5525/python-examples>`__
 * `Python + UT apps quickstart guide by AaronTheIssueGuy <https://aaron.place/blogs/UbPortsPython.html>`__
+* `QML templates by Joan CiberSheep <https://gitlab.com/cibersheep/qml-templates-for-ubuntutouch>`__.
+* `First steps with QML <https://doc.qt.io/qt-5/qmlfirststeps.html>`__.
+* `Qt examples and tutorials <https://doc.qt.io/qt-5.12/qtexamplesandtutorials.html>`__.
 
 If you are interested in helping create developer guides check out our
 `GitLab Project <https://gitlab.com/ubports/apps/development-resources>`__.
 
-To get more familiar with some more advanced concepts see the following sections:
+To get familiar with some more advanced concepts see the following sections:
 
 .. toctree::
     :maxdepth: 1

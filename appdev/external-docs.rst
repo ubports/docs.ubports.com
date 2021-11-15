@@ -6,6 +6,7 @@ In this section you find the various APIs you can use to develop Ubuntu Touch ap
 Firstly there are the QML and HTML APIs that you can use for the front end:
 
 * `QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__
+* `All 5.12 QML types <https://doc.qt.io/qt-5.12/qmltypes.html>`__
 * `Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index.html>`__
 
 Secondly, the platform documentation describes how to integrate your app into the system:

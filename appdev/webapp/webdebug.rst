@@ -12,10 +12,14 @@ If you are comfortable in a CLI environment, most Javascript errors will leave a
 
   .cache/upstart/application-click-[YOUR_APP_NAME.AUTHOR_NAME..].log
 
+You can check the log file in the terminal or use the `LogViewer <https://open-store.io/app/logviewer.neothethird>`_ app.
+
+.. note::
+
+  Enable developer mode for debugging to keep logs until the next reboot. Without developer mode enabled, logs will get deleted after you close the app.
 
 Debugging in the browser
 ------------------------
-
 
 The default Ubuntu Touch browser is based on the Blink technology that is also used in Chrome/Chromium. By starting the browser in a special mode, you have access to the regular Chrome-style debugger.
 
