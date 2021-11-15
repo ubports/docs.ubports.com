@@ -5,12 +5,10 @@ Developer guides
 
 To get started with your first app check out the following developer guides:
 
-* `Ubuntu Touch programming book <https://mimecar.gitbooks.io/ubuntu-touch-programming-course/content/>`__
+* `Qt programming course by mimecar for Ubuntu Touch <https://docs.innerzaurus.com>`__
 * `Application Templates by fulvio <https://github.com/fulvio999/ubports_app_templates>`__
 * `Python examples by pavelprosto <https://forums.ubports.com/topic/5525/python-examples>`__
 * `Python + UT apps quickstart guide by AaronTheIssueGuy <https://aaron.place/blogs/UbPortsPython.html>`__
-
-* `Ubuntu Touch Programming Course <https://mimecar.gitbook.io/qt-course/>`__.
 
 If you are interested in helping create developer guides check out our
 `GitLab Project <https://gitlab.com/ubports/apps/development-resources>`__.
