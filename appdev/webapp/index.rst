@@ -16,6 +16,10 @@ Web applications are hosted online. They can be as simple as a website, like an 
 
   A different approach to webapps published in the open store is to simply create shortcuts directly yourself with `webber app <https://open-store.io/app/webber.timsueberkrueb>`__.
 
+.. todo::
+
+  There is also another way to create somewhat more featureful webapps, sometimes referred to as webapp+ or alternative container. This should be properly documented. It's a simple qml app that can be easily configured without having to write any qml code. Creation is almost as simple as 'classic' webapp, but result is more powerfull with the a nice navigation feature. A rather advanced example of this is https://open-store.io/app/youtube-web.mateo-salta which has quite some modifications on top of the template.
+
 Guide
 -----
 
