@@ -13,7 +13,7 @@ To get started with your first app check out the following developer guides:
 * `First steps with QML <https://doc.qt.io/qt-5/qmlfirststeps.html>`__.
 * `Qt examples and tutorials <https://doc.qt.io/qt-5.12/qtexamplesandtutorials.html>`__.
 
-If you are interested in helping create developer guides check out our
+If you are interested in helping to create developer guides check out our
 `GitLab Project <https://gitlab.com/ubports/apps/development-resources>`__.
 
 To get familiar with some more advanced concepts see the following sections:
