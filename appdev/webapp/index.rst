@@ -18,7 +18,11 @@ Web applications are hosted online. They can be as simple as a website, like an 
 
 .. todo::
 
-  There is also another way to create somewhat more featureful webapps, sometimes referred to as webapp+ or alternative container. This should be properly documented. It's a simple qml app that can be easily configured without having to write any qml code. Creation is almost as simple as 'classic' webapp, but result is more powerfull with the a nice navigation feature. A rather advanced example of this is https://open-store.io/app/youtube-web.mateo-salta which has quite some modifications on top of the template.
+  There is also another way to create somewhat more featureful webapps, sometimes referred to as webapp+ or alternative container.
+  This needst to be properly documented.
+  It's a simple qml app that can be easily configured.
+  Creation is almost as simple as 'classic' webapp, but result is more powerfull with the a nice navigation feature.
+  A rather advanced example of this is the `YouTube app <https://open-store.io/app/youtube-web.mateo-salta>`__ from Mateo Salta which has quite some modifications on top of the template.
 
 Guide
 -----
