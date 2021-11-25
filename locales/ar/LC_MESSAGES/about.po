@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-16 17:49-0500\n"
-"PO-Revision-Date: 2021-11-23 15:27+0000\n"
+"PO-Revision-Date: 2021-11-25 09:21+0000\n"
 "Last-Translator: HEROBRINE7GAMER <tapermeerkat77@gmail.com>\n"
 "Language-Team: Arabic <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-about/ar/>\n"
@@ -27,7 +27,7 @@ msgstr "مقدمة"
 #: ../../about/introduction.rst:4
 msgid "Our goal is to create a copylefted libre mobile operating system. One you can use, study, change and share; with all."
 msgstr ""
-"هدفناهو إنشاء نظام تشغيل حر ومرفوع النسخة للهواتف الذكية. نظام يمكنك "
+"هدفنا هو إنشاء نظام تشغيل حر ومرفوع النسخة للهواتف الذكية. نظام يمكنك "
 "استخدامه، دراسته، تغييره ونشره؛ مع الجميع."
 
 #: ../../about/introduction.rst:7
