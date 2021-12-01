@@ -1,3 +1,5 @@
+.. _preinstalledapps:
+
 Preinstalled apps
 =================
 

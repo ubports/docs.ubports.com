@@ -1,5 +1,5 @@
-Guide
-=====
+Webapp guide
+============
 
 How the webapp fits into the shell
 ----------------------------------
