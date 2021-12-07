@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-16 17:49-0500\n"
+"POT-Creation-Date: 2021-12-07 11:45-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "The project was founded by Marius Gripsgard in 2015 and in its infancy a 
 msgstr ""
 
 #: ../../about/introduction.rst:11
-msgid "After Canonical suddenly announced `plans to terminate support for Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ in April of 2017, UBports and its sister projects began work on the source code; maintaining and expanding its possibilities for the future."
+msgid "After Canonical suddenly announced `plans to terminate support for Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ in April of 2017, UBports and its sister projects began work on the source code; maintaining and expanding its possibilities for the future. Today, UBports is a volunteer group, formalised as a charitable foundation."
 msgstr ""
 
 #: ../../about/introduction.rst:14
@@ -137,19 +137,19 @@ msgid "Issue-Tracking Guidelines"
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:4
-msgid "This document describes the standard process of dealing with new issues in UBports projects. Not to be confused with the :doc:`guide on writing a good bugreport </contribute/bugreporting>`."
+msgid "This document describes the standard process of dealing with new issues in UBports projects. (Not to be confused with the :doc:`guide on writing a good bugreport </contribute/bugreporting>`.)"
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:7
+#: ../../about/process/issue-tracking.rst:8
 msgid "Where are bugs tracked?"
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:9
-msgid "Since our quality assurance depends heavily on the community, we try to track issues where the user would expect them, instead of separated by repository. This means, that issues of almost all components that are distributed as with the system-image are tracked in the `Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch>`__. An exception of this are click-apps that can be updated independently through the OpenStore."
+#: ../../about/process/issue-tracking.rst:10
+msgid "Since quality assurance depends heavily on community effort, issues are tracked where users expect them, instead of separated by repository. This means issues of almost all distributed components (as with the system-image) are tracked in the `Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch>`__. An exception to this are click-apps, which can be updated independently through the OpenStore."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:17
-msgid "Most other repositories track issues locally. If you're unsure whether a repository uses its own tracker or not, consult the README.md file. Repositories that don't track issues locally have their bugtracker disabled."
+msgid "Most other repositories track issues locally. You will find out whether a repository uses its own tracker or not in its README.md file. Repositories that don't track issues locally have their bugtracker turned off."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:21
@@ -157,7 +157,7 @@ msgid "This page is mainly about the Ubuntu Touch tracker, but most principles a
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:25
-msgid "Practicality beats purity! Exceptions might apply and should be described in the projects README.md file."
+msgid "Practical exceptions to purity are to be described in the project's README.md file."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:28
@@ -165,7 +165,7 @@ msgid "GitHub projects"
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:30
-msgid "To increase transparency and communication, GitHub projects (Kanban-Boards) are used wherever practical. In case of github.com/ubports/ubuntu-touch, a single project is used for all issues. Projects support filtering by labels, so that only issues that belong to a specific team or affect a specific device can be viewed."
+msgid "In the interest of transparency and communication, GitHub projects (Kanban-Boards) are used wherever practical. In case of github.com/ubports/ubuntu-touch, a single project is used for all issues. Projects support filtering by labels, so that only issues belonging to a specific team or ones affecting a specific device can be viewed."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:36
@@ -173,159 +173,171 @@ msgid "These are the standard columns:"
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:38
-msgid "**None (awaiting triage)**: The issue has been approved by a member of the QA team and is awaiting review from the responsible development team. if the issue is a bug, instructions to reproduce are included in the issue description. if the issue is a feature request, it has passed a primary sanity check by the qa-team but has not yet been accepted by the responsible development-team."
-msgstr ""
-
-#: ../../about/process/issue-tracking.rst:39
-msgid "**Accepted**: The issue has been accepted by the responsible development-team. If the issue is a bugreport, the team has decided that it should be fixable and accepts the responsibility. If the issue is a feature request, the team thinks it should be implemented as described."
-msgstr ""
-
-#: ../../about/process/issue-tracking.rst:40
-msgid "**In Development**: A patch is in development. Usually means that a developer is assigned to the issue."
+msgid "**None (awaiting triage)**: Issue approved by a member of the QA team awaiting review from the responsible development team. If a bug, instructions to reproduce are included in the issue description. If a feature request, it has passed a primary sanity check by the QA team, but not yet been accepted by the responsible development-team."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:41
-msgid "**Quality Assurance**: The patch is completed and has passed initial testing. The QA team will now review it and provide feedback. If problems are found, the issue is moved back to \"Accepted\"."
+msgid "**Accepted**: Issue accepted by the responsible development-team. If a bugreport, the team has decided it should be fixable and accept responsibility. If a feature request, the team thinks it should be implemented as described."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:42
-msgid "**Release Candidate**: The patch has passed QA and is ready for release. In case of deb-packages that are included in the system-image, the patch will be included in the next over-the-air update on the rc channel, and, if everything goes well, in the next release of the stable channel."
-msgstr ""
-
-#: ../../about/process/issue-tracking.rst:43
-msgid "**None (removed from the project)**: If the issue is open and labeled \"help wanted\", community contributions are required to resolve the issue. If it's closed, that means that either a patch has been released on the stable channel (a comment on the issue should link to the patch) or the issue has been rejected (labeled \"wontfix\")."
+#: ../../about/process/issue-tracking.rst:44
+msgid "**In Development**: A patch in development. Usually means a developer is assigned to the issue."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:46
-msgid "Labels"
+msgid "**Quality Assurance**: A completed patch passing initial testing. The QA team will review it and provide feedback. If problems are found, the issue is moved back to \"Accepted\"."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:48
-msgid "All issues - even closed ones - should be labeled to allow the use of GitHub's global filtering. For example, `these are all of the issues labeled 'enhancement' inside @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A%22feature+request%22&type=>`_. Consult the `GitHub help pages <https://help.github.com/articles/about-searching-on-github/>`__ for more information on search and filtering."
+msgid "**Release Candidate**: A patch passing QA, ready for release. In case of DEB packages included in the system-image, the patch will be included in the next over-the-air update on the `rc` channel, and (provided  everything   goes well) in the next release of the `stable` channel."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:51
-msgid "Here's a list of labels that are normally used by all repositories."
-msgstr ""
-
-#: ../../about/process/issue-tracking.rst:53
-msgid "**needs confirmation**: The bug needs confirmation and / or further information from affected users"
+#: ../../about/process/issue-tracking.rst:50
+msgid "**None (removed from the project)**: Open issue labeled \"help wanted\". Community contributions are required to resolve it. If it's closed, either a patch has been released on the stable channel (a comment on the issue should link to the patch) or the issue is rejected (labeled \"wontfix\")."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:55
-msgid "**bug**: This issue is a confirmed bug. If it's reproducible, reproduction steps are described."
+msgid "Labels"
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:57
-msgid "**opinion**: This issue needs further discussion."
-msgstr ""
-
-#: ../../about/process/issue-tracking.rst:58
-msgid "**enhancement**: This issue is a feature request."
-msgstr ""
-
-#: ../../about/process/issue-tracking.rst:59
-msgid "**question**: This issue is a support request or general question."
+msgid "All issues — even closed ones — should be labeled to allow use of GitHub's global filtering. For example, `these are all of the issues labeled 'enhancement' inside @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A%22feature+request%22&type=>`_. Consult the `GitHub help pages <https://help.github.com/articles/about-searching-on-github/>`__ to learn more about searching and filtering."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:60
-msgid "**invalid**: This issue can not be confirmed or was reported in the wrong tracker."
+msgid "List of labels normally used by all repositories:"
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:62
-msgid "**duplicate**: This has already been reported somewhere else. Please provide a link and close."
+msgid "**needs confirmation**: The bug needs confirmation and / or further detailing by affected users."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:64
-msgid "**help wanted**: This issue is ready to be picked up by a community developer."
+msgid "**bug**: This issue is a confirmed bug. If it's reproducible, reproduction steps are described."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:66
-msgid "**good first issue**: The report contains instructions or hints required to fix it. It is an excellent place for someone new to learn about the project by fixing a real issue."
+msgid "**opinion**: This issue needs further discussion."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:67
-msgid "**wontfix**: It does not make sense to fix this bug, since it will probably resolve itself, it will be too much work to fix it, it's not fixable, or an underlying component will soon change."
+msgid "**enhancement**: This issue is a feature request."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:68
+msgid "**question**: This issue is a support request or general question."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:69
+msgid "**invalid**: This issue can not be confirmed or was reported in the wrong tracker."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:71
-msgid "Additional special labels can be defined. As an example, here's the labels used in the Ubuntu Touch tracker:"
+msgid "**duplicate**: This has already been reported elsewhere. Please provide a link and close."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:74
-msgid "**critical (devel)**: This critical issue that only occurs on the devel channel is blocking the release of the next rc image."
+#: ../../about/process/issue-tracking.rst:73
+msgid "**help wanted**: This issue is ready to be picked up by a community developer."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:76
-msgid "**critical (rc)**: This critical issue that only occurs on the devel and rc channel is blocking the release of the next stable release. Usually, issues that can not simply be moved to a different release and have the power to postpone the release are labeled this."
+#: ../../about/process/issue-tracking.rst:75
+msgid "**good first issue**: The report contains instructions or hints required to fix it. It is an excellent place for someone new to learn about the project by fixing a real issue."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:80
-msgid "**device: [DEVICE CODENAME]**: This issue affects only the specified device(s)."
+#: ../../about/process/issue-tracking.rst:77
+msgid "**wontfix**: A bug it does not make sense to fix, since it will probably resolve itself, be too much work, isn't fixable, or an underlying component will soon change."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:82
-msgid "**team: [TEAM NAME]**: This issue is falls under the responsibility of a specific team (hal, middleware, UI)."
+#: ../../about/process/issue-tracking.rst:81
+msgid "Additional special labels can be defined. As an example, these are the labels used in the Ubuntu Touch tracker:"
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:85
-msgid "If a repository that tracks issues locally defines it's own labels, they should be documented in the README.md."
+#: ../../about/process/issue-tracking.rst:84
+msgid "**critical (devel)**: Critical issue only occuring on the `devel` channel is blocking the release of the next `rc` image."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:89
+#: ../../about/process/issue-tracking.rst:86
+msgid "**critical (rc)**: Critical issue only occuring on the `devel` and `rc` channel is blocking the release of the next stable release. Usually, issues that can not simply be moved to a different release and have the power to postpone the release are labeled this way."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:90
+msgid "**device: [DEVICE CODENAME]**: Issue affecting only the specified device(s)."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:92
+msgid "**team: [TEAM NAME]**: Issue falls under the responsibility of a specific team (HAL, middleware, UI)."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:95
+msgid "If a repository tracking issues locally defines it's own labels, they should be documented in the README.md."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:99
 msgid "Milestones"
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:91
-msgid "Milestones are used for stable OTA releases only. In general, milestones for the work-in-progress OTA and the next OTA are created. The ETA is set, once the work on the release starts (that is 6 weeks from start date), but can be adjusted afterwards. See the :doc:`release-schedule <release-schedule>` for more info."
-msgstr ""
-
-#: ../../about/process/issue-tracking.rst:98
-msgid "Assignees"
-msgstr ""
-
-#: ../../about/process/issue-tracking.rst:100
-msgid "To make it transparent who's working on an issue, the developer should be assigned. This also allows the use of GitHub's global filtering as a type of TODO list. For example, `this is everything assigned to mariogrip in @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_."
-msgstr ""
-
-#: ../../about/process/issue-tracking.rst:104
-msgid "Developers are encouraged to keep their list short and update the status of their issues."
+#: ../../about/process/issue-tracking.rst:101
+msgid "Milestones are used for stable OTA releases only. In general, milestones for the work-in-progress OTA and the next OTA are created. The ETA is set once the work on the release starts (that is 6 weeks from start date), but can be adjusted afterwards. Learn more in :doc:`release-schedule <release-schedule>`."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:107
-msgid "Examples"
+msgid "Assignees"
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:110
-msgid "Bug Lifecycle"
+#: ../../about/process/issue-tracking.rst:109
+msgid "To make it transparent who's working on an issue, the developer should be assigned. This also allows the use of GitHub's global filtering as a type of TODO list. For example, `this is everything assigned to mariogrip in @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:113
-msgid "The same principle applies to feature requests. The only difference is, that instead of the label **bug**, the label **enhancement** is used. The **needs confirmation** label is not applicable for feature requests."
+#: ../../about/process/issue-tracking.rst:114
+msgid "Developers are encouraged to keep their list short and update the status of their issues."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:117
-msgid "A *User* files a new bug using the issue-template."
-msgstr ""
-
-#: ../../about/process/issue-tracking.rst:118
-msgid "The *QA-Team* adds the label **needs confirmation** and tries to work with the user to confirm the bug and add potentially missing information to the report. Once the report is complete a **team-label** will be added to the issue, the issue will be put on the **awaiting-triage-list** of the project and the label needs confirmation will be replaced with **bug**."
-msgstr ""
-
-#: ../../about/process/issue-tracking.rst:119
-msgid "The affected *Team* will triage the issue and either reject (label **wontfix**, close and remove from the project) or accept the issue. The team decides if it they will fix the issue in-house (move to \"Accepted\" and assign a team member) or wait for a community developer to pick it up (Label **help wanted**, remove from the project board and provide hints on how to resolve the issue and further details on the how the fix should be implemented if necessary). For non-critical issues that are trivial to fix, the label **good first issue** can be added as well."
+msgid "Examples"
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:120
-msgid "Once a *developer* is assigned and starts working on the issue, it is moved to \"In Development\". As soon as they have something to show for, the issue is closed and automatically moved to \"Quality Assurance\" for feedback from the QA team. If necessary, the developer will provide hints on how to test his patch in a comment on the issue."
+msgid "Bug Lifecycle"
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:121
-msgid "The *QA-Team* tests the fix on all devices and provides feedback to the developer. If problems are found, the issue is re-opened and goes back to \"Accepted\", else it’s moved to \"Release Candidate\" to be included in the next release."
+#: ../../about/process/issue-tracking.rst:123
+msgid "The same principle applies to feature requests, only they are labeled **enhancement** instead of **bug**. **needs confirmation** is not applicable for feature requests."
 msgstr ""
 
-#: ../../about/process/issue-tracking.rst:122
-msgid "If not done already, the issue is added to the next milestone. Once the milestone is released, the issue is removed from the project board."
+#: ../../about/process/issue-tracking.rst:127
+msgid "A *user* files a new bug using the issue-template."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:128
+msgid "The *QA-Team* labels it **needs confirmation** and tries to work with the user to confirm the bug and add potentially missing info to the report."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:129
+msgid "Once the report is complete a **team-label** is added to the issue, the issue will be put on the **awaiting-triage-list** of the project and the label needs confirmation will be replaced with **bug**."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:130
+msgid "The affected *Team* triages the issue and either rejects (label **wontfix**, closes and removes from the project) or accepts the issue."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:131
+msgid "The team decides whether to fix the issue in-house (move to \"Accepted\" and assign a team member) or wait for a community developer to pick it up (by labeling it **help wanted**, removing it from the project board and providing hints on how to resolve the issue and further details on how the fix should be implemented if necessary). For non-critical issues trivial to fix, the label **good first issue** can be added as well."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:132
+msgid "Once a *developer* is assigned and starts working on the issue, it is moved to \"In Development\"."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:133
+msgid "As soon as there is something to show for, the issue is closed and automatically moved to \"Quality Assurance\" for feedback from the QA team. If necessary, the developer provides hints on how to test the patch in a comment on the issue."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:134
+msgid "The *QA-Team* tests the fix on all devices and provides feedback to the developer. If problems are found, the issue is re-opened and goes back to \"Accepted\", otherwise it is moved to \"Release Candidate\" for inclusion in the next release."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:135
+msgid "If not done already, the issue is added to the next milestone, which once released removes the issue from the project board."
 msgstr ""
 
 #: ../../about/process/ppa.rst:2

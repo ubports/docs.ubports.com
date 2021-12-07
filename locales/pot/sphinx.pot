@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-16 17:49-0500\n"
+"POT-Creation-Date: 2021-12-07 11:45-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,25 +36,37 @@ msgstr ""
 msgid "Show source"
 msgstr ""
 
-#: ../../_templates/page.html:60
-msgid "<a href=\"%(path)s\">Copyright</a> &#169; %(copyright)s."
+#: ../../_templates/page.html:62
+msgid "Next"
 msgstr ""
 
-#: ../../_templates/page.html:64
-msgid "Copyright &#169; %(copyright)s"
-msgstr ""
-
-#: ../../_templates/page.html:71
-msgid "Last updated on %(last_updated)s."
+#: ../../_templates/page.html:74
+msgid "Previous"
 msgstr ""
 
 #: ../../_templates/page.html:77
+msgid "Home"
+msgstr ""
+
+#: ../../_templates/page.html:89
+msgid "<a href=\"%(path)s\">Copyright</a> &#169; %(copyright)s."
+msgstr ""
+
+#: ../../_templates/page.html:93
+msgid "Copyright &#169; %(copyright)s"
+msgstr ""
+
+#: ../../_templates/page.html:100
+msgid "Last updated on %(last_updated)s."
+msgstr ""
+
+#: ../../_templates/page.html:106
 msgid "Built with <a href=\"https://www.sphinx-doc.org/\">Sphinx</a>\n"
 "              and\n"
 "              <a class=\"muted-link\" href=\"https://pradyunsg.me\">@pradyunsg</a>'s\n"
 "              <a href=\"https://github.com/pradyunsg/furo\">Furo theme</a>."
 msgstr ""
 
-#: ../../_templates/page.html:95
+#: ../../_templates/page.html:124
 msgid "Contents"
 msgstr ""
