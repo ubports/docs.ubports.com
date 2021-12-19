@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-29 16:27-0500\n"
+"POT-Creation-Date: 2021-12-07 11:45-0600\n"
 "PO-Revision-Date: 2021-10-03 12:38+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
@@ -797,6 +797,26 @@ msgstr ""
 "|stock_message.svg| |share.svg| |stock_alarm-clock.svg| |security-alert.svg| "
 "|settings.svg|"
 
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:82
+msgid "stock_message.svg"
+msgstr ""
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:83
+msgid "share.svg"
+msgstr ""
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:84
+msgid "stock_alarm-clock.svg"
+msgstr ""
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:85
+msgid "security-alert.svg"
+msgstr ""
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:86
+msgid "settings.svg"
+msgstr ""
+
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:12
 msgid ""
 "See a `list of the icons <http://docs.ubports.com/projects/icons/>`__. "
@@ -1545,16 +1565,26 @@ msgstr ""
 "tilgjengelig over alle skjermstørrelser og inndatametoder, for eksempel "
 "mobile håndsett, nettbrett og bærbare datamaskiner."
 
-#: ../../humanguide/other-design-considerations/convergence.rst:9
+#: ../../humanguide/other-design-considerations/convergence.rst:8
+msgid ""
+"Convergence refers to the ability to use the same code base across multiple "
+"hardware form factors. Multiple devices using the same code base allows for "
+"features to be developed once, then shipped on multiple device types. This "
+"reducing development time and cost. The goal is for Ubuntu Touch to provide "
+"a consistent experience, whether you are using it on a big screen with mouse "
+"and keyboard or on a small touchscreen."
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/convergence.rst:11
 #, fuzzy
 msgid "Screen size"
 msgstr "Skjerm størrelse"
 
-#: ../../humanguide/other-design-considerations/convergence.rst:13
+#: ../../humanguide/other-design-considerations/convergence.rst:15
 msgid "Ubuntu Touch Tweak Tool app"
 msgstr ""
 
-#: ../../humanguide/other-design-considerations/convergence.rst:15
+#: ../../humanguide/other-design-considerations/convergence.rst:17
 #, fuzzy
 msgid ""
 "Main page stays as the main page on phones or on the left on bigger screen "
@@ -1565,11 +1595,11 @@ msgstr ""
 "med større skjerm. Flere sider på telefonen kan vises i variable størrelser "
 "til høyre på større skjermer."
 
-#: ../../humanguide/other-design-considerations/convergence.rst:18
+#: ../../humanguide/other-design-considerations/convergence.rst:20
 msgid "Input method"
 msgstr ""
 
-#: ../../humanguide/other-design-considerations/convergence.rst:20
+#: ../../humanguide/other-design-considerations/convergence.rst:22
 #, fuzzy
 msgid ""
 "Using touch, a user can swipe or long-press on a list item to reveal a "
@@ -1587,6 +1617,10 @@ msgstr ""
 #, fuzzy
 msgid "Other design considerations"
 msgstr "Andre designhensyn"
+
+#: ../../humanguide/other-design-considerations/index.rst:13
+msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
+msgstr ""
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:2
 msgid "Scaling images"

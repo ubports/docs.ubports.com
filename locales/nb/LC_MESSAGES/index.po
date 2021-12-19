@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-16 17:49-0500\n"
+"POT-Creation-Date: 2021-12-07 11:45-0600\n"
 "PO-Revision-Date: 2021-03-12 06:00+0000\n"
 "Last-Translator: Jan Christian Sherdahl <jan@sherdahl.no>\n"
 "Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
@@ -39,23 +39,23 @@ msgstr "Utvikling"
 msgid "Porting"
 msgstr "Portering"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Click Packages"
 msgstr "Klikk-Pakker"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Ubuntu UI-Toolkit"
 msgstr "Ubuntu UI-Toolkit"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Clickable"
 msgstr "Klikkbar"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Halium"
 msgstr "Halium"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Platform"
 msgstr "Plattform"
 
@@ -82,16 +82,10 @@ msgid ""
 "On this website you find guides to :doc:`install Ubuntu Touch on your mobile "
 "phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/dailyuse/"
 "index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:`port Ubuntu "
-"Touch to an Android handset <porting/index>` and :doc:`learn more about "
-"system components <systemdev/index>`. If this is your first time here, "
-"please consider reading our :doc:`introduction <about/introduction>`."
+"Touch to an Android handset <porting/introduction/index>` and :doc:`learn "
+"more about system components <systemdev/index>`. If this is your first time "
+"here, please consider reading our :doc:`introduction <about/introduction>`."
 msgstr ""
-"På dette nettstedet finner du guider til: doc: `installer Ubuntu Touch på "
-"mobiltelefonen din <userguide/install>`,: doc: `bruk Ubuntu Touch <userguide/"
-"dailyuse/index>`,: doc: `utvikle Ubuntu Touch apps < appdev/index> `,: doc:` "
-"port Ubuntu Trykk på et Android-håndsett <porting/index> `og: doc:` lær mer "
-"om systemkomponenter <systemdev/index> `. Hvis dette er første gang her, kan "
-"du vurdere å lese vår: doc: `introduksjon <om/introduksjon>`."
 
 #: ../../index.rst:10
 msgid ""
@@ -144,3 +138,20 @@ msgstr "`Spansk <https://docs.ubports.com/es/latest/>`_"
 #: ../../index.rst:25
 msgid "`Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_"
 msgstr "`Kinesisk <https://docs.ubports.com/zh_CN/latest/>`_"
+
+#~ msgid ""
+#~ "On this website you find guides to :doc:`install Ubuntu Touch on your "
+#~ "mobile phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/"
+#~ "dailyuse/index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:"
+#~ "`port Ubuntu Touch to an Android handset <porting/index>` and :doc:`learn "
+#~ "more about system components <systemdev/index>`. If this is your first "
+#~ "time here, please consider reading our :doc:`introduction <about/"
+#~ "introduction>`."
+#~ msgstr ""
+#~ "På dette nettstedet finner du guider til: doc: `installer Ubuntu Touch på "
+#~ "mobiltelefonen din <userguide/install>`,: doc: `bruk Ubuntu Touch "
+#~ "<userguide/dailyuse/index>`,: doc: `utvikle Ubuntu Touch apps < appdev/"
+#~ "index> `,: doc:` port Ubuntu Trykk på et Android-håndsett <porting/index> "
+#~ "`og: doc:` lær mer om systemkomponenter <systemdev/index> `. Hvis dette "
+#~ "er første gang her, kan du vurdere å lese vår: doc: `introduksjon <om/"
+#~ "introduksjon>`."

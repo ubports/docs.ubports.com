@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-29 16:27-0500\n"
+"POT-Creation-Date: 2021-12-07 11:45-0600\n"
 "PO-Revision-Date: 2021-02-21 20:38+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
@@ -376,7 +376,8 @@ msgstr ""
 #: ../../systemdev/kernel-hal.rst:75
 msgid ""
 "All new ports of UT to Android devices should follow the Halium process. "
-"Further details can be found under :doc:`Halium porting <../porting/index>`"
+"Further details can be found under :doc:`Halium porting <../porting/"
+"introduction/index>`"
 msgstr ""
 
 #: ../../systemdev/kernel-hal.rst:78
@@ -675,8 +676,16 @@ msgstr ""
 msgid "Incoming MMS diagram"
 msgstr ""
 
+#: ../../systemdev/mms-infrastructure.rst:None
+msgid "incoming-MMS.png"
+msgstr ""
+
 #: ../../systemdev/mms-infrastructure.rst:46
 msgid "Outgoing MMS diagram"
+msgstr ""
+
+#: ../../systemdev/mms-infrastructure.rst:None
+msgid "outgoing-MMS.png"
 msgstr ""
 
 #: ../../systemdev/mms-infrastructure.rst:55
@@ -1187,8 +1196,8 @@ msgstr ""
 #: ../../systemdev/ubp-5.1.rst:9
 msgid ""
 "We highly suggest that you follow the :doc:`Halium porting guide <../porting/"
-"index>` if you want to bring up a new device. The steps in here are only "
-"relevant for hammerhead, bacon and FP2."
+"introduction/index>` if you want to bring up a new device. The steps in here "
+"are only relevant for hammerhead, bacon and FP2."
 msgstr ""
 
 #: ../../systemdev/ubp-5.1.rst:11
@@ -1528,6 +1537,10 @@ msgstr ""
 msgid ""
 "Open your fork of the repository on GitHub. Navigate to the branch that you "
 "just pushed to using the \"Branch\" selector:"
+msgstr ""
+
+#: ../../systemdev/uploading-changes.rst:None
+msgid "Using the branch selector on GitHub"
 msgstr ""
 
 #: ../../systemdev/uploading-changes.rst:117

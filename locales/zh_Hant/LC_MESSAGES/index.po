@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-16 17:49-0500\n"
+"POT-Creation-Date: 2021-12-07 11:45-0600\n"
 "PO-Revision-Date: 2021-10-10 03:56+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
@@ -39,23 +39,23 @@ msgstr "發展"
 msgid "Porting"
 msgstr "移植"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Click Packages"
 msgstr "Click 套件"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Ubuntu UI-Toolkit"
 msgstr "Ubuntu 使用者介面工具"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Clickable"
 msgstr "Clickable"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Halium"
 msgstr "Halium"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Platform"
 msgstr "平臺"
 
@@ -81,15 +81,10 @@ msgid ""
 "On this website you find guides to :doc:`install Ubuntu Touch on your mobile "
 "phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/dailyuse/"
 "index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:`port Ubuntu "
-"Touch to an Android handset <porting/index>` and :doc:`learn more about "
-"system components <systemdev/index>`. If this is your first time here, "
-"please consider reading our :doc:`introduction <about/introduction>`."
+"Touch to an Android handset <porting/introduction/index>` and :doc:`learn "
+"more about system components <systemdev/index>`. If this is your first time "
+"here, please consider reading our :doc:`introduction <about/introduction>`."
 msgstr ""
-"在這個網站上，你會發現到指南 :doc: \"安裝 Ubuntu Touch 到您的手機 <userguide/install>\"， :doc: \""
-"使用 Ubuntu Touch <userguide/dailyuse/index>\"， :doc: \"開發 Ubuntu Touch 應用程式 <"
-"appdev/index>\"， :doc: \"埠 Ubuntu Touch 到Android手機 <porting/Intro>\"和 :doc:\""
-"瞭解更多關於系統元件 <systemdev/index>\"。如果這是你第一次來這裡，請閱讀我們的 :doc: \"介紹 <about/"
-"introduction>\"。"
 
 #: ../../index.rst:10
 msgid ""
@@ -143,6 +138,22 @@ msgstr "\"Español (西班牙語) <https://docs.ubports.com/es/latest/>\"_"
 msgid "`Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_"
 msgstr ""
 "\"Simplified Chinese (簡體中文) <https://docs.ubports.com/zh_CN/latest/>\"_"
+
+#~ msgid ""
+#~ "On this website you find guides to :doc:`install Ubuntu Touch on your "
+#~ "mobile phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/"
+#~ "dailyuse/index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:"
+#~ "`port Ubuntu Touch to an Android handset <porting/index>` and :doc:`learn "
+#~ "more about system components <systemdev/index>`. If this is your first "
+#~ "time here, please consider reading our :doc:`introduction <about/"
+#~ "introduction>`."
+#~ msgstr ""
+#~ "在這個網站上，你會發現到指南 :doc: \"安裝 Ubuntu Touch 到您的手機 "
+#~ "<userguide/install>\"， :doc: \"使用 Ubuntu Touch <userguide/dailyuse/"
+#~ "index>\"， :doc: \"開發 Ubuntu Touch 應用程式 <appdev/index>\"， :doc: "
+#~ "\"埠 Ubuntu Touch 到Android手機 <porting/Intro>\"和 :doc:\"瞭解更多關於系"
+#~ "統元件 <systemdev/index>\"。如果這是你第一次來這裡，請閱讀我們的 :doc: "
+#~ "\"介紹 <about/introduction>\"。"
 
 #~ msgid ""
 #~ "On this website you find guides to :doc:`install Ubuntu Touch on your "

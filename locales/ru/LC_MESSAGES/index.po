@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-16 17:49-0500\n"
+"POT-Creation-Date: 2021-12-07 11:45-0600\n"
 "PO-Revision-Date: 2021-11-12 05:01+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.3\n"
 
 #: ../../index.rst:27
@@ -40,23 +40,23 @@ msgstr "Разработка"
 msgid "Porting"
 msgstr "Портирование на устройства"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Click Packages"
 msgstr "Click-пакеты"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Ubuntu UI-Toolkit"
 msgstr "Ubuntu UI Набор инструментов"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Clickable"
 msgstr "Clickable"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Halium"
 msgstr "Нalium"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Platform"
 msgstr "Платформа"
 
@@ -84,17 +84,10 @@ msgid ""
 "On this website you find guides to :doc:`install Ubuntu Touch on your mobile "
 "phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/dailyuse/"
 "index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:`port Ubuntu "
-"Touch to an Android handset <porting/index>` and :doc:`learn more about "
-"system components <systemdev/index>`. If this is your first time here, "
-"please consider reading our :doc:`introduction <about/introduction>`."
+"Touch to an Android handset <porting/introduction/index>` and :doc:`learn "
+"more about system components <systemdev/index>`. If this is your first time "
+"here, please consider reading our :doc:`introduction <about/introduction>`."
 msgstr ""
-"На этом веб-сайте опубликованы руководства по :doc:`Установке Ubuntu Touch "
-"на мобильное устройство <userguide/install>`, :doc:`использованию Ubuntu "
-"Touch <userguide/dailyuse/index>`, :doc:`разработке приложений для Ubuntu "
-"Touch <appdev/index>`, :doc:`port Ubuntu Touch to an Android handset <"
-"porting/index>` и :doc:`узнать больше о компонентах системы <systemdev/"
-"index>`. Если Вы впервые здесь, пожалуйста, прочитайте раздел :doc:`Введение "
-"<about/introduction>`."
 
 #: ../../index.rst:10
 msgid ""
@@ -148,6 +141,23 @@ msgstr "`Испанский (Español) <https://docs.ubports.com/es/latest/>`_"
 #: ../../index.rst:25
 msgid "`Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_"
 msgstr "`Упрощенный китайский <https://docs.ubports.com/zh_CN/latest/>`_"
+
+#~ msgid ""
+#~ "On this website you find guides to :doc:`install Ubuntu Touch on your "
+#~ "mobile phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/"
+#~ "dailyuse/index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:"
+#~ "`port Ubuntu Touch to an Android handset <porting/index>` and :doc:`learn "
+#~ "more about system components <systemdev/index>`. If this is your first "
+#~ "time here, please consider reading our :doc:`introduction <about/"
+#~ "introduction>`."
+#~ msgstr ""
+#~ "На этом веб-сайте опубликованы руководства по :doc:`Установке Ubuntu "
+#~ "Touch на мобильное устройство <userguide/install>`, :doc:`использованию "
+#~ "Ubuntu Touch <userguide/dailyuse/index>`, :doc:`разработке приложений для "
+#~ "Ubuntu Touch <appdev/index>`, :doc:`port Ubuntu Touch to an Android "
+#~ "handset <porting/index>` и :doc:`узнать больше о компонентах системы "
+#~ "<systemdev/index>`. Если Вы впервые здесь, пожалуйста, прочитайте раздел :"
+#~ "doc:`Введение <about/introduction>`."
 
 #~ msgid ""
 #~ "On this website you find guides to :doc:`install Ubuntu Touch on your "

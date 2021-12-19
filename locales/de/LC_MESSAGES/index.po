@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-16 17:49-0500\n"
+"POT-Creation-Date: 2021-12-07 11:45-0600\n"
 "PO-Revision-Date: 2021-07-24 14:45+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
@@ -40,23 +40,23 @@ msgstr "Entwicklung"
 msgid "Porting"
 msgstr "Portierung"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Click Packages"
 msgstr "Click Pakete"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Ubuntu UI-Toolkit"
 msgstr "Ubuntu Benutzeroberflächen-Werkzeug (UI-Toolkit)"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Clickable"
 msgstr "Anklickbar"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Halium"
 msgstr "Halium (Portierungsprojekt)"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Platform"
 msgstr "Plattform"
 
@@ -83,17 +83,10 @@ msgid ""
 "On this website you find guides to :doc:`install Ubuntu Touch on your mobile "
 "phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/dailyuse/"
 "index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:`port Ubuntu "
-"Touch to an Android handset <porting/index>` and :doc:`learn more about "
-"system components <systemdev/index>`. If this is your first time here, "
-"please consider reading our :doc:`introduction <about/introduction>`."
+"Touch to an Android handset <porting/introduction/index>` and :doc:`learn "
+"more about system components <systemdev/index>`. If this is your first time "
+"here, please consider reading our :doc:`introduction <about/introduction>`."
 msgstr ""
-"Auf diesen Seiten stellen wir Anleitungen zur Verfügung, um :doc:`Ubuntu "
-"Touch auf Smartphones zu installieren <userguide/install>`, :doc:`Ubuntu "
-"Touch zu nutzen <userguide/dailyuse/index>`, :doc:`Apps für Ubuntu Touch zu "
-"entwickeln <appdev/index>`, :doc:`Ubuntu Touch auf ein Android-Smartphone zu "
-"portieren <porting/index>` und :doc:`mehr über Systemkomponenten zu lernen <"
-"systemdev/index>`. Sofern dies der erste Besuch hier bei uns ist, empfehlen "
-"wir einen Blick in unsere :doc:`Einführung <about/introduction>`."
 
 #: ../../index.rst:10
 msgid ""
@@ -148,6 +141,24 @@ msgstr "`Español <https://docs.ubports.com/es/latest/>`_"
 #: ../../index.rst:25
 msgid "`Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_"
 msgstr "`Vereinfachtes Chinesisch <https://docs.ubports.com/zh_CN/latest/>`_"
+
+#~ msgid ""
+#~ "On this website you find guides to :doc:`install Ubuntu Touch on your "
+#~ "mobile phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/"
+#~ "dailyuse/index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:"
+#~ "`port Ubuntu Touch to an Android handset <porting/index>` and :doc:`learn "
+#~ "more about system components <systemdev/index>`. If this is your first "
+#~ "time here, please consider reading our :doc:`introduction <about/"
+#~ "introduction>`."
+#~ msgstr ""
+#~ "Auf diesen Seiten stellen wir Anleitungen zur Verfügung, um :doc:`Ubuntu "
+#~ "Touch auf Smartphones zu installieren <userguide/install>`, :doc:`Ubuntu "
+#~ "Touch zu nutzen <userguide/dailyuse/index>`, :doc:`Apps für Ubuntu Touch "
+#~ "zu entwickeln <appdev/index>`, :doc:`Ubuntu Touch auf ein Android-"
+#~ "Smartphone zu portieren <porting/index>` und :doc:`mehr über "
+#~ "Systemkomponenten zu lernen <systemdev/index>`. Sofern dies der erste "
+#~ "Besuch hier bei uns ist, empfehlen wir einen Blick in unsere :doc:"
+#~ "`Einführung <about/introduction>`."
 
 #~ msgid ""
 #~ "On this website you find instructions how to install Ubuntu Touch on your "
