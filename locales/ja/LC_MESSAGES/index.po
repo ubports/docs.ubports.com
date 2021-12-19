@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-16 17:49-0500\n"
+"POT-Creation-Date: 2021-12-07 11:45-0600\n"
 "PO-Revision-Date: 2021-09-30 00:37+0000\n"
 "Last-Translator: mk419 <mk419@fascode.net>\n"
 "Language-Team: Japanese <https://translate.ubports.com/projects/ubports-docs/"
@@ -39,23 +39,23 @@ msgstr "開発する"
 msgid "Porting"
 msgstr "ポーティング"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Click Packages"
 msgstr "Click パッケージ"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Ubuntu UI-Toolkit"
 msgstr "Ubuntu UI ツールキット"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Clickable"
 msgstr "Clickable"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Halium"
 msgstr "Halium"
 
-#: ../../index.rst:75
+#: ../../index.rst:73
 msgid "Platform"
 msgstr "プラットフォーム"
 
@@ -81,23 +81,18 @@ msgid ""
 "On this website you find guides to :doc:`install Ubuntu Touch on your mobile "
 "phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/dailyuse/"
 "index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:`port Ubuntu "
-"Touch to an Android handset <porting/index>` and :doc:`learn more about "
-"system components <systemdev/index>`. If this is your first time here, "
-"please consider reading our :doc:`introduction <about/introduction>`."
+"Touch to an Android handset <porting/introduction/index>` and :doc:`learn "
+"more about system components <systemdev/index>`. If this is your first time "
+"here, please consider reading our :doc:`introduction <about/introduction>`."
 msgstr ""
-"このウェブサイトでは、 :doc:`携帯電話にUbuntu Touchをインストールする方法 "
-"<userguide/install>`、:doc:`Ubuntu Touchの使い方 <userguide/dailyuse/"
-"index>`、:doc:`Ubuntu Touch向けアプリの開発 <appdev/index>`、:doc:`Ubuntu "
-"TouchをAndroid端末にポーティングする方法 <porting/index>`、:doc:`システムコン"
-"ポーネントについて <systemdev/index>` を取り扱っています。初めてこのサイトに"
-"来られた方は、:doc:`はじめに <about/introduction>`をご覧ください。"
 
 #: ../../index.rst:10
 msgid ""
 "If you want to help improving this documentation, :doc:`the Documentation "
 "contribute page <contribute/documentation>` will get you started."
 msgstr ""
-"このドキュメントの改善を支援したい場合は、:doc: `ドキュメントへの貢献ページ<contribute/documentation>`から始められます。"
+"このドキュメントの改善を支援したい場合は、:doc: `ドキュメントへの貢献ページ"
+"<contribute/documentation>`から始められます。"
 
 #: ../../index.rst:12
 msgid "You may view this documentation in the following languages:"
@@ -141,4 +136,21 @@ msgstr "`スペイン語 (Español) <https://docs.ubports.com/es/latest/>`_"
 
 #: ../../index.rst:25
 msgid "`Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_"
-msgstr "`簡体字中国語 (Simplified Chinese) <https://docs.ubports.com/zh_CN/latest/>`_"
+msgstr ""
+"`簡体字中国語 (Simplified Chinese) <https://docs.ubports.com/zh_CN/latest/>`_"
+
+#~ msgid ""
+#~ "On this website you find guides to :doc:`install Ubuntu Touch on your "
+#~ "mobile phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/"
+#~ "dailyuse/index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:"
+#~ "`port Ubuntu Touch to an Android handset <porting/index>` and :doc:`learn "
+#~ "more about system components <systemdev/index>`. If this is your first "
+#~ "time here, please consider reading our :doc:`introduction <about/"
+#~ "introduction>`."
+#~ msgstr ""
+#~ "このウェブサイトでは、 :doc:`携帯電話にUbuntu Touchをインストールする方法 "
+#~ "<userguide/install>`、:doc:`Ubuntu Touchの使い方 <userguide/dailyuse/"
+#~ "index>`、:doc:`Ubuntu Touch向けアプリの開発 <appdev/index>`、:doc:`Ubuntu "
+#~ "TouchをAndroid端末にポーティングする方法 <porting/index>`、:doc:`システム"
+#~ "コンポーネントについて <systemdev/index>` を取り扱っています。初めてこのサ"
+#~ "イトに来られた方は、:doc:`はじめに <about/introduction>`をご覧ください。"
