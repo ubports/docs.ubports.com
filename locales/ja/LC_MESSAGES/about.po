@@ -8,17 +8,20 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-29 13:44-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-10-08 16:51+0000\n"
+"Last-Translator: M.Sugahara <equaaqua@hotmail.com>\n"
+"Language-Team: Japanese <https://translate.ubports.com/projects/ubports-docs/"
+"documentation-about/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../../about/introduction.rst:2
 msgid "Introduction"
-msgstr ""
+msgstr "イントロダクション"
 
 #: ../../about/introduction.rst:4
 msgid ""
@@ -26,10 +29,12 @@ msgid ""
 "Free and open-source (GPL if possible) mobile operating system that "
 "converges and respects your freedom."
 msgstr ""
+"これは UBports "
+"プロジェクトのドキュメントです。私たちのゴールは、無料でオープンソース（可能な限りGPL）な、あなたの自由を尊重するモバイルOSを作ることです。"
 
 #: ../../about/introduction.rst:7
 msgid "About UBports"
-msgstr ""
+msgstr "UBportsについて"
 
 #: ../../about/introduction.rst:9
 msgid ""
@@ -37,6 +42,8 @@ msgid ""
 "infancy was a place where developers could share ideas and educate each "
 "other in hopes of bringing the Ubuntu Touch platform to more mobile devices."
 msgstr ""
+"UBports プロジェクトは 2015年に、Marius Gripsgard によって立ち上げられました。当初のプロジェクトは、Ubuntu "
+"Touch プラットフォームをもっと多くのデバイスで使えるようにするために、開発者がアイデアを共有し、教え合う場所でした。"
 
 #: ../../about/introduction.rst:11
 msgid ""
@@ -46,10 +53,14 @@ msgid ""
 "and its sister projects began work on the open-source code, maintaining and "
 "expanding its possibilities for the future."
 msgstr ""
+"Canonical が 2017年4月に `Ubuntu Touch のサポート終了をアナウンスした <https://insights.ubuntu."
+"com/2017/04/05/"
+"growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ とき、"
+"UBports とそれに属するプロジェクトは、Ubuntu Touch の可能性を将来にわたって残しておくため、オープンソースのコードで動き始めました。"
 
 #: ../../about/introduction.rst:14
 msgid "About the Documentation"
-msgstr ""
+msgstr "このドキュメントについて"
 
 #: ../../about/introduction.rst:16
 msgid ""

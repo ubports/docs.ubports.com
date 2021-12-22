@@ -19,6 +19,8 @@ As we can see in the `Content Hub documentation <https://api-docs.ubports.com/sd
 - ``ContentHandler.Destination`` (The selected app will be the destination for the exported file)
 - ``ContentHandler.Share`` (The selected app will be the destination for the exported file, which will then be shared externally)
 
+.. rst-class:: invert-grayscale
+
 .. figure:: /_static/images/appdev/guides/contenthubimages/12.svg
         :align: center
 

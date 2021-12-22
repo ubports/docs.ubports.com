@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-15 09:19-0500\n"
-"PO-Revision-Date: 2021-02-21 20:38+0000\n"
+"PO-Revision-Date: 2021-10-12 11:35+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/ru/>\n"
@@ -172,9 +172,7 @@ msgstr ""
 
 #: ../../contribute/bugreporting.rst:43
 msgid "Steps to reproduce: You wrote these down earlier, right?"
-msgstr ""
-"Как воспроизвести баг: список действий, которые нужно совершить, чтобы "
-"ошибка проявилась."
+msgstr "Шаги к воспроизведению: Вы записали это раньше, верно?"
 
 #: ../../contribute/bugreporting.rst:44
 msgid ""
@@ -242,7 +240,7 @@ msgid ""
 "logviewer.neothethird>`_ from the OpenStore. This app will help us find, "
 "view, and send the logs we need."
 msgstr ""
-"Для начала скачайте приложение  `Logviewer <https://open-store.io/app/"
+"Для начала скачайте приложение `Logviewer <https://open-store.io/app/"
 "logviewer.neothethird>` из OpenStore. Эта программа специально предназначена "
 "для просмотра, подготовки и отправки лог-файлов."
 
@@ -427,7 +425,7 @@ msgid ""
 "nearest index:"
 msgstr ""
 "Это можно сделать, добавив страницу в файл ``index.rst``, который находится "
-"в этой же папке. Например, если вы создадите файл с именем «newpage.rst», "
+"в этой же папке. Например, если вы создадите файл с именем \"newpage.rst\", "
 "добавьте строку строку в индексный файл и обозначьте ее символом (>):"
 
 #: ../../contribute/documentation.rst:105
@@ -496,24 +494,24 @@ msgid ""
 msgstr ""
 "Для проверки страниц используется инструмент ``checkdiff``, входящий в "
 "утилиту Rediraffe. Он позволяет не удалять страницы без редиректов из "
-"документации. Этот инструмент запускается скриптом build.sh в репозитории "
-"при процедуре автоматической сборки после отправки запроса Pull Request."
+"документации. Этот инструмент запускается скриптом ``build.sh`` в "
+"репозитории при процедуре автоматической сборки после отправки запроса Pull "
+"Request."
 
 #: ../../contribute/documentation.rst:118
 msgid ""
 "What follows are some examples of situations where you should create "
 "redirects."
 msgstr ""
-"Ниже разобраны несколько примеров ситуаций, в которых следует создавать "
-"редиректы."
+"Ниже разобраны несколько примеров ситуаций, когда нужно создавать редиректы."
 
 #: ../../contribute/documentation.rst:120
 msgid ""
 "You are moving ``systemdev/calendars.rst`` to ``appdev/calendars.rst``. Add "
 "the following to the ``redirects.txt`` file::"
 msgstr ""
-"Нужно переместить файл из папки``systemdev/calendars.rst` в папку``appdev/"
-"calendars.rst``. В файле redirects.txt нужно указать следующее:"
+"Нужно переместить файл из папки ``systemdev/calendars.rst`` в папку ``appdev/"
+"calendars.rst``. В файле ``redirects.txt`` нужно указать следующее::"
 
 #: ../../contribute/documentation.rst:124
 msgid ""
@@ -590,7 +588,7 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:150
 msgid "Forking the repository"
-msgstr "Клонирование (форк) репозитория с документацией"
+msgstr "Клонирование (форк) репозитория"
 
 #: ../../contribute/documentation.rst:152
 msgid ""
@@ -599,8 +597,8 @@ msgid ""
 "If you're not sure how to do this, check out the excellent GitHub guide on "
 "`forking projects <https://guides.github.com/activities/forking/>`_."
 msgstr ""
-"Можно существенно переработать документацию, но для этого лучше сделать форк "
-"проекта `ubports/docs.ubports.com <https://github.com/ubports/"
+"Можно существенно переработать документацию, но для этого лучше сделать "
+"копию (форк) проекта `ubports/docs.ubports.com <https://github.com/ubports/"
 "docs.ubports.com>`_ на сайте GitHub. Если у Вас есть вопросы по этому "
 "процессу, прочитайте подробное руководство на сайте `GitHub "
 "<https://guides.github.com/activities/forking/>`_."
@@ -687,7 +685,7 @@ msgid ""
 "failed"
 msgstr ""
 "Или на вкладке может быть пиктограмма с красным крестиком, т.е. проверка "
-"завершилась неуспешно. В этом случае проверьте, какие указаны причины"
+"завершилась неудачно. В этом случае проверьте, какие указаны причины"
 
 #: ../../contribute/documentation.rst:173
 msgid ""
@@ -702,7 +700,7 @@ msgstr "Теперь нажмите вкладку «Подробнее»,"
 
 #: ../../contribute/documentation.rst:175
 msgid "then \"Artifacts\" on the top right,"
-msgstr "затем \"Артефакты\" вверху справа,"
+msgstr "затем «Артефакты» вверху справа,"
 
 #: ../../contribute/documentation.rst:176
 msgid "then \"_build/html/..index.html\","
@@ -722,7 +720,7 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:183
 msgid "Alternative methods to contribute"
-msgstr "Другие способы помощи"
+msgstr "Как еще можно помочь"
 
 #: ../../contribute/documentation.rst:186 ../../contribute/translations.rst:2
 msgid "Translations"
@@ -781,7 +779,7 @@ msgid ""
 "This section lists the TODOs that have been included in this documentation. "
 "If you know how to fix one, please send us a Pull Request to make it better!"
 msgstr ""
-"В этой секции содержится список планов на будущее и недоработок,которые "
+"В этой секции содержится список планов на будущее и недоработок, которые "
 "нужно устранить. Если Вы знаете, как это сделать, пожалуйста создайте "
 "соответствующий pull request на трекере."
 
@@ -831,9 +829,9 @@ msgid ""
 "`Liberapay <https://liberapay.com/UBports/>`_ or `Patreon <https://www."
 "patreon.com/ubports>`_!"
 msgstr ""
-"На развитие проектов UBports можно сделать пожертвования через сервисы "
-"`Liberapay <https://liberapay.com/UBports/>`_ или `Patreon <https://www."
-"patreon.com/ubports>`_."
+"Вы можете помочь нашей работе в UBports, сделав пожертвование через сервисы `"
+"Liberapay <https://liberapay.com/UBports/>`_ или `Patreon "
+"<https://www.patreon.com/ubports>`_!"
 
 #: ../../contribute/monetary.rst:6
 msgid ""
@@ -857,7 +855,7 @@ msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:7
 msgid "Core apps"
-msgstr "Базовые приложения"
+msgstr "Базовые (основные) приложения"
 
 #: ../../contribute/preinstalled-apps.rst:9
 msgid ""
@@ -877,11 +875,11 @@ msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:12
 msgid "Which core apps currently exist?"
-msgstr "Какие базовые программы уже существуют?"
+msgstr "Какие базовые приложения уже существуют?"
 
 #: ../../contribute/preinstalled-apps.rst:14
 msgid "A full list of the Ubuntu Touch core apps follows."
-msgstr "Полный список основных программ для Ubuntu Touch будет далее."
+msgstr "Полный список основных программ для Ubuntu Touch приводится ниже."
 
 #: ../../contribute/preinstalled-apps.rst:21
 msgid "Application Name"
@@ -981,7 +979,7 @@ msgstr "`notes-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:30
 msgid "OpenStore"
-msgstr "OpenStore"
+msgstr "OpenStore (Магазин приложений с открытым исходным кодом)"
 
 #: ../../contribute/preinstalled-apps.rst:30
 msgid "`OpenStore... on OpenStore`_"
@@ -993,7 +991,7 @@ msgstr "`openstore-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:31
 msgid "Terminal"
-msgstr "Terminal"
+msgstr "Terminal (Терминал Linux)"
 
 #: ../../contribute/preinstalled-apps.rst:31
 msgid "`Terminal on OpenStore`_"
@@ -1005,7 +1003,7 @@ msgstr "`terminal-app в GitLab`_"
 
 #: ../../contribute/preinstalled-apps.rst:32
 msgid "UBports Welcome"
-msgstr "UBports Welcome"
+msgstr "Приветствие UBports"
 
 #: ../../contribute/preinstalled-apps.rst:32
 msgid "`UBports Welcome on OpenStore`_"
@@ -1295,8 +1293,8 @@ msgstr ""
 "Внутри приложения строки помечаются следующим образом: `` i18n.tr (\"string\""
 ") `` при использовании gettext, или `` tr (\"string\") `` при использовании "
 "QtLinguist. При компиляции приложения эти строки извлекаются и записываются "
-"в файлы * .pot * или * .ts *. После перевода языковые файлы  *.po * и * .ts *"
-" нужно обновить."
+"в файлы * .pot * или * .ts *. После перевода языковые файлы *.po * и * .ts * "
+"нужно обновить."
 
 #: ../../contribute/translations.rst:16
 msgid ""

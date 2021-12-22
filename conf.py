@@ -73,7 +73,7 @@ language = None
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'README.md', '.local']
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = 'monokai'
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
@@ -84,20 +84,40 @@ todo_include_todos = True
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-import sphinx_rtd_theme
-
-html_theme = "sphinx_rtd_theme"
-html_logo = '_static/images/logo.png'
-
-
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+html_theme = "furo"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
 html_theme_options = {
-    'collapse_navigation': False
+    "sidebar_hide_name": True,
+    "light_logo": "images/logo-light.svg",
+    "dark_logo": "images/logo-dark.svg",
+    "light_css_variables": {
+        "font-stack": "ubuntu, sans-serif",
+        "font-stack--monospace": "ubuntu-mono, Courier, monospace",
+        "color-brand-primary": "#000000",
+        "color-background-primary": "#F7F7F7",
+        "color-sidebar-search-border": "transparent",
+        "color-sidebar-search-background": "#F7F7F7",
+        "color-sidebar-background": "#FFFFFF",
+        "sidebar-search-icon-size": "1px",
+        "color-sidebar-background-border": "transparent",
+        "color-link": "var(--color-foreground-primary)",
+        "color-link--hover": "var(--color-foreground-primary)",
+        "color-link-underline": "var(--color-foreground-primary)",
+        "color-link-underline--hover": "#E95420",
+        "color-admonition-title--note": "var(--color-toc-item-text)",
+        "color-admonition-title-background--note": "var(--color-sidebar-background)",
+        "sidebar-caption-font-size": "1.6rem"
+    },
+    "dark_css_variables": {
+        "color-brand-primary": "#EDEDED",
+        "color-background-primary": "#141417",
+        "color-sidebar-search-background": "#141417",
+        "color-sidebar-background": "#1A1C1E"
+    },
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,

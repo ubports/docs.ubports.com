@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 09:34-0500\n"
-"PO-Revision-Date: 2021-02-21 20:38+0000\n"
+"PO-Revision-Date: 2021-10-10 03:56+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-appdev/zh_Hant/>\n"
@@ -180,7 +180,7 @@ msgstr ""
 msgid ""
 "The only difference between this and the previous code is that ``handler`` "
 "is ``ContentHandler.Share``."
-msgstr "這個和前面代碼的唯一區別是 \"handler\" 是 \"ContentHandler.Share\""
+msgstr "這個和前面代碼的唯一區別是 \"handler\" 是 \"ContentHandler.Share\"。"
 
 #: ../../appdev/guides/contenthub.rst:102
 msgid "Wait a minute. Why the different apps?"
@@ -1048,9 +1048,8 @@ msgid "tag"
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "The tag of the push notification."
-msgstr "推送通知"
+msgstr "推送通知標籤"
 
 #: ../../appdev/guides/pushnotifications.rst:208
 msgid "sound"
@@ -1113,9 +1112,8 @@ msgid "A JSON object, which defines how to display the emblem"
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "counter."
-msgstr "帳戶"
+msgstr "帳戶。"
 
 #: ../../appdev/guides/pushnotifications.rst:221
 msgid "card"

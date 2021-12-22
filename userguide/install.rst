@@ -18,7 +18,7 @@ The following packages are available:
 
 Start the installer and follow the on-screen instructions walking you through everything.
 
-If you're an experienced Android developer and want to help bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/index>`.
+If you're an experienced Android developer and want to help bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/introduction/index>`.
 
 .. note::
     Please do **not** start the installer with ``sudo``. It is meant to be run as a normal user, not as root.
@@ -65,7 +65,7 @@ Run ``echo 0x2ae5 >> ~/.android/adb_usb.ini`` in the terminal and restart the in
 Missing udev-rules
 """"""""""""""""""
 
-If the device not detected on Linux and packages other than Snap, you might be missing **udev-rules**.
+If the device not detected on Linux (other than with Snap), you might be missing **udev-rules**.
 
 1. Check if ``/etc/udev/rules.d/51-android.rules`` exists and contains the rules below.
    If not, add them to the file and run
@@ -136,10 +136,10 @@ Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed in so
 Charge your device forom a wall-charger (not your PC) to a battery charge level of at least 40 percent.
 2. Download the Ubuntu Touch ROM for your device and extract the ZIP files:
 
-    - `BQ E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ (*krillin*)
-    - `BQ E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)
-    - `BQ M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)
-    - `BQ M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)
+    - `Bq E4.5 <https://cdimage.ubports.com/stock-bq-images/krillin.zip>`_ (*krillin*)
+    - `Bq E5 HD <https://cdimage.ubports.com/stock-bq-images/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)
+    - `Bq M10 HD <https://cdimage.ubports.com/stock-bq-images/cooler-image-stable-6.zip>`_ (*cooler*)
+    - `Bq M10 FHD <https://cdimage.ubports.com/stock-bq-images/frieza-image-stable-4.zip>`_ (*frieza*)
     - `Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)
 
 3. Download the latest version of the `SP Flash Tool <https://spflashtool.com/download/>`_ (*aka MTK flash tool*).
@@ -174,6 +174,7 @@ Charge your device forom a wall-charger (not your PC) to a battery charge level 
 
 .. note::
 
-    If the installation fails with a 100% red bar and hangs there (and logs says something like ``COM port is open. Trying to sync with the target…``), remove the ``modemmanager`` package as the one installed `is not compatible <https://web.archive.org/web/20180118130643/http://www.mibqyyo.com/en-articles/2015/09/16/ubuntu-android-installation-process-for-bq-aquaris-e4-5-and-e5/>`_ with SP Flash Tool, close it and try again from step 4.
+    If the installation fails with a 100 % red bar and hangs there (and logs says something like ``COM port is open. Trying to sync with the target…``), remove the ``modemmanager`` package as the one installed `is not compatible <https://web.archive.org/web/20180118130643/http://www.mibqyyo.com/en-articles/2015/09/16/ubuntu-android-installation-process-for-bq-aquaris-e4-5-and-e5/>`_ with SP Flash Tool, close it and try again from step 4.
 
-13. Your device will now boot into a super old version of Ubuntu Touch. Use the installer to install an updated version.
+13. Your device will now boot into a super old version of Ubuntu Touch.
+Use the installer to install an updated version.

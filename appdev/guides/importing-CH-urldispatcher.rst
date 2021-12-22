@@ -1,8 +1,16 @@
 Importing from Content Hub and URLdispatcher
 ============================================
 
-.. figure:: /_static/images/appdev/guides/importingCHdispatcherimages/01ichu.png
-        :align: center
+.. code:: javascript
+
+        "hooks": {
+            "openstore": {
+                "apparmor": "openstore/openstore.apparmor",
+                "desktop": "openstore/openstore.desktop",
+                "urls": "openstore/openstore.url-dispatcher",
+                "content-hub": "openstore/openstore-contenthub.json"
+            }
+        },
 
 In the previous guide we have seen a little bit about how Content Hub works. In this guide we will see how ``URLdispatcher`` works and how to handle imported data from the Content Hub.
 
@@ -133,6 +141,17 @@ Let's check if ``Qt.application.arguments`` is not empty and if not, if any argu
         }
 
 Remember to check that %u (to receive 1 URL) or %U (to receive 1 or more URLs) is present under the ``Exec`` line in the `.desktop <https://gitlab.com/ubports-linphone/linphone-simple/-/blob/master/linphone.desktop.in#L7>`_ file of the app.
+
+Tools
+-----
+
+From command line, ``url-dispatcher-dump`` command will give you the full list of registered protocol schemes and their corresponding app.
+
+Another usefull tool, but not installed by default on devices is ``url-dispatcher-tools``, it allows you to simulate a call from a third party app. e.g: ``url-dispatcher https://youtu.be/CIX-a-i6B1w`` will launch youtube webapp.
+
+To install, it make your partition writable (``sudo mount -o rw,remount /``) and install it via ``sudo apt install url-dispatcher-tools``
+
+
 
 What happens if more than one app has the same URL type defined?
 ----------------------------------------------------------------

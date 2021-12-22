@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 17:42-0600\n"
+"POT-Creation-Date: 2021-12-07 11:45-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../userguide/advanceduse/adb.rst:2
-msgid "Shell access via adb"
+msgid "Shell access via ADB"
 msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:4
@@ -41,7 +41,7 @@ msgid "On Fedora::"
 msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:20
-msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
+msgid "And on macOS with `Homebrew <https://brew.sh>`_::"
 msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:24
@@ -65,7 +65,7 @@ msgid "Place your device into developer mode (Settings - About - Developer Mode 
 msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:33
-msgid "Plug the device into a computer with adb installed"
+msgid "Plug the device into a computer with ADB installed"
 msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:34
@@ -77,110 +77,110 @@ msgid "When you're done using the shell, it's a good idea to turn Developer Mode
 msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:39
-msgid "If there's a device in the list here (The command doesn't print \"List of devices attached\" and a blank line), you are able to use ADB successfully. If not, continue to the next section."
+msgid "If there's a device in the list here (The command doesn't print \"List of devices attached\" and a blank line), you are able to use ADB. If not, continue to the next section."
 msgstr ""
 
-#: ../../userguide/advanceduse/adb.rst:41
-msgid "Adb shell commands::"
+#: ../../userguide/advanceduse/adb.rst:42
+msgid "ADB shell commands::"
 msgstr ""
 
-#: ../../userguide/advanceduse/adb.rst:46
+#: ../../userguide/advanceduse/adb.rst:47
 msgid "Additional Adb commands::"
 msgstr ""
 
-#: ../../userguide/advanceduse/adb.rst:51
-msgid "For more ADB commands refer to the `official documentation <https://developer.android.com/studio/command-line/adb>`_."
+#: ../../userguide/advanceduse/adb.rst:52
+msgid "For more ADB commands, refer to the `official documentation <https://developer.android.com/studio/command-line/adb>`_."
 msgstr ""
 
-#: ../../userguide/advanceduse/adb.rst:54
+#: ../../userguide/advanceduse/adb.rst:55
 msgid "Add hardware IDs"
 msgstr ""
 
-#: ../../userguide/advanceduse/adb.rst:56
+#: ../../userguide/advanceduse/adb.rst:57
 msgid "ADB doesn't always know what devices on your computer it should or should not talk to. You can manually add the devices that it does not know how to talk to."
 msgstr ""
 
-#: ../../userguide/advanceduse/adb.rst:58
+#: ../../userguide/advanceduse/adb.rst:59
 msgid "Just run the command for your selected device if it's below. Then, run ``adb kill-server`` followed by the command you were initially trying to run."
 msgstr ""
 
-#: ../../userguide/advanceduse/adb.rst:60
+#: ../../userguide/advanceduse/adb.rst:61
 msgid "Fairphone 2::"
 msgstr ""
 
-#: ../../userguide/advanceduse/adb.rst:64
-msgid "Oneplus One::"
+#: ../../userguide/advanceduse/adb.rst:65
+msgid "OnePlus One::"
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:2
-msgid "CalDAV and CardDAV synchronization"
+msgid "CalDAV and CardDAV syncing"
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:4
-msgid "CalDAV and CardDAV are protocols to synchronize calendars and contacts with a remote server. Many email-hosters provide a CalDAV and CardDAV interface."
+msgid "CalDAV and CardDAV are protocols to sync calendars and contacts with a remote server. Many e-mail hosters provide a CalDAV and CardDAV interface."
 msgstr ""
 
-#: ../../userguide/advanceduse/dav.rst:6
-msgid "**Note:** CalDAV Sync can also be set up in using the calendar app. Open the app, click on the little calendar icon in the top right corner and select \"Add internet calendar > Generic CalDAV\". Enter your calendar URL as well as your username and password to complete the process."
+#: ../../userguide/advanceduse/dav.rst:7
+msgid "**Note:** CalDAV sync can also be set up by using the calendar app. Open it, click on the little calendar icon in the top right corner and select \"Add internet calendar > Generic CalDAV\". Enter your calendar URL as well as your username and password to complete the process."
 msgstr ""
 
-#: ../../userguide/advanceduse/dav.rst:8
-msgid "At the moment, there is no carddav implementation directly accessible from the Ubuntu Touch graphical user-interface, so the only way to sync carddav is by using syncevolution + cron. However, there is a simple way to do that with a script that you can run in the terminal or via phablet SSH connection. These instructions work for caldav as well."
+#: ../../userguide/advanceduse/dav.rst:11
+msgid "At the moment, the Ubuntu Touch graphical user-interface lacks a CardDAV implementation, but you can do it by using SyncEvolution + cron. There is a script you can run in the terminal, or via a phablet SSH connection. These instructions work for CalDAV as well."
 msgstr ""
 
-#: ../../userguide/advanceduse/dav.rst:10
-msgid "Follow this `guide <https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to activate Developer Mode and ADB (or SSH) connection."
-msgstr ""
-
-#: ../../userguide/advanceduse/dav.rst:13
-msgid "Download this `script <https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ (let's call it dav.sh) and edit the following variables:"
-msgstr ""
-
-#: ../../userguide/advanceduse/dav.rst:15
-msgid "server side : CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your ownCloud/nextCloud/baikal/SOGO/... server)"
-msgstr ""
-
-#: ../../userguide/advanceduse/dav.rst:16
-msgid "CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmetic)"
+#: ../../userguide/advanceduse/dav.rst:14
+msgid "Follow this `guide <https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to activate Developer Mode and a connection either through ADB or SSH."
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:17
-msgid "CRON_FREQUENCY (for the frequency of synchronization)"
+msgid "Download this `script <https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ (let's call it dav.sh) and edit the following variables:"
 msgstr ""
 
-#: ../../userguide/advanceduse/dav.rst:18
-msgid "Line 61: write ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid permission denied error"
+#: ../../userguide/advanceduse/dav.rst:19
+msgid "Server side: CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your ownCloud/nextCloud/baikal/SOGO/… server)"
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:20
-msgid "Move the file to your Ubuntu Touch device, either by file manager or with adb::"
+msgid "CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmetic)"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:21
+msgid "CRON_FREQUENCY (for the frequency of synchronization)"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:22
+msgid "Line 61: write ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid a \"Permission denied\" error."
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:24
-msgid "Connect with the phablet shell (``adb shell``) or directly on the phone Terminal app and type the following::"
+msgid "Move the file to your Ubuntu Touch device, either by way of a file manager or through the use of ADB::"
 msgstr ""
 
-#: ../../userguide/advanceduse/dav.rst:31
-msgid "Sources:"
-msgstr ""
-
-#: ../../userguide/advanceduse/dav.rst:33
-msgid "https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-calendars/664834#664834"
-msgstr ""
-
-#: ../../userguide/advanceduse/dav.rst:34
-msgid "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
+#: ../../userguide/advanceduse/dav.rst:28
+msgid "Connect with the phablet shell (using ``adb shell``) or type the following directly into the Ubuntu Touch device terminal app::"
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:35
-msgid "https://gist.github.com/tcarrondo"
-msgstr ""
-
-#: ../../userguide/advanceduse/dav.rst:36
-msgid "https://gist.github.com/bastos77"
+msgid "Sources:"
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:37
+msgid "https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-calendars/664834#664834"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:38
+msgid "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:39
+msgid "https://gist.github.com/tcarrondo"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:40
+msgid "https://gist.github.com/bastos77"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:41
 msgid "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
 msgstr ""
 
@@ -189,11 +189,11 @@ msgid "Advanced use"
 msgstr ""
 
 #: ../../userguide/advanceduse/index.rst:4
-msgid "This section of the documentation details advanced tasks that power users may want to perform on their Ubuntu Touch device."
+msgid "In this section you will find advanced tasks power users can perform on their Ubuntu Touch devices."
 msgstr ""
 
 #: ../../userguide/advanceduse/index.rst:7
-msgid "Some of these guides involve making your system image writable, which may break OTA updates. The guides may also reduce the overall security of your Ubuntu Touch device. Please consider these ramifications before hacking on your device too much!"
+msgid "Some of these guides involve making your system image writable, which may break OTA updates. The guides may also reduce the overall security of your Ubuntu Touch device. Please consider ramifications beforehand."
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:2
@@ -201,11 +201,11 @@ msgid "Reverse tethering"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:4
-msgid "Some users may not have an available wifi connection for their phone nor a data subscription from their mobile provider. This short tutorial will help you to connect your Ubuntu Touch to your computer to access internet."
+msgid "This tutorial helps you to connect your Ubuntu Touch device to your computer to access the Internet on it. This is useful if there is no available Wi-Fi connection or you don't have a data subscription on your Ubuntu Touch device."
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:7
-msgid "Prerequisite: Phone is connected to the computer with usb and developer mode enabled."
+msgid "Prerequisite: A Ubuntu Touch device with \"Developer mode\" on, attached via USB to the computer connected to the Internet."
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:10
@@ -213,19 +213,19 @@ msgid "Steps"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:12
-msgid "On phone: ``android-gadget-service enable rndis``"
+msgid "On the Ubuntu Touch device: ``android-gadget-service enable rndis``"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:14
-msgid "On computer: get your rndis ip address e.g:``hostname -I``"
+msgid "On your computer: get your RNDIS IP address e.g:``hostname -I``"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:16
-msgid "On phone:"
+msgid "On the Ubuntu Touch device:"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:18
-msgid "add gateway: ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``"
+msgid "add a gateway: ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:20
@@ -233,7 +233,7 @@ msgid "add nameservers: ``echo \"nameserver 8.8.8.8\" | sudo tee /etc/resolv.con
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:22
-msgid "refresh dns table: ``resolvconf -u``"
+msgid "refresh the DNS table: ``resolvconf -u``"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:24
@@ -241,105 +241,105 @@ msgid "On computer:"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:26
-msgid "enable ip forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``"
+msgid "Turn on IP forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:28
-msgid "apply NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j MASQUERADE``"
+msgid "Apply NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j MASQUERADE``"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:32
-#: ../../userguide/advanceduse/screencasting.rst:72
-#: ../../userguide/advanceduse/ssh.rst:64
+#: ../../userguide/advanceduse/screencasting.rst:73
+#: ../../userguide/advanceduse/ssh.rst:78
 msgid "References"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:34
-msgid "askubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-tethering-and-click-apps-updates"
+msgid "Ask Ubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-tethering-and-click-apps-updates"
 msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:2
-msgid "Screen Casting your UT device to your computer"
+msgid "Screencasting your Ubuntu touch device to your computer"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:5
-msgid "Ubuntu Touch comes with a command line utility called ``mirscreencast`` which dumps screen frames to a file. The idea here is to stream UT display to a listening computer over the network or directly trough adb so that we can either watch it live or record it to a file."
+#: ../../userguide/advanceduse/screencasting.rst:4
+msgid "The bundled ``mirscreencast`` command-line utility dumps screen-frames to a file. Use it to stream your Ubuntu Touch display to a computer over the network (or directly through ADB) to watch it live or record it to a file."
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:9
-msgid "Using adb"
+#: ../../userguide/advanceduse/screencasting.rst:8
+msgid "Using ADB"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:11
-msgid "You can catch output directly from ``adb exec-out`` command and forward it to mplayer::"
+#: ../../userguide/advanceduse/screencasting.rst:10
+msgid "You can catch output directly from the ``adb exec-out`` command and forward it to MPlayer::"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:15
-msgid "NB: ``timeout`` here is used in order to kill process properly on device ( here 120 seconds ). Otherwise process still continuing even if killed on computer. You can reduce or increase frame per second with``--cap-interval`` (1 = 60fps, 2=30fps, ...)  and size of frames ``384 640`` means width=384 height=640"
+#: ../../userguide/advanceduse/screencasting.rst:14
+msgid "``timeout`` above is used to kill the process in a proper manner on the Ubuntu Touch device (120 seconds here). (Otherwise the process continues even if killed on the computer.) Reduce or increase the number of frames per second with``--cap-interval`` (1 = 60fps, 2=30fps, …) and the size of frames ``384 640`` means a width of 384 px and a height of 640 px."
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:19
-msgid "Via network"
+#: ../../userguide/advanceduse/screencasting.rst:20
+msgid "Via the network"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:22
-msgid "On receiver"
+#: ../../userguide/advanceduse/screencasting.rst:23
+msgid "On the receiver"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:24
-msgid "For real time casting:"
+#: ../../userguide/advanceduse/screencasting.rst:25
+msgid "For real-time casting:"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:27
-msgid "Prepare your computer to listen to a tcp port(here 1234) and forward raw stream to a video player (here mplayer) with a frame size of 384x640::"
+#: ../../userguide/advanceduse/screencasting.rst:28
+msgid "Prepare your computer to listen to a TCP port (1234 here) and forward the raw stream to a video player (MPlayer here) with a framesize of 384x640::"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:31
+#: ../../userguide/advanceduse/screencasting.rst:32
 msgid "For stream recording:"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:33
-msgid "Prepare your computer to listen to a tcp port(here 1234), ungzip and forward raw stream to a video encoder (here mencoder)::"
+#: ../../userguide/advanceduse/screencasting.rst:34
+msgid "Prepare your computer to listen to a TCP port (1234 here), unpack and forward the raw stream to a video encoder (MEncoder here)::"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:38
-msgid "On device"
+#: ../../userguide/advanceduse/screencasting.rst:39
+msgid "On the Ubuntu Touch device"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:40
-msgid "Forward and gzip stream with 60fps (--cap-interval 1) and frame size of 384x640 to computer 10.42.0.209 on port 1234 ::"
+#: ../../userguide/advanceduse/screencasting.rst:41
+msgid "Forward and gzip the stream with 60 FPS (--cap-interval 1) and a framesize of 384x640 to the computer at 10.42.0.209 on port 1234::"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:46
+#: ../../userguide/advanceduse/screencasting.rst:47
 msgid "Example script"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:48
-msgid "This script allows you to screen cast remote UT device to your local PC (must have ssh access to UT and mplayer installed on PC), run it on your computer::"
+#: ../../userguide/advanceduse/screencasting.rst:49
+msgid "Run this on a computer (with MPlayer installed and SSH access to the Ubuntu Touch device) to screencast a remote Ubuntu Touch device to it.::"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:69
+#: ../../userguide/advanceduse/screencasting.rst:70
 msgid "You can download it here: :download:`files/mircast.sh`"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:74
-msgid "initial source: https://wiki.ubuntu.com/Touch/ScreenRecording"
+#: ../../userguide/advanceduse/screencasting.rst:75
+msgid "Initial source: https://wiki.ubuntu.com/Touch/ScreenRecording"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:75
-msgid "demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
+#: ../../userguide/advanceduse/screencasting.rst:76
+msgid "Demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:2
-msgid "Shell access via ssh"
+msgid "Shell access via SSH"
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:4
-msgid "You can use ssh to access a shell from your PC. This is useful for debugging or more advanced shell usage."
+msgid "You can use SSH to access a shell from your PC. This is useful for debugging or more advanced shell usage."
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:6
-msgid "You need a ssh key pair for this. Logging in via password is disabled by default."
+msgid "You need a SSH key-pair for this. Logging in via password is disabled by default."
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:9
@@ -347,7 +347,7 @@ msgid "Create your public key"
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:11
-msgid "If not already created, create your public key, default choices should be fine for LAN, you can leave empty password if you don't want to deal with it each time::"
+msgid "If not already created, create your public key. Default choices should be fine for LAN. You can leave empty password if you don't want to deal with it each time::"
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:16
@@ -359,15 +359,15 @@ msgid "You need then to transfer your public key to your device. There are multi
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:20
-msgid "Connect the ubports device and the PC with a USB cable. Then copy the file using your filemanager."
+msgid "Connect the UBports device and the PC with a USB cable. Then copy the file using your file-manager."
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:21
-msgid "Or transfer the key via the internet by mailing it to yourself, or uploading it to your own cloud storage, or webserver, etc."
+msgid "Or, transfer the key via the Internet by e-mailing it to yourself, or uploading it to your own cloud storage, web-server, etc."
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:22
-msgid "You can also connect via :doc:`adb <adb>` and use the following command to copy it::"
+msgid "You can also connect via :doc:`adb <adb>` and use the following command to copy it (Some devices cant support ADB, check the devices page to learn more.)::"
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:27
@@ -375,15 +375,15 @@ msgid "Configure your device"
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:29
-msgid "Now you have the public key on the UBports device. Let's assume it's stored as ``/home/phablet/id_rsa.pub``. Use the terminal app or and adb connection to perform the following steps on your phone. ::"
+msgid "Now you have the public key on the UBports device. Let's assume it's stored as ``/home/phablet/id_rsa.pub``. Use the terminal app or an ADB connection to perform the following steps on your device. ::"
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:38
-msgid "Now start the ssh server. If you are using an Android-based phone::"
+msgid "Now start the SSH server. If you are using an Android-based device::"
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:42
-msgid "If you are using a Linux-based phone (like the Pinephone)::"
+msgid "If you are using a Linux-based device (like the PinePhone)::"
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:48
@@ -395,23 +395,35 @@ msgid "Now everything is set up and you can use ``ssh`` ::"
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:54
-msgid "To identify the ip-address of your UT device , open Terminal application in your phone and run the following command::"
+msgid "or, if that does not work ::"
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:58
-msgid "The output is a list of IP addresses separated by spaces . Use the first IP address from the list."
+msgid "To identify the IP-address of your UBports device, open the Terminal app on your device and run the following command::"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:61
+#: ../../userguide/advanceduse/ssh.rst:62
+msgid "The output is a list of IP addresses separated by spaces. Use the IP address that matches your subnet. On your PC or laptop: ::"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:68
+msgid "On the phone: ::"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:73
+msgid "In this case you use the second IP address"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:75
 msgid "Of course you can now also use ``scp`` or ``sshfs`` to transfer files."
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:66
-msgid "`askubuntu.com: How can I access my Ubuntu phone over ssh? <https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-over-ssh/599041#599041>`_"
+#: ../../userguide/advanceduse/ssh.rst:80
+msgid "`askubuntu.com: How can I access my Ubuntu phone over SSH? <https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-over-ssh/599041#599041>`_"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:67
-msgid "`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the ubuntu-phone via Wifi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5-ubuntu-phone/content/en/chapter1.html>`_"
+#: ../../userguide/advanceduse/ssh.rst:81
+msgid "`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the Ubuntu phone via Wi-Fi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5-ubuntu-phone/content/en/chapter1.html>`_"
 msgstr ""
 
 #: ../../userguide/advanceduse/switchchannel.rst:2
@@ -419,7 +431,7 @@ msgid "Switch release channels"
 msgstr ""
 
 #: ../../userguide/advanceduse/switchchannel.rst:3
-msgid "You can change the release channel using the system settings. The 3 existing channels are stable, rc (release candidate) and devel (nightly builds). For more info, see :doc:`the release schedule </about/process/release-schedule>`."
+msgid "You can change the release channel using the system settings. The 3 existing channels are `stable`, `rc` (release candidate) and `devel` (nightly builds). More info in :doc:`the release schedule </about/process/release-schedule>`."
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:2
@@ -427,51 +439,47 @@ msgid "Android apps"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:4
-msgid "`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer that allows you to run Android apps on GNU/Linux operating systems such as UBports."
+msgid "`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer to run Android apps on GNU/Linux operating systems such as Ubuntu Touch."
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:7
-msgid "When \"host\" is used in this document, it refers to another device which you can connect your Ubuntu Touch device to. Your host device must have ``adb`` and ``fastboot`` installed."
+msgid "\"Computer\" refers to another device you connect your Ubuntu Touch device to (via USB here). Your USB-attached computer must have ``adb`` and ``fastboot`` installed."
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:10
-msgid "You will need to execute commands on your Ubuntu Touch device to install Anbox and APKs. You can do that by using the terminal application, but it is easier to use ``adb shell`` or :doc:`set up ssh </userguide/advanceduse/ssh>` to access your phone from your host."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:13
-msgid "Supported devices"
+#: ../../userguide/dailyuse/anbox.rst:11
+msgid "You will need to execute commands on your Ubuntu Touch device (and/or attached computer) to install Anbox and APKs. You can do that by using the terminal application, but it is easier to use ``adb shell`` or :doc:`set up SSH </userguide/advanceduse/ssh>` to access your Ubuntu Touch device from your computer."
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:15
-msgid "Make sure your device is supported:"
+msgid "Supported devices"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:17
-msgid "Meizu Pro 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:18
-msgid "Fairphone 2 (codename: ``FP2``, name of the boot partition: ``boot``)"
+msgid "Make sure your device is supported:"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:19
-msgid "OnePlus One (codename: ``bacon``, name of the boot partition: ``boot``)"
+msgid "Meizu PRO 5"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:20
-msgid "Nexus 5 (codename: ``hammerhead``, name of the boot partition: ``boot``)"
+msgid "Fairphone 2"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:21
-msgid "BQ M10 HD (codename: ``cooler``, name of the boot partition: ``boot``)"
+msgid "OnePlus One"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:22
-msgid "BQ M10 FHD (codename: ``frieza``, name of the boot partition: ``boot``)"
+msgid "Nexus 5"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:23
+msgid "BQ Aquaris M10 HD"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:24
-msgid "You will need the device codename and the name of your boot partition for the installation."
+msgid "BQ Aquaris M10 FHD"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:27
@@ -483,118 +491,160 @@ msgid "Installing Anbox is only recommended for experienced users."
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:33
-msgid "If you own a Meizu Pro 5, a BQ M10 HD or a BQ M10 FHD you need to flash a specific boot image. **You will need to re-flash that image after each Ubuntu Touch update** so when you update from OTA-10 to OTA-11 for example. Not doing so can put your phone into an unstable state. Only update your Ubuntu Touch device when you have a computer with you to re-flash that boot image."
+msgid "Install Anbox kernel"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:35
-msgid "Make sure your supported device runs on 16.04 (Anbox doesn't work on 15.04)."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:36
-msgid "Be sure to have a `backup <https://askubuntu.com/questions/602850/how-do-i-backup-my-ubuntu-phone>`_ of the device."
+msgid "Some devices require you to install a custom Linux kernel to use Anbox. These devices are:"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:37
-msgid "Open a terminal on your host and set some device specific variables by running ``export CODENAME=\"turbo\" && export PARTITIONNAME=\"bootimg\"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list."
+msgid "Meizu PRO 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:38
-msgid "Activate developer mode on your device."
+msgid "BQ Aquaris M10 HD (codename: ``cooler``, name of the boot partition: ``boot``)"
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:39
-msgid "Connect the device to your host and run the following commands from your host (same terminal you ran the ``export`` command in)::"
+msgid "BQ Aquaris M10 FHD (codename: ``frieza``, name of the boot partition: ``boot``)"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:41
+msgid "If your device is not in this list, the Anbox kernel was automatically installed when you installed Ubuntu Touch. Please skip ahead to :ref:`run-anbox-installer`."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:44
+msgid "**You will need to repeat these steps after each Ubuntu Touch update**. Not doing so can put your Ubuntu Touch device into an unstable state. Only update your Ubuntu Touch device when you have a computer with you to re-flash the modified kernel image."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:48
+msgid "Be sure to have a `backup <https://askubuntu.com/questions/602850/how-do-i-backup-my-ubuntu-phone>`_ of your device."
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:49
-msgid "Wait for the device to reboot, then run this from your host::"
+msgid "Open a terminal on your computer and set some device specific variables by running ``export CODENAME=\"turbo\" && export PARTITIONNAME=\"bootimg\"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list."
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:58
-#: ../../userguide/dailyuse/anbox.rst:78
-#: ../../userguide/dailyuse/anbox.rst:98
-msgid "Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up."
+#: ../../userguide/dailyuse/anbox.rst:50
+msgid "Activate `Developer mode` on your device."
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:61
-msgid "You now have an adb server running inside your phone. This guide asks you to run some ``adb`` commands, sometime on your computer, sometime on your phone. Carefully check on which device you are!"
+#: ../../userguide/dailyuse/anbox.rst:51
+msgid "Connect the device to your computer and run the following commands from your computer (the same terminal you ran the ``export`` command)::"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:63
-msgid "You can check that adb server is correctly running locally on your phone by opening the terminal app and enter ``adb devices``. You should see something like::"
+#: ../../userguide/dailyuse/anbox.rst:64
+msgid "Run the Anbox installer"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:66
+msgid "Once your device has the Anbox kernel installed, you can use the Anbox Tool to install the Anbox container."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:68
+msgid "Run ``adb shell`` from your computer to get a shell on your Ubuntu Touch device."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:69
+msgid "Run the following command on your Ubuntu Touch device: ``anbox-tool install``."
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:70
-msgid "How to install new APKs"
+msgid "Follow the on-screen instructions."
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:72
-msgid "Copy the APK to ``/home/phablet/Downloads``, then run the following from your host::"
+msgid "Now you're done! You might have to refresh the app drawer (pull down from the center of the screen and release) for the new Android apps to show up."
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:81
+#: ../../userguide/dailyuse/anbox.rst:75
+msgid "You now have an ADB server running on your Ubuntu Touch device."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:77
+msgid "This guide asks you to run some ADB commands, sometimes on your computer, other times on the device itself. Carefully check which device you are on!"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:80
+msgid "You can check that the ADB server is running on your Ubuntu Touch device by entering ``adb devices`` in its terminal app. You should see something like::"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:88
+msgid "How to install new APKs"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:90
+msgid "Copy the APK to ``/home/phablet/Downloads``. Then run the following from your computer::"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:96
+msgid "Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:99
 msgid "Keep your apps up to date"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:83
+#: ../../userguide/dailyuse/anbox.rst:101
 msgid "To keep your apps up to date you can use of F-Droid or ApkTrack. If you want to install any of the above apps you can find them here:"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:85
+#: ../../userguide/dailyuse/anbox.rst:103
 msgid "F-Droid: https://f-droid.org/"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:86
+#: ../../userguide/dailyuse/anbox.rst:104
 msgid "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:89
+#: ../../userguide/dailyuse/anbox.rst:107
 msgid "How to uninstall apps"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:91
-msgid "To uninstall apps, run ``adb uninstall [APP_ID]`` from your Ubuntu Touch device::"
+#: ../../userguide/dailyuse/anbox.rst:109
+msgid "To uninstall apps from the Ubuntu Touch device, run ``adb uninstall [APP_ID]`` from your computer::"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:101
+#: ../../userguide/dailyuse/anbox.rst:116
+msgid "Done! You might have to pull down from the app list for the new Android apps to show up."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:119
 msgid "Access Android storage"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:103
-msgid "Android storage is located at ``/home/phablet/anbox-data/data/media/0``."
+#: ../../userguide/dailyuse/anbox.rst:121
+msgid "The Android storage is located at ``/home/phablet/anbox-data/data/media/0``."
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:105
+#: ../../userguide/dailyuse/anbox.rst:123
 msgid "Links to android libraries can be made in their respective XDG counterparts::"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:114
+#: ../../userguide/dailyuse/anbox.rst:132
 #: ../../userguide/install.rst:25
 msgid "Troubleshooting"
 msgstr ""
 
-#: ../../userguide/dailyuse/anbox.rst:116
-msgid "If installing ``anbox-ubuntu-touch`` or ``android-tools-adb`` on the device fails with an error about unsufficient space, try this::"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:127
-msgid "When you want to install an apk but get the error ``Invalid APK file`` that error could also mean \"file not found\""
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:129
-msgid "Check that you typed the file name correctly"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:130
-msgid "If the APK does not reside in the current folder where you execute adb, you have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` instead of just ``my-app.apk``"
-msgstr ""
-
 #: ../../userguide/dailyuse/anbox.rst:134
-msgid "Reporting bugs"
+msgid "When you want to install an APK, but get the error ``Invalid APK file`` that error could also mean \"file not found\""
 msgstr ""
 
 #: ../../userguide/dailyuse/anbox.rst:136
-msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs with Ubuntu Touch 16.04 are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with Anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!"
+msgid "Check that you typed the filename correctly."
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:137
+msgid "If the APK does not reside in the folder you are in when you run adb, you have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` instead of just ``my-app.apk``"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:141
+msgid "Reporting bugs"
+msgstr ""
+
+#: ../../userguide/dailyuse/anbox.rst:143
+msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs concerning Ubuntu Touch are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with Anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
 
 #: ../../userguide/dailyuse/index.rst:2
@@ -602,7 +652,7 @@ msgid "Daily use"
 msgstr ""
 
 #: ../../userguide/dailyuse/index.rst:4
-msgid "This section of the documentation details common tasks that users may want to perform while using their Ubuntu Touch device."
+msgid "This section of the documentation details common tasks users may want to do on their Ubuntu Touch device."
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:2
@@ -614,7 +664,7 @@ msgid "Libertine allows you to use standard desktop applications in Ubuntu Touch
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:6
-msgid "To install applications you may use the phone's *Settings* interface or you may use the command line as described further below."
+msgid "To install applications you can use the *Settings* interface on your Ubuntu Touch device, or the command-line as described further below."
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:9
@@ -634,233 +684,237 @@ msgid "Open Settings and scroll down to *Libertine* under the *System* sub-headi
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:18
-msgid "Tap *Libertine* to get to the *Manage Libertine Containers* sub-menu. If you have other containers already installed, they will be visible here. Tap the + sign at the upper right to add a container."
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:20
-msgid "The *Container Options* dialog box will open asking you to enter a container name and password if desired. Confirm your entries by tapping OK, and the container will be created."
+msgid "Tap *Libertine* to get to the *Manage Libertine Containers* sub-menu. Already installed containers will be visible here. Tap the + sign at the upper right to add a container."
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:22
-msgid "To do this via command line follow these steps::"
+msgid "The *Container Options* dialog box will open asking you to enter a container name and optionally a password. Confirm your entries by tapping \"OK\", and the container will be created."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:26
-msgid "You can add extra options such as:"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:28
-msgid "``-n name`` name is a more user friendly name of the container"
+#: ../../userguide/dailyuse/libertine.rst:25
+msgid "To do this via the command-line::"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:29
-msgid "``-t type`` type can be either ``chroot`` or ``lxc``. Default is ``chroot`` and is compatible with every device. If the kernel of your device supports it then ``lxc`` is suggested."
+msgid "You can add extra options such as:"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:31
-msgid "The creating process can take some time, due to the size of the container (some hundred of megabytes)."
+msgid "``-n name`` name is a more user-friendly name of the container"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:32
+msgid "``-t type`` type can be either ``chroot`` or ``lxc``. The default is ``chroot`` , which is compatible with every device."
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:34
-msgid "The ``create`` command shown above cannot be run directly in the terminal app, due to apparmor restrictions. You can run it from another device using either ``adb`` or ``ssh`` connection. Alternatively, you can run it from the terminal app using a loopback ssh connection running this command: ``ssh localhost``."
+msgid "If the kernel of your device supports it, ``lxc`` is suggested."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:37
-msgid "List containers"
+#: ../../userguide/dailyuse/libertine.rst:36
+msgid "Creation can take a while due to the size of the container (some hundred megabytes)."
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:39
-msgid "Use the *Settings Manage Libertine Containers* sub-menu to list all the containers you have created on the device."
+msgid "The ``create`` command shown above cannot be run directly in the terminal app, due to AppArmor restrictions. You can run it from another device using either an ADB or SSH connection. Alternatively, you can run it from the terminal app using a loopback SSH connection by running this command: ``ssh localhost``."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:41
-msgid "You can also use the command line. Run::"
+#: ../../userguide/dailyuse/libertine.rst:44
+msgid "List containers"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:46
+msgid "Use the *Settings Manage Libertine Containers* sub-menu to list all the containers you have created on the device."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:48
+msgid "You can also use the command-line. Run::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:53
 msgid "Destroy a container"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:52
+#: ../../userguide/dailyuse/libertine.rst:59
 msgid "Manage applications"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:54
+#: ../../userguide/dailyuse/libertine.rst:61
 msgid "Once a container is set up, the installed applications are available in the app drawer. You can also tap the name of the container in the *Manage Libertine Containers* menu."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:56
-msgid "You can also list them via command line::"
+#: ../../userguide/dailyuse/libertine.rst:64
+msgid "You can also list them via the command-line::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:61
+#: ../../userguide/dailyuse/libertine.rst:69
 msgid "Install a package"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:63
-msgid "From the apps list in the *Manage Libertine Containers* menu tap the + sign to get a dialog box to add a package."
+#: ../../userguide/dailyuse/libertine.rst:71
+msgid "From the apps list in the *Manage Libertine Containers* menu you can tap the + sign to get a dialog box that lets you add a package."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:65
+#: ../../userguide/dailyuse/libertine.rst:73
 msgid "Enter the package name if you know it. Otherwise you can search the archives for a package. You can make this process easier by making the *Lubuntu Software Center* your first package install. Being a desktop app, you will need to use the *Libertine Tweak Tool* in the *Open Store* to make the text large enough to read on a mobile device."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:67
-msgid "Packages may also be installed via command line::"
+#: ../../userguide/dailyuse/libertine.rst:78
+msgid "Packages may also be installed via the command-line::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:72
+#: ../../userguide/dailyuse/libertine.rst:83
 msgid "Remove a package"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:74
-msgid "On the package list, within the container (*System Settings* > *Libertine* > *Manage Libertine Containers* > *CONTAINER NAME*), swipe right on the package you want to remove to reveal the option to remove the package."
+#: ../../userguide/dailyuse/libertine.rst:85
+msgid "Remove a package by swiping it to the right from its entry in the package list (in *System Settings* > *Libertine* > *Manage Libertine Containers* > *CONTAINER NAME*). An option to remove it will be revealed."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:76
-msgid "Or you can remove the package via the command line::"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:81
-msgid "If you have more than one container, then you can use the option ``-i CONTAINER-IDENTIFIER`` to specify for which container you want to perform an operation."
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:84
-msgid "Run desktop application"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:86
-msgid "Run it from the app menu like any other app. To start a graphical application from the command line, for example ``gedit``, run in a terminal::"
+#: ../../userguide/dailyuse/libertine.rst:87
+msgid "Or you can remove the package via the command-line::"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:92
-msgid "Files"
+msgid "If you have more than one container, you can use the option ``-i CONTAINER-IDENTIFIER`` to specify which container you want to perform an operation on."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:94
-msgid "Libertine applications do have access to these folders:"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:96
-msgid "Documents"
+#: ../../userguide/dailyuse/libertine.rst:95
+msgid "Run desktop application"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:97
-msgid "Music"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:98
-msgid "Pictures"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:99
-msgid "Downloads"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:100
-msgid "Videos"
+msgid "Run it from the app menu like any other app. To start a graphical app from the command-line, for example ``gedit``, run this in a terminal::"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:103
-msgid "Tips"
+msgid "Files"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:106
-msgid "Locations"
+#: ../../userguide/dailyuse/libertine.rst:105
+msgid "Libertine applications have access to these folders:"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:107
+msgid "Documents"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:108
-msgid "For every container you create there will be two directories created:"
+msgid "Music"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:109
+msgid "Pictures"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:110
-msgid "A root directory ``~/.cache/libertine-container/CONTAINER-IDENTIFIER/rootfs/`` and"
+msgid "Downloads"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:111
-msgid "a user directory ``~/.local/share/libertine-container/user-data/CONTAINER-IDENTIFIER/``"
+msgid "Videos"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:114
-msgid "Shell access"
+msgid "Tips"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:116
-msgid "There are 2 options for executing commands inside the container."
+#: ../../userguide/dailyuse/libertine.rst:117
+msgid "Locations"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:118
-msgid "**The first option** is based on ``libertine-container-manager exec``. It lets you run your commands as root. The drawback is that the container is not completely set up. So far we know that the `folders mentioned above (Documents, Music, ...) are not mounted <https://askubuntu.com/questions/831830/libertine-terminal-applications-how-to-access-to-the-real-home-dir#comment1273744_833984/>`_ i.e., the ``/home/phablet/`` directory is empty. Likewise the directory referenced in ``TMPDIR`` is not available which may lead to problems with software that tries to create temporary files or directories. You may use this option e.g., for installing packages."
+#: ../../userguide/dailyuse/libertine.rst:119
+msgid "For every container you create, two directories will be created:"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:121
-#: ../../userguide/dailyuse/libertine.rst:135
-msgid "To execute a command you can use the following pattern::"
+msgid "A root directory ``~/.cache/libertine-container/CONTAINER-IDENTIFIER/rootfs/`` and"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:122
+msgid "a user directory ``~/.local/share/libertine-container/user-data/CONTAINER-IDENTIFIER/``"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:125
-#: ../../userguide/dailyuse/libertine.rst:139
-msgid "For example run::"
+msgid "Shell access"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:127
+msgid "There are two options for executing commands inside the container."
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:129
-msgid "To get a shell into your container as ``root`` run::"
+msgid "**The first option** is based on ``libertine-container-manager exec``. It lets you run your commands as root. The drawback is that the container is not completely set up. So far we know that the `folders mentioned above (Documents, Music, …) are not mounted <https://askubuntu.com/questions/831830/libertine-terminal-applications-how-to-access-to-the-real-home-dir#comment1273744_833984/>`_ i.e., the ``/home/phablet/`` directory is empty. Likewise the directory referenced in ``TMPDIR`` is not available, which may lead to problems with software trying to create temporary files or directories. You may use this option to installing packages."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:133
-msgid "**The second option** is based on ``libertine-launch``. It will execute your commands as user phablet in a completely set up container. So you may use this option to modify your files using installed packages."
+#: ../../userguide/dailyuse/libertine.rst:135
+#: ../../userguide/dailyuse/libertine.rst:151
+msgid "To execute a command you can use the following pattern::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:139
+#: ../../userguide/dailyuse/libertine.rst:155
+msgid "For example, run::"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:143
-msgid "To get a shell as user ``phablet`` run::"
+msgid "To get a shell into your container as ``root``, run::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:148
-msgid "When you launch bash in this way you will not get any specific feedback to confirm that you are now *inside* the container. You can check ``ls /`` to confirm for yourself that you are inside the container. The listing of ``ls /`` will be different inside and outside of the container."
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:151
-msgid "Accessing SD card"
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:153
-msgid "In order to access your SD-card or any other part of the regular filesystem from inside your libertine container you must create a bind mount."
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:155
-msgid "In order to add a bind mount use::"
+#: ../../userguide/dailyuse/libertine.rst:147
+msgid "**The second option** is based on ``libertine-launch``. It will execute your commands as user phablet in a completely set up container. You may use this option to modify your files using installed packages."
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:159
-msgid "You can also make deep links in case you only want parts of your SD-card available in the container. In this case just the entire path to the directory you want to bind mount::"
+msgid "To get a shell as the user ``phablet``, run::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:163
-msgid "This will not allow the container access to any of the directories earlier in the path for anything other than accessing your mounted directory."
-msgstr ""
-
-#: ../../userguide/dailyuse/libertine.rst:165
-msgid "In order to use the SD-card as extra space for your container, make sure first to format it using ext4 or similar. There is a mis-feature in udisk2 that mounts SD-cards (showexec) that ensures only files ending in .bat, .exe or .com can be executed from the drive if it is (v)fat formatted. This has been changed in other distributions allowing any file to have execute priviliges, but not ubuntu. The reccomended workaround is to add a udev rule to control how to mount a card with a given id, but since the udev rules are on the read only port on touch, this is not possible."
+#: ../../userguide/dailyuse/libertine.rst:164
+msgid "When you launch Bash in this way you will not get any specific feedback to confirm being *inside* the container. You can check ``ls /`` to confirm for yourself you are actually inside the container. The listing of ``ls /`` will be different inside and outside the container."
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:169
-msgid "Shortcuts"
+msgid "Accessing SD card"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:171
-msgid "If you want, you can add aliases for command line tools. Add lines like the following ones to your ``~/.bash_aliases``::"
+msgid "To access your SD-card or any other part of the regular filesystem from inside your Libertine container you must create a bind mount."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:173
+msgid "To add a bind mount, use::"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:177
+msgid "You can also make deep links if you only want parts of your SD-card available in the container. In this case just add the entire path to the directory you want to bind mount::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:182
+msgid "This will not give the container access to any of the directories earlier in the path for anything other than accessing your mounted directory."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:184
+msgid "In order to use the SD card as extra space for your container, make sure to first format it using ext4 or similar. There is a mis-feature in UDisks2 that mounts SD-cards (showexec), ensuring only files ending in .bat, .exe or .com can be executed from the drive if it is (V)FAT formatted. This has been changed in other distributions, allowing any file to have execute priviliges, but not in Ubuntu. The recommended workaround is to add a udev rule to control how to mount a card with a given ID, but since the udev rules are on the read-only port on Ubuntu Touch, this is not possible."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:190
+msgid "Shortcuts"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:192
+msgid "If you want, you can add aliases for command-line tools. Add lines like the following ones to your ``~/.bash_aliases``::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:199
 msgid "Background"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:179
-msgid "A display server coordinates input and output of an operating system. Most Linux distributions today use the X server. Ubuntu Touch does not use X, but  a new display server called Mir. This means that standard X applications are not directly compatible with Ubuntu Touch. A compatibility layer called XMir resolves this. Libertine relies on XMir to display desktop applications."
+#: ../../userguide/dailyuse/libertine.rst:201
+msgid "A display server coordinates input and output of an operating system. Ubuntu Touch does not use X, but a new display server called Mir. This means standard X applications are not directly compatible with Ubuntu Touch. A compatibility layer called XMir resolves this. Libertine relies on XMir to display desktop applications."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:181
-msgid "Another challenge is that Ubuntu Touch system updates are released as OTA images. A consequence of this is that the root filesystem is read only. Libertine provides a container with a read-write filesystem to allow the installation of regular Linux desktop applications."
+#: ../../userguide/dailyuse/libertine.rst:207
+msgid "Another challenge is that Ubuntu Touch system updates are released as OTA images. As a consequence of this the root filesystem is read-only. Libertine provides a container with a read-write filesystem to allow installation of regular Linux desktop applications."
 msgstr ""
 
 #: ../../userguide/dailyuse/location.rst:2
@@ -871,206 +925,210 @@ msgstr ""
 msgid "Location services in Ubuntu Touch allow apps to access your current location. Using this data, apps can `offer turn-by-turn navigation <https://open-store.io/app/navigator.costales>`__, `track your exercise paths <https://open-store.io/app/activitytracker.cwayne18>`__, `locate public transport near you <https://open-store.io/app/transport.zubozrout>`__, and more."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:6
-msgid "The location services built in to Ubuntu Touch are designed to protect your privacy -- you choose to permit or deny apps access to this data. Apps may only access your location data when the device screen is on and the app is in use."
-msgstr ""
-
-#: ../../userguide/dailyuse/location.rst:9
-msgid "Checking if location services are enabled"
+#: ../../userguide/dailyuse/location.rst:7
+msgid "The location services built into Ubuntu Touch are designed to protect your privacy — you choose to permit or deny apps access to this data. Apps may only access your location data when the device screen is on and the app is in use."
 msgstr ""
 
 #: ../../userguide/dailyuse/location.rst:11
-msgid "The Location Indicator is displayed whenever location services are enabled. Normally, this indicator will appear to be dark."
+msgid "Checking if location services are on"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:15
-msgid "The Location Indicator, showing location enabled but not in use"
+#: ../../userguide/dailyuse/location.rst:13
+msgid "The Location Indicator is displayed whenever location services are on. Normally, this indicator will appear to be dark."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:17
+#: ../../userguide/dailyuse/location.rst:18
+msgid "The Location Indicator, showing location on but not in use."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:20
 msgid "If an app is accessing location data, the Location Indicator brightens."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:21
-msgid "The Location Indicator, showing location enabled and in use"
+#: ../../userguide/dailyuse/location.rst:24
+msgid "The Location Indicator, showing location on and in use."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:26
+#: ../../userguide/dailyuse/location.rst:29
 msgid "Accessing location services settings"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:28
+#: ../../userguide/dailyuse/location.rst:31
 msgid "There are several ways to access settings related to location services in Ubuntu Touch."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:31
+#: ../../userguide/dailyuse/location.rst:34
 msgid "Open location quick settings"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:33
+#: ../../userguide/dailyuse/location.rst:36
 msgid "The Location Indicator contains quick settings related to location services, including a switch to turn services on or off."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:37
-msgid "To access these settings, press on the Location Indicator and pull down toward the bottom of the screen."
-msgstr ""
-
-#: ../../userguide/dailyuse/location.rst:39
-msgid "If location services are disabled, you can access the location quick settings by pressing on any other indicator and pulling down. Then, scroll through the icons at the top of the screen to find Location. Select Location to open the quick settings."
+#: ../../userguide/dailyuse/location.rst:40
+msgid "To access these settings, press the Location Indicator and pull down toward the bottom of the screen."
 msgstr ""
 
 #: ../../userguide/dailyuse/location.rst:42
+msgid "If location services are off, you can access the location quick settings by pressing on any other indicator and pulling down. Then, scroll through the icons at the top of the screen to find Location. Select \"Location to open the quick settings."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:47
 msgid "Open location settings in the settings app"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:44
+#: ../../userguide/dailyuse/location.rst:49
 msgid "The system settings app can be used to control location services. There are more controls in the system settings app than in the Location Indicator."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:48
+#: ../../userguide/dailyuse/location.rst:54
 msgid "There are two ways to access location services controls in the system settings app."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:51
-#: ../../userguide/dailyuse/location.rst:71
+#: ../../userguide/dailyuse/location.rst:57
+#: ../../userguide/dailyuse/location.rst:78
 msgid "Quick settings"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:53
+#: ../../userguide/dailyuse/location.rst:59
 msgid "`Open location quick settings`_, then select ``Location settings...``."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:56
-#: ../../userguide/dailyuse/location.rst:76
+#: ../../userguide/dailyuse/location.rst:62
+#: ../../userguide/dailyuse/location.rst:84
 msgid "System settings app"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:58
+#: ../../userguide/dailyuse/location.rst:64
 msgid "Launch the ``System Settings`` app. Select ``Security & Privacy``, then select ``Location``."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:62
+#: ../../userguide/dailyuse/location.rst:68
 msgid "Enabling or disabling location services"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:64
-msgid "If location services are on, apps which you have allowed access to your location data may request your current location. Location services are enabled by default on Ubuntu Touch."
-msgstr ""
-
-#: ../../userguide/dailyuse/location.rst:66
-msgid "If location services are off, apps will not be able to access your current location."
-msgstr ""
-
-#: ../../userguide/dailyuse/location.rst:68
-msgid "There are several ways to enable or disable location services in Ubuntu Touch."
+#: ../../userguide/dailyuse/location.rst:70
+msgid "If location services are on, apps you have granted access to your location data may request your current location. Location services are on by default on Ubuntu Touch."
 msgstr ""
 
 #: ../../userguide/dailyuse/location.rst:73
-msgid "`Open location quick settings`_. Select the ``Location detection`` switch to enable or disable location services."
+msgid "If location services are off, apps will not be able to access your current location."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:78
-msgid "`Open location settings in the settings app`_. Under ``Let the device detect your location:``, select the appropriate option:"
+#: ../../userguide/dailyuse/location.rst:75
+msgid "There are several ways to turn on or off location services in Ubuntu Touch."
 msgstr ""
 
 #: ../../userguide/dailyuse/location.rst:80
-msgid "``Using GPS`` turns on location services."
-msgstr ""
-
-#: ../../userguide/dailyuse/location.rst:81
-msgid "``Not at all`` turns off location services."
-msgstr ""
-
-#: ../../userguide/dailyuse/location.rst:84
-msgid "Allowing apps access to location data"
+msgid "`Open location quick settings`_. Select the ``Location detection`` switch to turn on or off location services."
 msgstr ""
 
 #: ../../userguide/dailyuse/location.rst:86
-msgid "Ubuntu Touch allows you to allow or deny apps access to your location data. This decision is presented the first time the app tries to access your current location. You can change your decision later."
+msgid "`Open location settings in the settings app`_. Under ``Let the device detect your location:``, select the appropriate option:"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:88
-msgid "An app will show the location permission request the first time it tries to access your current location."
+#: ../../userguide/dailyuse/location.rst:89
+msgid "``Using GPS`` turns on location services."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:90
+msgid "``Not at all`` turns off location services."
 msgstr ""
 
 #: ../../userguide/dailyuse/location.rst:93
+msgid "Allowing apps access to location data"
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:95
+msgid "Ubuntu Touch allows you to allow or deny apps access to your location data. This decision is presented the first time the app tries to access your current location. You can change your decision later."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:99
+msgid "An app will show the location permission request the first time it tries to access your current location."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:104
 msgid "Select ``Allow`` to give the app access to your current location. Select ``Don't Allow`` to deny the app access to your current location. Some app features may not work correctly if you select ``Don't Allow``."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:96
+#: ../../userguide/dailyuse/location.rst:109
 msgid "Changing your permissions"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:98
-msgid "You can change your decision to allow an app access to your location data. This is useful when you gave an app access to your location but you'd like to deny access, or if you denied access but would like to give access."
+#: ../../userguide/dailyuse/location.rst:111
+msgid "You can change your decision to allow an app access to your location data. This is useful if you have granted an app access to your location but would now like to revoke it, or if you denied access but would like to grant access again."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:100
+#: ../../userguide/dailyuse/location.rst:114
 msgid "There are several ways to find these controls."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:103
+#: ../../userguide/dailyuse/location.rst:117
 msgid "Location settings"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:105
-msgid "`Open location settings in the settings app`_. All of the apps which have requested access to your location are listed under ``Let apps access this location:``. Toggle the switch next to an app \"on\" to allow it to access your location data. Toggle the switch \"off\" to deny access."
+#: ../../userguide/dailyuse/location.rst:119
+msgid "`Open location settings in the settings app`_. All apps that have requested access to your location are listed under ``Let apps access this location:``. Toggle the switch next to an app \"on\" to allow it to access your location data. Toggle the switch \"off\" to deny access."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:108
+#: ../../userguide/dailyuse/location.rst:125
 msgid "App permission settings"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:110
-msgid "Launch the ``System Settings`` app. Select ``Security & Privacy``, then select ``App permissions``, followed by ``Location``. All of the apps which have requested access to your location are listed. Toggle the switch next to an app \"on\" to allow it to access your location data. Toggle the switch \"off\" to deny access."
+#: ../../userguide/dailyuse/location.rst:127
+msgid "Launch the ``System Settings`` app. Select ``Security & Privacy``, then select ``App permissions``, followed by ``Location``. All of the apps that have requested access to your location are listed. Toggle the switch next to an app \"on\" to allow it to access your location data. Toggle the switch \"off\" to deny access."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:113
+#: ../../userguide/dailyuse/location.rst:134
 msgid "Using apps with location services"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:115
+#: ../../userguide/dailyuse/location.rst:136
 msgid "Apps will be able to access your current location after they are granted access to location data. However, there are some things to note while using apps with location services."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:118
+#: ../../userguide/dailyuse/location.rst:140
 msgid "Time to first fix"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:120
+#: ../../userguide/dailyuse/location.rst:142
 msgid "A \"fix\" is a data point generated by GPS hardware that contains its current location and the expected accuracy of that location. GPS hardware is rated by how long it takes to return one of these data points after the device is activated. This rating is called \"`Time To First Fix <https://en.wikipedia.org/wiki/Time_to_first_fix>`_,\" or TTFF."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:122
+#: ../../userguide/dailyuse/location.rst:146
 msgid "A device with a mobile data connection should take one to four minutes to receive its first fix. If location services have not been used for a long time *and* the device does not have a mobile data connection, the first fix can take up to an hour. To prevent this from causing problems for you, follow these instructions:"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:126
-msgid "Do not leave your device in direct sunlight. The heat can damage the device."
+#: ../../userguide/dailyuse/location.rst:151
+msgid "Do not leave your device in direct sunlight. (The heat can damage the device.)"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:128
-msgid "Disable ``Lock when idle`` in the Battery settings"
+#: ../../userguide/dailyuse/location.rst:153
+msgid "Turn off ``Lock when idle`` in the Battery settings"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:129
-msgid "Download an app which uses location services and cause it to start accessing your location data."
+#: ../../userguide/dailyuse/location.rst:154
+msgid "Download an app which uses location services and use it to start accessing location data."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:130
-msgid "Leave your device near a window but out of direct sunlight. To reduce energy consumption, turn the screen brightness down."
+#: ../../userguide/dailyuse/location.rst:155
+msgid "Leave your device near a window, but out of direct sunlight."
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:132
-msgid "After 20 minutes to an hour, your device should display your current location. You can now close the app and enable ``Lock when idle``. Future attempts to aquire your location should now take one to four minutes."
+#: ../../userguide/dailyuse/location.rst:157
+msgid "(Turn the screen brightness down to reduce energy consumption.)"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:135
+#: ../../userguide/dailyuse/location.rst:159
+msgid "After 20-60 minutes, your device should display your current location. You can now close the app and turn on ``Lock when idle``. Future attempts to aquire your location should now take 1-4 minutes."
+msgstr ""
+
+#: ../../userguide/dailyuse/location.rst:164
 msgid "App suspension"
 msgstr ""
 
-#: ../../userguide/dailyuse/location.rst:137
-msgid "Apps are suspended whenever they are not in the foreground or the device is locked. When an app is suspended, it cannot receive location data. For this reason, apps will not be able to track your location whenever they are not in use or the device is locked."
+#: ../../userguide/dailyuse/location.rst:166
+msgid "Apps are suspended whenever not in the foreground, or when the device is locked. When an app is suspended, it cannot receive location data. For this reason, apps will not be able to track your location whenever they are not in use or the device is locked."
 msgstr ""
 
 #: ../../userguide/install.rst:2
@@ -1114,7 +1172,7 @@ msgid "Start the installer and follow the on-screen instructions that will walk 
 msgstr ""
 
 #: ../../userguide/install.rst:19
-msgid "If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/index>`."
+msgid "If you're an experienced android developer and want to help us bring Ubuntu Touch to more devices, visit the :doc:`porting section </porting/introduction/index>`."
 msgstr ""
 
 #: ../../userguide/install.rst:22
@@ -1174,7 +1232,7 @@ msgid "Missing udev-rules"
 msgstr ""
 
 #: ../../userguide/install.rst:60
-msgid "If the device not detected on Linux and packages other than snap, you might be missing **udev-rules**."
+msgid "If the device is not detected on Linux and you are not using the snap package, then you might be missing some **udev-rules**."
 msgstr ""
 
 #: ../../userguide/install.rst:62
@@ -1218,19 +1276,19 @@ msgid "Download the Ubuntu Touch ROM for your device and extract the zip files:"
 msgstr ""
 
 #: ../../userguide/install.rst:124
-msgid "`Bq E4.5 <http://cdimage.ubports.com/ubports-installer/krillin/e45.zip>`_ (*krillin*)"
+msgid "`Bq E4.5 <https://cdimage.ubports.com/stock-bq-images/krillin.zip>`_ (*krillin*)"
 msgstr ""
 
 #: ../../userguide/install.rst:125
-msgid "`Bq E5 HD <https://storage.googleapis.com/otas/2014/Smartphones/Aquaris_E5_HD/Ubuntu/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
+msgid "`Bq E5 HD <https://cdimage.ubports.com/stock-bq-images/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
 msgstr ""
 
 #: ../../userguide/install.rst:126
-msgid "`Bq M10 HD <https://storage.googleapis.com/otas/2015/Tablets/Freezer/Ubuntu/OTA_13_FW_version/cooler-image-stable-6.zip>`_ (*cooler*)"
+msgid "`Bq M10 HD <https://cdimage.ubports.com/stock-bq-images/cooler-image-stable-6.zip>`_ (*cooler*)"
 msgstr ""
 
 #: ../../userguide/install.rst:127
-msgid "`Bq M10 FHD <https://storage.googleapis.com/otas/2015/Tablets/Freezer%20FHD/Ubuntu/OTA_15/frieza-image-stable-8.zip>`_ (*frieza*)"
+msgid "`Bq M10 FHD <https://cdimage.ubports.com/stock-bq-images/frieza-image-stable-4.zip>`_ (*frieza*)"
 msgstr ""
 
 #: ../../userguide/install.rst:128

@@ -9,3 +9,5 @@ Other design considerations
     scaling-images
     accessibility
     translations
+
+* `Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__

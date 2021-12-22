@@ -1,0 +1,640 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
+# This file is distributed under the same license as the UBports package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: UBports\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-29 13:44-0500\n"
+"PO-Revision-Date: 2021-07-24 20:04+0000\n"
+"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
+"Language-Team: Norwegian Bokmål <https://translate.ubports.com/projects/"
+"ubports-docs/documentation-about/nb/>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
+
+#: ../../about/introduction.rst:2
+msgid "Introduction"
+msgstr "Introduksjon"
+
+#: ../../about/introduction.rst:4
+msgid "This is the documentation for the UBports project. Our goal is to create a Free and open-source (GPL if possible) mobile operating system that converges and respects your freedom."
+msgstr ""
+"Dette er dokumentasjonen for UBports-prosjektet. Målet vårt er å lage et "
+"gratis operativsystem med åpen kildekode (GPL hvis mulig) som konvergerer og "
+"respekterer din frihet."
+
+#: ../../about/introduction.rst:7
+msgid "About UBports"
+msgstr "Om UBports"
+
+#: ../../about/introduction.rst:9
+msgid "The UBports project was founded by Marius Gripsgard in 2015 and in its infancy was a place where developers could share ideas and educate each other in hopes of bringing the Ubuntu Touch platform to more mobile devices."
+msgstr ""
+"UBports-prosjektet ble grunnlagt av Marius Gripsgard i 2015 og var i sin "
+"barndom et sted der utviklere kunne dele ideer og utdanne hverandre i håp om "
+"å bringe Ubuntu Touch-plattformen til flere mobilenheter."
+
+#: ../../about/introduction.rst:11
+msgid "After Canonical suddenly announced `their plans to terminate support of Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ in April 2017, UBports and its sister projects began work on the open-source code, maintaining and expanding its possibilities for the future."
+msgstr ""
+"Etter at Canonical plutselig kunngjorde `deres planer om å avslutte støtten "
+"til Ubuntu Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-"
+"cloud-and-iot-rather-than-phone-and- konvergens />`_ i april 2017 begynte "
+"UBports og dets søsterprosjekter å jobbe med åpen kildekode, vedlikeholde og "
+"utvide mulighetene for fremtiden."
+
+#: ../../about/introduction.rst:14
+msgid "About the Documentation"
+msgstr "Om Dokumentasjonen"
+
+#: ../../about/introduction.rst:16
+msgid "This documentation is always improving thanks to the members of the UBports community. It is written in ReStructuredText and converted into this readable form by `Sphinx <http://www.sphinx-doc.org/en/stable/>`_, `ReCommonMark <http://recommonmark.readthedocs.io/en/latest/>`_, and `Read the Docs <https://readthedocs.io>`_. You can start contributing by checking out the :doc:`Documentation contribution document </contribute/documentation>`."
+msgstr ""
+"Denne dokumentasjonen forbedres alltid takket være medlemmene i UBports-"
+"samfunnet. Den er skrevet i ReStructuredText og konvertert til denne lesbare "
+"formen av `Sphinx <http://www.sphinx-doc.org/en/stable/>` _, `ReCommonMark "
+"<http://recommonmark.readthedocs.io/en/ latest />`_ og`Read the Docs "
+"<https://readthedocs.io>`_. Du kan begynne å bidra ved å sjekke ut: doc: `"
+"Dokumentasjonsbidragsdokumentet </contribute/documentation>`."
+
+#: ../../about/introduction.rst:18
+msgid "All documents are licensed under the Creative Commons Attribution ShareAlike 4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_) license. Please give attribution to \"The UBports Community\"."
+msgstr ""
+"Alle dokumenter er lisensiert under Creative Commons Attribution ShareAlike "
+"4.0 (`CC-BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>` _) "
+"lisens. Gi heder til \"The UBports Community\"."
+
+#: ../../about/introduction.rst:21
+msgid "Attribution"
+msgstr "Heder"
+
+#: ../../about/introduction.rst:23
+msgid "This documentation was heavily modeled after the `Godot Engine's Documentation <http://docs.godotengine.org/en/stable/>`_, attribution to Juan Linietsky, Ariel Manzur and the Godot community."
+msgstr ""
+"Denne dokumentasjonen ble sterkt modellert etter `Godot Engine's "
+"Documentation <http://docs.godotengine.org/en/stable/>` _, heder til Juan "
+"Linietsky, Ariel Manzur og Godot-samfunnet."
+
+#: ../../about/process/branch-naming.rst:2
+msgid "Branch-naming convention"
+msgstr "Navnesystem for forgreninger"
+
+#: ../../about/process/branch-naming.rst:4
+msgid "Our branch-naming conventions ensure that software can be built by our CI and tested easily by other developers."
+msgstr ""
+"Navngivningen av forgreningene forsikrer at programvare enkelt kan bygges av "
+"vårt KI, og testes av andre utviklere."
+
+#: ../../about/process/branch-naming.rst:6
+msgid "Every Git repository's README file should state which branch-naming convention is used and possible deviations from the norm."
+msgstr ""
+"README-filen i hvert Git-kodelager skal inneholde info om hvilket "
+"forgreningsnavnesystem som er i bruk, og mulige avvik fra normen."
+
+#: ../../about/process/branch-naming.rst:9
+msgid "Click-Packages"
+msgstr "Klikk-pakker"
+
+#: ../../about/process/branch-naming.rst:11
+#, fuzzy
+msgid "Software that is exclusively distributed as a click-package (and not also as a deb) only uses one ``master`` branch that is protected. Separate temporary development branches with arbitrary descriptive names can be created and merged into master when the time comes. For marking and archiving milestones in development history, ideally Git tags or GitHub releases should be used."
+msgstr ""
+"Programvare som utelukkende distribueres som en klikkpakke (og ikke også som "
+"deb), bruker bare en ``master`` -filial som er beskyttet. Separate "
+"midlertidige utviklingsgrener med vilkårlige beskrivende navn kan opprettes "
+"og slås sammen til master når den tid kommer. For å markere og arkivere "
+"milepæler i utviklingshistorien, bør du helst bruke Git-koder eller GitHub-"
+"utgivelser."
+
+#: ../../about/process/branch-naming.rst:14
+msgid "Deb-Packages"
+msgstr "Deb-Pakker"
+
+#: ../../about/process/branch-naming.rst:16
+#, fuzzy
+msgid "To make most efficient use of our CI system, a special naming convention for git-branches is used."
+msgstr ""
+"For å utnytte CI-systemet vårt mest effektivt, brukes en spesiell "
+"navnekonvensjon for git-grener."
+
+#: ../../about/process/branch-naming.rst:18
+#, fuzzy
+msgid "For pre-installed Ubuntu Touch components, deb-packages are used wherever possible. This includes Core Apps, since they can still be independently updated using click-package downloads from the OpenStore. This policy allows us to make use of the powerful Debian build system to resolve dependencies."
+msgstr ""
+"For forhåndsinstallerte Ubuntu Touch-komponenter brukes deb-pakker der det "
+"er mulig. Dette inkluderer Core Apps, siden de fremdeles kan oppdateres "
+"uavhengig ved hjelp av nedlastinger av klikkpakker fra OpenStore. Denne "
+"policyen lar oss bruke det kraftige Debian-byggesystemet for å løse "
+"avhengigheter."
+
+#: ../../about/process/branch-naming.rst:20
+#, fuzzy
+msgid "Every repository that uses this convention will have branches for the actively supported Ubuntu releases referenced by their codenames (``bionic``, ``xenial``, ``vivid``, etc.). These are the branches that are built directly into the corresponding images and published on :doc:`repo.ubports.com <ppa>`. If no separate versions for the different Ubuntu bases are needed, the repository will just have one ``master`` branch and the CI system will still build versions for all actively supported releases and resolve dependencies accordingly."
+msgstr ""
+"Hvert kodelager som bruker denne konvensjonen vil ha grener for de aktivt "
+"støttede Ubuntu-utgivelsene som er referert til med kodenavnene deres "
+"(``bionic``, ``xenial``, ``vivid``, etc.). Dette er grenene som er bygd "
+"direkte inn i de tilsvarende bildene og publisert på: doc: `repo.ubports.com "
+"<ppa>`. Hvis det ikke er behov for separate versjoner for de forskjellige "
+"Ubuntu-basene, vil kodelageret bare ha en ``master`` -gren, og CI-systemet "
+"vil fortsatt bygge versjoner for alle aktivt støttede utgivelser og løse "
+"avhengigheter tilsvarende."
+
+#: ../../about/process/branch-naming.rst:23
+msgid "Branch-extensions"
+msgstr "Forgreningsutvidelser"
+
+#: ../../about/process/branch-naming.rst:25
+#, fuzzy
+msgid "To build and publish packages based on another repository, an extension in the form of  ``xenial_-_some-descriptive_extension`` can be used. The CI system will then resolve all dependencies using the ``xenial_-_some-descriptive_extension`` branch of other repositories or fall back on the normal ``xenial`` dependencies, if that doesn't exist. These special dependencies are not built into the image but still pushed to  on :doc:`repo.ubports.com <ppa>`."
+msgstr ""
+"For å bygge og publisere pakker basert på et annet depot, kan en utvidelse i "
+"form av ``xenial _-_ some-deskriptive_extension`` brukes. CI-systemet vil da "
+"løse alle avhengigheter ved å bruke ``xenial _-_ some-deskriptive_extension``"
+" -grenen til andre arkiver eller falle tilbake til de normale ``xenial`` -"
+"avhengighetene, hvis det ikke eksisterer. Disse spesielle avhengighetene er "
+"ikke innebygd i bildet, men blir fortsatt presset til: doc: `"
+"repo.ubports.com <ppa>`."
+
+#: ../../about/process/branch-naming.rst:27
+#, fuzzy
+msgid "Multiple branch extensions can be chained together in the form of ``xenial_-_dependency-1_-_dependency-2_-_dependency-3``. This means that the CI system will look for dependencies in the following repositories:"
+msgstr ""
+"Flere grenforlengelser kan lenkes sammen i form av ``xenial _-_ avhengighet-"
+"1 _-_ avhengighet-2 _-_ avhengighet-3``. Dette betyr at CI-systemet vil se "
+"etter avhengigheter i følgende depoter:"
+
+#: ../../about/process/branch-naming.rst:38
+msgid "There is no prioritization, so the build system will always use the package with the highest version number or the newest build if the version is equal."
+msgstr ""
+"Det er ingen prioritering, så byggesystemet vil alltid bruke pakken med det "
+"høyeste versjonsnummeret eller den nyeste versjonen hvis versjonen er lik."
+
+#: ../../about/process/branch-naming.rst:41
+#, fuzzy
+msgid "Dependency-file"
+msgstr "Avhengighetsfil"
+
+#: ../../about/process/branch-naming.rst:43
+msgid "For complex or non-linear dependencies, a ``ubports.depends`` file can be created in the root of the repository to specify additional dependencies. The branch name will be ignored if this file exists."
+msgstr ""
+"For komplekse eller ikke-lineære avhengigheter kan en ``ubports.depends`` - "
+"fil opprettes i roten i arkivet for å spesifisere flere avhengigheter. "
+"Grennavnet blir ignorert hvis denne filen eksisterer."
+
+#: ../../about/process/branch-naming.rst:53
+msgid "The ``ubports.depends`` file is an **exclusive list**, so the build system will not resolve dependencies linearly like it does in a branch name! Every dependency has to be listed. You will almost always want to include your base release (i.e. ``xenial``)."
+msgstr ""
+"Filen ``ubports.depends`` er en **eksklusiv liste**, så byggesystemet vil "
+"ikke løse avhengigheter lineært slik det gjør i et filialnavn! Hver "
+"avhengighet må oppføres. Du vil nesten alltid ønske å inkludere "
+"baseutgivelsen (dvs. ``xenial``)."
+
+#: ../../about/process/index.rst:2
+msgid "Processes"
+msgstr "Prosesser"
+
+#: ../../about/process/index.rst:4
+msgid "This section of the documentation details standardized processes for different teams."
+msgstr ""
+"Denne delen av dokumentasjonen beskriver standardiserte prosesser for "
+"forskjellige team."
+
+#: ../../about/process/index.rst:7
+msgid "The process definitions are still a work in progress and need to be completed by the respective teams."
+msgstr ""
+"Prosessdefinisjonene er fortsatt et pågående arbeid og må fullføres av de "
+"respektive lagene."
+
+#: ../../about/process/issue-tracking.rst:2
+#, fuzzy
+msgid "Issue-Tracking Guidelines"
+msgstr "Retningslinjer for problemsporing"
+
+#: ../../about/process/issue-tracking.rst:4
+msgid "This document describes the standard process of dealing with new issues in UBports projects. Not to be confused with the :doc:`guide on writing a good bugreport </contribute/bugreporting>`."
+msgstr ""
+"Dette dokumentet beskriver standardprosessen for å håndtere nye problemer i "
+"UBports-prosjekter. Ikke forveksles med: doc: ``guide om å skrive en god "
+"feilrapport </contribute/bugreporting>`."
+
+#: ../../about/process/issue-tracking.rst:7
+#, fuzzy
+msgid "Where are bugs tracked?"
+msgstr "Hvor blir bugs sporet?"
+
+#: ../../about/process/issue-tracking.rst:9
+msgid "Since our quality assurance depends heavily on the community, we try to track issues where the user would expect them, instead of separated by repository. This means, that issues of almost all components that are distributed as with the system-image are tracked in the `Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch>`__. An exception of this are click-apps that can be updated independently through the OpenStore."
+msgstr ""
+"Siden kvalitetssikringen er avhengig av samfunnet, prøver vi å spore "
+"problemer der brukeren forventer dem, i stedet for å skille de fra arkivet. "
+"Dette betyr at problemer med nesten alle komponenter som distribueres som "
+"med systembildet blir sporet i `Ubuntu Touch tracker <https://github.com/"
+"ubports/ubuntu-touch>` __. Et unntak av dette er klikk-apper som kan "
+"oppdateres uavhengig gjennom OpenStore."
+
+#: ../../about/process/issue-tracking.rst:17
+msgid "Most other repositories track issues locally. If you're unsure whether a repository uses its own tracker or not, consult the README.md file. Repositories that don't track issues locally have their bugtracker disabled."
+msgstr ""
+"De fleste andre arkiver sporer problemer lokalt. Hvis du er usikker på om et "
+"arkiv bruker sin egen tracker eller ikke, kan du se README.md-filen. Arkiv "
+"som ikke sporer problemer lokalt, har bugtracker deaktivert."
+
+#: ../../about/process/issue-tracking.rst:21
+msgid "This page is mainly about the Ubuntu Touch tracker, but most principles apply to other projects as well."
+msgstr ""
+"Denne siden handler hovedsakelig om Ubuntu Touch tracker, men de fleste "
+"prinsipper gjelder også for andre prosjekter."
+
+#: ../../about/process/issue-tracking.rst:25
+msgid "Practicality beats purity! Exceptions might apply and should be described in the projects README.md file."
+msgstr ""
+"Praktikalitet slår renhet! Unntak kan gjelde og bør beskrives i prosjektene "
+"README.md-filen."
+
+#: ../../about/process/issue-tracking.rst:28
+msgid "GitHub projects"
+msgstr "GitHub prosjekter"
+
+#: ../../about/process/issue-tracking.rst:30
+msgid "To increase transparency and communication, GitHub projects (Kanban-Boards) are used wherever practical. In case of github.com/ubports/ubuntu-touch, a single project is used for all issues. Projects support filtering by labels, so that only issues that belong to a specific team or affect a specific device can be viewed."
+msgstr ""
+"For å øke åpenhet og kommunikasjon brukes GitHub-prosjekter (Kanban-Boards) "
+"der det er praktisk. I tilfelle github.com/ubports/ubuntu-touch, brukes et "
+"enkelt prosjekt for alle problemer. Prosjekter støtter filtrering etter "
+"etiketter, slik at bare problemer som tilhører et bestemt lag eller som "
+"påvirker en bestemt enhet, kan vises."
+
+#: ../../about/process/issue-tracking.rst:36
+msgid "These are the standard columns:"
+msgstr "Dette er standardkolonnene:"
+
+#: ../../about/process/issue-tracking.rst:38
+msgid "**None (awaiting triage)**: The issue has been approved by a member of the QA team and is awaiting review from the responsible development team. if the issue is a bug, instructions to reproduce are included in the issue description. if the issue is a feature request, it has passed a primary sanity check by the qa-team but has not yet been accepted by the responsible development-team."
+msgstr ""
+"**Ingen (venter på sortering)**: Problemet er godkjent av et medlem av "
+"kvalitetskontroll-laget og venter gjennomgang av det ansvarlige "
+"utviklingslaget. Hvis problemet er en feil, vel instruks om hvordan "
+"problemet kan reproduseres være å finne i beskrivelsen av det. Hvis "
+"problemet er en funksjonsforespørsel har det bestått en innledende kontroll "
+"utført av kvalitetskontroll-laget, men enda ikke blitt akseptert av det "
+"ansvarlige utviklingslaget."
+
+#: ../../about/process/issue-tracking.rst:39
+msgid "**Accepted**: The issue has been accepted by the responsible development-team. If the issue is a bugreport, the team has decided that it should be fixable and accepts the responsibility. If the issue is a feature request, the team thinks it should be implemented as described."
+msgstr ""
+"**Akseptert**: Problemet er godtatt av det ansvarlige utviklingslaget. Hvis "
+"problemet er en feilrapport, har laget bestemt at det skal være løst og "
+"aksepterer ansvaret. Hvis problemet er en funksjonsforespørsel, mener laget "
+"at det skal implementeres som beskrevet."
+
+#: ../../about/process/issue-tracking.rst:40
+msgid "**In Development**: A patch is in development. Usually means that a developer is assigned to the issue."
+msgstr ""
+"**Under utvikling**: En oppdatering er under utvikling. Betyr vanligvis at "
+"en utvikler er tilordnet problemet."
+
+#: ../../about/process/issue-tracking.rst:41
+msgid "**Quality Assurance**: The patch is completed and has passed initial testing. The QA team will now review it and provide feedback. If problems are found, the issue is moved back to \"Accepted\"."
+msgstr ""
+"**Kvalitetssikring**: Feilrettingen er ferdig og har bestått innledende "
+"testing. Kvalitetstestingslaget vil nå vurdere det og gi sin tilbakemelding. "
+"Hvis det blir funnet problemer, flyttes problemet tilbake til \"Godtatt\"."
+
+#: ../../about/process/issue-tracking.rst:42
+msgid "**Release Candidate**: The patch has passed QA and is ready for release. In case of deb-packages that are included in the system-image, the patch will be included in the next over-the-air update on the rc channel, and, if everything goes well, in the next release of the stable channel."
+msgstr ""
+"**Utgivelseskandidat**: Feilrettingen har bestått kvalitetssikring og er "
+"klart for utgivelse. I tilfelle deb-pakker som er inkludert i systembildet, "
+"vil oppdateringen bli inkludert i den neste over-the-air oppdateringen på rc-"
+"kanalen, og hvis alt går bra, i neste utgivelse av den stabile kanalen."
+
+#: ../../about/process/issue-tracking.rst:43
+msgid "**None (removed from the project)**: If the issue is open and labeled \"help wanted\", community contributions are required to resolve the issue. If it's closed, that means that either a patch has been released on the stable channel (a comment on the issue should link to the patch) or the issue has been rejected (labeled \"wontfix\")."
+msgstr ""
+"**Ingen (fjernet fra prosjektet)**: Hvis problemet er åpent og merket \""
+"hjelp ønsket\", kreves det at bidrag fra samfunnet løses. Hvis den er "
+"lukket, betyr det at enten en oppdatering er utgitt på den stabile kanalen ("
+"en kommentar til problemet skal lenke til oppdateringen) eller at problemet "
+"er avvist (merket \"wontfix\")."
+
+#: ../../about/process/issue-tracking.rst:46
+msgid "Labels"
+msgstr "Etiketter"
+
+#: ../../about/process/issue-tracking.rst:48
+msgid "All issues - even closed ones - should be labeled to allow the use of GitHub's global filtering. For example, `these are all of the issues labeled 'enhancement' inside @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A%22feature+request%22&type=>`_. Consult the `GitHub help pages <https://help.github.com/articles/about-searching-on-github/>`__ for more information on search and filtering."
+msgstr ""
+"Alle feil (selv lukkede) skal merkes for å tillate bruk av GitHubs "
+"filtrering. For eksempel er dette `feilrapportene med etiketten "
+"'enhancement' i @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aope"
+"n+org%3Aubports+label%3A%22feature+request%22&type=>`_. Hendend dem til `"
+"GitHub sine hjelpesider <https://help.github.com/articles/"
+"about-searching-on-github/>`__ for mer info om søk og filtrering."
+
+#: ../../about/process/issue-tracking.rst:51
+msgid "Here's a list of labels that are normally used by all repositories."
+msgstr "Her er en liste over etiketter som normalt brukes av alle arkiver."
+
+#: ../../about/process/issue-tracking.rst:53
+msgid "**needs confirmation**: The bug needs confirmation and / or further information from affected users"
+msgstr ""
+"**trenger bekreftelse**: Feilen trenger bekreftelse og / eller ytterligere "
+"informasjon fra berørte brukere"
+
+#: ../../about/process/issue-tracking.rst:55
+msgid "**bug**: This issue is a confirmed bug. If it's reproducible, reproduction steps are described."
+msgstr ""
+"**feil**: Dette problemet er en bekreftet feil. Hvis det er reproduserbart, "
+"blir reproduksjonstrinn beskrevet."
+
+#: ../../about/process/issue-tracking.rst:57
+msgid "**opinion**: This issue needs further discussion."
+msgstr "**mening**: Denne saken trenger ytterligere diskusjon."
+
+#: ../../about/process/issue-tracking.rst:58
+msgid "**enhancement**: This issue is a feature request."
+msgstr "**forbedring**: Dette problemet er en funksjonsforespørsel."
+
+#: ../../about/process/issue-tracking.rst:59
+msgid "**question**: This issue is a support request or general question."
+msgstr ""
+"**spørsmål**: Dette problemet er en støtteforespørsel eller et generelt "
+"spørsmål."
+
+#: ../../about/process/issue-tracking.rst:60
+msgid "**invalid**: This issue can not be confirmed or was reported in the wrong tracker."
+msgstr ""
+"**ugyldig**: Dette problemet kan ikke bekreftes eller ble rapportert i feil "
+"tracker."
+
+#: ../../about/process/issue-tracking.rst:62
+msgid "**duplicate**: This has already been reported somewhere else. Please provide a link and close."
+msgstr ""
+"**duplikat**: Dette er allerede rapportert et annet sted. Vennligst oppgi en "
+"lenke og lukk."
+
+#: ../../about/process/issue-tracking.rst:64
+msgid "**help wanted**: This issue is ready to be picked up by a community developer."
+msgstr ""
+"**hjelp ønsket**: Dette problemet er klart til å bli plukket opp av en "
+"utvikler."
+
+#: ../../about/process/issue-tracking.rst:66
+msgid "**good first issue**: The report contains instructions or hints required to fix it. It is an excellent place for someone new to learn about the project by fixing a real issue."
+msgstr ""
+"**god første utgave**: Rapporten inneholder instruksjoner eller tips som "
+"kreves for å fikse den. Det er et utmerket sted for noen nye å lære om "
+"prosjektet ved å fikse et reelt problem."
+
+#: ../../about/process/issue-tracking.rst:67
+msgid "**wontfix**: It does not make sense to fix this bug, since it will probably resolve itself, it will be too much work to fix it, it's not fixable, or an underlying component will soon change."
+msgstr ""
+"**wontfix**: Det er ikke fornuftig å fikse denne feilen, siden den "
+"sannsynligvis vil løse seg selv, det vil være for mye arbeid å fikse den, "
+"den kan ikke repareres, eller en underliggende komponent vil snart endres."
+
+#: ../../about/process/issue-tracking.rst:71
+msgid "Additional special labels can be defined. As an example, here's the labels used in the Ubuntu Touch tracker:"
+msgstr ""
+"Ytterligere spesialmerker kan defineres. Som et eksempel, her er etikettene "
+"som brukes i Ubuntu Touch-trackeren:"
+
+#: ../../about/process/issue-tracking.rst:74
+msgid "**critical (devel)**: This critical issue that only occurs on the devel channel is blocking the release of the next rc image."
+msgstr ""
+"**kritisk (utvikling)**: Dette kritiske problemet som bare oppstår på "
+"utviklingskanalen, blokkerer utgivelsen av neste RC-avtrykk."
+
+#: ../../about/process/issue-tracking.rst:76
+msgid "**critical (rc)**: This critical issue that only occurs on the devel and rc channel is blocking the release of the next stable release. Usually, issues that can not simply be moved to a different release and have the power to postpone the release are labeled this."
+msgstr ""
+"**kritisk (rc)**: Dette kritiske problemet som bare oppstår på utviklings- "
+"og rc-kanalen, blokkerer utgivelsen av neste stabile utgivelse. Vanligvis "
+"merkes problemer som ikke bare kan flyttes til en annen utgivelse og som har "
+"makt til å utsette utgivelsen."
+
+#: ../../about/process/issue-tracking.rst:80
+msgid "**device: [DEVICE CODENAME]**: This issue affects only the specified device(s)."
+msgstr ""
+"**enhet: [DEVICE CODENAME]**: Dette problemet berører bare de angitte "
+"enhetene."
+
+#: ../../about/process/issue-tracking.rst:82
+msgid "**team: [TEAM NAME]**: This issue is falls under the responsibility of a specific team (hal, middleware, UI)."
+msgstr ""
+"**team: [LAGNAVN]**: Dette problemet faller under ansvaret til et bestemt "
+"team (HAL, middleware, grensesnitt)."
+
+#: ../../about/process/issue-tracking.rst:85
+msgid "If a repository that tracks issues locally defines it's own labels, they should be documented in the README.md."
+msgstr ""
+"Hvis et arkiv som sporer problemer lokalt definerer dets egne etiketter, bør "
+"de dokumenteres i README.md."
+
+#: ../../about/process/issue-tracking.rst:89
+msgid "Milestones"
+msgstr "Milepæler"
+
+#: ../../about/process/issue-tracking.rst:91
+msgid "Milestones are used for stable OTA releases only. In general, milestones for the work-in-progress OTA and the next OTA are created. The ETA is set, once the work on the release starts (that is 6 weeks from start date), but can be adjusted afterwards. See the :doc:`release-schedule <release-schedule>` for more info."
+msgstr ""
+"Milepæler brukes kun til stabile OTA-utgivelser. Generelt sett opprettes "
+"milepæler for den pågående arbeidet og neste OTA. ETA er satt når arbeidet "
+"med utgivelsen starter (det er 6 uker fra startdato), men kan justeres "
+"etterpå. Se: doc: ``release-schedule <release-schedule>' for mer info."
+
+#: ../../about/process/issue-tracking.rst:98
+msgid "Assignees"
+msgstr "Tilknyttede"
+
+#: ../../about/process/issue-tracking.rst:100
+msgid "To make it transparent who's working on an issue, the developer should be assigned. This also allows the use of GitHub's global filtering as a type of TODO list. For example, `this is everything assigned to mariogrip in @ubports <https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_."
+msgstr ""
+"For å gjøre det gjennomsiktig hvem som jobber med et problem, bør utvikleren "
+"tildeles. Dette tillater også bruk av GitHubs globale filtrering som en type "
+"TODO-liste. For eksempel, `dette er alt tildelt mariogrip i @ubports "
+"<https://github.com/search?utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%"
+"3Amariogrip&type=>`_."
+
+#: ../../about/process/issue-tracking.rst:104
+msgid "Developers are encouraged to keep their list short and update the status of their issues."
+msgstr ""
+"Utviklere oppfordres til å holde listen kort og oppdatere statusen på "
+"problemene sine."
+
+#: ../../about/process/issue-tracking.rst:107
+msgid "Examples"
+msgstr "Eksempler"
+
+#: ../../about/process/issue-tracking.rst:110
+msgid "Bug Lifecycle"
+msgstr "Livssyklus for feil"
+
+#: ../../about/process/issue-tracking.rst:113
+msgid "The same principle applies to feature requests. The only difference is, that instead of the label **bug**, the label **enhancement** is used. The **needs confirmation** label is not applicable for feature requests."
+msgstr ""
+"Det samme prinsippet gjelder funksjonsforespørsler. Den eneste forskjellen "
+"er at i stedet for etiketten **bug** brukes etiketten **enhancement**. "
+"Merket **needs confirmation** gjelder ikke for funksjonsforespørsler."
+
+#: ../../about/process/issue-tracking.rst:117
+msgid "A *User* files a new bug using the issue-template."
+msgstr "En *bruker* arkiverer en ny feil ved hjelp av utgavemalen."
+
+#: ../../about/process/issue-tracking.rst:118
+msgid "The *QA-Team* adds the label **needs confirmation** and tries to work with the user to confirm the bug and add potentially missing information to the report. Once the report is complete a **team-label** will be added to the issue, the issue will be put on the **awaiting-triage-list** of the project and the label needs confirmation will be replaced with **bug**."
+msgstr ""
+"*Kvalitetskontroll-laget* legger til etiketten **needs confirmation** og "
+"prøver å samarbeide med brukeren for å bekrefte feilen og legge til "
+"potensielt manglende informasjon i rapporten. Når rapporten er fullført, vil "
+"en **lag-etikett** bli lagt til i utgaven, problemet blir satt på **awaiting-"
+"triage-list** for prosjektet, og etiketten trenger bekreftelse vil bli "
+"erstattet med **bug**."
+
+#: ../../about/process/issue-tracking.rst:119
+msgid "The affected *Team* will triage the issue and either reject (label **wontfix**, close and remove from the project) or accept the issue. The team decides if it they will fix the issue in-house (move to \"Accepted\" and assign a team member) or wait for a community developer to pick it up (Label **help wanted**, remove from the project board and provide hints on how to resolve the issue and further details on the how the fix should be implemented if necessary). For non-critical issues that are trivial to fix, the label **good first issue** can be added as well."
+msgstr ""
+"Det berørte *laget* vil prøve ut problemet og enten avvise (etikett "
+"**wontfix**, lukke og fjerne fra prosjektet) eller godta problemet. Laget "
+"bestemmer om det vil løse problemet internt (gå til \"Akseptert\" og tildele "
+"et lagmedlem) eller vente på at en gemenskapsutvikler skal hente det ("
+"Etikett **help wanted**, fjern fra prosjektstyret og gi tips om hvordan du "
+"løser problemet og ytterligere detaljer om hvordan løsningen bør "
+"implementeres om nødvendig). For ikke-kritiske problemer som er trivielle å "
+"fikse, kan etiketten **good first issue** også legges til."
+
+#: ../../about/process/issue-tracking.rst:120
+msgid "Once a *developer* is assigned and starts working on the issue, it is moved to \"In Development\". As soon as they have something to show for, the issue is closed and automatically moved to \"Quality Assurance\" for feedback from the QA team. If necessary, the developer will provide hints on how to test his patch in a comment on the issue."
+msgstr ""
+"Når en *utvikler* er tildelt og begynner å jobbe med problemet, flyttes den "
+"til \"I utvikling\". Så snart de har noe å vise for, lukkes problemet og "
+"flyttes automatisk til \"Quality Assurance\" for tilbakemelding fra "
+"kvalitetskontroll-laget. Om nødvendig vil utvikleren gi tips om hvordan du "
+"kan teste feilfiksen til vedkommende i en kommentar til problemet."
+
+#: ../../about/process/issue-tracking.rst:121
+msgid "The *QA-Team* tests the fix on all devices and provides feedback to the developer. If problems are found, the issue is re-opened and goes back to \"Accepted\", else it’s moved to \"Release Candidate\" to be included in the next release."
+msgstr ""
+"*Kvalitetskontroll-laget* tester løsningen på alle enheter og gir "
+"tilbakemelding til utvikleren. Hvis det blir funnet problemer, åpnes "
+"problemet på nytt og går tilbake til \"Akseptert\", ellers flyttes det til \""
+"Release Candidate\" for å bli inkludert i neste utgivelse."
+
+#: ../../about/process/issue-tracking.rst:122
+msgid "If not done already, the issue is added to the next milestone. Once the milestone is released, the issue is removed from the project board."
+msgstr ""
+"Hvis det ikke allerede er gjort, blir problemet lagt til neste milepæl. Når "
+"milepælen er utgitt, blir problemet fjernet fra prosjekttavlen."
+
+#: ../../about/process/ppa.rst:2
+msgid "repo.ubports.com"
+msgstr "repo.ubports.com"
+
+#: ../../about/process/ppa.rst:4
+msgid "This is the package archive system for UBports projects. It hosts various PPAs containing all deb-components of Ubuntu Touch."
+msgstr ""
+"Dette er pakkearkivsystemet for UBports-prosjekter. Den er vert for "
+"forskjellige PPAer som inneholder alle deb-komponentene til Ubuntu Touch."
+
+#: ../../about/process/ppa.rst:7
+msgid "Repository naming convention"
+msgstr "Navnesystem for kodelager"
+
+#: ../../about/process/ppa.rst:10
+msgid "Native packages"
+msgstr "Systemspesifikke pakker"
+
+#: ../../about/process/ppa.rst:12
+msgid "Native packages are repositories which contain a ``debian/`` directory **with** the source used to create the Debian source package (``.dsc``)."
+msgstr ""
+"Systemspesifikke pakker er kodelager som inneholder en ``debian/``-mappe "
+"**med** kildekoden for å opprette Debian-kildepakken (``.dsc``)."
+
+#: ../../about/process/ppa.rst:14
+msgid "The name of the Debian source package generated from the repository and the name of the git-repository should be the same."
+msgstr ""
+"Navnet på Debian-kildepakken generert fra arkivet og navnet i git-arkivet "
+"skal være det samme."
+
+#: ../../about/process/ppa.rst:17
+msgid "Packaging repositories"
+msgstr "Pakking av kodelager"
+
+#: ../../about/process/ppa.rst:19
+msgid "Packaging repositories contain a ``debian/`` directory **without** the source used to create the Debian source package (``.dsc``). They also contain instructions to tell ``debhelper`` how to get the source used to create the source package."
+msgstr ""
+"Pakkede kodelager inneholder en ``debian/``-mappe **uten** kildekoden brukt "
+"til å opprette Debian-kildepakken (``.dsc``). De inneholder også instruks "
+"for å fortelle ``debhelper`` kilden skal brukes til å opprette kildepakken."
+
+#: ../../about/process/ppa.rst:21
+msgid "The repository should have the name of the source package it generates with ``-packaging`` appended to the end. For example, a packaging repository that generates a source package called ``sandwich`` would be called ``sandwich-packaging``."
+msgstr ""
+"Kodelageret skal ha navnet på kildepakken det genererer med ``-packaging`` "
+"lagt til på slutten. For eksempel vil et pakkingskodelager som genererer en "
+"kildepakke kalt ``sandwich`` ha navnet ``sandwich-packaging``."
+
+#: ../../about/process/ppa.rst:24
+#, fuzzy
+msgid "Creating new PPAs"
+msgstr "Opprette nye PPAer"
+
+#: ../../about/process/ppa.rst:26
+msgid "New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`. The name of the branch translates literally to the name of the PPA: ``http://repo.ubports.com/dists/[branch name]``"
+msgstr ""
+"Nye PPAer kan opprettes dynamisk av CI-tjeneren ved hjelp av en spesiell: "
+"doc: `git-branch nameing convention <branch-naming>`. Navnet på grenen "
+"oversettes bokstavelig til navnet på PPA: ``http://repo.ubports.com/dists/["
+"branch name]``"
+
+#: ../../about/process/ppa.rst:28
+#, fuzzy
+msgid "Non-standard PPAs (i.e. not ``xenial``, ``vivid`` or ``bionic``) are kept for three months. In case they need to be kept for a longer time, a file with the name ``ubports.keep`` can be created in the root of the repository, containing the date until which the PPA shall be kept open in the form of ``YYYY-MM-dd``. If this file is empty, the PPA will be kept for two years after the last build."
+msgstr ""
+"Ikke-standardiserte PPAer (dvs. ikke ``xenial``, ``levende`` eller "
+"``bionisk``) oppbevares i tre måneder. Hvis de trenger å oppbevares i lengre "
+"tid, kan det opprettes en fil med navnet ``ubports.keep`` i roten til "
+"depotet, som inneholder datoen PPA skal holdes åpen i form av ``ÅÅÅÅ-MM-dd``"
+". Hvis denne filen er tom, vil PPA oppbevares i to år etter siste bygging."
+
+#: ../../about/process/release-schedule.rst:2
+#, fuzzy
+msgid "Release Schedule"
+msgstr "Utgivelsesplan"
+
+#: ../../about/process/release-schedule.rst:4
+msgid "OTA updates usually follow this rhythm:"
+msgstr "OTA-oppdateringer følger vanligvis denne rytmen:"
+
+#: ../../about/process/release-schedule.rst:6
+msgid "devel: daily builds"
+msgstr "devel: daglige bygg"
+
+#: ../../about/process/release-schedule.rst:7
+msgid "rc: weekly if no critical issue exists in the devel channel"
+msgstr "rc: ukentlig hvis det ikke er noe kritisk problem i utviklingskanalen"
+
+#: ../../about/process/release-schedule.rst:8
+msgid "stable: every six through eight weeks, if no critical issue exists in the rc channel"
+msgstr ""
+"stabil: hver sjette til åttende uke, hvis det ikke er noe kritisk problem i "
+"rc-kanalen"
+
+#: ../../about/process/release-schedule.rst:11
+msgid "This is not a definitive cycle. Stable releases are ready when they're ready and should not introduce new bugs or ship very incomplete features. Since the OTA update can not be released before all critical issues are closed, the ETA might have to be moved by making an educated guess for when all the issues can be handled. If there are too many issues added to a milestone, they are either removed or added to the next milestone."
+msgstr ""
+"Dette er ikke en endelig syklus. Stabile utgivelser er klare når de er klare "
+"og bør ikke introdusere nye feil eller sende veldig ufullstendige "
+"funksjoner. Siden OTA-oppdateringen ikke kan frigjøres før alle kritiske "
+"problemer er lukket, kan det hende at ETA må flyttes ved å foreta en "
+"utdannet gjetning for når alle problemene kan håndteres. Hvis det er for "
+"mange problemer lagt til en milepæl, blir de enten fjernet eller lagt til "
+"neste milepæl."

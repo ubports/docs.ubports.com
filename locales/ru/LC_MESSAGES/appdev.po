@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 09:34-0500\n"
-"PO-Revision-Date: 2021-02-21 20:38+0000\n"
+"PO-Revision-Date: 2021-10-04 21:26+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -26,7 +26,7 @@ msgstr "Content hub - полезные советы"
 
 #: ../../appdev/guides/contenthub.rst:9
 msgid "Content Hub Share Page"
-msgstr ""
+msgstr "Cтраница для публикации"
 
 #: ../../appdev/guides/contenthub.rst:11
 msgid ""
@@ -134,15 +134,15 @@ msgid ""
 msgstr ""
 "В Gelek мы будем работать с некоторыми сохраненными играми, которые нужно "
 "хранить в нашем устройстве или поделиться с пользователями (через Telegram, "
-"а затем перенести их на десктоп)."
+"а затем перенести их на настольный ПК)."
 
 #: ../../appdev/guides/contenthub.rst:64
 msgid ""
 "Tapping on the download icon we will get a Content Hub to *save* the game "
 "file (which is actually an export)."
 msgstr ""
-"Удерживая курсор на иконке \"Download\" мы заставим Content Hub *сохранить* "
-"файл игры (и он же предназначен для экспорта)."
+"Удерживая курсор на иконке \"Download\" , мы заставим Content Hub *сохранить*"
+" файл игры (и он же предназначен для экспорта)."
 
 #: ../../appdev/guides/contenthub.rst:66
 msgid ""
@@ -150,10 +150,10 @@ msgid ""
 "we are sending a file of type ``All`` (`see the Install Page code <https://"
 "gitlab.com/cibersheep/gelek/blob/master/app/InstallPage.qml#L38>`_)."
 msgstr ""
-"Файл игры относится к типу ``glksave``. Мы сообщим Content Hub, что мы "
+"Файл игры относится к типу ``glksave``. Мы сообщим Content Hub, что "
 "собираемся отправить файл типа ``All`` (`смотрите коды на странице "
-"инсталляции <https://gitlab.com/cibersheep/gelek/blob/master/app/InstallPage."
-"qml#L38>`_)."
+"инсталляции <https://gitlab.com/cibersheep/gelek/blob/master/app/"
+"InstallPage.qml#L38>`_)."
 
 #: ../../appdev/guides/contenthub.rst:79
 msgid ""
@@ -187,7 +187,7 @@ msgid ""
 "the destination app may share the content externally (for example, over "
 "Telegram or text message)."
 msgstr ""
-"Точно так же, нажатие на иконку \"share\" отправит сохранённую игру другим "
+"Точно так же нажатие на иконку \"share\" отправит сохранённую игру другим "
 "пользователям через мессенджер Telegram (`подробнее смотрите страничку с "
 "исходным кодом Webapp Creator Import Page <https://gitlab.com/cibersheep/"
 "webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>`_). Шаринг "
@@ -209,15 +209,15 @@ msgstr "Подождите, почему приложения разные?"
 
 #: ../../appdev/guides/contenthub.rst:107
 msgid "Content Hub: Export vs Share"
-msgstr "Content Hub: Экспорт или Общий доступ?"
+msgstr "Content Hub: Экспорт или Общий доступ"
 
 #: ../../appdev/guides/contenthub.rst:109
 msgid ""
 "Each developer can decide the rules each app would follow in relation to the "
 "Content Hub. Why the OpenStore is shown as the destination of an export?"
 msgstr ""
-"Каждый разработчик может самостоятельно решить правила, по которым каждое "
-"приложение взаимодействует с Content Hub.Почему OpenStore показывается как "
+"Каждый разработчик может самостоятельно определитьправила, по которым каждое "
+"приложение взаимодействует с Content Hub. Почему OpenStore показывается как "
 "место для экспорта?"
 
 #: ../../appdev/guides/contenthub.rst:111
@@ -254,7 +254,7 @@ msgid ""
 msgstr ""
 "Так, в этом примере uMatriks может быть местом назначения, исходной точкой и "
 "приложением для общего доступа для всех типов ``ContentType``. Что можно "
-"сказать о других hooks в файле ``manifest.json``?  Об этом рассказывается в "
+"сказать о других hooks в файле ``manifest.json``? Об этом рассказывается в "
 "следующей части руководства."
 
 #: ../../appdev/guides/cookbook.rst:2
@@ -291,7 +291,7 @@ msgstr ""
 
 #: ../../appdev/guides/cookbook.rst:13
 msgid "Playground"
-msgstr "\"Песочница\""
+msgstr "Песочница"
 
 #: ../../appdev/guides/cookbook.rst:15
 msgid ""
@@ -303,7 +303,7 @@ msgid ""
 msgstr ""
 "В полностью свободном и открытом сообществе совершенно естественным кажется, "
 "что найдутся пользователи, которым станет интересно изучить систему со всех "
-"сторон. В этом разделе Вы найдёте ссылки на внешние источники, специально "
+"сторон. В этом разделе можно найти ссылки на внешние источники, специально "
 "предназначенные для исследований. Цель списка - показать неограниченные "
 "возможности открытых платформ."
 
@@ -322,8 +322,8 @@ msgid ""
 "`Free Pascal development for Ubuntu Touch <http://kriscode.blogspot."
 "tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__"
 msgstr ""
-"`Free Pascal development for Ubuntu Touch <http://kriscode.blogspot."
-"tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__"
+"`Free Pascal development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/"
+"09/freepascal-development-for-ubuntu-phone.html>`__"
 
 #: ../../appdev/guides/cookbook.rst:21
 msgid ""
@@ -471,10 +471,10 @@ msgid ""
 "build-libs --arch amd64``. Don't forget to mention this step in your README, "
 "so that others can reproduce the build process."
 msgstr ""
-"Чтобы действительно собрать библиотеку, запустите процесс командой`` "
-"clickable build-libs``. Можно собрать и версию для настольного компьютера с "
-"помощью  команды ``clickable build-libs --arch amd64``. Не забудьте отметить "
-"эти шаги в файле README!"
+"Чтобы фактически построить библиотеку для всех архитектур, запустите процесс "
+"командой ``clickable build-libs --arch armhf``, ``clickable build-libs --"
+"arch arm64`` и ``clickable build-libs --arch amd64``. Не забудьте упомянуть "
+"этот шаг в README, чтобы другие могли воспроизвести процесс сборки."
 
 #: ../../appdev/guides/dependencies.rst:54
 msgid ""
@@ -570,11 +570,12 @@ msgid ""
 "variables pointing to the library's binary and include directories. The "
 "additional lines on your CMakeLists.txt then may look like:"
 msgstr ""
-"Если в библиотеке есть подходящий конфигурационный файл CMake, можно "
-"использовать команду `find_package <https://cmake.org/cmake/help/latest/"
-"command/find_package.html>`_, она поможет связать двоичный файл библиотеки и "
-"каталоги include. Дополнительные параметры в файле CMakeLists.txt  могут "
-"выглядеть так:"
+"Если библиотека содержит файл конфигурации CMake, можно использовать команду "
+"`find_package <https://cmake.org/cmake/help/latest/command/"
+"find_package.html>`_ , которая предоставляет вам цель для линковки или "
+"переменные указывающие на бинарные файлы библиотеки и include каталоги. "
+"Дополнительные строки в файле CMakeLists.txt могут выглядеть следующим "
+"образом:"
 
 #: ../../appdev/guides/dependencies.rst:106
 msgid ""
@@ -812,7 +813,6 @@ msgstr ""
 "Давайте посмотрим, как это сделать:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:92
-#, fuzzy
 msgid ""
 "In the main qml file, we need to add some code to know what to do with the "
 "dispatched URL. Let's check how Linphone app manages this adding a "
@@ -820,14 +820,11 @@ msgid ""
 "simple/blob/master/qml/Main.qml#L212>`_ with a Connections element setting "
 "``UriHandler`` as a target."
 msgstr ""
-"В основной файл qml нужно добавить код, чтобы знать, что делать с "
-"отправленным URL-адресом. Сначала добавьте элемент `Arguments "
-"<https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/"
-"Main.qml#L189> `_, который содержит URL-адрес. Пример, как это сделано, "
-"можно посмотреть в файле приложения  `Linphone <https://open-store.io/app/"
-"linphone.cibersheep>` _. Кроме того, мы настраиваем `соединение обработчика "
-"URI <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/"
-"Main.qml#L200>` _ и элемента Connection с `` UriHandler` `."
+"В основной файл qml необходимо добавить код, чтобы знать, что делать с "
+"отправленным URL-адресом. Давайте проверим, как приложение Linphone "
+"управляет этим добавлением `подключение к обработчику URI <https://gitlab."
+"com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L212>`_ с "
+"элементом Connections, задающим в качестве цели ``UriHandler``."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:109
 msgid ""
@@ -1122,7 +1119,7 @@ msgstr "Описание"
 
 #: ../../appdev/guides/pushnotifications.rst:170
 msgid "appid"
-msgstr "appid"
+msgstr "appid (идентификатор приложения)"
 
 #: ../../appdev/guides/pushnotifications.rst:170
 #: ../../appdev/guides/pushnotifications.rst:173
@@ -1145,7 +1142,7 @@ msgstr "как это описано в документации для клие
 
 #: ../../appdev/guides/pushnotifications.rst:173
 msgid "expire_on"
-msgstr "expire_on"
+msgstr "expire_on (истечение срока действия)"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. Expiration date/time for this message, in"
@@ -1173,7 +1170,7 @@ msgstr "как это описано в клиентской части доку
 
 #: ../../appdev/guides/pushnotifications.rst:179
 msgid "clear_pending"
-msgstr "clear_pending"
+msgstr "clear_pending (очистка незавершенного)"
 
 #: ../../appdev/guides/pushnotifications.rst:179
 #: ../../appdev/guides/pushnotifications.rst:248
@@ -1192,7 +1189,7 @@ msgstr "ошибку  \"too-many-pending\". По умолчанию отключ
 
 #: ../../appdev/guides/pushnotifications.rst:182
 msgid "replace_tag"
-msgstr "replace_tag"
+msgstr "replace_tag (заменить тэг)"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If there's a pending notification with the same tag, delete it before"
@@ -1492,9 +1489,8 @@ msgid "same as 1)."
 msgstr "тоже самое, что и 1)."
 
 #: ../../appdev/guides/pushnotifications.rst:270
-#, fuzzy
 msgid "Emblem-Counter"
-msgstr "Emblem-Counter"
+msgstr "Emblem-счетчика"
 
 #: ../../appdev/guides/pushnotifications.rst:275
 msgid "count"
@@ -1516,14 +1512,12 @@ msgstr ""
 "его."
 
 #: ../../appdev/guides/user-metrics.rst:2
-#, fuzzy
 msgid "User Metrics"
-msgstr "Метрика пользователя"
+msgstr "Пользовательские метрики"
 
 #: ../../appdev/guides/user-metrics.rst:5
-#, fuzzy
 msgid "What are User Metrics?"
-msgstr "Что такое \"метрика пользователя\"?"
+msgstr "Что такое \"Пользовательские метрики\"?"
 
 #: ../../appdev/guides/user-metrics.rst:7
 msgid ""
@@ -1562,9 +1556,8 @@ msgstr ""
 "метрики?"
 
 #: ../../appdev/guides/user-metrics.rst:20
-#, fuzzy
 msgid "How can I use User Metrics in my application?"
-msgstr "Как я могу использовать метрики пользователей в своём приложении?"
+msgstr "Как я могу использовать пользовательские метрики в своём приложении?"
 
 #: ../../appdev/guides/user-metrics.rst:22
 msgid ""
@@ -1670,7 +1663,7 @@ msgstr "Как работает пользовательская метрика?
 
 #: ../../appdev/guides/user-metrics.rst:89
 msgid "User Metrics are made up of two \"formats\":"
-msgstr "Метрика пользователя состоит из двух \"форматов\""
+msgstr "Пользовательская метрика состоит из двух \"форматов\":"
 
 #: ../../appdev/guides/user-metrics.rst:91
 msgid "metrics/messages for today (``format``)"
@@ -2093,7 +2086,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:74
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
-msgstr "`Clickable  <http://clickable.bhdouglass.com/en/latest/>`__"
+msgstr "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
 
 #: ../../appdev/index.rst:75
 msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
@@ -2364,7 +2357,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:78
 msgid "connectivity"
-msgstr "connectivity"
+msgstr "connectivity (подключаемость)"
 
 #: ../../appdev/platform/apparmor.rst:80
 msgid "Description: Can access coarse network connectivity information"
@@ -2474,7 +2467,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:135
 msgid "document_files_read"
-msgstr "document_files_read"
+msgstr "document_files_read (чтение файлов документов)"
 
 #: ../../appdev/platform/apparmor.rst:137
 msgid ""
@@ -2541,7 +2534,7 @@ msgstr "Описание: получение доступа к микрофон�
 
 #: ../../appdev/platform/apparmor.rst:179
 msgid "music_files"
-msgstr "music_files"
+msgstr "music_files (музыкальные файлы)"
 
 #: ../../appdev/platform/apparmor.rst:181
 msgid ""
@@ -2565,7 +2558,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:189
 msgid "music_files_read"
-msgstr "music_files_read"
+msgstr "music_files_read (чтение музыкальных файлов)"
 
 #: ../../appdev/platform/apparmor.rst:191
 msgid ""
@@ -2604,7 +2597,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:209
 msgid "picture_files"
-msgstr "picture_files"
+msgstr "picture_files (файлы изображений)"
 
 #: ../../appdev/platform/apparmor.rst:211
 msgid ""
@@ -2723,7 +2716,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:275
 msgid "video_files_read"
-msgstr "video_files_read"
+msgstr "video_files_read (чтение видеофайлов)"
 
 #: ../../appdev/platform/apparmor.rst:277
 msgid ""
@@ -2747,7 +2740,7 @@ msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:285
 msgid "webview"
-msgstr "webview"
+msgstr "webview (веб-представление)"
 
 #: ../../appdev/platform/apparmor.rst:287
 msgid "Description: Can use the UbuntuWebview"
@@ -2907,7 +2900,7 @@ msgstr ""
 
 #: ../../appdev/platform/index.rst:9
 msgid "Content Hub"
-msgstr "Content Hub"
+msgstr "Content Hub (Центр содержимого)"
 
 #: ../../appdev/platform/index.rst:9
 msgid ""
@@ -3520,7 +3513,7 @@ msgstr ""
 
 #: ../../appdev/webapp/index.rst:31
 msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
-msgstr "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
+msgstr "`Кликабельное <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
 
 #: ../../appdev/webapp/index.rst:35
 msgid "Debugging your webapp"

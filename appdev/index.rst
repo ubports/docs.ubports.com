@@ -1,18 +1,30 @@
 App development
 ===============
 
-Great!, you'd like to develop an app for Ubuntu Touch. Here are some resources that we hope help you get started. 
+You'd like to develop an app for Ubuntu Touch? Great!
 
-If you have questions that aren't answered in the docs or want to chat with other Ubuntu Touch developers? Join our `app dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://forums.ubports.com/category/35/app-development>`_.
+.. figure:: /_static/images/appdev/applist.jpg
 
-Getting Started
----------------
+Quick start
+-----------
 
-`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish ``click`` packages and provides various templates to get you started with app development. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. You can use any code editor or IDE that you choose and build your apps from the commandline with Clickable.
+Building your first app should be as simple as:
 
-Ubuntu Touch supports two kind of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, Rust or Go. :ref:`Web apps <webapp>` are special containers to run websites in.
+* `Install clickable <https://clickable-ut.dev/en/latest/install.html>`_
+* Plug in your Ubuntu Touch device
+* Enable developer mode in System Settings
+* Run ``clickable create``
+* Choose "QML Only" from the list of app templates
+* Fill in the requested information for this new app
+* When the app has been generated, enter the newly created directory
+* Run ``clickable``
 
-Applications are shipped as a :ref:`Click <click>` package and can be publicly shared on the official app store `OpenStore <https://open-store.io>`__ 
+Voilà you have your first app running on Ubuntu Touch!
+
+Overview
+--------
+
+Ubuntu Touch supports two kinds of apps: Firstly, *native apps* have their user interface written in QML or HTML and their business logic in JavaScript, C++, Python, Rust, or Go. Secondly, *web apps* are special containers to run websites in.
 
 .. toctree::
     :maxdepth: 1
@@ -21,99 +33,36 @@ Applications are shipped as a :ref:`Click <click>` package and can be publicly s
     nativeapp/index
     webapp/index
 
-Code Editor Integrations
-------------------------
-    - Atom
+The following sections provide guides and API documentation.
 
-        You can use clickable with the `Atom Editor <https://atom.io>`__ by installing the `atom-clickable-plugin <https://atom.io/packages/atom-clickable-plugin>`__. This provides some common clickable tools needed to build and run click packages for Ubuntu Touch from within Atom editor.
+`Clickable <https://clickable-ut.dev>`_ is the main tool to build apps on Ubuntu Touch. It is an easy to use command line tool with a lot of great features. Clickable allows you to compile, build, test, and publish your app. It also provides various templates to get you started with app development.
 
-    - QtCreator
+You can use any code editor or IDE to work on the code. Then you build your app from the command line with Clickable.
 
-        Available on top of clickable docker image, ``clickable ide qtcreator`` command within your project directory will launch a QtCreator instance and auto setup the project for you, you will have code completion and navigation for Ubuntu Touch components as well as run/debug facilities.
+.. figure:: /_static/images/appdev/appdev_desktop.png
 
+Applications are shipped as a :ref:`click <click>` package and can be published on the official app store `OpenStore <https://open-store.io>`__. Note also that most apps in the OpenStore are open source and can serve as references and inspiration.
 
-    - Ubuntu SDK ( Unmaintained )
-
-        Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower.
-
-        You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed to work correctly. You can use the following commands to install::
-
-            sudo add-apt-repository ppa:ubuntu-sdk-team/ppa
-            sudo apt update && sudo apt dist-upgrade
-            sudo apt install ubuntu-sdk
-            sudo reboot # or logout/login
-
-
-
-Guides
-------
-
-Get started building your first app or learn about advanced concepts with our :ref:`Developer guides <devguides>`.
+References and guides
+---------------------
 
 .. toctree::
     :maxdepth: 1
-    :name: toc-dev-guides
+    :name: toc-app-dev
 
+    code-editor
     guides/index
-    guides/cookbook
-    guides/contenthub
-    guides/importing-CH-urldispatcher
-    guides/pushnotifications
-    guides/user-metrics
-    guides/writeable-dirs
-    guides/dependencies
+    external-docs
 
-Publishing
-----------
+This is a helpful and welcoming community and everything works better in teamwork!
+Looking for other developers that might want to collaborate with you on your app?
+Have questions that aren’t answered in the docs or want to chat with other Ubuntu Touch developers?
+Join our `UBports UT App Dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports App Development forum <https://forums.ubports.com/category/35/app-development>`_!
+You can also check out our list of :ref:`preinstalled apps <preinstalledapps>`. Contributions to those are greatly appreciated and directly reach a larger audience.
 
-After you are done building your app, distribute it on the `OpenStore <https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`.
+Maintainers wanted
+------------------
 
-.. toctree::
-    :maxdepth: 1
-    :name: toc-publishing
+All apps love contributions. But some core apps are lacking maintainers. Please check the `list of core apps <https://github.com/ubports/ubuntu-touch/blob/master/CORE_APPS.md>`_ and see if you want to step up as new maintainer for one of our core apps. The maintainer reviews MR's, triages and investigates issue reports and helps to develop the app.
 
-    publishing/index
-
-Documentation
--------------
-
-* `QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__
-* `Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index.html>`__
-* `Clickable <http://clickable.bhdouglass.com/en/latest/>`__
-* `Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__
-
-It is possible to develop cross-platform apps that don't depend on Ubuntu specific APIs, although this is not the official way of developing apps for Ubuntu Touch. If running on other operating systems is an requirement for your app, you can refer to this  APIs instead:
-
-* `Kirigami API <https://api.kde.org/frameworks/kirigami/html/>`__
-* `Qt Quick Controls 2 API <https://doc.qt.io/qt-5/qtquickcontrols-index.html>`__
-
-
-Platform
---------
-
-
-.. toctree::
-    :maxdepth: 1
-    :name: toc-devdocs
-
-    platform/index
-    platform/click
-    platform/apparmor
-
-
-Sample apps
------------
-
-Learn more about app development by digging into our :ref:`Sample apps <sampleapps>`.
-
-.. toctree::
-    :maxdepth: 1
-    :name: toc-sample-apps
-
-    samples/index
-
-
-Preinstalled apps
------------------
-
-The :doc:`/contribute/preinstalled-apps` page has information on developing the apps which are included with Ubuntu Touch.
+The best way to start is by making some contributions and let the reviewers know that you are interested. Or join our matrix group at `#ubcd:matrix.org <https://matrix.to/#/#ubcd:matrix.org>`_ and introduce yourself.

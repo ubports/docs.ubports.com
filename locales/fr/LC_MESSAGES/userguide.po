@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-02-15 23:56+0000\n"
-"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
+"PO-Revision-Date: 2021-03-11 01:15+0000\n"
+"Last-Translator: AO-LocLab <ao@localizationlab.org>\n"
 "Language-Team: French <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/fr/>\n"
 "Language: fr\n"
@@ -580,9 +580,9 @@ msgid ""
 "Or transfer the key via the internet by mailing it to yourself, or uploading "
 "it to your own cloud storage, or webserver, etc."
 msgstr ""
-"Ou transférez la clé par l'Internet en vous l’envoyant par mail, ou en la "
-"chargeant sur votre stockage en nuage, ou par l'intermédiaire d'un serveur "
-"web, etc."
+"Ou transférez la clé par Internet en vous l’envoyant par courriel, ou en la "
+"téléversant vers votre propre espace de stockage nuagique ou serveur Web, "
+"etc."
 
 #: ../../userguide/advanceduse/ssh.rst:22
 msgid ""
@@ -790,8 +790,8 @@ msgstr ""
 msgid ""
 "Make sure your supported device runs on 16.04 (Anbox doesn't work on 15.04)."
 msgstr ""
-"Assurez-vous que votre appareil soit pris en charge et tourne sous la "
-"version 16.04 (Anbox ne fonctionne pas sous la 15.04)."
+"Assurez-vous que votre appareil pris en charge tourne sous la version 16.04 ("
+"Anbox ne fonctionne pas sous la 15.04)."
 
 #: ../../userguide/dailyuse/anbox.rst:36
 msgid ""
@@ -1077,17 +1077,17 @@ msgid ""
 "and is compatible with every device. If the kernel of your device supports "
 "it then ``lxc`` is suggested."
 msgstr ""
-"``-t type`` type peut être à la fois ``chroot`` ou ``lxc``. Celui par défaut "
-"est ``chroot`` et est compatible avec tous les périphériques. Si le noyau de "
-"votre périphérique le supporte, alors ``lxc`` est suggéré."
+"``-t type`` le type peut être soit ``chroot`` soit ``lxc``. Le type par "
+"défaut est ``chroot`` et est compatible avec tous les appareils. Si le noyau "
+"de votre appareil le prend en charge, ``lxc`` est alors suggéré."
 
 #: ../../userguide/dailyuse/libertine.rst:31
 msgid ""
 "The creating process can take some time, due to the size of the container "
 "(some hundred of megabytes)."
 msgstr ""
-"Le processus de création peut prendre un peu de temps à cause de la taille "
-"du container (quelques centaines de mégaoctets)."
+"Le processus de création peut prendre du temps en raison de la taille du "
+"conteneur (quelques centaines de mégaoctets)."
 
 #: ../../userguide/dailyuse/libertine.rst:34
 msgid ""
@@ -1099,10 +1099,10 @@ msgid ""
 msgstr ""
 "La commande ``create`` montrée ci-dessus ne peut pas être lancée directement "
 "dans l'application Terminal du fait de restrictions Apparmor. Vous pouvez la "
-"lancer depuis un autre appareil en utilisant soit une connexion  ``adb`` "
-"soit une connexion ``ssh``.  Autrement, vous pouvez la lancer depuis "
-"l'application Terminal en utilisant une connexion SSH « loopback » en "
-"lançant la commande : ``ssh localhost``."
+"lancer depuis un autre appareil en utilisant soit une connexion ``adb`` soit "
+"une connexion ``ssh``. Autrement, vous pouvez la lancer depuis l'application "
+"Terminal en utilisant une connexion SSH « loopback » en lançant la commande :"
+" ``ssh localhost``."
 
 #: ../../userguide/dailyuse/libertine.rst:37
 msgid "List containers"
@@ -1369,14 +1369,15 @@ msgid "In order to add a bind mount use::"
 msgstr "Afin d'ajouter un montage de la liaison, utilisez ::"
 
 #: ../../userguide/dailyuse/libertine.rst:159
-#, fuzzy
 msgid ""
 "You can also make deep links in case you only want parts of your SD-card "
 "available in the container. In this case just the entire path to the "
 "directory you want to bind mount::"
 msgstr ""
-"Téléchargez la dernière version de `SP flash tool <https ://spflashtool.com/"
-"download/>`_ (*aussi appelé MTK flash tool*) : :"
+"Vous pouvez également créer des liens profonds au cas où vous ne "
+"souhaiteriez que certaines parties de votre carte mémoire dans le conteneur. "
+"Dans ce cas, il suffit d'indiquer le chemin d'accès complet au répertoire "
+"que vous voulez monter et lier::"
 
 #: ../../userguide/dailyuse/libertine.rst:163
 msgid ""
@@ -1398,6 +1399,17 @@ msgid ""
 "to control how to mount a card with a given id, but since the udev rules are "
 "on the read only port on touch, this is not possible."
 msgstr ""
+"Pour utiliser la carte mémoire comme espace supplémentaire pour votre "
+"conteneur, assurez-vous d'abord de la formater en utilisant le format ext4 "
+"ou un format similaire. Il existe une mauvaise fonctionnalité dans udisk2 "
+"qui permet de monter les cartes mémoire (showexec) qui garantit que seuls "
+"les fichiers se terminant par .bat, .exe ou .com peuvent être exécutés à "
+"partir du disque s'il est formaté en (v)fat. Cette caractéristique a été "
+"modifiée dans d'autres distributions, permettant à n'importe quel fichier "
+"d'avoir des privilèges d'exécution, mais pas dans Ubuntu. La solution "
+"recommandée est d'ajouter une règle udev pour contrôler comment monter une "
+"carte avec un identifiant donné, mais comme les règles udev sont sur le port "
+"en lecture seule sur appareil tactile, ceci n'est pas possible."
 
 #: ../../userguide/dailyuse/libertine.rst:169
 msgid "Shortcuts"
@@ -1474,54 +1486,75 @@ msgid ""
 "only access your location data when the device screen is on and the app is "
 "in use."
 msgstr ""
+"Les services de localisation intégrés à Ubuntu Touch sont conçus pour "
+"protéger votre vie privée : vous choisissez d'autoriser ou de refuser "
+"l'accès des applications à ces données. Les applications ne peuvent accéder "
+"à vos données de localisation que lorsque l'écran de l'appareil est allumé "
+"et que l'application est en cours d'utilisation."
 
 #: ../../userguide/dailyuse/location.rst:9
 msgid "Checking if location services are enabled"
-msgstr ""
+msgstr "Vérifier si les services de localisation sont activés"
 
 #: ../../userguide/dailyuse/location.rst:11
 msgid ""
 "The Location Indicator is displayed whenever location services are enabled. "
 "Normally, this indicator will appear to be dark."
 msgstr ""
+"L'indicateur de localisation est affiché chaque fois que les services de "
+"localisation sont activés. Normalement, cet indicateur apparaîtra comme "
+"étant sombre."
 
 #: ../../userguide/dailyuse/location.rst:15
 msgid "The Location Indicator, showing location enabled but not in use"
 msgstr ""
+"L'indicateur de localisation, qui indique la localisation activée mais non "
+"utilisée"
 
 #: ../../userguide/dailyuse/location.rst:17
 msgid "If an app is accessing location data, the Location Indicator brightens."
 msgstr ""
+"Si une application accède à des données de localisation, l'indicateur de "
+"localisation s'éclaircit."
 
 #: ../../userguide/dailyuse/location.rst:21
 msgid "The Location Indicator, showing location enabled and in use"
 msgstr ""
+"L'indicateur de localisation, qui indique la localisation activée et en "
+"cours d'utilisation"
 
 #: ../../userguide/dailyuse/location.rst:26
 msgid "Accessing location services settings"
-msgstr ""
+msgstr "Accès aux paramètres des services de localisation"
 
 #: ../../userguide/dailyuse/location.rst:28
 msgid ""
 "There are several ways to access settings related to location services in "
 "Ubuntu Touch."
 msgstr ""
+"Il existe plusieurs façons d'accéder aux paramètres liés aux services de "
+"localisation dans Ubuntu Touch."
 
 #: ../../userguide/dailyuse/location.rst:31
 msgid "Open location quick settings"
-msgstr ""
+msgstr "Ouvrir les paramètres rapides de localisation"
 
 #: ../../userguide/dailyuse/location.rst:33
 msgid ""
 "The Location Indicator contains quick settings related to location services, "
 "including a switch to turn services on or off."
 msgstr ""
+"L'indicateur de localisation contient des réglages rapides liés aux services "
+"de localisation, y compris un interrupteur pour activer ou désactiver les "
+"services."
 
 #: ../../userguide/dailyuse/location.rst:37
 msgid ""
 "To access these settings, press on the Location Indicator and pull down "
 "toward the bottom of the screen."
 msgstr ""
+"Pour accéder à ces paramètres, appuyez sur l'indicateur de localisation et "
+"tirez vers le bas de l'écran."
 
 #: ../../userguide/dailyuse/location.rst:39
 msgid ""
@@ -1530,46 +1563,62 @@ msgid ""
 "through the icons at the top of the screen to find Location. Select Location "
 "to open the quick settings."
 msgstr ""
+"Si les services de localisation sont désactivés, vous pouvez accéder aux "
+"paramètres rapides de localisation en appuyant sur n'importe quel autre "
+"indicateur et en tirant vers le bas. Ensuite, faites défiler les icônes en "
+"haut de l'écran pour trouver la localisation. Sélectionnez Localisation pour "
+"ouvrir les paramètres rapides."
 
 #: ../../userguide/dailyuse/location.rst:42
 msgid "Open location settings in the settings app"
 msgstr ""
+"Ouvrir les paramètres de localisation dans l'application Paramètres du "
+"système"
 
 #: ../../userguide/dailyuse/location.rst:44
 msgid ""
 "The system settings app can be used to control location services. There are "
 "more controls in the system settings app than in the Location Indicator."
 msgstr ""
+"L'application Paramètres du système peut être utilisée pour contrôler les "
+"services de localisation. Il y a plus de contrôles dans l'application "
+"Paramètres du système que dans l'indicateur de localisation."
 
 #: ../../userguide/dailyuse/location.rst:48
 msgid ""
 "There are two ways to access location services controls in the system "
 "settings app."
 msgstr ""
+"Il y a deux façons d'accéder aux contrôles des services de localisation dans "
+"l'application Paramètres du système."
 
 #: ../../userguide/dailyuse/location.rst:51
 #: ../../userguide/dailyuse/location.rst:71
 msgid "Quick settings"
-msgstr ""
+msgstr "Paramètres rapides"
 
 #: ../../userguide/dailyuse/location.rst:53
 msgid "`Open location quick settings`_, then select ``Location settings...``."
 msgstr ""
+"`Ouvrez les paramètres rapides de localisation`_, puis sélectionnez ``"
+"Paramètres de localisation...``."
 
 #: ../../userguide/dailyuse/location.rst:56
 #: ../../userguide/dailyuse/location.rst:76
 msgid "System settings app"
-msgstr ""
+msgstr "Application Paramètres du système"
 
 #: ../../userguide/dailyuse/location.rst:58
 msgid ""
 "Launch the ``System Settings`` app. Select ``Security & Privacy``, then "
 "select ``Location``."
 msgstr ""
+"Lancez l'application ``Paramètres du système``. Sélectionnez ``Sécurité & "
+"Vie privée``, puis sélectionnez ``Localisation``."
 
 #: ../../userguide/dailyuse/location.rst:62
 msgid "Enabling or disabling location services"
-msgstr ""
+msgstr "Activer ou désactiver les services de localisation"
 
 #: ../../userguide/dailyuse/location.rst:64
 msgid ""
@@ -1577,42 +1626,56 @@ msgid ""
 "location data may request your current location. Location services are "
 "enabled by default on Ubuntu Touch."
 msgstr ""
+"Si les services de localisation sont activés, les applications auxquelles "
+"vous avez autorisé l'accès à vos données de localisation peuvent demander "
+"votre position actuelle. Les services de localisation sont activés par "
+"défaut sur Ubuntu Touch."
 
 #: ../../userguide/dailyuse/location.rst:66
 msgid ""
 "If location services are off, apps will not be able to access your current "
 "location."
 msgstr ""
+"Si les services de localisation sont désactivés, les applications ne "
+"pourront pas accéder à votre localisation actuelle."
 
 #: ../../userguide/dailyuse/location.rst:68
 msgid ""
 "There are several ways to enable or disable location services in Ubuntu "
 "Touch."
 msgstr ""
+"Il existe plusieurs façons d'activer ou de désactiver les services de "
+"localisation dans Ubuntu Touch."
 
 #: ../../userguide/dailyuse/location.rst:73
 msgid ""
 "`Open location quick settings`_. Select the ``Location detection`` switch to "
 "enable or disable location services."
 msgstr ""
+"`Ouvrez les paramètres rapides de localisation`_. Sélectionnez le "
+"commutateur ``Détection de la position`` pour activer ou désactiver les "
+"services de localisation."
 
 #: ../../userguide/dailyuse/location.rst:78
 msgid ""
 "`Open location settings in the settings app`_. Under ``Let the device detect "
 "your location:``, select the appropriate option:"
 msgstr ""
+"`Ouvrez les paramètres de localisation dans l'application Paramètres du "
+"système`_. Sous ``Laissez l'appareil détecter votre position :``, "
+"sélectionnez l'option appropriée :"
 
 #: ../../userguide/dailyuse/location.rst:80
 msgid "``Using GPS`` turns on location services."
-msgstr ""
+msgstr "``Utiliser le GPS`` active les services de localisation."
 
 #: ../../userguide/dailyuse/location.rst:81
 msgid "``Not at all`` turns off location services."
-msgstr ""
+msgstr "``Pas du tout`` désactive les services de localisation."
 
 #: ../../userguide/dailyuse/location.rst:84
 msgid "Allowing apps access to location data"
-msgstr ""
+msgstr "Autoriser les applications à accéder aux données de localisation"
 
 #: ../../userguide/dailyuse/location.rst:86
 msgid ""
@@ -1620,12 +1683,18 @@ msgid ""
 "This decision is presented the first time the app tries to access your "
 "current location. You can change your decision later."
 msgstr ""
+"Ubuntu Touch vous permet d'autoriser ou de refuser aux applications l'accès "
+"à vos données de localisation. Cette décision est présentée la première fois "
+"que l'application tente d'accéder à votre position actuelle. Vous pouvez "
+"modifier votre décision par la suite."
 
 #: ../../userguide/dailyuse/location.rst:88
 msgid ""
 "An app will show the location permission request the first time it tries to "
 "access your current location."
 msgstr ""
+"Une application affichera la demande de permission de localisation la "
+"première fois qu'elle essaiera d'accéder à votre position actuelle."
 
 #: ../../userguide/dailyuse/location.rst:93
 msgid ""
@@ -1633,10 +1702,15 @@ msgid ""
 "``Don't Allow`` to deny the app access to your current location. Some app "
 "features may not work correctly if you select ``Don't Allow``."
 msgstr ""
+"Sélectionnez ``Autoriser`` pour donner à l'application l'accès à votre "
+"emplacement actuel. Sélectionnez ``Ne pas autoriser`` pour refuser à "
+"l'application l'accès à votre emplacement actuel. Certaines fonctionnalités "
+"de l'application peuvent ne pas fonctionner correctement dans ce cas de "
+"figure."
 
 #: ../../userguide/dailyuse/location.rst:96
 msgid "Changing your permissions"
-msgstr ""
+msgstr "Modifier vos permissions"
 
 #: ../../userguide/dailyuse/location.rst:98
 msgid ""
@@ -1644,15 +1718,19 @@ msgid ""
 "This is useful when you gave an app access to your location but you'd like "
 "to deny access, or if you denied access but would like to give access."
 msgstr ""
+"Vous pouvez modifier votre décision pour permettre à une application "
+"d'accéder à vos données de localisation. Cela est utile lorsque vous avez "
+"donné à une application l'accès à votre localisation mais que vous souhaitez "
+"lui refuser l'accès, ou si vous avez refusé l'accès mais que vous souhaitez "
+"le donner."
 
 #: ../../userguide/dailyuse/location.rst:100
 msgid "There are several ways to find these controls."
-msgstr ""
+msgstr "Il y a plusieurs façons de trouver ces contrôles."
 
 #: ../../userguide/dailyuse/location.rst:103
-#, fuzzy
 msgid "Location settings"
-msgstr "Emplacements"
+msgstr "Paramètres de localisation"
 
 #: ../../userguide/dailyuse/location.rst:105
 msgid ""
@@ -1661,10 +1739,16 @@ msgid ""
 "location:``. Toggle the switch next to an app \"on\" to allow it to access "
 "your location data. Toggle the switch \"off\" to deny access."
 msgstr ""
+"`Ouvrez les paramètres de localisation dans l'application Paramètres du "
+"système`_. Toutes les applications qui ont demandé l'accès à votre position "
+"sont listées sous ``Laisser l'application accéder à cette position :``. "
+"Faites basculer le commutateur à côté d'une application sur activé pour "
+"l'autoriser à accéder à vos données de localisation. Faites basculer le "
+"commutateur sur désactivé pour refuser cet accès."
 
 #: ../../userguide/dailyuse/location.rst:108
 msgid "App permission settings"
-msgstr ""
+msgstr "Paramètres de permissions des applications"
 
 #: ../../userguide/dailyuse/location.rst:110
 msgid ""
@@ -1674,10 +1758,17 @@ msgid ""
 "an app \"on\" to allow it to access your location data. Toggle the switch "
 "\"off\" to deny access."
 msgstr ""
+"Lancez l'application ``Paramètres du système``. Sélectionnez ``Sécurité & "
+"Vie privée``, puis sélectionnez ``Permissions des applications``, suivi de "
+"``Localisation``. Toutes les applications qui ont demandé l'accès à votre "
+"position sont listées. Faites basculer le commutateur à côté d'une "
+"application sur activé pour l'autoriser à accéder à vos données de "
+"localisation. Faites basculer le commutateur sur désactivé pour refuser "
+"l'accès."
 
 #: ../../userguide/dailyuse/location.rst:113
 msgid "Using apps with location services"
-msgstr ""
+msgstr "Utilisation d'applications avec des services de localisation"
 
 #: ../../userguide/dailyuse/location.rst:115
 msgid ""
@@ -1685,10 +1776,14 @@ msgid ""
 "access to location data. However, there are some things to note while using "
 "apps with location services."
 msgstr ""
+"Les applications pourront accéder à votre position actuelle une fois "
+"qu'elles auront obtenu l'accès aux données de localisation. Cependant, il y "
+"a certaines choses à noter lors de l'utilisation d'applications avec des "
+"services de localisation."
 
 #: ../../userguide/dailyuse/location.rst:118
 msgid "Time to first fix"
-msgstr ""
+msgstr "Temps de première acquisition"
 
 #: ../../userguide/dailyuse/location.rst:120
 msgid ""
@@ -1698,6 +1793,12 @@ msgid ""
 "device is activated. This rating is called \"`Time To First Fix <https://en."
 "wikipedia.org/wiki/Time_to_first_fix>`_,\" or TTFF."
 msgstr ""
+"Une « acquisition » est une donnée générée par le matériel du GPS, qui "
+"contient sa position actuelle et la précision attendue de cette "
+"localisation. Le matériel du GPS est évalué en fonction du temps nécessaire "
+"pour renvoyer l'une de ces données après l'activation du dispositif. Cette "
+"note est appelée « `Time To First Fix <https://en.wikipedia.org/wiki/"
+"Time_to_first_fix>`_,\" ou TTFF."
 
 #: ../../userguide/dailyuse/location.rst:122
 msgid ""
@@ -1707,27 +1808,42 @@ msgid ""
 "can take up to an hour. To prevent this from causing problems for you, "
 "follow these instructions:"
 msgstr ""
+"Un appareil doté d'une connexion de données mobile devrait mettre entre une "
+"et quatre minutes pour recevoir sa première position. Si les services de "
+"localisation n'ont pas été utilisés depuis longtemps *et* que l'appareil ne "
+"dispose pas d'une connexion mobile de données, la première localisation peut "
+"prendre jusqu'à une heure. Pour éviter que cela ne vous cause des problèmes, "
+"suivez ces instructions :"
 
 #: ../../userguide/dailyuse/location.rst:126
 msgid ""
 "Do not leave your device in direct sunlight. The heat can damage the device."
 msgstr ""
+"Ne laissez pas votre appareil à la lumière directe du soleil. La chaleur "
+"peut endommager l'appareil."
 
 #: ../../userguide/dailyuse/location.rst:128
 msgid "Disable ``Lock when idle`` in the Battery settings"
 msgstr ""
+"Désactivez ``Verrouiller en cas d'inactivité`` dans les paramètres de la "
+"batterie"
 
 #: ../../userguide/dailyuse/location.rst:129
 msgid ""
 "Download an app which uses location services and cause it to start accessing "
 "your location data."
 msgstr ""
+"Téléchargez une application qui utilise des services de localisation et "
+"faites en sorte qu'elle commence à accéder à vos données de localisation."
 
 #: ../../userguide/dailyuse/location.rst:130
 msgid ""
 "Leave your device near a window but out of direct sunlight. To reduce energy "
 "consumption, turn the screen brightness down."
 msgstr ""
+"Laissez votre appareil près d'une fenêtre, mais à l'abri de la lumière "
+"directe du soleil. Pour réduire la consommation d'énergie, baissez la "
+"luminosité de l'écran."
 
 #: ../../userguide/dailyuse/location.rst:132
 msgid ""
@@ -1735,10 +1851,15 @@ msgid ""
 "location. You can now close the app and enable ``Lock when idle``. Future "
 "attempts to aquire your location should now take one to four minutes."
 msgstr ""
+"Au bout de 20 minutes à une heure, votre appareil devrait afficher votre "
+"position actuelle. Vous pouvez maintenant fermer l'application et activer la "
+"fonction ``Verrouiller en cas d'inactivité``. Les futures tentatives "
+"d'acquisition de votre position devraient maintenant prendre entre une et "
+"quatre minutes."
 
 #: ../../userguide/dailyuse/location.rst:135
 msgid "App suspension"
-msgstr ""
+msgstr "Suspension de l'application"
 
 #: ../../userguide/dailyuse/location.rst:137
 msgid ""
@@ -1747,13 +1868,17 @@ msgid ""
 "reason, apps will not be able to track your location whenever they are not "
 "in use or the device is locked."
 msgstr ""
+"Les applications sont suspendues lorsqu'elles ne sont pas au premier plan ou "
+"que l'appareil est verrouillé. Lorsqu'une application est suspendue, elle ne "
+"peut pas recevoir de données de localisation. Pour cette raison, les "
+"applications ne pourront pas suivre votre position lorsqu'elles ne sont pas "
+"utilisées ou que l'appareil est verrouillé."
 
 #: ../../userguide/install.rst:2
 msgid "Install Ubuntu Touch"
 msgstr "Installer Ubuntu Touch"
 
 #: ../../userguide/install.rst:4
-#, fuzzy
 msgid ""
 "Installing Ubuntu Touch is easy, and a lot of work has gone in to making the "
 "installation process less intimidating to the average user. The UBports "
@@ -1766,14 +1891,15 @@ msgid ""
 "<https://devices.ubuntu-touch.io/>`_."
 msgstr ""
 "Installer Ubuntu Touch est facile, de gros efforts ont été faits pour rendre "
-"le processus d'installation moins intimidant pour les utilisateurs les moins "
-"techniques. L'installateur d'UBports est un bel outil graphique qui permet "
-"d'installer Ubuntu Touch sur un `appareil compatible <https://devices.ubuntu-"
-"touch.io/>`_ à partir de votre ordinateur Linux <https://snapcraft.io/"
-"ubports-installer>`_, `Mac <https://devices.ubuntu-touch.io/installer/"
-"?package=dmg>` ou `Windows <https://devices.ubuntu-touch.io/installer/"
-"?package=exe>`. For more experienced users, we also have manual installation "
-"instructions for every device `on the devices page <https://devices.ubuntu-"
+"le processus d'installation moins intimidant pour les utilisateurs et les "
+"utilisatrices les moins techniques. L'installateur d'UBports est un bel "
+"outil graphique qui permet d'installer Ubuntu Touch sur un `appareil "
+"compatible <https://devices.ubuntu-touch.io/>`_ à partir de votre ordinateur "
+"Linux <https://snapcraft.io/ubports-installer>`_, `Mac <https://devices"
+".ubuntu-touch.io/installer/?package=dmg>` ou `Windows <https://devices"
+".ubuntu-touch.io/installer/?package=exe>`. Pour les personnes plus "
+"expérimentées, nous avons également des instructions d'installation manuelle "
+"pour chaque appareil `sur la page des appareils <https://devices.ubuntu-"
 "touch.io/>`_."
 
 #: ../../userguide/install.rst:7
@@ -1787,55 +1913,56 @@ msgstr ""
 "conserver ces données, créez une sauvegarde sur un support externe."
 
 #: ../../userguide/install.rst:9
-#, fuzzy
 msgid ""
 "You can `Download the UBports Installer from GitHub <https://github.com/"
 "ubports/ubports-installer/releases/latest>`_. The following packages are "
 "available:"
 msgstr ""
-"Allez sur `la page de téléchargement <https://github.com/ubports/ubports-"
-"installer/releases/latest>`_ et téléchargez la version de l'installateur "
-"pour votre système d'exploitation :"
+"Vous pouvez `télécharger l'installeur d'UBports à partir de GitHub "
+"<https://github.com/ubports/ubports-installer/releases/latest>`_. Les "
+"paquets suivants sont disponibles :"
 
 #: ../../userguide/install.rst:11
-#, fuzzy
 msgid ""
 "`Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_: "
 "``ubports-installer-<version-number>.exe``"
-msgstr "Windows : ``ubports-installer-<version-number>.exe``"
+msgstr ""
+"`Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_ : "
+"``ubports-installer-<numero-de-version>.exe``"
 
 #: ../../userguide/install.rst:12
-#, fuzzy
 msgid ""
 "`macOS <https://devices.ubuntu-touch.io/installer/?package=dmg>`_: ``ubports-"
 "installer-<version-number>.dmg``"
-msgstr "Mac OS : ``ubports-installer-<version-number>.dmg``"
+msgstr ""
+"`macOS <https://devices.ubuntu-touch.io/installer/?package=dmg>`_ : "
+"``ubports-installer-<numero-de-version>.dmg``"
 
 #: ../../userguide/install.rst:13
-#, fuzzy
 msgid ""
 "`Ubuntu or Debian <https://devices.ubuntu-touch.io/installer/?"
 "package=deb>`_: ``ubports-installer-<version-number>.deb``"
-msgstr "Ubuntu ou Debian : ``ubports-installer-<version-number>.deb``"
+msgstr ""
+"`Ubuntu ou Debian <https://devices.ubuntu-touch.io/installer/?package=deb>`_ "
+": ``ubports-installer-<numero-de-version>.deb``"
 
 #: ../../userguide/install.rst:14
-#, fuzzy
 msgid ""
 "`Other Linux distributions (snap) <https://snapcraft.io/ubports-"
 "installer>`_: ``ubports-installer-<version-number>.snap``"
 msgstr ""
-"Autres distributions Linux : ``ubports-installer-<version-number>.snap`` ou "
-"``ubports-installer-<version-number>.AppImage``"
+"`Autres distributions Linux (snap) <https://snapcraft.io/ubports-installer>`"
+"_ : ``ubports-installer-<numero-de-version>.snap``"
 
 #: ../../userguide/install.rst:15
-#, fuzzy
 msgid ""
 "`Other Linux distributions (AppImage) <https://devices.ubuntu-touch.io/"
 "installer/?package=appimage>`_: ``ubports-installer-<version-number>."
 "AppImage``"
 msgstr ""
-"Autres distributions Linux : ``ubports-installer-<version-number>.snap`` ou "
-"``ubports-installer-<version-number>.AppImage``"
+"`Autres distributions Linux (AppImage) <https://devices.ubuntu-touch.io/"
+"installer/?package=appimage>`_ : ``ubports-installer-<numero-de-"
+"version>.AppImage``"
 
 #: ../../userguide/install.rst:17
 msgid ""
@@ -1847,14 +1974,13 @@ msgstr ""
 "en explorant Ubuntu Touch !"
 
 #: ../../userguide/install.rst:19
-#, fuzzy
 msgid ""
 "If you're an experienced android developer and want to help us bring Ubuntu "
 "Touch to more devices, visit the :doc:`porting section </porting/Intro>`."
 msgstr ""
-"Si vous êtes un développeur android expérimenté et que vous souhaitez nous "
-"aider à porter Ubuntu Touch sur d'autres appareils, visitez la :doc:` "
-"section portage </porting/introduction>`."
+"Si vous êtes un développeur ou une développeuse Android expérimenté(e) et "
+"que vous souhaitez nous aider à porter Ubuntu Touch sur d'autres appareils, "
+"visitez la :doc:` section de portage </porting/introduction>`."
 
 #: ../../userguide/install.rst:24
 msgid ""
@@ -1867,20 +1993,31 @@ msgid ""
 "github.com/ubports/ubports-installer/issues/new>`_ to help us solve the "
 "problem."
 msgstr ""
+"Si vous avez besoin d'aide, vous pouvez rejoindre les salons de discussion "
+"et de soutient d'UBports sur `Telegram <https://t.me/WelcomePlus>`_ ou `"
+"Matrix <https://matrix.to/#/!KwdniMNeTmClpgHkND:matrix.org?via=matrix.org&via"
+"=ubports.chat&via=disroot.org>`_ ou poser une question `dans le forum "
+"<https://forums.ubports.com/>`_ ou sur `Ask Ubuntu <https://askubuntu.com>`"
+"_. Si vous pensez que l'Installateur d'UBports ne marche pas correctement, "
+"vous pouvez aussi `documenter un nouveau problème <https://github.com/"
+"ubports/ubports-installer/issues/new>`_ pour nous aider à le résoudre."
 
 #: ../../userguide/install.rst:27
 msgid "Connection lost during installation"
-msgstr ""
+msgstr "Connexion perdue pendant l'installation"
 
 #: ../../userguide/install.rst:29
 msgid ""
 "Try a different USB cable and a different USB port on your computer. Cheap "
 "and old cables tend to lose connection during the installation."
 msgstr ""
+"Essayez un autre câble USB et un autre port USB sur votre ordinateur. Les "
+"câbles bon marché et âgés ont tendance à perdre la connexion lors de "
+"l'installation."
 
 #: ../../userguide/install.rst:32
 msgid "Windows Defender prevents Installer from starting"
-msgstr ""
+msgstr "Windows Defender empêche l'installateur de démarrer"
 
 #: ../../userguide/install.rst:34
 msgid ""
@@ -1889,51 +2026,62 @@ msgid ""
 "dismiss the warning, click on \"More Information\", then select \"Run anyway"
 "\"."
 msgstr ""
+"Nous avons contacté Microsoft au sujet de ce problème, mais ils semblent "
+"penser que c'est une situation `normale <https://twitter.com/Windows/status/"
+"1014984163433295875>`__. Pour annuler l'avertissement, cliquez sur « Plus "
+"d'informations », puis sélectionnez « Exécuter quand même »."
 
 #: ../../userguide/install.rst:37
 msgid "Device not detected"
-msgstr ""
+msgstr "Appareil non détecté"
 
 #: ../../userguide/install.rst:40
 msgid "Virtual Machine"
-msgstr ""
+msgstr "Machine virtuelle"
 
 #: ../../userguide/install.rst:42
 msgid ""
 "If you're running the installer in a virtual machine, make sure the virtual "
 "machine is allowed to access the USB port."
 msgstr ""
+"Si vous exécutez l'installateur dans une machine virtuelle, assurez-vous que "
+"la machine virtuelle a l'autorisation d'accéder au port USB."
 
 #: ../../userguide/install.rst:45
 msgid "Windows ADB drivers"
-msgstr ""
+msgstr "Pilotes ADB de Windows"
 
 #: ../../userguide/install.rst:47
 msgid ""
 "Install the `universal adb driver <http://adb.clockworkmod.com/>`_ and "
 "reboot your computer."
 msgstr ""
+"Installez le `pilote ADB universel <http://adb.clockworkmod.com/>`_ et "
+"redémarrez votre ordinateur."
 
 #: ../../userguide/install.rst:50
-#, fuzzy
 msgid "Fairphone 2 Vendor-ID"
-msgstr "Fairphone 2 Vendor-ID"
+msgstr "Identification du fabricant pour le Fairphone 2"
 
 #: ../../userguide/install.rst:52
 msgid ""
 "Run ``echo 0x2ae5 >> ~/.android/adb_usb.ini`` in the terminal and restart "
 "the installer. This does not affect the snap package."
 msgstr ""
+"Exécutez ``echo 0x2ae5 >> ~/.android/adb_usb.ini`` dans le terminal et "
+"redémarrez l'installateur. Cela n'affecte pas le paquet Snap."
 
 #: ../../userguide/install.rst:55
 msgid "Missing udev-rules"
-msgstr ""
+msgstr "Règles Udev manquantes"
 
 #: ../../userguide/install.rst:57
 msgid ""
 "If the device not detected on Linux and packages other than snap, you might "
 "be missing **udev-rules**."
 msgstr ""
+"Si l'appareil n'est pas détecté sur Linux et pour les paquets autres que "
+"Snap, il se peut que vous manquiez de **règles Udev**."
 
 #: ../../userguide/install.rst:59
 msgid ""
@@ -1941,10 +2089,14 @@ msgid ""
 "below. If not, add them to the file and run ``sudo service udev restart`` or "
 "``sudo udevadm control --reload-rules && udevadm trigger``."
 msgstr ""
+"Regardez si ``/etc/udev/rules.d/51-android.rules`` existe et contient les "
+"règles ci-dessous. Si ce n'est pas le cas, ajoutez-lesau fichier et exécutez "
+"``sudo service udev restart`` ou ``sudo udevadm control --reload-rules && "
+"udevadm trigger``."
 
 #: ../../userguide/install.rst:99
 msgid "Other issues"
-msgstr ""
+msgstr "Autres problèmes"
 
 #: ../../userguide/install.rst:101
 msgid ""
@@ -1952,6 +2104,9 @@ msgid ""
 "manual installation instructions for your device `on the devices page "
 "<https://devices.ubuntu-touch.io/>`_."
 msgstr ""
+"Si les conseils de dépannage ne fonctionnent pas, vous pouvez également "
+"essayer de suivre les instructions d'installation manuelle de votre appareil "
+"`sur la page dédiée <https://devices.ubuntu-touch.io/>`_."
 
 #: ../../userguide/install.rst:104
 msgid "Install on legacy Android devices"
@@ -2010,10 +2165,11 @@ msgstr ""
 "ordinateur) à au moins 40%."
 
 #: ../../userguide/install.rst:119
-#, fuzzy
 msgid ""
 "Download the Ubuntu Touch ROM for your device and extract the zip files:"
-msgstr "Téléchargez la ROM Ubuntu Touch pour votre appareil :"
+msgstr ""
+"Téléchargez la ROM d'Ubuntu Touch pour votre appareil et extrayez les "
+"fichiers zippés :"
 
 #: ../../userguide/install.rst:121
 msgid ""
@@ -2054,13 +2210,12 @@ msgstr ""
 "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
 
 #: ../../userguide/install.rst:127
-#, fuzzy
 msgid ""
 "Download the latest version of `SP flash tool <https://spflashtool.com/"
 "download/>`_ (*aka MTK flash tool*)."
 msgstr ""
-"Vous devrez également utiliser la dernière version de l'outil <https://"
-"spflashtool.com/download/SP_Flash_Tool_v5.1744_Linux.zip>`_."
+"Téléchargez la dernière version de `SP Flash Tool <https://spflashtool.com/"
+"download/>`_ (*aussi appelé MTK Flash Tool*)."
 
 #: ../../userguide/install.rst:128
 msgid "Extract the zip files"
@@ -2071,6 +2226,8 @@ msgid ""
 "Open a Terminal, enter the SP flash tool directory and run it with ``sudo ./"
 "flash_tool.sh``."
 msgstr ""
+"Ouvrez un terminal, renseignez le répertoire de SP Flash Tool et lancez-le "
+"avec ``sudo ./flash_tool.sh``."
 
 #: ../../userguide/install.rst:133
 msgid ""
@@ -2095,15 +2252,15 @@ msgid "Choose \"Firmware Upgrade\" from the drop-down menu."
 msgstr "Choisissez « Mise à jour du micrologiciel »."
 
 #: ../../userguide/install.rst:146
-#, fuzzy
 msgid ""
 "If you select DOWNLOAD ONLY rather than FIRMWARE UPGRADE, you will end up "
 "with a useless brick rather than a fancy Ubuntu Touch device. Be sure to "
 "select FIRMWARE UPGRADE."
 msgstr ""
-"Si vous sélectionnez TÉLÉCHARGER au lieu de MISE À JOUR DU MICROLOGICIEL, "
-"vous obtiendrez une brique inutile en lieu et place d'un élégant appareil "
-"sous Ubuntu Touch. Assurez-vous de sélectionner MISE À JOUR DU MICROLOGICIEL."
+"Si vous sélectionnez TÉLÉCHARGER UNIQUEMENT au lieu de MISE À JOUR DU "
+"MICROLOGICIEL, vous obtiendrez une brique inutile en lieu et place d'un "
+"élégant appareil sous Ubuntu Touch. Assurez-vous de sélectionner MISE À JOUR "
+"DU MICROLOGICIEL."
 
 #: ../../userguide/install.rst:148
 msgid ""
@@ -2111,6 +2268,9 @@ msgid ""
 "choice is reset to DOWNLOAD ONLY. Be sure to select it after selecting the "
 "file."
 msgstr ""
+"De plus, après avoir sélectionné le fichier ``*Android_scatter.txt``, le "
+"choix du menu déroulant est réinitialisé sur TÉLÉCHARGER UNIQUEMENT. Assurez-"
+"vous de le sélectionner après avoir sélectionné le fichier."
 
 #: ../../userguide/install.rst:150
 msgid "Turn your device completely off, but do not connect it yet."
@@ -2139,14 +2299,12 @@ msgstr ""
 "de communication avec votre appareil."
 
 #: ../../userguide/install.rst:154
-#, fuzzy
 msgid ""
 "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Wait "
 "till all the progress bars ended."
 msgstr ""
 "`La magie <https://fr.wikipedia.org/wiki/Trois_lois_de_Clarke>`_ opère. "
-"Votre appareil démarrera sous une version extrêmement ancienne d'Ubuntu "
-"Touch."
+"Attendez la fin de toutes les barres de progression."
 
 #: ../../userguide/install.rst:158
 msgid ""
@@ -2157,9 +2315,16 @@ msgid ""
 "articles/2015/09/16/ubuntu-android-installation-process-for-bq-aquaris-e4-5-"
 "and-e5/>`_ with SP flash tool, close it and try again from step 4."
 msgstr ""
+"Si l'installation échoue avec une barre rouge à 100 % et qu'elle y reste (et "
+"que les journaux indiquent quelque chose comme ``le port COM est ouvert. "
+"Essayez de synchroniser avec la cible...``), supprimez le paquet "
+"``modemmanager`` puisque celui installé `n'est pas compatible "
+"<https://web.archive.org/web/20180118130643/http://www.mibqyyo.com/"
+"en-articles/2015/09/16/"
+"ubuntu-android-installation-process-for-bq-aquaris-e4-5-and-e5/>`_ avec SP "
+"Flash Tool, fermez-le et essayez de nouveau à partir de l'étape 4."
 
 #: ../../userguide/install.rst:160
-#, fuzzy
 msgid ""
 "Congratulations! Your device will now boot into a super old version of "
 "Ubuntu Touch. You can now use the UBports Installer to install an updated "
@@ -2167,7 +2332,7 @@ msgid ""
 msgstr ""
 "Félicitations ! Votre appareil démarrera sous une version extrêmement "
 "ancienne d'Ubuntu Touch. Vous pouvez désormais utiliser l'installateur "
-"d'UBports pour continuer."
+"d'UBports pour installer une version mise à jour."
 
 #~ msgid "Now start the ssh server::"
 #~ msgstr "Démarrez maintenant votre serveur ssh::"

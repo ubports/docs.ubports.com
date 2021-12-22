@@ -6,6 +6,8 @@ Fonts
 
 Our default font is `Ubuntu <https://design.ubuntu.com/font/>`__ `[2] <https://en.wikipedia.org/wiki/Ubuntu_(typeface)>`__ installed in the system.
 
+.. rst-class:: invert-grayscale
+
 .. figure:: /_static/images/humanguide/01.png
 
 For the font sizes to be consistent across devices, instead of setting the font size as a number of pixels or points, it is imperative to define the font size in terms of size names:

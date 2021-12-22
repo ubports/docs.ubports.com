@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 17:42-0600\n"
+"POT-Creation-Date: 2021-12-07 11:45-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -460,6 +460,31 @@ msgstr ""
 msgid "|stock_message.svg| |share.svg| |stock_alarm-clock.svg| |security-alert.svg| |settings.svg|"
 msgstr ""
 
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:82
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:82
+msgid "stock_message.svg"
+msgstr ""
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:83
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:83
+msgid "share.svg"
+msgstr ""
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:84
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:84
+msgid "stock_alarm-clock.svg"
+msgstr ""
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:85
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:85
+msgid "security-alert.svg"
+msgstr ""
+
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:86
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:86
+msgid "settings.svg"
+msgstr ""
+
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:12
 msgid "See a `list of the icons <http://docs.ubports.com/projects/icons/>`__. available in the system."
 msgstr ""
@@ -480,51 +505,51 @@ msgstr ""
 msgid "To provide a consistent look to the UI and to make the Suru icons distinctive, the design is based on the same patterns as the Ubuntu font. The font patterns can applied to the symbol to define its contours."
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:27
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:29
 msgid "Strokes"
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:29
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:31
 msgid "Stroke ends are squared but the upper end of vertical strokes is slightly oblique with a +10º angle."
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:34
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:38
 msgid "Rotation"
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:36
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:40
 msgid "When they are not horizontal or vertical, objects are oriented along a +45º axis."
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:41
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:47
 msgid "Corners"
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:43
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:49
 msgid "Curved corners are preferred if possible. The following picture shows a zoom on the default outer and inner curvatures, with nodes and Bezier handle. The default curvature can be scaled down when the shape is smaller."
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:48
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:56
 msgid "Arrows"
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:50
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:58
 msgid "A chevron symbol is used for navigation arrows. The arrowhead is an isosceles triangle where the two equal sides are slightly curved (following the pattern of the Y character)."
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:55
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:65
 msgid "Opacity"
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:57
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:67
 msgid "50% opacity is used to reflect the status of an indicator. In case of a double space (enabled and disabled, for example), the opacity of the whole icon changes. When the status allows a range of values, the opacity of a single portion of icon can be altered."
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:62
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:74
 msgid "Grid"
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:64
+#: ../../humanguide/design-concepts/in-app-icons-design.rst:76
 msgid "Interface icons are designed for 96x96 pixels, with at least 4 pixels of margin on every side."
 msgstr ""
 
@@ -672,132 +697,132 @@ msgstr ""
 msgid "Our default font is `Ubuntu <https://design.ubuntu.com/font/>`__ `[2] <https://en.wikipedia.org/wiki/Ubuntu_(typeface)>`__ installed in the system."
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:11
+#: ../../humanguide/design-concepts/typography.rst:13
 msgid "For the font sizes to be consistent across devices, instead of setting the font size as a number of pixels or points, it is imperative to define the font size in terms of size names:"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:14
+#: ../../humanguide/design-concepts/typography.rst:16
 msgid "Font Size Name"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:14
+#: ../../humanguide/design-concepts/typography.rst:16
 msgid "gu"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:14
+#: ../../humanguide/design-concepts/typography.rst:16
 msgid "Desktop"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:14
+#: ../../humanguide/design-concepts/typography.rst:16
 msgid "Phone"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:14
+#: ../../humanguide/design-concepts/typography.rst:16
 msgid "Tablet"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:18
+#: ../../humanguide/design-concepts/typography.rst:20
 msgid "4\" HD Screen"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:18
+#: ../../humanguide/design-concepts/typography.rst:20
 msgid "10\" HD screen"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:21
+#: ../../humanguide/design-concepts/typography.rst:23
 msgid "x-small"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:21
+#: ../../humanguide/design-concepts/typography.rst:23
 msgid "1.25"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:21
+#: ../../humanguide/design-concepts/typography.rst:23
 msgid "10 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:21
+#: ../../humanguide/design-concepts/typography.rst:23
 msgid "22 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:21
 #: ../../humanguide/design-concepts/typography.rst:23
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "12 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:23
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "small"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:23
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "1.5"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:23
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "27 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:23
+#: ../../humanguide/design-concepts/typography.rst:25
 msgid "15 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:25
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "medium"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:25
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "1.75"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:25
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "14 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:25
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "31 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:25
+#: ../../humanguide/design-concepts/typography.rst:27
 msgid "18 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:27
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "large"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:27
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "2.5"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:27
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "20 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:27
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "45 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:27
+#: ../../humanguide/design-concepts/typography.rst:29
 msgid "25 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:29
+#: ../../humanguide/design-concepts/typography.rst:31
 msgid "x-large"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:29
+#: ../../humanguide/design-concepts/typography.rst:31
 msgid "3.5"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:29
+#: ../../humanguide/design-concepts/typography.rst:31
 msgid "34 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:29
+#: ../../humanguide/design-concepts/typography.rst:31
 msgid "76 px"
 msgstr ""
 
-#: ../../humanguide/design-concepts/typography.rst:29
+#: ../../humanguide/design-concepts/typography.rst:31
 msgid "42 px"
 msgstr ""
 
@@ -993,28 +1018,36 @@ msgstr ""
 msgid "Convergence is one of the milestones Ubuntu Touch wants to achieve. One app available across all screen sizes and input methods, such as mobile handsets, tablets, and laptops."
 msgstr ""
 
-#: ../../humanguide/other-design-considerations/convergence.rst:9
+#: ../../humanguide/other-design-considerations/convergence.rst:8
+msgid "Convergence refers to the ability to use the same code base across multiple hardware form factors. Multiple devices using the same code base allows for features to be developed once, then shipped on multiple device types. This reducing development time and cost. The goal is for Ubuntu Touch to provide a consistent experience, whether you are using it on a big screen with mouse and keyboard or on a small touchscreen."
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/convergence.rst:11
 msgid "Screen size"
 msgstr ""
 
-#: ../../humanguide/other-design-considerations/convergence.rst:13
+#: ../../humanguide/other-design-considerations/convergence.rst:15
 msgid "Ubuntu Touch Tweak Tool app"
 msgstr ""
 
-#: ../../humanguide/other-design-considerations/convergence.rst:15
+#: ../../humanguide/other-design-considerations/convergence.rst:17
 msgid "Main page stays as the main page on phones or on the left on bigger screen devices. Additional pages on the phone, can be displayed at variable sizes on the right on bigger screens."
 msgstr ""
 
-#: ../../humanguide/other-design-considerations/convergence.rst:18
+#: ../../humanguide/other-design-considerations/convergence.rst:20
 msgid "Input method"
 msgstr ""
 
-#: ../../humanguide/other-design-considerations/convergence.rst:20
+#: ../../humanguide/other-design-considerations/convergence.rst:22
 msgid "Using touch, a user can swipe or long-press on a list item to reveal a contextual menu. Using a pointer (mouse or trackpad) a user can right-click the item to reveal the contextual menu. Using a keyboard a user can focus the desired item and press the MENU key to open the context menu."
 msgstr ""
 
 #: ../../humanguide/other-design-considerations/index.rst:2
 msgid "Other design considerations"
+msgstr ""
+
+#: ../../humanguide/other-design-considerations/index.rst:13
+msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
 msgstr ""
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:2

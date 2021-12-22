@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2020-12-29 07:26+0000\n"
-"Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
+"POT-Creation-Date: 2021-06-29 16:27-0500\n"
+"PO-Revision-Date: 2021-06-30 22:28+0000\n"
+"Last-Translator: Герман Семенов <GermanAizek@yandex.ru>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-systemdev/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.3\n"
 
 #: ../../systemdev/calendars.rst:2
@@ -184,6 +184,32 @@ msgstr ""
 "Чтобы настройки вступили в силу, нужно перезапустить ``syncevolution``, как "
 "описывалось выше."
 
+#: ../../systemdev/guides.rst:2
+msgid "System Software guides"
+msgstr "Инструкции по системным программам"
+
+#: ../../systemdev/guides.rst:4
+msgid ""
+"These guides will give you general instructions on building and testing your "
+"own changes to Ubuntu Touch system software. They are not not an exhaustive "
+"reference on everything you will come across during development, but they "
+"are a great starting point."
+msgstr ""
+"Здесь содержатся общие инструкции по созданию и тестированию ваших "
+"собственных изменений в системном программном обеспечении Ubuntu Touch. Они "
+"не содержат всего, с чем можно столкнуться во время разработки, но они "
+"являются хорошим подспорьем."
+
+#: ../../systemdev/guides.rst:8
+msgid ""
+"If you get stuck at any point while going through this documentation, please "
+"contact us for help via `the UBports Forum <https://forums.ubports.com>`_ or "
+"your preferred communication medium."
+msgstr ""
+"Если в какой-то момент у Вас возникли вопросы или трудности, пожалуйста "
+"обратитесь на `форум сообщества UBports <https://forums.ubports.com>`_ или в "
+"группы Telegram."
+
 #: ../../systemdev/index.rst:2
 msgid "System software development"
 msgstr "Разработка системного ПО"
@@ -209,65 +235,9 @@ msgstr ""
 "В этом разделе не описываются уже предустановленные в системе приложения. "
 "Для них выделен раздел :doc:`/contribute/preinstalled-apps`."
 
-#: ../../systemdev/index.rst:9 ../../systemdev/kernel-hal.rst:2
+#: ../../systemdev/kernel-hal.rst:2
 msgid "Kernel and hardware abstraction"
 msgstr "Абстракции уровня ядра и аппаратного уровня"
-
-#: ../../systemdev/index.rst:11
-msgid ""
-"This section covers how to build and install the Linux kernel and hardware "
-"abstraction layer for supported devices."
-msgstr ""
-"В этом разделе рассказывается, как собрать и установить абстракции уровня "
-"ядра Linux и уровня оборудования для поддерживаемых устройств."
-
-#: ../../systemdev/index.rst:23
-msgid "System Software guides"
-msgstr "Инструкции по системным программам"
-
-#: ../../systemdev/index.rst:25
-msgid ""
-"These guides will give you general instructions on building and testing your "
-"own changes to Ubuntu Touch system software. They are not not an exhaustive "
-"reference on everything you will come across during development, but they "
-"are a great starting point."
-msgstr ""
-"Здесь содержатся общие инструкции по созданию и тестированию ваших "
-"собственных изменений в системном программном обеспечении Ubuntu Touch. Они "
-"не содержат всего, с чем можно столкнуться во время разработки, но они "
-"являются хорошим подспорьем."
-
-#: ../../systemdev/index.rst:29
-msgid ""
-"If you get stuck at any point while going through this documentation, please "
-"contact us for help via `the UBports Forum <https://forums.ubports.com>`_ or "
-"your preferred communication medium."
-msgstr ""
-"Если в какой-то момент у Вас возникли вопросы или трудности, пожалуйста "
-"обратитесь на `форум сообщества UBports <https://forums.ubports.com>`_ или в "
-"группы Telegram."
-
-#: ../../systemdev/index.rst:39
-msgid "System Software reference"
-msgstr "Справочник по системному ПО"
-
-#: ../../systemdev/index.rst:41
-msgid ""
-"This section includes reference guides on how different parts of the Ubuntu "
-"Touch system interact to create the user experience."
-msgstr ""
-"В этот раздел включены справочные руководства о том, как различные "
-"компоненты системы Ubuntu Touch работают для создания пользовательского "
-"опыта."
-
-#: ../../systemdev/index.rst:43
-msgid ""
-"There's not much here yet, but maybe you'd like to add some reference "
-"material? Check out :doc:`our guide to contributing to documentation </"
-"contribute/documentation>` to learn more."
-msgstr ""
-"Тут пока мало информации. Может быть, Вы хотите дополнить эти инструкции? "
-"Прочитайте :doc:`главу о том, как можно помочь </contribute/documentation>`."
 
 #: ../../systemdev/kernel-hal.rst:4
 msgid ""
@@ -309,11 +279,11 @@ msgstr ""
 "Есть несколько различных групп устройств Ubuntu Touch в зависимости от того, "
 "как реализована абстракция ядра и оборудования:"
 
-#: ../../systemdev/kernel-hal.rst:16 ../../systemdev/kernel-hal.rst:21
+#: ../../systemdev/kernel-hal.rst:16 ../../systemdev/kernel-hal.rst:29
 msgid "Android 5.1 based ports"
 msgstr "Портированные версии на основе ОС Android 5.1"
 
-#: ../../systemdev/kernel-hal.rst:17 ../../systemdev/kernel-hal.rst:56
+#: ../../systemdev/kernel-hal.rst:17 ../../systemdev/kernel-hal.rst:64
 msgid "Halium based ports"
 msgstr "Сборки, основанные на Halium"
 
@@ -321,7 +291,7 @@ msgstr "Сборки, основанные на Halium"
 msgid "Linux kernel"
 msgstr "Ядро Linux"
 
-#: ../../systemdev/kernel-hal.rst:23
+#: ../../systemdev/kernel-hal.rst:31
 msgid ""
 "Android 5.1 based ports of Ubuntu Touch consist of the Linux kernel for this "
 "device plus a minimal Android system that is used to enable all the "
@@ -337,7 +307,7 @@ msgstr ""
 "Эти модифицированные и переработанные сборки построены на устаревших версиях "
 "официального ядра Linux."
 
-#: ../../systemdev/kernel-hal.rst:25
+#: ../../systemdev/kernel-hal.rst:33
 msgid ""
 "For some devices continuous integration (CI) has been set up to build both "
 "the Kernel as well as the Android system. Other devices have to be built "
@@ -349,78 +319,85 @@ msgstr ""
 "Для некоторых устройств настроен механизм непрерывной интеграции (CI) для "
 "создания сборок ядер и системы Android. Для некоторых устройств сборки нужно "
 "формировать нужно вручную из репозиториев. Для многих устройств, к "
-"сожалению, в свободном доступе нет исходных кодов ядер системы и "
-"драйверов.Компании Bq и Meizu свободно распространяют исходные коды ядра, но "
-"файл «Android device tree» не является общедоступным. Вместо него, эти "
-"компании предлагают уже откомпилированные сборки ОС Android."
+"сожалению, в свободном доступе нет исходных кодов ядер системы и драйверов."
+"Компании Bq и Meizu свободно распространяют исходные коды ядра, но файл "
+"«Android device tree» не является общедоступным. Вместо него, эти компании "
+"предлагают уже откомпилированные сборки ОС Android."
 
-#: ../../systemdev/kernel-hal.rst:29
+#: ../../systemdev/kernel-hal.rst:37
 msgid "With CI"
 msgstr "С помощью системы CI"
 
-#: ../../systemdev/kernel-hal.rst:28
+#: ../../systemdev/kernel-hal.rst:36
 msgid "Nexus 5 (hammerhead)"
-msgstr "Nexus 5 (hammerhead)"
+msgstr "Nexus 5 (кодовое название hammerhead)"
 
-#: ../../systemdev/kernel-hal.rst:29
+#: ../../systemdev/kernel-hal.rst:37
 msgid "OnePlus One (bacon)"
-msgstr "OnePlus One (bacon)"
+msgstr "OnePlus One (кодовое название bacon)"
 
-#: ../../systemdev/kernel-hal.rst:30
+#: ../../systemdev/kernel-hal.rst:38
 msgid "Fairphone 2 (FP2)"
-msgstr "Fairphone 2 (FP2)"
+msgstr "Fairphone 2 (кодовое название FP2)"
 
-#: ../../systemdev/kernel-hal.rst:32
+#: ../../systemdev/kernel-hal.rst:40
 msgid "Manual builds"
 msgstr "Ручные сборки"
 
-#: ../../systemdev/kernel-hal.rst:32
+#: ../../systemdev/kernel-hal.rst:40
 msgid "Nexus 4 (mako)"
-msgstr "Nexus 4 (mako)"
-
-#: ../../systemdev/kernel-hal.rst:33
-msgid "Nexus 7 2013 Wifi (flo)"
-msgstr "Nexus 7 2013 Wifi (flo)"
+msgstr "Nexus 4 (кодовое название mako)"
 
 #: ../../systemdev/kernel-hal.rst:41
+msgid "Nexus 7 2013 Wifi (flo)"
+msgstr "Nexus 7 2013 Wifi (кодовое название flo)"
+
+#: ../../systemdev/kernel-hal.rst:49
 msgid "(Partial) Binary builds"
 msgstr "(Частично) Откомпилированные сборки"
 
-#: ../../systemdev/kernel-hal.rst:35
-msgid ""
-"Bq Aquaris E4.5 (`krillin <https://github.com/ubports/kernel_krillin>`_)"
-msgstr ""
-"Bq Aquaris E4.5 (`krillin <https://github.com/ubports/kernel_krillin>`_)"
-
-#: ../../systemdev/kernel-hal.rst:36
-msgid ""
-"Bq Aquaris E5 (`vegetahd <https://github.com/ubports/kernel_vegetahd>`_)"
-msgstr ""
-"Bq Aquaris E5 (`vegetahd <https://github.com/ubports/kernel_vegetahd>`_)"
-
-#: ../../systemdev/kernel-hal.rst:37
-msgid ""
-"Bq Aquaris M10 HD (`cooler <https://github.com/ubports/kernel_bq_m10>`_)"
-msgstr ""
-"Bq Aquaris M10 HD (`cooler <https://github.com/ubports/kernel_bq_m10>`_)"
-
-#: ../../systemdev/kernel-hal.rst:38
-msgid "Bq Aquaris M10 FHD (frieza)"
-msgstr "Bq Aquaris M10 FHD (frieza)"
-
-#: ../../systemdev/kernel-hal.rst:39
-msgid "Meizu MX4 (`arale <https://github.com/ubports/kernel_arale>`_)"
-msgstr "Meizu MX4 (`arale <https://github.com/ubports/kernel_arale>`_)"
-
-#: ../../systemdev/kernel-hal.rst:40
-msgid "Meizu Pro 5 (`turbo <https://github.com/ubports/kernel_turbo>`_)"
-msgstr "Meizu Pro 5 (`turbo <https://github.com/ubports/kernel_turbo>`_)"
-
-#: ../../systemdev/kernel-hal.rst:41
-msgid "Nexus 7 2013 GSM (deb)"
-msgstr "Nexus 7 2013 GSM (deb)"
-
 #: ../../systemdev/kernel-hal.rst:43
+msgid ""
+"Bq Aquaris E4.5 (`krillin <https://github.com/ubports/kernel_krillin>`_)"
+msgstr ""
+"Bq Aquaris E4.5 (`кодовое название krillin <https://github.com/ubports/"
+"kernel_krillin>`_)"
+
+#: ../../systemdev/kernel-hal.rst:44
+msgid ""
+"Bq Aquaris E5 (`vegetahd <https://github.com/ubports/kernel_vegetahd>`_)"
+msgstr ""
+"Bq Aquaris E5 (`кодовое название vegetahd <https://github.com/ubports/"
+"kernel_vegetahd>`_)"
+
+#: ../../systemdev/kernel-hal.rst:45
+msgid ""
+"Bq Aquaris M10 HD (`cooler <https://github.com/ubports/kernel_bq_m10>`_)"
+msgstr ""
+"Bq Aquaris M10 HD (`кодовое название cooler <https://github.com/ubports/"
+"kernel_bq_m10>`_)"
+
+#: ../../systemdev/kernel-hal.rst:46
+msgid "Bq Aquaris M10 FHD (frieza)"
+msgstr "Bq Aquaris M10 FHD (кодовое название frieza)"
+
+#: ../../systemdev/kernel-hal.rst:47
+msgid "Meizu MX4 (`arale <https://github.com/ubports/kernel_arale>`_)"
+msgstr ""
+"Meizu MX4 (`кодовое название arale <https://github.com/ubports/"
+"kernel_arale>`_)"
+
+#: ../../systemdev/kernel-hal.rst:48
+msgid "Meizu Pro 5 (`turbo <https://github.com/ubports/kernel_turbo>`_)"
+msgstr ""
+"Meizu Pro 5 (`кодовое название turbo <https://github.com/ubports/"
+"kernel_turbo>`_)"
+
+#: ../../systemdev/kernel-hal.rst:49
+msgid "Nexus 7 2013 GSM (deb)"
+msgstr "Nexus 7 2013 GSM (кодовое название deb)"
+
+#: ../../systemdev/kernel-hal.rst:51
 msgid ""
 "Detailed steps for the three CI enabled devices can be found under  :doc:"
 "`HAL for Nexus 5, OnePlus One, and Fairphone 2 <ubp-5.1>`."
@@ -429,16 +406,16 @@ msgstr ""
 "можно найти в главе:doc:`HAL для Nexus 5, OnePlus One и Fairphone 2 "
 "<ubp-5.1>`."
 
-#: ../../systemdev/kernel-hal.rst:45
+#: ../../systemdev/kernel-hal.rst:53
 msgid ""
 "For the Nexus 7 2013 Wifi (flo) head  over to the `Community Ports "
 "repository for flo <https://gitlab.com/ubports/community-ports/flo>`_."
 msgstr ""
-"Для смартфона Nexus 7 2013 Wifi (flo) можно найти CI-сборку в репозитории `"
-"Community Ports repository for flo <https://gitlab.com/ubports/"
-"community-ports/flo> `_."
+"Для смартфона Nexus 7 2013 Wifi (flo) можно найти CI-сборку в репозитории "
+"`Community Ports repository for flo <https://gitlab.com/ubports/community-"
+"ports/flo> `_."
 
-#: ../../systemdev/kernel-hal.rst:47
+#: ../../systemdev/kernel-hal.rst:55
 msgid ""
 "The port for the Nexus 7 2013 GSM (deb) was created by a community member. "
 "Unfortunately those repositories have disappeared over time. So this build "
@@ -448,24 +425,24 @@ msgstr ""
 "сообщества. К сожалению, со временем эти репозитории были утрачены. Остались "
 "только откомпилированные файлы и образы системы."
 
-#: ../../systemdev/kernel-hal.rst:49
+#: ../../systemdev/kernel-hal.rst:57
 msgid "Todo"
 msgstr "Планы по развитию"
 
-#: ../../systemdev/kernel-hal.rst:50
+#: ../../systemdev/kernel-hal.rst:58
 msgid "Document the process for Nexus 4 (mako)"
 msgstr "Подготовить инструкции для смартфона Nexus 4 (mako)"
 
-#: ../../systemdev/kernel-hal.rst:58
+#: ../../systemdev/kernel-hal.rst:66
 msgid ""
 "Newer ports to Android devices are based on `Halium <https://docs.halium."
 "org>`_. In some aspects Halium is similar to the 5.1 based ports:"
 msgstr ""
-"Новые сборки ОС для устройств Android построены на `Halium "
-"<https://docs.halium.org>` _. Во многом сборки на основе Halium похожи на "
-"сборки на основе Android 5.1:"
+"Новые сборки ОС для устройств Android построены на `Halium <https://docs."
+"halium.org>` _. Во многом сборки на основе Halium похожи на сборки на основе "
+"Android 5.1:"
 
-#: ../../systemdev/kernel-hal.rst:60
+#: ../../systemdev/kernel-hal.rst:68
 msgid ""
 "It also uses the device specific fork of the Linux kernel provided by the "
 "manufacturer."
@@ -473,13 +450,13 @@ msgstr ""
 "Тут также используются специально модифицированные для устройства версии "
 "ядра Linux, подготовленные производителем."
 
-#: ../../systemdev/kernel-hal.rst:61
+#: ../../systemdev/kernel-hal.rst:69
 msgid "It also uses a minimal Android system to enable some hardware."
 msgstr ""
 "Некоторые компоненты Android нужны для корректной работы аппаратной части "
 "смартфона."
 
-#: ../../systemdev/kernel-hal.rst:63
+#: ../../systemdev/kernel-hal.rst:71
 msgid ""
 "However, Halium permits a more generic way of porting to Android devices. "
 "This allows the work to be shared between multiple projects that bring "
@@ -492,7 +469,7 @@ msgstr ""
 "Android. Сборки Halium также основаны на более новых версиях Android 7.1 и "
 "выше."
 
-#: ../../systemdev/kernel-hal.rst:65
+#: ../../systemdev/kernel-hal.rst:73
 msgid ""
 "Some examples of Halium ports are those for Sony Xperia X and Oneplus 3. "
 "Basically all devices that are listed on `devices.ubuntu-touch.io <https://"
@@ -500,25 +477,25 @@ msgid ""
 "or below as Linux based ports."
 msgstr ""
 "Хорошие примеры сборок на основе Halium - сборки ОС для Sony Xperia X и "
-"Oneplus 3. Практически все устройства, перечисленные на страничке `devices"
-".ubuntu-touch.io <https://devices.ubuntu-touch.io>`_, работают на сборках на "
+"Oneplus 3. Практически все устройства, перечисленные на страничке `devices."
+"ubuntu-touch.io <https://devices.ubuntu-touch.io>`_, работают на сборках на "
 "базе ОС Linux, кроме нескольких смартфонов (о них рассказывалось выше, "
 "работают на основе Android 5.1)."
 
-#: ../../systemdev/kernel-hal.rst:67
+#: ../../systemdev/kernel-hal.rst:75
 msgid ""
 "All new ports of UT to Android devices should follow the Halium process. "
-"Further details can be found under :doc:`Halium porting <../porting/Intro>`"
+"Further details can be found under :doc:`Halium porting <../porting/index>`"
 msgstr ""
 "Все новые сборки UT для Android-устройств должны формироваться на базе "
 "Halium. Более подробную информацию можно найти в разделе :doc:`Halium "
-"porting <../porting/Intro>`"
+"porting <../porting/index>`"
 
-#: ../../systemdev/kernel-hal.rst:70
+#: ../../systemdev/kernel-hal.rst:78
 msgid "Linux based ports"
 msgstr "Сборки на базе ОС Linux"
 
-#: ../../systemdev/kernel-hal.rst:72
+#: ../../systemdev/kernel-hal.rst:80
 msgid ""
 "Linux based port refers to devices where a Linux kernel is used without any "
 "Android parts. The following devices are in this group:"
@@ -527,35 +504,35 @@ msgstr ""
 "ядро Linux без каких-либо компонентов Android. В эту группу входят следующие "
 "устройства:"
 
-#: ../../systemdev/kernel-hal.rst:74
+#: ../../systemdev/kernel-hal.rst:82
 msgid "`Desktop PC (x86) <https://devices.ubuntu-touch.io/device/x86/>`_"
 msgstr "`Настольные ПК (x86) <https://devices.ubuntu-touch.io/device/x86/>`_"
 
-#: ../../systemdev/kernel-hal.rst:75
+#: ../../systemdev/kernel-hal.rst:83
 msgid "Librem 5 (librem5)"
-msgstr "Librem 5 (librem5)"
+msgstr "Librem 5 (кодовое название librem5)"
 
-#: ../../systemdev/kernel-hal.rst:76
+#: ../../systemdev/kernel-hal.rst:84
 msgid "Pinebook (pinebook)"
-msgstr "Pinebook (pinebook)"
+msgstr "Pinebook (кодовое название pinebook)"
 
-#: ../../systemdev/kernel-hal.rst:77
+#: ../../systemdev/kernel-hal.rst:85
 msgid ":doc:`Pinephone (pinephone) <kernel-pinephone>`"
-msgstr ":doc:`Pinephone (pinephone) <kernel-pinephone>`"
+msgstr ":doc:`Pinephone (кодовое название pinephone) <kernel-pinephone>`"
 
-#: ../../systemdev/kernel-hal.rst:78
+#: ../../systemdev/kernel-hal.rst:86
 msgid ":doc:`Pinetab (pinetab) <kernel-pinephone>`"
-msgstr ":doc:`Pinetab (pinetab) <kernel-pinephone>`"
+msgstr ":doc:`Pinetab (кодовое название pinetab) <kernel-pinephone>`"
 
-#: ../../systemdev/kernel-hal.rst:79
+#: ../../systemdev/kernel-hal.rst:87
 msgid ""
 "`Raspberry Pi (rpi) <https://gitlab.com/ubports/community-ports/"
 "raspberrypi>`_ (see also this `blog post <https://ubports.com/blog/ubports-"
 "blog-1/post/raspberry-pi-266>`_)"
 msgstr ""
-"`Raspberry Pi (rpi) <https://gitlab.com/ubports/community-ports/raspberrypi>`"
-"_ (также прочитайте `эту заметку <https://ubports.com/blog/ubports-blog-1/"
-"post/raspberry-pi-266>`_)"
+"`Raspberry Pi (rpi) <https://gitlab.com/ubports/community-ports/"
+"raspberrypi>`_ (также прочитайте `эту заметку <https://ubports.com/blog/"
+"ubports-blog-1/post/raspberry-pi-266>`_)"
 
 #: ../../systemdev/kernel-pinephone.rst:2
 msgid "PinePhone and PineTab kernel"
@@ -632,8 +609,8 @@ msgstr ""
 "ядро, нужно смонтировать раздел boot_a. Проверьте, какое устройство является "
 "SD-картой в системе, и смонтируйте раздел boot_a. В приведенном выше примере "
 "это устройство sdc4. На него записано ядро vmlinuz и связанные с ним файлы: "
-"`` config-5.6.0-pine64`` `dtb`` `initrd.img``` `modules/` `` System.map-5.6 "
-".0-pine64`` ``vmlinuz``."
+"`` config-5.6.0-pine64`` `dtb`` `initrd.img``` `modules/` `` System."
+"map-5.6 .0-pine64`` ``vmlinuz``."
 
 #: ../../systemdev/kernel-pinephone.rst:40
 msgid "Building the kernel"
@@ -674,7 +651,7 @@ msgstr ""
 "успешно обновлено с помощью команды ``uname -a``."
 
 #: ../../systemdev/kernel-pinephone.rst:64
-#: ../../systemdev/mms-infrastructure.rst:49
+#: ../../systemdev/mms-infrastructure.rst:53
 msgid "References"
 msgstr "Справка и помощь"
 
@@ -712,9 +689,9 @@ msgid ""
 "fid=120>`_ is where many other communities gather that work with the "
 "PinePhone"
 msgstr ""
-"`Официальный форум PinePhone <https://forum.pine64.org/"
-"forumdisplay.php?fid=120>` _ - это место, где общаются многие группы "
-"пользователей и поклонников PinePhone"
+"`Официальный форум PinePhone <https://forum.pine64.org/forumdisplay.php?"
+"fid=120>` _ - это место, где общаются многие группы пользователей и "
+"поклонников PinePhone"
 
 #: ../../systemdev/kernel-pinephone.rst:70
 msgid ""
@@ -911,11 +888,11 @@ msgstr "telepathy-ofono отправляет сигнал приложению �
 msgid "Incoming MMS diagram"
 msgstr "Диаграмма \"Входящее MMS-сообщение\""
 
-#: ../../systemdev/mms-infrastructure.rst:44
+#: ../../systemdev/mms-infrastructure.rst:46
 msgid "Outgoing MMS diagram"
 msgstr "Диаграмма \"Исходящее MMS-сообщение\""
 
-#: ../../systemdev/mms-infrastructure.rst:51
+#: ../../systemdev/mms-infrastructure.rst:55
 msgid "initial source: https://wiki.ubuntu.com/Touch/Specs/MMSInfrastructure"
 msgstr ""
 "Исходный документ: https://wiki.ubuntu.com/Touch/Specs/MMSInfrastructure"
@@ -1151,7 +1128,7 @@ msgstr ""
 
 #: ../../systemdev/qtmir-qtubuntu.rst:7
 msgid "QtMir"
-msgstr "QtMir"
+msgstr "QtMir (server)"
 
 #: ../../systemdev/qtmir-qtubuntu.rst:9
 msgid ""
@@ -1192,7 +1169,7 @@ msgstr "Затем перезапустите Unity8:"
 
 #: ../../systemdev/qtmir-qtubuntu.rst:26
 msgid "QtUbuntu"
-msgstr "QtUbuntu"
+msgstr "QtUbuntu (client)"
 
 #: ../../systemdev/qtmir-qtubuntu.rst:28
 msgid ""
@@ -1275,6 +1252,28 @@ msgstr ""
 "`QtUbuntu-Media`_ обеспечивает аппаратное кодирование и декодирование аудио/"
 "видео контента на устройствах Android в `QtMultimedia`_ Компонент тесно "
 "связан с `media-hub`_."
+
+#: ../../systemdev/reference.rst:2
+msgid "System Software reference"
+msgstr "Справочник по системному ПО"
+
+#: ../../systemdev/reference.rst:4
+msgid ""
+"This section includes reference guides on how different parts of the Ubuntu "
+"Touch system interact to create the user experience."
+msgstr ""
+"В этот раздел включены справочные руководства о том, как различные "
+"компоненты системы Ubuntu Touch работают для создания пользовательского "
+"опыта."
+
+#: ../../systemdev/reference.rst:6
+msgid ""
+"There's not much here yet, but maybe you'd like to add some reference "
+"material? Check out :doc:`our guide to contributing to documentation </"
+"contribute/documentation>` to learn more."
+msgstr ""
+"Тут пока мало информации. Может быть, Вы хотите дополнить эти инструкции? "
+"Прочитайте :doc:`главу о том, как можно помочь </contribute/documentation>`."
 
 #: ../../systemdev/testing-locally.rst:2
 msgid "Making changes and testing locally"
@@ -1606,12 +1605,12 @@ msgstr ""
 #: ../../systemdev/ubp-5.1.rst:9
 msgid ""
 "We highly suggest that you follow the :doc:`Halium porting guide <../porting/"
-"Intro>` if you want to bring up a new device. The steps in here are only "
+"index>` if you want to bring up a new device. The steps in here are only "
 "relevant for hammerhead, bacon and FP2."
 msgstr ""
 "Перед созданием сборки для нового устройства настоятельно рекомендуется "
-"прочитать :doc:`Руководство по созданию сборок на основе Halium <../ porting "
-"/ Intro>`. Приведенные здесь инструкции актуальны только для устройств "
+"прочитать :doc:`Руководство по созданию сборок на основе Halium <../ porting/"
+"index>`. Приведенные здесь инструкции актуальны только для устройств "
 "hammerhead, bacon и FP2."
 
 #: ../../systemdev/ubp-5.1.rst:11
@@ -1742,8 +1741,8 @@ msgid ""
 msgstr ""
 "Чтобы установить новую сборку образа системы, используйте `скрипт replace-"
 "android-system script <https://github.com/janimo/phablet-porting-scripts/"
-"blob/68734ca07998b8e784397df77d9aca4b968b3815/build/replace-android-system>`"
-"_.. Когда телефон подключён к ПК, его можно запустить так::"
+"blob/68734ca07998b8e784397df77d9aca4b968b3815/build/replace-android-"
+"system>`_.. Когда телефон подключён к ПК, его можно запустить так::"
 
 #: ../../systemdev/uploading-changes.rst:2
 msgid "Uploading and testing with ``ubports-qa``"
@@ -2230,3 +2229,10 @@ msgstr ""
 #: ../../systemdev/uploading-changes.rst:153
 msgid "Thank you for your contribution to Ubuntu Touch!"
 msgstr "Спасибо за вклад в развитие операционной системы Ubuntu Touch!"
+
+#~ msgid ""
+#~ "This section covers how to build and install the Linux kernel and "
+#~ "hardware abstraction layer for supported devices."
+#~ msgstr ""
+#~ "В этом разделе рассказывается, как собрать и установить абстракции уровня "
+#~ "ядра Linux и уровня оборудования для поддерживаемых устройств."

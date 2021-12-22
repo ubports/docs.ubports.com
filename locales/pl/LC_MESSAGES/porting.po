@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-02-19 17:55+0000\n"
+"PO-Revision-Date: 2021-07-08 19:57+0000\n"
 "Last-Translator: Carlod <carlod@disroot.org>\n"
 "Language-Team: Polish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/pl/>\n"
@@ -368,7 +368,7 @@ msgstr ""
 msgid "To determine your device's specifications, search for it on `GSM Arena <https://www.gsmarena.com>`_ and/or `Device Specification <https://www.devicespecifications.com/en>`_."
 msgstr ""
 "By określić specyfikacje twojego urządzenia, wyszkaj je na `GSM Arena "
-"<https://www.gsmarena.com>` i/lub ``Device Specification "
+"<https://www.gsmarena.com>`_ i/lub `Device Specification "
 "<https://www.devicespecifications.com/en>`_."
 
 #: ../../porting/Preparations.rst:8
@@ -481,9 +481,9 @@ msgstr "\"Praca w toku\""
 msgid "For the time being, Halium 7.1 porters should refer to the UBports porting notes on `the UBPorts installer and System image <https://github.com/ubports/porting-notes/wiki/HowTo:-UBports-Installer-&-System-Image-(Halium-7.1)>`_."
 msgstr ""
 "Na obecną chwile porterzy Halium 7.1 powinni opierać się na notatkach "
-"UBports, które znajdują się`the UBPorts installer and System image "
-"<https://github.com/ubports/porting-notes/wiki/HowTo:-UBports-Installer"
-"-&-System-Image-(Halium-7.1)>`_."
+"portowania UBports o `Instalatorze Ubports i Obrazie systemu <https://github."
+"com/ubports/porting-notes/wiki/HowTo:-UBports-Installer-&-System-"
+"Image-(Halium-7.1)>`_."
 
 #: ../../porting/UBports_recovery.rst:2
 msgid "Building UBports recovery"
@@ -558,6 +558,10 @@ msgstr "Naprawianie punktów montowania"
 #: ../../porting/halium_7-1/Building.rst:31
 msgid "Halium-boot's ``mount`` is not aware of SELinux contexts. If your device's file system table (``fstab`` file) includes any contexts, the partition that they are on will fail to mount and your port will not work correctly."
 msgstr ""
+"``Mount``'owanie Halium-boot nie jest świadome kontekstu SELinux. Jeśli "
+"tabela systemu plików twojego urządzenia (plik ``fstab``) zawiera jakiś "
+"konteksty, partycja, na której się one znajdują nie zostanie zamontowana i "
+"twój port nie będzie działał poprawnie."
 
 #: ../../porting/halium_7-1/Building.rst:33
 msgid "Start by locating your fstab file. This will commonly be inside ``BUILDDIR/device/MANUFACTUER/CODENAME/rootdir/etc`` (e.g. for the Samsung S7 - codename *herolte*: ``halium/device/samsung/herolte/rootdir/etc``) and it is named either ``fstab.qcom`` or ``fstab.devicename``. Open the file for editing."
@@ -565,7 +569,7 @@ msgstr ""
 "Zacznij od zlokalizowania twojego pliku fstab. Często jest w ``"
 "FOLDERBUDOWANIA/device/PRODUCENT/NAZWA-KODOWA/rootdir/etc`` (np. dla "
 "Samsunga S7 - nazwa kodowa to *herolte*: ``halium/device/samsung/herolte/"
-"rootdir/etc``) i nazywa się ``fstab.qcom`` albo f``fstab.nazwa-urządzenia``. "
+"rootdir/etc``) i nazywa się ``fstab.qcom`` albo ``fstab.nazwa-urządzenia``. "
 "Otwórz plik by go edytować."
 
 #: ../../porting/halium_7-1/Building.rst:35
@@ -928,15 +932,20 @@ msgstr ""
 
 #: ../../porting/halium_7-1/Common_errors.rst:145
 msgid "Enable /var/log/syslog"
-msgstr ""
+msgstr "Włącz /var/log/syslog"
 
 #: ../../porting/halium_7-1/Common_errors.rst:147
 msgid "Normally the writing to the syslog is disabled. During porting it can be useful to enable this::"
 msgstr ""
+"Normalnie wpisywanie do syslog'u jest wyłączone. Podczas portowania, "
+"przydatnym może się okazać włączenie tego::"
 
 #: ../../porting/halium_7-1/Common_errors.rst:154
 msgid "Now rsyslogd will write to the file and you can use it as usual. For example ``less /var/log/syslog`` or ``tail -f /var/log/syslog``."
 msgstr ""
+"Teraz rsyslogd będzie zapisywane do tego pliku i będziesz mógł/a korzystać z "
+"niego jak zwykle. Na przykład ``less /var/log/syslog`` lub ``tail -f /var/"
+"log/syslog``."
 
 #: ../../porting/halium_7-1/Common_errors.rst:162
 msgid "Known issues when configuring the device"
@@ -954,7 +963,7 @@ msgstr ""
 
 #: ../../porting/halium_7-1/Common_errors.rst:169
 msgid "Refer to section :ref:`Apply-apparmor-kernel-patches`."
-msgstr "Odwołanie do sekcji :ref: `Zaaplikuj patche apparmora do kernela`."
+msgstr "Odwołanie do sekcji :ref:`Apply-apparmor-kernel-patches`."
 
 #: ../../porting/halium_7-1/Common_errors.rst:171
 msgid "This section is a *Work in progress*"
@@ -1045,6 +1054,9 @@ msgstr ""
 #: ../../porting/halium_7-1/Configuring.rst:45
 msgid "When you specify target path 'system/halium/etc/myfilename' your file 'myfilename' will end up in the '/etc' directory of your device (i.e. without the leading 'system/halium')"
 msgstr ""
+"Kiedy sprecyzowałeś/aś docelową ścieżkę 'system/halium/etc/myfilename', twój "
+"plik 'myfilename' skończy w lokalizacji '/etc' twojego urządzenia (tzn. bez "
+"podawania 'system/halium')"
 
 #: ../../porting/halium_7-1/Configuring.rst:50
 msgid "Rebuild system.img"
@@ -1079,22 +1091,38 @@ msgstr ""
 #: ../../porting/halium_7-1/Configuring.rst:66
 msgid "There are also other options available that may be useful for you depending on your device's form factor. These are mentioned below and all of these settings are explained in depth in the reference section on :ref:`Display-settings`."
 msgstr ""
+"Dostępne są także inne opcje, które mogą być ci przydatne zależnie od "
+"formatu twojego urządzenia. Są wymienione poniżej i szczegółowo wyjaśnione w "
+"sekcji :ref:`Display-settings`."
 
 #: ../../porting/halium_7-1/Configuring.rst:68
 msgid "All of these settings are guessed by Unity 8 if none are set. There are many cases, however, where the guess is wrong (for example, very high resolution phone displays will be identified as desktop computers). To manually set a value for these variables, simply edit the file at ``etc/ubuntu-touch-session.d/android.conf`` specifying them. For example, this is the file for the Nexus 7 tablet::"
 msgstr ""
+"Wszystkie te ustawienia są przyjmowane jako domyślne, jeśli nie są "
+"ustawione. Jest dużo przykładów, gdzie domyślne ustawienia są niepoprawne ("
+"np, smartfon z wysoką rozdzielczością będzie indentyfikowany jako komputer "
+"stacjonarny). Aby manualnie ustawić te wartości, zedytuj plik ``etc/ubuntu-"
+"touch-session.d/android.conf``. Na przykład, to jest plik dla tabletu Nexus "
+"7::"
 
 #: ../../porting/halium_7-1/Configuring.rst:76
 msgid "The :ref:`Display-settings` section details methods for deriving values for these variables."
 msgstr ""
+"Sekcja :ref:`Display-settings` szczegółowo opisuje metody wprowadzania tych "
+"wartości do zmiennych."
 
 #: ../../porting/halium_7-1/Configuring.rst:78
 msgid "Once you have adjusted the ``android.conf`` file to the display settings needed for your device, this file should be incorporated into your build."
 msgstr ""
+"Kiedy dostosujesz już plik ``android.conf`` do ustawień wymaganych przez "
+"twoje urządzenie, powinneneś/nnaś włączyć ten plik do twojej kompilacji."
 
 #: ../../porting/halium_7-1/Configuring.rst:80
 msgid "Create the file android.conf in your 'ubuntu' directory and enter the settings you determined and tested in the previous section. Complete steps 3 and 4 above, taking care to remember the note on how to :ref:`Rebuild-system.img`."
 msgstr ""
+"Stwórz plik android.conf w folderze 'ubuntu' i wpisz ustawienia które "
+"ustaliłeś/aś i przetestowałeś/aś w poprzedniej sekcji. Wykonaj 3 i 4 etap "
+"powyżej, pamiętając :ref:`Rebuild-system.img`."
 
 #: ../../porting/halium_7-1/Configuring.rst:85
 msgid "Apply apparmor kernel patches"
@@ -1107,6 +1135,11 @@ msgstr "Czym jest apparmor? <https://wiki.ubuntu.com/AppArmor>`_"
 #: ../../porting/halium_7-1/Configuring.rst:89
 msgid "Start by downloading the backported `apparmor patch <https://github.com/ubports/apparmor-backports-ut>`_ corresponding to your device's kernel version. Your kernel version is specified at the beginning of your kernel defconfig file, i.e. the one you edited in section :ref:`Edit-kernel-config` above."
 msgstr ""
+"Zacznij od pobrania backportowanej `łatki apparmora <https://github.com/"
+"ubports/apparmor-backports-ut>`_ odpowiadającej wersji kernela twojego "
+"urządzenia. Wersja kernela jest sprecytowana na początku defconfigu twojego "
+"kernela, tj. tego, którego edytowałeś/aś w sekcji :ref:`Edit-kernel-config` "
+"powyżej."
 
 #: ../../porting/halium_7-1/Configuring.rst:91
 msgid "You now need to delete your entire BUILDDIR/kernel/VENDOR/MODEL/security/apparmor subdirectory and replace it with the one you downloaded. Then rebuild halium-boot."
@@ -1127,8 +1160,8 @@ msgstr ""
 #: ../../porting/halium_7-1/Configuring.rst:95
 msgid "Seek help as needed from one of the sources mentioned in section :ref:`Getting-community-help`."
 msgstr ""
-"Pomocy szukaj jeśli będziesz jej potrzebował/a w jednych ze źródeł "
-"wymienionych w sekcji :ref:`Uzyskiwanie-pomocy-od-społeczności`."
+"Jeśli będziesz jej potrzebował/a szkuaj pomocy w jednym ze źródeł "
+"wymienionych w sekcji :ref:`Getting-community-help`."
 
 #: ../../porting/halium_7-1/Configuring.rst:98
 msgid "Sound configuration"
@@ -1156,8 +1189,7 @@ msgstr "Na końcu pliku dodaj to::"
 #: ../../porting/halium_7-1/Configuring.rst:117
 msgid "Now complete steps 3 and 4, taking care to remember the note on how to :ref:`Rebuild-system.img`."
 msgstr ""
-"Teraz wykonaj kroki 3 i 4, pamiętając o tym jak :ref:`Zbuduj-ponownie-"
-"system.img`."
+"Teraz wykonaj kroki 3 i 4, pamiętając o tym jak :ref:`Rebuild-system.img`."
 
 #: ../../porting/halium_7-1/Configuring.rst:120
 msgid "Further configuration"
@@ -1196,7 +1228,7 @@ msgid "In order to install Ubuntu Touch, you will need a recovery with Busybox, 
 msgstr ""
 "Aby zainstalować Ubuntu Touch, będziesz potrzebował recovery z Busyboxem, "
 "takie jak TWRP, zainstalowane na twoim urządzeniu. Jeśli tego jeszcze nie "
-"zrobiłeś, zobacz :ref: `Install-TWRP-recovery` i zainstaluj je teraz."
+"zrobiłeś, zobacz :ref:`Install-TWRP-recovery` i zainstaluj je teraz."
 
 #: ../../porting/halium_7-1/Installing.rst:17
 msgid "You will also need to ensure the ``/data`` partition is formatted with ``ext4`` and does not have any encryption on it. Boot into the recovery image you just installed, check and adjust as necessary."
@@ -1235,11 +1267,11 @@ msgstr ""
 "Urządzenia Samsunga: Flashowanie halium-boot.img na urządzeniach Samsunga "
 "jest możliwe dzięki narzędziu do flashowania Heimdal (na Linuxie) lub Odin ("
 "na Windowsie) poprzednio wprowadziwszy urządzenie do 'trybu download'. "
-"Zobacz więcej informacji o tych narzędziach`tutaj <http://docs.halium.org/en/"
-"latest/porting/install-build/reference-rootfs.html#install-hybris-boot-img-"
-"on-samsung-devices>`_. Podążaj za instrukcjami dla narzędzia, które wybrałeś/"
-"aś, wliczając specyficzną komende na flashowanie partycji boot. Zainstaluj "
-"system.img i rootfs (poniżej) na urządzeniu w trybie recovery."
+"Zobacz więcej informacji o tych narzędziach `tutaj <http://docs.halium.org/"
+"en/latest/porting/install-build/reference-rootfs.html#install-hybris-boot-"
+"img-on-samsung-devices>`_. Podążaj za instrukcjami dla narzędzia, które "
+"wybrałeś/aś, wliczając specyficzną komende na flashowanie partycji boot. "
+"Zainstaluj system.img i rootfs (poniżej) na urządzeniu w trybie recovery."
 
 #: ../../porting/halium_7-1/Installing.rst:38
 msgid "Install system.img and rootfs"
@@ -1273,14 +1305,14 @@ msgstr ""
 "JBBgameich/halium-install>`_. Te repozytorium zawiera narzędzia, które służą "
 "do instalacji obrazu systemu Halium i rootfs'u dystrybucji. Uruchom ponownie "
 "swoje urządzenie do trybu recovery (np. TWRP), aby znów uzyskać dostęp do "
-"adb. Teraz użyj skryptu ``halium-install`, aby zainstalować Ubuntu Touch na "
+"adb. Teraz użyj skryptu ``halium-install``, aby zainstalować Ubuntu Touch na "
 "twoim urządzeniu::"
 
 #: ../../porting/halium_7-1/Installing.rst:51
 msgid "The script will copy and extract the files to their proper places, then allow you to set the user password for your device (the *phablet* user's password)."
 msgstr ""
 "Skrypt skopiuje i rozpakuje pliki do ich właściwych miejsc, potem pozwoli ci "
-"wybrać hasło dla twojego urządzenia (hasło użytkownika *phablet*)."
+"wybrać hasło dla twojego urządzenia (hasło użytkownika *phablet* )."
 
 #: ../../porting/halium_7-1/Installing.rst:54
 msgid "Get SSH access"
@@ -1321,11 +1353,11 @@ msgstr "Rozwiązywanie problemów procesu wczesnego bootowania"
 
 #: ../../porting/halium_7-1/Installing.rst:69
 msgid "Refer to :ref:`Known-issues-with-initial-boot`."
-msgstr "Odwołanie do :ref: `Znane-problemy-z-procesem-wczesnego-bootowania`."
+msgstr "Odwołanie do :ref:`Znane-problemy-z-procesem-wczesnego-bootowania`."
 
 #: ../../porting/halium_7-1/Reference_material.rst:2
 msgid "Reference material"
-msgstr "Materiały źródłowe"
+msgstr "Materiały referencyjne"
 
 #: ../../porting/halium_7-1/Reference_material.rst:7
 msgid "Display settings"
@@ -1599,7 +1631,7 @@ msgstr ""
 "Teraz, kiedy jesteś zalogowany/a pozostało jeszcze wiele rzeczy do "
 "skonfigurowania zanim twoje urządzenie stanie się w pełni funkcjonalnym "
 "portem Ubuntu Touch. Właściwym sposobem jest przechowywanie tych "
-"konfiguracji jako nakładkę (:ref `Nakładka), a nie tworzenie folderu "
+"konfiguracji jako nakładkę (:ref:`Overlay-files`), a nie tworzenie folderu "
 "głównego możliwym do zapisu, jak opisano poniżej. Jednakże, aby szybko "
 "ustawić udev rules, które są niezbędne, aby wykonać następne kroki, będziesz "
 "musiał użyć tej metody podczas pierwszej konfiguracji."
@@ -1637,8 +1669,8 @@ msgstr ""
 msgid "When Unity 8 is first brought up on your device, you will probably notice that everything is very small. The :ref:`Display-scaling` section describes how to deal with this."
 msgstr ""
 "Kiedy Unity 8 pojawi się po raz pierwszy na twoim urządzeniu zauważysz, że "
-"wszystko jest strasznie małe. Sekcja :ref: `Skalowanie-ekranu` opisze jak "
-"sobie z tym poradzić."
+"wszystko jest strasznie małe. Sekcja :ref:`Display-scaling` opisze jak sobie "
+"z tym poradzić."
 
 #: ../../porting/halium_7-1/Unity8.rst:31
 msgid "Problems when bringing up Unity 8"
@@ -1646,7 +1678,7 @@ msgstr "Problemy z uruchamianiem Unity 8"
 
 #: ../../porting/halium_7-1/Unity8.rst:33
 msgid "Refer to :ref:`Known-issues-when-bringing-up-Unity-8`."
-msgstr "Odwołanie do :ref: `Znane-problemy-z-uruchamianiem-Unity-8`."
+msgstr "Odwołanie do :ref:`Known-issues-when-bringing-up-Unity-8`."
 
 #: ../../porting/halium_7-1/index.rst:2
 msgid "Halium 7.1"

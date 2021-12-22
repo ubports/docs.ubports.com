@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-01-29 20:35+0000\n"
+"PO-Revision-Date: 2021-11-08 03:42+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/ru/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../porting/Intro.rst:2
 msgid "Introduction to porting"
-msgstr "Введение в создание сборок для устройств"
+msgstr "Введение в процесс портирования на другие устройства"
 
 #: ../../porting/Intro.rst:4
 msgid ""
@@ -80,13 +80,12 @@ msgid ""
 "therefore necessary to secure the correct version of these components when "
 "building a port."
 msgstr ""
-"Если быть точным, производители устройств стремятся сохранить код, который "
-"обращается непосредственно к аппаратной части устройства (низкоуровневые "
-"драйвера), проприетарным. Эти компоненты обычно называются «vendor blobs». "
-"Их нужно обязательно включить в сборку Ubuntu Touch. Обратите внимание, что "
-"эти компоненты специфичны не только для каждого устройства, но и для каждой "
-"версии Android. Поэтому, при подготовке сборки необходимо использовать "
-"правильные версии этих компонентов."
+"Производители устройств стремятся закрыть исходные коды, которые обращаются "
+"непосредственно к аппаратной части устройства (низкоуровневые драйвера). Эти "
+"компоненты обычно называются «vendor blobs». Их нужно обязательно включить в "
+"сборку Ubuntu Touch. Обратите внимание, что эти компоненты специфичны не "
+"только для каждого устройства, но и для каждой версии Android. Поэтому при "
+"подготовке сборки необходимо использовать правильные версии этих компонентов."
 
 #: ../../porting/Intro.rst:17
 msgid ""
@@ -97,8 +96,9 @@ msgid ""
 msgstr ""
 "Вот почему сборки ОС Ubuntu Touch так сложно подготовить для большинства "
 "коммерческих устройств даже несмотря на открытые исходные тексты системы. "
-"Портирование заключается в интеграции ранее упомянутых файлов поставщика в "
-"остальную часть системы, которую можно скомпилировать из исходных текстов."
+"Создание прошивки заключается в интеграции ранее упомянутых файлов "
+"производителя мобильного устройства в остальную часть системы, которую можно "
+"скомпилировать из исходных текстов."
 
 #: ../../porting/Intro.rst:19
 msgid ""
@@ -147,16 +147,16 @@ msgid ""
 "the available Halium versions and vendor blobs from the corresponding "
 "Android version. See the first two columns of the table below for details."
 msgstr ""
-"Таким образом, Halium - это ПО с открытым исходным кодом, является "
-"неотъемлемой частью сборок Ubuntu Touch. Разработка новой версии Halium - "
-"очень сложная задача, сейчас существует несколько версий Halium. Каждая "
-"сборка Ubuntu Touch должен быть основана на одной из доступных версий Halium "
-"и файлов поставщика (vendor blobs) из соответствующей версии Android. "
-"Подробности см. в первых двух столбцах таблицы ниже."
+"Halium - это ПО с открытым исходным кодом и является неотъемлемой частью "
+"сборок Ubuntu Touch. Разработка новой версии Halium - очень сложная задача, "
+"сейчас существует несколько версий Halium. Каждая сборка Ubuntu Touch должна "
+"быть основана на одной из доступных версий Halium и файлов поставщика ("
+"vendor blobs) из соответствующей версии Android. Подробности см. в первых "
+"двух столбцах таблицы ниже."
 
 #: ../../porting/Intro.rst:28
 msgid "Thus an Ubuntu Touch port is composed of the these components:"
-msgstr "сборка Ubuntu Touch состоит из таких компонентов:"
+msgstr "Таким образом, прошивка Ubuntu Touch состоит из следующих компонентов:"
 
 #: ../../porting/Intro.rst:26
 msgid "The Ubuntu Touch (UT) root filesystem (rootfs)"
@@ -179,9 +179,9 @@ msgid ""
 "and install these together with the Ubuntu Touch rootfs in order to create a "
 "functioning Ubuntu Touch port."
 msgstr ""
-"При подготовке прошивки сначала нужно подготовить сборку Halium (например, "
-"halium-boot.img и system.img) и установить её вместе с rootfs Ubuntu Touch, "
-"чтобы создать рабочую сборку ОС Ubuntu Touch."
+"Создаем прошивку. Чтобы создать рабочую сборку ОС Ubuntu Touch, сначала "
+"нужно подготовить сборку Halium (например, halium-boot.img и system.img) и "
+"установить её вместе с rootfs Ubuntu Touch."
 
 #: ../../porting/Intro.rst:32
 msgid ""
@@ -207,7 +207,7 @@ msgstr "Версия Halium"
 
 #: ../../porting/Intro.rst:35
 msgid "Lineage OS (LOS)"
-msgstr "Lineage OS (LOS)"
+msgstr "Lineage OS"
 
 #: ../../porting/Intro.rst:37
 msgid "7.1"
@@ -239,9 +239,9 @@ msgid ""
 "about it and choose a suitable workstation (PC or laptop) on which to do "
 "your work."
 msgstr ""
-"В этой часты Вы узнаете, как выбрать мобильное устройство, соберете "
-"информацию о нем и выберете подходящую рабочую станцию (ПК или ноутбук), на "
-"которой будете вести всю дальнейшую работу."
+"В этой части рассказывается, как выбрать мобильное устройство, как собрать "
+"информацию о нем и как выбрать подходящую рабочую станцию (ПК или ноутбук), "
+"на которой будет вестись вся дальнейшая работа."
 
 #: ../../porting/Intro.rst:48
 msgid "Set up your Halium build environment and complete a test build"
@@ -389,10 +389,10 @@ msgid ""
 msgstr ""
 "Это руководство не предполагает обширных знаний или навыков в какой-либо "
 "конкретной области. Однако , нужно знать как минимум минимум основы работы в "
-"консоли и базовые команды оболочки Linux.Если у вас есть навыки "
-"программирования, это будет серьезным подспорьем, особенно если Вы знакомы с "
-"C / C ++. Кроме того, нужно ознакомиться с git, настроить учетную запись "
-"github и начать документировать свои действия, как описано в этом "
+"консоли и базовые команды оболочки Linux. Если у вас есть навыки "
+"программирования, это пригодится в какой-то момент, особенно если вы будете "
+"знакомы с C/C++. Кроме того, нужно ознакомиться с git, настроить учетную "
+"запись github и начать документировать свои действия, как описано в этом "
 "руководстве и `руководстве по написанию сборок Halium <http://docs.halium."
 "org/en/latest/porting/first-steps.html>`_ ."
 
@@ -437,7 +437,7 @@ msgstr "IRC: #halium на freenode"
 
 #: ../../porting/Intro.rst:92
 msgid "Matrix: #halium:matrix.org"
-msgstr "Matrix: #halium:matrix.org"
+msgstr "Matrix Project: #halium:matrix.org"
 
 #: ../../porting/Intro.rst:97
 msgid "General advice"
@@ -549,9 +549,9 @@ msgid ""
 "you wish to install Ubuntu Touch on the device."
 msgstr ""
 "Производители обычно продают мобильные устройства с заблокированным "
-"загрузчиком. Это своего рода защита, предназначенная для предотвращения "
-"модификации операционной системы и системного программного обеспечения. Если "
-"вы разблокируете загрузчик, то сможете вносить такие изменения, но в этом "
+"загрузчиком. Это своего рода защита для предотвращения модификации "
+"операционной системы и системного программного обеспечения. Если вы "
+"разблокируете загрузчик, то сможете вносить такие изменения, но в этом "
 "состоянии гарантия на устройство может быть аннулирована. Выбор за вами, но "
 "этот шаг является обязательным, если вы хотите установить Ubuntu Touch на "
 "устройство."
@@ -579,7 +579,7 @@ msgid ""
 "for your device. Follow the installation instructions provided on the "
 "website."
 msgstr ""
-"Вам необходимо установить собственный образ custom recovery на  устройство, "
+"Вам необходимо установить собственный образ custom recovery на устройство, "
 "чтобы на нём стали возможны процедуры форматирования и записи файлов "
 "изображений. Перейдите в  раздел`Team Win Recovery Project <https://twrp.me/"
 "Devices/>` _ и найдите файл образа для вашего устройства. Следуйте "
@@ -727,9 +727,8 @@ msgid "Build the images for Ubuntu Touch"
 msgstr "Сборка образа с Ubuntu Touch"
 
 #: ../../porting/halium_7-1/Building.rst:29
-#, fuzzy
 msgid "Fix mount points"
-msgstr "Настройка точек монтирования"
+msgstr "Исправление точек монтирования"
 
 #: ../../porting/halium_7-1/Building.rst:31
 msgid ""
@@ -904,23 +903,23 @@ msgstr ""
 
 #: ../../porting/halium_7-1/Building.rst:83
 msgid "``cd BUILDDIR``"
-msgstr "``cd BUILDDIR``"
+msgstr "`` cd BUILDDIR ``"
 
 #: ../../porting/halium_7-1/Building.rst:84
 msgid "``source build/envsetup.sh``"
-msgstr "``source build/envsetup.sh``"
+msgstr "`` source build/envsetup.sh ``"
 
 #: ../../porting/halium_7-1/Building.rst:85
 msgid "``breakfast devicename``"
-msgstr "``breakfast devicename``"
+msgstr "`` breakfast devicename ``"
 
 #: ../../porting/halium_7-1/Building.rst:86
 msgid "``mka halium-boot``"
-msgstr "``mka halium-boot``"
+msgstr "`` mka halium-boot ``"
 
 #: ../../porting/halium_7-1/Building.rst:87
 msgid "``mka systemimage``"
-msgstr "``mka systemimage``"
+msgstr "`` mka systemimage ``"
 
 #: ../../porting/halium_7-1/Building.rst:90
 msgid "Troubleshooting the build process"
@@ -1733,8 +1732,8 @@ msgid ""
 msgstr ""
 "Если у вас 64-битное устройство ARM (aarch64), для установки подойдет тот же "
 "rootfs. Можно установить 64-битную версию, но с ней может быть больше "
-"проблем из-за текущего состояния разработки rootfs. Если у вас устройство "
-"x86, сообщите нам. Для этой платформы пока нет rootfs-сборок."
+"проблем из-за текущего состояния разработки rootfs. (Если у вас устройство "
+"x86, сообщите нам. Для этой платформы пока нет rootfs-сборок.)"
 
 #: ../../porting/halium_7-1/Installing.rst:46
 msgid ""
@@ -1886,7 +1885,7 @@ msgstr "Px/GU"
 
 #: ../../porting/halium_7-1/Reference_material.rst:19
 msgid "QtWebKit DPR"
-msgstr "QtWebKit DPR"
+msgstr "QTWEBKIT_DPR"
 
 #: ../../porting/halium_7-1/Reference_material.rst:21
 msgid "'Normal' density laptop"
@@ -1911,7 +1910,7 @@ msgstr "1.0"
 
 #: ../../porting/halium_7-1/Reference_material.rst:22
 msgid "ASUS Nexus 7"
-msgstr "ASUS Nexus 7"
+msgstr "Nexus 7 (ASUS)"
 
 #: ../../porting/halium_7-1/Reference_material.rst:22
 msgid "1280x800"
@@ -1954,7 +1953,7 @@ msgstr "1.5"
 
 #: ../../porting/halium_7-1/Reference_material.rst:24
 msgid "Samsung Galaxy Nexus"
-msgstr "Samsung Galaxy Nexus"
+msgstr "Galaxy Nexus (Samsung)"
 
 #: ../../porting/halium_7-1/Reference_material.rst:24
 msgid "1280x720"
@@ -1975,7 +1974,7 @@ msgstr "18"
 
 #: ../../porting/halium_7-1/Reference_material.rst:25
 msgid "LG Nexus 4"
-msgstr "LG Nexus 4"
+msgstr "Nexus 4 (LG)"
 
 #: ../../porting/halium_7-1/Reference_material.rst:25
 msgid "1280x768"
@@ -1991,7 +1990,7 @@ msgstr "320"
 
 #: ../../porting/halium_7-1/Reference_material.rst:26
 msgid "Samsung Nexus 10"
-msgstr "Samsung Nexus 10"
+msgstr "Nexus 10 (Samsung)"
 
 #: ../../porting/halium_7-1/Reference_material.rst:26
 msgid "2560x1600"
@@ -2011,7 +2010,7 @@ msgstr "20"
 
 #: ../../porting/halium_7-1/Reference_material.rst:27
 msgid "Fairphone 2"
-msgstr "Fairphone 2"
+msgstr "Fairphone 2 (FP2)"
 
 #: ../../porting/halium_7-1/Reference_material.rst:27
 #: ../../porting/halium_7-1/Reference_material.rst:28
@@ -2038,7 +2037,7 @@ msgstr "2.5"
 
 #: ../../porting/halium_7-1/Reference_material.rst:28
 msgid "LG Nexus 5"
-msgstr "LG Nexus 5"
+msgstr "Nexus 5 (LG)"
 
 #: ../../porting/halium_7-1/Reference_material.rst:28
 msgid "4.95\""
@@ -2186,7 +2185,7 @@ msgstr "Прочитайте главу :ref:`Known-issues-when-bringing-up-Unit
 
 #: ../../porting/halium_7-1/index.rst:2
 msgid "Halium 7.1"
-msgstr "Halium 7.1"
+msgstr "Halium Project 7.1"
 
 #: ../../porting/halium_7-1/index.rst:4
 msgid ""

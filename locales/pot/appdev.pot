@@ -8,13 +8,85 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 17:42-0600\n"
+"POT-Creation-Date: 2021-12-07 11:45-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../../appdev/code-editor.rst:2
+msgid "Code editor integrations"
+msgstr ""
+
+#: ../../appdev/code-editor.rst:4
+msgid "Atom"
+msgstr ""
+
+#: ../../appdev/code-editor.rst:6
+msgid "You can use clickable with the `Atom Editor <https://atom.io>`__ by installing the `atom-clickable-plugin <https://atom.io/packages/atom-clickable-plugin>`__. Or you can simply run ``clickable ide atom`` in your project directory to launch an Atom editor instance on top of your docker image. This way you will have all Atom features - including the clickable plugin - available for you project."
+msgstr ""
+
+#: ../../appdev/code-editor.rst:10
+msgid "QtCreator"
+msgstr ""
+
+#: ../../appdev/code-editor.rst:12
+msgid "Available on top of clickable docker image, ``clickable ide qtcreator`` command within your project directory will launch a QtCreator instance and auto setup the project for you, you will have code completion and navigation for Ubuntu Touch components as well as run/debug facilities."
+msgstr ""
+
+#: ../../appdev/code-editor.rst:14
+msgid "Ubuntu SDK ( Unmaintained )"
+msgstr ""
+
+#: ../../appdev/code-editor.rst:16
+msgid "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower."
+msgstr ""
+
+#: ../../appdev/code-editor.rst:18
+msgid "You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed to work correctly. You can use the following commands to install::"
+msgstr ""
+
+#: ../../appdev/external-docs.rst:2
+msgid "API docs"
+msgstr ""
+
+#: ../../appdev/external-docs.rst:4
+msgid "In this section you find the various APIs you can use to develop Ubuntu Touch apps."
+msgstr ""
+
+#: ../../appdev/external-docs.rst:6
+msgid "Firstly there are the QML and HTML APIs that you can use for the front end:"
+msgstr ""
+
+#: ../../appdev/external-docs.rst:8
+msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
+msgstr ""
+
+#: ../../appdev/external-docs.rst:9
+msgid "`All 5.12 QML types <https://doc.qt.io/qt-5.12/qmltypes.html>`__"
+msgstr ""
+
+#: ../../appdev/external-docs.rst:10
+msgid "`Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index.html>`__"
+msgstr ""
+
+#: ../../appdev/external-docs.rst:12
+msgid "Secondly, the platform documentation describes how to integrate your app into the system:"
+msgstr ""
+
+#: ../../appdev/external-docs.rst:19
+msgid "Thirdly, it is possible to develop cross-platform apps that don't depend on Ubuntu specific APIs, although this is not the official way of developing apps for Ubuntu Touch. If running on other operating systems is a requirement for your app, you can refer to these APIs instead:"
+msgstr ""
+
+#: ../../appdev/external-docs.rst:21
+msgid "`Kirigami API <https://api.kde.org/frameworks/kirigami/html/>`__"
+msgstr ""
+
+#: ../../appdev/external-docs.rst:22
+msgid "`Qt Quick Controls 2 API <https://doc.qt.io/qt-5/qtquickcontrols-index.html>`__"
+msgstr ""
 
 #: ../../appdev/guides/contenthub.rst:4
 msgid "The content hub - tips and tricks"
@@ -48,168 +120,96 @@ msgstr ""
 msgid "``ContentHandler.Share`` (The selected app will be the destination for the exported file, which will then be shared externally)"
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:26
+#: ../../appdev/guides/contenthub.rst:28
 msgid "Importing"
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:31
+#: ../../appdev/guides/contenthub.rst:33
 msgid "Webapp Creator on the OpenStore"
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:33
+#: ../../appdev/guides/contenthub.rst:35
 msgid "Looking into the code of Webapp Creator, we’ll find the code to import an image to be used as icon. Tapping on the place holder will open the Content Hub that will let us choose from where to import the image (`see the Webapp Creator source code <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>`_)"
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:44
+#: ../../appdev/guides/contenthub.rst:46
 msgid "``ContentPeerPicker`` is the element that shows the apps."
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:50
+#: ../../appdev/guides/contenthub.rst:52
 msgid "``contentType`` is passed in `Main.qml <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/Main.qml#L118>`_ as ContentType.Pictures. So, we will only see apps from which we only can import images. ``handler`` is passed in the same line as ContentHandler.Source. As we want to import an image from the app selected in the Content Hub."
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:53
+#: ../../appdev/guides/contenthub.rst:55
 msgid "Exporting"
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:58
+#: ../../appdev/guides/contenthub.rst:60
 msgid "Gelek in the OpenStore"
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:60
+#: ../../appdev/guides/contenthub.rst:62
 msgid "In Gelek, we are going to end with some saved games that we want to save in our device or share with ourselves (in Telegram and then save them to our computer)."
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:64
+#: ../../appdev/guides/contenthub.rst:66
 msgid "Tapping on the download icon we will get a Content Hub to *save* the game file (which is actually an export)."
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:66
+#: ../../appdev/guides/contenthub.rst:68
 msgid "The game file is a file of type ``glksave``. We will tell Content Hub that we are sending a file of type ``All`` (`see the Install Page code <https://gitlab.com/cibersheep/gelek/blob/master/app/InstallPage.qml#L38>`_)."
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:79
+#: ../../appdev/guides/contenthub.rst:81
 msgid "``contentType`` is ``ContentType.All``, so we will only see apps which are able to receive unmarked file types. ``handler`` is ``ContentHandler.Destination``, so the app selected should store the saved game."
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:81
+#: ../../appdev/guides/contenthub.rst:83
 msgid "Tapping on the File Manager we will save the saved game in the folder we choose."
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:84
+#: ../../appdev/guides/contenthub.rst:86
 msgid "Sharing"
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:86
+#: ../../appdev/guides/contenthub.rst:88
 msgid "Similarly, tapping on the share icon will allow us to send the saved game through Telegram to ourselves (`see the Webapp Creator Import Page source code <https://gitlab.com/cibersheep/webapp-creator/blob/master/webapp-creator/app/ImportPage.qml#L38>`_). Sharing is similar to exporting, except the destination app may share the content externally (for example, over Telegram or text message)."
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:99
+#: ../../appdev/guides/contenthub.rst:101
 msgid "The only difference between this and the previous code is that ``handler`` is ``ContentHandler.Share``."
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:102
+#: ../../appdev/guides/contenthub.rst:104
 msgid "Wait a minute. Why the different apps?"
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:107
+#: ../../appdev/guides/contenthub.rst:109
 msgid "Content Hub: Export vs Share"
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:109
+#: ../../appdev/guides/contenthub.rst:111
 msgid "Each developer can decide the rules each app would follow in relation to the Content Hub. Why the OpenStore is shown as the destination of an export?"
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:111
+#: ../../appdev/guides/contenthub.rst:113
 msgid "Let’s check its manifest.json"
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:124
+#: ../../appdev/guides/contenthub.rst:126
 msgid "The above code defines that the hooks for the app named ``\"openstore\"`` in relation to the ``\"content-hub\"`` should follow the rules defined in ``openstore-contenthub.json``"
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:134
+#: ../../appdev/guides/contenthub.rst:136
 msgid "This means, the OpenStore will be the destination for *all* ``ContentTypes``."
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:136
+#: ../../appdev/guides/contenthub.rst:138
 msgid "What about uMatriks? Let’s see its ``content-hub.json``"
 msgstr ""
 
-#: ../../appdev/guides/contenthub.rst:164
+#: ../../appdev/guides/contenthub.rst:166
 msgid "So, with this example, uMatriks will be able to be the destination, source and share app for all kinds of ``ContentType``. What about the other hooks in the ``manifest.json``? That is discussed in the next guide."
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:2
-msgid "App development cookbook"
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:5
-msgid "Unofficial resources"
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:7
-msgid "In this section you will find links to external resources about creating applications for Ubuntu Touch."
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:9
-msgid "`Ubuntu Touch programming book <https://mimecar.gitbooks.io/ubuntu-touch-programming-course/content/>`__"
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:10
-msgid "`Application Templates by fulvio <https://github.com/fulvio999/ubports_app_templates>`__"
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:11
-msgid "`Python examples by pavelprosto <https://forums.ubports.com/topic/5525/python-examples>`__"
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:12
-msgid "`Python + UT apps quickstart guide by AaronTheIssueGuy <https://aaron.place/blogs/UbPortsPython.html>`__"
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:15
-msgid "Playground"
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:17
-msgid "In a completely free and open source community, it is natural to have community members exploring the limits of the platform in many many directions. In this section you will find links to external resources that do exactly that: Explore. The purpose of this list is to show the unlimited possibilities of an open platform like Ubuntu Touch."
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:20
-msgid "The resources listed here do not necessarily represent the officially endorsed way of developing applications for Ubuntu Touch, but are interesting experiments."
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:22
-msgid "`Free Pascal development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__"
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:23
-msgid "`Lazarus development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/10/lazarus-development-for-ubuntu-phone.html>`__"
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:24
-msgid "`Geany on Ubuntu Touch device as text editor, source code editor, debugger and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-text.html>`__"
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:25
-msgid "`Publish your existing Qt QML app to Ubuntu Touch using QMake (Video) <https://youtu.be/ehqlwRNrfO0>`__"
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:26
-msgid "`Publish your existing Qt QML app to Ubuntu Touch using CMake (Video) <https://youtu.be/c2sq6aLeGec>`__"
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:27
-msgid "`Getting started with Clickable (Video) <https://youtu.be/TE-s5522v0Y>`__"
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:28
-msgid "`Content Hub overview (Video) <https://youtu.be/AihwC2sPIk0>`__"
-msgstr ""
-
-#: ../../appdev/guides/cookbook.rst:29
-msgid "`Import files to your app with Content Hub (Video) <https://youtu.be/q6zzM16jw1U>`__"
 msgstr ""
 
 #: ../../appdev/guides/dependencies.rst:2
@@ -344,95 +344,111 @@ msgstr ""
 msgid "Importing from Content Hub and URLdispatcher"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:7
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:15
 msgid "In the previous guide we have seen a little bit about how Content Hub works. In this guide we will see how ``URLdispatcher`` works and how to handle imported data from the Content Hub."
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:10
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:18
 msgid "Handle data from the Content Hub"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:15
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:23
 msgid "OpenStore app from open-store.io"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:17
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:25
 msgid "One of the easiest ways of testing an app, is to send a test click to yourself on Telegram, and opening that click file with the OpenStore through the Content Hub:"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:22
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:30
 msgid "If we tap on the OpenStore app, it will be opened and it will ask if we want to install the click file. Let’s take a look into `the Main.qml code of the app <https://github.com/UbuntuOpenStore/openstore-app/blob/master/openstore/Main.qml#L85>`_ to see how it is done:"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:41
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:49
 msgid "Do you see that Connections element that targets the ContentHub? When it receives the signal onImportRequested, it will take the url of the data sent from the Content Hub (``transfer.items[0].url`` is the url of the first data sent) and open a ``PopUp`` element to let the user install the click."
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:44
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:52
 msgid "What about the URLdispatcher?"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:46
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:54
 msgid "The URL dispatcher is a piece of software, similar to the Content Hub, that makes our life easier trying to choose the correct app for a certain protocol. For example: We probably want to open the web browser when tapping on an http protocol. If we tap on a map link it is handy to open it with uNav or to open a twitter link in the Twitter app! How does that work?"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:48
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:56
 msgid "The ``URLdispatcher`` selects which app (according to their ``manifest.json``) will open a certain link."
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:53
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:61
 msgid "Let’s see how our navigation app looks inside. uNav’s manifest shows special hooks for the ``URLdispatcher`` in its `manifest.json code <https://bazaar.launchpad.net/~unav-devs/unav/trunk/view/head:/manifest.json#L9>`_:"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:83
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:91
 msgid "This means that a link that looks like http://map.unav.me/xxxxx,xxxxx will be opened in uNav. And that’s defined in lines 2 and 3, where it looks for protocol http followed by map.unav.me."
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:85
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:93
 msgid "Also, a URI formatted geo:xxx,xxx should open in uNav, as it’s defined in line 11."
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:88
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:96
 msgid "And how do we manage the received URL?"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:90
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:98
 msgid "After the ``URLdispatcher`` sends the link to the correspondent app, we need to handle that URL or URI in the targeted app. Let’s see how to do that:"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:92
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:100
 msgid "In the main qml file, we need to add some code to know what to do with the dispatched URL. Let's check how Linphone app manages this adding a `connection to the URI Handler <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L212>`_ with a Connections element setting ``UriHandler`` as a target."
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:109
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:117
 msgid "This code will manage an URI in the form ``linphone://sip:xxx@xxx.xx`` when the app is opened. But what do we need to do to handle this link when the app is closed?"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:111
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:119
 msgid "We need to add a little bit `extra code <https://gitlab.com/ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L76>`_ that will cover two cases: 1) We receive one URL 2) We receive more than one URL"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:115
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:123
 msgid "Let's check if ``Qt.application.arguments`` is not empty and if not, if any argument matches our URI format."
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:135
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:143
 msgid "Remember to check that %u (to receive 1 URL) or %U (to receive 1 or more URLs) is present under the ``Exec`` line in the `.desktop <https://gitlab.com/ubports-linphone/linphone-simple/-/blob/master/linphone.desktop.in#L7>`_ file of the app."
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:138
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:146
+msgid "Tools"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:148
+msgid "From command line, ``url-dispatcher-dump`` command will give you the full list of registered protocol schemes and their corresponding app."
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:150
+msgid "Another usefull tool, but not installed by default on devices is ``url-dispatcher-tools``, it allows you to simulate a call from a third party app. e.g: ``url-dispatcher https://youtu.be/CIX-a-i6B1w`` will launch youtube webapp."
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:152
+msgid "To install, it make your partition writable (``sudo mount -o rw,remount /``) and install it via ``sudo apt install url-dispatcher-tools``"
+msgstr ""
+
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:157
 msgid "What happens if more than one app has the same URL type defined?"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:140
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:159
 msgid "A very good question. What happens if we tap on a Twitter link? How is such a URL handled by the ``URLdispatcher`` as protocol ``http`` or the protocol ``http://twitter``?"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:142
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:161
 msgid "What happens if two apps have the same defined protocol?"
 msgstr ""
 
-#: ../../appdev/guides/importing-CH-urldispatcher.rst:144
+#: ../../appdev/guides/importing-CH-urldispatcher.rst:163
 msgid "Now it’s time to do some tests and share the results in the next guide."
 msgstr ""
 
@@ -441,11 +457,87 @@ msgid "Developer guides"
 msgstr ""
 
 #: ../../appdev/guides/index.rst:6
-msgid "We are currently working on expanding our list of developer guides. In the mean time we recommend the `Ubuntu Touch Programming Course <https://mimecar.gitbook.io/qt-course/>`__."
+msgid "To get started with your first app check out the following developer guides:"
+msgstr ""
+
+#: ../../appdev/guides/index.rst:8
+msgid "`Qt programming course by mimecar for Ubuntu Touch <https://docs.innerzaurus.com>`__"
 msgstr ""
 
 #: ../../appdev/guides/index.rst:9
-msgid "If you are interested in helping create developer guides check out our `GitLab Project <https://gitlab.com/ubports/apps/development-resources>`__."
+msgid "`Application Templates by fulvio <https://github.com/fulvio999/ubports_app_templates>`__"
+msgstr ""
+
+#: ../../appdev/guides/index.rst:10
+msgid "`Python examples by pavelprosto <https://forums.ubports.com/topic/5525/python-examples>`__"
+msgstr ""
+
+#: ../../appdev/guides/index.rst:11
+msgid "`Python + UT apps quickstart guide by AaronTheIssueGuy <https://aaron.place/blogs/UbPortsPython.html>`__"
+msgstr ""
+
+#: ../../appdev/guides/index.rst:12
+msgid "`QML templates by Joan CiberSheep <https://gitlab.com/cibersheep/qml-templates-for-ubuntutouch>`__."
+msgstr ""
+
+#: ../../appdev/guides/index.rst:13
+msgid "`First steps with QML <https://doc.qt.io/qt-5/qmlfirststeps.html>`__."
+msgstr ""
+
+#: ../../appdev/guides/index.rst:14
+msgid "`Qt examples and tutorials <https://doc.qt.io/qt-5.12/qtexamplesandtutorials.html>`__."
+msgstr ""
+
+#: ../../appdev/guides/index.rst:16
+msgid "If you are interested in helping to create developer guides check out our `GitLab Project <https://gitlab.com/ubports/apps/development-resources>`__."
+msgstr ""
+
+#: ../../appdev/guides/index.rst:19
+msgid "To get familiar with some more advanced concepts see the following sections:"
+msgstr ""
+
+#: ../../appdev/guides/index.rst:33
+msgid "Playground"
+msgstr ""
+
+#: ../../appdev/guides/index.rst:35
+msgid "In a completely free and open source community, it is natural to have community members exploring the limits of the platform in many many directions. In this section you will find links to external resources that do exactly that: Explore. The purpose of this list is to show the unlimited possibilities of an open platform like Ubuntu Touch."
+msgstr ""
+
+#: ../../appdev/guides/index.rst:38
+msgid "The resources listed here do not necessarily represent the officially endorsed way of developing applications for Ubuntu Touch, but are interesting experiments."
+msgstr ""
+
+#: ../../appdev/guides/index.rst:40
+msgid "`Free Pascal development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__"
+msgstr ""
+
+#: ../../appdev/guides/index.rst:41
+msgid "`Lazarus development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/10/lazarus-development-for-ubuntu-phone.html>`__"
+msgstr ""
+
+#: ../../appdev/guides/index.rst:42
+msgid "`Geany on Ubuntu Touch device as text editor, source code editor, debugger and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-text.html>`__"
+msgstr ""
+
+#: ../../appdev/guides/index.rst:43
+msgid "`Deploy your existing Qt QML app to Ubuntu Touch using QMake (Video) <https://youtu.be/ehqlwRNrfO0>`__"
+msgstr ""
+
+#: ../../appdev/guides/index.rst:44
+msgid "`Deploy your existing Qt QML app to Ubuntu Touch using CMake (Video) <https://youtu.be/c2sq6aLeGec>`__"
+msgstr ""
+
+#: ../../appdev/guides/index.rst:45
+msgid "`Getting started with Clickable (Video) <https://youtu.be/TE-s5522v0Y>`__"
+msgstr ""
+
+#: ../../appdev/guides/index.rst:46
+msgid "`Content Hub overview (Video) <https://youtu.be/AihwC2sPIk0>`__"
+msgstr ""
+
+#: ../../appdev/guides/index.rst:47
+msgid "`Import files to your app with Content Hub (Video) <https://youtu.be/q6zzM16jw1U>`__"
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:2
@@ -457,125 +549,125 @@ msgstr ""
 msgid "Let's assume that you have an app created with Clickable and published on the OpenStore. But now you want to be able to send Push Notifications to your users. First of all, you need to understand how this is working:"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:8
+#: ../../appdev/guides/pushnotifications.rst:10
 msgid "Every app which uses push notifications has got a unique token. This token identifies the user, the device and the app itself. The token is generated by the UBports Push Service."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:9
+#: ../../appdev/guides/pushnotifications.rst:11
 msgid "You will need the token to send a push notification. So the app sends its token to the app developer's server."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:10
+#: ../../appdev/guides/pushnotifications.rst:12
 msgid "With the token you can send a HTTP request to the UBports Push Server which will forward the notification the user's device."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:12
+#: ../../appdev/guides/pushnotifications.rst:14
 msgid "Let's practice this step-by-step."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:15
+#: ../../appdev/guides/pushnotifications.rst:17
 msgid "In the following example we will not implement a server. Also the communication between your app and your server is up to you. Please inform the user about the communication with your server by providing a privacy policy!"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:18
+#: ../../appdev/guides/pushnotifications.rst:20
 msgid "Make the app ready for push notifications"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:21
+#: ../../appdev/guides/pushnotifications.rst:23
 msgid "Implementing the PushClient"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:23
+#: ../../appdev/guides/pushnotifications.rst:25
 msgid "First we need to add the policy group \"push-notification-client\". Your apparmor file could look like this:"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:36
+#: ../../appdev/guides/pushnotifications.rst:38
 msgid "In the next step we need to modify the Qml parts. We need to add a pushclient component:"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:52
+#: ../../appdev/guides/pushnotifications.rst:54
 msgid "You need to set the correct appId! If the app name in your manifest file is myapp.yourname and the name of the main hook (the one which handles the .desktop file) is hookname, then the appId is:  myapp.yourname_hookname. When we now start the app, it will get a token and print this token in the logs. With clickable logs we will be able to copy this token out of the terminal. But the app is not yet ready to receive a push notification. For this we need something called a pushhelper!"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:56
+#: ../../appdev/guides/pushnotifications.rst:58
 msgid "Implementing the pushhelper"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:58
+#: ../../appdev/guides/pushnotifications.rst:60
 msgid "The pushhelper is a part of the app which will receive all push notifications and process them before sending them to the system notification center. It will receive a json-file and must output another json-file in the correct format. The pushhelper is seperated from the app. So we need a new hook in the manifest. It could look like this:"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:81
+#: ../../appdev/guides/pushnotifications.rst:83
 msgid "It should be clear that we now need a different apparmor file and a different executable file. The **push-apparmor.json** file must only contain the policy group push-notification-client and should look like this:"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:93
+#: ../../appdev/guides/pushnotifications.rst:95
 msgid "The **push.json** is for redirecting to the executable file:"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:101
+#: ../../appdev/guides/pushnotifications.rst:103
 msgid "In our tutorial we will use python to create a executable named **pushexec** which will forward the notification without changing anything:"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:113
+#: ../../appdev/guides/pushnotifications.rst:115
 msgid "We also need to add this new files to the **CMakeLists.txt** and make the pushexec executable::"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:123
+#: ../../appdev/guides/pushnotifications.rst:125
 msgid "Now the app is ready to receive and process push notifications!"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:126
+#: ../../appdev/guides/pushnotifications.rst:128
 msgid "Using the Push Service API"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:128
+#: ../../appdev/guides/pushnotifications.rst:130
 msgid "So now you have the token and the app is ready to receive and process push notifications. To send a notification, you need to send a HTTP request to this address: https://push.ubports.com/notify The content-type must be application/json and it must fit in the correct format. A example in javascript could look like this:"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:165
+#: ../../appdev/guides/pushnotifications.rst:167
 msgid "Push Notification Object"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:168
-#: ../../appdev/guides/pushnotifications.rst:193
-#: ../../appdev/guides/pushnotifications.rst:204
-#: ../../appdev/guides/pushnotifications.rst:228
-#: ../../appdev/guides/pushnotifications.rst:259
-#: ../../appdev/guides/pushnotifications.rst:273
+#: ../../appdev/guides/pushnotifications.rst:170
+#: ../../appdev/guides/pushnotifications.rst:195
+#: ../../appdev/guides/pushnotifications.rst:206
+#: ../../appdev/guides/pushnotifications.rst:230
+#: ../../appdev/guides/pushnotifications.rst:261
+#: ../../appdev/guides/pushnotifications.rst:275
 msgid "Parameter"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:168
-#: ../../appdev/guides/pushnotifications.rst:193
-#: ../../appdev/guides/pushnotifications.rst:204
-#: ../../appdev/guides/pushnotifications.rst:228
-#: ../../appdev/guides/pushnotifications.rst:259
-#: ../../appdev/guides/pushnotifications.rst:273
+#: ../../appdev/guides/pushnotifications.rst:170
+#: ../../appdev/guides/pushnotifications.rst:195
+#: ../../appdev/guides/pushnotifications.rst:206
+#: ../../appdev/guides/pushnotifications.rst:230
+#: ../../appdev/guides/pushnotifications.rst:261
+#: ../../appdev/guides/pushnotifications.rst:275
 msgid "Type"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:168
-#: ../../appdev/guides/pushnotifications.rst:193
-#: ../../appdev/guides/pushnotifications.rst:204
-#: ../../appdev/guides/pushnotifications.rst:228
-#: ../../appdev/guides/pushnotifications.rst:259
-#: ../../appdev/guides/pushnotifications.rst:273
+#: ../../appdev/guides/pushnotifications.rst:170
+#: ../../appdev/guides/pushnotifications.rst:195
+#: ../../appdev/guides/pushnotifications.rst:206
+#: ../../appdev/guides/pushnotifications.rst:230
+#: ../../appdev/guides/pushnotifications.rst:261
+#: ../../appdev/guides/pushnotifications.rst:275
 msgid "Description"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:170
+#: ../../appdev/guides/pushnotifications.rst:172
 msgid "appid"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:170
-#: ../../appdev/guides/pushnotifications.rst:173
-#: ../../appdev/guides/pushnotifications.rst:176
-#: ../../appdev/guides/pushnotifications.rst:182
-#: ../../appdev/guides/pushnotifications.rst:206
-#: ../../appdev/guides/pushnotifications.rst:230
-#: ../../appdev/guides/pushnotifications.rst:233
-#: ../../appdev/guides/pushnotifications.rst:241
+#: ../../appdev/guides/pushnotifications.rst:172
+#: ../../appdev/guides/pushnotifications.rst:175
+#: ../../appdev/guides/pushnotifications.rst:178
+#: ../../appdev/guides/pushnotifications.rst:184
+#: ../../appdev/guides/pushnotifications.rst:208
+#: ../../appdev/guides/pushnotifications.rst:232
+#: ../../appdev/guides/pushnotifications.rst:235
+#: ../../appdev/guides/pushnotifications.rst:243
 msgid "string"
 msgstr ""
 
@@ -587,7 +679,7 @@ msgstr ""
 msgid "as described in the client side documentation."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:173
+#: ../../appdev/guides/pushnotifications.rst:175
 msgid "expire_on"
 msgstr ""
 
@@ -599,7 +691,7 @@ msgstr ""
 msgid "`ISO8601 Extendendformat <https://www.w3.org/TR/NOTE-datetime>`_."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:176
+#: ../../appdev/guides/pushnotifications.rst:178
 msgid "token"
 msgstr ""
 
@@ -611,14 +703,14 @@ msgstr ""
 msgid "directed, as described in the client side documentation."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:179
+#: ../../appdev/guides/pushnotifications.rst:181
 msgid "clear_pending"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:179
-#: ../../appdev/guides/pushnotifications.rst:248
+#: ../../appdev/guides/pushnotifications.rst:181
 #: ../../appdev/guides/pushnotifications.rst:250
-#: ../../appdev/guides/pushnotifications.rst:277
+#: ../../appdev/guides/pushnotifications.rst:252
+#: ../../appdev/guides/pushnotifications.rst:279
 msgid "bool"
 msgstr ""
 
@@ -630,7 +722,7 @@ msgstr ""
 msgid "getting a \"too-many-pending\" error. Defaults to false."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:182
+#: ../../appdev/guides/pushnotifications.rst:184
 msgid "replace_tag"
 msgstr ""
 
@@ -642,12 +734,12 @@ msgstr ""
 msgid "queuing this new one."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:185
+#: ../../appdev/guides/pushnotifications.rst:187
 msgid "data"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:185
-#: ../../appdev/guides/pushnotifications.rst:190
+#: ../../appdev/guides/pushnotifications.rst:187
+#: ../../appdev/guides/pushnotifications.rst:192
 msgid "Data"
 msgstr ""
 
@@ -659,32 +751,32 @@ msgstr ""
 msgid "it to send any data to the app."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:195
+#: ../../appdev/guides/pushnotifications.rst:197
 msgid "notification"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:195
-#: ../../appdev/guides/pushnotifications.rst:201
+#: ../../appdev/guides/pushnotifications.rst:197
+#: ../../appdev/guides/pushnotifications.rst:203
 msgid "Notification"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:195
+#: ../../appdev/guides/pushnotifications.rst:197
 msgid "A JSON object which defines how this notification will be presented."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:197
+#: ../../appdev/guides/pushnotifications.rst:199
 msgid "message"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:197
+#: ../../appdev/guides/pushnotifications.rst:199
 msgid "object"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:197
+#: ../../appdev/guides/pushnotifications.rst:199
 msgid "A JSON object that is passed as-is to the application via PopAll."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:206
+#: ../../appdev/guides/pushnotifications.rst:208
 msgid "tag"
 msgstr ""
 
@@ -692,11 +784,11 @@ msgstr ""
 msgid "The tag of the push notification."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:208
+#: ../../appdev/guides/pushnotifications.rst:210
 msgid "sound"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:208
+#: ../../appdev/guides/pushnotifications.rst:210
 msgid "bool or string"
 msgstr ""
 
@@ -720,11 +812,11 @@ msgstr ""
 msgid "``.local/share/<pkgname>``, and (b) standard xdg dirs."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:214
+#: ../../appdev/guides/pushnotifications.rst:216
 msgid "vibrate"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:214
+#: ../../appdev/guides/pushnotifications.rst:216
 msgid "bool or Vibrate"
 msgstr ""
 
@@ -740,11 +832,11 @@ msgstr ""
 msgid "predetermined way) or an Vibrate object."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:218
+#: ../../appdev/guides/pushnotifications.rst:220
 msgid "emblem-counter"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:218
+#: ../../appdev/guides/pushnotifications.rst:220
 msgid "Emblem-counter"
 msgstr ""
 
@@ -756,12 +848,12 @@ msgstr ""
 msgid "counter."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:221
+#: ../../appdev/guides/pushnotifications.rst:223
 msgid "card"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:221
-#: ../../appdev/guides/pushnotifications.rst:225
+#: ../../appdev/guides/pushnotifications.rst:223
+#: ../../appdev/guides/pushnotifications.rst:227
 msgid "Card"
 msgstr ""
 
@@ -769,7 +861,7 @@ msgstr ""
 msgid "A JSON object with information about the notification card."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:230
+#: ../../appdev/guides/pushnotifications.rst:232
 msgid "summary"
 msgstr ""
 
@@ -781,7 +873,7 @@ msgstr ""
 msgid "missing."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:233
+#: ../../appdev/guides/pushnotifications.rst:235
 msgid "body"
 msgstr ""
 
@@ -789,12 +881,12 @@ msgstr ""
 msgid "Longer text, defaults to empty."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:235
+#: ../../appdev/guides/pushnotifications.rst:237
 msgid "actions"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:235
-#: ../../appdev/guides/pushnotifications.rst:261
+#: ../../appdev/guides/pushnotifications.rst:237
+#: ../../appdev/guides/pushnotifications.rst:263
 msgid "array"
 msgstr ""
 
@@ -818,7 +910,7 @@ msgstr ""
 msgid "which will switch to the app or launch it."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:241
+#: ../../appdev/guides/pushnotifications.rst:243
 msgid "icon"
 msgstr ""
 
@@ -834,13 +926,13 @@ msgstr ""
 msgid "will be shown as well, regardless of this field."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:245
+#: ../../appdev/guides/pushnotifications.rst:247
 msgid "timestamp"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:245
-#: ../../appdev/guides/pushnotifications.rst:264
-#: ../../appdev/guides/pushnotifications.rst:275
+#: ../../appdev/guides/pushnotifications.rst:247
+#: ../../appdev/guides/pushnotifications.rst:266
+#: ../../appdev/guides/pushnotifications.rst:277
 msgid "integer"
 msgstr ""
 
@@ -852,7 +944,7 @@ msgstr ""
 msgid "If zero or unset, defaults to current timestamp."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:248
+#: ../../appdev/guides/pushnotifications.rst:250
 msgid "persist"
 msgstr ""
 
@@ -860,7 +952,7 @@ msgstr ""
 msgid "Whether to show in notification centre; defaults to false."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:250
+#: ../../appdev/guides/pushnotifications.rst:252
 msgid "popup"
 msgstr ""
 
@@ -876,11 +968,11 @@ msgstr ""
 msgid "to false."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:256
+#: ../../appdev/guides/pushnotifications.rst:258
 msgid "Vibrate"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:261
+#: ../../appdev/guides/pushnotifications.rst:263
 msgid "pattern"
 msgstr ""
 
@@ -892,7 +984,7 @@ msgstr ""
 msgid "vibration/no vibration times, in milliseconds)."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:264
+#: ../../appdev/guides/pushnotifications.rst:266
 msgid "repeat"
 msgstr ""
 
@@ -904,23 +996,23 @@ msgstr ""
 msgid "same as 1)."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:270
+#: ../../appdev/guides/pushnotifications.rst:272
 msgid "Emblem-Counter"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:275
+#: ../../appdev/guides/pushnotifications.rst:277
 msgid "count"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:275
+#: ../../appdev/guides/pushnotifications.rst:277
 msgid "A number to be displayed over the application's icon in the launcher."
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:277
+#: ../../appdev/guides/pushnotifications.rst:279
 msgid "visible"
 msgstr ""
 
-#: ../../appdev/guides/pushnotifications.rst:277
+#: ../../appdev/guides/pushnotifications.rst:279
 msgid "Set to true to show the counter, or false to hide it."
 msgstr ""
 
@@ -1169,147 +1261,115 @@ msgid "App development"
 msgstr ""
 
 #: ../../appdev/index.rst:4
-msgid "Great!, you'd like to develop an app for Ubuntu Touch. Here are some resources that we hope help you get started."
-msgstr ""
-
-#: ../../appdev/index.rst:6
-msgid "If you have questions that aren't answered in the docs or want to chat with other Ubuntu Touch developers? Join our `app dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports app dev forum <https://forums.ubports.com/category/35/app-development>`_."
+msgid "You'd like to develop an app for Ubuntu Touch? Great!"
 msgstr ""
 
 #: ../../appdev/index.rst:9
-msgid "Getting Started"
+#: ../../appdev/webapp/index.rst:37
+msgid "Quick start"
 msgstr ""
 
 #: ../../appdev/index.rst:11
-msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ is a meta-build system for Ubuntu Touch applications that allows you to compile, build, test and publish ``click`` packages and provides various templates to get you started with app development. It is currently the easiest and most convenient way of building click packages for Ubuntu Touch. You can use any code editor or IDE that you choose and build your apps from the commandline with Clickable."
+msgid "Building your first app should be as simple as:"
 msgstr ""
 
 #: ../../appdev/index.rst:13
-msgid "Ubuntu Touch supports two kind of apps. :ref:`Native apps <nativeapp>` are apps with interfaces made using QML or HTML with their behavior defined in JavaScript, C++, Python, Rust or Go. :ref:`Web apps <webapp>` are special containers to run websites in."
+msgid "`Install clickable <https://clickable-ut.dev/en/latest/install.html>`_"
+msgstr ""
+
+#: ../../appdev/index.rst:14
+msgid "Plug in your Ubuntu Touch device"
 msgstr ""
 
 #: ../../appdev/index.rst:15
-msgid "Applications are shipped as a :ref:`Click <click>` package and can be publicly shared on the official app store `OpenStore <https://open-store.io>`__"
+msgid "Enable developer mode in System Settings"
+msgstr ""
+
+#: ../../appdev/index.rst:16
+msgid "Run ``clickable create``"
+msgstr ""
+
+#: ../../appdev/index.rst:17
+msgid "Choose \"QML Only\" from the list of app templates"
+msgstr ""
+
+#: ../../appdev/index.rst:18
+msgid "Fill in the requested information for this new app"
+msgstr ""
+
+#: ../../appdev/index.rst:19
+msgid "When the app has been generated, enter the newly created directory"
+msgstr ""
+
+#: ../../appdev/index.rst:20
+msgid "Run ``clickable``"
+msgstr ""
+
+#: ../../appdev/index.rst:22
+msgid "Voilà you have your first app running on Ubuntu Touch!"
 msgstr ""
 
 #: ../../appdev/index.rst:25
-msgid "Code Editor Integrations"
+msgid "Overview"
 msgstr ""
 
-#: ../../appdev/index.rst:26
-msgid "Atom"
+#: ../../appdev/index.rst:27
+msgid "Ubuntu Touch supports two kinds of apps: Firstly, *native apps* have their user interface written in QML or HTML and their business logic in JavaScript, C++, Python, Rust, or Go. Secondly, *web apps* are special containers to run websites in."
 msgstr ""
 
-#: ../../appdev/index.rst:28
-msgid "You can use clickable with the `Atom Editor <https://atom.io>`__ by installing the `atom-clickable-plugin <https://atom.io/packages/atom-clickable-plugin>`__. This provides some common clickable tools needed to build and run click packages for Ubuntu Touch from within Atom editor."
+#: ../../appdev/index.rst:36
+msgid "The following sections provide guides and API documentation."
 msgstr ""
 
-#: ../../appdev/index.rst:30
-msgid "QtCreator"
+#: ../../appdev/index.rst:38
+msgid "`Clickable <https://clickable-ut.dev>`_ is the main tool to build apps on Ubuntu Touch. It is an easy to use command line tool with a lot of great features. Clickable allows you to compile, build, test, and publish your app. It also provides various templates to get you started with app development."
 msgstr ""
 
-#: ../../appdev/index.rst:32
-msgid "Available on top of clickable docker image, ``clickable ide qtcreator`` command within your project directory will launch a QtCreator instance and auto setup the project for you, you will have code completion and navigation for Ubuntu Touch components as well as run/debug facilities."
+#: ../../appdev/index.rst:40
+msgid "You can use any code editor or IDE to work on the code. Then you build your app from the command line with Clickable."
 msgstr ""
 
-#: ../../appdev/index.rst:35
-msgid "Ubuntu SDK ( Unmaintained )"
+#: ../../appdev/index.rst:44
+msgid "Applications are shipped as a :ref:`click <click>` package and can be published on the official app store `OpenStore <https://open-store.io>`__. Note also that most apps in the OpenStore are open source and can serve as references and inspiration."
 msgstr ""
 
-#: ../../appdev/index.rst:37
-msgid "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower."
+#: ../../appdev/index.rst:47
+msgid "References and guides"
 msgstr ""
 
-#: ../../appdev/index.rst:39
-msgid "You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed to work correctly. You can use the following commands to install::"
+#: ../../appdev/index.rst:57
+msgid "This is a helpful and welcoming community and everything works better in teamwork! Looking for other developers that might want to collaborate with you on your app? Have questions that aren’t answered in the docs or want to chat with other Ubuntu Touch developers? Join our `UBports UT App Dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports App Development forum <https://forums.ubports.com/category/35/app-development>`_! You can also check out our list of :ref:`preinstalled apps <preinstalledapps>`. Contributions to those are greatly appreciated and directly reach a larger audience."
 msgstr ""
 
-#: ../../appdev/index.rst:49
-msgid "Guides"
+#: ../../appdev/index.rst:64
+msgid "Maintainers wanted"
 msgstr ""
 
-#: ../../appdev/index.rst:51
-msgid "Get started building your first app or learn about advanced concepts with our :ref:`Developer guides <devguides>`."
+#: ../../appdev/index.rst:66
+msgid "All apps love contributions. But some core apps are lacking maintainers. Please check the `list of core apps <https://github.com/ubports/ubuntu-touch/blob/master/CORE_APPS.md>`_ and see if you want to step up as new maintainer for one of our core apps. The maintainer reviews MR's, triages and investigates issue reports and helps to develop the app."
 msgstr ""
 
-#: ../../appdev/index.rst:67
-msgid "Publishing"
-msgstr ""
-
-#: ../../appdev/index.rst:69
-msgid "After you are done building your app, distribute it on the `OpenStore <https://open-store.io/>`__ with our :ref:`Publishing guides <publishing>`."
-msgstr ""
-
-#: ../../appdev/index.rst:78
-msgid "Documentation"
-msgstr ""
-
-#: ../../appdev/index.rst:80
-msgid "`QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__"
-msgstr ""
-
-#: ../../appdev/index.rst:81
-msgid "`Cordova HTML5 API <https://api-docs.ubports.com/sdk/apps/html5/index.html>`__"
-msgstr ""
-
-#: ../../appdev/index.rst:82
-msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
-msgstr ""
-
-#: ../../appdev/index.rst:83
-msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
-msgstr ""
-
-#: ../../appdev/index.rst:85
-msgid "It is possible to develop cross-platform apps that don't depend on Ubuntu specific APIs, although this is not the official way of developing apps for Ubuntu Touch. If running on other operating systems is an requirement for your app, you can refer to this  APIs instead:"
-msgstr ""
-
-#: ../../appdev/index.rst:87
-msgid "`Kirigami API <https://api.kde.org/frameworks/kirigami/html/>`__"
-msgstr ""
-
-#: ../../appdev/index.rst:88
-msgid "`Qt Quick Controls 2 API <https://doc.qt.io/qt-5/qtquickcontrols-index.html>`__"
-msgstr ""
-
-#: ../../appdev/index.rst:92
-#: ../../appdev/platform/index.rst:4
-msgid "Platform"
-msgstr ""
-
-#: ../../appdev/index.rst:105
-msgid "Sample apps"
-msgstr ""
-
-#: ../../appdev/index.rst:107
-msgid "Learn more about app development by digging into our :ref:`Sample apps <sampleapps>`."
-msgstr ""
-
-#: ../../appdev/index.rst:117
-msgid "Preinstalled apps"
-msgstr ""
-
-#: ../../appdev/index.rst:119
-msgid "The :doc:`/contribute/preinstalled-apps` page has information on developing the apps which are included with Ubuntu Touch."
+#: ../../appdev/index.rst:68
+msgid "The best way to start is by making some contributions and let the reviewers know that you are interested. Or join our matrix group at `#ubcd:matrix.org <https://matrix.to/#/#ubcd:matrix.org>`_ and introduce yourself."
 msgstr ""
 
 #: ../../appdev/nativeapp/index.rst:4
-msgid "Native applications"
+msgid "Native apps"
 msgstr ""
 
 #: ../../appdev/nativeapp/index.rst:6
-msgid "The recommended way to build a native application on Ubuntu Touch is to use the `Qt <https://doc.qt.io/>`__ framework ( current version shipped on Ubuntu Touch 16.04 is Qt 5.9.5 ). You do not have to stick with the traditional C++<->QML Qt model, you can use also Python, Go, Rust or even Javascript for your backend."
+msgid "The recommended way to build a native application on Ubuntu Touch is to use the `Qt <https://doc.qt.io/>`__ framework (current version since OTA-16 is Qt 5.12.9). You do not have to stick with the traditional C++<->QML Qt model, you can use also Python, Go, Rust or even Javascript for your backend."
 msgstr ""
 
-#: ../../appdev/nativeapp/index.rst:9
+#: ../../appdev/nativeapp/index.rst:10
 msgid "Ubuntu Touch provides a subset of Qt QML components to ease the development of your app : `QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__ and Icons: `Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__, but you can also ship your cross platform app using standard Qt QML QtQuick2 components."
 msgstr ""
 
-#: ../../appdev/nativeapp/index.rst:12
+#: ../../appdev/nativeapp/index.rst:13
 msgid "You can use `Clickable <http://clickable.bhdouglass.com/en/latest/>`_ to facilitate Packaging, deploying, publishing and tests ."
 msgstr ""
 
-#: ../../appdev/nativeapp/index.rst:14
+#: ../../appdev/nativeapp/index.rst:15
 msgid "Check out informations about the platform and confinement model in :ref:`Platform <platform>` section"
 msgstr ""
 
@@ -1351,11 +1411,12 @@ msgstr ""
 #: ../../appdev/platform/apparmor.rst:165
 #: ../../appdev/platform/apparmor.rst:175
 #: ../../appdev/platform/apparmor.rst:203
-#: ../../appdev/platform/apparmor.rst:233
-#: ../../appdev/platform/apparmor.rst:241
+#: ../../appdev/platform/apparmor.rst:213
+#: ../../appdev/platform/apparmor.rst:243
 #: ../../appdev/platform/apparmor.rst:251
 #: ../../appdev/platform/apparmor.rst:261
-#: ../../appdev/platform/apparmor.rst:289
+#: ../../appdev/platform/apparmor.rst:271
+#: ../../appdev/platform/apparmor.rst:299
 msgid "Usage: common"
 msgstr ""
 
@@ -1392,10 +1453,10 @@ msgstr ""
 #: ../../appdev/platform/apparmor.rst:149
 #: ../../appdev/platform/apparmor.rst:183
 #: ../../appdev/platform/apparmor.rst:193
-#: ../../appdev/platform/apparmor.rst:213
 #: ../../appdev/platform/apparmor.rst:223
-#: ../../appdev/platform/apparmor.rst:269
+#: ../../appdev/platform/apparmor.rst:233
 #: ../../appdev/platform/apparmor.rst:279
+#: ../../appdev/platform/apparmor.rst:289
 msgid "Usage: reserved"
 msgstr ""
 
@@ -1584,102 +1645,114 @@ msgid "The networking policy group allows an app to contact network devices and 
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:209
-msgid "picture_files"
+msgid "nfc"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:211
-msgid "Description: Can read and write to picture files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access picture files instead."
+msgid "Description: Can access the NFC functionality"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:215
-msgid "The picture_files policy group allows an app to read and write to the Pictures directories in the user's home folder or on external media."
+msgid "The nfc policy group allows an app to read and write NFC tags via NDEF data as well as establishing a peer-to-peer connection between two devices."
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:219
-msgid "picture_files_read"
+msgid "picture_files"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:221
-msgid "Description: Can read all picture files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access picture files instead."
+msgid "Description: Can read and write to picture files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access picture files instead."
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:225
-msgid "The picture_files_read policy group allows an app to read the Pictures directories in the user's home folder or on external media."
+msgid "The picture_files policy group allows an app to read and write to the Pictures directories in the user's home folder or on external media."
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:229
-msgid "push-notification-client"
+msgid "picture_files_read"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:231
-msgid "Description: Can use push notifications as a client"
+msgid "Description: Can read all picture files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access picture files instead."
 msgstr ""
 
-#: ../../appdev/platform/apparmor.rst:237
-msgid "sensors"
+#: ../../appdev/platform/apparmor.rst:235
+msgid "The picture_files_read policy group allows an app to read the Pictures directories in the user's home folder or on external media."
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:239
-msgid "Description: Can access the sensors"
+msgid "push-notification-client"
 msgstr ""
 
-#: ../../appdev/platform/apparmor.rst:243
-msgid "Allows apps to access `device sensors`_"
+#: ../../appdev/platform/apparmor.rst:241
+msgid "Description: Can use push notifications as a client"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:247
-msgid "usermetrics"
+msgid "sensors"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:249
-msgid "Description: Can use UserMetrics to update the InfoGraphic"
+msgid "Description: Can access the sensors"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:253
-msgid "Allows an app to write metrics to the UserMetrics service so they can be displayed on the InfoGraphic."
+msgid "Allows apps to access `device sensors`_"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:257
-msgid "video"
+msgid "usermetrics"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:259
-msgid "Description: Can play video (allows playing remote content via media-hub)"
+msgid "Description: Can use UserMetrics to update the InfoGraphic"
 msgstr ""
 
-#: ../../appdev/platform/apparmor.rst:265
-msgid "video_files"
+#: ../../appdev/platform/apparmor.rst:263
+msgid "Allows an app to write metrics to the UserMetrics service so they can be displayed on the InfoGraphic."
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:267
-msgid "Description: Can read and write to video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead."
+msgid "video"
 msgstr ""
 
-#: ../../appdev/platform/apparmor.rst:271
-msgid "The video_files policy group allows an app to read and write to the Videos directories in the user's home folder or on external media."
+#: ../../appdev/platform/apparmor.rst:269
+msgid "Description: Can play video (allows playing remote content via media-hub)"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:275
-msgid "video_files_read"
+msgid "video_files"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:277
-msgid "Description: Can read all video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead."
+msgid "Description: Can read and write to video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead."
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:281
-msgid "The video_files_read policy group allows an app to read the Videos directories in the user's home folder or on external media."
+msgid "The video_files policy group allows an app to read and write to the Videos directories in the user's home folder or on external media."
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:285
-msgid "webview"
+msgid "video_files_read"
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:287
-msgid "Description: Can use the UbuntuWebview"
+msgid "Description: Can read all video files. This policy group is reserved for certain applications, such as gallery applications. Developers should typically use the content_exchange policy group and API to access video files instead."
 msgstr ""
 
 #: ../../appdev/platform/apparmor.rst:291
+msgid "The video_files_read policy group allows an app to read the Videos directories in the user's home folder or on external media."
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:295
+msgid "webview"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:297
+msgid "Description: Can use the UbuntuWebview"
+msgstr ""
+
+#: ../../appdev/platform/apparmor.rst:301
 msgid "The webview policy group allows apps to embed a `web browser view`_."
 msgstr ""
 
@@ -1775,6 +1848,10 @@ msgstr ""
 msgid "For a full list of available policy groups, see :doc:`apparmor`."
 msgstr ""
 
+#: ../../appdev/platform/index.rst:4
+msgid "Platform"
+msgstr ""
+
 #: ../../appdev/platform/index.rst:6
 msgid "Here are Ubuntu Touch platforms key topics when you want to extend your app with Ubuntu Touch ecosystem:"
 msgstr ""
@@ -1819,33 +1896,8 @@ msgstr ""
 msgid "Here you will get some informations about the confinment model and the packaging system:"
 msgstr ""
 
-#: ../../appdev/publishing/index.rst:4
-msgid "App publishing guides"
-msgstr ""
-
-#: ../../appdev/publishing/index.rst:6
-msgid "We are currently working on expanding our list of publishing guides. In the mean time you can get started over at the `OpenStore's submission page <https://open-store.io/submit>`__."
-msgstr ""
-
-#: ../../appdev/publishing/index.rst:8
-msgid "If you are interested in helping create developer guides check out our `GitLab Project <https://gitlab.com/ubports/ux/development-resources>`__."
-msgstr ""
-
-#: ../../appdev/samples/index.rst:4
-msgid "Sample Apps"
-msgstr ""
-
-#: ../../appdev/samples/index.rst:6
-msgid "We are currently working on expanding our list of sample apps. In the mean time many apps on the `OpenStore <https://open-store.io/>`__ are open source and can be used as a reference."
-msgstr ""
-
-#: ../../appdev/samples/index.rst:8
-msgid "If you are interested in helping create sample apps check out our `GitLab Project <https://gitlab.com/ubports/ux/development-resources>`__."
-msgstr ""
-
 #: ../../appdev/webapp/guide.rst:2
-#: ../../appdev/webapp/index.rst:15
-msgid "Guide"
+msgid "Webapp guide"
 msgstr ""
 
 #: ../../appdev/webapp/guide.rst:5
@@ -2069,11 +2121,11 @@ msgid "W3C allows apps to use local storage, and Oxide/Webapp-container supports
 msgstr ""
 
 #: ../../appdev/webapp/index.rst:4
-msgid "Web applications"
+msgid "Web apps"
 msgstr ""
 
 #: ../../appdev/webapp/index.rst:6
-msgid "Ubuntu Webapps are a great way to deliver online web applications into Ubuntu."
+msgid "Ubuntu Webapps can be a nice way to deliver online web applications into Ubuntu."
 msgstr ""
 
 #: ../../appdev/webapp/index.rst:8
@@ -2084,40 +2136,48 @@ msgstr ""
 msgid "Web applications are hosted online. They can be as simple as a website, like an online news site, or they can distribute content like videos. They can also have a rich user interface or use the WebGL extension to deliver games online."
 msgstr ""
 
-#: ../../appdev/webapp/index.rst:12
-msgid "Note: Ubuntu webapps and Ubuntu HTML5 apps are similar but not identical. The main difference is that the content of a webapp is provided through a URL, whereas HTML5 apps install their content (and usually provide an Ubuntu HTML5 GUI). Webapps also have restricted access to platform APIs."
+#: ../../appdev/webapp/index.rst:13
+msgid "Ubuntu webapps and Ubuntu HTML5 apps are similar but not identical. The main difference is that the content of a webapp is provided through a URL, whereas HTML5 apps install their content (and usually provide an Ubuntu HTML5 GUI). Webapps also have restricted access to platform APIs."
 msgstr ""
 
 #: ../../appdev/webapp/index.rst:17
-msgid "This guide targets webapps for converged Ubuntu, that is, Ubuntu for Devices (phones and tablets). The Ubuntu Desktop has additional webapps support not covered here. Support for webapps on converged Ubuntu will continue to grow, and of course the future of Ubuntu is convergence, so stay tuned."
+msgid "A different approach to webapps published in the open store is to simply create shortcuts directly yourself with `webber app <https://open-store.io/app/webber.timsueberkrueb>`__."
 msgstr ""
 
-#: ../../appdev/webapp/index.rst:26
-msgid "Quick start"
+#: ../../appdev/webapp/index.rst:19
+msgid "Todo"
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:21
+msgid "There is also another way to create somewhat more featureful webapps, sometimes referred to as webapp+ or alternative container. This needst to be properly documented. It's a simple qml app that can be easily configured. Creation is almost as simple as 'classic' webapp, but result is more powerfull with the a nice navigation feature. A rather advanced example of this is the `YouTube app <https://open-store.io/app/youtube-web.mateo-salta>`__ from Mateo Salta which has quite some modifications on top of the template."
 msgstr ""
 
 #: ../../appdev/webapp/index.rst:28
+msgid "Guide"
+msgstr ""
+
+#: ../../appdev/webapp/index.rst:39
 msgid "There are several tools to help you package and deploy your webapp to your device:"
 msgstr ""
 
-#: ../../appdev/webapp/index.rst:30
+#: ../../appdev/webapp/index.rst:41
 msgid "`Webapp creator <https://open-store.io/app/webapp-creator.jujuyeh>`_ application available from the openstore"
 msgstr ""
 
-#: ../../appdev/webapp/index.rst:31
-msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ CLI"
+#: ../../appdev/webapp/index.rst:42
+msgid "`Clickable <https://clickable-ut.dev>`_ CLI"
 msgstr ""
 
-#: ../../appdev/webapp/index.rst:35
+#: ../../appdev/webapp/index.rst:46
 msgid "Debugging your webapp"
 msgstr ""
 
-#: ../../appdev/webapp/index.rst:37
+#: ../../appdev/webapp/index.rst:48
 msgid "This guide give you some tips to help you debug your webapp."
 msgstr ""
 
 #: ../../appdev/webapp/webdebug.rst:2
-msgid "Debug web application"
+msgid "Debug webapps"
 msgstr ""
 
 #: ../../appdev/webapp/webdebug.rst:4
@@ -2136,18 +2196,26 @@ msgstr ""
 msgid "If you are comfortable in a CLI environment, most Javascript errors will leave an entry in the app log file::"
 msgstr ""
 
-#: ../../appdev/webapp/webdebug.rst:17
-msgid "Debugging in the browser"
+#: ../../appdev/webapp/webdebug.rst:15
+msgid "You can check the log file in the terminal or use the `LogViewer <https://open-store.io/app/logviewer.neothethird>`_ app."
 msgstr ""
 
-#: ../../appdev/webapp/webdebug.rst:20
-msgid "The default Ubuntu Touch browser is based on the Blink technology that is also used in Chrome/Chromium. By starting the browser in a special mode, you have access to the regular Chrome-style debugger."
+#: ../../appdev/webapp/webdebug.rst:19
+msgid "Enable developer mode for debugging to keep logs until the next reboot. Without developer mode enabled, logs will get deleted after you close the app."
 msgstr ""
 
 #: ../../appdev/webapp/webdebug.rst:22
+msgid "Debugging in the browser"
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:24
+msgid "The default Ubuntu Touch browser is based on the Blink technology that is also used in Chrome/Chromium. By starting the browser in a special mode, you have access to the regular Chrome-style debugger."
+msgstr ""
+
+#: ../../appdev/webapp/webdebug.rst:26
 msgid "On your phone, start the browser in inspector mode:::"
 msgstr ""
 
-#: ../../appdev/webapp/webdebug.rst:27
+#: ../../appdev/webapp/webdebug.rst:31
 msgid "Now on your computer, launch Chrome/Chromium browser, and point address to ``http://YOUR_UT_IP_ADDRESS:9221``"
 msgstr ""

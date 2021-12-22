@@ -1,7 +1,7 @@
 repo.ubports.com
 ================
 
-This is the package archive system for UBports projects. It hosts various PPAs containing all deb-components of Ubuntu Touch.
+This is the package archive system for UBports projects. It hosts various PPAs containing all the DEB-components of Ubuntu Touch.
 
 Repository naming convention
 ----------------------------
@@ -9,20 +9,24 @@ Repository naming convention
 Native packages
 ^^^^^^^^^^^^^^^
 
-Native packages are repositories which contain a ``debian/`` directory **with** the source used to create the Debian source package (``.dsc``).
+Native packages (like https://github.com/ubports/system-settings) are repositories that contain a ``debian/`` folder **with** the source used to create the DEB source package (``.dsc``).
 
-The name of the Debian source package generated from the repository and the name of the git-repository should be the same.
+The name of the Debian source package generated from the repository and the name of the Git-repository should be the same.
 
 Packaging repositories
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Packaging repositories contain a ``debian/`` directory **without** the source used to create the Debian source package (``.dsc``). They also contain instructions to tell ``debhelper`` how to get the source used to create the source package.
+Packaging repositories (like https://github.com/ubports/pulseaudio-packaging) contain a ``debian`` folder **without** the source used to create the Debian source package (``.dsc``).
+They also contain instructions to tell ``debhelper`` how to get the sources used to create the source package.
 
-The repository should have the name of the source package it generates with ``-packaging`` appended to the end. For example, a packaging repository that generates a source package called ``sandwich`` would be called ``sandwich-packaging``.
+The repository should have the name of the source package it generates with ``-packaging`` appended to the end.
+For example, a packaging repository that generates a source package called ``sandwich`` would be called ``sandwich-packaging``.
 
 Creating new PPAs
 -----------------
 
-New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`. The name of the branch translates literally to the name of the PPA: ``http://repo.ubports.com/dists/[branch name]``
+New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`. The name of the branch translates literally to the name of the PPA: ``https://repo.ubports.com/dists/[branch name]``
 
-Non-standard PPAs (i.e. not ``xenial``, ``vivid`` or ``bionic``) are kept for three months. In case they need to be kept for a longer time, a file with the name ``ubports.keep`` can be created in the root of the repository, containing the date until which the PPA shall be kept open in the form of ``YYYY-MM-dd``. If this file is empty, the PPA will be kept for two years after the last build.
+Non-standard PPAs (i.e. not ``vivid``, ``xenial``, or ``bionic``) are kept for three months.
+If they need to be kept for longer, a file with the name ``ubports.keep`` containing a date in the form of in the form of ``YYYY-MM-dd`` can be used to decide how long to keep the PPA in the repository for.
+If this file is empty, the PPA will be kept for two years after the last build.

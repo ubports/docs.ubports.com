@@ -205,6 +205,16 @@ Usage: common
 The networking policy group allows an app to contact network devices and use the `download manager`_.
 
 
+nfc
+---
+
+Description: Can access the NFC functionality
+
+Usage: common
+
+The nfc policy group allows an app to read and write NFC tags via NDEF data as well as establishing a peer-to-peer connection between two devices.
+
+
 picture_files
 -------------
 

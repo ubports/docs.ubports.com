@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2020-10-09 21:09+0000\n"
+"PO-Revision-Date: 2021-10-04 15:44+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/es/>\n"
@@ -54,13 +54,13 @@ msgid "And on MacOS with `Homebrew <https://brew.sh>`_::"
 msgstr "Y en MacOS con `Homebrew <https://brew.sh>`_::"
 
 #: ../../userguide/advanceduse/adb.rst:24
-#, fuzzy
 msgid ""
 "For Windows, grab the command-line tools only package from `developer."
 "android.com <https://developer.android.com/studio/index.html#downloads>`_."
 msgstr ""
-"Para Windows, consiga las herramientas solo para línea de órdenes de `aquí "
-"<https://developer.android.com/studio/index.html#downloads>`_."
+"Para Windows, consiga las herramientas para líneas de órdenes desde `"
+"developer.android.com <https://developer.android.com/studio/"
+"index.html#downloads>`_."
 
 #: ../../userguide/advanceduse/adb.rst:27
 msgid "Enable developer mode"
@@ -110,20 +110,19 @@ msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:41
 msgid "Adb shell commands::"
-msgstr ""
+msgstr "Comandos de adb shell::"
 
 #: ../../userguide/advanceduse/adb.rst:46
 msgid "Additional Adb commands::"
-msgstr ""
+msgstr "Comandos de adb adicionales::"
 
 #: ../../userguide/advanceduse/adb.rst:51
-#, fuzzy
 msgid ""
 "For more ADB commands refer to the `official documentation <https://"
 "developer.android.com/studio/command-line/adb>`_."
 msgstr ""
-"Para Windows, consiga las herramientas solo para línea de órdenes de `aquí "
-"<https://developer.android.com/studio/index.html#downloads>`_."
+"Para más comandos de ADB, visite la `documentación oficial "
+"<https://developer.android.com/studio/command-line/adb>`_."
 
 #: ../../userguide/advanceduse/adb.rst:54
 msgid "Add hardware IDs"
@@ -604,10 +603,11 @@ msgstr ""
 #: ../../userguide/advanceduse/ssh.rst:38
 msgid "Now start the ssh server. If you are using an Android-based phone::"
 msgstr ""
+"Ahora inicie el servidor SSH. Si utiliza un teléfono basado en Android::"
 
 #: ../../userguide/advanceduse/ssh.rst:42
 msgid "If you are using a Linux-based phone (like the Pinephone)::"
-msgstr ""
+msgstr "Si utiliza un teléfono basado en Linux (como el Pinephone)::"
 
 #: ../../userguide/advanceduse/ssh.rst:48
 msgid "Connect"

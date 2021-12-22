@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 09:34-0500\n"
-"PO-Revision-Date: 2019-02-06 21:23+0000\n"
-"Last-Translator: advocatux <advocatux@airpost.net>\n"
+"PO-Revision-Date: 2021-07-24 20:04+0000\n"
+"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
 "Language-Team: Spanish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.11.3\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: ../../appdev/guides/contenthub.rst:4
@@ -199,13 +199,12 @@ msgstr ""
 "qml#L38>`_)."
 
 #: ../../appdev/guides/contenthub.rst:99
-#, fuzzy
 msgid ""
 "The only difference between this and the previous code is that ``handler`` "
 "is ``ContentHandler.Share``."
 msgstr ""
 "La única diferencia entre esto y el código previo es que ``handler`` es "
-"``ContentHandler.Share``"
+"``ContentHandler.Share``."
 
 #: ../../appdev/guides/contenthub.rst:102
 msgid "Wait a minute. Why the different apps?"
@@ -1102,9 +1101,8 @@ msgid "tag"
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "The tag of the push notification."
-msgstr "Envío de notificaciones"
+msgstr "Envío de notificaciones."
 
 #: ../../appdev/guides/pushnotifications.rst:208
 msgid "sound"
@@ -1167,9 +1165,8 @@ msgid "A JSON object, which defines how to display the emblem"
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "counter."
-msgstr "cuentas"
+msgstr "cuentas."
 
 #: ../../appdev/guides/pushnotifications.rst:221
 msgid "card"
@@ -1909,13 +1906,12 @@ msgid ""
 msgstr ""
 
 #: ../../appdev/nativeapp/index.rst:12
-#, fuzzy
 msgid ""
 "You can use `Clickable <http://clickable.bhdouglass.com/en/latest/>`_ to "
 "facilitate Packaging, deploying, publishing and tests ."
 msgstr ""
 "`Clickable <http://clickable.bhdouglass.com/en/latest/>`_ interfaz de la "
-"línea de órdenes"
+"línea de órdenes."
 
 #: ../../appdev/nativeapp/index.rst:14
 msgid ""
@@ -2964,7 +2960,6 @@ msgstr ""
 "la URL correspondiente en el navegador."
 
 #: ../../appdev/webapp/guide.rst:71
-#, fuzzy
 msgid ""
 "Tip: Make sure to fully specify the subdomain in your starting URL, that is, "
 "use http://www.ubuntu.com instead of www.ubuntu.com. Not specifying the "
@@ -2974,7 +2969,7 @@ msgstr ""
 "Consejo: asegúrese de especificar completamente el subdominio en su URL de "
 "inicio, esto es, use http://www.ubuntu.com en vez de www.ubuntu.com. No "
 "especificar el subdominio podría crear una URL ambigua y así introducir "
-"problemas de seguridad. Patrones comodín más complejos"
+"problemas de seguridad. Patrones comodín más complejos."
 
 #: ../../appdev/webapp/guide.rst:75
 msgid "More complex wildcard patterns"
@@ -3162,7 +3157,6 @@ msgid "Browser data containment"
 msgstr "Confinamiento de los datos del navegador"
 
 #: ../../appdev/webapp/guide.rst:167
-#, fuzzy
 msgid ""
 "The webapp experience is contained and isolated from the browser data point "
 "of view. That is webapps do not access data from any other installed "
@@ -3173,7 +3167,7 @@ msgstr ""
 "de vista de los datos del navegador. Esto es, las aplicaciones web no "
 "acceden a los datos desde ningún otro navegador instalado, como historial, "
 "«cookies» y así. Otro navegador en el sistema no accede a los datos de la "
-"aplicación web. Almacenamiento"
+"aplicación web. Almacenamiento."
 
 #: ../../appdev/webapp/guide.rst:170
 msgid "Storage"

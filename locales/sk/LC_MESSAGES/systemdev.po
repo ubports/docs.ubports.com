@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-28 12:29-0500\n"
+"POT-Creation-Date: 2021-06-29 16:27-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -138,6 +138,25 @@ msgid ""
 "the ``syncevolution`` process again, as explained above."
 msgstr ""
 
+#: ../../systemdev/guides.rst:2
+msgid "System Software guides"
+msgstr ""
+
+#: ../../systemdev/guides.rst:4
+msgid ""
+"These guides will give you general instructions on building and testing your "
+"own changes to Ubuntu Touch system software. They are not not an exhaustive "
+"reference on everything you will come across during development, but they "
+"are a great starting point."
+msgstr ""
+
+#: ../../systemdev/guides.rst:8
+msgid ""
+"If you get stuck at any point while going through this documentation, please "
+"contact us for help via `the UBports Forum <https://forums.ubports.com>`_ or "
+"your preferred communication medium."
+msgstr ""
+
 #: ../../systemdev/index.rst:2
 msgid "System software development"
 msgstr ""
@@ -157,50 +176,8 @@ msgid ""
 "on those."
 msgstr ""
 
-#: ../../systemdev/index.rst:9 ../../systemdev/kernel-hal.rst:2
+#: ../../systemdev/kernel-hal.rst:2
 msgid "Kernel and hardware abstraction"
-msgstr ""
-
-#: ../../systemdev/index.rst:11
-msgid ""
-"This section covers how to build and install the Linux kernel and hardware "
-"abstraction layer for supported devices."
-msgstr ""
-
-#: ../../systemdev/index.rst:23
-msgid "System Software guides"
-msgstr ""
-
-#: ../../systemdev/index.rst:25
-msgid ""
-"These guides will give you general instructions on building and testing your "
-"own changes to Ubuntu Touch system software. They are not not an exhaustive "
-"reference on everything you will come across during development, but they "
-"are a great starting point."
-msgstr ""
-
-#: ../../systemdev/index.rst:29
-msgid ""
-"If you get stuck at any point while going through this documentation, please "
-"contact us for help via `the UBports Forum <https://forums.ubports.com>`_ or "
-"your preferred communication medium."
-msgstr ""
-
-#: ../../systemdev/index.rst:39
-msgid "System Software reference"
-msgstr ""
-
-#: ../../systemdev/index.rst:41
-msgid ""
-"This section includes reference guides on how different parts of the Ubuntu "
-"Touch system interact to create the user experience."
-msgstr ""
-
-#: ../../systemdev/index.rst:43
-msgid ""
-"There's not much here yet, but maybe you'd like to add some reference "
-"material? Check out :doc:`our guide to contributing to documentation </"
-"contribute/documentation>` to learn more."
 msgstr ""
 
 #: ../../systemdev/kernel-hal.rst:4
@@ -235,11 +212,11 @@ msgid ""
 "the kernel and hardware abstraction is implemented:"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:16 ../../systemdev/kernel-hal.rst:21
+#: ../../systemdev/kernel-hal.rst:16 ../../systemdev/kernel-hal.rst:29
 msgid "Android 5.1 based ports"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:17 ../../systemdev/kernel-hal.rst:56
+#: ../../systemdev/kernel-hal.rst:17 ../../systemdev/kernel-hal.rst:64
 msgid "Halium based ports"
 msgstr ""
 
@@ -247,7 +224,7 @@ msgstr ""
 msgid "Linux kernel"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:23
+#: ../../systemdev/kernel-hal.rst:31
 msgid ""
 "Android 5.1 based ports of Ubuntu Touch consist of the Linux kernel for this "
 "device plus a minimal Android system that is used to enable all the "
@@ -256,7 +233,7 @@ msgid ""
 "are also based off quite old Linux kernel versions."
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:25
+#: ../../systemdev/kernel-hal.rst:33
 msgid ""
 "For some devices continuous integration (CI) has been set up to build both "
 "the Kernel as well as the Android system. Other devices have to be built "
@@ -266,113 +243,113 @@ msgid ""
 "available. The manufacturers of these devices provided binary builds instead."
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:29
+#: ../../systemdev/kernel-hal.rst:37
 msgid "With CI"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:28
+#: ../../systemdev/kernel-hal.rst:36
 msgid "Nexus 5 (hammerhead)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:29
+#: ../../systemdev/kernel-hal.rst:37
 msgid "OnePlus One (bacon)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:30
+#: ../../systemdev/kernel-hal.rst:38
 msgid "Fairphone 2 (FP2)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:32
+#: ../../systemdev/kernel-hal.rst:40
 msgid "Manual builds"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:32
+#: ../../systemdev/kernel-hal.rst:40
 msgid "Nexus 4 (mako)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:33
+#: ../../systemdev/kernel-hal.rst:41
 msgid "Nexus 7 2013 Wifi (flo)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:41
+#: ../../systemdev/kernel-hal.rst:49
 msgid "(Partial) Binary builds"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:35
+#: ../../systemdev/kernel-hal.rst:43
 msgid ""
 "Bq Aquaris E4.5 (`krillin <https://github.com/ubports/kernel_krillin>`_)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:36
+#: ../../systemdev/kernel-hal.rst:44
 msgid ""
 "Bq Aquaris E5 (`vegetahd <https://github.com/ubports/kernel_vegetahd>`_)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:37
+#: ../../systemdev/kernel-hal.rst:45
 msgid ""
 "Bq Aquaris M10 HD (`cooler <https://github.com/ubports/kernel_bq_m10>`_)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:38
+#: ../../systemdev/kernel-hal.rst:46
 msgid "Bq Aquaris M10 FHD (frieza)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:39
+#: ../../systemdev/kernel-hal.rst:47
 msgid "Meizu MX4 (`arale <https://github.com/ubports/kernel_arale>`_)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:40
+#: ../../systemdev/kernel-hal.rst:48
 msgid "Meizu Pro 5 (`turbo <https://github.com/ubports/kernel_turbo>`_)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:41
+#: ../../systemdev/kernel-hal.rst:49
 msgid "Nexus 7 2013 GSM (deb)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:43
+#: ../../systemdev/kernel-hal.rst:51
 msgid ""
 "Detailed steps for the three CI enabled devices can be found under  :doc:"
 "`HAL for Nexus 5, OnePlus One, and Fairphone 2 <ubp-5.1>`."
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:45
+#: ../../systemdev/kernel-hal.rst:53
 msgid ""
 "For the Nexus 7 2013 Wifi (flo) head  over to the `Community Ports "
 "repository for flo <https://gitlab.com/ubports/community-ports/flo>`_."
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:47
+#: ../../systemdev/kernel-hal.rst:55
 msgid ""
 "The port for the Nexus 7 2013 GSM (deb) was created by a community member. "
 "Unfortunately those repositories have disappeared over time. So this build "
 "also falls into the group of prebuilt binaries."
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:49
+#: ../../systemdev/kernel-hal.rst:57
 msgid "Todo"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:50
+#: ../../systemdev/kernel-hal.rst:58
 msgid "Document the process for Nexus 4 (mako)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:58
+#: ../../systemdev/kernel-hal.rst:66
 msgid ""
 "Newer ports to Android devices are based on `Halium <https://docs.halium."
 "org>`_. In some aspects Halium is similar to the 5.1 based ports:"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:60
+#: ../../systemdev/kernel-hal.rst:68
 msgid ""
 "It also uses the device specific fork of the Linux kernel provided by the "
 "manufacturer."
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:61
+#: ../../systemdev/kernel-hal.rst:69
 msgid "It also uses a minimal Android system to enable some hardware."
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:63
+#: ../../systemdev/kernel-hal.rst:71
 msgid ""
 "However, Halium permits a more generic way of porting to Android devices. "
 "This allows the work to be shared between multiple projects that bring "
@@ -380,7 +357,7 @@ msgid ""
 "also based on newer Android versions 7.1 and above."
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:65
+#: ../../systemdev/kernel-hal.rst:73
 msgid ""
 "Some examples of Halium ports are those for Sony Xperia X and Oneplus 3. "
 "Basically all devices that are listed on `devices.ubuntu-touch.io <https://"
@@ -388,43 +365,43 @@ msgid ""
 "or below as Linux based ports."
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:67
+#: ../../systemdev/kernel-hal.rst:75
 msgid ""
 "All new ports of UT to Android devices should follow the Halium process. "
-"Further details can be found under :doc:`Halium porting <../porting/Intro>`"
+"Further details can be found under :doc:`Halium porting <../porting/index>`"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:70
+#: ../../systemdev/kernel-hal.rst:78
 msgid "Linux based ports"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:72
+#: ../../systemdev/kernel-hal.rst:80
 msgid ""
 "Linux based port refers to devices where a Linux kernel is used without any "
 "Android parts. The following devices are in this group:"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:74
+#: ../../systemdev/kernel-hal.rst:82
 msgid "`Desktop PC (x86) <https://devices.ubuntu-touch.io/device/x86/>`_"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:75
+#: ../../systemdev/kernel-hal.rst:83
 msgid "Librem 5 (librem5)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:76
+#: ../../systemdev/kernel-hal.rst:84
 msgid "Pinebook (pinebook)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:77
+#: ../../systemdev/kernel-hal.rst:85
 msgid ":doc:`Pinephone (pinephone) <kernel-pinephone>`"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:78
+#: ../../systemdev/kernel-hal.rst:86
 msgid ":doc:`Pinetab (pinetab) <kernel-pinephone>`"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:79
+#: ../../systemdev/kernel-hal.rst:87
 msgid ""
 "`Raspberry Pi (rpi) <https://gitlab.com/ubports/community-ports/"
 "raspberrypi>`_ (see also this `blog post <https://ubports.com/blog/ubports-"
@@ -517,7 +494,7 @@ msgid ""
 msgstr ""
 
 #: ../../systemdev/kernel-pinephone.rst:64
-#: ../../systemdev/mms-infrastructure.rst:49
+#: ../../systemdev/mms-infrastructure.rst:53
 msgid "References"
 msgstr ""
 
@@ -690,11 +667,11 @@ msgstr ""
 msgid "Incoming MMS diagram"
 msgstr ""
 
-#: ../../systemdev/mms-infrastructure.rst:44
+#: ../../systemdev/mms-infrastructure.rst:46
 msgid "Outgoing MMS diagram"
 msgstr ""
 
-#: ../../systemdev/mms-infrastructure.rst:51
+#: ../../systemdev/mms-infrastructure.rst:55
 msgid "initial source: https://wiki.ubuntu.com/Touch/Specs/MMSInfrastructure"
 msgstr ""
 
@@ -950,6 +927,23 @@ msgid ""
 "`media-hub`_."
 msgstr ""
 
+#: ../../systemdev/reference.rst:2
+msgid "System Software reference"
+msgstr ""
+
+#: ../../systemdev/reference.rst:4
+msgid ""
+"This section includes reference guides on how different parts of the Ubuntu "
+"Touch system interact to create the user experience."
+msgstr ""
+
+#: ../../systemdev/reference.rst:6
+msgid ""
+"There's not much here yet, but maybe you'd like to add some reference "
+"material? Check out :doc:`our guide to contributing to documentation </"
+"contribute/documentation>` to learn more."
+msgstr ""
+
 #: ../../systemdev/testing-locally.rst:2
 msgid "Making changes and testing locally"
 msgstr ""
@@ -1185,7 +1179,7 @@ msgstr ""
 #: ../../systemdev/ubp-5.1.rst:9
 msgid ""
 "We highly suggest that you follow the :doc:`Halium porting guide <../porting/"
-"Intro>` if you want to bring up a new device. The steps in here are only "
+"index>` if you want to bring up a new device. The steps in here are only "
 "relevant for hammerhead, bacon and FP2."
 msgstr ""
 
