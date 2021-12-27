@@ -8,12 +8,12 @@ The pages below show the ways to contribute that are helpful to both the project
     :maxdepth: 1
     :name: toc-contribute
 
+    translations
+    documentation
+    quality-assurance
     bugreporting
     bug-tracking
     code
-    quality-assurance
-    documentation
-    translations
     monetary
 
 If you're just getting started, we always need help with :doc:`thorough bug reporting <bugreporting>`.
