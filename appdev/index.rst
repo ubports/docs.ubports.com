@@ -59,16 +59,22 @@ Looking for other developers that might want to collaborate with you on your app
 Have questions that aren’t answered in the docs or want to chat with other Ubuntu Touch developers?
 Join our `UBports UT App Dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports App Development forum <https://forums.ubports.com/category/35/app-development>`_!
 
+
+Contributions wanted
+--------------------
+
+All apps love contributions.
+Check the `list of core apps <https://github.com/ubports/ubuntu-touch/blob/master/CORE_APPS.md>`_ or the
+
 .. toctree::
     :maxdepth: 1
 
     preinstalled-apps
 
-You can also check out our list of preinstalled apps. Contributions to those are greatly appreciated and directly reach a larger audience.
+Contributions to those are greatly appreciated and directly reach a larger audience.
 
-Maintainers wanted
-------------------
-
-All apps love contributions. But some core apps are lacking maintainers. Please check the `list of core apps <https://github.com/ubports/ubuntu-touch/blob/master/CORE_APPS.md>`_ and see if you want to step up as new maintainer for one of our core apps. The maintainer reviews MR's, triages and investigates issue reports and helps to develop the app.
-
-The best way to start is by making some contributions and let the reviewers know that you are interested. Or join our matrix group at `#ubcd:matrix.org <https://matrix.to/#/#ubcd:matrix.org>`_ and introduce yourself.
+Some core apps are currently lacking maintainers.
+See if you want to step up as new maintainer for one of them!
+The maintainer reviews MR's, triages and investigates issue reports and helps to develop the app.
+The best way to start is by making some contributions and let the reviewers know that you are interested.
+Or join our matrix group at `#ubcd:matrix.org <https://matrix.to/#/#ubcd:matrix.org>`_ and introduce yourself.
