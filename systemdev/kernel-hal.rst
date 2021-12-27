@@ -7,7 +7,7 @@ This page documents the resources and processes to build the kernel and hardware
 * A Linux kernel related issue
 * An issue related to the system-image upgrade process
 
-This document is not useful if you would like to modify :doc:`../contribute/preinstalled-apps` or :doc:`System software <../systemdev/index>`. See the respective documentation for each.
+This document is not useful if you would like to modify :ref:`preinstalledapps` or :doc:`System software <../systemdev/index>`. See the respective documentation for each.
 
 
 

@@ -6,7 +6,7 @@ This page helps you get your changes to Ubuntu Touch merged. We describe the thi
 Assumptions
 -----------
 
-This page does not include information about how to develop applications or changes to Ubuntu Touch. To learn how to develop Ubuntu Touch components, see the :doc:`/systemdev/index` section. To learn how to develop applications, see the :doc:`/appdev/index` or :doc:`/contribute/preinstalled-apps` sections.
+This page does not include information about how to develop applications or changes to Ubuntu Touch. To learn how to develop Ubuntu Touch components, see the :doc:`/systemdev/index` section. To learn how to develop applications, see the :doc:`/appdev/index` or :ref:`preinstalledapps` sections.
 
 This page assumes you know how to write your changes, use Git to commit them, push them to GitHub or Gitlab as needed, fork a repository, and make a Pull Request (PR) on GitHub or Merge Request (MR) on GitLab.
 

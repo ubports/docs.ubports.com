@@ -58,7 +58,13 @@ This is a helpful and welcoming community and everything works better in teamwor
 Looking for other developers that might want to collaborate with you on your app?
 Have questions that aren’t answered in the docs or want to chat with other Ubuntu Touch developers?
 Join our `UBports UT App Dev Telegram group <https://t.me/UbuntuAppDevEN>`_ or chat with us on the `UBports App Development forum <https://forums.ubports.com/category/35/app-development>`_!
-You can also check out our list of :ref:`preinstalled apps <preinstalledapps>`. Contributions to those are greatly appreciated and directly reach a larger audience.
+
+.. toctree::
+    :maxdepth: 1
+
+    preinstalled-apps
+
+You can also check out our list of preinstalled apps. Contributions to those are greatly appreciated and directly reach a larger audience.
 
 Maintainers wanted
 ------------------
