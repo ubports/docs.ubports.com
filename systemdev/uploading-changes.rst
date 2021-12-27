@@ -5,7 +5,8 @@ The `UBports build service <https://ci.ubports.com>`_ is capable of building Ubu
 
 This guide assumes that you have a cursory understanding of using Git and making Pull Requests on GitHub.
 
-To use the `UBports build service`_, make sure you understand our :doc:`branch naming convention </about/process/branch-naming>`. It is required that you follow the convention for deb-packages for CI to build your package correctly.
+To use the `UBports build service`_, make sure you understand our :ref:`branch naming convention <branch-naming>`.
+It is required that you follow the convention for deb-packages for CI to build your package correctly.
 
 Fork the repository
 -------------------
@@ -19,7 +20,8 @@ Make and commit changes
 
 Now that you have the package source downloaded, you can make your desired changes.
 
-Before changing anything, make sure you have checked out the branch you want to work from (probably ``xenial``, assuming you are making changes for the phone images). Then, create a new branch abiding by the :doc:`branch naming convention </about/process/branch-naming>`.
+Before changing anything, make sure you have checked out the branch you want to work from (probably ``xenial``, assuming you are making changes for the phone images).
+Then, create a new branch abiding by the :ref:`branch naming convention <branch-naming>`.
 
 After making your changes, commit them with a descriptive commit message stating what is wrong and why your changes fix that problem.
 

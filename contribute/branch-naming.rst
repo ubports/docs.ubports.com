@@ -1,3 +1,5 @@
+.. _branch-naming:
+
 Branch-naming convention
 ========================
 

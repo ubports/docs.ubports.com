@@ -11,5 +11,3 @@ This section of the documentation details standardized processes for different t
     :name: toc-about-processes
 
     release-schedule
-    ppa
-    branch-naming
