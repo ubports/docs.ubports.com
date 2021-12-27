@@ -30,7 +30,7 @@ You may view this documentation in the following languages:
    :name: sec-about
 
    about/introduction
-   about/process/index
+   about/release-schedule
 
 
 .. toctree::
