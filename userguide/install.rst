@@ -6,13 +6,14 @@ Installing Ubuntu Touch is easy, and a lot of work has gone in to making the ins
 .. warning::
     If you're switching your device over from Android, you will not be able to keep any data that is currently on the device. Create an external backup if you want to keep it.
 
-You can `Download the UBports Installer from GitHub <https://github.com/ubports/ubports-installer/releases/latest>`_. The following packages are available:
+You can `download the UBports Installer from GitHub <https://github.com/ubports/ubports-installer/releases/latest>`_.
+The following packages are available:
 
- - `Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_: ``ubports-installer-<version-number>.exe``
- - `macOS <https://devices.ubuntu-touch.io/installer/?package=dmg>`_: ``ubports-installer-<version-number>.dmg``
- - `Ubuntu or Debian <https://devices.ubuntu-touch.io/installer/?package=deb>`_: ``ubports-installer-<version-number>.deb``
- - `Other Linux distributions (snap) <https://snapcraft.io/ubports-installer>`_: ``ubports-installer-<version-number>.snap``
- - `Other Linux distributions (AppImage) <https://devices.ubuntu-touch.io/installer/?package=appimage>`_: ``ubports-installer-<version-number>.AppImage``
+- `Windows <https://devices.ubuntu-touch.io/installer/?package=exe>`_: ``ubports-installer-<version-number>.exe``
+- `macOS <https://devices.ubuntu-touch.io/installer/?package=dmg>`_: ``ubports-installer-<version-number>.dmg``
+- `Ubuntu or Debian <https://devices.ubuntu-touch.io/installer/?package=deb>`_: ``ubports-installer-<version-number>.deb``
+- `Other Linux distributions (snap) <https://snapcraft.io/ubports-installer>`_: ``ubports-installer-<version-number>.snap``
+- `Other Linux distributions (AppImage) <https://devices.ubuntu-touch.io/installer/?package=appimage>`_: ``ubports-installer-<version-number>.AppImage``
 
 Start the installer and follow the on-screen instructions that will walk you through the installation process. That's it! Have fun exploring Ubuntu Touch!
 
@@ -59,9 +60,8 @@ Missing udev-rules
 
 If the device is not detected on Linux and you are not using the snap package, then you might be missing some **udev-rules**.
 
-1. See if ``/etc/udev/rules.d/51-android.rules`` exists and contains the rules below. If not, add them to the file and run
-   ``sudo service udev restart`` or
-   ``sudo udevadm control --reload-rules && udevadm trigger``.
+See if ``/etc/udev/rules.d/51-android.rules`` exists and contains the rules below.
+If not, add them to the file and run ``sudo service udev restart`` or ``sudo udevadm control --reload-rules && udevadm trigger``.
 
 .. code-block:: text
 
@@ -121,11 +121,11 @@ Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed succe
 1. Disconnect all devices and non-essential peripherals from your PC. Charge your device on a wall-charger (not your PC) to at least 40 percent.
 2. Download the Ubuntu Touch ROM for your device and extract the zip files:
 
-    - `Bq E4.5 <https://cdimage.ubports.com/stock-bq-images/krillin.zip>`_ (*krillin*)
-    - `Bq E5 HD <https://cdimage.ubports.com/stock-bq-images/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)
-    - `Bq M10 HD <https://cdimage.ubports.com/stock-bq-images/cooler-image-stable-6.zip>`_ (*cooler*)
-    - `Bq M10 FHD <https://cdimage.ubports.com/stock-bq-images/frieza-image-stable-4.zip>`_ (*frieza*)
-    - `Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)
+   - `Bq E4.5 <https://cdimage.ubports.com/stock-bq-images/krillin.zip>`_ (*krillin*)
+   - `Bq E5 HD <https://cdimage.ubports.com/stock-bq-images/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)
+   - `Bq M10 HD <https://cdimage.ubports.com/stock-bq-images/cooler-image-stable-6.zip>`_ (*cooler*)
+   - `Bq M10 FHD <https://cdimage.ubports.com/stock-bq-images/frieza-image-stable-4.zip>`_ (*frieza*)
+   - `Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)
 
 3. Download the latest version of `SP flash tool <https://spflashtool.com/download/>`_ (*aka MTK flash tool*).
 4. Extract the zip files
