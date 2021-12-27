@@ -10,7 +10,6 @@ This section of the documentation details standardized processes for different t
     :maxdepth: 1
     :name: toc-about-processes
 
-    issue-tracking
     release-schedule
     ppa
     branch-naming

@@ -1,3 +1,5 @@
+.. _bug-reporting:
+
 Bug reporting
 =============
 

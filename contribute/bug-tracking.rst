@@ -1,5 +1,7 @@
-Issue-Tracking Guidelines
-=========================
+.. _bug-tracking:
+
+Bug tracking
+============
 
 This document describes the standard process of dealing with new issues in UBports projects.
 (Not to be confused with the :doc:`guide on writing a good bugreport </contribute/bugreporting>`.)
@@ -101,7 +103,8 @@ Milestones
 Milestones are used for stable OTA releases only. In general, milestones
 for the work-in-progress OTA and the next OTA are created. The ETA is set
 once the work on the release starts (that is 6 weeks from start date), but
-can be adjusted afterwards. Learn more in :doc:`release-schedule <release-schedule>`.
+can be adjusted afterwards.
+Learn more in :ref:`Release Schedule <release_schedule>`.
 
 Assignees
 ---------

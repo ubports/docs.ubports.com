@@ -1,3 +1,5 @@
+.. _release_schedule:
+
 Release Schedule
 ================
 

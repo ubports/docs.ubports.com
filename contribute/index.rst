@@ -9,6 +9,7 @@ The pages below show the ways to contribute that are helpful to both the project
     :name: toc-contribute
 
     bugreporting
+    bug-tracking
     code
     quality-assurance
     documentation

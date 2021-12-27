@@ -1,7 +1,9 @@
 Quality Assurance
 =================
 
-This page explains how to help the UBports QA team, both as an official member or a new contributor. Please also read the :doc:`issue tracking </about/process/issue-tracking>` and :doc:`bugreporting <bugreporting>` guides to better understand the workflow. For real-time communication, you can join our `telegram group <http://t.me/ubports_qa_team>`_.
+This page explains how to help the UBports QA team, both as an official member or a new contributor.
+Please also read the :ref:`bug tracking <bug-tracking>` and :ref:`bug reporting <bug-reporting>` guides to better understand the workflow.
+For real-time communication, you can join our `telegram group <http://t.me/ubports_qa_team>`_.
 
 Smoke testing
 -------------
@@ -22,11 +24,16 @@ Testing patches
 
 Pull-requests can be tested using the `QA scripts <https://github.com/ubports/ubports-qa-scripts>`_. Run ``ubports-qa -h`` for usage information.
 
-Once the pull-request has been merged, the issue it fixes is moved to the quality assurance column of the `GitHub project <https://github.com/ubports/ubuntu-touch/projects/3>`__. Please check if the issues in this column are still present in the latest update on the devel channel, then see if anything else has broken in the update. Check if the developer mentioned specific things to look out for when testing and leave a comment detailing your experience. If you have write-access to the repository, you can move the issue back to **In Development** (and reopen it) or forward to **Release Candidate** as specified by the :doc:`issue tracking guidelines </about/process/issue-tracking>`.
+Once the pull-request has been merged, the issue it fixes is moved to the quality assurance column of the `GitHub project <https://github.com/ubports/ubuntu-touch/projects/3>`__.
+Please check if the issues in this column are still present in the latest update on the devel channel, then see if anything else has broken in the update.
+Check if the developer mentioned specific things to look out for when testing and leave a comment detailing your experience.
+If you have write-access to the repository, you can move the issue back to **In Development** (and reopen it) or forward to **Release Candidate** as specified by the :ref:`issue tracking guidelines <bug-tracking>`.
 
 Initial triaging of issues
 --------------------------
 
-Initial triaging of new issues is done by QA-team members with write-access to the repository. If a new issue is filed, read the report and add the correct labels as specified by the :doc:`issue tracking guidelines </about/process/issue-tracking>`. You can also immediately start confirming the bugreport.
+Initial triaging of new issues is done by QA-team members with write-access to the repository.
+If a new issue is filed, read the report and add the correct labels as specified by the :ref:`issue tracking guidelines <bug-tracking>`.
+You can also immediately start confirming the bugreport.
 
 If the new issue has already been reported elsewhere, label it **duplicate** and close it.
