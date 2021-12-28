@@ -231,20 +231,36 @@ Now that Crossbuilder is installed, we can use it to set up LXD::
 
 If this is the first time you have used LXD, you might need to reboot your host once everything has completed.
 
-After LXD has been set up, move to the directory where the source code of your project is located (for example, ``cd ~/src/git/address-book-app``) and launch Crossbuilder::
+After LXD has been set up, a build for UBports based on Ubuntu 20.04 (Focal Fossa) using the arm64 architecture can be started from inside the debianized package source directory using::
 
-    crossbuilder
+    distro=20.04
+    arch=arm64
+    crossbuilder --lxd-image="ubuntu:${distro}" --architecture="${arch}" build
+
+For building against a different UBports release or architecture change ``distro`` and ``arch`` as needed.
 
 Crossbuilder will create the LXD container, download the development image, install all your package build dependencies, and perform the package build. It will also copy the packages over to your target device and install them if it is connected (see :doc:`/userguide/advanceduse/adb` to learn more about connecting your device). The first two steps (creating the LXD image and getting the dependencies) can take a few minutes, but will be executed only the first time you launch crossbuilder for a new package.
 
-Now, whenever you change the source code in your git repository, the same changes will be available inside the container. The next time you type the ``crossbuilder`` command, only the changed files will be rebuilt.
+Now, whenever you change the source code in your git repository, the same changes will be available inside the container. The next time you type the above ``crossbuilder`` command, only the changed files will be rebuilt.
+
+If the build dependencies have changed the following command can be used to update the container accordingly (``distro`` and ``arch`` should be set as above)::
+
+    crossbuilder --lxd-image="ubuntu:${distro}" --architecture="${arch}" dependencies
+
+While ``crossbuilder`` does not create log files for the build process, the ``script`` utility may be used for that purpose::
+
+    script -c "crossbuilder --lxd-image=\"ubuntu:${distro}\" --architecture=\"${arch}\" build" build.log
+
+When a build container is no longer needed it maybe removed using::
+
+    crossbuilder --lxd-image="ubuntu:${distro}" --architecture="${arch}" delete
 
 Unit tests
 ^^^^^^^^^^
 
-By default crossbuilder does not run unit tests; that's both for speed reasons, and because the container created by crossbuilder is not meant to run native (target) executables: the development tools (qmake/cmake, make, gcc, etc.) are all run in the host architecture, with no emulation (again, for speed reasons). However, qemu emulation is available inside the container, so it should be possible to run unit tests. You can do that by getting a shell inside the container::
+B default crossbuilder does not run unit tests; that's both for speed reasons, and because the container created by crossbuilder is not meant to run native (target) executables: the development tools (qmake/cmake, make, gcc, etc.) are all run in the host architecture, with no emulation (again, for speed reasons). However, qemu emulation is available inside the container, so it should be possible to run unit tests. You can do that by getting a shell inside the container::
 
-    crossbuilder shell
+    crossbuilder --lxd-image="ubuntu:${distro}" --architecture="${arch}" shell
 
 Then find the unit tests and execute them. Be aware that the emulation is not perfect, so there's a very good chance that the tests will fail even when they'd otherwise succeed when run in a proper environment. For that reason, it's probably wiser not to worry about unit tests when working with crossbuilder, and run them only when not cross-compiling.
 
