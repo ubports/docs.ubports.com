@@ -25,10 +25,21 @@ Before you make any changes to the rootfs (which will be required for the next s
 Create and add udev rules
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You must create some udev rules to allow Ubuntu Touch software to access your hardware. Run the following command, replacing [CODENAME] with your device's codename::
+You must create some udev rules to allow Ubuntu Touch software to access your hardware. 
+
+If you are building a Halium-7.1 based port, run the following command, replacing [CODENAME] with your device's codename::
 
     sudo -i # And enter your password
     cat /var/lib/lxc/android/rootfs/ueventd*.rc|grep ^/dev|sed -e 's/^\/dev\///'|awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | sed -e 's/\r//' >/usr/lib/lxc-android-config/70-[CODENAME].rules
+    
+For a Halium-9.0 based port you should use the commands below, again replacing [CODENAME] with your device's codename::
+
+    sudo -i # And enter your password
+    DEVICE=[CODENAME]
+    cat /var/lib/lxc/android/rootfs/ueventd*.rc /vendor/ueventd*.rc | grep ^/dev | sed -e 's/^\/dev\///' | awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | sed -e 's/\r//' >/etc/udev/rules.d/70-$DEVICE.rules
+
+.. Note::
+    If you are building a Halium-9.0 based port for a non-treble device, i.e. a device without a separate vendor partition, the command above will give an error. Simply edit and remove the following string from the command: ``/vendor/ueventd*.rc``.
 
 Now, reboot the device. If all has gone well, you will eventually see the Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as you set for SSH.
 
