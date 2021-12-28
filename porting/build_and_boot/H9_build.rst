@@ -42,6 +42,28 @@ Then, from the root of your ``BUILDDIR``, run::
 
 You may have to do this twice. It will likely fix things both times. Then, run the script without the ``-w`` flag to see if there are any more errors. If there are, fix them manually. Once finished, run the script without the ``-w`` flag one more time to make sure everything is correct.
 
+Ubuntu Touch requires setting console=tty0
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The halium-boot initramfs expects ``/dev/console`` to be a console device and will not start init if it is not available. This is commonly the case on recent devices, because they either have UART disabled or ``console=`` is not specified (null) by default. This can be fixed by supplying ``console=tty0`` as the last argument in the kernel cmdline. To achieve this, proceed as follows:
+
+It should be done in the makefile named ``BoardConfig.mk`` (or ``BoardConfigCommon.mk``) located in the root directory of your device tree, e.g. ``~/halium/device/<vendor>/<model_codename>/BoardConfig.mk``
+
+Add the following line::
+
+    BOARD_KERNEL_CMDLINE += console=tty0
+
+If your makefile already includes a line beginning with ``BOARD_KERNEL_CMDLINE``, you may add it just below that to keep things tidy.
+
+.. Note::
+    The above method, although the preferred one, may not work for some Samsung devices. The result will be that you cannot get access to the device through ssh after boot, and Unity 8 will not be able to start. If you run into this problem, you can specify the setting in your device's kernel config file instead. Add the following lines::
+
+        CONFIG_CMDLINE="console=tty0"
+        CONFIG_CMDLINE_EXTEND=y
+
+.. Note::
+    In rare cases the bootloader overwrites the kernel command line argument, rendering the setting above useless. This is the case for the Google Pixel 3a (sargo). To deal with this issue, replicate `this commit <https://github.com/fredldotme/android_kernel_google_bonito/commit/d0741dded3907f2cf4ecdc02bfcb74fc252763ff>`_. 
+
 Build
 ^^^^^
 
