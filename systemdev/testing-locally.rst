@@ -194,7 +194,7 @@ Building a package
 ^^^^^^^^^^^^^^^^^^
 A build can be started from inside the debianized package source directory using::
 
-    sbuild -d <distrubution>
+    sbuild -d <distribution>
 
 If the build was successful, the binary packages will be placed in the parent directory.  The build log will be placed inside ``~/logs``.  In case the build failed, the chroot can be inspected using::
 
