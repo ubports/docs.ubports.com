@@ -5,12 +5,13 @@ Branch-naming convention
 
 Our branch-naming convention ensures software can be built by our CI and tested easily by other developers.
 
-Every Git repository's README file should state which branch-naming convention is used and any deviations from the norm.
+Every Git repository's README file should 
+state if a special branch-naming convention is used that does not follow the norm as described below.
 
 Click-Packages
 --------------
 
-Software exclusively distributed as a click-package (and not also as a DEB) only uses one ``master`` branch that is protected. Separate temporary development branches with arbitrary descriptive names can be created and merged into master when the time comes. Ideally Git tags or GitHub releases should be used to mark and archive milestones in the development history.
+Software exclusively distributed as a click-package (and not also as a DEB) only uses one ``main`` (or ``master``) branch that is protected. Separate temporary development branches with arbitrary descriptive names can be created and merged into master when the time comes. Ideally Git tags or GitHub releases should be used to mark and archive milestones in the development history.
 
 DEB Packages
 ------------
