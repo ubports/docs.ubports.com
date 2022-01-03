@@ -71,9 +71,9 @@ Check the `list of core apps <https://github.com/ubports/ubuntu-touch/blob/maste
 
     preinstalled-apps
 
-Contributions to those are greatly appreciated and directly reach a larger audience.
+Contributions to those are greatly appreciated and generally reach a larger audience, than a new app.
 
-Some core apps are currently lacking maintainers.
+Some core apps are currently without a maintainer.
 See if you want to step up as new maintainer for one of them!
 The maintainer reviews MR's, triages and investigates issue reports and helps to develop the app.
 The best way to start is by making some contributions and let the reviewers know that you are interested.
