@@ -39,7 +39,7 @@ Preparing a package for a build
     }
 
     if [ ! -d "./debian" ]; then
-        die "not in a project directory"
+        die "not in a debianized package directory"
     fi
 
     if [ -f "./debian/ubports.source_location" ]; then
