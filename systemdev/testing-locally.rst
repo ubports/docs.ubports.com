@@ -71,7 +71,8 @@ Building packages in a chroot using sbuild
 Prerequisites
 ^^^^^^^^^^^^^
 
-A host system running either Debian 11 (Bullseye) or later or Ubuntu 20.04 (Focal Fossa) or later is required. It is possible to set up such a system in a LXD container or VM (not recommended due to performance) on another distribution or operating system.
+A host system running either Debian 11 (Bullseye) or later or Ubuntu 20.04 (Focal Fossa) or later is required.
+An easy and performant way to set up Debian or Ubuntu on other distributions is to run it in a container using `LXD <https://linuxcontainers.org/lxd/getting-started-cli/#installing-a-package>`.
 
 A LXD container requires the following configuration setting in order to allow debootstrap to use the mknod system call for creating pseudo devices such as ``/dev/null`` inside a chroot::
 
@@ -82,6 +83,8 @@ It is assumed that the user who is building packages is allowed to execute comma
 ``sbuild`` uses ``schroot`` in order to manage chroots which in turn uses debootstrap for creating the chroot.  The required packages are installed with::
 
     sudo apt install sbuild schroot devscripts debhelper dh-migrations ccache
+
+A Debian or Ubuntu system can also be installed inside a virtual machine, however this comes with a performance overhead.
 
 Setting up sbuild
 ^^^^^^^^^^^^^^^^^
