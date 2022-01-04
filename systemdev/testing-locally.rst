@@ -109,48 +109,34 @@ Create the directory ``~/logs`` if it does not exist, yet::
 
 Creating a build chroot
 ^^^^^^^^^^^^^^^^^^^^^^^
+In order to create a chroot based on Ubuntu 20.04 (Focal Fossa) with the amd64 architecture under the directory ``/srv/chroot/ubports-${distro}-amd64`` (``chroot_base`` can be changed if needed) the following variables can be defined for later use by the actual commands::
 
-UBports based on Ubuntu 16.04 (Xenial Xerus)
-""""""""""""""""""""""""""""""""""""""""""""
+    chroot_distro=focal
+    chroot_base=/srv/chroot/ubports-${chroot_distro}-amd64
+    chroot_repo=http://repo2.ubports.com/
 
-A chroot based on Ubuntu 16.04 (Xenial Xerus) with the amd64 architecture can e.g. be created under the directory ``/srv/chroot/ubports-xenial-amd64`` (``chroot_base`` can be changed as needed) using::
+For creating a chroot based on Ubuntu 16.04 (Xenial Xerus) with the amd64 architecture define the following variables instead::
 
-    chroot_base=/srv/chroot/ubports-xenial-amd64
-    sudo sbuild-createchroot --components=main,restricted,universe --extra-repository='deb http://archive.ubuntu.com/ubuntu/ xenial-updates main restricted universe' --include=ccache xenial "${chroot_base}" http://archive.ubuntu.com/ubuntu/
+    chroot_distro=xenial
+    chroot_base=/srv/chroot/ubports-${chroot_distro}-amd64
+    chroot_repo=http://repo.ubports.com/
 
-A chroot for cross-building arm64 packages on an amd64 host can e.g. be created under the directory ``/srv/chroot/ubports-xenial-arm64`` using::
+In both cases the chroot will be created by running the following command::
 
-    chroot_base=/srv/chroot/ubports-xenial-arm64
-    sudo sbuild-createchroot --arch=arm64 --components=main,restricted,universe --extra-repository='deb http://ports.ubuntu.com/ubuntu-ports/ xenial-updates main restricted universe' --include=ccache xenial "${chroot_base}" http://archive.ubuntu.com/ubuntu/
+    sudo sbuild-createchroot --components=main,restricted,universe --extra-repository="deb http://archive.ubuntu.com/ubuntu/ ${chroot_distro}-updates main restricted universe" --include=ccache "${chroot_distro}" "${chroot_base}" http://archive.ubuntu.com/ubuntu/
 
-For cross-building armhf packages the above command can be used with ``arm64`` changed to ``armhf``.
+A chroot for cross-building arm64 packages on an amd64 host can e.g. be created under the directory ``/srv/chroot/ubports-${distro}-arm64`` using::
 
-The UBports package repository needs to be added using::
-
-    wget 'http://repo.ubports.com/keyring.gpg' -O - | sudo tee "${chroot_base}/usr/share/keyrings/ubports-keyring.gpg" >/dev/null
-    printf 'deb [signed-by=/usr/share/keyrings/ubports-keyring.gpg] http://repo.ubports.com/ xenial main\n' | sudo tee "${chroot_base}/etc/apt/sources.list.d/ubports.list" >/dev/null
-    sbuild-update -u -d xenial
-
-UBports based on Ubuntu 20.04 (Focal Fossa)
-"""""""""""""""""""""""""""""""""""""""""""
-
-A chroot based on Ubuntu 20.04 (Focal Fossa) with the amd64 architecture can be created under the directory ``/srv/chroot/ubports-focal-amd64`` (``chroot_base`` can be changed if needed) using::
-
-    chroot_base=/srv/chroot/ubports-focal-amd64
-    sudo sbuild-createchroot --components=main,restricted,universe --extra-repository='deb http://archive.ubuntu.com/ubuntu/ focal-updates main restricted universe' --include=ccache focal "${chroot_base}" http://archive.ubuntu.com/ubuntu/
-
-A chroot for cross-building arm64 packages on an amd64 host can e.g. be created under the directory ``/srv/chroot/ubports-focal-arm64`` using::
-
-    chroot_base=/srv/chroot/ubports-focal-arm64
-    sudo sbuild-createchroot --arch=arm64 --components=main,restricted,universe --extra-repository='deb http://ports.ubuntu.com/ubuntu-ports/ focal-updates main restricted universe' --include=ccache focal "${chroot_base}" http://archive.ubuntu.com/ubuntu/
+    chroot_base=/srv/chroot/ubports-${distro}-arm64
+    sudo sbuild-createchroot --arch=arm64 --components=main,restricted,universe --extra-repository="deb http://ports.ubuntu.com/ubuntu-ports/ ${chroot_distro}-updates main restricted universe" --include=ccache "${chroot_distro}" "${chroot_base}" http://archive.ubuntu.com/ubuntu/
 
 For cross-building armhf packages the above command can be used with ``arm64`` changed to ``armhf``.
 
 The UBports package repository needs to be added using::
 
     wget 'http://repo.ubports.com/keyring.gpg' -O - | sudo tee "${chroot_base}/usr/share/keyrings/ubports-keyring.gpg" >/dev/null
-    printf 'deb [signed-by=/usr/share/keyrings/ubports-keyring.gpg] http://repo2.ubports.com/ focal main\n' | sudo tee "${chroot_base}/etc/apt/sources.list.d/ubports.list" >/dev/null
-    sbuild-update -u -d focal
+    printf 'deb [signed-by=/usr/share/keyrings/ubports-keyring.gpg] %s %s main\n' "${chroot_repo}" "${chroot_distro}" | sudo tee "${chroot_base}/etc/apt/sources.list.d/ubports.list" >/dev/null
+    sbuild-update -u -d "${chroot_distro}"
 
 Maintaining build chroots
 ^^^^^^^^^^^^^^^^^^^^^^^^^
