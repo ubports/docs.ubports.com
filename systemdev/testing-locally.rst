@@ -9,7 +9,14 @@ There are essentially three ways of developing Ubuntu Touch system software loca
 * `Cross-building with crossbuilder`_
 * `Building on the device itself`_
 
-sbuild uses a more minimal chroot-based build environment than the LXD container used by crossbuilder which might miss certain build dependencies if they are pre-installed in the LXD image.  In contrast to crossbuilder, sbuild automatically creates a log file and runs `lintian <https://lintian.debian.org/manual/lintian.html>`__ on the built packages in order to detect any problems.  Due to the creation of a persistent LXD container per package, crossbuilder can be quicker for subsequent builds of the same package than sbuild which installs all build dependencies on each run.  The use of LXD also allows for easier inspection, debugging and manual modification of the build environment.  crossbuilder can also automatically deploy build packages on a connected device via ADB.
+Pros and cons of sbuild and crossbuilder
+----------------------------------------
+
+sbuild uses a more minimal chroot-based build environment, while crossbuilder uses an LXD container with more pre-installed packages.
+When building with crossbuilder pre-installed build dependencies might be missed which would be caught by sbuild.
+crossbuilder can be quicker for subsequent builds since the LXD container persists. sbuild installs all build dependencies on each run.
+sbuild automatically creates a log file and runs `lintian <https://lintian.debian.org/manual/lintian.html>__` on the built packages in order to detect any problems.
+The use of LXD by crossbuilder also allows for easier inspection, debugging and manual modification of the build environment. crossbuilder can also automatically deploy build packages on a connected device via ADB.
 
 We'll examine the use of crossbuilder and builds on the device using `address-book-app <https://github.com/ubports/address-book-app>`__ (the Contacts application) as an example.
 
