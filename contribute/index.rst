@@ -10,9 +10,8 @@ The pages below show the ways to contribute that are helpful to both the project
 
     translations
     documentation
-    quality-assurance
     bugreporting
-    bug-tracking
+    quality-assurance
     code
     monetary
 

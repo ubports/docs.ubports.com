@@ -128,7 +128,7 @@ Bug Lifecycle
     applicable for feature requests.
 
 - A *user* files a new bug using the issue-template.
-- The *QA-Team* labels it **needs confirmation** and tries to work with the user to confirm the bug and add potentially missing info to the report.
+- The *QA-Team* labels it **needs confirmation** and tries to work with the user to confirm the bug and add potentially missing info to the report. If the issue had already been reported previously, it is linked, labeled **duplicate** and closed.
 - Once the report is complete a **team-label** is added to the issue, the issue will be put on the **awaiting-triage-list** of the project and the label needs confirmation will be replaced with **bug**.
 - The affected *Team* triages the issue and either rejects (label **wontfix**, closes and removes from the project) or accepts the issue.
 - The team decides whether to fix the issue in-house (move to "Accepted" and assign a team member) or wait for a community developer to pick it up (by labeling it **help wanted**, removing it from the project board and providing hints on how to resolve the issue and further details on how the fix should be implemented if necessary). For non-critical issues trivial to fix, the label **good first issue** can be added as well.

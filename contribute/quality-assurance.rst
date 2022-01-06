@@ -32,8 +32,11 @@ If you have write-access to the repository, you can move the issue back to **In 
 Initial triaging of issues
 --------------------------
 
-Initial triaging of new issues is done by QA-team members with write-access to the repository.
-If a new issue is filed, read the report and add the correct labels as specified by the :ref:`issue tracking guidelines <bug-tracking>`.
-You can also immediately start confirming the bugreport.
+Initial triaging of new issues is done by QA-team members with write-access to the repository. 
+See the detailed steps in the following page
 
-If the new issue has already been reported elsewhere, label it **duplicate** and close it.
+.. toctree::
+    :maxdepth: 1
+    :name: toc-contribute
+
+    bug-tracking
