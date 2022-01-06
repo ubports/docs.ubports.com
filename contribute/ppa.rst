@@ -1,7 +1,8 @@
-repo.ubports.com
-================
+Repo names
+==========
 
-This is the package archive system for UBports projects. It hosts various PPAs containing all the DEB-components of Ubuntu Touch.
+repo.ubports.com is the package archive system for UBports projects.
+It hosts various PPAs containing all the DEB-components of Ubuntu Touch.
 
 Repository naming convention
 ----------------------------

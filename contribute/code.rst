@@ -217,3 +217,16 @@ Sometimes your changes break a piece of Ubuntu Touch functionality despite our b
 New contributors might notice that you have recently worked on a component they want to work with. We would be grateful if you helped teach them what you learned during this process.
 
 If nothing else, stick around for the people thanking you for the change you've made. The Ubuntu Touch community is incredibly supportive and thankful. It would be a shame for you to miss your share of the good vibes.
+
+Naming conventions
+------------------
+
+Lastly, please note our naming conventions:
+
+.. toctree::
+    :maxdepth: 1
+    :name: toc-contribute
+
+    ppa
+    branch-naming
+

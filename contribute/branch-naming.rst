@@ -1,7 +1,7 @@
 .. _branch-naming:
 
-Branch-naming convention
-========================
+Branch names
+============
 
 Our branch-naming convention ensures software can be built by our CI and tested easily by other developers.
 
