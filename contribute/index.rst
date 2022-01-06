@@ -9,9 +9,9 @@ The pages below show the ways to contribute that are helpful to both the project
     :name: toc-contribute
 
     translations
-    documentation
     bugreporting
     quality-assurance
+    documentation
     code
     monetary
 
