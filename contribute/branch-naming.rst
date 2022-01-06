@@ -12,6 +12,8 @@ Click-Packages
 --------------
 
 Software exclusively distributed as a click-package (and not also as a DEB) only uses one ``main`` (or ``master``) branch that is protected. Separate temporary development branches with arbitrary descriptive names can be created and merged into the main branch when the time comes. Ideally Git tags or GitHub releases should be used to mark and archive milestones in the development history.
+Be aware that tags pushed to the repo of a core app do not only trigger a build but also issue a release to OpenStore.
+So tread with caution.
 
 DEB Packages
 ------------
