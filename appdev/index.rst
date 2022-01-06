@@ -64,7 +64,7 @@ Contributions wanted
 --------------------
 
 All apps love contributions.
-Check the `list of core apps <https://github.com/ubports/ubuntu-touch/blob/master/CORE_APPS.md>`_ or the
+Check our lists of core apps on `gitlab <https://gitlab.com/ubports/apps>`_, `github <https://github.com/ubports/ubuntu-touch/blob/master/CORE_APPS.md>`_ or the
 
 .. toctree::
     :maxdepth: 1
