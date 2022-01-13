@@ -1,7 +1,12 @@
 repo.ubports.com
 ================
 
-This is the package archive system for UBports projects. It hosts various PPAs containing all the DEB-components of Ubuntu Touch.
+This is the legacy package repository for UBports projects.  It hosts the Debian packages of the current stable release.
+
+repo2.ubports.com
+=================
+
+This is the current package repository for UBports projects.  It contains Debian packages of the development version of Ubuntu Touch and various PPAs.
 
 Repository naming convention
 ----------------------------
@@ -9,23 +14,20 @@ Repository naming convention
 Native packages
 ^^^^^^^^^^^^^^^
 
-Native packages (like https://github.com/ubports/system-settings) are repositories that contain a ``debian/`` folder **with** the source used to create the DEB source package (``.dsc``).
+Native packages (e.g. https://gitlab.com/ubports/core/lomiri-system-settings) are repositories that contain a ``debian/`` folder **with** the source used to create the Debian source package.
 
 The name of the Debian source package generated from the repository and the name of the Git-repository should be the same.
 
-Packaging repositories
-^^^^^^^^^^^^^^^^^^^^^^
+Non-native packages
+^^^^^^^^^^^^^^^^^^^
 
-Packaging repositories (like https://github.com/ubports/pulseaudio-packaging) contain a ``debian`` folder **without** the source used to create the Debian source package (``.dsc``).
-They also contain instructions to tell ``debhelper`` how to get the sources used to create the source package.
-
-The repository should have the name of the source package it generates with ``-packaging`` appended to the end.
-For example, a packaging repository that generates a source package called ``sandwich`` would be called ``sandwich-packaging``.
+Non-native package repositories (e.g. https://gitlab.com/ubports/core/packaging/sensorfw) contain a ``debian`` folder **without** the source used to create the Debian source package.
+The URL of the upstream source tarball and filename of the ``.orig.tar.gz`` archive must be specified on a separate line each in a file called ``ubports.source_location`` inside the ``debian`` directory.  The CI system uses this information to download and rename the upstream sources and to create a Debian source package.
 
 Creating new PPAs
 -----------------
 
-New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`. The name of the branch translates literally to the name of the PPA: ``https://repo.ubports.com/dists/[branch name]``
+New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`. The name of the branch translates literally to the name of the PPA which is a distribution in the package repository at: ``https://repo2.ubports.com/dists/[branch name]``
 
 Non-standard PPAs (i.e. not ``vivid``, ``xenial``, or ``bionic``) are kept for three months.
 If they need to be kept for longer, a file with the name ``ubports.keep`` containing a date in the form of in the form of ``YYYY-MM-dd`` can be used to decide how long to keep the PPA in the repository for.
