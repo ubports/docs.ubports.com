@@ -17,7 +17,11 @@ To make most efficient use of our CI system, a special naming convention for Git
 
 For pre-installed Ubuntu Touch components, DEB-packages are used wherever possible. This includes Core apps, since they can still be independently updated using click-package downloads from the OpenStore. This policy allows making use of the powerful Debian build-system to resolve dependencies.
 
-Every repository using this convention will have branches for the actively supported Ubuntu releases referenced by their codenames (``bionic``, ``xenial``, ``vivid``, etc.). These are the branches built directly into the corresponding images and published on :doc:`repo.ubports.com <ppa>`. If no separate versions for the different Ubuntu bases are needed, the repository will have one ``master`` branch and the CI system will still build versions for all actively supported releases and resolve dependencies accordingly.
+Every repository using this convention will have branches for the actively supported Ubuntu releases referenced by their codenames and prefixed with ``ubports/`` (``ubports/focal``, ``ubports/xenial``, etc.). These are the branches built directly into the corresponding images and published on ``repo.ubports.com`` for the stable release and :doc:`repo2.ubports.com <ppa>` for the current development version.
+
+Usually there will be branches corresponding to each release of Ubuntu Touch which will be used for stable release updates whereas development takes place in the ``main`` branch. If no separate versions for the different Ubuntu bases are needed, the repository will have one ``main`` branch.
+In the presence of release-specific branches the CI system will only build packages for the specific release a branch is associated with by name or the development version in case of the ``main`` branch. If e.g. a branch ``ubports/xenial`` exists and a commit is added to it, packages will only be built for Ubuntu Touch 16.04 but not any other release.
+If only a ``main`` branch exists, packages will be built for all actively supported releases.
 
 Branch-extensions
 ^^^^^^^^^^^^^^^^^
