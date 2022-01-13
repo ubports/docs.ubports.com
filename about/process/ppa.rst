@@ -1,10 +1,13 @@
+UBports Debian repository
+=========================
+
 repo.ubports.com
-================
+----------------
 
 This is the legacy package repository for UBports projects.  It hosts the Debian packages of the current stable release.
 
 repo2.ubports.com
-=================
+-----------------
 
 This is the current package repository for UBports projects.  It contains Debian packages of the development version of Ubuntu Touch and various PPAs.
 
