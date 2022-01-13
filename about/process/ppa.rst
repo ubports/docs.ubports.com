@@ -28,7 +28,3 @@ Creating new PPAs
 -----------------
 
 New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`. The name of the branch translates literally to the name of the PPA which is a distribution in the package repository at: ``https://repo2.ubports.com/dists/[branch name]``
-
-Non-standard PPAs (i.e. not ``vivid``, ``xenial``, or ``bionic``) are kept for three months.
-If they need to be kept for longer, a file with the name ``ubports.keep`` containing a date in the form of in the form of ``YYYY-MM-dd`` can be used to decide how long to keep the PPA in the repository for.
-If this file is empty, the PPA will be kept for two years after the last build.
