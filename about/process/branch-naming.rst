@@ -23,19 +23,21 @@ Usually there will be branches corresponding to each release of Ubuntu Touch whi
 In the presence of release-specific branches the CI system will only build packages for the specific release a branch is associated with by name or the development version in case of the ``main`` branch. If e.g. a branch ``ubports/xenial`` exists and a commit is added to it, packages will only be built for Ubuntu Touch 16.04 but not any other release.
 If only a ``main`` branch exists, packages will be built for all actively supported releases.
 
-Branch-extensions
-^^^^^^^^^^^^^^^^^
+Branch Names and PPAs
+^^^^^^^^^^^^^^^^^^^^^
 
-To build and publish packages based on another repository, an extension in the form of  ``xenial_-_some-descriptive_extension`` can be used. The CI system will then resolve all dependencies using the ``xenial_-_some-descriptive_extension`` branch of other repositories or fall back to using the normal ``xenial`` dependencies, if it doesn't exist. These special dependencies are not built into the image, but still pushed to :doc:`repo.ubports.com <ppa>`.
+Branch names following a certain naming scheme can be used to create :doc:`personal packaging archives (PPAs) <ppa>` and to instruct the CI system to resolve dependencies using other PPAs.
+More specifically, such branch names start with a release-specific name followed by a chain of distribution names separated by ``_-_``.
+For example ``ubports/focal_-_my-feature`` instructs the CI system to resolve build dependencies using the ``focal`` and, if it already exists, a ``my-feature`` distribution.  The resulting packages will be published on ``repo2.ubports.com`` in their own separate distribution ``my-feature``.  This feature can be used to test one or more packages in combination during development.
 
-Multiple branch extensions can be chained together in the form of ``xenial_-_dependency-1_-_dependency-2_-_dependency-3``. This means the CI system will look for dependencies in the following repositories:
+If multiple branch-based distributions are chained together in the form of ``ubports/focal_-_dependency-1_-_dependency-2_-_dependency-3``, the CI system will look for dependencies in the following distributions in the repository at ``repo2.ubports.com``:
 
 .. code-block:: text
 
-    xenial
-    xenial_-_dependency-1
-    xenial_-_dependency-1_-_dependency-2
-    xenial_-_dependency-1_-_dependency-2_-_dependency-3
+    focal
+    focal_-_dependency-1
+    focal_-_dependency-1_-_dependency-2
+    focal_-_dependency-1_-_dependency-2_-_dependency-3
 
 .. note::
 
@@ -48,10 +50,10 @@ For complex or non-linear dependencies, a ``ubports.depends`` file can be create
 
 .. code-block:: text
 
-    xenial
-    xenial_-_dependency-1_-_dependency-2_-_dependency-3
-    xenial_-_something-else
+    focal
+    focal_-_dependency-1_-_dependency-2_-_dependency-3
+    focal_-_something-else
 
 .. note::
 
-    The ``ubports.depends`` file is an **exclusive list**, so the build system will not resolve dependencies linearly like it does in a branch name! Every dependency has to be listed. You will almost always want to include your base release (i.e. ``xenial``).
+    The ``ubports.depends`` file is an **exclusive list**, so the build system will not resolve dependencies linearly like it does in a branch name! Every dependency has to be listed. You will almost always want to include your base release (i.e. ``focal``).
