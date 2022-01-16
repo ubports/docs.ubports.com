@@ -1020,7 +1020,7 @@ msgid "Browser (`morph-browser on GitHub`_)"
 msgstr "Navegador (`morph-browser en GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:46
-msgid "Contacts (`address-book-app on GitHub`_)"
+msgid "Contacts (`address-book-app on GitLab`_)"
 msgstr "Contactos (`address-book-app en GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:47
@@ -1029,7 +1029,7 @@ msgid "Camera (`camera-app on GitLab`_)"
 msgstr "Cámara (`camera-app en GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:48
-msgid "External Drives (`ciborium on GitHub`_)"
+msgid "External Drives (`ciborium on GitLab`_)"
 msgstr "Unidades externas (`ciborium en GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:49
@@ -1045,7 +1045,7 @@ msgid "Phone (`dialer-app on GitHub`_)"
 msgstr "Teléfono (`dialer-app en GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:52
-msgid "System Settings (`system-settings on GitHub`_)"
+msgid "System Settings (`_system-settings on GitLab`_)"
 msgstr "Configuración de sistema (`system-settings en GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:54

@@ -801,7 +801,7 @@ msgstr "Nettleser (`morph-browser på GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:46
 #, fuzzy
-msgid "Contacts (`address-book-app on GitHub`_)"
+msgid "Contacts (`address-book-app on GitLab`_)"
 msgstr "Kontakter (`address-book-app på GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:47
@@ -811,7 +811,7 @@ msgstr "Kamera (`camera-app på GitLab`_)"
 
 #: ../../contribute/preinstalled-apps.rst:48
 #, fuzzy
-msgid "External Drives (`ciborium on GitHub`_)"
+msgid "External Drives (`ciborium on GitLab`_)"
 msgstr "Eksterne disker (`ciborium på GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:49
@@ -831,7 +831,7 @@ msgstr "Telefon (`dialer-app på GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:52
 #, fuzzy
-msgid "System Settings (`system-settings on GitHub`_)"
+msgid "System Settings (`_system-settings on GitLab`_)"
 msgstr "Systeminnstillinger (`system-settings på GitHub`_)"
 
 #: ../../contribute/preinstalled-apps.rst:54
