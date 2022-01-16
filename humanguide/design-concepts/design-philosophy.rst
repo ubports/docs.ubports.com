@@ -10,9 +10,9 @@ The Ubuntu interface has been designed according to a philosophy called Suru.
 Suru meaning
 ------------
 
-Here at Ubuntu we believe that everyone should have access to free, reliable, and trusted software that can be shared and developed by anyone. This has paved the way to allow the community to grow and prosper with freedom trust and collaboration. This integral belief has been translates into our design philosophy called Suru.
+Here at Ubports we believe that everyone should have access to free, reliable, and trusted software that can be shared and developed by anyone. This has paved the way to allow the community to grow and prosper with freedom trust and collaboration. This integral belief has been translated into our design philosophy called Suru.
 
-- Suru stems from the Ubuntu brand values alluding to Japanese culture.
+- Suru items from the UTouch values alluding to Japanese culture.
 
 - The design of Suru is inspired by origami, because it give us a solid and tangible foundation.
 
@@ -21,7 +21,7 @@ Here at Ubuntu we believe that everyone should have access to free, reliable, an
 Translated in design
 --------------------
 
-Suru brings a precise yet organic structure to the Ubuntu interface. The sharp lines and varying levels of transparency evoke the edges and texture of paper. All elements are placed deliberately, with the express aim of being easy for the user to identify and use.
+Suru brings a precise yet organic structure to the UTouch interface. The sharp lines and varying levels of transparency evoke the edges and texture of paper. All elements are placed deliberately, with the express aim of being easy for the user to identify and use.
 
 When using a small layout, the information and functionality is folded into a compact object that that can be refolded to expose different areas. As the layout size increases, the object can become progressively larger, allowing more of the information and functionality to be exposed at any one time.
 
