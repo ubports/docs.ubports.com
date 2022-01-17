@@ -15,7 +15,7 @@ Pros and cons of sbuild and crossbuilder
 sbuild uses a more minimal chroot-based build environment, while crossbuilder uses an LXD container with more pre-installed packages.
 When building with crossbuilder pre-installed build dependencies might be missed which would be caught by sbuild.
 crossbuilder can be quicker for subsequent builds since the LXD container persists. sbuild installs all build dependencies on each run.
-sbuild automatically creates a log file and runs `lintian <https://lintian.debian.org/manual/lintian.html>__` on the built packages in order to detect any problems.
+sbuild automatically creates a log file and runs `lintian <https://lintian.debian.org/manual/lintian.html>`__ on the built packages in order to detect any problems.
 The use of LXD by crossbuilder also allows for easier inspection, debugging and manual modification of the build environment. crossbuilder can also automatically deploy build packages on a connected device via ADB.
 
 We'll examine the use of crossbuilder and builds on the device using `address-book-app <https://github.com/ubports/address-book-app>`__ (the Contacts application) as an example.
@@ -72,7 +72,7 @@ Prerequisites
 ^^^^^^^^^^^^^
 
 A host system running either Debian 11 (Bullseye) or later or Ubuntu 20.04 (Focal Fossa) or later is required.
-An easy and performant way to set up Debian or Ubuntu on other distributions is to run it in a container using `LXD <https://linuxcontainers.org/lxd/getting-started-cli/#installing-a-package>`.
+An easy and performant way to set up Debian or Ubuntu on other distributions is to run it in a container using `LXD <https://linuxcontainers.org/lxd/getting-started-cli/#installing-a-package>`__.
 
 A LXD container requires the following configuration setting in order to allow debootstrap to use the mknod system call for creating pseudo devices such as ``/dev/null`` inside a chroot::
 
