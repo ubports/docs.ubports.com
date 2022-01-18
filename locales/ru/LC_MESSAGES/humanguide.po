@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-07 11:45-0600\n"
-"PO-Revision-Date: 2021-10-05 10:57+0000\n"
+"PO-Revision-Date: 2022-01-18 23:05+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-humanguide/ru/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.3\n"
 
 #: ../../humanguide/app-layout/app-main-view.rst:2
@@ -769,23 +769,23 @@ msgstr ""
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:82
 msgid "stock_message.svg"
-msgstr ""
+msgstr "stock_message.svg"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:83
 msgid "share.svg"
-msgstr ""
+msgstr "share.svg"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:84
 msgid "stock_alarm-clock.svg"
-msgstr ""
+msgstr "stock_alarm-clock.svg"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:85
 msgid "security-alert.svg"
-msgstr ""
+msgstr "security-alert.svg"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:86
 msgid "settings.svg"
-msgstr ""
+msgstr "settings.svg"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:12
 msgid ""
@@ -804,7 +804,7 @@ msgid ""
 "Interface icons can be colourized in qml therefore are designed in #808080 "
 "color."
 msgstr ""
-"Иконки интерфейсов можно раскрасить в qml, они раскрашены в цвет #808080."
+"Иконки интерфейса можно раскрасить в qml, они раскрашены в цвет #808080."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:20
 msgid "Font"
@@ -1478,6 +1478,13 @@ msgid ""
 "a consistent experience, whether you are using it on a big screen with mouse "
 "and keyboard or on a small touchscreen."
 msgstr ""
+"Конвергенция означает возможность использовать один и тот же код программы в "
+"различных аппаратных форм-факторах. Несколько устройств, использующих одну и "
+"ту же кодовую базу, позволяют разрабатывать функции один раз, а затем "
+"использовать их на нескольких типах устройств. Это сокращает время и "
+"стоимость разработки. Цель Ubuntu Touch состоит в том, чтобы обеспечить "
+"единообразие работы независимо от того, используете ли вы его на большом "
+"экране с мышью и клавиатурой или на маленьком сенсорном экране."
 
 #: ../../humanguide/other-design-considerations/convergence.rst:11
 msgid "Screen size"
@@ -1520,14 +1527,8 @@ msgid "Other design considerations"
 msgstr "Другие замечания по дизайну"
 
 #: ../../humanguide/other-design-considerations/index.rst:13
-#, fuzzy
-#| msgid ""
-#| "See a `list of the icons <http://docs.ubports.com/projects/icons/>`__. "
-#| "available in the system."
 msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
-msgstr ""
-"Полный `список значков <http://docs.ubports.com/projects/icons/>`__, которые "
-"есть в системе UTouch."
+msgstr "`Значки Suru <http://docs.ubports.com/projects/icons/en/latest/>`__"
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:2
 msgid "Scaling images"

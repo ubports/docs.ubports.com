@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-11-08 03:42+0000\n"
+"PO-Revision-Date: 2022-01-18 23:05+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/ru/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../porting/Intro.rst:2
 msgid "Introduction to porting"
-msgstr "Введение в процесс портирования на другие устройства"
+msgstr "Введение в создание прошивок для других устройств"
 
 #: ../../porting/Intro.rst:4
 msgid ""

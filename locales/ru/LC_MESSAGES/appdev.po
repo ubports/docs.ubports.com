@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 09:34-0500\n"
-"PO-Revision-Date: 2021-10-04 21:26+0000\n"
+"PO-Revision-Date: 2022-01-18 23:05+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/ru/>\n"
@@ -2090,7 +2090,7 @@ msgstr "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
 
 #: ../../appdev/index.rst:75
 msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
-msgstr "`Suru Icons  <http://docs.ubports.com/projects/icons/en/latest/>`__"
+msgstr "`Значки Suru <http://docs.ubports.com/projects/icons/en/latest/>`__"
 
 #: ../../appdev/index.rst:77
 msgid ""
