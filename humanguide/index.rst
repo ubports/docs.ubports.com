@@ -10,7 +10,7 @@ We aim to keep developing the design started by Canonical.
 Suru meaning
 ------------
 
-Here at Ubports we believe that everyone should have access to free, reliable, and trusted software that can be shared and developed by anyone. This has paved the way to allow the community to grow and prosper with freedom trust and collaboration. This integral belief has been translated into design philosophy called Suru.
+Here at Ubports we believe that everyone should have access to free, reliable, and trusted software that can be shared and developed by anyone. This has paved the way to allow the community to grow and prosper with freedom trust and collaboration. This integral belief has been translated into the design philosophy called Suru.
 
 - Suru items from the Ubuntu values alluding to Japanese culture.
 
