@@ -10,7 +10,7 @@ We aim to keep developing the design started by Canonical.
 Suru meaning
 ------------
 
-Here at Ubports we believe that everyone should have access to free, reliable, and trusted software that can be shared and developed by anyone. This has paved the way to allow the community to grow and prosper with freedom trust and collaboration. This integral belief has been translated into the design philosophy called Suru.
+Here at UBports we believe that everyone should have access to free, reliable, and trusted software that can be shared and developed by anyone. This has paved the way to allow the community to grow and prosper with freedom trust and collaboration. This integral belief has been translated into the design philosophy called Suru.
 
 - Suru items from the Ubuntu values alluding to Japanese culture.
 
@@ -23,7 +23,7 @@ Translated in design
 
 Suru brings a precise yet organic structure to the Ubuntu Touch interface. The sharp lines and varying levels of transparency evoke the edges and texture of paper. All elements are placed deliberately, with the express aim of being easy for the user to identify and use.
 
-When using a small layout, the information and functionality is folded into a compact object that that can be refolded to expose different areas. As the layout size increases, the object can become progressively larger, allowing more of the information and functionality to be exposed at any one time.
+When using a small layout, the information and functionality is folded into a compact object that can be refolded to expose different areas. As the layout size increases, the object can become progressively larger, allowing more of the information and functionality to be exposed at any one time.
 
 Origami
 -------
