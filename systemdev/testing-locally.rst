@@ -18,7 +18,7 @@ crossbuilder can be quicker for subsequent builds since the LXD container persis
 sbuild automatically creates a log file and runs `lintian <https://lintian.debian.org/manual/lintian.html>`__ on the built packages in order to detect any problems.
 The use of LXD by crossbuilder also allows for easier inspection, debugging and manual modification of the build environment. crossbuilder can also automatically deploy build packages on a connected device via ADB.
 
-We'll examine the use of crossbuilder and builds on the device using `address-book-app <https://github.com/ubports/address-book-app>`__ (the Contacts application) as an example.
+We'll examine the use of crossbuilder and builds on the device using `address-book-app <https://gitlab.com/ubports/core/address-book-app>`__ (the Contacts application) as an example.
 
 We only recommend developing packages using a device with Ubuntu Touch installed from the devel channel. This ensures that you are testing your changes against the most current state of the Ubuntu Touch code.
 
@@ -288,7 +288,7 @@ Additionally, you probably want to install ``git`` in order to get your app's so
 
 Once you're finished, you can retrieve the source for an app (in our example, the address book) and move into its directory::
 
-    git clone https://github.com/ubports/address-book-app.git
+    git clone https://gitlab.com/ubports/core/address-book-app.git
     cd address-book-app
 
 Now, you are ready to build the package::
