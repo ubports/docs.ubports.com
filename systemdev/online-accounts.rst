@@ -2,6 +2,7 @@ Working on the Online Accounts subsystem
 ========================================
 
 .. uml::
+
    card "QML Application" {
       component "import Lomiri.OnlineAccounts 2.0" as qmlapp
    }
