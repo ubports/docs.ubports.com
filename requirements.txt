@@ -2,3 +2,4 @@ sphinx>2
 furo==2021.6.24b37
 sphinx-intl
 sphinxext-rediraffe
+sphinxcontrib-plantuml
