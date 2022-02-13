@@ -13,8 +13,8 @@ pipeline {
     stages {
         stage("Install dependencies") {
             steps {
-                sh 'apt-get update'
-                sh 'apt-get install -y --no-install-recommends plantuml'
+                sh 'sudo apt-get update'
+                sh 'sudo apt-get install -y --no-install-recommends plantuml'
                 sh 'pip install --no-cache-dir --user --upgrade -r requirements.txt'
             }
         }
