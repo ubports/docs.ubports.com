@@ -1,6 +1,19 @@
 Working on the Online Accounts subsystem
 ========================================
 
+.. uml::
+   card "QML Application" {
+      component "import Lomiri.OnlineAccounts 2.0" as qmlapp
+   }
+   card "C++ Application" {
+      component "OnlineAccountsQt\n(pkg-config file)" as cxxapp
+   }
+   card "Online Accounts service" as oas {
+      interface "D-Bus interface" as dbus
+   }
+   qmlapp ..( dbus
+   cxxapp ..( dbus
+
 The Online Accounts subsystem consists of the following components:
 
 * The `Accounts UI <https://github.com/ubports/ubuntu-system-settings-online-accounts>`_: this provides the user facing components and the base classes for the whole Online Accounts feature. More in detail, you will find these subdirectories:
