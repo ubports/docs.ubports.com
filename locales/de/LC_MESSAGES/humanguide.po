@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-07 11:45-0600\n"
-"PO-Revision-Date: 2021-08-13 04:22+0000\n"
-"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
+"PO-Revision-Date: 2022-02-16 11:25+0000\n"
+"Last-Translator: Vinzenz Vietzke <vinz+ubportsweblate@vinzv.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-humanguide/de/>\n"
 "Language: de\n"
@@ -1314,7 +1314,7 @@ msgstr ""
 
 #: ../../humanguide/other-design-considerations/index.rst:13
 msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
-msgstr ""
+msgstr "`Suru Symbole <http://docs.ubports.com/projects/icons/en/latest/>`__"
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:2
 msgid "Scaling images"

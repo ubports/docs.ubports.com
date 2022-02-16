@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-07 11:45-0600\n"
-"PO-Revision-Date: 2021-10-03 12:38+0000\n"
+"PO-Revision-Date: 2022-02-15 08:29+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-index/nl/>\n"
@@ -85,6 +85,14 @@ msgid ""
 "more about system components <systemdev/index>`. If this is your first time "
 "here, please consider reading our :doc:`introduction <about/introduction>`."
 msgstr ""
+"Op deze website vind je handleidingen omtrent het :doc:`installeren van "
+"Ubuntu Touch op je telefoon <userguide/install>`, :doc:`het gebruik van "
+"Ubuntu Touch <userguide/dailyuse/index>`, :doc:`het ontwikkelen van Ubuntu "
+"Touch-apps <appdev/index>`, :doc:`het porteren van Ubuntu Touch naar een "
+"Android-telefoon <porting/introduction/index>` en :doc:`meer informatie over "
+"de systeemonderdelen <systemdev/index>`. Als je deze website voor het eerst "
+"bezoekt, neem dan eerst de :doc:`introductiepagina <about/introduction>` "
+"door."
 
 #: ../../index.rst:10
 msgid ""
@@ -96,7 +104,7 @@ msgstr ""
 
 #: ../../index.rst:12
 msgid "You may view this documentation in the following languages:"
-msgstr "Je kunt deze dokumentatie bekijken in de volgende talen:"
+msgstr "De documentatie is beschikbaar in de volgende talen:"
 
 #: ../../index.rst:16
 msgid "`English <https://docs.ubports.com/en/latest/>`_"
