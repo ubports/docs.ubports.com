@@ -19,20 +19,18 @@ If your port is based on Gitlab CI scripts, it is actually possible to not only 
 Overlay method for full system.img builds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In your device directory, create a subdirectory named 'ubuntu'. Collect the files you wish to inject into your build in this directory. 
+In your device directory, create a subdirectory named 'ubuntu'. Collect the files you wish to inject into your build in this directory.
 
 Relevant files are for example (but this list is incomplete):
-    * 70-android.rules
-    * android.conf (for display scaling, see below)
-    * touch.pa (for pulseaudio sound configuration/initialization, see below)
+    * ``/lib/udev/rules.d/70-android.rules``
+    * ``/etc/ubuntu-touch-session.d/android.conf`` (for display scaling, see below)
 
 These files are then injected by adding a code block to the file ``device.mk`` in your device directory. For the three files above add the following code::
 
     ### Ubuntu Touch ###
     PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
-        $(LOCAL_PATH)/ubuntu/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
-        $(LOCAL_PATH)/ubuntu/touch.pa:system/halium/etc/pulse/touch.pa 
+        $(LOCAL_PATH)/ubuntu/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf
     ### End Ubuntu Touch ###
 
 The first of these three files, 70-android.rules, is the one you created when bringing up Lomiri. You can extract this file from the device using ``adb pull`` or ``scp`` and copy it to the 'ubuntu' directory of your device source tree, making sure to add the corresponding line to your ``device.mk`` file, as described above.
@@ -49,7 +47,7 @@ The general steps to follow are thus:
 
 .. Note::
 
-    The target paths for the files mentioned above are *not* randomly chosen. You must use the specified paths. 
+    The target paths for the files mentioned above are *not* randomly chosen. You must use the specified paths.
 
 .. Note::
 
