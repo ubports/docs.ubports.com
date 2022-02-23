@@ -33,7 +33,7 @@ These files are then injected by adding a code block to the file ``device.mk`` i
         $(LOCAL_PATH)/ubuntu/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf
     ### End Ubuntu Touch ###
 
-The first of these three files, 70-android.rules, is the one you created when bringing up Lomiri. You can extract this file from the device using ``adb pull`` or ``scp`` and copy it to the 'ubuntu' directory of your device source tree, making sure to add the corresponding line to your ``device.mk`` file, as described above.
+The first of these three files, 70-android.rules, is the one you created when bringing up Lomiri (see :ref:`Lomiri`). Copy it to the 'ubuntu' directory of your device source tree, making sure to add the corresponding line to your ``device.mk`` file, as described above.
 
 Explanation:
 
