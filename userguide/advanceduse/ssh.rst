@@ -23,6 +23,22 @@ You need then to transfer your public key to your device. There are multiple way
 
     adb push ~/.ssh/id_rsa.pub /home/phablet/
 
+* Another alternative is to temporarily run an ssh server with password login.
+
+  * First get the IP address of your UBports device from the Wifi settings.
+
+  * Then open the Terminal app on your UBports device. We need to make sure that ssh server keys have been created. The simplest way to ensure this is start and stop the server once. Afterwards we run the ssh server while allowing password authentication::
+
+      sudo server ssh start
+      sudo server ssh stop
+      sudo /usr/sbin/sshd -D -o PasswordAuthentication=yes
+
+  * Now run this command on your PC to copy your personal public key from the PC to the UBports device::
+
+      scp ~/.ssh/id_rsa.pub phablet@IPADDRESS:/home/phablet/
+
+  * Finally, you can stop the ssh server with Ctrl-C in the Terminal app.
+
 Configure your device
 ---------------------
 
