@@ -12,6 +12,15 @@ The way how overlay files are implemented and their limitations vary across buil
 
 In general, there are two methods of implementing overlay files, one is to directly copy them to the destination path potentially overwriting existing files, the other is to place them in a designated base directory from where they are then mounted onto their destination path during the boot process. The former is only possible when doing builds using the GitLab CI scripts. In case of Ubuntu Touch 16.04 it is the only available overlay mechanism. While the ``system.img`` build process allows overwriting files on the built Android system partition it has no means of doing so on the root filesystem. Ubuntu Touch 16.04 does however offer limited support of mount-based overlay files. Starting from Ubuntu Touch 20.04, the implementation of mount-based overlay files has become more powerful in terms of overlaying both files and directories in vendor and Android images regardless of the build method. The use of mount-based overlay files is generally preferable as it allows for delta OTA updates. Both mechanisms will be discussed in detail below before describing how overlay files are included into the build process in full system image builds and builds based on GitLab CI scripts.
 
+.. Note::
+
+    Some ports of Ubuntu Touch 16.04 using the GitLab CI-based build method add custom scripts or configuration files (e.g. in ``/usr/sbin/mount-android.sh``, ``/etc/init/mount-android.conf``, or a file in ``/etc/init/``) in order to overlay files below ``/android/system`` which would otherwise not be possible using this build method. This practice is strongly discouraged for a several reasons:
+
+    - overwriting a system script prevents the port from receiving future updates of that script
+    - different ports coming up with custom solutions creates confusion among new porters and contributors
+
+    Porters which are in need of overlaying files inside a GSI-based ``/android/system.img`` may want to consider using the full ``system.img`` build method instead.
+
 The implementations and limitations can be summarized as follows:
 
 +---------------------------+-------------------------------------------------+--------------------------------------------------------------------------------+
