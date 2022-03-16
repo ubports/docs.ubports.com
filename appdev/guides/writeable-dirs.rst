@@ -41,6 +41,9 @@ The Qt header ``QStandardPaths`` provides the app's writable locations in C++:
 
 Since the value of the QStandardPaths strings are decided by the `Qt application name <https://doc.qt.io/qt-5/qcoreapplication.html#applicationName-prop>`_, this needs to be the same as the clickable application name.
 
+.. warning::
+    Setting the `organizationName <https://doc.qt.io/qt-5/qcoreapplication.html#organizationName-prop>`_ will change the paths returned by these functions too - if you need to do this, set it to the clickable application name as well, otherwise the paths won't work on the device.
+
 Using Standard Paths in QML
 ---------------------------
 The Qt module `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-labs-platform-standardpaths.html>`_ provides the app's writable locations in QML:
