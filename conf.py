@@ -48,7 +48,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'UBports'
-copyright = u'2019, The UBports project (Creative Commons BY-SA 4.0)'
+copyright = u'2019-2022, The UBports project (Creative Commons BY-SA 4.0)'
 author = u'UBports project'
 
 # The version info for the project you're documenting, acts as replacement for
