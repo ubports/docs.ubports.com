@@ -20,6 +20,7 @@ These instructions work for CalDAV as well.
 * CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmetic)
 * CRON_FREQUENCY (for the frequency of synchronization)
 * Line 61: write ``sudo sh -c "echo '$COMMAND_LINE' > /sbin/sogosync"`` , instead of ``sudo echo "$COMMAND_LINE" > /sbin/sogosync``, to avoid a "Permission denied" error.
+* Line 61: write  ``DBUS_SESSION_BUS_ADDRESS=\$`` instead of ``DBUS_SESSION_BUS_ADDRESS=$``. If not, cron jobs won't sync .
 
 3) Move the file to your Ubuntu Touch device, either by way of a file manager or through the use of ADB:: 
 
