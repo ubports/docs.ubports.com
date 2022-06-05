@@ -95,6 +95,11 @@ Building the system image (system.img)
 If you are using the **Halium-boot** method, you can skip this step.
 If you are following the **Full system image** method, this step is required.
 
+Halium will use the ``e2fsdroid`` tool for creating the system image. In most cases it is not on the local harddisk, so it can be built by issuing::
+
+   mka e2fsdroid
+
+
 To build the system image::
 
     mka systemimage
