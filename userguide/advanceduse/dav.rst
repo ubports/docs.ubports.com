@@ -14,22 +14,48 @@ These instructions work for CalDAV as well.
 1) Follow this `guide <https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to activate Developer Mode and a connection either through ADB or SSH.
 
 
-2) Download this `script <https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ (let's call it dav.sh) and edit the following variables: 
+2) OPTION A: 
 
-* Server side: CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your ownCloud/nextCloud/baikal/SOGO/… server)
-* CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmetic)
-* CRON_FREQUENCY (for the frequency of synchronization)
-* Line 61: write ``sudo sh -c "echo '$COMMAND_LINE' > /sbin/sogosync"`` , instead of ``sudo echo "$COMMAND_LINE" > /sbin/sogosync``, to avoid a "Permission denied" error.
+    2.1    Download this `script <https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ (let's call it dav.sh) and edit the following variables: 
 
-3) Move the file to your Ubuntu Touch device, either by way of a file manager or through the use of ADB:: 
+    * Server side: CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your ownCloud/nextCloud/baikal/SOGO/… server)
+    * CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmetic)
+    * CRON_FREQUENCY (for the frequency of synchronization)
+    * Line 61: write ``sudo sh -c "echo '$COMMAND_LINE' > /sbin/sogosync"`` , instead of ``sudo echo "$COMMAND_LINE" > /sbin/sogosync``, to avoid a "Permission denied" error.
 
-    adb push dav.sh /home/phablet
+    2.2     Move the file to your Ubuntu Touch device, either by way of a file manager or through the use of ADB:: 
 
-4) Connect with the phablet shell (using ``adb shell``) or type the following directly into the Ubuntu Touch device terminal app::
+        adb push dav.sh /home/phablet
 
-    chmod +x dav.sh
-    ./dav.sh
+    2.3    Connect with the phablet shell (using ``adb shell``) or type the following directly into the Ubuntu Touch device terminal app::
 
+        chmod +x dav.sh
+        ./dav.sh
+
+
+3) OPTION B: for advanced users (or if you have to delete/recreate sync configurations), or if you use Nextcloud as your Carddav/Calddav server 
+
+    3.1    Read the  `instructions <https://github.com/UT-ilities/UTouch_CalDAV_and_CardDAV_synchronization>`_
+
+    3.2    Download the `script and config files::
+
+        git clone https://github.com/UT-ilities/UTouch_CalDAV_and_CardDAV_synchronization.git
+        cd UTouch_CalDAV_and_CardDAV_synchronization
+
+    3.3    Edit the config file as explained in the `instructions <https://github.com/UT-ilities/UTouch_CalDAV_and_CardDAV_synchronization>`_::
+
+        cp config-nextcloud-template.txt config-personal.txt
+        vim config-personal.txt
+
+    3.4     Move the files to your Ubuntu Touch device, either by way of a file manager or through the use of ADB:: 
+
+        adb push ../UTouch_CalDAV_and_CardDAV_synchronization  /home/phablet/
+
+    3.5    Connect with the phablet shell (using ``adb shell``) or type the following directly into the Ubuntu Touch device terminal app::
+
+        cd UTouch_CalDAV_and_CardDAV_synchronization
+        chmod +x setup-dav-sync.sh
+        ./setup-dav-sync.sh --contacts config-personal.txt
 
 Sources:
 ^^^^^^^^
