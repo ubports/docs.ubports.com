@@ -19,6 +19,9 @@ The method for deriving values for these variables :ref:`is explained below. <Di
 
 Once you have adjusted the ``android.conf`` file to the display settings needed for your device, this file should be incorporated into your build. Follow :ref:`the overlay file method <Overlay-steps>` corresponding to your Halium version. 
 
+.. note::
+    This way of configuration is considered legacy, please migrate to :ref:`DeviceInfo <DeviceInfo>`.
+
 .. _Display-settings:
 
 Determining the correct display settings
