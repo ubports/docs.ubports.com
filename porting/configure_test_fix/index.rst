@@ -15,6 +15,7 @@ As you go along, it can be helpful to have a list of device functions to go by w
    :maxdepth: 1
    :name: configure_test_fix
 
+   device_info/index.rst
    Lomiri
    Overlay
    Display
