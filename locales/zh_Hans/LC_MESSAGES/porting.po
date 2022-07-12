@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Chinese (Simplified) (UBports Docs)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2022-04-29 15:42+0000\n"
-"Last-Translator: waitlamp <waitlamp996@gmail.com>\n"
+"PO-Revision-Date: 2022-07-04 04:40+0000\n"
+"Last-Translator: Caten <catenhu@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-porting/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -566,9 +566,8 @@ msgstr ""
 "rootfs 是由 UBports 项目维护的，可以以预先构建的 .tar.gz 包的形式下载，然后与 system.img 一起安装。"
 
 #: ../../porting/halium_7-1/Building.rst:15
-#, fuzzy
 msgid "Build the Halium system image"
-msgstr "构建镜像"
+msgstr "构建 Halium 系统镜像"
 
 #: ../../porting/halium_7-1/Building.rst:17
 msgid ""
