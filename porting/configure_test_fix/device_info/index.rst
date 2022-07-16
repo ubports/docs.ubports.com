@@ -5,6 +5,9 @@ DeviceInfo
 
 DeviceInfo allows to set device specific configuration, which can be accessed in an uniform way using `libdeviceinfo <https://gitlab.com/ubports/development/core/deviceinfo>`_.
 
+Device specific overrides
+-------------------------
+
 Configuration files per device are located at ``/etc/deviceinfo/devices/[device].yaml``.
 It will try to autodetect the correct configuration to load based on model of the device,
 using android props for halium/android devices and dtb for native linux devices.
@@ -21,6 +24,9 @@ For example, the file for the Nexus 7 tablet (flo) would be located at ``/etc/de
       WebkitDpr: 2
       PrimaryOrientation: Landscape
       ...
+
+In case you can not add a new file to the rootfs, you can bind-mount ``/etc/deviceinfo/devices/halium.yaml``.
+For a reference, see the `configuration bringup for bonito/sargo <https://github.com/fredldotme/android_device_google_bonito/commit/d0ca48aadcde0b74840c3394ac86042033d7f846>`_.
 
 If no device specific configuration exists or a key is not specified for the device config, DeviceInfo will fallback to ``/etc/deviceinfo/default.yaml``.
 Keep your configuration simple and try to not duplicate any entries, which are already defined in ``default.yaml``.
