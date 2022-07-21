@@ -62,7 +62,7 @@ Allow partial redraws to HWC-assigned server-side buffers.
 Examples
 --------
 
-Device `sample` using:
+Device ``sample`` using:
 
 - Enabling egl flushing for every client except for ``lomiri`` and ``unity8``
     - Note that you can use ``!`` to invert conditions and turn the `allow` into a `deny` list.

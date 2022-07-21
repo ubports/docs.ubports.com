@@ -24,7 +24,7 @@ DoubleTapToWake     Configuration for toggling DT2W  List of formatted strings: 
 Examples
 --------
 
-Device `sample` using:
+Device ``sample`` using:
 
 - Custom backlight sysfs path to disable autodetection of the path controlling the backlight
 - Double Tap to Wake (DT2W) configuration to allow double tapping to wake the device, specifing two potential paths
