@@ -67,7 +67,7 @@ If your makefile already includes a line beginning with ``BOARD_KERNEL_CMDLINE``
 Setting system as root
 ^^^^^^^^^^^^^^^^^^^^^^
 
-For halium 9, we need the system image to be build as system-as-root (for treble devices it should already be there ). Please check your ''boardconfig.mk'' for the following line, if it's there you can skip this step::
+For halium 9, we need the system image to be built as system-as-root (for treble devices it should already be there ). Please check your ''boardconfig.mk'' for the following line, if it's there you can skip this step::
 
     BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
