@@ -37,9 +37,9 @@ This allows for a lot of flexibility, however keys should be properly documented
 Built-in config keys
 --------------------
 
-============================  =========================================================  =====================================================
+============================  =========================================================  ========================================================
 Key                           Description                                                Value(s)
-============================  =========================================================  =====================================================
+============================  =========================================================  ========================================================
 Name                          Device name / codename                                     Any string
 PrettyName                    Pretty name of the device                                  Any string
 DeviceType                    Sets device type                                           desktop, tablet, phone
@@ -50,7 +50,7 @@ PortraitOrientation           Orientation of the device when in portrait mode   
 InvertedPortraitOrientation   Orientation of the device when in inverted portrait mode   Portrait, InvertedPortrait, Landscape, InvertedLandscape
 LandscapeOrientation          Orientation of the device when in landscape mode           Portrait, InvertedPortrait, Landscape, InvertedLandscape
 InvertedLandscapeOrientation  Orientation of the device when in inverted landscape mode  Portrait, InvertedPortrait, Landscape, InvertedLandscape
-============================  =========================================================  =====================================================
+============================  =========================================================  ========================================================
 
 Other keys are documented in the component specific subpages.
 
@@ -58,4 +58,5 @@ Other keys are documented in the component specific subpages.
    :maxdepth: 1
    :name: device_info
 
+   Mir
    Repowerd
