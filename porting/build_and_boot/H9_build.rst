@@ -67,21 +67,21 @@ If your makefile already includes a line beginning with ``BOARD_KERNEL_CMDLINE``
 Setting system as root
 ^^^^^^^^^^^^^^^^^^^^^^
 
-For halium 9, we need the system image to be built as system-as-root (for treble devices it should already be there ). Please check your ''boardconfig.mk'' for the following line, if it's there you can skip this step::
+For Halium 9, we need the system image to be built as system-as-root (for treble devices it should already be there). Please check your ``boardconfig.mk`` for the following line, if it's there you can skip this step::
 
     BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 If the above is not there, we have to add it.
 
-As this change makes the android root read-only, we may have to ship mount points for some important partitions like '' firmware'' ,'' persist'' with the system image, for this we can use the line::
+As this change makes the android root read-only, we may have to ship mount points for some important partitions like ``firmware``, ``persist`` with the system image, for this we can use the line::
 
-    BOARD_ROOT_EXTRA_FOLDERS :=
-     /firmware
-     /dsp
+    BOARD_ROOT_EXTRA_FOLDERS := \
+     /firmware \
+     /dsp \
      /persist
 
 .. Note::
-  For now this is enough, but you may need to add more mount points depending on your device. After successful boot do ''ls -la / '' and add folders corresponding to broken symlinks.
+  For now this is enough, but you may need to add more mount points depending on your device. After successful boot do ``ls -la /`` and add folders corresponding to broken symlinks.
 
 These changes may also bring in some context errors,please refer `this commit to fix them <https://github.com/gigabyte-1000/android_device_xiaomi_kenzo/commit/3e8ea1e3194c19aa52b0b2618df249d4b1076dca#diff-30b9d15aecb84fc004f83370d35234b955cff4d0640892fe60e3c4a422ae3e3d>`_.
 
