@@ -125,7 +125,7 @@ Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed succe
     - `Bq E5 HD <https://cdimage.ubports.com/stock-bq-images/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)
     - `Bq M10 HD <https://cdimage.ubports.com/stock-bq-images/cooler-image-stable-6.zip>`_ (*cooler*)
     - `Bq M10 FHD <https://cdimage.ubports.com/stock-bq-images/frieza-image-stable-4.zip>`_ (*frieza*)
-    - `Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)
+    - `Meizu MX4 <https://cdimage.ubports.com/devices/arale/arale-bootstrap.zip>`_ (*arale*)
 
 3. Download the latest version of `SP flash tool <https://spflashtool.com/download/>`_ (*aka MTK flash tool*).
 4. Extract the zip files
