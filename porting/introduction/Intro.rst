@@ -18,7 +18,7 @@ To be specific, device vendors tend to keep the code that speaks directly to the
 
 This is why Ubuntu Touch cannot be built completely from source code for most commercial devices. Instead, porting the system to these devices involves integrating the previously mentioned vendor blobs into the rest of the system, which can be built from source.
 
-The next component of Ubuntu Touch is a pre-compiled root filesystem which needs to be installed on the device. This component does not communicate directly with the device hardware. Instead, this communication is mediated by a Hardware Abstraction Layer (HAL) which needs to be built for each specific device, because each device has its specific hardware architecture. This component is called Halium  and is available in different versions (5.1 which is largely obsolete, 7.1, 9 and 10 as of writing) corresponding to different Android versions.
+The next component of Ubuntu Touch is a pre-compiled root filesystem which needs to be installed on the device. This component does not communicate directly with the device hardware. Instead, this communication is mediated by a Hardware Abstraction Layer (HAL) which needs to be built for each specific device, because each device has its specific hardware architecture. This component is called Halium  and is available in different versions (5.1 which is largely obsolete, 7.1, 9, 10 and 11 as of writing) corresponding to different Android versions.
 
 The `Halium project <https://halium.org/>`_ enables Linux systems to run on Android hardware. It is a joint effort by multiple mobile operating systems, notably Lune OS and UBports.
 
@@ -46,6 +46,7 @@ Android version  Halium version  Lineage OS (LOS)
 7.1              7.1             14.1
 9.0              9.0             16.0
 10.0             10.0            17.0
+11.0             11.0            18.1
 ===============  ==============  ================
 
 .. _What-is-a-GSI:
