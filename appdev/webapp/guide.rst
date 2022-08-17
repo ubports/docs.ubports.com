@@ -9,8 +9,7 @@ A web app displays in a webview inside a webapp-container that runs as an Ubuntu
 Taking a closer look:
 
     At the innermost level, there is a website that the developer identifies by URL.
-    The website is rendered and runs in an Oxide webview. Oxide is a Blink/Chrome webview that is customized for Ubuntu.
-    The Oxide webview runs and displays in the webapp-container. The webapp-container is the executable app runtime that is integrated with the Ubuntu/unity shell.
+    The website is rendered and runs in a Qt WebEngine based webview. The webview is provided by the pre-installed Morph browser and automatically handles things like file dialogs (using ContentHub), downloads, permissions, etc.
 
 Launching
 ---------
@@ -21,16 +20,16 @@ You can launch a webapp from the terminal with:::
 
 For example:::
 
-  webapp-container http://www.ubuntu.com
+  webapp-container https://www.ubuntu.com
 
-This simple form works, but almost every webapp also uses other features, such as URL containment with URL patterns as described below.
+This simple form works, but almost every webapp uses other features as well, such as URL containment with URL patterns as described below.
 
 User interface
 --------------
 
 A webapp generally fills the entire app screen space, without the need of the UI controls generally found on standard browsers.
 
-In some cases some navigation controls are appropriate, such as Back and Forward buttons, or a URL address bar. These are added as command line arguments:
+In some cases some navigation controls are appropriate, such as Back and Forward buttons, or an address bar. These are enabled with command line arguments:
 
  - ``--enable-back-forward`` Enable the display of the back and forward buttons in the toolbar (at the bottom of the webapp window)
  - ``--enable-addressbar`` Enable the display of the address bar (at the bottom of the webapp window)
@@ -42,14 +41,14 @@ Webapp authors often want to contain browsing to the target website. That is, th
 
 However, many web apps use pages that are hosted over multiple sites or that use external resources and pages.
 
-However, both containment and access to specified external URLs are implemented with URL patterns provided as arguments at launch time. Let’s take a closer look.
+Both containment and access to specified external URLs are implemented with URL patterns provided as arguments at launch time. Let’s take a closer look.
 
 Uncontained by default
 ----------------------
 
 By default, there is no URL containment. Suppose you launch a webapp without any patters and only a starting URL like this:::
 
-  webapp-container http://www.ubuntu.com
+  webapp-container https://www.ubuntu.com
 
 The user can navigate to any URL without limitation. For example, if they click the Developer button at the top, they navigate to developer.ubuntu.com, and it displays in the webapp.
 
@@ -60,15 +59,15 @@ Simple containment to the site
 
 One often wants to contain users to the site itself. That is, if the website is www.ubuntu.com, it may be useful to contain webapp users only to subpages of www.ubuntu.com. This is done by adding a wildcard URL pattern to the launch command, as follows:::
 
-  webapp-container --webappUrlPatterns=http://www.ubuntu.com/* http://www.ubuntu.com
+  webapp-container --webappUrlPatterns=https://www.ubuntu.com/* https://www.ubuntu.com
 
 ``--webappUrlPatterns=`` indicates a pattern is next
-    http://www.ubuntu.com/* is the pattern
-    The asterisk is a wildcard that matches any valid sequence of trailing (right-most) characters in a URL
+    https://www.ubuntu.com/* is the pattern
+    The asterisk is a wildcard that matches any valid sequence of characters in a URL
 
-With this launch command and URL pattern, the user can navigate to and open in the webapp any URL that starts with http://www.ubuntu.com/. For example, they can click on the Phone button (http://www.ubuntu.com/phone) in the banner and it opens in the webapp, or the Tablet button (http://www.ubuntu.com/tablet). But, clicking Developer opens the corresponding URL in the browser.
+With this launch command and URL pattern, the user can navigate to and open in the webapp any URL that starts with https://www.ubuntu.com/. For example, they can click on the Phone button (https://www.ubuntu.com/phone) in the banner and it opens in the webapp, or the Tablet button (https://www.ubuntu.com/tablet). But, clicking Developer opens the corresponding URL in the browser.
 
-Tip: Make sure to fully specify the subdomain in your starting URL, that is, use http://www.ubuntu.com instead of www.ubuntu.com. Not specifying the subdomain would create an ambiguous URL and thus introduces security concerns.
+Tip: Make sure to specify the protocol in your starting URL, that is, use https://www.ubuntu.com instead of www.ubuntu.com. Not specifying the protocol would create an ambiguous URL and thus introduce security concerns.
 
 
 More complex wildcard patterns
@@ -76,7 +75,7 @@ More complex wildcard patterns
 
 You might want to limit access to only some subpages of your site from within the webapp. This is easy with wildcard patterns. (Links to other subpages are opened in the browser.) For example, the following allows access to www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features while not allowing access to www.ubuntu.com/desktop or www.ubuntu.com/phone::
 
-  webapp-container --webappUrlPatterns=http://www.ubuntu.com/*/features http://www.ubuntu.com
+  webapp-container --webappUrlPatterns=https://www.ubuntu.com/*/features https://www.ubuntu.com
 
 
 Multiple patterns
@@ -84,7 +83,7 @@ Multiple patterns
 
 You can use multiple patterns by separating them with a comma. For example, the following allows access only to www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features:::
 
-  webapp-container --webappUrlPatterns=http://www.ubuntu.com/desktop/features,http://www.ubuntu.com/phone/features  http://www.ubuntu.com
+  webapp-container --webappUrlPatterns=https://www.ubuntu.com/desktop/features,https://www.ubuntu.com/phone/features  https://www.ubuntu.com
 
 Tip: Multiple patterns are often necessary to achieve the intended containment behavior.
 
@@ -94,31 +93,31 @@ Adding a specific subdomain
 
 Many URLs have one or more subdomains. (For example, in the following, "developer" is the subdomain: developer.ubuntu.com.) You can allow access to a single subdomain (and all of its subpages) with a pattern like this:::
 
-  --webappUrlPatterns=http://developer.ubuntu.com/*
+  --webappUrlPatterns=https://developer.ubuntu.com/*
 
-However, one usually wants the user to be able to navigate back to the starting URL (and its subpages). So, if the starting URL is http://www.ubuntu.com, a second pattern is needed:::
+However, one usually wants the user to be able to navigate back to the starting URL (and its subpages). So, if the starting URL is https://www.ubuntu.com, a second pattern is needed:::
 
-  --webappUrlPatterns=http://developer.ubuntu.com/*,http://www.ubuntu.com/*
+  --webappUrlPatterns=https://developer.ubuntu.com/*,https://www.ubuntu.com/*
 
-Putting these together, here’s an example that starts on http://www.ubuntu.com and allows navigation to http://developer.ubuntu.com and subpages and back to http://www.ubuntu.com and subpages:::
+Putting these together, here’s an example that starts on https://www.ubuntu.com and allows navigation to https://developer.ubuntu.com and subpages and back to https://www.ubuntu.com and subpages:::
 
-  webapp-container --webappUrlPatterns=http://developer.ubuntu.com/*,http://www.ubuntu.com/*  http://www.ubuntu.com
+  webapp-container --webappUrlPatterns=https://developer.ubuntu.com/*,https://www.ubuntu.com/*  https://www.ubuntu.com
 
 Adding subdomains with a wildcard
 ---------------------------------
 
 Some URLs have multiple subdomains. For example, www.ubuntu.com has design.ubuntu.com, developer.ubuntu.com and more. You can add access to all subdomains with a wildcard in the subdomain position:::
 
-  webapp-container --webappUrlPatterns=http://*.ubuntu.com/*  http://www.ubuntu.com
+  webapp-container --webappUrlPatterns=https://*.ubuntu.com/*  https://www.ubuntu.com
 
-Note: An asterisk in the subdomain position matches any valid single subdomain. This single pattern is sufficient to enable browsing to any subdomain and subpages, including back to the starting URL (http://www.ubuntu.com) and its subpages.
+Note: An asterisk in the subdomain position matches any valid single subdomain. This single pattern is sufficient to enable browsing to any subdomain and subpages, including back to the starting URL (https://www.ubuntu.com) and its subpages.
 
-Adding https
+Adding http
 ------------
 
-Sometimes a site uses https for some of its URLs. Here is an example that allows https and https as access within the webapp to www.launchpad.net (and all subpages due to the wildcard):::
+Sometimes a site uses http for some of its URLs. In general this is unsafe and should be avoided, but here is an example that allows access to www.launchpad.net on both https and http inside the webapp (and all subpages due to the wildcard):::
 
-  webapp-container --webappUrlPatterns=https?://http://www.launchpad.net/* http://www.launchpad.net
+  webapp-container --webappUrlPatterns=https?://www.launchpad.net/* https://www.launchpad.net
 
 Note: the question mark in https?. This means the preceding character (the ‘s’) is optional. If https is always required, omit the question mark.
 
@@ -164,9 +163,9 @@ To change the string from the command line, use the following option:::
 Browser data containment
 ------------------------
 
-The webapp experience is contained and isolated from the browser data point of view. That is webapps do not access data from any other installed browser, such as history, cookies and so on. Other browser on the system do not access the webapp’s data.
+The webapp experience is contained and isolated from the browser data point of view. That is webapps do not access data from any other installed browser, such as history, cookies and so on. Other browsers on the system do not access the webapp’s data.
 
 Storage
 -------
 
-W3C allows apps to use local storage, and Oxide/Webapp-container supports the main standards here: LocalStorage, IndexedDB, WebSQL.
+Following storage options are supported: Local/Session Storage, IndexedDB and the deprecated WebSQL. FileSystem API is not supported because apps cannot access the filesystem directly.
