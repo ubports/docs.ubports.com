@@ -37,7 +37,7 @@ These instructions work for CalDAV as well.
 
     3.1    Read the  `instructions <https://github.com/UT-ilities/UTouch_CalDAV_and_CardDAV_synchronization>`_
 
-    3.2    Download the `script and config files::
+    3.2    Download the script and config files::
 
         git clone https://github.com/UT-ilities/UTouch_CalDAV_and_CardDAV_synchronization.git
         cd UTouch_CalDAV_and_CardDAV_synchronization
