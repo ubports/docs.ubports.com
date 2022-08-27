@@ -77,6 +77,8 @@ Make sure you have the base-devel package installed.
 Install the required dependencies from AUR::
 
     git clone https://aur.archlinux.org/halium-devel.git && cd halium-devel && makepkg -i
+    
+    Please note: as of Autumn 2021 this package is no longer maintained. You will be unable to clone and build Halium on Arch as all dependencies are not met. 
 
 
 
