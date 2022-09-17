@@ -194,6 +194,17 @@ Add lines like the following ones to your ``~/.bash_aliases``::
 
     alias git='libertine-launch -i CONTAINER-IDENTIFIER git'
     alias screenfetch='libertine-launch -i CONTAINER-IDENTIFIER screenfetch'
+    
+Installing packages manually
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you want to install a package from a file, you will first have to make it available to the root user, for example by copying it to the ``/root`` directory::
+
+    cp ~/Downloads/somepackage.deb ~/.cache/libertine-container/CONTAINER-IDENTIFIER/rootfs/
+
+Then install it using dpkg::
+
+    libertine-container-manager exec -i CONTAINER-IDENTIFIER -c "dpkg -i /root/somepackage.deb"
 
 Background
 ----------
