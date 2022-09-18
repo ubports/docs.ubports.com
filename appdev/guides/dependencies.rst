@@ -49,7 +49,7 @@ Optionally, configure the compilation by adding ``build_args``, which may look l
 
 Most build arguments are project specific. Therefore, study the library's build instructions and also look for ``option`` settings in its ``CMakeLists.txt`` .
 
-To actually build the library for all architectures run ``clickable build-libs --arch armhf``, ``clickable build-libs --arch arm64`` and ``clickable build-libs --arch amd64``. Don't forget to mention this step in your README, so that others can reproduce the build process.
+To actually build the library for all architectures run ``clickable build --libs --arch armhf``, ``clickable build --libs --arch arm64`` and ``clickable build --libs --arch amd64``. Don't forget to mention this step in your README, so that others can reproduce the build process.
 
 See how `Teleports clickable.json <https://gitlab.com/ubports/apps/teleports/blob/master/clickable.json#L21>`_ uses the libraries feature to build its dependency tdlib.
 
