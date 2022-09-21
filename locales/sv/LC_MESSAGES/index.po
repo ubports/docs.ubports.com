@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
+# This file is distributed under the same license as the UBports package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: UBports\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-07 11:45-0600\n"
+"PO-Revision-Date: 2022-09-08 03:15+0000\n"
+"Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
+"Language-Team: Swedish <https://translate.ubports.com/projects/ubports-docs/"
+"documentation-index/sv/>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
+
+#: ../../index.rst:27
+#: ../../index.rst:27
+msgid "About"
+msgstr "Om"
+
+#: ../../index.rst:36
+#: ../../index.rst:36
+msgid "User Guide"
+msgstr "Användarguide"
+
+#: ../../index.rst:46
+#: ../../index.rst:46
+msgid "Contribute"
+msgstr "Bidra"
+
+#: ../../index.rst:54
+#: ../../index.rst:54
+msgid "Development"
+msgstr "Utveckling"
+
+#: ../../index.rst:63
+#: ../../index.rst:63
+msgid "Porting"
+msgstr ""
+
+#: ../../index.rst:73
+msgid "Click Packages"
+msgstr ""
+
+#: ../../index.rst:73
+msgid "Ubuntu UI-Toolkit"
+msgstr ""
+
+#: ../../index.rst:73
+msgid "Clickable"
+msgstr "Klickbar"
+
+#: ../../index.rst:73
+msgid "Halium"
+msgstr "Halium"
+
+#: ../../index.rst:73
+#: ../../index.rst:73
+msgid "Platform"
+msgstr "Plattform"
+
+#: ../../index.rst:2
+msgid "Welcome to the UBports documentation!"
+msgstr "Välkommen till dokumentationen för UBports!"
+
+#: ../../index.rst:4
+msgid "Welcome to the official documentation of the UBports project!"
+msgstr "Välkommen till den officiella dokumentationen för UBports-projektet!"
+
+#: ../../index.rst:6
+msgid "UBports develops the mobile phone operating system Ubuntu Touch. Ubuntu Touch is a mobile operating system focused on ease of use, privacy, and convergence."
+msgstr ""
+"UBports utvecklar operativsystemet Ubuntu Touch för mobiltelefoner. Ubuntu "
+"Touch är ett operativsystem för mobiltelefoner med fokus på "
+"användarvänlighet, integritet och konvergens."
+
+#: ../../index.rst:8
+msgid "On this website you find guides to :doc:`install Ubuntu Touch on your mobile phone <userguide/install>`, :doc:`use Ubuntu Touch <userguide/dailyuse/index>`, :doc:`develop Ubuntu Touch apps <appdev/index>`, :doc:`port Ubuntu Touch to an Android handset <porting/introduction/index>` and :doc:`learn more about system components <systemdev/index>`. If this is your first time here, please consider reading our :doc:`introduction <about/introduction>`."
+msgstr ""
+"På den här hemsidan så hittar du guider till :doc:`installera Ubuntu Touch i "
+"din mobiltelefon <userguide/install>`, :doc:`använd Ubuntu Touch <userguide/"
+"dailyuse/index>`, :doc:`utveckla appar för Ubuntu Touch <appdev/index>`, "
+":doc:`portera Ubuntu Touch till en telefonlur med Android i <porting/"
+"introduktion/index>` och :doc:`lär dig mer om system-komponenter <systemdev/"
+"index>`. Vänligen överväg att läsa vår :doc:`introduktion<about/"
+"introduktion>`."
+
+#: ../../index.rst:10
+msgid "If you want to help improving this documentation, :doc:`the Documentation contribute page <contribute/documentation>` will get you started."
+msgstr ""
+
+#: ../../index.rst:12
+msgid "You may view this documentation in the following languages:"
+msgstr "Du kan visa den här dokumentationen i följande språk:"
+
+#: ../../index.rst:16
+msgid "`English <https://docs.ubports.com/en/latest/>`_"
+msgstr "`Engelska <https://docs.ubports.com/en/latest/>`_"
+
+#: ../../index.rst:17
+msgid "`Català <https://docs.ubports.com/ca/latest/>`_"
+msgstr "`Katalanska <https://docs.ubports.com/ca/latest/>`_"
+
+#: ../../index.rst:18
+msgid "`Français <https://docs.ubports.com/fr/latest/>`_"
+msgstr "`Franska <https://docs.ubports.com/fr/latest/>`_"
+
+#: ../../index.rst:19
+msgid "`Deutsch <https://docs.ubports.com/de/latest/>`_"
+msgstr "`Tyska <https://docs.ubports.com/de/latest/>`_"
+
+#: ../../index.rst:20
+msgid "`Italiano <https://docs.ubports.com/it/latest/>`_"
+msgstr "`Italienska <https://docs.ubports.com/it/latest/>`_"
+
+#: ../../index.rst:21
+msgid "`Română <https://docs.ubports.com/ro/latest/>`_"
+msgstr "`Rumänska <https://docs.ubports.com/ro/latest/>`_"
+
+#: ../../index.rst:22
+msgid "`Русский <https://docs.ubports.com/ru/latest>`_"
+msgstr "`Ryska <https://docs.ubports.com/ru/latest>`_"
+
+#: ../../index.rst:23
+msgid "`Türkçe <https://docs.ubports.com/tr/latest/>`_"
+msgstr "`Turkiska <https://docs.ubports.com/tr/latest/>`_"
+
+#: ../../index.rst:24
+msgid "`Español <https://docs.ubports.com/es/latest/>`_"
+msgstr "`Spanska <https://docs.ubports.com/es/latest/>`_"
+
+#: ../../index.rst:25
+msgid "`Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_"
+msgstr "`Förenklad Kinesiska <https://docs.ubports.com/zh_CN/latest/>`_"
