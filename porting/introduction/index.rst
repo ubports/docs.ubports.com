@@ -1,13 +1,14 @@
 Introduction
 ============
 
-Porting is the process of making Ubuntu Touch run on new hardware, i.e. on devices that have not previously been able to run Ubuntu Touch. 
+Porting makes Ubuntu Touch run on new hardware, i.e. devices previously unable to run it. 
 
-On the vast majority of commercially available devices crucial parts of their systems are not open source. Furthermore, these proprietary parts are specific, not only to the manufacturer, but usually also to the individual model. 
+Crucial parts of most commercially available devices are not libre software.
+The proprietary nature of the parts is a secret specific not only to the manufacturer, but usually also the individual model. 
 
-Porting Ubuntu Touch involves building it in such a way as to integrate it with these proprietary components on a device so as to enable it to "talk to" the device hardware. 
+The real work is building Ubuntu Touch so that it integrates with these proprietary device components so it can "talk to" the hardware. 
 
-Before attempting to port Ubuntu Touch to a new device, there are a few things to understand and consider, some research to be done, and a suitable build environment needs to be set up. This section addresses these points.
+With a bit of research and a suitable build environment set up, you too can port Ubuntu Touch.
 
 .. toctree::
    :maxdepth: 1
