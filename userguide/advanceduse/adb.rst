@@ -28,8 +28,8 @@ Enable developer mode
 
 Next, you'll need to turn on Developer Mode.
 
-#. Reboot your device
 #. Place your device into developer mode (Settings - About - Developer Mode - check the box to turn it on)
+#. Reboot your device
 #. Plug the device into a computer with ADB installed
 #. Open a terminal and run ``adb devices``.
 
