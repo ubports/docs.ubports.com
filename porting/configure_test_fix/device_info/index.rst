@@ -60,3 +60,4 @@ Other keys are documented in the component specific subpages.
 
    Mir
    Repowerd
+   HfdService
