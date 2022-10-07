@@ -18,9 +18,9 @@ Then choose between the two following guides
 * The one proposed by Bastos77 and Vanyasem is quite simple, if you have few CalDav or CardDAV to configure. 
 * The one proposed by UT-itilities is much featured, with many commands to create or delete configurations. Use it if you manage many configurations, on one or multiple servers
 
-------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
 1. A simple guide proposed by `Bastos77 <https://gist.github.com/bastos77>`_ and `Vanyasem <https://gist.github.com/vanyasem>`_
-------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------
 #. Download this `script <https://gist.github.com/vanyasem/379095d25ac350676fc70c42efe17c8c>`_ (let's call it dav.sh) and edit the following variables: 
    
    *  ``CAL_URL``
@@ -42,9 +42,9 @@ Then choose between the two following guides
         chmod +x dav.sh
         ./dav.sh
 
-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 2. Or a full featured guide proposed by `UT-ilities <https://github.com/UT-ilities>`_
-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
 
 if you have many configurations on one or multiple Caldav/CardDav servers
 
