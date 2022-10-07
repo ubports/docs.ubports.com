@@ -7,7 +7,7 @@ Not all devices can be made to run Ubuntu Touch.
 Research your specific target device before starting.
 
 Find the specifications of your device by searching for it on `GSMArena <https://www.gsmarena.com>`_ and/or `DeviceSpecification <https://www.devicespecifications.com/en>`_.
-`Pick an Android target device<http://docs.halium.org/en/latest/porting/first-steps.html#pick-an-android-target-device>`_ in the Halium Porting Guide helps you find out if it meets the requirements.
+`Pick an Android target device <https://docs.halium.org/en/latest/porting/first-steps.html#pick-an-android-target-device>`_ in the Halium Porting Guide helps you find out if it meets the requirements.
 
 .. _Locate-relevant-guides-and-other-information:
 
