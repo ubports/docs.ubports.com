@@ -19,6 +19,9 @@ Path: ``/home/phablet/.cache/<fullappname>/``
 
 This is the place to cache data for later use. The cache is also used by the Content Hub. Files that have been shared with the music app for example can be found in ``/home/phablet/.cache/com.ubuntu.music/HubIncoming/``.
 
+.. note::
+    Data in the cache directory should be treated as temporary and the app should still function normally if this directory is cleared - clearing cache is commonly done to recover some space on the device. Don't store user account info here :)
+
 App data
 ^^^^^^^^
 Path: ``/home/phablet/.local/share/<fullappname>/``
