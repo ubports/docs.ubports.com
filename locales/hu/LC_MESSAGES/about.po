@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-07 11:45-0600\n"
-"PO-Revision-Date: 2022-09-21 13:58+0000\n"
+"PO-Revision-Date: 2022-12-16 19:28+0000\n"
 "Last-Translator: Lundrin <berenyi.vilmos@tutanota.com>\n"
 "Language-Team: Hungarian <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-about/hu/>\n"
@@ -334,67 +334,97 @@ msgstr ""
 
 #: ../../about/process/issue-tracking.rst:60
 msgid "List of labels normally used by all repositories:"
-msgstr ""
+msgstr "Általánosan minden repository által használt labelek listája:"
 
 #: ../../about/process/issue-tracking.rst:62
 msgid "**needs confirmation**: The bug needs confirmation and / or further detailing by affected users."
 msgstr ""
+"**needs confirmation - (megerősítést igényel)**: A bug megerősítésre és/vagy "
+"részletesebb leírásra szorul az érintett felhasználóktól."
 
 #: ../../about/process/issue-tracking.rst:64
 msgid "**bug**: This issue is a confirmed bug. If it's reproducible, reproduction steps are described."
 msgstr ""
+"**bug**: Ez a jelentés egy megerősített bug. Ha reprodukálható, a lépések le "
+"vannak írva."
 
 #: ../../about/process/issue-tracking.rst:66
 msgid "**opinion**: This issue needs further discussion."
-msgstr ""
+msgstr "**opinion - (vélemény)**: Ez a jelentés további diskurzust igényel."
 
 #: ../../about/process/issue-tracking.rst:67
 msgid "**enhancement**: This issue is a feature request."
-msgstr ""
+msgstr "**enhancement - (fejlesztés)**: Ez a jelentés egy funkciókérés."
 
 #: ../../about/process/issue-tracking.rst:68
 msgid "**question**: This issue is a support request or general question."
 msgstr ""
+"**question - (kérdés)**: Ez a jelentés egy segítség kérés vagy egy általános "
+"kérdés."
 
 #: ../../about/process/issue-tracking.rst:69
 msgid "**invalid**: This issue can not be confirmed or was reported in the wrong tracker."
 msgstr ""
+"**invalid - (érvénytelen)**: Ezt a jelentést nem lehet megerősíteni, vagy a "
+"rossz követőben adták le."
 
 #: ../../about/process/issue-tracking.rst:71
 msgid "**duplicate**: This has already been reported elsewhere. Please provide a link and close."
 msgstr ""
+"**duplicate - (duplikált)**: Ez már jelentve volt korábban valahol. Kérjük "
+"adjon egy linket, és zárja le."
 
 #: ../../about/process/issue-tracking.rst:73
 msgid "**help wanted**: This issue is ready to be picked up by a community developer."
 msgstr ""
+"**help wanted - (segítség szükséges)**: Ez a jelentés készen áll, hogy egy "
+"közösségi fejlesztő hozzákezdjen."
 
 #: ../../about/process/issue-tracking.rst:75
 msgid "**good first issue**: The report contains instructions or hints required to fix it. It is an excellent place for someone new to learn about the project by fixing a real issue."
 msgstr ""
+"**good first issue - (jó első jelentésnek)**: Ez a jelentés útmutatókat és "
+"tippeket tartalmaz a megoldásához. Ez kiváló lehetőség egy kezdőnek, "
+"megtanulni egy hibát kijavítani."
 
 #: ../../about/process/issue-tracking.rst:77
 msgid "**wontfix**: A bug it does not make sense to fix, since it will probably resolve itself, be too much work, isn't fixable, or an underlying component will soon change."
 msgstr ""
+"**wontfix - (nem lesz javítva)**: Egy olyan bug, amit nincs értelme "
+"kijavítani, mivel valószínűleg meg fogja oldani önmagát, túl sok munka "
+"lenne, nem javítható, vagy a kiemelt komponens hamarosan megváltozik."
 
 #: ../../about/process/issue-tracking.rst:81
 msgid "Additional special labels can be defined. As an example, these are the labels used in the Ubuntu Touch tracker:"
 msgstr ""
+"Egyéb speciális labelek is hozzáadhatók. Példaképpen, ezek az Ubuntu Touch "
+"követőn használt labelek:"
 
 #: ../../about/process/issue-tracking.rst:84
 msgid "**critical (devel)**: Critical issue only occuring on the `devel` channel is blocking the release of the next `rc` image."
 msgstr ""
+"**critical (devel)**: Kritikus hiba, a `devel` csatornán, ami akadályozza a "
+"következő `rc` frissítés megjelenését."
 
 #: ../../about/process/issue-tracking.rst:86
 msgid "**critical (rc)**: Critical issue only occuring on the `devel` and `rc` channel is blocking the release of the next stable release. Usually, issues that can not simply be moved to a different release and have the power to postpone the release are labeled this way."
 msgstr ""
+"**critical (rc)**: Kritikus hiba a `devel` és az `rc` csatornán, ami "
+"akadályozza a következő `stable` megjelenést. Általában azokat a hibákat "
+"jelölik ezzel, melyeket nem lehet egyszerűen egy másik megjelenésbe áttolni, "
+"és késleltethetik a megjelenést."
 
 #: ../../about/process/issue-tracking.rst:90
 msgid "**device: [DEVICE CODENAME]**: Issue affecting only the specified device(s)."
 msgstr ""
+"**device: [DEVICE CODENAME]**: Hiba, ami csak a meghatározott készülék(ek)et "
+"érinti."
 
 #: ../../about/process/issue-tracking.rst:92
 msgid "**team: [TEAM NAME]**: Issue falls under the responsibility of a specific team (HAL, middleware, UI)."
 msgstr ""
+"**team: [TEAM NAME]**: Hiba, ami egy meghatározott csapat felelőssége alá "
+"tartozik (HAL, middleware, UI)."
 
 #: ../../about/process/issue-tracking.rst:95
 msgid "If a repository tracking issues locally defines it's own labels, they should be documented in the README.md."
