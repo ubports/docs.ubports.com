@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-07 11:45-0600\n"
-"PO-Revision-Date: 2021-12-19 10:53+0000\n"
-"Last-Translator: Philipp Rochlitz <philipp@rochlitz.info>\n"
+"PO-Revision-Date: 2022-12-26 22:18+0000\n"
+"Last-Translator: Vinzenz Vietzke <vinz+ubportsweblate@vinzv.de>\n"
 "Language-Team: German <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-systemdev/de/>\n"
 "Language: de\n"
@@ -79,7 +79,7 @@ msgstr ""
 
 #: ../../systemdev/calendars.rst:19
 msgid "Scheduling and account issues"
-msgstr ""
+msgstr "Planung und Probleme mit dem Account"
 
 #: ../../systemdev/calendars.rst:21
 msgid ""
