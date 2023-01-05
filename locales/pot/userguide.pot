@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019-2022, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-07 11:45-0600\n"
+"POT-Creation-Date: 2023-01-05 00:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,11 +57,11 @@ msgid "Next, you'll need to turn on Developer Mode."
 msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:31
-msgid "Reboot your device"
+msgid "Place your device into developer mode (Settings - About - Developer Mode - check the box to turn it on)"
 msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:32
-msgid "Place your device into developer mode (Settings - About - Developer Mode - check the box to turn it on)"
+msgid "Reboot your device"
 msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:33
@@ -201,61 +201,130 @@ msgid "Reverse tethering"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:4
-msgid "This tutorial helps you to connect your Ubuntu Touch device to your computer to access the Internet on it. This is useful if there is no available Wi-Fi connection or you don't have a data subscription on your Ubuntu Touch device."
+msgid "This tutorial explains how you get your Ubuntu Touch device online using a USB cable and a computer with internet access. This is useful if there is no available Wi-Fi connection or you don't have a data subscription on your device."
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:7
-msgid "Prerequisite: A Ubuntu Touch device with \"Developer mode\" on, attached via USB to the computer connected to the Internet."
-msgstr ""
-
-#: ../../userguide/advanceduse/reverse-tethering.rst:10
+#: ../../userguide/advanceduse/reverse-tethering.rst:8
 msgid "Steps"
 msgstr ""
 
+#: ../../userguide/advanceduse/reverse-tethering.rst:10
+msgid "Prepare your device (Ubuntu Touch) and your computer:"
+msgstr ""
+
 #: ../../userguide/advanceduse/reverse-tethering.rst:12
-msgid "On the Ubuntu Touch device: ``android-gadget-service enable rndis``"
+msgid "Turn `Developer Mode` on in Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:13
+msgid "Connect your computer to the internet."
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:14
-msgid "On your computer: get your RNDIS IP address e.g:``hostname -I``"
+msgid "Attach your device to your computer via USB."
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:16
-msgid "On the Ubuntu Touch device:"
+#: ../../userguide/advanceduse/reverse-tethering.rst:37
+msgid "On the *device*:"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:18
-msgid "add a gateway: ``sudo route add default gw YOUR_COMPUTER_RNDIS_IP``"
+msgid "Run: ``android-gadget-service enable rndis``"
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:20
-msgid "add nameservers: ``echo \"nameserver 8.8.8.8\" | sudo tee /etc/resolv.conf``"
+#: ../../userguide/advanceduse/reverse-tethering.rst:19
+msgid "Reboot the phone."
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:22
-msgid "refresh the DNS table: ``resolvconf -u``"
+#: ../../userguide/advanceduse/reverse-tethering.rst:21
+msgid "On your *computer*:"
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:24
-msgid "On computer:"
+#: ../../userguide/advanceduse/reverse-tethering.rst:23
+msgid "Get your RNDIS IP address:"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:25
+msgid "Run: ``ip a``"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:26
+msgid "Look for an interface named ``usb0`` in the output:"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:35
+msgid "Your IP is: ``10.42.0.1``"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:39
+msgid "Get your RNDIS interface: Run ``ip a``"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:48
+msgid "Your interface is: ``rndis0``"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:50
+msgid "Change your IP address: ``sudo ifconfig rndis0 10.42.0.2``"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:51
+msgid "Add your computer as default gateway: ``sudo route add default gw 10.42.0.1``"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:52
+msgid "Add a nameserver of your choice: ``echo \"nameserver 1.1.1.1\" | sudo tee -a /etc/resolv.conf``"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:53
+msgid "Open Morph Browser and test your internet connection!"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:55
+msgid "If it's not working yet, on your *computer*:"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:57
 msgid "Turn on IP forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``"
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:28
-msgid "Apply NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.0.0.0/8 -o eth0 -j MASQUERADE``"
+#: ../../userguide/advanceduse/reverse-tethering.rst:58
+msgid "Apply NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.42.0.0/8 -o eth0 -j MASQUERADE``"
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:32
+#: ../../userguide/advanceduse/reverse-tethering.rst:60
+msgid "Make sure you replace ``eth0`` by the interface that connects your computer to the internet."
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:62
+msgid "NOTE: These steps are usually performed automatically by the NetworkManager on Ubuntu 22.04."
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:65
+msgid "Known Issues"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:67
+msgid "The Updates page in the System Settings displays: ``Connect to the Internet to check for updates.``"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:68
+msgid "After a while Teleports looses its internet connection and must be restarted."
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:71
 #: ../../userguide/advanceduse/screencasting.rst:73
 #: ../../userguide/advanceduse/ssh.rst:78
 msgid "References"
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:34
-msgid "Ask Ubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-tethering-and-click-apps-updates"
+#: ../../userguide/advanceduse/reverse-tethering.rst:73
+msgid "`Ask Ubuntu`_"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:74
+msgid "RidgeRun_"
 msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:2
@@ -1292,7 +1361,7 @@ msgid "`Bq M10 FHD <https://cdimage.ubports.com/stock-bq-images/frieza-image-sta
 msgstr ""
 
 #: ../../userguide/install.rst:128
-msgid "`Meizu MX4 <http://people.canonical.com/~alextu/tangxi/684.zip>`_ (*arale*)"
+msgid "`Meizu MX4 <https://cdimage.ubports.com/devices/arale/arale-bootstrap.zip>`_ (*arale*)"
 msgstr ""
 
 #: ../../userguide/install.rst:130

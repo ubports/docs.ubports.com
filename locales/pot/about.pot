@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019-2022, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-07 11:45-0600\n"
+"POT-Creation-Date: 2023-01-05 00:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,35 +89,51 @@ msgid "For pre-installed Ubuntu Touch components, DEB-packages are used wherever
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:20
-msgid "Every repository using this convention will have branches for the actively supported Ubuntu releases referenced by their codenames (``bionic``, ``xenial``, ``vivid``, etc.). These are the branches built directly into the corresponding images and published on :doc:`repo.ubports.com <ppa>`. If no separate versions for the different Ubuntu bases are needed, the repository will have one ``master`` branch and the CI system will still build versions for all actively supported releases and resolve dependencies accordingly."
+msgid "A Git repository following this convention usually has a ``main`` branch as well as branches corresponding to each release of Ubuntu Touch the package is part of.  Development takes place in the ``main`` branch whereas the release specific branches are only used for stable release updates of the actively supported releases.  The release specific branches are named after the codenames of the Ubuntu releases they are based on and are prefixed with ``ubports/`` (e.g. ``ubports/xenial``)."
 msgstr ""
 
-#: ../../about/process/branch-naming.rst:23
-msgid "Branch-extensions"
+#: ../../about/process/branch-naming.rst:22
+msgid "The CI system automatically builds packages for the aforementioned branches for different releases based on the following conventions:"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:24
+msgid "If a package is not part of a released version of Ubuntu Touch yet, only a ``main`` branch is needed.  Packages will be built for the current in-development version as well as all supported stable releases.  If the latter is not desired, branches containing only a README file should be created for those releases."
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:25
-msgid "To build and publish packages based on another repository, an extension in the form of  ``xenial_-_some-descriptive_extension`` can be used. The CI system will then resolve all dependencies using the ``xenial_-_some-descriptive_extension`` branch of other repositories or fall back to using the normal ``xenial`` dependencies, if it doesn't exist. These special dependencies are not built into the image, but still pushed to :doc:`repo.ubports.com <ppa>`."
+msgid "If a package is part of a released version of Ubuntu Touch, the ``main`` branch will be built for the current in-development version as well as supported stable versions for which no release-specific branch exist.  Release-specific branches will only be built for that release.  If e.g. a branch ``ubports/xenial`` exists and a commit is added to it, packages will only be built for Ubuntu Touch 16.04 but not any other release."
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:27
-msgid "Multiple branch extensions can be chained together in the form of ``xenial_-_dependency-1_-_dependency-2_-_dependency-3``. This means the CI system will look for dependencies in the following repositories:"
+msgid "Packages built from these branches are directly built into their respective images and also published in the package repositories on ``repo.ubports.com`` for the 16.04 release and ``repo2.ubports.com`` in case of the 20.04 release currently under development."
 msgstr ""
 
-#: ../../about/process/branch-naming.rst:38
+#: ../../about/process/branch-naming.rst:30
+msgid "Branch Names and PPAs"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:32
+msgid "Branch names following a certain naming scheme can be used to create :doc:`personal packaging archives (PPAs) <ppa>` and to instruct the CI system to resolve dependencies using other PPAs. More specifically, such branch names start with a release-specific name followed by a chain of distribution names separated by ``_-_``. For example ``ubports/focal_-_my-feature`` instructs the CI system to resolve build dependencies using the ``focal`` and, if it already exists, a ``my-feature`` distribution.  The resulting packages will be published on ``repo2.ubports.com`` in their own separate distribution ``my-feature``.  This feature can be used to test one or more packages in combination during development."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:36
+msgid "If multiple branch-based distributions are chained together in the form of ``ubports/focal_-_dependency-1_-_dependency-2_-_dependency-3``, the CI system will look for dependencies in the following distributions in the repository at ``repo2.ubports.com``:"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:47
 msgid "There is no prioritization, so the build system will always use the package with the highest version number, or the newest build if the version is equal."
 msgstr ""
 
-#: ../../about/process/branch-naming.rst:41
+#: ../../about/process/branch-naming.rst:50
 msgid "Dependency-file"
 msgstr ""
 
-#: ../../about/process/branch-naming.rst:43
+#: ../../about/process/branch-naming.rst:52
 msgid "For complex or non-linear dependencies, a ``ubports.depends`` file can be created in the root of the repository to specify additional dependencies. The branch name will be ignored if this file exists."
 msgstr ""
 
-#: ../../about/process/branch-naming.rst:53
-msgid "The ``ubports.depends`` file is an **exclusive list**, so the build system will not resolve dependencies linearly like it does in a branch name! Every dependency has to be listed. You will almost always want to include your base release (i.e. ``xenial``)."
+#: ../../about/process/branch-naming.rst:62
+msgid "The ``ubports.depends`` file is an **exclusive list**, so the build system will not resolve dependencies linearly like it does in a branch name! Every dependency has to be listed. You will almost always want to include your base release (i.e. ``focal``)."
 msgstr ""
 
 #: ../../about/process/index.rst:2
@@ -341,73 +357,93 @@ msgid "If not done already, the issue is added to the next milestone, which once
 msgstr ""
 
 #: ../../about/process/ppa.rst:2
+msgid "UBports Debian repository"
+msgstr ""
+
+#: ../../about/process/ppa.rst:5
 msgid "repo.ubports.com"
 msgstr ""
 
-#: ../../about/process/ppa.rst:4
-msgid "This is the package archive system for UBports projects. It hosts various PPAs containing all the DEB-components of Ubuntu Touch."
-msgstr ""
-
 #: ../../about/process/ppa.rst:7
-msgid "Repository naming convention"
+msgid "This is the legacy package repository for UBports projects.  It hosts the Debian packages of the current stable release."
 msgstr ""
 
 #: ../../about/process/ppa.rst:10
-msgid "Native packages"
+msgid "repo2.ubports.com"
 msgstr ""
 
 #: ../../about/process/ppa.rst:12
-msgid "Native packages (like https://github.com/ubports/system-settings) are repositories that contain a ``debian/`` folder **with** the source used to create the DEB source package (``.dsc``)."
+msgid "This is the current package repository for UBports projects.  It contains Debian packages of the development version of Ubuntu Touch and various PPAs."
 msgstr ""
 
-#: ../../about/process/ppa.rst:14
-msgid "The name of the Debian source package generated from the repository and the name of the Git-repository should be the same."
+#: ../../about/process/ppa.rst:15
+msgid "Repository naming convention"
 msgstr ""
 
-#: ../../about/process/ppa.rst:17
-msgid "Packaging repositories"
+#: ../../about/process/ppa.rst:18
+msgid "Native packages"
 msgstr ""
 
-#: ../../about/process/ppa.rst:19
-msgid "Packaging repositories (like https://github.com/ubports/pulseaudio-packaging) contain a ``debian`` folder **without** the source used to create the Debian source package (``.dsc``). They also contain instructions to tell ``debhelper`` how to get the sources used to create the source package."
+#: ../../about/process/ppa.rst:20
+msgid "Native packages (e.g. https://gitlab.com/ubports/core/lomiri-system-settings) are repositories that contain a ``debian/`` folder **with** the source used to create the Debian source package."
 msgstr ""
 
 #: ../../about/process/ppa.rst:22
-msgid "The repository should have the name of the source package it generates with ``-packaging`` appended to the end. For example, a packaging repository that generates a source package called ``sandwich`` would be called ``sandwich-packaging``."
+msgid "The name of the Debian source package generated from the repository and the name of the Git-repository should be the same."
 msgstr ""
 
-#: ../../about/process/ppa.rst:26
+#: ../../about/process/ppa.rst:25
+msgid "Non-native packages"
+msgstr ""
+
+#: ../../about/process/ppa.rst:27
+msgid "Non-native package repositories (e.g. https://gitlab.com/ubports/core/packaging/sensorfw) contain a ``debian`` folder **without** the source used to create the Debian source package. The URL of the upstream source tarball and filename of the ``.orig.tar.gz`` archive must be specified on a separate line each in a file called ``ubports.source_location`` inside the ``debian`` directory.  The CI system uses this information to download and rename the upstream sources and to create a Debian source package."
+msgstr ""
+
+#: ../../about/process/ppa.rst:31
 msgid "Creating new PPAs"
 msgstr ""
 
-#: ../../about/process/ppa.rst:28
-msgid "New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`. The name of the branch translates literally to the name of the PPA: ``https://repo.ubports.com/dists/[branch name]``"
-msgstr ""
-
-#: ../../about/process/ppa.rst:30
-msgid "Non-standard PPAs (i.e. not ``vivid``, ``xenial``, or ``bionic``) are kept for three months. If they need to be kept for longer, a file with the name ``ubports.keep`` containing a date in the form of in the form of ``YYYY-MM-dd`` can be used to decide how long to keep the PPA in the repository for. If this file is empty, the PPA will be kept for two years after the last build."
+#: ../../about/process/ppa.rst:33
+msgid "New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`. The name of the branch translates literally to the name of the PPA which is a distribution in the package repository at: ``https://repo2.ubports.com/dists/[branch name]``"
 msgstr ""
 
 #: ../../about/process/release-schedule.rst:2
 msgid "Release Schedule"
 msgstr ""
 
-#: ../../about/process/release-schedule.rst:4
-msgid "OTA updates usually follow this rhythm:"
+#: ../../about/process/release-schedule.rst:3
+msgid "Ubuntu Touch has four software update channels: Stable, Release Candidate, Devel, and Edge."
 msgstr ""
 
 #: ../../about/process/release-schedule.rst:6
-msgid "devel: daily builds"
+msgid "Stable Channel"
 msgstr ""
 
 #: ../../about/process/release-schedule.rst:7
-msgid "rc: weekly if no critical issue exists in the devel channel"
+msgid "**It is the most reliable release channel.** It is recommended for users who prefer stability rather than the newest features. Generally Stable gets OTA (over the air) updates every several weeks. But there is no firm schedule. Releases are ready when they're ready. Stable releases should not introduce new bugs or ship very incomplete features."
 msgstr ""
 
-#: ../../about/process/release-schedule.rst:8
-msgid "stable: every six through eight weeks, if no critical issue exists in the rc channel"
+#: ../../about/process/release-schedule.rst:15
+msgid "Release Candidate (RC) Channel"
 msgstr ""
 
-#: ../../about/process/release-schedule.rst:11
-msgid "This is not a definitive cycle. Stable releases are ready when they're ready and should not introduce new bugs or ship very incomplete features. Since the OTA update can not be released before all critical issues are closed, the ETA might have to be moved by making an educated guess for when all the issues can be handled. If there are too many issues added to a milestone, they are either removed or added to the next milestone."
+#: ../../about/process/release-schedule.rst:16
+msgid "**It is relatively stable but may occasionally contain bugs.** This channel is for doing the last tests before releasing features to the Stable channel. If you want features quicker, and you want to help to test, but your life does not depend on your phone, and you can live with some downtime - RC is for you. It does get updates generally every week."
+msgstr ""
+
+#: ../../about/process/release-schedule.rst:22
+msgid "Devel Channel"
+msgstr ""
+
+#: ../../about/process/release-schedule.rst:23
+msgid "**This is where new features land for the first testing.** Although changes have been validated before being released, bugs are to be expected. Don't use Devel if you can't live with the fact that new features might break things. Updates come if something has changed - so frequency can be daily."
+msgstr ""
+
+#: ../../about/process/release-schedule.rst:29
+msgid "Edge Channel"
+msgstr ""
+
+#: ../../about/process/release-schedule.rst:30
+msgid "**This is where dragons live.** Here ideas and big new features are melted into code for developers to work on and for the fearless to try them out. Don't set this channel on a phone you use daily. Updates come as ideas happen to developers. Sometimes very frequently, sometimes the channel isn't used at all. Basically, if you need to ask what's in Edge, then it is not for you."
 msgstr ""

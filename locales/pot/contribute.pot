@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019-2022, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-07 11:45-0600\n"
+"POT-Creation-Date: 2023-01-05 00:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1043,7 +1043,7 @@ msgid "Browser (`morph-browser on GitHub`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:48
-msgid "Contacts (`address-book-app on GitHub`_)"
+msgid "Contacts (`address-book-app on GitLab`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:49
@@ -1051,7 +1051,7 @@ msgid "Camera (`camera-app on GitLab`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:50
-msgid "External Drives (`ciborium on GitHub`_)"
+msgid "External Drives (`ciborium on GitLab`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:51
@@ -1067,7 +1067,7 @@ msgid "Phone (`dialer-app on GitHub`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:54
-msgid "System Settings (`system-settings on GitHub`_)"
+msgid "System Settings (`system-settings on GitLab`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:56
