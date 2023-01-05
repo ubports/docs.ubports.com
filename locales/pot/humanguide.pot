@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019-2022, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-07 11:45-0600\n"
+"POT-Creation-Date: 2023-01-05 00:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -461,26 +461,21 @@ msgid "|stock_message.svg| |share.svg| |stock_alarm-clock.svg| |security-alert.s
 msgstr ""
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:82
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:82
 msgid "stock_message.svg"
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:83
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:83
 msgid "share.svg"
 msgstr ""
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:84
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:84
 msgid "stock_alarm-clock.svg"
 msgstr ""
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:85
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:85
 msgid "security-alert.svg"
 msgstr ""
 
-#: ../../humanguide/design-concepts/in-app-icons-design.rst:86
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:86
 msgid "settings.svg"
 msgstr ""
@@ -971,7 +966,71 @@ msgid "Human interface guidelines"
 msgstr ""
 
 #: ../../humanguide/index.rst:4
-msgid "Ubuntu Touch follows a clean, beautiful, modern and (above all) convergent design. We aim to keep developing the design started by Canonical."
+msgid "Ubuntu Touch follows a modern and convergent design philosophy called Suru. We aim to keep developing the design started by Canonical."
+msgstr ""
+
+#: ../../humanguide/index.rst:11
+msgid "Suru meaning"
+msgstr ""
+
+#: ../../humanguide/index.rst:13
+msgid "Here at UBports we believe that everyone should have access to free, reliable, and trusted software that can be shared and developed by anyone. This has paved the way to allow the community to grow and prosper with freedom trust and collaboration. This integral belief has been translated into the design philosophy called Suru."
+msgstr ""
+
+#: ../../humanguide/index.rst:15
+msgid "Suru items from the Ubuntu values alluding to Japanese culture."
+msgstr ""
+
+#: ../../humanguide/index.rst:17
+msgid "The design of Suru is inspired by origami, because it gives us a solid and tangible foundation."
+msgstr ""
+
+#: ../../humanguide/index.rst:19
+msgid "Paper can be used in all areas of the design in two and three dimensional forms, because it is transferable and diverse."
+msgstr ""
+
+#: ../../humanguide/index.rst:22
+msgid "Translated in design"
+msgstr ""
+
+#: ../../humanguide/index.rst:24
+msgid "Suru brings a precise yet organic structure to the Ubuntu Touch interface. The sharp lines and varying levels of transparency evoke the edges and texture of paper. All elements are placed deliberately, with the express aim of being easy for the user to identify and use."
+msgstr ""
+
+#: ../../humanguide/index.rst:26
+msgid "When using a small layout, the information and functionality is folded into a compact object that can be refolded to expose different areas. As the layout size increases, the object can become progressively larger, allowing more of the information and functionality to be exposed at any one time."
+msgstr ""
+
+#: ../../humanguide/index.rst:29
+msgid "Origami"
+msgstr ""
+
+#: ../../humanguide/index.rst:33
+msgid "Origami has long been associated with good fortune and represents the visual style for Ubuntu Touch. Origami folds are used to define the design."
+msgstr ""
+
+#: ../../humanguide/index.rst:36
+msgid "Simple details"
+msgstr ""
+
+#: ../../humanguide/index.rst:40
+msgid "What is most important is that screen layouts retain a natural, rhythmic quality, and a neatness and clarity that helps the user find things quickly and use them intuitively."
+msgstr ""
+
+#: ../../humanguide/index.rst:43
+msgid "Using subtle grids for accuracy"
+msgstr ""
+
+#: ../../humanguide/index.rst:45
+msgid "The folds from origami produce simple graphical details that allow designers to create a subtle grid for positioning brand elements and components, such as logos, icons or copylines. This helps maintain focus on the main image or graphic element."
+msgstr ""
+
+#: ../../humanguide/index.rst:50
+msgid "Suru mood board"
+msgstr ""
+
+#: ../../humanguide/index.rst:53
+msgid "Influences and inspiration"
 msgstr ""
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:2
