@@ -28,7 +28,7 @@ For the font sizes to be consistent across devices, instead of setting the font 
 +---------+------+---------+--------+---------+
 | large   | 2.5  | 20 px   | 45 px  | 25 px   |
 +---------+------+---------+--------+---------+
-| x-large | 3.5  | 34 px   | 76 px  | 42 px   |
+| x-large | 3.5  | 28 px   | 76 px  | 42 px   |
 +---------+------+---------+--------+---------+
 
 .. figure:: /_static/images/humanguide/02.png
