@@ -1,7 +1,7 @@
 .. _PortSupportRequirements:
 
 Port support requirements
-==================================
+=========================
 
 This document enumerates the requirements that must be met in order for devices to be deemed ship ready for UBports releases.
 To be considered ready, port maintainers MUST meet the requirements presented in this document, including any documents incorporated via reference.
@@ -20,7 +20,7 @@ Audio
 * Tablet devices capable of in-call audio/speaker audio MUST support in-call/speaker audio.
 
 Radio Interface Layer (RIL)
----
+---------------------------
 
 * All devices with RIL supported in their stock OS MUST support RIL for phone calls & data.
 * All devices with RIL supported in their stock OS SHOULD support emergency calling with a SIM inserted (112/911).
