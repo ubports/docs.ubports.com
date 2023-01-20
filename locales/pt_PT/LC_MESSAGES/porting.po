@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2023-01-13 13:22+0000\n"
-"Last-Translator: Ivo Xavier <ivofernandes12@gmail.com>\n"
+"PO-Revision-Date: 2023-01-17 12:18+0000\n"
+"Last-Translator: Ivo Xavier <ivoxavier.8@gmail.com>\n"
 "Language-Team: Portuguese (Portugal) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-porting/pt_PT/>\n"
 "Language: pt_PT\n"
@@ -573,10 +573,14 @@ msgid ""
 "models. Therefore, you need to check the aforementioned guides for "
 "instructions on how to unlock the bootloader of your particular device."
 msgstr ""
+"Os dispositivos diferem e não existe um método geral que cubra todas as "
+"marcas e modelos. Portanto, você precisa verificar os guias mencionados "
+"acima para obter instruções sobre como desbloquear o bootloader do seu "
+"dispositivo específico."
 
 #: ../../porting/Preparations.rst:33
 msgid "Install TWRP recovery"
-msgstr ""
+msgstr "Instalar o TWRP Recovery"
 
 #: ../../porting/Preparations.rst:35
 msgid ""
@@ -586,10 +590,15 @@ msgid ""
 "for your device. Follow the installation instructions provided on the "
 "website."
 msgstr ""
+"Você precisa de instalar uma imagem de recuperação personalizada no seu "
+"dispositivo para lidar com a formatação e o flash dos arquivos de imagem "
+"nele. Dirija-se ao `Team Win Recovery Project <https://twrp.me/Devices/>`_ e "
+"localize o arquivo de imagem para o seu dispositivo. Siga as instruções de "
+"instalação fornecidas no site."
 
 #: ../../porting/Preparations.rst:40
 msgid "Recommendations for the host/build PC"
-msgstr ""
+msgstr "Recomendações para o PC anfritião/construção"
 
 #: ../../porting/Preparations.rst:42
 msgid ""
@@ -602,23 +611,36 @@ msgid ""
 "example, as of writing the latest release of Ubuntu Linux is 20.04, but many "
 "still recommend using the previous long term support release, 18.04."
 msgstr ""
+"O restante deste guia presume que você esteja usando um PC de construção com "
+"Linux. Embora o alto desempenho seja sempre bom, a estabilidade e RAM "
+"suficiente e espaço no disco rígido são as principais preocupações aqui. "
+"Você não de precisa do hardware mais recente e melhor, nem precisa da versão "
+"de distribuição mais recente. Na verdade, não é incomum encontrar problemas "
+"ao escolher a versão mais recente, pois alguns dos softwares necessários "
+"podem ainda não ter sido criados para ela. Por exemplo, no momento da "
+"escrita deste guia, a versão mais recente do Ubuntu Linux é 20.04, mas "
+"muitos ainda recomendam usar a versão anterior de suporte de longo prazo, "
+"18.04."
 
 #: ../../porting/Preparations.rst:44
 msgid ""
 "Having completed the steps above, you are now ready to set up your build "
 "environment and start the porting process per se (next section)."
 msgstr ""
+"Tendo concluído as etapas acima, agora você está pronto para configurar seu "
+"ambiente de construção e iniciar o processo de portabilidade propriamente "
+"dito (próxima seção)."
 
 #: ../../porting/UBports_installer.rst:2
 msgid "Configuring the UBports installer"
-msgstr ""
+msgstr "Configurando o instalador do UBports"
 
 #: ../../porting/UBports_installer.rst:4 ../../porting/UBports_recovery.rst:4
 #: ../../porting/halium_7-1/Configuring.rst:122
 #: ../../porting/halium_9/Halium_9_GSI_porting.rst:4
 #: ../../porting/halium_9/Halium_9_common_errors.rst:4
 msgid "*Work in progress*"
-msgstr ""
+msgstr "*Trabalho em progresso*"
 
 #: ../../porting/UBports_installer.rst:6 ../../porting/UBports_recovery.rst:6
 msgid ""
@@ -626,32 +648,39 @@ msgid ""
 "notes on `the UBPorts installer and System image <https://github.com/ubports/"
 "porting-notes/wiki/HowTo:-UBports-Installer-&-System-Image-(Halium-7.1)>`_."
 msgstr ""
+"Por enquanto, os utilizadores do Halium 7.1 devem consultar as notas de "
+"portabilidade do UBports no instalador do UBPorts e na imagem do sistema "
+"<https://github.com/ubports/porting-notes/wiki/HowTo:-UBports-Installer-&-"
+"System -Image-(Halium-7.1)>`_."
 
 #: ../../porting/UBports_recovery.rst:2
 msgid "Building UBports recovery"
-msgstr ""
+msgstr "Construir a recovery UBports"
 
 #: ../../porting/halium_7-1/Building.rst:2
 msgid "Building the images"
-msgstr ""
+msgstr "Construir as imagens"
 
 #: ../../porting/halium_7-1/Building.rst:4
 msgid "A Halium 7.1 - Ubuntu Touch port consists of the following parts:"
 msgstr ""
+"Uma portabilidade de Halium 7.1 - Ubuntu Touch consiste nas seguintes partes:"
 
 #: ../../porting/halium_7-1/Building.rst:6
 msgid "The boot image, halium-boot.img"
-msgstr ""
+msgstr "A imagem boot, halium-boot.img"
 
 #: ../../porting/halium_7-1/Building.rst:7
 msgid "The system image, system.img"
-msgstr ""
+msgstr "A imagem de sistema, system.img"
 
 #: ../../porting/halium_7-1/Building.rst:8
 msgid ""
 "The UBports - Ubuntu Touch - root file system (hereafter referred to as the "
 "*rootfs*)"
 msgstr ""
+"O UBports - Ubuntu Touch - ficheiro de sistema de raíz (doravante referido "
+"como *rootfs*)"
 
 #: ../../porting/halium_7-1/Building.rst:10
 msgid ""

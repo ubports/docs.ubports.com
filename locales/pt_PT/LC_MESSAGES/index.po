@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-07 11:45-0600\n"
-"PO-Revision-Date: 2020-08-09 22:18+0000\n"
-"Last-Translator: Jorge Araujo <laborim@gmail.com>\n"
+"PO-Revision-Date: 2023-01-17 12:18+0000\n"
+"Last-Translator: Ivo Xavier <ivoxavier.8@gmail.com>\n"
 "Language-Team: Portuguese (Portugal) <https://translate.ubports.com/projects/"
 "ubports-docs/documentation-index/pt_PT/>\n"
 "Language: pt_PT\n"
@@ -41,19 +41,19 @@ msgstr "Portar"
 
 #: ../../index.rst:73
 msgid "Click Packages"
-msgstr ""
+msgstr "Pacotes Click"
 
 #: ../../index.rst:73
 msgid "Ubuntu UI-Toolkit"
-msgstr ""
+msgstr "Ubuntu UI-Toolkit"
 
 #: ../../index.rst:73
 msgid "Clickable"
-msgstr ""
+msgstr "Clickable"
 
 #: ../../index.rst:73
 msgid "Halium"
-msgstr ""
+msgstr "Halium"
 
 #: ../../index.rst:73
 msgid "Platform"
@@ -86,6 +86,13 @@ msgid ""
 "more about system components <systemdev/index>`. If this is your first time "
 "here, please consider reading our :doc:`introduction <about/introduction>`."
 msgstr ""
+"Neste site você encontra guias para :doc:`instalar o Ubuntu Touch no seu "
+"dispositivo <userguide/install>`, :doc:`usar Ubuntu Touch <userguide/"
+"dailyuse/index>`, :doc:`desenvolver aplicações Ubuntu Touch < appdev/index>`"
+", :doc:`portabilidade Ubuntu Touch para um aparelho Android <porting/"
+"introduction/index>` e :doc:`saiba mais sobre os componentes do sistema <"
+"systemdev/index>`. Se esta é sua primeira vez aqui, por favor considere ler "
+"nossa :doc:`introdução <about/introduction>`."
 
 #: ../../index.rst:10
 msgid ""
@@ -125,7 +132,7 @@ msgstr "`Română <https://docs.ubports.com/ro/latest/>`_"
 
 #: ../../index.rst:22
 msgid "`Русский <https://docs.ubports.com/ru/latest>`_"
-msgstr ""
+msgstr "`Русский <https://docs.ubports.com/ru/latest>`_"
 
 #: ../../index.rst:23
 msgid "`Türkçe <https://docs.ubports.com/tr/latest/>`_"
@@ -137,7 +144,7 @@ msgstr "`Español <https://docs.ubports.com/es/latest/>`_"
 
 #: ../../index.rst:25
 msgid "`Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_"
-msgstr ""
+msgstr "`Simplified Chinese <https://docs.ubports.com/zh_CN/latest/>`_"
 
 #~ msgid ""
 #~ "On this website you find instructions how to install Ubuntu Touch on your "
