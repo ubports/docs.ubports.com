@@ -40,6 +40,6 @@ You need to install a custom recovery image on your device in order to handle fo
 Recommendations for the host/build PC
 -------------------------------------
 
-The remainder of this guide presumes you are using a build PC running Linux. Although high performance always is nice, stability and sufficient RAM and harddisk space are the main concerns here. You do not need the latest and the best hardware, nor do you need the latest distribution release. In fact, it is not uncommon to run into issues when choosing the very newest release, as some of the software needed may not yet have been built for it. For example, as of writing the latest release of Ubuntu Linux is 20.04, but many still recommend using the previous long term support release, 18.04.
+The remainder of this guide presumes you are using a build PC running Linux. Although high performance always is nice, stability and sufficient RAM and harddisk space are the main concerns here. You do not need the latest and the best hardware, nor do you need the latest distribution release. In fact, it is not uncommon to run into issues when choosing the very newest release, as some of the software needed may not yet have been built for it. For example, as of writing the latest release of Ubuntu Linux is 22.04, but many still recommend using the previous long term support release, 20.04.
 
 Having completed the steps above, you are now ready to set up your build environment and start the porting process per se (next section).
