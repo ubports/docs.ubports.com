@@ -15,7 +15,7 @@ When setting up the build environment you need to have Python 3.6 or newer insta
 .. Note::
     Any Linux distribution can easily be set up to switch between Python versions. Consult the documentation for your distribution to find out how this can be done.
 
-Debian (Stretch or newer) / Ubuntu (16.04 or 18.04)
+Debian (Buster or newer) / Ubuntu (18.04 or 20.04)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 If your host PC has a 64-bit architecture (amd64), enable the usage of the i386 architecture::
@@ -35,7 +35,7 @@ Install the required dependencies::
     python-markdown libxml2-utils xsltproc zlib1g-dev:i386 schedtool \
     repo liblz4-tool bc lzop imagemagick libncurses5 rsync
 
-Ubuntu (20.04 or newer)
+Ubuntu (22.04 or newer)
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 If your host PC has a 64-bit architecture (amd64), enable the usage of the i386 architecture::
