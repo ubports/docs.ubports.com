@@ -150,7 +150,7 @@ When using Gitlab CI script-based builds (see :ref:`Gitlab-CI`) overlay files an
 
 By default, the build system will cause the file to be overwriten directly in the filesystem. This allows arbitrary files to be added to the rootfs, but can cause problem when the overlaid file gets updated in the base system as part of the delta upgrade. Ubuntu Touch 16.04 supports only this mode.
 
-While Ubuntu Touch 16.04 only allows overlaying files by overwriting them, in case of Ubuntu Touch 20.04 or later versions the mount-based overlay files should be used instead. This can be done by specifying ``deviceinfo_use_overlaystore="true"`` in the port's ``deviceinfo``. If the port is not using the shared building script, it'll have to transition to the shared build script too. When the option is being set, the build script ensures that the file ends up inside ``/opt/halium-overlay`` in the system, and gets mounted in the same way as ``system.img`` builds. Thus, the same config and limitations apply.
+While Ubuntu Touch 16.04 only allows overlaying files by overwriting them, in case of Ubuntu Touch 20.04 or later versions the mount-based overlay files should be used instead. This can be done by specifying ``deviceinfo_use_overlaystore="true"`` in the port's ``deviceinfo``. If the port is not using the shared building script, it'll have to transition to the shared build script too (see :ref:`UpdatePortsFor2004`). When the option is being set, the build script ensures that the file ends up inside ``/opt/halium-overlay`` in the system, and gets mounted in the same way as ``system.img`` builds. Thus, the same config and limitations apply.
 
 Example
 ^^^^^^^

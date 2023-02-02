@@ -69,6 +69,7 @@ You may view this documentation in the following languages:
    porting/build_and_boot/index.rst
    porting/configure_test_fix/index.rst
    porting/finalize/index.rst
+   porting/UpdatePortsFor2004.rst
 
 .. toctree::
    :maxdepth: 1

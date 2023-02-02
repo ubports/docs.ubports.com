@@ -1,8 +1,10 @@
+.. _USBModed:
+
 Configuring usb-moded
 =====================
 
 .. note::
-    Information on this page is applicable for ports supporting Ubuntu Touch 20.04.
+    Information on this page is applicable for ports supporting Ubuntu Touch 20.04. To make your port support Ubuntu Touch 20.04, see :ref:`UpdatePortsFor2004`.
 
 usb-moded is a new daemon in Ubuntu Touch 20.04 which handles transitions between USB modes e.g. MTP and developer mode. It replaces a number of ad-hoc Upstart jobs on 16.04, and ``setupusb`` script used by recent ports.
 
