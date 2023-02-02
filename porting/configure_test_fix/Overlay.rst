@@ -146,14 +146,20 @@ After a successful build, the resulting ``system.img`` must reflashed together w
 Overlay files in Gitlab CI script-based builds
 ----------------------------------------------
 
-When using Gitlab CI script-based builds (see :ref:`Gitlab-CI`) overlay files and directories have to be placed in in the repository below ``overlay/system`` in a directory tree mirroring the structure of the root filesystem. Note that any overlay file placed in that directory tree will overwrite an existing file on the root filesystem. While Ubuntu Touch 16.04 only allows overlaying files by overwriting them, in case of Ubuntu Touch 20.04 or later versions the mount-based overlay files should be used instead. Thus overlay files and directories should be placed in a directory tree below ``overlay/system/opt/halium-overlay`` in the repository rather than directly below ``overlay/system``. 
+When using Gitlab CI script-based builds (see :ref:`Gitlab-CI`) overlay files and directories have to be placed in in the repository below ``overlay/system`` in a directory tree mirroring the structure of the root filesystem.
+
+By default, the build system will cause the file to be overwriten directly in the filesystem. This allows arbitrary files to be added to the rootfs, but can cause problem when the overlaid file gets updated in the base system as part of the delta upgrade. Ubuntu Touch 16.04 supports only this mode.
+
+While Ubuntu Touch 16.04 only allows overlaying files by overwriting them, in case of Ubuntu Touch 20.04 or later versions the mount-based overlay files should be used instead. This can be done by specifying ``deviceinfo_use_overlaystore="true"`` in the port's ``deviceinfo``. If the port is not using the shared building script, it'll have to transition to the shared build script too. When the option is being set, the build script ensures that the file ends up inside ``/opt/halium-overlay`` in the system, and gets mounted in the same way as ``system.img`` builds. Thus, the same config and limitations apply.
 
 Example
 ^^^^^^^
 
-Following the above example on Ubuntu Touch 20.04, adding the overlay files ``/lib/udev/rules.d/70-android.rules`` and ``/etc/ubuntu-touch-session.d/android.conf`` requires them to end up below ``/opt/halium-overlay`` on the resulting filesystem, that is as ``/opt/halium-overlay/lib/udev/rules.d/70-android.rules`` and ``/opt/halium-overlay/etc/ubuntu-touch-session.d/android.conf``. This is achieved by placing them at ``overlay/system/opt/halium-overlay/lib/udev/rules.d/70-android.rules`` and ``overlay/system/opt/halium-overlay/etc/ubuntu-touch-session.d/android.conf`` in the repository.
+Following the above example, overlaying files ``/lib/udev/rules.d/70-android.rules`` and ``/etc/ubuntu-touch-session.d/android.conf`` requires placing the file at ``overlay/system/lib/udev/rules.d/70-android.rules`` and ``overlay/system/etc/ubuntu-touch-session.d/android.conf`` in the repository.
 
-In case of Ubuntu Touch 16.04 the files on the root filesystem need to be overwritten due to the lack of mount-based overlay files and must thus be placed at ``overlay/system/lib/udev/rules.d/70-android.rules`` and ``overlay/system/etc/ubuntu-touch-session.d/android.conf`` in the repository.
+For ports with ``deviceinfo_use_overlaystore="true"`` running Ubuntu Touch 20.04, the files will end up in ``/opt/halium-overlay/``, and will be bind-mounted into their respective places.
+
+In case of Ubuntu Touch 16.04 or port without ``deviceinfo_use_overlaystore="true"``, the files on the root filesystem will be overwritten due to the lack of mount-based overlay files.
 
 Building on GitLab CI
 ^^^^^^^^^^^^^^^^^^^^^
