@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2023-02-06 01:00+0000\n"
+"PO-Revision-Date: 2023-02-10 15:18+0000\n"
 "Last-Translator: Alberto <ortodipace@proton.me>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/it/>\n"
@@ -147,19 +147,28 @@ msgid ""
 "the available Halium versions and vendor blobs from the corresponding "
 "Android version. See the first two columns of the table below for details."
 msgstr ""
+"Halium è quindi una parte indispensabile di un trasporto di Ubuntu Touch ed "
+"è disponibile sotto forma di software open source. Lo sviluppo di una nuova "
+"versione di Halium è un compito molto impegnativo ed è per questo che sono "
+"disponibili solo poche versioni di Halium. Ogni trasporto di Ubuntu Touch "
+"deve essere basato su una delle versioni di Halium disponibili e sui blob "
+"dei fornitori della corrispondente versione di Android. Per i dettagli si "
+"vedano le prime due colonne della tabella sottostante."
 
 #: ../../porting/Intro.rst:28
 msgid "Thus an Ubuntu Touch port is composed of the these components:"
-msgstr ""
+msgstr "Pertanto, un trasporto Ubuntu Touch è composto da questi componenti:"
 
 #: ../../porting/Intro.rst:26
 msgid "The Ubuntu Touch (UT) root filesystem (rootfs)"
-msgstr ""
+msgstr "L'Ubuntu Touch (UT) root filesystem (rootfs)"
 
 #: ../../porting/Intro.rst:27
 msgid ""
 "`Halium <https://halium.org/>`_ (contained in the boot and system images)"
 msgstr ""
+"`Halium <https://halium.org/>`_ (contenuto nelle immagini di avvio e di "
+"sistema)"
 
 #: ../../porting/Intro.rst:28
 msgid "The vendor blobs"

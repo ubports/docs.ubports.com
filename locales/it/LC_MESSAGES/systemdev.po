@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-05 00:57+0100\n"
-"PO-Revision-Date: 2021-01-05 00:26+0000\n"
-"Last-Translator: FlavioMala <flavio.malatino@post.com>\n"
+"PO-Revision-Date: 2023-02-10 15:18+0000\n"
+"Last-Translator: Alberto <ortodipace@proton.me>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-systemdev/it/>\n"
 "Language: it\n"
@@ -21,10 +21,9 @@ msgstr ""
 
 #: ../../systemdev/calendars.rst:2
 msgid "Working on the Calendar feature"
-msgstr ""
+msgstr "Lavorare sulla funzione Calendario"
 
 #: ../../systemdev/calendars.rst:4
-#, fuzzy
 msgid "The Calendar feature is provided by several components:"
 msgstr "La funzione Calendario è fornita da diversi componenti:"
 
@@ -33,6 +32,8 @@ msgid ""
 "The `Calendar App <https://gitlab.com/ubports/apps/calendar-app>`_, "
 "providing the user interface"
 msgstr ""
+"La `Calendar App <https://gitlab.com/ubports/apps/calendar-app>`_, che "
+"fornisce l'interfaccia utente"
 
 #: ../../systemdev/calendars.rst:7
 msgid ""
@@ -40,12 +41,17 @@ msgid ""
 "packaging>`_ (often shortened as \"EDS\"), which is the backend where your "
 "calendars are stored"
 msgstr ""
+"`Evolution Data Server <https://github.com/ubports/evolution-data-server-"
+"packaging>`_ (spesso abbreviato in \"EDS\"), che è il backend in cui sono "
+"memorizzati i calendari"
 
 #: ../../systemdev/calendars.rst:8
 msgid ""
 "`sync-monitor <https://github.com/ubports/sync-monitor>`_, the service "
 "responsible for managing the synchronisation with remote calendars"
 msgstr ""
+"`sync-monitor <https://github.com/ubports/sync-monitor>`_, il servizio "
+"responsabile della gestione della sincronizzazione con i calendari remoti"
 
 #: ../../systemdev/calendars.rst:9
 msgid ""
@@ -53,10 +59,13 @@ msgid ""
 "service responsible for performing the synchronisation to a WebDAV/CalDAV "
 "remote calendar"
 msgstr ""
+"`SyncEvolution <https://github.com/ubports/syncevolution-packaging>`_, il "
+"servizio responsabile dell'esecuzione della sincronizzazione con un "
+"calendario remoto WebDAV/CalDAV"
 
 #: ../../systemdev/calendars.rst:13 ../../systemdev/online-accounts.rst:30
 msgid "Debugging"
-msgstr ""
+msgstr "Debugging-"
 
 #: ../../systemdev/calendars.rst:15
 msgid ""
@@ -66,10 +75,14 @@ msgid ""
 "sections, it's assumed that you've got access to a terminal console to the "
 "device."
 msgstr ""
+"Il modo più comodo per eseguire comandi sul dispositivo e raccogliere i log "
+"è aprire una shell remota. Questo può essere fatto usando :doc:`/userguide/"
+"advanceduse/adb` o :doc:`/userguide/advanceduse/ssh`. Nelle sezioni seguenti "
+"si presuppone che si abbia accesso a una console terminale del dispositivo."
 
 #: ../../systemdev/calendars.rst:19
 msgid "Scheduling and account issues"
-msgstr ""
+msgstr "Problemi di programmazione e di account"
 
 #: ../../systemdev/calendars.rst:21
 msgid ""

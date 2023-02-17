@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 09:34-0500\n"
-"PO-Revision-Date: 2023-02-08 18:18+0000\n"
+"PO-Revision-Date: 2023-02-14 16:18+0000\n"
 "Last-Translator: Alberto <ortodipace@proton.me>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/it/>\n"
@@ -207,9 +207,8 @@ msgid "Wait a minute. Why the different apps?"
 msgstr "Aspetta un attimo. Perche app differenti?"
 
 #: ../../appdev/guides/contenthub.rst:107
-#, fuzzy
 msgid "Content Hub: Export vs Share"
-msgstr "Content Hub: Esporta vs Condividi"
+msgstr "Hub dei contenuti: Esportazione e condivisione"
 
 #: ../../appdev/guides/contenthub.rst:109
 msgid ""
@@ -654,6 +653,9 @@ msgid ""
 "clickable.bhdouglass.com/en/latest/clickable-json.html#install-lib>`_ key to "
 "your clickable.json:"
 msgstr ""
+"Per inserire i file nel pacchetto click, aggiungere la chiave `install_lib "
+"<http://clickable.bhdouglass.com/en/latest/clickable-json.html#install-lib>`"
+"_ al file clickable.json:"
 
 #: ../../appdev/guides/dependencies.rst:136
 msgid ""
@@ -661,18 +663,27 @@ msgid ""
 "built with Clickable. The asterisk in ``.so*`` helps to catch symbolic links "
 "along with the actual library which are used to point to the current version."
 msgstr ""
+"Le righe precedenti contengono due esempi. Il primo installa una libreria "
+"costruita con Clickable. L'asterisco in ``.so*`` aiuta a catturare i "
+"collegamenti simbolici insieme alla libreria vera e propria, usati per "
+"puntare alla versione corrente."
 
 #: ../../appdev/guides/dependencies.rst:138
 msgid ""
 "Depending on the library, you might need to ship some additional data. In "
 "that case consult the library's readme or install instructions."
 msgstr ""
+"A seconda della libreria, potrebbe essere necessario inviare alcuni dati "
+"aggiuntivi. In questo caso, consultare il readme della libreria o le "
+"istruzioni di installazione."
 
 #: ../../appdev/guides/dependencies.rst:140
 msgid ""
 "You should be set up to build and install your click package on a device "
 "connected to your computer now by running ``clickable``."
 msgstr ""
+"Si dovrebbe essere pronti a costruire e installare il pacchetto click su un "
+"dispositivo collegato al computer eseguendo ``clickable``."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:2
 msgid "Importing from Content Hub and URLdispatcher"
@@ -690,11 +701,11 @@ msgstr ""
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:10
 msgid "Handle data from the Content Hub"
-msgstr ""
+msgstr "Gestire i dati dall'Hub dei contenuti"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:15
 msgid "OpenStore app from open-store.io"
-msgstr ""
+msgstr "Applicazione OpenStore da open-store.io"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:17
 msgid ""
@@ -702,6 +713,9 @@ msgid ""
 "yourself on Telegram, and opening that click file with the OpenStore through "
 "the Content Hub:"
 msgstr ""
+"Uno dei modi più semplici per testare un'applicazione è inviare un clic di "
+"prova a se stessi su Telegram e aprire il file del clic con OpenStore "
+"attraverso Content Hub:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:22
 msgid ""
@@ -710,6 +724,10 @@ msgid ""
 "app <https://github.com/UbuntuOpenStore/openstore-app/blob/master/openstore/"
 "Main.qml#L85>`_ to see how it is done:"
 msgstr ""
+"Se si tocca l'applicazione OpenStore, questa verrà aperta e chiederà se si "
+"vuole installare il file click. Diamo un'occhiata al codice Main.qml "
+"dell'applicazione <https://github.com/UbuntuOpenStore/openstore-app/blob/"
+"master/openstore/Main.qml#L85>`_ per vedere come avviene:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:41
 msgid ""
@@ -718,11 +736,14 @@ msgid ""
 "from the Content Hub (``transfer.items[0].url`` is the url of the first data "
 "sent) and open a ``PopUp`` element to let the user install the click."
 msgstr ""
+"Si vede l'elemento Connections che punta al ContentHub? Quando riceve il "
+"segnale onImportRequested, prenderà l'url dei dati inviati dal Content Hub "
+"(``transfer.items[0].url`` è l'url dei primi dati inviati) e aprirà un "
+"elemento ``PopUp`` per consentire all'utente di installare il clic."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:44
-#, fuzzy
 msgid "What about the URLdispatcher?"
-msgstr "Dispatcher URL"
+msgstr "Che dire dell'URLdispatcher?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:46
 msgid ""
@@ -732,12 +753,19 @@ msgid ""
 "on an http protocol. If we tap on a map link it is handy to open it with "
 "uNav or to open a twitter link in the Twitter app! How does that work?"
 msgstr ""
+"L'URL dispatcher è un software, simile al Content Hub, che ci semplifica la "
+"vita cercando di scegliere l'applicazione corretta per un determinato "
+"protocollo. Ad esempio: Probabilmente vogliamo aprire il browser web quando "
+"tocchiamo un protocollo http. Se tocchiamo un link a una mappa è comodo "
+"aprirlo con uNav o aprire un link a Twitter nell'app Twitter! Come funziona?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:48
 msgid ""
 "The ``URLdispatcher`` selects which app (according to their ``manifest."
 "json``) will open a certain link."
 msgstr ""
+"L'``URLdispatcher`` seleziona quale applicazione (in base al suo "
+"``manifest.json``) aprirà un determinato collegamento."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:53
 msgid ""
@@ -745,6 +773,10 @@ msgid ""
 "hooks for the ``URLdispatcher`` in its `manifest.json code <https://bazaar."
 "launchpad.net/~unav-devs/unav/trunk/view/head:/manifest.json#L9>`_:"
 msgstr ""
+"Vediamo come appare la nostra applicazione di navigazione all'interno. Il "
+"manifest di uNav mostra ganci speciali per l'``URLdispatcher'' nel suo "
+"codice `manifest.json <https://bazaar.launchpad.net/~unav-devs/unav/trunk/"
+"view/head:/manifest.json#L9>`_:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:83
 msgid ""
@@ -752,22 +784,29 @@ msgid ""
 "be opened in uNav. And that’s defined in lines 2 and 3, where it looks for "
 "protocol http followed by map.unav.me."
 msgstr ""
+"Ciò significa che un link che assomiglia a http://map.unav.me/xxxxx,xxxxx "
+"verrà aperto in uNav. Questo è definito nelle righe 2 e 3, dove si cerca il "
+"protocollo http seguito da map.unav.me."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:85
 msgid ""
 "Also, a URI formatted geo:xxx,xxx should open in uNav, as it’s defined in "
 "line 11."
 msgstr ""
+"Inoltre, un URI formattato geo:xxx,xxx dovrebbe aprirsi in uNav, come è "
+"stato definito nella riga 11."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:88
 msgid "And how do we manage the received URL?"
-msgstr ""
+msgstr "E come gestiamo l'URL ricevuto?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:90
 msgid ""
 "After the ``URLdispatcher`` sends the link to the correspondent app, we need "
 "to handle that URL or URI in the targeted app. Let’s see how to do that:"
 msgstr ""
+"Dopo che l'``URLdispatcher'' invia il link all'applicazione corrispondente, "
+"dobbiamo gestire l'URL o l'URI nell'applicazione mirata. Vediamo come fare:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:92
 msgid ""
@@ -777,6 +816,11 @@ msgid ""
 "simple/blob/master/qml/Main.qml#L212>`_ with a Connections element setting "
 "``UriHandler`` as a target."
 msgstr ""
+"Nel file qml principale, dobbiamo aggiungere del codice per sapere cosa fare "
+"con l'URL inviato. Verifichiamo come l'applicazione Linphone gestisce questo "
+"aspetto, aggiungendo una `connessione al gestore di URI <https://gitlab.com/"
+"ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L212>`_ con un "
+"elemento Connections che imposta ``UriHandler`` come target."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:109
 msgid ""
@@ -784,6 +828,9 @@ msgid ""
 "the app is opened. But what do we need to do to handle this link when the "
 "app is closed?"
 msgstr ""
+"Questo codice gestirà un URI nella forma ``linphone://sip:xxx@xxx.xx`` "
+"quando l'applicazione viene aperta. Ma cosa dobbiamo fare per gestire questo "
+"link quando l'applicazione viene chiusa?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:111
 msgid ""
@@ -791,12 +838,17 @@ msgid ""
 "linphone-simple/blob/master/qml/Main.qml#L76>`_ that will cover two cases: "
 "1) We receive one URL 2) We receive more than one URL"
 msgstr ""
+"Dobbiamo aggiungere un po' di codice `extra <https://gitlab.com/"
+"ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L76>`_ che coprirà "
+"due casi: 1) Riceviamo un URL 2) Riceviamo più di un URL"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:115
 msgid ""
 "Let's check if ``Qt.application.arguments`` is not empty and if not, if any "
 "argument matches our URI format."
 msgstr ""
+"Controlliamo se ``Qt.application.arguments`` non è vuoto e, in caso "
+"contrario, se qualche argomento corrisponde al nostro formato URI."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:135
 msgid ""
@@ -805,10 +857,15 @@ msgid ""
 "com/ubports-linphone/linphone-simple/-/blob/master/linphone.desktop.in#L7>`_ "
 "file of the app."
 msgstr ""
+"Ricordarsi di controllare che %u (per ricevere 1 URL) o %U (per ricevere 1 o "
+"più URL) sia presente sotto la riga ``Exec`` nel file `.desktop "
+"<https://gitlab.com/ubports-linphone/linphone-simple/-/blob/master/"
+"linphone.desktop.in#L7>`_ dell'applicazione."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:138
 msgid "What happens if more than one app has the same URL type defined?"
 msgstr ""
+"Cosa succede se più di un'applicazione ha lo stesso tipo di URL definito?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:140
 msgid ""
@@ -816,18 +873,23 @@ msgid ""
 "a URL handled by the ``URLdispatcher`` as protocol ``http`` or the protocol "
 "``http://twitter``?"
 msgstr ""
+"Un'ottima domanda. Cosa succede se si tocca un link di Twitter? Come viene "
+"gestito un URL di questo tipo dall'``URLdispatcher`` come protocollo ``http``"
+" o come protocollo ``http://twitter``?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:142
 msgid "What happens if two apps have the same defined protocol?"
-msgstr ""
+msgstr "Cosa succede se due applicazioni hanno lo stesso protocollo definito?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:144
 msgid "Now it’s time to do some tests and share the results in the next guide."
 msgstr ""
+"Ora è il momento di effettuare alcuni test e di condividere i risultati "
+"nella prossima guida."
 
 #: ../../appdev/guides/index.rst:4
 msgid "Developer guides"
-msgstr ""
+msgstr "Guide per sviluppatori"
 
 #: ../../appdev/guides/index.rst:6
 msgid ""
@@ -835,12 +897,18 @@ msgid ""
 "mean time we recommend the `Ubuntu Touch Programming Course <https://mimecar."
 "gitbook.io/qt-course/>`__."
 msgstr ""
+"Attualmente stiamo lavorando per ampliare il nostro elenco di guide per "
+"sviluppatori. Nel frattempo consigliamo il `Corso di programmazione di "
+"Ubuntu Touch <https://mimecar.gitbook.io/qt-course/>`__."
 
 #: ../../appdev/guides/index.rst:9
 msgid ""
 "If you are interested in helping create developer guides check out our "
 "`GitLab Project <https://gitlab.com/ubports/apps/development-resources>`__."
 msgstr ""
+"Se siete interessati a contribuire alla creazione di guide per sviluppatori, "
+"visitate il nostro progetto `GitLab <https://gitlab.com/ubports/apps/"
+"development-resources>`__."
 
 #: ../../appdev/guides/pushnotifications.rst:2
 #: ../../appdev/platform/index.rst:12
@@ -853,6 +921,9 @@ msgid ""
 "the OpenStore. But now you want to be able to send Push Notifications to "
 "your users. First of all, you need to understand how this is working:"
 msgstr ""
+"Supponiamo di avere un'applicazione creata con Clickable e pubblicata su "
+"OpenStore. Ma ora volete essere in grado di inviare notifiche push ai vostri "
+"utenti. Prima di tutto, è necessario capire come funziona:"
 
 #: ../../appdev/guides/pushnotifications.rst:8
 msgid ""
@@ -860,22 +931,29 @@ msgid ""
 "identifies the user, the device and the app itself. The token is generated "
 "by the UBports Push Service."
 msgstr ""
+"Ogni app che utilizza le notifiche push ha un token unico. Questo token "
+"identifica l'utente, il dispositivo e l'app stessa. Il token è generato dal "
+"servizio Push di UBports."
 
 #: ../../appdev/guides/pushnotifications.rst:9
 msgid ""
 "You will need the token to send a push notification. So the app sends its "
 "token to the app developer's server."
 msgstr ""
+"Il token è necessario per inviare una notifica push. Quindi l'applicazione "
+"invia il proprio token al server dello sviluppatore dell'applicazione."
 
 #: ../../appdev/guides/pushnotifications.rst:10
 msgid ""
 "With the token you can send a HTTP request to the UBports Push Server which "
 "will forward the notification the user's device."
 msgstr ""
+"Con il token è possibile inviare una richiesta HTTP al server UBports Push "
+"che inoltrerà la notifica al dispositivo dell'utente."
 
 #: ../../appdev/guides/pushnotifications.rst:12
 msgid "Let's practice this step-by-step."
-msgstr ""
+msgstr "Esercitiamoci passo dopo passo."
 
 #: ../../appdev/guides/pushnotifications.rst:15
 msgid ""
@@ -884,26 +962,34 @@ msgid ""
 "the user about the communication with your server by providing a privacy "
 "policy!"
 msgstr ""
+"Nell'esempio che segue non implementeremo un server. Anche la comunicazione "
+"tra la vostra applicazione e il vostro server dipende da voi. Si prega di "
+"informare l'utente sulla comunicazione con il server fornendo un'informativa "
+"sulla privacy!"
 
 #: ../../appdev/guides/pushnotifications.rst:18
 msgid "Make the app ready for push notifications"
-msgstr ""
+msgstr "Preparare l'app per le notifiche push"
 
 #: ../../appdev/guides/pushnotifications.rst:21
 msgid "Implementing the PushClient"
-msgstr ""
+msgstr "Implementazione del PushClient"
 
 #: ../../appdev/guides/pushnotifications.rst:23
 msgid ""
 "First we need to add the policy group \"push-notification-client\". Your "
 "apparmor file could look like this:"
 msgstr ""
+"Per prima cosa è necessario aggiungere il gruppo di criteri \"push-"
+"notification-client\". Il file di apparmor potrebbe essere simile a questo:"
 
 #: ../../appdev/guides/pushnotifications.rst:36
 msgid ""
 "In the next step we need to modify the Qml parts. We need to add a "
 "pushclient component:"
 msgstr ""
+"Nel passo successivo dobbiamo modificare le parti Qml. Dobbiamo aggiungere "
+"un componente pushclient:"
 
 #: ../../appdev/guides/pushnotifications.rst:52
 msgid ""
@@ -915,10 +1001,18 @@ msgid ""
 "But the app is not yet ready to receive a push notification. For this we "
 "need something called a pushhelper!"
 msgstr ""
+"È necessario impostare l'appId corretto! Se il nome dell'applicazione nel "
+"file manifest è myapp.yourname e il nome dell'hook principale (quello che "
+"gestisce il file .desktop) è hookname, allora l'appId è: "
+"myapp.yourname_hookname. Quando ora si avvia l'applicazione, questa otterrà "
+"un token e lo stamperà nei log. Con i log cliccabili, saremo in grado di "
+"copiare questo token dal terminale. Ma l'applicazione non è ancora pronta a "
+"ricevere una notifica push. Per questo abbiamo bisogno di qualcosa chiamato "
+"pushhelper!"
 
 #: ../../appdev/guides/pushnotifications.rst:56
 msgid "Implementing the pushhelper"
-msgstr ""
+msgstr "Implementazione del pushhelper"
 
 #: ../../appdev/guides/pushnotifications.rst:58
 msgid ""
@@ -928,6 +1022,11 @@ msgid ""
 "json-file in the correct format. The pushhelper is seperated from the app. "
 "So we need a new hook in the manifest. It could look like this:"
 msgstr ""
+"Il pushhelper è una parte dell'applicazione che riceve tutte le notifiche "
+"push e le elabora prima di inviarle al centro notifiche del sistema. "
+"Riceverà un file json e dovrà produrre un altro file json nel formato "
+"corretto. Il pushhelper è separato dall'applicazione. Quindi abbiamo bisogno "
+"di un nuovo hook nel manifest. Potrebbe essere così:"
 
 #: ../../appdev/guides/pushnotifications.rst:81
 msgid ""
@@ -935,30 +1034,38 @@ msgid ""
 "different executable file. The **push-apparmor.json** file must only contain "
 "the policy group push-notification-client and should look like this:"
 msgstr ""
+"Dovrebbe essere chiaro che ora abbiamo bisogno di un file apparmor diverso e "
+"di un file eseguibile diverso. Il file **push-apparmor.json** deve contenere "
+"solo il gruppo di policy push-notification-client e deve avere questo "
+"aspetto:"
 
 #: ../../appdev/guides/pushnotifications.rst:93
 msgid "The **push.json** is for redirecting to the executable file:"
-msgstr ""
+msgstr "Il file **push.json** serve a reindirizzare al file eseguibile:"
 
 #: ../../appdev/guides/pushnotifications.rst:101
 msgid ""
 "In our tutorial we will use python to create a executable named **pushexec** "
 "which will forward the notification without changing anything:"
 msgstr ""
+"Nel nostro tutorial useremo python per creare un eseguibile chiamato "
+"**pushexec** che inoltrerà la notifica senza modificare nulla:"
 
 #: ../../appdev/guides/pushnotifications.rst:113
 msgid ""
 "We also need to add this new files to the **CMakeLists.txt** and make the "
 "pushexec executable::"
 msgstr ""
+"È inoltre necessario aggiungere questi nuovi file a **CMakeLists.txt** e "
+"rendere eseguibile pushexec::"
 
 #: ../../appdev/guides/pushnotifications.rst:123
 msgid "Now the app is ready to receive and process push notifications!"
-msgstr ""
+msgstr "Ora l'applicazione è pronta a ricevere ed elaborare le notifiche push!"
 
 #: ../../appdev/guides/pushnotifications.rst:126
 msgid "Using the Push Service API"
-msgstr ""
+msgstr "Utilizzo dell'API del servizio Push"
 
 #: ../../appdev/guides/pushnotifications.rst:128
 msgid ""
@@ -968,11 +1075,15 @@ msgid ""
 "application/json and it must fit in the correct format. A example in "
 "javascript could look like this:"
 msgstr ""
+"Ora si dispone del token e l'applicazione è pronta a ricevere ed elaborare "
+"le notifiche push. Per inviare una notifica, occorre inviare una richiesta "
+"HTTP a questo indirizzo: https://push.ubports.com/notify Il tipo di "
+"contenuto deve essere application/json e deve essere nel formato corretto. "
+"Un esempio in javascript potrebbe essere questo:"
 
 #: ../../appdev/guides/pushnotifications.rst:165
-#, fuzzy
 msgid "Push Notification Object"
-msgstr "Notifiche push"
+msgstr "Oggetto di notifica push"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -981,7 +1092,7 @@ msgstr "Notifiche push"
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Parameter"
-msgstr ""
+msgstr "Parametro"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -990,7 +1101,7 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -999,11 +1110,11 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Description"
-msgstr ""
+msgstr "Descrizione"
 
 #: ../../appdev/guides/pushnotifications.rst:170
 msgid "appid"
-msgstr ""
+msgstr "appid"
 
 #: ../../appdev/guides/pushnotifications.rst:170
 #: ../../appdev/guides/pushnotifications.rst:173
@@ -1013,29 +1124,28 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:230
 #: ../../appdev/guides/pushnotifications.rst:233
 #: ../../appdev/guides/pushnotifications.rst:241
-#, fuzzy
 msgid "string"
-msgstr "Condivisione"
+msgstr "stringa"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. ID of the application that will receive the notification,"
-msgstr ""
+msgstr "Richiesto. ID dell'applicazione che riceverà la notifica,"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "as described in the client side documentation."
-msgstr ""
+msgstr "come descritto nella documentazione del lato client."
 
 #: ../../appdev/guides/pushnotifications.rst:173
 msgid "expire_on"
-msgstr ""
+msgstr "scadere_il"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. Expiration date/time for this message, in"
-msgstr ""
+msgstr "Richiesto. Data/ora di scadenza per questo messaggio, in"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "`ISO8601 Extendendformat <https://www.w3.org/TR/NOTE-datetime>`_."
-msgstr ""
+msgstr "`ISO8601 Formato esteso <https://www.w3.org/TR/NOTE-datetime>`_."
 
 #: ../../appdev/guides/pushnotifications.rst:176
 msgid "token"

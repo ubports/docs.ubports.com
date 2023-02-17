@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-15 09:19-0500\n"
-"PO-Revision-Date: 2023-02-08 18:18+0000\n"
+"PO-Revision-Date: 2023-02-17 09:18+0000\n"
 "Last-Translator: Alberto <ortodipace@proton.me>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-contribute/it/>\n"
@@ -321,13 +321,11 @@ msgstr ""
 "nell'indice (a sinistra) in cima alla pagina."
 
 #: ../../contribute/documentation.rst:19
-#, fuzzy
 msgid ""
 "Titles should be \"sentence cased\" rather than \"Title Cased\". For "
 "example::"
 msgstr ""
-"I titoli dovrebbero essere frasi in formato titolo, piuttosto che dei meri "
-"formati titolo. Ad esempio::"
+"I titoli devono essere \"a frase\" piuttosto che \"a titolo\". Ad esempio::"
 
 #: ../../contribute/documentation.rst:28
 msgid ""
@@ -353,11 +351,11 @@ msgstr "Si noti che:"
 
 #: ../../contribute/documentation.rst:39
 msgid "The title is sentence cased"
-msgstr ""
+msgstr "Il titolo è incassato a frase"
 
 #: ../../contribute/documentation.rst:40
 msgid "The title is underlined with equals signs"
-msgstr ""
+msgstr "Il titolo è sottolineato con i segni di uguale"
 
 #: ../../contribute/documentation.rst:41
 msgid "The underline spans the title completely without going over"
@@ -365,30 +363,31 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:43
 msgid "Incorrect examples of titles include:"
-msgstr ""
+msgstr "Esempi di titoli non corretti sono:"
 
 #: ../../contribute/documentation.rst:45
 msgid "Incorrect casing"
-msgstr ""
+msgstr "Involucro errato"
 
 #: ../../contribute/documentation.rst:52
 msgid "Underline too short"
-msgstr ""
+msgstr "Sottolineare troppo breve"
 
 #: ../../contribute/documentation.rst:59
 msgid "Underline too long"
-msgstr ""
+msgstr "Sottolineare troppo"
 
 #: ../../contribute/documentation.rst:68
-#, fuzzy
 msgid "Headings"
-msgstr "Avvertimenti"
+msgstr "Denominazioni"
 
 #: ../../contribute/documentation.rst:70
 msgid ""
 "There are several levels of headings that you may place on your page. These "
 "levels are shown here in order:"
 msgstr ""
+"Ci sono diversi livelli di intestazioni che potete inserire nella vostra "
+"pagina. Questi livelli sono mostrati qui in ordine:"
 
 #: ../../contribute/documentation.rst:86
 msgid ""
@@ -400,6 +399,14 @@ msgid ""
 "must use this many heading levels, it is a good sign that your document "
 "should be split up into multiple pages."
 msgstr ""
+"Ogni livello di intestazione crea una sottosezione nella tabella globale "
+"dell'albero dei contenuti disponibile quando la documentazione è costruita. "
+"Nella versione(web) primaria della documentazione, questo mostra solo "
+"quattro livelli profondi dal livello superiore della documentazione. Si "
+"prega di astenersi dall'utilizzo di più livelli di intestazione di mostrare "
+"in questo albero in quanto rende difficile la navigazione del documento. Se "
+"è necessario utilizzare molti livelli di intestazione, è un buon segno che "
+"il documento deve essere diviso in più pagine."
 
 #: ../../contribute/documentation.rst:89
 msgid "Table of contents"
@@ -415,7 +422,6 @@ msgstr ""
 "nuove all'indice di Sphinx."
 
 #: ../../contribute/documentation.rst:93
-#, fuzzy
 msgid ""
 "You can do this by adding the page to the ``index.rst`` file in the same "
 "directory that you created it. For example, if you create a file called "
@@ -423,9 +429,9 @@ msgid ""
 "nearest index:"
 msgstr ""
 "Lo puoi fare aggiungendo la pagina nel file ``index.rst`` nella stessa "
-"directory che hai creato. Ad esempio, se crei un file chiamato \"newpage.rst"
-"\", aggiungerai una linea marcata con un simbolo di maggiore (chevron o >) "
-"nell'indice più prossimo::"
+"directory che hai creato. Ad esempio, se crei un file chiamato \"newpage."
+"rst\", aggiungerai una linea marcata con un simbolo di maggiore (chevron o >)"
+" nell'indice più prossimo:"
 
 #: ../../contribute/documentation.rst:105
 msgid ""
@@ -439,7 +445,7 @@ msgstr ""
 
 #: ../../contribute/documentation.rst:108
 msgid "Moving pages"
-msgstr ""
+msgstr "Pagine mobili"
 
 #: ../../contribute/documentation.rst:110
 msgid ""
@@ -448,6 +454,10 @@ msgid ""
 "example, it makes more sense for the page to come after a page you've just "
 "added in a different section."
 msgstr ""
+"A volte diventa necessario spostare una pagina da un posto nella "
+"documentazione ad un altro. Generalmente questo è per migliorare il flusso "
+"dei documenti: Ad esempio, ha più senso per la pagina venire dopo una pagina "
+"che hai appena aggiunto in una sezione diversa."
 
 #: ../../contribute/documentation.rst:112
 msgid ""
@@ -457,6 +467,12 @@ msgid ""
 "follow a link from a different site and land on a 404 page, left to your own "
 "devices to find your way in restructured documentation."
 msgstr ""
+"Tuttavia, le persone collegano alla nostra documentazione da molte fonti che "
+"non controlliamo. Blog, siti web e altri siti di documentazione possono "
+"indirizzare le persone qui utilizzando link che potrebbero non aggiornare "
+"mai. È un'esperienza terribile seguire un link da un sito e un terreno "
+"diverso su una pagina 404, lasciato ai propri dispositivi per trovare la "
+"vostra strada nella documentazione ristrutturata."
 
 #: ../../contribute/documentation.rst:114
 msgid ""
@@ -469,6 +485,15 @@ msgid ""
 "`redirects.txt file <https://github.com/ubports/docs.ubports.com/blob/master/"
 "redirects.txt>`_."
 msgstr ""
+"Usiamo uno strumento chiamato Rediraffe per evitare questa brutta "
+"esperienza. Rediraffe crea pagine redirect che possono inviare un utente da "
+"un vecchio link non valido a un nuovo link utile. Si prega di creare un link "
+"redirect quando si modifica il nome di una pagina o si sposta una pagina "
+"all'interno della struttura della directory della documentazione. I link "
+"redirect vengono creati mettendo il nome del file del vecchio documento e il "
+"nome del file del nuovo documento, relativo alla radice della "
+"documentazione, nei `redirects.txt file <https://github.com/ubports/"
+"docs.ubports.com/blob/master/redirects.txt>`_."
 
 #: ../../contribute/documentation.rst:116
 msgid ""
@@ -477,18 +502,27 @@ msgid ""
 "run as part of the ``build.sh`` script in the repository and as part of our "
 "automated build once you submit a Pull Request."
 msgstr ""
+"Utilizziamo il costruttore ``checkdiff`` di Rediraffe per garantire che le "
+"pagine non vengano eliminate dalla documentazione senza un reindirizzamento "
+"di posizione. Questo costruttore è eseguito come parte dello script "
+"``build.sh``nel repository e come parte della nostra build automatizzata una "
+"volta che si invia una Richiesta di Pull."
 
 #: ../../contribute/documentation.rst:118
 msgid ""
 "What follows are some examples of situations where you should create "
 "redirects."
 msgstr ""
+"Ciò che segue sono alcuni esempi di situazioni in cui si dovrebbe creare "
+"redirect."
 
 #: ../../contribute/documentation.rst:120
 msgid ""
 "You are moving ``systemdev/calendars.rst`` to ``appdev/calendars.rst``. Add "
 "the following to the ``redirects.txt`` file::"
 msgstr ""
+"Si sta muovendo ``systemdev/calendars.rst` a ``appdev/calendars.rst``. "
+"Aggiungi quanto segue al file ``redirects.txt``::"
 
 #: ../../contribute/documentation.rst:124
 msgid ""
@@ -499,13 +533,18 @@ msgid ""
 "redirect the old page to the new introduction page. This can be done by "
 "adding the following to ``redirects.txt``::"
 msgstr ""
+"Stai muovendo ``appdev/clickable.rst`` in diverse pagine in ``appdev/"
+"clickable/`` per dare significativamente più informazioni sullo strumento di "
+"quanto non ci fosse in precedenza. Hai creato una pagina di introduzione, ``"
+"appdev/clickable/introduction.rst``. In questo caso, sarebbe una buona idea "
+"reindirizzare la vecchia pagina alla nuova pagina di introduzione. Questo "
+"può essere fatto aggiungendo il seguente a ``redirects.txt``::"
 
 #: ../../contribute/documentation.rst:129
 msgid "Warnings"
 msgstr "Avvertimenti"
 
 #: ../../contribute/documentation.rst:131
-#, fuzzy
 msgid ""
 "Your edits must not introduce any warnings into the documentation build. If "
 "any warnings occur, the build will fail and your pull request will be marked "
@@ -514,13 +553,13 @@ msgid ""
 "with your error) if you follow :ref:`our build instructions <doc-"
 "contribution-workflow>` below."
 msgstr ""
-"Le tue correzioni non devono creare alcun avvertimento (warning) nella "
-"creazione della documentazione. Se dovesse succedere, la creazione non "
-"andrebbe a buon fine e la richiesta di inserimento (pull request) sarebbe "
-"marcata con una 'X'. Assicurati che il tuo RST sia valido e corretto prima "
-"di crearne una. Questo si può controllare automaticamente (con un sphinx-"
-"build qualora provochi un fallimento del processo con il tuo errore), in "
-"caso che tu segua le istruzioni di compilazione sotto riportate."
+"Le tue modifiche non devono introdurre alcun avviso nella creazione della "
+"documentazione. Se si verificano avvertimenti, la build fallirà e la tua "
+"richiesta pull sarà contrassegnata con una 'X' rossa. Assicurati che il tuo "
+"RST sia valido e corretto prima di creare una richiesta pull. Questo viene "
+"fatto automaticamente (tramite sphinx-build crash con il vostro errore) se "
+"si segue :ref: `le nostre istruzioni di costruzione <doc-contribution-"
+"workflow>`di seguito."
 
 #: ../../contribute/documentation.rst:135
 msgid "Line length"
