@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-05 00:57+0100\n"
-"PO-Revision-Date: 2021-07-24 20:04+0000\n"
-"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
+"PO-Revision-Date: 2023-02-20 23:18+0000\n"
+"Last-Translator: Alberto <ortodipace@proton.me>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-humanguide/it/>\n"
 "Language: it\n"
@@ -21,16 +21,15 @@ msgstr ""
 
 #: ../../humanguide/app-layout/app-main-view.rst:2
 msgid "App main view"
-msgstr ""
+msgstr "App vista principale"
 
 #: ../../humanguide/app-layout/app-main-view.rst:4
-#, fuzzy
 msgid ""
 "When an app starts, shows a generic splash screen (as in the image) or a "
 "custom one, then the main view."
 msgstr ""
-"All'avvio di un'app, mostra una schermata iniziale generica (come "
-"nell'immagine) o personalizzata, poi la vista principale."
+"Quando un'applicazione inizia, mostra uno schermo splash generico (come "
+"nell'immagine) o uno personalizzato, quindi la vista principale."
 
 #: ../../humanguide/app-layout/app-main-view.rst:8
 msgid "The standard parts of a main view or any other page may be:"
@@ -43,10 +42,9 @@ msgid "Header"
 msgstr "Intestazione"
 
 #: ../../humanguide/app-layout/app-main-view.rst:13
-#, fuzzy
 msgid "Display app name, leading area and trailing area icons."
 msgstr ""
-"Visualizza il nome dell'app, l'area iniziale e le icone dell'area finale."
+"Visualizza il nome dell'app, l'area principale e traccia l'area delle icone."
 
 #: ../../humanguide/app-layout/app-main-view.rst:17
 #, fuzzy
@@ -78,6 +76,8 @@ msgid ""
 "A dialog is a way of informing the user about important notices or letting "
 "them complete a single action."
 msgstr ""
+"Una finestra di dialogo è un modo per informare l'utente su avvisi "
+"importanti o lasciargli completare una singola azione."
 
 #: ../../humanguide/app-layout/dialogs.rst:6
 msgid ""
@@ -86,6 +86,11 @@ msgid ""
 "should be placed topmost in vertical dialogs or rightmost in horizontal "
 "dialogs."
 msgstr ""
+"I dialogi dovrebbero essere inequivocabili e concisi nella loro "
+"formulazione. Solo il più comune, o principale, azione dovrebbe essere "
+"evidenziata con il colore. L'azione principale deve essere posizionata più "
+"in alto nelle finestre di dialogo verticali o più in basso nelle finestre di "
+"dialogo orizzontali."
 
 #: ../../humanguide/app-layout/dialogs.rst:8
 msgid ""
@@ -94,6 +99,11 @@ msgid ""
 "make changes that can't be easily undone. Neutral actions do not add or "
 "remove from the subject, but still make a change."
 msgstr ""
+"Le azioni principali possono essere positive, negative o neutrali. Le azioni "
+"positive aggiungono qualcosa ai loro soggetti. Azioni negative rimuovere, "
+"eliminare o altrimenti apportare modifiche che non possono essere facilmente "
+"annullate. Le azioni neutre non aggiungono o tolgono dal soggetto, ma fanno "
+"comunque un cambiamento."
 
 #: ../../humanguide/app-layout/dialogs.rst:10
 msgid ""
@@ -234,10 +244,14 @@ msgid ""
 "slots to house them. However, when your app is on a larger surface, like on "
 "a desktop, then actions will appear in the slots."
 msgstr ""
+"Le azioni saranno poste in un cassetto azione quando non ci sono slot "
+"disponibili per ospitarli. Tuttavia, quando l'applicazione è su una "
+"superficie più grande, come su un desktop, allora le azioni apparirà nelle "
+"slot."
 
 #: ../../humanguide/app-layout/main-actions.rst:29
 msgid "Responsive layout"
-msgstr ""
+msgstr "Layout reattivo"
 
 #: ../../humanguide/app-layout/main-actions.rst:31
 msgid ""
@@ -263,7 +277,7 @@ msgstr ""
 
 #: ../../humanguide/app-layout/main-actions.rst:62
 msgid "Medium to large screens"
-msgstr ""
+msgstr "Schermi medio-grandi"
 
 #: ../../humanguide/app-layout/main-actions.rst:64
 msgid ""
@@ -271,10 +285,12 @@ msgid ""
 "If this is exceeded then additional actions will migrate to the action "
 "drawer."
 msgstr ""
+"Il numero massimo di slot di azione visibili in un ambiente convergente è 6. "
+"Se questo viene superato allora ulteriori azioni migrano al cassetto azione."
 
 #: ../../humanguide/app-layout/main-actions.rst:67
 msgid "Simple"
-msgstr ""
+msgstr "Semplice"
 
 #: ../../humanguide/app-layout/main-actions.rst:69
 msgid "Keep in mind to keep a clean design. The simpler, the better."
@@ -294,7 +310,7 @@ msgid ""
 "are related to each other."
 msgstr ""
 "La lista di oggetti può essere usata per fare una lista ordinata e "
-"scorrevole di oggetti che sono relazioni tra loro."
+"scorrevole di oggetti che sono in relazione tra loro."
 
 #: ../../humanguide/app-layout/presenting-data.rst:11
 msgid ""
@@ -302,6 +318,9 @@ msgid ""
 "more sense to show them inside a grid rather than a list; like in a photo "
 "gallery."
 msgstr ""
+"Quando le immagini o le icone sono presentate senza testo o azioni, avrebbe "
+"più senso mostrarle all'interno di una griglia piuttosto che di una lista; "
+"come in una galleria fotografica."
 
 #: ../../humanguide/app-layout/presenting-data.rst:15
 msgid ""
@@ -309,12 +328,18 @@ msgid ""
 "context menu can be accessed in two ways: by swiping or right-clicking the "
 "list item."
 msgstr ""
+"Gli elementi in un elenco possono avere azioni che possono essere "
+"posizionate in un menu contestuale. Il menu contestuale può essere "
+"accessibile in due modi: scorrendo o facendo clic con il pulsante destro del "
+"mouse sulla voce dell'elenco."
 
 #: ../../humanguide/app-layout/presenting-data.rst:17
 msgid ""
 "The actions are placed within two categories: leading for negative actions "
 "and trailing for positive actions."
 msgstr ""
+"Le azioni sono poste all'interno di due categorie: che portano ad azioni "
+"negative e alle azioni positive."
 
 #: ../../humanguide/app-layout/presenting-data.rst:20
 msgid "Touch swiping"
@@ -354,15 +379,15 @@ msgstr "Layout di una lista dettagliata di oggetti"
 
 #: ../../humanguide/app-layout/presenting-data.rst:52
 msgid "1 line – Title"
-msgstr ""
+msgstr "1 linea - Titolo"
 
 #: ../../humanguide/app-layout/presenting-data.rst:54
 msgid "1 line – Subtitle"
-msgstr ""
+msgstr "1 linea - Sottotitolo"
 
 #: ../../humanguide/app-layout/presenting-data.rst:56
 msgid "2 lines – Summary"
-msgstr ""
+msgstr "2 linee - Sommario"
 
 #: ../../humanguide/app-layout/quick-actions.rst:2
 msgid "Quick actions"
@@ -395,6 +420,8 @@ msgstr ""
 #: ../../humanguide/app-layout/quick-actions.rst:15
 msgid "After opening an app, a hint with a text and/or an icon is shown:"
 msgstr ""
+"Dopo aver aperto un'app, viene visualizzato un suggerimento con un testo e/o "
+"un'icona:"
 
 #: ../../humanguide/app-layout/quick-actions.rst:19
 msgid "After after a few seconds it hides and a floating icon is shown"
@@ -422,13 +449,15 @@ msgstr "Suru allude alla cultura giapponese."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:10
 msgid "The design of Suru is inspired by origami."
-msgstr "Il design di Suru è ispirato dagli origami."
+msgstr "Il disegno di Suru è ispirato dagli origami."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:11
 msgid ""
 "Paper can be used in two and three dimensional forms, because it is "
 "transferable and diverse."
 msgstr ""
+"La carta può essere utilizzata in due e tre forme dimensionali, perché è "
+"trasferibile e diversificata."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:14
 msgid ""
@@ -436,20 +465,26 @@ msgid ""
 "The sharp lines and varying levels of transparency evoke the edges and "
 "texture of paper."
 msgstr ""
+"Suru porta una struttura precisa ma organica all'interfaccia Ubuntu Touch. "
+"Le linee taglienti e i diversi livelli di trasparenza evocano i bordi e la "
+"consistenza della carta."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:17
 msgid "Design Tips for an App Icon"
-msgstr "Suggerimenti per il design dell'Icona dell'App"
+msgstr "Suggerimenti per il designo dell'Icona dell'App"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:20
 msgid "Descriptive design"
-msgstr "Design descrittivo"
+msgstr "Disegno descrittivo"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:22
 msgid ""
 "The icon you choose for your app should describe what your app is about, "
 "what it does, or what service it is there for in a recognizable way."
 msgstr ""
+"L'icona che si sceglie per la vostra app dovrebbe descrivere ciò che la "
+"vostra applicazione è circa, che cosa fa, o che servizio è lì per in modo "
+"riconoscibile."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:27
 msgid "Distinctive shapes"
@@ -462,6 +497,11 @@ msgid ""
 "trying to depict. A TV might look like a box, or a computer screen, a remote "
 "control like a phone, etc."
 msgstr ""
+"A seconda dell'oggetto che si sceglie di mostrare nell'icona, sulla "
+"prospettiva, l'illuminazione e altri fattori, potrebbe essere difficile "
+"riconoscere quello che si sta cercando di descrivere. Una TV potrebbe "
+"sembrare una scatola, o uno schermo del computer, un telecomando come un "
+"telefono, ecc."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:34
 msgid "Details"
@@ -474,6 +514,11 @@ msgid ""
 "or for people who have impaired eyesight. Show what's necessary, pay "
 "attention to detail, but don't overload the icon."
 msgstr ""
+"Un'icona dettagliata è molto bella da guardare da come mostra la qualità e "
+"l'occhio per le piccole cose. Potrebbe aggiungere confusione però, "
+"soprattutto nelle dimensioni più piccole o per le persone che hanno la vista "
+"compromessa. Mostra ciò che è necessario, fai attenzione ai dettagli, ma non "
+"sovraccaricare l'icona."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:41
 msgid "Colours"
@@ -484,10 +529,12 @@ msgid ""
 "Use distinctive colours, make your icon stand out a bit and give the shapes "
 "enough contrast to be visible."
 msgstr ""
+"Usa colori distintivi, rendi la tua icona un po' in risalto e dalle la forma "
+"in sufficiente contrasto per essere visibile."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:48
 msgid "Gradients"
-msgstr ""
+msgstr "Gradienti"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:50
 msgid ""
@@ -495,10 +542,13 @@ msgid ""
 "slightly different from each other so that the change is not too dramatic. "
 "For example:"
 msgstr ""
+"Se dovessi aggiungere un gradiente alla tua icona, usa solo colori "
+"leggermente diversi l'uno dall'altro in modo che il cambiamento non sia "
+"troppo drammatico. Per esempio:"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:55
 msgid "Composition"
-msgstr ""
+msgstr "Composizione"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:57
 msgid ""
@@ -506,10 +556,13 @@ msgid ""
 "usually a coloured surface with the pictogram, also composed of flat shapes, "
 "“floating” above it."
 msgstr ""
+"Le icone Suru sono composte da semplici forme geometriche. Lo sfondo è di "
+"solito una superficie colorata con il pittogramma, composto anche da forme "
+"piatte, “floating” sopra di esso."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:64
 msgid "The Fold Effect"
-msgstr ""
+msgstr "L'effetto pieghevole"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:66
 msgid ""
@@ -517,12 +570,17 @@ msgid ""
 "many icons this is a single horizontal or vertical line but sometimes the "
 "fold line(s) correspond or align with elements of the pictogram."
 msgstr ""
+"In linea con il motivo origami, alcune icone Suru hanno una piega implicita. "
+"In molte icone questa è una singola linea orizzontale o verticale, ma a "
+"volte la linea di piega corrisponde o allinea con elementi del pittogramma."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:68
 msgid ""
 "The fold is drawn by creating an overlay of a white or black polygon of very "
 "low opacity (usually between 1%~10%)."
 msgstr ""
+"La piega è disegnata creando un sovrapposizione di un poligono bianco o nero "
+"di opacità molto bassa (di solito tra 1% ~ 10%)."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:75
 msgid "Grids"
