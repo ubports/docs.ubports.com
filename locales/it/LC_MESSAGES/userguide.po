@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2023-02-08 18:18+0000\n"
+"PO-Revision-Date: 2023-02-21 08:58+0000\n"
 "Last-Translator: Alberto <ortodipace@proton.me>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/it/>\n"
@@ -68,7 +68,7 @@ msgstr "Abilita la modalità sviluppatore"
 
 #: ../../userguide/advanceduse/adb.rst:29
 msgid "Next, you'll need to turn on Developer Mode."
-msgstr "Successivamente avrai bisogno di attivate la Modalità Sviluppatore."
+msgstr "Poi, dovrai attivare la Modalità Sviluppatore."
 
 #: ../../userguide/advanceduse/adb.rst:31
 msgid "Reboot your device"
@@ -164,9 +164,9 @@ msgid ""
 "CalDAV and CardDAV are protocols to synchronize calendars and contacts with "
 "a remote server. Many email-hosters provide a CalDAV and CardDAV interface."
 msgstr ""
-"CalDAV e CardDav sono protocolli che servono a sincronizzare calendari e "
-"contatti con un servente (server) remoto. Molti fornitori di posta "
-"elettronica (email) forniscono una interfaccia CalDAV e CardDav."
+"CalDAV e CardDAV sono protocolli per sincronizzare calendari e contatti con "
+"un server remoto. Molti host di posta elettronica forniscono un'interfaccia "
+"CalDAV e CardDAV."
 
 #: ../../userguide/advanceduse/dav.rst:6
 msgid ""
@@ -176,9 +176,9 @@ msgid ""
 "as your username and password to complete the process."
 msgstr ""
 "**Nota:** La sincronizzazione CalDAV puo essere impostata anche "
-"dall'applicazione Calendario. Aprire l'app, cliccare sopra l'icona del "
-"calendario in alto a destra e selezionare \"Aggiungi calendario online > "
-"Generic CalDAV\". Inserire l'url del tuo calendario, l'username e la "
+"dall'applicazione Calendario. Aprire l'app, cliccare sopra la piccola icona "
+"del calendario in alto a destra e selezionare \"Aggiungi calendario online > "
+"Generic CalDAV\". Inserire l'URL del tuo calendario, nome utente e la "
 "password per completare il processo."
 
 #: ../../userguide/advanceduse/dav.rst:8
@@ -193,7 +193,7 @@ msgstr ""
 "accessibile dall'interfaccia utente di Ubuntu Touch, quindi l'unico modo per "
 "sincronizzare CardDAV è usando syncevolution + cron. Comunque c'è un modo "
 "semplice per farlo usando uno script che puoi avviare da terminale o via "
-"connessione SSH. Queste istruzioni funzionano anche per CalDav."
+"connessione phablet SSH. Queste istruzioni funzionano anche per CalDav."
 
 #: ../../userguide/advanceduse/dav.rst:10
 msgid ""
@@ -247,14 +247,15 @@ msgid ""
 "Move the file to your Ubuntu Touch device, either by file manager or with "
 "adb::"
 msgstr ""
-"Sposta il file sul tuo dispositivo UbuntuTouch usando il file manager o adb::"
+"Sposta il file sul tuo dispositivo UbuntuTouch usando il file manager o con "
+"adb::"
 
 #: ../../userguide/advanceduse/dav.rst:24
 msgid ""
 "Connect with the phablet shell (``adb shell``) or directly on the phone "
 "Terminal app and type the following::"
 msgstr ""
-"Connettiti alla shell del dispositivo (``adb shell``) o vai direttamente "
+"Connetti con la shell fablet (``adb shell``) o direttamente "
 "sull'applicazione del Terminale e scrivi questi comandi::"
 
 #: ../../userguide/advanceduse/dav.rst:31
