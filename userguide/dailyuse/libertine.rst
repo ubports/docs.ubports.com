@@ -200,7 +200,7 @@ Installing packages manually
 
 If you want to install a package from a file, you will first have to make it available to the root user, for example by copying it to the ``/root`` directory::
 
-    cp ~/Downloads/somepackage.deb ~/.cache/libertine-container/CONTAINER-IDENTIFIER/rootfs/
+    cp ~/Downloads/somepackage.deb ~/.cache/libertine-container/CONTAINER-IDENTIFIER/rootfs/root/
 
 Then install it using dpkg::
 
