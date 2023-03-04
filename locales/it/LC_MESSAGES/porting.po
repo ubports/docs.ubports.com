@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2023-02-10 15:18+0000\n"
+"PO-Revision-Date: 2023-03-04 18:52+0000\n"
 "Last-Translator: Alberto <ortodipace@proton.me>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/it/>\n"
@@ -172,7 +172,7 @@ msgstr ""
 
 #: ../../porting/Intro.rst:28
 msgid "The vendor blobs"
-msgstr ""
+msgstr "Il fornitore blobs"
 
 #: ../../porting/Intro.rst:30
 msgid ""
@@ -180,6 +180,9 @@ msgid ""
 "and install these together with the Ubuntu Touch rootfs in order to create a "
 "functioning Ubuntu Touch port."
 msgstr ""
+"Tu, il porter, hai bisogno di costruire Halium (cioè halium-boot.img e "
+"system.img) e installarli insieme ai rootf Ubuntu Touch al fine di creare un "
+"trasporto Ubuntu Touch funzionante."
 
 #: ../../porting/Intro.rst:32
 msgid ""
@@ -189,43 +192,48 @@ msgid ""
 "version for each individual device port. The table below shows which "
 "versions are required for the different Halium versions."
 msgstr ""
+"Halium è costruito utilizzando il codice sorgente per una versione "
+"modificata del sistema operativo Android chiamato LineageOS. Il codice "
+"sorgente richiesto è disponibile online e deve essere scaricato e "
+"configurato per costruire la corretta versione Halium per ogni singolo "
+"trasporto del dispositivo. La tabella seguente mostra quali versioni sono "
+"richieste per le diverse versioni Halium."
 
 #: ../../porting/Intro.rst:35
 msgid "Android version"
-msgstr ""
+msgstr "Versione Android"
 
 #: ../../porting/Intro.rst:35
 msgid "Halium version"
-msgstr ""
+msgstr "Versione Halium"
 
 #: ../../porting/Intro.rst:35
 msgid "Lineage OS (LOS)"
-msgstr ""
+msgstr "Lineage OS (LOS)"
 
 #: ../../porting/Intro.rst:37
 msgid "7.1"
-msgstr ""
+msgstr "7.1"
 
 #: ../../porting/Intro.rst:37
 msgid "14.1"
-msgstr ""
+msgstr "14.1"
 
 #: ../../porting/Intro.rst:38
-#, fuzzy
 msgid "9.0"
-msgstr "1,0"
+msgstr "9.0"
 
 #: ../../porting/Intro.rst:38
 msgid "16.0"
-msgstr ""
+msgstr "16.0"
 
 #: ../../porting/Intro.rst:44
 msgid "Overview of the porting process"
-msgstr ""
+msgstr "Panoramica del processo di porting"
 
 #: ../../porting/Intro.rst:46 ../../porting/Preparations.rst:2
 msgid "Preparations"
-msgstr ""
+msgstr "Preparazioni"
 
 #: ../../porting/Intro.rst:47
 msgid ""
@@ -233,10 +241,15 @@ msgid ""
 "about it and choose a suitable workstation (PC or laptop) on which to do "
 "your work."
 msgstr ""
+"In questa prima fase si sceglie un dispositivo di destinazione, raccogliere "
+"informazioni su di esso e scegliere una workstation adatta (PC o laptop) su "
+"cui fare il vostro lavoro."
 
 #: ../../porting/Intro.rst:48
 msgid "Set up your Halium build environment and complete a test build"
 msgstr ""
+"Impostare il vostro ambiente di costruzione Halium e completare una "
+"costruzione di prova"
 
 #: ../../porting/Intro.rst:49
 msgid ""
@@ -245,40 +258,52 @@ msgid ""
 "according to the Halium guide to ensure that all your sources are set up "
 "correctly and work in unison."
 msgstr ""
+"Questa fase comporta il download di tutto il codice sorgente rilevante e la "
+"sicurezza dei blobs del fornitore. Si costruirà quindi l'immagine di avvio "
+"di Halium e l'immagine di sistema secondo la guida di Halium per garantire "
+"che tutte le vostre fonti siano configurate correttamente e lavorare "
+"all'unisono."
 
 #: ../../porting/Intro.rst:50
 msgid "Build halium-boot.img and system.img for Ubuntu Touch"
-msgstr ""
+msgstr "Costruisci halium-boot.img e system.img per Ubuntu Touch"
 
 #: ../../porting/Intro.rst:51
 msgid ""
 "Now you need to modify your source tree, after which you will proceed to "
 "build the halium-boot.img and system.img to be used in your port."
 msgstr ""
+"Ora è necessario modificare il vostro albero sorgente, dopo di che si "
+"procederà a costruire il halium-boot.img e system.img da utilizzare nel "
+"vostro trasporto."
 
 #: ../../porting/Intro.rst:52
 msgid "Install and debug the boot process"
-msgstr ""
+msgstr "Installare e debug il processo di avvio"
 
 #: ../../porting/Intro.rst:53
 msgid ""
 "The goal of this stage is to successfully boot into Ubuntu Touch. You will "
 "be working from the command line."
 msgstr ""
+"L'obiettivo di questa fase è quello di avviare con successo Ubuntu Touch. "
+"Starai lavorando dalla riga di comando."
 
 #: ../../porting/Intro.rst:54
 msgid "Bring up the Ubuntu Touch graphical user interface 'Unity 8'"
-msgstr ""
+msgstr "Rendi l'interfaccia utente grafica Ubuntu Touch 'Unity 8'"
 
 #: ../../porting/Intro.rst:55
 msgid ""
 "This stage involves adjusting some configuration and further debugging of "
 "your build."
 msgstr ""
+"Questa fase comporta la regolazione di qualche configurazione e il debug "
+"ulteriore della vostra costruzione."
 
 #: ../../porting/Intro.rst:56
 msgid "Complete device configuration"
-msgstr ""
+msgstr "Configurazione completa del dispositivo"
 
 #: ../../porting/Intro.rst:57
 msgid ""
@@ -1647,7 +1672,6 @@ msgid "16"
 msgstr "16"
 
 #: ../../porting/halium_7-1/Reference_material.rst:23
-#, fuzzy
 msgid "1.5"
 msgstr "1.5"
 
