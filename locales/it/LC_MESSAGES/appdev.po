@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 09:34-0500\n"
-"PO-Revision-Date: 2023-02-14 16:18+0000\n"
+"PO-Revision-Date: 2023-03-04 18:52+0000\n"
 "Last-Translator: Alberto <ortodipace@proton.me>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/it/>\n"
@@ -389,7 +389,7 @@ msgstr ""
 
 #: ../../appdev/guides/dependencies.rst:7
 msgid "Building"
-msgstr ""
+msgstr "Costruzione"
 
 #: ../../appdev/guides/dependencies.rst:8
 msgid ""
@@ -1149,345 +1149,354 @@ msgstr "`ISO8601 Formato esteso <https://www.w3.org/TR/NOTE-datetime>`_."
 
 #: ../../appdev/guides/pushnotifications.rst:176
 msgid "token"
-msgstr ""
+msgstr "token"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. The token identifying the user+device to which the message is"
 msgstr ""
+"Richiesto. Il token che identifica l'utente+dispositivo a cui il messaggio è"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "directed, as described in the client side documentation."
-msgstr ""
+msgstr "diretto, come descritto nella documentazione lato cliente."
 
 #: ../../appdev/guides/pushnotifications.rst:179
 msgid "clear_pending"
-msgstr ""
+msgstr "clear_pending"
 
 #: ../../appdev/guides/pushnotifications.rst:179
 #: ../../appdev/guides/pushnotifications.rst:248
 #: ../../appdev/guides/pushnotifications.rst:250
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Discards all previous pending notifications. Usually in response to"
 msgstr ""
+"Scarta tutte le notifiche in sospeso precedenti. Di solito in risposta a"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "getting a \"too-many-pending\" error. Defaults to false."
-msgstr ""
+msgstr "ottenere un errore \"too-many-pending\". Predefinisce il falso."
 
 #: ../../appdev/guides/pushnotifications.rst:182
 msgid "replace_tag"
-msgstr ""
+msgstr "sostituire_tag"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If there's a pending notification with the same tag, delete it before"
-msgstr ""
+msgstr "Se c'è una notifica in sospeso con lo stesso tag, cancellalo prima"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "queuing this new one."
-msgstr ""
+msgstr "in coda a questo nuovo."
 
 #: ../../appdev/guides/pushnotifications.rst:185
 msgid "data"
-msgstr ""
+msgstr "dati"
 
 #: ../../appdev/guides/pushnotifications.rst:185
 #: ../../appdev/guides/pushnotifications.rst:190
 msgid "Data"
-msgstr ""
+msgstr "Dati"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object. The contents of the data field are arbitrary. We can use"
-msgstr ""
+msgstr "Un oggetto JSON. Il contenuto del campo dati è arbitrario. Si può usare"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "it to send any data to the app."
-msgstr ""
+msgstr "per inviare qualsiasi dato all'applicazione."
 
 #: ../../appdev/guides/pushnotifications.rst:195
-#, fuzzy
 msgid "notification"
-msgstr "Notifiche push"
+msgstr "Notifica"
 
 #: ../../appdev/guides/pushnotifications.rst:195
 #: ../../appdev/guides/pushnotifications.rst:201
-#, fuzzy
 msgid "Notification"
-msgstr "Notifiche push"
+msgstr "Notifica"
 
 #: ../../appdev/guides/pushnotifications.rst:195
 msgid "A JSON object which defines how this notification will be presented."
-msgstr ""
+msgstr "Un oggetto JSON che definisce come verrà presentata questa notifica."
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "message"
-msgstr ""
+msgstr "messaggio"
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "object"
-msgstr ""
+msgstr "oggetto"
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "A JSON object that is passed as-is to the application via PopAll."
 msgstr ""
+"Un oggetto JSON che viene trasmesso come-è all'applicazione tramite PopAll."
 
 #: ../../appdev/guides/pushnotifications.rst:206
 msgid "tag"
-msgstr ""
+msgstr "etichetta tag"
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "The tag of the push notification."
-msgstr "Notifiche push"
+msgstr "Il tag della notifica push."
 
 #: ../../appdev/guides/pushnotifications.rst:208
 msgid "sound"
-msgstr ""
+msgstr "suono"
 
 #: ../../appdev/guides/pushnotifications.rst:208
 msgid "bool or string"
-msgstr ""
+msgstr "bool o stringa"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "This is either a boolean (play a predetermined sound) or the"
 msgstr ""
+"Si tratta di un booleano (riprodurre un suono predeterminato) o dell'elemento"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "path to a sound file. The user can disable it, so don't rely"
 msgstr ""
+"percorso di un file audio. L'utente può disabilitarlo, quindi non fare "
+"affidamento su"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "on it exclusively. Defaults to empty (no sound). The path is"
 msgstr ""
+"esclusivamente su di esso. Il valore predefinito è vuoto (nessun suono). Il "
+"percorso è"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "relative, and will be looked up in (a) the application's"
-msgstr ""
+msgstr "relativo, e sarà cercato in (a) dell'applicazione"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "``.local/share/<pkgname>``, and (b) standard xdg dirs."
-msgstr ""
+msgstr "``.local/share/<pkgname>``, e (b) le directory xdg standard."
 
 #: ../../appdev/guides/pushnotifications.rst:214
 msgid "vibrate"
-msgstr ""
+msgstr "vibrare"
 
 #: ../../appdev/guides/pushnotifications.rst:214
 msgid "bool or Vibrate"
-msgstr ""
+msgstr "bool o Vibrare"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "The notification can contain a vibrate field, causing haptic"
 msgstr ""
+"La notifica può contenere un campo di vibrazione, provocando un effetto "
+"tattile"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "feedback, which can be either a boolean (if true, vibrate a"
-msgstr ""
+msgstr "feedback, che può essere un booleano (se vero, fa vibrare un"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "predetermined way) or an Vibrate object."
-msgstr ""
+msgstr "modo predeterminato) o un oggetto Vibrare."
 
 #: ../../appdev/guides/pushnotifications.rst:218
 msgid "emblem-counter"
-msgstr ""
+msgstr "emblema-contatore"
 
 #: ../../appdev/guides/pushnotifications.rst:218
 msgid "Emblem-counter"
-msgstr ""
+msgstr "Emblema-contatore"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object, which defines how to display the emblem"
-msgstr ""
+msgstr "Un oggetto JSON, che definisce come visualizzare l'emblema"
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "counter."
-msgstr "Gli account online"
+msgstr "contatore."
 
 #: ../../appdev/guides/pushnotifications.rst:221
 msgid "card"
-msgstr ""
+msgstr "carta"
 
 #: ../../appdev/guides/pushnotifications.rst:221
 #: ../../appdev/guides/pushnotifications.rst:225
 msgid "Card"
-msgstr ""
+msgstr "Carta"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object with information about the notification card."
-msgstr ""
+msgstr "Un oggetto JSON con informazioni sulla carta di notifica."
 
 #: ../../appdev/guides/pushnotifications.rst:230
 msgid "summary"
-msgstr ""
+msgstr "sommario"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. A title. The card will not be presented if this is"
-msgstr ""
+msgstr "Richiesto. Un titolo. La carta non verrà presentata se questo è"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "missing."
-msgstr ""
+msgstr "mancante."
 
 #: ../../appdev/guides/pushnotifications.rst:233
 msgid "body"
-msgstr ""
+msgstr "corpo"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Longer text, defaults to empty."
-msgstr ""
+msgstr "Testo più lungo, predefinito vuoto."
 
 #: ../../appdev/guides/pushnotifications.rst:235
-#, fuzzy
 msgid "actions"
-msgstr "Introduzione"
+msgstr "azioni"
 
 #: ../../appdev/guides/pushnotifications.rst:235
 #: ../../appdev/guides/pushnotifications.rst:261
 msgid "array"
-msgstr ""
+msgstr "array"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If empty (the default), a bubble notification is"
-msgstr ""
+msgstr "Se vuoto (il predefinito), una notifica bolla è"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "non-clickable. If you add a URL, then bubble notifications"
-msgstr ""
+msgstr "non cliccabile. Se si aggiunge un URL, allora le notifiche a bolla"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "are clickable and launch that URL. One use for this is using"
 msgstr ""
+"sono cliccabili e lanciano quell'URL. Un uso di questo tipo è l'utilizzo di"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "a URL like ``appid://com.ubuntu.developer.ralsina.hello``"
-msgstr ""
+msgstr "un URL come ``appid://com.ubuntu.developer.ralsina.hello``"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "which will switch to the app or launch it."
-msgstr ""
+msgstr "che passerà all'applicazione o la avvierà."
 
 #: ../../appdev/guides/pushnotifications.rst:241
 msgid "icon"
-msgstr ""
+msgstr "icona"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "An icon relating to the event being notified. Defaults to"
-msgstr ""
+msgstr "Un'icona relativa all'evento notificato. Predefiniti per"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "empty (no icon); a secondary icon relating to the application"
-msgstr ""
+msgstr "vuoto (non icona); icona secondaria relativa all'applicazione"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "will be shown as well, regardless of this field."
-msgstr ""
+msgstr "sarà mostrato anche, indipendentemente da questo campo."
 
 #: ../../appdev/guides/pushnotifications.rst:245
 msgid "timestamp"
-msgstr ""
+msgstr "timestamp"
 
 #: ../../appdev/guides/pushnotifications.rst:245
 #: ../../appdev/guides/pushnotifications.rst:264
 #: ../../appdev/guides/pushnotifications.rst:275
 msgid "integer"
-msgstr ""
+msgstr "integro"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Seconds since the unix epoch, only used for persist for now."
-msgstr ""
+msgstr "Secondi dall'epoca unix, utilizzato solo per persistere per ora."
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If zero or unset, defaults to current timestamp."
-msgstr ""
+msgstr "Se zero o unset, si predefinisce il timestamp corrente."
 
 #: ../../appdev/guides/pushnotifications.rst:248
 msgid "persist"
-msgstr ""
+msgstr "persistere"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Whether to show in notification centre; defaults to false."
-msgstr ""
+msgstr "Se mostrare in centro di notifica; default a falso."
 
 #: ../../appdev/guides/pushnotifications.rst:250
 msgid "popup"
-msgstr ""
+msgstr "popup"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Whether to show in a bubble. Users can disable this, and can"
 msgstr ""
+"Che si mostri in una bolla. Gli utenti possono disattivare questo, e possono"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "easily miss them, so don't rely on it exclusively. Defaults"
 msgstr ""
+"facilmente perdere, quindi non fare affidamento su di esso esclusivamente. "
+"Predefiniti"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "to false."
-msgstr ""
+msgstr "a false."
 
 #: ../../appdev/guides/pushnotifications.rst:256
 msgid "Vibrate"
-msgstr ""
+msgstr "Vibrazione"
 
 #: ../../appdev/guides/pushnotifications.rst:261
-#, fuzzy
 msgid "pattern"
-msgstr "Modelli di URL"
+msgstr "pattern"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid ""
 "A list of integers describing a vibration pattern (duration of alternating"
 msgstr ""
+"Un elenco di interi che descrive un modello di vibrazione (durata "
+"dell'alternanza"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "vibration/no vibration times, in milliseconds)."
-msgstr ""
+msgstr "tempi di vibrazione/senza vibrazioni, in millisecondi)."
 
 #: ../../appdev/guides/pushnotifications.rst:264
 msgid "repeat"
-msgstr ""
+msgstr "ripeti"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Number of times the pattern has to be repeated (defaults to 1, 0 is the"
 msgstr ""
+"Numero di volte che il modello deve essere ripetuto (default a 1, 0 è il"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "same as 1)."
-msgstr ""
+msgstr "come 1)."
 
 #: ../../appdev/guides/pushnotifications.rst:270
 msgid "Emblem-Counter"
-msgstr ""
+msgstr "Emblema-Contatore"
 
 #: ../../appdev/guides/pushnotifications.rst:275
-#, fuzzy
 msgid "count"
-msgstr "Gli account online"
+msgstr "conto"
 
 #: ../../appdev/guides/pushnotifications.rst:275
 msgid "A number to be displayed over the application's icon in the launcher."
-msgstr ""
+msgstr "Un numero da visualizzare sull'icona dell'applicazione nel launcher."
 
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "visible"
-msgstr ""
+msgstr "visibile"
 
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "Set to true to show the counter, or false to hide it."
-msgstr ""
+msgstr "Impostare a true per mostrare il contatore, o falso per nasconderlo."
 
 #: ../../appdev/guides/user-metrics.rst:2
-#, fuzzy
 msgid "User Metrics"
-msgstr "Interfaccia utente"
+msgstr "Metriche dell'utente"
 
 #: ../../appdev/guides/user-metrics.rst:5
 msgid "What are User Metrics?"
-msgstr ""
+msgstr "Quali sono le metriche dell'utente?"
 
 #: ../../appdev/guides/user-metrics.rst:7
 msgid ""
@@ -1496,49 +1505,64 @@ msgid ""
 "the user’s activity. Double tap on the middle of the circle, and you will "
 "see more \"metrics\" about the user."
 msgstr ""
+"Se si guarda sullo schermo di blocco, si vedrà un cerchio. All'interno del "
+"cerchio c'è scritto. Guarda più da vicino, e noterai che il testo contiene i "
+"dati relativi all'attività dell'utente. Doppio tap al centro del cerchio, e "
+"vedrete più \"metriche\" sull'utente."
 
 #: ../../appdev/guides/user-metrics.rst:11
 msgid "This shows \"7 text messages sent today.\" How did it know?"
-msgstr ""
+msgstr "Questo mostra \"7 messaggi di testo inviati oggi\". Come lo sapeva?"
 
 #: ../../appdev/guides/user-metrics.rst:15
 msgid ""
 "This is from a 3rd-party application (`nCounter <https://gitlab.com/"
 "joboticon/ncounter/>`_) that makes use of the User Metrics feature."
 msgstr ""
+"Questo è da un'applicazione di terze parti (`nCounter <https://gitlab.com/"
+"joboticon/ncounter/>`_) che fa uso della funzione User Metrics."
 
 #: ../../appdev/guides/user-metrics.rst:17
 msgid ""
 "For the most part, these messages are quite clearly state what they are "
 "counting, and which app is related. But where do these metrics come from?"
 msgstr ""
+"Per la maggior parte, questi messaggi sono abbastanza chiaramente dichiarare "
+"ciò che stanno contando, e quale app è correlata. Ma da dove vengono queste "
+"metriche?"
 
 #: ../../appdev/guides/user-metrics.rst:20
 msgid "How can I use User Metrics in my application?"
-msgstr ""
+msgstr "Come posso utilizzare User Metrics nella mia applicazione?"
 
 #: ../../appdev/guides/user-metrics.rst:22
 msgid ""
 "All of the following information will be based on the code for `nCounter`_."
 msgstr ""
+"Tutte le seguenti informazioni saranno basate sul codice per `nCounter`_."
 
 #: ../../appdev/guides/user-metrics.rst:24
 msgid "Your app's apparmor file must include ``usermetrics`` in the policy:"
 msgstr ""
+"Il file apparmor della tua app deve includere ``usermetrics`` nella politica:"
 
 #: ../../appdev/guides/user-metrics.rst:35
 msgid ""
 "Next, you will need to import the module in the QML file that will handle "
 "the User Metrics:"
 msgstr ""
+"Successivamente, è necessario importare il modulo nel file QML che gestirà "
+"le metriche dell'utente:"
 
 #: ../../appdev/guides/user-metrics.rst:41
 msgid "(There may be updated versions of this above 0.1)"
-msgstr ""
+msgstr "(Ci possono essere versioni aggiornate di questo sopra 0.1)"
 
 #: ../../appdev/guides/user-metrics.rst:43
 msgid "Next, the specific Metric must be defined in the code as an object:"
 msgstr ""
+"Successivamente, il Metric specifico deve essere definito nel codice come un "
+"oggetto:"
 
 #: ../../appdev/guides/user-metrics.rst:56
 msgid ""
@@ -1546,69 +1570,82 @@ msgid ""
 "\" when an event takes place by referencing the variables in the Metric "
 "object."
 msgstr ""
+"Ora che la metrica viene creata, possiamo aggiornare il \"format\" o \""
+"emptyFormat\" quando un evento avviene facendo riferimento alle variabili "
+"dell'oggetto Metrico."
 
 #: ../../appdev/guides/user-metrics.rst:66
 msgid ""
 "Here we assign a new value to the circleMetric string variable that’s inside "
 "the Metric object:"
 msgstr ""
+"Qui assegnamo un nuovo valore alla variabile di stringa circleMetric che è "
+"all'interno dell'oggetto Metric:"
 
 #: ../../appdev/guides/user-metrics.rst:68
 msgid "(Remember that circleMetric is the variable value assigned to format)"
-msgstr ""
+msgstr "(Ricorda che circleMetric è il valore variabile assegnato al formato)"
 
 #: ../../appdev/guides/user-metrics.rst:70
 msgid "Metric Id [dot] Variable Name [equals] New variable information"
-msgstr ""
+msgstr "Metric Id [punto] Nome variabile [uguale] Nuove informazioni variabili"
 
 #: ../../appdev/guides/user-metrics.rst:72
 msgid "``metric.circleMetric = \"New Metric Message\"``"
-msgstr ""
+msgstr "``metric.circleMetric = \"Nuovo messaggio metrico\"``"
 
 #: ../../appdev/guides/user-metrics.rst:74
 msgid "We then tell the lock screen to update the metric."
-msgstr ""
+msgstr "Diremo poi alla schermata di blocco per aggiornare la metrica."
 
 #: ../../appdev/guides/user-metrics.rst:76
 msgid ""
 "Metric ID [dot] update (specific amount to set if included in the format)"
 msgstr ""
+"Aggiornamento Metric ID [dot] (importo specifico da impostare se incluso nel "
+"formato)"
 
 #: ../../appdev/guides/user-metrics.rst:78
 msgid "``metric.update(0)``"
-msgstr ""
+msgstr "``metric.update(0)``"
 
 #: ../../appdev/guides/user-metrics.rst:80
 msgid ""
 "(Note: In this example, ``0`` is arbitrary since the metric value doesn't "
 "include a counter)"
 msgstr ""
+"(Nota: In questo esempio, ``0`` è arbitrario poiché il valore metrico non "
+"include un contatore)"
 
 #: ../../appdev/guides/user-metrics.rst:82
 msgid ""
 "We have now updated the metric for today. When the time rolls over to "
 "tomorrow, the metric will be reset to whatever is in ``emptyFormat``."
 msgstr ""
+"Ora abbiamo aggiornato la metrica per oggi. Quando il tempo passa a domani, "
+"la metrica sarà ripristinata a qualsiasi cosa sia in ``emptyFormat`."
 
 #: ../../appdev/guides/user-metrics.rst:84
 msgid "For most apps, this defaults to 0 counts for messages, calls, etc."
 msgstr ""
+"Per la maggior parte delle applicazioni, questo default a 0 conta per "
+"messaggi, chiamate, ecc."
 
 #: ../../appdev/guides/user-metrics.rst:87
 msgid "How do User Metrics work?"
-msgstr ""
+msgstr "Come funzionano le metriche degli utenti?"
 
 #: ../../appdev/guides/user-metrics.rst:89
 msgid "User Metrics are made up of two \"formats\":"
-msgstr ""
+msgstr "I metrici utente sono costituiti da due \"formati\":"
 
 #: ../../appdev/guides/user-metrics.rst:91
 msgid "metrics/messages for today (``format``)"
-msgstr ""
+msgstr "metriche/messaggio per oggi (``format``)"
 
 #: ../../appdev/guides/user-metrics.rst:92
 msgid "metrics/messages for tomorrow (``emptyFormat``)"
-msgstr ""
+msgstr "metriche/messaggio per domani (``emptyFormat``)"
 
 #: ../../appdev/guides/user-metrics.rst:94
 msgid ""
@@ -1616,14 +1653,17 @@ msgid ""
 "value has been stored in ``format``. In order to display a new value of "
 "``format`` the metric must be updated."
 msgstr ""
+"Il valore di ``emptyFormat`` è quello che visualizza sulla schermata di "
+"blocco quando nessun valore è stato memorizzato in ``format``. Per "
+"visualizzare un nuovo valore di ``format`` la metrica deve essere aggiornata."
 
 #: ../../appdev/guides/user-metrics.rst:96
 msgid "There are two options for updating the metric:"
-msgstr ""
+msgstr "Ci sono due opzioni per aggiornare la metrica:"
 
 #: ../../appdev/guides/user-metrics.rst:98
 msgid "Set the metric to a specific amount:"
-msgstr ""
+msgstr "Impostare la metrica a un importo specifico:"
 
 #: ../../appdev/guides/user-metrics.rst:100
 msgid ""
@@ -1632,21 +1672,28 @@ msgid ""
 "The counter value can be included in the ``format`` setting by using ``%1``. "
 "e.g. ``format: \"%1 buttons pressed today\"``"
 msgstr ""
+"``metricID.update(x)`` (dove x è un numero di tipo `doppio` da impostare per "
+"un controvalore). ``metricID`` è il ``id:`` specificato nella voce Metrica. "
+"Il controvalore può essere incluso nell'impostazione ``format`` utilizzando "
+"``%1``. ad esempio ``format: \"%1 pulsanti premuto oggi\"``"
 
 #: ../../appdev/guides/user-metrics.rst:102
 msgid "Increment the metric:"
-msgstr ""
+msgstr "Incremento della metrica:"
 
 #: ../../appdev/guides/user-metrics.rst:104
 msgid ""
 "``metricID.increment(x)`` (where x is the amount to add to the current "
 "counter)"
 msgstr ""
+"``metricID.increment(x)`` (dove x è la quantità da aggiungere al contatore "
+"corrente)"
 
 #: ../../appdev/guides/user-metrics.rst:106
 msgid ""
 "The metric will reset back to the value stored in ``emptyFormat`` each day."
 msgstr ""
+"La metrica ritornerà al valore memorizzato in ``emptyFormat`` ogni giorno."
 
 #: ../../appdev/guides/user-metrics.rst:108
 msgid ""
@@ -1657,16 +1704,24 @@ msgid ""
 "lib/usermetrics <https://github.com/ubports/libusermetrics/tree/xenial/doc/"
 "pages>`_)."
 msgstr ""
+"Le applicazioni fanno uso di metriche dell'utente impostando e aggiornando i "
+"\"formati\" ogni volta che un determinato evento avviene. ad esempio. Quando "
+"si preme inviare in Telegram, o quando si riceve una telefonata. "
+"L'applicazione può memorizzare i dati per la manipolazione, ma generalmente "
+"i dati vengono memorizzati nel sistema (`/var/lib/usermetrics "
+"<https://github.com/ubports/libusermetrics/tree/xenial/doc/pages>`_)."
 
 #: ../../appdev/guides/user-metrics.rst:111
 msgid ""
 "(See this `blog post <https://daker.me/2013/11/adding-usermetrics-to-your-"
 "app-on-ubuntu-touch.html>`_ for a simple example)"
 msgstr ""
+"(Vedi questo articolo<https://daker.me/2013/11/adding-usermetrics-to-your-"
+"app-on-ubuntu-touch.html>`_ per un semplice esempio)"
 
 #: ../../appdev/guides/user-metrics.rst:114
 msgid "Limitations and wonders"
-msgstr ""
+msgstr "Limitazioni e meraviglie"
 
 #: ../../appdev/guides/user-metrics.rst:115
 msgid ""
@@ -1676,6 +1731,12 @@ msgid ""
 "this file and rebooting will remove all stored metrics. Presumably, the db "
 "file could be edited instead of deleted."
 msgstr ""
+"Una volta che una metrica è registrata, rimane sulla schermata di blocco "
+"anche dopo che l'applicazione è stata disinstallata. Un file di database (db)"
+" viene memorizzato in `/var/lib/usermetrics`, che può essere eliminato da "
+"root (ma non con sudo). Cancellare questo file e riavviare rimuoverà tutte "
+"le metriche memorizzate. Presumibilmente, il file db potrebbe essere "
+"modificato invece di cancellato."
 
 #: ../../appdev/guides/user-metrics.rst:117
 msgid ""
@@ -1931,10 +1992,8 @@ msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
 msgstr "`Pacchetti Click <https://click.readthedocs.io/en/latest/>`_ CLI"
 
 #: ../../appdev/index.rst:75
-#, fuzzy
 msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
-msgstr ""
-"`Leggi la documentazione <https://docs.ubuntu.com/phone/en/platform/>`__"
+msgstr "Icone di Suru <http://docs.ubports.com/projects/icons/en/latest/>`__"
 
 #: ../../appdev/index.rst:77
 msgid ""
@@ -1970,7 +2029,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:109
 msgid "Preinstalled apps"
-msgstr ""
+msgstr "Applicazioni preinstallate"
 
 #: ../../appdev/index.rst:111
 msgid ""

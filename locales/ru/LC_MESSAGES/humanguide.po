@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-05 00:57+0100\n"
-"PO-Revision-Date: 2022-01-18 23:05+0000\n"
+"PO-Revision-Date: 2023-03-04 18:52+0000\n"
 "Last-Translator: Eugene Markoff <uralhistory@gmail.com>\n"
 "Language-Team: Russian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-humanguide/ru/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.3\n"
 
 #: ../../humanguide/app-layout/app-main-view.rst:2
@@ -468,10 +468,10 @@ msgid ""
 "get-started/design-philosophy>`__ started by Canonical and `Samuel Hewitt "
 "<https://samuelhewitt.com>`__."
 msgstr ""
-"Вся система и приложения выполнены по правилам `Suru design principles "
+"Вся система и приложения выполнены по правилам `принципам дизайна Suru "
 "<http://web.archive.org/web/20191223082720/https://docs.ubuntu.com/phone/en/"
 "apps/design/get-started/design-philosophy>`__, авторы которых - компания "
-"Canonical и`Samuel Hewitt<https://samuelhewitt.com>`__."
+"Canonical и`Samuel Hewitt <https://samuelhewitt.com>`__."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:7
 msgid "Design Philosophy and Suru Meaning"
@@ -1397,22 +1397,17 @@ msgid "Human interface guidelines"
 msgstr "Рекомендации по интерфейсу пользователя"
 
 #: ../../humanguide/index.rst:4
-#, fuzzy
-#| msgid ""
-#| "Ubuntu Touch follows a clean, beautiful, modern and (above all) "
-#| "convergent design. We aim to keep developing the design started by "
-#| "Canonical."
 msgid ""
 "Ubuntu Touch follows a modern and convergent design philosophy called Suru. "
 "We aim to keep developing the design started by Canonical."
 msgstr ""
-"Ubuntu Touch обладает современным, красивым и (прежде всего) конвергентным "
-"дизайном. Мы продолжаем работать над идеями и концепциями, предложенными "
-"фирмой Canonical."
+"Ubuntu Touch основана на современных и конвергентных дизайнерских идеях и "
+"даже целой философии под названием Suru. Мы продолжаем работать над идеями и "
+"концепциями, заложенными еще фирмой Canonical."
 
 #: ../../humanguide/index.rst:11
 msgid "Suru meaning"
-msgstr ""
+msgstr "Что такое \"Suru\""
 
 #: ../../humanguide/index.rst:13
 msgid ""
@@ -1422,26 +1417,25 @@ msgid ""
 "freedom trust and collaboration. This integral belief has been translated "
 "into the design philosophy called Suru."
 msgstr ""
+"В сообществе UBports считается, что каждый должен иметь доступ к бесплатному "
+"и надежному программному обеспечению, которым может делиться и дорабатывать "
+"любой пользователь. Это проложило путь, позволивший сообществу расти и "
+"процветать благодаря свободе, доверию и сотрудничеству. Эти принципы нашли "
+"отражение в философии дизайна под названием Suru."
 
 #: ../../humanguide/index.rst:15
-#, fuzzy
-#| msgid "Suru alludes to Japanese culture."
 msgid "Suru items from the Ubuntu values alluding to Japanese culture."
-msgstr "Suru ведет своё происхождение из японской культуры."
+msgstr "Suru основана на ценностях Ubuntu и мотивов японской культуры."
 
 #: ../../humanguide/index.rst:17
-#, fuzzy
-#| msgid "The design of Suru is inspired by origami."
 msgid ""
 "The design of Suru is inspired by origami, because it gives us a solid and "
 "tangible foundation."
-msgstr "В элементах оформления Suru угадываются идеи оригами."
+msgstr ""
+"В элементах оформления Suru угадываются идеи оригами.Это даёт нам прочную и "
+"осязаемую основу."
 
 #: ../../humanguide/index.rst:19
-#, fuzzy
-#| msgid ""
-#| "Paper can be used in two and three dimensional forms, because it is "
-#| "transferable and diverse."
 msgid ""
 "Paper can be used in all areas of the design in two and three dimensional "
 "forms, because it is transferable and diverse."
@@ -1450,17 +1444,10 @@ msgstr ""
 "как объемные трехмерные, так и двухмерные."
 
 #: ../../humanguide/index.rst:22
-#, fuzzy
-#| msgid "Translations"
 msgid "Translated in design"
-msgstr "Перевод на другие языки"
+msgstr "Перевод в дизайн"
 
 #: ../../humanguide/index.rst:24
-#, fuzzy
-#| msgid ""
-#| "Suru brings a precise yet organic structure to the Ubuntu Touch "
-#| "interface. The sharp lines and varying levels of transparency evoke the "
-#| "edges and texture of paper."
 msgid ""
 "Suru brings a precise yet organic structure to the Ubuntu Touch interface. "
 "The sharp lines and varying levels of transparency evoke the edges and "
@@ -1469,7 +1456,8 @@ msgid ""
 msgstr ""
 "Suru дает точную и органичную структуру интерфейсу Ubuntu Touch. Четкие "
 "линии и различный уровень прозрачности напоминают острую кромку листов "
-"бумаги и их текстуру."
+"бумаги и их текстуру. Все элементы размещены специально так, чтобы "
+"пользователю было легко их идентифицировать и использовать."
 
 #: ../../humanguide/index.rst:26
 msgid ""
@@ -1478,22 +1466,28 @@ msgid ""
 "layout size increases, the object can become progressively larger, allowing "
 "more of the information and functionality to be exposed at any one time."
 msgstr ""
+"При использовании небольшого макета информация и функциональные возможности "
+"свернуты в компактный объект, который можно развернуть, чтобы открыть "
+"различные области. По мере увеличения размера макета объект может "
+"становиться все больше, что позволяет отображать больше информации и функций "
+"в любой момент времени."
 
 #: ../../humanguide/index.rst:29
 msgid "Origami"
-msgstr ""
+msgstr "Оригами"
 
 #: ../../humanguide/index.rst:33
 msgid ""
 "Origami has long been associated with good fortune and represents the visual "
 "style for Ubuntu Touch. Origami folds are used to define the design."
 msgstr ""
+"Оригами долгое время ассоциировалось с удачей и представляет собой "
+"визуальный стиль для Ubuntu Touch. Складки оригами используются для "
+"определения дизайна."
 
 #: ../../humanguide/index.rst:36
-#, fuzzy
-#| msgid "Simple"
 msgid "Simple details"
-msgstr "Простота"
+msgstr "Простота в деталях"
 
 #: ../../humanguide/index.rst:40
 msgid ""
@@ -1501,10 +1495,13 @@ msgid ""
 "quality, and a neatness and clarity that helps the user find things quickly "
 "and use them intuitively."
 msgstr ""
+"Что наиболее важно, так это то, что на экране устройства используется "
+"естественное оформление, аккуратность и четкость. А это помогает "
+"пользователю быстро находить нужные вещи и использовать их интуитивно."
 
 #: ../../humanguide/index.rst:43
 msgid "Using subtle grids for accuracy"
-msgstr ""
+msgstr "Использование сетки из тонких линий (для точности)"
 
 #: ../../humanguide/index.rst:45
 msgid ""
@@ -1513,14 +1510,18 @@ msgid ""
 "as logos, icons or copylines. This helps maintain focus on the main image or "
 "graphic element."
 msgstr ""
+"Складки оригами создают простые графические детали, которые позволяют "
+"дизайнерам создавать тонкую сетку для размещения элементов и деталей "
+"оформления, таких как логотипы, значки или копии. Это помогает удерживать "
+"фокус на основном изображении или графическом элементе."
 
 #: ../../humanguide/index.rst:50
 msgid "Suru mood board"
-msgstr ""
+msgstr "Доска настроения"
 
 #: ../../humanguide/index.rst:53
 msgid "Influences and inspiration"
-msgstr ""
+msgstr "Влияния и вдохновение"
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:2
 msgid "Accessibility"

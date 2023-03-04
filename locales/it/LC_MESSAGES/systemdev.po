@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-05 00:57+0100\n"
-"PO-Revision-Date: 2023-02-10 15:18+0000\n"
+"PO-Revision-Date: 2023-03-04 18:52+0000\n"
 "Last-Translator: Alberto <ortodipace@proton.me>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-systemdev/it/>\n"
@@ -93,6 +93,12 @@ msgid ""
 "see them printed in real-time as you operate on the device, you can run this "
 "command:"
 msgstr ""
+"Se non siete sicuri se il calendario è sincronizzato, o se l'operazione ha "
+"successo, ``sync-monitor`` è il componente che deve essere esaminato. Questo "
+"servizio dovrebbe sempre essere in esecuzione in background, e i suoi "
+"registri possono essere trovati in ``~/.cache/upstart/sync-monitor.log``. "
+"Per visualizzarli stampati in tempo reale mentre si opera sul dispositivo, è "
+"possibile eseguire questo comando:"
 
 #: ../../systemdev/calendars.rst:27
 msgid ""
@@ -100,10 +106,13 @@ msgid ""
 "accounts are recognised, and whether a synchronisation is scheduled, "
 "happening, and completing successfully."
 msgstr ""
+"Questi registri dovrebbero essere sufficienti per darvi un'idea se i vostri "
+"conti del calendario sono riconosciuti, e se una sincronizzazione è "
+"programmata, accade, e completa con successo."
 
 #: ../../systemdev/calendars.rst:31
 msgid "Calendar data synchronisation issues"
-msgstr ""
+msgstr "Problemi di sincronizzazione dei dati del calendario"
 
 #: ../../systemdev/calendars.rst:33
 msgid ""
@@ -113,12 +122,19 @@ msgid ""
 "possible to run ``syncevolution`` in debug mode. To do so, kill any existing "
 "processes:"
 msgstr ""
+"Segui questi passaggi una volta che sei sicuro che una sincronizzazione del "
+"tuo account è almeno tentata, e vuoi indagare su un guasto di "
+"sincronizzazione o problemi con elementi mancanti o duplicati. Sul "
+"dispositivo, è possibile eseguire ``syncevolution` in modalità debug. Per "
+"farlo, terminare qualsiasi processo esistente:"
 
 #: ../../systemdev/calendars.rst:39
 msgid ""
 "Then, start the ``syncevolution`` process with the proper environment "
 "variable:"
 msgstr ""
+"Quindi, avviare il processo ``syncevolution`` con la variabile ambiente "
+"corretta:"
 
 #: ../../systemdev/calendars.rst:45
 msgid ""
@@ -127,6 +143,10 @@ msgid ""
 "only available if your device is connected to the internet): all the logs "
 "will appear in the terminal."
 msgstr ""
+"A questo punto, aprire l'App Calendar (se non era già aperta) e attivare "
+"manualmente una sincronizzazione (nota che l'azione Synchronisation è "
+"disponibile solo se il dispositivo è collegato a Internet): tutti i registri "
+"appariranno nel terminale."
 
 #: ../../systemdev/calendars.rst:47
 msgid ""
@@ -139,6 +159,15 @@ msgid ""
 "to old accounts which have been since deleted. To find out what accounts are "
 "still valid, you can invoke the ``account-console`` tool like this:"
 msgstr ""
+"In alcuni casi, l'output da ``syncevolution`` potrebbe non essere "
+"sufficiente: ad esempio, i dati HTTP grezzi di solito non sono stampati. Se "
+"avrai bisogno di vederli, allora dovrai modificare anche un file di "
+"configurazione. I file di configurazione di ``syncevolution`` si trovano "
+"sotto ``~/.config/syncevolution/``, in una sottodirectory il cui nome prende "
+"il modulo ``<provider-name>- No.<account-id>``. Ci potrebbero essere anche "
+"directory stanti, riferendosi a conti vecchi che sono stati cancellati da "
+"allora. Per scoprire quali account sono ancora validi, è possibile invocare "
+"il ``account-console``strumento come questo:"
 
 #: ../../systemdev/calendars.rst:53
 msgid ""
@@ -148,16 +177,23 @@ msgid ""
 "``loglevel`` variable to a higher value (``11`` seems enough to print all "
 "the HTTP traffic):"
 msgstr ""
+"Questo stamperà l'elenco dei conti validi correnti. Una volta capito qual è "
+"l'account che ti interessa, apri il file ``~/.config/syncevolution/<account>/"
+"peers/target-config/config.ini`` e imposta la variabile ``loglevel`` a un "
+"valore superiore (``11`` sembra sufficiente per stampare tutto il traffico "
+"HTTP):"
 
 #: ../../systemdev/calendars.rst:65
 msgid ""
 "Note that in order for these changes to take effect, you'll need to restart "
 "the ``syncevolution`` process again, as explained above."
 msgstr ""
+"Si noti che in modo che queste modifiche abbiano effetto, dovrai riavviare "
+"nuovamente il processo ``syncevolution``, come spiegato sopra."
 
 #: ../../systemdev/guides.rst:2
 msgid "System Software guides"
-msgstr ""
+msgstr "Guide software di sistema"
 
 #: ../../systemdev/guides.rst:4
 msgid ""
@@ -166,6 +202,10 @@ msgid ""
 "reference on everything you will come across during development, but they "
 "are a great starting point."
 msgstr ""
+"Queste guide vi daranno istruzioni generali sulla costruzione e testare le "
+"proprie modifiche al software di sistema Ubuntu Touch. Non sono un "
+"riferimento esaustivo su tutto quello che incontrerete durante lo sviluppo, "
+"ma sono un ottimo punto di partenza."
 
 #: ../../systemdev/guides.rst:8
 msgid ""
@@ -173,6 +213,10 @@ msgid ""
 "contact us for help via `the UBports Forum <https://forums.ubports.com>`_ or "
 "your preferred communication medium."
 msgstr ""
+"Se si rimane bloccati in qualsiasi momento durante l'esecuzione di questa "
+"documentazione, si prega di contattarci per l'aiuto tramite `il forum "
+"UBports <https: forums.ubports.com=\"\">`_ o il mezzo di comunicazione "
+"preferito."
 
 #: ../../systemdev/index.rst:2
 msgid "System software development"
@@ -202,7 +246,7 @@ msgstr ""
 
 #: ../../systemdev/kernel-hal.rst:2
 msgid "Kernel and hardware abstraction"
-msgstr ""
+msgstr "Astrazione del kernel e dell'hardware"
 
 #: ../../systemdev/kernel-hal.rst:4
 msgid ""
@@ -210,18 +254,22 @@ msgid ""
 "hardware abstraction for UT devices. This document is useful if you would "
 "like to work on:"
 msgstr ""
+"Questa pagina documenta le risorse e i processi per costruire il kernel e "
+"l'astrazione hardware per i dispositivi UT. Questo documento è utile se si "
+"desidera lavorare su:"
 
 #: ../../systemdev/kernel-hal.rst:6
 msgid "A hardware related issue (camera, sensors, radios)"
-msgstr ""
+msgstr "Un problema relativo all'hardware (camera, sensori, radio)"
 
 #: ../../systemdev/kernel-hal.rst:7
 msgid "A Linux kernel related issue"
-msgstr ""
+msgstr "Un problema relativo al kernel Linux"
 
 #: ../../systemdev/kernel-hal.rst:8
 msgid "An issue related to the system-image upgrade process"
 msgstr ""
+"Un problema relativo al processo di aggiornamento dell'immagine del sistema"
 
 #: ../../systemdev/kernel-hal.rst:10
 msgid ""
@@ -229,24 +277,29 @@ msgid ""
 "preinstalled-apps` or :doc:`System software <../systemdev/index>`. See the "
 "respective documentation for each."
 msgstr ""
+"Questo documento non è utile se si desidera modificare :doc: `../contribute/"
+"preinstalled-apps` oppure :doc: `System software <../systemdev/index>`. "
+"Vedere la relativa documentazione per ciascuno."
 
 #: ../../systemdev/kernel-hal.rst:14
 msgid ""
 "There are a few different groups of Ubuntu Touch devices with respect to how "
 "the kernel and hardware abstraction is implemented:"
 msgstr ""
+"Ci sono alcuni diversi gruppi di dispositivi Ubuntu Touch rispetto a come "
+"viene implementata l'astrazione del kernel e dell'hardware:"
 
 #: ../../systemdev/kernel-hal.rst:16 ../../systemdev/kernel-hal.rst:29
 msgid "Android 5.1 based ports"
-msgstr ""
+msgstr "Trasporto basato su Android 5.1"
 
 #: ../../systemdev/kernel-hal.rst:17 ../../systemdev/kernel-hal.rst:64
 msgid "Halium based ports"
-msgstr ""
+msgstr "Trasporto basato su Halium"
 
 #: ../../systemdev/kernel-hal.rst:18
 msgid "Linux kernel"
-msgstr ""
+msgstr "Linux kernel"
 
 #: ../../systemdev/kernel-hal.rst:31
 msgid ""
@@ -256,6 +309,12 @@ msgid ""
 "heavily modified for the specific hardware used in that device. These forks "
 "are also based off quite old Linux kernel versions."
 msgstr ""
+"I trasporti basati su Android 5.1 di Ubuntu Touch consistono dal kernel "
+"Linux per questo dispositivo più un sistema Android minimale che viene "
+"utilizzato per abilitare tutto l'hardware. Ogni dispositivo ha la sua "
+"forchetta (fork) del kernel Linux. Sono tutti fortemente modificati per "
+"l'hardware specifico utilizzato in quel dispositivo. Queste forchette si "
+"basano anche sulle vecchie versioni del kernel Linux."
 
 #: ../../systemdev/kernel-hal.rst:33
 msgid ""
@@ -266,81 +325,95 @@ msgid ""
 "have kernel sources, but the \"Android device tree\" is not publicly "
 "available. The manufacturers of these devices provided binary builds instead."
 msgstr ""
+"Per alcuni dispositivi l'integrazione continua (CI) è stata creata per "
+"costruire sia il Kernel che il sistema Android. Altri dispositivi devono "
+"essere costruiti manualmente dai loro repository. Per un terzo gruppo di "
+"dispositivi, purtroppo, non abbiamo il codice sorgente completo disponibile. "
+"I dispositivi Bq e Meizu hanno sorgenti del kernel, ma l' \"albero "
+"dispositivo Android\" non è pubblicamente disponibile. I produttori di "
+"questi dispositivi fornivano invece delle costruzioni binarie."
 
 #: ../../systemdev/kernel-hal.rst:37
 msgid "With CI"
-msgstr ""
+msgstr "Con CI"
 
 #: ../../systemdev/kernel-hal.rst:36
 msgid "Nexus 5 (hammerhead)"
-msgstr ""
+msgstr "Nexus 5 (hammerhead)"
 
 #: ../../systemdev/kernel-hal.rst:37
 msgid "OnePlus One (bacon)"
-msgstr ""
+msgstr "OnePlus One (bacon)"
 
 #: ../../systemdev/kernel-hal.rst:38
 msgid "Fairphone 2 (FP2)"
-msgstr ""
+msgstr "Fairphone 2 (FP2)"
 
 #: ../../systemdev/kernel-hal.rst:40
 msgid "Manual builds"
-msgstr ""
+msgstr "Costruzioni manuali"
 
 #: ../../systemdev/kernel-hal.rst:40
 msgid "Nexus 4 (mako)"
-msgstr ""
+msgstr "Nexus 4 (mako)"
 
 #: ../../systemdev/kernel-hal.rst:41
 msgid "Nexus 7 2013 Wifi (flo)"
-msgstr ""
+msgstr "Nexus 7 2013 Wifi (flo)"
 
 #: ../../systemdev/kernel-hal.rst:49
 msgid "(Partial) Binary builds"
-msgstr ""
+msgstr "(Parziali) Costruzioni binarie"
 
 #: ../../systemdev/kernel-hal.rst:43
 msgid ""
 "Bq Aquaris E4.5 (`krillin <https://github.com/ubports/kernel_krillin>`_)"
 msgstr ""
+"Bq Aquaris E4.5 (`krillin <https:// github.com/ubports/kernel_krillin>`_)"
 
 #: ../../systemdev/kernel-hal.rst:44
 msgid ""
 "Bq Aquaris E5 (`vegetahd <https://github.com/ubports/kernel_vegetahd>`_)"
 msgstr ""
+"Bq Aquaris E5 (`vegetahd <https://github.com/ubports/kernel_vegetahd>`_)"
 
 #: ../../systemdev/kernel-hal.rst:45
 msgid ""
 "Bq Aquaris M10 HD (`cooler <https://github.com/ubports/kernel_bq_m10>`_)"
 msgstr ""
+"Bq Aquaris M10 HD (`cooler <https://github.com/ubports/kernel_bq_m10>`_)"
 
 #: ../../systemdev/kernel-hal.rst:46
 msgid "Bq Aquaris M10 FHD (frieza)"
-msgstr ""
+msgstr "Bq Aquaris M10 FHD (frieza)"
 
 #: ../../systemdev/kernel-hal.rst:47
 msgid "Meizu MX4 (`arale <https://github.com/ubports/kernel_arale>`_)"
-msgstr ""
+msgstr "Meizu MX4 (`arale <https://github.com/ubports/kernel_arale>`_)"
 
 #: ../../systemdev/kernel-hal.rst:48
 msgid "Meizu Pro 5 (`turbo <https://github.com/ubports/kernel_turbo>`_)"
-msgstr ""
+msgstr "Meizu Pro 5 (`turbo <https://github.com/ubports/kernel_turbo>`_)"
 
 #: ../../systemdev/kernel-hal.rst:49
 msgid "Nexus 7 2013 GSM (deb)"
-msgstr ""
+msgstr "Nexus 7 2013 GSM (deb)"
 
 #: ../../systemdev/kernel-hal.rst:51
 msgid ""
 "Detailed steps for the three CI enabled devices can be found under  :doc:"
 "`HAL for Nexus 5, OnePlus One, and Fairphone 2 <ubp-5.1>`."
 msgstr ""
+"I passaggi dettagliati per i tre dispositivi abilitati CI possono essere "
+"trovati sotto:doc: `HAL per Nexus 5, OnePlus One e Fairphone 2 <ubp-5.1>`."
 
 #: ../../systemdev/kernel-hal.rst:53
 msgid ""
 "For the Nexus 7 2013 Wifi (flo) head  over to the `Community Ports "
 "repository for flo <https://gitlab.com/ubports/community-ports/flo>`_."
 msgstr ""
+"Per il Nexus 7 2013 Wifi (flo) dirigersi verso la `Comunità Ports repository "
+"per flo <https://gitlab.com/ubports/community-ports/flo>`_."
 
 #: ../../systemdev/kernel-hal.rst:55
 msgid ""
@@ -348,30 +421,38 @@ msgid ""
 "Unfortunately those repositories have disappeared over time. So this build "
 "also falls into the group of prebuilt binaries."
 msgstr ""
+"Il trasporto per il Nexus 7 2013 GSM (deb) è stato creato da un membro della "
+"comunità. Purtroppo quei depositi (repositories) sono scomparsi nel tempo. "
+"Quindi questa build rientra anche nel gruppo dei binari precostruiti."
 
 #: ../../systemdev/kernel-hal.rst:57
 msgid "Todo"
-msgstr ""
+msgstr "Dafare"
 
 #: ../../systemdev/kernel-hal.rst:58
 msgid "Document the process for Nexus 4 (mako)"
-msgstr ""
+msgstr "Documentare il processo per Nexus 4 (mako)"
 
 #: ../../systemdev/kernel-hal.rst:66
 msgid ""
 "Newer ports to Android devices are based on `Halium <https://docs.halium."
 "org>`_. In some aspects Halium is similar to the 5.1 based ports:"
 msgstr ""
+"I trasporti più recenti ai dispositivi Android si basano su `Halium "
+"<https://docs.halium.org`_. In alcuni aspetti Halium è simile ai trasporti "
+"basati 5.1:"
 
 #: ../../systemdev/kernel-hal.rst:68
 msgid ""
 "It also uses the device specific fork of the Linux kernel provided by the "
 "manufacturer."
 msgstr ""
+"Utilizza anche la fork specifica del dispositivo del kernel Linux fornita "
+"dal produttore."
 
 #: ../../systemdev/kernel-hal.rst:69
 msgid "It also uses a minimal Android system to enable some hardware."
-msgstr ""
+msgstr "Utilizza anche un sistema Android minimo per abilitare alcuni hardware."
 
 #: ../../systemdev/kernel-hal.rst:71
 msgid ""
@@ -380,6 +461,10 @@ msgid ""
 "different flavours of Linux systems to Android devices. Halium ports are "
 "also based on newer Android versions 7.1 and above."
 msgstr ""
+"Tuttavia, Halium permette un modo più generico il trasporto a dispositivi "
+"Android. Questo consente di condividere il lavoro tra più progetti che "
+"portano diversi sapori di sistemi Linux a dispositivi Android. I trasporti "
+"Halium si basano anche sulle versioni Android più recenti 7.1 e superiori."
 
 #: ../../systemdev/kernel-hal.rst:73
 msgid ""
@@ -388,6 +473,11 @@ msgid ""
 "devices.ubuntu-touch.io>`_, expect those explicitly mentioned above as 5.1, "
 "or below as Linux based ports."
 msgstr ""
+"Alcuni esempi di trasporti Halium sono quelli per Sony Xperia X e Oneplus 3. "
+"Fondamentalmente tutti i dispositivi che sono elencati su `devices.ubuntu-"
+"touch.io <https://devices.ubuntu-touch.io>`_, aspettatevi che quelli "
+"esplicitamente menzionati sopra come 5.1, o sotto come trasporti basati su "
+"Linux."
 
 #: ../../systemdev/kernel-hal.rst:75
 msgid ""
@@ -395,36 +485,42 @@ msgid ""
 "Further details can be found under :doc:`Halium porting <../porting/"
 "introduction/index>`"
 msgstr ""
+"Tutti i nuovi trasporti di UT a dispositivi Android dovrebbero seguire il "
+"processo Halium. Ulteriori dettagli possono essere trovati sotto:doc: `"
+"Halium porting <../porting/introduction/index>`"
 
 #: ../../systemdev/kernel-hal.rst:78
 msgid "Linux based ports"
-msgstr ""
+msgstr "Trasporti basati su Linux"
 
 #: ../../systemdev/kernel-hal.rst:80
 msgid ""
 "Linux based port refers to devices where a Linux kernel is used without any "
 "Android parts. The following devices are in this group:"
 msgstr ""
+"Il trasporto basato su Linux si riferisce ai dispositivi in cui viene "
+"utilizzato un kernel Linux senza parti Android. I seguenti dispositivi sono "
+"in questo gruppo:"
 
 #: ../../systemdev/kernel-hal.rst:82
 msgid "`Desktop PC (x86) <https://devices.ubuntu-touch.io/device/x86/>`_"
-msgstr ""
+msgstr "`Desktop PC (x86) <https://devices.ubuntu-touch.io/device/x86/>`_"
 
 #: ../../systemdev/kernel-hal.rst:83
 msgid "Librem 5 (librem5)"
-msgstr ""
+msgstr "Librem 5 (librem5)"
 
 #: ../../systemdev/kernel-hal.rst:84
 msgid "Pinebook (pinebook)"
-msgstr ""
+msgstr "Pinebook (pinebook)"
 
 #: ../../systemdev/kernel-hal.rst:85
 msgid ":doc:`Pinephone (pinephone) <kernel-pinephone>`"
-msgstr ""
+msgstr ":doc:`Pinephone (pinephone) <kernel-pinephone>`"
 
 #: ../../systemdev/kernel-hal.rst:86
 msgid ":doc:`Pinetab (pinetab) <kernel-pinephone>`"
-msgstr ""
+msgstr ":doc:`Pinetab (pinetab) <kernel-pinephone>`"
 
 #: ../../systemdev/kernel-hal.rst:87
 msgid ""
@@ -432,10 +528,13 @@ msgid ""
 "raspberrypi>`_ (see also this `blog post <https://ubports.com/blog/ubports-"
 "blog-1/post/raspberry-pi-266>`_)"
 msgstr ""
+"`Raspberry Pi (rpi) <https://gitlab.com/ubports/community-ports/raspberrypi>`"
+"_ (vedi anche questo `blog post <https://ubports.com/blog/ubports-blog-1/"
+"post/raspberry-pi-266>`_)"
 
 #: ../../systemdev/kernel-pinephone.rst:2
 msgid "PinePhone and PineTab kernel"
-msgstr ""
+msgstr "PinePhone e PineTab kernel"
 
 #: ../../systemdev/kernel-pinephone.rst:4
 msgid ""
@@ -443,10 +542,13 @@ msgid ""
 "kernel. First the recovery system is explained. Then the actual building and "
 "installation. At the bottom there are some references."
 msgstr ""
+"Questo documento descrive come costruire e installare il kernel PinePhone o "
+"PineTab. Prima si spiega il sistema di recupero. Poi l'attuale costruzione e "
+"l'installazione. In fondo ci sono alcuni riferimenti."
 
 #: ../../systemdev/kernel-pinephone.rst:7
 msgid "Recovery"
-msgstr ""
+msgstr "Recupero (recovery)"
 
 #: ../../systemdev/kernel-pinephone.rst:9
 msgid ""
@@ -454,6 +556,10 @@ msgid ""
 "jumpdrive>`_ boot mode based on \"jumpdrive\". To get into the recovery "
 "press and hold the power and volume-up buttons until the led turns on."
 msgstr ""
+"L'immagine Ubuntu Touch contiene un `recupero <https:// github.com/ubports/"
+"jumpdrive >`_ modalità di avvio basato su \"jumpdrive\". Per entrare nella "
+"stampa di recupero e tenere i pulsanti di potenza e volume-up fino a quando "
+"il led si accende."
 
 #: ../../systemdev/kernel-pinephone.rst:11
 msgid ""
@@ -461,10 +567,13 @@ msgid ""
 "telnet server. When you connect the PinePhone to your desktop via USB, you "
 "will see the rndis device show up in your desktop's ``dmesg``::"
 msgstr ""
+"Il recupero presenta il PinePhone come dispositivo di rete su USB ed esegue "
+"un server telnet. Quando si collega il PinePhone al desktop tramite USB, si "
+"vedrà il dispositivo rndis apparire nel ``dmesg`` del desktop::"
 
 #: ../../systemdev/kernel-pinephone.rst:19
 msgid "You can log in to the recovery system with ``telnet 172.16.42.1``."
-msgstr ""
+msgstr "È possibile accedere al sistema di recupero con ``telnet 172.16.42.1``."
 
 #: ../../systemdev/kernel-pinephone.rst:21
 msgid ""
@@ -472,11 +581,14 @@ msgid ""
 "you have already installed Ubuntu Touch on your microSD card you will see "
 "something like this in your desktop's ``dmesg``::"
 msgstr ""
+"Il recupero espone anche l'eMMC e la scheda microSD su USB. Supponendo di "
+"aver già installato Ubuntu Touch sulla vostra scheda microSD vedrete "
+"qualcosa come questo nel desktop ``dmesg``::"
 
 #: ../../systemdev/kernel-pinephone.rst:35
 msgid ""
 "The eMMC with jumpdrive contains two partitions: pmOS_boot and pmOS_root."
-msgstr ""
+msgstr "L'eMMC con jumpdrive contiene due partizioni: pmOS_boot e pmOS_root."
 
 #: ../../systemdev/kernel-pinephone.rst:37
 msgid ""
@@ -488,10 +600,17 @@ msgid ""
 "``config-5.6.0-pine64`` ``dtb`` ``initrd.img`` ``modules/`` ``System."
 "map-5.6.0-pine64`` ``vmlinuz``."
 msgstr ""
+"La scheda microSD con Ubuntu Touch contiene 10 partizioni: loader, scr, "
+"persist, boot_a, boot_b, recovery_a, recovery_b, cache, sistema e userdata. "
+"Per aggiornare il kernel si desidera montare boot_a. Controllare quale "
+"dispositivo è la scheda SD nel sistema operativo e montare boot_a. "
+"Nell'esempio sopra questo è sdc4. All'interno di quella partizione vedrai il "
+"kernel vmlinuz e i relativi file:``config-5.6.0-pine64`` ``dtb`` "
+"``initrd.img`` ``modules/`` ``System.map-5.6.0-pine64`` ``vmlinuz``."
 
 #: ../../systemdev/kernel-pinephone.rst:40
 msgid "Building the kernel"
-msgstr ""
+msgstr "Costruire il kernel"
 
 #: ../../systemdev/kernel-pinephone.rst:42
 msgid ""
@@ -499,16 +618,21 @@ msgid ""
 "linux/-/tree/pine64-kernel-ubports>`_, configure and build the kernel, run "
 "the following::"
 msgstr ""
+"Per installare dipendenze, ottenere il `codice sorgente <https://gitlab.com/"
+"pine64-org/linux/-/tree/pine64-kernel-ubports>`_,configurare e costruire il "
+"kernel, eseguire le seguenti operazioni::"
 
 #: ../../systemdev/kernel-pinephone.rst:51
 msgid "Install the kernel"
-msgstr ""
+msgstr "Installare il kernel"
 
 #: ../../systemdev/kernel-pinephone.rst:53
 msgid ""
 "Boot into recovery and mount boot_a. Make a backup if needed. Then copy over "
 "your newly built kernel and if needed modules::"
 msgstr ""
+"Riavviare in recupero e montare boot_a. Fai un backup se necessario. Quindi "
+"copiare sul vostro kernel di nuova costruzione e se necessario moduli::"
 
 #: ../../systemdev/kernel-pinephone.rst:61
 msgid ""
@@ -517,6 +641,10 @@ msgid ""
 "has been successfully updated by checking the build date with ``uname -a`` "
 "on the device."
 msgstr ""
+"Successivamente essere sicuri di smontare la partizione così è scritta in "
+"modo pulito. Ora puoi riavviare il PinePhone. Una volta avviato, è possibile "
+"verificare che il kernel sia stato aggiornato correttamente controllando la "
+"data di compilazione con ``uname -a`` sul dispositivo."
 
 #: ../../systemdev/kernel-pinephone.rst:64
 #: ../../systemdev/mms-infrastructure.rst:53
@@ -529,18 +657,26 @@ msgid ""
 "info, pointers to other PinePhone OS projects, HW revisions, serial UART "
 "over headphone jack (also in their store), spec sheets, known HW issues, etc"
 msgstr ""
+"`Pine64 wiki<https://wiki.pine64.org/index.php/PinePhone>`_ ha informazioni "
+"generali HW, puntatori ad altri progetti di PinePhone OS, revisioni HW, UART "
+"seriale su jack per cuffie (anche nel loro negozio), fogli spec, problemi HW "
+"conosciuti, ecc"
 
 #: ../../systemdev/kernel-pinephone.rst:67
 msgid ""
 "`Main UBports repository <https://gitlab.com/ubports/community-ports/"
 "pinephone>`_ has instructions for how to install UT images on the PinePhone"
 msgstr ""
+"`Main UBports repository <https://gitlab.com/ubports/community-ports/"
+"pinephone>`_ ha istruzioni per come installare immagini UT sul PinePhone"
 
 #: ../../systemdev/kernel-pinephone.rst:68
 msgid ""
 "`UBPorts issue tracker <https://gitlab.com/ubports/community-ports/"
 "pinephone/-/issues>`_"
 msgstr ""
+"`UBPorts tracciatore problemi(issue tracker) <https://gitlab.com/ubports/"
+"community-ports/pinephone/-/issues>`_"
 
 #: ../../systemdev/kernel-pinephone.rst:69
 msgid ""
@@ -548,6 +684,9 @@ msgid ""
 "fid=120>`_ is where many other communities gather that work with the "
 "PinePhone"
 msgstr ""
+"`PinePhone forum da Pine64 <https://forum.pine64.org/"
+"forumdisplay.php?fid=120>`_ è dove molte altre comunità si riuniscono che "
+"lavorano con il PinePhone"
 
 #: ../../systemdev/kernel-pinephone.rst:70
 msgid ""
@@ -556,6 +695,10 @@ msgid ""
 "Allwinner devices including the PinePhone takes place. Note their `build "
 "instructions <https://linux-sunxi.org/Mainline_Kernel_Howto>`_."
 msgstr ""
+"`comunità sunxi <https: linux-sunxi.org=\"\">`_ è dove gran parte dello "
+"sforzo principale <https:// linux-sunxi.org/Linux_mainlining_effort>`_ per i "
+"dispositivi Allwinner compreso il PinePhone ha luogo. Notare le istruzioni `"
+"build <https: linux-sunxi.org/Mainline_Kernel_Howto>`_."
 
 #: ../../systemdev/kernel-pinephone.rst:71
 msgid ""
