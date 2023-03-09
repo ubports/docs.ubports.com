@@ -14,7 +14,8 @@ You can catch output directly from the ``adb exec-out`` command and forward it t
 ``timeout`` above is used to kill the process in a proper manner on the Ubuntu Touch device (120 seconds here).
 (Otherwise the process continues even if killed on the computer.)
 Reduce or increase the number of frames per second with``--cap-interval`` (1 = 60fps, 2=30fps, …)
-and the size of frames ``384 640`` means a width of 384 px and a height of 640 px.
+and the size of frames ``384 640`` means a width of 384 px and a height of 640 px. If red and blue
+colors look reversed you can use format=bgra instead of format=rbga
 
 Via the network
 ---------------
