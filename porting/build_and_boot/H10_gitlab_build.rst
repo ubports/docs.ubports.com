@@ -26,178 +26,173 @@ deviceinfo contains the configuration used during device build process (kernel, 
 Filling in your deviceinfo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-    # Full device name, like Redmi 9C or Redmi Note 10S. Replace as necessary.
+# Full device name, like Redmi 9C or Redmi Note 10S. Replace as necessary.
 
-    deviceinfo_name="Redmi 9C"
+deviceinfo_name="Redmi 9C"
 
 
-    # The name of the device's manufacturer. Change as needed.
+# The name of the device's manufacturer. Change as needed.
 
-    deviceinfo_manufacturer="Xiaomi"
+deviceinfo_manufacturer="Xiaomi"
 
 
-    # The codename of the phone. This can be obtained by googling for it like: "<device name> codename". Replace device name with your phone's full name. Replace the codename below with your own too.
+# The codename of the phone. This can be obtained by googling for it like: "<device name> codename". Replace device name with your phone's full name. Replace the codename below with your own too.
 
-    deviceinfo_codename="angelica"
+deviceinfo_codename="angelica"
 
 
-    # The architecture of your kernel. Most devices released after 2015 have an ARM64 CPU, but some oddities in between can still be armhf. For ARM64 devices, set the config to "aarch64". For armhf devices, set the config to "armv7".
+# The architecture of your kernel. Most devices released after 2015 have an ARM64 CPU, but some oddities in between can still be armhf. For ARM64 devices, set the config to "aarch64". For armhf devices, set the config to "armv7".
 
-    deviceinfo_arch="aarch64"
+deviceinfo_arch="aarch64"
 
 
-    # Here comes the meat of the port, the kernel. You already should have this link at hand if you followed section 1, if not go through it again. Replace below link with your own.
+# Here comes the meat of the port, the kernel. You already should have this link at hand if you followed section 1, if not go through it again. Replace below link with your own.
 
-    deviceinfo_kernel_source=https://github.com/muhammad23012009/android_kernel_xiaomi_dandelion
+deviceinfo_kernel_source=https://github.com/muhammad23012009/android_kernel_xiaomi_dandelion
 
 
-    # The branch of the kernel comes next. This can be easily obtained by looking at the tab under the Code tab on GitHub or the tab on the top left side in GitLab. Replace as necessary.
+# The branch of the kernel comes next. This can be easily obtained by looking at the tab under the Code tab on GitHub or the tab on the top left side in GitLab. Replace as necessary.
 
-    deviceinfo_kernel_source_branch="halium10-new"
+deviceinfo_kernel_source_branch="halium10-new"
 
 
-    # Defconfig is a vital part of the kernel compilation process. Most of the times you can find this defconfig in your kernel source, the path to which is "arch/<your architecture>/configs". The defconfig's name is often built up like "<your codename>_defconfig". After finding your defconfig, replace it as necessary.
+# Defconfig is a vital part of the kernel compilation process. Most of the times you can find this defconfig in your kernel source, the path to which is "arch/<your architecture>/configs". The defconfig's name is often built up like "<your codename>_defconfig". After finding your defconfig, replace it as necessary.
+(If you still can't find the defconfig refer to section "Finding your defconfig")
 
-    (If you still can't find the defconfig refer to section "Finding your defconfig")
+deviceinfo_kernel_defconfig="angelica_defconfig"
 
-    deviceinfo_kernel_defconfig="angelica_defconfig"
 
+# The kernel cmdline is one of the key things that is required to make the kernel boot. It has special parameters that allow the kernel to determine which features/things need to be enabled, and which need to be disabled. The Ubuntu Touch rootfs also relies on some key cmdlines which is required to boot, most specifically "console=tty0". To adapt this to your device, try unpacking your boot image (section 8.3) and copying the cmdline from there, or take the help of a LineageOS device tree if it is available. "console=tty0" is a must for cmdline and should not be removed no matter what. Rest of the things can be removed and you can adjust these to your device.
 
-    # The kernel cmdline is one of the key things that is required to make the kernel boot. It has special parameters that allow the kernel to determine which features/things need to be enabled, and which need to be disabled. The Ubuntu Touch rootfs also relies on some key cmdlines which is required to boot, most specifically "console=tty0". To adapt this to your device, try unpacking your boot image (section 8.3) and copying the cmdline from there, or take the help of a LineageOS device tree if it is available. "console=tty0" is a must for cmdline and should not be removed no matter what. Rest of the things can be removed and you can adjust these to your device.
+deviceinfo_kernel_cmdline="console=tty0 bootopt=64S3,32N2,64N2 systempart=/dev/mapper/system:ro"
 
-    deviceinfo_kernel_cmdline="console=tty0 bootopt=64S3,32N2,64N2 systempart=/dev/mapper/system:ro"
 
+# Add this to your deviceinfo if you wish to compile your kernel with clang. Most devices released with and after Android 10 build their kernels with clang. If you don't want to build with clang, omit this entry entirely.
 
-    # Add this to your deviceinfo if you wish to compile your kernel with clang. Most devices released with and after Android 10 build their kernels with clang. If you don't want to build with clang, omit this entry entirely.
+deviceinfo_kernel_clang_compile="true"
 
-    deviceinfo_kernel_clang_compile="true"
 
+# Only required if you wish to use LLD as your linker and enable LTO. For most old kernels LTO is broken.
+If you do want to use it add this entry to your deviceinfo, else omit it.
 
-    # Only required if you wish to use LLD as your linker and enable LTO. For most old kernels LTO is broken.
+deviceinfo_kernel_use_lld="true"
 
-    If you do want to use it add this entry to your deviceinfo, else omit it.
 
-    deviceinfo_kernel_use_lld="true"
+# Use this to enable 'dtc_ext' for compiling your dtb/dtbo's. Use only if you know what you're doing. The default compiler works most of the times.
 
+deviceinfo_kernel_use_dtc_ext="true"
 
-    # Use this to enable 'dtc_ext' for compiling your dtb/dtbo's. Use only if you know what you're doing. The default compiler works most of the times.
 
-    deviceinfo_kernel_use_dtc_ext="true"
+# Use this option to specify the kernel image name after kernel compiles. More than often this option is simply not required, so you can drop it from your deviceinfo. If you do need it, adjust image name as necessary.
 
+deviceinfo_kernel_image_name="Image.gz"
 
-    # Use this option to specify the kernel image name after kernel compiles. More than often this option is simply not required, so you can drop it from your deviceinfo. If you do need it, adjust image name as necessary.
 
-    deviceinfo_kernel_image_name="Image.gz"
+# Used to define the architecture of your kernel. Most devices released after 2014 are aarch64, but in case yours is not, replace it with arm instead.
 
+deviceinfo_arch="aarch64"
 
-    # Used to define the architecture of your kernel. Most devices released after 2014 are aarch64, but in case yours is not, replace it with arm instead.
 
-    deviceinfo_arch="aarch64"
+# This option defines the boot image header version. It is important you get this right, else your device may not boot. Devices launching with Android versions below 8 (Oreo) use header 0, Android 9 (Pie) uses version 1, Android 10 uses version 2, and GKI devices use version 3/4 (depending on Android version which they were released, Android 12 with GKI uses version 4).
 
+deviceinfo_bootimg_header_version="2"
 
-    # This option defines the boot image header version. It is important you get this right, else your device may not boot. Devices launching with Android versions below 8 (Oreo) use header 0, Android 9 (Pie) uses version 1, Android 10 uses version 2, and GKI devices use version 3/4 (depending on Android version which they were released, Android 12 with GKI uses version 4).
 
-    deviceinfo_bootimg_header_version="2"
+# Use this option to define a prebuilt dtb that you have sourced. Path is relative to your directory where you are editing the deviceinfo file. Edit the dtb name according to what you have.
 
+deviceinfo_bootimg_prebuilt_dtb="mt6765.dtb"
 
-    # Use this option to define a prebuilt dtb that you have sourced. Path is relative to your directory where you are editing the deviceinfo file. Edit the dtb name according to what you have.
 
-    deviceinfo_bootimg_prebuilt_dtb="mt6765.dtb"
+# This option uses the dtb's created by your kernel while compiling, multiple dtb's can be specified here like:
+"mediatek/mt6765.dtb mediatek/angelica.dtb"
+The path in which the scripts look for the dtb's with this option enabled is "KERNEL_OBJ/arch/<architecture>/boot/dts" where <architecture> will either be arm64 or arm depending on what you set in deviceinfo_arch (aarch64 is arm64 in kernel speak)
 
+deviceinfo_dtb="mediatek/mt6765.dtb"
 
-    # This option uses the dtb's created by your kernel while compiling, multiple dtb's can be specified here like:
 
-    "mediatek/mt6765.dtb mediatek/angelica.dtb"
+# Selecting this will build a DT image that you selected into the boot image. Path is relative to your current directory in which you're editing deviceinfo. (Note: This is only really required in Samsung/Exynos devices.)
 
-    The path in which the scripts look for the dtb's with this option enabled is "KERNEL_OBJ/arch/<architecture>/boot/dts" where <architecture> will either be arm64 or arm depending on what you set in deviceinfo_arch (aarch64 is arm64 in kernel speak)
+deviceinfo_bootimg_prebuilt_dt="exynos8890-dt.img"
 
-    deviceinfo_dtb="mediatek/mt6765.dtb"
 
+# Use this to ship a prebuilt dtbo in your OTAs and to build your recovery with this dtbo if it isn't already being compiled. Path is once again relative to your build directory. Edit as desired.
 
-    # Selecting this will build a DT image that you selected into the boot image. Path is relative to your current directory in which you're editing deviceinfo. (Note: This is only really required in Samsung/Exynos devices.)
+deviceinfo_prebuilt_dtbo="angelica-dtbo.img"
 
-    deviceinfo_bootimg_prebuilt_dt="exynos8890-dt.img"
 
+# In case you do not want to ship the DTBO image in an OTA, selecting this will only remove the dtbo from the OTA package but recovery will still be compiled with this dtbo, if dtbo isn't already being compiled.
 
-    # Use this to ship a prebuilt dtbo in your OTAs and to build your recovery with this dtbo if it isn't already being compiled. Path is once again relative to your build directory. Edit as desired.
+deviceinfo_skip_dtbo_partition="true"
 
-    deviceinfo_prebuilt_dtbo="angelica-dtbo.img"
 
+# If you want to compile your DTBO from kernel, use this option to select the dtbo files compiled in kernel out directory. The path in which this option will search is KERNEL_OBJ/arch/<architecture>/boot/dts.
+Multiple dtbo's can be supplied like shown in the example. Adapt the names as per your requirements. The resulting dtbo image will be shipped in the OTA if the skip_dtbo_partition option isn't selected, and in any case recovery will also be built with this dtbo. This option is incompatible with the prebuilt dtbo option.
 
-    # In case you do not want to ship the DTBO image in an OTA, selecting this will only remove the dtbo from the OTA package but recovery will still be compiled with this dtbo, if dtbo isn't already being compiled.
+deviceinfo_dtbo="mediatek/galahad.dtbo mediatek/lancelot.dtbo"
 
-    deviceinfo_skip_dtbo_partition="true"
 
+# Using this will define the board name in your boot image, which some bootloaders require to boot the image successfully. Only use this option if your stock boot image has this flag set in its header. Edit as you wish if necessary.
 
-    # If you want to compile your DTBO from kernel, use this option to select the dtbo files compiled in kernel out directory. The path in which this option will search is KERNEL_OBJ/arch/<architecture>/boot/dts.
+deviceinfo_bootimg_board="EXYNOS4412"
 
-    Multiple dtbo's can be supplied like shown in the example. Adapt the names as per your requirements. The resulting dtbo image will be shipped in the OTA if the skip_dtbo_partition option isn't selected, and in any case recovery will also be built with this dtbo. This option is incompatible with the prebuilt dtbo option.
 
-    deviceinfo_dtbo="mediatek/galahad.dtbo mediatek/lancelot.dtbo"
+# Use this option to pad your boot image to a specific size. Also required if you want to append a vbmeta image or append a hash footer to your image. Change the size to your stock boot image size. (Note: The size is declared in bytes).
 
+deviceinfo_bootimg_partition_size="67713847"
 
-    # Using this will define the board name in your boot image, which some bootloaders require to boot the image successfully. Only use this option if your stock boot image has this flag set in its header. Edit as you wish if necessary.
 
-    deviceinfo_bootimg_board="EXYNOS4412"
+# Pretty self-explanatory. Set it to true if your device requires a vbmeta image appended (Not the case for most devices with a dedicated vbmeta partition.)
 
+deviceinfo_bootimg_append_vbmeta="true"
 
-    # Use this option to pad your boot image to a specific size. Also required if you want to append a vbmeta image or append a hash footer to your image. Change the size to your stock boot image size. (Note: The size is declared in bytes).
 
-    deviceinfo_bootimg_partition_size="67713847"
+# Use this option when you want to create a recovery.img for booting UBports recovery (Only really required when you're finalizing the port). In most cases you'll want to omit this in the start of your port and add it as you try to get it in installer. Setting to true builds the recovery and setting to false or omitting the entry entirely will cause it to not build at all.
 
+deviceinfo_has_recovery_partition="true"
 
-    # Pretty self-explanatory. Set it to true if your device requires a vbmeta image appended (Not the case for most devices with a dedicated vbmeta partition.)
 
-    deviceinfo_bootimg_append_vbmeta="true"
+# Use this to pad your recovery image to a specific size. Also a requirement if you want to add a hash footer to your image. Replace the size from your stock recovery image. (Will only work if you're building recovery!)
 
+deviceinfo_recovery_partition_size="67713847"
 
-    # Use this option when you want to create a recovery.img for booting UBports recovery (Only really required when you're finalizing the port). In most cases you'll want to omit this in the start of your port and add it as you try to get it in installer. Setting to true builds the recovery and setting to false or omitting the entry entirely will cause it to not build at all.
 
-    deviceinfo_has_recovery_partition="true"
+# This is only really required for some old/new Samsung that check for an "SEAndroid" footer on their boot images to check whether or not the boot images are official. If the bootloader doesn't find it it results in an ugly looking red line on the top of the screen. Adding this to your deviceinfo will append this string to the boot image. (Beware! Using this on other devices may cause it to not boot the image!)
 
+deviceinfo_bootimg_tailtype="SEAndroid"
 
-    # Use this to pad your recovery image to a specific size. Also a requirement if you want to add a hash footer to your image. Replace the size from your stock recovery image. (Will only work if you're building recovery!)
 
-    deviceinfo_recovery_partition_size="67713847"
+# This config determines whether modules should be compiled and installed into rootfs or not. Omitting this config results in the default behaviour, i.e., modules get compiled and installed into rootfs. Adding this option to your deviceinfo and setting it to true (like shown) will disable modules compilation. Only really needed in case you're doing something advanced.
 
+deviceinfo_kernel_disable_modules="true"
 
-    # This is only really required for some old/new Samsung that check for an "SEAndroid" footer on their boot images to check whether or not the boot images are official. If the bootloader doesn't find it it results in an ugly looking red line on the top of the screen. Adding this to your deviceinfo will append this string to the boot image. (Beware! Using this on other devices may cause it to not boot the image!)
 
-    deviceinfo_bootimg_tailtype="SEAndroid"
+# This option installs all overlay files (in overlay/ directory) into /system/opt/halium-overlay, therefore overlaying the files onto the files present in rootfs instead of completely replacing them. This is necessary for 20.04 and onwards, but not applicable for 16.04.
 
+deviceinfo_use_overlaystore="true"
 
-    # This config determines whether modules should be compiled and installed into rootfs or not. Omitting this config results in the default behaviour, i.e., modules get compiled and installed into rootfs. Adding this option to your deviceinfo and setting it to true (like shown) will disable modules compilation. Only really needed in case you're doing something advanced.
 
-    deviceinfo_kernel_disable_modules="true"
+# This option is mostly used on some Qualcomm devices. Adding this to your deviceinfo will combine all your dtbo's with your dtbs. Only use if you are sure you need this.
 
+deviceinfo_kernel_apply_overlay="true"
 
-    # This option installs all overlay files (in overlay/ directory) into /system/opt/halium-overlay, therefore overlaying the files onto the files present in rootfs instead of completely replacing them. This is necessary for 20.04 and onwards, but not applicable for 16.04.
 
-    deviceinfo_use_overlaystore="true"
+# Add this configuration to your deviceinfo when you need to specify a fixed size for your rootfs being flashed to system image. Default is 3000M when option is not set. Only use if you need it.
 
+deviceinfo_system_partition_size="4000M"
 
-    # This option is mostly used on some Qualcomm devices. Adding this to your deviceinfo will combine all your dtbo's with your dtbs. Only use if you are sure you need this.
 
-    deviceinfo_kernel_apply_overlay="true"
+# This config is only relevant for newer devices launched with UFS storage
 
+deviceinfo_rootfs_image_sector_size="4096"
 
-    # Add this configuration to your deviceinfo when you need to specify a fixed size for your rootfs being flashed to system image. Default is 3000M when option is not set. Only use if you need it.
 
-    deviceinfo_system_partition_size="4000M"
+# Now comes the true parts of deviceinfo, the flash offsets. But don't worry, we'll guide you through on how to extract these!
 
 
-    # This config is only relevant for newer devices launched with UFS storage
+Extracting values from stock boot.img
+"""""""""""""""""""""""""""""""""""""
 
-    deviceinfo_rootfs_image_sector_size="4096"
-
-
-    # Now comes the true parts of deviceinfo, the flash offsets. But don't worry, we'll guide you through on how to extract these!
-
-
-    Extracting values from stock boot.img
-    """""""""""""""""""""""""""""""""""""
-
-    For any port to boot, some values must be pulled from the stock boot.img. First and foremost, try to get your stock firmware. Some manufacturers like Samsung like to encrypt their firmwares, but still some tools are available to get them. Others like Xiaomi provide the firmware, but you need to use Google to search it. And then there's the good guy Google, who provide full firmware binaries easily accessible. Long story short, you need to at least find your stock firmware, and then get the boot.img. Once you have the boot.img acquired, follow the following steps:
+For any port to boot, some values must be pulled from the stock boot.img. First and foremost, try to get your stock firmware. Some manufacturers like Samsung like to encrypt their firmwares, but still some tools are available to get them. Others like Xiaomi provide the firmware, but you need to use Google to search it. And then there's the good guy Google, who provide full firmware binaries easily accessible. Long story short, you need to at least find your stock firmware, and then get the boot.img. Once you have the boot.img acquired, follow the following steps:
 
 
     * Make a directory in which you'll store all your unpacked data. It can be anywhere, and can have any name. For now, we'll call it `temp`.
@@ -281,55 +276,55 @@ Filling in your deviceinfo
       * Apart from these mentioned values, you'll want to skip everything else.
 
 
-    Now according to said guide, fill in your boot.img offsets:
+Now according to said guide, fill in your boot.img offsets:
 
 
-    # Put the value from "page size" into this config.
+# Put the value from "page size" into this config.
 
-    deviceinfo_flash_pagesize="2048"
-
-
-    # Base offset will always remain 0x00000000.
-
-    deviceinfo_flash_offset_base="0x00000000"
+deviceinfo_flash_pagesize="2048"
 
 
-    # Fill this in from "kernel load address".
+# Base offset will always remain 0x00000000.
 
-    deviceinfo_flash_offset_kernel="0x40080000"
-
-
-    # This gets its value from "ramdisk load address".
-
-    deviceinfo_flash_offset_ramdisk="0x51b00000"
+deviceinfo_flash_offset_base="0x00000000"
 
 
-    # Although not mission critical, if you did get its value, fill it in from "second bootloader load address".
+# Fill this in from "kernel load address".
 
-    deviceinfo_flash_offset_second="0xc0ff0000"
-
-
-    # Tags should be filled in from "kernel tags load address".
-
-    deviceinfo_flash_offset_tags="0x47880000"
+deviceinfo_flash_offset_kernel="0x40080000"
 
 
-    # DTB offset comes from "dtb load address" after fixing it using the guide.
+# This gets its value from "ramdisk load address".
 
-    deviceinfo_flash_offset_dtb="0x47880000"
-
-
-    # This comes from "os version". Not exactly required but some OEMs enforce it.
-
-        deviceinfo_bootimg_os_version="10.0"
+deviceinfo_flash_offset_ramdisk="0x51b00000"
 
 
-     # You'll want to put the "os patch level" value here.
+# Although not mission critical, if you did get its value, fill it in from "second bootloader load address".
 
-        deviceinfo_bootimg_os_patch_level="2021-11"
+deviceinfo_flash_offset_second="0xc0ff0000"
 
 
-    And just like that, you've filled in your deviceinfo properly and can now get on with the port!
+# Tags should be filled in from "kernel tags load address".
+
+deviceinfo_flash_offset_tags="0x47880000"
+
+
+# DTB offset comes from "dtb load address" after fixing it using the guide.
+
+deviceinfo_flash_offset_dtb="0x47880000"
+
+
+# This comes from "os version". Not exactly required but some OEMs enforce it.
+
+deviceinfo_bootimg_os_version="10.0"
+
+
+# You'll want to put the "os patch level" value here.
+
+deviceinfo_bootimg_os_patch_level="2021-11"
+
+
+And just like that, you've filled in your deviceinfo properly and can now get on with the port!
     
 
 Running build without modifications
@@ -341,25 +336,25 @@ Making initial changes to kernel to get device to boot
 ------------------------------------------------------
 
 Now that your kernel is compiled, it won't boot straight away because it's missing some Halium and Ubuntu Touch patches. To combat this, instead of manually patching kernel configs, we can use kernel fragments to combine device-specific configs with the Ubuntu Touch kernel configs. These configs are shipped in a repo that you can add as a sub-module into your kernel tree and use it for your defconfigs. But because our configs are extremely minimal, there's only 5 configs you can attach to make your patched defconfig.
-To create your custom config with UT kernel configs included, you will have to browse into your kernel directory in the out/ folder. The directory structure is ``out/downloads/<your kernel repo name which you added in deviceinfo>``. For example, ``out/downloads/kernel-xiaomi-mt6765``. After you have found it, ``cd` to it.
+To create your custom config with UT kernel configs included, you will have to browse into your kernel directory in the out/ folder. The directory structure is ``out/downloads/<your kernel repo name which you added in deviceinfo>``. For example, ``out/downloads/kernel-xiaomi-mt6765``. After you have found it, ``cd`` to it.
 Now, to add your config, open a file called ``ut-config.config`` in the root of the kernel source. Don't worry, we'll wipe this file out afterwards. After you have opened the file, paste in the following content:
 
-``
-CONFIG_IKCONFIG=y
-CONFIG_IKCONFIG_PROC=y
-CONFIG_DEVTMPFS=y
-CONFIG_FHANDLE=y
-CONFIG_NAMESPACES=y
-CONFIG_SYSVIPC=y
-# CONFIG_DEVTMPFS_MOUNT is not set
-CONFIG_EXPORTFS=y
-CONFIG_IPC_NS=y
-CONFIG_NET_NS=y
-CONFIG_PID_NS=y
-CONFIG_USER_NS=y
-CONFIG_UTS_NS=y
-CONFIG_RFKILL=y
-``
+
+| CONFIG_IKCONFIG=y
+| CONFIG_IKCONFIG_PROC=y
+| CONFIG_DEVTMPFS=y
+| CONFIG_FHANDLE=y
+| CONFIG_NAMESPACES=y
+| CONFIG_SYSVIPC=y
+| # CONFIG_DEVTMPFS_MOUNT is not set
+| CONFIG_EXPORTFS=y
+| CONFIG_IPC_NS=y
+| CONFIG_NET_NS=y
+| CONFIG_PID_NS=y
+| CONFIG_USER_NS=y
+| CONFIG_UTS_NS=y
+| CONFIG_RFKILL=y
+
 These are the bare minimal configs needed to boot Ubuntu Touch on your device. Now, save and close your text editor. Now it's time to combine all your configs and create one single config that you'll convert to a defconfig.
 ``ARCH=<arm or arm64 depending on what you got from finding the defconfig> scripts/kconfig/merge_config.sh arch/<arm or arm64 depending on defconfig found>/<your defconfig here> ./ut-config.config``
 
