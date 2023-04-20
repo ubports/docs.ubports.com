@@ -13,7 +13,7 @@ Android apps
 
 
 How to set up
---------------
+-------------
 
 All Halium 9 and newer devices ship with waydroid out of the box starting Ubuntu Touch focal, if your device fits these requirements you can follow the folowing steps
 
@@ -56,7 +56,7 @@ How to uninstall apps
 - Done! You might have to pull down from the app list for the new Android apps to show up.
 
 Access Android storage
------------------------
+----------------------
 
 The Android storage is located at ``/home/phablet/.local/share/waydroid/data/media/0``.
 

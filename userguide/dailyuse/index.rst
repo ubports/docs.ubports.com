@@ -9,4 +9,4 @@ This section of the documentation details common tasks users may want to do on t
 
     location
     libertine
-    anbox
+    waydroid
