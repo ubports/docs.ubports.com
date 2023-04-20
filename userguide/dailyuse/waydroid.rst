@@ -22,9 +22,6 @@ All Halium 9 and newer devices ship with waydroid out of the box starting Ubuntu
 
 Now you're done! You might have to refresh the app drawer (pull down from the center of the screen and release) for the new Android apps to show up.
 
-.. note::
-    You now have an ADB server running on your Ubuntu Touch device.
-
 How to install new APKs
 -----------------------
 
@@ -42,7 +39,6 @@ Keep your apps up to date
 - To keep your apps up to date you can use of F-Droid or ApkTrack. If you want to install any of the above apps you can find them here:
 
 - F-Droid: https://f-droid.org/
-- ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/
 
 How to uninstall apps
 ---------------------
