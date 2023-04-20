@@ -17,3 +17,4 @@
 "appdev/publishing/index.rst" "appdev/index.rst"
 "appdev/samples/index.rst" "appdev/index.rst"
 "appdev/guides/cookbook.rst" "appdev/guides/index.rst"
+"userguide/dailyuse/anbox" "userguide/dailyuse/waydroid"
