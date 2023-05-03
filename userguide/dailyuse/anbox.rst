@@ -1,7 +1,7 @@
 Android apps
 ========================
 
-`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer to run Android apps on GNU/Linux operating systems such as Ubuntu Touch.
+`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer to run Android apps on GNU/Linux operating systems such as Ubuntu Touch. **Anbox has been depreceated in favour of Waydroid.**
 
 .. note::
     "Computer" refers to another device you connect your Ubuntu Touch device to (via USB here).
