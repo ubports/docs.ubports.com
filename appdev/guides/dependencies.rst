@@ -11,47 +11,38 @@ Compilation
 ^^^^^^^^^^^
 Put the library's source code at ``libs/LIBNAME`` (replacing ``LIBNAME`` by the library's name), because this is where clickable will look for it by default. If the dependency source code is available as a git repository, it is a good idea to add it as a `git submodule <https://git-scm.com/book/de/v1/Git-Tools-Submodule>`_. Otherwise add a script to download the sources.
 
-Add a `libraries section <http://clickable.bhdouglass.com/en/latest/clickable-json.html#libraries>`_ to your clickable.json, like this:
+Add a `libraries section <https://clickable.bhdouglass.com/en/latest/project-config.html#libraries>`_ to your clickable.yaml, like this:
 
-.. code-block:: JSON
-   :emphasize-lines: 3-7
+.. code-block:: YAML
+   :emphasize-lines: 2-4
 
-    {
-      "builder": "cmake",
-      "libraries": {
-        "LIBNAME": {
-          "builder": "cmake"
-        }
-      }
-    }
+    builder: "cmake"
+    libraries:
+      LIBNAME:
+        builder: "cmake"
 
 If the library does not contain a CMake configuration, you need to use the `qmake` or `custom` builder instead.
 
 Optionally, configure the compilation by adding ``build_args``, which may look like this:
 
-.. code-block:: JSON
-   :emphasize-lines: 6-11
+.. code-block:: YAML
+   :emphasize-lines: 6-9
 
-    {
-      "builder": "cmake",
-      "libraries": {
-        "LIBNAME": {
-          "builder": "cmake",
-          "build_args": [
-            "-DBUILD_EXAMPLES=OFF",
-            "-DBUILD_DOCS=OFF",
-            "-DBUILD_TESTS=OFF",
-            "-DBUILD_SHARED_LIBS=OFF"
-          ]
-        }
-      }
-    }
+    builder: "cmake"
+    libraries:
+      LIBNAME:
+        builder: "cmake"
+        build_args:
+        - "-DBUILD_EXAMPLES=OFF"
+        - "-DBUILD_DOCS=OFF"
+        - "-DBUILD_TESTS=OFF"
+        - "-DBUILD_SHARED_LIBS=OFF"
 
 Most build arguments are project specific. Therefore, study the library's build instructions and also look for ``option`` settings in its ``CMakeLists.txt`` .
 
 To actually build the library for all architectures run ``clickable build --libs --arch armhf``, ``clickable build --libs --arch arm64`` and ``clickable build --libs --arch amd64``. Don't forget to mention this step in your README, so that others can reproduce the build process.
 
-See how `Teleports clickable.json <https://gitlab.com/ubports/apps/teleports/blob/master/clickable.json#L21>`_ uses the libraries feature to build its dependency tdlib.
+See how `Teleports clickable.yaml <https://gitlab.com/ubports/development/apps/teleports/-/blob/main/clickable.yaml#L26>`_ uses the libraries feature to build its dependency tdlib.
 
 Pre-built
 ^^^^^^^^^
@@ -61,32 +52,25 @@ A pre-built library is usually only available as a shared object that needs to b
 
 If the library is available in the Ubuntu Repositories, you can add it to the dependencies list, like this:
 
-.. code-block:: JSON
-   :emphasize-lines: 3-5
+.. code-block:: YAML
+   :emphasize-lines: 2-3
 
-    {
-      "builder": "cmake",
-      "dependencies_target": [
-        "libsomething-dev"
-      ]
-    }
+    builder: "cmake"
+    dependencies_target:
+    - "libsomething-dev"
 
 Clickable will install the specified package automatically for the target architecture inside the build container. An example can be found in `Guitar Tools' clickable.json <https://github.com/t-mon/guitar-tools/blob/master/clickable.json#L4>`_.
 
-If the library can be found in a PPA, you can add the PPA to the clickable.json, too. For example:
+If the library can be found in a PPA, you can add the PPA to the clickable.yaml, too. For example:
 
-.. code-block:: JSON
-   :emphasize-lines: 3-5
+.. code-block:: YAML
+   :emphasize-lines: 2-3
 
-    {
-      "builder": "cmake",
-      "dependencies_ppa": [
-        "ppa:someone/libsomething"
-      ],
-      "dependencies_target": [
-        "libsomething-dev"
-      ]
-    }
+    builder: "cmake"
+    dependencies_ppa:
+    - "ppa:someone/libsomething"
+    dependencies_target:
+    - "libsomething-dev"
 
 Otherwise add a script to download the pre-built library.
 
@@ -115,23 +99,18 @@ Find out which shared object files (``*.so``) you need to ship. You can do so by
 
 Find the path to the shared object files. For libraries built via clickable, they are located somewhere in the library's install dir, which is located inside the library's build dir by default (e.g. ``build/arm-linux-gnueabihf/opencv/install``). For pre-built libraries run ``clickable run "find / -name 'libSomething.so'"`` (replacing ``libSomething.so`` by the file your are looking for). This should print the path to the file (along with some error messages you can ignore). In general, ``/usr/lib``  is a good bet when looking for the shared object files.
 
-To get the files into the click package, add the `install_lib <http://clickable.bhdouglass.com/en/latest/clickable-json.html#install-lib>`_ key to your clickable.json:
+To get the files into the click package, add the `install_lib <https://clickable.bhdouglass.com/en/latest/project-config.html#install-lib>`_ key to your clickable.yaml:
 
-.. code-block:: JSON
-   :emphasize-lines: 6-9
+.. code-block:: YAML
+   :emphasize-lines: 5-7
 
-    {
-      "builder": "cmake",
-      "libraries": {
-        "LIBNAME": {
-          "builder": "cmake",
-          "install_lib": [
-            "$LIBNAME_LIB_INSTALL_DIR/usr/lib/$ARCHITECTURE_TRIPLET/libqmapboxgl.so*",
-            "/usr/lib/$ARCHITECTURE_TRIPLET/libSoundTouch.so.*"
-          ]
-        }
-      }
-    }
+    builder: "cmake"
+    libraries:
+      LIBNAME:
+        builder: "cmake"
+        install_lib:
+        - "$LIBNAME_LIB_INSTALL_DIR/usr/lib/$ARCHITECTURE_TRIPLET/libqmapboxgl.so*"
+        - "/usr/lib/$ARCHITECTURE_TRIPLET/libSoundTouch.so.*"
 
 The lines above contain two examples. The first one installing a library built with Clickable. The asterisk in ``.so*`` helps to catch symbolic links along with the actual library which are used to point to the current version.
 
