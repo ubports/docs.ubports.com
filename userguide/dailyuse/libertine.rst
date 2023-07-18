@@ -96,8 +96,8 @@ Run desktop application
 
 Run it from the app menu like any other app. To start a graphical app from the command-line, for example ``gedit``, run this in a terminal::
 
-  # ubuntu-app-launch <CONTAINER_ID>_<desktop_file_name>_0.0
-  ubuntu-app-launch xenial_gedit_0.0
+  # lomiri-app-launch <CONTAINER_ID>_<desktop_file_name>_0.0
+  lomiri-app-launch focal_gedit_0.0
 
 Files
 -----
