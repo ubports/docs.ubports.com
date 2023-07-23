@@ -7,66 +7,73 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-07 11:45-0600\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2023-01-05 00:57+0100\n"
+"PO-Revision-Date: 2023-01-20 18:22+0000\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: Dutch <https://translate.ubports.com/projects/ubports-docs/"
+"documentation-humanguide/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../../humanguide/app-layout/app-main-view.rst:2
 msgid "App main view"
-msgstr ""
+msgstr "App-opstart"
 
 #: ../../humanguide/app-layout/app-main-view.rst:4
 msgid ""
 "When an app starts, shows a generic splash screen (as in the image) or a "
 "custom one, then the main view."
 msgstr ""
+"Als een app opstart, dan wordt er een opstartscherm getoond (vergelijkbaar "
+"met de afbeelding) en vervolgens de app zelf."
 
 #: ../../humanguide/app-layout/app-main-view.rst:8
 msgid "The standard parts of a main view or any other page may be:"
-msgstr ""
+msgstr "De standaardelementen van een weergave of andere pagina kunnen zijn:"
 
 #: ../../humanguide/app-layout/app-main-view.rst:11
 msgid "Header"
-msgstr ""
+msgstr "Kop"
 
 #: ../../humanguide/app-layout/app-main-view.rst:13
 msgid "Display app name, leading area and trailing area icons."
-msgstr ""
+msgstr "Om de appnaam, hoofdwerkbalk en andere pictogrammen te tonen."
 
 #: ../../humanguide/app-layout/app-main-view.rst:17
 msgid "In this case, showing title and trailing actions."
-msgstr ""
+msgstr "In dit geval de naam en enkele acties."
 
 #: ../../humanguide/app-layout/app-main-view.rst:20
 msgid "Tabbed content"
-msgstr ""
+msgstr "Tabbladen"
 
 #: ../../humanguide/app-layout/app-main-view.rst:22
 msgid "To organize information under tabs."
-msgstr ""
+msgstr "Om informatie te ordenen."
 
 #: ../../humanguide/app-layout/app-main-view.rst:27
 msgid "Bottom edge menu"
-msgstr ""
+msgstr "Onderste menu"
 
 #: ../../humanguide/app-layout/app-main-view.rst:29
 msgid "For quick actions. See `Quick actions`_."
-msgstr ""
+msgstr "Voor snelle acties. Zie `Snelle acties`_."
 
 #: ../../humanguide/app-layout/dialogs.rst:2
 msgid "Dialogs"
-msgstr ""
+msgstr "Dialoogvensters"
 
 #: ../../humanguide/app-layout/dialogs.rst:4
 msgid ""
 "A dialog is a way of informing the user about important notices or letting "
 "them complete a single action."
 msgstr ""
+"Een dialoogvenster is een manier om een gebruiker op de hoogte te stellen "
+"van belangrijke gebeurtenissen of om een actie uit te voeren."
 
 #: ../../humanguide/app-layout/dialogs.rst:6
 msgid ""
@@ -1171,8 +1178,98 @@ msgstr ""
 
 #: ../../humanguide/index.rst:4
 msgid ""
-"Ubuntu Touch follows a clean, beautiful, modern and (above all) convergent "
-"design. We aim to keep developing the design started by Canonical."
+"Ubuntu Touch follows a modern and convergent design philosophy called Suru. "
+"We aim to keep developing the design started by Canonical."
+msgstr ""
+
+#: ../../humanguide/index.rst:11
+msgid "Suru meaning"
+msgstr ""
+
+#: ../../humanguide/index.rst:13
+msgid ""
+"Here at UBports we believe that everyone should have access to free, "
+"reliable, and trusted software that can be shared and developed by anyone. "
+"This has paved the way to allow the community to grow and prosper with "
+"freedom trust and collaboration. This integral belief has been translated "
+"into the design philosophy called Suru."
+msgstr ""
+
+#: ../../humanguide/index.rst:15
+msgid "Suru items from the Ubuntu values alluding to Japanese culture."
+msgstr ""
+
+#: ../../humanguide/index.rst:17
+msgid ""
+"The design of Suru is inspired by origami, because it gives us a solid and "
+"tangible foundation."
+msgstr ""
+
+#: ../../humanguide/index.rst:19
+msgid ""
+"Paper can be used in all areas of the design in two and three dimensional "
+"forms, because it is transferable and diverse."
+msgstr ""
+
+#: ../../humanguide/index.rst:22
+msgid "Translated in design"
+msgstr ""
+
+#: ../../humanguide/index.rst:24
+msgid ""
+"Suru brings a precise yet organic structure to the Ubuntu Touch interface. "
+"The sharp lines and varying levels of transparency evoke the edges and "
+"texture of paper. All elements are placed deliberately, with the express aim "
+"of being easy for the user to identify and use."
+msgstr ""
+
+#: ../../humanguide/index.rst:26
+msgid ""
+"When using a small layout, the information and functionality is folded into "
+"a compact object that can be refolded to expose different areas. As the "
+"layout size increases, the object can become progressively larger, allowing "
+"more of the information and functionality to be exposed at any one time."
+msgstr ""
+
+#: ../../humanguide/index.rst:29
+msgid "Origami"
+msgstr ""
+
+#: ../../humanguide/index.rst:33
+msgid ""
+"Origami has long been associated with good fortune and represents the visual "
+"style for Ubuntu Touch. Origami folds are used to define the design."
+msgstr ""
+
+#: ../../humanguide/index.rst:36
+msgid "Simple details"
+msgstr ""
+
+#: ../../humanguide/index.rst:40
+msgid ""
+"What is most important is that screen layouts retain a natural, rhythmic "
+"quality, and a neatness and clarity that helps the user find things quickly "
+"and use them intuitively."
+msgstr ""
+
+#: ../../humanguide/index.rst:43
+msgid "Using subtle grids for accuracy"
+msgstr ""
+
+#: ../../humanguide/index.rst:45
+msgid ""
+"The folds from origami produce simple graphical details that allow designers "
+"to create a subtle grid for positioning brand elements and components, such "
+"as logos, icons or copylines. This helps maintain focus on the main image or "
+"graphic element."
+msgstr ""
+
+#: ../../humanguide/index.rst:50
+msgid "Suru mood board"
+msgstr ""
+
+#: ../../humanguide/index.rst:53
+msgid "Influences and inspiration"
 msgstr ""
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:2

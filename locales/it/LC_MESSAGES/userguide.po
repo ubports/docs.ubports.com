@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-01-05 00:26+0000\n"
-"Last-Translator: FlavioMala <flavio.malatino@post.com>\n"
+"PO-Revision-Date: 2023-02-21 08:58+0000\n"
+"Last-Translator: Alberto <ortodipace@proton.me>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-userguide/it/>\n"
 "Language: it\n"
@@ -68,7 +68,7 @@ msgstr "Abilita la modalità sviluppatore"
 
 #: ../../userguide/advanceduse/adb.rst:29
 msgid "Next, you'll need to turn on Developer Mode."
-msgstr "Successivamente avrai bisogno di attivate la Modalità Sviluppatore."
+msgstr "Poi, dovrai attivare la Modalità Sviluppatore."
 
 #: ../../userguide/advanceduse/adb.rst:31
 msgid "Reboot your device"
@@ -164,9 +164,9 @@ msgid ""
 "CalDAV and CardDAV are protocols to synchronize calendars and contacts with "
 "a remote server. Many email-hosters provide a CalDAV and CardDAV interface."
 msgstr ""
-"CalDAV e CardDav sono protocolli che servono a sincronizzare calendari e "
-"contatti con un servente (server) remoto. Molti fornitori di posta "
-"elettronica (email) forniscono una interfaccia CalDAV e CardDav."
+"CalDAV e CardDAV sono protocolli per sincronizzare calendari e contatti con "
+"un server remoto. Molti host di posta elettronica forniscono un'interfaccia "
+"CalDAV e CardDAV."
 
 #: ../../userguide/advanceduse/dav.rst:6
 msgid ""
@@ -176,9 +176,9 @@ msgid ""
 "as your username and password to complete the process."
 msgstr ""
 "**Nota:** La sincronizzazione CalDAV puo essere impostata anche "
-"dall'applicazione Calendario. Aprire l'app, cliccare sopra l'icona del "
-"calendario in alto a destra e selezionare \"Aggiungi calendario online > "
-"Generic CalDAV\". Inserire l'url del tuo calendario, l'username e la "
+"dall'applicazione Calendario. Aprire l'app, cliccare sopra la piccola icona "
+"del calendario in alto a destra e selezionare \"Aggiungi calendario online > "
+"Generic CalDAV\". Inserire l'URL del tuo calendario, nome utente e la "
 "password per completare il processo."
 
 #: ../../userguide/advanceduse/dav.rst:8
@@ -193,7 +193,7 @@ msgstr ""
 "accessibile dall'interfaccia utente di Ubuntu Touch, quindi l'unico modo per "
 "sincronizzare CardDAV è usando syncevolution + cron. Comunque c'è un modo "
 "semplice per farlo usando uno script che puoi avviare da terminale o via "
-"connessione SSH. Queste istruzioni funzionano anche per CalDav."
+"connessione phablet SSH. Queste istruzioni funzionano anche per CalDav."
 
 #: ../../userguide/advanceduse/dav.rst:10
 msgid ""
@@ -247,14 +247,15 @@ msgid ""
 "Move the file to your Ubuntu Touch device, either by file manager or with "
 "adb::"
 msgstr ""
-"Sposta il file sul tuo dispositivo UbuntuTouch usando il file manager o adb::"
+"Sposta il file sul tuo dispositivo UbuntuTouch usando il file manager o con "
+"adb::"
 
 #: ../../userguide/advanceduse/dav.rst:24
 msgid ""
 "Connect with the phablet shell (``adb shell``) or directly on the phone "
 "Terminal app and type the following::"
 msgstr ""
-"Connettiti alla shell del dispositivo (``adb shell``) o vai direttamente "
+"Connetti con la shell fablet (``adb shell``) o direttamente "
 "sull'applicazione del Terminale e scrivi questi comandi::"
 
 #: ../../userguide/advanceduse/dav.rst:31
@@ -1433,6 +1434,13 @@ msgid ""
 "transport near you <https://open-store.io/app/transport.zubozrout>`__, and "
 "more."
 msgstr ""
+"I servizi di localizzazione in Ubuntu Touch consentono alle applicazioni di "
+"accedere alla posizione corrente dell'utente. Utilizzando questi dati, le "
+"applicazioni possono `offrire una navigazione turn-by-turn <https://open-"
+"store.io/app/navigator.costales>`__, `tracciare i percorsi di allenamento "
+"<https://open-store.io/app/activitytracker.cwayne18>`__, `localizzare i "
+"trasporti pubblici nelle vicinanze <https://open-store.io/app/"
+"transport.zubozrout>`__ e altro ancora."
 
 #: ../../userguide/dailyuse/location.rst:6
 msgid ""
@@ -1546,6 +1554,8 @@ msgstr "Impostazioni rapide"
 #: ../../userguide/dailyuse/location.rst:53
 msgid "`Open location quick settings`_, then select ``Location settings...``."
 msgstr ""
+"Aprire le impostazioni rapide di localizzazione`_, quindi selezionare ``"
+"Impostazioni di localizzazione...``."
 
 #: ../../userguide/dailyuse/location.rst:56
 #: ../../userguide/dailyuse/location.rst:76
@@ -1596,12 +1606,18 @@ msgid ""
 "`Open location quick settings`_. Select the ``Location detection`` switch to "
 "enable or disable location services."
 msgstr ""
+"Aprire le impostazioni rapide di localizzazione. Selezionare l'interruttore "
+"``Rilevamento posizione`` per attivare o disattivare i servizi di "
+"localizzazione."
 
 #: ../../userguide/dailyuse/location.rst:78
 msgid ""
 "`Open location settings in the settings app`_. Under ``Let the device detect "
 "your location:``, select the appropriate option:"
 msgstr ""
+"`Aprire le impostazioni di localizzazione nell'app Impostazioni`_. In ``"
+"Lascia che il dispositivo rilevi la tua posizione:``, selezionare l'opzione "
+"appropriata:"
 
 #: ../../userguide/dailyuse/location.rst:80
 msgid "``Using GPS`` turns on location services."
@@ -1640,6 +1656,10 @@ msgid ""
 "``Don't Allow`` to deny the app access to your current location. Some app "
 "features may not work correctly if you select ``Don't Allow``."
 msgstr ""
+"Selezionare ``Allow`` per consentire all'applicazione di accedere alla "
+"posizione corrente. Selezionare ``Non consentire'' per negare "
+"all'applicazione l'accesso alla posizione corrente. Alcune funzioni dell'app "
+"potrebbero non funzionare correttamente se si seleziona ``Non consentire``."
 
 #: ../../userguide/dailyuse/location.rst:96
 msgid "Changing your permissions"
@@ -1712,7 +1732,7 @@ msgstr ""
 
 #: ../../userguide/dailyuse/location.rst:118
 msgid "Time to first fix"
-msgstr ""
+msgstr "Tempo per la prima correzione"
 
 #: ../../userguide/dailyuse/location.rst:120
 msgid ""
@@ -1722,6 +1742,12 @@ msgid ""
 "device is activated. This rating is called \"`Time To First Fix <https://en."
 "wikipedia.org/wiki/Time_to_first_fix>`_,\" or TTFF."
 msgstr ""
+"Un \"fix\" è un punto di dati generato dall'hardware GPS che contiene la sua "
+"posizione attuale e la precisione prevista di tale posizione. L'hardware GPS "
+"viene valutato in base al tempo necessario per restituire uno di questi "
+"punti di dati dopo l'attivazione del dispositivo. Questa valutazione è "
+"chiamata \"Tempo per il primo fix <https://en.wikipedia.org/wiki/"
+"Time_to_first_fix>`_\", o TTFF."
 
 #: ../../userguide/dailyuse/location.rst:122
 msgid ""
@@ -1731,6 +1757,12 @@ msgid ""
 "can take up to an hour. To prevent this from causing problems for you, "
 "follow these instructions:"
 msgstr ""
+"Un dispositivo con una connessione dati mobile dovrebbe impiegare da uno a "
+"quattro minuti per ricevere la prima correzione. Se i servizi di "
+"localizzazione non sono stati utilizzati per molto tempo *e* il dispositivo "
+"non dispone di una connessione dati mobile, la prima correzione può "
+"richiedere fino a un'ora. Per evitare che ciò causi problemi, seguite queste "
+"istruzioni:"
 
 #: ../../userguide/dailyuse/location.rst:126
 msgid ""
@@ -1748,12 +1780,17 @@ msgid ""
 "Download an app which uses location services and cause it to start accessing "
 "your location data."
 msgstr ""
+"Scaricate un'applicazione che utilizza i servizi di localizzazione e fate in "
+"modo che inizi ad accedere ai vostri dati di localizzazione."
 
 #: ../../userguide/dailyuse/location.rst:130
 msgid ""
 "Leave your device near a window but out of direct sunlight. To reduce energy "
 "consumption, turn the screen brightness down."
 msgstr ""
+"Lasciare il dispositivo vicino a una finestra, ma lontano dalla luce diretta "
+"del sole. Per ridurre il consumo energetico, abbassare la luminosità dello "
+"schermo."
 
 #: ../../userguide/dailyuse/location.rst:132
 msgid ""
@@ -1761,10 +1798,14 @@ msgid ""
 "location. You can now close the app and enable ``Lock when idle``. Future "
 "attempts to aquire your location should now take one to four minutes."
 msgstr ""
+"Dopo 20 minuti o un'ora, il dispositivo dovrebbe visualizzare la posizione "
+"corrente. A questo punto è possibile chiudere l'applicazione e attivare il ``"
+"blocco in caso di inattività``. I futuri tentativi di acquisizione della "
+"posizione dovrebbero durare da uno a quattro minuti."
 
 #: ../../userguide/dailyuse/location.rst:135
 msgid "App suspension"
-msgstr ""
+msgstr "Sospensione dell'app"
 
 #: ../../userguide/dailyuse/location.rst:137
 msgid ""
@@ -1773,6 +1814,10 @@ msgid ""
 "reason, apps will not be able to track your location whenever they are not "
 "in use or the device is locked."
 msgstr ""
+"Le app vengono sospese quando non sono in primo piano o il dispositivo è "
+"bloccato. Quando un'app è sospesa, non può ricevere dati sulla posizione. "
+"Per questo motivo, le app non saranno in grado di tracciare la posizione "
+"dell'utente quando non sono in uso o il dispositivo è bloccato."
 
 #: ../../userguide/install.rst:2
 msgid "Install Ubuntu Touch"
@@ -1892,20 +1937,30 @@ msgid ""
 "github.com/ubports/ubports-installer/issues/new>`_ to help us solve the "
 "problem."
 msgstr ""
+"Se avete bisogno di aiuto, potete unirvi ai canali di supporto di UBports su "
+"`telegram <https://t.me/WelcomePlus>`_ o `matrix <https://matrix.to/#/!KwdniM"
+"NeTmClpgHkND:matrix.org?via=matrix.org&via=ubports.chat&via=disroot.org>`_ o "
+"porre una domanda `nel forum <https://forums.ubports.com/>`_ o su `askubuntu "
+"<https://askubuntu.com>`_. Se ritenete che il programma di installazione di "
+"UBports non funzioni correttamente, potete anche `proporre un nuovo problema "
+"<https://github.com/ubports/ubports-installer/issues/new>`_ per aiutarci a "
+"risolvere il problema."
 
 #: ../../userguide/install.rst:27
 msgid "Connection lost during installation"
-msgstr ""
+msgstr "Connessione persa durante l'installazione"
 
 #: ../../userguide/install.rst:29
 msgid ""
 "Try a different USB cable and a different USB port on your computer. Cheap "
 "and old cables tend to lose connection during the installation."
 msgstr ""
+"Provare un altro cavo USB e una diversa porta USB del computer. I cavi "
+"vecchi ed economici tendono a perdere la connessione durante l'installazione."
 
 #: ../../userguide/install.rst:32
 msgid "Windows Defender prevents Installer from starting"
-msgstr ""
+msgstr "Windows Defender impedisce l'avvio del programma di installazione"
 
 #: ../../userguide/install.rst:34
 msgid ""
@@ -1914,33 +1969,40 @@ msgid ""
 "dismiss the warning, click on \"More Information\", then select \"Run anyway"
 "\"."
 msgstr ""
+"Abbiamo contattato Microsoft in merito a questo problema, ma sembra che la "
+"Microsoft ritenga che sia \"piacevole\" <https://twitter.com/Windows/status/"
+"1014984163433295875>`__. Per eliminare l'avviso, fate clic su \"Ulteriori "
+"informazioni\", quindi selezionate \"Esegui comunque\"."
 
 #: ../../userguide/install.rst:37
 msgid "Device not detected"
-msgstr ""
+msgstr "Dispositivo non rilevato"
 
 #: ../../userguide/install.rst:40
 msgid "Virtual Machine"
-msgstr ""
+msgstr "Macchina Virtuale"
 
 #: ../../userguide/install.rst:42
 msgid ""
 "If you're running the installer in a virtual machine, make sure the virtual "
 "machine is allowed to access the USB port."
 msgstr ""
+"Se si esegue il programma di installazione in una macchina virtuale, "
+"accertarsi che la macchina virtuale possa accedere alla porta USB."
 
 #: ../../userguide/install.rst:45
 msgid "Windows ADB drivers"
-msgstr ""
+msgstr "Windows ADB-drivers"
 
 #: ../../userguide/install.rst:47
 msgid ""
 "Install the `universal adb driver <http://adb.clockworkmod.com/>`_ and "
 "reboot your computer."
 msgstr ""
+"Installare il driver `universal adb <http://adb.clockworkmod.com/>`_ e "
+"riavviare il computer."
 
 #: ../../userguide/install.rst:50
-#, fuzzy
 msgid "Fairphone 2 Vendor-ID"
 msgstr "Fairphone 2 ID-venditore"
 
@@ -1949,16 +2011,20 @@ msgid ""
 "Run ``echo 0x2ae5 >> ~/.android/adb_usb.ini`` in the terminal and restart "
 "the installer. This does not affect the snap package."
 msgstr ""
+"Eseguire ``echo 0x2ae5 >> ~/.android/adb_usb.ini`` nel terminale e riavviare "
+"il programma di installazione. Questo non influisce sul pacchetto snap."
 
 #: ../../userguide/install.rst:55
 msgid "Missing udev-rules"
-msgstr ""
+msgstr "Regole udev mancanti"
 
 #: ../../userguide/install.rst:57
 msgid ""
 "If the device not detected on Linux and packages other than snap, you might "
 "be missing **udev-rules**."
 msgstr ""
+"Se il dispositivo non viene rilevato su Linux e su pacchetti diversi da "
+"snap, potrebbe mancare **udev-rules**."
 
 #: ../../userguide/install.rst:59
 msgid ""
@@ -1966,10 +2032,14 @@ msgid ""
 "below. If not, add them to the file and run ``sudo service udev restart`` or "
 "``sudo udevadm control --reload-rules && udevadm trigger``."
 msgstr ""
+"Verificare se ``/etc/udev/rules.d/51-android.rules`` esiste e contiene le "
+"regole seguenti. In caso contrario, aggiungerle al file ed eseguire ``sudo "
+"service udev restart`` o ``sudo udevadm control --reload-rules && udevadm "
+"trigger``."
 
 #: ../../userguide/install.rst:99
 msgid "Other issues"
-msgstr ""
+msgstr "Altri problemi"
 
 #: ../../userguide/install.rst:101
 msgid ""
@@ -1977,6 +2047,10 @@ msgid ""
 "manual installation instructions for your device `on the devices page "
 "<https://devices.ubuntu-touch.io/>`_."
 msgstr ""
+"Se i suggerimenti per la risoluzione dei problemi non funzionano, si può "
+"anche provare a seguire le istruzioni per l'installazione manuale del "
+"dispositivo `nella pagina dei dispositivi <https://devices.ubuntu-touch.io/"
+">`_."
 
 #: ../../userguide/install.rst:104
 msgid "Install on legacy Android devices"

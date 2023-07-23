@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-11 09:34-0500\n"
-"PO-Revision-Date: 2021-04-23 20:34+0000\n"
-"Last-Translator: Davide Pruccoli <davide.pruccoli@protonmail.com>\n"
+"PO-Revision-Date: 2023-03-04 18:52+0000\n"
+"Last-Translator: Alberto <ortodipace@proton.me>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-appdev/it/>\n"
 "Language: it\n"
@@ -25,9 +25,8 @@ msgid "The content hub - tips and tricks"
 msgstr "Hub dei contenuti - tips and tricks"
 
 #: ../../appdev/guides/contenthub.rst:9
-#, fuzzy
 msgid "Content Hub Share Page"
-msgstr "Hub dei contenuti"
+msgstr "Hub dei contenuti Pagina di condivisione"
 
 #: ../../appdev/guides/contenthub.rst:11
 msgid ""
@@ -54,7 +53,6 @@ msgstr ""
 "description>`_, ci sono vari modi di gestire il file da condividere:"
 
 #: ../../appdev/guides/contenthub.rst:18
-#, fuzzy
 msgid ""
 "``ContentHandler.Source`` (The selected app will provide a file to be "
 "imported)"
@@ -113,6 +111,12 @@ msgid ""
 "``handler`` is passed in the same line as ContentHandler.Source. As we want "
 "to import an image from the app selected in the Content Hub."
 msgstr ""
+"``contentType`` viene passato in `Main.qml <https://gitlab.com/cibersheep/"
+"webapp-creator/blob/master/webapp-creator/app/Main.qml#L118>`_ come "
+"ContentType.Pictures. Quindi, vedremo solo le applicazioni da cui possiamo "
+"importare solo immagini. ``handler`` viene passato nella stessa riga come "
+"ContentHandler.Source. Poiché vogliamo importare un'immagine "
+"dall'applicazione selezionata nell'Hub dei contenuti."
 
 #: ../../appdev/guides/contenthub.rst:53
 msgid "Exporting"
@@ -128,6 +132,9 @@ msgid ""
 "our device or share with ourselves (in Telegram and then save them to our "
 "computer)."
 msgstr ""
+"In Gelek, finiamo con alcuni giochi salvati che vogliamo salvare nel nostro "
+"dispositivo o condividere con noi stessi (in Telegram e poi salvarli al "
+"nostro computer)."
 
 #: ../../appdev/guides/contenthub.rst:64
 msgid ""
@@ -188,28 +195,29 @@ msgstr ""
 "messaggi di testo)."
 
 #: ../../appdev/guides/contenthub.rst:99
-#, fuzzy
 msgid ""
 "The only difference between this and the previous code is that ``handler`` "
 "is ``ContentHandler.Share``."
 msgstr ""
 "L'unica differenza tra questo e il codice precedente è che ``handler`` è "
-"``ContentHandler.Share``"
+"``ContentHandler.Share``."
 
 #: ../../appdev/guides/contenthub.rst:102
 msgid "Wait a minute. Why the different apps?"
 msgstr "Aspetta un attimo. Perche app differenti?"
 
 #: ../../appdev/guides/contenthub.rst:107
-#, fuzzy
 msgid "Content Hub: Export vs Share"
-msgstr "Content Hub: Esporta vs Condividi"
+msgstr "Hub dei contenuti: Esportazione e condivisione"
 
 #: ../../appdev/guides/contenthub.rst:109
 msgid ""
 "Each developer can decide the rules each app would follow in relation to the "
 "Content Hub. Why the OpenStore is shown as the destination of an export?"
 msgstr ""
+"Ogni sviluppatore può decidere le regole che ogni applicazione deve seguire "
+"in relazione al Content Hub. Perché OpenStore è indicato come destinazione "
+"di un'esportazione?"
 
 #: ../../appdev/guides/contenthub.rst:111
 msgid "Let’s check its manifest.json"
@@ -221,6 +229,9 @@ msgid ""
 "relation to the ``\"content-hub\"`` should follow the rules defined in "
 "``openstore-contenthub.json``"
 msgstr ""
+"Il codice precedente definisce che gli hook per l'applicazione chiamata ``\""
+"openstore\"`` in relazione al ``\"content-hub\"`` devono seguire le regole "
+"definite in ``openstore-contenthub.json``"
 
 #: ../../appdev/guides/contenthub.rst:134
 msgid ""
@@ -273,6 +284,8 @@ msgid ""
 "`Application Templates by fulvio <https://github.com/fulvio999/"
 "ubports_app_templates>`__"
 msgstr ""
+"Modelli di applicazione da fulvio <https://github.com/fulvio999/"
+"ubports_app_templates>`__"
 
 #: ../../appdev/guides/cookbook.rst:13
 msgid "Playground"
@@ -332,31 +345,37 @@ msgid ""
 "`Publish your existing Qt QML app to Ubuntu Touch using QMake (Video) "
 "<https://youtu.be/ehqlwRNrfO0>`__"
 msgstr ""
+"Pubblicare un'applicazione Qt QML esistente su Ubuntu Touch usando QMake "
+"(Video) <https://youtu.be/ehqlwRNrfO0>`__"
 
 #: ../../appdev/guides/cookbook.rst:24
 msgid ""
 "`Publish your existing Qt QML app to Ubuntu Touch using CMake (Video) "
 "<https://youtu.be/c2sq6aLeGec>`__"
 msgstr ""
+"Pubblicazione di un'applicazione Qt QML esistente su Ubuntu Touch "
+"utilizzando CMake (Video) <https://youtu.be/c2sq6aLeGec>`__"
 
 #: ../../appdev/guides/cookbook.rst:25
 msgid ""
 "`Getting started with Clickable (Video) <https://youtu.be/TE-s5522v0Y>`__"
-msgstr ""
+msgstr "Iniziare con Clickable (Video) <https://youtu.be/TE-s5522v0Y>`__"
 
 #: ../../appdev/guides/cookbook.rst:26
 msgid "`Content Hub overview (Video) <https://youtu.be/AihwC2sPIk0>`__"
-msgstr ""
+msgstr "Panoramica di Content Hub (Video) <https://youtu.be/AihwC2sPIk0>`__"
 
 #: ../../appdev/guides/cookbook.rst:27
 msgid ""
 "`Import files to your app with Content Hub (Video) <https://youtu.be/"
 "q6zzM16jw1U>`__"
 msgstr ""
+"Importare i file nella vostra applicazione con Content Hub (Video) "
+"<https://youtu.be/q6zzM16jw1U>`__"
 
 #: ../../appdev/guides/dependencies.rst:2
 msgid "Handle C++ dependencies with Clickable"
-msgstr ""
+msgstr "Gestire le dipendenze del C++ con Clickable"
 
 #: ../../appdev/guides/dependencies.rst:4
 msgid ""
@@ -370,7 +389,7 @@ msgstr ""
 
 #: ../../appdev/guides/dependencies.rst:7
 msgid "Building"
-msgstr ""
+msgstr "Costruzione"
 
 #: ../../appdev/guides/dependencies.rst:8
 msgid ""
@@ -379,11 +398,15 @@ msgid ""
 "control over the whole process and may lead to better results (e.g. better "
 "performance or smaller package sizes)."
 msgstr ""
+"A volte le librerie sono disponibili pre-costruite, consentendo di saltare "
+"la fase di compilazione. La compilazione della dipendenza è comunque "
+"consigliata, in quanto consente di avere un maggiore controllo sull'intero "
+"processo e può portare a risultati migliori (ad esempio, prestazioni "
+"migliori o dimensioni ridotte del pacchetto)."
 
 #: ../../appdev/guides/dependencies.rst:11
-#, fuzzy
 msgid "Compilation"
-msgstr "Introduzione"
+msgstr "Compilazione"
 
 #: ../../appdev/guides/dependencies.rst:12
 msgid ""
@@ -393,24 +416,36 @@ msgid ""
 "is a good idea to add it as a `git submodule <https://git-scm.com/book/de/v1/"
 "Git-Tools-Submodule>`_. Otherwise add a script to download the sources."
 msgstr ""
+"Mettere il codice sorgente della libreria in ``libs/LIBNAME`` (sostituendo "
+"``LIBNAME`` con il nome della libreria), perché è qui che clickable la "
+"cercherà per impostazione predefinita. Se il codice sorgente della "
+"dipendenza è disponibile come repository git, è una buona idea aggiungerlo "
+"come `git submodule <https://git-scm.com/book/de/v1/Git-Tools-Submodule>`_. "
+"Altrimenti, aggiungere uno script per scaricare i sorgenti."
 
 #: ../../appdev/guides/dependencies.rst:14
 msgid ""
 "Add a `libraries section <http://clickable.bhdouglass.com/en/latest/"
 "clickable-json.html#libraries>`_ to your clickable.json, like this:"
 msgstr ""
+"Aggiungere una sezione `libraries <http://clickable.bhdouglass.com/en/latest/"
+"clickable-json.html#libraries>`_ al file clickable.json, in questo modo:"
 
 #: ../../appdev/guides/dependencies.rst:28
 msgid ""
 "If the library does not contain a CMake configuration, you need to use the "
 "`qmake` or `custom` template instead."
 msgstr ""
+"Se la libreria non contiene una configurazione CMake, è necessario "
+"utilizzare il template `qmake` o `custom`."
 
 #: ../../appdev/guides/dependencies.rst:30
 msgid ""
 "Optionally, configure the compilation by adding ``build_args``, which may "
 "look like this:"
 msgstr ""
+"Opzionalmente, si può configurare la compilazione aggiungendo ``build_args``"
+", che può essere simile a questo:"
 
 #: ../../appdev/guides/dependencies.rst:50
 msgid ""
@@ -418,6 +453,10 @@ msgid ""
 "build instructions and also look for ``option`` settings in its ``CMakeLists."
 "txt`` ."
 msgstr ""
+"La maggior parte degli argomenti di compilazione sono specifici del "
+"progetto. Per questo motivo, si devono studiare le istruzioni di "
+"compilazione della libreria e cercare anche le impostazioni delle ``"
+"opzioni'' nel suo ``CMakeLists.txt''."
 
 #: ../../appdev/guides/dependencies.rst:52
 msgid ""
@@ -426,6 +465,11 @@ msgid ""
 "build-libs --arch amd64``. Don't forget to mention this step in your README, "
 "so that others can reproduce the build process."
 msgstr ""
+"Per costruire effettivamente la libreria per tutte le architetture, eseguire "
+"``clickable build-libs --arch armhf``, ``clickable build-libs --arch arm64`` "
+"e ``clickable build-libs --arch amd64``. Non dimenticate di menzionare "
+"questo passaggio nel vostro README, in modo che altri possano riprodurre il "
+"processo di compilazione."
 
 #: ../../appdev/guides/dependencies.rst:54
 msgid ""
@@ -433,10 +477,13 @@ msgid ""
 "blob/master/clickable.json#L21>`_ uses the libraries feature to build its "
 "dependency tdlib."
 msgstr ""
+"Si veda come `Teleporti cliccabili.json <https://gitlab.com/ubports/apps/"
+"teleports/blob/master/clickable.json#L21>`_ utilizza la funzione librerie "
+"per costruire la sua dipendenza tdlib."
 
 #: ../../appdev/guides/dependencies.rst:57
 msgid "Pre-built"
-msgstr ""
+msgstr "Pre-costruzione"
 
 #: ../../appdev/guides/dependencies.rst:58
 msgid "If you compiled your library as described above, skip this step."
@@ -454,12 +501,22 @@ msgid ""
 "need (likely ``armhf`` or ``arm64``). In this case you have to compile the "
 "library as described above."
 msgstr ""
+"Una libreria precostituita è solitamente disponibile solo come oggetto "
+"condiviso che deve essere collegato dinamicamente. Inoltre, può contenere "
+"componenti che non servono, con il risultato di un'applicazione gonfia. "
+"Potrebbe anche mancare qualcosa che si potrebbe ottenere compilandola da "
+"soli. A volte, una libreria è disponibile nei repository di Ubuntu, ma non è "
+"installabile per l'architettura necessaria (probabilmente ``armhf`` o "
+"``arm64``). In questo caso è necessario compilare la libreria come descritto "
+"sopra."
 
 #: ../../appdev/guides/dependencies.rst:62
 msgid ""
 "If the library is available in the Ubuntu Repositories, you can add it to "
 "the dependencies list, like this:"
 msgstr ""
+"Se la libreria è disponibile nei repository di Ubuntu, è possibile "
+"aggiungerla all'elenco delle dipendenze, in questo modo:"
 
 #: ../../appdev/guides/dependencies.rst:74
 msgid ""
@@ -468,20 +525,27 @@ msgid ""
 "Tools' clickable.json <https://github.com/t-mon/guitar-tools/blob/master/"
 "clickable.json#L4>`_."
 msgstr ""
+"Clickable installerà automaticamente il pacchetto specificato per "
+"l'architettura di destinazione all'interno del contenitore di build. Un "
+"esempio si trova in `Guitar Tools' clickable.json <https://github.com/t-mon/"
+"guitar-tools/blob/master/clickable.json#L4>`_."
 
 #: ../../appdev/guides/dependencies.rst:76
 msgid ""
 "If the library can be found in a PPA, you can add the PPA to the clickable."
 "json, too. For example:"
 msgstr ""
+"Se la libreria si trova in un PPA, si può aggiungere anche il PPA al file "
+"clickable.json. Per esempio:"
 
 #: ../../appdev/guides/dependencies.rst:91
 msgid "Otherwise add a script to download the pre-built library."
 msgstr ""
+"Altrimenti, aggiungere uno script per scaricare la libreria precostituita."
 
 #: ../../appdev/guides/dependencies.rst:94
 msgid "Usage"
-msgstr ""
+msgstr "Utilizzo"
 
 #: ../../appdev/guides/dependencies.rst:95
 msgid ""
@@ -489,6 +553,10 @@ msgid ""
 "found that you include into the app's source code. Second, you need to link "
 "the library's binary against your app's binary."
 msgstr ""
+"In primo luogo, è necessario specificare la directory di inclusione in cui "
+"si trovano le intestazioni da includere nel codice sorgente "
+"dell'applicazione. In secondo luogo, è necessario collegare il binario della "
+"libreria al binario dell'applicazione."
 
 #: ../../appdev/guides/dependencies.rst:97
 msgid ""
@@ -498,6 +566,11 @@ msgid ""
 "variables pointing to the library's binary and include directories. The "
 "additional lines on your CMakeLists.txt then may look like:"
 msgstr ""
+"Nel caso in cui la libreria contenga un file di configurazione di CMake, si "
+"può usare il comando `find_package <https://cmake.org/cmake/help/latest/"
+"command/find_package.html>`_, che fornisce un target da collegare o "
+"variabili che puntano alle directory binarie e include della libreria. Le "
+"righe aggiuntive del file CMakeLists.txt potrebbero quindi essere simili a:"
 
 #: ../../appdev/guides/dependencies.rst:106
 msgid ""
@@ -510,22 +583,35 @@ msgid ""
 "camera-scanner/blob/master/plugins/ImageProcessing/CMakeLists.txt#L23>`_ for "
 "a real world example."
 msgstr ""
+"Il comando ``find_package`` di solito definisce il percorso della directory "
+"di inclusione come ``SOMELIBRARY_INCLUDE_DIRS`` e i binari della libreria "
+"come ``SOMELIBRARY_LIBS`` (verificare nella documentazione della libreria "
+"cosa prevede esattamente la configurazione di CMake). Usarli con i comandi "
+"``include_directories`` e ``target_link_libraries``. Vedere il file `Camera "
+"Scanner ImageProcessing CMakeLists.txt <https://github.com/jonnius/"
+"camera-scanner/blob/master/plugins/ImageProcessing/CMakeLists.txt#L23>`_ per "
+"un esempio reale."
 
 #: ../../appdev/guides/dependencies.rst:108
 msgid ""
 "At this point you should already be able to test with Clickable's desktop "
 "mode running ``clickable desktop``."
 msgstr ""
+"A questo punto si dovrebbe già essere in grado di testare la modalità "
+"desktop di Clickable eseguendo ``clickable desktop``."
 
 #: ../../appdev/guides/dependencies.rst:111
 msgid "Deployment"
-msgstr ""
+msgstr "Distribuzione"
 
 #: ../../appdev/guides/dependencies.rst:112
 msgid ""
 "If you linked the library statically, you can skip this step, as the "
 "library's binary is already inside your app's binary."
 msgstr ""
+"Se la libreria è collegata staticamente, si può saltare questo passaggio, "
+"poiché il binario della libreria è già all'interno del binario "
+"dell'applicazione."
 
 #: ../../appdev/guides/dependencies.rst:114
 msgid ""
@@ -534,6 +620,10 @@ msgid ""
 "You should see an error message telling you which shared object file was "
 "missing."
 msgstr ""
+"Scoprire quali file di oggetti condivisi (``*.so``) è necessario spedire. È "
+"possibile farlo avviando l'applicazione sul dispositivo tramite ``clickable "
+"&& clickable logs``. Dovrebbe apparire un messaggio di errore che indica il "
+"file di oggetti condivisi mancante."
 
 #: ../../appdev/guides/dependencies.rst:116
 msgid ""
@@ -546,6 +636,16 @@ msgid ""
 "error messages you can ignore). In general, ``/usr/lib``  is a good bet when "
 "looking for the shared object files."
 msgstr ""
+"Trova il percorso dei file degli oggetti condivisi. Per le librerie "
+"costruite tramite clickable, si trovano da qualche parte nella directory di "
+"installazione della libreria, che si trova per impostazione predefinita "
+"all'interno della directory di compilazione della libreria (ad esempio ``"
+"build/arm-linux-gnueabihf/opencv/install``). Per le librerie precostituite, "
+"eseguire ``clickable run \"find / -name 'libSomething.so'\"`` (sostituendo "
+"``libSomething.so`` con il file che si sta cercando). Questo dovrebbe "
+"stampare il percorso del file (insieme ad alcuni messaggi di errore che si "
+"possono ignorare). In generale, ``/usr/lib`` è una buona scelta quando si "
+"cercano i file degli oggetti condivisi."
 
 #: ../../appdev/guides/dependencies.rst:118
 msgid ""
@@ -553,6 +653,9 @@ msgid ""
 "clickable.bhdouglass.com/en/latest/clickable-json.html#install-lib>`_ key to "
 "your clickable.json:"
 msgstr ""
+"Per inserire i file nel pacchetto click, aggiungere la chiave `install_lib "
+"<http://clickable.bhdouglass.com/en/latest/clickable-json.html#install-lib>`"
+"_ al file clickable.json:"
 
 #: ../../appdev/guides/dependencies.rst:136
 msgid ""
@@ -560,18 +663,27 @@ msgid ""
 "built with Clickable. The asterisk in ``.so*`` helps to catch symbolic links "
 "along with the actual library which are used to point to the current version."
 msgstr ""
+"Le righe precedenti contengono due esempi. Il primo installa una libreria "
+"costruita con Clickable. L'asterisco in ``.so*`` aiuta a catturare i "
+"collegamenti simbolici insieme alla libreria vera e propria, usati per "
+"puntare alla versione corrente."
 
 #: ../../appdev/guides/dependencies.rst:138
 msgid ""
 "Depending on the library, you might need to ship some additional data. In "
 "that case consult the library's readme or install instructions."
 msgstr ""
+"A seconda della libreria, potrebbe essere necessario inviare alcuni dati "
+"aggiuntivi. In questo caso, consultare il readme della libreria o le "
+"istruzioni di installazione."
 
 #: ../../appdev/guides/dependencies.rst:140
 msgid ""
 "You should be set up to build and install your click package on a device "
 "connected to your computer now by running ``clickable``."
 msgstr ""
+"Si dovrebbe essere pronti a costruire e installare il pacchetto click su un "
+"dispositivo collegato al computer eseguendo ``clickable``."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:2
 msgid "Importing from Content Hub and URLdispatcher"
@@ -589,11 +701,11 @@ msgstr ""
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:10
 msgid "Handle data from the Content Hub"
-msgstr ""
+msgstr "Gestire i dati dall'Hub dei contenuti"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:15
 msgid "OpenStore app from open-store.io"
-msgstr ""
+msgstr "Applicazione OpenStore da open-store.io"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:17
 msgid ""
@@ -601,6 +713,9 @@ msgid ""
 "yourself on Telegram, and opening that click file with the OpenStore through "
 "the Content Hub:"
 msgstr ""
+"Uno dei modi più semplici per testare un'applicazione è inviare un clic di "
+"prova a se stessi su Telegram e aprire il file del clic con OpenStore "
+"attraverso Content Hub:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:22
 msgid ""
@@ -609,6 +724,10 @@ msgid ""
 "app <https://github.com/UbuntuOpenStore/openstore-app/blob/master/openstore/"
 "Main.qml#L85>`_ to see how it is done:"
 msgstr ""
+"Se si tocca l'applicazione OpenStore, questa verrà aperta e chiederà se si "
+"vuole installare il file click. Diamo un'occhiata al codice Main.qml "
+"dell'applicazione <https://github.com/UbuntuOpenStore/openstore-app/blob/"
+"master/openstore/Main.qml#L85>`_ per vedere come avviene:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:41
 msgid ""
@@ -617,11 +736,14 @@ msgid ""
 "from the Content Hub (``transfer.items[0].url`` is the url of the first data "
 "sent) and open a ``PopUp`` element to let the user install the click."
 msgstr ""
+"Si vede l'elemento Connections che punta al ContentHub? Quando riceve il "
+"segnale onImportRequested, prenderà l'url dei dati inviati dal Content Hub "
+"(``transfer.items[0].url`` è l'url dei primi dati inviati) e aprirà un "
+"elemento ``PopUp`` per consentire all'utente di installare il clic."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:44
-#, fuzzy
 msgid "What about the URLdispatcher?"
-msgstr "Dispatcher URL"
+msgstr "Che dire dell'URLdispatcher?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:46
 msgid ""
@@ -631,12 +753,19 @@ msgid ""
 "on an http protocol. If we tap on a map link it is handy to open it with "
 "uNav or to open a twitter link in the Twitter app! How does that work?"
 msgstr ""
+"L'URL dispatcher è un software, simile al Content Hub, che ci semplifica la "
+"vita cercando di scegliere l'applicazione corretta per un determinato "
+"protocollo. Ad esempio: Probabilmente vogliamo aprire il browser web quando "
+"tocchiamo un protocollo http. Se tocchiamo un link a una mappa è comodo "
+"aprirlo con uNav o aprire un link a Twitter nell'app Twitter! Come funziona?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:48
 msgid ""
 "The ``URLdispatcher`` selects which app (according to their ``manifest."
 "json``) will open a certain link."
 msgstr ""
+"L'``URLdispatcher`` seleziona quale applicazione (in base al suo "
+"``manifest.json``) aprirà un determinato collegamento."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:53
 msgid ""
@@ -644,6 +773,10 @@ msgid ""
 "hooks for the ``URLdispatcher`` in its `manifest.json code <https://bazaar."
 "launchpad.net/~unav-devs/unav/trunk/view/head:/manifest.json#L9>`_:"
 msgstr ""
+"Vediamo come appare la nostra applicazione di navigazione all'interno. Il "
+"manifest di uNav mostra ganci speciali per l'``URLdispatcher'' nel suo "
+"codice `manifest.json <https://bazaar.launchpad.net/~unav-devs/unav/trunk/"
+"view/head:/manifest.json#L9>`_:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:83
 msgid ""
@@ -651,22 +784,29 @@ msgid ""
 "be opened in uNav. And that’s defined in lines 2 and 3, where it looks for "
 "protocol http followed by map.unav.me."
 msgstr ""
+"Ciò significa che un link che assomiglia a http://map.unav.me/xxxxx,xxxxx "
+"verrà aperto in uNav. Questo è definito nelle righe 2 e 3, dove si cerca il "
+"protocollo http seguito da map.unav.me."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:85
 msgid ""
 "Also, a URI formatted geo:xxx,xxx should open in uNav, as it’s defined in "
 "line 11."
 msgstr ""
+"Inoltre, un URI formattato geo:xxx,xxx dovrebbe aprirsi in uNav, come è "
+"stato definito nella riga 11."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:88
 msgid "And how do we manage the received URL?"
-msgstr ""
+msgstr "E come gestiamo l'URL ricevuto?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:90
 msgid ""
 "After the ``URLdispatcher`` sends the link to the correspondent app, we need "
 "to handle that URL or URI in the targeted app. Let’s see how to do that:"
 msgstr ""
+"Dopo che l'``URLdispatcher'' invia il link all'applicazione corrispondente, "
+"dobbiamo gestire l'URL o l'URI nell'applicazione mirata. Vediamo come fare:"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:92
 msgid ""
@@ -676,6 +816,11 @@ msgid ""
 "simple/blob/master/qml/Main.qml#L212>`_ with a Connections element setting "
 "``UriHandler`` as a target."
 msgstr ""
+"Nel file qml principale, dobbiamo aggiungere del codice per sapere cosa fare "
+"con l'URL inviato. Verifichiamo come l'applicazione Linphone gestisce questo "
+"aspetto, aggiungendo una `connessione al gestore di URI <https://gitlab.com/"
+"ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L212>`_ con un "
+"elemento Connections che imposta ``UriHandler`` come target."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:109
 msgid ""
@@ -683,6 +828,9 @@ msgid ""
 "the app is opened. But what do we need to do to handle this link when the "
 "app is closed?"
 msgstr ""
+"Questo codice gestirà un URI nella forma ``linphone://sip:xxx@xxx.xx`` "
+"quando l'applicazione viene aperta. Ma cosa dobbiamo fare per gestire questo "
+"link quando l'applicazione viene chiusa?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:111
 msgid ""
@@ -690,12 +838,17 @@ msgid ""
 "linphone-simple/blob/master/qml/Main.qml#L76>`_ that will cover two cases: "
 "1) We receive one URL 2) We receive more than one URL"
 msgstr ""
+"Dobbiamo aggiungere un po' di codice `extra <https://gitlab.com/"
+"ubports-linphone/linphone-simple/blob/master/qml/Main.qml#L76>`_ che coprirà "
+"due casi: 1) Riceviamo un URL 2) Riceviamo più di un URL"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:115
 msgid ""
 "Let's check if ``Qt.application.arguments`` is not empty and if not, if any "
 "argument matches our URI format."
 msgstr ""
+"Controlliamo se ``Qt.application.arguments`` non è vuoto e, in caso "
+"contrario, se qualche argomento corrisponde al nostro formato URI."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:135
 msgid ""
@@ -704,10 +857,15 @@ msgid ""
 "com/ubports-linphone/linphone-simple/-/blob/master/linphone.desktop.in#L7>`_ "
 "file of the app."
 msgstr ""
+"Ricordarsi di controllare che %u (per ricevere 1 URL) o %U (per ricevere 1 o "
+"più URL) sia presente sotto la riga ``Exec`` nel file `.desktop "
+"<https://gitlab.com/ubports-linphone/linphone-simple/-/blob/master/"
+"linphone.desktop.in#L7>`_ dell'applicazione."
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:138
 msgid "What happens if more than one app has the same URL type defined?"
 msgstr ""
+"Cosa succede se più di un'applicazione ha lo stesso tipo di URL definito?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:140
 msgid ""
@@ -715,18 +873,23 @@ msgid ""
 "a URL handled by the ``URLdispatcher`` as protocol ``http`` or the protocol "
 "``http://twitter``?"
 msgstr ""
+"Un'ottima domanda. Cosa succede se si tocca un link di Twitter? Come viene "
+"gestito un URL di questo tipo dall'``URLdispatcher`` come protocollo ``http``"
+" o come protocollo ``http://twitter``?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:142
 msgid "What happens if two apps have the same defined protocol?"
-msgstr ""
+msgstr "Cosa succede se due applicazioni hanno lo stesso protocollo definito?"
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:144
 msgid "Now it’s time to do some tests and share the results in the next guide."
 msgstr ""
+"Ora è il momento di effettuare alcuni test e di condividere i risultati "
+"nella prossima guida."
 
 #: ../../appdev/guides/index.rst:4
 msgid "Developer guides"
-msgstr ""
+msgstr "Guide per sviluppatori"
 
 #: ../../appdev/guides/index.rst:6
 msgid ""
@@ -734,12 +897,18 @@ msgid ""
 "mean time we recommend the `Ubuntu Touch Programming Course <https://mimecar."
 "gitbook.io/qt-course/>`__."
 msgstr ""
+"Attualmente stiamo lavorando per ampliare il nostro elenco di guide per "
+"sviluppatori. Nel frattempo consigliamo il `Corso di programmazione di "
+"Ubuntu Touch <https://mimecar.gitbook.io/qt-course/>`__."
 
 #: ../../appdev/guides/index.rst:9
 msgid ""
 "If you are interested in helping create developer guides check out our "
 "`GitLab Project <https://gitlab.com/ubports/apps/development-resources>`__."
 msgstr ""
+"Se siete interessati a contribuire alla creazione di guide per sviluppatori, "
+"visitate il nostro progetto `GitLab <https://gitlab.com/ubports/apps/"
+"development-resources>`__."
 
 #: ../../appdev/guides/pushnotifications.rst:2
 #: ../../appdev/platform/index.rst:12
@@ -752,6 +921,9 @@ msgid ""
 "the OpenStore. But now you want to be able to send Push Notifications to "
 "your users. First of all, you need to understand how this is working:"
 msgstr ""
+"Supponiamo di avere un'applicazione creata con Clickable e pubblicata su "
+"OpenStore. Ma ora volete essere in grado di inviare notifiche push ai vostri "
+"utenti. Prima di tutto, è necessario capire come funziona:"
 
 #: ../../appdev/guides/pushnotifications.rst:8
 msgid ""
@@ -759,22 +931,29 @@ msgid ""
 "identifies the user, the device and the app itself. The token is generated "
 "by the UBports Push Service."
 msgstr ""
+"Ogni app che utilizza le notifiche push ha un token unico. Questo token "
+"identifica l'utente, il dispositivo e l'app stessa. Il token è generato dal "
+"servizio Push di UBports."
 
 #: ../../appdev/guides/pushnotifications.rst:9
 msgid ""
 "You will need the token to send a push notification. So the app sends its "
 "token to the app developer's server."
 msgstr ""
+"Il token è necessario per inviare una notifica push. Quindi l'applicazione "
+"invia il proprio token al server dello sviluppatore dell'applicazione."
 
 #: ../../appdev/guides/pushnotifications.rst:10
 msgid ""
 "With the token you can send a HTTP request to the UBports Push Server which "
 "will forward the notification the user's device."
 msgstr ""
+"Con il token è possibile inviare una richiesta HTTP al server UBports Push "
+"che inoltrerà la notifica al dispositivo dell'utente."
 
 #: ../../appdev/guides/pushnotifications.rst:12
 msgid "Let's practice this step-by-step."
-msgstr ""
+msgstr "Esercitiamoci passo dopo passo."
 
 #: ../../appdev/guides/pushnotifications.rst:15
 msgid ""
@@ -783,26 +962,34 @@ msgid ""
 "the user about the communication with your server by providing a privacy "
 "policy!"
 msgstr ""
+"Nell'esempio che segue non implementeremo un server. Anche la comunicazione "
+"tra la vostra applicazione e il vostro server dipende da voi. Si prega di "
+"informare l'utente sulla comunicazione con il server fornendo un'informativa "
+"sulla privacy!"
 
 #: ../../appdev/guides/pushnotifications.rst:18
 msgid "Make the app ready for push notifications"
-msgstr ""
+msgstr "Preparare l'app per le notifiche push"
 
 #: ../../appdev/guides/pushnotifications.rst:21
 msgid "Implementing the PushClient"
-msgstr ""
+msgstr "Implementazione del PushClient"
 
 #: ../../appdev/guides/pushnotifications.rst:23
 msgid ""
 "First we need to add the policy group \"push-notification-client\". Your "
 "apparmor file could look like this:"
 msgstr ""
+"Per prima cosa è necessario aggiungere il gruppo di criteri \"push-"
+"notification-client\". Il file di apparmor potrebbe essere simile a questo:"
 
 #: ../../appdev/guides/pushnotifications.rst:36
 msgid ""
 "In the next step we need to modify the Qml parts. We need to add a "
 "pushclient component:"
 msgstr ""
+"Nel passo successivo dobbiamo modificare le parti Qml. Dobbiamo aggiungere "
+"un componente pushclient:"
 
 #: ../../appdev/guides/pushnotifications.rst:52
 msgid ""
@@ -814,10 +1001,18 @@ msgid ""
 "But the app is not yet ready to receive a push notification. For this we "
 "need something called a pushhelper!"
 msgstr ""
+"È necessario impostare l'appId corretto! Se il nome dell'applicazione nel "
+"file manifest è myapp.yourname e il nome dell'hook principale (quello che "
+"gestisce il file .desktop) è hookname, allora l'appId è: "
+"myapp.yourname_hookname. Quando ora si avvia l'applicazione, questa otterrà "
+"un token e lo stamperà nei log. Con i log cliccabili, saremo in grado di "
+"copiare questo token dal terminale. Ma l'applicazione non è ancora pronta a "
+"ricevere una notifica push. Per questo abbiamo bisogno di qualcosa chiamato "
+"pushhelper!"
 
 #: ../../appdev/guides/pushnotifications.rst:56
 msgid "Implementing the pushhelper"
-msgstr ""
+msgstr "Implementazione del pushhelper"
 
 #: ../../appdev/guides/pushnotifications.rst:58
 msgid ""
@@ -827,6 +1022,11 @@ msgid ""
 "json-file in the correct format. The pushhelper is seperated from the app. "
 "So we need a new hook in the manifest. It could look like this:"
 msgstr ""
+"Il pushhelper è una parte dell'applicazione che riceve tutte le notifiche "
+"push e le elabora prima di inviarle al centro notifiche del sistema. "
+"Riceverà un file json e dovrà produrre un altro file json nel formato "
+"corretto. Il pushhelper è separato dall'applicazione. Quindi abbiamo bisogno "
+"di un nuovo hook nel manifest. Potrebbe essere così:"
 
 #: ../../appdev/guides/pushnotifications.rst:81
 msgid ""
@@ -834,30 +1034,38 @@ msgid ""
 "different executable file. The **push-apparmor.json** file must only contain "
 "the policy group push-notification-client and should look like this:"
 msgstr ""
+"Dovrebbe essere chiaro che ora abbiamo bisogno di un file apparmor diverso e "
+"di un file eseguibile diverso. Il file **push-apparmor.json** deve contenere "
+"solo il gruppo di policy push-notification-client e deve avere questo "
+"aspetto:"
 
 #: ../../appdev/guides/pushnotifications.rst:93
 msgid "The **push.json** is for redirecting to the executable file:"
-msgstr ""
+msgstr "Il file **push.json** serve a reindirizzare al file eseguibile:"
 
 #: ../../appdev/guides/pushnotifications.rst:101
 msgid ""
 "In our tutorial we will use python to create a executable named **pushexec** "
 "which will forward the notification without changing anything:"
 msgstr ""
+"Nel nostro tutorial useremo python per creare un eseguibile chiamato "
+"**pushexec** che inoltrerà la notifica senza modificare nulla:"
 
 #: ../../appdev/guides/pushnotifications.rst:113
 msgid ""
 "We also need to add this new files to the **CMakeLists.txt** and make the "
 "pushexec executable::"
 msgstr ""
+"È inoltre necessario aggiungere questi nuovi file a **CMakeLists.txt** e "
+"rendere eseguibile pushexec::"
 
 #: ../../appdev/guides/pushnotifications.rst:123
 msgid "Now the app is ready to receive and process push notifications!"
-msgstr ""
+msgstr "Ora l'applicazione è pronta a ricevere ed elaborare le notifiche push!"
 
 #: ../../appdev/guides/pushnotifications.rst:126
 msgid "Using the Push Service API"
-msgstr ""
+msgstr "Utilizzo dell'API del servizio Push"
 
 #: ../../appdev/guides/pushnotifications.rst:128
 msgid ""
@@ -867,11 +1075,15 @@ msgid ""
 "application/json and it must fit in the correct format. A example in "
 "javascript could look like this:"
 msgstr ""
+"Ora si dispone del token e l'applicazione è pronta a ricevere ed elaborare "
+"le notifiche push. Per inviare una notifica, occorre inviare una richiesta "
+"HTTP a questo indirizzo: https://push.ubports.com/notify Il tipo di "
+"contenuto deve essere application/json e deve essere nel formato corretto. "
+"Un esempio in javascript potrebbe essere questo:"
 
 #: ../../appdev/guides/pushnotifications.rst:165
-#, fuzzy
 msgid "Push Notification Object"
-msgstr "Notifiche push"
+msgstr "Oggetto di notifica push"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -880,7 +1092,7 @@ msgstr "Notifiche push"
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Parameter"
-msgstr ""
+msgstr "Parametro"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -889,7 +1101,7 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #: ../../appdev/guides/pushnotifications.rst:168
 #: ../../appdev/guides/pushnotifications.rst:193
@@ -898,11 +1110,11 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:259
 #: ../../appdev/guides/pushnotifications.rst:273
 msgid "Description"
-msgstr ""
+msgstr "Descrizione"
 
 #: ../../appdev/guides/pushnotifications.rst:170
 msgid "appid"
-msgstr ""
+msgstr "appid"
 
 #: ../../appdev/guides/pushnotifications.rst:170
 #: ../../appdev/guides/pushnotifications.rst:173
@@ -912,371 +1124,379 @@ msgstr ""
 #: ../../appdev/guides/pushnotifications.rst:230
 #: ../../appdev/guides/pushnotifications.rst:233
 #: ../../appdev/guides/pushnotifications.rst:241
-#, fuzzy
 msgid "string"
-msgstr "Condivisione"
+msgstr "stringa"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. ID of the application that will receive the notification,"
-msgstr ""
+msgstr "Richiesto. ID dell'applicazione che riceverà la notifica,"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "as described in the client side documentation."
-msgstr ""
+msgstr "come descritto nella documentazione del lato client."
 
 #: ../../appdev/guides/pushnotifications.rst:173
 msgid "expire_on"
-msgstr ""
+msgstr "scadere_il"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. Expiration date/time for this message, in"
-msgstr ""
+msgstr "Richiesto. Data/ora di scadenza per questo messaggio, in"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "`ISO8601 Extendendformat <https://www.w3.org/TR/NOTE-datetime>`_."
-msgstr ""
+msgstr "`ISO8601 Formato esteso <https://www.w3.org/TR/NOTE-datetime>`_."
 
 #: ../../appdev/guides/pushnotifications.rst:176
 msgid "token"
-msgstr ""
+msgstr "token"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. The token identifying the user+device to which the message is"
 msgstr ""
+"Richiesto. Il token che identifica l'utente+dispositivo a cui il messaggio è"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "directed, as described in the client side documentation."
-msgstr ""
+msgstr "diretto, come descritto nella documentazione lato cliente."
 
 #: ../../appdev/guides/pushnotifications.rst:179
 msgid "clear_pending"
-msgstr ""
+msgstr "clear_pending"
 
 #: ../../appdev/guides/pushnotifications.rst:179
 #: ../../appdev/guides/pushnotifications.rst:248
 #: ../../appdev/guides/pushnotifications.rst:250
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Discards all previous pending notifications. Usually in response to"
 msgstr ""
+"Scarta tutte le notifiche in sospeso precedenti. Di solito in risposta a"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "getting a \"too-many-pending\" error. Defaults to false."
-msgstr ""
+msgstr "ottenere un errore \"too-many-pending\". Predefinisce il falso."
 
 #: ../../appdev/guides/pushnotifications.rst:182
 msgid "replace_tag"
-msgstr ""
+msgstr "sostituire_tag"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If there's a pending notification with the same tag, delete it before"
-msgstr ""
+msgstr "Se c'è una notifica in sospeso con lo stesso tag, cancellalo prima"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "queuing this new one."
-msgstr ""
+msgstr "in coda a questo nuovo."
 
 #: ../../appdev/guides/pushnotifications.rst:185
 msgid "data"
-msgstr ""
+msgstr "dati"
 
 #: ../../appdev/guides/pushnotifications.rst:185
 #: ../../appdev/guides/pushnotifications.rst:190
 msgid "Data"
-msgstr ""
+msgstr "Dati"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object. The contents of the data field are arbitrary. We can use"
-msgstr ""
+msgstr "Un oggetto JSON. Il contenuto del campo dati è arbitrario. Si può usare"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "it to send any data to the app."
-msgstr ""
+msgstr "per inviare qualsiasi dato all'applicazione."
 
 #: ../../appdev/guides/pushnotifications.rst:195
-#, fuzzy
 msgid "notification"
-msgstr "Notifiche push"
+msgstr "Notifica"
 
 #: ../../appdev/guides/pushnotifications.rst:195
 #: ../../appdev/guides/pushnotifications.rst:201
-#, fuzzy
 msgid "Notification"
-msgstr "Notifiche push"
+msgstr "Notifica"
 
 #: ../../appdev/guides/pushnotifications.rst:195
 msgid "A JSON object which defines how this notification will be presented."
-msgstr ""
+msgstr "Un oggetto JSON che definisce come verrà presentata questa notifica."
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "message"
-msgstr ""
+msgstr "messaggio"
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "object"
-msgstr ""
+msgstr "oggetto"
 
 #: ../../appdev/guides/pushnotifications.rst:197
 msgid "A JSON object that is passed as-is to the application via PopAll."
 msgstr ""
+"Un oggetto JSON che viene trasmesso come-è all'applicazione tramite PopAll."
 
 #: ../../appdev/guides/pushnotifications.rst:206
 msgid "tag"
-msgstr ""
+msgstr "etichetta tag"
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "The tag of the push notification."
-msgstr "Notifiche push"
+msgstr "Il tag della notifica push."
 
 #: ../../appdev/guides/pushnotifications.rst:208
 msgid "sound"
-msgstr ""
+msgstr "suono"
 
 #: ../../appdev/guides/pushnotifications.rst:208
 msgid "bool or string"
-msgstr ""
+msgstr "bool o stringa"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "This is either a boolean (play a predetermined sound) or the"
 msgstr ""
+"Si tratta di un booleano (riprodurre un suono predeterminato) o dell'elemento"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "path to a sound file. The user can disable it, so don't rely"
 msgstr ""
+"percorso di un file audio. L'utente può disabilitarlo, quindi non fare "
+"affidamento su"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "on it exclusively. Defaults to empty (no sound). The path is"
 msgstr ""
+"esclusivamente su di esso. Il valore predefinito è vuoto (nessun suono). Il "
+"percorso è"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "relative, and will be looked up in (a) the application's"
-msgstr ""
+msgstr "relativo, e sarà cercato in (a) dell'applicazione"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "``.local/share/<pkgname>``, and (b) standard xdg dirs."
-msgstr ""
+msgstr "``.local/share/<pkgname>``, e (b) le directory xdg standard."
 
 #: ../../appdev/guides/pushnotifications.rst:214
 msgid "vibrate"
-msgstr ""
+msgstr "vibrare"
 
 #: ../../appdev/guides/pushnotifications.rst:214
 msgid "bool or Vibrate"
-msgstr ""
+msgstr "bool o Vibrare"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "The notification can contain a vibrate field, causing haptic"
 msgstr ""
+"La notifica può contenere un campo di vibrazione, provocando un effetto "
+"tattile"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "feedback, which can be either a boolean (if true, vibrate a"
-msgstr ""
+msgstr "feedback, che può essere un booleano (se vero, fa vibrare un"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "predetermined way) or an Vibrate object."
-msgstr ""
+msgstr "modo predeterminato) o un oggetto Vibrare."
 
 #: ../../appdev/guides/pushnotifications.rst:218
 msgid "emblem-counter"
-msgstr ""
+msgstr "emblema-contatore"
 
 #: ../../appdev/guides/pushnotifications.rst:218
 msgid "Emblem-counter"
-msgstr ""
+msgstr "Emblema-contatore"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object, which defines how to display the emblem"
-msgstr ""
+msgstr "Un oggetto JSON, che definisce come visualizzare l'emblema"
 
 #: ../../appdev/guides/pushnotifications.rst:0
-#, fuzzy
 msgid "counter."
-msgstr "Gli account online"
+msgstr "contatore."
 
 #: ../../appdev/guides/pushnotifications.rst:221
 msgid "card"
-msgstr ""
+msgstr "carta"
 
 #: ../../appdev/guides/pushnotifications.rst:221
 #: ../../appdev/guides/pushnotifications.rst:225
 msgid "Card"
-msgstr ""
+msgstr "Carta"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "A JSON object with information about the notification card."
-msgstr ""
+msgstr "Un oggetto JSON con informazioni sulla carta di notifica."
 
 #: ../../appdev/guides/pushnotifications.rst:230
 msgid "summary"
-msgstr ""
+msgstr "sommario"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Required. A title. The card will not be presented if this is"
-msgstr ""
+msgstr "Richiesto. Un titolo. La carta non verrà presentata se questo è"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "missing."
-msgstr ""
+msgstr "mancante."
 
 #: ../../appdev/guides/pushnotifications.rst:233
 msgid "body"
-msgstr ""
+msgstr "corpo"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Longer text, defaults to empty."
-msgstr ""
+msgstr "Testo più lungo, predefinito vuoto."
 
 #: ../../appdev/guides/pushnotifications.rst:235
-#, fuzzy
 msgid "actions"
-msgstr "Introduzione"
+msgstr "azioni"
 
 #: ../../appdev/guides/pushnotifications.rst:235
 #: ../../appdev/guides/pushnotifications.rst:261
 msgid "array"
-msgstr ""
+msgstr "array"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If empty (the default), a bubble notification is"
-msgstr ""
+msgstr "Se vuoto (il predefinito), una notifica bolla è"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "non-clickable. If you add a URL, then bubble notifications"
-msgstr ""
+msgstr "non cliccabile. Se si aggiunge un URL, allora le notifiche a bolla"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "are clickable and launch that URL. One use for this is using"
 msgstr ""
+"sono cliccabili e lanciano quell'URL. Un uso di questo tipo è l'utilizzo di"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "a URL like ``appid://com.ubuntu.developer.ralsina.hello``"
-msgstr ""
+msgstr "un URL come ``appid://com.ubuntu.developer.ralsina.hello``"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "which will switch to the app or launch it."
-msgstr ""
+msgstr "che passerà all'applicazione o la avvierà."
 
 #: ../../appdev/guides/pushnotifications.rst:241
 msgid "icon"
-msgstr ""
+msgstr "icona"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "An icon relating to the event being notified. Defaults to"
-msgstr ""
+msgstr "Un'icona relativa all'evento notificato. Predefiniti per"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "empty (no icon); a secondary icon relating to the application"
-msgstr ""
+msgstr "vuoto (non icona); icona secondaria relativa all'applicazione"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "will be shown as well, regardless of this field."
-msgstr ""
+msgstr "sarà mostrato anche, indipendentemente da questo campo."
 
 #: ../../appdev/guides/pushnotifications.rst:245
 msgid "timestamp"
-msgstr ""
+msgstr "timestamp"
 
 #: ../../appdev/guides/pushnotifications.rst:245
 #: ../../appdev/guides/pushnotifications.rst:264
 #: ../../appdev/guides/pushnotifications.rst:275
 msgid "integer"
-msgstr ""
+msgstr "integro"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Seconds since the unix epoch, only used for persist for now."
-msgstr ""
+msgstr "Secondi dall'epoca unix, utilizzato solo per persistere per ora."
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "If zero or unset, defaults to current timestamp."
-msgstr ""
+msgstr "Se zero o unset, si predefinisce il timestamp corrente."
 
 #: ../../appdev/guides/pushnotifications.rst:248
 msgid "persist"
-msgstr ""
+msgstr "persistere"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Whether to show in notification centre; defaults to false."
-msgstr ""
+msgstr "Se mostrare in centro di notifica; default a falso."
 
 #: ../../appdev/guides/pushnotifications.rst:250
 msgid "popup"
-msgstr ""
+msgstr "popup"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Whether to show in a bubble. Users can disable this, and can"
 msgstr ""
+"Che si mostri in una bolla. Gli utenti possono disattivare questo, e possono"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "easily miss them, so don't rely on it exclusively. Defaults"
 msgstr ""
+"facilmente perdere, quindi non fare affidamento su di esso esclusivamente. "
+"Predefiniti"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "to false."
-msgstr ""
+msgstr "a false."
 
 #: ../../appdev/guides/pushnotifications.rst:256
 msgid "Vibrate"
-msgstr ""
+msgstr "Vibrazione"
 
 #: ../../appdev/guides/pushnotifications.rst:261
-#, fuzzy
 msgid "pattern"
-msgstr "Modelli di URL"
+msgstr "pattern"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid ""
 "A list of integers describing a vibration pattern (duration of alternating"
 msgstr ""
+"Un elenco di interi che descrive un modello di vibrazione (durata "
+"dell'alternanza"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "vibration/no vibration times, in milliseconds)."
-msgstr ""
+msgstr "tempi di vibrazione/senza vibrazioni, in millisecondi)."
 
 #: ../../appdev/guides/pushnotifications.rst:264
 msgid "repeat"
-msgstr ""
+msgstr "ripeti"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "Number of times the pattern has to be repeated (defaults to 1, 0 is the"
 msgstr ""
+"Numero di volte che il modello deve essere ripetuto (default a 1, 0 è il"
 
 #: ../../appdev/guides/pushnotifications.rst:0
 msgid "same as 1)."
-msgstr ""
+msgstr "come 1)."
 
 #: ../../appdev/guides/pushnotifications.rst:270
 msgid "Emblem-Counter"
-msgstr ""
+msgstr "Emblema-Contatore"
 
 #: ../../appdev/guides/pushnotifications.rst:275
-#, fuzzy
 msgid "count"
-msgstr "Gli account online"
+msgstr "conto"
 
 #: ../../appdev/guides/pushnotifications.rst:275
 msgid "A number to be displayed over the application's icon in the launcher."
-msgstr ""
+msgstr "Un numero da visualizzare sull'icona dell'applicazione nel launcher."
 
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "visible"
-msgstr ""
+msgstr "visibile"
 
 #: ../../appdev/guides/pushnotifications.rst:277
 msgid "Set to true to show the counter, or false to hide it."
-msgstr ""
+msgstr "Impostare a true per mostrare il contatore, o falso per nasconderlo."
 
 #: ../../appdev/guides/user-metrics.rst:2
-#, fuzzy
 msgid "User Metrics"
-msgstr "Interfaccia utente"
+msgstr "Metriche dell'utente"
 
 #: ../../appdev/guides/user-metrics.rst:5
 msgid "What are User Metrics?"
-msgstr ""
+msgstr "Quali sono le metriche dell'utente?"
 
 #: ../../appdev/guides/user-metrics.rst:7
 msgid ""
@@ -1285,49 +1505,64 @@ msgid ""
 "the user’s activity. Double tap on the middle of the circle, and you will "
 "see more \"metrics\" about the user."
 msgstr ""
+"Se si guarda sullo schermo di blocco, si vedrà un cerchio. All'interno del "
+"cerchio c'è scritto. Guarda più da vicino, e noterai che il testo contiene i "
+"dati relativi all'attività dell'utente. Doppio tap al centro del cerchio, e "
+"vedrete più \"metriche\" sull'utente."
 
 #: ../../appdev/guides/user-metrics.rst:11
 msgid "This shows \"7 text messages sent today.\" How did it know?"
-msgstr ""
+msgstr "Questo mostra \"7 messaggi di testo inviati oggi\". Come lo sapeva?"
 
 #: ../../appdev/guides/user-metrics.rst:15
 msgid ""
 "This is from a 3rd-party application (`nCounter <https://gitlab.com/"
 "joboticon/ncounter/>`_) that makes use of the User Metrics feature."
 msgstr ""
+"Questo è da un'applicazione di terze parti (`nCounter <https://gitlab.com/"
+"joboticon/ncounter/>`_) che fa uso della funzione User Metrics."
 
 #: ../../appdev/guides/user-metrics.rst:17
 msgid ""
 "For the most part, these messages are quite clearly state what they are "
 "counting, and which app is related. But where do these metrics come from?"
 msgstr ""
+"Per la maggior parte, questi messaggi sono abbastanza chiaramente dichiarare "
+"ciò che stanno contando, e quale app è correlata. Ma da dove vengono queste "
+"metriche?"
 
 #: ../../appdev/guides/user-metrics.rst:20
 msgid "How can I use User Metrics in my application?"
-msgstr ""
+msgstr "Come posso utilizzare User Metrics nella mia applicazione?"
 
 #: ../../appdev/guides/user-metrics.rst:22
 msgid ""
 "All of the following information will be based on the code for `nCounter`_."
 msgstr ""
+"Tutte le seguenti informazioni saranno basate sul codice per `nCounter`_."
 
 #: ../../appdev/guides/user-metrics.rst:24
 msgid "Your app's apparmor file must include ``usermetrics`` in the policy:"
 msgstr ""
+"Il file apparmor della tua app deve includere ``usermetrics`` nella politica:"
 
 #: ../../appdev/guides/user-metrics.rst:35
 msgid ""
 "Next, you will need to import the module in the QML file that will handle "
 "the User Metrics:"
 msgstr ""
+"Successivamente, è necessario importare il modulo nel file QML che gestirà "
+"le metriche dell'utente:"
 
 #: ../../appdev/guides/user-metrics.rst:41
 msgid "(There may be updated versions of this above 0.1)"
-msgstr ""
+msgstr "(Ci possono essere versioni aggiornate di questo sopra 0.1)"
 
 #: ../../appdev/guides/user-metrics.rst:43
 msgid "Next, the specific Metric must be defined in the code as an object:"
 msgstr ""
+"Successivamente, il Metric specifico deve essere definito nel codice come un "
+"oggetto:"
 
 #: ../../appdev/guides/user-metrics.rst:56
 msgid ""
@@ -1335,69 +1570,82 @@ msgid ""
 "\" when an event takes place by referencing the variables in the Metric "
 "object."
 msgstr ""
+"Ora che la metrica viene creata, possiamo aggiornare il \"format\" o \""
+"emptyFormat\" quando un evento avviene facendo riferimento alle variabili "
+"dell'oggetto Metrico."
 
 #: ../../appdev/guides/user-metrics.rst:66
 msgid ""
 "Here we assign a new value to the circleMetric string variable that’s inside "
 "the Metric object:"
 msgstr ""
+"Qui assegnamo un nuovo valore alla variabile di stringa circleMetric che è "
+"all'interno dell'oggetto Metric:"
 
 #: ../../appdev/guides/user-metrics.rst:68
 msgid "(Remember that circleMetric is the variable value assigned to format)"
-msgstr ""
+msgstr "(Ricorda che circleMetric è il valore variabile assegnato al formato)"
 
 #: ../../appdev/guides/user-metrics.rst:70
 msgid "Metric Id [dot] Variable Name [equals] New variable information"
-msgstr ""
+msgstr "Metric Id [punto] Nome variabile [uguale] Nuove informazioni variabili"
 
 #: ../../appdev/guides/user-metrics.rst:72
 msgid "``metric.circleMetric = \"New Metric Message\"``"
-msgstr ""
+msgstr "``metric.circleMetric = \"Nuovo messaggio metrico\"``"
 
 #: ../../appdev/guides/user-metrics.rst:74
 msgid "We then tell the lock screen to update the metric."
-msgstr ""
+msgstr "Diremo poi alla schermata di blocco per aggiornare la metrica."
 
 #: ../../appdev/guides/user-metrics.rst:76
 msgid ""
 "Metric ID [dot] update (specific amount to set if included in the format)"
 msgstr ""
+"Aggiornamento Metric ID [dot] (importo specifico da impostare se incluso nel "
+"formato)"
 
 #: ../../appdev/guides/user-metrics.rst:78
 msgid "``metric.update(0)``"
-msgstr ""
+msgstr "``metric.update(0)``"
 
 #: ../../appdev/guides/user-metrics.rst:80
 msgid ""
 "(Note: In this example, ``0`` is arbitrary since the metric value doesn't "
 "include a counter)"
 msgstr ""
+"(Nota: In questo esempio, ``0`` è arbitrario poiché il valore metrico non "
+"include un contatore)"
 
 #: ../../appdev/guides/user-metrics.rst:82
 msgid ""
 "We have now updated the metric for today. When the time rolls over to "
 "tomorrow, the metric will be reset to whatever is in ``emptyFormat``."
 msgstr ""
+"Ora abbiamo aggiornato la metrica per oggi. Quando il tempo passa a domani, "
+"la metrica sarà ripristinata a qualsiasi cosa sia in ``emptyFormat`."
 
 #: ../../appdev/guides/user-metrics.rst:84
 msgid "For most apps, this defaults to 0 counts for messages, calls, etc."
 msgstr ""
+"Per la maggior parte delle applicazioni, questo default a 0 conta per "
+"messaggi, chiamate, ecc."
 
 #: ../../appdev/guides/user-metrics.rst:87
 msgid "How do User Metrics work?"
-msgstr ""
+msgstr "Come funzionano le metriche degli utenti?"
 
 #: ../../appdev/guides/user-metrics.rst:89
 msgid "User Metrics are made up of two \"formats\":"
-msgstr ""
+msgstr "I metrici utente sono costituiti da due \"formati\":"
 
 #: ../../appdev/guides/user-metrics.rst:91
 msgid "metrics/messages for today (``format``)"
-msgstr ""
+msgstr "metriche/messaggio per oggi (``format``)"
 
 #: ../../appdev/guides/user-metrics.rst:92
 msgid "metrics/messages for tomorrow (``emptyFormat``)"
-msgstr ""
+msgstr "metriche/messaggio per domani (``emptyFormat``)"
 
 #: ../../appdev/guides/user-metrics.rst:94
 msgid ""
@@ -1405,14 +1653,17 @@ msgid ""
 "value has been stored in ``format``. In order to display a new value of "
 "``format`` the metric must be updated."
 msgstr ""
+"Il valore di ``emptyFormat`` è quello che visualizza sulla schermata di "
+"blocco quando nessun valore è stato memorizzato in ``format``. Per "
+"visualizzare un nuovo valore di ``format`` la metrica deve essere aggiornata."
 
 #: ../../appdev/guides/user-metrics.rst:96
 msgid "There are two options for updating the metric:"
-msgstr ""
+msgstr "Ci sono due opzioni per aggiornare la metrica:"
 
 #: ../../appdev/guides/user-metrics.rst:98
 msgid "Set the metric to a specific amount:"
-msgstr ""
+msgstr "Impostare la metrica a un importo specifico:"
 
 #: ../../appdev/guides/user-metrics.rst:100
 msgid ""
@@ -1421,21 +1672,28 @@ msgid ""
 "The counter value can be included in the ``format`` setting by using ``%1``. "
 "e.g. ``format: \"%1 buttons pressed today\"``"
 msgstr ""
+"``metricID.update(x)`` (dove x è un numero di tipo `doppio` da impostare per "
+"un controvalore). ``metricID`` è il ``id:`` specificato nella voce Metrica. "
+"Il controvalore può essere incluso nell'impostazione ``format`` utilizzando "
+"``%1``. ad esempio ``format: \"%1 pulsanti premuto oggi\"``"
 
 #: ../../appdev/guides/user-metrics.rst:102
 msgid "Increment the metric:"
-msgstr ""
+msgstr "Incremento della metrica:"
 
 #: ../../appdev/guides/user-metrics.rst:104
 msgid ""
 "``metricID.increment(x)`` (where x is the amount to add to the current "
 "counter)"
 msgstr ""
+"``metricID.increment(x)`` (dove x è la quantità da aggiungere al contatore "
+"corrente)"
 
 #: ../../appdev/guides/user-metrics.rst:106
 msgid ""
 "The metric will reset back to the value stored in ``emptyFormat`` each day."
 msgstr ""
+"La metrica ritornerà al valore memorizzato in ``emptyFormat`` ogni giorno."
 
 #: ../../appdev/guides/user-metrics.rst:108
 msgid ""
@@ -1446,16 +1704,24 @@ msgid ""
 "lib/usermetrics <https://github.com/ubports/libusermetrics/tree/xenial/doc/"
 "pages>`_)."
 msgstr ""
+"Le applicazioni fanno uso di metriche dell'utente impostando e aggiornando i "
+"\"formati\" ogni volta che un determinato evento avviene. ad esempio. Quando "
+"si preme inviare in Telegram, o quando si riceve una telefonata. "
+"L'applicazione può memorizzare i dati per la manipolazione, ma generalmente "
+"i dati vengono memorizzati nel sistema (`/var/lib/usermetrics "
+"<https://github.com/ubports/libusermetrics/tree/xenial/doc/pages>`_)."
 
 #: ../../appdev/guides/user-metrics.rst:111
 msgid ""
 "(See this `blog post <https://daker.me/2013/11/adding-usermetrics-to-your-"
 "app-on-ubuntu-touch.html>`_ for a simple example)"
 msgstr ""
+"(Vedi questo articolo<https://daker.me/2013/11/adding-usermetrics-to-your-"
+"app-on-ubuntu-touch.html>`_ per un semplice esempio)"
 
 #: ../../appdev/guides/user-metrics.rst:114
 msgid "Limitations and wonders"
-msgstr ""
+msgstr "Limitazioni e meraviglie"
 
 #: ../../appdev/guides/user-metrics.rst:115
 msgid ""
@@ -1465,6 +1731,12 @@ msgid ""
 "this file and rebooting will remove all stored metrics. Presumably, the db "
 "file could be edited instead of deleted."
 msgstr ""
+"Una volta che una metrica è registrata, rimane sulla schermata di blocco "
+"anche dopo che l'applicazione è stata disinstallata. Un file di database (db)"
+" viene memorizzato in `/var/lib/usermetrics`, che può essere eliminato da "
+"root (ma non con sudo). Cancellare questo file e riavviare rimuoverà tutte "
+"le metriche memorizzate. Presumibilmente, il file db potrebbe essere "
+"modificato invece di cancellato."
 
 #: ../../appdev/guides/user-metrics.rst:117
 msgid ""
@@ -1720,10 +1992,8 @@ msgid "`Clickable <http://clickable.bhdouglass.com/en/latest/>`__"
 msgstr "`Pacchetti Click <https://click.readthedocs.io/en/latest/>`_ CLI"
 
 #: ../../appdev/index.rst:75
-#, fuzzy
 msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
-msgstr ""
-"`Leggi la documentazione <https://docs.ubuntu.com/phone/en/platform/>`__"
+msgstr "Icone di Suru <http://docs.ubports.com/projects/icons/en/latest/>`__"
 
 #: ../../appdev/index.rst:77
 msgid ""
@@ -1759,7 +2029,7 @@ msgstr ""
 
 #: ../../appdev/index.rst:109
 msgid "Preinstalled apps"
-msgstr ""
+msgstr "Applicazioni preinstallate"
 
 #: ../../appdev/index.rst:111
 msgid ""

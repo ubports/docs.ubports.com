@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019-2022, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-07 11:45-0600\n"
+"POT-Creation-Date: 2023-01-05 00:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -139,35 +139,42 @@ msgid "You may have to do this twice. It will likely fix things both times. Then
 msgstr ""
 
 #: ../../porting/build_and_boot/H7_build.rst:43
-msgid "Halium-7.1 based Ubuntu Touch requires setting console=tty0"
+#: ../../porting/build_and_boot/H9_build.rst:46
+msgid "Ubuntu Touch requires setting console=tty0"
 msgstr ""
 
 #: ../../porting/build_and_boot/H7_build.rst:45
+#: ../../porting/build_and_boot/H9_build.rst:48
 msgid "The halium-boot initramfs expects ``/dev/console`` to be a console device and will not start init if it is not available. This is commonly the case on recent devices, because they either have UART disabled or ``console=`` is not specified (null) by default. This can be fixed by supplying ``console=tty0`` as the last argument in the kernel cmdline. To achieve this, proceed as follows:"
 msgstr ""
 
 #: ../../porting/build_and_boot/H7_build.rst:47
+#: ../../porting/build_and_boot/H9_build.rst:50
 msgid "It should be done in the makefile named ``BoardConfig.mk`` (or ``BoardConfigCommon.mk``) located in the root directory of your device tree, e.g. ``~/halium/device/<vendor>/<model_codename>/BoardConfig.mk``"
 msgstr ""
 
 #: ../../porting/build_and_boot/H7_build.rst:49
+#: ../../porting/build_and_boot/H9_build.rst:52
 msgid "Add the following line::"
 msgstr ""
 
 #: ../../porting/build_and_boot/H7_build.rst:53
+#: ../../porting/build_and_boot/H9_build.rst:56
 msgid "If your makefile already includes a line beginning with ``BOARD_KERNEL_CMDLINE``, you may add it just below that to keep things tidy."
 msgstr ""
 
 #: ../../porting/build_and_boot/H7_build.rst:56
+#: ../../porting/build_and_boot/H9_build.rst:59
 msgid "The above method, although the preferred one, may not work for some Samsung devices. The result will be that you cannot get access to the device through ssh after boot, and Unity 8 will not be able to start. If you run into this problem, you can specify the setting in your device's kernel config file instead. Add the following lines::"
 msgstr ""
 
 #: ../../porting/build_and_boot/H7_build.rst:62
+#: ../../porting/build_and_boot/H9_build.rst:65
 msgid "In rare cases the bootloader overwrites the kernel command line argument, rendering the setting above useless. This is the case for the Google Pixel 3a (sargo). To deal with this issue, replicate `this commit <https://github.com/fredldotme/android_kernel_google_bonito/commit/d0741dded3907f2cf4ecdc02bfcb74fc252763ff>`_."
 msgstr ""
 
 #: ../../porting/build_and_boot/H7_build.rst:65
-#: ../../porting/build_and_boot/H9_build.rst:46
+#: ../../porting/build_and_boot/H9_build.rst:90
 msgid "Build"
 msgstr ""
 
@@ -176,32 +183,31 @@ msgid "Halium will use the mkbootimg tool for creating the boot image. In most c
 msgstr ""
 
 #: ../../porting/build_and_boot/H7_build.rst:71
-#: ../../porting/build_and_boot/H9_build.rst:52
+#: ../../porting/build_and_boot/H9_build.rst:96
 msgid "Now build the ``halium-boot.img`` using the commands::"
 msgstr ""
 
 #: ../../porting/build_and_boot/H7_build.rst:78
-#: ../../porting/build_and_boot/H9_build.rst:59
+#: ../../porting/build_and_boot/H9_build.rst:103
 msgid "If you prefer ``make`` instead of ``mka`` you should set ``-j[num]`` for parallel building, which reduces build time. Replace ``[num]`` with the number of threads in your system plus 2."
 msgstr ""
 
 #: ../../porting/build_and_boot/H7_build.rst:81
-#: ../../porting/build_and_boot/H9_build.rst:62
+#: ../../porting/build_and_boot/H9_build.rst:106
 msgid "Build errors"
 msgstr ""
 
 #: ../../porting/build_and_boot/H7_build.rst:83
-#: ../../porting/build_and_boot/H9_build.rst:64
+#: ../../porting/build_and_boot/H9_build.rst:108
 msgid "There are a number of known build errors which you might encounter, depending first of all upon how rigorous you have been in following the steps outlined, but you may also run into unforeseen issues. If your build fails at first, make sure you have done exactly as described, then go through the list of `known errors in the Halium guide <https://docs.halium.org/en/latest/porting/common-kernel-build-errors.html#common-kernel-build-errors>`_."
 msgstr ""
 
 #: ../../porting/build_and_boot/H7_build.rst:85
-#: ../../porting/build_and_boot/H9_build.rst:66
 msgid "I your particular error is not listed, you will need to do some research of your own. If you end up here, know that there is a community of porters, developers and enthusiasts who might be able to help you. Refer to :ref:`Getting-community-help`."
 msgstr ""
 
 #: ../../porting/build_and_boot/H7_build.rst:90
-#: ../../porting/build_and_boot/H9_build.rst:71
+#: ../../porting/build_and_boot/H9_build.rst:115
 msgid "Building the system image (system.img)"
 msgstr ""
 
@@ -465,19 +471,51 @@ msgstr ""
 msgid "Then, from the root of your ``BUILDDIR``, run::"
 msgstr ""
 
-#: ../../porting/build_and_boot/H9_build.rst:48
-msgid "Halium will use the ``mkbootimg`` tool for creating the boot image. In most cases it is not on the local harddisk, so it can be built by issuing::"
+#: ../../porting/build_and_boot/H9_build.rst:68
+msgid "Setting system as root"
 msgstr ""
 
-#: ../../porting/build_and_boot/H9_build.rst:73
-msgid "If you are using the **Halium-boot** method, you can skip this step. If you are following the **Full system image** method, this step is required."
+#: ../../porting/build_and_boot/H9_build.rst:70
+msgid "For Halium 9, we need the system image to be built as system-as-root (for treble devices it should already be there). Please check your ``boardconfig.mk`` for the following line, if it's there you can skip this step::"
+msgstr ""
+
+#: ../../porting/build_and_boot/H9_build.rst:74
+msgid "If the above is not there, we have to add it."
 msgstr ""
 
 #: ../../porting/build_and_boot/H9_build.rst:76
+msgid "As this change makes the android root read-only, we may have to ship mount points for some important partitions like ``firmware``, ``persist`` with the system image, for this we can use the line::"
+msgstr ""
+
+#: ../../porting/build_and_boot/H9_build.rst:84
+msgid "For now this is enough, but you may need to add more mount points depending on your device. After successful boot do ``ls -la /`` and add folders corresponding to broken symlinks."
+msgstr ""
+
+#: ../../porting/build_and_boot/H9_build.rst:86
+msgid "These changes may also bring in some context errors,please refer `this commit to fix them <https://github.com/gigabyte-1000/android_device_xiaomi_kenzo/commit/3e8ea1e3194c19aa52b0b2618df249d4b1076dca#diff-30b9d15aecb84fc004f83370d35234b955cff4d0640892fe60e3c4a422ae3e3d>`_."
+msgstr ""
+
+#: ../../porting/build_and_boot/H9_build.rst:92
+msgid "Halium will use the ``mkbootimg`` tool for creating the boot image. In most cases it is not on the local harddisk, so it can be built by issuing::"
+msgstr ""
+
+#: ../../porting/build_and_boot/H9_build.rst:110
+msgid "If your particular error is not listed, you will need to do some research of your own. If you end up here, know that there is a community of porters, developers and enthusiasts who might be able to help you. Refer to :ref:`Getting-community-help`."
+msgstr ""
+
+#: ../../porting/build_and_boot/H9_build.rst:117
+msgid "If you are using the **Halium-boot** method, you can skip this step. If you are following the **Full system image** method, this step is required."
+msgstr ""
+
+#: ../../porting/build_and_boot/H9_build.rst:120
+msgid "Halium will use the ``e2fsdroid`` tool for creating the system image. In most cases it is not on the local harddisk, so it can be built by issuing::"
+msgstr ""
+
+#: ../../porting/build_and_boot/H9_build.rst:125
 msgid "To build the system image::"
 msgstr ""
 
-#: ../../porting/build_and_boot/H9_build.rst:80
+#: ../../porting/build_and_boot/H9_build.rst:129
 msgid "It's likely that you will run into one or more errors when building the system image. A number of possible errors and known solutions are documented in `the Halium guide <https://docs.halium.org/en/latest/porting/common-system-build-errors.html#common-system-build-errors>`_. If yours is not listed, :ref:`seek community help <Getting-community-help>`."
 msgstr ""
 
@@ -795,7 +833,7 @@ msgid "If you are using either of the **Full system image** method (for Halium 7
 msgstr ""
 
 #: ../../porting/build_and_boot/index.rst:29
-#: ../../porting/introduction/Intro.rst:88
+#: ../../porting/introduction/Intro.rst:89
 msgid "Standalone kernel method"
 msgstr ""
 
@@ -1130,233 +1168,235 @@ msgstr ""
 msgid "Once you have adjusted the ``android.conf`` file to the display settings needed for your device, this file should be incorporated into your build. Follow :ref:`the overlay file method <Overlay-steps>` corresponding to your Halium version."
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:25
+#: ../../porting/configure_test_fix/Display.rst:23
+msgid "This way of configuration is considered legacy and will be replaced by :ref:`DeviceInfo <DeviceInfo>` in the future. For migration purposes please set both configurations (``android.conf`` as well as :ref:`DeviceInfo <DeviceInfo>`)."
+msgstr ""
+
+#: ../../porting/configure_test_fix/Display.rst:29
 msgid "Determining the correct display settings"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:28
+#: ../../porting/configure_test_fix/Display.rst:32
 msgid "Display scaling"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:30
+#: ../../porting/configure_test_fix/Display.rst:34
 msgid "``GRID_UNIT_PX`` (Pixels per Grid Unit or Px/GU) is specific to each device. Its goal is to make the user interface of the system and its applications the same *perceived* size regardless of the device they are displayed on. It is primarily dependent on the pixel density of the device’s screen and the distance to the screen the user is at. The latter value cannot be automatically detected and is based on heuristics. We assume that tablets and laptops are the same distance and that they are held at 1.235 times the distance phones tend to be held at."
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:32
+#: ../../porting/configure_test_fix/Display.rst:36
 msgid "``QTWEBKIT_DPR`` sets the display scaling for the Oxide web engine, so changes to this value will affect the scale of the browser and webapps."
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:34
+#: ../../porting/configure_test_fix/Display.rst:38
 msgid "A reference device has been chosen from which we derive the values for all other devices. The reference device is a laptop with a 120ppi screen. However, there is no exact formula since these options are set for *perceived* size rather than *physical* size. Here are some values for other devices so you may derive the correct one for yours:"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:37
+#: ../../porting/configure_test_fix/Display.rst:41
 msgid "Device"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:37
+#: ../../porting/configure_test_fix/Display.rst:41
 msgid "Resolution"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:37
+#: ../../porting/configure_test_fix/Display.rst:41
 msgid "Display Size"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:37
+#: ../../porting/configure_test_fix/Display.rst:41
 msgid "PPI"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:37
+#: ../../porting/configure_test_fix/Display.rst:41
 msgid "Px/GU"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:37
+#: ../../porting/configure_test_fix/Display.rst:41
 msgid "QtWebKit DPR"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:39
+#: ../../porting/configure_test_fix/Display.rst:43
 msgid "'Normal' density laptop"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:39
-#: ../../porting/configure_test_fix/Display.rst:39
-#: ../../porting/configure_test_fix/Display.rst:41
-#: ../../porting/configure_test_fix/Display.rst:41
+#: ../../porting/configure_test_fix/Display.rst:43
+#: ../../porting/configure_test_fix/Display.rst:45
 msgid "N/A"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:39
+#: ../../porting/configure_test_fix/Display.rst:43
 msgid "96-150"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:39
+#: ../../porting/configure_test_fix/Display.rst:43
 msgid "8"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:39
+#: ../../porting/configure_test_fix/Display.rst:43
 msgid "1.0"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:40
+#: ../../porting/configure_test_fix/Display.rst:44
 msgid "ASUS Nexus 7"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:40
+#: ../../porting/configure_test_fix/Display.rst:44
 msgid "1280x800"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:40
+#: ../../porting/configure_test_fix/Display.rst:44
 msgid "7\""
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:40
+#: ../../porting/configure_test_fix/Display.rst:44
 msgid "216"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:40
+#: ../../porting/configure_test_fix/Display.rst:44
 msgid "12"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:40
-#: ../../porting/configure_test_fix/Display.rst:42
-#: ../../porting/configure_test_fix/Display.rst:43
 #: ../../porting/configure_test_fix/Display.rst:44
+#: ../../porting/configure_test_fix/Display.rst:46
+#: ../../porting/configure_test_fix/Display.rst:47
+#: ../../porting/configure_test_fix/Display.rst:48
 msgid "2.0"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:41
+#: ../../porting/configure_test_fix/Display.rst:45
 msgid "'High' density laptop"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:41
+#: ../../porting/configure_test_fix/Display.rst:45
 msgid "150-250"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:41
+#: ../../porting/configure_test_fix/Display.rst:45
 msgid "16"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:41
+#: ../../porting/configure_test_fix/Display.rst:45
 msgid "1.5"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:42
+#: ../../porting/configure_test_fix/Display.rst:46
 msgid "Samsung Galaxy Nexus"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:42
+#: ../../porting/configure_test_fix/Display.rst:46
 msgid "1280x720"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:42
+#: ../../porting/configure_test_fix/Display.rst:46
 msgid "4.65\""
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:42
+#: ../../porting/configure_test_fix/Display.rst:46
 msgid "316"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:42
-#: ../../porting/configure_test_fix/Display.rst:43
+#: ../../porting/configure_test_fix/Display.rst:46
+#: ../../porting/configure_test_fix/Display.rst:47
 msgid "18"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:43
+#: ../../porting/configure_test_fix/Display.rst:47
 msgid "LG Nexus 4"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:43
+#: ../../porting/configure_test_fix/Display.rst:47
 msgid "1280x768"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:43
+#: ../../porting/configure_test_fix/Display.rst:47
 msgid "4.7\""
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:43
+#: ../../porting/configure_test_fix/Display.rst:47
 msgid "320"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:44
+#: ../../porting/configure_test_fix/Display.rst:48
 msgid "Samsung Nexus 10"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:44
+#: ../../porting/configure_test_fix/Display.rst:48
 msgid "2560x1600"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:44
+#: ../../porting/configure_test_fix/Display.rst:48
 msgid "10.1\""
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:44
+#: ../../porting/configure_test_fix/Display.rst:48
 msgid "299"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:44
+#: ../../porting/configure_test_fix/Display.rst:48
 msgid "20"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:45
+#: ../../porting/configure_test_fix/Display.rst:49
 msgid "Fairphone 2"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:45
-#: ../../porting/configure_test_fix/Display.rst:46
+#: ../../porting/configure_test_fix/Display.rst:49
+#: ../../porting/configure_test_fix/Display.rst:50
 msgid "1080x1920"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:45
+#: ../../porting/configure_test_fix/Display.rst:49
 msgid "5\""
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:45
+#: ../../porting/configure_test_fix/Display.rst:49
 msgid "440"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:45
-#: ../../porting/configure_test_fix/Display.rst:46
+#: ../../porting/configure_test_fix/Display.rst:49
+#: ../../porting/configure_test_fix/Display.rst:50
 msgid "23"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:45
-#: ../../porting/configure_test_fix/Display.rst:46
+#: ../../porting/configure_test_fix/Display.rst:49
+#: ../../porting/configure_test_fix/Display.rst:50
 msgid "2.5"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:46
+#: ../../porting/configure_test_fix/Display.rst:50
 msgid "LG Nexus 5"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:46
+#: ../../porting/configure_test_fix/Display.rst:50
 msgid "4.95\""
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:46
+#: ../../porting/configure_test_fix/Display.rst:50
 msgid "445"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:49
+#: ../../porting/configure_test_fix/Display.rst:53
 msgid "Experiment with a few values to find one that feels good when compared to the Ubuntu Touch experience on other devices. If you are unsure of which is the best, share some pictures (including some object for scale) along with the device specs with us."
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:51
+#: ../../porting/configure_test_fix/Display.rst:55
 msgid "There are two other settings that may be of interest to you:"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:54
+#: ../../porting/configure_test_fix/Display.rst:58
 msgid "Form factor"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:56
+#: ../../porting/configure_test_fix/Display.rst:60
 msgid "``FORM_FACTOR`` specifies the device's form factor. This value is set as the device's Chassis, which you can find by running ``hostnamectl``. The acceptable values are ``handset``, ``tablet``, ``laptop`` and ``desktop``. Apps such as the gallery use this information to change their functionality. For more information on the Chassis, see the freedesktop.org hostnamed specification."
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:59
+#: ../../porting/configure_test_fix/Display.rst:63
 msgid "Native orientation"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Display.rst:61
+#: ../../porting/configure_test_fix/Display.rst:65
 msgid "``NATIVE_ORIENTATION`` sets the display orientation for the device's built-in screen. This value is used whenever autorotation isn't working correctly or when an app wishes to be locked to the device's native orientation. Acceptable values are ``landscape``, which is normally used for tablets, laptops, and desktops; and ``portrait``, which is usually used for phone handsets."
 msgstr ""
 
@@ -1397,14 +1437,26 @@ msgid "Create and add udev rules"
 msgstr ""
 
 #: ../../porting/configure_test_fix/Lomiri.rst:28
-msgid "You must create some udev rules to allow Ubuntu Touch software to access your hardware. Run the following command, replacing [CODENAME] with your device's codename::"
+msgid "You must create some udev rules to allow Ubuntu Touch software to access your hardware."
 msgstr ""
 
-#: ../../porting/configure_test_fix/Lomiri.rst:33
-msgid "Now, reboot the device. If all has gone well, you will eventually see the Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as you set for SSH."
+#: ../../porting/configure_test_fix/Lomiri.rst:30
+msgid "If you are building a Halium-7.1 based port, run the following command, replacing [CODENAME] with your device's codename::"
 msgstr ""
 
 #: ../../porting/configure_test_fix/Lomiri.rst:35
+msgid "For a Halium-9.0 based port you should use the commands below, again replacing [CODENAME] with your device's codename::"
+msgstr ""
+
+#: ../../porting/configure_test_fix/Lomiri.rst:42
+msgid "If you are building a Halium-9.0 based port for a non-treble device, i.e. a device without a separate vendor partition, the command above will give an error. Simply edit and remove the following string from the command: ``/vendor/ueventd*.rc``."
+msgstr ""
+
+#: ../../porting/configure_test_fix/Lomiri.rst:44
+msgid "Now, reboot the device. If all has gone well, you will eventually see the Ubuntu Touch spinner followed by Unity 8. Your lock password is the same as you set for SSH."
+msgstr ""
+
+#: ../../porting/configure_test_fix/Lomiri.rst:46
 msgid "When Unity 8 is first brought up on your device, you will probably notice that everything is very small. The :ref:`Display` section describes how to deal with this."
 msgstr ""
 
@@ -1412,132 +1464,212 @@ msgstr ""
 msgid "Overlay file method"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:6
-msgid "The UBports rootfs comes with a set of standard configuration files for a number of features such as display scaling, sound, bluetooth and more. These files may not tailored to the needs of your specific device and must therefore to be replaced in order for the feature in question to function as it should. This is done with overlay files, i.e. files that the original files get overwritten with. In other words, you need to rewrite the files in question, making the necessary adjustments for your device, and then see to it that these are incorporated into the build so that they will replace the originals."
+#: ../../porting/configure_test_fix/Overlay.rst:7
+msgid "Overview"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:8
-msgid "If your build is based on the downloaded GSI and rootfs, installed using the halium-install script, then further adjustment of the build will not be possible. This is because the halium-script does not include any method for injecting overlay files. If, on the other hand, your build is based on Gitlab CI scripts, there is a way to further tweak your port with overlay files. This method is described at the end of this section."
+#: ../../porting/configure_test_fix/Overlay.rst:9
+msgid "The UBports root filesystem image provides a set of default configuration files for a number of features such as display scaling, sound, bluetooth and more. These files may not be tailored to the device-specific features of the porting target and may therefore have to be adjusted. Furthermore, it may be also be necessary to add additional configuration files as well as scripts for specific needs. Overlay files provide a solution for replacing existing or adding new files to the file system."
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:11
+msgid "The way how overlay files are implemented and their limitations vary across build methods and different versions of Ubuntu Touch. Use of the halium-install script to install a build based on the downloaded GSI and root filesystem image precludes the use of overlay files since it does not provide a mechanism for that."
 msgstr ""
 
 #: ../../porting/configure_test_fix/Overlay.rst:13
-msgid "Configuring features with overlay files"
-msgstr ""
-
-#: ../../porting/configure_test_fix/Overlay.rst:15
-msgid "For full ``system.img``-based builds, irrespective of Halium version, the method described below applies if the file you need to edit can be found in the /etc directory (or a subdirectory of this) on your device. In other words, the file or files you wish to overlay must actually exist and be located where specified above. You should not attempt to overwrite files located elsewhere using the method described here."
+msgid "In general, there are two methods of implementing overlay files, one is to directly copy them to the destination path potentially overwriting existing files, the other is to place them in a designated base directory from where they are then mounted onto their destination path during the boot process. The former is only possible when doing builds using the GitLab CI scripts. In case of Ubuntu Touch 16.04 it is the only available overlay mechanism. While the ``system.img`` build process allows overwriting files on the built Android system partition it has no means of doing so on the root filesystem. Ubuntu Touch 16.04 does however offer limited support of mount-based overlay files. Starting from Ubuntu Touch 20.04, the implementation of mount-based overlay files has become more powerful in terms of overlaying both files and directories in vendor and Android images regardless of the build method. The use of mount-based overlay files is generally preferable as it allows for delta OTA updates. Both mechanisms will be discussed in detail below before describing how overlay files are included into the build process in full system image builds and builds based on GitLab CI scripts."
 msgstr ""
 
 #: ../../porting/configure_test_fix/Overlay.rst:17
-msgid "If your port is based on Gitlab CI scripts, it is actually possible to not only overlay existing files, but also introduce files that were not originally present. The method for Gitlab CI script based builds is detailed at the end of this section. If this is the method you will be using, you should still read both sections to gain a better understanding of how this method actually works."
+msgid "Some ports of Ubuntu Touch 16.04 using the GitLab CI-based build method add custom scripts or configuration files (e.g. in ``/usr/sbin/mount-android.sh``, ``/etc/init/mount-android.conf``, or a file in ``/etc/init/``) in order to overlay files below ``/android/system`` which would otherwise not be possible using this build method. This practice is strongly discouraged for a several reasons:"
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:19
+msgid "overwriting a system script prevents the port from receiving future updates of that script"
 msgstr ""
 
 #: ../../porting/configure_test_fix/Overlay.rst:20
-msgid "Overlay method for full system.img builds"
+msgid "different ports coming up with custom solutions creates confusion among new porters and contributors"
 msgstr ""
 
 #: ../../porting/configure_test_fix/Overlay.rst:22
-msgid "In your device directory, create a subdirectory named 'ubuntu'. Collect the files you wish to inject into your build in this directory."
+msgid "Porters which are in need of overlaying files inside a GSI-based ``/android/system.img`` may want to consider using the full ``system.img`` build method instead."
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:24
+msgid "The implementations and limitations can be summarized as follows:"
 msgstr ""
 
 #: ../../porting/configure_test_fix/Overlay.rst:27
-msgid "Relevant files are for example (but this list is incomplete):"
-msgstr ""
-
-#: ../../porting/configure_test_fix/Overlay.rst:25
-msgid "70-android.rules"
-msgstr ""
-
-#: ../../porting/configure_test_fix/Overlay.rst:26
-msgid "android.conf (for display scaling, see below)"
+msgid "Build method"
 msgstr ""
 
 #: ../../porting/configure_test_fix/Overlay.rst:27
-msgid "touch.pa (for pulseaudio sound configuration/initialization, see below)"
+#: ../../porting/configure_test_fix/Overlay.rst:42
+msgid "Ubuntu Touch 16.04"
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:27
+msgid "Ubuntu Touch 20.04"
 msgstr ""
 
 #: ../../porting/configure_test_fix/Overlay.rst:29
-msgid "These files are then injected by adding a code block to the file ``device.mk`` in your device directory. For the three files above add the following code::"
+msgid "full ``system.img`` build"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:38
-msgid "The first of these three files, 70-android.rules, is the one you created when bringing up Lomiri. You can extract this file from the device using ``adb pull`` or ``scp`` and copy it to the 'ubuntu' directory of your device source tree, making sure to add the corresponding line to your ``device.mk`` file, as described above."
+#: ../../porting/configure_test_fix/Overlay.rst:29
+msgid "add/overwrite files below ``/android/system``"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:40
-msgid "Explanation:"
+#: ../../porting/configure_test_fix/Overlay.rst:30
+msgid "overlay existing files on the root filesystem"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:42
-msgid "The string before the colon '$(LOCAL_PATH)/ubuntu/70-android.rules' specifies the path to the source file to be injected. The string after the colon 'system/halium/lib/udev/rules.d/70-android.rules' specifies the target location on your device."
+#: ../../porting/configure_test_fix/Overlay.rst:31
+msgid "no new files on the root filesystem"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:48
-msgid "The general steps to follow are thus:"
+#: ../../porting/configure_test_fix/Overlay.rst:30
+msgid "overlay existing files on the root filesystem, android and vendor filesystem"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:45
-msgid "Copy the file you wish to modify to the 'ubuntu' directory you have created in your device source tree."
+#: ../../porting/configure_test_fix/Overlay.rst:31
+#: ../../porting/configure_test_fix/Overlay.rst:35
+msgid "new files and directories via merged or replaced overlay directories"
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:33
+msgid "GitLab CI-based build"
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:33
+msgid "add/overwrite files on the root file system"
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:33
+msgid "add/overwrite files on the root file system (use overlays instead)"
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:34
+msgid "overlay mounts for existing files on the root, android and vendor filesystem"
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:39
+msgid "How mount-based overlay files work"
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:44
+msgid "Ubuntu Touch 16.04 only offers mount-based overlay files in case of full ``system.img``-based builds with the limitation that the overlayed files must actually exist on the root filesystem partition, adding new files is not possible."
 msgstr ""
 
 #: ../../porting/configure_test_fix/Overlay.rst:46
-msgid "Edit the file as needed."
+msgid "Overlay files need to be placed on the android system partition below the designated base directory which is mounted at ``/android/system/halium`` on the device. The directory tree with overlay files below that base directory mirrors the structure of the root filesystem, that is the destination path of an overlay file on the root filesystem is derived from its location relative to the base directory. For example, in order to overlay the udev rules file ``/lib/udev/rules.d/70-android.rules`` created in the last step it needs to exist in the directory ``/android/system/halium/lib/udev/rules.d/``. The specifics on how an overlay file can be placed there by the build system will be described below."
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:47
-msgid "Add a line to the PRODUCT_COPY_FILES section of your device.mk file as shown above."
+#: ../../porting/configure_test_fix/Overlay.rst:49
+msgid "Ubuntu Touch 20.04 and later"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:48
-msgid "Rebuild your system.img and reflash together with the ubports rootfs."
+#: ../../porting/configure_test_fix/Overlay.rst:51
+msgid "Ubuntu Touch 20.04 and later provide a much more flexible implementation which is available both to full ``system.img``-based builds as well as GitLab CI script-based builds. It not only allows overlaying individual files but also replacing or merging existing directories without actually modifying the underlying filesystem.  Furthermore, it is not restricted to the Ubuntu Touch root partition but can also overlay files and directories in vendor and Android partitions."
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:52
-msgid "The target paths for the files mentioned above are *not* randomly chosen. You must use the specified paths."
+#: ../../porting/configure_test_fix/Overlay.rst:53
+msgid "Depending on the build method the designated base directory is either ``/opt/halium-overlay`` or ``/android/system/halium`` on the device. The directory tree below the base directory mirrors the root filesystem and destination paths are derived based on the relative location of a directory or file to the base directory.  Note that the files or directories under the destination path must neither be writable nor mount points themselves.  The overlay directory tree will be traversed in depth-first order during boot according to the following rules:"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:56
-msgid "When you specify target path 'system/halium/etc/myfilename' your file 'myfilename' will end up in the '/etc' directory of your device (i.e. without the leading 'system/halium')"
+#: ../../porting/configure_test_fix/Overlay.rst:55
+msgid "If a subdirectory contains a special file named ``.halium-override-dir`` that directory will replace the destination directory tree, i.e. the contents of the underlying directory and its descendants will no longer be accessible."
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:57
+msgid "If a subdirectory contains a special file named ``.halium-overlay-dir`` it will be merged with with the destination directory.  Any file in the underlying directory or descendants thereof remain accessible if no file with the same destination path exists in the overlaying directory tree.  Files and whole directories which only exist in the overlay are made accessible in their respective destination paths.  This is implemented using the overlayfs filesystem (see the `overlayfs documentation <https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html>`_ for the technical details)."
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:59
+msgid "Files in directories containing none of the above special files are bind-mounted over files with an absolute path derived by stripping the above prefix. Subdirectories will be further traversed and evaluated according to the outlined rules."
 msgstr ""
 
 #: ../../porting/configure_test_fix/Overlay.rst:61
-msgid "Rebuild system.img"
+msgid "The specifics on how an overlay file or directory can be placed there depends on the used build system and will be described below."
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:63
-msgid "For Halium-7.1 ports and Halium-9.0 ports using a device specific system.img in place of the GSI, the system.img now needs to be rebuilt."
+#: ../../porting/configure_test_fix/Overlay.rst:64
+#: ../../porting/configure_test_fix/Overlay.rst:125
+#: ../../porting/configure_test_fix/Overlay.rst:152
+msgid "Example"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:65
-msgid "When you have made the adjustments you need and prepared your source as described above, rebuild the system image: ``mka systemimage``."
+#: ../../porting/configure_test_fix/Overlay.rst:66
+msgid "Contents of ``overlay/system/halium``::"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:67
-msgid "When rebuilding the system image after small changes like these, you need not ``mka clean`` first. However, changes to PRODUCT_PROPERTY_OVERRIDES might not get detected by the build system. To ensure this, go to the directory ``BUILDDIR/out/target/product/CODENAME/system`` and delete the file ``build.prop`` before rebuilding."
+#: ../../porting/configure_test_fix/Overlay.rst:83
+msgid "Contents of the underlying filesystem image::"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:70
-msgid "Overlay method for Gitlab CI script-based builds"
+#: ../../porting/configure_test_fix/Overlay.rst:97
+msgid "The resulting combined filesystem the looks as follows::"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:72
-msgid "Builds in this category can also be adapted to a particular device using overlay files, and when building by this method (see :ref:`Gitlab-CI`) it is possible not only to replace existing files, but also to introduce new ones."
+#: ../../porting/configure_test_fix/Overlay.rst:113
+msgid "The directory ``/etc/foo`` has been merged, whereas the ``/etc/bar`` directory and the file ``/etc/bazrc`` have been replaced."
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:74
-msgid "When you have prepared the files to replace or introduce, and determined the exact locations where they need to go on your device, these locations need to be replicated under the directory ``overlay/system/`` before running the Gitlab CI scripts according to `the instructions included. <https://gitlab.com/ubports/community-ports/android9/xiaomi-redmi-note-7-pro/xiaomi-violet/-/blob/master/README.md>`_"
+#: ../../porting/configure_test_fix/Overlay.rst:118
+msgid "Overlay files in full system.img builds"
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:77
-msgid "For example:"
+#: ../../porting/configure_test_fix/Overlay.rst:120
+msgid "In the case of full ``system.img``-based builds all supported Halium versions allow for copying overlay files to the Android system filesystem image during the build process by adding entries to the ``PRODUCT_COPY_FILES`` macro. Each entry consists of the source and destination path of a file, seperated by a “``:``”. As a matter of convention, all overlay files should be placed in a directory ``ubuntu`` below the root path of the repository. This directory can be referred to as ``$(LOCAL_PATH)/ubuntu``. The destination directory should be specified relative to its default mountpoint ``/android/system`` referred to as ``$(TARGET_COPY_OUT_SYSTEM)``."
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:79
-msgid "The udev rules file ``70-android.rules`` needs to go into ``system/halium/lib/udev/rules.d/``. This is accomplished by first creating the directory in the Gitlab scripts build tree. Standing in the root of this tree, first create the directory and then copy the file to this location::"
+#: ../../porting/configure_test_fix/Overlay.rst:122
+msgid "It is thus only possible to add or overwrite files below ``/android/system``. In order to make use of mount-based overlay files they should be placed below the designated base directory ``/android/system/halium`` as described above. Due to the limitations in Ubuntu 16.04 it is only possible to add new files via overlay or override directories available in Ubuntu 20.04 or later."
 msgstr ""
 
-#: ../../porting/configure_test_fix/Overlay.rst:84
-msgid "Now run the build scripts and the file will get incorporated into your build. Flash the files as per `the instructions. <https://gitlab.com/ubports/community-ports/android9/xiaomi-redmi-note-7-pro/xiaomi-violet/-/blob/master/README.md>`_"
+#: ../../porting/configure_test_fix/Overlay.rst:127
+msgid "Typically at least the file ``/lib/udev/rules.d/70-android.rules`` created when bringing up Lomiri (see :ref:`Lomiri`) and the file ``/etc/ubuntu-touch-session.d/android.conf`` for configuring display scaling need to be added via overlay files. The bind mount mechanism of both Ubuntu Touch 16.04 and 20.04 requires that the files are placed below the designated base directory ``/android/system/halium``, that is at ``/android/system/halium/lib/udev/rules.d/70-android.rules`` and ``/android/system/halium/etc/ubuntu-touch-session.d/android.conf``"
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:129
+msgid "Both ``70-android.rules`` and ``android.conf`` should be placed in the subdirectory ``ubuntu`` of the repository and the following lines need to be added to ``device.mk`` in order to copy them onto the generated image::"
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:140
+msgid "Rebuilding system.img"
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:142
+msgid "After any changes the ``system.img`` needs to be rebuilt using ``mka clean`` and ``mka systemimage``. When repeatedly rebuilding the system image after small changes, it is possible to do incremental builds without issuing a ``mka clean`` first. However, changes to PRODUCT_PROPERTY_OVERRIDES might not get detected by the build system. In that case the file ``build.prop`` in the directory ``BUILDDIR/out/target/product/CODENAME/system`` should be removed manually before rebuilding."
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:144
+msgid "After a successful build, the resulting ``system.img`` must reflashed together with the UBports root filesystem. On boot files and – in case of Ubuntu Touch 20.04 or later – marked directories in ``/android/system/halium`` will be mounted onto their final locations which are derived from their path relative to the designated base directory."
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:147
+msgid "Overlay files in Gitlab CI script-based builds"
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:149
+msgid "When using Gitlab CI script-based builds (see :ref:`Gitlab-CI`) overlay files and directories have to be placed in in the repository below ``overlay/system`` in a directory tree mirroring the structure of the root filesystem. Note that any overlay file placed in that directory tree will overwrite an existing file on the root filesystem. While Ubuntu Touch 16.04 only allows overlaying files by overwriting them, in case of Ubuntu Touch 20.04 or later versions the mount-based overlay files should be used instead. Thus overlay files and directories should be placed in a directory tree below ``overlay/system/opt/halium-overlay`` in the repository rather than directly below ``overlay/system``."
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:154
+msgid "Following the above example on Ubuntu Touch 20.04, adding the overlay files ``/lib/udev/rules.d/70-android.rules`` and ``/etc/ubuntu-touch-session.d/android.conf`` requires them to end up below ``/opt/halium-overlay`` on the resulting filesystem, that is as ``/opt/halium-overlay/lib/udev/rules.d/70-android.rules`` and ``/opt/halium-overlay/etc/ubuntu-touch-session.d/android.conf``. This is achieved by placing them at ``overlay/system/opt/halium-overlay/lib/udev/rules.d/70-android.rules`` and ``overlay/system/opt/halium-overlay/etc/ubuntu-touch-session.d/android.conf`` in the repository."
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:156
+msgid "In case of Ubuntu Touch 16.04 the files on the root filesystem need to be overwritten due to the lack of mount-based overlay files and must thus be placed at ``overlay/system/lib/udev/rules.d/70-android.rules`` and ``overlay/system/etc/ubuntu-touch-session.d/android.conf`` in the repository."
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:159
+msgid "Building on GitLab CI"
+msgstr ""
+
+#: ../../porting/configure_test_fix/Overlay.rst:161
+msgid "After adding or modifying overlay files the Gitlab CI scripts need to be run according to `the instructions included <https://gitlab.com/ubports/community-ports/android9/xiaomi-redmi-note-7-pro/xiaomi-violet/-/blob/master/README.md>`_. On boot files and – in case of Ubuntu Touch 20.04 or later – marked directories in ``/opt/halium-overlay`` will be mounted onto their final locations which are derived from their path relative to the designated base directory."
 msgstr ""
 
 #: ../../porting/configure_test_fix/Sound.rst:2
@@ -1574,6 +1706,390 @@ msgstr ""
 
 #: ../../porting/configure_test_fix/Wifi.rst:4
 msgid "For the time being, refer to `the Halium porting guide. <https://docs.halium.org/en/latest/porting/debug-build/wifi.html>`_"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/HfdService.rst:4
+msgid "hfd-service"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/HfdService.rst:6
+msgid "Overview of all hfd-service keys::"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/HfdService.rst:12
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:15
+msgid "Device quirks"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/HfdService.rst:15
+#: ../../porting/configure_test_fix/device_info/Mir.rst:20
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:18
+#: ../../porting/configure_test_fix/device_info/index.rst:41
+msgid "Key"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/HfdService.rst:15
+#: ../../porting/configure_test_fix/device_info/Mir.rst:20
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:18
+#: ../../porting/configure_test_fix/device_info/index.rst:41
+msgid "Description"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/HfdService.rst:15
+#: ../../porting/configure_test_fix/device_info/Mir.rst:20
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:18
+#: ../../porting/configure_test_fix/device_info/index.rst:41
+msgid "Value(s)"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/HfdService.rst:17
+msgid "VibrateDurationExtraMs"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/HfdService.rst:17
+msgid "Milliseconds to extend all vibration calls by"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/HfdService.rst:17
+msgid "Any integer number"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/HfdService.rst:21
+#: ../../porting/configure_test_fix/device_info/Mir.rst:63
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:25
+msgid "Examples"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/HfdService.rst:23
+#: ../../porting/configure_test_fix/device_info/Mir.rst:65
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:27
+msgid "Device ``sample`` using:"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/HfdService.rst:25
+msgid "Extend vibrations by 50 milliseconds to feel the on-screen keyboard haptics on devices with simpler on/off vibration motors"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/HfdService.rst:27
+#: ../../porting/configure_test_fix/device_info/Mir.rst:72
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:33
+msgid "Config file::"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:4
+msgid "Mir"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:6
+msgid "Overview of all Mir keys::"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:17
+msgid "mir-platform-android"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:20
+msgid "Default value"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:22
+#: ../../porting/configure_test_fix/device_info/Mir.rst:31
+msgid "MirAndroidPlatformClientEglFlush"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:22
+#: ../../porting/configure_test_fix/device_info/Mir.rst:23
+#: ../../porting/configure_test_fix/device_info/Mir.rst:24
+#: ../../porting/configure_test_fix/device_info/Mir.rst:25
+#: ../../porting/configure_test_fix/device_info/Mir.rst:26
+#: ../../porting/configure_test_fix/device_info/Mir.rst:27
+msgid "See below"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:22
+#: ../../porting/configure_test_fix/device_info/Mir.rst:23
+msgid "Comma-separated list (or special value \"all\")"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:22
+#: ../../porting/configure_test_fix/device_info/Mir.rst:23
+msgid "Empty"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:23
+#: ../../porting/configure_test_fix/device_info/Mir.rst:36
+msgid "MirAndroidPlatformClientFenceSync"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:24
+#: ../../porting/configure_test_fix/device_info/Mir.rst:41
+msgid "MirAndroidPlatformServerBackpressure"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:24
+#: ../../porting/configure_test_fix/device_info/Mir.rst:25
+#: ../../porting/configure_test_fix/device_info/Mir.rst:26
+#: ../../porting/configure_test_fix/device_info/Mir.rst:27
+msgid "Boolean"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:24
+#: ../../porting/configure_test_fix/device_info/Mir.rst:25
+#: ../../porting/configure_test_fix/device_info/Mir.rst:27
+msgid "False"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:25
+#: ../../porting/configure_test_fix/device_info/Mir.rst:46
+msgid "MirAndroidPlatformServerClearFbFence"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:26
+#: ../../porting/configure_test_fix/device_info/Mir.rst:51
+msgid "MirAndroidPlatformServerEglSync"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:26
+msgid "Launcher argument (``default``)"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:27
+#: ../../porting/configure_test_fix/device_info/Mir.rst:58
+msgid "MirAndroidPlatformServerPartialUpdates"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:33
+msgid "Force GL command buffer flush on eglSwapBuffers, in case the driver doesn't follow the spec."
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:38
+msgid "Classic fence-only synchronization without GL command buffer flushing."
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:43
+msgid "Allows redrawing to be skipped or not after a missed frame, similarly to SurfaceFlinger."
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:48
+msgid "Framebuffer changes only continue after the fence has been successfully waited on."
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:53
+msgid "Allow or avoid synchronization using EGL fencing primitives when drawing the screen."
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:55
+msgid "Overrules existing launcher argument."
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:60
+msgid "Allow partial redraws to HWC-assigned server-side buffers."
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:67
+msgid "Enabling egl flushing for every client except for ``lomiri`` and ``unity8``"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:68
+msgid "Note that you can use ``!`` to invert conditions and turn the `allow` into a `deny` list."
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:69
+msgid "Disabling egl sync for the server"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Mir.rst:70
+msgid "Enabling partial updates for the server"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:4
+msgid "Repowerd"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:6
+msgid "Overview of all repowerd keys::"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:20
+msgid "BacklightSysfsPath"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:20
+msgid "File path to backlight device"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:20
+msgid "File path"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:21
+msgid "DoubleTapToWake"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:21
+msgid "Configuration for toggling DT2W"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:21
+msgid "List of formatted strings: ``<path>|<enable>|<disable>``"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:29
+msgid "Custom backlight sysfs path to disable autodetection of the path controlling the backlight"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:31
+msgid "Double Tap to Wake (DT2W) configuration to allow double tapping to wake the device, specifing two potential paths"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:31
+msgid "It is allowed to specify multiple entries, invalid or non-existant paths will be removed"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:4
+msgid "DeviceInfo"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:6
+msgid "DeviceInfo allows to set device specific configuration, which can be accessed in an uniform way using `libdeviceinfo <https://gitlab.com/ubports/development/core/deviceinfo>`_."
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:9
+msgid "Device specific overrides"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:11
+msgid "Configuration files per device are located at ``/etc/deviceinfo/devices/[device].yaml``. It will try to autodetect the correct configuration to load based on model of the device, using android props for halium/android devices and dtb for native linux devices."
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:16
+msgid "This file needs to be all lowercase, as any autodetected device name will be converted to lowercase."
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:18
+msgid "For example, the file for the Nexus 7 tablet (flo) would be located at ``/etc/deviceinfo/devices/flo.yaml`` and needs to start with the device's name::"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:28
+msgid "In case you can not add a new file to the rootfs, you can bind-mount ``/etc/deviceinfo/devices/halium.yaml``. For a reference, see the `configuration bringup for bonito/sargo <https://github.com/fredldotme/android_device_google_bonito/commit/d0ca48aadcde0b74840c3394ac86042033d7f846>`_."
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:31
+msgid "If no device specific configuration exists or a key is not specified for the device config, DeviceInfo will fallback to ``/etc/deviceinfo/default.yaml``. Keep your configuration simple and try to not duplicate any entries, which are already defined in ``default.yaml``."
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:34
+msgid "Any key can be added without needing to modify deviceinfo to use it. This allows for a lot of flexibility, however keys should be properly documented in order to not duplicate keys."
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:38
+msgid "Built-in config keys"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:43
+msgid "Name"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:43
+msgid "Device name / codename"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:43
+#: ../../porting/configure_test_fix/device_info/index.rst:44
+msgid "Any string"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:44
+msgid "PrettyName"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:44
+msgid "Pretty name of the device"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:45
+msgid "DeviceType"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:45
+msgid "Sets device type"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:45
+msgid "desktop, tablet, phone"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:46
+msgid "GridUnit"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:46
+msgid "Sets scale units"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:46
+msgid "Any integer"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:47
+msgid "SupportedOrientations"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:47
+msgid "Orientations supported by the device"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:47
+#: ../../porting/configure_test_fix/device_info/index.rst:48
+#: ../../porting/configure_test_fix/device_info/index.rst:49
+#: ../../porting/configure_test_fix/device_info/index.rst:50
+#: ../../porting/configure_test_fix/device_info/index.rst:51
+#: ../../porting/configure_test_fix/device_info/index.rst:52
+msgid "Portrait, InvertedPortrait, Landscape, InvertedLandscape"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:48
+msgid "PrimaryOrientation"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:48
+msgid "Primary orientation of the device"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:49
+msgid "PortraitOrientation"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:49
+msgid "Orientation of the device when in portrait mode"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:50
+msgid "InvertedPortraitOrientation"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:50
+msgid "Orientation of the device when in inverted portrait mode"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:51
+msgid "LandscapeOrientation"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:51
+msgid "Orientation of the device when in landscape mode"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:52
+msgid "InvertedLandscapeOrientation"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:52
+msgid "Orientation of the device when in inverted landscape mode"
+msgstr ""
+
+#: ../../porting/configure_test_fix/device_info/index.rst:55
+msgid "Other keys are documented in the component specific subpages."
 msgstr ""
 
 #: ../../porting/configure_test_fix/index.rst:2
@@ -1666,7 +2182,7 @@ msgid "This is why Ubuntu Touch cannot be built completely from source code for 
 msgstr ""
 
 #: ../../porting/introduction/Intro.rst:21
-msgid "The next component of Ubuntu Touch is a pre-compiled root filesystem which needs to be installed on the device. This component does not communicate directly with the device hardware. Instead, this communication is mediated by a Hardware Abstraction Layer (HAL) which needs to be built for each specific device, because each device has its specific hardware architecture. This component is called Halium  and is available in different versions (5.1 which is largely obsolete, 7.1, 9 and 10 as of writing) corresponding to different Android versions."
+msgid "The next component of Ubuntu Touch is a pre-compiled root filesystem which needs to be installed on the device. This component does not communicate directly with the device hardware. Instead, this communication is mediated by a Hardware Abstraction Layer (HAL) which needs to be built for each specific device, because each device has its specific hardware architecture. This component is called Halium  and is available in different versions (5.1 which is largely obsolete, 7.1, 9, 10 and 11 as of writing) corresponding to different Android versions."
 msgstr ""
 
 #: ../../porting/introduction/Intro.rst:23
@@ -1722,7 +2238,6 @@ msgid "Lineage OS (LOS)"
 msgstr ""
 
 #: ../../porting/introduction/Intro.rst:46
-#: ../../porting/introduction/Intro.rst:46
 msgid "7.1"
 msgstr ""
 
@@ -1730,7 +2245,6 @@ msgstr ""
 msgid "14.1"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:47
 #: ../../porting/introduction/Intro.rst:47
 msgid "9.0"
 msgstr ""
@@ -1740,135 +2254,142 @@ msgid "16.0"
 msgstr ""
 
 #: ../../porting/introduction/Intro.rst:48
-#: ../../porting/introduction/Intro.rst:48
 msgid "10.0"
 msgstr ""
 
 #: ../../porting/introduction/Intro.rst:48
-msgid "17.0"
+msgid "17.1"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:54
+#: ../../porting/introduction/Intro.rst:49
+msgid "11.0"
+msgstr ""
+
+#: ../../porting/introduction/Intro.rst:49
+msgid "18.1"
+msgstr ""
+
+#: ../../porting/introduction/Intro.rst:55
 msgid "Generic System Image"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:56
+#: ../../porting/introduction/Intro.rst:57
 msgid "Starting with Android version 9.0, a significant change of architecture was introduced. The device-specific vendor blobs now reside on a separate partition instead of sharing a partition with the rest of the system image. This separation of device-specific code from generic code made possible what is known as the **Generic System Image (GSI)**."
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:59
+#: ../../porting/introduction/Intro.rst:60
 msgid "A GSI is a system image that is built to be able to function with a wide range of devices. Android devices, as of version 9.0, use a GSI. For more information, see the `Android Developer pages <https://developer.android.com/topic/generic-system-image/>`_"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:61
+#: ../../porting/introduction/Intro.rst:62
 msgid "The development of the Android GSI architecture also cleared the way for the now available generic Halium 9.0 arm64 system image (hereafter referred to as *the Halium GSI*, or simply *the GSI*) which is used for Ubuntu Touch. This, however, is somewhat different from the Android GSI. For a more detailed explanation of the Halium GSI, please refer to `the wiki page on Gitlab CI builds of the generic Halium system image <https://github.com/ubports/porting-notes/wiki/GitLab-CI-builds-for-devices-based-on-halium_arm64-(Halium-9)>`_."
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:64
+#: ../../porting/introduction/Intro.rst:65
 msgid "What does this mean for the porting process?"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:66
+#: ../../porting/introduction/Intro.rst:67
 msgid "Since the GSI is a prebuilt, device-independent component, it effectively simplifies the task of building a viable port by removing much of the meticulous and time consuming task of getting the hardware-specific vendor blobs compiled into the system image and configured to function properly."
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:71
+#: ../../porting/introduction/Intro.rst:72
 msgid "Porting methods"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:73
+#: ../../porting/introduction/Intro.rst:74
 msgid "This guide documents three different porting methods, which we call: **Full system image method**, **Halium-boot method**, and **Standalone kernel method**. When porting based on Halium 7.1 the Full system image method is the only available method to follow. For Halium 9.0 all three methods are possible."
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:77
+#: ../../porting/introduction/Intro.rst:78
 msgid "Full system image method"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:79
+#: ../../porting/introduction/Intro.rst:80
 msgid "This porting method requires building both the boot image (halium-boot.img) and the full device specific system image (system.img) from source and installing these together with the UBports root file system (rootfs). For Halium 7.1 ports this is the only possible method (Consequently, this method is sometimes referred to as *the Halium 7.1 method*). For Halium 9.0 it is also possible to use this method, however for Halium 9.0 the other two methods below are probably easier."
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:83
+#: ../../porting/introduction/Intro.rst:84
 msgid "Halium-boot method"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:85
+#: ../../porting/introduction/Intro.rst:86
 msgid "For this porting method it is sufficent to build the halium-boot.img and install this together with the Halium GSI and the UBports rootfs. This method can be used for Halium 9.0 ports."
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:90
+#: ../../porting/introduction/Intro.rst:91
 msgid "This porting method only requires building the kernel and installing this together with the Halium ramdisk, the Halium GSI and the UBports rootfs. This method can be used for Halium 9.0 ports."
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:92
+#: ../../porting/introduction/Intro.rst:93
 msgid "All methods share some common steps. However, there are also significant differences that must not be missed. Therefore, the methods will be treated separately in the subsequent sections where needed."
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:94
+#: ../../porting/introduction/Intro.rst:95
 msgid "The remainder of this section gives some words of advice to new porters. If you already have porting experience or ROM building experience, you can likely skip straight to :ref:`Preparations <Preparations>`."
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:99
+#: ../../porting/introduction/Intro.rst:100
 msgid "The challenges of the porting process"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:101
+#: ../../porting/introduction/Intro.rst:102
 msgid "Building the necessary components and getting them to work together properly always involves an amount of code modifications, configuring and testing, but considerably moreso when doing full system image builds, compared to builds using the GSI (see :ref:`porting methods <Porting-methods>`)."
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:103
+#: ../../porting/introduction/Intro.rst:104
 msgid "Luckily, there is a community of porters out there who are eager to see Ubuntu Touch ported to new devices. When you run into trouble, you should search the sources below (:ref:`Getting-community-help`) to see if others before you have solved the issue. There are online Telegram chat groups you can join to ask for help, but please bear in mind that those participating are doing so in their spare time."
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:108
+#: ../../porting/introduction/Intro.rst:109
 msgid "Prior knowledge and skills"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:110
+#: ../../porting/introduction/Intro.rst:111
 msgid "Porters come in all sizes and shapes, so to speak. Therefore, this guide does not presuppose extensive knowledge or skills in any particular field. You should, however, as a bare minimum be familiar with some common shell commands and be comfortable working from the terminal on you host PC. Furthermore, the guide is based on a host PC running Linux. If you have some knowledge of programming, this will come in handy at some point, especially if you are familiar with C / C++. Also, you should familiarize yourself with git and set up a Github or Gitlab account to keep track of your code changes. It is wise to start documenting your steps from the very beginning."
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:112
+#: ../../porting/introduction/Intro.rst:113
 msgid "We have attempted to give a certain amount of explanation along the way. However, this guide is not an in-depth reference into the architecture and inner workings of Ubuntu Touch, and gaining a deeper understanding will consequently require an amount of research on your part."
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:117
+#: ../../porting/introduction/Intro.rst:118
 msgid "Getting community help"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:119
+#: ../../porting/introduction/Intro.rst:120
 msgid "When you run into trouble, and you will, refer to one or more of the sources below:"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:121
+#: ../../porting/introduction/Intro.rst:122
 msgid "`Telegram: @halium <https://t.me/halium>`_"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:122
+#: ../../porting/introduction/Intro.rst:123
 msgid "`Telegram: @ubports_porting <https://t.me/ubports_porting>`_"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:123
+#: ../../porting/introduction/Intro.rst:124
 msgid "`The UBports Forum <https://forums.ubports.com/category/33/porting>`_"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:124
+#: ../../porting/introduction/Intro.rst:125
 msgid "Matrix: #halium:matrix.org"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:129
+#: ../../porting/introduction/Intro.rst:130
 msgid "General advice"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:131
+#: ../../porting/introduction/Intro.rst:132
 msgid "The more rigorous you are at making notes and documenting your steps, the less time you will spend backtracking your steps and guessing your way along. When dealing with issues that arise along the way, it is wise to work on them one at a time. If you try to correct several things at once, you risk ending up trying to guess which changes solved a given issue, which easily leads to breaking the functionality in question once more at some later stage."
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:133
+#: ../../porting/introduction/Intro.rst:134
 msgid "If you are not discouraged after reading this, we welcome your efforts and wish you the best of luck!"
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:135
+#: ../../porting/introduction/Intro.rst:136
 msgid "The next section presents a key to the rest of this guide."
 msgstr ""
 

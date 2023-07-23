@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-28 12:29-0500\n"
-"PO-Revision-Date: 2021-07-24 20:04+0000\n"
-"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
+"PO-Revision-Date: 2023-03-04 18:52+0000\n"
+"Last-Translator: Alberto <ortodipace@proton.me>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-porting/it/>\n"
 "Language: it\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../../porting/Intro.rst:2
 msgid "Introduction to porting"
-msgstr ""
+msgstr "introduzione al porting"
 
 #: ../../porting/Intro.rst:4
 msgid ""
@@ -33,6 +33,12 @@ msgid ""
 "more concise in order to meet the needs of the more experienced reader, "
 "while providing links to supplementary reading for the less experienced."
 msgstr ""
+"Questa prima sezione ti introdurrà alle specifiche di porting Ubuntu Touch a "
+"un dispositivo Android. Si noti che è scritto con il pubblico generale in "
+"mente, non principalmente lo sviluppatore porting esperto. Nelle sezioni "
+"successive abbiamo fatto uno sforzo per differenziare mantenendo il testo "
+"principale più conciso per soddisfare le esigenze del lettore più esperto, "
+"fornendo al contempo link alla lettura complementare per i meno esperti."
 
 #: ../../porting/Intro.rst:6
 msgid ""
@@ -41,11 +47,15 @@ msgid ""
 "device is different and in reality you will likely iterate and revisit some "
 "steps, skip over other steps and uncover new and undocumented challenges."
 msgstr ""
+"La guida nel suo insieme è scritta come una sequenza di passi che descrive "
+"come un port ideale potrebbe procedere. Tuttavia, il porting è imprevedibile "
+"e disordinato. Ogni dispositivo è diverso e in realtà sarà probabile iterare "
+"e rivisitare alcuni passaggi, saltare su altri passaggi e scoprire nuove e "
+"non documentate sfide."
 
 #: ../../porting/Intro.rst:11
-#, fuzzy
 msgid "What is Ubuntu Touch?"
-msgstr "Esecuzione di Ubuntu Touch"
+msgstr "Cosa è Ubuntu Touch?"
 
 #: ../../porting/Intro.rst:13
 msgid ""
@@ -54,6 +64,10 @@ msgid ""
 "majority of these devices are dependent to some degree on proprietary "
 "software."
 msgstr ""
+"Ubuntu Touch è un sistema operativo open source per dispositivi mobili. Può "
+"essere portato a dispositivi che originariamente erano spediti con Android "
+"OS. Ahimè, la maggior parte di questi dispositivi dipende in qualche modo "
+"dal software proprietario."
 
 #: ../../porting/Intro.rst:15
 msgid ""
@@ -65,6 +79,14 @@ msgid ""
 "therefore necessary to secure the correct version of these components when "
 "building a port."
 msgstr ""
+"Per essere specifici, i fornitori di dispositivi tendono a mantenere il "
+"codice che parla direttamente all'hardware del dispositivo (i driver di "
+"dispositivo a basso livello) proprietario. Questi componenti sono "
+"comunemente chiamati \"Blobs del fornitore\". I blobs del fornitore devono "
+"essere incorporati in una port Ubuntu Touch. Si noti che questi componenti "
+"sono specifici non solo per ogni dispositivo, ma anche per ogni versione "
+"Android. È quindi necessario garantire la corretta versione di questi "
+"componenti quando si costruisce un port."
 
 #: ../../porting/Intro.rst:17
 msgid ""
@@ -73,6 +95,11 @@ msgid ""
 "involves integrating the previously mentioned vendor blobs into the rest of "
 "the system, which can be built from source."
 msgstr ""
+"Ecco perché Ubuntu Touch non può essere costruito completamente dal codice "
+"sorgente per la maggior parte dei dispositivi commerciali. Invece, portare "
+"il sistema a questi dispositivi comporta l'integrazione dei blobs fornitore "
+"precedentemente menzionati nel resto del sistema, che può essere costruito "
+"dalla fonte."
 
 #: ../../porting/Intro.rst:19
 msgid ""
@@ -85,6 +112,14 @@ msgid ""
 "which is largely obsolete, 7.1, and 9 as of writing) corresponding to "
 "different Android versions."
 msgstr ""
+"Il componente successivo di Ubuntu Touch è un filesystem root precompilato "
+"che deve essere installato sul dispositivo. Questo componente non comunica "
+"direttamente con l'hardware del dispositivo. Invece, questa comunicazione è "
+"mediata da un livello di astrazione hardware (HAL) che deve essere costruito "
+"per ogni dispositivo specifico, perché ogni dispositivo ha la sua specifica "
+"architettura hardware. Questo componente è chiamato Halium ed è disponibile "
+"in diverse versioni (5.1 che è in gran parte obsoleto, 7.1 e 9 come da "
+"scrittura) corrispondenti a diverse versioni Android."
 
 #: ../../porting/Intro.rst:21
 msgid ""
@@ -95,6 +130,13 @@ msgid ""
 "UBports porting guide. At times it can also be helpful to test with one of "
 "the other operating systems to debug a problem from different angles."
 msgstr ""
+"Il progetto Halium consente ai sistemi Linux di funzionare su hardware "
+"Android. È uno sforzo congiunto da più sistemi operativi mobili, in "
+"particolare Plasma mobile, Lune OS e UBports. UBports porting costruisce "
+"sulla parte superiore del porting di Halium. Di conseguenza, userete sia la "
+"guida porting Halium che la guida porting UBports. A volte può anche essere "
+"utile per testare con uno degli altri sistemi operativi il debug di un "
+"problema da angoli diversi."
 
 #: ../../porting/Intro.rst:23
 msgid ""
@@ -105,23 +147,32 @@ msgid ""
 "the available Halium versions and vendor blobs from the corresponding "
 "Android version. See the first two columns of the table below for details."
 msgstr ""
+"Halium è quindi una parte indispensabile di un trasporto di Ubuntu Touch ed "
+"è disponibile sotto forma di software open source. Lo sviluppo di una nuova "
+"versione di Halium è un compito molto impegnativo ed è per questo che sono "
+"disponibili solo poche versioni di Halium. Ogni trasporto di Ubuntu Touch "
+"deve essere basato su una delle versioni di Halium disponibili e sui blob "
+"dei fornitori della corrispondente versione di Android. Per i dettagli si "
+"vedano le prime due colonne della tabella sottostante."
 
 #: ../../porting/Intro.rst:28
 msgid "Thus an Ubuntu Touch port is composed of the these components:"
-msgstr ""
+msgstr "Pertanto, un trasporto Ubuntu Touch è composto da questi componenti:"
 
 #: ../../porting/Intro.rst:26
 msgid "The Ubuntu Touch (UT) root filesystem (rootfs)"
-msgstr ""
+msgstr "L'Ubuntu Touch (UT) root filesystem (rootfs)"
 
 #: ../../porting/Intro.rst:27
 msgid ""
 "`Halium <https://halium.org/>`_ (contained in the boot and system images)"
 msgstr ""
+"`Halium <https://halium.org/>`_ (contenuto nelle immagini di avvio e di "
+"sistema)"
 
 #: ../../porting/Intro.rst:28
 msgid "The vendor blobs"
-msgstr ""
+msgstr "Il fornitore blobs"
 
 #: ../../porting/Intro.rst:30
 msgid ""
@@ -129,6 +180,9 @@ msgid ""
 "and install these together with the Ubuntu Touch rootfs in order to create a "
 "functioning Ubuntu Touch port."
 msgstr ""
+"Tu, il porter, hai bisogno di costruire Halium (cioè halium-boot.img e "
+"system.img) e installarli insieme ai rootf Ubuntu Touch al fine di creare un "
+"trasporto Ubuntu Touch funzionante."
 
 #: ../../porting/Intro.rst:32
 msgid ""
@@ -138,43 +192,48 @@ msgid ""
 "version for each individual device port. The table below shows which "
 "versions are required for the different Halium versions."
 msgstr ""
+"Halium è costruito utilizzando il codice sorgente per una versione "
+"modificata del sistema operativo Android chiamato LineageOS. Il codice "
+"sorgente richiesto è disponibile online e deve essere scaricato e "
+"configurato per costruire la corretta versione Halium per ogni singolo "
+"trasporto del dispositivo. La tabella seguente mostra quali versioni sono "
+"richieste per le diverse versioni Halium."
 
 #: ../../porting/Intro.rst:35
 msgid "Android version"
-msgstr ""
+msgstr "Versione Android"
 
 #: ../../porting/Intro.rst:35
 msgid "Halium version"
-msgstr ""
+msgstr "Versione Halium"
 
 #: ../../porting/Intro.rst:35
 msgid "Lineage OS (LOS)"
-msgstr ""
+msgstr "Lineage OS (LOS)"
 
 #: ../../porting/Intro.rst:37
 msgid "7.1"
-msgstr ""
+msgstr "7.1"
 
 #: ../../porting/Intro.rst:37
 msgid "14.1"
-msgstr ""
+msgstr "14.1"
 
 #: ../../porting/Intro.rst:38
-#, fuzzy
 msgid "9.0"
-msgstr "1,0"
+msgstr "9.0"
 
 #: ../../porting/Intro.rst:38
 msgid "16.0"
-msgstr ""
+msgstr "16.0"
 
 #: ../../porting/Intro.rst:44
 msgid "Overview of the porting process"
-msgstr ""
+msgstr "Panoramica del processo di porting"
 
 #: ../../porting/Intro.rst:46 ../../porting/Preparations.rst:2
 msgid "Preparations"
-msgstr ""
+msgstr "Preparazioni"
 
 #: ../../porting/Intro.rst:47
 msgid ""
@@ -182,10 +241,15 @@ msgid ""
 "about it and choose a suitable workstation (PC or laptop) on which to do "
 "your work."
 msgstr ""
+"In questa prima fase si sceglie un dispositivo di destinazione, raccogliere "
+"informazioni su di esso e scegliere una workstation adatta (PC o laptop) su "
+"cui fare il vostro lavoro."
 
 #: ../../porting/Intro.rst:48
 msgid "Set up your Halium build environment and complete a test build"
 msgstr ""
+"Impostare il vostro ambiente di costruzione Halium e completare una "
+"costruzione di prova"
 
 #: ../../porting/Intro.rst:49
 msgid ""
@@ -194,40 +258,52 @@ msgid ""
 "according to the Halium guide to ensure that all your sources are set up "
 "correctly and work in unison."
 msgstr ""
+"Questa fase comporta il download di tutto il codice sorgente rilevante e la "
+"sicurezza dei blobs del fornitore. Si costruirà quindi l'immagine di avvio "
+"di Halium e l'immagine di sistema secondo la guida di Halium per garantire "
+"che tutte le vostre fonti siano configurate correttamente e lavorare "
+"all'unisono."
 
 #: ../../porting/Intro.rst:50
 msgid "Build halium-boot.img and system.img for Ubuntu Touch"
-msgstr ""
+msgstr "Costruisci halium-boot.img e system.img per Ubuntu Touch"
 
 #: ../../porting/Intro.rst:51
 msgid ""
 "Now you need to modify your source tree, after which you will proceed to "
 "build the halium-boot.img and system.img to be used in your port."
 msgstr ""
+"Ora è necessario modificare il vostro albero sorgente, dopo di che si "
+"procederà a costruire il halium-boot.img e system.img da utilizzare nel "
+"vostro trasporto."
 
 #: ../../porting/Intro.rst:52
 msgid "Install and debug the boot process"
-msgstr ""
+msgstr "Installare e debug il processo di avvio"
 
 #: ../../porting/Intro.rst:53
 msgid ""
 "The goal of this stage is to successfully boot into Ubuntu Touch. You will "
 "be working from the command line."
 msgstr ""
+"L'obiettivo di questa fase è quello di avviare con successo Ubuntu Touch. "
+"Starai lavorando dalla riga di comando."
 
 #: ../../porting/Intro.rst:54
 msgid "Bring up the Ubuntu Touch graphical user interface 'Unity 8'"
-msgstr ""
+msgstr "Rendi l'interfaccia utente grafica Ubuntu Touch 'Unity 8'"
 
 #: ../../porting/Intro.rst:55
 msgid ""
 "This stage involves adjusting some configuration and further debugging of "
 "your build."
 msgstr ""
+"Questa fase comporta la regolazione di qualche configurazione e il debug "
+"ulteriore della vostra costruzione."
 
 #: ../../porting/Intro.rst:56
 msgid "Complete device configuration"
-msgstr ""
+msgstr "Configurazione completa del dispositivo"
 
 #: ../../porting/Intro.rst:57
 msgid ""
@@ -1596,7 +1672,6 @@ msgid "16"
 msgstr "16"
 
 #: ../../porting/halium_7-1/Reference_material.rst:23
-#, fuzzy
 msgid "1.5"
 msgstr "1.5"
 

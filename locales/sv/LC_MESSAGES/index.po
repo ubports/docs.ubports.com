@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-12-07 11:45-0600\n"
-"PO-Revision-Date: 2022-09-08 03:15+0000\n"
+"PO-Revision-Date: 2022-11-23 04:04+0000\n"
 "Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
 "Language-Team: Swedish <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-index/sv/>\n"
@@ -42,15 +42,15 @@ msgstr "Utveckling"
 #: ../../index.rst:63
 #: ../../index.rst:63
 msgid "Porting"
-msgstr ""
+msgstr "Portering"
 
 #: ../../index.rst:73
 msgid "Click Packages"
-msgstr ""
+msgstr "Klick-paket"
 
 #: ../../index.rst:73
 msgid "Ubuntu UI-Toolkit"
-msgstr ""
+msgstr "Verktyg för Ubuntu's grafiska gränssnitt"
 
 #: ../../index.rst:73
 msgid "Clickable"
@@ -94,6 +94,9 @@ msgstr ""
 #: ../../index.rst:10
 msgid "If you want to help improving this documentation, :doc:`the Documentation contribute page <contribute/documentation>` will get you started."
 msgstr ""
+"Om du hjälpte till att förbättra dokumentationen så kommer :doc:`"
+"dokumentationsbidragssidan <contribute/documentation>` att hjälpa dig att "
+"komma igång."
 
 #: ../../index.rst:12
 msgid "You may view this documentation in the following languages:"

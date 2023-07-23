@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019-2022, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-07 11:45-0600\n"
+"POT-Creation-Date: 2023-01-05 00:57+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -253,7 +253,7 @@ msgid "Most build arguments are project specific. Therefore, study the library's
 msgstr ""
 
 #: ../../appdev/guides/dependencies.rst:52
-msgid "To actually build the library for all architectures run ``clickable build-libs --arch armhf``, ``clickable build-libs --arch arm64`` and ``clickable build-libs --arch amd64``. Don't forget to mention this step in your README, so that others can reproduce the build process."
+msgid "To actually build the library for all architectures run ``clickable build --libs --arch armhf``, ``clickable build --libs --arch arm64`` and ``clickable build --libs --arch amd64``. Don't forget to mention this step in your README, so that others can reproduce the build process."
 msgstr ""
 
 #: ../../appdev/guides/dependencies.rst:54
@@ -1221,38 +1221,46 @@ msgid "This is the place to cache data for later use. The cache is also used by 
 msgstr ""
 
 #: ../../appdev/guides/writeable-dirs.rst:23
-msgid "App data"
-msgstr ""
-
-#: ../../appdev/guides/writeable-dirs.rst:24
-msgid "Path: ``/home/phablet/.local/share/<fullappname>/``"
+msgid "Data in the cache directory should be treated as temporary and the app should still function normally if this directory is cleared - clearing cache is commonly done to recover some space on the device. Don't store user account info here :)"
 msgstr ""
 
 #: ../../appdev/guides/writeable-dirs.rst:26
+msgid "App data"
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:27
+msgid "Path: ``/home/phablet/.local/share/<fullappname>/``"
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:29
 msgid "This is where your app stores any data. The music app for example stores its data bases to ``/home/phablet/.local/share/com.ubuntu.music/Databases/``."
 msgstr ""
 
-#: ../../appdev/guides/writeable-dirs.rst:30
+#: ../../appdev/guides/writeable-dirs.rst:33
 msgid "Using Standard Paths in C++"
 msgstr ""
 
-#: ../../appdev/guides/writeable-dirs.rst:31
+#: ../../appdev/guides/writeable-dirs.rst:34
 msgid "The Qt header ``QStandardPaths`` provides the app's writable locations in C++:"
 msgstr ""
 
-#: ../../appdev/guides/writeable-dirs.rst:42
+#: ../../appdev/guides/writeable-dirs.rst:45
 msgid "Since the value of the QStandardPaths strings are decided by the `Qt application name <https://doc.qt.io/qt-5/qcoreapplication.html#applicationName-prop>`_, this needs to be the same as the clickable application name."
 msgstr ""
 
-#: ../../appdev/guides/writeable-dirs.rst:45
+#: ../../appdev/guides/writeable-dirs.rst:48
+msgid "Setting the `organizationName <https://doc.qt.io/qt-5/qcoreapplication.html#organizationName-prop>`_ will change the paths returned by these functions too - if you need to do this, set it to the clickable application name as well, otherwise the paths won't work on the device."
+msgstr ""
+
+#: ../../appdev/guides/writeable-dirs.rst:51
 msgid "Using Standard Paths in QML"
 msgstr ""
 
-#: ../../appdev/guides/writeable-dirs.rst:46
+#: ../../appdev/guides/writeable-dirs.rst:52
 msgid "The Qt module `Qt.labs.platform <https://doc.qt.io/archives/qt-5.10/qml-qt-labs-platform-standardpaths.html>`_ provides the app's writable locations in QML:"
 msgstr ""
 
-#: ../../appdev/guides/writeable-dirs.rst:66
+#: ../../appdev/guides/writeable-dirs.rst:72
 msgid "Notice that ``QStandardPaths`` returns paths (``'/phablet/home/...'``), and QML ``StandardPaths`` returns urls (``'file:///phablet/home/...'``). This must be considered specially if the app is sharing location strings between QML and C++."
 msgstr ""
 
@@ -1913,211 +1921,211 @@ msgid "Taking a closer look:"
 msgstr ""
 
 #: ../../appdev/webapp/guide.rst:11
-msgid "At the innermost level, there is a website that the developer identifies by URL. The website is rendered and runs in an Oxide webview. Oxide is a Blink/Chrome webview that is customized for Ubuntu. The Oxide webview runs and displays in the webapp-container. The webapp-container is the executable app runtime that is integrated with the Ubuntu/unity shell."
+msgid "At the innermost level, there is a website that the developer identifies by URL. The website is rendered and runs in a Qt WebEngine based webview. The webview is provided by the pre-installed Morph browser and automatically handles things like file dialogs (using ContentHub), downloads, permissions, etc."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:16
+#: ../../appdev/webapp/guide.rst:15
 msgid "Launching"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:18
+#: ../../appdev/webapp/guide.rst:17
 msgid "You can launch a webapp from the terminal with:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:22
+#: ../../appdev/webapp/guide.rst:21
 msgid "For example:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:26
-msgid "This simple form works, but almost every webapp also uses other features, such as URL containment with URL patterns as described below."
+#: ../../appdev/webapp/guide.rst:25
+msgid "This simple form works, but almost every webapp uses other features as well, such as URL containment with URL patterns as described below."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:29
+#: ../../appdev/webapp/guide.rst:28
 msgid "User interface"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:31
+#: ../../appdev/webapp/guide.rst:30
 msgid "A webapp generally fills the entire app screen space, without the need of the UI controls generally found on standard browsers."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:33
-msgid "In some cases some navigation controls are appropriate, such as Back and Forward buttons, or a URL address bar. These are added as command line arguments:"
+#: ../../appdev/webapp/guide.rst:32
+msgid "In some cases some navigation controls are appropriate, such as Back and Forward buttons, or an address bar. These are enabled with command line arguments:"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:35
+#: ../../appdev/webapp/guide.rst:34
 msgid "``--enable-back-forward`` Enable the display of the back and forward buttons in the toolbar (at the bottom of the webapp window)"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:36
+#: ../../appdev/webapp/guide.rst:35
 msgid "``--enable-addressbar`` Enable the display of the address bar (at the bottom of the webapp window)"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:39
+#: ../../appdev/webapp/guide.rst:38
 msgid "URL patterns"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:41
+#: ../../appdev/webapp/guide.rst:40
 msgid "Webapp authors often want to contain browsing to the target website. That is, the developer wants to control the URLs that can be opened in the webapp (all other URLs are opened in the browser). This is done with URL patterns as part of the webapp command line."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:43
+#: ../../appdev/webapp/guide.rst:42
 msgid "However, many web apps use pages that are hosted over multiple sites or that use external resources and pages."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:45
-msgid "However, both containment and access to specified external URLs are implemented with URL patterns provided as arguments at launch time. Let’s take a closer look."
+#: ../../appdev/webapp/guide.rst:44
+msgid "Both containment and access to specified external URLs are implemented with URL patterns provided as arguments at launch time. Let’s take a closer look."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:48
+#: ../../appdev/webapp/guide.rst:47
 msgid "Uncontained by default"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:50
+#: ../../appdev/webapp/guide.rst:49
 msgid "By default, there is no URL containment. Suppose you launch a webapp without any patters and only a starting URL like this:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:54
+#: ../../appdev/webapp/guide.rst:53
 msgid "The user can navigate to any URL without limitation. For example, if they click the Developer button at the top, they navigate to developer.ubuntu.com, and it displays in the webapp."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:56
+#: ../../appdev/webapp/guide.rst:55
 msgid "Tip: You can see the URL of the current page by enabling the address bar with ``--enable-addressbar``."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:59
+#: ../../appdev/webapp/guide.rst:58
 msgid "Simple containment to the site"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:61
+#: ../../appdev/webapp/guide.rst:60
 msgid "One often wants to contain users to the site itself. That is, if the website is www.ubuntu.com, it may be useful to contain webapp users only to subpages of www.ubuntu.com. This is done by adding a wildcard URL pattern to the launch command, as follows:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:67
+#: ../../appdev/webapp/guide.rst:66
 msgid "``--webappUrlPatterns=`` indicates a pattern is next"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:66
-msgid "http://www.ubuntu.com/* is the pattern The asterisk is a wildcard that matches any valid sequence of trailing (right-most) characters in a URL"
+#: ../../appdev/webapp/guide.rst:65
+msgid "https://www.ubuntu.com/* is the pattern The asterisk is a wildcard that matches any valid sequence of characters in a URL"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:69
-msgid "With this launch command and URL pattern, the user can navigate to and open in the webapp any URL that starts with http://www.ubuntu.com/. For example, they can click on the Phone button (http://www.ubuntu.com/phone) in the banner and it opens in the webapp, or the Tablet button (http://www.ubuntu.com/tablet). But, clicking Developer opens the corresponding URL in the browser."
+#: ../../appdev/webapp/guide.rst:68
+msgid "With this launch command and URL pattern, the user can navigate to and open in the webapp any URL that starts with https://www.ubuntu.com/. For example, they can click on the Phone button (https://www.ubuntu.com/phone) in the banner and it opens in the webapp, or the Tablet button (https://www.ubuntu.com/tablet). But, clicking Developer opens the corresponding URL in the browser."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:71
-msgid "Tip: Make sure to fully specify the subdomain in your starting URL, that is, use http://www.ubuntu.com instead of www.ubuntu.com. Not specifying the subdomain would create an ambiguous URL and thus introduces security concerns."
+#: ../../appdev/webapp/guide.rst:70
+msgid "Tip: Make sure to specify the protocol in your starting URL, that is, use https://www.ubuntu.com instead of www.ubuntu.com. Not specifying the protocol would create an ambiguous URL and thus introduce security concerns."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:75
+#: ../../appdev/webapp/guide.rst:74
 msgid "More complex wildcard patterns"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:77
+#: ../../appdev/webapp/guide.rst:76
 msgid "You might want to limit access to only some subpages of your site from within the webapp. This is easy with wildcard patterns. (Links to other subpages are opened in the browser.) For example, the following allows access to www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features while not allowing access to www.ubuntu.com/desktop or www.ubuntu.com/phone::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:83
+#: ../../appdev/webapp/guide.rst:82
 msgid "Multiple patterns"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:85
+#: ../../appdev/webapp/guide.rst:84
 msgid "You can use multiple patterns by separating them with a comma. For example, the following allows access only to www.ubuntu.com/desktop/features and www.ubuntu.com/phone/features:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:89
+#: ../../appdev/webapp/guide.rst:88
 msgid "Tip: Multiple patterns are often necessary to achieve the intended containment behavior."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:93
+#: ../../appdev/webapp/guide.rst:92
 msgid "Adding a specific subdomain"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:95
+#: ../../appdev/webapp/guide.rst:94
 msgid "Many URLs have one or more subdomains. (For example, in the following, \"developer\" is the subdomain: developer.ubuntu.com.) You can allow access to a single subdomain (and all of its subpages) with a pattern like this:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:99
-msgid "However, one usually wants the user to be able to navigate back to the starting URL (and its subpages). So, if the starting URL is http://www.ubuntu.com, a second pattern is needed:::"
+#: ../../appdev/webapp/guide.rst:98
+msgid "However, one usually wants the user to be able to navigate back to the starting URL (and its subpages). So, if the starting URL is https://www.ubuntu.com, a second pattern is needed:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:103
-msgid "Putting these together, here’s an example that starts on http://www.ubuntu.com and allows navigation to http://developer.ubuntu.com and subpages and back to http://www.ubuntu.com and subpages:::"
+#: ../../appdev/webapp/guide.rst:102
+msgid "Putting these together, here’s an example that starts on https://www.ubuntu.com and allows navigation to https://developer.ubuntu.com and subpages and back to https://www.ubuntu.com and subpages:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:108
+#: ../../appdev/webapp/guide.rst:107
 msgid "Adding subdomains with a wildcard"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:110
+#: ../../appdev/webapp/guide.rst:109
 msgid "Some URLs have multiple subdomains. For example, www.ubuntu.com has design.ubuntu.com, developer.ubuntu.com and more. You can add access to all subdomains with a wildcard in the subdomain position:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:114
-msgid "Note: An asterisk in the subdomain position matches any valid single subdomain. This single pattern is sufficient to enable browsing to any subdomain and subpages, including back to the starting URL (http://www.ubuntu.com) and its subpages."
+#: ../../appdev/webapp/guide.rst:113
+msgid "Note: An asterisk in the subdomain position matches any valid single subdomain. This single pattern is sufficient to enable browsing to any subdomain and subpages, including back to the starting URL (https://www.ubuntu.com) and its subpages."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:117
-msgid "Adding https"
+#: ../../appdev/webapp/guide.rst:116
+msgid "Adding http"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:119
-msgid "Sometimes a site uses https for some of its URLs. Here is an example that allows https and https as access within the webapp to www.launchpad.net (and all subpages due to the wildcard):::"
+#: ../../appdev/webapp/guide.rst:118
+msgid "Sometimes a site uses http for some of its URLs. In general this is unsafe and should be avoided, but here is an example that allows access to www.launchpad.net on both https and http inside the webapp (and all subpages due to the wildcard):::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:123
+#: ../../appdev/webapp/guide.rst:122
 msgid "Note: the question mark in https?. This means the preceding character (the ‘s’) is optional. If https is always required, omit the question mark."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:126
+#: ../../appdev/webapp/guide.rst:125
 msgid "Command line arguments"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:128
+#: ../../appdev/webapp/guide.rst:127
 msgid "The webapp-container accepts many options to fine tune how it hosts various web applications."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:130
+#: ../../appdev/webapp/guide.rst:129
 msgid "See all help with:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:134
+#: ../../appdev/webapp/guide.rst:133
 msgid "Note: Only the following options apply to converged Ubuntu.::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:148
+#: ../../appdev/webapp/guide.rst:147
 msgid "Chrome options (if none specified, no chrome is shown by default):::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:153
+#: ../../appdev/webapp/guide.rst:152
 msgid "Note: The other available options are specific to desktop webapps. It is recommended to not use them anymore."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:156
+#: ../../appdev/webapp/guide.rst:155
 msgid "User-Agent string override"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:158
+#: ../../appdev/webapp/guide.rst:157
 msgid "Some websites check specific portions of the web engine identity, aka the User-Agent string, to adjust their presentation or enable certain features. While not a recommended practice, it is sometimes necessary to change the default string sent by the webapp container."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:160
+#: ../../appdev/webapp/guide.rst:159
 msgid "To change the string from the command line, use the following option:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:165
+#: ../../appdev/webapp/guide.rst:164
 msgid "Browser data containment"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:167
-msgid "The webapp experience is contained and isolated from the browser data point of view. That is webapps do not access data from any other installed browser, such as history, cookies and so on. Other browser on the system do not access the webapp’s data."
+#: ../../appdev/webapp/guide.rst:166
+msgid "The webapp experience is contained and isolated from the browser data point of view. That is webapps do not access data from any other installed browser, such as history, cookies and so on. Other browsers on the system do not access the webapp’s data."
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:170
+#: ../../appdev/webapp/guide.rst:169
 msgid "Storage"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:172
-msgid "W3C allows apps to use local storage, and Oxide/Webapp-container supports the main standards here: LocalStorage, IndexedDB, WebSQL."
+#: ../../appdev/webapp/guide.rst:171
+msgid "Following storage options are supported: Local/Session Storage, IndexedDB and the deprecated WebSQL. FileSystem API is not supported because apps cannot access the filesystem directly."
 msgstr ""
 
 #: ../../appdev/webapp/index.rst:4

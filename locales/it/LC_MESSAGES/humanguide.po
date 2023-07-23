@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-07 11:45-0600\n"
-"PO-Revision-Date: 2021-07-24 20:04+0000\n"
-"Last-Translator: Stefan Kalb <stefan.kalb@gmx.ch>\n"
+"POT-Creation-Date: 2023-01-05 00:57+0100\n"
+"PO-Revision-Date: 2023-03-04 18:52+0000\n"
+"Last-Translator: Alberto <ortodipace@proton.me>\n"
 "Language-Team: Italian <https://translate.ubports.com/projects/ubports-docs/"
 "documentation-humanguide/it/>\n"
 "Language: it\n"
@@ -21,16 +21,15 @@ msgstr ""
 
 #: ../../humanguide/app-layout/app-main-view.rst:2
 msgid "App main view"
-msgstr ""
+msgstr "App vista principale"
 
 #: ../../humanguide/app-layout/app-main-view.rst:4
-#, fuzzy
 msgid ""
 "When an app starts, shows a generic splash screen (as in the image) or a "
 "custom one, then the main view."
 msgstr ""
-"All'avvio di un'app, mostra una schermata iniziale generica (come "
-"nell'immagine) o personalizzata, poi la vista principale."
+"Quando un'applicazione inizia, mostra uno schermo splash generico (come "
+"nell'immagine) o uno personalizzato, quindi la vista principale."
 
 #: ../../humanguide/app-layout/app-main-view.rst:8
 msgid "The standard parts of a main view or any other page may be:"
@@ -43,15 +42,13 @@ msgid "Header"
 msgstr "Intestazione"
 
 #: ../../humanguide/app-layout/app-main-view.rst:13
-#, fuzzy
 msgid "Display app name, leading area and trailing area icons."
 msgstr ""
-"Visualizza il nome dell'app, l'area iniziale e le icone dell'area finale."
+"Visualizza il nome dell'app, l'area principale e traccia l'area delle icone."
 
 #: ../../humanguide/app-layout/app-main-view.rst:17
-#, fuzzy
 msgid "In this case, showing title and trailing actions."
-msgstr "In questo caso mostra il titolo e le azioni finali."
+msgstr "In questo caso, mostra il titolo e le azioni finali."
 
 #: ../../humanguide/app-layout/app-main-view.rst:20
 msgid "Tabbed content"
@@ -78,6 +75,8 @@ msgid ""
 "A dialog is a way of informing the user about important notices or letting "
 "them complete a single action."
 msgstr ""
+"Una finestra di dialogo è un modo per informare l'utente su avvisi "
+"importanti o lasciargli completare una singola azione."
 
 #: ../../humanguide/app-layout/dialogs.rst:6
 msgid ""
@@ -86,6 +85,11 @@ msgid ""
 "should be placed topmost in vertical dialogs or rightmost in horizontal "
 "dialogs."
 msgstr ""
+"I dialogi dovrebbero essere inequivocabili e concisi nella loro "
+"formulazione. Solo la più comune, o principale, azione dovrebbe essere "
+"evidenziata con il colore. L'azione principale deve essere posizionata più "
+"in alto nelle finestre di dialogo verticali o più in basso nelle finestre di "
+"dialogo orizzontali."
 
 #: ../../humanguide/app-layout/dialogs.rst:8
 msgid ""
@@ -94,6 +98,11 @@ msgid ""
 "make changes that can't be easily undone. Neutral actions do not add or "
 "remove from the subject, but still make a change."
 msgstr ""
+"Le azioni principali possono essere positive, negative o neutrali. Le azioni "
+"positive aggiungono qualcosa ai loro soggetti. Azioni negative rimuovere, "
+"eliminare o altrimenti apportare modifiche che non possono essere facilmente "
+"annullate. Le azioni neutre non aggiungono o tolgono dal soggetto, ma fanno "
+"comunque un cambiamento."
 
 #: ../../humanguide/app-layout/dialogs.rst:10
 msgid ""
@@ -102,6 +111,11 @@ msgid ""
 "positive, or ``theme.palette.normal.focus`` if it is neutral. The remaining "
 "options should be gray, without defining a color theme property."
 msgstr ""
+"L'azione principale deve essere evidenziata utilizzando "
+"``theme.palette.normal.negative``` se è distruttivo, "
+"``theme.palette.normal.positive`` se è positivo, o "
+"``theme.palette.normal.focus`` se è neutro. Le opzioni rimanenti dovrebbero "
+"essere grigi, senza definire una proprietà a tema di colore."
 
 #: ../../humanguide/app-layout/dialogs.rst:14
 msgid ""
@@ -111,6 +125,11 @@ msgid ""
 "then be \"Delete\", a negative action colored in red, and \"Cancel\", "
 "colored in gray."
 msgstr ""
+"I dialoghi dovrebbero riprendere le azioni, non chiedere un sì o nessuna "
+"domanda. Ad esempio, l'utente ha selezionato un'opzione per eliminare un "
+"contatto. La finestra di dialogo dovrebbe chiedere: \"Sei sicuro di voler "
+"eliminare questo contatto?\" Le opzioni dovrebbero quindi essere \"Delete\", "
+"un'azione negativa colorata in rosso, e \"Cancel\", colorata in grigio."
 
 #: ../../humanguide/app-layout/dialogs.rst:17
 msgid "Examples of designs to avoid"
@@ -130,6 +149,9 @@ msgid ""
 "with confusing color meaning: \"Will 'No' cause an irreversible action, and "
 "'Yes' cause an additive action?\""
 msgstr ""
+"Giusto: Dialog utilizza risposte generiche, entrambi i pulsanti colorati "
+"come azioni principali con il significato di colore confuso: \" il'No' "
+"causerà un'azione irreversibile, e 'Sì' causerà un'azione additiva?\""
 
 #: ../../humanguide/app-layout/header-uses.rst:2
 msgid "Header uses"
@@ -157,6 +179,9 @@ msgid ""
 "api-docs.ubports.com/sdk/apps/qml/Ubuntu.Components/PageStack.html>`__ is "
 "used."
 msgstr ""
+"L'intestazione si prende cura di mostrare il pulsante posteriore quando una `"
+"pagina stack <https://api-docs.ubports.com/sdk/apps/qml/Ubuntu.Components/"
+"PageStack.html>`__  viene utilizzato."
 
 #: ../../humanguide/app-layout/importing-data.rst:2
 msgid "Importing Data"
@@ -182,10 +207,12 @@ msgstr ""
 msgid ""
 "For more information see `Importing from Content Hub and URLdispatcher`_."
 msgstr ""
+"Per ulteriori informazioni vedere `Importing from Content Hub and "
+"URLdispatcher`_."
 
 #: ../../humanguide/app-layout/index.rst:2
 msgid "App layout"
-msgstr "Layout della app"
+msgstr "Disposizione(layout) della app"
 
 #: ../../humanguide/app-layout/main-actions.rst:2
 msgid "Main actions"
@@ -196,8 +223,9 @@ msgid ""
 "Main actions are displayed in the corresponding header of the Page. The "
 "header should show only relevant actions to the current page."
 msgstr ""
-"Le azioni principali sono mostrate nel header corrispondente della pagina. "
-"L'header dovrebbe mostrare solo le azioni rilevanti per la pagina corrente."
+"Le azioni principali sono mostrate nell'intestazione corrispondente della "
+"pagina. L'intestazione dovrebbe mostrare solo le azioni rilevanti per la "
+"pagina corrente."
 
 #: ../../humanguide/app-layout/main-actions.rst:6
 msgid "Main page of Contacts app shows:"
@@ -211,7 +239,7 @@ msgstr ""
 
 #: ../../humanguide/app-layout/main-actions.rst:15
 msgid "Slots"
-msgstr ""
+msgstr "Slots"
 
 #: ../../humanguide/app-layout/main-actions.rst:17
 msgid ""
@@ -219,14 +247,14 @@ msgid ""
 "options. Depending on the surface or window size, additional slots can be "
 "added to show the actions otherwise hidden in drawers."
 msgstr ""
-"L'header contiene un numero di slot che possono ospitare azioni o opzioni di "
-"navigazione. In base allo schermo o alla dimensione della finestra, possono "
-"essere aggiunti slot per mostrare le azioni che altrimenti sarebbero "
-"nascoste."
+"L'intestazione contiene un numero di slot che possono ospitare azioni o "
+"opzioni di navigazione. In base allo schermo o alla dimensione della "
+"finestra, possono essere aggiunti slot per mostrare le azioni che altrimenti "
+"sarebbero nascoste."
 
 #: ../../humanguide/app-layout/main-actions.rst:22
 msgid "Action Drawer"
-msgstr ""
+msgstr "Cassetto d'azione"
 
 #: ../../humanguide/app-layout/main-actions.rst:24
 msgid ""
@@ -234,36 +262,43 @@ msgid ""
 "slots to house them. However, when your app is on a larger surface, like on "
 "a desktop, then actions will appear in the slots."
 msgstr ""
+"Le azioni saranno poste in un cassetto azione quando non ci sono slot "
+"disponibili per ospitarli. Tuttavia, quando l'applicazione è su una "
+"superficie più grande, come su un desktop, allora le azioni apparirà nelle "
+"slot."
 
 #: ../../humanguide/app-layout/main-actions.rst:29
 msgid "Responsive layout"
-msgstr ""
+msgstr "Layout reattivo"
 
 #: ../../humanguide/app-layout/main-actions.rst:31
 msgid ""
 "As the header gains width across screen sizes, additional slots become "
 "visible and actions in the drawer will appear automatically."
 msgstr ""
+"Poiché l'intestazione guadagna la larghezza tra le dimensioni dello schermo, "
+"le fessure aggiuntive diventano visibili e le azioni nel cassetto "
+"appariranno automaticamente."
 
 #: ../../humanguide/app-layout/main-actions.rst:34
 msgid "3 slot layout"
-msgstr ""
+msgstr "3 impostazione slot"
 
 #: ../../humanguide/app-layout/main-actions.rst:41
 msgid "4 slot layout"
-msgstr ""
+msgstr "4 impostazione slot"
 
 #: ../../humanguide/app-layout/main-actions.rst:48
 msgid "5 slot layout"
-msgstr ""
+msgstr "5 impostazione slot"
 
 #: ../../humanguide/app-layout/main-actions.rst:55
 msgid "6 slot layout"
-msgstr ""
+msgstr "6 impostazione slot"
 
 #: ../../humanguide/app-layout/main-actions.rst:62
 msgid "Medium to large screens"
-msgstr ""
+msgstr "Schermi medio-grandi"
 
 #: ../../humanguide/app-layout/main-actions.rst:64
 msgid ""
@@ -271,10 +306,12 @@ msgid ""
 "If this is exceeded then additional actions will migrate to the action "
 "drawer."
 msgstr ""
+"Il numero massimo di slot di azione visibili in un ambiente convergente è 6. "
+"Se questo viene superato allora ulteriori azioni migrano al cassetto azione."
 
 #: ../../humanguide/app-layout/main-actions.rst:67
 msgid "Simple"
-msgstr ""
+msgstr "Semplice"
 
 #: ../../humanguide/app-layout/main-actions.rst:69
 msgid "Keep in mind to keep a clean design. The simpler, the better."
@@ -294,7 +331,7 @@ msgid ""
 "are related to each other."
 msgstr ""
 "La lista di oggetti può essere usata per fare una lista ordinata e "
-"scorrevole di oggetti che sono relazioni tra loro."
+"scorrevole di oggetti che sono in relazione tra loro."
 
 #: ../../humanguide/app-layout/presenting-data.rst:11
 msgid ""
@@ -302,6 +339,9 @@ msgid ""
 "more sense to show them inside a grid rather than a list; like in a photo "
 "gallery."
 msgstr ""
+"Quando le immagini o le icone sono presentate senza testo o azioni, avrebbe "
+"più senso mostrarle all'interno di una griglia piuttosto che di una lista; "
+"come in una galleria fotografica."
 
 #: ../../humanguide/app-layout/presenting-data.rst:15
 msgid ""
@@ -309,16 +349,22 @@ msgid ""
 "context menu can be accessed in two ways: by swiping or right-clicking the "
 "list item."
 msgstr ""
+"Gli elementi in un elenco possono avere azioni che possono essere "
+"posizionate in un menu contestuale. Il menu contestuale può essere "
+"accessibile in due modi: scorrendo o facendo clic con il pulsante destro del "
+"mouse sulla voce dell'elenco."
 
 #: ../../humanguide/app-layout/presenting-data.rst:17
 msgid ""
 "The actions are placed within two categories: leading for negative actions "
 "and trailing for positive actions."
 msgstr ""
+"Le azioni sono poste all'interno di due categorie: che portano ad azioni "
+"negative e alle azioni positive."
 
 #: ../../humanguide/app-layout/presenting-data.rst:20
 msgid "Touch swiping"
-msgstr ""
+msgstr "Scorrimento del tocco"
 
 #: ../../humanguide/app-layout/presenting-data.rst:27
 msgid "Mouse right click"
@@ -347,22 +393,28 @@ msgid ""
 "content. Alternatively, if the user long presses an item a context menu will "
 "show the associated editing actions too."
 msgstr ""
+"È possibile utilizzare la modalità edit per consentire agli utenti di multi-"
+"selezionare, riordinare o eliminare elementi all'interno di un elenco. "
+"Quando la modalità di modifica viene inserita nell'intera schermata diventa "
+"uno stato di modifica e l'intestazione mostrerà le azioni di editing "
+"associate per il contenuto. In alternativa, se l'utente preme a lungo un "
+"elemento un menu di contesto mostrerà le azioni di editing associate troppo."
 
 #: ../../humanguide/app-layout/presenting-data.rst:48
 msgid "Layout of detailed list items"
-msgstr "Layout di una lista dettagliata di oggetti"
+msgstr "Disposizione di una lista dettagliata di oggetti"
 
 #: ../../humanguide/app-layout/presenting-data.rst:52
 msgid "1 line – Title"
-msgstr ""
+msgstr "1 linea - Titolo"
 
 #: ../../humanguide/app-layout/presenting-data.rst:54
 msgid "1 line – Subtitle"
-msgstr ""
+msgstr "1 linea - Sottotitolo"
 
 #: ../../humanguide/app-layout/presenting-data.rst:56
 msgid "2 lines – Summary"
-msgstr ""
+msgstr "2 linee - Sommario"
 
 #: ../../humanguide/app-layout/quick-actions.rst:2
 msgid "Quick actions"
@@ -375,10 +427,16 @@ msgid ""
 "Ubuntu.Components/BottomEdge.html>`__ action, accessed with a swipe from "
 "outside of the screen upwards."
 msgstr ""
+"L'azione più comune per un'applicazione, quella a cui si deve accedere "
+"rapidamente, potrebbe essere aggiunta come azione `bottom edge <https://api-"
+"docs.ubports.com/sdk/apps/qml/Ubuntu.Components/BottomEdge.html>`__, a cui "
+"si accede con uno scorrimento dall'esterno dello schermo verso l'alto."
 
 #: ../../humanguide/app-layout/quick-actions.rst:6
 msgid "You can add a new contact in the Contacts app swiping up:"
 msgstr ""
+"È possibile aggiungere un nuovo contatto nell'app Contatti scorrendo verso "
+"l'alto:"
 
 #: ../../humanguide/app-layout/quick-actions.rst:11
 msgid "Hint"
@@ -395,6 +453,8 @@ msgstr ""
 #: ../../humanguide/app-layout/quick-actions.rst:15
 msgid "After opening an app, a hint with a text and/or an icon is shown:"
 msgstr ""
+"Dopo aver aperto un'app, viene visualizzato un suggerimento con un testo e/o "
+"un'icona:"
 
 #: ../../humanguide/app-layout/quick-actions.rst:19
 msgid "After after a few seconds it hides and a floating icon is shown"
@@ -411,6 +471,10 @@ msgid ""
 "get-started/design-philosophy>`__ started by Canonical and `Samuel Hewitt "
 "<https://samuelhewitt.com>`__."
 msgstr ""
+"L'intero sistema e le applicazioni seguono i principi di progettazione `Suru "
+"<http://web.archive.org/web/20191223082720/https://docs.ubuntu.com/phone/en/"
+"apps/design/get-started/design-philosophy>`__ avviati da Canonical e `Samuel "
+"Hewitt <https://samuelhewitt.com>`__."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:7
 msgid "Design Philosophy and Suru Meaning"
@@ -422,13 +486,15 @@ msgstr "Suru allude alla cultura giapponese."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:10
 msgid "The design of Suru is inspired by origami."
-msgstr "Il design di Suru è ispirato dagli origami."
+msgstr "Il disegno di Suru è ispirato dagli origami."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:11
 msgid ""
 "Paper can be used in two and three dimensional forms, because it is "
 "transferable and diverse."
 msgstr ""
+"La carta può essere utilizzata in due e tre forme dimensionali, perché è "
+"trasferibile e diversificata."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:14
 msgid ""
@@ -436,20 +502,26 @@ msgid ""
 "The sharp lines and varying levels of transparency evoke the edges and "
 "texture of paper."
 msgstr ""
+"Suru porta una struttura precisa ma organica all'interfaccia Ubuntu Touch. "
+"Le linee taglienti e i diversi livelli di trasparenza evocano i bordi e la "
+"consistenza della carta."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:17
 msgid "Design Tips for an App Icon"
-msgstr "Suggerimenti per il design dell'Icona dell'App"
+msgstr "Suggerimenti per il designo dell'Icona dell'App"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:20
 msgid "Descriptive design"
-msgstr "Design descrittivo"
+msgstr "Disegno descrittivo"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:22
 msgid ""
 "The icon you choose for your app should describe what your app is about, "
 "what it does, or what service it is there for in a recognizable way."
 msgstr ""
+"L'icona che si sceglie per la vostra app dovrebbe descrivere ciò che la "
+"vostra applicazione è circa, che cosa fa, o che servizio è lì per in modo "
+"riconoscibile."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:27
 msgid "Distinctive shapes"
@@ -462,6 +534,11 @@ msgid ""
 "trying to depict. A TV might look like a box, or a computer screen, a remote "
 "control like a phone, etc."
 msgstr ""
+"A seconda dell'oggetto che si sceglie di mostrare nell'icona, sulla "
+"prospettiva, l'illuminazione e altri fattori, potrebbe essere difficile "
+"riconoscere quello che si sta cercando di descrivere. Una TV potrebbe "
+"sembrare una scatola, o uno schermo del computer, un telecomando come un "
+"telefono, ecc."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:34
 msgid "Details"
@@ -474,6 +551,11 @@ msgid ""
 "or for people who have impaired eyesight. Show what's necessary, pay "
 "attention to detail, but don't overload the icon."
 msgstr ""
+"Un'icona dettagliata è molto bella da guardare da come mostra la qualità e "
+"l'occhio per le piccole cose. Potrebbe aggiungere confusione però, "
+"soprattutto nelle dimensioni più piccole o per le persone che hanno la vista "
+"compromessa. Mostra ciò che è necessario, fai attenzione ai dettagli, ma non "
+"sovraccaricare l'icona."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:41
 msgid "Colours"
@@ -484,10 +566,12 @@ msgid ""
 "Use distinctive colours, make your icon stand out a bit and give the shapes "
 "enough contrast to be visible."
 msgstr ""
+"Usa colori distintivi, rendi la tua icona un po' in risalto e dalle la forma "
+"in sufficiente contrasto per essere visibile."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:48
 msgid "Gradients"
-msgstr ""
+msgstr "Gradienti"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:50
 msgid ""
@@ -495,10 +579,13 @@ msgid ""
 "slightly different from each other so that the change is not too dramatic. "
 "For example:"
 msgstr ""
+"Se dovessi aggiungere un gradiente alla tua icona, usa solo colori "
+"leggermente diversi l'uno dall'altro in modo che il cambiamento non sia "
+"troppo drammatico. Per esempio:"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:55
 msgid "Composition"
-msgstr ""
+msgstr "Composizione"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:57
 msgid ""
@@ -506,10 +593,13 @@ msgid ""
 "usually a coloured surface with the pictogram, also composed of flat shapes, "
 "“floating” above it."
 msgstr ""
+"Le icone Suru sono composte da semplici forme geometriche. Lo sfondo è di "
+"solito una superficie colorata con il pittogramma, composto anche da forme "
+"piatte, “floating” sopra di esso."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:64
 msgid "The Fold Effect"
-msgstr ""
+msgstr "L'effetto pieghevole"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:66
 msgid ""
@@ -517,16 +607,21 @@ msgid ""
 "many icons this is a single horizontal or vertical line but sometimes the "
 "fold line(s) correspond or align with elements of the pictogram."
 msgstr ""
+"In linea con il motivo origami, alcune icone Suru hanno una piega implicita. "
+"In molte icone questa è una singola linea orizzontale o verticale, ma a "
+"volte la linea di piega corrisponde o allinea con elementi del pittogramma."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:68
 msgid ""
 "The fold is drawn by creating an overlay of a white or black polygon of very "
 "low opacity (usually between 1%~10%)."
 msgstr ""
+"La piega è disegnata creando un sovrapposizione di un poligono bianco o nero "
+"di opacità molto bassa (di solito tra 1% ~ 10%)."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:75
 msgid "Grids"
-msgstr ""
+msgstr "Griglie"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:77
 msgid ""
@@ -534,6 +629,9 @@ msgid ""
 "to reserve area for the icon background for even padding around the "
 "pictogram."
 msgstr ""
+"L'uso di un layout a griglia garantisce la coerenza tra tutte le icone e "
+"obbliga a riservare un'area per lo sfondo dell'icona per un padding uniforme "
+"intorno al pittogramma."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:81
 msgid ""
@@ -542,10 +640,14 @@ msgid ""
 "illusion where circular objects appear smaller than rectangular objects of "
 "the same dimensions."
 msgstr ""
+"Si noti che gli elementi circolari sono leggermente più grandi degli "
+"elementi rettangolari della griglia; questo superamento è necessario per "
+"compensare l'illusione ottica per cui gli oggetti circolari appaiono più "
+"piccoli degli oggetti rettangolari delle stesse dimensioni."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:84
 msgid "Unit Grid"
-msgstr ""
+msgstr "Griglia di unità"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:86
 msgid ""
@@ -554,10 +656,15 @@ msgid ""
 "four (16x16, 24x24, 32x32, 48x48, 256x256) using a pixel grid with lines "
 "every 4 pixels and drawing to that grid is the best practice."
 msgstr ""
+"Progettare tenendo conto di una griglia di pixel è fondamentale per avere "
+"icone nitide e pulite. Poiché la maggior parte delle icone del desktop ha "
+"dimensioni pari a un fattore quattro (16x16, 24x24, 32x32, 48x48, 256x256), "
+"la pratica migliore è quella di utilizzare una griglia di pixel con linee "
+"ogni 4 pixel e di disegnare su quella griglia."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:89
 msgid "Shadows"
-msgstr ""
+msgstr "Ombre"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:91
 msgid ""
@@ -565,24 +672,33 @@ msgid ""
 "pictogram to create a drop shadow effect, and a second below the overall "
 "icon shape."
 msgstr ""
+"Spesso un'icona Suru viene disegnata con due serie distinte di ombre, una "
+"per il pittogramma per creare un effetto di ombra a goccia e una seconda "
+"sotto la forma complessiva dell'icona."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:93
 msgid ""
 "The drop shadow effect on the central pictogram is a combination of two "
 "shadow that are identical in shape to the pictogram:"
 msgstr ""
+"L'effetto ombra sul pittogramma centrale è una combinazione di due ombre di "
+"forma identica al pittogramma:"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:95
 msgid ""
 "a shape that is rgba(0,0,0,0.1) with vertical offset of 2 pixels and a blur "
 "of 1%"
 msgstr ""
+"una forma che è rgba(0,0,0,0,0.1) con uno spostamento verticale di 2 pixel e "
+"una sfocatura dell'1%"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:96
 msgid ""
 "a shape that is rgba(0,0,0,0.4) with vertical offset of 4 pixels and a blur "
 "of 10%"
 msgstr ""
+"una forma che è rgba(0,0,0,0,0.4) con uno spostamento verticale di 4 pixel e "
+"una sfocatura del 10%"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:100
 msgid ""
@@ -590,10 +706,13 @@ msgid ""
 "gradient with three stops whose positions correspond to the location of the "
 "background fold."
 msgstr ""
+"Se è presente l'effetto piega, la seconda ombra viene disegnata utilizzando "
+"un gradiente lineare con tre stop le cui posizioni corrispondono alla "
+"posizione della piega dello sfondo."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:103
 msgid "Highlights"
-msgstr ""
+msgstr "Evidenziazioni"
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:105
 msgid ""
@@ -603,6 +722,11 @@ msgid ""
 "is an 'edge' that you can align to the top of the pictogram. Repeat as "
 "needed."
 msgstr ""
+"I pittogrammi hanno un'evidenziazione bianca sempre più leggera (1 pixel) "
+"lungo il bordo superiore. Per fare ciò, creare 2 copie bianche solide della "
+"forma principale del pittogramma e spostare una copia di 1 pixel verso il "
+"basso e 'differenziare' le due in modo che ciò che rimane sia un 'bordo' da "
+"allineare alla parte superiore del pittogramma. Ripetere se necessario."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:109
 msgid ""
@@ -610,20 +734,25 @@ msgid ""
 "of your highlight. For instance, if it is using bright, primary colours, "
 "there isn't any need for a highlight."
 msgstr ""
+"A seconda del colore dell'elemento del pittogramma, è possibile variare "
+"l'opacità dell'evidenziazione. Ad esempio, se il pittogramma utilizza colori "
+"primari e brillanti, non c'è bisogno di un'evidenziazione."
 
 #: ../../humanguide/design-concepts/app-icon-design.rst:111
 msgid ""
 "Grids and other resources can be found in this `gitlab repository <https://"
 "gitlab.com/cibersheep/ubuntu-icon-resource-kit>`__."
 msgstr ""
+"Le griglie e altre risorse si trovano in questo repository `gitlab "
+"<https://gitlab.com/cibersheep/ubuntu-icon-resource-kit>`__."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:2
 msgid "In-app icons design"
-msgstr ""
+msgstr "Disegno delle icone in-app"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:5
 msgid "Interface Icons"
-msgstr ""
+msgstr "Icone dell'interfaccia"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:7
 msgid ""
@@ -633,52 +762,63 @@ msgid ""
 "icons are located in the top bar or in-app icons, such as in the Header or "
 "the menus."
 msgstr ""
+"Le icone dell'interfaccia comunicano lo stato o le azioni visualizzate, come "
+"il livello della batteria o un allarme, e consentono all'utente di eseguire "
+"azioni come l'apertura di un menu, la condivisione di contenuti o la stampa "
+"di un documento. Le icone dell'interfaccia si trovano nella barra superiore "
+"o nelle icone dell'applicazione, ad esempio nell'intestazione o nei menu."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:9
 msgid ""
 "|stock_message.svg| |share.svg| |stock_alarm-clock.svg| |security-alert.svg| "
 "|settings.svg|"
 msgstr ""
+"|messaggio-scorta.svg| |quota.svg| |orologio-sveglia_scorta.svg| |allarme-"
+"sicurezza.svg| |impostazioni.svg|"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:82
 msgid "stock_message.svg"
-msgstr ""
+msgstr "messaggio_scorta.svg"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:83
 msgid "share.svg"
-msgstr ""
+msgstr "quota.svg"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:84
 msgid "stock_alarm-clock.svg"
-msgstr ""
+msgstr "orologio-sveglia_scorta.svg"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:85
 msgid "security-alert.svg"
-msgstr ""
+msgstr "allarme-sicurezza.svg"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:86
 msgid "settings.svg"
-msgstr ""
+msgstr "impostazioni.svg"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:12
 msgid ""
 "See a `list of the icons <http://docs.ubports.com/projects/icons/>`__. "
 "available in the system."
 msgstr ""
+"Vedere un `elenco delle icone <http://docs.ubports.com/projects/icons/>`__. "
+"disponibili nel sistema."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:15
 msgid "Color"
-msgstr ""
+msgstr "colore"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:17
 msgid ""
 "Interface icons can be colourized in qml therefore are designed in #808080 "
 "color."
 msgstr ""
+"Le icone dell'interfaccia possono essere colorate in qml, pertanto sono "
+"state progettate con il colore #808080."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:20
 msgid "Font"
-msgstr ""
+msgstr "Carattere"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:22
 msgid ""
@@ -686,30 +826,38 @@ msgid ""
 "distinctive, the design is based on the same patterns as the Ubuntu font. "
 "The font patterns can applied to the symbol to define its contours."
 msgstr ""
+"Per dare un aspetto coerente all'interfaccia utente e per rendere distintive "
+"le icone di Suru, il disegno si basa sugli stessi motivi del carattere "
+"Ubuntu. I motivi del carattere possono essere applicati al simbolo per "
+"definirne i contorni."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:29
 msgid "Strokes"
-msgstr ""
+msgstr "Estremità"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:31
 msgid ""
 "Stroke ends are squared but the upper end of vertical strokes is slightly "
 "oblique with a +10º angle."
 msgstr ""
+"Le estremità dei tratti sono squadrate, ma l'estremità superiore dei tratti "
+"verticali è leggermente obliqua con un angolo di +10º."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:38
 msgid "Rotation"
-msgstr ""
+msgstr "Rotazione"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:40
 msgid ""
 "When they are not horizontal or vertical, objects are oriented along a +45º "
 "axis."
 msgstr ""
+"Quando non sono orizzontali o verticali, gli oggetti sono orientati lungo un "
+"asse di +45º."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:47
 msgid "Corners"
-msgstr ""
+msgstr "Angoli"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:49
 msgid ""
@@ -717,10 +865,14 @@ msgid ""
 "on the default outer and inner curvatures, with nodes and Bezier handle. The "
 "default curvature can be scaled down when the shape is smaller."
 msgstr ""
+"Se possibile, sono preferibili gli angoli curvi. L'immagine seguente mostra "
+"uno zoom sulle curvature esterne e interne predefinite, con i nodi e la "
+"maniglia di Bezier. La curvatura predefinita può essere ridotta quando la "
+"forma è più piccola."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:56
 msgid "Arrows"
-msgstr ""
+msgstr "Frecce"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:58
 msgid ""
@@ -728,10 +880,13 @@ msgid ""
 "isosceles triangle where the two equal sides are slightly curved (following "
 "the pattern of the Y character)."
 msgstr ""
+"Per le frecce di navigazione si utilizza il simbolo del chevron. La punta "
+"della freccia è un triangolo isoscele in cui i due lati uguali sono "
+"leggermente curvati (secondo lo schema del carattere Y)."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:65
 msgid "Opacity"
-msgstr ""
+msgstr "Opacità"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:67
 msgid ""
@@ -740,20 +895,26 @@ msgid ""
 "icon changes. When the status allows a range of values, the opacity of a "
 "single portion of icon can be altered."
 msgstr ""
+"L'opacità al 50% viene utilizzata per riflettere lo stato di un indicatore. "
+"In caso di doppio spazio (abilitato e disabilitato, ad esempio), cambia "
+"l'opacità dell'intera icona. Quando lo stato consente una gamma di valori, è "
+"possibile modificare l'opacità di una singola porzione dell'icona."
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:74
 msgid "Grid"
-msgstr ""
+msgstr "Griglia"
 
 #: ../../humanguide/design-concepts/in-app-icons-design.rst:76
 msgid ""
 "Interface icons are designed for 96x96 pixels, with at least 4 pixels of "
 "margin on every side."
 msgstr ""
+"Le icone dell'interfaccia sono progettate per 96x96 pixel, con almeno 4 "
+"pixel di margine su ogni lato."
 
 #: ../../humanguide/design-concepts/index.rst:2
 msgid "Design concepts"
-msgstr ""
+msgstr "Concetti di progettazione"
 
 #: ../../humanguide/design-concepts/system-palette.rst:1
 msgid ""
@@ -762,155 +923,174 @@ msgid ""
 ">`__ and `Ubuntu documentation <https://docs.ubuntu.com/phone/en/apps/api-"
 "qml-development/Ubuntu.Components.UbuntuColors>`__):"
 msgstr ""
+"Come progettato da `Canonical <https://www.canonical.com/>`__, usiamo la "
+"seguente tavolozza di sistema (da `Michał Prędotka <http://colors.mivoligo."
+"com/>`__ e dalla documentazione di `Ubuntu <https://docs.ubuntu.com/phone/en/"
+"apps/api-qml-development/Ubuntu.Components.UbuntuColors>`__):"
 
 #: ../../humanguide/design-concepts/system-palette.rst:4
 msgid "Operating system and app palette"
-msgstr ""
+msgstr "Sistema operativo e tavolozza delle app"
 
 #: ../../humanguide/design-concepts/system-palette.rst:8
 msgid "#FFFFFF White"
-msgstr ""
+msgstr "#FFFFFF Bianco"
 
 #: ../../humanguide/design-concepts/system-palette.rst:10
 msgid ""
 "Recommended for background on Ambiance theme (light theme) or regular text "
 "on Suru Dark theme."
 msgstr ""
+"Consigliato per lo sfondo del tema Ambiance (tema chiaro) o per il testo "
+"normale del tema Suru Dark."
 
 #: ../../humanguide/design-concepts/system-palette.rst:14
 msgid "#111111 Jet"
-msgstr ""
+msgstr "#111111 Jet"
 
 #: ../../humanguide/design-concepts/system-palette.rst:16
 msgid ""
 "Recommended for regular text on Ambiance theme or background in Suru Dark."
-msgstr ""
+msgstr "Consigliato per testo normale su tema Ambiance o sfondo in Suru Dark."
 
 #: ../../humanguide/design-concepts/system-palette.rst:20
 msgid "#3B3B3B Inkstone"
-msgstr ""
+msgstr "#3B3B3B Inkstone"
 
 #: ../../humanguide/design-concepts/system-palette.rst:22
 msgid "Recommended for foreground colours in dark themes."
-msgstr ""
+msgstr "Consigliato per i colori in primo piano nei temi scuri."
 
 #: ../../humanguide/design-concepts/system-palette.rst:26
 msgid "#5D5D5D Slate"
-msgstr ""
+msgstr "#5D5D5D Ardesia"
 
 #: ../../humanguide/design-concepts/system-palette.rst:28
 msgid "Recommended for text and action icons."
-msgstr ""
+msgstr "Consigliato per le icone di testo e di azione."
 
 #: ../../humanguide/design-concepts/system-palette.rst:32
 msgid "#666666 Graphite"
-msgstr ""
+msgstr "#666666 Grafite"
 
 #: ../../humanguide/design-concepts/system-palette.rst:34
 msgid "Recommended for coloring dark themes' background."
-msgstr ""
+msgstr "Consigliato per colorare lo sfondo di temi scuri."
 
 #: ../../humanguide/design-concepts/system-palette.rst:38
 msgid "#888888 Ash"
-msgstr ""
+msgstr "#888888 Cenere"
 
 #: ../../humanguide/design-concepts/system-palette.rst:40
 msgid "Recommended for subtitles and other tertiary content."
-msgstr ""
+msgstr "Consigliato per sottotitoli e altri contenuti terziari."
 
 #: ../../humanguide/design-concepts/system-palette.rst:44
 msgid "#CDCDCD Silk"
-msgstr ""
+msgstr "#CDCDCD Seta"
 
 #: ../../humanguide/design-concepts/system-palette.rst:46
 msgid "Recommended for neutral action buttons and secondary text."
-msgstr ""
+msgstr "Consigliato per pulsanti di azione neutri e testo secondario."
 
 #: ../../humanguide/design-concepts/system-palette.rst:50
 msgid "#F7F7F7 Porcelain"
-msgstr ""
+msgstr "#F7F7F7 Porcellana"
 
 #: ../../humanguide/design-concepts/system-palette.rst:52
 msgid "Recommended for foregrounds."
-msgstr ""
+msgstr "Consigliato per i primi piani."
 
 #: ../../humanguide/design-concepts/system-palette.rst:56
 msgid "#335280 Blue"
-msgstr ""
+msgstr "#335280 Blu"
 
 #: ../../humanguide/design-concepts/system-palette.rst:58
 msgid ""
 "Recommended for progress bars, selected areas, text selection and text "
 "cursor. Also neutral actions (Ambiance)."
 msgstr ""
+"Consigliato per barre di avanzamento, aree selezionate, selezione del testo "
+"e cursore di testo. Anche azioni neutre (Ambiance)."
 
 #: ../../humanguide/design-concepts/system-palette.rst:62
 msgid "#19B6EE Light Blue"
-msgstr ""
+msgstr "#19B6EE Azzurro"
 
 #: ../../humanguide/design-concepts/system-palette.rst:64
 msgid ""
 "Recommended for progress bars, selected areas, text selection and text "
 "cursor. Also neutral actions (SuruDark)."
 msgstr ""
+"Consigliato per barre di avanzamento, aree selezionate, selezione del testo "
+"e cursore di testo. Anche azioni neutre (SuruDark)."
 
 #: ../../humanguide/design-concepts/system-palette.rst:68
 msgid "#0E8420 Green"
-msgstr ""
+msgstr "#0E8420 Verde"
 
 #: ../../humanguide/design-concepts/system-palette.rst:70
 msgid "Recommended for positive action buttons (Ambiance)."
-msgstr ""
+msgstr "Consigliato per i pulsanti ad azione positiva (Ambiance)."
 
 #: ../../humanguide/design-concepts/system-palette.rst:74
 msgid "#3EB34F Light Green"
-msgstr ""
+msgstr "#3EB34F Verde Chiaro"
 
 #: ../../humanguide/design-concepts/system-palette.rst:76
 msgid "Recommended for positive action buttons (SuruDark)."
-msgstr ""
+msgstr "Consigliato per i pulsanti ad azione positiva (SuruDark)."
 
 #: ../../humanguide/design-concepts/system-palette.rst:80
 msgid "#C7162B Red"
-msgstr ""
+msgstr "#C7162B Rosso"
 
 #: ../../humanguide/design-concepts/system-palette.rst:82
 msgid ""
 "Recommended for negative and irreversible action buttons, errors and alerts "
 "(Ambiance)."
 msgstr ""
+"Consigliato per pulsanti di azione negativi e irreversibili, errori e avvisi "
+"(Ambiance)."
 
 #: ../../humanguide/design-concepts/system-palette.rst:86
 msgid "#ED3146 Light Red"
-msgstr ""
+msgstr "#ED3146 Rosso Chiaro"
 
 #: ../../humanguide/design-concepts/system-palette.rst:88
 msgid ""
 "Recommended for negative and irreversible action buttons, errors and alerts "
 "(SuruDark)."
 msgstr ""
+"Consigliato per pulsanti di azione negativi e irreversibili, errori e avvisi "
+"(SuruDark)."
 
 #: ../../humanguide/design-concepts/system-palette.rst:92
 msgid "#E95420 Orange"
-msgstr ""
+msgstr "#E95420 Arancione"
 
 #: ../../humanguide/design-concepts/system-palette.rst:94
 msgid "Orange is recommended for branded elements, focus and intensity."
 msgstr ""
+"L'arancione è consigliato per gli elementi di marca, la concentrazione e "
+"l'intensità."
 
 #: ../../humanguide/design-concepts/typography.rst:2
 msgid "Typography"
-msgstr ""
+msgstr "Tipografia"
 
 #: ../../humanguide/design-concepts/typography.rst:5
 msgid "Fonts"
-msgstr ""
+msgstr "Caratteri"
 
 #: ../../humanguide/design-concepts/typography.rst:7
 msgid ""
 "Our default font is `Ubuntu <https://design.ubuntu.com/font/>`__ `[2] "
 "<https://en.wikipedia.org/wiki/Ubuntu_(typeface)>`__ installed in the system."
 msgstr ""
+"Il nostro font predefinito è `Ubuntu <https://design.ubuntu.com/font/>`__ "
+"`[2] <https://en.wikipedia.org/wiki/Ubuntu_(typeface)>`__ installato nel "
+"sistema."
 
 #: ../../humanguide/design-concepts/typography.rst:13
 msgid ""
@@ -918,96 +1098,99 @@ msgid ""
 "font size as a number of pixels or points, it is imperative to define the "
 "font size in terms of size names:"
 msgstr ""
+"Affinché le dimensioni dei caratteri siano coerenti tra i vari dispositivi, "
+"invece di impostare le dimensioni dei caratteri come numero di pixel o di "
+"punti, è indispensabile definire le dimensioni dei caratteri in termini di "
+"nomi di dimensioni:"
 
 #: ../../humanguide/design-concepts/typography.rst:16
 msgid "Font Size Name"
-msgstr ""
+msgstr "Dimensione del carattere Nome"
 
 #: ../../humanguide/design-concepts/typography.rst:16
 msgid "gu"
-msgstr ""
+msgstr "gu"
 
 #: ../../humanguide/design-concepts/typography.rst:16
 msgid "Desktop"
-msgstr ""
+msgstr "Desktop"
 
 #: ../../humanguide/design-concepts/typography.rst:16
 msgid "Phone"
-msgstr ""
+msgstr "Telefono"
 
 #: ../../humanguide/design-concepts/typography.rst:16
 msgid "Tablet"
-msgstr ""
+msgstr "Tablet"
 
 #: ../../humanguide/design-concepts/typography.rst:20
 msgid "4\" HD Screen"
-msgstr ""
+msgstr "Schermo 4\" HD"
 
 #: ../../humanguide/design-concepts/typography.rst:20
 msgid "10\" HD screen"
-msgstr ""
+msgstr "Schermo 10\" HD"
 
 #: ../../humanguide/design-concepts/typography.rst:23
 msgid "x-small"
-msgstr ""
+msgstr "x-small"
 
 #: ../../humanguide/design-concepts/typography.rst:23
 msgid "1.25"
-msgstr ""
+msgstr "1.25"
 
 #: ../../humanguide/design-concepts/typography.rst:23
 msgid "10 px"
-msgstr ""
+msgstr "10 px"
 
 #: ../../humanguide/design-concepts/typography.rst:23
 msgid "22 px"
-msgstr ""
+msgstr "22 px"
 
 #: ../../humanguide/design-concepts/typography.rst:23
 #: ../../humanguide/design-concepts/typography.rst:25
 msgid "12 px"
-msgstr ""
+msgstr "12 px"
 
 #: ../../humanguide/design-concepts/typography.rst:25
 msgid "small"
-msgstr ""
+msgstr "piccolo"
 
 #: ../../humanguide/design-concepts/typography.rst:25
-#, fuzzy
 msgid "1.5"
 msgstr "1.5"
 
 #: ../../humanguide/design-concepts/typography.rst:25
 msgid "27 px"
-msgstr ""
+msgstr "27 px"
 
 #: ../../humanguide/design-concepts/typography.rst:25
 msgid "15 px"
-msgstr ""
+msgstr "15 px"
 
 #: ../../humanguide/design-concepts/typography.rst:27
 msgid "medium"
-msgstr ""
+msgstr "medio"
 
 #: ../../humanguide/design-concepts/typography.rst:27
 msgid "1.75"
-msgstr ""
+msgstr "1.75"
 
 #: ../../humanguide/design-concepts/typography.rst:27
 msgid "14 px"
-msgstr ""
+msgstr "14 px"
 
 #: ../../humanguide/design-concepts/typography.rst:27
 msgid "31 px"
-msgstr ""
+msgstr "31 px"
 
 #: ../../humanguide/design-concepts/typography.rst:27
 msgid "18 px"
-msgstr ""
+msgstr "18 px"
 
 #: ../../humanguide/design-concepts/typography.rst:29
 msgid "large"
-msgstr ""
+msgstr "grande"
 
 #: ../../humanguide/design-concepts/typography.rst:29
 msgid "2.5"
@@ -1015,43 +1198,43 @@ msgstr "2.5"
 
 #: ../../humanguide/design-concepts/typography.rst:29
 msgid "20 px"
-msgstr ""
+msgstr "20 px"
 
 #: ../../humanguide/design-concepts/typography.rst:29
 msgid "45 px"
-msgstr ""
+msgstr "45 px"
 
 #: ../../humanguide/design-concepts/typography.rst:29
 msgid "25 px"
-msgstr ""
+msgstr "25 px"
 
 #: ../../humanguide/design-concepts/typography.rst:31
 msgid "x-large"
-msgstr ""
+msgstr "x-large"
 
 #: ../../humanguide/design-concepts/typography.rst:31
 msgid "3.5"
-msgstr ""
+msgstr "3.5"
 
 #: ../../humanguide/design-concepts/typography.rst:31
 msgid "34 px"
-msgstr ""
+msgstr "34 px"
 
 #: ../../humanguide/design-concepts/typography.rst:31
 msgid "76 px"
-msgstr ""
+msgstr "76 px"
 
 #: ../../humanguide/design-concepts/typography.rst:31
 msgid "42 px"
-msgstr ""
+msgstr "42 px"
 
 #: ../../humanguide/design-concepts/units.rst:2
 msgid "Units"
-msgstr ""
+msgstr "Unità"
 
 #: ../../humanguide/design-concepts/units.rst:5
 msgid "Resolution Independence Approach"
-msgstr ""
+msgstr "Risoluzione Indipendenza Approccio"
 
 #: ../../humanguide/design-concepts/units.rst:7
 msgid ""
@@ -1061,14 +1244,19 @@ msgid ""
 "combines simplicity for the designers and developers with visual fidelity, "
 "quality and usability."
 msgstr ""
+"L'obiettivo dell'indipendenza della risoluzione è quello di rendere facile "
+"per le interfacce utente grafiche in Ubuntu Touch per scalare a tutti i "
+"fattori di forma che Ubuntu Touch obiettivi: telefoni, tablet, computer "
+"portatili e desktop. L'approccio preso coniuga semplicità per i designer e "
+"gli sviluppatori con fedeltà visiva, qualità e usabilità."
 
 #: ../../humanguide/design-concepts/units.rst:10
 msgid "Measurement Units"
-msgstr ""
+msgstr "Unità di misura"
 
 #: ../../humanguide/design-concepts/units.rst:13
 msgid "Grid Unit"
-msgstr ""
+msgstr "Unità di griglia o rete"
 
 #: ../../humanguide/design-concepts/units.rst:15
 msgid ""
@@ -1081,6 +1269,14 @@ msgid ""
 "the distance the user is to the screen. We also ensure that 1 grid unit is "
 "always an integer number of pixel."
 msgstr ""
+"Un'unità di misura chiamata *grid unit* è definita, abbreviata *gu.* 1 unità "
+"di griglia si traduce in un dato numero di pixel a seconda del tipo di "
+"schermo su cui viene visualizzata l'interfaccia utente. Ad esempio, su un "
+"computer portatile 1 unità di griglia in genere si tradurrà a 8 pixel. Il "
+"numero di pixel per unità di griglia è scelto per preservare la dimensione "
+"visiva percepita degli elementi UI e quindi dipende dalla densità del "
+"display e dalla distanza che l'utente è sullo schermo. Garantiamo inoltre "
+"che 1 unità di griglia sia sempre un numero intero di pixel."
 
 #: ../../humanguide/design-concepts/units.rst:18
 msgid "Device"
@@ -1088,43 +1284,45 @@ msgstr "Dispositivo"
 
 #: ../../humanguide/design-concepts/units.rst:18
 msgid "Conversion"
-msgstr ""
+msgstr "Conversione"
 
 #: ../../humanguide/design-concepts/units.rst:20
 msgid "Most laptops"
-msgstr ""
+msgstr "La maggior parte dei computer portatili"
 
 #: ../../humanguide/design-concepts/units.rst:20
 msgid "1 gu = 8 px"
-msgstr ""
+msgstr "1 gu = 8 px"
 
 #: ../../humanguide/design-concepts/units.rst:23
 msgid "High DPI laptops"
-msgstr ""
+msgstr "Portatili alta DPI"
 
 #: ../../humanguide/design-concepts/units.rst:23
 msgid "1 gu = 16 px"
-msgstr ""
+msgstr "1 gu = 16 px"
 
 #: ../../humanguide/design-concepts/units.rst:26
 msgid "Phone with 4 inch screen at HD resolution (around 720x1,280 pixels)"
 msgstr ""
+"Telefono con schermo da 4 pollici a risoluzione HD (circa 720x1280 pixel)"
 
 #: ../../humanguide/design-concepts/units.rst:26
 msgid "1 gu = 18 px"
-msgstr ""
+msgstr "1 gu = 18 px"
 
 #: ../../humanguide/design-concepts/units.rst:29
 msgid "Tablet with 10 inch screen at HD resolution (around 720x1,280 pixels)"
 msgstr ""
+"Tablet con schermo da 10 pollici a risoluzione HD (circa 720x1280 pixel)"
 
 #: ../../humanguide/design-concepts/units.rst:29
 msgid "1 gu = 10 px"
-msgstr ""
+msgstr "1 gu = 10 px"
 
 #: ../../humanguide/design-concepts/units.rst:34
 msgid "Density Unit"
-msgstr ""
+msgstr "Unità di densità"
 
 #: ../../humanguide/design-concepts/units.rst:36
 msgid ""
@@ -1133,131 +1331,264 @@ msgid ""
 "independent pixel,* abbreviated dp. 1 dp typically translates to 1 pixel on "
 "laptops and low density mobile phones and tablets."
 msgstr ""
+"Eccezionalmente, per accogliere i rari casi in cui sono necessarie "
+"misurazioni di meno di 1 gu è disponibile un'altra unità: il *density "
+"indipendente pixel,* abbreviato dp. 1 dp si traduce in genere a 1 pixel su "
+"computer portatili e telefoni cellulari a bassa densità e tablet."
 
 #: ../../humanguide/design-concepts/units.rst:39
 msgid "Use"
-msgstr ""
+msgstr "Uso"
 
 #: ../../humanguide/design-concepts/units.rst:49
 msgid "Device Sizes"
-msgstr ""
+msgstr "Dimensioni del dispositivo"
 
 #: ../../humanguide/design-concepts/units.rst:52
 msgid "Device Grid Units"
-msgstr ""
+msgstr "Unità di gliglia rete del dispositivo"
 
 #: ../../humanguide/design-concepts/units.rst:52
 msgid "width"
-msgstr ""
+msgstr "larghezza"
 
 #: ../../humanguide/design-concepts/units.rst:52
 msgid "height"
-msgstr ""
+msgstr "altezza"
 
 #: ../../humanguide/design-concepts/units.rst:54
 msgid "E5 (portrait)"
-msgstr ""
+msgstr "E5 (ritratto)"
 
 #: ../../humanguide/design-concepts/units.rst:54
 msgid "42"
-msgstr ""
+msgstr "42"
 
 #: ../../humanguide/design-concepts/units.rst:54
 msgid "72"
-msgstr ""
+msgstr "72"
 
 #: ../../humanguide/design-concepts/units.rst:56
 msgid "M10 HD (landscape)"
-msgstr ""
+msgstr "M10 HD (paesaggio)"
 
 #: ../../humanguide/design-concepts/units.rst:56
 msgid "160"
-msgstr ""
+msgstr "160"
 
 #: ../../humanguide/design-concepts/units.rst:56
 msgid "97"
-msgstr ""
+msgstr "97"
 
 #: ../../humanguide/design-concepts/units.rst:58
 msgid "M10 FHD (landscape)"
-msgstr ""
+msgstr "M10 FHD (paesaggio)"
 
 #: ../../humanguide/design-concepts/units.rst:58
 msgid "148"
-msgstr ""
+msgstr "148"
 
 #: ../../humanguide/design-concepts/units.rst:58
 msgid "89"
-msgstr ""
+msgstr "89"
 
 #: ../../humanguide/design-concepts/units.rst:60
 msgid "N5 (portrait)"
-msgstr ""
+msgstr "N5 (ritratto)"
 
 #: ../../humanguide/design-concepts/units.rst:60
 msgid "47"
-msgstr ""
+msgstr "47"
 
 #: ../../humanguide/design-concepts/units.rst:60
 msgid "80"
-msgstr ""
+msgstr "80"
 
 #: ../../humanguide/index.rst:2
 msgid "Human interface guidelines"
-msgstr ""
+msgstr "Linee guida interfaccia umana"
 
 #: ../../humanguide/index.rst:4
 msgid ""
-"Ubuntu Touch follows a clean, beautiful, modern and (above all) convergent "
-"design. We aim to keep developing the design started by Canonical."
+"Ubuntu Touch follows a modern and convergent design philosophy called Suru. "
+"We aim to keep developing the design started by Canonical."
 msgstr ""
+"Ubuntu Touch segue una filosofia di design moderna e convergente chiamata "
+"Suru. Vogliamo continuare a sviluppare il design iniziato da Canonical."
+
+#: ../../humanguide/index.rst:11
+msgid "Suru meaning"
+msgstr "Suru significa"
+
+#: ../../humanguide/index.rst:13
+msgid ""
+"Here at UBports we believe that everyone should have access to free, "
+"reliable, and trusted software that can be shared and developed by anyone. "
+"This has paved the way to allow the community to grow and prosper with "
+"freedom trust and collaboration. This integral belief has been translated "
+"into the design philosophy called Suru."
+msgstr ""
+"Qui a UBports crediamo che tutti dovrebbero avere accesso al software "
+"libero, affidabile e affidabile che può essere condiviso e sviluppato da "
+"chiunque. Questo ha spianato la strada per permettere alla comunità di "
+"crescere e prosperare con la libertà di fiducia e collaborazione. Questa "
+"credenza integrale è stata tradotta nella filosofia progettuale chiamata "
+"Suru."
+
+#: ../../humanguide/index.rst:15
+msgid "Suru items from the Ubuntu values alluding to Japanese culture."
+msgstr "Gli elementi Suru dei valori Ubuntu alludono alla cultura giapponese."
+
+#: ../../humanguide/index.rst:17
+msgid ""
+"The design of Suru is inspired by origami, because it gives us a solid and "
+"tangible foundation."
+msgstr ""
+"Il design di Suru si ispira agli origami, perché ci danno una base solida e "
+"tangibile."
+
+#: ../../humanguide/index.rst:19
+msgid ""
+"Paper can be used in all areas of the design in two and three dimensional "
+"forms, because it is transferable and diverse."
+msgstr ""
+"La carta può essere utilizzata in tutte le aree del design in forme "
+"bidimensionali e tridimensionali, perché è trasferibile e diversificata."
+
+#: ../../humanguide/index.rst:22
+msgid "Translated in design"
+msgstr "Tradotto in design"
+
+#: ../../humanguide/index.rst:24
+msgid ""
+"Suru brings a precise yet organic structure to the Ubuntu Touch interface. "
+"The sharp lines and varying levels of transparency evoke the edges and "
+"texture of paper. All elements are placed deliberately, with the express aim "
+"of being easy for the user to identify and use."
+msgstr ""
+"Suru conferisce una struttura precisa ma organica all'interfaccia di Ubuntu "
+"Touch. Le linee nette e i vari livelli di trasparenza evocano i bordi e la "
+"consistenza della carta. Tutti gli elementi sono posizionati in modo "
+"deliberato, con l'obiettivo esplicito di essere facilmente identificabili e "
+"utilizzabili dall'utente."
+
+#: ../../humanguide/index.rst:26
+msgid ""
+"When using a small layout, the information and functionality is folded into "
+"a compact object that can be refolded to expose different areas. As the "
+"layout size increases, the object can become progressively larger, allowing "
+"more of the information and functionality to be exposed at any one time."
+msgstr ""
+"Quando si utilizza un layout di dimensioni ridotte, le informazioni e le "
+"funzionalità sono racchiuse in un oggetto compatto che può essere ripiegato "
+"per esporre aree diverse. Con l'aumentare delle dimensioni del layout, "
+"l'oggetto può diventare progressivamente più grande, consentendo di esporre "
+"più informazioni e funzionalità alla volta."
+
+#: ../../humanguide/index.rst:29
+msgid "Origami"
+msgstr "Origami"
+
+#: ../../humanguide/index.rst:33
+msgid ""
+"Origami has long been associated with good fortune and represents the visual "
+"style for Ubuntu Touch. Origami folds are used to define the design."
+msgstr ""
+"Origami è stato a lungo associato con buona fortuna e rappresenta lo stile "
+"visivo per Ubuntu Touch. Le pieghe Origami sono utilizzate per definirne il "
+"design."
+
+#: ../../humanguide/index.rst:36
+msgid "Simple details"
+msgstr "Dettagli semplici"
+
+#: ../../humanguide/index.rst:40
+msgid ""
+"What is most important is that screen layouts retain a natural, rhythmic "
+"quality, and a neatness and clarity that helps the user find things quickly "
+"and use them intuitively."
+msgstr ""
+"Ciò che è più importante è che i layout dello schermo mantengono una qualità "
+"naturale, ritmica, e una nitidezza e chiarezza che aiuta l'utente a trovare "
+"le cose rapidamente e usarle in modo intuitivo."
+
+#: ../../humanguide/index.rst:43
+msgid "Using subtle grids for accuracy"
+msgstr "Utilizzo di griglie sottili per la precisione"
+
+#: ../../humanguide/index.rst:45
+msgid ""
+"The folds from origami produce simple graphical details that allow designers "
+"to create a subtle grid for positioning brand elements and components, such "
+"as logos, icons or copylines. This helps maintain focus on the main image or "
+"graphic element."
+msgstr ""
+"Le pieghe di origami producono semplici dettagli grafici che permettono ai "
+"progettisti di creare una griglia sottile per posizionare elementi e "
+"componenti del marchio, come loghi, icone o copylines. Questo aiuta a "
+"mantenere l'attenzione sull'immagine principale o l'elemento grafico."
+
+#: ../../humanguide/index.rst:50
+msgid "Suru mood board"
+msgstr "Scheda d'atmosfera Suru"
+
+#: ../../humanguide/index.rst:53
+msgid "Influences and inspiration"
+msgstr "Influenza e ispirazione"
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:2
 msgid "Accessibility"
-msgstr ""
+msgstr "Accessibilità"
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:4
 msgid ""
 "Accessibility is important to make all users to be able to use the operating "
 "system."
 msgstr ""
+"L'accessibilità è importante per rendere tutti gli utenti in grado di "
+"utilizzare il sistema operativo."
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:7
 msgid "Inclusive palette and theme"
-msgstr ""
+msgstr "Tavolozza e tema inclusi"
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:9
 msgid ""
 "We would like to create and implement color palettes helpful to people who "
 "have sight impairment:"
 msgstr ""
+"Vorremmo creare e implementare tavolozze di colori utili per le persone che "
+"hanno problemi di vista:"
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:11
 msgid ""
 "Additional `palette proposal <http://colors.mivoligo.com/#color-blind>`__."
 msgstr ""
+"Ulteriore `tavolozza proposta <http://colors.mivoligo.com/#color-blind>`__."
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:12
 msgid "A high contrast theme."
-msgstr ""
+msgstr "Un tema ad alto contrasto."
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:13
 msgid "Adaptable font size theme."
-msgstr ""
+msgstr "Tema dimensione del carattere adattabile."
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:16
 msgid "Input methods"
-msgstr ""
+msgstr "Metodi di input"
 
 #: ../../humanguide/other-design-considerations/accessibility.rst:18
 msgid ""
 "Apps should be accessible using any combination of mouse, touch, and "
 "keyboard."
 msgstr ""
+"Le app dovrebbero essere accessibili utilizzando qualsiasi combinazione di "
+"mouse, tocco e tastiera."
 
 #: ../../humanguide/other-design-considerations/convergence.rst:2
 msgid "Convergence"
-msgstr ""
+msgstr "Convergenza"
 
 #: ../../humanguide/other-design-considerations/convergence.rst:6
 msgid ""
@@ -1265,6 +1596,9 @@ msgid ""
 "available across all screen sizes and input methods, such as mobile "
 "handsets, tablets, and laptops."
 msgstr ""
+"La convergenza è una delle pietre miliari che Ubuntu Touch vuole "
+"raggiungere. Una app disponibile in tutte le dimensioni dello schermo e i "
+"metodi di input, come telefoni cellulari, tablet e laptop."
 
 #: ../../humanguide/other-design-considerations/convergence.rst:8
 msgid ""
@@ -1275,14 +1609,21 @@ msgid ""
 "a consistent experience, whether you are using it on a big screen with mouse "
 "and keyboard or on a small touchscreen."
 msgstr ""
+"Convergenza si riferisce alla capacità di utilizzare la stessa base di "
+"codice attraverso più fattori di forma hardware. I dispositivi multipli che "
+"utilizzano la stessa base di codice consentono di sviluppare funzionalità "
+"una volta, quindi spediti su più tipi di dispositivi. Questo riduce i tempi "
+"e i costi di sviluppo. L'obiettivo è che Ubuntu Touch fornisca un'esperienza "
+"coerente, sia che lo utilizzi su un grande schermo con mouse e tastiera o su "
+"un piccolo touchscreen."
 
 #: ../../humanguide/other-design-considerations/convergence.rst:11
 msgid "Screen size"
-msgstr ""
+msgstr "Dimensione dello schermo"
 
 #: ../../humanguide/other-design-considerations/convergence.rst:15
 msgid "Ubuntu Touch Tweak Tool app"
-msgstr ""
+msgstr "Applicazione strumento ritocco Ubuntu Touch"
 
 #: ../../humanguide/other-design-considerations/convergence.rst:17
 msgid ""
@@ -1290,10 +1631,14 @@ msgid ""
 "devices. Additional pages on the phone, can be displayed at variable sizes "
 "on the right on bigger screens."
 msgstr ""
+"La pagina principale rimane come la pagina principale sui telefoni o a "
+"sinistra sui dispositivi di schermo più grandi. Ulteriori pagine sul "
+"telefono, possono essere visualizzate a dimensioni variabili a destra su "
+"schermi più grandi."
 
 #: ../../humanguide/other-design-considerations/convergence.rst:20
 msgid "Input method"
-msgstr ""
+msgstr "Metodo di input"
 
 #: ../../humanguide/other-design-considerations/convergence.rst:22
 msgid ""
@@ -1302,24 +1647,33 @@ msgid ""
 "the item to reveal the contextual menu. Using a keyboard a user can focus "
 "the desired item and press the MENU key to open the context menu."
 msgstr ""
+"Con il tatto, l'utente può scorrere o premere a lungo su un elemento "
+"dell'elenco per visualizzare un menu contestuale. Utilizzando un puntatore ("
+"mouse o trackpad), l'utente può fare clic con il pulsante destro del mouse "
+"sull'elemento per aprire il menu contestuale. Con la tastiera, l'utente può "
+"mettere a fuoco l'elemento desiderato e premere il tasto MENU per aprire il "
+"menu contestuale."
 
 #: ../../humanguide/other-design-considerations/index.rst:2
 msgid "Other design considerations"
-msgstr ""
+msgstr "Altre considerazioni sul progetto"
 
 #: ../../humanguide/other-design-considerations/index.rst:13
 msgid "`Suru Icons <http://docs.ubports.com/projects/icons/en/latest/>`__"
-msgstr ""
+msgstr "Icone di Suru <http://docs.ubports.com/projects/icons/en/latest/>`__"
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:2
 msgid "Scaling images"
-msgstr ""
+msgstr "Scalatura delle immagini"
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:4
 msgid ""
 "Scaling images is important in a convergent app. App icons and images can be "
 "created in scalable formats to improve their ability to scale."
 msgstr ""
+"La scalabilità delle immagini è importante in un'app convergente. Le icone e "
+"le immagini delle app possono essere create in formati scalabili per "
+"migliorare la loro capacità di scalare."
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:9
 msgid ""
@@ -1327,6 +1681,9 @@ msgid ""
 "wiki/Scalable_Vector_Graphics>`__. SVG files can be created using software "
 "like `Inkscape <https://inkscape.org/>`__."
 msgstr ""
+"Uno dei formati scalabili più popolari è `SVG <https://en.wikipedia.org/wiki/"
+"Scalable_Vector_Graphics>`__. I file SVG possono essere creati con software "
+"come `Inkscape <https://inkscape.org/>`__."
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:11
 msgid ""
@@ -1337,10 +1694,16 @@ msgid ""
 "width and height of 252 pixels, will be rendered as if the scalable image "
 "would be a png of 252 per 252 pixels."
 msgstr ""
+"Una particolarità di qml, però, è che gli SVG vengono resi per utilizzare "
+"meno memoria, perdendo i vantaggi della scalabilità. Quando si usa un file "
+"SVG in un elemento ``Image``, si può usare la proprietà ``sourceSize``. "
+"Questa definisce la dimensione dell'immagine SVG resa. Un'immagine SVG con "
+"una larghezza e un'altezza di ``sourceSize`` di 252 pixel, sarà resa come se "
+"l'immagine scalabile fosse una png di 252 per 252 pixel."
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:16
 msgid "Different rendered sizes of the same svg image"
-msgstr ""
+msgstr "Diverse dimensioni di rendering della stessa immagine svg"
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:18
 msgid ""
@@ -1351,12 +1714,21 @@ msgid ""
 "image of 40 per 40 grid units in the other cases. By defining these "
 "thresholds, we get scalable images without a huge performance cost."
 msgstr ""
+"Non è consigliabile definire ``sourceSize`` come dimensione relativa per "
+"evitare problemi di prestazioni. Una buona pratica è definire ``sourceSize`` "
+"in base a un elenco di soglie. Nell'esempio seguente, l'immagine.svg sarà "
+"resa 60 per 60 unità di griglia se la vista principale è più grande di 70 "
+"unità di griglia, ma come immagine di 40 per 40 unità di griglia negli altri "
+"casi. Definendo queste soglie, si ottengono immagini scalabili senza un "
+"enorme costo in termini di prestazioni."
 
 #: ../../humanguide/other-design-considerations/scaling-images.rst:28
 msgid ""
 "Read more about image performance in the `Qt wiki <https://wiki.qt.io/"
 "Performance_tip_Images>`__."
 msgstr ""
+"Per saperne di più sulle prestazioni delle immagini, consultate il wiki di `"
+"Qt <https://wiki.qt.io/Performance_tip_Images>`__."
 
 #: ../../humanguide/other-design-considerations/translations.rst:2
 msgid "Translations"
@@ -1369,12 +1741,19 @@ msgid ""
 "process automatically, extracting new translatable strings into a pot file "
 "(the source strings of your app, to be translated)."
 msgstr ""
+"L'aggiunta di traduzioni alla propria applicazione la rende più accessibile "
+"agli utenti internazionali. `Clickable <http://clickable.bhdouglass.com/>`__ "
+"gestirà questo processo automaticamente, estraendo le nuove stringhe "
+"traducibili in un file pot (le stringhe sorgente della vostra applicazione, "
+"da tradurre)."
 
 #: ../../humanguide/other-design-considerations/translations.rst:6
 msgid ""
 "Marking a string to be translatable can be achieved like this i18n."
 "tr(string). For example:"
 msgstr ""
+"La marcatura di una stringa come traducibile può essere ottenuta in questo "
+"modo i18n.tr(stringa). Ad esempio:"
 
 #: ../../humanguide/other-design-considerations/translations.rst:14
 msgid ""
@@ -1382,3 +1761,7 @@ msgid ""
 "on localization <http://web.archive.org/web/https://docs.ubuntu.com/phone/en/"
 "apps/qml/tutorials-internationalizing-your-app>`__ an app."
 msgstr ""
+"Maggiori informazioni e opzioni si possono trovare in questo un po' datato`"
+"tutorial sulla localizzazione <http://web.archive.org/web/"
+"https://docs.ubuntu.com/phone/en/apps/qml/tutorials-internationalizing-your-"
+"app>`__ un'app."

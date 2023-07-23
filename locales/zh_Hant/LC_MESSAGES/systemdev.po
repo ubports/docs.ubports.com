@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-07 11:45-0600\n"
+"POT-Creation-Date: 2023-01-05 00:57+0100\n"
 "PO-Revision-Date: 2021-02-21 20:38+0000\n"
 "Last-Translator: louies0623 <louies0623@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.ubports.com/projects/"
@@ -676,7 +676,7 @@ msgstr ""
 msgid "Incoming MMS diagram"
 msgstr ""
 
-#: ../../systemdev/mms-infrastructure.rst:None
+#: ../../systemdev/mms-infrastructure.rst:-1
 msgid "incoming-MMS.png"
 msgstr ""
 
@@ -684,7 +684,7 @@ msgstr ""
 msgid "Outgoing MMS diagram"
 msgstr ""
 
-#: ../../systemdev/mms-infrastructure.rst:None
+#: ../../systemdev/mms-infrastructure.rst:-1
 msgid "outgoing-MMS.png"
 msgstr ""
 
@@ -981,43 +981,280 @@ msgstr ""
 
 #: ../../systemdev/testing-locally.rst:6
 msgid ""
-"There are essentially two ways of developing Ubuntu Touch system software "
+"There are essentially three ways of developing Ubuntu Touch system software "
 "locally:"
 msgstr ""
 
 #: ../../systemdev/testing-locally.rst:8
-msgid "`Cross-building with crossbuilder`_"
+msgid "`Building packages in a chroot using sbuild`_"
 msgstr ""
 
 #: ../../systemdev/testing-locally.rst:9
+msgid "`Cross-building with crossbuilder`_"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:10
 msgid "`Building on the device itself`_"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:11
-msgid ""
-"We'll examine both methods, using `address-book-app <https://github.com/"
-"ubports/address-book-app>`__ (the Contacts application) as an example."
+#: ../../systemdev/testing-locally.rst:13
+msgid "Pros and cons of sbuild and crossbuilder"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:13
+#: ../../systemdev/testing-locally.rst:15
+msgid ""
+"sbuild uses a more minimal chroot-based build environment, while "
+"crossbuilder uses an LXD container with more pre-installed packages. When "
+"building with crossbuilder pre-installed build dependencies might be missed "
+"which would be caught by sbuild. crossbuilder can be quicker for subsequent "
+"builds since the LXD container persists. sbuild installs all build "
+"dependencies on each run. sbuild automatically creates a log file and runs "
+"`lintian <https://lintian.debian.org/manual/lintian.html>`__ on the built "
+"packages in order to detect any problems. The use of LXD by crossbuilder "
+"also allows for easier inspection, debugging and manual modification of the "
+"build environment. crossbuilder can also automatically deploy build packages "
+"on a connected device via ADB."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:21
+msgid ""
+"We'll examine the use of crossbuilder and builds on the device using "
+"`address-book-app <https://gitlab.com/ubports/core/address-book-app>`__ (the "
+"Contacts application) as an example."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:23
 msgid ""
 "We only recommend developing packages using a device with Ubuntu Touch "
 "installed from the devel channel. This ensures that you are testing your "
 "changes against the most current state of the Ubuntu Touch code."
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:17
-msgid ""
-"Installing packages has a risk of damaging the software on your device, "
-"rendering it unusable. If this happens, you can :doc:`reinstall Ubuntu Touch "
-"</userguide/install>`."
+#: ../../systemdev/testing-locally.rst:26
+msgid "Preparing a package for a build"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:20
+#: ../../systemdev/testing-locally.rst:28
+msgid ""
+"``sbuild`` or ``crossbuilder`` need to be invoked from a debianized package "
+"source tree (i.e. the package sources with a ``debian`` subdirectory), "
+"UBports packages mostly consists of git repositories containing native or "
+"non-native packages.  Native packages can be built directly and the "
+"following script can be used in order to prepare a non-native package for a "
+"build::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:67
+msgid "Building packages in a chroot using sbuild"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:69
+msgid ""
+"`sbuild <https://tracker.debian.org/pkg/sbuild>`__ is a tool for building "
+"Debian packages from source in an isolated environment using a chroot "
+"created by `schroot <https://wiki.debian.org/Schroot>`__. It closely "
+"resembles the package build process on the UBports CI system by using an "
+"isolated build environment with a minimal set of pre-installed packages. "
+"This detects any missing build dependencies and sbuild will also detect "
+"problems with the resulting packages by running `lintian <https://lintian."
+"debian.org/manual/lintian.html>`__"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:72
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:74
+msgid ""
+"A host system running either Debian 11 (Bullseye) or later or Ubuntu 20.04 "
+"(Focal Fossa) or later is required. An easy and performant way to set up "
+"Debian or Ubuntu on other distributions is to run it in a container using "
+"`LXD <https://linuxcontainers.org/lxd/getting-started-cli/#installing-a-"
+"package>`__."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:77
+msgid ""
+"A LXD container requires the following configuration setting in order to "
+"allow debootstrap to use the mknod system call for creating pseudo devices "
+"such as ``/dev/null`` inside a chroot::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:81
+msgid ""
+"It is assumed that the user who is building packages is allowed to execute "
+"commands with superuser privilege using ``sudo``."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:83
+msgid ""
+"``sbuild`` uses ``schroot`` in order to manage chroots which in turn uses "
+"debootstrap for creating the chroot.  The required packages are installed "
+"with::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:87
+msgid ""
+"A Debian or Ubuntu system can also be installed inside a virtual machine, "
+"however this comes with a performance overhead."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:90
+#, fuzzy
+#| msgid "Set up and build"
+msgid "Setting up sbuild"
+msgstr "設置和構建"
+
+#: ../../systemdev/testing-locally.rst:92
+msgid ""
+"An unprivileged user needs to be added to the sbuild group in order to gain "
+"the necessary privilege to build packages::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:96
+msgid ""
+"The build user can configure ``sbuild`` by creating a file ``~/.sbuildrc`` "
+"as follows::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:104
+msgid ""
+"For further customizations see the example file at ``/usr/share/doc/sbuild/"
+"examples/example.sbuildrc``."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:106
+msgid "Create the directory ``~/logs`` if it does not exist, yet::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:111
+msgid "Creating a build chroot"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:112
+msgid ""
+"In order to create a chroot based on Ubuntu 20.04 (Focal Fossa) with the "
+"amd64 architecture under the directory ``/srv/chroot/ubports-${distro}-"
+"amd64`` (``chroot_base`` can be changed if needed) the following variables "
+"can be defined for later use by the actual commands::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:118
+msgid ""
+"For creating a chroot based on Ubuntu 16.04 (Xenial Xerus) with the amd64 "
+"architecture define the following variables instead::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:124
+msgid ""
+"In both cases the chroot will be created by running the following command::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:128
+msgid ""
+"A chroot for cross-building arm64 packages on an amd64 host can e.g. be "
+"created under the directory ``/srv/chroot/ubports-${distro}-arm64`` using::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:133
+msgid ""
+"For cross-building armhf packages the above command can be used with "
+"``arm64`` changed to ``armhf``."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:135
+msgid "The UBports package repository needs to be added using::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:142
+msgid "Maintaining build chroots"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:144
+msgid ""
+"Synchronizing package index files and subsequent package upgrades can be "
+"performed using::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:149
+msgid "Optimizations"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:152
+msgid "Caching package downloads"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:154
+msgid ""
+"In order to save bandwidth and time it is highly advisable to cache "
+"downloaded packages by using ``apt-cacher-ng``.  It can be installed with::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:158
+msgid ""
+"Chroots then need to be configured so that apt inside the chroot uses ``apt-"
+"cacher-ng`` on the host as a proxy server::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:163
+msgid "Caching compilation results"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:165
+msgid ""
+"``ccache`` is a compiler cache which speeds up repeated compilation of the "
+"same source code by caching the resulting object files. The actual cache is "
+"stored on the host system and bind-mounted into ``sbuild`` chroots with a "
+"``schroot`` hook::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:172
+msgid ""
+"In order to make use of ``ccache inside`` a ``sbuild`` chroot a wrapper "
+"script needs to be created::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:185
+msgid ""
+"In order to use this wrapper script the following line must be added to the "
+"configuration of a ``schroot`` chroot in ``/etc/schroot/chroot.d/``::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:190
+msgid "Building a package"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:191
+msgid ""
+"A build can be started from inside the debianized package source directory "
+"using::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:195
+msgid ""
+"If the build was successful, the binary packages will be placed in the "
+"parent directory.  The build log will be placed inside ``~/logs``.  In case "
+"the build failed, the chroot can be inspected using::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:200
+msgid "Further reading"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:202
+msgid ""
+"Technical details are available from the `sbuild(1) <https://manpages.debian."
+"org/bullseye/sbuild/sbuild.1.en.html>`__ and `sbuild-createchroot(8) "
+"<https://manpages.debian.org/bullseye/sbuild/sbuild-createchroot.8.en."
+"html>`__ manual pages and the `Debian wiki <https://wiki.debian.org/"
+"sbuild>`__."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:205
 msgid "Cross-building with crossbuilder"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:22
+#: ../../systemdev/testing-locally.rst:207
 msgid ""
 "Crossbuilder is a script which automates the setup and use of a crossbuild "
 "environment for Debian packages. It is suitable for developers with any "
@@ -1026,7 +1263,7 @@ msgid ""
 "trivial changes to Ubuntu Touch."
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:26
+#: ../../systemdev/testing-locally.rst:211
 msgid ""
 "Crossbuilder requires a Linux distribution with ``lxd`` installed and the "
 "unprivileged commandset available. In other words, you must be able to run "
@@ -1034,35 +1271,41 @@ msgid ""
 "will set up ``lxd`` for you."
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:28
+#: ../../systemdev/testing-locally.rst:213
 msgid "Start by installing Crossbuilder on your host::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:33
+#: ../../systemdev/testing-locally.rst:218
 msgid ""
 "Crossbuilder is a shell script, so you don't need to build it. Instead, you "
 "will need to add its directory to your ``PATH`` environment variable, so "
 "that you can execute it from any directory::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:39
+#: ../../systemdev/testing-locally.rst:224
 msgid "Now that Crossbuilder is installed, we can use it to set up LXD::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:43
+#: ../../systemdev/testing-locally.rst:228
 msgid ""
 "If this is the first time you have used LXD, you might need to reboot your "
 "host once everything has completed."
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:45
+#: ../../systemdev/testing-locally.rst:230
 msgid ""
-"After LXD has been set up, move to the directory where the source code of "
-"your project is located (for example, ``cd ~/src/git/address-book-app``) and "
-"launch Crossbuilder::"
+"After LXD has been set up, a build for UBports based on Ubuntu 20.04 (Focal "
+"Fossa) using the arm64 architecture can be started from inside the "
+"debianized package source directory using::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:49
+#: ../../systemdev/testing-locally.rst:236
+msgid ""
+"For building against a different UBports release or architecture change "
+"``distro`` and ``arch`` as needed."
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:238
 msgid ""
 "Crossbuilder will create the LXD container, download the development image, "
 "install all your package build dependencies, and perform the package build. "
@@ -1073,18 +1316,35 @@ msgid ""
 "only the first time you launch crossbuilder for a new package."
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:51
+#: ../../systemdev/testing-locally.rst:240
 msgid ""
 "Now, whenever you change the source code in your git repository, the same "
 "changes will be available inside the container. The next time you type the "
-"``crossbuilder`` command, only the changed files will be rebuilt."
+"above ``crossbuilder`` command, only the changed files will be rebuilt."
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:54
+#: ../../systemdev/testing-locally.rst:242
+msgid ""
+"If the build dependencies have changed the following command can be used to "
+"update the container accordingly (``distro`` and ``arch`` should be set as "
+"above)::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:246
+msgid ""
+"While ``crossbuilder`` does not create log files for the build process, the "
+"``script`` utility may be used for that purpose::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:250
+msgid "When a build container is no longer needed it maybe removed using::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:255
 msgid "Unit tests"
 msgstr "單位測試"
 
-#: ../../systemdev/testing-locally.rst:56
+#: ../../systemdev/testing-locally.rst:257
 msgid ""
 "By default crossbuilder does not run unit tests; that's both for speed "
 "reasons, and because the container created by crossbuilder is not meant to "
@@ -1095,7 +1355,7 @@ msgid ""
 "getting a shell inside the container::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:60
+#: ../../systemdev/testing-locally.rst:261
 msgid ""
 "Then find the unit tests and execute them. Be aware that the emulation is "
 "not perfect, so there's a very good chance that the tests will fail even "
@@ -1104,11 +1364,11 @@ msgid ""
 "crossbuilder, and run them only when not cross-compiling."
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:63
+#: ../../systemdev/testing-locally.rst:264
 msgid "Building on the device itself"
 msgstr "以裝置本身為基礎"
 
-#: ../../systemdev/testing-locally.rst:65
+#: ../../systemdev/testing-locally.rst:266
 msgid ""
 "This is the fastest and simplest method to develop small changes and test "
 "them in nearly real-time. Depending on your device resources, however, it "
@@ -1117,66 +1377,69 @@ msgid ""
 "build dependencies; you may also run out of RAM while compiling."
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:69
+#: ../../systemdev/testing-locally.rst:270
 msgid ""
 "This method is limited. Many devices do not have enough free image space to "
-"install the packages required to build components of Ubuntu Touch."
+"install the packages required to build components of Ubuntu Touch. "
+"Installing packages has a risk of damaging the software on your device, "
+"rendering it unusable. If this happens, you can :doc:`reinstall Ubuntu Touch "
+"</userguide/install>`."
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:71
+#: ../../systemdev/testing-locally.rst:273
 msgid ""
 "In this example, we'll build and install the address-book-app. All commands "
 "shown here must be run on your Ubuntu Touch device over a remote shell."
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:73
+#: ../../systemdev/testing-locally.rst:275
 msgid ""
 "You can gain a shell on the device using :doc:`/userguide/advanceduse/adb` "
 "or :doc:`/userguide/advanceduse/ssh`. Remount the root filesystem read-write "
 "to begin::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:77
+#: ../../systemdev/testing-locally.rst:279
 msgid ""
 "Next, install all the packages needed to rebuild the component you want to "
 "modify (the Contacts app, in this example)::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:83
+#: ../../systemdev/testing-locally.rst:285
 msgid ""
 "Additionally, you probably want to install ``git`` in order to get your "
 "app's source code on the device and later push your changes back into the "
 "repository::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:87
+#: ../../systemdev/testing-locally.rst:289
 msgid ""
 "Once you're finished, you can retrieve the source for an app (in our "
 "example, the address book) and move into its directory::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:92
+#: ../../systemdev/testing-locally.rst:294
 msgid "Now, you are ready to build the package::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:96
+#: ../../systemdev/testing-locally.rst:298
 msgid ""
 "The ``dpkg-buildpackage`` command will print out the names of generated "
 "packages. Install those packages with ``dpkg``::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:100
+#: ../../systemdev/testing-locally.rst:302
 msgid ""
 "Note, however, that you might not need to install all the packages: "
 "generally, you can skip all packages whose names end with ``-doc`` or "
 "``dev``, since they don't contain code used by the device."
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:103
+#: ../../systemdev/testing-locally.rst:305
 msgid "Next steps"
 msgstr "下一步"
 
-#: ../../systemdev/testing-locally.rst:105
+#: ../../systemdev/testing-locally.rst:307
 msgid ""
 "Now that you've successfully made changes and tested them locally, you're "
 "ready to upload them to GitHub. Move on to the next page to learn about "
@@ -1539,7 +1802,7 @@ msgid ""
 "just pushed to using the \"Branch\" selector:"
 msgstr ""
 
-#: ../../systemdev/uploading-changes.rst:None
+#: ../../systemdev/uploading-changes.rst:-1
 msgid "Using the branch selector on GitHub"
 msgstr ""
 

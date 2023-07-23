@@ -96,8 +96,8 @@ Run desktop application
 
 Run it from the app menu like any other app. To start a graphical app from the command-line, for example ``gedit``, run this in a terminal::
 
-  # ubuntu-app-launch <CONTAINER_ID>_<desktop_file_name>_0.0
-  ubuntu-app-launch xenial_gedit_0.0
+  # lomiri-app-launch <CONTAINER_ID>_<desktop_file_name>_0.0
+  lomiri-app-launch focal_gedit_0.0
 
 Files
 -----
@@ -194,6 +194,17 @@ Add lines like the following ones to your ``~/.bash_aliases``::
 
     alias git='libertine-launch -i CONTAINER-IDENTIFIER git'
     alias screenfetch='libertine-launch -i CONTAINER-IDENTIFIER screenfetch'
+    
+Installing packages manually
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you want to install a package from a file, you will first have to make it available to the root user, for example by copying it to the ``/root`` directory::
+
+    cp ~/Downloads/somepackage.deb ~/.cache/libertine-container/CONTAINER-IDENTIFIER/rootfs/root/
+
+Then install it using dpkg::
+
+    libertine-container-manager exec -i CONTAINER-IDENTIFIER -c "dpkg -i /root/somepackage.deb"
 
 Background
 ----------
