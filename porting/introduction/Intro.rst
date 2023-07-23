@@ -23,7 +23,7 @@ The majority of these devices are dependent to some degree on proprietary softwa
 
 Device vendors tend to keep the (the low-level device driver) code
 that speaks directly to the device hardware proprietary.
-These components are commonly called the `vendor 'blobs' (Binary Large OBjects)<https://en.wikipedia.org/wiki/Proprietary\_device\_driver>`_.
+These components are commonly called the `vendor 'blobs' (Binary Large OBjects) <https://en.wikipedia.org/wiki/Proprietary_device_driver>`_.
 You must find vendor blobs specific to your device model
 for the correct version of Android and incorporated them into your Ubuntu Touch port.
 
