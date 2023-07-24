@@ -27,8 +27,8 @@ How to install new APKs
 
 - Copy the APK to ``/home/phablet/Downloads``. Then run the following from your computer::
 
-    adb shell # connect from your computer to your Ubuntu Touch device you can also simply open de terminal app on your Ubuntu Touch device
-    waydroid app install /home/phablet/Downloads/my-app.apk #
+    adb shell # Connect to your Ubuntu Touch device. You can also simply open the terminal app on your device.
+    waydroid app install /home/phablet/Downloads/my-app.apk
     exit
 
 - Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
@@ -45,8 +45,8 @@ How to uninstall apps
 
 - To uninstall apps from the Ubuntu Touch device, run ``adb uninstall [APP_ID]`` from your computer::
 
-    adb shell # connect from your computer to your Ubuntu Touch device, you can also simply open de terminal app on your Ubuntu Touch device
-    waydroid app remove [APP_ID] # you can find the APP_ID by using waydroid app list
+    adb shell # Connect to your Ubuntu Touch device. You can also simply open the terminal app on your device.
+    waydroid app remove [APP_ID] # you can find the APP_ID by using 'waydroid app list'
     exit
 
 - Done! You might have to pull down from the app list for the new Android apps to show up.
@@ -67,7 +67,8 @@ The Android storage is located at ``/home/phablet/.local/share/waydroid/data/med
 Troubleshooting
 ---------------
 
-- When you want to install an APK, but get the error ``Invalid APK file`` that error could also mean "file not found"
+- When you are installing an APK, but run into the following error ``Invalid APK file``, this could simply mean that it could not find the apk file.
+  Try the following steps to double check:
 
   - Check that you typed the filename correctly.
   - If the APK does not reside in the folder you are in when you run adb, you have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` instead of just ``my-app.apk``
