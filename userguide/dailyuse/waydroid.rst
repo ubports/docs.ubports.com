@@ -30,7 +30,7 @@ How to install new APKs
 - Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
 
 Using appstore in Waydroid
--------------------------
+--------------------------
 
 You can also install an appstore like F-Droid or Amazon Appstore to install applications or keeping them up to date. If you want to install any of the above apps you can find them here:
 
