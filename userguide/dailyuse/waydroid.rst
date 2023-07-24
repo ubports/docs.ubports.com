@@ -15,7 +15,7 @@ Android apps
 How to set up
 -------------
 
-All Halium 9 and newer devices ship with waydroid out of the box starting Ubuntu Touch focal, if your device fits these requirements you can follow the folowing steps
+All Halium 9 and newer devices ship with waydroid out of the box starting with Ubuntu Touch focal, if your device fits these requirements you can follow the following steps
 
 #. Run ``adb shell`` from your computer to get a shell on your Ubuntu Touch device (or open the terminal app on your ubuntu touch device).
 #. Run the following command on your Ubuntu Touch device: ``waydroid init``.
