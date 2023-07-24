@@ -36,9 +36,10 @@ How to install new APKs
 Keep your apps up to date
 -------------------------
 
-- To keep your apps up to date you can use of F-Droid or ApkTrack. If you want to install any of the above apps you can find them here:
+- To keep your apps up to date you can use of F-Droid or Amazon Appstore. If you want to install any of the above apps you can find them here:
 
 - F-Droid: https://f-droid.org/
+- Amazon Appstore: https://www.amazon.com/gp/mas/get-appstore/android
 
 How to uninstall apps
 ---------------------
