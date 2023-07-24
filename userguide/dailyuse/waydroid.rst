@@ -17,40 +17,42 @@ How to set up
 
 All Halium 9 and newer devices ship with waydroid out of the box starting with Ubuntu Touch focal, if your device fits these requirements you can follow the following steps
 
-#. Run ``adb shell`` from your computer to get a shell on your Ubuntu Touch device (or open the terminal app on your ubuntu touch device).
-#. Run the following command on your Ubuntu Touch device: ``waydroid init``.
-
-Now you're done! You might have to refresh the app drawer (pull down from the center of the screen and release) for the new Android apps to show up.
+- Open a shell on your Ubuntu Touch device (remotely with adb, ssh or locally with the terminal app).
+- Run the following command in your shell: ``waydroid init``.
+- Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
 
 How to install new APKs
 -----------------------
 
-- Copy the APK to ``/home/phablet/Downloads``. Then run the following from your computer::
-
-    adb shell # Connect to your Ubuntu Touch device. You can also simply open the terminal app on your device.
-    waydroid app install /home/phablet/Downloads/my-app.apk
-    exit
-
+- Copy the APK to ``/home/phablet/Downloads`` on your Ubuntu Touch device.
+- Open a shell on your Ubuntu Touch device (remotely with adb, ssh or locally with the terminal app).
+- Run the following in your shell ``waydroid app install /home/phablet/Downloads/my-app.apk``
 - Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
 
-Keep your apps up to date
+Using appstore in Waydroid
 -------------------------
 
-- To keep your apps up to date you can use of F-Droid or Amazon Appstore. If you want to install any of the above apps you can find them here:
+You can also install an appstore like F-Droid or Amazon Appstore to install applications or keeping them up to date. If you want to install any of the above apps you can find them here:
 
 - F-Droid: https://f-droid.org/
 - Amazon Appstore: https://www.amazon.com/gp/mas/get-appstore/android
 
+Note that due to nature of Waydroid, neither of these will automatically keep your applications up-to-date. You will have to manually open the appstore and check for updates. Additionally you will have to authorize each app install or update as follows:
+
+- search for the app to install or update
+- press the install or update button
+- wait for the download to finish, this will be a prompt to to install the application
+- press the install button on the above prompt
+
+For more advanced users this could be remedied by building a custom waydroid image that ships with either appstore.
+
 How to uninstall apps
 ---------------------
 
-- To uninstall apps from the Ubuntu Touch device, run ``adb uninstall [APP_ID]`` from your computer::
-
-    adb shell # Connect to your Ubuntu Touch device. You can also simply open the terminal app on your device.
-    waydroid app remove [APP_ID] # you can find the APP_ID by using 'waydroid app list'
-    exit
-
-- Done! You might have to pull down from the app list for the new Android apps to show up.
+- Open a shell on your Ubuntu Touch device (remotely with adb, ssh or locally with the terminal app).
+- To uninstall apps from the Ubuntu Touch device, run ``adb uninstall [APP_ID]`` in your shell
+- Run the following in your shell ``waydroid app remove [APP_ID]`` (you can find the APP_ID by using 'waydroid app list')
+- Done! You might have to pull down from the app list for the old Android apps to go away.
 
 Access Android storage
 ----------------------
