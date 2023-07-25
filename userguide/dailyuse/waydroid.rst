@@ -29,7 +29,7 @@ How to install new APKs
 - Run the following in your shell ``waydroid app install /home/phablet/Downloads/my-app.apk``
 - Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
 
-Using appstore in Waydroid
+Using a appstore in Waydroid
 --------------------------
 
 You can also install an appstore like F-Droid or Amazon Appstore to install applications or keeping them up to date. If you want to install any of the above apps you can find them here:
@@ -41,7 +41,7 @@ Note that due to nature of Waydroid, neither of these will automatically keep yo
 
 - search for the app to install or update
 - press the install or update button
-- wait for the download to finish, this will be a prompt to to install the application
+- wait for the download to finish, there will be a prompt to install the application/update
 - press the install button on the above prompt
 
 For more advanced users this could be remedied by building a custom waydroid image that ships with either appstore.
@@ -53,6 +53,9 @@ How to uninstall apps
 - To uninstall apps from the Ubuntu Touch device, run ``adb uninstall [APP_ID]`` in your shell
 - Run the following in your shell ``waydroid app remove [APP_ID]`` (you can find the APP_ID by using 'waydroid app list')
 - Done! You might have to pull down from the app list for the old Android apps to go away.
+.. note::
+    "Computer" refers to another device you connect your Ubuntu Touch device to (via USB here).
+    Your USB-attached computer must have ``adb`` and ``fastboot`` installed.
 
 Access Android storage
 ----------------------
