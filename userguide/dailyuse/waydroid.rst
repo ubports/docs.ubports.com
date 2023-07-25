@@ -9,7 +9,7 @@ Android apps
 
 .. note::
     You will need to execute commands on your Ubuntu Touch device (and/or attached computer) to initialize Waydroid and install APKs.
-    You can do that by using the terminal application, but it is easier to use :doc:``adb shell </userguide/advanceduse/adb>`` or :doc:`set up SSH </userguide/advanceduse/ssh>` to access your Ubuntu Touch device from your computer.
+    You can do that by using the terminal application, but it is easier to use :doc:`adb shell </userguide/advanceduse/adb>` or :doc:`set up SSH </userguide/advanceduse/ssh>` to access your Ubuntu Touch device from your computer.
 
 
 How to set up
