@@ -4,12 +4,7 @@ Android apps
 `Waydroid <https://waydro.id>`_ is a minimal Android container and compatibility layer to run Android apps on GNU/Linux operating systems such as Ubuntu Touch.
 
 .. note::
-    "Computer" refers to another device you connect your Ubuntu Touch device to (via USB here).
-    Your USB-attached computer must have ``adb`` and ``fastboot`` installed.
-
-.. note::
-    You will need to execute commands on your Ubuntu Touch device (and/or attached computer) to initialize Waydroid and install APKs.
-    You can do that by using the terminal application, but it is easier to use :doc:`adb shell </userguide/advanceduse/adb>` or :doc:`set up SSH </userguide/advanceduse/ssh>` to access your Ubuntu Touch device from your computer.
+    You will need to execute commands on your Ubuntu Touch device (locally via the terminal application or remotely via :doc:`ADB </userguide/advanceduse/adb>`/:doc:`SSH </userguide/advanceduse/ssh>` ) to initialize Waydroid, install APKs and uninstall applications.
 
 
 How to set up
@@ -17,7 +12,7 @@ How to set up
 
 All Halium 9 and newer devices ship with waydroid out of the box starting with Ubuntu Touch focal, if your device fits these requirements you can follow the following steps
 
-- Open a shell on your Ubuntu Touch device (remotely with adb, ssh or locally with the terminal app).
+- Open a shell on your Ubuntu Touch device (remotely with ADB/SSH or locally with the terminal app).
 - Run the following command in your shell: ``waydroid init``.
 - Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
 
@@ -25,7 +20,7 @@ How to install new APKs
 -----------------------
 
 - Copy the APK to ``/home/phablet/Downloads`` on your Ubuntu Touch device.
-- Open a shell on your Ubuntu Touch device (remotely with adb, ssh or locally with the terminal app).
+- Open a shell on your Ubuntu Touch device (remotely with ADB/SSH or locally with the terminal app).
 - Run the following in your shell ``waydroid app install /home/phablet/Downloads/my-app.apk``
 - Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up.
 
@@ -49,7 +44,7 @@ For more advanced users this could be remedied by building a custom waydroid ima
 How to uninstall apps
 ---------------------
 
-- Open a shell on your Ubuntu Touch device (remotely with adb, ssh or locally with the terminal app).
+- Open a shell on your Ubuntu Touch device (remotely with ADB/SSH or locally with the terminal app).
 - To uninstall apps from the Ubuntu Touch device, run ``adb uninstall [APP_ID]`` in your shell
 - Run the following in your shell ``waydroid app remove [APP_ID]`` (you can find the APP_ID by using 'waydroid app list')
 - Done! You might have to pull down from the app list for the old Android apps to go away.
