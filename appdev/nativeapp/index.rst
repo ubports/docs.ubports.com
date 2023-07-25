@@ -4,7 +4,7 @@ Native apps
 ===========
 
 The recommended way to build a native application on Ubuntu Touch is to use the `Qt <https://doc.qt.io/>`__ framework
-(current version since OTA-16 is Qt 5.12.9).
+(current version since Xenial OTA-16 is Qt 5.12.9).
 You do not have to stick with the traditional C++<->QML Qt model, you can use also Python, Go, Rust or even Javascript for your backend.
 
 Ubuntu Touch provides a subset of Qt QML components to ease the development of your app : `QML API <https://api-docs.ubports.com/sdk/apps/qml/index.html>`__
