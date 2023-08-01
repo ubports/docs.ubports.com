@@ -35,11 +35,7 @@ Let's assume it's stored as ``/home/phablet/id_rsa.pub``. Use the terminal app o
     chmod 600 /home/phablet/.ssh/authorized_keys 
     chown -R phablet:phablet /home/phablet/.ssh
 
-Now start the SSH server. If you are using an Android-based device::
-
-    sudo android-gadget-service enable ssh
-
-If you are using a Linux-based device (like the PinePhone)::
+Now start the SSH server::
 
     sudo service ssh start
 
