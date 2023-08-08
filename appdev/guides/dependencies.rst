@@ -109,8 +109,8 @@ To get the files into the click package, add the `install_lib <https://clickable
       LIBNAME:
         builder: "cmake"
         install_lib:
-        - "$LIBNAME_LIB_INSTALL_DIR/usr/lib/$ARCHITECTURE_TRIPLET/libqmapboxgl.so*"
-        - "/usr/lib/$ARCHITECTURE_TRIPLET/libSoundTouch.so.*"
+        - "$LIBNAME_LIB_INSTALL_DIR/usr/lib/$ARCH_TRIPLET/libqmapboxgl.so*"
+        - "/usr/lib/$ARCH_TRIPLET/libSoundTouch.so.*"
 
 The lines above contain two examples. The first one installing a library built with Clickable. The asterisk in ``.so*`` helps to catch symbolic links along with the actual library which are used to point to the current version.
 
