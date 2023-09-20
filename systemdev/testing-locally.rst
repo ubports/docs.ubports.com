@@ -109,7 +109,7 @@ Create the directory ``~/logs`` if it does not exist, yet::
 
 Creating a build chroot
 ^^^^^^^^^^^^^^^^^^^^^^^
-In order to create a chroot based on Ubuntu 20.04 (Focal Fossa) with the amd64 architecture under the directory ``/srv/chroot/ubports-${distro}-amd64`` (``chroot_base`` can be changed if needed) the following variables can be defined for later use by the actual commands::
+In order to create a chroot based on Ubuntu 20.04 (Focal Fossa) with the amd64 architecture under the directory ``/srv/chroot/ubports-${chroot_distro}-amd64`` (``chroot_base`` can be changed if needed) the following variables can be defined for later use by the actual commands::
 
     chroot_distro=focal
     chroot_base=/srv/chroot/ubports-${chroot_distro}-amd64
@@ -125,10 +125,10 @@ In both cases the chroot will be created by running the following command::
 
     sudo sbuild-createchroot --components=main,restricted,universe --extra-repository="deb http://archive.ubuntu.com/ubuntu/ ${chroot_distro}-updates main restricted universe" --include=ccache "${chroot_distro}" "${chroot_base}" http://archive.ubuntu.com/ubuntu/
 
-A chroot for cross-building arm64 packages on an amd64 host can e.g. be created under the directory ``/srv/chroot/ubports-${distro}-arm64`` using::
+A chroot for cross-building arm64 packages on an amd64 host can e.g. be created under the directory ``/srv/chroot/ubports-${chroot_distro}-arm64`` using::
 
-    chroot_base=/srv/chroot/ubports-${distro}-arm64
-    sudo sbuild-createchroot --arch=arm64 --components=main,restricted,universe --extra-repository="deb http://ports.ubuntu.com/ubuntu-ports/ ${chroot_distro}-updates main restricted universe" --include=ccache "${chroot_distro}" "${chroot_base}" http://archive.ubuntu.com/ubuntu/
+    chroot_base=/srv/chroot/ubports-${chroot_distro}-arm64
+    sudo sbuild-createchroot --arch=arm64 --foreign --components=main,restricted,universe --extra-repository="deb http://ports.ubuntu.com/ubuntu-ports/ ${chroot_distro}-updates main restricted universe" --include=ccache "${chroot_distro}" "${chroot_base}" http://ports.ubuntu.com/ubuntu-ports/
 
 For cross-building armhf packages the above command can be used with ``arm64`` changed to ``armhf``.
 
