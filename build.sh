@@ -21,8 +21,7 @@ if [ -d "$UBPORTSDOCSENV" ]; then
 else
   echo -e "${YELLOW}Build environment not found in \"$UBPORTSDOCSENV\" ... creating it.${PLAIN}"
   echo -e "${YELLOW}Installing pip and virtualenv (using sudo).${PLAIN}"
-  sudo apt install python3-pip
-  sudo -H pip3 install virtualenv
+  sudo apt install python3-pip python3-virtualenv
   echo -e "${YELLOW}Creating a virtual environment in \"$UBPORTSDOCSENV\".${PLAIN}"
   virtualenv $UBPORTSDOCSENV
   source $UBPORTSDOCSENV/bin/activate
