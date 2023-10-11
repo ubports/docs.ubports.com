@@ -6,7 +6,7 @@ On this page you'll find information on how to build Ubuntu Touch system softwar
 There are essentially three ways of developing Ubuntu Touch system software locally:
 
 * `Building packages in a chroot using sbuild`_
-* `Cross-building with crossbuilder`_
+* `Building packages with crossbuilder`_
 * `Building on the device itself`_
 
 Pros and cons of sbuild and crossbuilder
@@ -66,7 +66,13 @@ Preparing a package for a build
 Building packages in a chroot using sbuild
 ------------------------------------------
 
-`sbuild <https://tracker.debian.org/pkg/sbuild>`__ is a tool for building Debian packages from source in an isolated environment using a chroot created by `schroot <https://wiki.debian.org/Schroot>`__. It closely resembles the package build process on the UBports CI system by using an isolated build environment with a minimal set of pre-installed packages. This detects any missing build dependencies and sbuild will also detect problems with the resulting packages by running `lintian <https://lintian.debian.org/manual/lintian.html>`__
+`sbuild <https://tracker.debian.org/pkg/sbuild>`__ is a tool for building Debian packages from source in an isolated environment using a chroot created by `schroot <https://wiki.debian.org/Schroot>`__. It closely resembles the package build process on the UBports CI system by using an isolated build environment with a minimal set of pre-installed packages. This detects any missing build dependencies and sbuild will also detect problems with the resulting packages by running `lintian <https://lintian.debian.org/manual/lintian.html>`__.
+
+There are three types of building using sbuild:
+
+* `Native build`_ - this type of building is used when the host architecture matches the target architecture.
+* `Cross compile build`_ - this type of building is used when the host architecture does not match the target architecture. This method may fail due to foreign architecture dependencies that are not installable. In that case you need to use another method.
+* `Qemu cross architecture build`_ - this method allows you to perform a fake native build on a host architecture which does not match the target architecture, avoiding foreign architecture dependency issues. The drawback of this method is the slow speed, caused by the overhead of architecture binary translations. Check the link for more information about `qemu <https://packages.debian.org/sid/qemu-user-static>`__.
 
 Prerequisites
 ^^^^^^^^^^^^^
@@ -107,8 +113,24 @@ Create the directory ``~/logs`` if it does not exist, yet::
 
     mkdir ~/logs
 
-Creating a build chroot
-^^^^^^^^^^^^^^^^^^^^^^^
+
+UBports packages
+^^^^^^^^^^^^^^^^
+
+Building some of the Ubuntu Touch modules require packages from the UBports package repository to be installed on the host machine.
+
+In that case UBports package repository needs to be added on the host machine. First initialize the ``chroot_repo`` and ``chroot_distro`` variables as show in the `Native build`_ section and then add the repository by using::
+
+    wget 'http://repo.ubports.com/keyring.gpg' -O - | sudo tee /usr/share/keyrings/ubports-keyring.gpg" >/dev/null
+    printf 'deb [signed-by=/usr/share/keyrings/ubports-keyring.gpg] %s %s main\n' "${chroot_repo}" "${chroot_distro}" | sudo tee "/etc/apt/sources.list.d/ubports.list" >/dev/null
+        
+Install the needed packages using::
+
+     sudo apt update
+     sudo apt install click-dev gobject-introspection   
+    
+Native build
+^^^^^^^^^^^^
 In order to create a chroot based on Ubuntu 20.04 (Focal Fossa) with the amd64 architecture under the directory ``/srv/chroot/ubports-${chroot_distro}-amd64`` (``chroot_base`` can be changed if needed) the following variables can be defined for later use by the actual commands::
 
     chroot_distro=focal
@@ -125,26 +147,72 @@ In both cases the chroot will be created by running the following command::
 
     sudo sbuild-createchroot --components=main,restricted,universe --extra-repository="deb http://archive.ubuntu.com/ubuntu/ ${chroot_distro}-updates main restricted universe" --include=ccache "${chroot_distro}" "${chroot_base}" http://archive.ubuntu.com/ubuntu/
 
-A chroot for cross-building arm64 packages on an amd64 host can e.g. be created under the directory ``/srv/chroot/ubports-${chroot_distro}-arm64`` using::
+The UBports package repository needs to be added using::
 
-    chroot_base=/srv/chroot/ubports-${chroot_distro}-arm64
-    sudo sbuild-createchroot --arch=arm64 --foreign --components=main,restricted,universe --extra-repository="deb http://ports.ubuntu.com/ubuntu-ports/ ${chroot_distro}-updates main restricted universe" --include=ccache "${chroot_distro}" "${chroot_base}" http://ports.ubuntu.com/ubuntu-ports/
+    wget 'http://repo.ubports.com/keyring.gpg' -O - | sudo tee "${chroot_base}/usr/share/keyrings/ubports-keyring.gpg" >/dev/null
+    printf 'deb [signed-by=/usr/share/keyrings/ubports-keyring.gpg] %s %s main\n' "${chroot_repo}" "${chroot_distro}" | sudo tee "${chroot_base}/etc/apt/sources.list.d/ubports.list" >/dev/null
 
-For cross-building armhf packages the above command can be used with ``arm64`` changed to ``armhf``.
+Synchronizing package index files and subsequent package upgrades can be performed using::
+
+    sudo sbuild-update -u -d ${chroot_distro}
+    
+A build can be started from inside the debianized package source directory using::
+
+    sbuild -d ${chroot_distro}
+    
+Cross compile build
+^^^^^^^^^^^^^^^^^^^    
+The only difference with the native build comes in the command for starting the build which is the following::
+
+    sbuild --host=arm64 --build=amd64 -d "${chroot_distro}"
+    
+Qemu cross architecture build
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+To simplify the chroot setup, we use `mk-sbuild <https://wiki.debian.org/mk-sbuild>`__ from the ``ubuntu-dev-tools`` package. The `qemu-user-static <https://wiki.debian.org/QemuUserEmulation>`__ package allows execution of non-native target executables just like native ones.
+
+Install the packages with the following commands::
+
+    sudo apt install ubuntu-dev-tools qemu-user-static
+    
+In order to create a chroot based on Ubuntu 20.04 (Focal Fossa) with the arm64 architecture under the directory ``/var/lib/schroot/chroots/ubports-${chroot_distro}-arm64`` (``chroot_base`` can be changed if needed) the following variables can be defined for later use by the actual commands::
+
+    chroot_arch=arm64
+    chroot_distro=focal
+    chroot_base=/var/lib/schroot/chroots/ubports-${chroot_distro}-${chroot_arch}
+    chroot_repo=http://repo2.ubports.com/
+
+For creating a chroot based on Ubuntu 16.04 (Xenial Xerus) with the arm64 architecture define the following variables instead::
+
+    chroot_arch=arm64
+    chroot_distro=focal
+    chroot_base=/var/lib/schroot/chroots/ubports-${chroot_distro}-${chroot_arch}
+    chroot_repo=http://repo.ubports.com/
+
+In both cases the chroot will be created by running the following command::
+
+    mk-sbuild --arch=${chroot_arch} ${chroot_distro} --name ubports-${chroot_distro}
 
 The UBports package repository needs to be added using::
 
     wget 'http://repo.ubports.com/keyring.gpg' -O - | sudo tee "${chroot_base}/usr/share/keyrings/ubports-keyring.gpg" >/dev/null
     printf 'deb [signed-by=/usr/share/keyrings/ubports-keyring.gpg] %s %s main\n' "${chroot_repo}" "${chroot_distro}" | sudo tee "${chroot_base}/etc/apt/sources.list.d/ubports.list" >/dev/null
-    sbuild-update -u -d "${chroot_distro}"
-
-Maintaining build chroots
-^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Synchronizing package index files and subsequent package upgrades can be performed using::
 
-    sbuild-update -u -d focal
+    sudo sbuild-update --arch=${chroot_arch} -u -d ubports-${chroot_distro}
+    
+A build can be started from inside the debianized package source directory using::
 
+    sbuild --build=${chroot_arch} --host=${chroot_arch} -d ubports-${chroot_distro}
+     
+Building completion
+^^^^^^^^^^^^^^^^^^^
+
+If the build was successful, the binary packages will be placed in the parent directory.  The build log will be placed inside ``~/logs``.  In case the build failed, the chroot can be inspected using::
+
+    sudo sbuild-shell ${chroot_distro}
+            
 Optimizations
 ^^^^^^^^^^^^^
 
@@ -186,23 +254,13 @@ In order to use this wrapper script the following line must be added to the conf
 
     command-prefix=/var/cache/ccache-sbuild/sbuild-ccache.sh
 
-Building a package
-^^^^^^^^^^^^^^^^^^
-A build can be started from inside the debianized package source directory using::
-
-    sbuild -d <distribution>
-
-If the build was successful, the binary packages will be placed in the parent directory.  The build log will be placed inside ``~/logs``.  In case the build failed, the chroot can be inspected using::
-
-    sbuild-shell <distribution>
-
 Further reading
 ^^^^^^^^^^^^^^^
 
 Technical details are available from the `sbuild(1) <https://manpages.debian.org/bullseye/sbuild/sbuild.1.en.html>`__ and `sbuild-createchroot(8) <https://manpages.debian.org/bullseye/sbuild/sbuild-createchroot.8.en.html>`__ manual pages and the `Debian wiki <https://wiki.debian.org/sbuild>`__.
 
-Cross-building with crossbuilder
---------------------------------
+Building packages with crossbuilder
+-----------------------------------
 
 Crossbuilder is a script which automates the setup and use of a crossbuild environment for Debian packages. It is suitable for developers with any device since the code compilation occurs on your desktop PC rather than the target device. This makes Crossbuilder the recommended way to develop non-trivial changes to Ubuntu Touch.
 
