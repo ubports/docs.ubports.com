@@ -12,7 +12,7 @@ To add a new language a new *.po* file needs to be created. To translate a strin
 Some apps do use `QtLinguist <https://doc.qt.io/qt-5/qtlinguist-index.html>`_ for translation. It does follow the same priciples only using *.ts* files for translations with another syntax. As template one *.ts* file is used.
 
 Within an app strings are marked either this way ``i18n.tr("string")`` when using gettext or like this ``tr("string")`` when using QtLinguist. When the app is built those translatable strings are extracted and written into the *.pot* or *.ts* template files. The *.po* and *.ts* language files then need to be updated from their template.
-
+N
 Once strings have been translated, they are made available for users with a new release of an app.
 
 Methods of Translation
@@ -20,21 +20,21 @@ Methods of Translation
 
 There are three commonly used ways to translate an app:
 
-* Weblate: A web based translation tool. UBports apps using Weblate can be translated `here <https://translate.ubports.com/projects/>`_. There is an automatic transfer of new strings from an apps repo to weblate. Translated strings get back as commits to the repo from weblate.
+* Weblate: A web based translation tool. UBports apps using Weblate can be translated `here <https://hosted.weblate.org/projects/lomiri/>`_ and `here <https://hosted.weblate.org/projects/ubports/>`_. There is an automatic transfer of new strings from an apps repo to weblate. Translated strings get back as commits to the repo from weblate.
 * Editor: Translation is done by changing *.po* files with the editor of your choice, and a GitHub/GitLab account. The *.po*/*.ts* files for each project are in their repository on `our GitLab organization <https://gitlab.com/ubports/apps>`_ or on `our GitHub organization <https://github.com/ubports>`_. After translating the translator commits new translations to an apps repo generally by opening a merge request/pull request.
 * Team translation: We also have  a `Translation Forum <https://forums.ubports.com/category/39/translations>`_ to discuss translating Ubuntu Touch and its core apps. Some projects are using Telegram or Matrix groups too, and some teams are still using the Ubuntu Launchpad framework.
 
-Core apps and some community apps like dekko or TELEports are generally using weblate for translation. This is the preferred way to translate and it does not need any programming skills. Please have a look at the `UBports translation projects <https://translate.ubports.com/projects/>`_. When using weblate do not edit *.po* files manually. Commiting edited *.po* files can break the automated process of translation.
+Core apps and some community apps like dekko or TELEports are generally using weblate for translation. This is the preferred way to translate and it does not need any programming skills. Please have a look at the `UBports translation projects <https://hosted.weblate.org/projects/ubports/>`_ and the `Lomiri translation projects <https://hosted.weblate.org/projects/lomiri/>`_. When using weblate do not edit *.po* files manually. Commiting edited *.po* files can break the automated process of translation.
 
 Most apps maintained by individual developers are mainly using *.pot*/*.po* files for translation. Those generally need to be edited manually and commited to the apps repo.
 
 How-To
 ------
 
-UBports Weblate
-^^^^^^^^^^^^^^^
+Hosted Weblate
+^^^^^^^^^^^^^^
 
-You can go to `UBports Weblate <https://translate.ubports.com/projects/>`_, click on "Dashboard" button, go to a project, and start making anonymous suggestions without being registered. If you want to save your translations, you must be logged in.
+You can go to `UBports translation projects dashboard <https://hosted.weblate.org/projects/ubports/>`_ or the `Lomiri translation projects dashboard <https://hosted.weblate.org/projects/lomiri/>`_, go to a project, and start making anonymous suggestions without being registered. If you want to save your translations, you must be logged in.
 
 For that, go to UBports Weblate and click on the "Register" button. Once in the "Registration" page, you'll find two options:
 
