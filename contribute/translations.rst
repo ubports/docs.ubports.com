@@ -12,7 +12,7 @@ To add a new language a new *.po* file needs to be created. To translate a strin
 Some apps do use `QtLinguist <https://doc.qt.io/qt-5/qtlinguist-index.html>`_ for translation. It does follow the same priciples only using *.ts* files for translations with another syntax. As template one *.ts* file is used.
 
 Within an app strings are marked either this way ``i18n.tr("string")`` when using gettext or like this ``tr("string")`` when using QtLinguist. When the app is built those translatable strings are extracted and written into the *.pot* or *.ts* template files. The *.po* and *.ts* language files then need to be updated from their template.
-N
+
 Once strings have been translated, they are made available for users with a new release of an app.
 
 Methods of Translation
