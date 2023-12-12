@@ -11,7 +11,7 @@ This might seem obvious, but it's easy to miss. Go to (Settings - Updates) and m
 Check if the bug is already reported
 ------------------------------------
 
-Open up the bug tracker for `ubuntu-touch <https://github.com/ubports/ubuntu-touch>`_.
+Open up the bug tracker for `ubuntu-touch <https://gitlab.com/ubports/ubuntu-touch>`_.
 
 .. Note::
     Pinephone users should check for and report bugs `here <https://gitlab.com/ubports/community-ports/pinephone>`_
@@ -32,7 +32,7 @@ Making the bug report
 
 Now it's time for what you've been waiting for, the bug report itself! Bug reports need to be filed in English.
 
-First, pull up the `bug tracker <https://github.com/ubports/ubuntu-touch>`_ and click "New Issue". Log in to GitHub if you haven't yet.
+First, pull up the `bug tracker <https://gitlab.com/ubports/ubuntu-touch>`_ and click "New Issue". Log in to GitHub if you haven't yet.
 
 Next, you'll need to name your bug. Pick a name that says what's happening, but don't be too wordy. Four to eight words should be enough.
 
