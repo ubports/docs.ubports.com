@@ -84,6 +84,9 @@ This behavior is helpful for the porters. However, this can be confusing to end-
 
 Another rescue feature available is the ability to force usb-moded to go to "rescue mode" or to enable ADB on every boot. This can be done by placing an empty file at ``/userdata/.force-ssh`` or ``/userdata/.force-adb`` (which translate to ``/data/.force-ssh`` or ``/data/.force-adb`` in the recovery), and the system will make sure the correct mode is enabled.
 
+.. note::
+    If using ADB, you may also have to disable ADB authorization prompt. See :ref:`AdbdAuthz`.
+
 Configuring usb-moded directly
 ------------------------------
 

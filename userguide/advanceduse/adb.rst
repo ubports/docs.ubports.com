@@ -39,6 +39,23 @@ Next, you'll need to turn on Developer Mode.
 If there's a device in the list here (The command doesn't print "List of devices attached" and a blank line), you are able to use ADB.
 If not, continue to the next section.
 
+.. _AdbdAuthz:
+
+Authorize access to the device
+------------------------------
+
+When using adb for the first time on a computer, the following dialog will appear when you unlock the screen.
+
+.. figure:: /_static/images/userguide/adb_authorization_prompt.png
+
+This ensures that ADB commands will not work on a new computer unless user unlock the phone and acknowledge the dialog. Selecting "Allow" will make the ADB commands work for this session, and will also remember this computer so that it won't prompt you again in the future.
+
+.. note::
+    If you're bringing up a port and you require ADB access before the UI is available, you can disable this protection by editing ``/etc/default/adbd`` and change ``ADBD_SECURE=1`` to ``ADBD_SECURE=0``.
+
+Frequently used ADB commands
+----------------------------
+
 ADB shell commands::
 
     adb shell — Gives you access to the Linux command-line shell on your device.
