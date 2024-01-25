@@ -165,7 +165,7 @@ To get a shell as the user ``phablet``, run::
     You can check ``ls /`` to confirm for yourself you are actually inside the container.
     The listing of ``ls /`` will be different inside and outside the container.
 
-.. note 2::
+.. note::
     When trying to run commands that require superuser priveleges, you may encounter the following error:
     
       sudo: /usr/bin/sudo must be owned by uid 0 and have the setuid bit set
