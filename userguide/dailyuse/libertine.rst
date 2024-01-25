@@ -72,7 +72,7 @@ From the apps list in the *Manage Libertine Containers* menu you can tap the + s
 
 Enter the package name if you know it.
 Otherwise you can search the archives for a package.
-You can make this process easier by making the *Lubuntu Software Center* your first package install.
+You can make this process easier by making a software center like gnome-software your first package install.
 Being a desktop app, you will need to use the *Libertine Tweak Tool* in the *Open Store* to make the text large enough to read on a mobile device.
 
 Packages may also be installed via the command-line::
