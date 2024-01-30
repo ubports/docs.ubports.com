@@ -145,11 +145,11 @@ Remember to check that %u (to receive 1 URL) or %U (to receive 1 or more URLs) i
 Tools
 -----
 
-From command line, ``url-dispatcher-dump`` command will give you the full list of registered protocol schemes and their corresponding app.
+From command line, ``lomiri-url-dispatcher-dump`` command will give you the full list of registered protocol schemes and their corresponding app.
 
-Another usefull tool, but not installed by default on devices is ``url-dispatcher-tools``, it allows you to simulate a call from a third party app. e.g: ``url-dispatcher https://youtu.be/CIX-a-i6B1w`` will launch youtube webapp.
+Another usefull tool, but not installed by default on devices is ``lomiri-url-dispatcher-tools``, it allows you to simulate a call from a third party app. e.g: ``lomiri-url-dispatcher https://youtu.be/CIX-a-i6B1w`` will launch youtube webapp.
 
-To install, it make your partition writable (``sudo mount -o rw,remount /``) and install it via ``sudo apt install url-dispatcher-tools``
+To install, it make your partition writable (``sudo mount -o rw,remount /``) and install it via ``sudo apt install lomiri-url-dispatcher-tools``
 
 
 
