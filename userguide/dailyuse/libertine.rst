@@ -165,6 +165,15 @@ To get a shell as the user ``phablet``, run::
     You can check ``ls /`` to confirm for yourself you are actually inside the container.
     The listing of ``ls /`` will be different inside and outside the container.
 
+.. note::
+    When trying to run commands that require superuser privileges, you may encounter the following error:
+    
+      sudo: /usr/bin/sudo must be owned by uid 0 and have the setuid bit set
+    
+    Try replacing ''sudo'' with ''fakeroot'' in your command, for example:
+
+      fakeroot apt install firefox
+
 Accessing SD card
 ^^^^^^^^^^^^^^^^^
 
