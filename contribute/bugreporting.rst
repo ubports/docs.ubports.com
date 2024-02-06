@@ -58,6 +58,7 @@ Here we'll discuss the general steps to get logs, files that contain important d
 
 To get ready, download the `Logviewer app <https://open-store.io/app/logviewer.ruditimmer>`_ from the OpenStore. This app will help us find, view, and send the logs we need.
 
-Now, open the Logviewer app. You'll see a list of all of the services and applications log files running on your device. You can tap on any log to view it, then tap the "send" icon in the top right corner to share it using an online service.
+Now, open the Logviewer app.
+You'll see the list of applications running on your device. You can open any of them to view the logs of this application. And you can use the "send" icon in the top right corner to share a log using an online service.
 
 If you don't see the log that you've been asked to send in Logviewer, it may be in a different folder or the application may not have created any logs yet. Tell this to the person who asked you for the logs. They should be able to get you the information you need to get back on track.
