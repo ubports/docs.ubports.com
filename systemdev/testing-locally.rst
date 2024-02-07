@@ -293,7 +293,11 @@ After LXD has been set up, a build for UBports based on Ubuntu 20.04 (Focal Foss
 
 For building against a different UBports release or architecture change ``distro`` and ``arch`` as needed.
 
-Crossbuilder will create the LXD container, download the development image, install all your package build dependencies, and perform the package build. It will also copy the packages over to your target device and install them if it is connected (see :doc:`/userguide/advanceduse/adb` to learn more about connecting your device). The first two steps (creating the LXD image and getting the dependencies) can take a few minutes, but will be executed only the first time you launch crossbuilder for a new package.
+Crossbuilder will create the LXD container, download the development image, install all your package build dependencies, and perform the package build. The first two steps (creating the LXD image and getting the dependencies) can take a few minutes, but will be executed only the first time you launch crossbuilder for a new package.
+
+In order to deploy the newly built package on a local device (see :doc:`/userguide/advanceduse/adb` to learn more about connecting your device), you can use::
+
+    crossbuilder --lxd-image="ubuntu:${distro}" --architecture="${arch}" --password="password-or-0000-if-not-set" deploy
 
 Now, whenever you change the source code in your git repository, the same changes will be available inside the container. The next time you type the above ``crossbuilder`` command, only the changed files will be rebuilt.
 
