@@ -1,3 +1,5 @@
+:hide-toc:
+
 Welcome to the UBports documentation!
 =====================================
 
