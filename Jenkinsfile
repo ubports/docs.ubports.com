@@ -14,6 +14,7 @@ pipeline {
         stage("Install dependencies") {
             steps {
                 sh 'python --version'
+                sh 'pip --version'
                 sh 'pip install --no-cache-dir --user --upgrade --use-feature=2020-resolver -r requirements.txt'
             }
         }
