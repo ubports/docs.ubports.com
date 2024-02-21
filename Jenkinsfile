@@ -3,7 +3,6 @@ pipeline {
         docker {
             image "python:3.12"
         }
-        executor 1
     }
     options {
         buildDiscarder(logRotator(daysToKeepStr: '120'))
