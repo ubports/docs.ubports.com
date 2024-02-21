@@ -13,6 +13,7 @@ pipeline {
     stages {
         stage("Install dependencies") {
             steps {
+                sh 'python --versio'
                 sh 'pip install --no-cache-dir --user --upgrade -r requirements.txt'
             }
         }
