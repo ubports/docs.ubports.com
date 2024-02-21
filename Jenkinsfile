@@ -13,6 +13,8 @@ pipeline {
     stages {
         stage("Install dependencies") {
             steps {
+                sh 'python --version'
+                sh 'pip --version'
                 // TODO: the `--quiet` is to workaround some Docker/Jenkins bugs/misconfigurations, this should be removed at some point
                 sh 'pip install --quiet --no-cache-dir --user --upgrade -r requirements.txt'
             }
