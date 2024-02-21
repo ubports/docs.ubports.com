@@ -15,7 +15,7 @@ pipeline {
             steps {
                 sh 'python --version'
                 sh 'pip --version'
-                sh 'pip install --no-cache-dir --user --upgrade --use-feature=fast-deps -r requirements.txt'
+                sh 'pip install --quiet --no-cache-dir --user --upgrade --use-feature=fast-deps -r requirements.txt'
             }
         }
         stage("Build docs"){
