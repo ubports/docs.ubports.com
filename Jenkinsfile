@@ -15,7 +15,7 @@ pipeline {
             steps {
                 sh 'python --version'
                 sh 'pip --version'
-                sh 'pip install --no-cache-dir --user --upgrade --use-feature=2020-resolver -r requirements.txt'
+                sh 'pip install --no-cache-dir --user --upgrade --use-feature=fast-deps -r requirements.txt'
             }
         }
         stage("Build docs"){
