@@ -25,7 +25,7 @@ Locate the kernel source code for your device. Fork this repo to your own Github
 Clone a Gitlab CI repo to base your build on
 --------------------------------------------
 
-Ideally you should base your build on a previous build for a device with similar platform/SoC. However, if unsure, use `the repo for Xiaomi-violet <https://gitlab.com/ubports/community-ports/android9/xiaomi-redmi-note-7-pro/xiaomi-violet/-/tree/master/>`_
+Ideally you should base your build on a previous build for a device with similar platform/SoC. However, if unsure, use `the repo for Xiaomi-violet <https://gitlab.com/ubports/porting/android9/xiaomi-redmi-note-7-pro/xiaomi-violet/-/tree/master/>`_
 
 .. _Configure:
 
@@ -42,5 +42,5 @@ This tool will not supply the base offset, only the others, and it gives the abs
 
 Using this information, you can calculate the correct values for the offsets to be specified in the file ``deviceinfo``. If in doubt, :ref:`seek help <Getting-community-help>`.
 
-When you have finished editing ``deviceinfo``, carefully read and follow the instructions `on this page <https://gitlab.com/ubports/community-ports/android9/xiaomi-redmi-note-7-pro/xiaomi-violet/-/blob/master/README.md>`_ to build and install, remembering to replace 'violet' with your device's codename.
+When you have finished editing ``deviceinfo``, carefully read and follow the instructions `on this page <https://gitlab.com/ubports/porting/android9/xiaomi-redmi-note-7-pro/xiaomi-violet/-/blob/master/README.md>`_ to build and install, remembering to replace 'violet' with your device's codename.
 
