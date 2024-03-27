@@ -34,6 +34,7 @@ If you are using the **Standalone kernel** method, then please pick the step bel
    :maxdepth: 1
 
    H9_gitlab_build
+   H10_gitlab_build
 
 Install and boot
 ----------------
