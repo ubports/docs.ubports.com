@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-2022, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019-2023, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-05 00:57+0100\n"
+"POT-Creation-Date: 2023-10-24 08:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,30 +21,22 @@ msgid "Code editor integrations"
 msgstr ""
 
 #: ../../appdev/code-editor.rst:4
-msgid "Atom"
-msgstr ""
-
-#: ../../appdev/code-editor.rst:6
-msgid "You can use clickable with the `Atom Editor <https://atom.io>`__ by installing the `atom-clickable-plugin <https://atom.io/packages/atom-clickable-plugin>`__. Or you can simply run ``clickable ide atom`` in your project directory to launch an Atom editor instance on top of your docker image. This way you will have all Atom features - including the clickable plugin - available for you project."
-msgstr ""
-
-#: ../../appdev/code-editor.rst:10
 msgid "QtCreator"
 msgstr ""
 
-#: ../../appdev/code-editor.rst:12
+#: ../../appdev/code-editor.rst:6
 msgid "Available on top of clickable docker image, ``clickable ide qtcreator`` command within your project directory will launch a QtCreator instance and auto setup the project for you, you will have code completion and navigation for Ubuntu Touch components as well as run/debug facilities."
 msgstr ""
 
-#: ../../appdev/code-editor.rst:14
+#: ../../appdev/code-editor.rst:8
 msgid "Ubuntu SDK ( Unmaintained )"
 msgstr ""
 
-#: ../../appdev/code-editor.rst:16
+#: ../../appdev/code-editor.rst:10
 msgid "Alternatively there is the old `Ubuntu SDK IDE <https://docs.ubuntu.com/phone/en/platform/sdk>`__. Be aware that it is no longer supported by Canonical, and UBports has chosen to not support it either due to lack of manpower."
 msgstr ""
 
-#: ../../appdev/code-editor.rst:18
+#: ../../appdev/code-editor.rst:12
 msgid "You can still install the SDK IDE in Ubuntu 16.04, but it is not guaranteed to work correctly. You can use the following commands to install::"
 msgstr ""
 
@@ -237,106 +229,106 @@ msgid "Put the library's source code at ``libs/LIBNAME`` (replacing ``LIBNAME`` 
 msgstr ""
 
 #: ../../appdev/guides/dependencies.rst:14
-msgid "Add a `libraries section <http://clickable.bhdouglass.com/en/latest/clickable-json.html#libraries>`_ to your clickable.json, like this:"
+msgid "Add a `libraries section <https://clickable.bhdouglass.com/en/latest/project-config.html#libraries>`_ to your clickable.yaml, like this:"
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:28
+#: ../../appdev/guides/dependencies.rst:24
 msgid "If the library does not contain a CMake configuration, you need to use the `qmake` or `custom` builder instead."
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:30
+#: ../../appdev/guides/dependencies.rst:26
 msgid "Optionally, configure the compilation by adding ``build_args``, which may look like this:"
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:50
+#: ../../appdev/guides/dependencies.rst:41
 msgid "Most build arguments are project specific. Therefore, study the library's build instructions and also look for ``option`` settings in its ``CMakeLists.txt`` ."
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:52
+#: ../../appdev/guides/dependencies.rst:43
 msgid "To actually build the library for all architectures run ``clickable build --libs --arch armhf``, ``clickable build --libs --arch arm64`` and ``clickable build --libs --arch amd64``. Don't forget to mention this step in your README, so that others can reproduce the build process."
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:54
-msgid "See how `Teleports clickable.json <https://gitlab.com/ubports/apps/teleports/blob/master/clickable.json#L21>`_ uses the libraries feature to build its dependency tdlib."
+#: ../../appdev/guides/dependencies.rst:45
+msgid "See how `Teleports clickable.yaml <https://gitlab.com/ubports/development/apps/teleports/-/blob/main/clickable.yaml#L26>`_ uses the libraries feature to build its dependency tdlib."
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:57
+#: ../../appdev/guides/dependencies.rst:48
 msgid "Pre-built"
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:58
+#: ../../appdev/guides/dependencies.rst:49
 msgid "If you compiled your library as described above, skip this step."
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:60
+#: ../../appdev/guides/dependencies.rst:51
 msgid "A pre-built library is usually only available as a shared object that needs to be linked dynamically. Furthermore, it may contain components that you don't need, resulting in a bloated app. It may even miss something that you could achieve by compiling it yourself. Sometimes, a library is available in the Ubuntu Repositories, but is not installable for the architecture you need (likely ``armhf`` or ``arm64``). In this case you have to compile the library as described above."
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:62
+#: ../../appdev/guides/dependencies.rst:53
 msgid "If the library is available in the Ubuntu Repositories, you can add it to the dependencies list, like this:"
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:74
+#: ../../appdev/guides/dependencies.rst:62
 msgid "Clickable will install the specified package automatically for the target architecture inside the build container. An example can be found in `Guitar Tools' clickable.json <https://github.com/t-mon/guitar-tools/blob/master/clickable.json#L4>`_."
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:76
-msgid "If the library can be found in a PPA, you can add the PPA to the clickable.json, too. For example:"
+#: ../../appdev/guides/dependencies.rst:64
+msgid "If the library can be found in a PPA, you can add the PPA to the clickable.yaml, too. For example:"
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:91
+#: ../../appdev/guides/dependencies.rst:75
 msgid "Otherwise add a script to download the pre-built library."
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:94
+#: ../../appdev/guides/dependencies.rst:78
 msgid "Usage"
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:95
+#: ../../appdev/guides/dependencies.rst:79
 msgid "First, you need to specify the include directory where the headers can be found that you include into the app's source code. Second, you need to link the library's binary against your app's binary."
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:97
+#: ../../appdev/guides/dependencies.rst:81
 msgid "In case the library contains a CMake configuration file, you can use the `find_package <https://cmake.org/cmake/help/latest/command/find_package.html>`_ command, which provides you with a target to link against or variables pointing to the library's binary and include directories. The additional lines on your CMakeLists.txt then may look like:"
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:106
+#: ../../appdev/guides/dependencies.rst:90
 msgid "The ``find_package`` command usually defines the path to the include directory as ``SOMELIBRARY_INCLUDE_DIRS`` and the library's binaries as ``SOMELIBRARY_LIBS`` (check on the library's documentation on what their CMake configuration provides exactly). Use them with the ``include_directories`` and ``target_link_libraries`` commands. See the `Camera Scanner ImageProcessing CMakeLists.txt <https://github.com/jonnius/camera-scanner/blob/master/plugins/ImageProcessing/CMakeLists.txt#L23>`_ for a real world example."
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:108
+#: ../../appdev/guides/dependencies.rst:92
 msgid "At this point you should already be able to test with Clickable's desktop mode running ``clickable desktop``."
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:111
+#: ../../appdev/guides/dependencies.rst:95
 msgid "Deployment"
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:112
+#: ../../appdev/guides/dependencies.rst:96
 msgid "If you linked the library statically, you can skip this step, as the library's binary is already inside your app's binary."
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:114
+#: ../../appdev/guides/dependencies.rst:98
 msgid "Find out which shared object files (``*.so``) you need to ship. You can do so by starting the app on your device via ``clickable && clickable logs``. You should see an error message telling you which shared object file was missing."
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:116
+#: ../../appdev/guides/dependencies.rst:100
 msgid "Find the path to the shared object files. For libraries built via clickable, they are located somewhere in the library's install dir, which is located inside the library's build dir by default (e.g. ``build/arm-linux-gnueabihf/opencv/install``). For pre-built libraries run ``clickable run \"find / -name 'libSomething.so'\"`` (replacing ``libSomething.so`` by the file your are looking for). This should print the path to the file (along with some error messages you can ignore). In general, ``/usr/lib``  is a good bet when looking for the shared object files."
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:118
-msgid "To get the files into the click package, add the `install_lib <http://clickable.bhdouglass.com/en/latest/clickable-json.html#install-lib>`_ key to your clickable.json:"
+#: ../../appdev/guides/dependencies.rst:102
+msgid "To get the files into the click package, add the `install_lib <https://clickable.bhdouglass.com/en/latest/project-config.html#install-lib>`_ key to your clickable.yaml:"
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:136
+#: ../../appdev/guides/dependencies.rst:115
 msgid "The lines above contain two examples. The first one installing a library built with Clickable. The asterisk in ``.so*`` helps to catch symbolic links along with the actual library which are used to point to the current version."
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:138
+#: ../../appdev/guides/dependencies.rst:117
 msgid "Depending on the library, you might need to ship some additional data. In that case consult the library's readme or install instructions."
 msgstr ""
 
-#: ../../appdev/guides/dependencies.rst:140
+#: ../../appdev/guides/dependencies.rst:119
 msgid "You should be set up to build and install your click package on a device connected to your computer now by running ``clickable``."
 msgstr ""
 
@@ -496,48 +488,116 @@ msgstr ""
 msgid "To get familiar with some more advanced concepts see the following sections:"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:33
+#: ../../appdev/guides/index.rst:34
 msgid "Playground"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:35
+#: ../../appdev/guides/index.rst:36
 msgid "In a completely free and open source community, it is natural to have community members exploring the limits of the platform in many many directions. In this section you will find links to external resources that do exactly that: Explore. The purpose of this list is to show the unlimited possibilities of an open platform like Ubuntu Touch."
 msgstr ""
 
-#: ../../appdev/guides/index.rst:38
+#: ../../appdev/guides/index.rst:39
 msgid "The resources listed here do not necessarily represent the officially endorsed way of developing applications for Ubuntu Touch, but are interesting experiments."
 msgstr ""
 
-#: ../../appdev/guides/index.rst:40
+#: ../../appdev/guides/index.rst:41
 msgid "`Free Pascal development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:41
+#: ../../appdev/guides/index.rst:42
 msgid "`Lazarus development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/10/lazarus-development-for-ubuntu-phone.html>`__"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:42
+#: ../../appdev/guides/index.rst:43
 msgid "`Geany on Ubuntu Touch device as text editor, source code editor, debugger and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-text.html>`__"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:43
+#: ../../appdev/guides/index.rst:44
 msgid "`Deploy your existing Qt QML app to Ubuntu Touch using QMake (Video) <https://youtu.be/ehqlwRNrfO0>`__"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:44
+#: ../../appdev/guides/index.rst:45
 msgid "`Deploy your existing Qt QML app to Ubuntu Touch using CMake (Video) <https://youtu.be/c2sq6aLeGec>`__"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:45
+#: ../../appdev/guides/index.rst:46
 msgid "`Getting started with Clickable (Video) <https://youtu.be/TE-s5522v0Y>`__"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:46
+#: ../../appdev/guides/index.rst:47
 msgid "`Content Hub overview (Video) <https://youtu.be/AihwC2sPIk0>`__"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:47
+#: ../../appdev/guides/index.rst:48
 msgid "`Import files to your app with Content Hub (Video) <https://youtu.be/q6zzM16jw1U>`__"
+msgstr ""
+
+#: ../../appdev/guides/port-to-focal.rst:2
+msgid "Porting Apps to Focal"
+msgstr ""
+
+#: ../../appdev/guides/port-to-focal.rst:4
+msgid "During the switch to Focal some changes were made to the app environment. In order to ensure that the app will continue working, it is recommended to update your app to Focal."
+msgstr ""
+
+#: ../../appdev/guides/port-to-focal.rst:7
+msgid "QML"
+msgstr ""
+
+#: ../../appdev/guides/port-to-focal.rst:9
+msgid "Most changes will need to be made to any QML files. References to Ubuntu were removed from QML Imports, and most QML classes. While there is a compatability layer, it is recommended to move to the Lomiri Modules."
+msgstr ""
+
+#: ../../appdev/guides/port-to-focal.rst:17
+msgid "Other references to Ubuntu were also Changed to Lomiri, such as `UbuntuColors` being renamed `LomiriColors`. These must also be updated. This can be somewhat automated:"
+msgstr ""
+
+#: ../../appdev/guides/port-to-focal.rst:29
+msgid "Configuration Files"
+msgstr ""
+
+#: ../../appdev/guides/port-to-focal.rst:32
+msgid "clickable.yaml"
+msgstr ""
+
+#: ../../appdev/guides/port-to-focal.rst:33
+msgid "If your project has a `clickable.json` file instead of a `clickable.yaml` file, it is recommended to first convert the JSON file to a YAML file. Afterwards, add the following:"
+msgstr ""
+
+#: ../../appdev/guides/port-to-focal.rst:42
+msgid "AppArmor file"
+msgstr ""
+
+#: ../../appdev/guides/port-to-focal.rst:43
+msgid "Update the policy version in the AppArmor file:"
+msgstr ""
+
+#: ../../appdev/guides/port-to-focal.rst:57
+msgid "Desktop File"
+msgstr ""
+
+#: ../../appdev/guides/port-to-focal.rst:59
+msgid "Change `X-Ubuntu-Touch` to `X-Lomiri-Touch`:"
+msgstr ""
+
+#: ../../appdev/guides/port-to-focal.rst:73
+msgid "Build Files"
+msgstr ""
+
+#: ../../appdev/guides/port-to-focal.rst:76
+msgid "CMakeLists.txt"
+msgstr ""
+
+#: ../../appdev/guides/port-to-focal.rst:77
+msgid "If the app is based on one of the App Templates, update the default Click Framework in the CMake file:"
+msgstr ""
+
+#: ../../appdev/guides/port-to-focal.rst:91
+msgid ".gitlab-ci.yml"
+msgstr ""
+
+#: ../../appdev/guides/port-to-focal.rst:92
+msgid "If you have a Gitlab CI file, you need to update it:"
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:2
@@ -1366,7 +1426,7 @@ msgid "Native apps"
 msgstr ""
 
 #: ../../appdev/nativeapp/index.rst:6
-msgid "The recommended way to build a native application on Ubuntu Touch is to use the `Qt <https://doc.qt.io/>`__ framework (current version since OTA-16 is Qt 5.12.9). You do not have to stick with the traditional C++<->QML Qt model, you can use also Python, Go, Rust or even Javascript for your backend."
+msgid "The recommended way to build a native application on Ubuntu Touch is to use the `Qt <https://doc.qt.io/>`__ framework (current version since Xenial OTA-16 is Qt 5.12.9). You do not have to stick with the traditional C++<->QML Qt model, you can use also Python, Go, Rust or even Javascript for your backend."
 msgstr ""
 
 #: ../../appdev/nativeapp/index.rst:10

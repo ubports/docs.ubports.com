@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-2022, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019-2023, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-05 00:57+0100\n"
+"POT-Creation-Date: 2023-10-24 08:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,66 +121,127 @@ msgid "CalDAV and CardDAV are protocols to sync calendars and contacts with a re
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:7
-msgid "**Note:** CalDAV sync can also be set up by using the calendar app. Open it, click on the little calendar icon in the top right corner and select \"Add internet calendar > Generic CalDAV\". Enter your calendar URL as well as your username and password to complete the process."
+msgid "CalDAV sync can be set up by using the calendar app. Open it, click on the little calendar icon in the top right corner and select \"Add internet calendar > Generic CalDAV\". Enter your calendar URL as well as your username and password to complete the process."
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:11
-msgid "At the moment, the Ubuntu Touch graphical user-interface lacks a CardDAV implementation, but you can do it by using SyncEvolution + cron. There is a script you can run in the terminal, or via a phablet SSH connection. These instructions work for CalDAV as well."
+msgid "CardDAV sync can be set up by using two different ways detailed in the following instructions. These instructions work for CalDAV as well."
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:14
-msgid "Follow this `guide <https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to activate Developer Mode and a connection either through ADB or SSH."
+msgid "First, follow this `guide <https://docs.ubports.com/en/latest/userguide/advanceduse/adb.html>`_ to activate Developer Mode and a connection either through ADB or SSH."
 msgstr ""
 
-#: ../../userguide/advanceduse/dav.rst:17
-msgid "Download this `script <https://gist.github.com/bastos77/0c47a94dd0bf3e394f879c0ff42b7839>`_ (let's call it dav.sh) and edit the following variables:"
+#: ../../userguide/advanceduse/dav.rst:16
+msgid "Then choose between the two following guides"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:18
+msgid "The one proposed by Bastos77 and Vanyasem is quite simple, if you have few CalDav or CardDAV to configure."
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:19
-msgid "Server side: CAL_URL, **CONTACTS_URL**, USERNAME, PASSWORD (of your ownCloud/nextCloud/baikal/SOGO/… server)"
+msgid "The one proposed by UT-itilities is much featured, with many commands to create or delete configurations. Use it if you manage many configurations, on one or multiple servers"
 msgstr ""
 
-#: ../../userguide/advanceduse/dav.rst:20
-msgid "CONTACT and CALENDAR _ NAME / VISUAL_NAME / CONFIG_NAME (it's more cosmetic)"
-msgstr ""
-
-#: ../../userguide/advanceduse/dav.rst:21
-msgid "CRON_FREQUENCY (for the frequency of synchronization)"
-msgstr ""
-
-#: ../../userguide/advanceduse/dav.rst:22
-msgid "Line 61: write ``sudo sh -c \"echo '$COMMAND_LINE' > /sbin/sogosync\"`` , instead of ``sudo echo \"$COMMAND_LINE\" > /sbin/sogosync``, to avoid a \"Permission denied\" error."
+#: ../../userguide/advanceduse/dav.rst:23
+msgid "1. A simple guide proposed by `Bastos77 <https://gist.github.com/bastos77>`_ and `Vanyasem <https://gist.github.com/vanyasem>`_"
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:24
-msgid "Move the file to your Ubuntu Touch device, either by way of a file manager or through the use of ADB::"
+msgid "Download this `script <https://gist.github.com/vanyasem/379095d25ac350676fc70c42efe17c8c>`_ (let's call it dav.sh) and edit the following variables:"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:26
+msgid "``CAL_URL``"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:27
+msgid "``CONTACTS_URL``"
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:28
-msgid "Connect with the phablet shell (using ``adb shell``) or type the following directly into the Ubuntu Touch device terminal app::"
+msgid "``USERNAME``"
 msgstr ""
 
-#: ../../userguide/advanceduse/dav.rst:35
-msgid "Sources:"
+#: ../../userguide/advanceduse/dav.rst:29
+msgid "``PASSWORD``"
 msgstr ""
 
-#: ../../userguide/advanceduse/dav.rst:37
-msgid "https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-calendars/664834#664834"
+#: ../../userguide/advanceduse/dav.rst:30
+msgid "``CONTACT_NAME``"
 msgstr ""
 
-#: ../../userguide/advanceduse/dav.rst:38
-msgid "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
+#: ../../userguide/advanceduse/dav.rst:31
+msgid "``CALENDAR_NAME``"
 msgstr ""
 
-#: ../../userguide/advanceduse/dav.rst:39
-msgid "https://gist.github.com/tcarrondo"
+#: ../../userguide/advanceduse/dav.rst:32
+msgid "``VISUAL_NAME``"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:33
+msgid "``CONFIG_NAME``"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:34
+msgid "``CRON_FREQUENCY``"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:36
+msgid "Move the file to your Ubuntu Touch device, either by way of a file manager or through the use of ADB::"
 msgstr ""
 
 #: ../../userguide/advanceduse/dav.rst:40
+#: ../../userguide/advanceduse/dav.rst:67
+msgid "Connect with the phablet shell (using ``adb shell``) or type the following directly into the Ubuntu Touch device terminal app::"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:47
+msgid "2. Or a full featured guide proposed by `UT-ilities <https://github.com/UT-ilities>`_"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:49
+msgid "if you have many configurations on one or multiple Caldav/CardDav servers"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:51
+msgid "Read the  `instructions <https://github.com/UT-ilities/UTouch_CalDAV_and_CardDAV_synchronization>`_"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:53
+msgid "Download the script and config files::"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:58
+msgid "Edit the config file as explained in the `instructions <https://github.com/UT-ilities/UTouch_CalDAV_and_CardDAV_synchronization>`_::"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:63
+msgid "Move the files to your Ubuntu Touch device, either by way of a file manager or through the use of ADB::"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:74
+msgid "Sources:"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:76
+msgid "https://askubuntu.com/questions/616081/ubuntu-touch-add-contact-list-and-calendars/664834#664834"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:77
+msgid "https://gist.github.com/boTux/069b53d8e06bdb9b9c97"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:78
+msgid "https://gist.github.com/tcarrondo"
+msgstr ""
+
+#: ../../userguide/advanceduse/dav.rst:79
 msgid "https://gist.github.com/bastos77"
 msgstr ""
 
-#: ../../userguide/advanceduse/dav.rst:41
+#: ../../userguide/advanceduse/dav.rst:80
 msgid "https://askubuntu.com/questions/601910/ssh-ubuntu-touch"
 msgstr ""
 
@@ -314,8 +375,8 @@ msgid "After a while Teleports looses its internet connection and must be restar
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:71
-#: ../../userguide/advanceduse/screencasting.rst:73
-#: ../../userguide/advanceduse/ssh.rst:78
+#: ../../userguide/advanceduse/screencasting.rst:74
+#: ../../userguide/advanceduse/ssh.rst:74
 msgid "References"
 msgstr ""
 
@@ -344,58 +405,58 @@ msgid "You can catch output directly from the ``adb exec-out`` command and forwa
 msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:14
-msgid "``timeout`` above is used to kill the process in a proper manner on the Ubuntu Touch device (120 seconds here). (Otherwise the process continues even if killed on the computer.) Reduce or increase the number of frames per second with``--cap-interval`` (1 = 60fps, 2=30fps, …) and the size of frames ``384 640`` means a width of 384 px and a height of 640 px."
+msgid "``timeout`` above is used to kill the process in a proper manner on the Ubuntu Touch device (120 seconds here). (Otherwise the process continues even if killed on the computer.) Reduce or increase the number of frames per second with``--cap-interval`` (1 = 60fps, 2=30fps, …) and the size of frames ``384 640`` means a width of 384 px and a height of 640 px. If red and blue colors look reversed you can use format=bgra instead of format=rbga"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:20
+#: ../../userguide/advanceduse/screencasting.rst:21
 msgid "Via the network"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:23
+#: ../../userguide/advanceduse/screencasting.rst:24
 msgid "On the receiver"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:25
+#: ../../userguide/advanceduse/screencasting.rst:26
 msgid "For real-time casting:"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:28
+#: ../../userguide/advanceduse/screencasting.rst:29
 msgid "Prepare your computer to listen to a TCP port (1234 here) and forward the raw stream to a video player (MPlayer here) with a framesize of 384x640::"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:32
+#: ../../userguide/advanceduse/screencasting.rst:33
 msgid "For stream recording:"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:34
+#: ../../userguide/advanceduse/screencasting.rst:35
 msgid "Prepare your computer to listen to a TCP port (1234 here), unpack and forward the raw stream to a video encoder (MEncoder here)::"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:39
+#: ../../userguide/advanceduse/screencasting.rst:40
 msgid "On the Ubuntu Touch device"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:41
+#: ../../userguide/advanceduse/screencasting.rst:42
 msgid "Forward and gzip the stream with 60 FPS (--cap-interval 1) and a framesize of 384x640 to the computer at 10.42.0.209 on port 1234::"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:47
+#: ../../userguide/advanceduse/screencasting.rst:48
 msgid "Example script"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:49
+#: ../../userguide/advanceduse/screencasting.rst:50
 msgid "Run this on a computer (with MPlayer installed and SSH access to the Ubuntu Touch device) to screencast a remote Ubuntu Touch device to it.::"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:70
+#: ../../userguide/advanceduse/screencasting.rst:71
 msgid "You can download it here: :download:`files/mircast.sh`"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:75
+#: ../../userguide/advanceduse/screencasting.rst:76
 msgid "Initial source: https://wiki.ubuntu.com/Touch/ScreenRecording"
 msgstr ""
 
-#: ../../userguide/advanceduse/screencasting.rst:76
+#: ../../userguide/advanceduse/screencasting.rst:77
 msgid "Demo: https://www.youtube.com/watch?v=HYm4RUwwo5Q"
 msgstr ""
 
@@ -448,50 +509,46 @@ msgid "Now you have the public key on the UBports device. Let's assume it's stor
 msgstr ""
 
 #: ../../userguide/advanceduse/ssh.rst:38
-msgid "Now start the SSH server. If you are using an Android-based device::"
+msgid "Now start the SSH server::"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:42
-msgid "If you are using a Linux-based device (like the PinePhone)::"
-msgstr ""
-
-#: ../../userguide/advanceduse/ssh.rst:48
+#: ../../userguide/advanceduse/ssh.rst:44
 msgid "Connect"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:50
+#: ../../userguide/advanceduse/ssh.rst:46
 msgid "Now everything is set up and you can use ``ssh`` ::"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:54
+#: ../../userguide/advanceduse/ssh.rst:50
 msgid "or, if that does not work ::"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:58
+#: ../../userguide/advanceduse/ssh.rst:54
 msgid "To identify the IP-address of your UBports device, open the Terminal app on your device and run the following command::"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:62
+#: ../../userguide/advanceduse/ssh.rst:58
 msgid "The output is a list of IP addresses separated by spaces. Use the IP address that matches your subnet. On your PC or laptop: ::"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:68
+#: ../../userguide/advanceduse/ssh.rst:64
 msgid "On the phone: ::"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:73
+#: ../../userguide/advanceduse/ssh.rst:69
 msgid "In this case you use the second IP address"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:75
+#: ../../userguide/advanceduse/ssh.rst:71
 msgid "Of course you can now also use ``scp`` or ``sshfs`` to transfer files."
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:80
+#: ../../userguide/advanceduse/ssh.rst:76
 msgid "`askubuntu.com: How can I access my Ubuntu phone over SSH? <https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-over-ssh/599041#599041>`_"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:81
+#: ../../userguide/advanceduse/ssh.rst:77
 msgid "`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the Ubuntu phone via Wi-Fi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5-ubuntu-phone/content/en/chapter1.html>`_"
 msgstr ""
 
@@ -501,219 +558,6 @@ msgstr ""
 
 #: ../../userguide/advanceduse/switchchannel.rst:3
 msgid "You can change the release channel using the system settings. The 3 existing channels are `stable`, `rc` (release candidate) and `devel` (nightly builds). More info in :doc:`the release schedule </about/process/release-schedule>`."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:2
-msgid "Android apps"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:4
-msgid "`Anbox <https://anbox.io>`_ is a minimal Android container and compatibility layer to run Android apps on GNU/Linux operating systems such as Ubuntu Touch."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:7
-msgid "\"Computer\" refers to another device you connect your Ubuntu Touch device to (via USB here). Your USB-attached computer must have ``adb`` and ``fastboot`` installed."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:11
-msgid "You will need to execute commands on your Ubuntu Touch device (and/or attached computer) to install Anbox and APKs. You can do that by using the terminal application, but it is easier to use ``adb shell`` or :doc:`set up SSH </userguide/advanceduse/ssh>` to access your Ubuntu Touch device from your computer."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:15
-msgid "Supported devices"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:17
-msgid "Make sure your device is supported:"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:19
-msgid "Meizu PRO 5"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:20
-msgid "Fairphone 2"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:21
-msgid "OnePlus One"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:22
-msgid "Nexus 5"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:23
-msgid "BQ Aquaris M10 HD"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:24
-msgid "BQ Aquaris M10 FHD"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:27
-msgid "How to install"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:30
-msgid "Installing Anbox is only recommended for experienced users."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:33
-msgid "Install Anbox kernel"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:35
-msgid "Some devices require you to install a custom Linux kernel to use Anbox. These devices are:"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:37
-msgid "Meizu PRO 5 (codename: ``turbo``, name of the boot partition: ``bootimg``)"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:38
-msgid "BQ Aquaris M10 HD (codename: ``cooler``, name of the boot partition: ``boot``)"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:39
-msgid "BQ Aquaris M10 FHD (codename: ``frieza``, name of the boot partition: ``boot``)"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:41
-msgid "If your device is not in this list, the Anbox kernel was automatically installed when you installed Ubuntu Touch. Please skip ahead to :ref:`run-anbox-installer`."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:44
-msgid "**You will need to repeat these steps after each Ubuntu Touch update**. Not doing so can put your Ubuntu Touch device into an unstable state. Only update your Ubuntu Touch device when you have a computer with you to re-flash the modified kernel image."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:48
-msgid "Be sure to have a `backup <https://askubuntu.com/questions/602850/how-do-i-backup-my-ubuntu-phone>`_ of your device."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:49
-msgid "Open a terminal on your computer and set some device specific variables by running ``export CODENAME=\"turbo\" && export PARTITIONNAME=\"bootimg\"``, but replace the part between the quotes respectively with the codename and name of the boot partition for your device. See the above list."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:50
-msgid "Activate `Developer mode` on your device."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:51
-msgid "Connect the device to your computer and run the following commands from your computer (the same terminal you ran the ``export`` command)::"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:64
-msgid "Run the Anbox installer"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:66
-msgid "Once your device has the Anbox kernel installed, you can use the Anbox Tool to install the Anbox container."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:68
-msgid "Run ``adb shell`` from your computer to get a shell on your Ubuntu Touch device."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:69
-msgid "Run the following command on your Ubuntu Touch device: ``anbox-tool install``."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:70
-msgid "Follow the on-screen instructions."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:72
-msgid "Now you're done! You might have to refresh the app drawer (pull down from the center of the screen and release) for the new Android apps to show up."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:75
-msgid "You now have an ADB server running on your Ubuntu Touch device."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:77
-msgid "This guide asks you to run some ADB commands, sometimes on your computer, other times on the device itself. Carefully check which device you are on!"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:80
-msgid "You can check that the ADB server is running on your Ubuntu Touch device by entering ``adb devices`` in its terminal app. You should see something like::"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:88
-msgid "How to install new APKs"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:90
-msgid "Copy the APK to ``/home/phablet/Downloads``. Then run the following from your computer::"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:96
-msgid "Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:99
-msgid "Keep your apps up to date"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:101
-msgid "To keep your apps up to date you can use of F-Droid or ApkTrack. If you want to install any of the above apps you can find them here:"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:103
-msgid "F-Droid: https://f-droid.org/"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:104
-msgid "ApkTrack: https://f-droid.org/packages/fr.kwiatkowski.ApkTrack/"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:107
-msgid "How to uninstall apps"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:109
-msgid "To uninstall apps from the Ubuntu Touch device, run ``adb uninstall [APP_ID]`` from your computer::"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:116
-msgid "Done! You might have to pull down from the app list for the new Android apps to show up."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:119
-msgid "Access Android storage"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:121
-msgid "The Android storage is located at ``/home/phablet/anbox-data/data/media/0``."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:123
-msgid "Links to android libraries can be made in their respective XDG counterparts::"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:132
-#: ../../userguide/install.rst:25
-msgid "Troubleshooting"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:134
-msgid "When you want to install an APK, but get the error ``Invalid APK file`` that error could also mean \"file not found\""
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:136
-msgid "Check that you typed the filename correctly."
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:137
-msgid "If the APK does not reside in the folder you are in when you run adb, you have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` instead of just ``my-app.apk``"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:141
-msgid "Reporting bugs"
-msgstr ""
-
-#: ../../userguide/dailyuse/anbox.rst:143
-msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs concerning Ubuntu Touch are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with Anbox are reported on `our downstream fork <https://github.com/ubports/anbox/issues>`_. Thank you!"
 msgstr ""
 
 #: ../../userguide/dailyuse/index.rst:2
@@ -975,14 +819,26 @@ msgid "If you want, you can add aliases for command-line tools. Add lines like t
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:199
-msgid "Background"
+msgid "Installing packages manually"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:201
+msgid "If you want to install a package from a file, you will first have to make it available to the root user, for example by copying it to the ``/root`` directory::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:205
+msgid "Then install it using dpkg::"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:210
+msgid "Background"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:212
 msgid "A display server coordinates input and output of an operating system. Ubuntu Touch does not use X, but a new display server called Mir. This means standard X applications are not directly compatible with Ubuntu Touch. A compatibility layer called XMir resolves this. Libertine relies on XMir to display desktop applications."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:207
+#: ../../userguide/dailyuse/libertine.rst:218
 msgid "Another challenge is that Ubuntu Touch system updates are released as OTA images. As a consequence of this the root filesystem is read-only. Libertine provides a container with a read-write filesystem to allow installation of regular Linux desktop applications."
 msgstr ""
 
@@ -1198,6 +1054,150 @@ msgstr ""
 
 #: ../../userguide/dailyuse/location.rst:166
 msgid "Apps are suspended whenever not in the foreground, or when the device is locked. When an app is suspended, it cannot receive location data. For this reason, apps will not be able to track your location whenever they are not in use or the device is locked."
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:2
+msgid "Android apps"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:4
+msgid "`Waydroid <https://waydro.id>`_ is a minimal Android container and compatibility layer to run Android apps on GNU/Linux operating systems such as Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:7
+msgid "You will need to execute commands on your Ubuntu Touch device (locally via the terminal application or remotely via :doc:`ADB </userguide/advanceduse/adb>`/:doc:`SSH </userguide/advanceduse/ssh>` ) to initialize Waydroid, install APKs and uninstall applications."
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:11
+msgid "How to set up"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:13
+msgid "All Halium 9 and newer devices ship with waydroid out of the box starting with Ubuntu Touch focal, if your device fits these requirements you can follow the following steps"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:15
+#: ../../userguide/dailyuse/waydroid.rst:23
+#: ../../userguide/dailyuse/waydroid.rst:47
+msgid "Open a shell on your Ubuntu Touch device (remotely with ADB/SSH or locally with the terminal app)."
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:16
+msgid "Run the following command in your shell: ``waydroid init``."
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:17
+#: ../../userguide/dailyuse/waydroid.rst:25
+msgid "Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up."
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:20
+msgid "How to install new APKs"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:22
+msgid "Copy the APK to ``/home/phablet/Downloads`` on your Ubuntu Touch device."
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:24
+msgid "Run the following in your shell ``waydroid app install /home/phablet/Downloads/my-app.apk``"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:28
+msgid "Using an appstore in Waydroid"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:30
+msgid "You can also install an appstore like F-Droid or Amazon Appstore to install applications or keeping them up to date. If you want to install any of the above apps you can find them here:"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:32
+msgid "F-Droid: https://f-droid.org/"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:33
+msgid "Amazon Appstore: https://www.amazon.com/gp/mas/get-appstore/android"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:35
+msgid "Note that due to nature of Waydroid, neither of these will automatically keep your applications up-to-date. You will have to manually open the appstore and check for updates. Additionally you will have to authorize each app install or update as follows:"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:37
+msgid "search for the app to install or update"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:38
+msgid "press the install or update button"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:39
+msgid "wait for the download to finish, there will be a prompt to install the application/update"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:40
+msgid "press the install button on the above prompt"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:42
+msgid "For more advanced users this could be remedied by building a custom waydroid image that ships with either appstore."
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:45
+msgid "How to uninstall apps"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:48
+msgid "To uninstall apps from the Ubuntu Touch device, run ``adb uninstall [APP_ID]`` in your shell"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:49
+msgid "Run the following in your shell ``waydroid app remove [APP_ID]`` (you can find the APP_ID by using 'waydroid app list')"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:50
+msgid "Done! You might have to pull down from the app list for the old Android apps to go away."
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:53
+msgid "If you are using an appstore in waydroid you can also uninstall apps through said appstore"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:56
+msgid "Access Android storage"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:58
+msgid "The Android storage is located at ``/home/phablet/.local/share/waydroid/data/media/0``."
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:60
+msgid "Links to android libraries can be made in their respective XDG counterparts::"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:69
+#: ../../userguide/install.rst:25
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:71
+msgid "When you are installing an APK, but run into the following error ``Invalid APK file``, this could simply mean that it could not find the apk file. Try the following steps to double check:"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:74
+msgid "Check that you typed the filename correctly."
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:75
+msgid "If the APK does not reside in the folder you are in when you run adb, you have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` instead of just ``my-app.apk``"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:79
+msgid "Reporting bugs"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:81
+msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs concerning Ubuntu Touch are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with Waydroid are reported on `our waydroid issue tracker <https://gitlab.com/ubports/development/core/packaging/waydroid/-/issues>`_. Thank you!"
 msgstr ""
 
 #: ../../userguide/install.rst:2

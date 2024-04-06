@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-2022, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019-2023, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-05 00:57+0100\n"
+"POT-Creation-Date: 2023-10-24 08:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1095,7 +1095,7 @@ msgid "Confirming bug reports"
 msgstr ""
 
 #: ../../contribute/quality-assurance.rst:14
-msgid "Unconfirmed bugreports are labeld **needs confirmation** to enable `global filtering <https://github.com/ubports/ubuntu-touch/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__. Browse through the list, read the bugreports and try to reproduce the issues that are described. If necessary, add :doc:`missing information or logs, or improve the quality of the report by other means <bugreporting>`. Leave a comment stating your device, channel, build number and whether or not you were able to reproduce the issue."
+msgid "Unconfirmed bugreports are labeled **needs confirmation** to enable `global filtering <https://github.com/ubports/ubuntu-touch/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__. Browse through the list, read the bugreports and try to reproduce the issues that are described. If necessary, add :doc:`missing information or logs, or improve the quality of the report by other means <bugreporting>`. Leave a comment stating your device, channel, build number and whether or not you were able to reproduce the issue."
 msgstr ""
 
 #: ../../contribute/quality-assurance.rst:16
@@ -1163,11 +1163,11 @@ msgid "There are three commonly used ways to translate an app:"
 msgstr ""
 
 #: ../../contribute/translations.rst:23
-msgid "Weblate: A web based translation tool. UBports apps using Weblate can be translated `here <https://translate.ubports.com/projects/>`_. There is an automatic transfer of new strings from an apps repo to weblate. Translated strings get back as commits to the repo from weblate."
+msgid "Weblate: A web based translation tool. UBports apps using Weblate can be translated at the `UBports translation projects dashboard <https://hosted.weblate.org/projects/ubports/>`_ and the `Lomiri translation projects dashboard <https://hosted.weblate.org/projects/lomiri/>`_. There is an automatic transfer of new strings from an apps repo to weblate. Translated strings get back as commits to the repo from weblate."
 msgstr ""
 
 #: ../../contribute/translations.rst:24
-msgid "Editor: Translation is done by changing *.po* files with the editor of your choice, and a GitHub/GitLab account. The *.po*/*.ts* files for each project are in their repository on `our GitLab organization <https://gitlab.com/ubports/apps>`_ or on `our GitHub organization <https://github.com/ubports>`_. After translating the translator commits new translations to an apps repo generally by opening a merge request/pull request."
+msgid "Editor: Translation is done by changing *.po* files with the editor of your choice, and a GitHub/GitLab account. The *.po*/*.ts* files for each project are in their repository on `our GitLab organization <https://gitlab.com/ubports>`_ or on `our GitHub organization <https://github.com/ubports>`_. After translating the translator commits new translations to an apps repo generally by opening a merge request/pull request."
 msgstr ""
 
 #: ../../contribute/translations.rst:25
@@ -1175,7 +1175,7 @@ msgid "Team translation: We also have  a `Translation Forum <https://forums.ubpo
 msgstr ""
 
 #: ../../contribute/translations.rst:27
-msgid "Core apps and some community apps like dekko or TELEports are generally using weblate for translation. This is the preferred way to translate and it does not need any programming skills. Please have a look at the `UBports translation projects <https://translate.ubports.com/projects/>`_. When using weblate do not edit *.po* files manually. Commiting edited *.po* files can break the automated process of translation."
+msgid "Core apps and some community apps like dekko or TELEports are generally using weblate for translation. This is the preferred way to translate and it does not need any programming skills. Please have a look at the `UBports translation projects dashboard <https://hosted.weblate.org/projects/ubports/>`_ and the `Lomiri translation projects dashboard <https://hosted.weblate.org/projects/lomiri/>`_. When using weblate do not edit *.po* files manually. Commiting edited *.po* files can break the automated process of translation."
 msgstr ""
 
 #: ../../contribute/translations.rst:29
@@ -1187,11 +1187,11 @@ msgid "How-To"
 msgstr ""
 
 #: ../../contribute/translations.rst:35
-msgid "UBports Weblate"
+msgid "Hosted Weblate"
 msgstr ""
 
 #: ../../contribute/translations.rst:37
-msgid "You can go to `UBports Weblate <https://translate.ubports.com/projects/>`_, click on \"Dashboard\" button, go to a project, and start making anonymous suggestions without being registered. If you want to save your translations, you must be logged in."
+msgid "You can go to `UBports translation projects dashboard <https://hosted.weblate.org/projects/ubports/>`_ or the `Lomiri translation projects dashboard <https://hosted.weblate.org/projects/lomiri/>`_, go to a project, and start making anonymous suggestions without being registered. If you want to save your translations, you must be logged in."
 msgstr ""
 
 #: ../../contribute/translations.rst:39

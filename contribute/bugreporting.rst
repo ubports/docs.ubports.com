@@ -11,7 +11,7 @@ This might seem obvious, but it's easy to miss. Go to (Settings - Updates) and m
 Check if the bug is already reported
 ------------------------------------
 
-Open up the bug tracker for `ubuntu-touch <https://github.com/ubports/ubuntu-touch>`_.
+Open up the bug tracker for `ubuntu-touch <https://gitlab.com/ubports/ubuntu-touch>`_.
 
 .. Note::
     Pinephone users should check for and report bugs `here <https://gitlab.com/ubports/community-ports/pinephone>`_
@@ -32,7 +32,7 @@ Making the bug report
 
 Now it's time for what you've been waiting for, the bug report itself! Bug reports need to be filed in English.
 
-First, pull up the `bug tracker <https://github.com/ubports/ubuntu-touch>`_ and click "New Issue". Log in to GitHub if you haven't yet.
+First, pull up the `bug tracker <https://gitlab.com/ubports/ubuntu-touch>`_ and click "New Issue". Log in to GitHub if you haven't yet.
 
 Next, you'll need to name your bug. Pick a name that says what's happening, but don't be too wordy. Four to eight words should be enough.
 
@@ -56,8 +56,9 @@ Here we'll discuss the general steps to get logs, files that contain important d
 
     Log files may contain information you prefer to keep private. Please be sure to skim through them to ensure this is not the case before posting them. We can coordinate to get them through e-mail or a similarly less public medium.
 
-To get ready, download the `Logviewer app <https://open-store.io/app/logviewer.neothethird>`_ from the OpenStore. This app will help us find, view, and send the logs we need.
+To get ready, download the `Logviewer app <https://open-store.io/app/logviewer.ruditimmer>`_ from the OpenStore. This app will help us find, view, and send the logs we need.
 
-Now, open the Logviewer app. You'll see a list of all of the log files available in your user log folder, ``/home/phablet/.cache/upstart/``. This folder contains many, but not all, of the logs for software running on your device. You can tap on any log to view it, then tap the "send" icon in the top right corner to share it using an online service.
+Now, open the Logviewer app.
+You'll see the list of applications running on your device. You can open any of them to view the logs of this application. And you can use the "send" icon in the top right corner to share a log using an online service.
 
 If you don't see the log that you've been asked to send in Logviewer, it may be in a different folder or the application may not have created any logs yet. Tell this to the person who asked you for the logs. They should be able to get you the information you need to get back on track.

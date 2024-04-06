@@ -11,5 +11,6 @@ These guides will give you general instructions on building and testing your own
    :maxdepth: 1
    :name: toc-system-software-guides
 
+   debian-pkg
    testing-locally
    uploading-changes

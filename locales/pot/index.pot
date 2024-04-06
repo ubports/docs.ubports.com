@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-2022, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019-2023, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-05 00:57+0100\n"
+"POT-Creation-Date: 2023-10-24 08:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,42 +17,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../index.rst:27
+#: ../../index.rst:27
 msgid "About"
 msgstr ""
 
+#: ../../index.rst:36
 #: ../../index.rst:36
 msgid "User Guide"
 msgstr ""
 
 #: ../../index.rst:46
+#: ../../index.rst:46
 msgid "Contribute"
 msgstr ""
 
+#: ../../index.rst:54
 #: ../../index.rst:54
 msgid "Development"
 msgstr ""
 
 #: ../../index.rst:63
+#: ../../index.rst:63
 msgid "Porting"
 msgstr ""
 
-#: ../../index.rst:73
+#: ../../index.rst:74
 msgid "Click Packages"
 msgstr ""
 
-#: ../../index.rst:73
+#: ../../index.rst:74
 msgid "Ubuntu UI-Toolkit"
 msgstr ""
 
-#: ../../index.rst:73
+#: ../../index.rst:74
 msgid "Clickable"
 msgstr ""
 
-#: ../../index.rst:73
+#: ../../index.rst:74
 msgid "Halium"
 msgstr ""
 
-#: ../../index.rst:73
+#: ../../index.rst:74
+#: ../../index.rst:74
 msgid "Platform"
 msgstr ""
 

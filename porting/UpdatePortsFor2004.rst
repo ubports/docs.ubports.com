@@ -3,12 +3,12 @@
 Update ports for Ubuntu Touch 20.04
 ===================================
 
-Ubuntu Touch 20.04 introduces a lot of changes underneath, which requires changes from the porters. This document is intended to serves as an overview on how to make your port runs on Ubuntu Touch 20.04. However, every port is different, and may requires more than what is outlined in this document. We'll be available in the UBports porting Telegram group to answer any question that might occur during process.
+Ubuntu Touch 20.04 introduces a lot of changes underneath, which requires changes from the porters. This document is intended to serve as an overview on how to make your port run on Ubuntu Touch 20.04. However, every port is different, and may require more than what is outlined in this document. We'll be available in the UBports porting Telegram group to answer any question that might occur during process.
 
 For GitLab CI-based ports: switch to shared building script & GitLab CI configuration
 -------------------------------------------------------------------------------------
 
-Because of changes in how Ubuntu Touch 20.04's rootfs is made, we need to changes the way device tarballs are built. Instead of cherry-picking script changes from other port's repository, we recommend transitioning to the shared building script. By using the shared script, your port will receive the latest changes in device tarball building as rootfs continue to evolves (e.g. for 22.04 or newer). To transition to the shared script, remove the whole ``build/`` directory, and replace the content of ``build.sh`` with:
+Because of changes in how Ubuntu Touch 20.04's rootfs is made, we need to changes the way device tarballs are built. Instead of cherry-picking script changes from other port's repository, we recommend transitioning to the shared building script. By using the shared script, your port will receive the latest changes in device tarball building as rootfs continues to evolve (e.g. for 22.04 or newer). To transition to the shared script, remove the whole ``build/`` directory, and replace the content of ``build.sh`` with:
 
 .. code-block:: bash
 
@@ -40,7 +40,7 @@ If you have custom changes in the build script or in the GitLab CI configuration
 For GitLab CI-based ports: inspect your overlay in Android partitions
 ---------------------------------------------------------------------
 
-Many ports overlay the files in Android partitions to makes the port work. This is often achived by overlaying the ``mount-android.conf`` Upstart job to either contain the code itself, or to call another script. Since Ubuntu Touch 20.04 no longers use Upstart (sees below), the code will no longer run. If your port ships your overlay files under ``/opt/halium-overlay`` or ``/usr/share/halium-overlay``, the new overlay system will take care of it automatically, except when the new file is added in which case you may need ``.halium-overlay-dir`` (see :ref:`Overlay`).
+Many ports overlay the files in Android partitions to makes the port work. This is often achived by overlaying the ``mount-android.conf`` Upstart job to either contain the code itself, or to call another script. Since Ubuntu Touch 20.04 no longers use Upstart (see below), the code will no longer run. If your port ships your overlay files under ``/opt/halium-overlay`` or ``/usr/share/halium-overlay``, the new overlay system will take care of it automatically, except when the new file is added in which case you may need ``.halium-overlay-dir`` (see :ref:`Overlay`).
 
 Alternatively, you may want to consider moving your port completely to use the `overlaystore` system. However the migration is not straight forward and it will make your port incompatible with 16.04 (unless you have another branch). Contact @peat-psuwit in the UBports porting group for more info.
 

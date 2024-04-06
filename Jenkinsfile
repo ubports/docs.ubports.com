@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image "python:3.7"
+            image "python:3.12"
         }
     }
     options {
@@ -13,7 +13,10 @@ pipeline {
     stages {
         stage("Install dependencies") {
             steps {
-                sh 'pip install --no-cache-dir --user --upgrade -r requirements.txt'
+                sh 'python --version'
+                sh 'pip --version'
+                // TODO: the `--quiet` is to workaround some Docker/Jenkins bugs/misconfigurations, this should be removed at some point
+                sh 'pip install --quiet --no-cache-dir --user --upgrade -r requirements.txt'
             }
         }
         stage("Build docs"){

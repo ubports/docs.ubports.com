@@ -72,7 +72,7 @@ From the apps list in the *Manage Libertine Containers* menu you can tap the + s
 
 Enter the package name if you know it.
 Otherwise you can search the archives for a package.
-You can make this process easier by making the *Lubuntu Software Center* your first package install.
+You can make this process easier by making a software center like gnome-software your first package install.
 Being a desktop app, you will need to use the *Libertine Tweak Tool* in the *Open Store* to make the text large enough to read on a mobile device.
 
 Packages may also be installed via the command-line::
@@ -96,8 +96,8 @@ Run desktop application
 
 Run it from the app menu like any other app. To start a graphical app from the command-line, for example ``gedit``, run this in a terminal::
 
-  # ubuntu-app-launch <CONTAINER_ID>_<desktop_file_name>_0.0
-  ubuntu-app-launch xenial_gedit_0.0
+  # lomiri-app-launch <CONTAINER_ID>_<desktop_file_name>_0.0
+  lomiri-app-launch focal_gedit_0.0
 
 Files
 -----
@@ -164,6 +164,15 @@ To get a shell as the user ``phablet``, run::
     When you launch Bash in this way you will not get any specific feedback to confirm being *inside* the container.
     You can check ``ls /`` to confirm for yourself you are actually inside the container.
     The listing of ``ls /`` will be different inside and outside the container.
+
+.. note::
+    When trying to run commands that require superuser privileges, you may encounter the following error:
+    
+      sudo: /usr/bin/sudo must be owned by uid 0 and have the setuid bit set
+    
+    Try replacing ''sudo'' with ''fakeroot'' in your command, for example:
+
+      fakeroot apt install firefox
 
 Accessing SD card
 ^^^^^^^^^^^^^^^^^
