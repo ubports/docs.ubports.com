@@ -33,8 +33,7 @@ If you are using the **Standalone kernel** method, then please pick the step bel
 .. toctree::
    :maxdepth: 1
 
-   H9_gitlab_build
-   H10_gitlab_build
+   standalone_kernel_build
 
 Install and boot
 ----------------
