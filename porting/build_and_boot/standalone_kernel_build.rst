@@ -66,8 +66,8 @@ Otherwise if you got your kernel source from somewhere like LineageOS, their dev
 After finding your defconfig, proceed with the guide to patch it.
 
 
-Applying patches to your defconfig
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Applying minimal patches to your defconfig
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In order for Ubuntu Touch to successfully boot, we need to enable some configs required by the OS.
 Start by browsing into your kernel directory, and into the ``arch/<your device's architecture>/configs``, where you will have to add a new file called ``halium.config``.
@@ -75,17 +75,19 @@ In this file, add the following content:
 
 | CONFIG_DEVTMPFS=y
 | CONFIG_FHANDLE=y
-| CONFIG_NAMESPACES=y
 | CONFIG_SYSVIPC=y
 | CONFIG_IPC_NS=y
 | CONFIG_NET_NS=y
 | CONFIG_PID_NS=y
 | CONFIG_USER_NS=y
 | CONFIG_UTS_NS=y
+| CONFIG_VT=y
 
 After this, save and close this file. Commit it into your kernel repo if you wish, because this config name will be added in deviceinfo.
 
 At this point you've almost completed the initial setup for the kernel, move on to configuring ``deviceinfo`` and building.
+
+After you have booted the OS successfully, you can move on to patching the defconfig fully in later stages.
 
 Filling in your deviceinfo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
