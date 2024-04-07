@@ -10,6 +10,7 @@
 "porting/halium_9/Halium_9_common_errors.rst" "porting/build_and_boot/index.rst"
 "porting/halium_9/index.rst" "porting/build_and_boot/index.rst"
 "porting/halium_7-1/Reference_material.rst" "porting/configure_test_fix/index.rst"
+"porting/build_and_boot/H9_gitlab_build.rst" "porting/build_and_boot/standalone_kernel_build.rst"
 "porting/UBports_installer.rst" "porting/finalize/UBports_installer.rst"
 "porting/UBports_recovery.rst" "porting/finalize/UBports_recovery.rst"
 "porting/Preparations.rst" "porting/introduction/Preparations.rst"
