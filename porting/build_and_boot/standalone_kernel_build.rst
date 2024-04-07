@@ -38,13 +38,33 @@ Motorola, Realme, OnePlus, Xiaomi usually upload kernel source to their official
 
 After you have acquired the kernel source, you need to upload it somewhere else for making modifications and commits for Ubuntu Touch. GitLab is preferred since when you'll get the port pulled into the UBports org, it can be easily copied from there.
 
-Finding your correct defconfig
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Finding your correct kernel config
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-To find your correct defconfig, there are several ways to find it. The easiest one is if your device is supported by a ROM like LineageOS. The device trees used by them often include the defconfig name, for example https://github.com/LineageOS/android_device_xiaomi_surya/blob/lineage-20/BoardConfig.mk#L119 is the name of the defconfig for the device "surya".
-The other way is if you got your kernel source as a tarball, most OEMs will include a build.sh script inside the kernel source which has the defconfig name inside it as well.
-The most overkill way to find your defconfig name is to manually search through your kernel source. For this, you need to look inside the arch/arm/configs or arch/arm64/configs folder, depending on what architecture your CPU uses. Most devices released after 2015 use an arm64 CPU. This info can also be googled. After you have found your CPU architecture, you can use it to find the defconfig in your folder.
-Often, device defconfigs are named like <device codename here>_defconfig. The codename can be obtained easily through Google like "<your device name here> codename" After you find your defconfig, you can use this for deviceinfo and for patching your kernel.
+There are two ways to find your correct kernel config, naming some below:
+1. Getting your config on device from /proc/config.gz 
+2. Getting your defconfig in kernel source
+
+Getting your config from device
+"""""""""""""""""""""""""""""""
+
+It is possible to pull your current kernel config from device, if the configuration is present as ``/proc/config.gz`` on device. To pull this config, copy the ``/proc/config.gz`` file from your device to your computer.
+Then, run ``zcat`` on the file to get its output. Save this as ``.config`` in your kernel source.
+After this, run ``ARCH=<your device's architecture> make savedefconfig``, which will convert your fully fledged config into a defconfig.
+Copy ``defconfig`` to ``arch/<your device's architecture>/configs/<your device's codename_defconfig``.
+
+Proceed with the guide to patch your config.
+
+Getting your defconfig in kernel source
+"""""""""""""""""""""""""""""""""""""""
+
+In order to find your defconfig from kernel source, you will have to search for it in the ``arch/<your device's architecture/configs`` directory.
+This defconfig can be named in numerous ways, like ``<your device's codename>_defconfig``, or something weird like ``k61v64_debug_defconfig``.
+If you got your kernel source from an OEM, sometimes it includes a ``build.sh`` script which references the defconfig required.
+Otherwise if you got your kernel source from somewhere like LineageOS, their device tree's reference the defconfig too.
+
+After finding your defconfig, proceed with the guide to patch it.
+
 
 Applying patches to your defconfig
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -53,20 +73,15 @@ In order for Ubuntu Touch to successfully boot, we need to enable some configs r
 Start by browsing into your kernel directory, and into the ``arch/<your device's architecture>/configs``, where you will have to add a new file called ``halium.config``.
 In this file, add the following content:
 
-| CONFIG_IKCONFIG=y
-| CONFIG_IKCONFIG_PROC=y
 | CONFIG_DEVTMPFS=y
 | CONFIG_FHANDLE=y
 | CONFIG_NAMESPACES=y
 | CONFIG_SYSVIPC=y
-| # CONFIG_DEVTMPFS_MOUNT is not set
-| CONFIG_EXPORTFS=y
 | CONFIG_IPC_NS=y
 | CONFIG_NET_NS=y
 | CONFIG_PID_NS=y
 | CONFIG_USER_NS=y
 | CONFIG_UTS_NS=y
-| CONFIG_RFKILL=y
 
 After this, save and close this file. Commit it into your kernel repo if you wish, because this config name will be added in deviceinfo.
 
@@ -115,7 +130,7 @@ Filling in your deviceinfo
 * The kernel cmdline is one of the key things that is required to make the kernel boot. It has special parameters that allow the kernel to determine which features/things need to be enabled, and which need to be disabled. The Ubuntu Touch rootfs also relies on some key cmdlines which is required to boot, most specifically "console=tty0". To adapt this to your device, try unpacking your boot image (section 8.3) and copying the cmdline from there, or take the help of a LineageOS device tree if it is available. "console=tty0" is a must for cmdline and should not be removed no matter what. Rest of the things can be removed and you can adjust these to your device.
   ``console=tty0`` is a requirement for the rootfs to properly boot. ``systempart`` is added if you want to boot your rootfs from your system partition. It is supposed to point to your system partition.
 
-``deviceinfo_kernel_cmdline="console=tty0 bootopt=64S3,32N2,64N2 systempart=/dev/mapper/system:ro"``
+``deviceinfo_kernel_cmdline="console=tty0 bootopt=64S3,32N2,64N2 systempart=/dev/mapper/system"``
 
 
 * Add this to your deviceinfo if you wish to compile your kernel with clang. Most devices released with and after Android 10 build their kernels with clang. If you don't want to build with clang, omit this entry entirely.
