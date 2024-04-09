@@ -284,7 +284,7 @@ For any port to boot, some values must be pulled from the stock boot.img. First 
 
     * Bring your boot.img into the temp directory.
 
-    * Now run the script. The usual syntax is "python3 unpack_bootimg.py --boot_img <boot.img or vendor_boot.img> --out out" This will unpack the boot image, store the output files in the out directory, and it will also print the offsets on screen.
+    * Now run the script. The usual syntax is "python3 unpack_bootimg.py --boot_img <boot.img or vendor_boot.img> --out out --format mkbootimg" This will unpack the boot image, store the output files in the out directory, and it will also print the offsets on screen.
 
 
     A sample output for boot.img will look like this: 
@@ -450,7 +450,7 @@ Building, installing and running
 --------------------------------
 
 After you've completed your deviceinfo and filled in all needed stuff, its time you get to the main part, the build. For this just run:
-``./build.sh -b out``
+``./build.sh -b workdir``
 
 That should download all the needed toolchains and then the kernel, and finally build everything. This process may take about 5 to 50 minutes to build the kernel.
 
