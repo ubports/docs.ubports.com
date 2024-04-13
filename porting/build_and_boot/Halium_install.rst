@@ -49,15 +49,6 @@ Start by downloading the appropriate rootfs for your device. You need a rootfs c
     * Halium 9.0, armhf (32 bit): `ubuntu-touch-android9-armhf.tar.gz <https://ci.ubports.com/job/xenial-hybris-android9-rootfs-armhf/>`_
     * Halium 9.0, arm64 (64 bit): `ubuntu-touch-android9-arm64.tar.gz <https://ci.ubports.com/job/xenial-hybris-android9-rootfs-arm64/>`_
 
-Halium-9.0: Download the GSI
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-If you have built your own system.img, skip to the next step.
-
-Download `the Halium 9 LXC container image (GSI) <https://ci.ubports.com/job/UBportsCommunityPortsJenkinsCI/job/ubports%252Fcommunity-ports%252Fjenkins-ci%252Fgeneric_arm64/job/main/>`_.
-
-Extract the downloaded file and locate the file ``android-rootfs.img`` in the directory ``system/var/lib/lxc/android``. This is the GSI file you will be transferring to the device.
-
 Download the halium-install script
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
