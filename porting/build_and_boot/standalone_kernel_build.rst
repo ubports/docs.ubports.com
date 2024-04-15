@@ -17,7 +17,8 @@ Assuming you have already installed the tools specified in the section on :ref:`
     ca-certificates cpio curl flex git kmod libssl-dev libtinfo5 python2 \
     sudo unzip wget xz-utils img2simg jq
 
-If you use a RPM based distro such as Mageia, you run:
+If you use a RPM based distro such as Mageia, you run::
+
     sudo urpmi gcc make glibc-devel bc bison \
     rootcerts cpio curl flex git kmod libopenssl-devel libncurses5 python3 \
     unzip wget xz img2simg jq
