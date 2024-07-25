@@ -152,6 +152,14 @@ Filling in your deviceinfo
 ``deviceinfo_kernel_use_lld="true"``
 
 
+* This config allows you to compile your kernel with LLVM and LTO, granted that it's supported by it.
+  This is a neat way of specifying ``clang`` and ``ld.lld`` together.
+  Usually needed by GKI devices.
+  (Once enabled, you do not needed to specify ``deviceinfo_kernel_use_lld``)
+
+``deviceinfo_kernel_llvm_compile="true"``
+
+
 * Use this to enable 'dtc_ext' for compiling your dtb/dtbo's. Use only if you know what you're doing. The default compiler works most of the times.
 
 ``deviceinfo_kernel_use_dtc_ext="true"``
@@ -171,11 +179,6 @@ Filling in your deviceinfo
 * Add this option to specify your Halium version. Up to Halium 13 is supported at this moment.
 
 ``deviceinfo_halium_version="11"``
-
-
-* Used to define the architecture of your kernel. Most devices released after 2014 are aarch64, but in case yours is not, replace it with arm instead.
-
-``deviceinfo_arch="aarch64"``
 
 
 * This option defines the boot image header version. It is important you get this right, else your device may not boot. Devices launching with Android versions below 8 (Oreo) use header 0, Android 9 (Pie) uses version 1, Android 10 uses version 2, and GKI devices use version 3/4 (depending on Android version which they were released, Android 12 with GKI uses version 4).
@@ -290,10 +293,10 @@ For any port to boot, some values must be pulled from the stock boot.img. First 
 
     * Bring your boot.img into the temp directory.
 
-    * Now run the script. The usual syntax is "python3 unpack_bootimg.py --boot_img <boot.img or vendor_boot.img> --out out --format mkbootimg" This will unpack the boot image, store the output files in the out directory, and it will also print the offsets on screen.
+    * Now run the script. The usual syntax is "python3 unpack_bootimg.py --boot_img <boot.img or vendor_boot.img> --out out" This will unpack the boot image, store the output files in the out directory, and it will also print the offsets on screen.
 
 
-    A sample output for boot.img will look like this: 
+A sample output for boot.img will look like this: 
 
     boot magic: ANDROID!
 
@@ -336,7 +339,7 @@ For any port to boot, some values must be pulled from the stock boot.img. First 
     dtb address: 0x0000000047880000
 
 
-    whereas for vendor_boot.img, will look like this:
+whereas for vendor_boot.img, will look like this:
 
     boot magic: VNDRBOOT
 
@@ -377,11 +380,7 @@ For any port to boot, some values must be pulled from the stock boot.img. First 
 
       * "kernel tags load address" is a special one. It's used for both kernel tags and dtb, but in some cases these values can be different. Take the value as well. For example, 0x47880000.
 
-      * "dtb address" is sometimes the same as "kernel tags load address". But if it's different, you should use this for dtb and tags for tags. This value does require some magic modifications. To get the proper value for this, run "python3 -c "print(hex(<your "dtb address" value here>))" (obviously removing the < and >). For example, 
-
-    python3 -c "print(hex(0x0000000047880000))"
-
-    will print 0x47880000. This is your required value.
+      * "dtb address" is sometimes the same as "kernel tags load address". But if it's different, you should use this for dtb and tags for tags. 
 
       * "page size" is required for the ramdisk to know what your flash chip uses for page sizes. Value after colon is what you need. For example, 2048.
 
@@ -429,7 +428,7 @@ Now according to said guide, fill in your offsets:
 ``deviceinfo_flash_offset_tags="0x47880000"``
 
 
-* DTB offset comes from "dtb load address" after fixing it using the guide.
+* DTB offset comes from "dtb load address".
 
 ``deviceinfo_flash_offset_dtb="0x47880000"``
 
