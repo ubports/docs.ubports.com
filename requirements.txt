@@ -1,4 +1,4 @@
-sphinx==7.2.6
-furo==2024.1.29
+sphinx==8.0.2
+furo==2024.8.6
 sphinx-intl
 sphinxext-rediraffe
