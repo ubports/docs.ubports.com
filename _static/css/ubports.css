@@ -83,7 +83,7 @@ h4, h5, h6 {
 }
 
 /* Bold */
-.content h1, .content h2, .content h3, .edit-container > p, .bold {
+.content h1, .content h2, .content h3, .custom-edit-container > p, .bold {
     font-weight: 800;
 }
 
@@ -134,7 +134,7 @@ a.current, .content h1, .toc-tree li.scroll-current > .reference {
 }
 
 /* Edit this page styles */
-.edit-this-page {
+.custom-edit-this-page {
     width: 200%;
     background-color: var(--color-sidebar-background);
     border-radius: 20px 0 0 20px;
@@ -142,26 +142,27 @@ a.current, .content h1, .toc-tree li.scroll-current > .reference {
     margin-bottom: 150px;
 }
 
-.edit-container {
+.custom-edit-container {
     width: calc(15em - 60px);
     padding: 30px;
 }
 
-.edit-container > p {
+.custom-edit-container > p {
     color: var(--color-toc-item-text);
     margin-top: 0;
     margin-bottom: 25px;
 }
 
-.edit-container .muted-link {
+.custom-edit-container .muted-link {
     color: var(--color-toc-item-text);
     background-color: var(--color-background-primary);
+    text-decoration: none;
     padding: 5px 20px;
     border-radius: 20px;
     transition: all .5s;
 }
 
-.edit-container .muted-link:hover {
+.custom-edit-container .muted-link:hover {
     color: var(--color-background-primary);
     background-color: var(--color-content-foreground);
     text-decoration: none;
@@ -259,7 +260,7 @@ a.current, .content h1, .toc-tree li.scroll-current > .reference {
 
 /* Disable border radius on smaller displays */
 @media (max-width:82em) {
-    .edit-this-page {
+    .custom-edit-this-page {
         border-radius: 0;
     }
 }
