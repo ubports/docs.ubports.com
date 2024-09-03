@@ -13,3 +13,4 @@ This section of the documentation details standardized processes for different t
     issue-tracking
     release-schedule
     branch-naming
+    security-vulnerabilities
