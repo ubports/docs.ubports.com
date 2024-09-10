@@ -108,6 +108,10 @@ html_theme_options = {
         "color-link--hover": "var(--color-foreground-primary)",
         "color-link-underline": "var(--color-foreground-primary)",
         "color-link-underline--hover": "#E95420",
+        "color-link--visited": "var(--color-link)",
+        "color-link--visited--hover": "var(--color-link--hover)",
+        "color-link-underline--visited": "var(--color-link-underline)",
+        "color-link-underline--visited--hover": "var(--color-link-underline--hover)",
         "color-admonition-title--note": "var(--color-toc-item-text)",
         "color-admonition-title-background--note": "var(--color-sidebar-background)",
         "sidebar-caption-font-size": "1.6rem"
