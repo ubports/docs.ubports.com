@@ -37,7 +37,7 @@ Let's assume it's stored as ``/home/phablet/id_rsa.pub``. Use the terminal app o
 
 Now start the SSH server::
 
-    sudo service ssh start
+    sudo systemctl start ssh.socket
 
 
 Connect
@@ -69,6 +69,23 @@ On the phone: ::
 In this case you use the second IP address    
 
 Of course you can now also use ``scp`` or ``sshfs`` to transfer files.
+
+Configuration
+-------------
+
+you can enable ssh on boot by running the following command::
+    
+    sudo systemctl enable ssh.socket
+
+you can edit the port ssh is listening on with the following command::
+    
+    sudo systemctl edit ssh.socket
+
+then add the following text::
+
+    [Socket]
+    ListenStream=
+    ListenStream=[customPort]
 
 References
 ----------
