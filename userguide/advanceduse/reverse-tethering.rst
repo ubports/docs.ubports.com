@@ -44,9 +44,8 @@ Steps
            inet 10.42.0.1/8 brd 10.255.255.255 scope global rndis0
              valid_lft forever preferred_lft forever
 
-     - Your interface is: ``rndis0``
+     - Your interface is: ``usb0``
 
-   - Change your IP address: ``sudo ifconfig rndis0 10.42.0.2``
    - Add your computer as default gateway: ``sudo route add default gw 10.42.0.149``
    - Add a nameserver of your choice: ``echo "nameserver 1.1.1.1" | sudo tee -a /etc/resolv.conf``
    - Open Morph Browser and test your internet connection!
