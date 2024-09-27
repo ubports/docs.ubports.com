@@ -15,8 +15,7 @@ Steps
 
 #. On the *device*:
 
-   - Run: ``android-gadget-service enable rndis``
-   - Reboot the phone.
+   - Run: ``gdbus call --system --dest com.meego.usb_moded --object-path /com/meego/usb_moded --method com.meego.usb_moded.set_mode rndis_adb``
 
 #. On your *computer*: 
 
