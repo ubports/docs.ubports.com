@@ -28,10 +28,10 @@ Steps
 
          5: usb0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
             link/ether 12:34:56:ab:cd:ef brd ff:ff:ff:ff:ff:ff
-            inet 10.42.0.1/24 brd 10.42.0.255 scope global noprefixroute usb0
+            inet 10.42.0.149/24 brd 10.42.0.255 scope global noprefixroute usb0
               valid_lft forever preferred_lft forever
 
-       - Your IP is: ``10.42.0.1``
+       - Your IP is: ``10.42.0.149``
 
 #. On the *device*:
 
@@ -39,15 +39,15 @@ Steps
 
      ::
 
-       31: rndis0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+       31: usb0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
            link/ether 12:34:56:ab:cd:ef brd ff:ff:ff:ff:ff:ff
-           inet 10.0.0.1/8 brd 10.255.255.255 scope global rndis0
+           inet 10.42.0.1/8 brd 10.255.255.255 scope global rndis0
              valid_lft forever preferred_lft forever
 
      - Your interface is: ``rndis0``
 
    - Change your IP address: ``sudo ifconfig rndis0 10.42.0.2``
-   - Add your computer as default gateway: ``sudo route add default gw 10.42.0.1``
+   - Add your computer as default gateway: ``sudo route add default gw 10.42.0.149``
    - Add a nameserver of your choice: ``echo "nameserver 1.1.1.1" | sudo tee -a /etc/resolv.conf``
    - Open Morph Browser and test your internet connection!
 
