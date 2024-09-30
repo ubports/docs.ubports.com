@@ -54,7 +54,7 @@ Steps
 #. If it's not working yet, on your *computer*:
 
    - Turn on IP forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``
-   - Apply NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.42.0.0/8 -o eth0 -j MASQUERADE``
+   - Apply NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.42.0.0/24 -o eth0 -j MASQUERADE``
 
      - Make sure you replace ``eth0`` by the interface that connects your computer to the internet.
 
