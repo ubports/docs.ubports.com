@@ -9,7 +9,6 @@ Steps
 
 #. Prepare your device (Ubuntu Touch) and your computer:
 
-   - Turn `Developer Mode` on in Ubuntu Touch.
    - Connect your computer to the internet.
    - Attach your device to your computer via USB.
 
