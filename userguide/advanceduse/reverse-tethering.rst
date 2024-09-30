@@ -54,9 +54,9 @@ Steps
 #. If it's not working yet, on your *computer*:
 
    - Turn on IP forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``
-   - Apply NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.42.0.0/24 -o eth0 -j MASQUERADE``
-
-     - Make sure you replace ``eth0`` by the interface that connects your computer to the internet.
+   - Apply Forwarding iptables Rule: ``sudo iptables -P FORWARD ACCEPT``
+   - Apply NAT rule: ``sudo iptables -t nat -A POSTROUTING -s 10.42.0.0/24 -j MASQUERADE``
+   - reconfigure the network interface: ``sudo ifconfig 10.42.0.149 netmask 255.255.255.0``
 
    - NOTE: These steps are usually performed automatically by the NetworkManager on Ubuntu 22.04.
 
