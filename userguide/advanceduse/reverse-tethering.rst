@@ -56,7 +56,6 @@ Steps
    - Turn on IP forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``
    - Apply Forwarding iptables Rule: ``sudo iptables -P FORWARD ACCEPT``
    - Apply NAT rule: ``sudo iptables -t nat -A POSTROUTING -s 10.42.0.0/24 -j MASQUERADE``
-   - reconfigure the network interface: ``sudo ifconfig 10.42.0.149 netmask 255.255.255.0``
 
    - NOTE: These steps are usually performed automatically by the NetworkManager on Ubuntu 22.04.
 
