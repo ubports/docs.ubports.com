@@ -35,6 +35,7 @@ Steps
 
 #. On the *device*:
 
+   - Turn off Wifi and Data to avoid the gateways from clashing
    - Get your RNDIS interface: Run ``ip a``
 
      ::
