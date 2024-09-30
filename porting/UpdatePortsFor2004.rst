@@ -3,7 +3,7 @@
 Update ports for Ubuntu Touch 20.04
 ===================================
 
-Ubuntu Touch 20.04 introduces a lot of changes underneath, which requires changes from the porters. This document is intended to serve as an overview on how to make your port run on Ubuntu Touch 20.04. However, every port is different, and may require more than what is outlined in this document. We'll be available in the UBports porting Telegram group to answer any question that might occur during process.
+Ubuntu Touch 20.04 introduces a lot of changes underneath, which requires changes from the porters. This document is intended to serve as an overview on how to make your port run on Ubuntu Touch 20.04. However, every port is different, and may require more than what is outlined in this document. We'll be available in `the UBports porting Telegram group <https://docs.ubports.com/en/latest/porting/introduction/Intro.html#getting-community-help>`_ to answer any question that might occur during process.
 
 For GitLab CI-based ports: switch to shared building script & GitLab CI configuration
 -------------------------------------------------------------------------------------
