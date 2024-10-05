@@ -63,6 +63,8 @@ References
 
 - `Ask Ubuntu`_
 - RidgeRun_
+- `Fedora Magazine`_
 
 .. _Ask Ubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-tethering-and-click-apps-updates
 .. _RidgeRun: https://developer.ridgerun.com/wiki/index.php/How_to_use_USB_device_networking
+.. _Fedora Magazine: https://fedoramagazine.org/internet-connection-sharing-networkmanager/
