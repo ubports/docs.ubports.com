@@ -6,6 +6,14 @@ Android apps
 .. note::
     You will need to execute commands on your Ubuntu Touch device (locally via the terminal application or remotely via :doc:`ADB </userguide/advanceduse/adb>`/:doc:`SSH </userguide/advanceduse/ssh>` ) to initialize Waydroid, install APKs and uninstall applications.
 
+Limitations
+-----------
+
+Before installing Waydroid on your device, please note that there are limitations to its support and integration:
+
+- After installing Waydroid on Ubuntu Touch, you may notice higher battery consumption. As a workaround, Waydroid can be stopped manually when not in use.
+- Not all Android applications will work with Waydroid. Apps that require Google's Play Integrity service or SafetyNet, such as banking apps, are unlikely to run.
+- Problems may occur if both Ubuntu Touch and Waydroid request the use of the same peripherals, and one will not be able to claim them.
 
 How to set up
 -------------

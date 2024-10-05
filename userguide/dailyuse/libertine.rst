@@ -5,6 +5,14 @@ Libertine allows you to use standard desktop applications in Ubuntu Touch.
 
 To install applications you can use the *Settings* interface on your Ubuntu Touch device, or the command-line as described further below.
 
+Limitations
+-----------
+
+Before using Libertine on your device, be aware that there are limitations to the usability of packages.
+
+- Software that is not designed with a mobile use-case in mind will be difficult to use due to lack of touchscreen support, scaling and other UI issues.
+- Applications will not run in the background in Libertine, hence it is not a solution to run server software on your phone.
+
 Manage containers
 -----------------
 
