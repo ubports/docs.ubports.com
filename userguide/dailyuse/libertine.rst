@@ -10,7 +10,7 @@ Limitations
 
 Before using Libertine on your device, be aware that there are limitations to the usability of packages.
 
-- Software that is not designed with a mobile use-case in mind will be difficult to use due to lack of touchscreen support, scaling and other UI issues.
+- Software that is not designed with a mobile use-case in mind may be difficult to use due to lack of touchscreen support, scaling and other UI issues.
 - Applications will not run in the background in Libertine, hence it is not a solution to run server software on your phone.
 
 Manage containers

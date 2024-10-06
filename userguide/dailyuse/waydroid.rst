@@ -11,9 +11,9 @@ Limitations
 
 Before installing Waydroid on your device, please note that there are limitations to its support and integration:
 
-- After installing Waydroid on Ubuntu Touch, you may notice higher battery consumption. As a workaround, Waydroid can be stopped manually when not in use.
+- After installing Waydroid on Ubuntu Touch, you may notice higher battery consumption. To mitigate this, Waydroid can be stopped manually when not in use.
 - Not all Android applications will work with Waydroid. Apps that require Google's Play Integrity service or SafetyNet, such as banking apps, are unlikely to run.
-- Problems may occur if both Ubuntu Touch and Waydroid request the use of the same peripherals, and one will not be able to claim them.
+- Problems may occur if both Ubuntu Touch and Waydroid request the use of the same peripherals, and one will not be able to claim them (e.g. `camera access not permitted <https://gitlab.com/ubports/porting/reference-device-ports/android11/fairphone-4/fairphone-fp4/-/issues/67>`_).
 
 How to set up
 -------------
