@@ -12,14 +12,14 @@ Steps to Set Up Reverse Tethering
    - Connect your *computer* to the internet.
    - Attach your *device* to your *computer* via USB.
    - Turn off Wifi and Data on your *device*
+   - Set your device :ref:`usb in tethering mode <dailyuse/tethering>`
 
 #. Run the following commands on your *device*:
 
-   - Set your device usb in tethering mode: ``gdbus call --system --dest com.meego.usb_moded --object-path /com/meego/usb_moded --method com.meego.usb_moded.set_mode rndis_adb``
    - Bring your tethering connection down: ``sudo nmcli connection down tethering``
    - Modify your tethering connection: ``sudo nmcli connection modify tethering ipv4.method auto``
 
-#. Run the following commands on your *computer*: 
+#. Run the following commands on your *computer*:
 
    - Get your interface name: ``ip route show to default via 10.42.0.1``
      ::
