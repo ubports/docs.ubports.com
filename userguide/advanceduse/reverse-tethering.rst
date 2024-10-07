@@ -9,17 +9,17 @@ Steps to Set Up Reverse Tethering
 
 #. Prepare your device (Ubuntu Touch) and your computer:
 
-   - Connect your computer to the internet.
-   - Attach your device to your computer via USB.
+   - Connect your *computer* to the internet.
+   - Attach your *device* to your *computer* via USB.
+   - Turn off Wifi and Data on your *device*
 
-#. On the *device*:
+#. Run the following commands on your *device*:
 
-   - Turn off Wifi and Data to avoid the gateways from clashing
    - Set your device usb in tethering mode: ``gdbus call --system --dest com.meego.usb_moded --object-path /com/meego/usb_moded --method com.meego.usb_moded.set_mode rndis_adb``
    - Bring your tethering connection down: ``sudo nmcli connection down tethering``
    - Modify your tethering connection: ``sudo nmcli connection modify tethering ipv4.method auto``
 
-#. On your *computer*: 
+#. Run the following commands on your *computer*: 
 
    - Get your interface name: ``ip route show to default via 10.42.0.1``
      ::
@@ -37,16 +37,16 @@ Steps to Set Up Reverse Tethering
    - Change the ipv4 method to ``shared``: ``nmcli connection modify "Wired connection 2" ipv4.method shared``
    - Bring the connection back up: ``nmcli connection up "Wired connection 2"``
 
-#. On the *device*:
+#. Finally run the following command on your *device*:
 
    - Bring your tethering connection back up: ``sudo nmcli connection up tethering``
-   - Open Morph Browser and test your internet connection!
 
+You should now have a working internet connection on your *device*!
 
 Troubleshooting
 ---------------
 
-If the above steps don't give you working internet connection on your phone the try these steps on your *computer*:
+If the above steps don't give you working internet connection on your *device* the try these steps on your *computer*:
 
    - Turn on IP forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``
    - Apply Forwarding iptables Rule: ``sudo iptables -P FORWARD ACCEPT``
