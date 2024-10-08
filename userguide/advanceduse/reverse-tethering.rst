@@ -7,7 +7,7 @@ This is useful if there is no available Wi-Fi connection or you don't have a dat
 Steps to Set Up Reverse Tethering
 ---------------------------------
 
-#. Prepare your *device* (Ubuntu Touch) and your *computer*:
+#. Prepare your *device* (Ubuntu Touch) and your *computer* (Linux):
 
    - Connect your *computer* to the internet.
    - Attach your *device* to your *computer* via USB.
