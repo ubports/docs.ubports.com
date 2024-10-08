@@ -4,71 +4,60 @@ Reverse tethering
 This tutorial explains how you get your Ubuntu Touch device online using a USB cable and a computer with internet access.
 This is useful if there is no available Wi-Fi connection or you don't have a data subscription on your device.
 
-Steps
------
+Steps to Set Up Reverse Tethering
+---------------------------------
 
 #. Prepare your device (Ubuntu Touch) and your computer:
 
-   - Connect your computer to the internet.
-   - Attach your device to your computer via USB.
+   - Connect your *computer* to the internet.
+   - Attach your *device* to your *computer* via USB.
+   - Turn off Wifi and Data on your *device*
 
-#. On the *device*:
+#. Run the following commands on your *device*:
 
-   - Run: ``gdbus call --system --dest com.meego.usb_moded --object-path /com/meego/usb_moded --method com.meego.usb_moded.set_mode rndis_adb``
+   - Set your device usb in tethering mode: ``gdbus call --system --dest com.meego.usb_moded --object-path /com/meego/usb_moded --method com.meego.usb_moded.set_mode rndis_adb``
+   - Bring your tethering connection down: ``sudo nmcli connection down tethering``
+   - Modify your tethering connection: ``sudo nmcli connection modify tethering ipv4.method auto``
 
-#. On your *computer*: 
+#. Run the following commands on your *computer*: 
 
-   - Get your RNDIS IP address:
-
-     - Run: ``ip a``
-     - Look for an interface named ``usb0`` in the output:
-
-       ::
-
-         5: usb0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN group default qlen 1000
-            link/ether 12:34:56:ab:cd:ef brd ff:ff:ff:ff:ff:ff
-            inet 10.42.0.149/24 brd 10.42.0.255 scope global noprefixroute usb0
-              valid_lft forever preferred_lft forever
-
-       - Your IP is: ``10.42.0.149``
-
-#. On the *device*:
-
-   - Turn off Wifi and Data to avoid the gateways from clashing
-   - Get your RNDIS interface: Run ``ip a``
-
+   - Get your interface name: ``ip route show to default via 10.42.0.1``
      ::
 
-       31: usb0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
-           link/ether 12:34:56:ab:cd:ef brd ff:ff:ff:ff:ff:ff
-           inet 10.42.0.1/8 brd 10.255.255.255 scope global rndis0
-             valid_lft forever preferred_lft forever
+       default dev enx122626d0fe26 proto dhcp src 10.42.0.118 metric 101
 
-     - Your interface is: ``usb0``
+   - Your interface name is: ``enx122626d0fe26``
+   - Get your connection name: ``nmcli --field GENERAL.CONNECTION device show enx122626d0fe26``
+     ::
 
-   - Add your computer as default gateway: ``sudo route add default gw 10.42.0.149``
-   - Add a nameserver of your choice: ``echo "nameserver 1.1.1.1" | sudo tee -a /etc/resolv.conf``
-   - Open Morph Browser and test your internet connection!
+       GENERAL.CONNECTION:                     Wired connection 2
 
-#. If it's not working yet, on your *computer*:
+   - Your connection name is ``Wired connection 2``
+   - Bring the connection down: ``nmcli connection down "Wired connection 2"``
+   - Change the ipv4 method to ``shared``: ``nmcli connection modify "Wired connection 2" ipv4.method shared``
+   - Bring the connection back up: ``nmcli connection up "Wired connection 2"``
+
+#. Finally run the following command on your *device*:
+
+   - Bring your tethering connection back up: ``sudo nmcli connection up tethering``
+
+You should now have a working internet connection on your *device*!
+
+Troubleshooting
+---------------
+
+If the above steps don't give you working internet connection on your *device* the try these steps on your *computer*:
 
    - Turn on IP forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``
    - Apply Forwarding iptables Rule: ``sudo iptables -P FORWARD ACCEPT``
-   - Apply NAT rule: ``sudo iptables -t nat -A POSTROUTING -s 10.42.0.0/24 -j MASQUERADE``
 
-   - NOTE: These steps are usually performed automatically by the NetworkManager on Ubuntu 22.04.
-
-Known Issues
-------------
-
-- The Updates page in the System Settings displays: ``Connect to the Internet to check for updates.``
-- After a while Teleports looses its internet connection and must be restarted.
-  
 References
 ----------
 
 - `Ask Ubuntu`_
 - RidgeRun_
+- `Fedora Magazine`_
 
 .. _Ask Ubuntu: https://askubuntu.com/questions/655321/ubuntu-touch-reverse-tethering-and-click-apps-updates
 .. _RidgeRun: https://developer.ridgerun.com/wiki/index.php/How_to_use_USB_device_networking
+.. _Fedora Magazine: https://fedoramagazine.org/internet-connection-sharing-networkmanager/
