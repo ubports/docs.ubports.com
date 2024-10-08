@@ -1,7 +1,7 @@
 Reverse tethering
 =================
 
-This tutorial explains how you get your Ubuntu Touch device online using a USB cable and a computer with internet access.
+This tutorial explains how you get your Ubuntu Touch device online using a USB cable and a Linux computer with internet access.
 This is useful if there is no available Wi-Fi connection or you don't have a data subscription on your device.
 
 Steps to Set Up Reverse Tethering

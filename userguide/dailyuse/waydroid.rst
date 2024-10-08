@@ -86,4 +86,4 @@ Troubleshooting
 Reporting bugs
 --------------
 
-Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs concerning Ubuntu Touch are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with Waydroid are reported on `our waydroid issue tracker <https://gitlab.com/ubports/development/core/packaging/waydroid/-/issues>`_. Thank you!
+Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs concerning Ubuntu Touch are reported in `the normal Ubuntu Touch tracker <https://gitlab.com/ubports/ubuntu-touch/-/issues>`_ and issues with Waydroid are reported on `our waydroid issue tracker <https://gitlab.com/ubports/development/core/packaging/waydroid/-/issues>`_. Thank you!
