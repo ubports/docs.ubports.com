@@ -12,7 +12,7 @@ Steps to Set Up Reverse Tethering
    - Connect your *computer* to the internet.
    - Attach your *device* to your *computer* via USB.
    - Turn off Wifi and Data on your *device*
-   - Set your device :ref:`usb in tethering mode <dailyuse/tethering>`
+   - Set your device :doc:`usb in tethering mode </userguide/dailyuse/tethering>`
 
 #. Run the following commands on your *device*:
 
