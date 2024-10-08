@@ -7,7 +7,7 @@ This is useful if there is no available Wi-Fi connection or you don't have a dat
 Steps to Set Up Reverse Tethering
 ---------------------------------
 
-#. Prepare your device (Ubuntu Touch) and your computer:
+#. Prepare your *device* (Ubuntu Touch) and your *computer*:
 
    - Connect your *computer* to the internet.
    - Attach your *device* to your *computer* via USB.
@@ -46,10 +46,10 @@ You should now have a working internet connection on your *device*!
 Troubleshooting
 ---------------
 
-If the above steps don't give you working internet connection on your *device* the try these steps on your *computer*:
+If the above steps don't give you working internet connection on your *device* then try these steps on your *computer*:
 
    - Turn on IP forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``
-   - Apply Forwarding iptables Rule: ``sudo iptables -P FORWARD ACCEPT``
+   - Apply forwarding iptables Rule: ``sudo iptables -P FORWARD ACCEPT``
 
 References
 ----------
