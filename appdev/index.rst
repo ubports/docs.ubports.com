@@ -63,6 +63,6 @@ You can also check out our list of :ref:`preinstalled apps <preinstalledapps>`. 
 Maintainers wanted
 ------------------
 
-All apps love contributions. But some core apps are lacking maintainers. Please check the `list of core apps <https://github.com/ubports/ubuntu-touch/blob/master/CORE_APPS.md>`_ and see if you want to step up as new maintainer for one of our core apps. The maintainer reviews MR's, triages and investigates issue reports and helps to develop the app.
+All apps love contributions. But some core apps are lacking maintainers. Please check the `list of core apps <https://gitlab.com/ubports/ubuntu-touch/-/blob/master/CORE_APPS.md>`_ and see if you want to step up as new maintainer for one of our core apps. The maintainer reviews MR's, triages and investigates issue reports and helps to develop the app.
 
 The best way to start is by making some contributions and let the reviewers know that you are interested. Or join our matrix group at `#ubcd:matrix.org <https://matrix.to/#/#ubcd:matrix.org>`_ and introduce yourself.
