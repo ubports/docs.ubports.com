@@ -140,7 +140,7 @@ Link changesets to the issue report that they resolve, whether you add a feature
 
 For example:
 
-    Fixes https://github.com/ubports/ubuntu-touch/issues/1
+    Fixes https://gitlab.com/ubports/ubuntu-touch/-/issues/1
 
 How did you test that the change was successful?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
