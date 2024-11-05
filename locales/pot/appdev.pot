@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-2023, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019-2024, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-24 08:44+0200\n"
+"POT-Creation-Date: 2024-11-05 15:24+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -417,15 +417,15 @@ msgid "Tools"
 msgstr ""
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:148
-msgid "From command line, ``url-dispatcher-dump`` command will give you the full list of registered protocol schemes and their corresponding app."
+msgid "From command line, ``lomiri-url-dispatcher-dump`` command will give you the full list of registered protocol schemes and their corresponding app."
 msgstr ""
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:150
-msgid "Another usefull tool, but not installed by default on devices is ``url-dispatcher-tools``, it allows you to simulate a call from a third party app. e.g: ``url-dispatcher https://youtu.be/CIX-a-i6B1w`` will launch youtube webapp."
+msgid "Another usefull tool, but not installed by default on devices is ``lomiri-url-dispatcher-tools``, it allows you to simulate a call from a third party app. e.g: ``lomiri-url-dispatcher https://youtu.be/CIX-a-i6B1w`` will launch youtube webapp."
 msgstr ""
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:152
-msgid "To install, it make your partition writable (``sudo mount -o rw,remount /``) and install it via ``sudo apt install url-dispatcher-tools``"
+msgid "To install, it make your partition writable (``sudo mount -o rw,remount /``) and install it via ``sudo apt install lomiri-url-dispatcher-tools``"
 msgstr ""
 
 #: ../../appdev/guides/importing-CH-urldispatcher.rst:157
@@ -465,70 +465,66 @@ msgid "`Python examples by pavelprosto <https://forums.ubports.com/topic/5525/py
 msgstr ""
 
 #: ../../appdev/guides/index.rst:11
-msgid "`Python + UT apps quickstart guide by AaronTheIssueGuy <https://aaron.place/blogs/UbPortsPython.html>`__"
-msgstr ""
-
-#: ../../appdev/guides/index.rst:12
 msgid "`QML templates by Joan CiberSheep <https://gitlab.com/cibersheep/qml-templates-for-ubuntutouch>`__."
 msgstr ""
 
-#: ../../appdev/guides/index.rst:13
+#: ../../appdev/guides/index.rst:12
 msgid "`First steps with QML <https://doc.qt.io/qt-5/qmlfirststeps.html>`__."
 msgstr ""
 
-#: ../../appdev/guides/index.rst:14
+#: ../../appdev/guides/index.rst:13
 msgid "`Qt examples and tutorials <https://doc.qt.io/qt-5.12/qtexamplesandtutorials.html>`__."
 msgstr ""
 
-#: ../../appdev/guides/index.rst:16
+#: ../../appdev/guides/index.rst:15
 msgid "If you are interested in helping to create developer guides check out our `GitLab Project <https://gitlab.com/ubports/apps/development-resources>`__."
 msgstr ""
 
-#: ../../appdev/guides/index.rst:19
+#: ../../appdev/guides/index.rst:18
 msgid "To get familiar with some more advanced concepts see the following sections:"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:34
+#: ../../appdev/guides/index.rst:33
 msgid "Playground"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:36
+#: ../../appdev/guides/index.rst:35
 msgid "In a completely free and open source community, it is natural to have community members exploring the limits of the platform in many many directions. In this section you will find links to external resources that do exactly that: Explore. The purpose of this list is to show the unlimited possibilities of an open platform like Ubuntu Touch."
 msgstr ""
 
-#: ../../appdev/guides/index.rst:39
+#: ../../appdev/guides/index.rst:38
 msgid "The resources listed here do not necessarily represent the officially endorsed way of developing applications for Ubuntu Touch, but are interesting experiments."
 msgstr ""
 
-#: ../../appdev/guides/index.rst:41
+#: ../../appdev/guides/index.rst:40
 msgid "`Free Pascal development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/09/freepascal-development-for-ubuntu-phone.html>`__"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:42
+#: ../../appdev/guides/index.rst:41
 msgid "`Lazarus development for Ubuntu Touch <http://kriscode.blogspot.tw/2016/10/lazarus-development-for-ubuntu-phone.html>`__"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:43
+#: ../../appdev/guides/index.rst:42
 msgid "`Geany on Ubuntu Touch device as text editor, source code editor, debugger and compiler for multiple languages <http://kriscode.blogspot.tw/2017/10/geany-on-ubuntu-touch-device-as-text.html>`__"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:44
+#: ../../appdev/guides/index.rst:43
 msgid "`Deploy your existing Qt QML app to Ubuntu Touch using QMake (Video) <https://youtu.be/ehqlwRNrfO0>`__"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:45
+#: ../../appdev/guides/index.rst:44
 msgid "`Deploy your existing Qt QML app to Ubuntu Touch using CMake (Video) <https://youtu.be/c2sq6aLeGec>`__"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:46
+#: ../../appdev/guides/index.rst:45
 msgid "`Getting started with Clickable (Video) <https://youtu.be/TE-s5522v0Y>`__"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:47
+#: ../../appdev/guides/index.rst:46
 msgid "`Content Hub overview (Video) <https://youtu.be/AihwC2sPIk0>`__"
 msgstr ""
 
-#: ../../appdev/guides/index.rst:48
+#: ../../appdev/guides/index.rst:47
 msgid "`Import files to your app with Content Hub (Video) <https://youtu.be/q6zzM16jw1U>`__"
 msgstr ""
 
@@ -1414,7 +1410,7 @@ msgid "Maintainers wanted"
 msgstr ""
 
 #: ../../appdev/index.rst:66
-msgid "All apps love contributions. But some core apps are lacking maintainers. Please check the `list of core apps <https://github.com/ubports/ubuntu-touch/blob/master/CORE_APPS.md>`_ and see if you want to step up as new maintainer for one of our core apps. The maintainer reviews MR's, triages and investigates issue reports and helps to develop the app."
+msgid "All apps love contributions. But some core apps are lacking maintainers. Please check the `list of core apps <https://gitlab.com/ubports/ubuntu-touch/-/blob/master/CORE_APPS.md>`_ and see if you want to step up as new maintainer for one of our core apps. The maintainer reviews MR's, triages and investigates issue reports and helps to develop the app."
 msgstr ""
 
 #: ../../appdev/index.rst:68

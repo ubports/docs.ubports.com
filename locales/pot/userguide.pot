@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-2023, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019-2024, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-24 08:44+0200\n"
+"POT-Creation-Date: 2024-11-05 15:24+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,35 +80,55 @@ msgstr ""
 msgid "If there's a device in the list here (The command doesn't print \"List of devices attached\" and a blank line), you are able to use ADB. If not, continue to the next section."
 msgstr ""
 
-#: ../../userguide/advanceduse/adb.rst:42
-msgid "ADB shell commands::"
+#: ../../userguide/advanceduse/adb.rst:45
+msgid "Authorize access to the device"
 msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:47
-msgid "Additional Adb commands::"
+msgid "When using adb for the first time on a computer, the following dialog will appear when you unlock the screen."
 msgstr ""
 
-#: ../../userguide/advanceduse/adb.rst:52
-msgid "For more ADB commands, refer to the `official documentation <https://developer.android.com/studio/command-line/adb>`_."
+#: ../../userguide/advanceduse/adb.rst:51
+msgid "This ensures that ADB commands will not work on a new computer unless user unlock the phone and acknowledge the dialog. Selecting \"Allow\" will make the ADB commands work for this session, and will also remember this computer so that it won't prompt you again in the future."
 msgstr ""
 
-#: ../../userguide/advanceduse/adb.rst:55
-msgid "Add hardware IDs"
+#: ../../userguide/advanceduse/adb.rst:54
+msgid "If you're bringing up a port and you require ADB access before the UI is available, you can disable this protection by editing ``/etc/default/adbd`` and change ``ADBD_SECURE=1`` to ``ADBD_SECURE=0``."
 msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:57
-msgid "ADB doesn't always know what devices on your computer it should or should not talk to. You can manually add the devices that it does not know how to talk to."
+msgid "Frequently used ADB commands"
 msgstr ""
 
 #: ../../userguide/advanceduse/adb.rst:59
+msgid "ADB shell commands::"
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:64
+msgid "Additional Adb commands::"
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:69
+msgid "For more ADB commands, refer to the `official documentation <https://developer.android.com/studio/command-line/adb>`_."
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:72
+msgid "Add hardware IDs"
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:74
+msgid "ADB doesn't always know what devices on your computer it should or should not talk to. You can manually add the devices that it does not know how to talk to."
+msgstr ""
+
+#: ../../userguide/advanceduse/adb.rst:76
 msgid "Just run the command for your selected device if it's below. Then, run ``adb kill-server`` followed by the command you were initially trying to run."
 msgstr ""
 
-#: ../../userguide/advanceduse/adb.rst:61
+#: ../../userguide/advanceduse/adb.rst:78
 msgid "Fairphone 2::"
 msgstr ""
 
-#: ../../userguide/advanceduse/adb.rst:65
+#: ../../userguide/advanceduse/adb.rst:82
 msgid "OnePlus One::"
 msgstr ""
 
@@ -262,11 +282,11 @@ msgid "Reverse tethering"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:4
-msgid "This tutorial explains how you get your Ubuntu Touch device online using a USB cable and a computer with internet access. This is useful if there is no available Wi-Fi connection or you don't have a data subscription on your device."
+msgid "This tutorial explains how you get your Ubuntu Touch device online using a USB cable and a Linux computer with internet access. This is useful if there is no available Wi-Fi connection or you don't have a data subscription on your device."
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:8
-msgid "Steps"
+msgid "Steps to Set Up Reverse Tethering"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:10
@@ -274,118 +294,111 @@ msgid "Prepare your device (Ubuntu Touch) and your computer:"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:12
-msgid "Turn `Developer Mode` on in Ubuntu Touch."
+msgid "Connect your *computer* to the internet."
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:13
-msgid "Connect your computer to the internet."
+msgid "Attach your *device* to your *computer* via USB."
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:14
-msgid "Attach your device to your computer via USB."
+msgid "Turn off Wifi and Data on your *device*"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:16
-#: ../../userguide/advanceduse/reverse-tethering.rst:37
-msgid "On the *device*:"
+msgid "Run the following commands on your *device*:"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:18
-msgid "Run: ``android-gadget-service enable rndis``"
+msgid "Set your device usb in tethering mode: ``gdbus call --system --dest com.meego.usb_moded --object-path /com/meego/usb_moded --method com.meego.usb_moded.set_mode rndis_adb``"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:19
-msgid "Reboot the phone."
+msgid "Bring your tethering connection down: ``sudo nmcli connection down tethering``"
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:21
-msgid "On your *computer*:"
+#: ../../userguide/advanceduse/reverse-tethering.rst:20
+msgid "Modify your tethering connection: ``sudo nmcli connection modify tethering ipv4.method auto``"
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:23
-msgid "Get your RNDIS IP address:"
+#: ../../userguide/advanceduse/reverse-tethering.rst:22
+msgid "Run the following commands on your *computer*:"
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:25
-msgid "Run: ``ip a``"
+#: ../../userguide/advanceduse/reverse-tethering.rst:24
+msgid "Get your interface name: ``ip route show to default via 10.42.0.1`` ::"
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:26
-msgid "Look for an interface named ``usb0`` in the output:"
+#: ../../userguide/advanceduse/reverse-tethering.rst:29
+msgid "Your interface name is: ``enx122626d0fe26``"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:30
+msgid "Get your connection name: ``nmcli --field GENERAL.CONNECTION device show enx122626d0fe26`` ::"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:35
-msgid "Your IP is: ``10.42.0.1``"
+msgid "Your connection name is ``Wired connection 2``"
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:39
-msgid "Get your RNDIS interface: Run ``ip a``"
+#: ../../userguide/advanceduse/reverse-tethering.rst:36
+msgid "Bring the connection down: ``nmcli connection down \"Wired connection 2\"``"
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:48
-msgid "Your interface is: ``rndis0``"
+#: ../../userguide/advanceduse/reverse-tethering.rst:37
+msgid "Change the ipv4 method to ``shared``: ``nmcli connection modify \"Wired connection 2\" ipv4.method shared``"
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:50
-msgid "Change your IP address: ``sudo ifconfig rndis0 10.42.0.2``"
+#: ../../userguide/advanceduse/reverse-tethering.rst:38
+msgid "Bring the connection back up: ``nmcli connection up \"Wired connection 2\"``"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:40
+msgid "Finally run the following command on your *device*:"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:42
+msgid "Bring your tethering connection back up: ``sudo nmcli connection up tethering``"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:44
+msgid "You should now have a working internet connection on your *device*!"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:47
+#: ../../userguide/dailyuse/waydroid.rst:77
+#: ../../userguide/install.rst:25
+msgid "Troubleshooting"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:49
+msgid "If the above steps don't give you working internet connection on your *device* the try these steps on your *computer*:"
 msgstr ""
 
 #: ../../userguide/advanceduse/reverse-tethering.rst:51
-msgid "Add your computer as default gateway: ``sudo route add default gw 10.42.0.1``"
-msgstr ""
-
-#: ../../userguide/advanceduse/reverse-tethering.rst:52
-msgid "Add a nameserver of your choice: ``echo \"nameserver 1.1.1.1\" | sudo tee -a /etc/resolv.conf``"
-msgstr ""
-
-#: ../../userguide/advanceduse/reverse-tethering.rst:53
-msgid "Open Morph Browser and test your internet connection!"
-msgstr ""
-
-#: ../../userguide/advanceduse/reverse-tethering.rst:55
-msgid "If it's not working yet, on your *computer*:"
-msgstr ""
-
-#: ../../userguide/advanceduse/reverse-tethering.rst:57
 msgid "Turn on IP forwarding: ``echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward``"
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:58
-msgid "Apply NAT: ``sudo iptables -t nat -A POSTROUTING -s 10.42.0.0/8 -o eth0 -j MASQUERADE``"
+#: ../../userguide/advanceduse/reverse-tethering.rst:52
+msgid "Apply Forwarding iptables Rule: ``sudo iptables -P FORWARD ACCEPT``"
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:60
-msgid "Make sure you replace ``eth0`` by the interface that connects your computer to the internet."
-msgstr ""
-
-#: ../../userguide/advanceduse/reverse-tethering.rst:62
-msgid "NOTE: These steps are usually performed automatically by the NetworkManager on Ubuntu 22.04."
-msgstr ""
-
-#: ../../userguide/advanceduse/reverse-tethering.rst:65
-msgid "Known Issues"
-msgstr ""
-
-#: ../../userguide/advanceduse/reverse-tethering.rst:67
-msgid "The Updates page in the System Settings displays: ``Connect to the Internet to check for updates.``"
-msgstr ""
-
-#: ../../userguide/advanceduse/reverse-tethering.rst:68
-msgid "After a while Teleports looses its internet connection and must be restarted."
-msgstr ""
-
-#: ../../userguide/advanceduse/reverse-tethering.rst:71
+#: ../../userguide/advanceduse/reverse-tethering.rst:55
 #: ../../userguide/advanceduse/screencasting.rst:74
-#: ../../userguide/advanceduse/ssh.rst:74
+#: ../../userguide/advanceduse/ssh.rst:91
 msgid "References"
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:73
+#: ../../userguide/advanceduse/reverse-tethering.rst:57
 msgid "`Ask Ubuntu`_"
 msgstr ""
 
-#: ../../userguide/advanceduse/reverse-tethering.rst:74
+#: ../../userguide/advanceduse/reverse-tethering.rst:58
 msgid "RidgeRun_"
+msgstr ""
+
+#: ../../userguide/advanceduse/reverse-tethering.rst:59
+msgid "`Fedora Magazine`_"
 msgstr ""
 
 #: ../../userguide/advanceduse/screencasting.rst:2
@@ -544,11 +557,27 @@ msgstr ""
 msgid "Of course you can now also use ``scp`` or ``sshfs`` to transfer files."
 msgstr ""
 
+#: ../../userguide/advanceduse/ssh.rst:74
+msgid "Configuration"
+msgstr ""
+
 #: ../../userguide/advanceduse/ssh.rst:76
+msgid "you can enable ssh on boot by running the following command::"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:80
+msgid "you can edit the port ssh is listening on with the following command::"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:84
+msgid "then add the following text::"
+msgstr ""
+
+#: ../../userguide/advanceduse/ssh.rst:93
 msgid "`askubuntu.com: How can I access my Ubuntu phone over SSH? <https://askubuntu.com/questions/348714/how-can-i-access-my-ubuntu-phone-over-ssh/599041#599041>`_"
 msgstr ""
 
-#: ../../userguide/advanceduse/ssh.rst:77
+#: ../../userguide/advanceduse/ssh.rst:94
 msgid "`gurucubano: BQ Aquaris E 4.5 Ubuntu phone: How to get SSH access to the Ubuntu phone via Wi-Fi <https://gurucubano.gitbooks.io/bq-aquaris-e-4-5-ubuntu-phone/content/en/chapter1.html>`_"
 msgstr ""
 
@@ -581,264 +610,297 @@ msgid "To install applications you can use the *Settings* interface on your Ubun
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:9
-msgid "Manage containers"
+#: ../../userguide/dailyuse/waydroid.rst:10
+msgid "Limitations"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:12
-msgid "Create a container"
+#: ../../userguide/dailyuse/libertine.rst:11
+msgid "Before using Libertine on your device, be aware that there are limitations to the usability of packages."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:13
+msgid "Software that is not designed with a mobile use-case in mind may be difficult to use due to lack of touchscreen support, scaling and other UI issues."
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:14
-msgid "The first step is to create a container where applications can be installed:"
+msgid "Applications will not run in the background in Libertine, hence it is not a solution to run server software on your phone."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:16
-msgid "Open Settings and scroll down to *Libertine* under the *System* sub-heading."
+#: ../../userguide/dailyuse/libertine.rst:17
+msgid "Manage containers"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:18
-msgid "Tap *Libertine* to get to the *Manage Libertine Containers* sub-menu. Already installed containers will be visible here. Tap the + sign at the upper right to add a container."
+#: ../../userguide/dailyuse/libertine.rst:20
+msgid "Create a container"
 msgstr ""
 
 #: ../../userguide/dailyuse/libertine.rst:22
+msgid "The first step is to create a container where applications can be installed:"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:24
+msgid "Open Settings and scroll down to *Libertine* under the *System* sub-heading."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:26
+msgid "Tap *Libertine* to get to the *Manage Libertine Containers* sub-menu. Already installed containers will be visible here. Tap the + sign at the upper right to add a container."
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:30
 msgid "The *Container Options* dialog box will open asking you to enter a container name and optionally a password. Confirm your entries by tapping \"OK\", and the container will be created."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:25
+#: ../../userguide/dailyuse/libertine.rst:33
 msgid "To do this via the command-line::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:29
+#: ../../userguide/dailyuse/libertine.rst:37
 msgid "You can add extra options such as:"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:31
+#: ../../userguide/dailyuse/libertine.rst:39
 msgid "``-n name`` name is a more user-friendly name of the container"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:32
+#: ../../userguide/dailyuse/libertine.rst:40
 msgid "``-t type`` type can be either ``chroot`` or ``lxc``. The default is ``chroot`` , which is compatible with every device."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:34
+#: ../../userguide/dailyuse/libertine.rst:42
 msgid "If the kernel of your device supports it, ``lxc`` is suggested."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:36
+#: ../../userguide/dailyuse/libertine.rst:44
 msgid "Creation can take a while due to the size of the container (some hundred megabytes)."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:39
+#: ../../userguide/dailyuse/libertine.rst:47
 msgid "The ``create`` command shown above cannot be run directly in the terminal app, due to AppArmor restrictions. You can run it from another device using either an ADB or SSH connection. Alternatively, you can run it from the terminal app using a loopback SSH connection by running this command: ``ssh localhost``."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:44
+#: ../../userguide/dailyuse/libertine.rst:52
 msgid "List containers"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:46
+#: ../../userguide/dailyuse/libertine.rst:54
 msgid "Use the *Settings Manage Libertine Containers* sub-menu to list all the containers you have created on the device."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:48
+#: ../../userguide/dailyuse/libertine.rst:56
 msgid "You can also use the command-line. Run::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:53
+#: ../../userguide/dailyuse/libertine.rst:61
 msgid "Destroy a container"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:59
+#: ../../userguide/dailyuse/libertine.rst:67
 msgid "Manage applications"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:61
+#: ../../userguide/dailyuse/libertine.rst:69
 msgid "Once a container is set up, the installed applications are available in the app drawer. You can also tap the name of the container in the *Manage Libertine Containers* menu."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:64
+#: ../../userguide/dailyuse/libertine.rst:72
 msgid "You can also list them via the command-line::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:69
+#: ../../userguide/dailyuse/libertine.rst:77
 msgid "Install a package"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:71
+#: ../../userguide/dailyuse/libertine.rst:79
 msgid "From the apps list in the *Manage Libertine Containers* menu you can tap the + sign to get a dialog box that lets you add a package."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:73
-msgid "Enter the package name if you know it. Otherwise you can search the archives for a package. You can make this process easier by making the *Lubuntu Software Center* your first package install. Being a desktop app, you will need to use the *Libertine Tweak Tool* in the *Open Store* to make the text large enough to read on a mobile device."
+#: ../../userguide/dailyuse/libertine.rst:81
+msgid "Enter the package name if you know it. Otherwise you can search the archives for a package. You can make this process easier by making a software center like gnome-software your first package install. Being a desktop app, you will need to use the *Libertine Tweak Tool* in the *Open Store* to make the text large enough to read on a mobile device."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:78
+#: ../../userguide/dailyuse/libertine.rst:86
 msgid "Packages may also be installed via the command-line::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:83
+#: ../../userguide/dailyuse/libertine.rst:91
 msgid "Remove a package"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:85
+#: ../../userguide/dailyuse/libertine.rst:93
 msgid "Remove a package by swiping it to the right from its entry in the package list (in *System Settings* > *Libertine* > *Manage Libertine Containers* > *CONTAINER NAME*). An option to remove it will be revealed."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:87
+#: ../../userguide/dailyuse/libertine.rst:95
 msgid "Or you can remove the package via the command-line::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:92
+#: ../../userguide/dailyuse/libertine.rst:100
 msgid "If you have more than one container, you can use the option ``-i CONTAINER-IDENTIFIER`` to specify which container you want to perform an operation on."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:95
+#: ../../userguide/dailyuse/libertine.rst:103
 msgid "Run desktop application"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:97
+#: ../../userguide/dailyuse/libertine.rst:105
 msgid "Run it from the app menu like any other app. To start a graphical app from the command-line, for example ``gedit``, run this in a terminal::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:103
+#: ../../userguide/dailyuse/libertine.rst:111
 msgid "Files"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:105
+#: ../../userguide/dailyuse/libertine.rst:113
 msgid "Libertine applications have access to these folders:"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:107
+#: ../../userguide/dailyuse/libertine.rst:115
 msgid "Documents"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:108
+#: ../../userguide/dailyuse/libertine.rst:116
 msgid "Music"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:109
+#: ../../userguide/dailyuse/libertine.rst:117
 msgid "Pictures"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:110
+#: ../../userguide/dailyuse/libertine.rst:118
 msgid "Downloads"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:111
+#: ../../userguide/dailyuse/libertine.rst:119
 msgid "Videos"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:114
+#: ../../userguide/dailyuse/libertine.rst:122
 msgid "Tips"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:117
+#: ../../userguide/dailyuse/libertine.rst:125
 msgid "Locations"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:119
+#: ../../userguide/dailyuse/libertine.rst:127
 msgid "For every container you create, two directories will be created:"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:121
+#: ../../userguide/dailyuse/libertine.rst:129
 msgid "A root directory ``~/.cache/libertine-container/CONTAINER-IDENTIFIER/rootfs/`` and"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:122
+#: ../../userguide/dailyuse/libertine.rst:130
 msgid "a user directory ``~/.local/share/libertine-container/user-data/CONTAINER-IDENTIFIER/``"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:125
+#: ../../userguide/dailyuse/libertine.rst:133
 msgid "Shell access"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:127
+#: ../../userguide/dailyuse/libertine.rst:135
 msgid "There are two options for executing commands inside the container."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:129
+#: ../../userguide/dailyuse/libertine.rst:137
 msgid "**The first option** is based on ``libertine-container-manager exec``. It lets you run your commands as root. The drawback is that the container is not completely set up. So far we know that the `folders mentioned above (Documents, Music, …) are not mounted <https://askubuntu.com/questions/831830/libertine-terminal-applications-how-to-access-to-the-real-home-dir#comment1273744_833984/>`_ i.e., the ``/home/phablet/`` directory is empty. Likewise the directory referenced in ``TMPDIR`` is not available, which may lead to problems with software trying to create temporary files or directories. You may use this option to installing packages."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:135
-#: ../../userguide/dailyuse/libertine.rst:151
+#: ../../userguide/dailyuse/libertine.rst:143
+#: ../../userguide/dailyuse/libertine.rst:159
 msgid "To execute a command you can use the following pattern::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:139
-#: ../../userguide/dailyuse/libertine.rst:155
+#: ../../userguide/dailyuse/libertine.rst:147
+#: ../../userguide/dailyuse/libertine.rst:163
 msgid "For example, run::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:143
+#: ../../userguide/dailyuse/libertine.rst:151
 msgid "To get a shell into your container as ``root``, run::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:147
+#: ../../userguide/dailyuse/libertine.rst:155
 msgid "**The second option** is based on ``libertine-launch``. It will execute your commands as user phablet in a completely set up container. You may use this option to modify your files using installed packages."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:159
+#: ../../userguide/dailyuse/libertine.rst:167
 msgid "To get a shell as the user ``phablet``, run::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:164
+#: ../../userguide/dailyuse/libertine.rst:172
 msgid "When you launch Bash in this way you will not get any specific feedback to confirm being *inside* the container. You can check ``ls /`` to confirm for yourself you are actually inside the container. The listing of ``ls /`` will be different inside and outside the container."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:169
+#: ../../userguide/dailyuse/libertine.rst:177
+msgid "When trying to run commands that require superuser privileges, you may encounter the following error:"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:179
+msgid "sudo: /usr/bin/sudo must be owned by uid 0 and have the setuid bit set"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:181
+msgid "Try replacing ''sudo'' with ''fakeroot'' in your command, for example:"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:183
+msgid "fakeroot apt install firefox"
+msgstr ""
+
+#: ../../userguide/dailyuse/libertine.rst:186
 msgid "Accessing SD card"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:171
+#: ../../userguide/dailyuse/libertine.rst:188
 msgid "To access your SD-card or any other part of the regular filesystem from inside your Libertine container you must create a bind mount."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:173
+#: ../../userguide/dailyuse/libertine.rst:190
 msgid "To add a bind mount, use::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:177
+#: ../../userguide/dailyuse/libertine.rst:194
 msgid "You can also make deep links if you only want parts of your SD-card available in the container. In this case just add the entire path to the directory you want to bind mount::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:182
+#: ../../userguide/dailyuse/libertine.rst:199
 msgid "This will not give the container access to any of the directories earlier in the path for anything other than accessing your mounted directory."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:184
+#: ../../userguide/dailyuse/libertine.rst:201
 msgid "In order to use the SD card as extra space for your container, make sure to first format it using ext4 or similar. There is a mis-feature in UDisks2 that mounts SD-cards (showexec), ensuring only files ending in .bat, .exe or .com can be executed from the drive if it is (V)FAT formatted. This has been changed in other distributions, allowing any file to have execute priviliges, but not in Ubuntu. The recommended workaround is to add a udev rule to control how to mount a card with a given ID, but since the udev rules are on the read-only port on Ubuntu Touch, this is not possible."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:190
+#: ../../userguide/dailyuse/libertine.rst:207
 msgid "Shortcuts"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:192
+#: ../../userguide/dailyuse/libertine.rst:209
 msgid "If you want, you can add aliases for command-line tools. Add lines like the following ones to your ``~/.bash_aliases``::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:199
+#: ../../userguide/dailyuse/libertine.rst:216
 msgid "Installing packages manually"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:201
+#: ../../userguide/dailyuse/libertine.rst:218
 msgid "If you want to install a package from a file, you will first have to make it available to the root user, for example by copying it to the ``/root`` directory::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:205
+#: ../../userguide/dailyuse/libertine.rst:222
 msgid "Then install it using dpkg::"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:210
+#: ../../userguide/dailyuse/libertine.rst:227
 msgid "Background"
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:212
+#: ../../userguide/dailyuse/libertine.rst:229
 msgid "A display server coordinates input and output of an operating system. Ubuntu Touch does not use X, but a new display server called Mir. This means standard X applications are not directly compatible with Ubuntu Touch. A compatibility layer called XMir resolves this. Libertine relies on XMir to display desktop applications."
 msgstr ""
 
-#: ../../userguide/dailyuse/libertine.rst:218
+#: ../../userguide/dailyuse/libertine.rst:235
 msgid "Another challenge is that Ubuntu Touch system updates are released as OTA images. As a consequence of this the root filesystem is read-only. Libertine provides a container with a read-write filesystem to allow installation of regular Linux desktop applications."
 msgstr ""
 
@@ -1056,6 +1118,54 @@ msgstr ""
 msgid "Apps are suspended whenever not in the foreground, or when the device is locked. When an app is suspended, it cannot receive location data. For this reason, apps will not be able to track your location whenever they are not in use or the device is locked."
 msgstr ""
 
+#: ../../userguide/dailyuse/volte.rst:2
+msgid "Voice over LTE (VoLTE)"
+msgstr ""
+
+#: ../../userguide/dailyuse/volte.rst:4
+msgid "Voice over LTE (VoLTE) is a technology that allows a phone to take a call and send a message while connected to a 4G/LTE cellular network. The benefits of VoLTE include quicker call setup, higher quality voice, and seamless mobile data while on a call."
+msgstr ""
+
+#: ../../userguide/dailyuse/volte.rst:6
+msgid "Carriers in some parts of the world have started phasing out 3G cellular networks, making VoLTE mandatory in order to place a call on that carrier. If VoLTE is not supported or not enabled by the phone, and the carrier still supports 3G network, the phone will automatically switch to 3G network for the duration of the call and will switch back to 4G network after the call ends."
+msgstr ""
+
+#: ../../userguide/dailyuse/volte.rst:8
+msgid "Ubuntu Touch supports VoLTE on some devices. Support for VoLTE on Ubuntu Touch depends on the phone's chipset, the Android version the port is based on, and whether the port has enabled support for VoLTE. As of Ubuntu Touch 20.04 OTA-6, VoLTE is enabled on Volla Phone X23 and Volla Phone 22 running Android 12-based port."
+msgstr ""
+
+#: ../../userguide/dailyuse/volte.rst:11
+msgid "How do I know if VoLTE is supported on my phone?"
+msgstr ""
+
+#: ../../userguide/dailyuse/volte.rst:13
+msgid "To check if your phone supports VoLTE, go to *System Settings* > *Cellular* > *Carrier & APN*. If VoLTE is supported, you will be able to toggle *4G calling (VoLTE)*. If the toggle does not appear, or the toggle is disabled, then your phone does not yet support VoLTE on Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/dailyuse/volte.rst:18
+msgid "How do I know if VoLTE is working?"
+msgstr ""
+
+#: ../../userguide/dailyuse/volte.rst:20
+msgid "For VoLTE to work, the following conditions have to be met:"
+msgstr ""
+
+#: ../../userguide/dailyuse/volte.rst:22
+msgid "Your phone supports VoLTE on Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/dailyuse/volte.rst:23
+msgid "Your carrier and your SIM card supports VoLTE."
+msgstr ""
+
+#: ../../userguide/dailyuse/volte.rst:24
+msgid "Ubuntu Touch contains a VoLTE configuration for your carrier."
+msgstr ""
+
+#: ../../userguide/dailyuse/volte.rst:26
+msgid "If the conditions are met, and the phone successfully establishes a VoLTE connection, the VoLTE logo will appear after your carrier name in the Network indicator."
+msgstr ""
+
 #: ../../userguide/dailyuse/waydroid.rst:2
 msgid "Android apps"
 msgstr ""
@@ -1068,136 +1178,147 @@ msgstr ""
 msgid "You will need to execute commands on your Ubuntu Touch device (locally via the terminal application or remotely via :doc:`ADB </userguide/advanceduse/adb>`/:doc:`SSH </userguide/advanceduse/ssh>` ) to initialize Waydroid, install APKs and uninstall applications."
 msgstr ""
 
-#: ../../userguide/dailyuse/waydroid.rst:11
-msgid "How to set up"
+#: ../../userguide/dailyuse/waydroid.rst:12
+msgid "Before installing Waydroid on your device, please note that there are limitations to its support and integration:"
 msgstr ""
 
-#: ../../userguide/dailyuse/waydroid.rst:13
-msgid "All Halium 9 and newer devices ship with waydroid out of the box starting with Ubuntu Touch focal, if your device fits these requirements you can follow the following steps"
+#: ../../userguide/dailyuse/waydroid.rst:14
+msgid "After installing Waydroid on Ubuntu Touch, you may notice higher battery consumption. To mitigate this, Waydroid can be stopped manually when not in use."
 msgstr ""
 
 #: ../../userguide/dailyuse/waydroid.rst:15
-#: ../../userguide/dailyuse/waydroid.rst:23
-#: ../../userguide/dailyuse/waydroid.rst:47
-msgid "Open a shell on your Ubuntu Touch device (remotely with ADB/SSH or locally with the terminal app)."
+msgid "Not all Android applications will work with Waydroid. Apps that require Google's Play Integrity service or SafetyNet, such as banking apps, are unlikely to run."
 msgstr ""
 
 #: ../../userguide/dailyuse/waydroid.rst:16
-msgid "Run the following command in your shell: ``waydroid init``."
+msgid "Problems may occur if both Ubuntu Touch and Waydroid request the use of the same peripherals, and one will not be able to claim them (e.g. `camera access not permitted <https://gitlab.com/ubports/porting/reference-device-ports/android11/fairphone-4/fairphone-fp4/-/issues/67>`_)."
 msgstr ""
 
-#: ../../userguide/dailyuse/waydroid.rst:17
-#: ../../userguide/dailyuse/waydroid.rst:25
-msgid "Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up."
+#: ../../userguide/dailyuse/waydroid.rst:19
+msgid "How to set up"
 msgstr ""
 
-#: ../../userguide/dailyuse/waydroid.rst:20
-msgid "How to install new APKs"
+#: ../../userguide/dailyuse/waydroid.rst:21
+msgid "All Halium 9 and newer devices ship with waydroid out of the box starting with Ubuntu Touch focal, if your device fits these requirements you can follow the following steps"
 msgstr ""
 
-#: ../../userguide/dailyuse/waydroid.rst:22
-msgid "Copy the APK to ``/home/phablet/Downloads`` on your Ubuntu Touch device."
+#: ../../userguide/dailyuse/waydroid.rst:23
+#: ../../userguide/dailyuse/waydroid.rst:31
+#: ../../userguide/dailyuse/waydroid.rst:55
+msgid "Open a shell on your Ubuntu Touch device (remotely with ADB/SSH or locally with the terminal app)."
 msgstr ""
 
 #: ../../userguide/dailyuse/waydroid.rst:24
-msgid "Run the following in your shell ``waydroid app install /home/phablet/Downloads/my-app.apk``"
+msgid "Run the following command in your shell: ``waydroid init``."
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:25
+#: ../../userguide/dailyuse/waydroid.rst:33
+msgid "Done! You might have to refresh the apps scope (pull down from the center of the screen and release) for the new Android apps to show up."
 msgstr ""
 
 #: ../../userguide/dailyuse/waydroid.rst:28
-msgid "Using an appstore in Waydroid"
+msgid "How to install new APKs"
 msgstr ""
 
 #: ../../userguide/dailyuse/waydroid.rst:30
-msgid "You can also install an appstore like F-Droid or Amazon Appstore to install applications or keeping them up to date. If you want to install any of the above apps you can find them here:"
+msgid "Copy the APK to ``/home/phablet/Downloads`` on your Ubuntu Touch device."
 msgstr ""
 
 #: ../../userguide/dailyuse/waydroid.rst:32
-msgid "F-Droid: https://f-droid.org/"
+msgid "Run the following in your shell ``waydroid app install /home/phablet/Downloads/my-app.apk``"
 msgstr ""
 
-#: ../../userguide/dailyuse/waydroid.rst:33
-msgid "Amazon Appstore: https://www.amazon.com/gp/mas/get-appstore/android"
-msgstr ""
-
-#: ../../userguide/dailyuse/waydroid.rst:35
-msgid "Note that due to nature of Waydroid, neither of these will automatically keep your applications up-to-date. You will have to manually open the appstore and check for updates. Additionally you will have to authorize each app install or update as follows:"
-msgstr ""
-
-#: ../../userguide/dailyuse/waydroid.rst:37
-msgid "search for the app to install or update"
+#: ../../userguide/dailyuse/waydroid.rst:36
+msgid "Using an appstore in Waydroid"
 msgstr ""
 
 #: ../../userguide/dailyuse/waydroid.rst:38
-msgid "press the install or update button"
-msgstr ""
-
-#: ../../userguide/dailyuse/waydroid.rst:39
-msgid "wait for the download to finish, there will be a prompt to install the application/update"
+msgid "You can also install an appstore like F-Droid or Amazon Appstore to install applications or keeping them up to date. If you want to install any of the above apps you can find them here:"
 msgstr ""
 
 #: ../../userguide/dailyuse/waydroid.rst:40
-msgid "press the install button on the above prompt"
+msgid "F-Droid: https://f-droid.org/"
 msgstr ""
 
-#: ../../userguide/dailyuse/waydroid.rst:42
-msgid "For more advanced users this could be remedied by building a custom waydroid image that ships with either appstore."
+#: ../../userguide/dailyuse/waydroid.rst:41
+msgid "Amazon Appstore: https://www.amazon.com/gp/mas/get-appstore/android"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:43
+msgid "Note that due to nature of Waydroid, neither of these will automatically keep your applications up-to-date. You will have to manually open the appstore and check for updates. Additionally you will have to authorize each app install or update as follows:"
 msgstr ""
 
 #: ../../userguide/dailyuse/waydroid.rst:45
-msgid "How to uninstall apps"
+msgid "search for the app to install or update"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:46
+msgid "press the install or update button"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:47
+msgid "wait for the download to finish, there will be a prompt to install the application/update"
 msgstr ""
 
 #: ../../userguide/dailyuse/waydroid.rst:48
-msgid "To uninstall apps from the Ubuntu Touch device, run ``adb uninstall [APP_ID]`` in your shell"
-msgstr ""
-
-#: ../../userguide/dailyuse/waydroid.rst:49
-msgid "Run the following in your shell ``waydroid app remove [APP_ID]`` (you can find the APP_ID by using 'waydroid app list')"
+msgid "press the install button on the above prompt"
 msgstr ""
 
 #: ../../userguide/dailyuse/waydroid.rst:50
-msgid "Done! You might have to pull down from the app list for the old Android apps to go away."
+msgid "For more advanced users this could be remedied by building a custom waydroid image that ships with either appstore."
 msgstr ""
 
 #: ../../userguide/dailyuse/waydroid.rst:53
-msgid "If you are using an appstore in waydroid you can also uninstall apps through said appstore"
+msgid "How to uninstall apps"
 msgstr ""
 
 #: ../../userguide/dailyuse/waydroid.rst:56
-msgid "Access Android storage"
+msgid "To uninstall apps from the Ubuntu Touch device, run ``adb uninstall [APP_ID]`` in your shell"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:57
+msgid "Run the following in your shell ``waydroid app remove [APP_ID]`` (you can find the APP_ID by using 'waydroid app list')"
 msgstr ""
 
 #: ../../userguide/dailyuse/waydroid.rst:58
+msgid "Done! You might have to pull down from the app list for the old Android apps to go away."
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:61
+msgid "If you are using an appstore in waydroid you can also uninstall apps through said appstore"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:64
+msgid "Access Android storage"
+msgstr ""
+
+#: ../../userguide/dailyuse/waydroid.rst:66
 msgid "The Android storage is located at ``/home/phablet/.local/share/waydroid/data/media/0``."
 msgstr ""
 
-#: ../../userguide/dailyuse/waydroid.rst:60
+#: ../../userguide/dailyuse/waydroid.rst:68
 msgid "Links to android libraries can be made in their respective XDG counterparts::"
 msgstr ""
 
-#: ../../userguide/dailyuse/waydroid.rst:69
-#: ../../userguide/install.rst:25
-msgid "Troubleshooting"
-msgstr ""
-
-#: ../../userguide/dailyuse/waydroid.rst:71
+#: ../../userguide/dailyuse/waydroid.rst:79
 msgid "When you are installing an APK, but run into the following error ``Invalid APK file``, this could simply mean that it could not find the apk file. Try the following steps to double check:"
 msgstr ""
 
-#: ../../userguide/dailyuse/waydroid.rst:74
+#: ../../userguide/dailyuse/waydroid.rst:82
 msgid "Check that you typed the filename correctly."
 msgstr ""
 
-#: ../../userguide/dailyuse/waydroid.rst:75
+#: ../../userguide/dailyuse/waydroid.rst:83
 msgid "If the APK does not reside in the folder you are in when you run adb, you have to specify the full path, e.g. ``/home/phablet/Downloads/my-app.apk`` instead of just ``my-app.apk``"
 msgstr ""
 
-#: ../../userguide/dailyuse/waydroid.rst:79
+#: ../../userguide/dailyuse/waydroid.rst:87
 msgid "Reporting bugs"
 msgstr ""
 
-#: ../../userguide/dailyuse/waydroid.rst:81
-msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs concerning Ubuntu Touch are reported in `the normal Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch/issues>`_ and issues with Waydroid are reported on `our waydroid issue tracker <https://gitlab.com/ubports/development/core/packaging/waydroid/-/issues>`_. Thank you!"
+#: ../../userguide/dailyuse/waydroid.rst:89
+msgid "Please :doc:`report any bugs </contribute/bugreporting>` you come across. Bugs concerning Ubuntu Touch are reported in `the normal Ubuntu Touch tracker <https://gitlab.com/ubports/ubuntu-touch/-/issues>`_ and issues with Waydroid are reported on `our waydroid issue tracker <https://gitlab.com/ubports/development/core/packaging/waydroid/-/issues>`_. Thank you!"
 msgstr ""
 
 #: ../../userguide/install.rst:2
@@ -1314,112 +1435,4 @@ msgstr ""
 
 #: ../../userguide/install.rst:104
 msgid "If the troubleshooting tips do not work, you might also try following the manual installation instructions for your device `on the devices page <https://devices.ubuntu-touch.io/>`_."
-msgstr ""
-
-#: ../../userguide/install.rst:107
-msgid "Install on legacy Android devices"
-msgstr ""
-
-#: ../../userguide/install.rst:109
-msgid "While the installation process is fairly simple on most devices, some legacy Bq and Meizu devices require special steps. This part of the guide does not apply to other devices."
-msgstr ""
-
-#: ../../userguide/install.rst:113
-msgid "This is more or less uncharted territory. If your device's manufacturer does not want you to install an alternative operating system, there's not a lot we can do about it. The instructions below should only be followed by experienced users. While we appreciate that lots of people want to use our OS, flashing a device with OEM tools shouldn't be done without a bit of know-how and plenty of research."
-msgstr ""
-
-#: ../../userguide/install.rst:115
-msgid "Meizu devices are pretty much stuck on Flyme. While the MX4 can be flashed successfully in some cases, the Pro5 is Exynos-based and has its own headaches."
-msgstr ""
-
-#: ../../userguide/install.rst:119
-msgid "BE VERY CAREFUL! You are responsible for your own actions!"
-msgstr ""
-
-#: ../../userguide/install.rst:121
-msgid "Disconnect all devices and non-essential peripherals from your PC. Charge your device on a wall-charger (not your PC) to at least 40 percent."
-msgstr ""
-
-#: ../../userguide/install.rst:122
-msgid "Download the Ubuntu Touch ROM for your device and extract the zip files:"
-msgstr ""
-
-#: ../../userguide/install.rst:124
-msgid "`Bq E4.5 <https://cdimage.ubports.com/stock-bq-images/krillin.zip>`_ (*krillin*)"
-msgstr ""
-
-#: ../../userguide/install.rst:125
-msgid "`Bq E5 HD <https://cdimage.ubports.com/stock-bq-images/VEGETA01A-S11A_BQ_L100EN_2017_170207.zip>`_ (*vegetahd*)"
-msgstr ""
-
-#: ../../userguide/install.rst:126
-msgid "`Bq M10 HD <https://cdimage.ubports.com/stock-bq-images/cooler-image-stable-6.zip>`_ (*cooler*)"
-msgstr ""
-
-#: ../../userguide/install.rst:127
-msgid "`Bq M10 FHD <https://cdimage.ubports.com/stock-bq-images/frieza-image-stable-4.zip>`_ (*frieza*)"
-msgstr ""
-
-#: ../../userguide/install.rst:128
-msgid "`Meizu MX4 <https://cdimage.ubports.com/devices/arale/arale-bootstrap.zip>`_ (*arale*)"
-msgstr ""
-
-#: ../../userguide/install.rst:130
-msgid "Download the latest version of `SP flash tool <https://spflashtool.com/download/>`_ (*aka MTK flash tool*)."
-msgstr ""
-
-#: ../../userguide/install.rst:131
-msgid "Extract the zip files"
-msgstr ""
-
-#: ../../userguide/install.rst:132
-msgid "Open a Terminal, enter the SP flash tool directory and run it with ``sudo ./flash_tool.sh``."
-msgstr ""
-
-#: ../../userguide/install.rst:136
-msgid "On Ubuntu 17.10, there are issues with flash_tool loading the shared library 'libpng12', so this can be used as a workaround:"
-msgstr ""
-
-#: ../../userguide/install.rst:144
-msgid "In the \"Scatter-loading File\" section, press the \"choose\" button and select the ``*Android_scatter.txt`` file from the archive you downloaded in the second step."
-msgstr ""
-
-#: ../../userguide/install.rst:145
-msgid "Choose \"Firmware Upgrade\" from the drop-down menu."
-msgstr ""
-
-#: ../../userguide/install.rst:149
-msgid "If you select DOWNLOAD ONLY rather than FIRMWARE UPGRADE, you will end up with a useless brick rather than a fancy Ubuntu Touch device. Be sure to select FIRMWARE UPGRADE."
-msgstr ""
-
-#: ../../userguide/install.rst:151
-msgid "Also, after selecting the ``*Android_scatter.txt``, the drop-down menu choice is reset to DOWNLOAD ONLY. Be sure to select it after selecting the file."
-msgstr ""
-
-#: ../../userguide/install.rst:153
-msgid "Turn your device completely off, but do not connect it yet."
-msgstr ""
-
-#: ../../userguide/install.rst:154
-msgid "Press the button labeled \"Download\"."
-msgstr ""
-
-#: ../../userguide/install.rst:155
-msgid "Perform a final sanity-check that you selected the \"Firmware Upgrade\" option, not \"Download Only\"."
-msgstr ""
-
-#: ../../userguide/install.rst:156
-msgid "Make sure your device is off and connect it to your PC. Don't use a USB 3.0 port, since that's known to cause communication issues with your device."
-msgstr ""
-
-#: ../../userguide/install.rst:157
-msgid "`Magic <https://en.wikipedia.org/wiki/Clarke's_three_laws>`_ happens. Wait till all the progress bars ended."
-msgstr ""
-
-#: ../../userguide/install.rst:161
-msgid "If the installation fails with a 100% red bar and hangs there (and logs says something like ``COM port is open. Trying to sync with the target...``), remove the ``modemmanager`` package as the one installed `is not compatible <https://web.archive.org/web/20180118130643/http://www.mibqyyo.com/en-articles/2015/09/16/ubuntu-android-installation-process-for-bq-aquaris-e4-5-and-e5/>`_ with SP flash tool, close it and try again from step 4."
-msgstr ""
-
-#: ../../userguide/install.rst:163
-msgid "Congratulations! Your device will now boot into a super old version of Ubuntu Touch. You can now use the UBports Installer to install an updated version."
 msgstr ""

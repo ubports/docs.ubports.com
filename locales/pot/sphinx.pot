@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-2023, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019-2024, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-24 08:44+0200\n"
+"POT-Creation-Date: 2024-11-05 15:24+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,37 +36,52 @@ msgstr ""
 msgid "Show source"
 msgstr ""
 
-#: ../../_templates/page.html:62
+#: ../../_templates/page.html:17
+msgid "Skip to content"
+msgstr ""
+
+#: ../../_templates/page.html:75
+msgid "Back to top"
+msgstr ""
+
+#: ../../_templates/page.html:130
 msgid "Next"
 msgstr ""
 
-#: ../../_templates/page.html:74
+#: ../../_templates/page.html:142
 msgid "Previous"
 msgstr ""
 
-#: ../../_templates/page.html:77
+#: ../../_templates/page.html:145
 msgid "Home"
 msgstr ""
 
-#: ../../_templates/page.html:89
-msgid "<a href=\"%(path)s\">Copyright</a> &#169; %(copyright)s."
+#: ../../_templates/page.html:158
+msgid "<a href=\"%(path)s\">Copyright</a> &#169; %(copyright)s"
 msgstr ""
 
-#: ../../_templates/page.html:93
+#: ../../_templates/page.html:162
 msgid "Copyright &#169; %(copyright)s"
 msgstr ""
 
-#: ../../_templates/page.html:100
-msgid "Last updated on %(last_updated)s."
+#: ../../_templates/page.html:168
+msgid "Made with "
 msgstr ""
 
-#: ../../_templates/page.html:106
-msgid "Built with <a href=\"https://www.sphinx-doc.org/\">Sphinx</a>\n"
-"              and\n"
-"              <a class=\"muted-link\" href=\"https://pradyunsg.me\">@pradyunsg</a>'s\n"
-"              <a href=\"https://github.com/pradyunsg/furo\">Furo theme</a>."
+#: ../../_templates/page.html:170
+msgid "<a href=\"https://www.sphinx-doc.org/\">Sphinx</a> and "
 msgstr ""
 
-#: ../../_templates/page.html:124
-msgid "Contents"
+#: ../../_templates/page.html:173
+msgid "\n"
+"            <a href=\"https://github.com/pradyunsg/furo\">Furo</a>\n"
+"            "
+msgstr ""
+
+#: ../../_templates/page.html:178
+msgid "Last updated on %(last_updated)s"
+msgstr ""
+
+#: ../../_templates/page.html:225
+msgid "On this page"
 msgstr ""
