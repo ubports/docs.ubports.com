@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-2023, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019-2024, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-24 08:44+0200\n"
+"POT-Creation-Date: 2024-11-05 15:24+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,59 +81,141 @@ msgid "DEB Packages"
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:16
-msgid "To make most efficient use of our CI system, a special naming convention for Git branches is used."
+msgid "To help us deliver our code into Ubuntu Touch as effortlessly as possible, our CI automatically build our Git repositories into a number of APT archives hosted at http://repo.ubports.com/, according to the branch name."
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:18
-msgid "For pre-installed Ubuntu Touch components, DEB-packages are used wherever possible. This includes Core apps, since they can still be independently updated using click-package downloads from the OpenStore. This policy allows making use of the powerful Debian build-system to resolve dependencies."
-msgstr ""
-
-#: ../../about/process/branch-naming.rst:20
-msgid "A Git repository following this convention usually has a ``main`` branch as well as branches corresponding to each release of Ubuntu Touch the package is part of.  Development takes place in the ``main`` branch whereas the release specific branches are only used for stable release updates of the actively supported releases.  The release specific branches are named after the codenames of the Ubuntu releases they are based on and are prefixed with ``ubports/`` (e.g. ``ubports/xenial``)."
+msgid "We maintain the following branches across Git repositories:"
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:22
-msgid "The CI system automatically builds packages for the aforementioned branches for different releases based on the following conventions:"
+msgid "Git branches"
 msgstr ""
 
-#: ../../about/process/branch-naming.rst:24
-msgid "If a package is not part of a released version of Ubuntu Touch yet, only a ``main`` branch is needed.  Packages will be built for the current in-development version as well as all supported stable releases.  If the latter is not desired, branches containing only a README file should be created for those releases."
+#: ../../about/process/branch-naming.rst:22
+msgid "Description"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:21
+msgid "Corresponding APT archives"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:23
+#: ../../about/process/security-vulnerabilities.rst:31
+msgid "Name"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:23
+msgid "Base distro"
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:25
-msgid "If a package is part of a released version of Ubuntu Touch, the ``main`` branch will be built for the current in-development version as well as supported stable versions for which no release-specific branch exist.  Release-specific branches will only be built for that release.  If e.g. a branch ``ubports/xenial`` exists and a commit is added to it, packages will only be built for Ubuntu Touch 16.04 but not any other release."
+msgid "``main``, ``ubports/latest``"
 msgstr ""
 
-#: ../../about/process/branch-naming.rst:27
-msgid "Packages built from these branches are directly built into their respective images and also published in the package repositories on ``repo.ubports.com`` for the 16.04 release and ``repo2.ubports.com`` in case of the 20.04 release currently under development."
+#: ../../about/process/branch-naming.rst:25
+msgid "Represents the latest development of Ubuntu Touch. All kinds of changes are allowed in this branch."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:25
+msgid "``devel-<Ubuntu LTS>`` (e.g. ``devel-noble``)"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:25
+msgid "Latest or upcoming Ubuntu LTS."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:28
+msgid "``devel-debian``"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:28
+msgid "Debian testing."
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:30
-msgid "Branch Names and PPAs"
+msgid "``ubports/<major version>.x`` (e.g. ``ubports/24.6.x``)"
 msgstr ""
 
-#: ../../about/process/branch-naming.rst:32
-msgid "Branch names following a certain naming scheme can be used to create :doc:`personal packaging archives (PPAs) <ppa>` and to instruct the CI system to resolve dependencies using other PPAs. More specifically, such branch names start with a release-specific name followed by a chain of distribution names separated by ``_-_``. For example ``ubports/focal_-_my-feature`` instructs the CI system to resolve build dependencies using the ``focal`` and, if it already exists, a ``my-feature`` distribution.  The resulting packages will be published on ``repo2.ubports.com`` in their own separate distribution ``my-feature``.  This feature can be used to test one or more packages in combination during development."
+#: ../../about/process/branch-naming.rst:30
+msgid "Represents the code in a particular major version. It branches off of the ``main`` branch before the major release, and will become a part of the releases of that major version. Only bugfixes and non-breaking changes are allowed in this branch."
 msgstr ""
 
-#: ../../about/process/branch-naming.rst:36
-msgid "If multiple branch-based distributions are chained together in the form of ``ubports/focal_-_dependency-1_-_dependency-2_-_dependency-3``, the CI system will look for dependencies in the following distributions in the repository at ``repo2.ubports.com``:"
+#: ../../about/process/branch-naming.rst:30
+msgid "``<major version>.x`` (e.g. ``24.6.x``)"
 msgstr ""
 
-#: ../../about/process/branch-naming.rst:47
-msgid "There is no prioritization, so the build system will always use the package with the highest version number, or the newest build if the version is equal."
+#: ../../about/process/branch-naming.rst:30
+msgid "Ubuntu LTS at the time of branching."
 msgstr ""
 
-#: ../../about/process/branch-naming.rst:50
-msgid "Dependency-file"
+#: ../../about/process/branch-naming.rst:38
+msgid "``ubports/focal``"
 msgstr ""
 
-#: ../../about/process/branch-naming.rst:52
-msgid "For complex or non-linear dependencies, a ``ubports.depends`` file can be created in the root of the repository to specify additional dependencies. The branch name will be ignored if this file exists."
+#: ../../about/process/branch-naming.rst:38
+msgid "A special case of ``ubports/<major version>.x``, which is branched after the release of Ubuntu Touch 20.04 OTA-4."
 msgstr ""
 
-#: ../../about/process/branch-naming.rst:62
-msgid "The ``ubports.depends`` file is an **exclusive list**, so the build system will not resolve dependencies linearly like it does in a branch name! Every dependency has to be listed. You will almost always want to include your base release (i.e. ``focal``)."
+#: ../../about/process/branch-naming.rst:38
+msgid "``focal``"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:38
+#: ../../about/process/branch-naming.rst:43
+msgid "Ubuntu 20.04 LTS."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:43
+msgid "``ubports/focal_-_<ext>``"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:43
+msgid "Branches which use the deprecated \"branch extensions\" system for cross-components changes. No longer recommended for usage."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:43
+msgid "``focal_-_<ext>``"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:48
+msgid "``personal/<user>/<name>``, and any other branches."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:48
+msgid "All other branches may be used for proposing merge requests or for other reasons. Theses branches are not built by the CI unless proposed as a merge request."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:48
+msgid "N/A, unless proposed as an MR against aforementioned branches (see below)."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:55
+msgid "To ensure the ``main`` branch doesn't miss any changes, all changes must be made against ``main`` branch first before backporting to the major release branches. An exception is when a change is not applicable to the ``main`` branch anymore due to other changes in that branch."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:58
+msgid "If the next development version is not available for testing yet, and you need the change to be made available for install for testing, it's allowed to temporarily target the changeset to the major version branch to get packages built against that version. When the changeset is ready for merge, the changeset must be re-targeted to the ``main`` branch."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:61
+msgid "APT archives for Merge Requests"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:63
+msgid "In addition to archives mentioned above, we also create APT archives for MRs made against our Git repositories. This allows us to test the result of the build on real devices using ubports-qa_ before merging the code. For each MR, the CI will build the code against all the same targets as the MR's target branch, and then will append ``_-_PR_<repository name>_<MR number>`` to them [1]_. For example:"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:65
+msgid "An MR numbered 100 made against the ``main`` branch of Git repository ``lomiri`` (when the current Ubuntu LTS is ``noble``) will have APT archives named ``devel-noble_-_PR_lomiri_100`` *and* ``devel-debian_-_PR_lomiri_100``."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:66
+msgid "An MR numbered 125 made against the ``ubports/24.6.x`` branch of Git repository ``morph-browser`` will have an APT archive named ``24.6.x_-_PR_morph-browser_125``."
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:68
+msgid "The word ``PR`` stuck around from the time we hosted our code on GitHub."
 msgstr ""
 
 #: ../../about/process/index.rst:2
@@ -161,7 +243,7 @@ msgid "Where are bugs tracked?"
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:10
-msgid "Since quality assurance depends heavily on community effort, issues are tracked where users expect them, instead of separated by repository. This means issues of almost all distributed components (as with the system-image) are tracked in the `Ubuntu Touch tracker <https://github.com/ubports/ubuntu-touch>`__. An exception to this are click-apps, which can be updated independently through the OpenStore."
+msgid "Since quality assurance depends heavily on community effort, issues are tracked where users expect them, instead of separated by repository. This means issues of almost all distributed components (as with the system-image) are tracked in the `Ubuntu Touch tracker <https://gitlab.com/ubports/ubuntu-touch>`__. An exception to this are click-apps, which can be updated independently through the OpenStore."
 msgstr ""
 
 #: ../../about/process/issue-tracking.rst:17
@@ -356,58 +438,6 @@ msgstr ""
 msgid "If not done already, the issue is added to the next milestone, which once released removes the issue from the project board."
 msgstr ""
 
-#: ../../about/process/ppa.rst:2
-msgid "UBports Debian repository"
-msgstr ""
-
-#: ../../about/process/ppa.rst:5
-msgid "repo.ubports.com"
-msgstr ""
-
-#: ../../about/process/ppa.rst:7
-msgid "This is the legacy package repository for UBports projects.  It hosts the Debian packages of the current stable release."
-msgstr ""
-
-#: ../../about/process/ppa.rst:10
-msgid "repo2.ubports.com"
-msgstr ""
-
-#: ../../about/process/ppa.rst:12
-msgid "This is the current package repository for UBports projects.  It contains Debian packages of the development version of Ubuntu Touch and various PPAs."
-msgstr ""
-
-#: ../../about/process/ppa.rst:15
-msgid "Repository naming convention"
-msgstr ""
-
-#: ../../about/process/ppa.rst:18
-msgid "Native packages"
-msgstr ""
-
-#: ../../about/process/ppa.rst:20
-msgid "Native packages (e.g. https://gitlab.com/ubports/core/lomiri-system-settings) are repositories that contain a ``debian/`` folder **with** the source used to create the Debian source package."
-msgstr ""
-
-#: ../../about/process/ppa.rst:22
-msgid "The name of the Debian source package generated from the repository and the name of the Git-repository should be the same."
-msgstr ""
-
-#: ../../about/process/ppa.rst:25
-msgid "Non-native packages"
-msgstr ""
-
-#: ../../about/process/ppa.rst:27
-msgid "Non-native package repositories (e.g. https://gitlab.com/ubports/core/packaging/sensorfw) contain a ``debian`` folder **without** the source used to create the Debian source package. The URL of the upstream source tarball and filename of the ``.orig.tar.gz`` archive must be specified on a separate line each in a file called ``ubports.source_location`` inside the ``debian`` directory.  The CI system uses this information to download and rename the upstream sources and to create a Debian source package."
-msgstr ""
-
-#: ../../about/process/ppa.rst:31
-msgid "Creating new PPAs"
-msgstr ""
-
-#: ../../about/process/ppa.rst:33
-msgid "New PPAs can be created dynamically by the CI server using a special :doc:`git-branch naming convention <branch-naming>`. The name of the branch translates literally to the name of the PPA which is a distribution in the package repository at: ``https://repo2.ubports.com/dists/[branch name]``"
-msgstr ""
-
 #: ../../about/process/release-schedule.rst:2
 msgid "Release Schedule"
 msgstr ""
@@ -446,4 +476,104 @@ msgstr ""
 
 #: ../../about/process/release-schedule.rst:30
 msgid "**This is where dragons live.** Here ideas and big new features are melted into code for developers to work on and for the fearless to try them out. Don't set this channel on a phone you use daily. Updates come as ideas happen to developers. Sometimes very frequently, sometimes the channel isn't used at all. Basically, if you need to ask what's in Edge, then it is not for you."
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:2
+msgid "Security vulnerabilities"
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:4
+msgid "We take security vulnerabilities seriously. If you've found one, the best way to report it is to create a confidential issue on our `bug tracker <https://gitlab.com/ubports/ubuntu-touch>`_. Make sure you select \"This issue is confidential and should only be visible to team members with at least Reporter access\" when creating the issue. After that, we'll get to work with the reported issue. We might contact you via the issue if there is additional information needed. And we'll determine the disclosure."
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:7
+msgid "How to handle a security fix"
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:9
+msgid "For UBports development members, these are recommended steps to handle fixing the issue without disclosing to public before the fix is ready:"
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:11
+msgid "Given a main repo, ensure that the ``<project>.secfix`` repo exists. If not, fork from the main project to the same namespace, but set the visibility to private."
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:13
+msgid "The ``.secfix`` suffix will prevent CI from touching this repo, preventing the repo from leaking."
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:15
+msgid "If there isn't an issue for it already, create a confidential issue on the main project."
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:16
+msgid "On the issue, use \"Create confidential merge request\". Set the branch name and the source branch appropriately. Then, push to this branch from your local Git tree."
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:18
+msgid "This MR will target the ``.secfix`` repo, NOT the main repo [1]_. This allows reviewing the patch to happen in private."
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:20
+msgid "Another developer then reviews and merges the merge request. If backport is needed, it must also happen in the ``.secfix`` fork."
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:22
+msgid "Since we don't have confidential CI yet, it is both the developer and reviewer's responsibility to ensure that the code will compile, pass tests, and is tested locally."
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:24
+msgid "At ~1 day before the release date of a release candidate, a developer (usually the release manager) merges all branches of ``.secfix`` repo to the main repo. After that, the confidential issue is marked unconfidential. This makes the issue public for the first time."
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:26
+msgid "At this point, it is this developer's responsibility to ensure that the merge result actually passes CI and that at least the basic functionality of this component is not broken."
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:28
+msgid "The release manager will ensure that the fix actually lands in the daily image before choosing such image as an RC."
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:29
+msgid "Before the release date, the fixing developer will prepare the security advisory, containing (the list is inspired by Curl's advisories [2]_):"
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:32
+msgid "Vulnerability (how a user is vulnerable)"
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:33
+msgid "Info (how the vulnerable exists)"
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:34
+msgid "Affected versions"
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:35
+msgid "Solution"
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:36
+msgid "Recommendations"
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:37
+msgid "Timeline"
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:38
+msgid "Credit"
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:40
+msgid "At the release date, the security advisory will be published on the forum, in the \"OS > Security advisories\" section."
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:42
+msgid "https://docs.gitlab.com/ee/user/project/merge_requests/confidential.html#create-a-confidential-merge-request"
+msgstr ""
+
+#: ../../about/process/security-vulnerabilities.rst:43
+msgid "https://curl.se/docs/security.html"
 msgstr ""

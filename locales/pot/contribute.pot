@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-2023, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019-2024, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-24 08:44+0200\n"
+"POT-Creation-Date: 2024-11-05 15:24+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid "Check if the bug is already reported"
 msgstr ""
 
 #: ../../contribute/bugreporting.rst:14
-msgid "Open up the bug tracker for `ubuntu-touch <https://github.com/ubports/ubuntu-touch>`_."
+msgid "Open up the bug tracker for `ubuntu-touch <https://gitlab.com/ubports/ubuntu-touch>`_."
 msgstr ""
 
 #: ../../contribute/bugreporting.rst:17
@@ -73,7 +73,7 @@ msgid "Now it's time for what you've been waiting for, the bug report itself! Bu
 msgstr ""
 
 #: ../../contribute/bugreporting.rst:35
-msgid "First, pull up the `bug tracker <https://github.com/ubports/ubuntu-touch>`_ and click \"New Issue\". Log in to GitHub if you haven't yet."
+msgid "First, pull up the `bug tracker <https://gitlab.com/ubports/ubuntu-touch>`_ and click \"New Issue\". Log in to GitHub if you haven't yet."
 msgstr ""
 
 #: ../../contribute/bugreporting.rst:37
@@ -121,14 +121,14 @@ msgid "Log files may contain information you prefer to keep private. Please be s
 msgstr ""
 
 #: ../../contribute/bugreporting.rst:59
-msgid "To get ready, download the `Logviewer app <https://open-store.io/app/logviewer.neothethird>`_ from the OpenStore. This app will help us find, view, and send the logs we need."
+msgid "To get ready, download the `Logviewer app <https://open-store.io/app/logviewer.ruditimmer>`_ from the OpenStore. This app will help us find, view, and send the logs we need."
 msgstr ""
 
 #: ../../contribute/bugreporting.rst:61
-msgid "Now, open the Logviewer app. You'll see a list of all of the log files available in your user log folder, ``/home/phablet/.cache/upstart/``. This folder contains many, but not all, of the logs for software running on your device. You can tap on any log to view it, then tap the \"send\" icon in the top right corner to share it using an online service."
+msgid "Now, open the Logviewer app. You'll see the list of applications running on your device. You can open any of them to view the logs of this application. And you can use the \"send\" icon in the top right corner to share a log using an online service."
 msgstr ""
 
-#: ../../contribute/bugreporting.rst:63
+#: ../../contribute/bugreporting.rst:64
 msgid "If you don't see the log that you've been asked to send in Logviewer, it may be in a different folder or the application may not have created any logs yet. Tell this to the person who asked you for the logs. They should be able to get you the information you need to get back on track."
 msgstr ""
 
@@ -422,7 +422,7 @@ msgid "For example:"
 msgstr ""
 
 #: ../../contribute/code.rst:143
-msgid "Fixes https://github.com/ubports/ubuntu-touch/issues/1"
+msgid "Fixes https://gitlab.com/ubports/ubuntu-touch/-/issues/1"
 msgstr ""
 
 #: ../../contribute/code.rst:146
@@ -1095,7 +1095,7 @@ msgid "Confirming bug reports"
 msgstr ""
 
 #: ../../contribute/quality-assurance.rst:14
-msgid "Unconfirmed bugreports are labeled **needs confirmation** to enable `global filtering <https://github.com/ubports/ubuntu-touch/issues?q=is%3Aissue+is%3Aopen+label%3A%22needs+confirmation%22>`__. Browse through the list, read the bugreports and try to reproduce the issues that are described. If necessary, add :doc:`missing information or logs, or improve the quality of the report by other means <bugreporting>`. Leave a comment stating your device, channel, build number and whether or not you were able to reproduce the issue."
+msgid "Unconfirmed bugreports are labeled **needs confirmation** to enable `global filtering <https://gitlab.com/groups/ubports/-/issues/?sort=created_date&state=opened&or%5Blabel_name%5D%5B%5D=need%20confirmation&or%5Blabel_name%5D%5B%5D=needs%20confirmation&first_page_size=20>`__. Browse through the list, read the bugreports and try to reproduce the issues that are described. If necessary, add :doc:`missing information or logs, or improve the quality of the report by other means <bugreporting>`. Leave a comment stating your device, channel, build number and whether or not you were able to reproduce the issue."
 msgstr ""
 
 #: ../../contribute/quality-assurance.rst:16
@@ -1111,11 +1111,11 @@ msgid "Testing patches"
 msgstr ""
 
 #: ../../contribute/quality-assurance.rst:23
-msgid "Pull-requests can be tested using the `QA scripts <https://github.com/ubports/ubports-qa-scripts>`_. Run ``ubports-qa -h`` for usage information."
+msgid "Pull-requests can be tested using the `QA scripts <https://gitlab.com/ubports/development/core/ubports-qa-scripts>`_. Run ``ubports-qa -h`` for usage information."
 msgstr ""
 
 #: ../../contribute/quality-assurance.rst:25
-msgid "Once the pull-request has been merged, the issue it fixes is moved to the quality assurance column of the `GitHub project <https://github.com/ubports/ubuntu-touch/projects/3>`__. Please check if the issues in this column are still present in the latest update on the devel channel, then see if anything else has broken in the update. Check if the developer mentioned specific things to look out for when testing and leave a comment detailing your experience. If you have write-access to the repository, you can move the issue back to **In Development** (and reopen it) or forward to **Release Candidate** as specified by the :doc:`issue tracking guidelines </about/process/issue-tracking>`."
+msgid "Once the pull-request has been merged, the issue it fixes is moved to the completed column of the `Gitlab Milestone <https://gitlab.com/groups/ubports/-/milestones>`__. Please check if the issues in this column are still present in the latest update on the devel channel, then see if anything else has broken in the update. Check if the developer mentioned specific things to look out for when testing and leave a comment detailing your experience. If you have write-access to the repository, you can move the issue back to **In Development** (and reopen it) or forward to **Release Candidate** as specified by the :doc:`issue tracking guidelines </about/process/issue-tracking>`."
 msgstr ""
 
 #: ../../contribute/quality-assurance.rst:28

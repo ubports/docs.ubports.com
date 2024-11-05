@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2019-2023, The UBports project (Creative Commons BY-SA 4.0)
+# Copyright (C) 2019-2024, The UBports project (Creative Commons BY-SA 4.0)
 # This file is distributed under the same license as the UBports package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-24 08:44+0200\n"
+"POT-Creation-Date: 2024-11-05 15:24+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,6 +87,42 @@ msgstr ""
 
 #: ../../systemdev/calendars.rst:65
 msgid "Note that in order for these changes to take effect, you'll need to restart the ``syncevolution`` process again, as explained above."
+msgstr ""
+
+#: ../../systemdev/debian-pkg.rst:2
+msgid "Debian packaging guide"
+msgstr ""
+
+#: ../../systemdev/debian-pkg.rst:5
+msgid "This guide is still a work in progress. Please help us complete this document."
+msgstr ""
+
+#: ../../systemdev/debian-pkg.rst:8
+msgid "Native vs. non-native packages"
+msgstr ""
+
+#: ../../systemdev/debian-pkg.rst:11
+msgid "Native packages"
+msgstr ""
+
+#: ../../systemdev/debian-pkg.rst:13
+msgid "Native packages (e.g. https://gitlab.com/ubports/core/lomiri-system-settings) are repositories that contain a ``debian/`` folder **with** the source used to create the Debian source package."
+msgstr ""
+
+#: ../../systemdev/debian-pkg.rst:15
+msgid "The name of the Debian source package generated from the repository and the name of the Git-repository should be the same."
+msgstr ""
+
+#: ../../systemdev/debian-pkg.rst:18
+msgid "Non-native packages"
+msgstr ""
+
+#: ../../systemdev/debian-pkg.rst:20
+msgid "Non-native package repositories (e.g. https://gitlab.com/ubports/core/packaging/sensorfw) contain a ``debian`` folder, usually without the source used to create the Debian source package. The URL of the upstream source tarball and filename of the ``.orig.tar.gz`` archive must be specified on a separate line each in a file called ``ubports.source_location`` inside the ``debian`` directory.  The CI system uses this information to download and rename the upstream sources and to create a Debian source package."
+msgstr ""
+
+#: ../../systemdev/debian-pkg.rst:24
+msgid "Some non-native package repositories may contain source code. However, if they contain `debian/ubports.source_location`, they are still packaging repos. Any customization has to still be done using patches in `debian/patches`. Do NOT modify files outside of `debian/`, or CI will fail to build the package."
 msgstr ""
 
 #: ../../systemdev/guides.rst:2
@@ -472,7 +508,7 @@ msgstr ""
 msgid "Incoming MMS diagram"
 msgstr ""
 
-#: ../../systemdev/mms-infrastructure.rst:None
+#: ../../systemdev/mms-infrastructure.rst:-1
 msgid "incoming-MMS.png"
 msgstr ""
 
@@ -480,7 +516,7 @@ msgstr ""
 msgid "Outgoing MMS diagram"
 msgstr ""
 
-#: ../../systemdev/mms-infrastructure.rst:None
+#: ../../systemdev/mms-infrastructure.rst:-1
 msgid "outgoing-MMS.png"
 msgstr ""
 
@@ -933,86 +969,90 @@ msgid "For building against a different UBports release or architecture change `
 msgstr ""
 
 #: ../../systemdev/testing-locally.rst:296
-msgid "Crossbuilder will create the LXD container, download the development image, install all your package build dependencies, and perform the package build. It will also copy the packages over to your target device and install them if it is connected (see :doc:`/userguide/advanceduse/adb` to learn more about connecting your device). The first two steps (creating the LXD image and getting the dependencies) can take a few minutes, but will be executed only the first time you launch crossbuilder for a new package."
+msgid "Crossbuilder will create the LXD container, download the development image, install all your package build dependencies, and perform the package build. The first two steps (creating the LXD image and getting the dependencies) can take a few minutes, but will be executed only the first time you launch crossbuilder for a new package."
 msgstr ""
 
 #: ../../systemdev/testing-locally.rst:298
+msgid "In order to deploy the newly built package on a local device (see :doc:`/userguide/advanceduse/adb` to learn more about connecting your device), you can use::"
+msgstr ""
+
+#: ../../systemdev/testing-locally.rst:302
 msgid "Now, whenever you change the source code in your git repository, the same changes will be available inside the container. The next time you type the above ``crossbuilder`` command, only the changed files will be rebuilt."
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:300
+#: ../../systemdev/testing-locally.rst:304
 msgid "If the build dependencies have changed the following command can be used to update the container accordingly (``distro`` and ``arch`` should be set as above)::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:304
+#: ../../systemdev/testing-locally.rst:308
 msgid "While ``crossbuilder`` does not create log files for the build process, the ``script`` utility may be used for that purpose::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:308
+#: ../../systemdev/testing-locally.rst:312
 msgid "When a build container is no longer needed it maybe removed using::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:313
+#: ../../systemdev/testing-locally.rst:317
 msgid "Unit tests"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:315
+#: ../../systemdev/testing-locally.rst:319
 msgid "By default crossbuilder does not run unit tests; that's both for speed reasons, and because the container created by crossbuilder is not meant to run native (target) executables: the development tools (qmake/cmake, make, gcc, etc.) are all run in the host architecture, with no emulation (again, for speed reasons). However, qemu emulation is available inside the container, so it should be possible to run unit tests. You can do that by getting a shell inside the container::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:319
+#: ../../systemdev/testing-locally.rst:323
 msgid "Then find the unit tests and execute them. Be aware that the emulation is not perfect, so there's a very good chance that the tests will fail even when they'd otherwise succeed when run in a proper environment. For that reason, it's probably wiser not to worry about unit tests when working with crossbuilder, and run them only when not cross-compiling."
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:322
+#: ../../systemdev/testing-locally.rst:326
 msgid "Building on the device itself"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:324
+#: ../../systemdev/testing-locally.rst:328
 msgid "This is the fastest and simplest method to develop small changes and test them in nearly real-time. Depending on your device resources, however, it might not be possible to follow this path: if you don't have enough free space in your root filesystem you won't be able to install all the package build dependencies; you may also run out of RAM while compiling."
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:328
+#: ../../systemdev/testing-locally.rst:332
 msgid "This method is limited. Many devices do not have enough free image space to install the packages required to build components of Ubuntu Touch. Installing packages has a risk of damaging the software on your device, rendering it unusable. If this happens, you can :doc:`reinstall Ubuntu Touch </userguide/install>`."
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:331
+#: ../../systemdev/testing-locally.rst:335
 msgid "In this example, we'll build and install the address-book-app. All commands shown here must be run on your Ubuntu Touch device over a remote shell."
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:333
+#: ../../systemdev/testing-locally.rst:337
 msgid "You can gain a shell on the device using :doc:`/userguide/advanceduse/adb` or :doc:`/userguide/advanceduse/ssh`. Remount the root filesystem read-write to begin::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:337
+#: ../../systemdev/testing-locally.rst:341
 msgid "Next, install all the packages needed to rebuild the component you want to modify (the Contacts app, in this example)::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:343
+#: ../../systemdev/testing-locally.rst:347
 msgid "Additionally, you probably want to install ``git`` in order to get your app's source code on the device and later push your changes back into the repository::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:347
+#: ../../systemdev/testing-locally.rst:351
 msgid "Once you're finished, you can retrieve the source for an app (in our example, the address book) and move into its directory::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:352
+#: ../../systemdev/testing-locally.rst:356
 msgid "Now, you are ready to build the package::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:356
+#: ../../systemdev/testing-locally.rst:360
 msgid "The ``dpkg-buildpackage`` command will print out the names of generated packages. Install those packages with ``dpkg``::"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:360
+#: ../../systemdev/testing-locally.rst:364
 msgid "Note, however, that you might not need to install all the packages: generally, you can skip all packages whose names end with ``-doc`` or ``dev``, since they don't contain code used by the device."
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:363
+#: ../../systemdev/testing-locally.rst:367
 msgid "Next steps"
 msgstr ""
 
-#: ../../systemdev/testing-locally.rst:365
+#: ../../systemdev/testing-locally.rst:369
 msgid "Now that you've successfully made changes and tested them locally, you're ready to upload them to GitHub. Move on to the next page to learn about using the UBports CI to build and provide development packages!"
 msgstr ""
 
@@ -1264,7 +1304,7 @@ msgstr ""
 msgid "Open your fork of the repository on GitHub. Navigate to the branch that you just pushed to using the \"Branch\" selector:"
 msgstr ""
 
-#: ../../systemdev/uploading-changes.rst:None
+#: ../../systemdev/uploading-changes.rst:-1
 msgid "Using the branch selector on GitHub"
 msgstr ""
 
