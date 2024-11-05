@@ -1,3 +1,5 @@
+:orphan:
+
 Voice over LTE (VoLTE)
 ======================
 
@@ -5,7 +7,10 @@ Voice over LTE (VoLTE) is a technology that allows a phone to take a call and se
 
 Carriers in some parts of the world have started phasing out 3G cellular networks, making VoLTE mandatory in order to place a call on that carrier. If VoLTE is not supported or not enabled by the phone, and the carrier still supports 3G network, the phone will automatically switch to 3G network for the duration of the call and will switch back to 4G network after the call ends.
 
-Ubuntu Touch supports VoLTE on some devices. Support for VoLTE on Ubuntu Touch depends on the phone's chipset, the Android version the port is based on, and whether the port has enabled support for VoLTE. As of Ubuntu Touch 20.04 OTA-6, VoLTE is enabled on Volla Phone X23 and Volla Phone 22 running Android 12-based port.
+Ubuntu Touch supports VoLTE on some devices. Support for VoLTE on Ubuntu Touch depends on the phone's chipset, the Android version the port is based on, and whether the port has enabled support for VoLTE.
+
+.. note::
+    VoLTE is currently in development and is not yet available in any of the stable releases of Ubuntu Touch.
 
 How do I know if VoLTE is supported on my phone?
 ------------------------------------------------
