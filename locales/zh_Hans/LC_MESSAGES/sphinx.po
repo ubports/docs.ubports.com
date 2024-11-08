@@ -1,0 +1,84 @@
+# Language locales/zh translations for UBports package.
+# Copyright (C) 2019-2024, The UBports project (Creative Commons BY-SA 4.0)
+# This file is distributed under the same license as the UBports package.
+# FULL NAME <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: UBports \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-05 15:24+0800\n"
+"PO-Revision-Date: 2024-11-07 21:04+0800\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Language locales/zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: locales/zh_Hans/LC_MESSAGES/sphinx\n"
+
+#: ../../_templates/editpage.html:33 ../../_templates/editpage.html:35
+msgid "Edit on GitHub"
+msgstr ""
+
+#: ../../_templates/editpage.html:40 ../../_templates/editpage.html:42
+msgid "Edit on Bitbucket"
+msgstr ""
+
+#: ../../_templates/editpage.html:47 ../../_templates/editpage.html:49
+msgid "Edit on GitLab"
+msgstr ""
+
+#: ../../_templates/editpage.html:52 ../../_templates/editpage.html:54
+msgid "Show source"
+msgstr ""
+
+#: ../../_templates/page.html:17
+msgid "Skip to content"
+msgstr ""
+
+#: ../../_templates/page.html:75
+msgid "Back to top"
+msgstr ""
+
+#: ../../_templates/page.html:130
+msgid "Next"
+msgstr ""
+
+#: ../../_templates/page.html:142
+msgid "Previous"
+msgstr ""
+
+#: ../../_templates/page.html:145
+msgid "Home"
+msgstr ""
+
+#: ../../_templates/page.html:158
+msgid "<a href=\"%(path)s\">Copyright</a> &#169; %(copyright)s"
+msgstr ""
+
+#: ../../_templates/page.html:162
+msgid "Copyright &#169; %(copyright)s"
+msgstr ""
+
+#: ../../_templates/page.html:168
+msgid "Made with "
+msgstr ""
+
+#: ../../_templates/page.html:170
+msgid "<a href=\"https://www.sphinx-doc.org/\">Sphinx</a> and "
+msgstr ""
+
+#: ../../_templates/page.html:173
+msgid ""
+"\n"
+"            <a href=\"https://github.com/pradyunsg/furo\">Furo</a>\n"
+"            "
+msgstr ""
+
+#: ../../_templates/page.html:178
+msgid "Last updated on %(last_updated)s"
+msgstr ""
+
+#: ../../_templates/page.html:225
+msgid "On this page"
+msgstr ""
