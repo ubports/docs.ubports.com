@@ -17,7 +17,7 @@ msgstr ""
 #: ../../porting/UpdatePortsFor2004.rst:4
 #, fuzzy
 msgid "Update ports for Ubuntu Touch 20.04"
-msgstr "为 Ubuntu Touch 构建镜像"
+msgstr "为 Ubuntu Touch 20.04 更新移植"
 
 #: ../../porting/UpdatePortsFor2004.rst:6
 msgid ""
@@ -29,12 +29,18 @@ msgid ""
 "ubports.com/en/latest/porting/introduction/Intro.html#getting-community-"
 "help>`_ to answer any question that might occur during process."
 msgstr ""
+"Ubuntu Touch 20.04引进了许多底层修改，这需要移植者相应修改"
+"这个文档的目的是作为一个概述关于如何使你的移植上运行Ubuntu Touch 20.04。"
+"但是，每个移植都是不同的，可能需要比这个文档概述更多的内容。"
+"我们将在 `UBports 移植 Telegram 群组<https://docs."
+"ubports.com/en/latest/porting/introduction/Intro.html#getting-community-"
+"help>`_ 中回答过程中可能出现的任何问题。"
 
 #: ../../porting/UpdatePortsFor2004.rst:9
 msgid ""
 "For GitLab CI-based ports: switch to shared building script & GitLab CI "
 "configuration"
-msgstr ""
+msgstr "对于基于 GitLab CI 的移植: 切换到共享构建脚本和 GitLab CI 配置"
 
 #: ../../porting/UpdatePortsFor2004.rst:11
 msgid ""
@@ -46,10 +52,15 @@ msgid ""
 "(e.g. for 22.04 or newer). To transition to the shared script, remove the "
 "whole ``build/`` directory, and replace the content of ``build.sh`` with:"
 msgstr ""
+"由于 Ubuntu Touch 20.04 的根文件系统制作方式发生了变化，"
+"我们需要改变构建设备压缩包的方式。"
+"我们建议过渡到共享的构建脚本，而不是从其他移植的版本库中挑选脚本修改。"
+"通过使用共享脚本，随着根文件系统的不断发展（例如 22.04 或更新版本），您的移植将收到设备压缩包构建中的最新更改。"
+"要过渡到共享脚本，请删除整个 ``build/`` 目录，并将 ``build.sh`` 的内容替换为"
 
 #: ../../porting/UpdatePortsFor2004.rst:21
 msgid "You may want to add ``build/`` into your ``.gitignore``."
-msgstr ""
+msgstr "你可能想添加 ``build/`` 到 ``.gitignore``"
 
 #: ../../porting/UpdatePortsFor2004.rst:23
 msgid ""
@@ -58,12 +69,15 @@ msgid ""
 "your port will not be broken. Using the shared config can be done by "
 "replacing the content of ``.gitlab-ci.yml`` with:"
 msgstr ""
+"出于同样的原因，我们建议使用共享的 GitLab CI 配置，这样当共享脚本的需求发生变化时，您的移植就不会被破坏了。"
+"将 ``.gitlab-ci.yml`` 的内容替换为即可使用共享配置："
 
 #: ../../porting/UpdatePortsFor2004.rst:33
 msgid ""
 "The ``variables`` section enables building the flashable partition image "
 "from the Focal rootfs, which you might want to leave out for intial porting."
 msgstr ""
+"``variables`` 部分允许从 Focal 根文件系统构建可刷入分区的镜像，您可能希望在初始移植时将其保留。"
 
 #: ../../porting/UpdatePortsFor2004.rst:36
 msgid ""
@@ -72,6 +86,8 @@ msgid ""
 "<https://gitlab.com/ubports/porting/community-ports/halium-generic-"
 "adaptation-build-tools/-/issues/5>`_."
 msgstr ""
+"该脚本当前不处理为多个设备构建的单个存储库。如果您的移植需要此功能，请为 "
+"`此议题 <https://gitlab.com/ubports/porting/community-ports/halium-generic-adaptation-build-tools/-/issues/5>`_ 点赞"
 
 #: ../../porting/UpdatePortsFor2004.rst:38
 msgid ""
@@ -81,10 +97,13 @@ msgid ""
 "the GitLab CI configuration and order it after the device tarball building "
 "steps, or even overriding some steps (not recommended)."
 msgstr ""
+"如果您对构建脚本或 GitLab CI 配置进行了自定义修改，可能需要仔细检查这些修改，以确保您的移植仍能正常工作。"
+"请注意，您可以在 GitLab CI 配置中添加额外的步骤，"
+"并将其排序在设备压缩包构建步骤之后，甚至可以覆盖某些步骤（不推荐）。"
 
 #: ../../porting/UpdatePortsFor2004.rst:41
 msgid "For GitLab CI-based ports: inspect your overlay in Android partitions"
-msgstr ""
+msgstr "对于基于 GitLab CI 的移植: 检查在安卓分区内的覆盖文件"
 
 #: ../../porting/UpdatePortsFor2004.rst:43
 msgid ""
@@ -97,6 +116,12 @@ msgid ""
 "automatically, except when the new file is added in which case you may need "
 "``.halium-overlay-dir`` (see :ref:`Overlay`)."
 msgstr ""
+"许多移植会覆盖 Android 分区中的文件，以使移植正常工作。"
+"这通常是通过覆盖 ``mount-android.conf`` Upstart 任务来实现的，"
+"要么包含代码本身，要么调用另一个脚本。"
+"由于 Ubuntu Touch 20.04 不再使用 Upstart（见下文），代码将不再运行。"
+"如果您的移植将覆盖文件存放在 ``/opt/halium-overlay`` 或 ``/usr/share/halium-overlay`` ，"
+"新的覆盖系统会自动处理这些文件，只是在添加新文件时需要 ``.halium-overlay-dir`` （请参阅 :ref:`Overlay`）。"
 
 #: ../../porting/UpdatePortsFor2004.rst:45
 msgid ""
@@ -105,10 +130,13 @@ msgid ""
 "it will make your port incompatible with 16.04 (unless you have another "
 "branch). Contact @peat-psuwit in the UBports porting group for more info."
 msgstr ""
+"或者，您也可以考虑完全迁移您的移植，使用 `overlaystore` 系统。不过迁移并不简单，"
+"而且会导致您的移植与 16.04 不兼容（除非您有其他分支）。"
+"请联系 UBports 移植小组的 @peat-psuwit 以获取更多信息。"
 
 #: ../../porting/UpdatePortsFor2004.rst:48
 msgid "For Halium 7 ports or older: update bluetooth-touch script"
-msgstr ""
+msgstr "基于Halium 7 或更旧版本的移植： 更新 bluetooth-touch 脚本"
 
 #: ../../porting/UpdatePortsFor2004.rst:50
 msgid ""
@@ -118,6 +146,11 @@ msgid ""
 "have to overlay ``/usr/share/bluetooth-touch/android.sh``. Note that the "
 "script will be run by ``/bin/sh``, so avoid Bash-ism here."
 msgstr ""
+"bluetooth-touch 脚本过去的工作方式与 Upstart 有内在联系。"
+"在 Ubuntu Touch 20.04 中，bluetooth-touch 被迁移到使用 Systemd。"
+"因此，你必须覆盖 ``/usr/share/bluetooth-touch/android.sh``，"
+"而不是覆盖 ``bluetooth-touch-android.conf`` Upstart 任务。"
+"请注意，脚本将由 ``/bin/sh`` 运行，因此请避免使用 Bash-ism"
 
 #: ../../porting/UpdatePortsFor2004.rst:52
 msgid ""
@@ -125,20 +158,22 @@ msgid ""
 "touch`` by directly talking to HIDL service to provide Bluetooth host "
 "interface."
 msgstr ""
+"Halium 9 移植不需要这样做，因为 Bluebinder 直接与 HIDL 服务对话，提供蓝牙主机接口，从而取代了 ``bluetooth-touch``。"
 
 #: ../../porting/UpdatePortsFor2004.rst:55
 msgid "For everyone: configure usb-moded"
-msgstr ""
+msgstr "对于所有移植: 配置usb-moded"
 
 #: ../../porting/UpdatePortsFor2004.rst:57
 msgid ""
 "usb-moded replaces ``setupusb`` script in setting and managing USB modes. "
 "We've written a specific page for that. See :ref:`USBModed`."
 msgstr ""
+"usb-moded 代替 ``setupusb`` 脚本设置和管理 USB 模式。我们为此专门编写了一个页面。请参阅 :ref:`USBModed`。"
 
 #: ../../porting/UpdatePortsFor2004.rst:60
 msgid "For everyone: check custom Upstart jobs"
-msgstr ""
+msgstr "对于所有移植: 检查自定义 Upstart 任务"
 
 #: ../../porting/UpdatePortsFor2004.rst:62
 msgid ""
@@ -147,6 +182,9 @@ msgid ""
 "20.04. One may find `Ubuntu's guide on this topic <https://wiki.ubuntu.com/"
 "SystemdForUpstartUsers#Job_vs._unit_keywords>` useful."
 msgstr ""
+"有些移植有自定义的 Upstart 任务，以便在启动时做某些事情。"
+"这些工作必须转换为 Systemd 单元才能在 Ubuntu Touch 20.04 中运行。"
+"您可能会发现 `Ubuntu 关于此主题的指南 <https://wiki.ubuntu.com/SystemdForUpstartUsers#Job_vs._unit_keywords>` 非常有用。"
 
 #: ../../porting/UpdatePortsFor2004.rst:64
 msgid ""
@@ -155,6 +193,9 @@ msgid ""
 "path is ``/usr/libexec/lxc-android-config/device-hacks``, and the script "
 "will be run with ``/bin/sh``."
 msgstr ""
+"或者，与其编写自定义 Systemd 单元，不如使用 ``devicehack`` 脚本，"
+"它将在 Android 容器运行后的每次启动时运行。"
+"路径为 ``/usr/libexec/lxc-android-config/device-hacks``，脚本将使用 ``/bin/sh`` 运行。"
 
 #: ../../porting/build_and_boot/Boot_debug.rst:4
 msgid "Booting"
@@ -5107,7 +5148,7 @@ msgstr ""
 
 #: ../../porting/introduction/Setting_up.rst:4
 msgid "Setting up the build environment"
-msgstr ""
+msgstr "设置构建环境"
 
 #: ../../porting/introduction/Setting_up.rst:6
 msgid ""
@@ -5117,7 +5158,7 @@ msgstr ""
 
 #: ../../porting/introduction/Setting_up.rst:9
 msgid "Prerequisites"
-msgstr ""
+msgstr "前提"
 
 #: ../../porting/introduction/Setting_up.rst:11
 msgid ""
