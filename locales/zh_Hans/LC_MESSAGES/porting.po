@@ -15,7 +15,6 @@ msgstr ""
 "X-Generator: Weblate 3.11.3\n"
 
 #: ../../porting/UpdatePortsFor2004.rst:4
-#, fuzzy
 msgid "Update ports for Ubuntu Touch 20.04"
 msgstr "为 Ubuntu Touch 20.04 更新移植"
 
@@ -32,7 +31,7 @@ msgstr ""
 "Ubuntu Touch 20.04引进了许多底层修改，这需要移植者相应修改"
 "这个文档的目的是作为一个概述关于如何使你的移植上运行Ubuntu Touch 20.04。"
 "但是，每个移植都是不同的，可能需要比这个文档概述更多的内容。"
-"我们将在 `UBports 移植 Telegram 群组<https://docs."
+"我们将在 `UBports 移植 Telegram 群组 <https://docs."
 "ubports.com/en/latest/porting/introduction/Intro.html#getting-community-"
 "help>`_ 中回答过程中可能出现的任何问题。"
 
@@ -184,7 +183,7 @@ msgid ""
 msgstr ""
 "有些移植有自定义的 Upstart 任务，以便在启动时做某些事情。"
 "这些工作必须转换为 Systemd 单元才能在 Ubuntu Touch 20.04 中运行。"
-"您可能会发现 `Ubuntu 关于此主题的指南 <https://wiki.ubuntu.com/SystemdForUpstartUsers#Job_vs._unit_keywords>` 非常有用。"
+"您可能会发现 `Ubuntu 关于此主题的指南 <https://wiki.ubuntu.com/SystemdForUpstartUsers#Job_vs._unit_keywords>`_ 非常有用。"
 
 #: ../../porting/UpdatePortsFor2004.rst:64
 msgid ""
@@ -199,7 +198,7 @@ msgstr ""
 
 #: ../../porting/build_and_boot/Boot_debug.rst:4
 msgid "Booting"
-msgstr ""
+msgstr "启动"
 
 #: ../../porting/build_and_boot/Boot_debug.rst:6
 msgid ""
@@ -207,10 +206,12 @@ msgid ""
 "on your device. The next step is to boot the device, gain remote access and "
 "debug as necessary."
 msgstr ""
+"在前面的章节中，您已经完成了在设备上构建和安装 Ubuntu Touch 的工作。"
+"下一步是启动设备、获得远程访问权限并进行必要的调试。"
 
 #: ../../porting/build_and_boot/Boot_debug.rst:9
 msgid "What is a successful boot?"
-msgstr ""
+msgstr "什么是成功的启动?"
 
 #: ../../porting/build_and_boot/Boot_debug.rst:11
 msgid ""
@@ -219,6 +220,8 @@ msgid ""
 "gone wrong. Your system may well have booted successfully and this can be "
 "ascertained by gaining remote access."
 msgstr ""
+"首次启动系统时，屏幕上通常不会显示任何内容。"
+"这并不一定说明出了什么问题。系统很可能已经成功启动，这可以通过远程访问来确定。"
 
 #: ../../porting/build_and_boot/Boot_debug.rst:13
 msgid ""
@@ -226,6 +229,7 @@ msgid ""
 "device from your host using ssh and continue debugging and configuring from "
 "there."
 msgstr ""
+"如果系统启动成功，就可以使用 ssh 从主机连接到设备，然后继续调试和配置。"
 
 #: ../../porting/build_and_boot/Boot_debug.rst:15
 msgid ""
@@ -234,28 +238,28 @@ msgid ""
 "these, the problem might be more difficult to determine. If you get stuck "
 "don't hesitate to seek help."
 msgstr ""
+"如果出了问题，通常会向您提供 telnet 连接，您可以通过它进行调试。"
+"如果这两种连接都没有，问题可能就更难确定了。如果遇到问题，请立即寻求帮助。"
 
 #: ../../porting/build_and_boot/Boot_debug.rst:18
 msgid "Gaining remote access"
-msgstr ""
+msgstr "获取远程访问权限"
 
 #: ../../porting/build_and_boot/Boot_debug.rst:20
-#, fuzzy
 msgid ""
 "When your device boots it will likely stay at the bootloader screen. "
 "However, you should also get a new network connection on the computer you "
 "have it plugged in to. To determine if this is the case, and what type of "
 "connection you have been offered, proceed as described below."
 msgstr ""
-"当您的设备启动时，它可能会卡在引导界面上。 但是，您还应该在插入设备的计算机上"
-"获得新的网络连接。 我们将使用它来调试系统。"
+"设备启动时可能会停留在启动加载器屏幕。不过，您也应该在插入设备的计算机上获得新的网络连接。"
+"要确定情况是否如此，以及所提供的连接类型，请按以下步骤操作。"
 
 #: ../../porting/build_and_boot/Boot_debug.rst:23
 msgid "ssh connection"
-msgstr ""
+msgstr "ssh连接"
 
 #: ../../porting/build_and_boot/Boot_debug.rst:25
-#, fuzzy
 msgid ""
 "To confirm that your device has booted correctly, on your host computer, run "
 "dmesg -w and watch for “GNU/Linux device” in the output. This confirms that "
@@ -263,13 +267,13 @@ msgid ""
 "instead get something similar to “Halium initrd Failed to boot”, skip to :"
 "ref:`telnet`."
 msgstr ""
-"要确认设备正确启动，运行``dmesg -w``并留意输出中的\"GNU/Linux device\"。如果"
-"你观察到类似于\"Halium initrd Failed to boot\"的信息，请联系我们以便我们排查"
-"原因。"
+"要确认设备已正确启动，请在主机上运行 dmesg -w，查看输出中是否有 “GNU/Linux 设备”。"
+"这将确认您可以建立与设备的 ssh 连接（见下文）。"
+"如果出现类似 “Halium initrd Failed to boot”的信息，请跳至 :ref:`telnet`。"
 
 #: ../../porting/build_and_boot/Boot_debug.rst:27
 msgid "Establish an ssh connection to your device as follows:"
-msgstr ""
+msgstr "按如下步骤建立与设备的 ssh 连接："
 
 #: ../../porting/build_and_boot/Boot_debug.rst:29
 msgid ""
@@ -278,20 +282,22 @@ msgid ""
 "likely resemble ``enp0s29u1u1``. Assign this device a fake MAC address (if "
 "the default one is all 00s) and an IP of 10.15.19.100::"
 msgstr ""
+"现在，您的电脑应该有了一个新连接的 RNDIS 接口。"
+"检查 ip link show 的输出，查看设备名称。设备名称很可能类似 enp0s29u1u1。"
+"为该设备分配一个假的 MAC 地址（如果默认的都是 00）和一个 10.15.19.100 的 IP："
 
 #: ../../porting/build_and_boot/Boot_debug.rst:35
 msgid "Once finished, you should be able to login with the following::"
-msgstr ""
+msgstr "完成后，您应该可以通过以下方式登录"
 
 #: ../../porting/build_and_boot/Boot_debug.rst:39
-#, fuzzy
 msgid ""
 "The password will be the one you set when you ran the halium-install script."
 msgstr "密码将是您在运行 halium-install 时设置的密码。"
 
 #: ../../porting/build_and_boot/Boot_debug.rst:44
 msgid "telnet connection"
-msgstr ""
+msgstr "telnet 连接"
 
 #: ../../porting/build_and_boot/Boot_debug.rst:46
 msgid ""
@@ -300,37 +306,42 @@ msgid ""
 "one or more partitions have not been mounted as they should. Connect to your "
 "device with the following command::"
 msgstr ""
+"如果提供了 telnet 连接，则 rootfs 和系统映像很可能在启动时未被找到和加载。"
+"这可能表明一个或多个分区未按规定加载。使用以下命令连接设备"
 
 #: ../../porting/build_and_boot/Boot_debug.rst:50
 msgid ""
 "From here you can start debugging to find out what went wrong. Please :ref:"
 "`seek help <Getting-community-help>` to find out how to proceed."
 msgstr ""
+"您可以从这里开始调试，找出出错的原因。:ref:`请寻求帮助 <Getting-community-help>`，了解如何继续。"
 
 #: ../../porting/build_and_boot/H7_build.rst:2
 msgid "Halium-7.1 - Building"
-msgstr ""
+msgstr "Halium-7.1 - 构建"
 
 #: ../../porting/build_and_boot/H7_build.rst:4
 msgid ""
 "For Halium-7.1 porting it is necessary to build both halium-boot.img and "
 "system.img."
 msgstr ""
+"要移植 Halium-7.1，必须同时构建 halium-boot.img 和 system.img。"
 
 #: ../../porting/build_and_boot/H7_build.rst:7
 #: ../../porting/build_and_boot/H9_build.rst:10
 msgid "Initializing the build environment"
-msgstr ""
+msgstr "初始化构建环境"
 
 #: ../../porting/build_and_boot/H7_build.rst:9
 msgid ""
 "First you need to initialize the environment using the envsetup.sh tool "
 "included in your source tree. Enter your BUILDDIR and issue the command::"
 msgstr ""
+"首先需要使用源代码树中的 envsetup.sh 工具初始化环境。进入你的 BUILDDIR 并发出命令"
 
 #: ../../porting/build_and_boot/H7_build.rst:13
 msgid "The output will look like this::"
-msgstr ""
+msgstr "输出结果如下"
 
 #: ../../porting/build_and_boot/H7_build.rst:21
 msgid ""
@@ -338,6 +349,8 @@ msgid ""
 "specific device. From the root of your BUILDDIR run the following, replacing "
 "[CODENAME] with your device's specific codename::"
 msgstr ""
+"``breakfast`` 命令用于为特定设备设置构建环境。"
+"从 BUILDDIR 根目录运行以下命令，将 [CODENAME] 替换为设备的特定代号"
 
 #: ../../porting/build_and_boot/H7_build.rst:25
 #: ../../porting/build_and_boot/H9_build.rst:28
@@ -345,10 +358,10 @@ msgid ""
 "Breakfast will attempt to find your device, set up all of the environment "
 "variables needed for building, and give you a summary at the end."
 msgstr ""
+"``breakfast`` 命令会尝试找到你的设备，设置构建所需的所有环境变量，并在最后给你一个摘要"
 
 #: ../../porting/build_and_boot/H7_build.rst:30
 #: ../../porting/build_and_boot/H9_build.rst:33
-#, fuzzy
 msgid "Modify the kernel configuration"
 msgstr "修改内核配置"
 
@@ -360,6 +373,9 @@ msgid ""
 "including enabling Apparmor. A script that does this job is provided in your "
 "Halium source tree: ``BUILDDIR/halium/halium-boot/check-kernel-config``."
 msgstr ""
+"默认的 LineageOS/Halium 内核配置文件需要修改，"
+"因为 Ubuntu Touch 需要与 Halium 稍有不同的内核配置，包括启用 Apparmor。"
+"Halium 源代码树中提供了一个脚本来完成这项工作: ``BUILDDIR/halium/halium-boot/check-kernel-config``"
 
 #: ../../porting/build_and_boot/H7_build.rst:34
 #: ../../porting/build_and_boot/H9_build.rst:37
@@ -455,7 +471,7 @@ msgid ""
 "d0741dded3907f2cf4ecdc02bfcb74fc252763ff>`_."
 msgstr ""
 "在极少数情况下，bootloader会覆盖内核命令行参数，使上面的设置失去作用。谷歌"
-"Pixel 3a（sargo）就属于这种情况。要处理这个问题，请依照`这个commit <https://"
+"Pixel 3a（sargo）就属于这种情况。要处理这个问题，请依照 `这个commit <https://"
 "github.com/fredldotme/android_kernel_google_bonito/commit/"
 "d0741dded3907f2cf4ecdc02bfcb74fc252763ff>`_ 。"
 
@@ -472,9 +488,8 @@ msgstr ""
 
 #: ../../porting/build_and_boot/H7_build.rst:71
 #: ../../porting/build_and_boot/H9_build.rst:96
-#, fuzzy
 msgid "Now build the ``halium-boot.img`` using the commands::"
-msgstr "构建 halium-boot"
+msgstr "现在使用这个命令构建 ``halium-boot.img``"
 
 #: ../../porting/build_and_boot/H7_build.rst:78
 #: ../../porting/build_and_boot/H9_build.rst:103
@@ -511,9 +526,8 @@ msgstr ""
 
 #: ../../porting/build_and_boot/H7_build.rst:90
 #: ../../porting/build_and_boot/H9_build.rst:115
-#, fuzzy
 msgid "Building the system image (system.img)"
-msgstr "系统镜像，即\"system.img\""
+msgstr "构建系统镜像 (system.img)"
 
 #: ../../porting/build_and_boot/H7_build.rst:92
 msgid ""
@@ -835,9 +849,8 @@ msgid ""
 msgstr ""
 
 #: ../../porting/build_and_boot/H9_build.rst:7
-#, fuzzy
 msgid "Building the boot image (halium-boot.img)"
-msgstr "启动镜像，即“Halium-boot.img”"
+msgstr "构建启动镜像 (halium-boot.img)"
 
 #: ../../porting/build_and_boot/H9_build.rst:12
 msgid ""
