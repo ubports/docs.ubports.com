@@ -19,6 +19,7 @@ Display Scaling
 ---------------
 
 Grid Unit (GU) Reference:
+
 ========================  =====  ============
 Device Type               Px/GU  QtWebKit DPR
 ========================  =====  ============
@@ -31,6 +32,7 @@ Orientation Settings
 --------------------
 
 Available options:
+
 - portrait
 - landscape
 - inverted-portrait

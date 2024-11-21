@@ -18,6 +18,7 @@ Modify /etc/pulse/touch.pa:
 
 Common Issues
 -------------
+
 - Missing audio modules
 - UCM file configuration
 - Hardware detection problems

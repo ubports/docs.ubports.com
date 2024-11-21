@@ -18,17 +18,20 @@ Implementation Steps
 --------------------
 
 For Modern Kernels:
+
 1. Cherry-pick AppArmor commits
 2. Enable AppArmor in defconfig
 3. Verify implementation
 
 For Legacy Kernels:
+
 1. Download appropriate backport patch
 2. Apply to security/apparmor
 3. Rebuild kernel
 
 Verification
 ------------
+
 - Check kernel logs for AppArmor initialization
 - Test app launching
 - Monitor AppArmor denials

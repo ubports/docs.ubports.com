@@ -4,6 +4,7 @@ Network Configuration
 Mobile Data
 -----------
 Check kernel config:
+
 .. code-block:: none
 
     CONFIG_USB_NET_RNDIS_HOST=y
@@ -12,6 +13,7 @@ Check kernel config:
 RIL Configuration
 ^^^^^^^^^^^^^^^^^
 Enable RIL service:
+
 .. code-block:: bash
 
     sudo service ofono start
@@ -20,6 +22,7 @@ Enable RIL service:
 Wi-Fi Setup
 -----------
 Required components:
+
 - wpa_supplicant configuration
 - Firmware files
 - Wi-Fi HAL implementation
@@ -27,6 +30,7 @@ Required components:
 Troubleshooting
 ^^^^^^^^^^^^^^^
 Common issues:
+
 - Missing firmware
 - Driver initialization failures
 - Wrong regulatory domain

@@ -3,6 +3,7 @@ Camera Configuration
 
 Requirements
 ------------
+
 - Working camera HAL
 - Proper media codecs
 - GStreamer integration
@@ -37,6 +38,7 @@ Common settings:
 
 Troubleshooting
 ---------------
+
 - Permission issues
 - Missing codecs
 - Format compatibility
