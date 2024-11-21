@@ -1,3 +1,5 @@
+.. _android-architecture:
+
 Android System Architecture
 ===========================
 
