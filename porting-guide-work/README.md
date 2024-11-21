@@ -1,6 +1,25 @@
 # Ubuntu Touch Porting Guide Development
 
 This repository contains the development version of the modernized Ubuntu Touch porting guide.
+The guide is being reworked by Ari Börde Kröyer, based on the current guide and the Halium Generic 
+Adaptation Build Tools, and using AI assistance. 
+
+# Notes to the Reader
+
+My end goal is that this version of the guide can become a drop-in replacement for the current
+version of the guide, and serve to help and promote the porting effort. This will require a 
+coordinated community effort, as I am not sufficiently technically knowledgeable and skilled to 
+complete this task on my own.
+
+I therefore ask the reader to keep in mind that what you are seeing is an unfinished product which
+may very well contain factual mistakes and errors, and that your ideas and feedback are both welcome 
+and needed.
+
+I am making the first version available on November 21, 2024. In an early phase, I encourage readers 
+to discuss this project on Telegram, in the UBports Porting group (https://t.me/ubports_porting). Feel 
+free to tag me there when proposing ideas, pointing out errors, etc. Please keep in mind that I have
+limited time to spend on this project, so my responses might come with some delay.
+
 
 ## Setup Instructions
 
@@ -11,7 +30,7 @@ pip install sphinx furo sphinxext-rediraffe
 
 2. Clone the repository:
 ```bash
-git clone https://github.com/your-username/porting-guide
+git clone https://github.com/abkro/docs.ubports.com porting-guide/
 cd porting-guide
 ```
 
@@ -22,7 +41,7 @@ make html
 ```
 
 4. View the documentation:
-- Open `_build/html/index.html` in your web browser
+- In the `porting-guide-work/` folder, find and open `_build/html/index.html` in your web browser
 - Navigate through sections using the sidebar
 
 ## Review Guidelines
@@ -35,9 +54,7 @@ Please review:
 - Cross-references and navigation
 
 Submit feedback through:
-- GitHub issues for specific problems
-- Pull requests for suggested improvements
-- Comments on the PR for general feedback
+- Telegram, in the UBports Porting group (https://t.me/ubports_porting)
 
 ## Building Troubleshooting
 
