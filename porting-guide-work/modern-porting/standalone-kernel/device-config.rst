@@ -65,6 +65,12 @@ System Configuration
 Common Configurations
 ---------------------
 Provide examples for:
+
 - Standard Android devices
 - GKI devices
 - Dynamic partition devices
+
+See Also
+--------
+- :doc:`../../resources/deviceinfo-reference`
+- :doc:`../../resources/understanding-deviceinfo`

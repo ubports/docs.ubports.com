@@ -1,5 +1,5 @@
-Deviceinfo Configuration Reference
-==================================
+Deviceinfo Configuration Quick Reference
+========================================
 
 This reference documents all currently available deviceinfo parameters used in the UBports build system. This list was last updated in December 2024.
 
@@ -113,3 +113,4 @@ See Also
 --------
 - :doc:`../modern-porting/standalone-kernel/device-config`
 - :doc:`../modern-porting/special-cases/gki-devices`
+- :doc:`../resources/understanding-deviceinfo`

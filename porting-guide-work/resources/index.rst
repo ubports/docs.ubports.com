@@ -7,3 +7,4 @@ Reference materials and additional information for Ubuntu Touch porting.
    :maxdepth: 2
 
    deviceinfo-reference
+   understanding-deviceinfo
