@@ -3,6 +3,9 @@ Device Configuration
 
 The deviceinfo file is the central configuration point for your Ubuntu Touch port. It controls the build process and defines device-specific parameters.
 
+Below is a list of the minimal required settings for basic functionality, as well as a few more detailed options. For a complete reference of all available parameters, see :doc:`../../resources/deviceinfo-reference`.
+
+
 File Location and Format
 ------------------------
 The deviceinfo file must be in the root of your device port repository. It contains shell variables that configure various aspects of the build and device behavior.
