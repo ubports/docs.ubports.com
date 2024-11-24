@@ -41,6 +41,7 @@ Next Steps
 ----------
 
 After successful boot, proceed to:
+
 - :doc:`../../debugging/configuration/display`
 - :doc:`../../debugging/configuration/audio`
 - :doc:`../../debugging/hardware-fixes/apparmor`

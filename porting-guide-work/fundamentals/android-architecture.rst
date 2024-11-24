@@ -8,6 +8,7 @@ This chapter explains the key components of the Android system architecture that
 Quick Reference
 ---------------
 **Key Components:**
+
 - Hardware Abstraction Layer (HAL)
 - Android Init System
 - Bionic C Library

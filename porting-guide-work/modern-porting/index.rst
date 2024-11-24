@@ -7,6 +7,7 @@ Quick Reference
 ---------------
 
 For experienced developers:
+
 - :doc:`standalone-kernel/index`
 - Special cases: :doc:`special-cases/gki-devices`
 
@@ -61,6 +62,7 @@ Prerequisites
 -------------
 
 Before starting:
+
 - Read :doc:`../fundamentals/android-architecture`
 - Review :doc:`../preparation/device-selection/index`
 - Set up build environment per :doc:`../preparation/environment/index`

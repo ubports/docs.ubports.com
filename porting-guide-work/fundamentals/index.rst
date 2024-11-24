@@ -6,6 +6,7 @@ This section provides essential background knowledge for porting Ubuntu Touch to
 Quick Reference
 ---------------
 Experienced developers familiar with Android internals and HAL can skip to:
+
 - :doc:`../modern-porting/index`
 - :doc:`../vendor-specific/index`
 
@@ -31,5 +32,6 @@ Prerequisites
 Next Steps
 ----------
 After understanding these fundamentals, proceed to:
+
 - :doc:`../preparation/index`
 - :doc:`../modern-porting/index`

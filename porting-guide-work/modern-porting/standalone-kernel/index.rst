@@ -7,6 +7,7 @@ Quick Reference
 ---------------
 
 For experienced developers:
+
 1. Configure deviceinfo 
 2. Build kernel only (-k flag)
 3. Full build after kernel success

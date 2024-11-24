@@ -7,7 +7,9 @@ Quick Reference
 ---------------
 
 Critical fixes:
+
 - Display configuration
+- Network enablement
 - AppArmor implementation
 - Audio enablement
 

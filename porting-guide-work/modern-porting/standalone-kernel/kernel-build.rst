@@ -49,6 +49,7 @@ After successful kernel build:
     ./build.sh -b workdir
 
 This creates:
+
 - boot.img
 - system.img
 - vendor_boot.img (if needed)

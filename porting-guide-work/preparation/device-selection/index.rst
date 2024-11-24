@@ -29,6 +29,7 @@ Software/Source Availability
 Essential requirements:
 
 * **Kernel Source**: Must be available, preferably through:
+
     - Device manufacturer's repository
     - LineageOS repositories
     - Independent developer releases
