@@ -1,3 +1,5 @@
+.. _halium-overview:
+
 Halium Overview
 ===============
 
