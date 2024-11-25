@@ -32,7 +32,8 @@
 # ones.
 extensions = [
     'sphinx.ext.todo',
-    'sphinxext.rediraffe'
+    'sphinxext.rediraffe',
+    'sphinxcontrib.mermaid'
 ]
 
 # Add any paths that contain templates here, relative to this directory.

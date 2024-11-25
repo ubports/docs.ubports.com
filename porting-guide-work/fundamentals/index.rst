@@ -20,6 +20,7 @@ New to porting? Follow these sections in order:
    android-architecture
    halium-overview
    hardware-abstraction
+   ubuntu-touch-architecture
    build-systems
 
 Prerequisites
