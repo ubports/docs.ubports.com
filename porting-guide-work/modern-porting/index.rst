@@ -15,21 +15,25 @@ Basic Porting Process
 ---------------------
 
 1. Initial Setup
+
    - Device assessment
    - Build environment preparation
    - Source code acquisition
 
 2. Kernel Build and Testing 
+
    - Device configuration
    - Initial kernel build
    - Resolving build issues
 
 3. System Integration
+
    - Full system build
    - First boot
    - Basic functionality verification
 
 4. Hardware Enablement
+
    - Display configuration
    - AppArmor implementation
    - Hardware feature enablement
@@ -54,6 +58,7 @@ Most Android 9.0+ devices follow the standard porting process using the standalo
 Special Cases
 ^^^^^^^^^^^^^
 Some devices require additional handling:
+
 - GKI devices
 - Dynamic partition devices
 - A/B partition scheme devices

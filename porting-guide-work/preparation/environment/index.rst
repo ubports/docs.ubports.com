@@ -99,7 +99,7 @@ Storage Setup
 1. Ensure adequate free space
 2. Set up build directory::
 
-    mkdir halium-build
+    mkdir halium-build # Name directory as you wish
     cd halium-build
 
 Account Setup
@@ -108,6 +108,7 @@ Account Setup
 1. Required Accounts
 ^^^^^^^^^^^^^^^^^^^^
 * GitHub/GitLab account for:
+
     - Source code access
     - Contribution submission
     - Issue tracking
