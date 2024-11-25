@@ -25,7 +25,7 @@ limited time to spend on this project, so my responses might come with some dela
 
 1. Install dependencies:
 ```bash
-pip install sphinx furo sphinxext-rediraffe
+pip install sphinx furo sphinxext-rediraffe sphinxcontrib-mermaid
 ```
 
 2. Clone the repository:
