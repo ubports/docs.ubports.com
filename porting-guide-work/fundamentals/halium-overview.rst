@@ -39,39 +39,95 @@ Core Components
    * Mounts necessary filesystems
    * Starts the Android container
 
-Version Specifics
------------------
+Version Support
+---------------
 
 .. list-table::
    :header-rows: 1
-   :widths: 20 20 30 30
+   :widths: 15 20 35 30
 
    * - Halium Version
      - Android Base
      - Key Features
-     - Primary Use Case
-   * - 7.1
-     - Android 7.1
-     - Legacy device support, well-tested
-     - Older devices, established ports
-   * - 9.0
-     - Android 9.0
-     - Project Treble support, GSI compatibility
-     - Modern devices, new ports
-   * - 10.0/11.0
-     - Android 10/11
-     - Generic Kernel Image support
-     - Recent devices, GSI-based ports
+     - Best For
+   * - Halium 9
+     - Android 9
+     - GSI support, Project Treble
+     - Older devices, initial GSI ports
+   * - Halium 10
+     - Android 10
+     - Enhanced Treble, early GKI
+     - Mid-range devices, transitional ports
+   * - Halium 11
+     - Android 11
+     - Full GKI support, Dynamic partitions
+     - Devices launched with Android 11
+   * - Halium 12
+     - Android 12/12.1
+     - Enhanced security, AIDL HAL
+     - Modern mid-range devices
+   * - Halium 13
+     - Android 13
+     - Latest HAL support, Upstream alignment
+     - Recent flagship devices
 
-Build System Integration
-------------------------
+Version Requirements
+--------------------
 
-Halium provides build scripts and configurations that:
+Common Elements
+^^^^^^^^^^^^^^^
+All versions require:
 
-* Generate device-specific system images
-* Create appropriate boot images
-* Package necessary Android components
-* Integrate with distribution-specific tools
+* Valid device tree
+* Kernel source availability
+* Unlocked bootloader
+* Vendor blob access
+
+Version-Specific Requirements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Halium 9
+""""""""
+* Project Treble compliance
+* VNDK version 28
+* Linux kernel 4.4+
+* Basic vendor partition
+* Files needed: boot.img, system.img, vendor.img
+
+Halium 10
+"""""""""
+* Enhanced Treble support
+* VNDK version 29
+* Linux kernel 4.14+
+* Optional GKI support
+* Early dynamic partition support
+
+Halium 11
+"""""""""
+* GKI-compatible kernel 5.4+
+* Dynamic partition support
+* A/B partition scheme support
+* VNDK version 30
+* Files needed: vendor_boot.img, boot.img, vbmeta.img
+
+Halium 12
+"""""""""
+* Linux kernel 5.10+
+* AIDL HAL support
+* Enhanced SELinux policies
+* VNDK version 31/32
+* Generic Kernel Image (GKI)
+
+Halium 13
+"""""""""
+* Linux kernel 5.15+
+* Latest HIDL/AIDL HALs
+* Modern security features
+* VNDK version 33
+* Modular kernel support
+
+Architecture Evolution
+----------------------
 
 .. mermaid::
 
@@ -82,8 +138,28 @@ Halium provides build scripts and configurations that:
       C --> E[Android Container]
       E --> B
 
-Common Use Cases
-----------------
+Key Transitions
+^^^^^^^^^^^^^^^
+1. **HAL Architecture**
+
+   * H9-10: HIDL focused
+   * H11-12: Mixed HIDL/AIDL
+   * H13: AIDL preferred
+
+2. **Partition Schemes**
+
+   * H9: Traditional layout
+   * H10: Optional dynamic
+   * H11+: Mandatory dynamic
+
+3. **Security Evolution**
+
+   * Enhanced verified boot
+   * Stricter SELinux policies
+   * Modern encryption requirements
+
+Build Methods
+-------------
 
 1. **Full System Build**
 
@@ -112,6 +188,7 @@ Halium continues to evolve with:
 * Enhanced GSI compatibility
 * Improved hardware support
 * Simplified porting procedures
+* Standardized build processes
 
 See Also
 --------
