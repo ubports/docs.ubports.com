@@ -1,22 +1,30 @@
 Halium Versions Overview
 ========================
 
-Halium versions 11-13 support increasingly modern Android devices. Each version brings new capabilities and requirements.
+Halium versions from 9 through 13 support a wide range of Android devices, with newer versions adding support for more recent hardware and features.
 
 Version Selection
 -----------------
 
 .. list-table::
    :header-rows: 1
-   :widths: 20 25 25 30
+   :widths: 15 20 35 30
 
    * - Halium Version
      - Android Base
      - Key Features
      - Best For
+   * - Halium 9
+     - Android 9
+     - GSI support, Project Treble
+     - Older devices, initial GSI ports
+   * - Halium 10
+     - Android 10
+     - Enhanced Treble, early GKI
+     - Mid-range devices, transitional ports
    * - Halium 11
      - Android 11
-     - GKI support, Dynamic partitions
+     - Full GKI support, Dynamic partitions
      - Devices launched with Android 11
    * - Halium 12
      - Android 12/12.1
@@ -29,6 +37,31 @@ Version Selection
 
 Version Requirements
 --------------------
+
+Halium 9
+^^^^^^^^
+* Project Treble compliance
+* VNDK version 28
+* Linux kernel 4.4+
+* Basic vendor partition
+
+Key files:
+
+- boot.img
+- system.img
+- vendor.img
+
+Halium 10
+^^^^^^^^^
+* Enhanced Treble support
+* VNDK version 29
+* Linux kernel 4.14+
+* Optional GKI support
+
+Additional features:
+
+- Early dynamic partition support
+- Enhanced security features
 
 Halium 11
 ^^^^^^^^^
@@ -67,79 +100,67 @@ New considerations:
 - Modular kernel components
 - Strict HAL compatibility
 
-Build Differences
------------------
+Build Methods
+-------------
 
-Common Elements
-^^^^^^^^^^^^^^^
-All versions share:
-
-* Basic directory structure
-* Core build commands
-* Basic rootfs integration
-
-Version-Specific Changes
+Standalone Kernel Method
 ^^^^^^^^^^^^^^^^^^^^^^^^
-
-**Halium 11**:
+Available for Halium 9+:
 
 .. code-block:: bash
 
-    # Build commands
+    # Basic build
     ./build.sh -b workdir
+
+    # With GSI
     ./build/prepare-fake-ota.sh out/device_$DEVICE.tar.xz ota
     ./build/system-image-from-ota.sh ota/ubuntu_command images
 
-**Halium 12**:
+Version-Specific Options
+^^^^^^^^^^^^^^^^^^^^^^^^
+**Halium 9/10**::
 
-.. code-block:: bash
+    export USE_HALIUM_BOOT=1
+    export FLASH_BOOT=boot.img
 
-    # Additional flags needed
-    ./build.sh -b workdir --gki-kernel
-    export EXTRA_VENDOR_MODULES=1
+**Halium 11+**::
 
-
-**Halium 13**:
-
-.. code-block:: bash
-
-    # Latest build process
-    ./build.sh -b workdir --android13
-    export USE_AIDL_HALS=1
-
+    export USE_VENDOR_BOOT=1
+    export FLASH_BOOT="boot.img vendor_boot.img"
 
 Special Considerations
 ----------------------
 
-1. **GKI Support**
+1. **Architecture Evolution**
 
-   * Required for H11+
-   * Kernel configuration changes
-   * Module handling differences
+   * H9: Basic Treble support
+   * H10: Enhanced Treble
+   * H11+: Full GKI support
 
-2. **Partition Layout**
+2. **Partition Schemes**
 
-   * Dynamic partitions 
-   * A/B scheme support
-   * Recovery partition changes
+   * H9: Traditional layout
+   * H10: Optional dynamic
+   * H11+: Mandatory dynamic
 
-3. **HAL Compatibility**
+3. **HAL Transitions**
 
-   * HIDL to AIDL transition
-   * Vendor interface versions
-   * Binary compatibility
+   * H9-10: HIDL focused
+   * H11-12: Mixed HIDL/AIDL
+   * H13: AIDL preferred
 
 4. **Security Features**
 
-   * SELinux policy updates
-   * Verified boot requirements
-   * Encryption changes
+   * Verified boot progression
+   * SELinux policy evolution
+   * Encryption requirements
 
-Migration Notes
----------------
-* H11 → H12: HAL updates needed
-* H12 → H13: AIDL transition required
-* All versions: Check vendor blobs
+Version Migration
+-----------------
+* H9 → H10: Treble compliance update
+* H10 → H11: GKI adaptation
+* H11 → H12: AIDL introduction
+* H12 → H13: Full AIDL transition
 
 See Also
 --------
