@@ -1,3 +1,5 @@
+.. _gki-devices:
+
 GKI Device Support
 ==================
 
