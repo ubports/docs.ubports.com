@@ -1,3 +1,5 @@
+.. _device-config:
+
 Device Configuration
 ====================
 
