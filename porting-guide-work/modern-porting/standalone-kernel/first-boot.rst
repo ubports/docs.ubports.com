@@ -114,10 +114,50 @@ Boot Debugging
    * Pull logs and kernel messages
    * Check partition status
 
+Configuring udev Rules
+----------------------
+
+After verifying basic boot and establishing connection, udev rules must be configured for hardware access.
+
+1. **Make Root Writable**::
+
+    sudo mount -o remount,rw /
+
+2. **Generate Rules**
+
+   Different devices store ueventd rules in various locations. Try these commands in order until one succeeds::
+
+    # For most devices
+    sudo cat /var/lib/lxc/android/rootfs/ueventd*.rc | grep ^/dev | \
+    sed -e 's/^\/dev\///' | \
+    awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | \
+    sed -e 's/\r//' > /usr/lib/lxc-android-config/70-$DEVICE.rules
+
+    # If above fails, try vendor location
+    sudo cat /var/lib/lxc/android/rootfs/vendor/ueventd*.rc | grep ^/dev | \
+    sed -e 's/^\/dev\///' | \
+    awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | \
+    sed -e 's/\r//' > /usr/lib/lxc-android-config/70-$DEVICE.rules
+
+    # For some devices, try both locations
+    sudo cat /var/lib/lxc/android/rootfs/ueventd*.rc /vendor/ueventd*.rc | grep ^/dev | \
+    sed -e 's/^\/dev\///' | \
+    awk '{printf "ACTION==\"add\", KERNEL==\"%s\", OWNER=\"%s\", GROUP=\"%s\", MODE=\"%s\"\n",$1,$3,$4,$2}' | \
+    sed -e 's/\r//' > /usr/lib/lxc-android-config/70-$DEVICE.rules
+
+3. **Verify Rules**::
+
+    cat /usr/lib/lxc-android-config/70-$DEVICE.rules
+    # Should contain multiple lines of udev rules
+
+4. **Reboot**::
+
+    sudo reboot
+
+After reboot, you should see the Ubuntu Touch spinner. If not, proceed to display configuration.
+
 Next Steps
 ----------
-
-After establishing access:
 
 * :ref:`display` - Display setup
 * :ref:`apparmor` - Security configuration
