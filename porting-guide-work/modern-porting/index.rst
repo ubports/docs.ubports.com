@@ -45,7 +45,6 @@ Supported Methods
    :maxdepth: 2
 
    standalone-kernel/index
-   halium-versions/index
    special-cases/index
 
 Device Categories

@@ -1,3 +1,5 @@
+.. _apparmor:
+
 AppArmor Implementation
 =======================
 
