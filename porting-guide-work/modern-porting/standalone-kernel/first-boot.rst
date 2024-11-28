@@ -1,3 +1,5 @@
+.. _first-boot:
+
 Installation and First Boot Process
 ===================================
 

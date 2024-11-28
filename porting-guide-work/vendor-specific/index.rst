@@ -1,14 +1,25 @@
-Vendor-specific
-===============
+.. _vendor-specific:
 
-[This section is intended for giving targeted information about issues inherent to 
-certain vendors/chipsets, but not others. This way the general, more generic, parts of
-the guide will remain relevant to all.
+Vendor-Specific Considerations
+==============================
 
-This is one possible classification (but there may be a better one?):]
+This section covers vendor-specific challenges and solutions you may encounter when porting Ubuntu Touch. While basic porting steps are similar across devices, each vendor's hardware and software implementations introduce unique considerations.
+
+Quick Reference
+---------------
+
+Common vendor-specific issues:
+
+- Qualcomm: Modem initialization, graphics drivers
+- MediaTek: WiFi drivers, device tree overlays
+- Samsung Exynos: Bootloader constraints, kernel patches
+
+For detailed solutions, see the vendor-specific sections below.
 
 .. toctree::
    :maxdepth: 2
+   :name: vendor-specific-toc
 
-   mediatek/index
    qualcomm/index
+   mediatek/index
+   samsung/index
