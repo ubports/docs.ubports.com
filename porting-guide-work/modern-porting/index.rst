@@ -49,3 +49,7 @@ Before starting:
 * Read :doc:`../fundamentals/android-architecture`
 * Review :doc:`../preparation/device-selection/index`
 * Set up build environment per :doc:`../preparation/environment/index`
+
+Additional Information
+----------------------
+For deeper understanding of specific topics, see :doc:`../resources/index`.

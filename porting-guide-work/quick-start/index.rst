@@ -44,6 +44,7 @@ Key Documentation Sections
 - :ref:`halium-overview` - Version-specific information 
 - :ref:`build-systems` - Build process details
 - :ref:`debugging` - Troubleshooting guide
+- :ref:`additional-resources` - Additional documentation and further reading
 
 Common Issues
 -------------
