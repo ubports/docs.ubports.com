@@ -15,13 +15,21 @@ Critical fixes:
 - AppArmor implementation
 - Audio enablement
 
+Overlay Method
+--------------
+
+Most device features require specific configuration to function properly. These configurations must persist across system updates without modifying the root filesystem directly.
+
+The overlay method provides a clean, maintainable way to add or modify system files. Configuration changes are stored separately and applied during boot.
+
 .. toctree::
    :maxdepth: 2
-   :caption: Configuration Steps
+   :name: debugging-toc
 
+   overlay-method
    configuration/display
-   configuration/networking
    configuration/audio
+   configuration/networking
    configuration/sensors
 
 .. toctree::
