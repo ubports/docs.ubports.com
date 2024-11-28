@@ -3,6 +3,13 @@ Ubuntu Touch Porting Guide
 
 Welcome to the Ubuntu Touch Porting Guide. This guide provides comprehensive information for porting Ubuntu Touch to new devices, serving both experienced developers and those new to porting.
 
+DISCLAIMER
+----------
+
+This is not the official UBports porting guide. 
+The guide you are reading here is a work-in-progress revision of the above. It is based on the original guide and on the information contained in the Halium Generic Build Tools scripts. There will almost certainly be both factual errors and important omissions at any given time during the revision process.
+For more information, read porting-guide-work/README.md.
+
 Quick Navigation
 ----------------
 
