@@ -39,17 +39,26 @@ Common Build Issues
 - Missing drivers or modules
 - Architecture mismatch
 
-Full System Build
------------------
+Build Flash Artifacts
+------------------------
 
 After successful kernel build:
 
 .. code-block:: bash
 
+    # Build kernel and create artifacts
     ./build.sh -b workdir
+
+    # Prepare system image
+    ./build/prepare-fake-ota.sh out/device_${DEVICE}.tar.xz ota
+    
+    # Create final images
+    ./build/system-image-from-ota.sh ota/ubuntu_command images
 
 This creates:
 
 - boot.img
 - system.img
+- rootfs.img 
 - vendor_boot.img (if needed)
+- dtbo.img (if specified in deviceinfo)
