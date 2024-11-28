@@ -64,4 +64,4 @@ Contributing
 
 This guide is continuously improved by the Ubuntu Touch community. If you find any issues or want to contribute, please visit our `GitHub repository <https://github.com/ubports/docs>`_.
 
-[The line above is intended for the final published version of the guide. The version you are currently reading is not the official guide, but rather a WIP revision of it. If you wish to contribute thoughts and ideas, please consult the README.md file in the porting-guide-work/ directory.]
+[The paragraph above is intended for the final published version of the guide. The version you are currently reading is not the official guide, but rather a WIP revision of it. If you wish to contribute thoughts and ideas, please consult the README.md file in the porting-guide-work/ directory.]
