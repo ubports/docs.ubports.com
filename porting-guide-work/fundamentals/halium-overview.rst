@@ -3,199 +3,222 @@
 Halium Overview
 ===============
 
-Halium serves as the middleware that enables GNU/Linux distributions like Ubuntu Touch to run on Android devices. It provides a standardized interface between the Android Hardware Abstraction Layer (HAL) and the Linux userspace.
+Quick Reference
+---------------
+Halium's essential functions:
 
-Purpose and Role
-----------------
+* Provides Android hardware support to Linux userspace
+* Runs minimal Android system in container
+* Bridges Android and GNU/Linux through libhybris
+* Manages boot process and hardware initialization
 
-Halium solves a fundamental challenge: allowing Linux distributions to utilize Android's hardware drivers and capabilities while running their own GNU/Linux userspace environment. It achieves this by:
+Key Requirements:
 
-* Providing a minimal Android system container
-* Managing hardware access through libhybris
-* Standardizing the boot process
-* Offering consistent hardware support across different Linux distributions
+* Supported Android version (7.1, 9.0, or newer)
+* Device kernel source availability
+* Appropriate vendor blobs
+* Android HAL compatibility
+
+Understanding Halium
+--------------------
+
+What is Halium?
+^^^^^^^^^^^^^^^
+Halium solves a fundamental challenge in mobile Linux: how to make Android devices run standard Linux systems. Modern phones and tablets contain hardware that only works with Android drivers, creating a significant barrier for Linux adoption.
+
+Halium bridges this gap by:
+
+1. Running a minimal Android system to handle hardware
+2. Converting Android hardware interfaces to standard Linux ones
+3. Managing the boot process and system initialization
+4. Providing a common base for different Linux distributions
+
+Think of Halium as a translator that helps your Linux system talk to Android hardware. Just as a language translator helps two people who speak different languages communicate, Halium helps Linux and Android components work together.
 
 Core Components
 ---------------
 
-1. **Android Container**
+1. Android Container
+^^^^^^^^^^^^^^^^^^^^
+The Android container is like a small, focused Android system that only handles hardware:
 
-   * Minimal Android system running in LXC
-   * Contains essential Android daemons
-   * Manages hardware-specific services
-   * Handles radio, sensors, and other device-specific features
+* Runs inside LXC (Linux Containers)
+* Contains minimal Android services
+* Manages hardware-specific features
+* Communicates with Linux system
 
-2. **libhybris Bridge**
+Example services include:
 
-   * Translates between Android's Bionic and GNU libc
-   * Enables direct use of Android drivers from Linux
-   * Provides hardware acceleration support
-   * Manages binary compatibility
+* rild - Mobile network handling
+* mediaserver - Camera and multimedia
+* sensorservice - Device sensors
 
-3. **Init System**
+2. libhybris Bridge
+^^^^^^^^^^^^^^^^^^^
+libhybris is the key component that connects Android and Linux:
 
-   * Specialized init process
-   * Handles early boot requirements
-   * Mounts necessary filesystems
-   * Starts the Android container
+* Translates between Android's Bionic and GNU libc
+* Enables direct use of Android drivers
+* Provides hardware acceleration
+* Manages binary compatibility
+
+For example, when a Linux application needs to display graphics:
+
+1. Application makes standard Linux OpenGL call
+2. libhybris translates this to Android format
+3. Android graphics driver processes request
+4. Display shows the result
+
+3. Boot System
+^^^^^^^^^^^^^^
+Halium manages the complex process of starting your device:
+
+* Initializes core system
+* Mounts necessary filesystems
+* Starts Android container
+* Launches system services
 
 Version Support
 ---------------
 
+Halium comes in different versions to match Android releases:
+
 .. list-table::
    :header-rows: 1
-   :widths: 15 20 35 30
+   :widths: 20 30 50
 
    * - Halium Version
      - Android Base
-     - Key Features
-     - Best For
-   * - Halium 9
+     - Best Use Case
+   * - Halium 7.1
+     - Android 7.1
+     - Legacy devices, basic ports
+   * - Halium 9.0
      - Android 9
-     - GSI support, Project Treble
-     - Older devices, initial GSI ports
-   * - Halium 10
-     - Android 10
-     - Enhanced Treble, early GKI
-     - Mid-range devices, transitional ports
-   * - Halium 11
-     - Android 11
-     - Full GKI support, Dynamic partitions
-     - Devices launched with Android 11
-   * - Halium 12
-     - Android 12/12.1
-     - Enhanced security, AIDL HAL
-     - Modern mid-range devices
-   * - Halium 13
-     - Android 13
-     - Latest HAL support, Upstream alignment
-     - Recent flagship devices
+     - Modern devices, GSI support
+   * - Halium 10+
+     - Android 10+
+     - Recent devices, GKI kernels
 
-Version Requirements
---------------------
+Each version provides:
 
-Common Elements
-^^^^^^^^^^^^^^^
-All versions require:
+* Compatible Android base system
+* Appropriate HAL interfaces
+* Necessary kernel features
+* Required system services
 
-* Valid device tree
-* Kernel source availability
-* Unlocked bootloader
-* Vendor blob access
+Practical Implementation
+------------------------
 
-Version-Specific Requirements
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Basic Requirements
+^^^^^^^^^^^^^^^^^^
+To use Halium, you need:
 
-Halium 9
-""""""""
-* Project Treble compliance
-* VNDK version 28
-* Linux kernel 4.4+
-* Basic vendor partition
-* Files needed: boot.img, system.img, vendor.img
+1. **Device Requirements**
 
-Halium 10
-"""""""""
-* Enhanced Treble support
-* VNDK version 29
-* Linux kernel 4.14+
-* Optional GKI support
-* Early dynamic partition support
+   * Unlocked bootloader
+   * Available kernel source
+   * Compatible Android version
+   * Working hardware drivers
 
-Halium 11
-"""""""""
-* GKI-compatible kernel 5.4+
-* Dynamic partition support
-* A/B partition scheme support
-* VNDK version 30
-* Files needed: vendor_boot.img, boot.img, vbmeta.img
+2. **Build Environment**
 
-Halium 12
-"""""""""
-* Linux kernel 5.10+
-* AIDL HAL support
-* Enhanced SELinux policies
-* VNDK version 31/32
-* Generic Kernel Image (GKI)
+   * Linux development system
+   * Required build tools
+   * Source repositories
+   * Storage space (100GB+)
 
-Halium 13
-"""""""""
-* Linux kernel 5.15+
-* Latest HIDL/AIDL HALs
-* Modern security features
-* VNDK version 33
-* Modular kernel support
+3. **System Components**
 
-Architecture Evolution
-----------------------
+   * Device kernel
+   * Android system files
+   * Vendor binary blobs
+   * Hardware configurations
 
-.. mermaid::
+Integration Process
+^^^^^^^^^^^^^^^^^^^
+Halium integrates with your device through several steps:
 
-   graph TB
-      A[Device Drivers] --> B[Android HAL]
-      B --> C[Halium/libhybris]
-      C --> D[Linux Userspace]
-      C --> E[Android Container]
-      E --> B
+1. **Boot Process**
 
-Key Transitions
-^^^^^^^^^^^^^^^
-1. **HAL Architecture**
+   * Kernel loads with Android support
+   * Initial ramdisk sets up system
+   * Android container starts
+   * Hardware services initialize
 
-   * H9-10: HIDL focused
-   * H11-12: Mixed HIDL/AIDL
-   * H13: AIDL preferred
+2. **Hardware Enablement**
 
-2. **Partition Schemes**
+   * Vendor blobs provide drivers
+   * HAL interfaces connect hardware
+   * libhybris enables Linux access
+   * Services manage hardware features
 
-   * H9: Traditional layout
-   * H10: Optional dynamic
-   * H11+: Mandatory dynamic
+3. **System Management**
 
-3. **Security Evolution**
+   * Resource allocation
+   * Process supervision
+   * Hardware power management
+   * Service coordination
 
-   * Enhanced verified boot
-   * Stricter SELinux policies
-   * Modern encryption requirements
+Common Challenges
+-----------------
 
-Build Methods
--------------
+1. **Hardware Support**
 
-1. **Full System Build**
+   * Missing or incompatible drivers
+   * Vendor blob issues
+   * HAL version mismatches
+   * Power management problems
 
-   * Complete system image creation
-   * Device-specific adaptations
-   * Custom configuration options
+2. **System Integration**
 
-2. **GSI-Based Build**
+   * Service initialization
+   * Resource conflicts
+   * Permission issues
+   * Performance bottlenecks
 
-   * Using generic system images
-   * Minimal device-specific changes
-   * Faster development cycle
+3. **Boot Process**
 
-3. **Standalone Kernel**
+   * Kernel compatibility
+   * Init system conflicts
+   * Service dependencies
+   * Timing issues
 
-   * Modern approach for recent devices
-   * Utilizes upstream kernels
-   * Simplified porting process
+Best Practices
+--------------
 
-Future Development
-------------------
+1. **Version Selection**
 
-Halium continues to evolve with:
+   * Match Android version
+   * Consider device age
+   * Check HAL compatibility
+   * Review kernel features
 
-* Support for newer Android versions
-* Enhanced GSI compatibility
-* Improved hardware support
-* Simplified porting procedures
-* Standardized build processes
+2. **Component Management**
+
+   * Minimize Android services
+   * Monitor resource usage
+   * Test hardware functions
+   * Document configurations
+
+3. **Development Process**
+
+   * Start with working device
+   * Test incrementally
+   * Monitor system logs
+   * Document changes
+
+Next Steps
+----------
+
+**Want to understand hardware details?**
+    → :ref:`hardware-abstraction`
+
+**Ready to learn about Ubuntu Touch?**
+    → :ref:`ubuntu-touch-architecture`
 
 See Also
 --------
-* :ref:`android-architecture` - Understanding Android system structure
-* :ref:`hardware-abstraction` - Details on HAL implementation
-* :ref:`build-systems` - Build system specifics
-* :ref:`ubuntu-touch-architecture` - Complete system integration
-
-.. note::
-    Halium is a collaborative project. Its development benefits multiple Linux-on-Android projects beyond Ubuntu Touch, including LuneOS and others.
+* :ref:`android-architecture` - Android system details
+* :ref:`hardware-abstraction` - HAL implementation
+* :ref:`build-systems` - Building Halium
