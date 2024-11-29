@@ -31,11 +31,7 @@ The overlay method provides a clean, maintainable way to add or modify system fi
    configuration/audio
    configuration/networking
    configuration/sensors
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Hardware Fixes
-
    hardware-fixes/apparmor
    hardware-fixes/bluetooth
    hardware-fixes/camera
+   troubleshooting/index
