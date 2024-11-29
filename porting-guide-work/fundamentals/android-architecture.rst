@@ -3,48 +3,183 @@
 Android System Architecture
 ===========================
 
-This chapter explains the key components of the Android system architecture that are relevant to Ubuntu Touch porting.
-
 Quick Reference
 ---------------
-**Key Components:**
+Essential components for Ubuntu Touch porting:
 
-- Hardware Abstraction Layer (HAL)
-- Android Init System
-- Bionic C Library
-- System Services
+* Linux kernel with Android modifications
+* Hardware Abstraction Layer (HAL)
+* Android services needed for hardware support
+* Bionic C library and runtime components
 
-Android System Layers
----------------------
+Key Points for Porters
+^^^^^^^^^^^^^^^^^^^^^^
+* Device kernel must support Android features
+* Hardware access requires vendor blobs and HAL
+* Android services run in LXC container
+* System integration through libhybris
 
-Applications
-^^^^^^^^^^^^
-- Android apps and services
-- Role in Ubuntu Touch context
+Understanding Android Architecture
+----------------------------------
 
-Framework
-^^^^^^^^^
-- Android Framework overview
-- Important services for Ubuntu Touch
+Core Components
+^^^^^^^^^^^^^^^
+Android is built in layers, each serving specific purposes:
 
-Native Libraries
+1. **Linux Kernel Layer**
+   
+   The foundation of Android is a modified Linux kernel that includes:
+   
+   * Binder - Android's inter-process communication system
+   * Wakelocks - Power management controls
+   * Android shared memory (ashmem)
+   * Special device drivers
+
+   These modifications enable Android's unique features while maintaining Linux compatibility.
+
+2. **Hardware Abstraction Layer**
+
+   HAL provides standardized interfaces between hardware and higher layers:
+   
+   * Defines how hardware features are exposed
+   * Allows vendor-specific implementations
+   * Maintains binary compatibility
+   * Enables hardware support without kernel modifications
+
+   For example, when an app needs to take a photo, it communicates through 
+   multiple layers down to the HAL, which then talks to your device's actual 
+   camera hardware using vendor-specific code.
+
+3. **Native Libraries**
+
+   Core system components written in C/C++:
+   
+   * Bionic - Android's C library
+   * Surface Flinger - Display management
+   * OpenGL ES - 3D graphics
+   * Media frameworks
+   
+   These provide essential functionality while being optimized for mobile devices.
+
+4. **Android Runtime**
+
+   Executes Android applications:
+   
+   * Process management
+   * Memory management
+   * Thread handling
+   
+   This layer ensures apps run efficiently on limited mobile resources.
+
+5. **Application Framework**
+
+   Provides high-level services to applications:
+   
+   * Activity Manager - Controls app lifecycle
+   * Window Manager - Handles display elements
+   * Content Providers - Manages data sharing
+   * Package Manager - Handles app installation
+
+Relevance to Ubuntu Touch
+-------------------------
+
+Hardware Support
 ^^^^^^^^^^^^^^^^
-- Important Android libraries
-- Bionic C library
-- Hardware abstraction
+Ubuntu Touch relies on Android's hardware support through:
 
-Linux Kernel
-^^^^^^^^^^^^
-- Android kernel modifications
-- Device drivers
-- Kernel requirements for Ubuntu Touch
+1. **Kernel Layer**
 
-Key Concepts for Porting
-------------------------
-[Details about specific concepts important for porting...]
+   * Uses Android-compatible kernel
+   * Maintains Android driver support
+   * Implements necessary Android features
 
-Related Topics
+2. **HAL Integration**
+
+   * Accesses hardware through Android HAL
+   * Uses libhybris to bridge Android and GNU/Linux
+   * Requires vendor binary blobs
+
+3. **Service Container**
+
+   * Runs minimal Android system
+   * Provides hardware functionality
+   * Managed through LXC
+
+Essential Features
+^^^^^^^^^^^^^^^^^^
+Key Android components needed for Ubuntu Touch:
+
+1. **Binder**
+
+   * Enables communication with Android services
+   * Required for hardware access
+   * Managed through libhybris
+
+2. **Graphics Stack**
+
+   * Hardware composition
+   * GPU acceleration
+   * Display management
+
+3. **Input System**
+
+   * Touch processing
+   * Sensor handling
+   * Event management
+
+Common Challenges
+-----------------
+
+1. **Kernel Compatibility**
+
+   * Missing Android features
+   * Driver conflicts
+   * Version mismatches
+
+2. **HAL Integration**
+
+   * Vendor blob compatibility
+   * Interface version matching
+   * Binary compatibility
+
+3. **Service Management**
+
+   * Process initialization
+   * Resource allocation
+   * System integration
+
+Best Practices
 --------------
-- :doc:`hardware-abstraction`
-- :doc:`../modern-porting/standalone-kernel/index`
-- :doc:`../vendor-specific/index`
+
+1. **Kernel Configuration**
+
+   * Enable required Android features
+   * Configure proper subsystems
+   * Maintain necessary drivers
+
+2. **HAL Setup**
+
+   * Match interface versions
+   * Verify blob compatibility
+   * Test hardware access
+
+3. **System Integration**
+
+   * Minimize Android components
+   * Configure proper permissions
+   * Manage resource usage
+
+Next Steps
+----------
+
+**Ready to understand Halium's role?**
+    → :ref:`halium-overview`
+
+**Want hardware details?**
+    → :ref:`hardware-abstraction`
+
+See Also
+--------
+* :ref:`halium-overview` - Halium architecture
+* :ref:`hardware-abstraction` - HAL details
+* :ref:`build-systems` - Building Android components
