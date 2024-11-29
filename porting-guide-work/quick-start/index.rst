@@ -3,7 +3,31 @@
 Quick Start Guide
 =================
 
-This section provides quick setup instructions for experienced developers familiar with Android ROM building and Linux systems. Those new to porting should first read :ref:`Fundamentals of Ubuntu Touch Porting <fundamentals>` before proceeding to :ref:`Preparation <preparation>`.
+This accelerated guide is for developers familiar with Android ROM building and Linux systems.
+
+Essential Steps
+---------------
+
+1. Verify Requirements
+
+   * Unlocked bootloader
+   * Available kernel source
+   * Build environment ready
+
+2. Configure Build
+
+   * Create deviceinfo file
+   * Set up build directory
+   * Prepare kernel configuration
+
+3. Build and Test
+
+   * Build kernel
+   * Create system images
+   * Initial boot testing
+
+Detailed Instructions
+---------------------
 
 Requirements Overview
 ---------------------
@@ -38,19 +62,24 @@ Quick Setup
     ./build/prepare-fake-ota.sh out/device_$DEVICE.tar.xz ota  # Prepare system
     ./build/system-image-from-ota.sh ota/ubuntu_command images  # Create images
 
-Key Documentation Sections
---------------------------
-- :ref:`device-config` - Device configuration details
-- :ref:`halium-overview` - Version-specific information 
-- :ref:`build-systems` - Build process details
-- :ref:`debugging` - Troubleshooting guide
-- :ref:`additional-resources` - Additional documentation and further reading
+Next Steps
+----------
 
-Common Issues
--------------
-- Missing kernel config options: See xxx
-- Boot loop: Check xxx
-- Display issues: Review :ref:`display`
+Choose your next destination based on your needs:
+
+**Need to debug issues?**
+    → :doc:`../debugging/troubleshooting/index`
+
+**Want to enable specific hardware?**
+    → :doc:`../debugging/index`
+
+**Have vendor-specific challenges?**
+    → :doc:`../vendor-specific/index`
+
+**Ready to finalize your port?**
+    → :doc:`../finalize/index`
+
+Looking for complete documentation? Return to :doc:`../index` and follow the comprehensive guide.
 
 .. note::
     First-time porters should follow the complete guide starting with :ref:`preparation`. This quick start omits important details needed for understanding the porting process.

@@ -1,159 +1,216 @@
+.. _overlay-method:
+
 The Overlay Method
 ==================
 
-Overview
---------
-The overlay method allows configuration files to be added or modified without changing the root filesystem. Files are stored in a separate location and mounted over the original system files during boot.
+Quick Start
+-----------
+For experienced developers, place configuration files in one of these locations:
 
-Types of Overlays
------------------
-
-1. **Direct File Overlay**
-
-   * Individual files mounted over system files
-   * Original files remain untouched
-   * Updates can modify base files safely
-
-2. **Directory Overlay**
-
-   * Entire directories overlaid using overlayfs
-   * Combines overlay content with original directory
-   * Created using empty .halium-overlay-dir file
-   * Original files visible unless overridden
-
-3. **Directory Replacement**
-
-   * Complete directory replacement
-   * Original directory hidden
-   * Created using empty .halium-override-dir file
-   * Original files not accessible
-
-Implementation
---------------
-
-Directory Structures
-^^^^^^^^^^^^^^^^^^^^
-For Halium 9 and newer, overlay files can be placed in any of these locations:
-
-1. **Primary Location**::
+1. Primary overlay location::
 
     overlay/
     └── system/
         └── halium/
             └── path/to/config
 
-2. **Alternative Structure**::
-
-    ramdisk-overlay/
-    └── path/to/config
-
-3. **System Directory**::
+2. Alternative structure::
 
     system/
     └── opt/
         └── halium-overlay/
             └── path/to/config
 
-For Legacy Ports::
+Add deviceinfo_use_overlaystore="true" to your deviceinfo file to enable overlay mounting.
 
-    # In device tree
-    ubuntu/
-    └── path/to/config
+Overlay Fundamentals
+--------------------
+The overlay method allows configuration files to be added or modified without changing the root filesystem. Files are stored separately and mounted over the original system files during boot.
 
-Creating Overlay Markers
-------------------------
+This approach offers several advantages:
 
-Directory markers are empty files that tell the system how to handle overlays.
+* Preserves system partition integrity
+* Survives system updates
+* Maintains clean separation of customizations
+* Simplifies configuration management
 
-1. **Create Overlay Directory**::
-
-    # For combining overlay with original
-    mkdir -p overlay/system/halium/etc/some-dir
-    touch overlay/system/halium/etc/some-dir/.halium-overlay-dir
-
-    # For complete directory replacement
-    mkdir -p overlay/system/halium/usr/lib/replaced-dir
-    touch overlay/system/halium/usr/lib/replaced-dir/.halium-override-dir
-
-2. **Add Configuration Files**::
-
-    # Add files to overlay directory
-    cp my-config.conf overlay/system/halium/etc/some-dir/
-
-3. **Verify Structure**::
-
-    # Check overlay structure
-    find overlay -type f
-    
-    # Expected output example:
-    # overlay/system/halium/etc/some-dir/.halium-overlay-dir
-    # overlay/system/halium/etc/some-dir/my-config.conf
-
-Applying Overlays
+Types of Overlays
 -----------------
 
-For standalone kernel builds, overlays are handled in your device repository structure.
+1. File Overlays
+^^^^^^^^^^^^^^^^
+Individual files mounted directly over system files.
 
-1. **Place Files in Overlay Directory**::
+Example - Display configuration::
 
-    # Add configuration files in one of:
-    overlay/system/halium/etc/example.conf
-    ramdisk-overlay/etc/example.conf
-    system/opt/halium-overlay/etc/example.conf
+    overlay/
+    └── system/
+        └── halium/
+            └── etc/
+                └── ubuntu-touch-session.d/
+                    └── device.conf
 
-2. **Build and Install**::
+2. Directory Overlays
+^^^^^^^^^^^^^^^^^^^^^
+Combines overlay content with original directory using overlayfs.
 
-    # Build normally
-    ./build.sh -b workdir
+Create a marker file named .halium-overlay-dir::
+
+    overlay/
+    └── system/
+        └── halium/
+            └── etc/
+                └── some-dir/
+                    ├── .halium-overlay-dir
+                    └── custom.conf
+
+3. Directory Replacement
+^^^^^^^^^^^^^^^^^^^^^^^^
+Completely replaces original directory content.
+
+Create a marker file named .halium-override-dir::
+
+    overlay/
+    └── system/
+        └── halium/
+            └── etc/
+                └── replaced-dir/
+                    ├── .halium-override-dir
+                    └── new.conf
+
+Implementation
+--------------
+
+Basic Setup
+^^^^^^^^^^^
+1. Create overlay directory::
+
+    mkdir -p overlay/system/halium
+
+2. Mirror target path structure::
+
+    # For file at /etc/example.conf
+    mkdir -p overlay/system/halium/etc
     
-    # Create system image
-    ./build/prepare-fake-ota.sh out/device_${DEVICE}.tar.xz ota
-    ./build/system-image-from-ota.sh ota/ubuntu_command images
+    # Add configuration file
+    cp example.conf overlay/system/halium/etc/
 
-.. note::
-    When using deviceinfo_use_overlaystore="true", files under overlay/system/ are automatically installed to /opt/halium-overlay/ in the system image.
+Directory Operations
+^^^^^^^^^^^^^^^^^^^^
 
-Example Configurations
-----------------------
+To merge with existing directory::
 
-1. **Display Configuration**::
+    # Create overlay directory
+    mkdir -p overlay/system/halium/etc/some-dir
+    
+    # Mark for overlay
+    touch overlay/system/halium/etc/some-dir/.halium-overlay-dir
+    
+    # Add files
+    cp custom.conf overlay/system/halium/etc/some-dir/
 
-    # Combining with existing configs
+To replace entire directory::
+
+    # Create replacement directory
+    mkdir -p overlay/system/halium/etc/replaced-dir
+    
+    # Mark for replacement
+    touch overlay/system/halium/etc/replaced-dir/.halium-override-dir
+    
+    # Add new files
+    cp new.conf overlay/system/halium/etc/replaced-dir/
+
+Common Configurations
+---------------------
+
+1. Display Settings::
+
     overlay/system/halium/etc/ubuntu-touch-session.d/
     ├── .halium-overlay-dir
     └── device.conf
 
-2. **Audio Rules**::
+2. Audio Configuration::
 
-    # Replacing entire directory
     overlay/system/halium/etc/pulse/
     ├── .halium-override-dir
     └── arm_droid_card_custom.pa
 
-Common Issues
--------------
-* Missing parent directories
-* Incorrect path mapping
-* Wrong ownership/permissions
-* Conflicting overlays
-* Missing overlay markers
-* Markers in wrong location
+3. System Services::
 
-Debugging Overlays
-------------------
-To verify overlay mounting::
+    overlay/system/halium/etc/systemd/system/
+    ├── .halium-overlay-dir
+    └── custom.service
+
+Verification
+------------
+
+1. Check Overlay Mounting
+^^^^^^^^^^^^^^^^^^^^^^^^^
+After boot, verify overlays::
 
     # Check mount points
     mount | grep overlay
     
-    # Inspect directory content
-    ls -la /path/to/overlaid/directory
+    # Verify file content
+    cat /etc/example.conf
     
-    # View effective permissions
-    stat /path/to/overlaid/file
+    # Check permissions
+    ls -l /path/to/overlaid/file
+
+2. Common Issues
+^^^^^^^^^^^^^^^^
+* Missing parent directories
+* Incorrect permissions
+* Wrong overlay markers
+* Path mapping errors
+
+Troubleshooting
+---------------
+
+If overlays aren't working:
+
+1. Verify directory structure matches exactly
+2. Check overlay marker files exist
+3. Confirm file permissions
+4. Review mount points
+5. Check system logs::
+
+    journalctl -b | grep overlay
+
+Advanced Usage
+--------------
+
+1. Multi-level Overlays::
+
+    overlay/
+    └── system/
+        └── halium/
+            └── etc/
+                ├── dir1/
+                │   ├── .halium-overlay-dir
+                │   └── file1.conf
+                └── dir2/
+                    ├── .halium-override-dir
+                    └── file2.conf
+
+2. Conditional Overlays::
+
+    # Based on device model
+    overlay/system/halium/etc/model-specific/
+    └── $(getprop ro.product.device)/
+        └── config.conf
+
+Next Steps
+----------
+
+**Ready to configure hardware?**
+    → :doc:`configuration/display`
+
+**Need to debug overlay issues?**
+    → :doc:`troubleshooting/system-issues`
 
 See Also
 --------
-* :ref:`build-systems` - Build process integration
-* :ref:`display` - Example configuration
-* :ref:`debugging` - Troubleshooting steps
+* :ref:`device-config` - Device configuration
+* :doc:`configuration/display` - Display setup example
+* :doc:`troubleshooting/system-issues` - Overlay debugging

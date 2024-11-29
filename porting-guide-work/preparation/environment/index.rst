@@ -3,76 +3,90 @@
 Environment Setup
 =================
 
-This guide covers setting up your development environment for Halium porting. A properly configured environment is essential for successful development.
+Quick Setup
+-----------
+For experienced developers familiar with Android building::
 
-Quick Reference
----------------
-For experienced developers::
+    # Essential packages for Ubuntu/Debian
+    sudo apt update && sudo apt install git gcc adb fastboot repo \
+    python3 python-is-python3 android-tools-adb android-tools-fastboot \
+    htop iotop ccache
 
-    # Ubuntu/Debian setup
-    sudo apt update
-    sudo apt install git gcc adb fastboot repo python3 python-is-python3 android-tools-adb android-tools-fastboot htop iotop ccache
-    
-    # Configure git
+    # Configure git and repo
     git config --global user.name "Your Name"
-    git config --global user.email "your.email@example.com"
-    
-    # Install repo tool
+    git config --global user.email "your@email.com"
+    mkdir -p ~/bin
     curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
     chmod a+x ~/bin/repo
+    echo 'export PATH=~/bin:$PATH' >> ~/.bashrc
+
+    # Verify installation
+    repo --version
+    adb version
+    fastboot --version
 
 System Requirements
 -------------------
 
 Hardware Requirements
 ^^^^^^^^^^^^^^^^^^^^^
-* **CPU**: Multi-core processor recommended
-* **RAM**: Minimum 16GB
-* **Storage**: 100GB+ free space
-* **Internet**: High-speed connection for downloads
+Minimum specifications:
+* CPU: 4+ cores recommended
+* RAM: 16GB minimum, 32GB recommended
+* Storage: 100GB free space
+* Internet: High-speed connection
+
+Recommended specifications for faster builds:
+* CPU: 8+ cores
+* RAM: 32GB
+* Storage: 200GB+ SSD
+* Internet: 100Mbps+
 
 Operating System
 ^^^^^^^^^^^^^^^^
-Recommended: Ubuntu 22.04 LTS or newer
+Ubuntu 22.04 LTS is recommended and best supported. While other Linux distributions can work, this guide assumes Ubuntu/Debian-based systems.
 
-Alternative options:
+Detailed Setup Guide
+--------------------
 
-* Debian 11 or newer
-* Other Linux distributions (may require additional setup)
+1. Base Development Environment
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Essential build tools and libraries::
 
-Required Packages
-^^^^^^^^^^^^^^^^^
+    sudo apt install bc bison build-essential ccache curl flex g++-multilib \
+        gcc-multilib git gnupg gperf imagemagick lib32ncurses5-dev \
+        lib32readline-dev lib32z1-dev liblz4-tool libncurses5 libncurses5-dev \
+        libsdl1.2-dev libssl-dev libxml2 libxml2-utils lzop pngcrush rsync \
+        schedtool squashfs-tools xsltproc zip zlib1g-dev
 
-Core Development Tools
-""""""""""""""""""""""
-Setup basic development tools::
+Why these packages?
 
-    sudo apt install git gcc make curl wget
-    sudo apt install python3 python-is-python3
+* build-essential: Basic compilation tools
+* ccache: Speeds up rebuilds
+* Others: Required by various build stages
+
+2. Android Development Tools
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Set up tools for device communication and source management.
+
+ADB and Fastboot::
+
     sudo apt install android-tools-adb android-tools-fastboot
 
-Build Dependencies
-""""""""""""""""""
-Install build dependencies::
+Configure udev rules for device access::
 
-    sudo apt install bc bison build-essential ccache curl flex g++-multilib gcc-multilib git gnupg gperf
-    sudo apt install imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev liblz4-tool
-    sudo apt install libncurses5 libncurses5-dev libsdl1.2-dev libssl-dev libxml2 libxml2-utils
-    sudo apt install lzop pngcrush rsync schedtool squashfs-tools xsltproc
-    sudo apt install zip zlib1g-dev
+    sudo curl -o /etc/udev/rules.d/51-android.rules \
+    https://raw.githubusercontent.com/NicolasBernaerts/ubuntu-scripts/master/android/51-android.rules
+    sudo chmod 644 /etc/udev/rules.d/51-android.rules
+    sudo udevadm control --reload-rules
 
-Tool Configuration
-------------------
-
-1. Git Setup
-^^^^^^^^^^^^
+3. Source Control Setup
+^^^^^^^^^^^^^^^^^^^^^^^
 Configure git with your credentials::
 
     git config --global user.name "Your Name"
     git config --global user.email "your.email@example.com"
 
-2. Repo Tool
-^^^^^^^^^^^^
 Install and configure repo tool::
 
     mkdir -p ~/bin
@@ -81,87 +95,69 @@ Install and configure repo tool::
     echo 'export PATH=~/bin:$PATH' >> ~/.bashrc
     source ~/.bashrc
 
-3. ADB/Fastboot
-^^^^^^^^^^^^^^^
-Enable USB debugging on device:
+4. Build Environment Configuration
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Set up ccache for faster rebuilds::
 
-1. Enable Developer Options (tap Build Number 7 times)
-2. Enable USB Debugging in Developer Options
-3. Connect device and authorize computer
+    export USE_CCACHE=1
+    export CCACHE_DIR=~/.ccache
+    export CCACHE_SIZE=50G
+    ccache -M 50G
 
-Test setup::
+Add to ~/.bashrc for persistence::
 
-    adb devices
-    fastboot devices
+    echo 'export USE_CCACHE=1' >> ~/.bashrc
+    echo 'export CCACHE_DIR=~/.ccache' >> ~/.bashrc
 
-Storage Setup
--------------
-1. Ensure adequate free space
-2. Set up build directory::
+5. Storage Setup
+^^^^^^^^^^^^^^^^
+Prepare build directory::
 
-    mkdir halium-build # Name directory as you wish
-    cd halium-build
+    mkdir ~/ubports-builds
+    cd ~/ubports-builds
 
-Account Setup
--------------
+Check available space::
 
-1. Required Accounts
-^^^^^^^^^^^^^^^^^^^^
-* GitHub/GitLab account for:
+    df -h .
 
-    - Source code access
-    - Contribution submission
-    - Issue tracking
+Environment Verification
+------------------------
+Run these checks to verify your setup::
 
-2. Community Resources
-^^^^^^^^^^^^^^^^^^^^^^
-* UBports Forums account
-* Telegram/Matrix for community support
-* IRC for developer discussion
-
-Development Safety
-------------------
-
-1. Backup Procedures
-^^^^^^^^^^^^^^^^^^^^
-* Back up all device data
-* Document current device state
-* Save stock firmware copy
-
-2. Recovery Setup
-^^^^^^^^^^^^^^^^^
-* Install custom recovery (TWRP recommended)
-* Test recovery functionality
-* Verify backup/restore capability
-
-Verification
-------------
-Run these checks to verify environment setup::
-
-    # Check basic tools
+    # Check essential tools
     git --version
     repo --version
     adb version
     fastboot --version
-
-    # Check build tools
     gcc --version
     python3 --version
 
-    # Check storage
+    # Verify build environment
+    echo $PATH
+    echo $USE_CCACHE
     df -h
 
-.. note::
-    A properly configured environment prevents many common issues during development.
+Next Steps
+----------
+Environment ready? Choose your path:
 
-.. toctree::
-   :maxdepth: 2
-   :name: environment-setup-toc
-   
-   development-tools
+**Ready to start building?**
+    → :doc:`../../modern-porting/standalone-kernel/index`
+
+**Need to understand the build system?**
+    → :doc:`../../fundamentals/build-systems`
+
+**Want to check device compatibility?**
+    → :doc:`../device-selection/index`
 
 See Also
 --------
-* :ref:`development-tools` - Development environment tools and monitoring
-* :ref:`Quick Start Guide <quick-start>` - Streamlined setup process
-* :ref:`Build Systems <build-systems>` - Understanding build requirements
+* :doc:`development-tools` - Additional development tools and monitoring
+* :ref:`build-systems` - Understanding build requirements
+* :ref:`android-architecture` - Android build system context
+
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   development-tools
