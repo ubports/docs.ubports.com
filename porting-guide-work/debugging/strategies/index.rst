@@ -134,21 +134,25 @@ Systematic Approach
 -------------------
 
 1. **Gather Facts**
+
    * Identify exact failure point
    * Collect relevant logs
    * Document hardware state
 
 2. **Form Hypothesis**
+
    * Review similar issues
    * Check common failures
    * Consider hardware/software split
 
 3. **Test Solution**
+
    * Make single changes
    * Document modifications
    * Verify fix complete
 
 4. **Document Findings**
+
    * Record root cause
    * Document solution
    * Share with community
@@ -179,7 +183,7 @@ Recovery Options
     
     # Reset system
     halium-install -p ut rootfs.tar.gz system.img
-    
+
 .. toctree::
    :maxdepth: 2
    :name: strategies-toc
