@@ -1,6 +1,6 @@
 .. _debugging:
 
-Debugging and Configuration
+Configuration and Debugging
 ===========================
 
 After achieving first boot, your device will need configuration and debugging to enable full functionality.
@@ -9,29 +9,42 @@ Quick Reference
 ---------------
 
 Critical fixes:
-
-- Display configuration
+- Display configuration 
 - Network enablement
 - AppArmor implementation
 - Audio enablement
 
-Overlay Method
---------------
+Core Methods
+------------
 
-Most device features require specific configuration to function properly. These configurations must persist across system updates without modifying the root filesystem directly.
+1. **Overlay Method**
+   Configuration changes stored separately and applied during boot.
 
-The overlay method provides a clean, maintainable way to add or modify system files. Configuration changes are stored separately and applied during boot.
+2. **Debugging Strategies** 
+   Systematic approaches to identifying and fixing issues.
+
+3. **Standard Workflows**
+   Common debugging paths for specific problems.
 
 .. toctree::
    :maxdepth: 2
    :name: debugging-toc
 
    overlay-method
+   
    configuration/display
    configuration/audio
    configuration/networking
    configuration/sensors
+
+
    hardware-fixes/apparmor
    hardware-fixes/bluetooth
    hardware-fixes/camera
+   
    troubleshooting/index
+
+   strategies/index
+   workflows/index   
+   hardware-debug/index
+   system-debug/index
