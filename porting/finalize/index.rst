@@ -13,5 +13,5 @@ With the necessary components prepared, these should first be installed in their
    :maxdepth: 1
    :name: finalizing
 
-   UBports_recovery
-   UBports_installer
+   UBports-recovery
+   UBports-installer

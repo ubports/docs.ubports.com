@@ -140,7 +140,7 @@ After setting up sources:
 
 - :doc:`build-system` - Building system images
 - :doc:`device-configs` - Configure your device
-- :doc:`../../../debugging/index` - Debugging tools
+- :doc:`../../debugging/index` - Basic Configuration
 
 See Also
 --------
