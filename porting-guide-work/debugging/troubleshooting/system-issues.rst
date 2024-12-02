@@ -1,7 +1,7 @@
 System-Level Issues
 ===================
 
-This guide covers problems with Ubuntu Touch system components, services, and overall functionality.
+This part of the guide covers problems with Ubuntu Touch system components, services, and overall functionality. System issues often manifest after successful boot but prevent normal operation.
 
 Quick Diagnosis
 ---------------
@@ -16,6 +16,12 @@ Quick Diagnosis
     # Monitor resource usage
     top -b -n 1
 
+Understanding these commands:
+
+* journalctl -b: Shows messages from current boot
+* systemctl status: Reports service health
+* top: Reveals resource usage and running processes
+
 2. Verify container state::
 
     # Check LXC status
@@ -24,6 +30,11 @@ Quick Diagnosis
     # View container logs
     journalctl -u lxc@android
 
+Why check the container?
+* Android container provides hardware support
+* Container failure means no hardware access
+* Logs reveal initialization problems
+
 3. Test system access::
 
     # Check system mounts
@@ -31,6 +42,12 @@ Quick Diagnosis
     
     # Verify important services
     systemctl status ofono repowerd unity8
+
+These checks reveal:
+
+* System partition mounting
+* Core service status
+* Hardware initialization
 
 Container Problems
 ------------------
@@ -42,6 +59,12 @@ Symptoms:
 * System boots but no hardware support
 * Services fail to start
 * Hardware initialization errors
+
+Understanding the container:
+
+* Runs minimal Android for hardware support
+* Contains vendor-specific code
+* Manages hardware abstraction layer
 
 Diagnostic Steps::
 
@@ -55,6 +78,12 @@ Diagnostic Steps::
     ls -l /android/system
     ls -l /vendor
 
+Understanding outputs:
+
+* Failed status suggests initialization problems
+* Log messages reveal specific failures
+* Mount points show filesystem issues
+
 Solutions:
 
 1. **Mount Issues**::
@@ -66,6 +95,13 @@ Solutions:
     mountpoint /android/system
     mountpoint /vendor
 
+Common mount problems:
+
+* Missing mount points
+* Wrong filesystem type
+* Permission issues
+* SELinux contexts
+
 2. **Permission Problems**::
 
     # Fix basic permissions
@@ -75,6 +111,12 @@ Solutions:
     # Verify SELinux status
     getenforce
 
+Understanding permissions:
+
+* Directories need execute (x) permission
+* SELinux can block access
+* Wrong ownership prevents operation
+
 3. **Service Dependencies**::
 
     # Restart container
@@ -82,6 +124,12 @@ Solutions:
     
     # Check dependent services
     systemctl list-dependencies lxc@android
+
+Service dependency chain:
+
+* Container needs working filesystem
+* Hardware services depend on container
+* System services need hardware access
 
 System Services
 ---------------
@@ -95,6 +143,13 @@ Common problematic services:
 * unity8 (display server)
 * pulseaudio (audio)
 
+Understanding service roles:
+
+* repowerd manages power states
+* ofono handles phone functionality
+* unity8 provides user interface
+* pulseaudio controls audio system
+
 Diagnostic Steps::
 
     # Check specific service
@@ -105,6 +160,12 @@ Diagnostic Steps::
     
     # List failed services
     systemctl --failed
+
+Log interpretation:
+
+* Failed state indicates startup problems
+* Log messages show error details
+* Dependencies reveal related issues
 
 Solutions:
 
@@ -119,6 +180,12 @@ Solutions:
     # Reset service configuration
     dpkg-reconfigure servicename
 
+Recovery process:
+
+* Restart attempts clean start
+* Clearing state removes corruption
+* Reconfiguration resets settings
+
 2. **Dependency Issues**::
 
     # Check dependencies
@@ -127,6 +194,12 @@ Solutions:
     # Verify required files
     ldd /usr/bin/servicename
 
+Understanding dependencies:
+
+* Services need specific libraries
+* Missing dependencies block start
+* Version mismatches cause failures
+
 3. **Permission Problems**::
 
     # Fix service user
@@ -134,6 +207,12 @@ Solutions:
     
     # Check policy kit rules
     ls /usr/share/polkit-1/actions/
+
+Policy considerations:
+
+* Services run as specific users
+* PolicyKit manages permissions
+* Wrong ownership blocks access
 
 Performance Issues
 ------------------
@@ -147,6 +226,12 @@ Symptoms:
 * UI lag
 * High resource usage
 
+Understanding performance:
+
+* Multiple potential causes
+* Resource constraints
+* System bottlenecks
+
 Diagnostic Steps::
 
     # Monitor CPU usage
@@ -158,6 +243,12 @@ Diagnostic Steps::
     # View I/O activity
     iotop -b -n 1
 
+Interpreting results:
+
+* High CPU indicates processing bottleneck
+* Low memory causes swapping
+* I/O bottlenecks slow system
+
 Solutions:
 
 1. **Resource Management**::
@@ -168,6 +259,12 @@ Solutions:
     # Check swap usage
     swapon -s
 
+Cache management:
+
+* Clearing cache frees memory
+* Swap usage indicates memory pressure
+* Regular cleaning helps performance
+
 2. **Process Control**::
 
     # Find resource-heavy processes
@@ -177,6 +274,12 @@ Solutions:
     # Adjust process priority
     renice -n 19 -p PID
 
+Process management:
+
+* High CPU processes may need limiting
+* Memory-heavy processes affect performance
+* Priority adjustment helps balance
+
 3. **Storage Issues**::
 
     # Check disk space
@@ -184,6 +287,12 @@ Solutions:
     
     # Find large files
     find / -type f -size +100M
+
+Storage considerations:
+
+* Full storage slows system
+* Large files impact performance
+* Regular cleanup helps
 
 App Crashes
 -----------
@@ -193,6 +302,12 @@ Symptoms:
 * Random crashes
 * White screen on launch
 * App freezes
+
+Understanding app issues:
+
+* Multiple potential causes
+* Security constraints
+* Resource limitations
 
 Diagnostic Steps::
 
@@ -205,6 +320,12 @@ Diagnostic Steps::
     # Monitor app process
     ps aux | grep appname
 
+Log interpretation:
+
+* Crashes show in system logs
+* AppArmor may block access
+* Process state reveals issues
+
 Solutions:
 
 1. **AppArmor Issues**::
@@ -215,6 +336,12 @@ Solutions:
     # Review denials
     aa-notify -s 1d
 
+AppArmor considerations:
+
+* Profiles restrict app access
+* Denials prevent functionality
+* Profiles may need updating
+
 2. **Resource Limitations**::
 
     # Clear app cache
@@ -223,6 +350,12 @@ Solutions:
     # Reset app data
     rm -rf ~/.local/share/appname
 
+Resource management:
+
+* Cache buildup affects performance
+* Corrupted data causes crashes
+* Fresh start often helps
+
 3. **System Integration**::
 
     # Verify app confinement
@@ -230,6 +363,12 @@ Solutions:
     
     # Check frameworks
     click framework
+
+Integration aspects:
+
+* Apps need correct frameworks
+* Confinement affects functionality
+* System updates impact apps
 
 Recovery Procedures
 -------------------
@@ -244,6 +383,12 @@ When system issues persist:
     # Start minimal system
     systemctl isolate multi-user.target
 
+Safe mode provides:
+
+* Minimal system functionality
+* Debugging opportunity
+* Issue isolation
+
 2. **System Reset**::
 
     # Clear system logs
@@ -252,6 +397,12 @@ When system issues persist:
     # Reset failed services
     systemctl reset-failed
 
+Reset benefits:
+
+* Removes old logs
+* Clears error states
+* Enables fresh start
+
 3. **Emergency Recovery**::
 
     # Access emergency mode
@@ -259,6 +410,12 @@ When system issues persist:
     
     # Check system integrity
     fsck -f /
+
+Emergency mode offers:
+
+* Basic system access
+* Filesystem checks
+* Recovery options
 
 Best Practices
 --------------

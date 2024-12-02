@@ -3,7 +3,33 @@
 Device Configuration
 ====================
 
-The deviceinfo file is the central configuration point for your Ubuntu Touch port. This section covers both basic setup and advanced configuration options.
+Quick Reference
+---------------
+For experienced developers, create a deviceinfo file in your repository root with these minimal settings::
+
+    deviceinfo_name="Device Name"
+    deviceinfo_manufacturer="Brand"
+    deviceinfo_codename="codename"
+    deviceinfo_arch="aarch64"
+    deviceinfo_kernel_source="https://github.com/path/to/kernel"
+    deviceinfo_kernel_source_branch="branch-name"
+    deviceinfo_kernel_defconfig="codename_defconfig halium.config"
+    deviceinfo_bootimg_header_version="2"
+    deviceinfo_kernel_cmdline="console=tty0 systempart=/dev/mapper/system"
+    deviceinfo_flash_pagesize="4096"
+    deviceinfo_use_overlaystore="true"
+
+Understanding deviceinfo
+------------------------
+The deviceinfo file is the central configuration point that tells the build system everything it needs to know about your device. Think of it as your device's "ID card" that contains:
+
+* Basic information (name, manufacturer, architecture)
+* Where to find source code
+* How to build the kernel
+* How to create boot images
+* How to handle system storage
+
+This configuration affects every aspect of your port, from initial building to final operation. Getting it right is crucial for a working port.
 
 Essential Configuration
 -----------------------
@@ -30,7 +56,7 @@ This minimal configuration allows initial building and testing. Expand it based 
 
 Boot Image Headers
 ------------------
-Choose the correct header version based on your Android version:
+The boot image header tells the system how to load and start your device. Choose the correct version based on your Android version:
 
 .. list-table::
    :header-rows: 1
@@ -38,72 +64,105 @@ Choose the correct header version based on your Android version:
 
    * - Header Version
      - Android Version
-     - Common Traits
+     - When to Use
    * - 0
      - Pre-Android 9
-     - Legacy devices
+     - Legacy devices only
    * - 1
      - Android 9
-     - Basic Treble
+     - Early Treble devices
    * - 2
      - Android 10
-     - Standard modern
+     - Most modern devices
    * - 3
      - Android 11
-     - Early GKI
+     - Early GKI devices
    * - 4
      - Android 12+
-     - Modern GKI
+     - Modern GKI devices
+
+Using the wrong header version will prevent your device from booting. When in doubt:
+
+1. Check your device's Android version
+2. Extract current boot.img and check header
+3. Look at similar device ports
+
+.. note::
+    Modern devices (Android 10+) almost always use version 2 or higher. Using an older version will likely fail.
 
 Kernel Configuration
 --------------------
-Configure kernel build settings based on your device's requirements:
+The kernel is the core of your device's operating system. It needs specific configuration to work with Ubuntu Touch.
 
-Basic Build Options::
+Basic Build Options
+^^^^^^^^^^^^^^^^^^^
+Configure how your kernel should be built::
 
     # Standard compilation
-    deviceinfo_kernel_clang_compile="true"
-    deviceinfo_kernel_llvm_compile="true"
+    deviceinfo_kernel_clang_compile="true"  # Use modern Clang compiler
+    deviceinfo_kernel_llvm_compile="true"   # Use complete LLVM toolchain
 
-For GKI kernels, add::
+Why these settings?
+* Modern Android kernels expect Clang compilation
+* LLVM provides better optimization and debugging
+* Some devices require specific compiler settings
 
-    deviceinfo_bootimg_header_version="4"
-    deviceinfo_kernel_llvm_compile="true"
-    deviceinfo_vendor_bootconfig_path="bootconfig"
-    deviceinfo_ramdisk_compression="lz4"
+For GKI (Generic Kernel Image) devices, additional settings are needed::
+
+    deviceinfo_bootimg_header_version="4"           # Modern GKI header
+    deviceinfo_kernel_llvm_compile="true"           # Required for GKI
+    deviceinfo_vendor_bootconfig_path="bootconfig"  # Vendor boot config
+    deviceinfo_ramdisk_compression="lz4"           # Modern compression
+
+.. note::
+    If you're unsure whether your device uses GKI, check your kernel source tree 
+    for GKI-specific configurations or Android documentation for your device's 
+    release date - devices launched with Android 12 or later typically use GKI.
 
 Flash Layout Configuration
 --------------------------
-These settings define how your device handles boot images and partitions.
+These settings tell the system where to find different components in your device's memory. Getting these wrong can prevent booting or cause data corruption.
 
-Essential Settings::
+Essential Settings
+^^^^^^^^^^^^^^^^^^
+Each device needs specific memory addresses and sizes::
 
     # Flash offset configuration
-    deviceinfo_flash_offset_base="0x00000000"
-    deviceinfo_flash_offset_kernel="0x00008000"
-    deviceinfo_flash_offset_ramdisk="0x01000000"
-    deviceinfo_flash_offset_second="0x00f00000"
-    deviceinfo_flash_offset_tags="0x00000100"
-    deviceinfo_flash_pagesize="4096"
+    deviceinfo_flash_offset_base="0x00000000"      # Base memory address
+    deviceinfo_flash_offset_kernel="0x00008000"    # Kernel load point
+    deviceinfo_flash_offset_ramdisk="0x01000000"   # Ramdisk location
+    deviceinfo_flash_offset_second="0x00f00000"    # Second bootloader (if needed)
+    deviceinfo_flash_offset_tags="0x00000100"      # Kernel tags location
+    deviceinfo_flash_pagesize="4096"               # Flash memory page size
 
-Find these values by:
+How to find these values:
 
-1. Extracting your stock boot.img
-2. Reading kernel documentation
-3. Checking device tree files
+1. Extract from your stock boot.img
+2. Read kernel documentation
+3. Check device tree files
+4. Look at similar device configurations
+
+.. warning::
+    Using incorrect flash layout values can potentially brick your device. Always 
+    verify these values against stock firmware or existing ports.
 
 Advanced Configuration
 ----------------------
 
 Device Tree Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-For devices requiring device tree support::
+Device Tree Blobs (DTB) and Overlays (DTBO) describe your device's hardware to the kernel::
 
     # DTB configuration
     deviceinfo_dtb="path/to/dtb.dtb"                  # Device tree blob
     deviceinfo_prebuilt_dtb="path/to/dtb"            # Pre-built DTB
     deviceinfo_dtbo="path/to/dtbo.img"               # Device tree overlay
     deviceinfo_prebuilt_dtbo="path/to/dtbo.img"      # Pre-built DTBO
+
+When do you need these?
+* DTB: Almost always required for modern devices
+* DTBO: Usually needed for Android 9+ devices
+* Prebuilt versions: When building from source isn't possible
 
 Special Boot Requirements
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -119,39 +178,23 @@ Some devices need additional boot configuration::
 
 Storage Configuration
 ^^^^^^^^^^^^^^^^^^^^^
-Configure system storage parameters::
+Configure how system storage should be handled::
 
-    deviceinfo_rootfs_image_sector_size="4096"      # UFS devices common value
+    deviceinfo_rootfs_image_sector_size="4096"      # Common for UFS devices
     deviceinfo_system_partition_size="4000M"        # Override default size
     deviceinfo_use_overlaystore="true"              # Enable overlay storage
 
-Troubleshooting
----------------
-
-Common Issues:
-
-1. **Boot loops**: Check header version and cmdline
-2. **Flash fails**: Verify flash offsets and pagesize
-3. **No display**: Ensure console=tty0 in cmdline
-4. **Init fails**: Check systempart parameter
-
-Finding Values
---------------
-
-Extract from Stock Device::
-
-    # Unpack boot image
-    unpack_bootimg.py --boot_img boot.img --out boot/
-    
-    # View values
-    cat boot/header_version
-    cat boot/cmdline
-    cat boot/pagesize
+Understanding these settings:
+* Sector size affects storage performance and compatibility
+* System partition size must accommodate OS and apps
+* Overlay storage enables updates without modifying system partition
 
 Example Configurations
 ----------------------
 
-Standard Modern Device::
+Standard Modern Device
+^^^^^^^^^^^^^^^^^^^^^^
+Example configuration for a typical recent device::
 
     deviceinfo_name="OnePlus 8"
     deviceinfo_manufacturer="OnePlus"
@@ -164,7 +207,9 @@ Standard Modern Device::
     deviceinfo_has_recovery_partition="true"
     deviceinfo_flash_pagesize="4096"
 
-GKI Device::
+GKI Device
+^^^^^^^^^^
+Configuration for a GKI-based device::
 
     deviceinfo_bootimg_header_version="4"
     deviceinfo_kernel_llvm_compile="true"
@@ -172,6 +217,35 @@ GKI Device::
     deviceinfo_vendor_bootconfig_path="bootconfig"
     deviceinfo_ramdisk_compression="lz4"
     deviceinfo_bootimg_has_init_boot="true"
+
+Troubleshooting
+---------------
+
+Common Issues:
+
+1. **Boot loops**:
+
+   * Check header version matches Android version
+   * Verify cmdline includes console=tty0
+   * Confirm flash offsets are correct
+
+2. **Flash fails**:
+
+   * Verify flash offsets and pagesize
+   * Check partition sizes match device
+   * Confirm bootloader accepts images
+
+3. **No display**:
+
+   * Ensure console=tty0 in cmdline
+   * Check DTB configuration
+   * Verify display driver enabled in kernel
+
+4. **Init fails**:
+
+   * Check systempart parameter
+   * Verify ramdisk compression
+   * Confirm init_boot configuration (if GKI)
 
 Next Steps
 ----------

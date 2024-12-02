@@ -23,25 +23,25 @@ For experienced developers, place configuration files in one of these locations:
 
 Add deviceinfo_use_overlaystore="true" to your deviceinfo file to enable overlay mounting.
 
-Overlay Fundamentals
---------------------
-The overlay method allows configuration files to be added or modified without changing the root filesystem. Files are stored separately and mounted over the original system files during boot.
+Understanding Overlays
+----------------------
+Think of overlays like transparent sheets placed over a document - they let you modify what's visible without changing the original. In Ubuntu Touch, overlays allow you to:
 
-This approach offers several advantages:
+* Add or modify system files without changing the base system
+* Preserve changes across system updates
+* Keep device-specific configurations separate
+* Test changes safely before making them permanent
 
-* Preserves system partition integrity
-* Survives system updates
-* Maintains clean separation of customizations
-* Simplifies configuration management
+This approach is similar to how you might use transparent sheets for overhead projectors - each sheet adds or modifies content while the base content remains unchanged.
 
 Types of Overlays
 -----------------
 
 1. File Overlays
 ^^^^^^^^^^^^^^^^
-Individual files mounted directly over system files.
+Individual files mounted directly over system files, like placing a new page over an old one.
 
-Example - Display configuration::
+Example - Changing display configuration::
 
     overlay/
     └── system/
@@ -52,7 +52,7 @@ Example - Display configuration::
 
 2. Directory Overlays
 ^^^^^^^^^^^^^^^^^^^^^
-Combines overlay content with original directory using overlayfs.
+Combines overlay content with original directory, like merging two sets of files.
 
 Create a marker file named .halium-overlay-dir::
 
@@ -66,7 +66,7 @@ Create a marker file named .halium-overlay-dir::
 
 3. Directory Replacement
 ^^^^^^^^^^^^^^^^^^^^^^^^
-Completely replaces original directory content.
+Completely replaces original directory content, like swapping out an entire folder.
 
 Create a marker file named .halium-override-dir::
 
@@ -95,6 +95,8 @@ Basic Setup
     # Add configuration file
     cp example.conf overlay/system/halium/etc/
 
+This structure tells the system exactly where to apply your changes.
+
 Directory Operations
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -109,6 +111,8 @@ To merge with existing directory::
     # Add files
     cp custom.conf overlay/system/halium/etc/some-dir/
 
+The .halium-overlay-dir marker tells the system to merge contents.
+
 To replace entire directory::
 
     # Create replacement directory
@@ -119,6 +123,8 @@ To replace entire directory::
     
     # Add new files
     cp new.conf overlay/system/halium/etc/replaced-dir/
+
+The .halium-override-dir marker signals complete directory replacement.
 
 Common Configurations
 ---------------------
