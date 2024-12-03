@@ -44,13 +44,13 @@ These apps may be more difficult to work with, but their repository should conta
 
 .. Please sort this list alphabetically by the app display name in English (US)
 
-* Browser (`morph-browser on GitHub`_)
+* Browser (`morph-browser on GitLab`_)
 * Contacts (`address-book-app on GitLab`_)
 * Camera (`camera-app on GitLab`_)
 * External Drives (`ciborium on GitLab`_)
-* Media Player (`mediaplayer-app on GitHub`_)
-* Messaging (`messaging-app on GitHub`_)
-* Phone (`dialer-app on GitHub`_)
+* Media Player (`mediaplayer-app on GitLab`_)
+* Messaging (`messaging-app on GitLab`_)
+* Phone (`dialer-app on GitLab`_)
 * System Settings (`system-settings on GitLab`_)
 
 Instructions for contributing to these applications can be found in their respective repositories.
@@ -84,11 +84,11 @@ Instructions for contributing to these applications can be found in their respec
 
 .. Other preinstalled apps links. Please put them here in the same order that you do in the list
 
-.. _morph-browser on GitHub: https://github.com/ubports/morph-browser
+.. _morph-browser on Gitlab: https://gitlab.com/ubports/development/core/morph-browser
 .. _address-book-app on GitLab: https://gitlab.com/ubports/core/address-book-app
 .. _camera-app on GitLab: https://gitlab.com/ubports/apps/camera-app
 .. _ciborium on GitLab: https://gitlab.com/ubports/core/ciborium
-.. _mediaplayer-app on GitHub: https://github.com/ubports/mediaplayer-app
-.. _dialer-app on GitHub: https://github.com/ubports/dialer-app
-.. _messaging-app on GitHub: https://github.com/ubports/messaging-app
+.. _mediaplayer-app on Gitlab: https://gitlab.com/ubports/development/core/lomiri-mediaplayer-app
+.. _dialer-app on Gitlab: https://gitlab.com/ubports/development/core/lomiri-dialer-app/
+.. _messaging-app on Gitlab: https://gitlab.com/ubports/development/core/messaging-app
 .. _system-settings on GitLab: https://gitlab.com/ubports/core/lomiri-system-settings
