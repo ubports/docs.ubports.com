@@ -2,3 +2,4 @@ sphinx==8.0.2
 furo==2024.8.6
 sphinx-intl
 sphinxext-rediraffe
+sphinxcontrib-mermaid
