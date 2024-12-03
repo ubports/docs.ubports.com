@@ -5,6 +5,7 @@
 "porting/finalize/UBports_installer.rst" "porting/finalize/UBports-installer.rst"
 "porting/finalize/UBports_recovery.rst" "porting/finalize/UBports-recovery.rst"
 "porting/introduction/Preparations.rst" "porting/preparation/index.rst"
+"porting/UpdatePortsFor2004.rst" "porting/index.rst"
 "appdev/getting-started.rst" "appdev/index.rst"
 "appdev/publishing/index.rst" "appdev/index.rst"
 "appdev/samples/index.rst" "appdev/index.rst"
