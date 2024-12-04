@@ -1,3 +1,4 @@
+"porting/introduction/index.rst" "porting/index.rst"
 "porting/configure_test_fix/device_info/Repowerd.rst" "porting/index.rst"
 "porting/configure_test_fix/device_info/HfdService.rst" "porting/index.rst"
 "porting/configure_test_fix/device_info/Ayatana-indicator-power.rst" "porting/index.rst"
