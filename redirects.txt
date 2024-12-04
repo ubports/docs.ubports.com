@@ -23,6 +23,8 @@
 "porting/introduction/Intro.rst" "porting/index.rst"
 "porting/introduction/Preparations.rst" "porting/index.rst"
 "porting/introduction/Setting_up.rst" "porting/index.rst"
+"porting/finalize/UBports_installer.rst" "porting/index.rst"
+"porting/finalize/UBports_recovery.rst" "porting/index.rst"
 "porting/UpdatePortsFor2004.rst" "porting/index.rst"
 "appdev/getting-started.rst" "appdev/index.rst"
 "appdev/publishing/index.rst" "appdev/index.rst"
