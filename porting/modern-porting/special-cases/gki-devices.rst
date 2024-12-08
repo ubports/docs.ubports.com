@@ -5,7 +5,7 @@ GKI Device Support
 
 Quick Reference
 ---------------
-For experienced developers::
+::
 
     # Essential GKI configuration
     deviceinfo_bootimg_header_version="4"

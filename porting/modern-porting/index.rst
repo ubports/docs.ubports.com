@@ -1,7 +1,7 @@
 Modern Porting Methods
 ======================
 
-Choose the appropriate porting method based on your device characteristics and requirements.
+This section covers the available methods for porting Ubuntu Touch to modern devices. The choice of method depends on your device's characteristics and hardware support.
 
 Method Selection
 ----------------
@@ -22,6 +22,57 @@ Method Selection
         style F fill:#90EE90
         style D fill:#FFB6C1
 
+Available Methods
+-----------------
+
+Standalone Kernel Method
+^^^^^^^^^^^^^^^^^^^^^^^^
+Best suited for:
+
+* Android 9+ devices
+* Treble-compliant hardware
+* GKI compatibility
+* Available kernel source
+
+This method:
+
+* Uses pre-built system components
+* Focuses on kernel and configuration
+* Reduces build complexity
+* Provides faster iteration
+
+Full System Build Method
+^^^^^^^^^^^^^^^^^^^^^^^^
+Required for:
+
+* Pre-Android 9 devices
+* Non-Treble hardware
+* Custom Android modifications
+* Specific hardware requirements
+
+This method:
+
+* Builds complete system image
+* Provides maximum customization
+* Requires more resources
+* Takes longer to implement
+
+GSI-Based Method
+^^^^^^^^^^^^^^^^
+Suitable for:
+
+* Treble-compliant devices
+* Standard HAL implementations
+* Modern hardware support
+* Project Treble compatibility
+
+This method:
+
+* Uses generic system image
+* Simplifies system integration
+* Reduces maintenance
+* Enables faster updates
+
 Method Comparison
 -----------------
 
@@ -30,54 +81,56 @@ Method Comparison
    :widths: 20 40 40
 
    * - Method
-     - Best For
+     - Advantages
      - Requirements
    * - Standalone Kernel
-     - Modern devices (Android 9+)
-     - | - GKI compatibility
+     - | - Simpler process
+       | - Faster builds
+       | - Easier updates
+     - | - Android 9+
+       | - Kernel source
        | - Treble support
-       | - Available kernel source
    * - Full System
-     - Legacy or complex devices
+     - | - Maximum control
+       | - Custom modifications
+       | - Legacy support
      - | - Complete device tree
-       | - Vendor blobs
+       | - All source code
        | - Build environment
    * - GSI-Based
-     - Treble-compliant devices
-     - | - Treble support
+     - | - Standard base
+       | - Quick deployment
+       | - Easy maintenance
+     - | - Treble compliance
        | - Vendor partition
-       | - Basic kernel build
+       | - HAL compatibility
 
-Standalone Kernel Method
-------------------------
-The primary method for most modern devices, using Halium Generic System Image (GSI):
+Selection Criteria
+------------------
 
-* Suited for Android 9+ devices
-* Simplified build process focusing on kernel and device configuration
-* Uses pre-built system components
-* Reduced complexity and build time
-* Well-tested with recent devices
-* Recommended for initial porting attempts
+1. **Device Assessment**
 
-Full System Build Method
-------------------------
-Complete system build from source, providing additional control:
+   * Android version
+   * Hardware architecture
+   * Available source code
+   * Vendor support
 
-* Necessary when GSI method encounters compatibility issues
-* Allows deeper system customization
-* Useful for devices requiring specific Android system modifications
-* More complex setup and longer build times
-* Higher resource requirements
-* Better suited for experienced Android builders
+2. **Technical Requirements**
 
-Selection Guide
----------------
-Start with the standalone kernel method unless:
+   * Build environment needs
+   * Development time
+   * Maintenance considerations
+   * Update requirements
 
-* Device shows GSI incompatibility
-* Specific Android-level modifications needed
-* Vendor blobs require system-level integration
-* Standard HAL interfaces unavailable
+3. **Hardware Support**
+
+   * HAL compatibility
+   * Driver availability
+   * Vendor blob support
+   * Hardware features
+
+Implementation Paths
+--------------------
 
 .. toctree::
    :maxdepth: 2
@@ -86,15 +139,23 @@ Start with the standalone kernel method unless:
    standalone-kernel/index
    full-system/index
    special-cases/index
+   system-updates/index 
 
 Prerequisites
 -------------
 Before starting:
 
-* Read :doc:`../fundamentals/android-architecture`
-* Review :doc:`../preparation/device-selection/index`
-* Set up build environment per :doc:`../preparation/environment/index`
+* Complete environment setup
+* Gather device information
+* Check hardware compatibility
+* Verify source availability
 
-Additional Information
-----------------------
-For deeper understanding of specific topics, see :doc:`../resources/index`.
+Next Steps
+----------
+Choose your implementation path based on your device's characteristics and proceed to the corresponding section.
+
+See Also
+--------
+* :doc:`../resources/deviceinfo-reference`
+* :doc:`../debugging/index`
+* :doc:`../vendor-specific/index`

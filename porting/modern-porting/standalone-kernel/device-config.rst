@@ -5,7 +5,7 @@ Device Configuration
 
 Quick Reference
 ---------------
-For experienced developers, create a deviceinfo file in your repository root with these minimal settings::
+Create a deviceinfo file in your repository root with these minimal settings::
 
     deviceinfo_name="Device Name"
     deviceinfo_manufacturer="Brand"

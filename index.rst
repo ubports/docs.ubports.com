@@ -68,6 +68,15 @@ You may view this documentation in the following languages:
    :name: sec-porting
 
    porting/index.rst
+   porting/quick-start/index
+   porting/fundamentals/index
+   porting/preparation/index
+   porting/modern-porting/index
+   porting/debugging/index
+   porting/finalize/index
+   porting/vendor-specific/index
+   porting/legacy-porting/index
+   porting/resources/index
 
 .. toctree::
    :maxdepth: 1

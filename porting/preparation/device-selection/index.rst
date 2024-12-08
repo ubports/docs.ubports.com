@@ -5,7 +5,6 @@ This guide helps you evaluate and select a suitable device for porting Halium. P
 
 Quick Reference
 ---------------
-For experienced porters:
 
 * Check kernel source availability
 * Verify bootloader can be unlocked

@@ -5,7 +5,7 @@ This guide walks you through building the necessary system images for your legac
 
 Quick Reference
 ---------------
-For experienced developers::
+Steps in brief::
 
     source build/envsetup.sh
     breakfast [device]

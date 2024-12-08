@@ -7,7 +7,7 @@ Essential tools for managing and debugging the build environment and development
 
 Quick Reference
 ---------------
-Key tools for experienced developers::
+Key tools are::
 
     # Build monitoring
     watch -n1 "free -h; df -h"   # Monitor RAM/storage

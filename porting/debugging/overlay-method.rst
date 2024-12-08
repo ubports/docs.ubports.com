@@ -5,7 +5,7 @@ The Overlay Method
 
 Quick Start
 -----------
-For experienced developers, place configuration files in one of these locations:
+Place configuration files in one of these locations:
 
 1. Primary overlay location::
 

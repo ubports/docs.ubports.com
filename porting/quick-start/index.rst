@@ -3,83 +3,123 @@
 Quick Start Guide
 =================
 
-This accelerated guide is for developers familiar with Android ROM building and Linux systems.
+This section provides a condensed overview of the Ubuntu Touch porting process, focusing on essential commands and key configuration steps.
 
 Essential Steps
 ---------------
 
-1. Verify Requirements
+1. Environment Setup
+^^^^^^^^^^^^^^^^^^^^
+Basic tools and configuration:
 
-   * Unlocked bootloader
-   * Available kernel source
-   * Build environment ready
+.. code-block:: bash
 
-2. Configure Build
+    sudo apt install git gcc adb fastboot repo python3 python-is-python3 \
+        android-tools-adb android-tools-fastboot
 
-   * Create deviceinfo file
-   * Set up build directory
-   * Prepare kernel configuration
-
-3. Build and Test
-
-   * Build kernel
-   * Create system images
-   * Initial boot testing
-
-Detailed Instructions
----------------------
-
-Requirements Overview
----------------------
-- Ubuntu 22.04 LTS or similar
-- 16GB+ RAM
-- 100GB+ storage
-- Basic tools: git, repo, adb, fastboot
-- Device with unlocked bootloader
-
-Quick Setup
------------
-1. Install essential packages::
-
-    sudo apt install git gcc adb fastboot repo python3 python-is-python3 android-tools-adb android-tools-fastboot
-
-2. Configure git and repo::
-
+    # Configure git and repo
     git config --global user.name "Your Name"
     git config --global user.email "your.email@example.com"
-    mkdir ~/bin && curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
+    mkdir ~/bin 
+    curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+    chmod a+x ~/bin/repo
 
-3. Create device config (deviceinfo)::
+2. Device Configuration
+^^^^^^^^^^^^^^^^^^^^^^^
+Create deviceinfo file with essential settings:
 
-    # See example in modern-porting/standalone-kernel/device-config
+.. code-block:: bash
+
+    deviceinfo_name="Device Name"
+    deviceinfo_manufacturer="Brand"
+    deviceinfo_codename="codename"
+    deviceinfo_arch="aarch64"
     deviceinfo_kernel_source="<kernel source repo>"
     deviceinfo_kernel_source_branch="<branch>"
     deviceinfo_kernel_defconfig="<device>_defconfig"
 
-4. Build::
+3. Build Process
+^^^^^^^^^^^^^^^^
+Basic build commands:
 
-    ./build.sh -b workdir            # Build kernel
-    ./build/prepare-fake-ota.sh out/device_$DEVICE.tar.xz ota  # Prepare system
-    ./build/system-image-from-ota.sh ota/ubuntu_command images  # Create images
+.. code-block:: bash
+
+    # Build kernel
+    ./build.sh -k -b workdir
+
+    # Full build with system image
+    ./build.sh -b workdir
+    ./build/prepare-fake-ota.sh out/device_$DEVICE.tar.xz ota
+    ./build/system-image-from-ota.sh ota/ubuntu_command images
+
+4. Installation
+^^^^^^^^^^^^^^^
+Flash images to device:
+
+.. code-block:: bash
+
+    # Standard method
+    fastboot flash boot boot.img
+    fastboot flash system system.img
+
+    # Dynamic partition devices
+    fastboot reboot fastboot
+    fastboot flash boot boot.img
+    fastboot flash system system.img
+
+Key Verification Points
+-----------------------
+
+1. **Build Verification**
+
+   * Check image creation
+   * Verify file sizes
+   * Validate configurations
+
+2. **Boot Process**
+
+   * Watch for USB network interface
+   * Monitor kernel messages
+   * Check service initialization
+
+3. **Hardware Detection**
+
+   * Verify basic functionality
+   * Check hardware interfaces
+   * Monitor system logs
+
+Common Issues
+-------------
+
+1. **Build Problems**
+
+   * Missing dependencies
+   * Wrong configuration
+   * Space limitations
+
+2. **Boot Issues**
+
+   * Kernel panic
+   * Init failures
+   * Service problems
+
+3. **Hardware Support**
+
+   * Driver initialization
+   * HAL compatibility
+   * Vendor blob issues
 
 Next Steps
 ----------
 
-Choose your next destination based on your needs:
+For detailed information on specific topics:
 
-**Need to debug issues?**
-    → :doc:`../debugging/troubleshooting/index`
+* :doc:`../debugging/index` - Troubleshooting guide
+* :doc:`../debugging/hardware-debug/index` - Hardware enablement
+* :doc:`../vendor-specific/index` - Vendor-specific details
 
-**Want to enable specific hardware?**
-    → :doc:`../debugging/index`
-
-**Have vendor-specific challenges?**
-    → :doc:`../vendor-specific/index`
-
-**Ready to finalize your port?**
-    → :doc:`../finalize/index`
-
-Looking for complete documentation? Return to :doc:`../index` and follow the comprehensive guide.
-
-.. note::
-    First-time porters should follow the complete guide starting with :ref:`preparation`. This quick start omits important details needed for understanding the porting process.
+See Also
+--------
+* :ref:`build-systems` - Complete build system documentation
+* :ref:`hardware-abstraction` - Hardware support details
+* :doc:`../resources/deviceinfo-reference` - Configuration reference

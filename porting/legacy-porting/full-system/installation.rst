@@ -5,7 +5,7 @@ This guide walks you through installing Ubuntu Touch on your legacy device. The 
 
 Quick Reference
 ---------------
-For experienced developers::
+Steps in brief::
 
     # Get installer
     git clone https://gitlab.com/JBBgameich/halium-install.git

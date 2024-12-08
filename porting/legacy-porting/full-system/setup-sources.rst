@@ -5,7 +5,7 @@ This guide helps you prepare the necessary source code for your legacy device po
 
 Quick Reference
 ---------------
-For experienced developers::
+Steps in brief::
 
     mkdir halium && cd halium
     repo init -u https://github.com/Halium/android -b halium-7.1 --depth=1

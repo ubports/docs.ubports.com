@@ -5,7 +5,7 @@ Environment Setup
 
 Quick Setup
 -----------
-For experienced developers familiar with Android building::
+The main steps for setting up the environment are as follows (with detailed explanations below)::
 
     # Essential packages for Ubuntu/Debian
     sudo apt update && sudo apt install git gcc adb fastboot repo \

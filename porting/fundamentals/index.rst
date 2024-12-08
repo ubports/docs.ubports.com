@@ -1,101 +1,61 @@
-.. _fundamentals:
-
 Fundamentals of Ubuntu Touch Porting
 ====================================
 
-This section builds the foundational knowledge needed for successful Ubuntu Touch porting. Choose your learning path based on your current understanding.
+This section covers the core concepts necessary for understanding Ubuntu Touch porting. A solid grasp of these fundamentals will help you make informed decisions throughout the porting process.
 
-Learning Paths
---------------
+Core Concepts
+-------------
 
-.. mermaid::
+1. **Android Architecture**
 
-    flowchart LR
-        A[Start Here] --> B{Prior Knowledge?}
-        B -->|Android Development| C[Hardware Abstraction]
-        B -->|Linux Systems| D[Android Architecture]
-        B -->|Neither| E[Complete Path]
-        C --> F[Ubuntu Touch Architecture]
-        D --> F
-        E --> D
-        E --> C
-        F --> G[Build Systems]
-        G --> H[Ready to Port]
-
-Quick Start Options
--------------------
-
-**Already Know Android Development?**
-    Start with :ref:`hardware-abstraction` to understand Ubuntu Touch's hardware interface.
-
-**Familiar with Linux Systems?**
-    Begin with :ref:`android-architecture` to learn Android's role in Ubuntu Touch.
-
-**Need Complete Background?**
-    Follow the sections in order for comprehensive understanding.
-
-Core Concepts Overview
-----------------------
-
-1. :ref:`android-architecture`
-
-   * Android system structure
-   * Hardware interfaces
+   * System structure and components
+   * Hardware abstraction layer
    * System services
-   * *Time estimate: 30 minutes*
+   * Driver integration
+   * See: :ref:`Android Architecture <android-architecture>`
 
-2. :ref:`halium-overview`
+2. **Halium Overview**
 
-   * Middleware purpose
+   * Purpose and functionality
    * Version compatibility
    * System integration
-   * *Time estimate: 45 minutes*
+   * Hardware support
+   * See: :ref:`halium-overview`
 
-3. :ref:`hardware-abstraction`
+3. **Hardware Abstraction**
 
    * HAL concepts
    * Driver integration
    * Binary interfaces
-   * *Time estimate: 1 hour*
+   * Hardware access methods
+   * See: :ref:`hardware-abstraction`
 
-4. :ref:`ubuntu-touch-architecture`
+4. **Ubuntu Touch Architecture**
 
    * System components
    * Integration points
    * Service management
-   * *Time estimate: 45 minutes*
+   * Application support
+   * See: :ref:`ubuntu-touch-architecture`
 
-5. :ref:`build-systems`
+5. **Build Systems**
 
    * Build methods
    * Tool requirements
    * Process workflow
-   * *Time estimate: 1 hour*
+   * System integration
+   * See: :ref:`build-systems`
 
-Next Steps
-----------
-
-After completing the fundamentals:
-
-**Ready to start?**
-    → :doc:`../preparation/index`
-
-**Want implementation details?**
-    → :doc:`../modern-porting/index`
-
-**Need specific information?**
-    → :doc:`../resources/index`
-
-Quick Reference
----------------
-Experienced developers familiar with Android internals and HAL can skip to:
-
-- :doc:`../modern-porting/index`
-- :doc:`../vendor-specific/index`
+Prerequisites
+-------------
+* Basic understanding of Linux systems
+* Familiarity with Android devices
+* Command line experience
+* Basic programming knowledge
 
 Detailed Guide
 --------------
-New to porting? Follow these sections in order:
+Each section provides comprehensive coverage of its topic. Follow them in order for the best understanding of how Ubuntu Touch interacts with Android hardware.
 
 .. toctree::
    :maxdepth: 2
@@ -106,16 +66,10 @@ New to porting? Follow these sections in order:
    ubuntu-touch-architecture
    build-systems
 
-Prerequisites
--------------
-- Basic understanding of Linux systems
-- Familiarity with Android devices
-- Command line experience
-- Basic programming knowledge
-
 Next Steps
 ----------
 After understanding these fundamentals, proceed to:
 
-- :doc:`../preparation/index`
-- :doc:`../modern-porting/index`
+* :doc:`../preparation/index` - Environment and device setup
+* :doc:`../modern-porting/index` - Porting process
+* :doc:`../resources/index` - Additional reference materials
