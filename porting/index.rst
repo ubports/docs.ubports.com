@@ -16,6 +16,7 @@ Getting Started
 2. **Choose Your Method**
 
    Different approaches are available depending on your device:
+
    * Standalone Kernel Method - Modern devices with Android 9+
    * Full System Build - Complex or legacy devices
    * GSI-Based Method - Treble-compliant devices
@@ -49,6 +50,7 @@ If you get stuck:
 2. Review vendor-specific documentation
 3. Search the resources section
 4. Join the UBports porting community:
+
    * Telegram: @ubports_porting
    * Matrix: #ubports_porting:matrix.org
    * Forum: forums.ubports.com
