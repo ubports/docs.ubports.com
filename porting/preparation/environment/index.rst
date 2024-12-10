@@ -31,12 +31,14 @@ System Requirements
 Hardware Requirements
 ^^^^^^^^^^^^^^^^^^^^^
 Minimum specifications:
+
 * CPU: 4+ cores recommended
 * RAM: 16GB minimum, 32GB recommended
 * Storage: 100GB free space
 * Internet: High-speed connection
 
 Recommended specifications for faster builds:
+
 * CPU: 8+ cores
 * RAM: 32GB
 * Storage: 200GB+ SSD

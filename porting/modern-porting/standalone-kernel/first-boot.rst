@@ -163,7 +163,6 @@ Next Steps
 
 * :ref:`display` - Display setup
 * :ref:`apparmor` - Security configuration
-* REF HERE - Advanced debugging
 
 .. note::
     A seemingly unresponsive device may have booted successfully. Always check for SSH/telnet access before assuming boot failure.

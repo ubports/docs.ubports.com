@@ -352,6 +352,7 @@ Testing Your Changes
 1. **Systematic Testing**
    
    Create a checklist:
+   
    - [ ] Basic boot
    - [ ] Display/touch
    - [ ] Network (WiFi/Mobile)
