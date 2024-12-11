@@ -1,32 +1,28 @@
 Community Resources
 ===================
 
-(Currently just showcases a structure and ideas for future contents.)
-
 Development Communities
 -----------------------
-* UBports community
-* Halium project
-* LineageOS community
-* Mobile Linux communities
+* `UBports Forum <https://forums.ubports.com/>`_
+* `LineageOS Wiki <https://wiki.lineageos.org/>`_
+* `PostmarketOS Wiki <https://wiki.postmarketos.org/>`_
 
 Support Channels
 ----------------
-* Forums and wikis
-* Chat platforms
-* Mailing lists
-* Issue trackers
+* `UBports Porting Telegram Group <https://t.me/ubports_porting>`_
+* `LineageOS Device Development <https://forum.xda-developers.com/c/lineageos-development.6080/>`_
+* `XDA Developers Forums <https://forum.xda-developers.com/>`_
+* `UBports GitLab Issues <https://gitlab.com/ubports/community-ports/>`_
+* `Matrix Channel - UBports Porting <https://matrix.to/#/#ubports_porting:matrix.org>`_
 
 Development Processes
 ---------------------
-* Contribution guides
-* Code review processes
-* Release procedures
-* Quality assurance
+* `Halium Project Documentation <https://docs.halium.org/>`_
+* `Android Platform Development <https://source.android.com/docs/setup/contribute>`_
 
 Knowledge Bases
 ---------------
-* Community documentation
-* Device-specific guides
-* Shared experiences
-* Best practices
+* `Android Open Source Project <https://source.android.com/>`_
+* `ARM Developer Documentation <https://developer.arm.com/documentation/>`_
+* `Ubuntu Wiki <https://wiki.ubuntu.com/>`_
+* `UBports Device Documentation <https://devices.ubuntu-touch.io/>`_
