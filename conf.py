@@ -44,6 +44,9 @@ mermaid_version = "11.2.0"
 mermaid_use_local = '_static/mermaid/mermaid.esm.min.mjs'
 mermaid_elk_use_local = '_static/mermaid/mermaid-layout-elk.esm.min.mjs'
 
+d3_use_local = '_static/mermaid/d3.min.js'
+d3_version = "7.9.0"  # This is the default version mentioned in the docs
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
