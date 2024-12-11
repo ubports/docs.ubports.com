@@ -36,6 +36,14 @@ extensions = [
     'sphinxcontrib.mermaid'
 ]
 
+# Set Mermaid version - using the default mentioned in the mermaid docs
+# found at https://github.com/mgaitan/sphinxcontrib-mermaid.git
+mermaid_version = "11.2.0"
+
+# Specify paths to local files
+mermaid_use_local = '_static/mermaid/mermaid.esm.min.mjs'
+mermaid_elk_use_local = '_static/mermaid/mermaid-layout-elk.esm.min.mjs'
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
