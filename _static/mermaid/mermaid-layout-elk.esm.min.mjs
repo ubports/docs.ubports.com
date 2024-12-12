@@ -1,1 +1,0 @@
-Failed to fetch version info for @mermaid-js/mermaid-elk.

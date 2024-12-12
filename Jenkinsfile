@@ -19,6 +19,13 @@ pipeline {
                 sh 'pip install --quiet --no-cache-dir --user --upgrade -r requirements.txt'
             }
         }
+        stage("Setup Mermaid") {
+            steps {
+                // Load and run mermaid setup
+                load 'Jenkinsfile.setup-mermaid'
+                setupMermaid()
+            }
+        }
         stage("Build docs"){
             steps {
                 sh 'python3 -m sphinx -Wab html . _build/html/'

@@ -36,16 +36,10 @@ extensions = [
     'sphinxcontrib.mermaid'
 ]
 
-# Set Mermaid version - using the default mentioned in the mermaid docs
-# found at https://github.com/mgaitan/sphinxcontrib-mermaid.git
-mermaid_version = "11.2.0"
-
-# Specify paths to local files
-mermaid_use_local = '_static/mermaid/mermaid.esm.min.mjs'
-mermaid_elk_use_local = '_static/mermaid/mermaid-layout-elk.esm.min.mjs'
-
-d3_use_local = '_static/mermaid/d3.min.js'
-d3_version = "7.9.0"  # This is the default version mentioned in the docs
+# Mermaid configuration for static image generation
+mermaid_output_format = 'svg'
+mermaid_cmd = 'mmdc'
+mermaid_verbose = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
