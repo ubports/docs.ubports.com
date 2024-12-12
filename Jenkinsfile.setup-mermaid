@@ -26,10 +26,11 @@ def call() {
         echo "Installing Chrome headless shell..."
         npx puppeteer browsers install chrome-headless-shell
         
+        echo "Configuring Puppeteer to run with --no-sandbox..."
+        echo '{"puppeteerConfig": {"args": ["--no-sandbox"]}}' > /root/.config/mmdc-config.json
+        
         echo "Setup completed successfully"
     '''
-    
-    sh 'npm install -g @mermaid-js/mermaid-cli'
 }
 
 return this
