@@ -27,5 +27,5 @@ def setupMermaid() {
     '''
     
     // Install mermaid-cli globally
-    sh 'sudo npm install -g @mermaid-js/mermaid-cli'
+    sh 'npm install -g @mermaid-js/mermaid-cli'
 }
