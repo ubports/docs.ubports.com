@@ -4,7 +4,7 @@ def call() {
         set -e
         
         echo "Adding NodeSource repository..."
-        curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+        curl -fsSL https://deb.nodesource.com/setup_20.x | bash -  # Updated to Node.js 20
         
         echo "Updating package lists..."
         apt-get update
@@ -27,6 +27,7 @@ def call() {
         npx puppeteer browsers install chrome-headless-shell
         
         echo "Configuring Puppeteer to run with --no-sandbox..."
+        mkdir -p /root/.config
         echo '{"puppeteerConfig": {"args": ["--no-sandbox"]}}' > /root/.config/mmdc-config.json
         
         echo "Setup completed successfully"
