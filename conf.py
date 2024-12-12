@@ -38,7 +38,7 @@ extensions = [
 
 # Mermaid configuration for static image generation
 mermaid_output_format = 'svg'
-mermaid_cmd = 'mmdc --puppeteerConfig \'{"args": ["--no-sandbox"]}\''
+mermaid_cmd = 'mmdc -p /root/.config/mmdc-config.json'
 mermaid_verbose = True
 
 # Add any paths that contain templates here, relative to this directory.
