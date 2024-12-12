@@ -22,20 +22,6 @@ HAL Setup
 
        ls /dev/video*
 
-Configuration
--------------
-Camera config location:
-/etc/camera/camera-config.cfg
-
-Common settings:
-
-.. code-block:: none
-
-    [camera]
-    orientation=0
-    video_pixel_format=UYVY
-    preview_pixel_format=YUV420
-
 Troubleshooting
 ---------------
 

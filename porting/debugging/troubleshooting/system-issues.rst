@@ -30,18 +30,22 @@ Understanding these commands:
     # View container logs
     journalctl -u lxc@android
 
-Why check the container?
-* Android container provides hardware support
-* Container failure means no hardware access
-* Logs reveal initialization problems
-
 3. Test system access::
 
     # Check system mounts
     mount | grep system
     
-    # Verify important services
-    systemctl status ofono repowerd unity8
+    # Verify system services
+    systemctl status ofono
+    systemctl status repowerd
+    
+    # Check user session services
+    systemctl --user status lomiri-full-session.service
+
+.. note::
+    Lomiri (formerly Unity8) runs as a user service, not a system service. Always use 
+    ``systemctl --user`` when checking Lomiri-related services. The full service name 
+    is ``lomiri-full-session.service``.
 
 These checks reveal:
 
