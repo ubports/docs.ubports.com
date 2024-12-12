@@ -43,9 +43,13 @@ pipeline {
         stage('Fix git ref for non-master builds') {
             when { not { branch 'master' }  }
             steps {
-                // Workaround to create the master branch since Jenkins
-                // refuses to do it on PR builds
-                sh 'git show-ref --verify --quiet master || git branch master `git show-ref -s origin/master`'
+                sh '''
+                    # Add workspace to safe.directory
+                    git config --global --add safe.directory "${WORKSPACE}"
+                    
+                    # Original command
+                    git show-ref --verify --quiet master || git branch master `git show-ref -s origin/master`
+                '''
             }
         }
         stage('Check redirects') {
