@@ -15,21 +15,20 @@ Debug steps::
     iw event
     wpa_cli status
 
-Cellular
---------
+Cellular/Modem
+--------------
 Debug methods::
 
-    # Modem
-    mmcli -m 0
-    ofono-phonesim-cli
+    # Check modem status
+    dmesg | grep -i modem
     
-    # RIL
-    logcat -s RIL
-    rild -l debug
+    # Verify RIL status
+    journalctl -u ofono
     
-    # SIM
-    at+cpin?
-    at+cops?
+    # Check SIM status
+    list_modems          # ofono tool
+    dbus-send --system --print-reply --dest=org.ofono /[modem] \
+        org.ofono.Modem.GetProperties
 
 Bluetooth
 ---------
