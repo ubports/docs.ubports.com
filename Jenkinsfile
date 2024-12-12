@@ -2,6 +2,7 @@ pipeline {
     agent {
         docker {
             image "python:3.12"
+            args '-u root:root'  // Run as root to allow package installation
         }
     }
     options {
@@ -21,9 +22,15 @@ pipeline {
         }
         stage("Setup Mermaid") {
             steps {
-                // Load and run mermaid setup
-                load 'Jenkinsfile.setup-mermaid'
-                setupMermaid()
+                script {
+                    try {
+                        def setup = load 'Jenkinsfile.setup-mermaid'
+                        setup.call()
+                    } catch (Exception e) {
+                        echo "Setup Mermaid failed with error: ${e.getMessage()}"
+                        throw e
+                    }
+                }
             }
         }
         stage("Build docs"){
