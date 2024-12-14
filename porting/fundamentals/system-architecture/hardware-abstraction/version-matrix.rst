@@ -1,5 +1,3 @@
-# fundamentals/system-architecture/hardware-abstraction/version-matrix.rst
-
 HAL Version Matrix
 ==================
 

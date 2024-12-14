@@ -1,4 +1,4 @@
-# fundamentals/system-architecture/hardware-abstraction/index.rst
+.. _hardware-abstraction:
 
 Hardware Abstraction Layer
 ==========================

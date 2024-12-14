@@ -9,18 +9,21 @@ Core Areas
 ----------
 
 1. **System Architecture**
+
    * How Ubuntu Touch works with Android hardware
    * Integration between system components
    * Hardware abstraction and support
    * Implementation approaches
 
 2. **Build Systems**
+
    * Different build methods
    * Tool requirements
    * Build process workflows
    * System integration
 
 3. **Core Concepts**
+
    * Container system
    * System images
    * Hardware support

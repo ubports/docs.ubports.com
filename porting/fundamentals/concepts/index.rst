@@ -1,3 +1,5 @@
+.. _build-concepts:
+
 Core Concepts
 =============
 

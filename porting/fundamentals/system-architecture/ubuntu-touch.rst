@@ -1,5 +1,3 @@
-# fundamentals/system-architecture/ubuntu-touch.rst
-
 Ubuntu Touch System Architecture
 ================================
 
@@ -7,12 +5,14 @@ Core System Components
 ----------------------
 
 1. **User Interface Layer**
+
    * Lomiri (Unity8) interface
    * Mir display server
    * Qt/QML applications
    * System indicators
 
 2. **System Services**
+
    * systemd init system
    * Network management
    * Power management
@@ -20,6 +20,7 @@ Core System Components
    * Security framework
 
 3. **Core Infrastructure**
+
    * Click package system
    * AppArmor security
    * Wayland protocols
@@ -69,6 +70,7 @@ Essential system services:
 Configuration Systems
 ^^^^^^^^^^^^^^^^^^^^^
 Key configuration areas:
+
 * Device settings
 * Hardware configs
 * System policies

@@ -1,4 +1,4 @@
-# fundamentals/system-architecture/android-integration.rst
+.. _android-integration:
 
 Android Integration
 ===================
@@ -103,4 +103,4 @@ See Also
 --------
 * :ref:`hardware-abstraction` - HAL details
 * :ref:`debugging-container` - Container debugging
-* :doc:`../vendor-specific/index` - Vendor specifics
+* :doc:`../../vendor-specific/index` - Vendor specifics

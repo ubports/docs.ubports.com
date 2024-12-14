@@ -1,4 +1,4 @@
-.. _first-boot-debugging:
+.. _initial-boot:
 
 First Boot Debugging
 ====================

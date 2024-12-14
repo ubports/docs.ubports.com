@@ -1,5 +1,7 @@
 # fundamentals/system-architecture/hardware-abstraction/implementation.rst
 
+.. _implementation-guide:
+
 HAL Implementation
 ==================
 
@@ -99,6 +101,7 @@ Best Practices
 
 See Also
 --------
-* :ref:`debugging-hal` - HAL debugging
+* :ref:`hardware-enablement` - Hardware debugging guide
 * :ref:`vendor-specific` - Vendor implementations
 * :doc:`../implementation-guide` - General implementation
+

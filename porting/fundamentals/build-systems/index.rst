@@ -1,3 +1,5 @@
+.. _build-systems:
+
 Build Systems
 =============
 
@@ -125,6 +127,15 @@ Steps for successful builds:
    * System integration
    * Testing procedures
    * Deployment methods
+
+Detailed Guides
+---------------
+
+.. toctree::
+   :maxdepth: 2
+   
+   modern
+   legacy
 
 Next Steps
 ----------

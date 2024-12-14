@@ -1,3 +1,5 @@
+.. _migration-guide:
+
 Migration to Modern Methods
 ===========================
 
@@ -197,6 +199,6 @@ If staying on legacy:
 
 See Also
 --------
-* :ref:`halium-overview` - Halium architecture
+* :ref:`android-integration` - Halium architecture
 * :ref:`hardware-abstraction` - HAL details
 * :doc:`../../vendor-specific/index` - Vendor-specific guides

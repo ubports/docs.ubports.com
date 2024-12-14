@@ -1,3 +1,5 @@
+.. _debugging-hardware:
+
 Hardware-Related Issues
 =======================
 

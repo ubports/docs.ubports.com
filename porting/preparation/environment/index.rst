@@ -147,7 +147,7 @@ Environment ready? Choose your path:
     → :doc:`../../modern-porting/standalone-kernel/index`
 
 **Need to understand the build system?**
-    → :doc:`../../fundamentals/build-systems`
+    → :doc:`../../fundamentals/build-systems/index`
 
 **Want to check device compatibility?**
     → :doc:`../device-selection/index`
@@ -156,7 +156,7 @@ See Also
 --------
 * :doc:`development-tools` - Additional development tools and monitoring
 * :ref:`build-systems` - Understanding build requirements
-* :ref:`android-architecture` - Android build system context
+* :ref:`android-integration` - Android build system context
 
 .. toctree::
    :maxdepth: 1

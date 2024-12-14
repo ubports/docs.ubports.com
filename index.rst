@@ -68,8 +68,8 @@ You may view this documentation in the following languages:
    :name: sec-porting
 
    porting/index.rst
-   porting/quick-start/index
    porting/fundamentals/index
+   porting/quick-start/index
    porting/preparation/index
    porting/modern-porting/index
    porting/debugging/index

@@ -34,9 +34,11 @@ Guide Structure
 ---------------
 
 * **Fundamentals**: Core concepts and architecture
+* **Quick Start**: Quick start steps
 * **Preparation**: Environment setup and device requirements
 * **Modern Porting**: Step-by-step porting process
 * **Debugging**: Troubleshooting and configuration
+* **Finalizing**: Completing the port
 * **Vendor-Specific**: Hardware-specific considerations
 * **Legacy Devices**: Pre Project Treble porting
 * **Resources**: Reference materials and documentation
