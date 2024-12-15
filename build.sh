@@ -14,6 +14,21 @@ UBPORTSDOCSENV=${UBPORTSDOCSENV-"$HOME/ubportsdocsenv"}
 ## use commandline parameter if it is given
 UBPORTSDOCSENV=${1-$UBPORTSDOCSENV}
 
+# functions
+# Function to install packages (apk)
+install_via_apk() {
+    echo "Detected apk"
+    echo "Installing python3-pip and python3-virtualenv..."
+    sudo apk add python3 py3-pip py3-virtualenv
+}
+
+# Function to install packages (pacman)
+install_via_pacman() {
+    echo "Detected pacman"
+    echo "Installing python-pip and python-virtualenv..."
+    sudo pacman -S --noconfirm python-pip python-virtualenv
+}
+
 # check if virtualenv already exists
 if [ -d "$UBPORTSDOCSENV" ]; then
   echo -e "${GREEN}Build environment found in \"$UBPORTSDOCSENV\".${PLAIN}"
@@ -21,7 +36,15 @@ if [ -d "$UBPORTSDOCSENV" ]; then
 else
   echo -e "${YELLOW}Build environment not found in \"$UBPORTSDOCSENV\" ... creating it.${PLAIN}"
   echo -e "${YELLOW}Installing pip and virtualenv (using sudo).${PLAIN}"
-  sudo apt install python3-pip python3-virtualenv
+  # Check for apk or pacman
+  if command -v apk &> /dev/null; then
+      install_via_apk
+  elif command -v pacman &> /dev/null; then
+      install_via_pacman
+  else
+      echo "Unsupported package manager. Please install the packages manually."
+      exit 1
+  fi
   echo -e "${YELLOW}Creating a virtual environment in \"$UBPORTSDOCSENV\".${PLAIN}"
   virtualenv $UBPORTSDOCSENV
   source $UBPORTSDOCSENV/bin/activate
