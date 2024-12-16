@@ -40,7 +40,7 @@ Graphics
 --------
 1. Compositor::
 
-    LOMIRI_LOG_LEVEL=debug lomiri 2>&1 | tee unity8.log
+    LOMIRI_LOG_LEVEL=debug lomiri 2>&1 | tee lomiri.log
     mir-performance-test
 
 2. Hardware acceleration::

@@ -5,7 +5,7 @@ Display Stack
 -------------
 Components::
 
-    DRM/KMS -> hwcomposer -> Mir -> Lomiri
+    Android HAL/hwcomposer -> libhybris -> Mir -> Lomiri
     
 Debug interfaces::
 
