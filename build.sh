@@ -14,28 +14,6 @@ UBPORTSDOCSENV=${UBPORTSDOCSENV-"$HOME/ubportsdocsenv"}
 ## use commandline parameter if it is given
 UBPORTSDOCSENV=${1-$UBPORTSDOCSENV}
 
-# functions
-# Function to install packages (apk)
-install_via_apk() {
-    echo "Detected apk"
-    echo "Installing python3-pip and python3-virtualenv..."
-    sudo apk add python3 py3-pip py3-virtualenv
-}
-
-# Function to install packages (apt)
-install_via_apt() {
-    echo "Detected apt"
-    echo "Installing python3-pip and python3-virtualenv..."
-    sudo apt install python3-pip python3-virtualenv
-}
-
-# Function to install packages (pacman)
-install_via_pacman() {
-    echo "Detected pacman"
-    echo "Installing python-pip and python-virtualenv..."
-    sudo pacman -S --noconfirm python-pip python-virtualenv
-}
-
 # check if virtualenv already exists
 if [ -d "$UBPORTSDOCSENV" ]; then
   echo -e "${GREEN}Activating virtual build environment found in \"$UBPORTSDOCSENV\".${PLAIN}"
