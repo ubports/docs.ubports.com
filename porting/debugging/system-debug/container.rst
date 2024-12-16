@@ -28,7 +28,7 @@ Check mounts::
     ls -l /vendor
 
 Security Policies
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 Ubuntu Touch uses AppArmor as its primary security framework, while the Android container utilizes SELinux. This dual-policy approach means:
 
 1. **AppArmor**
