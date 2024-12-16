@@ -21,7 +21,7 @@ if [ -d "$UBPORTSDOCSENV" ]; then
 else
   echo -e "${YELLOW}Build environment not found in \"$UBPORTSDOCSENV\" ... creating it.${PLAIN}"
   echo -e "${YELLOW}Installing pip and virtualenv (using sudo).${PLAIN}"
-  # Check for apt or pacman
+  # Check for package manager
   if command -v apk &> /dev/null; then
       echo "Detected apk"
       sudo apk add python3 py3-pip py3-virtualenv
