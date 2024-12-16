@@ -1,3 +1,5 @@
+.. _modern-methods:
+
 Modern Porting Methods
 ======================
 

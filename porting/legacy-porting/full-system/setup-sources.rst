@@ -145,5 +145,5 @@ After setting up sources:
 See Also
 --------
 * :ref:`build-systems` - Understanding build systems
-* :ref:`android-architecture` - Android system structure
+* :ref:`android-integration` - Android system structure
 * :ref:`hardware-abstraction` - Hardware support layer

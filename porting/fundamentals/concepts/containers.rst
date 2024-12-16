@@ -16,7 +16,7 @@ Understanding Containers
 ------------------------
 
 The Container Model
-^^^^^^^^^^^^^^^^^^^4
+^^^^^^^^^^^^^^^^^^^
 Ubuntu Touch's container system:
 
 1. **Main System**
@@ -34,6 +34,7 @@ Ubuntu Touch's container system:
    * Device drivers
 
 Think of the container system like a house with two rooms:
+
 - One room (main system) where you live and work
 - Another room (Android container) containing all the building's infrastructure
 
@@ -196,7 +197,7 @@ Best Practices
 3. **Maintenance**
    
    Regular tasks:
-   
+
    * Update configurations
    * Check logs
    * Monitor resources

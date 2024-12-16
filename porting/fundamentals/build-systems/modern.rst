@@ -1,5 +1,7 @@
+.. _modern-build:
+
 Modern Build Methods
-===================
+====================
 
 The modern build method is the recommended approach for devices running Android 9.0 or newer. It simplifies the porting process by leveraging Project Treble's standardized hardware interfaces.
 
@@ -12,6 +14,15 @@ Essential requirements:
 * Project Treble support
 * Working vendor blobs
 
+Understanding the Build Process
+-------------------------------
+Think of building Ubuntu Touch like assembling a complex model kit. You need:
+
+- The right parts (source code and tools)
+- Clear instructions (configuration files)
+- Proper assembly order (build steps)
+- Quality checks (testing)
+
 Understanding Modern Builds 
 ---------------------------
 
@@ -20,7 +31,7 @@ Modern builds take advantage of Android's hardware standardization:
 1. **Project Treble**
    
    How it helps:
-   
+
    * Standardized HAL interfaces
    * Separated vendor code
    * Consistent hardware access
@@ -86,28 +97,108 @@ Implementation Steps
 1. **Environment Setup**::
 
     sudo apt install git gcc adb fastboot
-    pip install --user crossdev
+    # This installs:
+    # git - Gets source code (like getting your model kit parts)
+    # gcc - Compiles code (like the glue for your model)
+    # adb/fastboot - Talks to device (like the paint brushes and tools)
 
-2. **Source Preparation**::
+2. **Source Preparation**
 
+Two distinct build methods are available. Choose ONE of these approaches based on your device:
+
+A) Standalone Kernel Method (Recommended for modern devices)::
+
+    # Clone build tools
     git clone https://github.com/ubports/build-tools
-    ./setup.sh -p [device]
-
-3. **Configuration**::
-
-    # Create device config
-    cp config/sample.config device/[vendor]/[device].config
     
-    # Edit essential settings
-    nano device/[vendor]/[device].config
+    # This:
+    # - Downloads necessary build scripts (instruction manual)
+    # - Sets up basic directory structure (organizes workspace)
+    # - Prepares build environment (sets up workbench)
 
-4. **Build Process**::
+B) Full System Build Method (For legacy or special cases)::
+
+    # Initialize repository
+    repo init -u https://github.com/Halium/android -b halium-10.1
+    repo sync -c -j$(nproc)
+    
+    # This:
+    # - Sets up complete Android build environment
+    # - Downloads all required Android sources
+    # - Prepares for full system compilation
+
+WARNING: These methods are mutually exclusive - do not mix commands between them. 
+Choose the appropriate method based on your device's Android version and hardware support:
+
+- Use Standalone Kernel Method for Android 9+ devices
+- Use Full System Build Method (legacy build method) for pre-Android 9 devices or those requiring deep customization
+
+3. **Configuration**
+
+A) For Standalone Kernel Method::
+
+    # Create deviceinfo configuration
+    cp deviceinfo.template deviceinfo
+    
+    # Edit essential settings like:
+    # - Device name and manufacturer
+    # - Kernel source and branch
+    # - Build parameters
+    # - Hardware configs
+    nano deviceinfo
+
+B) For Full System Build Method::
+
+    # Initialize device configuration
+    breakfast [device]
+    
+    # Configure device-specific settings in:
+    # device/[vendor]/[device]/BoardConfig.mk - Hardware configs
+    # device/[vendor]/[device]/device.mk      - Features and packages
+    # device/[vendor]/[device]/system.prop    - System properties
+    
+    # Verify vendor files are present in:
+    # vendor/[vendor]/[device]/proprietary-files.txt
+
+4. **Build Process**
+
+A) For Standalone Kernel Method::
 
     # Build kernel only
     ./build.sh -k
+    # This command:
+    # 1. Downloads your device's kernel source
+    # 2. Applies necessary patches
+    # 3. Configures for Ubuntu Touch
+    # 4. Compiles the kernel
+    # 5. Creates kernel modules
     
     # Full build
     ./build.sh -b
+    # This command:
+    # 1. Builds the complete system image
+    # 2. Creates necessary Android components
+    # 3. Packages Ubuntu Touch rootfs
+    # 4. Generates boot and recovery images
+    # 5. Prepares flashable system files
+
+B) For Full System Build Method::
+
+    # Build boot image
+    mka halium-boot
+    # This command:
+    # 1. Compiles the kernel and modules
+    # 2. Creates initial ramdisk
+    # 3. Packages boot image with device tree
+    # 4. Prepares bootloader-compatible format
+    
+    # Build system image
+    mka systemimage
+    # This command:
+    # 1. Compiles Android HAL components
+    # 2. Integrates vendor binaries
+    # 3. Creates system partition image
+    # 4. Packages for device installation
 
 Debugging Builds
 ----------------
@@ -168,6 +259,10 @@ Best Practices
 Next Steps
 ----------
 
+Further details on modern porting methods:
+
+* :ref:`modern-methods` - Modern porting methods
+
 After successful build:
 
 * :ref:`initial-boot` - First boot process
@@ -177,5 +272,5 @@ After successful build:
 See Also
 --------
 * :ref:`build-concepts` - Core build concepts
-* :ref:`gsi-devices` - GSI compatibility
+* :ref:`gki-devices` - GSI compatibility
 * :doc:`legacy` - Legacy build support

@@ -197,5 +197,5 @@ After configuration:
 See Also
 --------
 * :ref:`hardware-abstraction` - Hardware layer details
-* :ref:`android-architecture` - Android system structure
+* :ref:`android-integration` - Android system structure
 * :doc:`../../debugging/overlay-method` - Configuration overlays

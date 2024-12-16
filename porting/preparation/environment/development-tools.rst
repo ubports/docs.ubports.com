@@ -113,4 +113,4 @@ See Also
 --------
 * :ref:`environment-setup` - Initial environment configuration
 * :ref:`build-systems` - Understanding build systems
-* :ref:`android-architecture` - Android build system details
+* :ref:`android-integration` - Android build system details

@@ -81,4 +81,4 @@ See Also
 --------
 * :doc:`implementation` - Implementation details
 * :ref:`vendor-specific` - Vendor requirements
-* :ref:`debugging-hal` - HAL debugging
+* :ref:`debugging` - HAL debugging

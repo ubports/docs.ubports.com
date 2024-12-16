@@ -1,214 +1,137 @@
+.. _legacy-build:
+
 Legacy Build Methods
 ====================
 
-The legacy build method is used for devices running pre-Android 9.0 systems or requiring complete system customization. While more complex than modern methods, it provides maximum control over the build process.
+The legacy build method is required for devices running pre-Android 9.0 systems or needing complete system customization. While more complex than modern methods, it provides maximum control for devices that need it.
 
 Quick Reference
 ---------------
-Requirements:
+Essential requirements:
 
 * Pre-Android 9.0 device
-* Complete device tree
+* Complete device tree available  
 * Working LineageOS/AOSP base
 * Vendor blobs
 * Hardware sources
 
-Understanding Legacy Builds
----------------------------
+Implementation Steps
+--------------------
 
-Legacy builds require building the complete system:
+1. **Environment Setup**::
 
-1. **Full System Stack**
-   
-   Components needed:
-   
-   * Complete Android base
-   * Hardware support layer
-   * System services
-   * Vendor implementations
+    sudo apt install git gcc adb fastboot repo python-is-python2
+    # This installs:
+    # git/repo - Source code management tools
+    # gcc - Code compiler
+    # adb/fastboot - Device communication
+    # python - Required for build scripts
 
-2. **Build Environment**
-   
-   Requirements:
+2. **Source Preparation**::
 
-   * Linux system
-   * 16GB+ RAM
-   * 200GB+ storage
-   * Development tools
-
-Build Process Overview
-----------------------
-
-1. **Source Setup**
-
-   Initialize repository::
-
+    # Initialize repository
     mkdir halium && cd halium
     repo init -u https://github.com/Halium/android -b halium-7.1
     repo sync -c -j$(nproc)
+    
+    # This:
+    # - Creates build directory
+    # - Sets up Android build system
+    # - Downloads required Android sources
+    # - Prepares build environment
 
-2. **Device Configuration**
+3. **Configuration**::
 
-   Create manifest::
+    # Initialize device
+    breakfast [device]
+    # This:
+    # - Sets up device-specific configurations
+    # - Checks build dependencies
+    # - Prepares vendor files
+    # - Configures build targets
+    
+    # Configure device settings in:
+    # device/[vendor]/[device]/BoardConfig.mk  # Hardware settings
+    # device/[vendor]/[device]/device.mk       # Features and packages
+    # device/[vendor]/[device]/system.prop     # System properties
 
-    # device/manifests/[vendor]_[device].xml
-    <?xml version="1.0" encoding="UTF-8"?>
-    <manifest>
-        <project path="device/[vendor]/[device]"
-                 name="[repository-name]"
-                 remote="[remote]"
-                 revision="[branch]" />
-        
-        <project path="kernel/[vendor]/[device]"
-                 name="[kernel-repository]"
-                 remote="[remote]"
-                 revision="[branch]" />
-    </manifest>
+4. **Build Process**::
 
-3. **Source Management**
+    # Build boot image
+    mka halium-boot
+    # This:
+    # - Compiles device kernel
+    # - Creates initial ramdisk
+    # - Builds Android boot image
+    # - Packages for device flashing
+    
+    # Build system image
+    mka systemimage
+    # This:
+    # - Builds Android system components
+    # - Compiles hardware support layer
+    # - Creates system partition image
+    # - Prepares for device installation
+
+Common Issues
+-------------
+
+1. **Source Sync Failures**
    
-   Organizing sources:
+   * Check internet connection
+   * Verify repo installation
+   * Ensure sufficient storage
+   * Try with different branch
 
-   * Device tree files
-   * Kernel source
-   * Vendor blobs
-   * Hardware configurations
-
-Implementation Details
-----------------------
-
-1. **Device Tree**
+2. **Build Environment Problems**
    
-   Required files:
+   * Install missing packages
+   * Check Python version
+   * Verify $PATH setup
+   * Update build tools
 
-   * BoardConfig.mk
-   * device.mk
-   * vendor setup
-   * Configuration files
-
-2. **Kernel Configuration**
+3. **Device Tree Issues**
    
-   Essential settings::
-
-    CONFIG_ANDROID_BINDER_IPC=y
-    CONFIG_NAMESPACES=y
-    CONFIG_SECURITY_APPARMOR=y
-    CONFIG_FHANDLE=y
-
-3. **System Integration**
-   
-   Components:
-
-   * Init scripts
-   * Hardware abstraction
-   * Service definitions
-   * Mount points
-
-Common Challenges
------------------
-
-1. **Source Availability**
-   
-   Issues:
-
-   * Missing repositories
-   * Outdated sources
-   * Binary blobs
-   * Documentation gaps
-
-2. **Build Complexity**
-   
-   Challenges:
-
-   * Long build times
-   * Resource requirements
-   * Dependency management
-   * Version conflicts
-
-3. **Hardware Support**
-   
-   Problems:
-
-   * Driver compatibility
-   * HAL versions
-   * Vendor blobs
-   * Feature support
+   * Verify device tree exists
+   * Check vendor blobs
+   * Validate configurations
+   * Review dependencies
 
 Best Practices
 --------------
 
 1. **Environment Management**
    
-   * Use ccache
-   * Monitor resources
-   * Clean builds
-   * Source organization
+   * Use ccache for faster rebuilds
+   * Keep build tree clean
+   * Document configurations
+   * Backup working builds
 
-2. **Build Process**
+2. **Testing Process**
    
-   * Incremental builds
-   * Regular testing
-   * Error logging
-   * Version control
+   * Build incrementally
+   * Test each component
+   * Document issues
+   * Save known-good configs
 
-3. **Documentation**
+3. **Update Strategy**
    
-   * Track changes
-   * Document fixes
-   * Keep notes
-   * Share solutions
-
-Debugging Builds
-----------------
-
-1. **Build Failures**
-   
-   Check:
-
-   * Log files
-   * Dependencies
-   * Compiler errors
-   * Resource limits
-
-2. **Integration Issues**
-   
-   Verify:
-
-   * HAL compatibility
-   * Service configuration
-   * Mount points
-   * Init sequence
-
-3. **Hardware Problems**
-   
-   Review:
-
-   * Driver loading
-   * Device permissions
-   * Hardware initialization
-   * System services
-
-Migration Options
------------------
-
-Consider upgrading to modern builds if:
-
-* Device supports Android 9.0
-* Hardware documentation exists
-* Vendor provides sources
-* Community support available
+   * Track upstream changes
+   * Manage patches carefully
+   * Document modifications
+   * Test thoroughly
 
 Next Steps
 ----------
 
-After building:
+After successful build:
 
-* :ref:`initial-boot` - First boot
+* :ref:`initial-boot` - First boot process
 * :ref:`debugging` - Problem solving
-* :ref:`hardware-enablement` - Features
+* :ref:`hardware-enablement` - Feature support
 
 See Also
 --------
 * :doc:`modern` - Modern build methods
-* :ref:`build-concepts` - Core concepts
 * :ref:`migration-guide` - Upgrading builds
+* :ref:`debugging` - Troubleshooting guide
