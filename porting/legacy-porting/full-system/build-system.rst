@@ -165,4 +165,4 @@ See Also
 --------
 * :ref:`build-systems` - Understanding build systems
 * :ref:`hardware-abstraction` - HAL details
-* :ref:`android-architecture` - Android build process
+* :ref:`android-integration` - Android build process
