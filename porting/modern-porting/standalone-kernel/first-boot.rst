@@ -24,6 +24,13 @@ Dynamic partition devices:
     fastboot flash boot boot.img
     fastboot flash system system.img
 
+.. note::
+    GKI devices may require flashing additional partitions:
+    
+    * init_boot.img (if deviceinfo_bootimg_has_init_boot="true")
+    * vendor_boot.img (for devices using separate vendor boot)
+    * dtbo.img (if device uses overlays)
+
 Initial Boot Behavior
 ---------------------
 
@@ -67,6 +74,10 @@ Verifying Boot Status
        dmesg -w
        # Look for "GNU/Linux device" or "rndis" interface
 
+.. note::
+    After flashing, wait at least 2-3 minutes before checking network interfaces. 
+    Initial boot may take longer than subsequent boots.
+
 2. **SSH Access** 
 
    * If network interface appears::
@@ -103,6 +114,11 @@ Boot Debugging
     # View system logs
     journalctl -b
 
+    # For GKI devices, also check
+    dmesg | grep -i vendor     # Vendor boot issues
+    dmesg | grep -i init_boot  # Init boot issues
+    dmesg | grep -i modload    # Module loading
+
 2. **Common Issues**
 
    * Missing kernel configs
@@ -115,6 +131,11 @@ Boot Debugging
    * Boot to recovery if available
    * Pull logs and kernel messages
    * Check partition status
+
+    # Common log locations
+    /proc/last_kmsg          # Last kernel log
+    /cache/recovery/log      # Recovery log
+    /data/android-logs/*     # Android container logs
 
 Configuring udev Rules
 ----------------------
@@ -151,6 +172,10 @@ After verifying basic boot and establishing connection, udev rules must be confi
 
     cat /usr/lib/lxc-android-config/70-$DEVICE.rules
     # Should contain multiple lines of udev rules
+
+    # Example of expected udev rules
+    ACTION=="add", KERNEL=="graphics*", OWNER="system", GROUP="graphics", MODE="0660"
+    ACTION=="add", KERNEL=="input*", OWNER="system", GROUP="input", MODE="0660"
 
 4. **Reboot**::
 

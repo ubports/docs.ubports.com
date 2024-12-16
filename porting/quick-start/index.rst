@@ -3,7 +3,7 @@
 Quick Start Guide
 =================
 
-This section provides a condensed overview of the Ubuntu Touch porting process, focusing on essential commands and key configuration steps.
+This section provides a condensed overview of the Ubuntu Touch porting process, following the standalone kernel method, and focusing on essential commands and key configuration steps.
 
 Essential Steps
 ---------------

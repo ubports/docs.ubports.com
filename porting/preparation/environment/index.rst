@@ -8,8 +8,8 @@ Quick Setup
 The main steps for setting up the environment are as follows (with detailed explanations below)::
 
     # Essential packages for Ubuntu/Debian
-    sudo apt update && sudo apt install git gcc adb fastboot repo \
-    python3 python-is-python3 android-tools-adb android-tools-fastboot \
+    sudo apt update && sudo apt install git gcc adb fastboot repo 
+    python2 python3 python-is-python3 android-tools-adb android-tools-fastboot 
     htop iotop ccache
 
     # Configure git and repo
@@ -67,7 +67,27 @@ Why these packages?
 * ccache: Speeds up rebuilds
 * Others: Required by various build stages
 
-2. Android Development Tools
+2. Python Configuration
+^^^^^^^^^^^^^^^^^^^^^^^
+Both Python 2 and 3 are required for building:
+
+* Python 2: Required for legacy Android build tools
+* Python 3: Used by newer build components
+
+Set up Python environment::
+
+    # Ensure both versions are installed
+    sudo apt install python2 python3
+
+    # Create Python 2 symlink for build scripts
+    sudo ln -sf /usr/bin/python2 /usr/bin/python
+
+.. note::
+    Some build scripts explicitly require Python 2 and will fail if it's not 
+    the default 'python' command. The symlink ensures compatibility while 
+    maintaining Python 3 as the system default through python-is-python3.
+
+3. Android Development Tools
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Set up tools for device communication and source management.
 
@@ -82,7 +102,7 @@ Configure udev rules for device access::
     sudo chmod 644 /etc/udev/rules.d/51-android.rules
     sudo udevadm control --reload-rules
 
-3. Source Control Setup
+4. Source Control Setup
 ^^^^^^^^^^^^^^^^^^^^^^^
 Configure git with your credentials::
 
@@ -97,7 +117,7 @@ Install and configure repo tool::
     echo 'export PATH=~/bin:$PATH' >> ~/.bashrc
     source ~/.bashrc
 
-4. Build Environment Configuration
+5. Build Environment Configuration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Set up ccache for faster rebuilds::
 
@@ -111,7 +131,7 @@ Add to ~/.bashrc for persistence::
     echo 'export USE_CCACHE=1' >> ~/.bashrc
     echo 'export CCACHE_DIR=~/.ccache' >> ~/.bashrc
 
-5. Storage Setup
+6. Storage Setup
 ^^^^^^^^^^^^^^^^
 Prepare build directory::
 
@@ -132,12 +152,21 @@ Run these checks to verify your setup::
     adb version
     fastboot --version
     gcc --version
+    python2 --version
     python3 --version
+    python --version     # This line verifies symlink
 
     # Verify build environment
     echo $PATH
     echo $USE_CCACHE
     df -h
+
+Common Issues
+-------------
+* **Python version errors**: Build scripts may fail with syntax errors. Verify Python 2 is installed and symlinked correctly.
+* **Missing dependencies**: Install additional packages as needed.
+* **Storage space**: Ensure enough free space is available.
+* **RAM limitations**: Build may fail on systems with less than 16GB RAM.
 
 Next Steps
 ----------
