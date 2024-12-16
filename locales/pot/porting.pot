@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 15:24+0800\n"
+"POT-Creation-Date: 2024-12-16 10:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2940,7 +2940,7 @@ msgstr ""
 msgid "Custom backlight sysfs path to disable autodetection of the path controlling the backlight"
 msgstr ""
 
-#: ../../porting/configure_test_fix/device_info/Repowerd.rst:31
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:30
 msgid "Double Tap to Wake (DT2W) configuration to allow double tapping to wake the device, specifing two potential paths"
 msgstr ""
 
@@ -3199,7 +3199,7 @@ msgstr ""
 msgid "Halium is an indispensible part of an Ubuntu Touch port and is available in the form of open source software. Developing a new version of Halium is a very considerable task which is why only a few versions of Halium are available. Each port of Ubuntu Touch has to be based on one of the available Halium versions and vendor blobs from the corresponding Android version. See the first two columns of the table below for details."
 msgstr ""
 
-#: ../../porting/introduction/Intro.rst:32
+#: ../../porting/introduction/Intro.rst:29
 msgid "Thus an Ubuntu Touch port is composed of the these components:"
 msgstr ""
 

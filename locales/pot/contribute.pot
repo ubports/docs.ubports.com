@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 15:24+0800\n"
+"POT-Creation-Date: 2024-12-16 10:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -168,7 +168,7 @@ msgstr ""
 msgid "A GitHub Pull Request (PR) or GitLab Merge Request (MR)."
 msgstr ""
 
-#: ../../contribute/code.rst:21
+#: ../../contribute/code.rst:20
 msgid "issue report"
 msgstr ""
 
@@ -288,7 +288,7 @@ msgstr ""
 msgid "Always state the reasoning behind a change: the bugs it fixes, the features it builds up to, and especially the limitations that cause it to look more complicated than a viewer expects. Provide permanent links to issue reports or documentation if they give context."
 msgstr ""
 
-#: ../../contribute/code.rst:82
+#: ../../contribute/code.rst:81
 msgid "Who?"
 msgstr ""
 
@@ -1039,7 +1039,7 @@ msgid "These apps may be more difficult to work with, but their repository shoul
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:47
-msgid "Browser (`morph-browser on GitHub`_)"
+msgid "Browser (`morph-browser on GitLab`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:48
@@ -1055,15 +1055,15 @@ msgid "External Drives (`ciborium on GitLab`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:51
-msgid "Media Player (`mediaplayer-app on GitHub`_)"
+msgid "Media Player (`mediaplayer-app on GitLab`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:52
-msgid "Messaging (`messaging-app on GitHub`_)"
+msgid "Messaging (`messaging-app on GitLab`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:53
-msgid "Phone (`dialer-app on GitHub`_)"
+msgid "Phone (`dialer-app on GitLab`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:54

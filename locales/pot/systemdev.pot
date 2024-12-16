@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 15:24+0800\n"
+"POT-Creation-Date: 2024-12-16 10:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -199,7 +199,7 @@ msgstr ""
 msgid "For some devices continuous integration (CI) has been set up to build both the Kernel as well as the Android system. Other devices have to be built manually from their repositories. For a third group of devices, we do not unfortunately, have the full source code available. The Bq and Meizu devices have kernel sources, but the \"Android device tree\" is not publicly available. The manufacturers of these devices provided binary builds instead."
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:37
+#: ../../systemdev/kernel-hal.rst:35
 msgid "With CI"
 msgstr ""
 
@@ -215,7 +215,7 @@ msgstr ""
 msgid "Fairphone 2 (FP2)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:40
+#: ../../systemdev/kernel-hal.rst:39
 msgid "Manual builds"
 msgstr ""
 
@@ -227,7 +227,7 @@ msgstr ""
 msgid "Nexus 7 2013 Wifi (flo)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:49
+#: ../../systemdev/kernel-hal.rst:42
 msgid "(Partial) Binary builds"
 msgstr ""
 
@@ -508,7 +508,7 @@ msgstr ""
 msgid "Incoming MMS diagram"
 msgstr ""
 
-#: ../../systemdev/mms-infrastructure.rst:-1
+#: ../../systemdev/mms-infrastructure.rst:42
 msgid "incoming-MMS.png"
 msgstr ""
 
@@ -516,7 +516,7 @@ msgstr ""
 msgid "Outgoing MMS diagram"
 msgstr ""
 
-#: ../../systemdev/mms-infrastructure.rst:-1
+#: ../../systemdev/mms-infrastructure.rst:49
 msgid "outgoing-MMS.png"
 msgstr ""
 
@@ -1304,7 +1304,7 @@ msgstr ""
 msgid "Open your fork of the repository on GitHub. Navigate to the branch that you just pushed to using the \"Branch\" selector:"
 msgstr ""
 
-#: ../../systemdev/uploading-changes.rst:-1
+#: ../../systemdev/uploading-changes.rst:113
 msgid "Using the branch selector on GitHub"
 msgstr ""
 

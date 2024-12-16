@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 15:24+0800\n"
+"POT-Creation-Date: 2024-12-16 10:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -597,7 +597,7 @@ msgid "If you have a Gitlab CI file, you need to update it:"
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:2
-#: ../../appdev/platform/index.rst:12
+#: ../../appdev/platform/index.rst:11
 msgid "Push notifications"
 msgstr ""
 
@@ -1828,7 +1828,7 @@ msgstr ""
 msgid "Every ``click`` application package must embed at least 3 files:"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:26
+#: ../../appdev/platform/click.rst:8
 msgid "``manifest.json`` file"
 msgstr ""
 
@@ -1840,7 +1840,7 @@ msgstr ""
 msgid "Example ``manifest.json`` file::"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:29
+#: ../../appdev/platform/click.rst:28
 msgid "AppArmor profile policy file"
 msgstr ""
 
@@ -1848,7 +1848,7 @@ msgstr ""
 msgid "Contains which policy the app needs to work properly. See `Security and app isolation`_ below for more information on this file."
 msgstr ""
 
-#: ../../appdev/platform/click.rst:53
+#: ../../appdev/platform/click.rst:31
 msgid "``.desktop`` file"
 msgstr ""
 
@@ -1920,7 +1920,7 @@ msgstr ""
 msgid "Here are Ubuntu Touch platforms key topics when you want to extend your app with Ubuntu Touch ecosystem:"
 msgstr ""
 
-#: ../../appdev/platform/index.rst:9
+#: ../../appdev/platform/index.rst:8
 msgid "Content Hub"
 msgstr ""
 
@@ -1932,7 +1932,7 @@ msgstr ""
 msgid "By using a push server and a companion client, instantly serve users with the latest information from their network and apps."
 msgstr ""
 
-#: ../../appdev/platform/index.rst:15
+#: ../../appdev/platform/index.rst:14
 msgid "URL dispatcher"
 msgstr ""
 
@@ -1940,7 +1940,7 @@ msgstr ""
 msgid "Help users navigate between your apps and drive their journey with the URL dispatcher."
 msgstr ""
 
-#: ../../appdev/platform/index.rst:19
+#: ../../appdev/platform/index.rst:17
 msgid "Online accounts"
 msgstr ""
 
@@ -2056,7 +2056,7 @@ msgstr ""
 msgid "One often wants to contain users to the site itself. That is, if the website is www.ubuntu.com, it may be useful to contain webapp users only to subpages of www.ubuntu.com. This is done by adding a wildcard URL pattern to the launch command, as follows:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:66
+#: ../../appdev/webapp/guide.rst:64
 msgid "``--webappUrlPatterns=`` indicates a pattern is next"
 msgstr ""
 

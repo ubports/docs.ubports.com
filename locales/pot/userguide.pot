@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: UBports \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 15:24+0800\n"
+"POT-Creation-Date: 2024-12-16 10:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1118,51 +1118,55 @@ msgstr ""
 msgid "Apps are suspended whenever not in the foreground, or when the device is locked. When an app is suspended, it cannot receive location data. For this reason, apps will not be able to track your location whenever they are not in use or the device is locked."
 msgstr ""
 
-#: ../../userguide/dailyuse/volte.rst:2
+#: ../../userguide/dailyuse/volte.rst:4
 msgid "Voice over LTE (VoLTE)"
 msgstr ""
 
-#: ../../userguide/dailyuse/volte.rst:4
+#: ../../userguide/dailyuse/volte.rst:6
 msgid "Voice over LTE (VoLTE) is a technology that allows a phone to take a call and send a message while connected to a 4G/LTE cellular network. The benefits of VoLTE include quicker call setup, higher quality voice, and seamless mobile data while on a call."
 msgstr ""
 
-#: ../../userguide/dailyuse/volte.rst:6
+#: ../../userguide/dailyuse/volte.rst:8
 msgid "Carriers in some parts of the world have started phasing out 3G cellular networks, making VoLTE mandatory in order to place a call on that carrier. If VoLTE is not supported or not enabled by the phone, and the carrier still supports 3G network, the phone will automatically switch to 3G network for the duration of the call and will switch back to 4G network after the call ends."
 msgstr ""
 
-#: ../../userguide/dailyuse/volte.rst:8
-msgid "Ubuntu Touch supports VoLTE on some devices. Support for VoLTE on Ubuntu Touch depends on the phone's chipset, the Android version the port is based on, and whether the port has enabled support for VoLTE. As of Ubuntu Touch 20.04 OTA-6, VoLTE is enabled on Volla Phone X23 and Volla Phone 22 running Android 12-based port."
-msgstr ""
-
-#: ../../userguide/dailyuse/volte.rst:11
-msgid "How do I know if VoLTE is supported on my phone?"
+#: ../../userguide/dailyuse/volte.rst:10
+msgid "Ubuntu Touch supports VoLTE on some devices. Support for VoLTE on Ubuntu Touch depends on the phone's chipset, the Android version the port is based on, and whether the port has enabled support for VoLTE."
 msgstr ""
 
 #: ../../userguide/dailyuse/volte.rst:13
-msgid "To check if your phone supports VoLTE, go to *System Settings* > *Cellular* > *Carrier & APN*. If VoLTE is supported, you will be able to toggle *4G calling (VoLTE)*. If the toggle does not appear, or the toggle is disabled, then your phone does not yet support VoLTE on Ubuntu Touch."
+msgid "VoLTE is currently in development and is not yet available in any of the stable releases of Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/dailyuse/volte.rst:16
+msgid "How do I know if VoLTE is supported on my phone?"
 msgstr ""
 
 #: ../../userguide/dailyuse/volte.rst:18
-msgid "How do I know if VoLTE is working?"
-msgstr ""
-
-#: ../../userguide/dailyuse/volte.rst:20
-msgid "For VoLTE to work, the following conditions have to be met:"
-msgstr ""
-
-#: ../../userguide/dailyuse/volte.rst:22
-msgid "Your phone supports VoLTE on Ubuntu Touch."
+msgid "To check if your phone supports VoLTE, go to *System Settings* > *Cellular* > *Carrier & APN*. If VoLTE is supported, you will be able to toggle *4G calling (VoLTE)*. If the toggle does not appear, or the toggle is disabled, then your phone does not yet support VoLTE on Ubuntu Touch."
 msgstr ""
 
 #: ../../userguide/dailyuse/volte.rst:23
+msgid "How do I know if VoLTE is working?"
+msgstr ""
+
+#: ../../userguide/dailyuse/volte.rst:25
+msgid "For VoLTE to work, the following conditions have to be met:"
+msgstr ""
+
+#: ../../userguide/dailyuse/volte.rst:27
+msgid "Your phone supports VoLTE on Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/dailyuse/volte.rst:28
 msgid "Your carrier and your SIM card supports VoLTE."
 msgstr ""
 
-#: ../../userguide/dailyuse/volte.rst:24
+#: ../../userguide/dailyuse/volte.rst:29
 msgid "Ubuntu Touch contains a VoLTE configuration for your carrier."
 msgstr ""
 
-#: ../../userguide/dailyuse/volte.rst:26
+#: ../../userguide/dailyuse/volte.rst:31
 msgid "If the conditions are met, and the phone successfully establishes a VoLTE connection, the VoLTE logo will appear after your carrier name in the Network indicator."
 msgstr ""
 
