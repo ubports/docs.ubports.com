@@ -15,9 +15,9 @@ UBPORTSDOCSENV=${UBPORTSDOCSENV-"$HOME/ubportsdocsenv"}
 UBPORTSDOCSENV=${1-$UBPORTSDOCSENV}
 
 # functions
-# Function to install packages (apk)
-install_via_apk() {
-    echo "Detected apk"
+# Function to install packages (apt)
+install_via_apt() {
+    echo "Detected apt"
     echo "Installing python3-pip and python3-virtualenv..."
     sudo apk add python3 py3-pip py3-virtualenv
 }
@@ -36,9 +36,9 @@ if [ -d "$UBPORTSDOCSENV" ]; then
 else
   echo -e "${YELLOW}Build environment not found in \"$UBPORTSDOCSENV\" ... creating it.${PLAIN}"
   echo -e "${YELLOW}Installing pip and virtualenv (using sudo).${PLAIN}"
-  # Check for apk or pacman
-  if command -v apk &> /dev/null; then
-      install_via_apk
+  # Check for apt or pacman
+  if command -v apt &> /dev/null; then
+      install_via_apt
   elif command -v pacman &> /dev/null; then
       install_via_pacman
   else
