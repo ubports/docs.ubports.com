@@ -19,7 +19,7 @@ UBPORTSDOCSENV=${1-$UBPORTSDOCSENV}
 install_via_apt() {
     echo "Detected apt"
     echo "Installing python3-pip and python3-virtualenv..."
-    sudo apk add python3 py3-pip py3-virtualenv
+    sudo apt install python3-pip python3-virtualenv
 }
 
 # Function to install packages (pacman)
