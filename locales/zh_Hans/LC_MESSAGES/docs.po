@@ -38,102 +38,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"#-#-#-#-#  about.po (UBports 1.0)  #-#-#-#-#\n"
 "Project-Id-Version: UBports 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 15:24+0800\n"
-"PO-Revision-Date: 2021-05-04 04:27+0000\n"
-"Last-Translator: Enceka <enceka@yeah.net>\n"
-"Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
-"ubports-docs/documentation-about/zh_Hans/>\n"
-"Language: zh_Hans\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.11.3\n"
-"#-#-#-#-#  appdev.po (UBports 1.0)  #-#-#-#-#\n"
-"Project-Id-Version: UBports 1.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 15:24+0800\n"
-"PO-Revision-Date: 2019-04-24 20:42+0000\n"
-"Last-Translator: 不朽正义 <tanyongle0633@gmail.com>\n"
-"Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
-"ubports-docs/documentation-appdev/zh_Hans/>\n"
-"Language: zh_Hans\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.2.2\n"
-"#-#-#-#-#  contribute.po (UBports 1.0)  #-#-#-#-#\n"
-"Project-Id-Version: UBports 1.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 15:24+0800\n"
-"PO-Revision-Date: 2018-08-09 11:34+0000\n"
-"Last-Translator: Luo Yufan <njlyf2011@hotmail.com>\n"
-"Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
-"ubports-docs/documentation-contribute/zh_Hans/>\n"
-"Language: zh_Hans\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.20\n"
-"#-#-#-#-#  humanguide.po (UBports )  #-#-#-#-#\n"
-"Project-Id-Version: UBports \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 15:24+0800\n"
-"PO-Revision-Date: 2024-11-07 21:03+0800\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: Language locales/zh\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Language: locales/zh_Hans/LC_MESSAGES/humanguide\n"
-"#-#-#-#-#  index.po (UBports 1.0)  #-#-#-#-#\n"
-"Project-Id-Version: UBports 1.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 15:24+0800\n"
-"PO-Revision-Date: 2022-07-03 04:02+0000\n"
-"Last-Translator: Caten <catenhu@gmail.com>\n"
-"Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
-"ubports-docs/documentation-index/zh_Hans/>\n"
-"Language: zh_Hans\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.11.3\n"
-"#-#-#-#-#  porting.po (Chinese (Simplified) (UBports Docs))  #-#-#-#-#\n"
-"Project-Id-Version: Chinese (Simplified) (UBports Docs)\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 15:24+0800\n"
-"PO-Revision-Date: 2022-07-04 04:40+0000\n"
-"Last-Translator: Caten <catenhu@gmail.com>\n"
-"Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
-"ubports-docs/documentation-porting/zh_Hans/>\n"
-"Language: zh_Hans\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.11.3\n"
-"#-#-#-#-#  systemdev.po (UBports)  #-#-#-#-#\n"
-"Project-Id-Version: UBports\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 15:24+0800\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: zh_Hans\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"#-#-#-#-#  userguide.po (UBports 1.0)  #-#-#-#-#\n"
-"Project-Id-Version: UBports 1.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-05 15:24+0800\n"
+"POT-Creation-Date: 2024-12-17 11:58+0100\n"
 "PO-Revision-Date: 2021-08-20 19:08+0000\n"
 "Last-Translator: GrieferPig <grieferpig@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.ubports.com/projects/"
@@ -142,8 +49,31 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"#-#-#-#-#  about.po (UBports 1.0)  #-#-#-#-#\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 3.11.3\n"
+"#-#-#-#-#  appdev.po (UBports 1.0)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.2.2\n"
+"#-#-#-#-#  contribute.po (UBports 1.0)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.20\n"
+"#-#-#-#-#  humanguide.po (UBports )  #-#-#-#-#\n"
+"#-#-#-#-#  index.po (UBports 1.0)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.11.3\n"
+"#-#-#-#-#  porting.po (Chinese (Simplified) (UBports Docs))  #-#-#-#-#\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.11.3\n"
+"#-#-#-#-#  systemdev.po (UBports)  #-#-#-#-#\n"
+"#-#-#-#-#  userguide.po (UBports 1.0)  #-#-#-#-#\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.11.3\n"
+
+#: ../../about/introduction.rst:2 ../../porting/introduction/index.rst:2
+#, fuzzy
+msgid "Introduction"
+msgstr "移植简介"
 
 #: ../../about/introduction.rst:4
 msgid ""
@@ -284,8 +214,29 @@ msgstr ""
 msgid "Git branches"
 msgstr ""
 
+#: ../../about/process/branch-naming.rst:22
+#: ../../appdev/guides/pushnotifications.rst:170
+#: ../../appdev/guides/pushnotifications.rst:195
+#: ../../appdev/guides/pushnotifications.rst:206
+#: ../../appdev/guides/pushnotifications.rst:230
+#: ../../appdev/guides/pushnotifications.rst:261
+#: ../../appdev/guides/pushnotifications.rst:275
+#: ../../porting/configure_test_fix/device_info/Ayatana-indicator-power.rst:16
+#: ../../porting/configure_test_fix/device_info/HfdService.rst:15
+#: ../../porting/configure_test_fix/device_info/Mir.rst:20
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:18
+#: ../../porting/configure_test_fix/device_info/index.rst:41
+msgid "Description"
+msgstr ""
+
 #: ../../about/process/branch-naming.rst:21
 msgid "Corresponding APT archives"
+msgstr ""
+
+#: ../../about/process/branch-naming.rst:23
+#: ../../about/process/security-vulnerabilities.rst:31
+#: ../../porting/configure_test_fix/device_info/index.rst:43
+msgid "Name"
 msgstr ""
 
 #: ../../about/process/branch-naming.rst:23
@@ -781,6 +732,10 @@ msgid ""
 msgstr "鼓励开发人员保持他们的清单简短并更新他们的问题状态。"
 
 #: ../../about/process/issue-tracking.rst:117
+#: ../../porting/configure_test_fix/device_info/Ayatana-indicator-power.rst:23
+#: ../../porting/configure_test_fix/device_info/HfdService.rst:21
+#: ../../porting/configure_test_fix/device_info/Mir.rst:63
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:25
 msgid "Examples"
 msgstr "事例"
 
@@ -1376,6 +1331,11 @@ msgid ""
 "can be done with Clickable."
 msgstr ""
 
+#: ../../appdev/guides/dependencies.rst:7
+#: ../../porting/build_and_boot/index.rst:11
+msgid "Building"
+msgstr ""
+
 #: ../../appdev/guides/dependencies.rst:8
 msgid ""
 "Sometimes libraries are available pre-built, allowing you to skip the build "
@@ -1950,7 +1910,7 @@ msgid "If you have a Gitlab CI file, you need to update it:"
 msgstr ""
 
 #: ../../appdev/guides/pushnotifications.rst:2
-#: ../../appdev/platform/index.rst:12
+#: ../../appdev/platform/index.rst:11
 msgid "Push notifications"
 msgstr "推送通知"
 
@@ -2863,6 +2823,11 @@ msgstr ""
 msgid "Voilà you have your first app running on Ubuntu Touch!"
 msgstr ""
 
+#: ../../appdev/index.rst:25 ../../porting/configure_test_fix/Overlay.rst:7
+#, fuzzy
+msgid "Overview"
+msgstr "webview"
+
 #: ../../appdev/index.rst:27
 msgid ""
 "Ubuntu Touch supports two kinds of apps: Firstly, *native apps* have their "
@@ -3498,7 +3463,7 @@ msgstr ""
 msgid "Every ``click`` application package must embed at least 3 files:"
 msgstr ""
 
-#: ../../appdev/platform/click.rst:26
+#: ../../appdev/platform/click.rst:8
 msgid "``manifest.json`` file"
 msgstr "``manifest.json`` 文件"
 
@@ -3512,7 +3477,7 @@ msgstr ""
 msgid "Example ``manifest.json`` file::"
 msgstr "``manifest.json`` 文件示例::"
 
-#: ../../appdev/platform/click.rst:29
+#: ../../appdev/platform/click.rst:28
 msgid "AppArmor profile policy file"
 msgstr ""
 
@@ -3522,7 +3487,7 @@ msgid ""
 "isolation`_ below for more information on this file."
 msgstr ""
 
-#: ../../appdev/platform/click.rst:53
+#: ../../appdev/platform/click.rst:31
 msgid "``.desktop`` file"
 msgstr "``.desktop`` 文件"
 
@@ -3601,13 +3566,17 @@ msgstr ""
 msgid "For a full list of available policy groups, see :doc:`apparmor`."
 msgstr ""
 
+#: ../../appdev/platform/index.rst:4 ../../index.rst:76
+msgid "Platform"
+msgstr ""
+
 #: ../../appdev/platform/index.rst:6
 msgid ""
 "Here are Ubuntu Touch platforms key topics when you want to extend your app "
 "with Ubuntu Touch ecosystem:"
 msgstr ""
 
-#: ../../appdev/platform/index.rst:9
+#: ../../appdev/platform/index.rst:8
 msgid "Content Hub"
 msgstr ""
 
@@ -3624,7 +3593,7 @@ msgid ""
 "the latest information from their network and apps."
 msgstr ""
 
-#: ../../appdev/platform/index.rst:15
+#: ../../appdev/platform/index.rst:14
 msgid "URL dispatcher"
 msgstr ""
 
@@ -3634,7 +3603,7 @@ msgid ""
 "dispatcher."
 msgstr ""
 
-#: ../../appdev/platform/index.rst:19
+#: ../../appdev/platform/index.rst:17
 msgid "Online accounts"
 msgstr "在线账户"
 
@@ -3793,7 +3762,7 @@ msgid ""
 "launch command, as follows:::"
 msgstr ""
 
-#: ../../appdev/webapp/guide.rst:66
+#: ../../appdev/webapp/guide.rst:64
 msgid "``--webappUrlPatterns=`` indicates a pattern is next"
 msgstr ""
 
@@ -4028,6 +3997,10 @@ msgid ""
 "app/webber.timsueberkrueb>`__."
 msgstr ""
 
+#: ../../appdev/webapp/index.rst:19 ../../systemdev/kernel-hal.rst:57
+msgid "Todo"
+msgstr "待定"
+
 #: ../../appdev/webapp/index.rst:21
 msgid ""
 "There is also another way to create somewhat more featureful webapps, "
@@ -4132,10 +4105,6 @@ msgid ""
 msgstr ""
 "现在打开您的计算机，开启 Chrome/Chromium 浏览器，地址栏中输入 ``http://"
 "YOUR_UT_IP_ADDRESS:9221``。"
-
-#: ../../contribute/documentation.rst:2
-msgid "Documentation"
-msgstr "文档"
 
 #: ../../contribute/bugreporting.rst:2
 msgid "Bug reporting"
@@ -4393,7 +4362,7 @@ msgstr ""
 msgid "A GitHub Pull Request (PR) or GitLab Merge Request (MR)."
 msgstr ""
 
-#: ../../contribute/code.rst:21
+#: ../../contribute/code.rst:20
 #, fuzzy
 msgid "issue report"
 msgstr "Bug 报告"
@@ -4581,7 +4550,7 @@ msgid ""
 "or documentation if they give context."
 msgstr ""
 
-#: ../../contribute/code.rst:82
+#: ../../contribute/code.rst:81
 msgid "Who?"
 msgstr ""
 
@@ -4977,6 +4946,10 @@ msgid ""
 "thankful. It would be a shame for you to miss your share of the good vibes."
 msgstr ""
 
+#: ../../contribute/documentation.rst:2
+msgid "Documentation"
+msgstr "文档"
+
 #: ../../contribute/documentation.rst:5
 #, fuzzy
 msgid ""
@@ -5322,6 +5295,7 @@ msgid "Alternative methods to contribute"
 msgstr ""
 
 #: ../../contribute/documentation.rst:186 ../../contribute/translations.rst:2
+#: ../../humanguide/other-design-considerations/translations.rst:2
 msgid "Translations"
 msgstr "翻译"
 
@@ -5516,6 +5490,7 @@ msgstr ""
 msgid "`gallery-app on GitLab`_"
 msgstr ""
 
+#: ../../contribute/preinstalled-apps.rst:30
 #: ../../userguide/dailyuse/libertine.rst:116
 msgid "Music"
 msgstr "音乐"
@@ -5526,6 +5501,11 @@ msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:30
 msgid "`music-app on GitLab`_"
+msgstr ""
+
+#: ../../contribute/preinstalled-apps.rst:31
+#: ../../porting/build_and_boot/standalone_kernel_build.rst:484
+msgid "Notes"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:31
@@ -5604,7 +5584,7 @@ msgid ""
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:47
-msgid "Browser (`morph-browser on GitHub`_)"
+msgid "Browser (`morph-browser on GitLab`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:48
@@ -5620,15 +5600,15 @@ msgid "External Drives (`ciborium on GitLab`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:51
-msgid "Media Player (`mediaplayer-app on GitHub`_)"
+msgid "Media Player (`mediaplayer-app on GitLab`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:52
-msgid "Messaging (`messaging-app on GitHub`_)"
+msgid "Messaging (`messaging-app on GitLab`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:53
-msgid "Phone (`dialer-app on GitHub`_)"
+msgid "Phone (`dialer-app on GitLab`_)"
 msgstr ""
 
 #: ../../contribute/preinstalled-apps.rst:54
@@ -6972,6 +6952,7 @@ msgstr ""
 msgid "small"
 msgstr ""
 
+#: ../../humanguide/design-concepts/typography.rst:25
 #: ../../porting/configure_test_fix/Display.rst:45
 msgid "1.5"
 msgstr "1.5"
@@ -7008,6 +6989,7 @@ msgstr ""
 msgid "large"
 msgstr ""
 
+#: ../../humanguide/design-concepts/typography.rst:29
 #: ../../porting/configure_test_fix/Display.rst:49
 #: ../../porting/configure_test_fix/Display.rst:50
 msgid "2.5"
@@ -7082,6 +7064,7 @@ msgid ""
 "always an integer number of pixel."
 msgstr ""
 
+#: ../../humanguide/design-concepts/units.rst:18
 #: ../../porting/configure_test_fix/Display.rst:41
 msgid "Device"
 msgstr "设备"
@@ -7492,6 +7475,10 @@ msgstr "移植"
 #: ../../index.rst:76
 msgid "Click Packages"
 msgstr "Click软件包"
+
+#: ../../index.rst:76
+msgid "Ubuntu UI-Toolkit"
+msgstr ""
 
 #: ../../index.rst:76
 msgid "Clickable"
@@ -11830,7 +11817,7 @@ msgid ""
 "the backlight"
 msgstr ""
 
-#: ../../porting/configure_test_fix/device_info/Repowerd.rst:31
+#: ../../porting/configure_test_fix/device_info/Repowerd.rst:30
 msgid ""
 "Double Tap to Wake (DT2W) configuration to allow double tapping to wake the "
 "device, specifing two potential paths"
@@ -12246,7 +12233,7 @@ msgstr ""
 "Halium因此成为Ubuntu Touch移植中不可或缺的一部分，并以开源软件的形式提供。 开"
 "发新版本的 Halium 是一项非常艰巨的任务，因此只有少数几个版本的 Halium 可用。"
 
-#: ../../porting/introduction/Intro.rst:32
+#: ../../porting/introduction/Intro.rst:29
 msgid "Thus an Ubuntu Touch port is composed of the these components:"
 msgstr "所以一个Ubuntu Touch移植基于以下部件："
 
@@ -12704,6 +12691,7 @@ msgid ""
 msgstr ""
 
 #: ../../porting/introduction/Setting_up.rst:9
+#: ../../systemdev/testing-locally.rst:78
 msgid "Prerequisites"
 msgstr "前提"
 
@@ -12942,6 +12930,10 @@ msgstr ""
 msgid "Native vs. non-native packages"
 msgstr ""
 
+#: ../../systemdev/debian-pkg.rst:11
+msgid "Native packages"
+msgstr "原生包"
+
 #: ../../systemdev/debian-pkg.rst:13
 msgid ""
 "Native packages (e.g. https://gitlab.com/ubports/core/lomiri-system-"
@@ -13084,7 +13076,7 @@ msgid ""
 "available. The manufacturers of these devices provided binary builds instead."
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:37
+#: ../../systemdev/kernel-hal.rst:35
 msgid "With CI"
 msgstr ""
 
@@ -13100,7 +13092,7 @@ msgstr ""
 msgid "Fairphone 2 (FP2)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:40
+#: ../../systemdev/kernel-hal.rst:39
 msgid "Manual builds"
 msgstr ""
 
@@ -13112,7 +13104,7 @@ msgstr ""
 msgid "Nexus 7 2013 Wifi (flo)"
 msgstr ""
 
-#: ../../systemdev/kernel-hal.rst:49
+#: ../../systemdev/kernel-hal.rst:42
 msgid "(Partial) Binary builds"
 msgstr ""
 
@@ -13331,6 +13323,8 @@ msgid ""
 "on the device."
 msgstr ""
 
+#: ../../systemdev/kernel-pinephone.rst:64
+#: ../../systemdev/mms-infrastructure.rst:53
 #: ../../userguide/advanceduse/reverse-tethering.rst:55
 #: ../../userguide/advanceduse/screencasting.rst:74
 #: ../../userguide/advanceduse/ssh.rst:91
@@ -13506,7 +13500,7 @@ msgstr ""
 msgid "Incoming MMS diagram"
 msgstr ""
 
-#: ../../systemdev/mms-infrastructure.rst:-1
+#: ../../systemdev/mms-infrastructure.rst:42
 msgid "incoming-MMS.png"
 msgstr ""
 
@@ -13514,7 +13508,7 @@ msgstr ""
 msgid "Outgoing MMS diagram"
 msgstr ""
 
-#: ../../systemdev/mms-infrastructure.rst:-1
+#: ../../systemdev/mms-infrastructure.rst:49
 msgid "outgoing-MMS.png"
 msgstr ""
 
@@ -14247,6 +14241,10 @@ msgstr ""
 msgid "When a build container is no longer needed it maybe removed using::"
 msgstr ""
 
+#: ../../systemdev/testing-locally.rst:317
+msgid "Unit tests"
+msgstr "单元测试"
+
 #: ../../systemdev/testing-locally.rst:319
 msgid ""
 "By default crossbuilder does not run unit tests; that's both for speed "
@@ -14266,6 +14264,10 @@ msgid ""
 "reason, it's probably wiser not to worry about unit tests when working with "
 "crossbuilder, and run them only when not cross-compiling."
 msgstr ""
+
+#: ../../systemdev/testing-locally.rst:326
+msgid "Building on the device itself"
+msgstr "在设备中构建"
 
 #: ../../systemdev/testing-locally.rst:328
 msgid ""
@@ -14701,7 +14703,7 @@ msgid ""
 "just pushed to using the \"Branch\" selector:"
 msgstr ""
 
-#: ../../systemdev/uploading-changes.rst:-1
+#: ../../systemdev/uploading-changes.rst:113
 msgid "Using the branch selector on GitHub"
 msgstr ""
 
@@ -16314,11 +16316,11 @@ msgid ""
 "in use or the device is locked."
 msgstr ""
 
-#: ../../userguide/dailyuse/volte.rst:2
+#: ../../userguide/dailyuse/volte.rst:4
 msgid "Voice over LTE (VoLTE)"
 msgstr ""
 
-#: ../../userguide/dailyuse/volte.rst:4
+#: ../../userguide/dailyuse/volte.rst:6
 msgid ""
 "Voice over LTE (VoLTE) is a technology that allows a phone to take a call "
 "and send a message while connected to a 4G/LTE cellular network. The "
@@ -16326,7 +16328,7 @@ msgid ""
 "seamless mobile data while on a call."
 msgstr ""
 
-#: ../../userguide/dailyuse/volte.rst:6
+#: ../../userguide/dailyuse/volte.rst:8
 msgid ""
 "Carriers in some parts of the world have started phasing out 3G cellular "
 "networks, making VoLTE mandatory in order to place a call on that carrier. "
@@ -16336,20 +16338,24 @@ msgid ""
 "ends."
 msgstr ""
 
-#: ../../userguide/dailyuse/volte.rst:8
+#: ../../userguide/dailyuse/volte.rst:10
 msgid ""
 "Ubuntu Touch supports VoLTE on some devices. Support for VoLTE on Ubuntu "
 "Touch depends on the phone's chipset, the Android version the port is based "
-"on, and whether the port has enabled support for VoLTE. As of Ubuntu Touch "
-"20.04 OTA-6, VoLTE is enabled on Volla Phone X23 and Volla Phone 22 running "
-"Android 12-based port."
-msgstr ""
-
-#: ../../userguide/dailyuse/volte.rst:11
-msgid "How do I know if VoLTE is supported on my phone?"
+"on, and whether the port has enabled support for VoLTE."
 msgstr ""
 
 #: ../../userguide/dailyuse/volte.rst:13
+msgid ""
+"VoLTE is currently in development and is not yet available in any of the "
+"stable releases of Ubuntu Touch."
+msgstr ""
+
+#: ../../userguide/dailyuse/volte.rst:16
+msgid "How do I know if VoLTE is supported on my phone?"
+msgstr ""
+
+#: ../../userguide/dailyuse/volte.rst:18
 msgid ""
 "To check if your phone supports VoLTE, go to *System Settings* > *Cellular* "
 "> *Carrier & APN*. If VoLTE is supported, you will be able to toggle *4G "
@@ -16357,27 +16363,27 @@ msgid ""
 "then your phone does not yet support VoLTE on Ubuntu Touch."
 msgstr ""
 
-#: ../../userguide/dailyuse/volte.rst:18
+#: ../../userguide/dailyuse/volte.rst:23
 msgid "How do I know if VoLTE is working?"
 msgstr ""
 
-#: ../../userguide/dailyuse/volte.rst:20
+#: ../../userguide/dailyuse/volte.rst:25
 msgid "For VoLTE to work, the following conditions have to be met:"
 msgstr ""
 
-#: ../../userguide/dailyuse/volte.rst:22
+#: ../../userguide/dailyuse/volte.rst:27
 msgid "Your phone supports VoLTE on Ubuntu Touch."
 msgstr ""
 
-#: ../../userguide/dailyuse/volte.rst:23
+#: ../../userguide/dailyuse/volte.rst:28
 msgid "Your carrier and your SIM card supports VoLTE."
 msgstr ""
 
-#: ../../userguide/dailyuse/volte.rst:24
+#: ../../userguide/dailyuse/volte.rst:29
 msgid "Ubuntu Touch contains a VoLTE configuration for your carrier."
 msgstr ""
 
-#: ../../userguide/dailyuse/volte.rst:26
+#: ../../userguide/dailyuse/volte.rst:31
 msgid ""
 "If the conditions are met, and the phone successfully establishes a VoLTE "
 "connection, the VoLTE logo will appear after your carrier name in the "
@@ -16905,9 +16911,6 @@ msgstr ""
 #~ msgid "Repository naming convention"
 #~ msgstr "文件命名规则"
 
-#~ msgid "Native packages"
-#~ msgstr "原生包"
-
 #~ msgid ""
 #~ "Native packages are repositories which contain a ``debian/`` directory "
 #~ "**with** the source used to create the Debian source package (``.dsc``)."
@@ -17002,9 +17005,6 @@ msgstr ""
 #~ "**good first issue**：这个问题并不严重，可以被修复。它被保留给新的贡献者作"
 #~ "为开始的地方。"
 
-#~ msgid "Todo"
-#~ msgstr "待定"
-
 #~ msgid "App development cookbook"
 #~ msgstr "应用开发指南"
 
@@ -17059,9 +17059,6 @@ msgstr ""
 #~ msgid "A collection of external resources"
 #~ msgstr "外部资源的集合"
 
-#~ msgid "Building on the device itself"
-#~ msgstr "在设备中构建"
-
 #~ msgid "Now, you are ready to build the package:"
 #~ msgstr "现在，您已准备好构建软件包："
 
@@ -17075,9 +17072,6 @@ msgstr ""
 #~ msgstr ""
 #~ "它是一个 shell 脚本，因此您不需要构建它。 不过，您需要将其目录添加到 "
 #~ "``PATH`` 环境变量中，以便您可以从任何目录执行它："
-
-#~ msgid "Unit tests"
-#~ msgstr "单元测试"
 
 #~ msgid ""
 #~ "``16.04 (Xenial)``: http://releases.ubuntu.com/16.04/ubuntu-16.04.3-"
