@@ -1,0 +1,810 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2019, The UBports project (Creative Commons BY-SA 4.0)
+# This file is distributed under the same license as the UBports package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: UBports\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-07 11:45-0600\n"
+"PO-Revision-Date: 2022-12-17 00:01+0000\n"
+"Last-Translator: Lundrin <berenyi.vilmos@tutanota.com>\n"
+"Language-Team: Hungarian <https://translate.ubports.com/projects/ubports-"
+"docs/documentation-about/hu/>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
+
+#: ../../about/introduction.rst:2
+msgid "Introduction"
+msgstr "Bevezetés"
+
+#: ../../about/introduction.rst:4
+msgid ""
+"Our goal is to create a copylefted libre mobile operating system. One you "
+"can use, study, change and share; with all."
+msgstr ""
+"Célunk egy nyílt és szabad mobil operációs rendszert létrehozni. Egy olyat, "
+"melyet szabadon használhat, vizsgálhat, módosíthat és terjeszthet; bárkivel "
+"és bárkinek."
+
+#: ../../about/introduction.rst:7
+msgid "About UBports"
+msgstr "A UBports-ról"
+
+#: ../../about/introduction.rst:9
+msgid ""
+"The project was founded by Marius Gripsgard in 2015 and in its infancy a "
+"place where developers could share ideas and educate each other in hopes of "
+"bringing the Ubuntu Touch platform to more mobile devices."
+msgstr ""
+"A projektet Marius Gripsgard alapította 2015-ben, és a kezdetekben egy "
+"találkozóhelyként szolgált, amin keresztül fejlesztők megoszthatták az "
+"ötleteiket, és taníthatták egymást azon cél érdekében, hogy minél több mobil "
+"eszközre elhozhassák az Ubuntu Touchot."
+
+#: ../../about/introduction.rst:11
+msgid ""
+"After Canonical suddenly announced `plans to terminate support for Ubuntu "
+"Touch <https://insights.ubuntu.com/2017/04/05/growing-ubuntu-for-cloud-and-"
+"iot-rather-than-phone-and-convergence/>`_ in April of 2017, UBports and its "
+"sister projects began work on the source code; maintaining and expanding its "
+"possibilities for the future. Today, UBports is a volunteer group, "
+"formalised as a charitable foundation."
+msgstr ""
+"Miután a Canonical váratlanul bejelentette a terveit az `Ubuntu Touch "
+"támogatásának megszüntetésére <https://insights.ubuntu.com/2017/04/05/"
+"growing-ubuntu-for-cloud-and-iot-rather-than-phone-and-convergence/>`_ 2017 "
+"áprilisában, UBports és a testvérprojektjei elkezdtek dolgozni a "
+"forráskódon; fenntartani, és továbbfejleszteni a jövőben. Ma a UBports egy "
+"önkéntesekből álló csapat egy nonprofit szervezet alatt."
+
+#: ../../about/introduction.rst:14
+msgid "About the Documentation"
+msgstr "A dokumentációról"
+
+#: ../../about/introduction.rst:16
+msgid ""
+"Changes to the documentation are made by the UBports community. It is "
+"written in reStructuredText and converted into this readable form by `Sphinx "
+"<https://www.sphinx-doc.org/en/master/>`_, `recommonmark <http://"
+"recommonmark.readthedocs.io/en/latest/>`_, and `Read the Docs <https://"
+"readthedocs.io>`_. Start contributing by checking out the :doc:"
+"`Documentation contribution document </contribute/documentation>`."
+msgstr ""
+"A dokumentációt a UBports közössége szerkeszti. reStructuredText-tel "
+"íródott, és `Sphinx <https://www.sphinx-doc.org/en/master/>`_, `recommonmark "
+"<http://recommonmark.readthedocs.io/en/latest/>`_, illetve `Read the Docs "
+"<https://readthedocs.io>`_által vált olvashatóvá. Kezdjen el ön is "
+"hozzájárulni a :doc:`Dokumentáció hozzájárulási dokumentum </contribute/"
+"documentation>` megtekintésével."
+
+#: ../../about/introduction.rst:18
+msgid ""
+"All documents are licensed Creative Commons Attribution ShareAlike 4.0 (`CC-"
+"BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_). Please give "
+"attribution to \"The UBports Community\"."
+msgstr ""
+"Minden dokumentum a Creative Commons Attribution ShareAlike 4.0 (`CC-BY-SA "
+"4.0 <https://creativecommons.org/licenses/by-sa/4.0/>`_) licenc alatt áll. "
+"Felhasználásánál kérjük tüntesse fel a \"The UBports Community\"-t."
+
+#: ../../about/introduction.rst:21
+msgid "Attribution"
+msgstr "Attribúció"
+
+#: ../../about/introduction.rst:23
+msgid ""
+"This documentation was heavily modeled after the `Godot Engine's "
+"Documentation <https://docs.godotengine.org/en/stable/>`_, by Juan "
+"Linietsky, Ariel Manzur and the Godot community."
+msgstr ""
+"Ez a dokumentáció szorosan a Juan Linietsky, Ariel Manzur és a Godot "
+"közösség által készített `Godot Engine dokumentációja <https://docs."
+"godotengine.org/en/stable/>`_ alapján készült."
+
+#: ../../about/process/branch-naming.rst:2
+msgid "Branch-naming convention"
+msgstr "Branch-elnevezési hagyomány"
+
+#: ../../about/process/branch-naming.rst:4
+msgid ""
+"Our branch-naming convention ensures software can be built by our CI and "
+"tested easily by other developers."
+msgstr ""
+"A branch-elnevezési hagyományunk biztosítja, hogy a szoftver buildelhető "
+"legyen a CI-ünk által, és könnyen tesztelhető más fejlesztők számára."
+
+#: ../../about/process/branch-naming.rst:6
+msgid ""
+"Every Git repository's README file should state which branch-naming "
+"convention is used and any deviations from the norm."
+msgstr ""
+"Minden Git repository README fájljának tartalmazni kell, milyen branch-"
+"elnevezési hagyományt használ, és a szokványostól való bármely eltérést."
+
+#: ../../about/process/branch-naming.rst:9
+msgid "Click-Packages"
+msgstr "Click-csomagok"
+
+#: ../../about/process/branch-naming.rst:11
+msgid ""
+"Software exclusively distributed as a click-package (and not also as a DEB) "
+"only uses one ``master`` branch that is protected. Separate temporary "
+"development branches with arbitrary descriptive names can be created and "
+"merged into master when the time comes. Ideally Git tags or GitHub releases "
+"should be used to mark and archive milestones in the development history."
+msgstr ""
+"Szoftvert kizárólag click-csomagokon keresztül terjeszthetők (és nem DEB-"
+"ként) ami egy védett ``master`` branch-et használ. Létrehozhatók különálló "
+"tetszőlegesen elnevezett fejlesztői branchek, melyek aztán, mikor eljött az "
+"ideje, vissza merge-ölhetők a master branchbe. Általában Git címkékkel vagy "
+"Github megjelenésekkel kell jelölni és archiválni a mérföldköveket a "
+"fejlesztési előzményekben."
+
+#: ../../about/process/branch-naming.rst:14
+msgid "DEB Packages"
+msgstr "DEB Csomagok"
+
+#: ../../about/process/branch-naming.rst:16
+msgid ""
+"To make most efficient use of our CI system, a special naming convention for "
+"Git branches is used."
+msgstr ""
+"Ahhoz, hogy a CI rendszerünket a leghatékonyabban használjuk ki, egy "
+"speciális elnevezési konvenciót használunk a Git branchekhez."
+
+#: ../../about/process/branch-naming.rst:18
+msgid ""
+"For pre-installed Ubuntu Touch components, DEB-packages are used wherever "
+"possible. This includes Core apps, since they can still be independently "
+"updated using click-package downloads from the OpenStore. This policy allows "
+"making use of the powerful Debian build-system to resolve dependencies."
+msgstr ""
+"Az Ubuntu Touch előre telepített részeihez ahol csak lehet DEB-csomagokat "
+"alkalmazunk. Ebbe beletartoznak az alapértelmezett alkalmazások, mivel "
+"ezeket lehet külön click-csomagok letöltésével frissíteni az OpenStore-on "
+"keresztül. Ez a szabályzat engedi az erős Debian build-system használatát a "
+"függőségek megoldására."
+
+#: ../../about/process/branch-naming.rst:20
+msgid ""
+"Every repository using this convention will have branches for the actively "
+"supported Ubuntu releases referenced by their codenames (``bionic``, "
+"``xenial``, ``vivid``, etc.). These are the branches built directly into the "
+"corresponding images and published on :doc:`repo.ubports.com <ppa>`. If no "
+"separate versions for the different Ubuntu bases are needed, the repository "
+"will have one ``master`` branch and the CI system will still build versions "
+"for all actively supported releases and resolve dependencies accordingly."
+msgstr ""
+"Minden ezt a konvenciót használó repositorynak vannak ágai az aktívan "
+"támogatott Ubuntu verziókhoz, melyeket a kódnevükkel hivatkoznak "
+"(``bionic``, ``xenial``, ``vivid``, stb.). Ezek az ágak vannak közvetlen "
+"beépítve a megfelelő image-ekbe és nyilvánosságra hozva a :doc:`repo.ubports."
+"com <ppa>`. Ha nincs szükség különböző verziókra a különböző Ubuntu "
+"alapokhoz, akkor a repositorynak egy ``master`` branch-csel fog rendelkezni, "
+"és a CI rendszer továbbra is buildelni fogja a verziókat az összes aktívan "
+"támogatott megjelenésekhez, és ehhez mérten megoldani a függőségeket."
+
+#: ../../about/process/branch-naming.rst:23
+msgid "Branch-extensions"
+msgstr "Branch-bővítmények"
+
+#: ../../about/process/branch-naming.rst:25
+msgid ""
+"To build and publish packages based on another repository, an extension in "
+"the form of  ``xenial_-_some-descriptive_extension`` can be used. The CI "
+"system will then resolve all dependencies using the ``xenial_-_some-"
+"descriptive_extension`` branch of other repositories or fall back to using "
+"the normal ``xenial`` dependencies, if it doesn't exist. These special "
+"dependencies are not built into the image, but still pushed to :doc:`repo."
+"ubports.com <ppa>`."
+msgstr ""
+"Ahhoz, hogy egy másik repository alapú csomagot buildelhessen és kiadhasson, "
+"egy  ``xenial_-_some-descriptive_extension`` alakú bővítményt lehet "
+"használni. A CI rendszer pedig megoldja az összes függőséget más repositoryk "
+"``xenial_-_some-descriptive_extension`` branchét használva, vagy, ha nem "
+"létezik, visszaáll az alap ``xenial`` függőségek használatára. Ezek a "
+"speciális függőségek nincsenek beépítve az image-be, de továbbra is pusholva "
+"vannak ide: :doc:`repo.ubports.com <ppa>`."
+
+#: ../../about/process/branch-naming.rst:27
+msgid ""
+"Multiple branch extensions can be chained together in the form of ``xenial_-"
+"_dependency-1_-_dependency-2_-_dependency-3``. This means the CI system will "
+"look for dependencies in the following repositories:"
+msgstr ""
+"Több branch bővítmény fűzhető össze a következő formában: ``xenial_-"
+"_dependency-1_-_dependency-2_-_dependency-3``. Ez azt jelenti,hogy a CI "
+"rendszer függőségeket fog keresni a következő repositorykban:"
+
+#: ../../about/process/branch-naming.rst:38
+msgid ""
+"There is no prioritization, so the build system will always use the package "
+"with the highest version number, or the newest build if the version is equal."
+msgstr ""
+"Nincs priorizálás, így a build rendszer mindig a legmagasabb verziószámú "
+"csomagot, vagy ha a verziószám egyezik, akkor a legújabb buildet fogja "
+"használni."
+
+#: ../../about/process/branch-naming.rst:41
+msgid "Dependency-file"
+msgstr "Függőségi fájl"
+
+#: ../../about/process/branch-naming.rst:43
+msgid ""
+"For complex or non-linear dependencies, a ``ubports.depends`` file can be "
+"created in the root of the repository to specify additional dependencies. "
+"The branch name will be ignored if this file exists."
+msgstr ""
+"Komplex vagy nem lineáris függőségekhez létrehozható egy ``ubports.depends`` "
+"fájl a repository gyökérmappájában, amiben az extra függőségek "
+"meghatározhatók. A branch neve figyelmen kívül lesz hagyva, ha ez a fájl "
+"létezik."
+
+#: ../../about/process/branch-naming.rst:53
+#, fuzzy
+msgid ""
+"The ``ubports.depends`` file is an **exclusive list**, so the build system "
+"will not resolve dependencies linearly like it does in a branch name! Every "
+"dependency has to be listed. You will almost always want to include your "
+"base release (i.e. ``xenial``)."
+msgstr ""
+"A ``ubports.depends`` fájl egy **exkluzív lista**, tehát a build rendszer "
+"nem fogja a függőségeket lineárisan végrehajtani, ahogy egy branch név "
+"tenné! Minden függőséget listázni kell. Majdnem mindig szüksége lesz az alap "
+"kiadás nevének beleírására (pl.: ``xenial``)."
+
+#: ../../about/process/index.rst:2
+msgid "Processes"
+msgstr "Procedúrák"
+
+#: ../../about/process/index.rst:4
+msgid ""
+"This section of the documentation details standardized processes for "
+"different teams."
+msgstr ""
+"A dokumentáció ezen része részletezi a különböző csapatok sztenderdizált "
+"procedúráit."
+
+#: ../../about/process/index.rst:7
+msgid ""
+"The process definitions are still a work in progress and need to be "
+"completed by the respective teams."
+msgstr ""
+"A procedúra definíciók kidolgozása még folyamatban van az erre kijelölt "
+"csapataink által."
+
+#: ../../about/process/issue-tracking.rst:2
+msgid "Issue-Tracking Guidelines"
+msgstr "Hiba követő irányelvek"
+
+#: ../../about/process/issue-tracking.rst:4
+msgid ""
+"This document describes the standard process of dealing with new issues in "
+"UBports projects. (Not to be confused with the :doc:`guide on writing a good "
+"bugreport </contribute/bugreporting>`.)"
+msgstr ""
+"Ez a dokumentum leírja a sztenderd procedúráját az új hibák kezelésére a "
+"UBports projektekben. (Nem összetévesztendő a :doc:`hogyan írjunk egy jó bug "
+"reportot útmutatóval </contribute/bugreporting>`.)"
+
+#: ../../about/process/issue-tracking.rst:8
+msgid "Where are bugs tracked?"
+msgstr "Hol követjük a bugokat?"
+
+#: ../../about/process/issue-tracking.rst:10
+msgid ""
+"Since quality assurance depends heavily on community effort, issues are "
+"tracked where users expect them, instead of separated by repository. This "
+"means issues of almost all distributed components (as with the system-image) "
+"are tracked in the `Ubuntu Touch tracker <https://github.com/ubports/ubuntu-"
+"touch>`__. An exception to this are click-apps, which can be updated "
+"independently through the OpenStore."
+msgstr ""
+"Mivel a minőségbiztosítás erősen a közösség erején múlik, a hibákat ott "
+"követjük, ahol a felhasználók számítanak rá, nem külön repositorykra bontva. "
+"Ez azt jelenti, hogy majdnem minden terjesztett komponenst (ahogy a system-"
+"image-et is) az `Ubuntu Touch tracker <https://github.com/ubports/ubuntu-"
+"touch>`__oldalon követjük. Ezek alól kivételt képeznek a click-alkalmazások, "
+"amiket külön is lehet frissíteni az OpenStore-on keresztül."
+
+#: ../../about/process/issue-tracking.rst:17
+msgid ""
+"Most other repositories track issues locally. You will find out whether a "
+"repository uses its own tracker or not in its README.md file. Repositories "
+"that don't track issues locally have their bugtracker turned off."
+msgstr ""
+"Legtöbb másik repository lokálisan követi a hibákat. Hogy egy repository "
+"saját hibakövetőt használ-e a README.md fájljából tudható meg. Azoknak a "
+"repositoryknak, melyek nem lokálisan követik a hibákat ki van a bugtrackerük "
+"kapcsolva."
+
+#: ../../about/process/issue-tracking.rst:21
+msgid ""
+"This page is mainly about the Ubuntu Touch tracker, but most principles "
+"apply to other projects as well."
+msgstr ""
+"Ez az oldal főként az Ubuntu Touch trackerre vonatkozik, de a legtöbb "
+"irányelv más projektekével is megegyezik."
+
+#: ../../about/process/issue-tracking.rst:25
+msgid ""
+"Practical exceptions to purity are to be described in the project's README."
+"md file."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:28
+msgid "GitHub projects"
+msgstr "GitHub projektek"
+
+#: ../../about/process/issue-tracking.rst:30
+msgid ""
+"In the interest of transparency and communication, GitHub projects (Kanban-"
+"Boards) are used wherever practical. In case of github.com/ubports/ubuntu-"
+"touch, a single project is used for all issues. Projects support filtering "
+"by labels, so that only issues belonging to a specific team or ones "
+"affecting a specific device can be viewed."
+msgstr ""
+"Az átláthatóság és kommunikáció érdekében GitHub projekteket (Kanban-"
+"Boardokat) használunk, ahol csak lehet. A github.com/ubports/ubuntu-touch "
+"esetében egyetlen projekt alatt követjük az összes hibát. Különböző "
+"projektek labeleket használnak szűrésre, hogy specifikus projektekhez vagy "
+"készülékekhez tartozó hibákat külön is meg lehessen tekinteni."
+
+#: ../../about/process/issue-tracking.rst:36
+msgid "These are the standard columns:"
+msgstr "Ezek a sztenderd oszlopok:"
+
+#: ../../about/process/issue-tracking.rst:38
+msgid ""
+"**None (awaiting triage)**: Issue approved by a member of the QA team "
+"awaiting review from the responsible development team. If a bug, "
+"instructions to reproduce are included in the issue description. If a "
+"feature request, it has passed a primary sanity check by the QA team, but "
+"not yet been accepted by the responsible development-team."
+msgstr ""
+"**None (awaiting triage)**: Hiba, melyet a QA csapat erősített meg, és a "
+"felelős fejlesztőcsapat felülvizsgálatára vár. Ha egy bug, akkor a "
+"reprodukálhatóságához útmutatót tartalmazza a leírásnak tartalmaznia kell. "
+"Ha egy funkciókérés, akkor átesett egy értelmi felülvizsgálaton a QA csapat "
+"által, de még nem fogadta el a felelős fejlesztőcsapat."
+
+#: ../../about/process/issue-tracking.rst:41
+msgid ""
+"**Accepted**: Issue accepted by the responsible development-team. If a "
+"bugreport, the team has decided it should be fixable and accept "
+"responsibility. If a feature request, the team thinks it should be "
+"implemented as described."
+msgstr ""
+"**Accepted**: Jelentést elfogadta a felelős fejlesztőcsapat. Ha egy bug "
+"jelentés, a csapat úgy döntött, hogy javítható, és elfogadja a felelősséget. "
+"Ha egy funkció kérés, akkor meg lesz valósítva a leírtak szerint."
+
+#: ../../about/process/issue-tracking.rst:44
+msgid ""
+"**In Development**: A patch in development. Usually means a developer is "
+"assigned to the issue."
+msgstr ""
+"**In Development**:Egy patch fejlesztés alatt. Általában azt jelenti, hogy "
+"egy fejlesztő hozzá lett rendelve a jelentéshez."
+
+#: ../../about/process/issue-tracking.rst:46
+msgid ""
+"**Quality Assurance**: A completed patch passing initial testing. The QA "
+"team will review it and provide feedback. If problems are found, the issue "
+"is moved back to \"Accepted\"."
+msgstr ""
+"**Quality Assurance**: Egy befejezett patch ami a kezdeti teszt fázisban "
+"van. A QA csapat le fogja tesztelni, és visszajelzést csatolni hozzá. Ha "
+"hibákat találnak, akkor visszakerül az \"Accepted\" oszlopba."
+
+#: ../../about/process/issue-tracking.rst:48
+msgid ""
+"**Release Candidate**: A patch passing QA, ready for release. In case of DEB "
+"packages included in the system-image, the patch will be included in the "
+"next over-the-air update on the `rc` channel, and (provided  everything   "
+"goes well) in the next release of the `stable` channel."
+msgstr ""
+"**Release Candidate**: Egy pach, ami átment a QA teszteken és megjelenésre "
+"kész. A system-immage-be épített DEB csomagok esetén a következő \"over-the-"
+"air\" frissítés fogja tartalmazni az `rc` csatornán, és (már ha minden jól "
+"megy) a következő `stable` csatornán."
+
+#: ../../about/process/issue-tracking.rst:50
+msgid ""
+"**None (removed from the project)**: Open issue labeled \"help wanted\". "
+"Community contributions are required to resolve it. If it's closed, either a "
+"patch has been released on the stable channel (a comment on the issue should "
+"link to the patch) or the issue is rejected (labeled \"wontfix\")."
+msgstr ""
+"**None (removed from the project)**: Nyílt jelentés \"help wanted\" labellel "
+"jelölve. Közösségi hozzájárulás szükséges a megoldásához. Ha ez egy lezárt, "
+"akkor vagy egy patchként már megjelent a stable csatornán (egy kommentnek a "
+"jelentésen linkelnie kéne a patch-hez), vagy el lett utasítva (\"wontfix\" "
+"labellel)."
+
+#: ../../about/process/issue-tracking.rst:55
+msgid "Labels"
+msgstr "Labelek"
+
+#: ../../about/process/issue-tracking.rst:57
+msgid ""
+"All issues — even closed ones — should be labeled to allow use of GitHub's "
+"global filtering. For example, `these are all of the issues labeled "
+"'enhancement' inside @ubports <https://github.com/search?"
+"utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A%22feature+request%22&type=>`_. "
+"Consult the `GitHub help pages <https://help.github.com/articles/about-"
+"searching-on-github/>`__ to learn more about searching and filtering."
+msgstr ""
+"Minden jelentést — még a lezártakat is — meg kell egy labellel jelölni, hogy "
+"használni lehessen a GitHub globális szűrő rendszerét. Például `ezek mind "
+"azok a jelentések, melyet 'enhancement' labellel jelöltek meg a @ubports-on "
+"belül <https://github.com/search?"
+"utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+label%3A%22feature+request%22&type=>`_. "
+"Keresse fel a `GitHub segítség oldalát <https://help.github.com/articles/"
+"about-searching-on-github/>`__ további információkért a keresésről és "
+"szűrésről."
+
+#: ../../about/process/issue-tracking.rst:60
+msgid "List of labels normally used by all repositories:"
+msgstr "Általánosan minden repository által használt labelek listája:"
+
+#: ../../about/process/issue-tracking.rst:62
+msgid ""
+"**needs confirmation**: The bug needs confirmation and / or further "
+"detailing by affected users."
+msgstr ""
+"**needs confirmation - (megerősítést igényel)**: A bug megerősítésre és/vagy "
+"részletesebb leírásra szorul az érintett felhasználóktól."
+
+#: ../../about/process/issue-tracking.rst:64
+msgid ""
+"**bug**: This issue is a confirmed bug. If it's reproducible, reproduction "
+"steps are described."
+msgstr ""
+"**bug**: Ez a jelentés egy megerősített bug. Ha reprodukálható, a lépések le "
+"vannak írva."
+
+#: ../../about/process/issue-tracking.rst:66
+msgid "**opinion**: This issue needs further discussion."
+msgstr "**opinion - (vélemény)**: Ez a jelentés további diskurzust igényel."
+
+#: ../../about/process/issue-tracking.rst:67
+msgid "**enhancement**: This issue is a feature request."
+msgstr "**enhancement - (fejlesztés)**: Ez a jelentés egy funkciókérés."
+
+#: ../../about/process/issue-tracking.rst:68
+msgid "**question**: This issue is a support request or general question."
+msgstr ""
+"**question - (kérdés)**: Ez a jelentés egy segítség kérés vagy egy általános "
+"kérdés."
+
+#: ../../about/process/issue-tracking.rst:69
+msgid ""
+"**invalid**: This issue can not be confirmed or was reported in the wrong "
+"tracker."
+msgstr ""
+"**invalid - (érvénytelen)**: Ezt a jelentést nem lehet megerősíteni, vagy a "
+"rossz követőben adták le."
+
+#: ../../about/process/issue-tracking.rst:71
+msgid ""
+"**duplicate**: This has already been reported elsewhere. Please provide a "
+"link and close."
+msgstr ""
+"**duplicate - (duplikált)**: Ez már jelentve volt korábban valahol. Kérjük "
+"adjon egy linket, és zárja le."
+
+#: ../../about/process/issue-tracking.rst:73
+msgid ""
+"**help wanted**: This issue is ready to be picked up by a community "
+"developer."
+msgstr ""
+"**help wanted - (segítség szükséges)**: Ez a jelentés készen áll, hogy egy "
+"közösségi fejlesztő hozzákezdjen."
+
+#: ../../about/process/issue-tracking.rst:75
+msgid ""
+"**good first issue**: The report contains instructions or hints required to "
+"fix it. It is an excellent place for someone new to learn about the project "
+"by fixing a real issue."
+msgstr ""
+"**good first issue - (jó első jelentésnek)**: Ez a jelentés útmutatókat és "
+"tippeket tartalmaz a megoldásához. Ez kiváló lehetőség egy kezdőnek, "
+"megtanulni egy hibát kijavítani."
+
+#: ../../about/process/issue-tracking.rst:77
+msgid ""
+"**wontfix**: A bug it does not make sense to fix, since it will probably "
+"resolve itself, be too much work, isn't fixable, or an underlying component "
+"will soon change."
+msgstr ""
+"**wontfix - (nem lesz javítva)**: Egy olyan bug, amit nincs értelme "
+"kijavítani, mivel valószínűleg meg fogja oldani önmagát, túl sok munka "
+"lenne, nem javítható, vagy a kiemelt komponens hamarosan megváltozik."
+
+#: ../../about/process/issue-tracking.rst:81
+msgid ""
+"Additional special labels can be defined. As an example, these are the "
+"labels used in the Ubuntu Touch tracker:"
+msgstr ""
+"Egyéb speciális labelek is hozzáadhatók. Példaképpen, ezek az Ubuntu Touch "
+"követőn használt labelek:"
+
+#: ../../about/process/issue-tracking.rst:84
+msgid ""
+"**critical (devel)**: Critical issue only occuring on the `devel` channel is "
+"blocking the release of the next `rc` image."
+msgstr ""
+"**critical (devel)**: Kritikus hiba, a `devel` csatornán, ami akadályozza a "
+"következő `rc` frissítés megjelenését."
+
+#: ../../about/process/issue-tracking.rst:86
+msgid ""
+"**critical (rc)**: Critical issue only occuring on the `devel` and `rc` "
+"channel is blocking the release of the next stable release. Usually, issues "
+"that can not simply be moved to a different release and have the power to "
+"postpone the release are labeled this way."
+msgstr ""
+"**critical (rc)**: Kritikus hiba a `devel` és az `rc` csatornán, ami "
+"akadályozza a következő `stable` megjelenést. Általában azokat a hibákat "
+"jelölik ezzel, melyeket nem lehet egyszerűen egy másik megjelenésbe áttolni, "
+"és késleltethetik a megjelenést."
+
+#: ../../about/process/issue-tracking.rst:90
+msgid ""
+"**device: [DEVICE CODENAME]**: Issue affecting only the specified device(s)."
+msgstr ""
+"**device: [DEVICE CODENAME]**: Hiba, ami csak a meghatározott készülék(ek)et "
+"érinti."
+
+#: ../../about/process/issue-tracking.rst:92
+msgid ""
+"**team: [TEAM NAME]**: Issue falls under the responsibility of a specific "
+"team (HAL, middleware, UI)."
+msgstr ""
+"**team: [TEAM NAME]**: Hiba, ami egy meghatározott csapat felelőssége alá "
+"tartozik (HAL, middleware, UI)."
+
+#: ../../about/process/issue-tracking.rst:95
+msgid ""
+"If a repository tracking issues locally defines it's own labels, they should "
+"be documented in the README.md."
+msgstr ""
+"Ha egy repository lokálisan követi a hibáit, a labeleiket maguk definiálják. "
+"Ezt a README.md fájlban dokumentálják."
+
+#: ../../about/process/issue-tracking.rst:99
+msgid "Milestones"
+msgstr "Mérföldkövek"
+
+#: ../../about/process/issue-tracking.rst:101
+#, fuzzy
+msgid ""
+"Milestones are used for stable OTA releases only. In general, milestones for "
+"the work-in-progress OTA and the next OTA are created. The ETA is set once "
+"the work on the release starts (that is 6 weeks from start date), but can be "
+"adjusted afterwards. Learn more in :doc:`release-schedule <release-"
+"schedule>`."
+msgstr ""
+"A mérföldköveket kizárólag a stable OTA megjelenésekhez alkalmazzák. "
+"Mérföldköveket általában az éppen fejlesztett, és az aszt követő OTA-ra "
+"tűzik ki. Az ETA-t meghatározzák, mikor a megjelenésen megkezdődik a munka "
+"(6 héttel a kezdés időpontjától), de később hozzámódosítható. További "
+"információt a :doc:`release-schedule <release-schedule>` dokumentációban "
+"talál."
+
+#: ../../about/process/issue-tracking.rst:107
+msgid "Assignees"
+msgstr "Hozzárendelések"
+
+#: ../../about/process/issue-tracking.rst:109
+msgid ""
+"To make it transparent who's working on an issue, the developer should be "
+"assigned. This also allows the use of GitHub's global filtering as a type of "
+"TODO list. For example, `this is everything assigned to mariogrip in "
+"@ubports <https://github.com/search?"
+"utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_."
+msgstr ""
+"Hogy átláthatóvá tegyük, ki dolgozik egy hibán, a fejlesztőt hozzárendeljük. "
+"Ez mellesleg lehetővé teszi, hogy a GitHub globális szűrését egyfajta "
+"feladatlistának használjuk. Például `ez minden, ami mariogriphez van "
+"rendelve a @ubports-on belül <https://github.com/search?"
+"utf8=%E2%9C%93&q=is%3Aopen+org%3Aubports+assignee%3Amariogrip&type=>`_."
+
+#: ../../about/process/issue-tracking.rst:114
+msgid ""
+"Developers are encouraged to keep their list short and update the status of "
+"their issues."
+msgstr ""
+"A fejlesztőknek javasolt rövidebb de sűrűn frissített státuszú listát "
+"kialakítani."
+
+#: ../../about/process/issue-tracking.rst:117
+msgid "Examples"
+msgstr "Példák"
+
+#: ../../about/process/issue-tracking.rst:120
+msgid "Bug Lifecycle"
+msgstr "Bug életciklus"
+
+#: ../../about/process/issue-tracking.rst:123
+msgid ""
+"The same principle applies to feature requests, only they are labeled "
+"**enhancement** instead of **bug**. **needs confirmation** is not applicable "
+"for feature requests."
+msgstr ""
+"Ugyanaz az irányelv vonatkozik a funkció kérésekre, annyi különbséggel, hogy "
+"**enhancement**-nek címkézik **bug** helyett. **needs confirmation** funkció "
+"kéréshez nem használható."
+
+#: ../../about/process/issue-tracking.rst:127
+msgid "A *user* files a new bug using the issue-template."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:128
+msgid ""
+"The *QA-Team* labels it **needs confirmation** and tries to work with the "
+"user to confirm the bug and add potentially missing info to the report."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:129
+msgid ""
+"Once the report is complete a **team-label** is added to the issue, the "
+"issue will be put on the **awaiting-triage-list** of the project and the "
+"label needs confirmation will be replaced with **bug**."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:130
+msgid ""
+"The affected *Team* triages the issue and either rejects (label **wontfix**, "
+"closes and removes from the project) or accepts the issue."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:131
+msgid ""
+"The team decides whether to fix the issue in-house (move to \"Accepted\" and "
+"assign a team member) or wait for a community developer to pick it up (by "
+"labeling it **help wanted**, removing it from the project board and "
+"providing hints on how to resolve the issue and further details on how the "
+"fix should be implemented if necessary). For non-critical issues trivial to "
+"fix, the label **good first issue** can be added as well."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:132
+msgid ""
+"Once a *developer* is assigned and starts working on the issue, it is moved "
+"to \"In Development\"."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:133
+msgid ""
+"As soon as there is something to show for, the issue is closed and "
+"automatically moved to \"Quality Assurance\" for feedback from the QA team. "
+"If necessary, the developer provides hints on how to test the patch in a "
+"comment on the issue."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:134
+msgid ""
+"The *QA-Team* tests the fix on all devices and provides feedback to the "
+"developer. If problems are found, the issue is re-opened and goes back to "
+"\"Accepted\", otherwise it is moved to \"Release Candidate\" for inclusion "
+"in the next release."
+msgstr ""
+
+#: ../../about/process/issue-tracking.rst:135
+msgid ""
+"If not done already, the issue is added to the next milestone, which once "
+"released removes the issue from the project board."
+msgstr ""
+
+#: ../../about/process/ppa.rst:2
+msgid "repo.ubports.com"
+msgstr ""
+
+#: ../../about/process/ppa.rst:4
+msgid ""
+"This is the package archive system for UBports projects. It hosts various "
+"PPAs containing all the DEB-components of Ubuntu Touch."
+msgstr ""
+
+#: ../../about/process/ppa.rst:7
+msgid "Repository naming convention"
+msgstr ""
+
+#: ../../about/process/ppa.rst:10
+msgid "Native packages"
+msgstr ""
+
+#: ../../about/process/ppa.rst:12
+msgid ""
+"Native packages (like https://github.com/ubports/system-settings) are "
+"repositories that contain a ``debian/`` folder **with** the source used to "
+"create the DEB source package (``.dsc``)."
+msgstr ""
+
+#: ../../about/process/ppa.rst:14
+msgid ""
+"The name of the Debian source package generated from the repository and the "
+"name of the Git-repository should be the same."
+msgstr ""
+
+#: ../../about/process/ppa.rst:17
+msgid "Packaging repositories"
+msgstr ""
+
+#: ../../about/process/ppa.rst:19
+msgid ""
+"Packaging repositories (like https://github.com/ubports/pulseaudio-"
+"packaging) contain a ``debian`` folder **without** the source used to create "
+"the Debian source package (``.dsc``). They also contain instructions to tell "
+"``debhelper`` how to get the sources used to create the source package."
+msgstr ""
+
+#: ../../about/process/ppa.rst:22
+msgid ""
+"The repository should have the name of the source package it generates with "
+"``-packaging`` appended to the end. For example, a packaging repository that "
+"generates a source package called ``sandwich`` would be called ``sandwich-"
+"packaging``."
+msgstr ""
+
+#: ../../about/process/ppa.rst:26
+msgid "Creating new PPAs"
+msgstr ""
+
+#: ../../about/process/ppa.rst:28
+msgid ""
+"New PPAs can be created dynamically by the CI server using a special :doc:"
+"`git-branch naming convention <branch-naming>`. The name of the branch "
+"translates literally to the name of the PPA: ``https://repo.ubports.com/"
+"dists/[branch name]``"
+msgstr ""
+
+#: ../../about/process/ppa.rst:30
+msgid ""
+"Non-standard PPAs (i.e. not ``vivid``, ``xenial``, or ``bionic``) are kept "
+"for three months. If they need to be kept for longer, a file with the name "
+"``ubports.keep`` containing a date in the form of in the form of ``YYYY-MM-"
+"dd`` can be used to decide how long to keep the PPA in the repository for. "
+"If this file is empty, the PPA will be kept for two years after the last "
+"build."
+msgstr ""
+
+#: ../../about/process/release-schedule.rst:2
+msgid "Release Schedule"
+msgstr ""
+
+#: ../../about/process/release-schedule.rst:4
+msgid "OTA updates usually follow this rhythm:"
+msgstr ""
+
+#: ../../about/process/release-schedule.rst:6
+msgid "devel: daily builds"
+msgstr ""
+
+#: ../../about/process/release-schedule.rst:7
+msgid "rc: weekly if no critical issue exists in the devel channel"
+msgstr ""
+
+#: ../../about/process/release-schedule.rst:8
+msgid ""
+"stable: every six through eight weeks, if no critical issue exists in the rc "
+"channel"
+msgstr ""
+
+#: ../../about/process/release-schedule.rst:11
+msgid ""
+"This is not a definitive cycle. Stable releases are ready when they're ready "
+"and should not introduce new bugs or ship very incomplete features. Since "
+"the OTA update can not be released before all critical issues are closed, "
+"the ETA might have to be moved by making an educated guess for when all the "
+"issues can be handled. If there are too many issues added to a milestone, "
+"they are either removed or added to the next milestone."
+msgstr ""
