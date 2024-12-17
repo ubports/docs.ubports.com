@@ -14,43 +14,34 @@ UBPORTSDOCSENV=${UBPORTSDOCSENV-"$HOME/ubportsdocsenv"}
 ## use commandline parameter if it is given
 UBPORTSDOCSENV=${1-$UBPORTSDOCSENV}
 
-# functions
-# Function to install packages (apk)
-install_via_apk() {
-    echo "Detected apk"
-    echo "Installing python3-pip and python3-virtualenv..."
-    sudo apk add python3 py3-pip py3-virtualenv
-}
-
-# Function to install packages (pacman)
-install_via_pacman() {
-    echo "Detected pacman"
-    echo "Installing python-pip and python-virtualenv..."
-    sudo pacman -S --noconfirm python-pip python-virtualenv
-}
-
 # check if virtualenv already exists
 if [ -d "$UBPORTSDOCSENV" ]; then
-  echo -e "${GREEN}Build environment found in \"$UBPORTSDOCSENV\".${PLAIN}"
+  echo -e "${GREEN}Activating virtual build environment found in \"$UBPORTSDOCSENV\".${PLAIN}"
   source $UBPORTSDOCSENV/bin/activate
 else
   echo -e "${YELLOW}Build environment not found in \"$UBPORTSDOCSENV\" ... creating it.${PLAIN}"
   echo -e "${YELLOW}Installing pip and virtualenv (using sudo).${PLAIN}"
-  # Check for apk or pacman
+  # Check for package manager
   if command -v apk &> /dev/null; then
-      install_via_apk
+      echo "Detected apk"
+      sudo apk add python3 py3-pip py3-virtualenv
+  elif command -v apt &> /dev/null; then
+      echo "Detected apt"
+      sudo apt install python3-pip python3-virtualenv
   elif command -v pacman &> /dev/null; then
-      install_via_pacman
+      echo "Detected pacman"
+      sudo pacman -S --noconfirm python-pip python-virtualenv
   else
-      echo "Unsupported package manager. Please install the packages manually."
+      echo "Unsupported package manager. Please install the packages and create the virtualenv manually."
       exit 1
   fi
-  echo -e "${YELLOW}Creating a virtual environment in \"$UBPORTSDOCSENV\".${PLAIN}"
+  echo -e "${YELLOW}Creating and activating a virtual build environment in \"$UBPORTSDOCSENV\".${PLAIN}"
   virtualenv $UBPORTSDOCSENV
   source $UBPORTSDOCSENV/bin/activate
-  echo -e "${YELLOW}Installing build tools and prerequisites.${PLAIN}"
+  echo -e "${YELLOW}Installing build tools and prerequisites (using pip).${PLAIN}"
   pip3 install -r requirements.txt
 fi
+
 echo -e "${GREEN}Building...${PLAIN}"
 rm -rf _build/
 if [ "$(uname)" == "Linux" ]; then
