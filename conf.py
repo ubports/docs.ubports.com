@@ -67,6 +67,8 @@ release = u''
 # Usually you set "language" from the command line for these cases.
 language = 'en'
 
+gettext_compact = 'docs'  # Ensure that only one .pot file is generated instead of one file per section
+
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
