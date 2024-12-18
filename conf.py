@@ -32,8 +32,14 @@
 # ones.
 extensions = [
     'sphinx.ext.todo',
-    'sphinxext.rediraffe'
+    'sphinxext.rediraffe',
+    'sphinxcontrib.mermaid'
 ]
+
+# Mermaid configuration for static image generation
+mermaid_output_format = 'svg'
+mermaid_cmd = 'mmdc -p /root/.config/mmdc-config.json'
+mermaid_verbose = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

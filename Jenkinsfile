@@ -2,6 +2,7 @@ pipeline {
     agent {
         docker {
             image "python:3.12"
+            args '-u root:root'  // Run as root to allow package installation
         }
     }
     options {
@@ -19,6 +20,19 @@ pipeline {
                 sh 'pip install --quiet --no-cache-dir --user --upgrade -r requirements.txt'
             }
         }
+        stage("Setup Mermaid") {
+            steps {
+                script {
+                    try {
+                        def setup = load 'Jenkinsfile.setup-mermaid'
+                        setup.call()
+                    } catch (Exception e) {
+                        echo "Setup Mermaid failed with error: ${e.getMessage()}"
+                        throw e
+                    }
+                }
+            }
+        }
         stage("Build docs"){
             steps {
                 sh 'python3 -m sphinx -Wab html . _build/html/'
@@ -29,9 +43,13 @@ pipeline {
         stage('Fix git ref for non-master builds') {
             when { not { branch 'master' }  }
             steps {
-                // Workaround to create the master branch since Jenkins
-                // refuses to do it on PR builds
-                sh 'git show-ref --verify --quiet master || git branch master `git show-ref -s origin/master`'
+                sh '''
+                    # Add workspace to safe.directory
+                    git config --global --add safe.directory "${WORKSPACE}"
+                    
+                    # Original command
+                    git show-ref --verify --quiet master || git branch master `git show-ref -s origin/master`
+                '''
             }
         }
         stage('Check redirects') {
